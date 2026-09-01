@@ -27,7 +27,7 @@ ideas:
   custom-kitchen-cabinets:
     lifecycle: active
     note: >-
-      Seeded 2026-08-31 from the market-evidence pipeline in research/, which measured its way
+      Seeded 2026-08-31 from the market-evidence pipeline now at scripts/research/, which measured its way
       from configurable furniture to fitted cabinetry. Belief and H1 are recorded, the
       assumption graph is built, and every node is untested — the ledger holds only desk
       measurement. Next step is the first trade outreach on the root pain assumption.

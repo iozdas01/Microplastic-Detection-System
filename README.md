@@ -4,18 +4,37 @@ Testing one idea: **custom cabinetry costs three times stock cabinetry, and most
 premium is a designer's afternoon rather than a manufacturing cost.** If that is right, the
 same machines sell a custom kitchen at a semi-custom price.
 
-The repo is two halves that feed each other.
+## Layout
 
-| Half | What it is |
-|---|---|
-| **The lab** (root) | The assumption pipeline — a founder-owned belief, one falsifiable hunch, an assumption graph of what must be true, an evidence ledger, and the outreach and interview machinery that moves them. Operated by Claude sessions. |
-| **`research/`** | The market-evidence pipeline that produced the idea. Collectors against Census, BLS, Google Trends and UN Comtrade; a factory model derived from station cycle times; and the HTML reports built from both. |
+Code at the root, everything about the idea under `reports/{slug}/`.
 
-`research/` came first and is what moved the thesis: it started on configurable furniture sold
-direct to consumers and measured its way to fitted kitchen cabinets, which was the only one of
-24 categories where search carried commercial intent. Its findings enter the lab as ledger
-entries in `reports/custom-kitchen-cabinets/03-validation/evidence.md`, graded as what they
-are — desk measurement, not buyer evidence. See `research/README.md` for how to run it.
+```
+CLAUDE.md  ARCHITECTURE.md  schemas/  methods/  founders/  .claude/skills/
+
+scripts/              the assumption pipeline — generators, validators, loader
+scripts/data/         shared query library (Reddit, HN, news, LinkedIn export)
+scripts/research/     market-evidence collectors — Census, BLS, Trends, Comtrade
+
+reports/custom-kitchen-cabinets/
+  BRIEF.md            generated session entry point — read this first
+  control-room.html   generated: hunch → assumptions → evidence → outreach, one page
+  01-ideation/        the hunch lineage
+  02-assumptions/     the assumption graph
+  03-validation/      the evidence ledger, and interview notes as they land
+  04-mutation/        offerings
+  outreach/           contacts, and call-log.html for taking notes during a call
+  research/           what the collectors measured: REPORT.md, the HTML reports, data/
+```
+
+There is one `reports/` tree, one `scripts/` tree and one `data/` directory, on purpose. The
+market-research pipeline used to be a self-contained `research/` folder with its own copies of
+all three; that meant "reports" named two different things depending on where you stood.
+
+The collectors produced this idea rather than the other way round: they started on configurable
+furniture sold direct to consumers and measured their way to fitted kitchen cabinets, the only
+one of 24 categories where search carried commercial intent. Their findings enter the pipeline
+as ledger entries in `03-validation/evidence.md`, graded as what they are — desk measurement,
+not buyer evidence. `scripts/research/README.md` says how to run them.
 
 ## Setup
 
@@ -54,5 +73,6 @@ That is the next move, and it is what this repo was merged to do.
 
 - Session entry point: `reports/custom-kitchen-cabinets/BRIEF.md`
 - Everything in one page: `reports/custom-kitchen-cabinets/control-room.html`
-- The plan the outreach is testing: `research/reports/cabinet-plan-final.html`
-- What to do in what order, with costs: `research/reports/build-board.html`
+- The plan the outreach is testing: `reports/custom-kitchen-cabinets/research/cabinet-plan-final.html`
+- What to do in what order, with costs: `reports/custom-kitchen-cabinets/research/build-board.html`
+- Notes template for the calls themselves: `reports/custom-kitchen-cabinets/outreach/call-log.html`

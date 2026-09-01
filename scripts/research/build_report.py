@@ -11,7 +11,7 @@ import sys
 from collections import defaultdict
 
 sys.path.insert(0, str(__import__("pathlib").Path(__file__).parent))
-from common import MANIFEST, PROC, ROOT, TODAY, log, read_csv  # noqa: E402
+from common import MANIFEST, PROC, RESEARCH, ROOT, TODAY, log, read_csv  # noqa: E402
 
 
 def fmt_usd(v, unit="m"):
@@ -45,8 +45,12 @@ def main() -> None:
 
     L = []
     A = L.append
+    A("---")
+    A("purpose: The archived Bay Area dining-furniture demand measurement this idea started from.")
+    A(f"generated: {TODAY} by scripts/research/build_report.py")
+    A("---\n")
     A(f"# Custom solid-wood furniture — Bay Area demand evidence\n")
-    A(f"Generated {TODAY} from `scripts/run_all.py`. Every figure below traces to a file "
+    A(f"Generated {TODAY} from `scripts/research/run_all.py`. Every figure below traces to a file "
       f"in `data/processed/` and a line in `data/MANIFEST.jsonl`.\n")
 
     # ---------------------------------------------------------------- headline
@@ -218,7 +222,7 @@ def main() -> None:
         A("|---|---|")
         for (src, ds), e in blocked:
             A(f"| {src} / {ds} | {e['note']} |")
-        A("\nSee `docs/CREDENTIALS.md`. Keyword Planner is the one that matters most: it "
+        A("\nSee `scripts/research/CREDENTIALS.md`. Keyword Planner is the one that matters most: it "
           "replaces the placeholder CPC, which is currently the only unmeasured number "
           "in the model.\n")
 
@@ -322,7 +326,7 @@ def main() -> None:
     for (src, ds), e in sorted(status.items()):
         A(f"| {src} | {ds} | {e['rows']:,} | {e['status']} | {e['fetched_at'][:16]} |")
 
-    (ROOT / "REPORT.md").write_text("\n".join(L) + "\n")
+    (RESEARCH / "REPORT.md").write_text("\n".join(L) + "\n")
     log(f"  REPORT.md written ({len(L)} lines)")
 
 

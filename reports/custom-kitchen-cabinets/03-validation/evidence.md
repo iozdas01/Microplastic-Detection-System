@@ -6,13 +6,13 @@ last_updated: 2026-08-31
 
 # Evidence ledger — custom-kitchen-cabinets
 
-Everything below is desk measurement carried in from the pipeline in `research/`. Every entry
+Everything below is desk measurement carried in from the pipeline in `scripts/research/`. Every entry
 is `our_observation` at confidence 2, which is the correct grade for a number we computed
 ourselves from public data: it is reproducible, it moved the thesis once, and it is not buyer
 evidence. No dealer, remodeler or shop has been asked anything yet — which is why every
 assumption in the graph still reads `untested`.
 
-Provenance for every figure: `research/data/MANIFEST.jsonl` carries one line per fetch with
+Provenance for every figure: `reports/custom-kitchen-cabinets/research/data/MANIFEST.jsonl` carries one line per fetch with
 url, time, row count and status. Nothing here quotes a number without one.
 
 ```yaml
@@ -20,7 +20,7 @@ entries:
   - id: E1
     date: 2026-08-28
     source: >-
-      research/data/processed/custom_categories_adjusted.csv — Google Trends, anchored
+      reports/custom-kitchen-cabinets/research/data/processed/custom_categories_adjusted.csv — Google Trends, anchored
       custom/generic keyword pairs across 24 furniture and joinery categories
     source_type: our_observation
     claim: >-
@@ -42,7 +42,7 @@ entries:
   - id: E2
     date: 2026-08-28
     source: >-
-      research/data/processed/trends_custom_related.csv — Google Trends related queries for
+      reports/custom-kitchen-cabinets/research/data/processed/trends_custom_related.csv — Google Trends related queries for
       the custom/generic pairs
     source_type: our_observation
     claim: >-
@@ -63,7 +63,7 @@ entries:
   - id: E3
     date: 2026-08-28
     source: >-
-      research/data/processed/cabinet_tam_model.json — US Census County Business Patterns,
+      reports/custom-kitchen-cabinets/research/data/processed/cabinet_tam_model.json — US Census County Business Patterns,
       NAICS 337110 wood kitchen cabinet and countertop manufacturing
     source_type: our_observation
     claim: >-
@@ -84,7 +84,7 @@ entries:
   - id: E4
     date: 2026-08-28
     source: >-
-      research/scripts/build_cabinet_factory.py — station cycle times and labour model for a
+      scripts/research/build_cabinet_factory.py — station cycle times and labour model for a
       27-linear-foot frameless kitchen
     source_type: our_observation
     claim: >-
@@ -104,7 +104,7 @@ entries:
 
   - id: E5
     date: 2026-08-28
-    source: research/scripts/build_cabinet_factory.py — constraint analysis over the same model
+    source: scripts/research/build_cabinet_factory.py — constraint analysis over the same model
     source_type: our_observation
     claim: >-
       Annual capacity by station: machines 228 kitchens, shop floor with two people 306, front
@@ -122,7 +122,7 @@ entries:
 
   - id: E6
     date: 2026-08-28
-    source: research/REPORT.md — CEX article scorecard and anchored custom-share measurement
+    source: reports/custom-kitchen-cabinets/research/REPORT.md — CEX article scorecard and anchored custom-share measurement
     source_type: our_observation
     claim: >-
       Across all nine CEX furniture lines the custom framing runs well under 1% of the generic

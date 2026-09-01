@@ -1,6 +1,11 @@
+---
+purpose: The measured US market size for this idea — TAM, the beachhead article, SAM and SOM, each step with its basis.
+generated: 2026-08-31 by scripts/research/build_report_us.py
+---
+
 # Configurable furniture from an autonomous factory — US market size
 
-Generated 2026-08-28 from `scripts/run_all.py`. Every figure traces to a file in `data/processed/` and a line in `data/MANIFEST.jsonl`. Numbers that are assumptions rather than measurements are marked **(assumption)** where they are used.
+Generated 2026-08-31 from `scripts/research/run_all.py`. Every figure traces to a file in `data/processed/` and a line in `data/MANIFEST.jsonl`. Numbers that are assumptions rather than measurements are marked **(assumption)** where they are used.
 
 ## The three numbers
 
@@ -264,13 +269,13 @@ The top income quintile spends $92 a year on the beachhead article. A $2,320 uni
 | google-ads / keyword-metrics | missing: GOOGLE_ADS_DEVELOPER_TOKEN, GOOGLE_ADS_CLIENT_ID, GOOGLE_ADS_CLIENT_SECRET, GOOGLE_ADS_REFRESH_TOKEN, GOOGLE_AD |
 | semrush / competitor-organic-keywords | SEMRUSH_API_KEY not set |
 
-See `docs/CREDENTIALS.md`. Keyword Planner is the one that matters most: it replaces the placeholder CPC, which drives the whole acquisition section.
+See `scripts/research/CREDENTIALS.md`. Keyword Planner is the one that matters most: it replaces the placeholder CPC, which drives the whole acquisition section.
 
 ## Provenance
 
 | Source | Dataset | Rows | Status | Fetched |
 |---|---|---:|---|---|
-| analysis | cabinet-tam | 10 | ok | 2026-08-28 12:38 |
+| analysis | cabinet-tam | 13 | ok | 2026-08-28 14:54 |
 | analysis | custom-category-adjustment | 25 | ok | 2026-08-28 12:23 |
 | analysis | custom-demand-ranking | 24 | ok | 2026-08-28 12:25 |
 | analysis | factory-model | 23 | ok | 2026-08-28 12:38 |

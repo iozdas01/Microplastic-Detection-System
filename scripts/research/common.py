@@ -20,10 +20,16 @@ import urllib.parse
 
 import requests
 
-ROOT = pathlib.Path(__file__).resolve().parent.parent
-RAW = ROOT / "data" / "raw"
-PROC = ROOT / "data" / "processed"
-MANIFEST = ROOT / "data" / "MANIFEST.jsonl"
+ROOT = pathlib.Path(__file__).resolve().parent.parent.parent
+
+# This pipeline's outputs are per-idea state, so they live inside the idea folder with
+# every other artifact about this idea — there is one `reports/` tree in the repo and one
+# `data/` under it. The code stays at `scripts/research/` because the collectors outlive
+# any single idea; only what they produce is idea-scoped.
+RESEARCH = ROOT / "reports" / "custom-kitchen-cabinets" / "research"
+RAW = RESEARCH / "data" / "raw"
+PROC = RESEARCH / "data" / "processed"
+MANIFEST = RESEARCH / "data" / "MANIFEST.jsonl"
 TODAY = _dt.date.today().isoformat()
 
 # The credential set lives at the repo root (the Assumption Lab half of this repo);

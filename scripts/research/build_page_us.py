@@ -15,11 +15,11 @@ import sys
 from collections import defaultdict
 
 sys.path.insert(0, str(__import__("pathlib").Path(__file__).parent))
-from common import MANIFEST, PROC, ROOT, TODAY, log, read_csv  # noqa: E402
+from common import MANIFEST, PROC, RESEARCH, ROOT, TODAY, log, read_csv  # noqa: E402
 from page_kit import Raw, bar_cell, esc, note, pct, stat, table, usd  # noqa: E402
 
 HERE = __import__("pathlib").Path(__file__).parent
-OUT = ROOT / "reports" / "us-configurable-furniture.html"
+OUT = RESEARCH / "us-configurable-furniture.html"
 
 MONTHS = ["", "January", "February", "March", "April", "May", "June", "July",
           "August", "September", "October", "November", "December"]

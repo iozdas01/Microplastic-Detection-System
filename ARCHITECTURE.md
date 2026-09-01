@@ -145,19 +145,33 @@ Three tiers: **root config + docs** (no global "current state" file), **reusable
   /.claude/skills/        canonical skill definitions   /.agents/skills/  Codex bridges
 ```
 
-One tree sits outside all three tiers:
+### Market-evidence collectors — `scripts/research/`
 
-```
-  /research/              The market-evidence pipeline that produced the active idea —
-                          collectors, models and HTML reports, self-contained with its own
-                          scripts/, data/, reports/ and README. Path-anchored to its own
-                          root, so it runs unchanged from where it sits.
-```
+A second data-access tree beside `scripts/data/`, and a different job: `scripts/data/` is the
+framework's shared query library (Reddit, HN, news, LinkedIn export), while
+`scripts/research/` holds the collectors and models that measure a market from public
+statistics — Census, BLS, Google Trends, UN Comtrade — plus the generators that render them
+as HTML.
 
-`research/` is deliberately not folded into `reports/{slug}/`. It is a measurement pipeline,
-not a per-idea artifact: it re-runs against live sources, it produced the evidence that
-*chose* the current idea, and it would survive the idea being killed. What crosses the
-boundary is graded ledger entries citing its files — never a number quoted straight out of it.
+**The code sits at root; everything it produces is per-idea and lives in
+`reports/{slug}/research/`.** That split is the whole reason this tree exists separately:
+the collectors outlive any single idea (the Census and BLS plumbing is generic, even where
+the series IDs are not), but a measurement of one market is a fact about one idea and belongs
+with that idea's other artifacts, under the same `reports/{slug}/` rule as everything else.
+
+It was briefly kept as a self-contained `research/` tree with its own `scripts/`, `data/` and
+`reports/` inside it. That gave the repo two directories named `reports` meaning different
+things, and the justification for it — "a measurement pipeline is not a per-idea artifact" —
+did not survive contact with the contents: `build_cabinet_tam.py` is not a general tool, and
+its outputs are exactly the kind of per-idea state the core rule exists to place. One
+`scripts/`, one `reports/`, one `data/`.
+
+Paths are anchored once, in `scripts/research/common.py` (`ROOT`, `RESEARCH`, `RAW`, `PROC`,
+`MANIFEST`); no collector or generator computes its own.
+
+**What crosses into the pipeline is graded ledger entries citing these files — never a number
+quoted straight out of one.** A figure this tree measured enters `evidence.md` as
+`our_observation`, which caps it at confidence 2 no matter how precise it looks.
 
 Per idea, under `reports/{slug}/`:
 

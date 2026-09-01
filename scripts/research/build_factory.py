@@ -32,7 +32,7 @@ import json
 import sys
 
 sys.path.insert(0, str(__import__("pathlib").Path(__file__).parent))
-from common import PROC, ROOT, log, read_csv, record, save_csv  # noqa: E402
+from common import PROC, RESEARCH, ROOT, log, read_csv, record, save_csv  # noqa: E402
 
 # --------------------------------------------------------------------------- product
 # A dining chair in white oak. Dimensions are finished sizes in millimetres; rough stock
@@ -280,7 +280,7 @@ def main() -> None:
                 "unit_cost_usd": u, "total_usd": q * u, "basis": b}
                for p, c, it, q, u, b in EQUIPMENT]
     save_csv("factory_equipment", eq_rows)
-    ref = ROOT / "data" / "reference"
+    ref = RESEARCH / "data" / "reference"
     ref.mkdir(parents=True, exist_ok=True)
     with (ref / "equipment.csv").open("w", newline="") as fh:
         w = _csv.DictWriter(fh, fieldnames=list(eq_rows[0]))

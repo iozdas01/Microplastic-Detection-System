@@ -16,9 +16,9 @@ validation_status: untested
 parent_hunch: null
 created: 2026-08-31
 created_by: founder
-created_by_artifact: research/reports/cabinet-plan-final.html
+created_by_artifact: reports/custom-kitchen-cabinets/research/cabinet-plan-final.html
 change_reason: >-
-  Carried in from the predecessor market-research pipeline in research/, where the
+  Carried in from the predecessor market-research pipeline now at `scripts/research/`, where the
   autonomous-furniture thesis was measured and moved. Custom cabinets was the only one of
   24 furniture and joinery categories where search carried commercial intent, at 7.61% of
   generic against a 0.55% median for furniture. Recorded as the founder's confirmed hunch

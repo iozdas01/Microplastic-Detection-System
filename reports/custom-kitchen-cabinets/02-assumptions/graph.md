@@ -17,7 +17,7 @@ Founder-market-fit nodes and technical build bets are deliberately absent, per t
 rule in `memory/MEMORY.md` (2026-08-09): this graph holds only claims testable by talking to
 people. The build gates — can the app engineer a real kitchen, will a subcontract shop cut to
 our files — are kill conditions that run after demand is proven, and they live on the build
-board in `research/reports/build-board.html`.
+board in `reports/custom-kitchen-cabinets/research/build-board.html`.
 
 Every node below is `untested`. Everything currently in the ledger is desk measurement
 graded 2/5; no buyer, dealer or shop has been asked anything yet. That is the whole reason

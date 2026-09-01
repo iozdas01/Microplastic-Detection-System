@@ -11,7 +11,7 @@ import json
 import sys
 
 sys.path.insert(0, str(__import__("pathlib").Path(__file__).parent))
-from common import MANIFEST, PROC, ROOT, TODAY, log, read_csv  # noqa: E402
+from common import MANIFEST, PROC, RESEARCH, ROOT, TODAY, log, read_csv  # noqa: E402
 
 
 def usd(v, unit="m"):
@@ -68,8 +68,12 @@ def main() -> None:
     tam = next(s["value"] for s in m["steps"]
                if s["step"] == "US household furniture spend (TAM)")
 
+    A("---")
+    A("purpose: The measured US market size for this idea — TAM, the beachhead article, SAM and SOM, each step with its basis.")
+    A(f"generated: {TODAY} by scripts/research/build_report_us.py")
+    A("---\n")
     A("# Configurable furniture from an autonomous factory — US market size\n")
-    A(f"Generated {TODAY} from `scripts/run_all.py`. Every figure traces to a file in "
+    A(f"Generated {TODAY} from `scripts/research/run_all.py`. Every figure traces to a file in "
       f"`data/processed/` and a line in `data/MANIFEST.jsonl`. Numbers that are "
       f"assumptions rather than measurements are marked **(assumption)** where they "
       f"are used.\n")
@@ -538,7 +542,7 @@ def main() -> None:
         for s, d, e in blocked:
             A(f"| {s} / {d} | {e['note'][:120]} |")
         A("")
-        A("See `docs/CREDENTIALS.md`. Keyword Planner is the one that matters most: it "
+        A("See `scripts/research/CREDENTIALS.md`. Keyword Planner is the one that matters most: it "
           "replaces the placeholder CPC, which drives the whole acquisition section.\n")
 
     # ------------------------------------------------------------------- provenance
@@ -548,7 +552,7 @@ def main() -> None:
     for (s, d), e in sorted(status.items()):
         A(f"| {s} | {d} | {e['rows']:,} | {e['status']} | {e['fetched_at'][:16].replace('T', ' ')} |")
 
-    (ROOT / "REPORT.md").write_text("\n".join(L) + "\n")
+    (RESEARCH / "REPORT.md").write_text("\n".join(L) + "\n")
     log(f"  REPORT.md written ({len(L)} lines)")
 
 

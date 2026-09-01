@@ -4,15 +4,15 @@
 -->
 ---
 slug: custom-kitchen-cabinets
-generated: 2026-09-01T00:35Z
+generated: 2026-09-01T00:41Z
 lifecycle: active
 active_hunch: H1
 active_assumption: H1A2
 sources:
   belief: 875e755faa7c
-  lineage: 2e3f78f073f1
-  graph: 3d889ed444be
-  evidence: 32708d258f2b
+  lineage: c807efe3cc4c
+  graph: db1391a18952
+  evidence: 78686911dd15
   offerings: c3c76f1f29c0
   contacts: 8d02729cb28f
 ---
@@ -21,7 +21,7 @@ sources:
 
 _Generated digest. Load this first; load a full source file only for the task that needs it (pointers at the end)._
 
-**Lifecycle:** `active` — Seeded 2026-08-31 from the market-evidence pipeline in research/, which measured its way from configurable furniture to fitted cabinetry. Belief and H1 are recorded, the assumption graph is built, and every node is untested — the ledger ho…
+**Lifecycle:** `active` — Seeded 2026-08-31 from the market-evidence pipeline now at scripts/research/, which measured its way from configurable furniture to fitted cabinetry. Belief and H1 are recorded, the assumption graph is built, and every node is untested — t…
 
 ## Belief
 
@@ -71,11 +71,79 @@ _Generated from the folder. Check here before creating a new artifact — if a f
 | Artifact | What it holds |
 |---|---|
 | `input-context/custom-kitchen-cabinets/belief.md` | The founder-owned durable belief this idea rests on, plus its boundaries and SISP check. |
+| `reports/custom-kitchen-cabinets/control-room.html` | generated — rebuild it, never edit it |
 | `reports/custom-kitchen-cabinets/01-ideation/hunch-lineage.md` | The hunch lineage for this idea — which falsifiable interpretation of the belief is under test, and why. |
 | `reports/custom-kitchen-cabinets/02-assumptions/graph.md` | The assumption DAG for H1 — what must be true, ranked, each with the cheapest test that would settle it. |
 | `reports/custom-kitchen-cabinets/03-validation/evidence.md` | The evidence ledger for this idea — every graded claim, linked to the assumption it moves and the direction it moves it. |
 | `reports/custom-kitchen-cabinets/04-mutation/offerings.md` | Candidate offerings for this idea — what would actually be sold, and to whom. |
+| `reports/custom-kitchen-cabinets/outreach/call-log.html` | generated — rebuild it, never edit it |
 | `reports/custom-kitchen-cabinets/outreach/contacts.md` | The contact ledger for this idea — one record per person approached, their signal, and where the conversation got to. |
+| `reports/custom-kitchen-cabinets/research/REPORT.md` | The measured US market size for this idea — TAM, the beachhead article, SAM and SOM, each step with its basis. |
+| `reports/custom-kitchen-cabinets/research/autonomous-factory-plan.html` | generated — rebuild it, never edit it |
+| `reports/custom-kitchen-cabinets/research/bay-area-hardwood-demand.html` | generated — rebuild it, never edit it |
+| `reports/custom-kitchen-cabinets/research/build-board.html` | generated — rebuild it, never edit it |
+| `reports/custom-kitchen-cabinets/research/business-plan.html` | generated — rebuild it, never edit it |
+| `reports/custom-kitchen-cabinets/research/cabinet-company-plan.html` | generated — rebuild it, never edit it |
+| `reports/custom-kitchen-cabinets/research/cabinet-demand-case.html` | generated — rebuild it, never edit it |
+| `reports/custom-kitchen-cabinets/research/cabinet-plan-final.html` | generated — rebuild it, never edit it |
+| `reports/custom-kitchen-cabinets/research/cabinet-plan.html` | generated — rebuild it, never edit it |
+| `reports/custom-kitchen-cabinets/research/us-configurable-furniture.html` | generated — rebuild it, never edit it |
+| `reports/custom-kitchen-cabinets/research/archive/bay-area-dining-2026-08-27.md` | Custom solid-wood furniture — Bay Area demand evidence |
+| `reports/custom-kitchen-cabinets/research/data/MANIFEST.jsonl` | — |
+| `reports/custom-kitchen-cabinets/research/data/processed/bay_area_building_permits.csv` | — |
+| `reports/custom-kitchen-cabinets/research/data/processed/bay_area_population.csv` | — |
+| `reports/custom-kitchen-cabinets/research/data/processed/bls_prices.csv` | — |
+| `reports/custom-kitchen-cabinets/research/data/processed/cabinet_factory.json` | — |
+| `reports/custom-kitchen-cabinets/research/data/processed/cabinet_tam_model.json` | — |
+| `reports/custom-kitchen-cabinets/research/data/processed/cabinet_tam_steps.csv` | — |
+| `reports/custom-kitchen-cabinets/research/data/processed/cbp_furniture_supply.csv` | — |
+| `reports/custom-kitchen-cabinets/research/data/processed/cex_furniture_expenditure.csv` | — |
+| `reports/custom-kitchen-cabinets/research/data/processed/custom_categories_adjusted.csv` | — |
+| `reports/custom-kitchen-cabinets/research/data/processed/custom_demand_ranking.csv` | — |
+| `reports/custom-kitchen-cabinets/research/data/processed/factory_bom.csv` | — |
+| `reports/custom-kitchen-cabinets/research/data/processed/factory_equipment.csv` | — |
+| `reports/custom-kitchen-cabinets/research/data/processed/factory_model.json` | — |
+| `reports/custom-kitchen-cabinets/research/data/processed/factory_stations.csv` | — |
+| `reports/custom-kitchen-cabinets/research/data/processed/imports_wood_furniture.csv` | — |
+| `reports/custom-kitchen-cabinets/research/data/processed/lean_factory.json` | — |
+| `reports/custom-kitchen-cabinets/research/data/processed/metro_coverage.csv` | — |
+| `reports/custom-kitchen-cabinets/research/data/processed/mrts_furniture_monthly.csv` | — |
+| `reports/custom-kitchen-cabinets/research/data/processed/tam_model.json` | — |
+| `reports/custom-kitchen-cabinets/research/data/processed/tam_steps.csv` | — |
+| `reports/custom-kitchen-cabinets/research/data/processed/tam_unit_economics.csv` | — |
+| `reports/custom-kitchen-cabinets/research/data/processed/tam_us_model.json` | — |
+| `reports/custom-kitchen-cabinets/research/data/processed/tam_us_steps.csv` | — |
+| `reports/custom-kitchen-cabinets/research/data/processed/trends_by_metro.csv` | — |
+| `reports/custom-kitchen-cabinets/research/data/processed/trends_custom_categories.csv` | — |
+| `reports/custom-kitchen-cabinets/research/data/processed/trends_custom_related.csv` | — |
+| `reports/custom-kitchen-cabinets/research/data/processed/trends_custom_timeline.csv` | — |
+| `reports/custom-kitchen-cabinets/research/data/processed/trends_interest_over_time.csv` | — |
+| `reports/custom-kitchen-cabinets/research/data/processed/trends_related_queries.csv` | — |
+| `reports/custom-kitchen-cabinets/research/data/processed/us_article_scorecard.csv` | — |
+| `reports/custom-kitchen-cabinets/research/data/processed/archive-bay-area-ca/custom_categories_adjusted.csv` | — |
+| `reports/custom-kitchen-cabinets/research/data/processed/archive-bay-area-ca/trends_by_metro.csv` | — |
+| `reports/custom-kitchen-cabinets/research/data/processed/archive-bay-area-ca/trends_custom_categories.csv` | — |
+| `reports/custom-kitchen-cabinets/research/data/processed/archive-bay-area-ca/trends_custom_related.csv` | — |
+| `reports/custom-kitchen-cabinets/research/data/processed/archive-bay-area-ca/trends_interest_over_time.csv` | — |
+| `reports/custom-kitchen-cabinets/research/data/processed/archive-bay-area-ca/trends_related_queries.csv` | — |
+| `reports/custom-kitchen-cabinets/research/data/raw/bls-cex/2026-08-27-furniture-expenditure.json` | — |
+| `reports/custom-kitchen-cabinets/research/data/raw/bls-cex/cx.characteristics` | — |
+| `reports/custom-kitchen-cabinets/research/data/raw/bls-cex/cx.demographics` | — |
+| `reports/custom-kitchen-cabinets/research/data/raw/bls-cex/cx.item` | — |
+| `reports/custom-kitchen-cabinets/research/data/raw/bls-cex/cx.series` | — |
+| `reports/custom-kitchen-cabinets/research/data/raw/bls-cex/cx.subcategory` | — |
+| `reports/custom-kitchen-cabinets/research/data/raw/bls-prices/prices-and-employment-*.json` | 2 dated snapshots — latest 2026-08-28 · — |
+| `reports/custom-kitchen-cabinets/research/data/raw/census-bps/2026-08-27-bay-area-permits.json` | — |
+| `reports/custom-kitchen-cabinets/research/data/raw/census-cbp/cbp22co.txt` | — |
+| `reports/custom-kitchen-cabinets/research/data/raw/census-cbp/cbp22co.zip` | �Q�Z9 |
+| `reports/custom-kitchen-cabinets/research/data/raw/census-cbp/cbp22us.zip` | — |
+| `reports/custom-kitchen-cabinets/research/data/raw/census-mrts/mrtssales92-present.xlsx` | — |
+| `reports/custom-kitchen-cabinets/research/data/raw/census-popest/2026-08-27-county-population-migration.json` | — |
+| `reports/custom-kitchen-cabinets/research/data/raw/census-popest/2026-08-27-metro-coverage.json` | — |
+| `reports/custom-kitchen-cabinets/research/data/raw/google-trends/custom-furniture-categories-*.json` | 2 dated snapshots — latest 2026-08-28 · — |
+| `reports/custom-kitchen-cabinets/research/data/raw/google-trends/purchase-intent-terms-*.json` | 2 dated snapshots — latest 2026-08-28 · — |
+| `reports/custom-kitchen-cabinets/research/data/raw/un-comtrade/2026-08-27-us-wood-furniture-imports.json` | — |
+| `reports/custom-kitchen-cabinets/research/data/reference/equipment.csv` | — |
 
 ## Load next, by task
 

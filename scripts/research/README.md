@@ -1,8 +1,11 @@
-# Furniture Manufacturing — US market evidence
+# Market-evidence collectors
 
-A market-research pipeline for configurable furniture sold direct to consumers and built
-in an autonomous factory. Built to the tiered source plan: purchase intent first, then
-government data, then industry sources.
+The pipeline that produced this repo's active idea. Built to the tiered source plan:
+purchase intent first, then government data, then industry sources.
+
+**The code lives here; everything it writes lands in
+`reports/custom-kitchen-cabinets/research/`** — outputs are per-idea state and belong with
+that idea's other artifacts. Paths are anchored once, in `common.py`.
 
 It answers four questions with measurements rather than syndicated market numbers:
 
@@ -16,35 +19,40 @@ It answers four questions with measurements rather than syndicated market number
   times, a named equipment schedule, capital plan and unit-cost curve.
 
 The Bay Area / dining-table version this started as is kept in
-`reports/archive/bay-area-dining-2026-08-27.md`; its model and report generator
-(`build_tam.py`, `build_report.py`) still run if you want the local view.
+`reports/custom-kitchen-cabinets/research/archive/bay-area-dining-2026-08-27.md`; its model
+and report generator (`build_tam.py`, `build_report.py`) still run if you want the local view.
 
 ## Run it
 
+Run `scripts/setup.sh` once for the whole repo, then:
+
 ```bash
-python3 -m venv .venv && .venv/bin/pip install -r requirements.txt
-.venv/bin/python scripts/run_all.py
+.venv/bin/python scripts/research/run_all.py
 ```
 
 No credentials are required — the pipeline runs end to end on free, keyless sources and
-tells you in the output which sources are gated. See `docs/CREDENTIALS.md` for what each
-key would add and how to get it.
+tells you in the output which sources are gated. See `CREDENTIALS.md` beside this file for
+what each key would add and how to get it. Keys are read from `.env` at the repo root.
 
 ```bash
-.venv/bin/python scripts/run_all.py --tier2   # government sources only
-.venv/bin/python scripts/build_factory.py     # capacity and cost from cycle times
-.venv/bin/python scripts/build_tam_us.py      # re-run the market model
-.venv/bin/python scripts/build_report_us.py   # re-render REPORT.md from the model
+.venv/bin/python scripts/research/run_all.py --tier2   # government sources only
+.venv/bin/python scripts/research/build_factory.py     # capacity and cost from cycle times
+.venv/bin/python scripts/research/build_tam_us.py      # re-run the market model
+.venv/bin/python scripts/research/build_report_us.py   # re-render REPORT.md from the model
 ```
 
 ## Output
 
+Everything below is relative to `reports/custom-kitchen-cabinets/research/`.
+
 | Path | What |
 |---|---|
 | `REPORT.md` | The findings, regenerated from whatever the collectors landed |
-| `reports/us-configurable-furniture.html` | The market page |
-| `reports/autonomous-factory-plan.html` | The build proposal, with layout and flow diagrams |
-| `reports/cabinet-demand-case.html` | Is there demand for custom cabinets, and how every number was derived |
+| `cabinet-plan-final.html` | The current plan — the one the outreach is testing |
+| `build-board.html` | What to do in what order, with costs and decision gates |
+| `cabinet-demand-case.html` | Is there demand for custom cabinets, and how every number was derived |
+| `us-configurable-furniture.html` | The market page |
+| `autonomous-factory-plan.html` | The build proposal, with layout and flow diagrams |
 | `data/reference/equipment.csv` | The machine schedule — the one input that is typed, not fetched |
 | `data/processed/us_article_scorecard.csv` | Every furniture article, sized and scored |
 | `data/processed/*.csv` | Tidy tables, one per dataset |
@@ -121,7 +129,7 @@ different offer to a different buyer — so the measured share anchors the botto
 band, and the multiple above it is an assumption the report labels as one. That single
 number moves the SAM 30×, which makes measuring it the first thing worth doing.
 
-**Assumptions are in one place.** `ASSUMPTIONS` at the top of `scripts/build_tam_us.py`.
+**Assumptions are in one place.** `ASSUMPTIONS` at the top of `build_tam_us.py`.
 Nothing is hardcoded below it, and every assumption is printed alongside the results and
 marked **(assumption)** in the report line that uses it.
 

@@ -9,7 +9,7 @@ Requires a Google Ads account (free to create; no spend needed for Keyword Plann
 a developer token. Set in .env:
     GOOGLE_ADS_DEVELOPER_TOKEN, GOOGLE_ADS_CLIENT_ID, GOOGLE_ADS_CLIENT_SECRET,
     GOOGLE_ADS_REFRESH_TOKEN, GOOGLE_ADS_CUSTOMER_ID   (login customer id, digits only)
-See docs/CREDENTIALS.md for how to get each one.
+See CREDENTIALS.md beside this file for how to get each one.
 """
 from __future__ import annotations
 

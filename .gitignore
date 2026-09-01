@@ -44,11 +44,11 @@ private/
 # Regenerated on demand by the outreach skills; never review-worthy.
 reports/*/outreach/.*
 
-# research/ — bulk source downloads, re-fetched on demand by the collectors and too
-# large to track. The tidy extracts in research/data/processed/ and the JSON payloads
-# in research/data/raw/ are the provenance record that matters.
-research/data/raw/census-cbp/*.zip
-research/data/raw/census-cbp/*.txt
-research/data/raw/bls-cex/cx.series
-research/data/raw/census-mrts/*.xlsx
-research/data/raw/_probe/
+# Bulk source downloads — re-fetched on demand by the collectors in scripts/research/ and
+# too large to track. The tidy extracts in data/processed/ and the JSON payloads in
+# data/raw/ are the provenance record that matters.
+reports/custom-kitchen-cabinets/research/data/raw/census-cbp/*.zip
+reports/custom-kitchen-cabinets/research/data/raw/census-cbp/*.txt
+reports/custom-kitchen-cabinets/research/data/raw/bls-cex/cx.series
+reports/custom-kitchen-cabinets/research/data/raw/census-mrts/*.xlsx
+reports/custom-kitchen-cabinets/research/data/raw/_probe/
