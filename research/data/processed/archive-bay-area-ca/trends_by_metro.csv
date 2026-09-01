@@ -1,0 +1,281 @@
+keyword,batch,geo_name,geo_code,index
+dining table,0,Palm Springs CA,804,96
+custom dining table,0,Palm Springs CA,804,1
+solid wood dining table,0,Palm Springs CA,804,1
+walnut dining table,0,Palm Springs CA,804,2
+live edge dining table,0,Palm Springs CA,804,0
+dining table,0,San Francisco-Oakland-San Jose CA,807,96
+custom dining table,0,San Francisco-Oakland-San Jose CA,807,1
+solid wood dining table,0,San Francisco-Oakland-San Jose CA,807,2
+walnut dining table,0,San Francisco-Oakland-San Jose CA,807,1
+live edge dining table,0,San Francisco-Oakland-San Jose CA,807,0
+dining table,0,San Diego CA,825,96
+custom dining table,0,San Diego CA,825,1
+solid wood dining table,0,San Diego CA,825,2
+walnut dining table,0,San Diego CA,825,1
+live edge dining table,0,San Diego CA,825,0
+dining table,0,Los Angeles CA,803,96
+custom dining table,0,Los Angeles CA,803,1
+solid wood dining table,0,Los Angeles CA,803,2
+walnut dining table,0,Los Angeles CA,803,1
+live edge dining table,0,Los Angeles CA,803,0
+dining table,0,Sacramento-Stockton-Modesto CA,862,96
+custom dining table,0,Sacramento-Stockton-Modesto CA,862,1
+solid wood dining table,0,Sacramento-Stockton-Modesto CA,862,2
+walnut dining table,0,Sacramento-Stockton-Modesto CA,862,1
+live edge dining table,0,Sacramento-Stockton-Modesto CA,862,0
+dining table,0,Santa Barbara-Santa Maria-San Luis Obispo CA,855,96
+custom dining table,0,Santa Barbara-Santa Maria-San Luis Obispo CA,855,1
+solid wood dining table,0,Santa Barbara-Santa Maria-San Luis Obispo CA,855,2
+walnut dining table,0,Santa Barbara-Santa Maria-San Luis Obispo CA,855,1
+live edge dining table,0,Santa Barbara-Santa Maria-San Luis Obispo CA,855,0
+dining table,0,Reno NV,811,95
+custom dining table,0,Reno NV,811,0
+solid wood dining table,0,Reno NV,811,2
+walnut dining table,0,Reno NV,811,1
+live edge dining table,0,Reno NV,811,2
+dining table,0,Fresno-Visalia CA,866,97
+custom dining table,0,Fresno-Visalia CA,866,0
+solid wood dining table,0,Fresno-Visalia CA,866,2
+walnut dining table,0,Fresno-Visalia CA,866,1
+live edge dining table,0,Fresno-Visalia CA,866,0
+dining table,0,Monterey-Salinas CA,828,96
+custom dining table,0,Monterey-Salinas CA,828,1
+solid wood dining table,0,Monterey-Salinas CA,828,2
+walnut dining table,0,Monterey-Salinas CA,828,1
+live edge dining table,0,Monterey-Salinas CA,828,0
+dining table,0,Bakersfield CA,800,97
+custom dining table,0,Bakersfield CA,800,0
+solid wood dining table,0,Bakersfield CA,800,2
+walnut dining table,0,Bakersfield CA,800,1
+live edge dining table,0,Bakersfield CA,800,0
+dining table,0,Yuma AZ-El Centro CA,771,97
+custom dining table,0,Yuma AZ-El Centro CA,771,1
+solid wood dining table,0,Yuma AZ-El Centro CA,771,2
+walnut dining table,0,Yuma AZ-El Centro CA,771,0
+live edge dining table,0,Yuma AZ-El Centro CA,771,0
+dining table,0,Chico-Redding CA,868,96
+custom dining table,0,Chico-Redding CA,868,0
+solid wood dining table,0,Chico-Redding CA,868,2
+walnut dining table,0,Chico-Redding CA,868,1
+live edge dining table,0,Chico-Redding CA,868,1
+dining table,0,Medford-Klamath Falls OR,813,94
+custom dining table,0,Medford-Klamath Falls OR,813,1
+solid wood dining table,0,Medford-Klamath Falls OR,813,2
+walnut dining table,0,Medford-Klamath Falls OR,813,2
+live edge dining table,0,Medford-Klamath Falls OR,813,1
+dining table,0,Eureka CA,802,97
+custom dining table,0,Eureka CA,802,0
+solid wood dining table,0,Eureka CA,802,3
+walnut dining table,0,Eureka CA,802,0
+live edge dining table,0,Eureka CA,802,0
+dining table,1,Palm Springs CA,804,94
+custom furniture,1,Palm Springs CA,804,6
+handmade dining table,1,Palm Springs CA,804,0
+reclaimed wood dining table,1,Palm Springs CA,804,0
+custom wood desk,1,Palm Springs CA,804,0
+dining table,1,San Francisco-Oakland-San Jose CA,807,96
+custom furniture,1,San Francisco-Oakland-San Jose CA,807,4
+handmade dining table,1,San Francisco-Oakland-San Jose CA,807,0
+reclaimed wood dining table,1,San Francisco-Oakland-San Jose CA,807,0
+custom wood desk,1,San Francisco-Oakland-San Jose CA,807,0
+dining table,1,San Diego CA,825,96
+custom furniture,1,San Diego CA,825,4
+handmade dining table,1,San Diego CA,825,0
+reclaimed wood dining table,1,San Diego CA,825,0
+custom wood desk,1,San Diego CA,825,0
+dining table,1,Los Angeles CA,803,95
+custom furniture,1,Los Angeles CA,803,5
+handmade dining table,1,Los Angeles CA,803,0
+reclaimed wood dining table,1,Los Angeles CA,803,0
+custom wood desk,1,Los Angeles CA,803,0
+dining table,1,Sacramento-Stockton-Modesto CA,862,97
+custom furniture,1,Sacramento-Stockton-Modesto CA,862,3
+handmade dining table,1,Sacramento-Stockton-Modesto CA,862,0
+reclaimed wood dining table,1,Sacramento-Stockton-Modesto CA,862,0
+custom wood desk,1,Sacramento-Stockton-Modesto CA,862,0
+dining table,1,Santa Barbara-Santa Maria-San Luis Obispo CA,855,96
+custom furniture,1,Santa Barbara-Santa Maria-San Luis Obispo CA,855,4
+handmade dining table,1,Santa Barbara-Santa Maria-San Luis Obispo CA,855,0
+reclaimed wood dining table,1,Santa Barbara-Santa Maria-San Luis Obispo CA,855,0
+custom wood desk,1,Santa Barbara-Santa Maria-San Luis Obispo CA,855,0
+dining table,1,Reno NV,811,96
+custom furniture,1,Reno NV,811,4
+handmade dining table,1,Reno NV,811,0
+reclaimed wood dining table,1,Reno NV,811,0
+custom wood desk,1,Reno NV,811,0
+dining table,1,Fresno-Visalia CA,866,97
+custom furniture,1,Fresno-Visalia CA,866,3
+handmade dining table,1,Fresno-Visalia CA,866,0
+reclaimed wood dining table,1,Fresno-Visalia CA,866,0
+custom wood desk,1,Fresno-Visalia CA,866,0
+dining table,1,Monterey-Salinas CA,828,96
+custom furniture,1,Monterey-Salinas CA,828,4
+handmade dining table,1,Monterey-Salinas CA,828,0
+reclaimed wood dining table,1,Monterey-Salinas CA,828,0
+custom wood desk,1,Monterey-Salinas CA,828,0
+dining table,1,Bakersfield CA,800,98
+custom furniture,1,Bakersfield CA,800,2
+handmade dining table,1,Bakersfield CA,800,0
+reclaimed wood dining table,1,Bakersfield CA,800,0
+custom wood desk,1,Bakersfield CA,800,0
+dining table,1,Yuma AZ-El Centro CA,771,98
+custom furniture,1,Yuma AZ-El Centro CA,771,2
+handmade dining table,1,Yuma AZ-El Centro CA,771,0
+reclaimed wood dining table,1,Yuma AZ-El Centro CA,771,0
+custom wood desk,1,Yuma AZ-El Centro CA,771,0
+dining table,1,Chico-Redding CA,868,97
+custom furniture,1,Chico-Redding CA,868,3
+handmade dining table,1,Chico-Redding CA,868,0
+reclaimed wood dining table,1,Chico-Redding CA,868,0
+custom wood desk,1,Chico-Redding CA,868,0
+dining table,1,Medford-Klamath Falls OR,813,95
+custom furniture,1,Medford-Klamath Falls OR,813,5
+handmade dining table,1,Medford-Klamath Falls OR,813,0
+reclaimed wood dining table,1,Medford-Klamath Falls OR,813,0
+custom wood desk,1,Medford-Klamath Falls OR,813,0
+dining table,1,Eureka CA,802,96
+custom furniture,1,Eureka CA,802,4
+handmade dining table,1,Eureka CA,802,0
+reclaimed wood dining table,1,Eureka CA,802,0
+custom wood desk,1,Eureka CA,802,0
+dining table,2,Palm Springs CA,804,97
+made to order furniture,2,Palm Springs CA,804,0
+white oak dining table,2,Palm Springs CA,804,0
+farmhouse dining table,2,Palm Springs CA,804,1
+extendable dining table,2,Palm Springs CA,804,2
+dining table,2,San Francisco-Oakland-San Jose CA,807,93
+made to order furniture,2,San Francisco-Oakland-San Jose CA,807,0
+white oak dining table,2,San Francisco-Oakland-San Jose CA,807,0
+farmhouse dining table,2,San Francisco-Oakland-San Jose CA,807,1
+extendable dining table,2,San Francisco-Oakland-San Jose CA,807,6
+dining table,2,San Diego CA,825,95
+made to order furniture,2,San Diego CA,825,0
+white oak dining table,2,San Diego CA,825,0
+farmhouse dining table,2,San Diego CA,825,2
+extendable dining table,2,San Diego CA,825,3
+dining table,2,Los Angeles CA,803,94
+made to order furniture,2,Los Angeles CA,803,0
+white oak dining table,2,Los Angeles CA,803,0
+farmhouse dining table,2,Los Angeles CA,803,2
+extendable dining table,2,Los Angeles CA,803,4
+dining table,2,Sacramento-Stockton-Modesto CA,862,94
+made to order furniture,2,Sacramento-Stockton-Modesto CA,862,0
+white oak dining table,2,Sacramento-Stockton-Modesto CA,862,0
+farmhouse dining table,2,Sacramento-Stockton-Modesto CA,862,3
+extendable dining table,2,Sacramento-Stockton-Modesto CA,862,3
+dining table,2,Santa Barbara-Santa Maria-San Luis Obispo CA,855,94
+made to order furniture,2,Santa Barbara-Santa Maria-San Luis Obispo CA,855,0
+white oak dining table,2,Santa Barbara-Santa Maria-San Luis Obispo CA,855,0
+farmhouse dining table,2,Santa Barbara-Santa Maria-San Luis Obispo CA,855,2
+extendable dining table,2,Santa Barbara-Santa Maria-San Luis Obispo CA,855,4
+dining table,2,Reno NV,811,94
+made to order furniture,2,Reno NV,811,0
+white oak dining table,2,Reno NV,811,0
+farmhouse dining table,2,Reno NV,811,3
+extendable dining table,2,Reno NV,811,3
+dining table,2,Fresno-Visalia CA,866,95
+made to order furniture,2,Fresno-Visalia CA,866,0
+white oak dining table,2,Fresno-Visalia CA,866,0
+farmhouse dining table,2,Fresno-Visalia CA,866,3
+extendable dining table,2,Fresno-Visalia CA,866,2
+dining table,2,Monterey-Salinas CA,828,93
+made to order furniture,2,Monterey-Salinas CA,828,0
+white oak dining table,2,Monterey-Salinas CA,828,0
+farmhouse dining table,2,Monterey-Salinas CA,828,2
+extendable dining table,2,Monterey-Salinas CA,828,5
+dining table,2,Bakersfield CA,800,95
+made to order furniture,2,Bakersfield CA,800,0
+white oak dining table,2,Bakersfield CA,800,0
+farmhouse dining table,2,Bakersfield CA,800,2
+extendable dining table,2,Bakersfield CA,800,3
+dining table,2,Yuma AZ-El Centro CA,771,95
+made to order furniture,2,Yuma AZ-El Centro CA,771,0
+white oak dining table,2,Yuma AZ-El Centro CA,771,0
+farmhouse dining table,2,Yuma AZ-El Centro CA,771,3
+extendable dining table,2,Yuma AZ-El Centro CA,771,2
+dining table,2,Chico-Redding CA,868,94
+made to order furniture,2,Chico-Redding CA,868,0
+white oak dining table,2,Chico-Redding CA,868,0
+farmhouse dining table,2,Chico-Redding CA,868,3
+extendable dining table,2,Chico-Redding CA,868,3
+dining table,2,Medford-Klamath Falls OR,813,94
+made to order furniture,2,Medford-Klamath Falls OR,813,0
+white oak dining table,2,Medford-Klamath Falls OR,813,0
+farmhouse dining table,2,Medford-Klamath Falls OR,813,3
+extendable dining table,2,Medford-Klamath Falls OR,813,3
+dining table,2,Eureka CA,802,93
+made to order furniture,2,Eureka CA,802,0
+white oak dining table,2,Eureka CA,802,0
+farmhouse dining table,2,Eureka CA,802,3
+extendable dining table,2,Eureka CA,802,4
+custom dining table,geo_focus,San Francisco-Oakland-San Jose CA,807,13
+custom furniture,geo_focus,San Francisco-Oakland-San Jose CA,807,56
+solid wood dining table,geo_focus,San Francisco-Oakland-San Jose CA,807,26
+handmade dining table,geo_focus,San Francisco-Oakland-San Jose CA,807,2
+custom wood desk,geo_focus,San Francisco-Oakland-San Jose CA,807,3
+custom dining table,geo_focus,Palm Springs CA,804,10
+custom furniture,geo_focus,Palm Springs CA,804,71
+solid wood dining table,geo_focus,Palm Springs CA,804,15
+handmade dining table,geo_focus,Palm Springs CA,804,0
+custom wood desk,geo_focus,Palm Springs CA,804,4
+custom dining table,geo_focus,San Diego CA,825,14
+custom furniture,geo_focus,San Diego CA,825,55
+solid wood dining table,geo_focus,San Diego CA,825,25
+handmade dining table,geo_focus,San Diego CA,825,2
+custom wood desk,geo_focus,San Diego CA,825,4
+custom dining table,geo_focus,Yuma AZ-El Centro CA,771,21
+custom furniture,geo_focus,Yuma AZ-El Centro CA,771,44
+solid wood dining table,geo_focus,Yuma AZ-El Centro CA,771,35
+handmade dining table,geo_focus,Yuma AZ-El Centro CA,771,0
+custom wood desk,geo_focus,Yuma AZ-El Centro CA,771,0
+custom dining table,geo_focus,Los Angeles CA,803,11
+custom furniture,geo_focus,Los Angeles CA,803,59
+solid wood dining table,geo_focus,Los Angeles CA,803,25
+handmade dining table,geo_focus,Los Angeles CA,803,2
+custom wood desk,geo_focus,Los Angeles CA,803,3
+custom dining table,geo_focus,Sacramento-Stockton-Modesto CA,862,13
+custom furniture,geo_focus,Sacramento-Stockton-Modesto CA,862,54
+solid wood dining table,geo_focus,Sacramento-Stockton-Modesto CA,862,28
+handmade dining table,geo_focus,Sacramento-Stockton-Modesto CA,862,2
+custom wood desk,geo_focus,Sacramento-Stockton-Modesto CA,862,3
+custom dining table,geo_focus,Santa Barbara-Santa Maria-San Luis Obispo CA,855,10
+custom furniture,geo_focus,Santa Barbara-Santa Maria-San Luis Obispo CA,855,61
+solid wood dining table,geo_focus,Santa Barbara-Santa Maria-San Luis Obispo CA,855,29
+handmade dining table,geo_focus,Santa Barbara-Santa Maria-San Luis Obispo CA,855,0
+custom wood desk,geo_focus,Santa Barbara-Santa Maria-San Luis Obispo CA,855,0
+custom dining table,geo_focus,Monterey-Salinas CA,828,13
+custom furniture,geo_focus,Monterey-Salinas CA,828,59
+solid wood dining table,geo_focus,Monterey-Salinas CA,828,28
+handmade dining table,geo_focus,Monterey-Salinas CA,828,0
+custom wood desk,geo_focus,Monterey-Salinas CA,828,0
+custom dining table,geo_focus,Medford-Klamath Falls OR,813,12
+custom furniture,geo_focus,Medford-Klamath Falls OR,813,58
+solid wood dining table,geo_focus,Medford-Klamath Falls OR,813,30
+handmade dining table,geo_focus,Medford-Klamath Falls OR,813,0
+custom wood desk,geo_focus,Medford-Klamath Falls OR,813,0
+custom dining table,geo_focus,Fresno-Visalia CA,866,11
+custom furniture,geo_focus,Fresno-Visalia CA,866,53
+solid wood dining table,geo_focus,Fresno-Visalia CA,866,30
+handmade dining table,geo_focus,Fresno-Visalia CA,866,4
+custom wood desk,geo_focus,Fresno-Visalia CA,866,2
+custom dining table,geo_focus,Reno NV,811,9
+custom furniture,geo_focus,Reno NV,811,60
+solid wood dining table,geo_focus,Reno NV,811,31
+handmade dining table,geo_focus,Reno NV,811,0
+custom wood desk,geo_focus,Reno NV,811,0
+custom dining table,geo_focus,Bakersfield CA,800,13
+custom furniture,geo_focus,Bakersfield CA,800,55
+solid wood dining table,geo_focus,Bakersfield CA,800,32
+handmade dining table,geo_focus,Bakersfield CA,800,0
+custom wood desk,geo_focus,Bakersfield CA,800,0
+custom dining table,geo_focus,Eureka CA,802,0
+custom furniture,geo_focus,Eureka CA,802,58
+solid wood dining table,geo_focus,Eureka CA,802,42
+handmade dining table,geo_focus,Eureka CA,802,0
+custom wood desk,geo_focus,Eureka CA,802,0
+custom dining table,geo_focus,Chico-Redding CA,868,0
+custom furniture,geo_focus,Chico-Redding CA,868,65
+solid wood dining table,geo_focus,Chico-Redding CA,868,35
+handmade dining table,geo_focus,Chico-Redding CA,868,0
+custom wood desk,geo_focus,Chico-Redding CA,868,0

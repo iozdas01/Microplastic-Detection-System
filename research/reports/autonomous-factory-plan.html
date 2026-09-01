@@ -1,0 +1,666 @@
+<title>Autonomous Furniture Factory</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;600;700&family=IBM+Plex+Mono:wght@400;500;600&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&display=swap">
+
+<style>
+:root {
+    --ground:   #EEF1EC;
+    --surface:  #FAFBF9;
+    --sunk:     #E4E8E1;
+    --ink:      #14180F;
+    --muted:    #5C6459;
+    --faint:    #838C7F;
+    --rule:     #D2D8CE;
+    --accent:   #24467C;
+    --supply:   #24467C;
+    --demand:   #96701C;
+    --alarm:    #8E3A26;
+
+    --display: "Archivo", "Helvetica Neue", Arial, sans-serif;
+    --body: "Source Serif 4", Georgia, "Times New Roman", serif;
+    --mono: "IBM Plex Mono", ui-monospace, "SF Mono", Menlo, monospace;
+
+    --measure: 34rem;
+    --wide: 60rem;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --ground:  #12150F;
+      --surface: #191D16;
+      --sunk:    #0D0F0B;
+      --ink:     #E8ECE4;
+      --muted:   #9AA396;
+      --faint:   #79826F;
+      --rule:    #2D3329;
+      --accent:  #86ABE8;
+      --supply:  #86ABE8;
+      --demand:  #D6AC4A;
+      --alarm:   #D97D63;
+    }
+  }
+
+  :root[data-theme="dark"] {
+    --ground:  #12150F;
+    --surface: #191D16;
+    --sunk:    #0D0F0B;
+    --ink:     #E8ECE4;
+    --muted:   #9AA396;
+    --faint:   #79826F;
+    --rule:    #2D3329;
+    --accent:  #86ABE8;
+    --supply:  #86ABE8;
+    --demand:  #D6AC4A;
+    --alarm:   #D97D63;
+  }
+
+  * { box-sizing: border-box; }
+
+  body {
+    background: var(--ground);
+    color: var(--ink);
+    font-family: var(--body);
+    font-size: 1.0625rem;
+    line-height: 1.65;
+    margin: 0;
+    padding: 0 1.5rem 6rem;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  .page { max-width: var(--wide); margin: 0 auto; }
+
+  /* Every direct child sits in the measure column by default; .bleed opts out. */
+  .flow { display: flex; flex-direction: column; gap: 1.25rem; }
+  .flow > * { max-width: var(--measure); margin-inline: 0; }
+  .flow > .bleed { max-width: 100%; width: 100%; }
+
+  /* ---------- type ---------- */
+  h1, h2, h3 { font-family: var(--display); text-wrap: balance; margin: 0; line-height: 1.15; }
+
+  h1 {
+    font-size: clamp(2.4rem, 6vw, 3.9rem);
+    font-weight: 700;
+    letter-spacing: -0.033em;
+  }
+
+  h2 {
+    font-size: clamp(1.35rem, 2.6vw, 1.7rem);
+    font-weight: 600;
+    letter-spacing: -0.017em;
+    padding-top: 2.75rem;
+    margin-top: 1.5rem;
+    border-top: 1px solid var(--rule);
+  }
+
+  h3 {
+    font-size: 1.03rem;
+    font-weight: 600;
+    letter-spacing: -0.005em;
+    margin-top: 1.25rem;
+  }
+
+  p { margin: 0; }
+  strong { font-weight: 600; }
+
+  .eyebrow {
+    font-family: var(--mono);
+    font-size: 0.7rem;
+    font-weight: 500;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--faint);
+  }
+
+  .lede {
+    font-size: 1.2rem;
+    line-height: 1.55;
+    color: var(--muted);
+  }
+
+  .note {
+    font-family: var(--mono);
+    font-size: 0.76rem;
+    line-height: 1.6;
+    color: var(--faint);
+  }
+
+  a { color: var(--accent); text-decoration-thickness: 1px; text-underline-offset: 2px; }
+  a:focus-visible, summary:focus-visible {
+    outline: 2px solid var(--accent);
+    outline-offset: 3px;
+    border-radius: 2px;
+  }
+
+  /* ---------- masthead ---------- */
+  .masthead { padding: 4.5rem 0 0; }
+  .masthead h1 { margin-bottom: 1.25rem; }
+
+  .stamp {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem 1.5rem;
+    padding-top: 1.5rem;
+    margin-top: 1.75rem;
+    border-top: 1px solid var(--rule);
+  }
+  .stamp div { font-family: var(--mono); font-size: 0.72rem; color: var(--faint); }
+  .stamp b {
+    display: block;
+    font-weight: 500;
+    color: var(--ink);
+    letter-spacing: -0.01em;
+  }
+
+  /* ---------- the divergence ---------- */
+  .diverge {
+    background: var(--surface);
+    border: 1px solid var(--rule);
+    padding: clamp(1.5rem, 4vw, 2.5rem);
+    display: grid;
+    gap: 1.75rem;
+  }
+
+  .method { display: grid; gap: 0.6rem; }
+
+  .method-head {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 1rem;
+    flex-wrap: wrap;
+  }
+
+  .method-name {
+    font-family: var(--display);
+    font-weight: 600;
+    font-size: 1rem;
+    letter-spacing: -0.01em;
+  }
+
+  .method-value {
+    font-family: var(--mono);
+    font-weight: 600;
+    font-size: clamp(1.5rem, 4vw, 2.1rem);
+    letter-spacing: -0.03em;
+    font-variant-numeric: tabular-nums;
+  }
+
+  .bar { height: 0.6rem; background: var(--sunk); overflow: hidden; }
+  .bar span { display: block; height: 100%; }
+
+  .m-demand .method-value, .m-demand .method-name { color: var(--demand); }
+  .m-demand .bar span { background: var(--demand); }  /* width set inline, from data */
+  .m-supply .method-value, .m-supply .method-name { color: var(--supply); }
+  .m-supply .bar span { background: var(--supply); }
+
+  .verdict {
+    border-top: 1px solid var(--rule);
+    padding-top: 1.5rem;
+    font-size: 1.03rem;
+  }
+  .verdict b { color: var(--alarm); font-weight: 600; }
+
+  /* ---------- findings ---------- */
+  .findings { display: grid; gap: 0; border-top: 1px solid var(--rule); }
+
+  .finding {
+    display: grid;
+    grid-template-columns: 5.5rem 1fr;
+    gap: 0 1.5rem;
+    padding: 1.5rem 0;
+    border-bottom: 1px solid var(--rule);
+    align-items: start;
+  }
+  .finding .tier {
+    font-family: var(--mono);
+    font-size: 0.7rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--faint);
+    padding-top: 0.28rem;
+  }
+  .finding h3 { margin: 0 0 0.4rem; }
+  .finding p { color: var(--muted); max-width: 34rem; }
+
+  @media (max-width: 34rem) {
+    .finding { grid-template-columns: 1fr; gap: 0.5rem; }
+  }
+
+  /* ---------- stat row ---------- */
+  .stats {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(11rem, 1fr));
+    gap: 1px;
+    background: var(--rule);
+    border: 1px solid var(--rule);
+  }
+  .stat { background: var(--surface); padding: 1.25rem 1.15rem; }
+  .stat .n {
+    font-family: var(--mono);
+    font-size: 1.6rem;
+    font-weight: 600;
+    letter-spacing: -0.035em;
+    font-variant-numeric: tabular-nums;
+    display: block;
+    line-height: 1.1;
+  }
+  .stat .k {
+    font-family: var(--mono);
+    font-size: 0.7rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--faint);
+    display: block;
+    margin-top: 0.5rem;
+  }
+  .stat .s { font-size: 0.86rem; color: var(--muted); display: block; margin-top: 0.3rem; }
+  .stat.neg .n { color: var(--alarm); }
+
+  /* ---------- tables ---------- */
+  .scroll { overflow-x: auto; }
+  table {
+    border-collapse: collapse;
+    width: 100%;
+    font-family: var(--mono);
+    font-size: 0.81rem;
+    font-variant-numeric: tabular-nums;
+  }
+  caption {
+    text-align: left;
+    font-family: var(--mono);
+    font-size: 0.7rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--faint);
+    padding-bottom: 0.7rem;
+  }
+  th, td {
+    text-align: left;
+    padding: 0.5rem 0.9rem 0.5rem 0;
+    border-bottom: 1px solid var(--rule);
+    white-space: nowrap;
+  }
+  thead th {
+    font-weight: 500;
+    color: var(--faint);
+    font-size: 0.7rem;
+    letter-spacing: 0.07em;
+    text-transform: uppercase;
+    border-bottom: 1px solid var(--ink);
+  }
+  td.num, th.num { text-align: right; padding-right: 0; }
+  tbody tr:last-child td { border-bottom: none; }
+  td.wrap { white-space: normal; min-width: 13rem; font-family: var(--body); font-size: 0.95rem; }
+  tr.lead td { background: color-mix(in srgb, var(--accent) 7%, transparent); font-weight: 500; }
+  .dim { color: var(--faint); }
+
+  /* proportional cell — a bar drawn behind the number */
+  td.plot { width: 40%; padding-right: 0; }
+  .track { display: block; height: 0.5rem; background: var(--sunk); }
+  .track i { display: block; height: 100%; background: var(--accent); }
+
+  /* ---------- callouts ---------- */
+  .callout {
+    border-left: 2px solid var(--accent);
+    padding: 0.15rem 0 0.15rem 1.25rem;
+    color: var(--muted);
+  }
+  .callout b { color: var(--ink); font-weight: 600; }
+
+  details {
+    border: 1px solid var(--rule);
+    background: var(--surface);
+    padding: 1rem 1.25rem;
+  }
+  summary {
+    cursor: pointer;
+    font-family: var(--display);
+    font-weight: 600;
+    font-size: 0.95rem;
+  }
+  details[open] summary { margin-bottom: 1rem; }
+
+  footer {
+    margin-top: 4rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid var(--rule);
+    max-width: 100%;
+  }
+
+  /* figures — used by the factory plan page; additive, no existing rule touched */
+  figure { margin: 0; }
+  figure svg { display: block; margin: 0 auto; color: var(--ink); }
+  figcaption {
+    margin-top: 0.9rem;
+    font-family: var(--mono);
+    font-size: 0.76rem;
+    line-height: 1.55;
+    color: var(--muted);
+    max-width: 46rem;
+  }
+  .phases { display: grid; gap: 1px; background: var(--rule); }
+  .phase { background: var(--surface); padding: 1.15rem 1.15rem 1.25rem; }
+  .phase .k {
+    display: block; font-family: var(--mono); font-size: 0.7rem;
+    letter-spacing: 0.08em; text-transform: uppercase; color: var(--faint);
+  }
+  .phase .n {
+    display: block; font-family: var(--display); font-size: 1.5rem;
+    margin: 0.35rem 0 0.5rem;
+  }
+  .phase p { font-size: 0.86rem; color: var(--muted); margin: 0; }
+  @media (min-width: 46rem) { .phases { grid-template-columns: repeat(3, 1fr); } }
+</style>
+
+<div class="page flow">
+
+  <header class="masthead bleed">
+    <div class="flow">
+      <p class="eyebrow">Build proposal · 28 August 2026</p>
+      <h1>A chair with no fasteners, and a factory that never assembles one</h1>
+      <p class="lede">A solid-timber cell cutting kigumi joinery on 5-axis machining
+      centres, with robots carrying parts between machines. Nothing is assembled in the
+      building — the customer does that by hand, without tools. On land we already own,
+      with three-phase service in place.</p>
+    </div>
+    <div class="stamp"><div><b>$4.8m</b>Phase 1 capital</div><div><b>11,250</b>Chairs / yr nameplate</div><div><b>2,671</b>Chairs / yr breakeven</div><div><b>47</b>Kigumi operations per chair</div></div>
+  </header>
+
+  <h2 id="proposition">The proposition</h2>
+
+  <p>Make a configurable dining chair from solid hardwood, joined the way a Japanese
+  temple is joined: interlocking <i>tsugite</i> and <i>shiguchi</i> geometry, tapered
+  wedges that tighten under load, and no screws, cams, dowels or glue anywhere in the
+  product. 47 machined joint operations per chair, cut
+  to the 0.1–0.2&nbsp;mm tolerance the method needs.</p>
+
+  <p>The article was not chosen by preference. Every furniture line was scored on demand
+  and on whether this process can make it, and
+  <b>kitchen and dining room furniture</b> came out first — dining chairs and tables are the
+  native home of frame joinery, and chairs sell in sets, so an order is
+  4 units rather than one.</p>
+
+  <div class="stats bleed">
+    <div class="stat"><span class="n">$88.01bn</span><span class="k">TAM</span><span class="s">US household furniture spend, all articles</span></div>
+    <div class="stat"><span class="n">$52.7m</span><span class="k">SAM</span><span class="s">configurable dining furniture, online-addressable</span></div>
+    <div class="stat"><span class="n">$2.8m</span><span class="k">SOM</span><span class="s">year 3 — 1,124 orders, 4,496 chairs</span></div>
+  </div>
+
+  <p class="callout">Three things in this plan cut against it, and all three are
+  load-bearing. <b>Phase 1 costs $4.8m</b>, well past the
+  $1.5–3m envelope this was scoped to — solid-timber 5-axis is a more capital-hungry
+  process than panel work, and the building adds
+  $1.9m on top. <b>The cell can make
+  2.3× what year-3 demand supports.</b> And <b>the plant
+  delivers a 32% gross margin at that volume, not the
+  56% the pricing assumes.</b></p>
+
+  <h2 id="kigumi">Why the joinery decides the factory</h2>
+
+  <p>Choosing kigumi is not a styling decision; it rewrites the equipment list. Three
+  consequences follow directly:</p>
+
+  <div class="findings">
+    <div class="finding"><span class="tier">Machines</span><div>
+      <h3>No nesting router, no edgebander</h3>
+      <p>Kigumi is cut in solid stock, not sheet. The plant is a lumber line feeding two
+      5-axis machining centres — the only kind of machine that can cut compound joint
+      geometry in one setup.</p></div></div>
+    <div class="finding"><span class="tier">Tolerance</span><div>
+      <h3>Moisture control is a machining input</h3>
+      <p>A joint held by geometry alone fails when the wood moves. Holding 0.1–0.2&nbsp;mm
+      means a kiln and a conditioning room upstream of the first cut — capex that a panel
+      shop simply does not carry.</p></div></div>
+    <div class="finding"><span class="tier">Product</span><div>
+      <h3>The bill of materials has no hardware line</h3>
+      <p>No cams, no dowels, no screws, no glue. It also means no assembly service to
+      sell: the customer assembles by hand, which removes the metro coverage that would
+      otherwise cap where we can sell at all.</p></div></div>
+  </div>
+
+  <h2 id="product">The article</h2>
+
+  <p>A dining chair in white oak, FAS, kiln dried: 9 part types,
+  47 joint operations,
+  5.67 finished board feet of timber. Every dimension in the
+  configurator moves these numbers, and the cell does not care which variant it is
+  cutting — that is the whole point of machining joints rather than jigging them.</p>
+
+  <div class="bleed scroll"><table><caption>One chair, part by part</caption><thead><tr><th class="wrap">Part</th><th class="num">Qty</th><th class="num">Finished mm</th><th class="num">Joint ops</th><th class="num">Finished bd ft</th></tr></thead><tbody><tr><td class="wrap">rear leg / stile</td><td class="num">2</td><td class="num">950×90×28</td><td class="num">8</td><td class="num">2.029</td></tr><tr><td class="wrap">front leg</td><td class="num">2</td><td class="num">440×42×42</td><td class="num">6</td><td class="num">0.658</td></tr><tr><td class="wrap">side rail</td><td class="num">2</td><td class="num">400×70×25</td><td class="num">4</td><td class="num">0.593</td></tr><tr><td class="wrap">front rail</td><td class="num">1</td><td class="num">420×70×25</td><td class="num">2</td><td class="num">0.311</td></tr><tr><td class="wrap">back rail</td><td class="num">1</td><td class="num">380×70×25</td><td class="num">2</td><td class="num">0.282</td></tr><tr><td class="wrap">crest rail</td><td class="num">1</td><td class="num">400×80×30</td><td class="num">3</td><td class="num">0.407</td></tr><tr><td class="wrap">back slat</td><td class="num">2</td><td class="num">300×60×16</td><td class="num">4</td><td class="num">0.244</td></tr><tr><td class="wrap">seat slat</td><td class="num">5</td><td class="num">420×70×18</td><td class="num">10</td><td class="num">1.121</td></tr><tr><td class="wrap">locking wedge / key</td><td class="num">8</td><td class="num">60×12×8</td><td class="num">8</td><td class="num">0.02</td></tr></tbody></table></div>
+  <div class="bleed scroll"><table><caption>Material cost per chair</caption><thead><tr><th class="wrap">Item</th><th class="num">Quantity</th><th class="num">Cost</th></tr></thead><tbody><tr><td class="wrap">rough white oak, FAS, kiln dried</td><td class="num">10.3</td><td class="num">$77.25</td></tr><tr><td class="wrap">finish (hardwax oil)</td><td class="num">—</td><td class="num">$5.20</td></tr><tr><td class="wrap">consumables and tooling</td><td class="num">—</td><td class="num">$4.40</td></tr><tr><td class="wrap">hardware</td><td class="num">0</td><td class="num">$0.00</td></tr><tr class="lead"><td class="wrap">total, incl. scrap</td><td class="num">—</td><td class="num">$91.20</td></tr></tbody></table></div>
+
+  <p>There is no hardware line because kigumi has no fasteners. The timber yield does the damage instead: rough stock is 1.82x the finished volume. At $7.50 a board foot,
+  10.3 rough board feet is
+  85% of material
+  cost. <b>Timber yield, not hardware, is the lever on this bill of materials</b> — every
+  point of yield recovered by better defect-skip optimisation goes straight to margin,
+  which is why the optimising crosscut is the first machine on the list and not an
+  afterthought.</p>
+
+  <h2 id="process">How it is made</h2>
+
+  <p>Six stations, batch size one, with a
+  12% changeover allowance because every chair is a
+  different size. Robots carry parts between the machining centres — that transfer is
+  where the autonomy lives.</p>
+
+  <figure class="bleed scroll"><svg viewBox="0 0 1292 268" role="img" aria-label="Process flow: kiln-dried timber runs through prep, two 5-axis machining centres that cut the kigumi joints, sanding, finishing and flat-packing. Robots carry parts between machines. The leg machining centre has the longest cycle and sets the factory takt. No assembly station exists; the customer assembles the chair by hand." style="max-width:100%;height:auto"><defs>
+    <marker id="ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7"
+            orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="currentColor"/>
+    </marker>
+    <marker id="arA" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7"
+            orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="var(--alarm)"/>
+    </marker>
+  </defs><rect x="8" y="168" width="92" height="78" rx="2" fill="none" stroke="currentColor" stroke-width="1.25" opacity="0.55"/><text x="54" y="200" text-anchor="middle" font-size="12.5" fill="currentColor">Kiln +</text><text x="54" y="217" text-anchor="middle" font-size="12.5" fill="currentColor">timber</text><rect x="118" y="168" width="128" height="78" rx="2" fill="none" stroke="currentColor" stroke-width="1.25"/><text x="182.0" y="195" text-anchor="middle" font-size="12.5" fill="currentColor">Timber prep</text><text x="182.0" y="212" text-anchor="middle" font-size="9.5" fill="currentColor" opacity="0.6">crosscut · rip · moulder</text><text x="182.0" y="234" text-anchor="middle" font-size="12.5" fill="currentColor" font-weight="600">5.2 min</text><line x1="104" y1="207.0" x2="112" y2="207.0" stroke="currentColor" stroke-width="1.25" marker-end="url(#ar)"/><rect x="292" y="168" width="128" height="78" rx="2" fill="none" stroke="var(--alarm)" stroke-width="2"/><text x="356.0" y="195" text-anchor="middle" font-size="12.5" fill="currentColor">5-axis · legs</text><text x="356.0" y="212" text-anchor="middle" font-size="9.5" fill="currentColor" opacity="0.6">machining centre 1</text><text x="356.0" y="234" text-anchor="middle" font-size="12.5" fill="var(--alarm)" font-weight="600">13.4 min</text><line x1="250" y1="207.0" x2="286" y2="207.0" stroke="currentColor" stroke-width="1.25" marker-end="url(#ar)"/><text x="269.0" y="197.0" text-anchor="middle" font-size="9.5" fill="currentColor" opacity="0.8">robot</text><text x="356.0" y="156" text-anchor="middle" font-size="11.5" fill="var(--alarm)" font-weight="600">the constraint</text><rect x="466" y="168" width="128" height="78" rx="2" fill="none" stroke="currentColor" stroke-width="1.25"/><text x="530.0" y="195" text-anchor="middle" font-size="12.5" fill="currentColor">5-axis · rails</text><text x="530.0" y="212" text-anchor="middle" font-size="9.5" fill="currentColor" opacity="0.6">machining centre 2</text><text x="530.0" y="234" text-anchor="middle" font-size="12.5" fill="currentColor" font-weight="600">10.6 min</text><line x1="424" y1="207.0" x2="460" y2="207.0" stroke="currentColor" stroke-width="1.25" marker-end="url(#ar)"/><text x="443.0" y="197.0" text-anchor="middle" font-size="9.5" fill="currentColor" opacity="0.8">robot</text><rect x="640" y="168" width="128" height="78" rx="2" fill="none" stroke="currentColor" stroke-width="1.25"/><text x="704.0" y="195" text-anchor="middle" font-size="12.5" fill="currentColor">Sanding</text><text x="704.0" y="212" text-anchor="middle" font-size="9.5" fill="currentColor" opacity="0.6">wide-belt + profile</text><text x="704.0" y="234" text-anchor="middle" font-size="12.5" fill="currentColor" font-weight="600">7.1 min</text><line x1="598" y1="207.0" x2="634" y2="207.0" stroke="currentColor" stroke-width="1.25" marker-end="url(#ar)"/><text x="617.0" y="197.0" text-anchor="middle" font-size="9.5" fill="currentColor" opacity="0.8">robot</text><rect x="814" y="168" width="128" height="78" rx="2" fill="none" stroke="currentColor" stroke-width="1.25"/><text x="878.0" y="195" text-anchor="middle" font-size="12.5" fill="currentColor">Finishing</text><text x="878.0" y="212" text-anchor="middle" font-size="9.5" fill="currentColor" opacity="0.6">oil · cure racks</text><text x="878.0" y="234" text-anchor="middle" font-size="12.5" fill="currentColor" font-weight="600">5.8 min</text><line x1="772" y1="207.0" x2="808" y2="207.0" stroke="currentColor" stroke-width="1.25" marker-end="url(#ar)"/><rect x="988" y="168" width="128" height="78" rx="2" fill="none" stroke="currentColor" stroke-width="1.25"/><text x="1052.0" y="195" text-anchor="middle" font-size="12.5" fill="currentColor">QC + flat-pack</text><text x="1052.0" y="212" text-anchor="middle" font-size="9.5" fill="currentColor" opacity="0.6">no assembly here</text><text x="1052.0" y="234" text-anchor="middle" font-size="12.5" fill="currentColor" font-weight="600">6.2 min</text><line x1="946" y1="207.0" x2="982" y2="207.0" stroke="currentColor" stroke-width="1.25" marker-end="url(#ar)"/><line x1="1120" y1="207.0" x2="1156" y2="207.0" stroke="currentColor" stroke-width="1.25" marker-end="url(#ar)"/><rect x="1162" y="168" width="112" height="78" rx="2" fill="none" stroke="currentColor" stroke-width="1.25" opacity="0.55"/><text x="1218" y="200" text-anchor="middle" font-size="12.5" fill="currentColor">Ship parts</text><text x="1218" y="217" text-anchor="middle" font-size="10" fill="currentColor" opacity="0.6">customer assembles</text><rect x="8" y="42" width="300" height="62" rx="2" fill="none" stroke="currentColor" stroke-width="1.25" stroke-dasharray="5 4" opacity="0.65"/><text x="22" y="64" font-size="11" fill="currentColor" opacity="0.8">THE AUTONOMY IS THE TRANSFER</text><text x="22" y="82" font-size="11" fill="currentColor" opacity="0.7">robots carry parts machine to machine —</text><text x="22" y="97" font-size="11" fill="currentColor" opacity="0.7">nothing is assembled in this building</text><rect x="268" y="42" width="252" height="62" rx="2" fill="none" stroke="var(--alarm)" stroke-width="1.25" stroke-dasharray="5 4"/><text x="282" y="64" font-size="11" fill="var(--alarm)">JOINT CUTTING SETS THE TAKT</text><text x="282" y="82" font-size="11" fill="var(--alarm)" opacity="0.85">47 kigumi operations a chair, and the</text><text x="282" y="97" font-size="11" fill="var(--alarm)" opacity="0.85">legs carry the most of them</text><line x1="356" y1="104" x2="356" y2="138" stroke="var(--alarm)" stroke-width="1.25" stroke-dasharray="5 4" marker-end="url(#arA)"/></svg><figcaption>Cycle time per chair at each station, including a changeover allowance. Robots move parts between machining centres — that transfer is what makes the cell autonomous, not robotic assembly. The plant never assembles a chair: it machines, finishes, test-fits and flat-packs.</figcaption></figure>
+
+  <p>The slowest station sets takt at <b>13.4 minutes a
+  chair</b>, and it is the leg machining centre: the legs carry more joint operations than
+  any other part. At 2 shifts and 72% OEE that is
+  <b>11,250 chairs a year</b> —
+  2,812 orders of 4, or
+  22 chairs a shift.</p>
+
+  <p class="callout">No assembly station exists. The plant machines, finishes, test-fits and flat-packs; the customer assembles by hand. That is worth stating plainly because it is what
+  makes the automation tractable. <b>Robotic assembly of a varying part mix is not a
+  solved problem; robotic transfer between machines is.</b> By moving assembly to the
+  customer, the plant only ever has to automate the part of the job that automation is
+  actually good at.</p>
+<div class="bleed scroll"><table><caption>Station cycle times and how much of takt each consumes</caption><thead><tr><th class="wrap">Station</th><th class="num">Machine min</th><th class="num">Handling min</th><th class="num">Cycle min</th><th></th><th class="num">Load</th></tr></thead><tbody><tr><td class="wrap">timber prep — crosscut, rip, moulder</td><td class="num">3.2</td><td class="num">1.4</td><td class="num">5.2</td><td class="plot"><span class="track"><i style="width:38.30%"></i></span></td><td class="num">38%</td></tr><tr class="lead"><td class="wrap">5-axis joinery — legs and stiles</td><td class="num">11.0</td><td class="num">1.0</td><td class="num">13.4</td><td class="plot"><span class="track"><i style="width:100.00%"></i></span></td><td class="num">100%</td></tr><tr><td class="wrap">5-axis joinery — rails, slats and keys</td><td class="num">8.5</td><td class="num">1.0</td><td class="num">10.6</td><td class="plot"><span class="track"><i style="width:79.20%"></i></span></td><td class="num">79%</td></tr><tr><td class="wrap">sanding and surface prep</td><td class="num">4.5</td><td class="num">1.8</td><td class="num">7.1</td><td class="plot"><span class="track"><i style="width:52.50%"></i></span></td><td class="num">52%</td></tr><tr><td class="wrap">finishing — oil and cure</td><td class="num">3.0</td><td class="num">2.2</td><td class="num">5.8</td><td class="plot"><span class="track"><i style="width:43.30%"></i></span></td><td class="num">43%</td></tr><tr><td class="wrap">QC, joint test-fit and flat-pack</td><td class="num">0.0</td><td class="num">5.5</td><td class="num">6.2</td><td class="plot"><span class="track"><i style="width:45.80%"></i></span></td><td class="num">46%</td></tr></tbody></table></div>
+
+  <p>The second machining centre runs at
+  79%
+  of takt, so it has headroom. Rebalancing which parts go to which centre — or adding
+  fixturing so the leg centre changes over faster — buys output without buying a machine.
+  That is the first thing to try before a third 5-axis.</p>
+
+  <h2 id="assembly">Should a robot assemble the chair?</h2>
+
+  <p>Robot-assembly foundation models make this a live question rather than a settled one,
+  so it is costed here rather than argued. Three ways to finish the job, same cell, same
+  timber, same joints.</p>
+
+  <div class="bleed scroll"><table><caption>Assembly options, costed per chair at 4,500 chairs a year against a $633 chair</caption><thead><tr><th class="wrap">Option</th><th class="num">Takt min</th><th class="num">Freight</th><th class="num">Phase 1 capex</th><th class="num">Cost / chair</th><th class="num">Gross margin</th></tr></thead><tbody><tr class="lead"><td class="wrap">Customer assembles by hand</td><td class="num">13.4</td><td class="num">$28</td><td class="num">$4.8m</td><td class="num">$431</td><td class="num">32%</td></tr><tr><td class="wrap">Robot assembles in the factory, ship assembled</td><td class="num">13.4</td><td class="num">$124</td><td class="num">$5.2m</td><td class="num">$576</td><td class="num">9%</td></tr><tr><td class="wrap">Robot test-fits every chair, then flat-packs</td><td class="num">13.4</td><td class="num">$28</td><td class="num">$5.1m</td><td class="num">$445</td><td class="num">30%</td></tr></tbody></table></div>
+
+  <p>None of the three changes takt: a 13.4-minute cell is
+  still gated by the leg machining centre, so an assembly station has slack to hide in.
+  What changes is freight. <b>An assembled chair is roughly six times the shipping volume
+  of its parts</b>, which takes freight from $28 to
+  $124 a chair and packaging with it.</p>
+
+  <p class="callout">Shipping assembled costs
+  <b>$145 more a chair</b>
+  and takes gross margin from
+  32% to
+  9%. Almost none of that is
+  the robot — it is the box. Robotic assembly does not fix the margin problem in this
+  plan, <b>it is the margin problem</b>, because the thing that makes this product cheap
+  to deliver is that it ships as a flat bundle of sticks.</p>
+
+  <h3>The version worth doing</h3>
+  <p>There is a robot job here, and it is the third row. <b>Have the robot assemble every
+  chair to prove the joints seat, then take it apart and flat-pack it.</b> That costs
+  $13 a chair —
+  2.1%
+  of the selling price — and it attacks the one defect this product actually has. A chair
+  held together by geometry alone either fits or it does not, and the customer is the one
+  who finds out. A test-fit station moves that discovery inside the building.</p>
+
+  <p>It is also a far more tractable robotics problem. Test-fit is the same motion on a
+  known part set in a fixture, with force feedback telling you whether a tapered joint
+  seated. Full assembly is a varying part mix, unconstrained poses and compliance under
+  load.</p>
+
+  <h3>On the foundation-model route specifically</h3>
+  <p>Skild AI announced S1 on 25 August 2026: a robot foundation model that learns a
+  ten-minute task from a single human video, reporting 66% success on unseen tasks against
+  9% for a language-prompted policy, with kit assembly among the demonstrated tasks. The
+  capability direction is real and it is pointed at exactly this problem.</p>
+
+  <p class="callout">Two things make it a phase 3 item rather than a phase 1 one.
+  <b>66% first-pass success is a demo number, not a production number</b> — a station that
+  fails one chair in three needs a person standing next to it, which is the cost the
+  automation was meant to remove. And at announcement there were <b>no weights, no API and
+  no paper</b>, so there is nothing to integrate against or to price. The right posture is
+  to design the test-fit cell with a swappable policy layer, run it on conventional
+  force-controlled motion now, and adopt a foundation model when it ships with an
+  integration path and a published success rate on a fixed part set.</p>
+
+  <h2 id="layout">The floor</h2>
+
+  <p>16,000 sq ft on owned land. Solid timber needs more building than
+  panel work: rough stock, the kiln and the conditioning room take floor before a part is
+  cut. The layout reserves footprints for the phase 2 drop-ins so nothing has to move.</p>
+
+  <figure class="bleed scroll"><svg viewBox="0 0 900 440" role="img" aria-label="Factory floor plan: rough timber and the kiln occupy the left of the building, the rough mill and finishing the centre-left, two 5-axis machining centres with a robot between them in the middle, and sanding, quality control and flat-packing on the right beside the dock. Dashed footprints mark space reserved for phase 2 robotic sanding and an automated oil line." style="max-width:100%;height:auto"><defs>
+    <marker id="ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7"
+            orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="currentColor"/>
+    </marker>
+    <marker id="arA" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7"
+            orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="var(--alarm)"/>
+    </marker>
+  </defs><rect x="20" y="48" width="860" height="348" fill="none" stroke="currentColor" stroke-width="2"/><text x="20" y="30" font-size="12" fill="currentColor" opacity="0.7">16,000 sq ft · owned land, three-phase service in place · timber in at the left, flat-packed parts out at the right</text><rect x="36" y="64" width="150" height="154" rx="2" fill="none" stroke="currentColor" stroke-width="1.25" opacity="0.75"/><text x="111.0" y="137.0" text-anchor="middle" font-size="13" fill="currentColor">Rough timber</text><text x="111.0" y="156.0" text-anchor="middle" font-size="10.5" fill="currentColor" opacity="0.8">racked, air-dried</text><rect x="36" y="232" width="150" height="148" rx="2" fill="none" stroke="currentColor" stroke-width="1.25" opacity="0.75"/><text x="111.0" y="302.0" text-anchor="middle" font-size="13" fill="currentColor">Kiln + conditioning</text><text x="111.0" y="321.0" text-anchor="middle" font-size="10.5" fill="currentColor" opacity="0.8">6% MC, tolerance control</text><rect x="206" y="64" width="172" height="154" rx="2" fill="none" stroke="currentColor" stroke-width="1.25" opacity="0.75"/><text x="292.0" y="137.0" text-anchor="middle" font-size="13" fill="currentColor">Rough mill</text><text x="292.0" y="156.0" text-anchor="middle" font-size="10.5" fill="currentColor" opacity="0.8">crosscut · rip · moulder</text><rect x="206" y="232" width="172" height="148" rx="2" fill="none" stroke="currentColor" stroke-width="1.25" opacity="0.75"/><text x="292.0" y="302.0" text-anchor="middle" font-size="13" fill="currentColor">Finishing + cure</text><text x="292.0" y="321.0" text-anchor="middle" font-size="10.5" fill="currentColor" opacity="0.8">oil · racks</text><rect x="398" y="64" width="212" height="316" rx="2" fill="none" stroke="var(--alarm)" stroke-width="2" opacity="1"/><text x="504.0" y="218.0" text-anchor="middle" font-size="13" fill="currentColor">5-axis joinery</text><text x="504.0" y="237.0" text-anchor="middle" font-size="10.5" fill="var(--alarm)" opacity="0.8">two centres, robot between</text><rect x="630" y="64" width="232" height="154" rx="2" fill="none" stroke="currentColor" stroke-width="1.25" opacity="0.75"/><text x="746.0" y="137.0" text-anchor="middle" font-size="13" fill="currentColor">Sanding</text><text x="746.0" y="156.0" text-anchor="middle" font-size="10.5" fill="currentColor" opacity="0.8">wide-belt + profile</text><rect x="630" y="232" width="232" height="148" rx="2" fill="none" stroke="currentColor" stroke-width="1.25" opacity="0.75"/><text x="746.0" y="302.0" text-anchor="middle" font-size="13" fill="currentColor">QC, flat-pack, dock</text><text x="746.0" y="321.0" text-anchor="middle" font-size="10.5" fill="currentColor" opacity="0.8">no assembly</text><line x1="186" y1="141" x2="200" y2="141" stroke="currentColor" stroke-width="1.25" marker-end="url(#ar)"/><text x="190" y="132" font-size="10.5" fill="currentColor" opacity="0.7">boards</text><line x1="292" y1="218" x2="292" y2="226" stroke="currentColor" stroke-width="1.25" marker-end="url(#ar)"/><text x="299" y="226" font-size="10.5" fill="currentColor" opacity="0.7">blanks</text><line x1="378" y1="141" x2="392" y2="141" stroke="currentColor" stroke-width="1.25" marker-end="url(#ar)"/><text x="381" y="132" font-size="10.5" fill="currentColor" opacity="0.7">S4S</text><line x1="610" y1="141" x2="624" y2="141" stroke="currentColor" stroke-width="1.25" marker-end="url(#ar)"/><text x="613" y="132" font-size="10.5" fill="currentColor" opacity="0.7">parts</text><line x1="746" y1="218" x2="746" y2="226" stroke="currentColor" stroke-width="1.25" marker-end="url(#ar)"/><text x="753" y="226" font-size="10.5" fill="currentColor" opacity="0.7">kits</text><circle cx="504" cy="222" r="17" fill="none" stroke="var(--alarm)" stroke-width="1.5"/><text x="504" y="226" text-anchor="middle" font-size="10.5" fill="var(--alarm)">R1</text><text x="504" y="262" text-anchor="middle" font-size="10.5" fill="var(--alarm)" opacity="0.85">6-axis transfer</text><rect x="644" y="78" width="204" height="58" rx="2" fill="none" stroke="currentColor" stroke-width="1.25" stroke-dasharray="5 4" opacity="0.6"/><text x="746" y="112" text-anchor="middle" font-size="10.5" fill="currentColor" opacity="0.7">phase 2 · robotic sanding</text><rect x="218" y="246" width="148" height="56" rx="2" fill="none" stroke="currentColor" stroke-width="1.25" stroke-dasharray="5 4" opacity="0.6"/><text x="292" y="279" text-anchor="middle" font-size="10.5" fill="currentColor" opacity="0.7">phase 2 · auto oil line</text></svg><figcaption>Timber enters at the left and leaves as flat-packed parts at the right, so nothing crosses its own path. The kiln and conditioning room sit upstream of everything: at 0.1–0.2 mm joint tolerance, moisture control is a machining input, not a storage detail.</figcaption></figure>
+<h3>Phase 1 — the cell</h3>
+<p>The lumber line, both machining centres, the robot transfers and finishing. Five people across two shifts.</p>
+<div class="bleed scroll"><table><caption>Phase 1 equipment schedule</caption><thead><tr><th class="wrap">Category</th><th class="wrap">Make and model</th><th class="num">Cost</th><th class="wrap">Basis of price</th></tr></thead><tbody><tr><td class="wrap">Timber</td><td class="wrap">Weinig OptiCut-class optimising crosscut with scanning</td><td class="num">$178,000</td><td class="wrap">indicative; defect-skip optimisation is what protects the timber yield</td></tr><tr><td class="wrap">Timber</td><td class="wrap">Straight-line / gang rip saw</td><td class="num">$118,000</td><td class="wrap">indicative</td></tr><tr><td class="wrap">Timber</td><td class="wrap">Four-side moulder, Weinig Powermat-class, to S4S blanks</td><td class="num">$224,000</td><td class="wrap">indicative</td></tr><tr><td class="wrap">Timber</td><td class="wrap">Dehumidification kiln and conditioning room, 6% MC control</td><td class="num">$142,000</td><td class="wrap">kigumi needs 0.1-0.2mm stability; this is a tolerance item, not a nicety</td></tr><tr><td class="wrap">Machining</td><td class="wrap">5-axis CNC machining centre — legs and stiles (SCM Accord / HOMAG CENTATEQ P-310 class)</td><td class="num">$395,000</td><td class="wrap">5-axis is required for tsugite and shiguchi geometry</td></tr><tr><td class="wrap">Machining</td><td class="wrap">5-axis CNC machining centre — rails, slats and keys</td><td class="num">$395,000</td><td class="wrap">second centre so fixtures need not change between part families</td></tr><tr><td class="wrap">Robotics</td><td class="wrap">6-axis robot transfer cell with vision part ID, between machining centres</td><td class="num">$188,000</td><td class="wrap">this is the autonomy: parts move machine to machine without a person</td></tr><tr><td class="wrap">Robotics</td><td class="wrap">Robot load/unload gantry for the lumber line to CNC handoff</td><td class="num">$146,000</td><td class="wrap">indicative</td></tr><tr><td class="wrap">Finishing</td><td class="wrap">Wide-belt sander and profile sanding</td><td class="num">$96,000</td><td class="wrap">indicative</td></tr><tr><td class="wrap">Finishing</td><td class="wrap">Oil application booth, cure racks and extraction</td><td class="num">$158,000</td><td class="wrap">indicative</td></tr><tr><td class="wrap">Quality</td><td class="wrap">Optical joint metrology — first-off and SPC on joint fit</td><td class="num">$68,000</td><td class="wrap">the joint is the product; measuring it cannot be optional</td></tr><tr><td class="wrap">Services</td><td class="wrap">Dust and chip extraction, silo and briquetting</td><td class="num">$98,000</td><td class="wrap">solid timber makes far more waste volume than panel work</td></tr><tr><td class="wrap">Services</td><td class="wrap">Compressor, dryer and ring main</td><td class="num">$28,000</td><td class="wrap">indicative</td></tr><tr><td class="wrap">Packing</td><td class="wrap">Carton erector, part-kitting station, strapping and labelling</td><td class="num">$72,000</td><td class="wrap">no assembly line — this is the last station in the plant</td></tr><tr><td class="wrap">Software</td><td class="wrap">5-axis CAM, joint parametrics, nesting and MES licences</td><td class="num">$145,000</td><td class="wrap">perpetual plus first year; subscription carried in opex</td></tr><tr><td class="wrap">Software</td><td class="wrap">Customer-facing configurator build and integration</td><td class="num">$150,000</td><td class="wrap">the demand-side experiment the market model asks for</td></tr><tr><td class="wrap">Install</td><td class="wrap">Rigging, power distribution, air, commissioning and training</td><td class="num">$212,000</td><td class="wrap">typically 8-12% of equipment value</td></tr><tr><td class="wrap">Facility</td><td class="wrap">Timber racking, floor prep, tooling and spares package</td><td class="num">$82,000</td><td class="wrap">indicative</td></tr><tr class="lead"><td class="wrap"></td><td class="wrap"><b>total</b></td><td class="num"><b>$2,895,000</b></td><td class="wrap"></td></tr></tbody></table></div>
+<h3>Phase 2 — automate the two manual stations</h3>
+<p>Robotic sanding and an automated oil line. Trigger: sustained two-shift running above 60% utilisation.</p>
+<div class="bleed scroll"><table><caption>Phase 2 equipment schedule</caption><thead><tr><th class="wrap">Category</th><th class="wrap">Make and model</th><th class="num">Cost</th><th class="wrap">Basis of price</th></tr></thead><tbody><tr><td class="wrap">Robotics</td><td class="wrap">Robotic sanding cell with force-compliant end effector</td><td class="num">$214,000</td><td class="wrap">phase 2 — removes the second-largest manual station</td></tr><tr><td class="wrap">Robotics</td><td class="wrap">AMR fleet for inter-station and finished-goods transport</td><td class="num">$124,000</td><td class="wrap">phase 2</td></tr><tr><td class="wrap">Finishing</td><td class="wrap">Automated oil line with inline cure</td><td class="num">$186,000</td><td class="wrap">phase 2</td></tr><tr class="lead"><td class="wrap"></td><td class="wrap"><b>total</b></td><td class="num"><b>$524,000</b></td><td class="wrap"></td></tr></tbody></table></div>
+<h3>Phase 3 — lights-out</h3>
+<p>Automated timber grading in, automated kitting out. Trigger: demand above nameplate, not before.</p>
+<div class="bleed scroll"><table><caption>Phase 3 equipment schedule</caption><thead><tr><th class="wrap">Category</th><th class="wrap">Make and model</th><th class="num">Cost</th><th class="wrap">Basis of price</th></tr></thead><tbody><tr><td class="wrap">Timber</td><td class="wrap">Automated rough-mill grading, scanning and infeed</td><td class="num">$340,000</td><td class="wrap">phase 3 — the last manual touch on the timber side</td></tr><tr><td class="wrap">Packing</td><td class="wrap">Automated kitting and carton pack cell</td><td class="num">$265,000</td><td class="wrap">phase 3</td></tr><tr class="lead"><td class="wrap"></td><td class="wrap"><b>total</b></td><td class="num"><b>$605,000</b></td><td class="wrap"></td></tr></tbody></table></div>
+
+  <p class="note">Machine prices in this industry are quote-driven, not listed; each row
+  carries its basis. The whole schedule is written to
+  <span class="note">data/reference/equipment.csv</span> so real quotes can replace it
+  without editing any code.</p>
+
+  <h2 id="capital">What it costs to build</h2>
+
+  <div class="bleed scroll"><table><caption>Phase 1 capital plan</caption><thead><tr><th class="wrap">Line</th><th class="num">Cost</th><th class="wrap">Note</th></tr></thead><tbody><tr><td class="wrap">Equipment, phase 1</td><td class="num">$2.9m</td><td class="wrap">lumber line, two 5-axis centres, robots, finishing, software</td></tr><tr><td class="wrap">Building shell</td><td class="num">$1.9m</td><td class="wrap">16,000 sq ft at $118/sq ft</td></tr><tr><td class="wrap">Land</td><td class="num">$0</td><td class="wrap">already owned</td></tr><tr><td class="wrap">Three-phase power connection</td><td class="num">$0</td><td class="wrap">already on site</td></tr><tr class="lead"><td class="wrap">Phase 1 total</td><td class="num">$4.8m</td><td class="wrap">what the first raise must cover</td></tr></tbody></table></div>
+
+  <p class="callout">This does not fit the envelope. Phase 1 is
+  <b>$4.8m</b> against a $1.5–3m target, and owning the
+  land removes the land cost, not the shell. Four ways to close the gap, in the order I
+  would take them: <b>start with one machining centre</b> and the robot transfer to
+  sanding, which cuts roughly $580k and still proves the autonomy thesis;
+  <b>fit out an existing structure</b> if one is on the parcel
+  ($544.0k rather than
+  $1.9m); <b>buy the lumber line used</b>, where
+  moulders and crosscuts trade at a fraction of new; and <b>defer the optical metrology
+  cell</b>, running first-off checks on gauges until volume justifies SPC.</p>
+
+  <div class="phases bleed">
+    <div class="phase"><span class="k">Phase 1</span>
+      <span class="n">$4.8m</span>
+      <p>The cell plus the building. Five on the floor across two shifts.</p></div>
+    <div class="phase"><span class="k">Phase 2</span>
+      <span class="n">$524.0k</span>
+      <p>Robotic sanding, automated oiling, AMR transport.</p></div>
+    <div class="phase"><span class="k">Phase 3</span>
+      <span class="n">$605.0k</span>
+      <p>Automated timber grading and kitting — the last manual touches.</p></div>
+  </div>
+
+  <h2 id="operating">What it costs to run</h2>
+
+  <p>BLS average hourly earnings, furniture production employees, 2026-07: $25.08/h, loaded to $32.85 at 1.31x. Headcount is
+  5 across 2 shifts. Worth noting what that wage
+  has been doing: it is up 34.9% since January 2020 while employment in furniture
+  manufacturing fell 13.7% — which is the quantitative case for automating at all.</p>
+
+  <div class="bleed scroll"><table><caption>Annual fixed cost</caption><thead><tr><th class="wrap">Line</th><th class="num">Per year</th><th class="wrap"></th></tr></thead><tbody><tr><td class="wrap">direct labour (hourly, loaded)</td><td class="num">$460.0k</td><td class="wrap"></td></tr><tr><td class="wrap">salaried</td><td class="num">$128.4k</td><td class="wrap"></td></tr><tr><td class="wrap">electricity</td><td class="num">$37.9k</td><td class="wrap"></td></tr><tr><td class="wrap">maintenance, tooling and spares</td><td class="num">$159.2k</td><td class="wrap"></td></tr><tr><td class="wrap">software subscription</td><td class="num">$44.0k</td><td class="wrap"></td></tr><tr><td class="wrap">insurance</td><td class="num">$57.4k</td><td class="wrap"></td></tr><tr><td class="wrap">equipment depreciation</td><td class="num">$361.9k</td><td class="wrap"></td></tr><tr><td class="wrap">building depreciation</td><td class="num">$75.5k</td><td class="wrap"></td></tr><tr class="lead"><td class="wrap"><b>total</b></td><td class="num"><b>$1.3m</b></td><td class="wrap"></td></tr></tbody></table></div>
+
+  <h2 id="unitcost">The unit cost curve</h2>
+
+  <p>Variable cost is <b>$137</b> a chair — timber, finish,
+  packaging and freight. Everything else is fixed, so cost per chair is almost entirely a
+  question of volume. unit cost is per chair and full-absorption: it carries depreciation on both the equipment and the building. annual_fixed_cash_usd strips depreciation out, and is the number that matters for runway.</p>
+
+  <div class="bleed scroll"><table><caption>Cost per chair against a $633 selling price ($2,532 for a set of 4)</caption><thead><tr><th class="num">Chairs / yr</th><th class="num">Orders / yr</th><th></th><th class="num">Cost / chair</th><th class="num">of which fixed</th><th class="num">Gross margin</th></tr></thead><tbody><tr><td class="num">2,000</td><td class="num">500</td><td class="plot"><span class="track"><i style="width:100.00%"></i></span></td><td class="num">$799</td><td class="num">$662</td><td class="num">-26%</td></tr><tr><td class="num">4,000</td><td class="num">1,000</td><td class="plot"><span class="track"><i style="width:58.58%"></i></span></td><td class="num">$468</td><td class="num">$331</td><td class="num">26%</td></tr><tr><td class="num">6,000</td><td class="num">1,500</td><td class="plot"><span class="track"><i style="width:44.78%"></i></span></td><td class="num">$358</td><td class="num">$221</td><td class="num">43%</td></tr><tr><td class="num">8,000</td><td class="num">2,000</td><td class="plot"><span class="track"><i style="width:37.87%"></i></span></td><td class="num">$303</td><td class="num">$166</td><td class="num">52%</td></tr><tr><td class="num">11,250</td><td class="num">2,812</td><td class="plot"><span class="track"><i style="width:31.89%"></i></span></td><td class="num">$255</td><td class="num">$118</td><td class="num">60%</td></tr><tr><td class="num">12,000</td><td class="num">3,000</td><td class="plot"><span class="track"><i style="width:30.97%"></i></span></td><td class="num">$248</td><td class="num">$110</td><td class="num">61%</td></tr><tr><td class="num">16,000</td><td class="num">4,000</td><td class="plot"><span class="track"><i style="width:27.52%"></i></span></td><td class="num">$220</td><td class="num">$83</td><td class="num">65%</td></tr></tbody></table></div>
+
+  <p>Breakeven is <b>2,671 chairs a year</b>
+  (668 orders) fully absorbed, or
+  447 orders on a cash basis —
+  24% of nameplate. Contribution is
+  $1,983 an order against a
+  $549 variable cost, so past breakeven this model is
+  steep and rewards volume hard.</p>
+
+  <h2 id="tension">Where the plan does not yet hold</h2>
+
+  <h3>The cell is 2.3× bigger than the demand</h3>
+  <p>Capacity is 2,812 orders a year. The market model
+  supports 1,249 at year 3 — 6% of SAM at the blended order value — an assumption.
+  Demand binds, and it is not the factory. The gap
+  is narrower than it was for a panel plant, because 5-axis joinery is slow work, but it is
+  still a plant running at 40% of
+  what it was bought for.</p>
+
+  <h3>The pricing assumes a margin the plant does not deliver</h3>
+  <p>The tier ladder assumes 56%. At the year-3 volume of
+  1,124 orders — 4,496 chairs — the modelled cost is
+  <b>$432 a chair</b>, or
+  $1,727 a set, against a
+  $2,532 order. That is 32%, not
+  56%. The two converge as fixed cost spreads; until they do,
+  the cost model is the one with a factory behind it.</p>
+
+  <p class="callout">Both problems have one shape: <b>this is a capital-heavy,
+  volume-hungry plan whose demand evidence is its thinnest part.</b> The measured
+  custom-search share under the SAM is
+  0.55%; everything above it is assumption.
+  The configurator is already a
+  $150,000
+  line inside phase 1 and it is the one experiment that tests the assumption the other
+  $4.8m rests on. <b>Run it before the slab is poured, not
+  after.</b> A kigumi chair with no fasteners is also unusually cheap to prototype — one
+  machining centre on a subcontract basis will produce a sellable chair long before there
+  is a building to put it in.</p>
+
+  <h2 id="method">How this was built</h2>
+
+  <p>Demand comes from <span class="note">scripts/build_tam_us.py</span>, which sizes the market from
+  Census and BLS data and scores every furniture article on whether this process can make
+  it. The factory comes from <span class="note">scripts/build_factory.py</span>, which derives capacity
+  from per-station cycle times and cost from a bill of materials, the BLS production wage
+  and a named equipment schedule. Supply runs first and demand consumes its capacity and
+  cost, so the two cannot silently disagree.</p>
+
+  <p class="callout">Every figure on this page is computed by
+  <span class="note">scripts/build_plan_page.py</span> from those two models — none is typed. The
+  assumptions live in one block at the top of each script.
+  <b>Change one, re-run, and this page rewrites itself.</b></p>
+
+  <footer>
+    <p class="note">Equipment prices indicative and quote-driven; wage and price series
+    from BLS; market data from Census, BLS and Google Trends. Joinery method after the
+    kigumi tradition of tsugite and shiguchi. Compiled 28 August 2026.
+    Generated by scripts/build_plan_page.py.</p>
+  </footer>
+
+</div>

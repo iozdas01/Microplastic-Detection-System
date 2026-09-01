@@ -1,0 +1,2500 @@
+keyword,batch,geo_name,geo_code,index
+dining table,0,Wyoming,US-WY,9
+sofa,0,Wyoming,US-WY,33
+bed frame,0,Wyoming,US-WY,10
+desk,0,Wyoming,US-WY,41
+bookshelf,0,Wyoming,US-WY,7
+dining table,0,New Jersey,US-NJ,13
+sofa,0,New Jersey,US-NJ,29
+bed frame,0,New Jersey,US-NJ,11
+desk,0,New Jersey,US-NJ,42
+bookshelf,0,New Jersey,US-NJ,5
+dining table,0,New York,US-NY,11
+sofa,0,New York,US-NY,30
+bed frame,0,New York,US-NY,11
+desk,0,New York,US-NY,43
+bookshelf,0,New York,US-NY,5
+dining table,0,District of Columbia,US-DC,10
+sofa,0,District of Columbia,US-DC,26
+bed frame,0,District of Columbia,US-DC,10
+desk,0,District of Columbia,US-DC,48
+bookshelf,0,District of Columbia,US-DC,6
+dining table,0,California,US-CA,12
+sofa,0,California,US-CA,26
+bed frame,0,California,US-CA,11
+desk,0,California,US-CA,46
+bookshelf,0,California,US-CA,5
+dining table,0,Florida,US-FL,12
+sofa,0,Florida,US-FL,28
+bed frame,0,Florida,US-FL,11
+desk,0,Florida,US-FL,45
+bookshelf,0,Florida,US-FL,4
+dining table,0,Connecticut,US-CT,12
+sofa,0,Connecticut,US-CT,26
+bed frame,0,Connecticut,US-CT,11
+desk,0,Connecticut,US-CT,46
+bookshelf,0,Connecticut,US-CT,5
+dining table,0,Massachusetts,US-MA,12
+sofa,0,Massachusetts,US-MA,25
+bed frame,0,Massachusetts,US-MA,11
+desk,0,Massachusetts,US-MA,47
+bookshelf,0,Massachusetts,US-MA,5
+dining table,0,Washington,US-WA,10
+sofa,0,Washington,US-WA,24
+bed frame,0,Washington,US-WA,13
+desk,0,Washington,US-WA,47
+bookshelf,0,Washington,US-WA,6
+dining table,0,Georgia,US-GA,10
+sofa,0,Georgia,US-GA,28
+bed frame,0,Georgia,US-GA,10
+desk,0,Georgia,US-GA,47
+bookshelf,0,Georgia,US-GA,5
+dining table,0,Maryland,US-MD,11
+sofa,0,Maryland,US-MD,29
+bed frame,0,Maryland,US-MD,11
+desk,0,Maryland,US-MD,44
+bookshelf,0,Maryland,US-MD,5
+dining table,0,North Carolina,US-NC,11
+sofa,0,North Carolina,US-NC,25
+bed frame,0,North Carolina,US-NC,12
+desk,0,North Carolina,US-NC,46
+bookshelf,0,North Carolina,US-NC,6
+dining table,0,Kansas,US-KS,10
+sofa,0,Kansas,US-KS,23
+bed frame,0,Kansas,US-KS,12
+desk,0,Kansas,US-KS,48
+bookshelf,0,Kansas,US-KS,7
+dining table,0,Arizona,US-AZ,11
+sofa,0,Arizona,US-AZ,23
+bed frame,0,Arizona,US-AZ,13
+desk,0,Arizona,US-AZ,47
+bookshelf,0,Arizona,US-AZ,6
+dining table,0,South Carolina,US-SC,12
+sofa,0,South Carolina,US-SC,26
+bed frame,0,South Carolina,US-SC,13
+desk,0,South Carolina,US-SC,44
+bookshelf,0,South Carolina,US-SC,5
+dining table,0,Texas,US-TX,11
+sofa,0,Texas,US-TX,23
+bed frame,0,Texas,US-TX,13
+desk,0,Texas,US-TX,47
+bookshelf,0,Texas,US-TX,6
+dining table,0,Virginia,US-VA,10
+sofa,0,Virginia,US-VA,27
+bed frame,0,Virginia,US-VA,11
+desk,0,Virginia,US-VA,46
+bookshelf,0,Virginia,US-VA,6
+dining table,0,Alabama,US-AL,12
+sofa,0,Alabama,US-AL,26
+bed frame,0,Alabama,US-AL,12
+desk,0,Alabama,US-AL,45
+bookshelf,0,Alabama,US-AL,5
+dining table,0,Delaware,US-DE,11
+sofa,0,Delaware,US-DE,29
+bed frame,0,Delaware,US-DE,12
+desk,0,Delaware,US-DE,43
+bookshelf,0,Delaware,US-DE,5
+dining table,0,Nevada,US-NV,11
+sofa,0,Nevada,US-NV,22
+bed frame,0,Nevada,US-NV,13
+desk,0,Nevada,US-NV,49
+bookshelf,0,Nevada,US-NV,5
+dining table,0,Illinois,US-IL,10
+sofa,0,Illinois,US-IL,25
+bed frame,0,Illinois,US-IL,11
+desk,0,Illinois,US-IL,48
+bookshelf,0,Illinois,US-IL,6
+dining table,0,Pennsylvania,US-PA,11
+sofa,0,Pennsylvania,US-PA,26
+bed frame,0,Pennsylvania,US-PA,12
+desk,0,Pennsylvania,US-PA,45
+bookshelf,0,Pennsylvania,US-PA,6
+dining table,0,Colorado,US-CO,10
+sofa,0,Colorado,US-CO,23
+bed frame,0,Colorado,US-CO,12
+desk,0,Colorado,US-CO,48
+bookshelf,0,Colorado,US-CO,7
+dining table,0,Utah,US-UT,10
+sofa,0,Utah,US-UT,21
+bed frame,0,Utah,US-UT,14
+desk,0,Utah,US-UT,48
+bookshelf,0,Utah,US-UT,7
+dining table,0,Ohio,US-OH,11
+sofa,0,Ohio,US-OH,22
+bed frame,0,Ohio,US-OH,14
+desk,0,Ohio,US-OH,47
+bookshelf,0,Ohio,US-OH,6
+dining table,0,Oregon,US-OR,10
+sofa,0,Oregon,US-OR,24
+bed frame,0,Oregon,US-OR,14
+desk,0,Oregon,US-OR,45
+bookshelf,0,Oregon,US-OR,7
+dining table,0,Louisiana,US-LA,10
+sofa,0,Louisiana,US-LA,31
+bed frame,0,Louisiana,US-LA,12
+desk,0,Louisiana,US-LA,42
+bookshelf,0,Louisiana,US-LA,5
+dining table,0,Tennessee,US-TN,10
+sofa,0,Tennessee,US-TN,25
+bed frame,0,Tennessee,US-TN,12
+desk,0,Tennessee,US-TN,47
+bookshelf,0,Tennessee,US-TN,6
+dining table,0,Minnesota,US-MN,10
+sofa,0,Minnesota,US-MN,23
+bed frame,0,Minnesota,US-MN,13
+desk,0,Minnesota,US-MN,48
+bookshelf,0,Minnesota,US-MN,6
+dining table,0,Idaho,US-ID,10
+sofa,0,Idaho,US-ID,21
+bed frame,0,Idaho,US-ID,15
+desk,0,Idaho,US-ID,47
+bookshelf,0,Idaho,US-ID,7
+dining table,0,Rhode Island,US-RI,10
+sofa,0,Rhode Island,US-RI,25
+bed frame,0,Rhode Island,US-RI,12
+desk,0,Rhode Island,US-RI,47
+bookshelf,0,Rhode Island,US-RI,6
+dining table,0,Michigan,US-MI,10
+sofa,0,Michigan,US-MI,22
+bed frame,0,Michigan,US-MI,14
+desk,0,Michigan,US-MI,48
+bookshelf,0,Michigan,US-MI,6
+dining table,0,Missouri,US-MO,10
+sofa,0,Missouri,US-MO,22
+bed frame,0,Missouri,US-MO,13
+desk,0,Missouri,US-MO,49
+bookshelf,0,Missouri,US-MO,6
+dining table,0,Oklahoma,US-OK,10
+sofa,0,Oklahoma,US-OK,22
+bed frame,0,Oklahoma,US-OK,14
+desk,0,Oklahoma,US-OK,48
+bookshelf,0,Oklahoma,US-OK,6
+dining table,0,New Hampshire,US-NH,10
+sofa,0,New Hampshire,US-NH,23
+bed frame,0,New Hampshire,US-NH,12
+desk,0,New Hampshire,US-NH,49
+bookshelf,0,New Hampshire,US-NH,6
+dining table,0,Kentucky,US-KY,10
+sofa,0,Kentucky,US-KY,24
+bed frame,0,Kentucky,US-KY,13
+desk,0,Kentucky,US-KY,47
+bookshelf,0,Kentucky,US-KY,6
+dining table,0,Mississippi,US-MS,10
+sofa,0,Mississippi,US-MS,23
+bed frame,0,Mississippi,US-MS,13
+desk,0,Mississippi,US-MS,49
+bookshelf,0,Mississippi,US-MS,5
+dining table,0,Indiana,US-IN,9
+sofa,0,Indiana,US-IN,22
+bed frame,0,Indiana,US-IN,15
+desk,0,Indiana,US-IN,48
+bookshelf,0,Indiana,US-IN,6
+dining table,0,Arkansas,US-AR,9
+sofa,0,Arkansas,US-AR,25
+bed frame,0,Arkansas,US-AR,14
+desk,0,Arkansas,US-AR,46
+bookshelf,0,Arkansas,US-AR,6
+dining table,0,Maine,US-ME,9
+sofa,0,Maine,US-ME,24
+bed frame,0,Maine,US-ME,14
+desk,0,Maine,US-ME,47
+bookshelf,0,Maine,US-ME,6
+dining table,0,Vermont,US-VT,9
+sofa,0,Vermont,US-VT,24
+bed frame,0,Vermont,US-VT,13
+desk,0,Vermont,US-VT,48
+bookshelf,0,Vermont,US-VT,6
+dining table,0,New Mexico,US-NM,9
+sofa,0,New Mexico,US-NM,21
+bed frame,0,New Mexico,US-NM,15
+desk,0,New Mexico,US-NM,50
+bookshelf,0,New Mexico,US-NM,5
+dining table,0,Nebraska,US-NE,9
+sofa,0,Nebraska,US-NE,21
+bed frame,0,Nebraska,US-NE,13
+desk,0,Nebraska,US-NE,50
+bookshelf,0,Nebraska,US-NE,7
+dining table,0,Wisconsin,US-WI,9
+sofa,0,Wisconsin,US-WI,22
+bed frame,0,Wisconsin,US-WI,13
+desk,0,Wisconsin,US-WI,50
+bookshelf,0,Wisconsin,US-WI,6
+dining table,0,Hawaii,US-HI,9
+sofa,0,Hawaii,US-HI,24
+bed frame,0,Hawaii,US-HI,12
+desk,0,Hawaii,US-HI,50
+bookshelf,0,Hawaii,US-HI,5
+dining table,0,Iowa,US-IA,9
+sofa,0,Iowa,US-IA,22
+bed frame,0,Iowa,US-IA,13
+desk,0,Iowa,US-IA,50
+bookshelf,0,Iowa,US-IA,6
+dining table,0,Montana,US-MT,9
+sofa,0,Montana,US-MT,20
+bed frame,0,Montana,US-MT,14
+desk,0,Montana,US-MT,48
+bookshelf,0,Montana,US-MT,9
+dining table,0,West Virginia,US-WV,9
+sofa,0,West Virginia,US-WV,21
+bed frame,0,West Virginia,US-WV,14
+desk,0,West Virginia,US-WV,50
+bookshelf,0,West Virginia,US-WV,6
+dining table,0,South Dakota,US-SD,9
+sofa,0,South Dakota,US-SD,20
+bed frame,0,South Dakota,US-SD,14
+desk,0,South Dakota,US-SD,51
+bookshelf,0,South Dakota,US-SD,6
+dining table,0,North Dakota,US-ND,8
+sofa,0,North Dakota,US-ND,22
+bed frame,0,North Dakota,US-ND,14
+desk,0,North Dakota,US-ND,51
+bookshelf,0,North Dakota,US-ND,5
+dining table,0,Alaska,US-AK,7
+sofa,0,Alaska,US-AK,19
+bed frame,0,Alaska,US-AK,15
+desk,0,Alaska,US-AK,53
+bookshelf,0,Alaska,US-AK,6
+dining table,1,Wyoming,US-WY,30
+dresser,1,Wyoming,US-WY,22
+wardrobe,1,Wyoming,US-WY,11
+coffee table,1,Wyoming,US-WY,28
+nightstand,1,Wyoming,US-WY,9
+dining table,1,New Jersey,US-NJ,29
+dresser,1,New Jersey,US-NJ,26
+wardrobe,1,New Jersey,US-NJ,13
+coffee table,1,New Jersey,US-NJ,23
+nightstand,1,New Jersey,US-NJ,9
+dining table,1,New York,US-NY,27
+dresser,1,New York,US-NY,28
+wardrobe,1,New York,US-NY,14
+coffee table,1,New York,US-NY,23
+nightstand,1,New York,US-NY,8
+dining table,1,District of Columbia,US-DC,24
+dresser,1,District of Columbia,US-DC,27
+wardrobe,1,District of Columbia,US-DC,12
+coffee table,1,District of Columbia,US-DC,28
+nightstand,1,District of Columbia,US-DC,9
+dining table,1,California,US-CA,29
+dresser,1,California,US-CA,27
+wardrobe,1,California,US-CA,12
+coffee table,1,California,US-CA,24
+nightstand,1,California,US-CA,8
+dining table,1,Florida,US-FL,29
+dresser,1,Florida,US-FL,28
+wardrobe,1,Florida,US-FL,11
+coffee table,1,Florida,US-FL,23
+nightstand,1,Florida,US-FL,9
+dining table,1,Connecticut,US-CT,27
+dresser,1,Connecticut,US-CT,30
+wardrobe,1,Connecticut,US-CT,12
+coffee table,1,Connecticut,US-CT,24
+nightstand,1,Connecticut,US-CT,7
+dining table,1,Massachusetts,US-MA,26
+dresser,1,Massachusetts,US-MA,30
+wardrobe,1,Massachusetts,US-MA,12
+coffee table,1,Massachusetts,US-MA,24
+nightstand,1,Massachusetts,US-MA,8
+dining table,1,Washington,US-WA,27
+dresser,1,Washington,US-WA,28
+wardrobe,1,Washington,US-WA,13
+coffee table,1,Washington,US-WA,24
+nightstand,1,Washington,US-WA,8
+dining table,1,Georgia,US-GA,27
+dresser,1,Georgia,US-GA,28
+wardrobe,1,Georgia,US-GA,13
+coffee table,1,Georgia,US-GA,23
+nightstand,1,Georgia,US-GA,9
+dining table,1,Maryland,US-MD,27
+dresser,1,Maryland,US-MD,30
+wardrobe,1,Maryland,US-MD,13
+coffee table,1,Maryland,US-MD,22
+nightstand,1,Maryland,US-MD,8
+dining table,1,North Carolina,US-NC,27
+dresser,1,North Carolina,US-NC,29
+wardrobe,1,North Carolina,US-NC,12
+coffee table,1,North Carolina,US-NC,23
+nightstand,1,North Carolina,US-NC,9
+dining table,1,Kansas,US-KS,26
+dresser,1,Kansas,US-KS,30
+wardrobe,1,Kansas,US-KS,14
+coffee table,1,Kansas,US-KS,22
+nightstand,1,Kansas,US-KS,8
+dining table,1,Arizona,US-AZ,27
+dresser,1,Arizona,US-AZ,30
+wardrobe,1,Arizona,US-AZ,11
+coffee table,1,Arizona,US-AZ,23
+nightstand,1,Arizona,US-AZ,9
+dining table,1,South Carolina,US-SC,26
+dresser,1,South Carolina,US-SC,33
+wardrobe,1,South Carolina,US-SC,11
+coffee table,1,South Carolina,US-SC,22
+nightstand,1,South Carolina,US-SC,8
+dining table,1,Texas,US-TX,28
+dresser,1,Texas,US-TX,28
+wardrobe,1,Texas,US-TX,12
+coffee table,1,Texas,US-TX,23
+nightstand,1,Texas,US-TX,9
+dining table,1,Virginia,US-VA,27
+dresser,1,Virginia,US-VA,28
+wardrobe,1,Virginia,US-VA,13
+coffee table,1,Virginia,US-VA,24
+nightstand,1,Virginia,US-VA,8
+dining table,1,Alabama,US-AL,27
+dresser,1,Alabama,US-AL,31
+wardrobe,1,Alabama,US-AL,11
+coffee table,1,Alabama,US-AL,22
+nightstand,1,Alabama,US-AL,9
+dining table,1,Delaware,US-DE,26
+dresser,1,Delaware,US-DE,31
+wardrobe,1,Delaware,US-DE,12
+coffee table,1,Delaware,US-DE,24
+nightstand,1,Delaware,US-DE,7
+dining table,1,Nevada,US-NV,30
+dresser,1,Nevada,US-NV,27
+wardrobe,1,Nevada,US-NV,13
+coffee table,1,Nevada,US-NV,22
+nightstand,1,Nevada,US-NV,8
+dining table,1,Illinois,US-IL,24
+dresser,1,Illinois,US-IL,29
+wardrobe,1,Illinois,US-IL,13
+coffee table,1,Illinois,US-IL,25
+nightstand,1,Illinois,US-IL,9
+dining table,1,Pennsylvania,US-PA,24
+dresser,1,Pennsylvania,US-PA,32
+wardrobe,1,Pennsylvania,US-PA,14
+coffee table,1,Pennsylvania,US-PA,22
+nightstand,1,Pennsylvania,US-PA,8
+dining table,1,Colorado,US-CO,25
+dresser,1,Colorado,US-CO,28
+wardrobe,1,Colorado,US-CO,13
+coffee table,1,Colorado,US-CO,24
+nightstand,1,Colorado,US-CO,10
+dining table,1,Utah,US-UT,24
+dresser,1,Utah,US-UT,31
+wardrobe,1,Utah,US-UT,14
+coffee table,1,Utah,US-UT,20
+nightstand,1,Utah,US-UT,11
+dining table,1,Ohio,US-OH,27
+dresser,1,Ohio,US-OH,30
+wardrobe,1,Ohio,US-OH,12
+coffee table,1,Ohio,US-OH,23
+nightstand,1,Ohio,US-OH,8
+dining table,1,Oregon,US-OR,25
+dresser,1,Oregon,US-OR,29
+wardrobe,1,Oregon,US-OR,14
+coffee table,1,Oregon,US-OR,23
+nightstand,1,Oregon,US-OR,9
+dining table,1,Louisiana,US-LA,25
+dresser,1,Louisiana,US-LA,30
+wardrobe,1,Louisiana,US-LA,14
+coffee table,1,Louisiana,US-LA,23
+nightstand,1,Louisiana,US-LA,8
+dining table,1,Tennessee,US-TN,24
+dresser,1,Tennessee,US-TN,32
+wardrobe,1,Tennessee,US-TN,12
+coffee table,1,Tennessee,US-TN,23
+nightstand,1,Tennessee,US-TN,9
+dining table,1,Minnesota,US-MN,23
+dresser,1,Minnesota,US-MN,34
+wardrobe,1,Minnesota,US-MN,12
+coffee table,1,Minnesota,US-MN,22
+nightstand,1,Minnesota,US-MN,9
+dining table,1,Idaho,US-ID,27
+dresser,1,Idaho,US-ID,30
+wardrobe,1,Idaho,US-ID,13
+coffee table,1,Idaho,US-ID,21
+nightstand,1,Idaho,US-ID,9
+dining table,1,Rhode Island,US-RI,23
+dresser,1,Rhode Island,US-RI,32
+wardrobe,1,Rhode Island,US-RI,14
+coffee table,1,Rhode Island,US-RI,24
+nightstand,1,Rhode Island,US-RI,7
+dining table,1,Michigan,US-MI,25
+dresser,1,Michigan,US-MI,31
+wardrobe,1,Michigan,US-MI,14
+coffee table,1,Michigan,US-MI,22
+nightstand,1,Michigan,US-MI,8
+dining table,1,Missouri,US-MO,23
+dresser,1,Missouri,US-MO,31
+wardrobe,1,Missouri,US-MO,14
+coffee table,1,Missouri,US-MO,24
+nightstand,1,Missouri,US-MO,8
+dining table,1,Oklahoma,US-OK,25
+dresser,1,Oklahoma,US-OK,33
+wardrobe,1,Oklahoma,US-OK,12
+coffee table,1,Oklahoma,US-OK,22
+nightstand,1,Oklahoma,US-OK,8
+dining table,1,New Hampshire,US-NH,23
+dresser,1,New Hampshire,US-NH,33
+wardrobe,1,New Hampshire,US-NH,13
+coffee table,1,New Hampshire,US-NH,23
+nightstand,1,New Hampshire,US-NH,8
+dining table,1,Kentucky,US-KY,24
+dresser,1,Kentucky,US-KY,33
+wardrobe,1,Kentucky,US-KY,13
+coffee table,1,Kentucky,US-KY,22
+nightstand,1,Kentucky,US-KY,8
+dining table,1,Mississippi,US-MS,25
+dresser,1,Mississippi,US-MS,33
+wardrobe,1,Mississippi,US-MS,12
+coffee table,1,Mississippi,US-MS,22
+nightstand,1,Mississippi,US-MS,8
+dining table,1,Indiana,US-IN,24
+dresser,1,Indiana,US-IN,34
+wardrobe,1,Indiana,US-IN,13
+coffee table,1,Indiana,US-IN,21
+nightstand,1,Indiana,US-IN,8
+dining table,1,Arkansas,US-AR,24
+dresser,1,Arkansas,US-AR,32
+wardrobe,1,Arkansas,US-AR,12
+coffee table,1,Arkansas,US-AR,23
+nightstand,1,Arkansas,US-AR,9
+dining table,1,Maine,US-ME,23
+dresser,1,Maine,US-ME,34
+wardrobe,1,Maine,US-ME,13
+coffee table,1,Maine,US-ME,23
+nightstand,1,Maine,US-ME,7
+dining table,1,Vermont,US-VT,22
+dresser,1,Vermont,US-VT,34
+wardrobe,1,Vermont,US-VT,13
+coffee table,1,Vermont,US-VT,24
+nightstand,1,Vermont,US-VT,7
+dining table,1,New Mexico,US-NM,26
+dresser,1,New Mexico,US-NM,32
+wardrobe,1,New Mexico,US-NM,14
+coffee table,1,New Mexico,US-NM,21
+nightstand,1,New Mexico,US-NM,7
+dining table,1,Nebraska,US-NE,22
+dresser,1,Nebraska,US-NE,30
+wardrobe,1,Nebraska,US-NE,13
+coffee table,1,Nebraska,US-NE,26
+nightstand,1,Nebraska,US-NE,9
+dining table,1,Wisconsin,US-WI,22
+dresser,1,Wisconsin,US-WI,36
+wardrobe,1,Wisconsin,US-WI,13
+coffee table,1,Wisconsin,US-WI,21
+nightstand,1,Wisconsin,US-WI,8
+dining table,1,Hawaii,US-HI,26
+dresser,1,Hawaii,US-HI,33
+wardrobe,1,Hawaii,US-HI,15
+coffee table,1,Hawaii,US-HI,20
+nightstand,1,Hawaii,US-HI,6
+dining table,1,Iowa,US-IA,23
+dresser,1,Iowa,US-IA,34
+wardrobe,1,Iowa,US-IA,13
+coffee table,1,Iowa,US-IA,22
+nightstand,1,Iowa,US-IA,8
+dining table,1,Montana,US-MT,22
+dresser,1,Montana,US-MT,33
+wardrobe,1,Montana,US-MT,14
+coffee table,1,Montana,US-MT,23
+nightstand,1,Montana,US-MT,8
+dining table,1,West Virginia,US-WV,23
+dresser,1,West Virginia,US-WV,36
+wardrobe,1,West Virginia,US-WV,14
+coffee table,1,West Virginia,US-WV,20
+nightstand,1,West Virginia,US-WV,7
+dining table,1,South Dakota,US-SD,24
+dresser,1,South Dakota,US-SD,34
+wardrobe,1,South Dakota,US-SD,13
+coffee table,1,South Dakota,US-SD,20
+nightstand,1,South Dakota,US-SD,9
+dining table,1,North Dakota,US-ND,23
+dresser,1,North Dakota,US-ND,36
+wardrobe,1,North Dakota,US-ND,12
+coffee table,1,North Dakota,US-ND,21
+nightstand,1,North Dakota,US-ND,8
+dining table,1,Alaska,US-AK,22
+dresser,1,Alaska,US-AK,34
+wardrobe,1,Alaska,US-AK,16
+coffee table,1,Alaska,US-AK,19
+nightstand,1,Alaska,US-AK,9
+dining table,2,Wyoming,US-WY,48
+tv stand,2,Wyoming,US-WY,25
+kitchen cabinets,2,Wyoming,US-WY,16
+closet organizer,2,Wyoming,US-WY,3
+custom sofa,2,Wyoming,US-WY,8
+dining table,2,New Jersey,US-NJ,45
+tv stand,2,New Jersey,US-NJ,23
+kitchen cabinets,2,New Jersey,US-NJ,27
+closet organizer,2,New Jersey,US-NJ,5
+custom sofa,2,New Jersey,US-NJ,0
+dining table,2,New York,US-NY,45
+tv stand,2,New York,US-NY,26
+kitchen cabinets,2,New York,US-NY,25
+closet organizer,2,New York,US-NY,4
+custom sofa,2,New York,US-NY,0
+dining table,2,District of Columbia,US-DC,48
+tv stand,2,District of Columbia,US-DC,27
+kitchen cabinets,2,District of Columbia,US-DC,20
+closet organizer,2,District of Columbia,US-DC,4
+custom sofa,2,District of Columbia,US-DC,1
+dining table,2,California,US-CA,49
+tv stand,2,California,US-CA,23
+kitchen cabinets,2,California,US-CA,22
+closet organizer,2,California,US-CA,5
+custom sofa,2,California,US-CA,1
+dining table,2,Florida,US-FL,44
+tv stand,2,Florida,US-FL,26
+kitchen cabinets,2,Florida,US-FL,25
+closet organizer,2,Florida,US-FL,4
+custom sofa,2,Florida,US-FL,1
+dining table,2,Connecticut,US-CT,43
+tv stand,2,Connecticut,US-CT,24
+kitchen cabinets,2,Connecticut,US-CT,29
+closet organizer,2,Connecticut,US-CT,4
+custom sofa,2,Connecticut,US-CT,0
+dining table,2,Massachusetts,US-MA,43
+tv stand,2,Massachusetts,US-MA,25
+kitchen cabinets,2,Massachusetts,US-MA,27
+closet organizer,2,Massachusetts,US-MA,5
+custom sofa,2,Massachusetts,US-MA,0
+dining table,2,Washington,US-WA,46
+tv stand,2,Washington,US-WA,24
+kitchen cabinets,2,Washington,US-WA,25
+closet organizer,2,Washington,US-WA,5
+custom sofa,2,Washington,US-WA,0
+dining table,2,Georgia,US-GA,45
+tv stand,2,Georgia,US-GA,26
+kitchen cabinets,2,Georgia,US-GA,25
+closet organizer,2,Georgia,US-GA,4
+custom sofa,2,Georgia,US-GA,0
+dining table,2,Maryland,US-MD,43
+tv stand,2,Maryland,US-MD,28
+kitchen cabinets,2,Maryland,US-MD,24
+closet organizer,2,Maryland,US-MD,5
+custom sofa,2,Maryland,US-MD,0
+dining table,2,North Carolina,US-NC,44
+tv stand,2,North Carolina,US-NC,26
+kitchen cabinets,2,North Carolina,US-NC,26
+closet organizer,2,North Carolina,US-NC,4
+custom sofa,2,North Carolina,US-NC,0
+dining table,2,Kansas,US-KS,41
+tv stand,2,Kansas,US-KS,25
+kitchen cabinets,2,Kansas,US-KS,30
+closet organizer,2,Kansas,US-KS,3
+custom sofa,2,Kansas,US-KS,1
+dining table,2,Arizona,US-AZ,43
+tv stand,2,Arizona,US-AZ,28
+kitchen cabinets,2,Arizona,US-AZ,25
+closet organizer,2,Arizona,US-AZ,4
+custom sofa,2,Arizona,US-AZ,0
+dining table,2,South Carolina,US-SC,42
+tv stand,2,South Carolina,US-SC,26
+kitchen cabinets,2,South Carolina,US-SC,28
+closet organizer,2,South Carolina,US-SC,4
+custom sofa,2,South Carolina,US-SC,0
+dining table,2,Texas,US-TX,45
+tv stand,2,Texas,US-TX,30
+kitchen cabinets,2,Texas,US-TX,21
+closet organizer,2,Texas,US-TX,4
+custom sofa,2,Texas,US-TX,0
+dining table,2,Virginia,US-VA,43
+tv stand,2,Virginia,US-VA,27
+kitchen cabinets,2,Virginia,US-VA,26
+closet organizer,2,Virginia,US-VA,4
+custom sofa,2,Virginia,US-VA,0
+dining table,2,Alabama,US-AL,42
+tv stand,2,Alabama,US-AL,28
+kitchen cabinets,2,Alabama,US-AL,26
+closet organizer,2,Alabama,US-AL,4
+custom sofa,2,Alabama,US-AL,0
+dining table,2,Delaware,US-DE,39
+tv stand,2,Delaware,US-DE,28
+kitchen cabinets,2,Delaware,US-DE,27
+closet organizer,2,Delaware,US-DE,5
+custom sofa,2,Delaware,US-DE,1
+dining table,2,Nevada,US-NV,45
+tv stand,2,Nevada,US-NV,28
+kitchen cabinets,2,Nevada,US-NV,21
+closet organizer,2,Nevada,US-NV,5
+custom sofa,2,Nevada,US-NV,1
+dining table,2,Illinois,US-IL,40
+tv stand,2,Illinois,US-IL,27
+kitchen cabinets,2,Illinois,US-IL,28
+closet organizer,2,Illinois,US-IL,5
+custom sofa,2,Illinois,US-IL,0
+dining table,2,Pennsylvania,US-PA,37
+tv stand,2,Pennsylvania,US-PA,29
+kitchen cabinets,2,Pennsylvania,US-PA,30
+closet organizer,2,Pennsylvania,US-PA,4
+custom sofa,2,Pennsylvania,US-PA,0
+dining table,2,Colorado,US-CO,41
+tv stand,2,Colorado,US-CO,27
+kitchen cabinets,2,Colorado,US-CO,27
+closet organizer,2,Colorado,US-CO,4
+custom sofa,2,Colorado,US-CO,1
+dining table,2,Utah,US-UT,44
+tv stand,2,Utah,US-UT,26
+kitchen cabinets,2,Utah,US-UT,25
+closet organizer,2,Utah,US-UT,4
+custom sofa,2,Utah,US-UT,1
+dining table,2,Ohio,US-OH,38
+tv stand,2,Ohio,US-OH,29
+kitchen cabinets,2,Ohio,US-OH,29
+closet organizer,2,Ohio,US-OH,4
+custom sofa,2,Ohio,US-OH,0
+dining table,2,Oregon,US-OR,45
+tv stand,2,Oregon,US-OR,23
+kitchen cabinets,2,Oregon,US-OR,26
+closet organizer,2,Oregon,US-OR,5
+custom sofa,2,Oregon,US-OR,1
+dining table,2,Louisiana,US-LA,41
+tv stand,2,Louisiana,US-LA,29
+kitchen cabinets,2,Louisiana,US-LA,26
+closet organizer,2,Louisiana,US-LA,3
+custom sofa,2,Louisiana,US-LA,1
+dining table,2,Tennessee,US-TN,40
+tv stand,2,Tennessee,US-TN,28
+kitchen cabinets,2,Tennessee,US-TN,28
+closet organizer,2,Tennessee,US-TN,4
+custom sofa,2,Tennessee,US-TN,0
+dining table,2,Minnesota,US-MN,39
+tv stand,2,Minnesota,US-MN,29
+kitchen cabinets,2,Minnesota,US-MN,27
+closet organizer,2,Minnesota,US-MN,5
+custom sofa,2,Minnesota,US-MN,0
+dining table,2,Idaho,US-ID,42
+tv stand,2,Idaho,US-ID,25
+kitchen cabinets,2,Idaho,US-ID,29
+closet organizer,2,Idaho,US-ID,4
+custom sofa,2,Idaho,US-ID,0
+dining table,2,Rhode Island,US-RI,37
+tv stand,2,Rhode Island,US-RI,27
+kitchen cabinets,2,Rhode Island,US-RI,31
+closet organizer,2,Rhode Island,US-RI,5
+custom sofa,2,Rhode Island,US-RI,0
+dining table,2,Michigan,US-MI,36
+tv stand,2,Michigan,US-MI,28
+kitchen cabinets,2,Michigan,US-MI,31
+closet organizer,2,Michigan,US-MI,5
+custom sofa,2,Michigan,US-MI,0
+dining table,2,Missouri,US-MO,38
+tv stand,2,Missouri,US-MO,27
+kitchen cabinets,2,Missouri,US-MO,30
+closet organizer,2,Missouri,US-MO,5
+custom sofa,2,Missouri,US-MO,0
+dining table,2,Oklahoma,US-OK,42
+tv stand,2,Oklahoma,US-OK,29
+kitchen cabinets,2,Oklahoma,US-OK,26
+closet organizer,2,Oklahoma,US-OK,3
+custom sofa,2,Oklahoma,US-OK,0
+dining table,2,New Hampshire,US-NH,36
+tv stand,2,New Hampshire,US-NH,25
+kitchen cabinets,2,New Hampshire,US-NH,35
+closet organizer,2,New Hampshire,US-NH,4
+custom sofa,2,New Hampshire,US-NH,0
+dining table,2,Kentucky,US-KY,36
+tv stand,2,Kentucky,US-KY,30
+kitchen cabinets,2,Kentucky,US-KY,31
+closet organizer,2,Kentucky,US-KY,3
+custom sofa,2,Kentucky,US-KY,0
+dining table,2,Mississippi,US-MS,38
+tv stand,2,Mississippi,US-MS,30
+kitchen cabinets,2,Mississippi,US-MS,29
+closet organizer,2,Mississippi,US-MS,3
+custom sofa,2,Mississippi,US-MS,0
+dining table,2,Indiana,US-IN,36
+tv stand,2,Indiana,US-IN,31
+kitchen cabinets,2,Indiana,US-IN,29
+closet organizer,2,Indiana,US-IN,4
+custom sofa,2,Indiana,US-IN,0
+dining table,2,Arkansas,US-AR,39
+tv stand,2,Arkansas,US-AR,29
+kitchen cabinets,2,Arkansas,US-AR,29
+closet organizer,2,Arkansas,US-AR,3
+custom sofa,2,Arkansas,US-AR,0
+dining table,2,Maine,US-ME,36
+tv stand,2,Maine,US-ME,24
+kitchen cabinets,2,Maine,US-ME,35
+closet organizer,2,Maine,US-ME,5
+custom sofa,2,Maine,US-ME,0
+dining table,2,Vermont,US-VT,38
+tv stand,2,Vermont,US-VT,20
+kitchen cabinets,2,Vermont,US-VT,37
+closet organizer,2,Vermont,US-VT,4
+custom sofa,2,Vermont,US-VT,1
+dining table,2,New Mexico,US-NM,39
+tv stand,2,New Mexico,US-NM,28
+kitchen cabinets,2,New Mexico,US-NM,29
+closet organizer,2,New Mexico,US-NM,4
+custom sofa,2,New Mexico,US-NM,0
+dining table,2,Nebraska,US-NE,35
+tv stand,2,Nebraska,US-NE,32
+kitchen cabinets,2,Nebraska,US-NE,29
+closet organizer,2,Nebraska,US-NE,4
+custom sofa,2,Nebraska,US-NE,0
+dining table,2,Wisconsin,US-WI,33
+tv stand,2,Wisconsin,US-WI,31
+kitchen cabinets,2,Wisconsin,US-WI,31
+closet organizer,2,Wisconsin,US-WI,5
+custom sofa,2,Wisconsin,US-WI,0
+dining table,2,Hawaii,US-HI,42
+tv stand,2,Hawaii,US-HI,27
+kitchen cabinets,2,Hawaii,US-HI,25
+closet organizer,2,Hawaii,US-HI,5
+custom sofa,2,Hawaii,US-HI,1
+dining table,2,Iowa,US-IA,34
+tv stand,2,Iowa,US-IA,32
+kitchen cabinets,2,Iowa,US-IA,30
+closet organizer,2,Iowa,US-IA,4
+custom sofa,2,Iowa,US-IA,0
+dining table,2,Montana,US-MT,36
+tv stand,2,Montana,US-MT,25
+kitchen cabinets,2,Montana,US-MT,34
+closet organizer,2,Montana,US-MT,5
+custom sofa,2,Montana,US-MT,0
+dining table,2,West Virginia,US-WV,30
+tv stand,2,West Virginia,US-WV,30
+kitchen cabinets,2,West Virginia,US-WV,36
+closet organizer,2,West Virginia,US-WV,4
+custom sofa,2,West Virginia,US-WV,0
+dining table,2,South Dakota,US-SD,33
+tv stand,2,South Dakota,US-SD,30
+kitchen cabinets,2,South Dakota,US-SD,31
+closet organizer,2,South Dakota,US-SD,6
+custom sofa,2,South Dakota,US-SD,0
+dining table,2,North Dakota,US-ND,34
+tv stand,2,North Dakota,US-ND,34
+kitchen cabinets,2,North Dakota,US-ND,26
+closet organizer,2,North Dakota,US-ND,5
+custom sofa,2,North Dakota,US-ND,1
+dining table,2,Alaska,US-AK,36
+tv stand,2,Alaska,US-AK,26
+kitchen cabinets,2,Alaska,US-AK,31
+closet organizer,2,Alaska,US-AK,6
+custom sofa,2,Alaska,US-AK,1
+dining table,3,Wyoming,US-WY,80
+custom bed frame,3,Wyoming,US-WY,3
+custom desk,3,Wyoming,US-WY,14
+custom bookshelf,3,Wyoming,US-WY,2
+custom dresser,3,Wyoming,US-WY,1
+dining table,3,New Jersey,US-NJ,98
+custom bed frame,3,New Jersey,US-NJ,0
+custom desk,3,New Jersey,US-NJ,2
+custom bookshelf,3,New Jersey,US-NJ,0
+custom dresser,3,New Jersey,US-NJ,0
+dining table,3,New York,US-NY,97
+custom bed frame,3,New York,US-NY,0
+custom desk,3,New York,US-NY,3
+custom bookshelf,3,New York,US-NY,0
+custom dresser,3,New York,US-NY,0
+dining table,3,District of Columbia,US-DC,96
+custom bed frame,3,District of Columbia,US-DC,1
+custom desk,3,District of Columbia,US-DC,3
+custom bookshelf,3,District of Columbia,US-DC,0
+custom dresser,3,District of Columbia,US-DC,0
+dining table,3,California,US-CA,96
+custom bed frame,3,California,US-CA,1
+custom desk,3,California,US-CA,3
+custom bookshelf,3,California,US-CA,0
+custom dresser,3,California,US-CA,0
+dining table,3,Florida,US-FL,96
+custom bed frame,3,Florida,US-FL,1
+custom desk,3,Florida,US-FL,3
+custom bookshelf,3,Florida,US-FL,0
+custom dresser,3,Florida,US-FL,0
+dining table,3,Connecticut,US-CT,96
+custom bed frame,3,Connecticut,US-CT,1
+custom desk,3,Connecticut,US-CT,3
+custom bookshelf,3,Connecticut,US-CT,0
+custom dresser,3,Connecticut,US-CT,0
+dining table,3,Massachusetts,US-MA,97
+custom bed frame,3,Massachusetts,US-MA,0
+custom desk,3,Massachusetts,US-MA,3
+custom bookshelf,3,Massachusetts,US-MA,0
+custom dresser,3,Massachusetts,US-MA,0
+dining table,3,Washington,US-WA,96
+custom bed frame,3,Washington,US-WA,1
+custom desk,3,Washington,US-WA,3
+custom bookshelf,3,Washington,US-WA,0
+custom dresser,3,Washington,US-WA,0
+dining table,3,Georgia,US-GA,97
+custom bed frame,3,Georgia,US-GA,0
+custom desk,3,Georgia,US-GA,3
+custom bookshelf,3,Georgia,US-GA,0
+custom dresser,3,Georgia,US-GA,0
+dining table,3,Maryland,US-MD,97
+custom bed frame,3,Maryland,US-MD,0
+custom desk,3,Maryland,US-MD,3
+custom bookshelf,3,Maryland,US-MD,0
+custom dresser,3,Maryland,US-MD,0
+dining table,3,North Carolina,US-NC,97
+custom bed frame,3,North Carolina,US-NC,0
+custom desk,3,North Carolina,US-NC,3
+custom bookshelf,3,North Carolina,US-NC,0
+custom dresser,3,North Carolina,US-NC,0
+dining table,3,Kansas,US-KS,96
+custom bed frame,3,Kansas,US-KS,0
+custom desk,3,Kansas,US-KS,4
+custom bookshelf,3,Kansas,US-KS,0
+custom dresser,3,Kansas,US-KS,0
+dining table,3,Arizona,US-AZ,96
+custom bed frame,3,Arizona,US-AZ,1
+custom desk,3,Arizona,US-AZ,3
+custom bookshelf,3,Arizona,US-AZ,0
+custom dresser,3,Arizona,US-AZ,0
+dining table,3,South Carolina,US-SC,97
+custom bed frame,3,South Carolina,US-SC,0
+custom desk,3,South Carolina,US-SC,3
+custom bookshelf,3,South Carolina,US-SC,0
+custom dresser,3,South Carolina,US-SC,0
+dining table,3,Texas,US-TX,96
+custom bed frame,3,Texas,US-TX,1
+custom desk,3,Texas,US-TX,3
+custom bookshelf,3,Texas,US-TX,0
+custom dresser,3,Texas,US-TX,0
+dining table,3,Virginia,US-VA,96
+custom bed frame,3,Virginia,US-VA,1
+custom desk,3,Virginia,US-VA,3
+custom bookshelf,3,Virginia,US-VA,0
+custom dresser,3,Virginia,US-VA,0
+dining table,3,Alabama,US-AL,97
+custom bed frame,3,Alabama,US-AL,0
+custom desk,3,Alabama,US-AL,3
+custom bookshelf,3,Alabama,US-AL,0
+custom dresser,3,Alabama,US-AL,0
+dining table,3,Delaware,US-DE,96
+custom bed frame,3,Delaware,US-DE,0
+custom desk,3,Delaware,US-DE,4
+custom bookshelf,3,Delaware,US-DE,0
+custom dresser,3,Delaware,US-DE,0
+dining table,3,Nevada,US-NV,96
+custom bed frame,3,Nevada,US-NV,0
+custom desk,3,Nevada,US-NV,4
+custom bookshelf,3,Nevada,US-NV,0
+custom dresser,3,Nevada,US-NV,0
+dining table,3,Illinois,US-IL,96
+custom bed frame,3,Illinois,US-IL,1
+custom desk,3,Illinois,US-IL,3
+custom bookshelf,3,Illinois,US-IL,0
+custom dresser,3,Illinois,US-IL,0
+dining table,3,Pennsylvania,US-PA,97
+custom bed frame,3,Pennsylvania,US-PA,0
+custom desk,3,Pennsylvania,US-PA,3
+custom bookshelf,3,Pennsylvania,US-PA,0
+custom dresser,3,Pennsylvania,US-PA,0
+dining table,3,Colorado,US-CO,96
+custom bed frame,3,Colorado,US-CO,0
+custom desk,3,Colorado,US-CO,4
+custom bookshelf,3,Colorado,US-CO,0
+custom dresser,3,Colorado,US-CO,0
+dining table,3,Utah,US-UT,95
+custom bed frame,3,Utah,US-UT,1
+custom desk,3,Utah,US-UT,4
+custom bookshelf,3,Utah,US-UT,0
+custom dresser,3,Utah,US-UT,0
+dining table,3,Ohio,US-OH,97
+custom bed frame,3,Ohio,US-OH,0
+custom desk,3,Ohio,US-OH,3
+custom bookshelf,3,Ohio,US-OH,0
+custom dresser,3,Ohio,US-OH,0
+dining table,3,Oregon,US-OR,96
+custom bed frame,3,Oregon,US-OR,1
+custom desk,3,Oregon,US-OR,3
+custom bookshelf,3,Oregon,US-OR,0
+custom dresser,3,Oregon,US-OR,0
+dining table,3,Louisiana,US-LA,96
+custom bed frame,3,Louisiana,US-LA,1
+custom desk,3,Louisiana,US-LA,3
+custom bookshelf,3,Louisiana,US-LA,0
+custom dresser,3,Louisiana,US-LA,0
+dining table,3,Tennessee,US-TN,96
+custom bed frame,3,Tennessee,US-TN,1
+custom desk,3,Tennessee,US-TN,3
+custom bookshelf,3,Tennessee,US-TN,0
+custom dresser,3,Tennessee,US-TN,0
+dining table,3,Minnesota,US-MN,96
+custom bed frame,3,Minnesota,US-MN,1
+custom desk,3,Minnesota,US-MN,3
+custom bookshelf,3,Minnesota,US-MN,0
+custom dresser,3,Minnesota,US-MN,0
+dining table,3,Idaho,US-ID,96
+custom bed frame,3,Idaho,US-ID,1
+custom desk,3,Idaho,US-ID,3
+custom bookshelf,3,Idaho,US-ID,0
+custom dresser,3,Idaho,US-ID,0
+dining table,3,Rhode Island,US-RI,96
+custom bed frame,3,Rhode Island,US-RI,0
+custom desk,3,Rhode Island,US-RI,4
+custom bookshelf,3,Rhode Island,US-RI,0
+custom dresser,3,Rhode Island,US-RI,0
+dining table,3,Michigan,US-MI,97
+custom bed frame,3,Michigan,US-MI,0
+custom desk,3,Michigan,US-MI,3
+custom bookshelf,3,Michigan,US-MI,0
+custom dresser,3,Michigan,US-MI,0
+dining table,3,Missouri,US-MO,96
+custom bed frame,3,Missouri,US-MO,0
+custom desk,3,Missouri,US-MO,4
+custom bookshelf,3,Missouri,US-MO,0
+custom dresser,3,Missouri,US-MO,0
+dining table,3,Oklahoma,US-OK,96
+custom bed frame,3,Oklahoma,US-OK,0
+custom desk,3,Oklahoma,US-OK,4
+custom bookshelf,3,Oklahoma,US-OK,0
+custom dresser,3,Oklahoma,US-OK,0
+dining table,3,New Hampshire,US-NH,96
+custom bed frame,3,New Hampshire,US-NH,0
+custom desk,3,New Hampshire,US-NH,4
+custom bookshelf,3,New Hampshire,US-NH,0
+custom dresser,3,New Hampshire,US-NH,0
+dining table,3,Kentucky,US-KY,96
+custom bed frame,3,Kentucky,US-KY,1
+custom desk,3,Kentucky,US-KY,3
+custom bookshelf,3,Kentucky,US-KY,0
+custom dresser,3,Kentucky,US-KY,0
+dining table,3,Mississippi,US-MS,96
+custom bed frame,3,Mississippi,US-MS,1
+custom desk,3,Mississippi,US-MS,3
+custom bookshelf,3,Mississippi,US-MS,0
+custom dresser,3,Mississippi,US-MS,0
+dining table,3,Indiana,US-IN,96
+custom bed frame,3,Indiana,US-IN,0
+custom desk,3,Indiana,US-IN,4
+custom bookshelf,3,Indiana,US-IN,0
+custom dresser,3,Indiana,US-IN,0
+dining table,3,Arkansas,US-AR,96
+custom bed frame,3,Arkansas,US-AR,1
+custom desk,3,Arkansas,US-AR,3
+custom bookshelf,3,Arkansas,US-AR,0
+custom dresser,3,Arkansas,US-AR,0
+dining table,3,Maine,US-ME,96
+custom bed frame,3,Maine,US-ME,0
+custom desk,3,Maine,US-ME,4
+custom bookshelf,3,Maine,US-ME,0
+custom dresser,3,Maine,US-ME,0
+dining table,3,Vermont,US-VT,96
+custom bed frame,3,Vermont,US-VT,0
+custom desk,3,Vermont,US-VT,4
+custom bookshelf,3,Vermont,US-VT,0
+custom dresser,3,Vermont,US-VT,0
+dining table,3,New Mexico,US-NM,96
+custom bed frame,3,New Mexico,US-NM,0
+custom desk,3,New Mexico,US-NM,4
+custom bookshelf,3,New Mexico,US-NM,0
+custom dresser,3,New Mexico,US-NM,0
+dining table,3,Nebraska,US-NE,95
+custom bed frame,3,Nebraska,US-NE,1
+custom desk,3,Nebraska,US-NE,4
+custom bookshelf,3,Nebraska,US-NE,0
+custom dresser,3,Nebraska,US-NE,0
+dining table,3,Wisconsin,US-WI,96
+custom bed frame,3,Wisconsin,US-WI,0
+custom desk,3,Wisconsin,US-WI,4
+custom bookshelf,3,Wisconsin,US-WI,0
+custom dresser,3,Wisconsin,US-WI,0
+dining table,3,Hawaii,US-HI,95
+custom bed frame,3,Hawaii,US-HI,0
+custom desk,3,Hawaii,US-HI,5
+custom bookshelf,3,Hawaii,US-HI,0
+custom dresser,3,Hawaii,US-HI,0
+dining table,3,Iowa,US-IA,96
+custom bed frame,3,Iowa,US-IA,0
+custom desk,3,Iowa,US-IA,4
+custom bookshelf,3,Iowa,US-IA,0
+custom dresser,3,Iowa,US-IA,0
+dining table,3,Montana,US-MT,95
+custom bed frame,3,Montana,US-MT,1
+custom desk,3,Montana,US-MT,4
+custom bookshelf,3,Montana,US-MT,0
+custom dresser,3,Montana,US-MT,0
+dining table,3,West Virginia,US-WV,96
+custom bed frame,3,West Virginia,US-WV,0
+custom desk,3,West Virginia,US-WV,4
+custom bookshelf,3,West Virginia,US-WV,0
+custom dresser,3,West Virginia,US-WV,0
+dining table,3,South Dakota,US-SD,96
+custom bed frame,3,South Dakota,US-SD,0
+custom desk,3,South Dakota,US-SD,4
+custom bookshelf,3,South Dakota,US-SD,0
+custom dresser,3,South Dakota,US-SD,0
+dining table,3,North Dakota,US-ND,95
+custom bed frame,3,North Dakota,US-ND,0
+custom desk,3,North Dakota,US-ND,4
+custom bookshelf,3,North Dakota,US-ND,0
+custom dresser,3,North Dakota,US-ND,1
+dining table,3,Alaska,US-AK,92
+custom bed frame,3,Alaska,US-AK,1
+custom desk,3,Alaska,US-AK,6
+custom bookshelf,3,Alaska,US-AK,0
+custom dresser,3,Alaska,US-AK,1
+dining table,4,Wyoming,US-WY,91
+custom wardrobe,4,Wyoming,US-WY,1
+custom coffee table,4,Wyoming,US-WY,5
+custom nightstand,4,Wyoming,US-WY,1
+custom tv stand,4,Wyoming,US-WY,2
+dining table,4,New Jersey,US-NJ,99
+custom wardrobe,4,New Jersey,US-NJ,0
+custom coffee table,4,New Jersey,US-NJ,1
+custom nightstand,4,New Jersey,US-NJ,0
+custom tv stand,4,New Jersey,US-NJ,0
+dining table,4,New York,US-NY,99
+custom wardrobe,4,New York,US-NY,0
+custom coffee table,4,New York,US-NY,1
+custom nightstand,4,New York,US-NY,0
+custom tv stand,4,New York,US-NY,0
+dining table,4,District of Columbia,US-DC,98
+custom wardrobe,4,District of Columbia,US-DC,0
+custom coffee table,4,District of Columbia,US-DC,2
+custom nightstand,4,District of Columbia,US-DC,0
+custom tv stand,4,District of Columbia,US-DC,0
+dining table,4,California,US-CA,99
+custom wardrobe,4,California,US-CA,0
+custom coffee table,4,California,US-CA,1
+custom nightstand,4,California,US-CA,0
+custom tv stand,4,California,US-CA,0
+dining table,4,Florida,US-FL,99
+custom wardrobe,4,Florida,US-FL,0
+custom coffee table,4,Florida,US-FL,1
+custom nightstand,4,Florida,US-FL,0
+custom tv stand,4,Florida,US-FL,0
+dining table,4,Connecticut,US-CT,99
+custom wardrobe,4,Connecticut,US-CT,0
+custom coffee table,4,Connecticut,US-CT,1
+custom nightstand,4,Connecticut,US-CT,0
+custom tv stand,4,Connecticut,US-CT,0
+dining table,4,Massachusetts,US-MA,99
+custom wardrobe,4,Massachusetts,US-MA,0
+custom coffee table,4,Massachusetts,US-MA,1
+custom nightstand,4,Massachusetts,US-MA,0
+custom tv stand,4,Massachusetts,US-MA,0
+dining table,4,Washington,US-WA,99
+custom wardrobe,4,Washington,US-WA,0
+custom coffee table,4,Washington,US-WA,1
+custom nightstand,4,Washington,US-WA,0
+custom tv stand,4,Washington,US-WA,0
+dining table,4,Georgia,US-GA,99
+custom wardrobe,4,Georgia,US-GA,0
+custom coffee table,4,Georgia,US-GA,1
+custom nightstand,4,Georgia,US-GA,0
+custom tv stand,4,Georgia,US-GA,0
+dining table,4,Maryland,US-MD,99
+custom wardrobe,4,Maryland,US-MD,0
+custom coffee table,4,Maryland,US-MD,1
+custom nightstand,4,Maryland,US-MD,0
+custom tv stand,4,Maryland,US-MD,0
+dining table,4,North Carolina,US-NC,99
+custom wardrobe,4,North Carolina,US-NC,0
+custom coffee table,4,North Carolina,US-NC,1
+custom nightstand,4,North Carolina,US-NC,0
+custom tv stand,4,North Carolina,US-NC,0
+dining table,4,Kansas,US-KS,99
+custom wardrobe,4,Kansas,US-KS,0
+custom coffee table,4,Kansas,US-KS,1
+custom nightstand,4,Kansas,US-KS,0
+custom tv stand,4,Kansas,US-KS,0
+dining table,4,Arizona,US-AZ,99
+custom wardrobe,4,Arizona,US-AZ,0
+custom coffee table,4,Arizona,US-AZ,1
+custom nightstand,4,Arizona,US-AZ,0
+custom tv stand,4,Arizona,US-AZ,0
+dining table,4,South Carolina,US-SC,99
+custom wardrobe,4,South Carolina,US-SC,0
+custom coffee table,4,South Carolina,US-SC,1
+custom nightstand,4,South Carolina,US-SC,0
+custom tv stand,4,South Carolina,US-SC,0
+dining table,4,Texas,US-TX,99
+custom wardrobe,4,Texas,US-TX,0
+custom coffee table,4,Texas,US-TX,1
+custom nightstand,4,Texas,US-TX,0
+custom tv stand,4,Texas,US-TX,0
+dining table,4,Virginia,US-VA,99
+custom wardrobe,4,Virginia,US-VA,0
+custom coffee table,4,Virginia,US-VA,1
+custom nightstand,4,Virginia,US-VA,0
+custom tv stand,4,Virginia,US-VA,0
+dining table,4,Alabama,US-AL,99
+custom wardrobe,4,Alabama,US-AL,0
+custom coffee table,4,Alabama,US-AL,1
+custom nightstand,4,Alabama,US-AL,0
+custom tv stand,4,Alabama,US-AL,0
+dining table,4,Delaware,US-DE,98
+custom wardrobe,4,Delaware,US-DE,0
+custom coffee table,4,Delaware,US-DE,1
+custom nightstand,4,Delaware,US-DE,0
+custom tv stand,4,Delaware,US-DE,1
+dining table,4,Nevada,US-NV,99
+custom wardrobe,4,Nevada,US-NV,0
+custom coffee table,4,Nevada,US-NV,1
+custom nightstand,4,Nevada,US-NV,0
+custom tv stand,4,Nevada,US-NV,0
+dining table,4,Illinois,US-IL,99
+custom wardrobe,4,Illinois,US-IL,0
+custom coffee table,4,Illinois,US-IL,1
+custom nightstand,4,Illinois,US-IL,0
+custom tv stand,4,Illinois,US-IL,0
+dining table,4,Pennsylvania,US-PA,99
+custom wardrobe,4,Pennsylvania,US-PA,0
+custom coffee table,4,Pennsylvania,US-PA,1
+custom nightstand,4,Pennsylvania,US-PA,0
+custom tv stand,4,Pennsylvania,US-PA,0
+dining table,4,Colorado,US-CO,99
+custom wardrobe,4,Colorado,US-CO,0
+custom coffee table,4,Colorado,US-CO,1
+custom nightstand,4,Colorado,US-CO,0
+custom tv stand,4,Colorado,US-CO,0
+dining table,4,Utah,US-UT,98
+custom wardrobe,4,Utah,US-UT,0
+custom coffee table,4,Utah,US-UT,2
+custom nightstand,4,Utah,US-UT,0
+custom tv stand,4,Utah,US-UT,0
+dining table,4,Ohio,US-OH,99
+custom wardrobe,4,Ohio,US-OH,0
+custom coffee table,4,Ohio,US-OH,1
+custom nightstand,4,Ohio,US-OH,0
+custom tv stand,4,Ohio,US-OH,0
+dining table,4,Oregon,US-OR,99
+custom wardrobe,4,Oregon,US-OR,0
+custom coffee table,4,Oregon,US-OR,1
+custom nightstand,4,Oregon,US-OR,0
+custom tv stand,4,Oregon,US-OR,0
+dining table,4,Louisiana,US-LA,99
+custom wardrobe,4,Louisiana,US-LA,0
+custom coffee table,4,Louisiana,US-LA,1
+custom nightstand,4,Louisiana,US-LA,0
+custom tv stand,4,Louisiana,US-LA,0
+dining table,4,Tennessee,US-TN,99
+custom wardrobe,4,Tennessee,US-TN,0
+custom coffee table,4,Tennessee,US-TN,1
+custom nightstand,4,Tennessee,US-TN,0
+custom tv stand,4,Tennessee,US-TN,0
+dining table,4,Minnesota,US-MN,99
+custom wardrobe,4,Minnesota,US-MN,0
+custom coffee table,4,Minnesota,US-MN,1
+custom nightstand,4,Minnesota,US-MN,0
+custom tv stand,4,Minnesota,US-MN,0
+dining table,4,Idaho,US-ID,99
+custom wardrobe,4,Idaho,US-ID,0
+custom coffee table,4,Idaho,US-ID,1
+custom nightstand,4,Idaho,US-ID,0
+custom tv stand,4,Idaho,US-ID,0
+dining table,4,Rhode Island,US-RI,98
+custom wardrobe,4,Rhode Island,US-RI,0
+custom coffee table,4,Rhode Island,US-RI,1
+custom nightstand,4,Rhode Island,US-RI,0
+custom tv stand,4,Rhode Island,US-RI,1
+dining table,4,Michigan,US-MI,99
+custom wardrobe,4,Michigan,US-MI,0
+custom coffee table,4,Michigan,US-MI,1
+custom nightstand,4,Michigan,US-MI,0
+custom tv stand,4,Michigan,US-MI,0
+dining table,4,Missouri,US-MO,99
+custom wardrobe,4,Missouri,US-MO,0
+custom coffee table,4,Missouri,US-MO,1
+custom nightstand,4,Missouri,US-MO,0
+custom tv stand,4,Missouri,US-MO,0
+dining table,4,Oklahoma,US-OK,99
+custom wardrobe,4,Oklahoma,US-OK,0
+custom coffee table,4,Oklahoma,US-OK,1
+custom nightstand,4,Oklahoma,US-OK,0
+custom tv stand,4,Oklahoma,US-OK,0
+dining table,4,New Hampshire,US-NH,99
+custom wardrobe,4,New Hampshire,US-NH,0
+custom coffee table,4,New Hampshire,US-NH,1
+custom nightstand,4,New Hampshire,US-NH,0
+custom tv stand,4,New Hampshire,US-NH,0
+dining table,4,Kentucky,US-KY,99
+custom wardrobe,4,Kentucky,US-KY,0
+custom coffee table,4,Kentucky,US-KY,1
+custom nightstand,4,Kentucky,US-KY,0
+custom tv stand,4,Kentucky,US-KY,0
+dining table,4,Mississippi,US-MS,99
+custom wardrobe,4,Mississippi,US-MS,0
+custom coffee table,4,Mississippi,US-MS,1
+custom nightstand,4,Mississippi,US-MS,0
+custom tv stand,4,Mississippi,US-MS,0
+dining table,4,Indiana,US-IN,99
+custom wardrobe,4,Indiana,US-IN,0
+custom coffee table,4,Indiana,US-IN,1
+custom nightstand,4,Indiana,US-IN,0
+custom tv stand,4,Indiana,US-IN,0
+dining table,4,Arkansas,US-AR,99
+custom wardrobe,4,Arkansas,US-AR,0
+custom coffee table,4,Arkansas,US-AR,1
+custom nightstand,4,Arkansas,US-AR,0
+custom tv stand,4,Arkansas,US-AR,0
+dining table,4,Maine,US-ME,99
+custom wardrobe,4,Maine,US-ME,0
+custom coffee table,4,Maine,US-ME,1
+custom nightstand,4,Maine,US-ME,0
+custom tv stand,4,Maine,US-ME,0
+dining table,4,Vermont,US-VT,100
+custom wardrobe,4,Vermont,US-VT,0
+custom coffee table,4,Vermont,US-VT,0
+custom nightstand,4,Vermont,US-VT,0
+custom tv stand,4,Vermont,US-VT,0
+dining table,4,New Mexico,US-NM,99
+custom wardrobe,4,New Mexico,US-NM,0
+custom coffee table,4,New Mexico,US-NM,1
+custom nightstand,4,New Mexico,US-NM,0
+custom tv stand,4,New Mexico,US-NM,0
+dining table,4,Nebraska,US-NE,98
+custom wardrobe,4,Nebraska,US-NE,0
+custom coffee table,4,Nebraska,US-NE,2
+custom nightstand,4,Nebraska,US-NE,0
+custom tv stand,4,Nebraska,US-NE,0
+dining table,4,Wisconsin,US-WI,99
+custom wardrobe,4,Wisconsin,US-WI,0
+custom coffee table,4,Wisconsin,US-WI,1
+custom nightstand,4,Wisconsin,US-WI,0
+custom tv stand,4,Wisconsin,US-WI,0
+dining table,4,Hawaii,US-HI,99
+custom wardrobe,4,Hawaii,US-HI,0
+custom coffee table,4,Hawaii,US-HI,1
+custom nightstand,4,Hawaii,US-HI,0
+custom tv stand,4,Hawaii,US-HI,0
+dining table,4,Iowa,US-IA,99
+custom wardrobe,4,Iowa,US-IA,0
+custom coffee table,4,Iowa,US-IA,1
+custom nightstand,4,Iowa,US-IA,0
+custom tv stand,4,Iowa,US-IA,0
+dining table,4,Montana,US-MT,99
+custom wardrobe,4,Montana,US-MT,0
+custom coffee table,4,Montana,US-MT,1
+custom nightstand,4,Montana,US-MT,0
+custom tv stand,4,Montana,US-MT,0
+dining table,4,West Virginia,US-WV,99
+custom wardrobe,4,West Virginia,US-WV,0
+custom coffee table,4,West Virginia,US-WV,1
+custom nightstand,4,West Virginia,US-WV,0
+custom tv stand,4,West Virginia,US-WV,0
+dining table,4,South Dakota,US-SD,100
+custom wardrobe,4,South Dakota,US-SD,0
+custom coffee table,4,South Dakota,US-SD,0
+custom nightstand,4,South Dakota,US-SD,0
+custom tv stand,4,South Dakota,US-SD,0
+dining table,4,North Dakota,US-ND,98
+custom wardrobe,4,North Dakota,US-ND,0
+custom coffee table,4,North Dakota,US-ND,1
+custom nightstand,4,North Dakota,US-ND,1
+custom tv stand,4,North Dakota,US-ND,0
+dining table,4,Alaska,US-AK,99
+custom wardrobe,4,Alaska,US-AK,0
+custom coffee table,4,Alaska,US-AK,1
+custom nightstand,4,Alaska,US-AK,0
+custom tv stand,4,Alaska,US-AK,0
+dining table,5,Wyoming,US-WY,71
+custom cabinets,5,Wyoming,US-WY,3
+custom closet,5,Wyoming,US-WY,2
+custom dining table,5,Wyoming,US-WY,3
+dining chair,5,Wyoming,US-WY,21
+dining table,5,New Jersey,US-NJ,79
+custom cabinets,5,New Jersey,US-NJ,2
+custom closet,5,New Jersey,US-NJ,2
+custom dining table,5,New Jersey,US-NJ,0
+dining chair,5,New Jersey,US-NJ,17
+dining table,5,New York,US-NY,77
+custom cabinets,5,New York,US-NY,3
+custom closet,5,New York,US-NY,2
+custom dining table,5,New York,US-NY,0
+dining chair,5,New York,US-NY,18
+dining table,5,District of Columbia,US-DC,75
+custom cabinets,5,District of Columbia,US-DC,3
+custom closet,5,District of Columbia,US-DC,3
+custom dining table,5,District of Columbia,US-DC,0
+dining chair,5,District of Columbia,US-DC,19
+dining table,5,California,US-CA,78
+custom cabinets,5,California,US-CA,3
+custom closet,5,California,US-CA,2
+custom dining table,5,California,US-CA,0
+dining chair,5,California,US-CA,17
+dining table,5,Florida,US-FL,77
+custom cabinets,5,Florida,US-FL,3
+custom closet,5,Florida,US-FL,2
+custom dining table,5,Florida,US-FL,0
+dining chair,5,Florida,US-FL,18
+dining table,5,Connecticut,US-CT,78
+custom cabinets,5,Connecticut,US-CT,3
+custom closet,5,Connecticut,US-CT,1
+custom dining table,5,Connecticut,US-CT,0
+dining chair,5,Connecticut,US-CT,18
+dining table,5,Massachusetts,US-MA,78
+custom cabinets,5,Massachusetts,US-MA,2
+custom closet,5,Massachusetts,US-MA,3
+custom dining table,5,Massachusetts,US-MA,0
+dining chair,5,Massachusetts,US-MA,17
+dining table,5,Washington,US-WA,77
+custom cabinets,5,Washington,US-WA,5
+custom closet,5,Washington,US-WA,1
+custom dining table,5,Washington,US-WA,0
+dining chair,5,Washington,US-WA,17
+dining table,5,Georgia,US-GA,79
+custom cabinets,5,Georgia,US-GA,3
+custom closet,5,Georgia,US-GA,2
+custom dining table,5,Georgia,US-GA,0
+dining chair,5,Georgia,US-GA,16
+dining table,5,Maryland,US-MD,78
+custom cabinets,5,Maryland,US-MD,2
+custom closet,5,Maryland,US-MD,2
+custom dining table,5,Maryland,US-MD,0
+dining chair,5,Maryland,US-MD,18
+dining table,5,North Carolina,US-NC,78
+custom cabinets,5,North Carolina,US-NC,4
+custom closet,5,North Carolina,US-NC,1
+custom dining table,5,North Carolina,US-NC,0
+dining chair,5,North Carolina,US-NC,17
+dining table,5,Kansas,US-KS,76
+custom cabinets,5,Kansas,US-KS,5
+custom closet,5,Kansas,US-KS,1
+custom dining table,5,Kansas,US-KS,1
+dining chair,5,Kansas,US-KS,17
+dining table,5,Arizona,US-AZ,77
+custom cabinets,5,Arizona,US-AZ,5
+custom closet,5,Arizona,US-AZ,1
+custom dining table,5,Arizona,US-AZ,0
+dining chair,5,Arizona,US-AZ,17
+dining table,5,South Carolina,US-SC,78
+custom cabinets,5,South Carolina,US-SC,3
+custom closet,5,South Carolina,US-SC,4
+custom dining table,5,South Carolina,US-SC,0
+dining chair,5,South Carolina,US-SC,15
+dining table,5,Texas,US-TX,78
+custom cabinets,5,Texas,US-TX,4
+custom closet,5,Texas,US-TX,1
+custom dining table,5,Texas,US-TX,0
+dining chair,5,Texas,US-TX,17
+dining table,5,Virginia,US-VA,77
+custom cabinets,5,Virginia,US-VA,4
+custom closet,5,Virginia,US-VA,2
+custom dining table,5,Virginia,US-VA,0
+dining chair,5,Virginia,US-VA,17
+dining table,5,Alabama,US-AL,79
+custom cabinets,5,Alabama,US-AL,4
+custom closet,5,Alabama,US-AL,1
+custom dining table,5,Alabama,US-AL,0
+dining chair,5,Alabama,US-AL,16
+dining table,5,Delaware,US-DE,74
+custom cabinets,5,Delaware,US-DE,3
+custom closet,5,Delaware,US-DE,7
+custom dining table,5,Delaware,US-DE,0
+dining chair,5,Delaware,US-DE,16
+dining table,5,Nevada,US-NV,80
+custom cabinets,5,Nevada,US-NV,3
+custom closet,5,Nevada,US-NV,2
+custom dining table,5,Nevada,US-NV,0
+dining chair,5,Nevada,US-NV,15
+dining table,5,Illinois,US-IL,77
+custom cabinets,5,Illinois,US-IL,4
+custom closet,5,Illinois,US-IL,1
+custom dining table,5,Illinois,US-IL,0
+dining chair,5,Illinois,US-IL,18
+dining table,5,Pennsylvania,US-PA,77
+custom cabinets,5,Pennsylvania,US-PA,4
+custom closet,5,Pennsylvania,US-PA,3
+custom dining table,5,Pennsylvania,US-PA,0
+dining chair,5,Pennsylvania,US-PA,16
+dining table,5,Colorado,US-CO,74
+custom cabinets,5,Colorado,US-CO,5
+custom closet,5,Colorado,US-CO,2
+custom dining table,5,Colorado,US-CO,0
+dining chair,5,Colorado,US-CO,19
+dining table,5,Utah,US-UT,76
+custom cabinets,5,Utah,US-UT,5
+custom closet,5,Utah,US-UT,1
+custom dining table,5,Utah,US-UT,0
+dining chair,5,Utah,US-UT,18
+dining table,5,Ohio,US-OH,80
+custom cabinets,5,Ohio,US-OH,3
+custom closet,5,Ohio,US-OH,1
+custom dining table,5,Ohio,US-OH,0
+dining chair,5,Ohio,US-OH,16
+dining table,5,Oregon,US-OR,77
+custom cabinets,5,Oregon,US-OR,5
+custom closet,5,Oregon,US-OR,1
+custom dining table,5,Oregon,US-OR,0
+dining chair,5,Oregon,US-OR,17
+dining table,5,Louisiana,US-LA,78
+custom cabinets,5,Louisiana,US-LA,4
+custom closet,5,Louisiana,US-LA,2
+custom dining table,5,Louisiana,US-LA,0
+dining chair,5,Louisiana,US-LA,16
+dining table,5,Tennessee,US-TN,76
+custom cabinets,5,Tennessee,US-TN,4
+custom closet,5,Tennessee,US-TN,2
+custom dining table,5,Tennessee,US-TN,0
+dining chair,5,Tennessee,US-TN,18
+dining table,5,Minnesota,US-MN,75
+custom cabinets,5,Minnesota,US-MN,6
+custom closet,5,Minnesota,US-MN,2
+custom dining table,5,Minnesota,US-MN,0
+dining chair,5,Minnesota,US-MN,17
+dining table,5,Idaho,US-ID,77
+custom cabinets,5,Idaho,US-ID,8
+custom closet,5,Idaho,US-ID,1
+custom dining table,5,Idaho,US-ID,0
+dining chair,5,Idaho,US-ID,14
+dining table,5,Rhode Island,US-RI,76
+custom cabinets,5,Rhode Island,US-RI,4
+custom closet,5,Rhode Island,US-RI,2
+custom dining table,5,Rhode Island,US-RI,0
+dining chair,5,Rhode Island,US-RI,18
+dining table,5,Michigan,US-MI,78
+custom cabinets,5,Michigan,US-MI,4
+custom closet,5,Michigan,US-MI,1
+custom dining table,5,Michigan,US-MI,0
+dining chair,5,Michigan,US-MI,17
+dining table,5,Missouri,US-MO,77
+custom cabinets,5,Missouri,US-MO,5
+custom closet,5,Missouri,US-MO,1
+custom dining table,5,Missouri,US-MO,0
+dining chair,5,Missouri,US-MO,17
+dining table,5,Oklahoma,US-OK,79
+custom cabinets,5,Oklahoma,US-OK,4
+custom closet,5,Oklahoma,US-OK,1
+custom dining table,5,Oklahoma,US-OK,0
+dining chair,5,Oklahoma,US-OK,16
+dining table,5,New Hampshire,US-NH,77
+custom cabinets,5,New Hampshire,US-NH,5
+custom closet,5,New Hampshire,US-NH,3
+custom dining table,5,New Hampshire,US-NH,0
+dining chair,5,New Hampshire,US-NH,15
+dining table,5,Kentucky,US-KY,78
+custom cabinets,5,Kentucky,US-KY,5
+custom closet,5,Kentucky,US-KY,1
+custom dining table,5,Kentucky,US-KY,0
+dining chair,5,Kentucky,US-KY,16
+dining table,5,Mississippi,US-MS,80
+custom cabinets,5,Mississippi,US-MS,3
+custom closet,5,Mississippi,US-MS,1
+custom dining table,5,Mississippi,US-MS,0
+dining chair,5,Mississippi,US-MS,16
+dining table,5,Indiana,US-IN,78
+custom cabinets,5,Indiana,US-IN,4
+custom closet,5,Indiana,US-IN,1
+custom dining table,5,Indiana,US-IN,0
+dining chair,5,Indiana,US-IN,17
+dining table,5,Arkansas,US-AR,77
+custom cabinets,5,Arkansas,US-AR,5
+custom closet,5,Arkansas,US-AR,1
+custom dining table,5,Arkansas,US-AR,0
+dining chair,5,Arkansas,US-AR,17
+dining table,5,Maine,US-ME,76
+custom cabinets,5,Maine,US-ME,5
+custom closet,5,Maine,US-ME,2
+custom dining table,5,Maine,US-ME,0
+dining chair,5,Maine,US-ME,17
+dining table,5,Vermont,US-VT,75
+custom cabinets,5,Vermont,US-VT,3
+custom closet,5,Vermont,US-VT,2
+custom dining table,5,Vermont,US-VT,0
+dining chair,5,Vermont,US-VT,20
+dining table,5,New Mexico,US-NM,81
+custom cabinets,5,New Mexico,US-NM,4
+custom closet,5,New Mexico,US-NM,1
+custom dining table,5,New Mexico,US-NM,0
+dining chair,5,New Mexico,US-NM,14
+dining table,5,Nebraska,US-NE,75
+custom cabinets,5,Nebraska,US-NE,7
+custom closet,5,Nebraska,US-NE,2
+custom dining table,5,Nebraska,US-NE,0
+dining chair,5,Nebraska,US-NE,16
+dining table,5,Wisconsin,US-WI,76
+custom cabinets,5,Wisconsin,US-WI,6
+custom closet,5,Wisconsin,US-WI,1
+custom dining table,5,Wisconsin,US-WI,0
+dining chair,5,Wisconsin,US-WI,17
+dining table,5,Hawaii,US-HI,78
+custom cabinets,5,Hawaii,US-HI,4
+custom closet,5,Hawaii,US-HI,2
+custom dining table,5,Hawaii,US-HI,0
+dining chair,5,Hawaii,US-HI,16
+dining table,5,Iowa,US-IA,77
+custom cabinets,5,Iowa,US-IA,6
+custom closet,5,Iowa,US-IA,1
+custom dining table,5,Iowa,US-IA,0
+dining chair,5,Iowa,US-IA,16
+dining table,5,Montana,US-MT,75
+custom cabinets,5,Montana,US-MT,5
+custom closet,5,Montana,US-MT,1
+custom dining table,5,Montana,US-MT,1
+dining chair,5,Montana,US-MT,18
+dining table,5,West Virginia,US-WV,80
+custom cabinets,5,West Virginia,US-WV,4
+custom closet,5,West Virginia,US-WV,1
+custom dining table,5,West Virginia,US-WV,0
+dining chair,5,West Virginia,US-WV,15
+dining table,5,South Dakota,US-SD,77
+custom cabinets,5,South Dakota,US-SD,6
+custom closet,5,South Dakota,US-SD,1
+custom dining table,5,South Dakota,US-SD,0
+dining chair,5,South Dakota,US-SD,16
+dining table,5,North Dakota,US-ND,74
+custom cabinets,5,North Dakota,US-ND,7
+custom closet,5,North Dakota,US-ND,1
+custom dining table,5,North Dakota,US-ND,0
+dining chair,5,North Dakota,US-ND,18
+dining table,5,Alaska,US-AK,76
+custom cabinets,5,Alaska,US-AK,4
+custom closet,5,Alaska,US-AK,2
+custom dining table,5,Alaska,US-AK,0
+dining chair,5,Alaska,US-AK,18
+dining table,6,Wyoming,US-WY,35
+custom dining chair,6,Wyoming,US-WY,0
+accent chair,6,Wyoming,US-WY,9
+custom accent chair,6,Wyoming,US-WY,0
+bench,6,Wyoming,US-WY,56
+dining table,6,New Jersey,US-NJ,34
+custom dining chair,6,New Jersey,US-NJ,0
+accent chair,6,New Jersey,US-NJ,4
+custom accent chair,6,New Jersey,US-NJ,0
+bench,6,New Jersey,US-NJ,62
+dining table,6,New York,US-NY,35
+custom dining chair,6,New York,US-NY,0
+accent chair,6,New York,US-NY,4
+custom accent chair,6,New York,US-NY,0
+bench,6,New York,US-NY,61
+dining table,6,District of Columbia,US-DC,34
+custom dining chair,6,District of Columbia,US-DC,0
+accent chair,6,District of Columbia,US-DC,5
+custom accent chair,6,District of Columbia,US-DC,0
+bench,6,District of Columbia,US-DC,61
+dining table,6,California,US-CA,32
+custom dining chair,6,California,US-CA,0
+accent chair,6,California,US-CA,3
+custom accent chair,6,California,US-CA,0
+bench,6,California,US-CA,65
+dining table,6,Florida,US-FL,34
+custom dining chair,6,Florida,US-FL,0
+accent chair,6,Florida,US-FL,4
+custom accent chair,6,Florida,US-FL,0
+bench,6,Florida,US-FL,62
+dining table,6,Connecticut,US-CT,30
+custom dining chair,6,Connecticut,US-CT,0
+accent chair,6,Connecticut,US-CT,4
+custom accent chair,6,Connecticut,US-CT,0
+bench,6,Connecticut,US-CT,66
+dining table,6,Massachusetts,US-MA,29
+custom dining chair,6,Massachusetts,US-MA,0
+accent chair,6,Massachusetts,US-MA,4
+custom accent chair,6,Massachusetts,US-MA,0
+bench,6,Massachusetts,US-MA,67
+dining table,6,Washington,US-WA,28
+custom dining chair,6,Washington,US-WA,0
+accent chair,6,Washington,US-WA,3
+custom accent chair,6,Washington,US-WA,0
+bench,6,Washington,US-WA,69
+dining table,6,Georgia,US-GA,29
+custom dining chair,6,Georgia,US-GA,0
+accent chair,6,Georgia,US-GA,5
+custom accent chair,6,Georgia,US-GA,0
+bench,6,Georgia,US-GA,66
+dining table,6,Maryland,US-MD,30
+custom dining chair,6,Maryland,US-MD,0
+accent chair,6,Maryland,US-MD,4
+custom accent chair,6,Maryland,US-MD,0
+bench,6,Maryland,US-MD,66
+dining table,6,North Carolina,US-NC,29
+custom dining chair,6,North Carolina,US-NC,0
+accent chair,6,North Carolina,US-NC,4
+custom accent chair,6,North Carolina,US-NC,0
+bench,6,North Carolina,US-NC,67
+dining table,6,Kansas,US-KS,27
+custom dining chair,6,Kansas,US-KS,0
+accent chair,6,Kansas,US-KS,4
+custom accent chair,6,Kansas,US-KS,0
+bench,6,Kansas,US-KS,69
+dining table,6,Arizona,US-AZ,29
+custom dining chair,6,Arizona,US-AZ,0
+accent chair,6,Arizona,US-AZ,4
+custom accent chair,6,Arizona,US-AZ,0
+bench,6,Arizona,US-AZ,67
+dining table,6,South Carolina,US-SC,28
+custom dining chair,6,South Carolina,US-SC,0
+accent chair,6,South Carolina,US-SC,4
+custom accent chair,6,South Carolina,US-SC,0
+bench,6,South Carolina,US-SC,68
+dining table,6,Texas,US-TX,29
+custom dining chair,6,Texas,US-TX,0
+accent chair,6,Texas,US-TX,4
+custom accent chair,6,Texas,US-TX,0
+bench,6,Texas,US-TX,67
+dining table,6,Virginia,US-VA,30
+custom dining chair,6,Virginia,US-VA,0
+accent chair,6,Virginia,US-VA,4
+custom accent chair,6,Virginia,US-VA,0
+bench,6,Virginia,US-VA,66
+dining table,6,Alabama,US-AL,29
+custom dining chair,6,Alabama,US-AL,0
+accent chair,6,Alabama,US-AL,4
+custom accent chair,6,Alabama,US-AL,0
+bench,6,Alabama,US-AL,67
+dining table,6,Delaware,US-DE,26
+custom dining chair,6,Delaware,US-DE,0
+accent chair,6,Delaware,US-DE,4
+custom accent chair,6,Delaware,US-DE,0
+bench,6,Delaware,US-DE,70
+dining table,6,Nevada,US-NV,30
+custom dining chair,6,Nevada,US-NV,0
+accent chair,6,Nevada,US-NV,3
+custom accent chair,6,Nevada,US-NV,0
+bench,6,Nevada,US-NV,67
+dining table,6,Illinois,US-IL,27
+custom dining chair,6,Illinois,US-IL,0
+accent chair,6,Illinois,US-IL,4
+custom accent chair,6,Illinois,US-IL,0
+bench,6,Illinois,US-IL,69
+dining table,6,Pennsylvania,US-PA,26
+custom dining chair,6,Pennsylvania,US-PA,0
+accent chair,6,Pennsylvania,US-PA,4
+custom accent chair,6,Pennsylvania,US-PA,0
+bench,6,Pennsylvania,US-PA,70
+dining table,6,Colorado,US-CO,25
+custom dining chair,6,Colorado,US-CO,0
+accent chair,6,Colorado,US-CO,4
+custom accent chair,6,Colorado,US-CO,0
+bench,6,Colorado,US-CO,71
+dining table,6,Utah,US-UT,23
+custom dining chair,6,Utah,US-UT,0
+accent chair,6,Utah,US-UT,4
+custom accent chair,6,Utah,US-UT,0
+bench,6,Utah,US-UT,73
+dining table,6,Ohio,US-OH,27
+custom dining chair,6,Ohio,US-OH,0
+accent chair,6,Ohio,US-OH,4
+custom accent chair,6,Ohio,US-OH,0
+bench,6,Ohio,US-OH,69
+dining table,6,Oregon,US-OR,26
+custom dining chair,6,Oregon,US-OR,0
+accent chair,6,Oregon,US-OR,3
+custom accent chair,6,Oregon,US-OR,0
+bench,6,Oregon,US-OR,71
+dining table,6,Louisiana,US-LA,26
+custom dining chair,6,Louisiana,US-LA,0
+accent chair,6,Louisiana,US-LA,4
+custom accent chair,6,Louisiana,US-LA,0
+bench,6,Louisiana,US-LA,70
+dining table,6,Tennessee,US-TN,26
+custom dining chair,6,Tennessee,US-TN,0
+accent chair,6,Tennessee,US-TN,4
+custom accent chair,6,Tennessee,US-TN,0
+bench,6,Tennessee,US-TN,70
+dining table,6,Minnesota,US-MN,23
+custom dining chair,6,Minnesota,US-MN,0
+accent chair,6,Minnesota,US-MN,3
+custom accent chair,6,Minnesota,US-MN,0
+bench,6,Minnesota,US-MN,74
+dining table,6,Idaho,US-ID,19
+custom dining chair,6,Idaho,US-ID,0
+accent chair,6,Idaho,US-ID,2
+custom accent chair,6,Idaho,US-ID,0
+bench,6,Idaho,US-ID,79
+dining table,6,Rhode Island,US-RI,25
+custom dining chair,6,Rhode Island,US-RI,0
+accent chair,6,Rhode Island,US-RI,3
+custom accent chair,6,Rhode Island,US-RI,0
+bench,6,Rhode Island,US-RI,72
+dining table,6,Michigan,US-MI,24
+custom dining chair,6,Michigan,US-MI,0
+accent chair,6,Michigan,US-MI,3
+custom accent chair,6,Michigan,US-MI,0
+bench,6,Michigan,US-MI,73
+dining table,6,Missouri,US-MO,23
+custom dining chair,6,Missouri,US-MO,0
+accent chair,6,Missouri,US-MO,4
+custom accent chair,6,Missouri,US-MO,0
+bench,6,Missouri,US-MO,73
+dining table,6,Oklahoma,US-OK,24
+custom dining chair,6,Oklahoma,US-OK,0
+accent chair,6,Oklahoma,US-OK,3
+custom accent chair,6,Oklahoma,US-OK,0
+bench,6,Oklahoma,US-OK,73
+dining table,6,New Hampshire,US-NH,22
+custom dining chair,6,New Hampshire,US-NH,0
+accent chair,6,New Hampshire,US-NH,2
+custom accent chair,6,New Hampshire,US-NH,0
+bench,6,New Hampshire,US-NH,76
+dining table,6,Kentucky,US-KY,23
+custom dining chair,6,Kentucky,US-KY,0
+accent chair,6,Kentucky,US-KY,3
+custom accent chair,6,Kentucky,US-KY,0
+bench,6,Kentucky,US-KY,74
+dining table,6,Mississippi,US-MS,25
+custom dining chair,6,Mississippi,US-MS,0
+accent chair,6,Mississippi,US-MS,4
+custom accent chair,6,Mississippi,US-MS,0
+bench,6,Mississippi,US-MS,71
+dining table,6,Indiana,US-IN,23
+custom dining chair,6,Indiana,US-IN,0
+accent chair,6,Indiana,US-IN,3
+custom accent chair,6,Indiana,US-IN,0
+bench,6,Indiana,US-IN,74
+dining table,6,Arkansas,US-AR,24
+custom dining chair,6,Arkansas,US-AR,0
+accent chair,6,Arkansas,US-AR,3
+custom accent chair,6,Arkansas,US-AR,0
+bench,6,Arkansas,US-AR,73
+dining table,6,Maine,US-ME,22
+custom dining chair,6,Maine,US-ME,0
+accent chair,6,Maine,US-ME,2
+custom accent chair,6,Maine,US-ME,0
+bench,6,Maine,US-ME,76
+dining table,6,Vermont,US-VT,18
+custom dining chair,6,Vermont,US-VT,0
+accent chair,6,Vermont,US-VT,2
+custom accent chair,6,Vermont,US-VT,0
+bench,6,Vermont,US-VT,80
+dining table,6,New Mexico,US-NM,24
+custom dining chair,6,New Mexico,US-NM,0
+accent chair,6,New Mexico,US-NM,2
+custom accent chair,6,New Mexico,US-NM,0
+bench,6,New Mexico,US-NM,74
+dining table,6,Nebraska,US-NE,21
+custom dining chair,6,Nebraska,US-NE,0
+accent chair,6,Nebraska,US-NE,3
+custom accent chair,6,Nebraska,US-NE,0
+bench,6,Nebraska,US-NE,76
+dining table,6,Wisconsin,US-WI,21
+custom dining chair,6,Wisconsin,US-WI,0
+accent chair,6,Wisconsin,US-WI,3
+custom accent chair,6,Wisconsin,US-WI,0
+bench,6,Wisconsin,US-WI,76
+dining table,6,Hawaii,US-HI,24
+custom dining chair,6,Hawaii,US-HI,0
+accent chair,6,Hawaii,US-HI,2
+custom accent chair,6,Hawaii,US-HI,0
+bench,6,Hawaii,US-HI,74
+dining table,6,Iowa,US-IA,20
+custom dining chair,6,Iowa,US-IA,0
+accent chair,6,Iowa,US-IA,3
+custom accent chair,6,Iowa,US-IA,0
+bench,6,Iowa,US-IA,77
+dining table,6,Montana,US-MT,16
+custom dining chair,6,Montana,US-MT,0
+accent chair,6,Montana,US-MT,2
+custom accent chair,6,Montana,US-MT,0
+bench,6,Montana,US-MT,82
+dining table,6,West Virginia,US-WV,20
+custom dining chair,6,West Virginia,US-WV,0
+accent chair,6,West Virginia,US-WV,2
+custom accent chair,6,West Virginia,US-WV,0
+bench,6,West Virginia,US-WV,78
+dining table,6,South Dakota,US-SD,18
+custom dining chair,6,South Dakota,US-SD,0
+accent chair,6,South Dakota,US-SD,3
+custom accent chair,6,South Dakota,US-SD,0
+bench,6,South Dakota,US-SD,79
+dining table,6,North Dakota,US-ND,18
+custom dining chair,6,North Dakota,US-ND,0
+accent chair,6,North Dakota,US-ND,3
+custom accent chair,6,North Dakota,US-ND,0
+bench,6,North Dakota,US-ND,79
+dining table,6,Alaska,US-AK,18
+custom dining chair,6,Alaska,US-AK,0
+accent chair,6,Alaska,US-AK,2
+custom accent chair,6,Alaska,US-AK,0
+bench,6,Alaska,US-AK,80
+dining table,7,Wyoming,US-WY,70
+custom bench,7,Wyoming,US-WY,3
+console table,7,Wyoming,US-WY,17
+custom console table,7,Wyoming,US-WY,1
+custom furniture,7,Wyoming,US-WY,9
+dining table,7,New Jersey,US-NJ,78
+custom bench,7,New Jersey,US-NJ,0
+console table,7,New Jersey,US-NJ,19
+custom console table,7,New Jersey,US-NJ,0
+custom furniture,7,New Jersey,US-NJ,3
+dining table,7,New York,US-NY,79
+custom bench,7,New York,US-NY,0
+console table,7,New York,US-NY,18
+custom console table,7,New York,US-NY,0
+custom furniture,7,New York,US-NY,3
+dining table,7,District of Columbia,US-DC,74
+custom bench,7,District of Columbia,US-DC,1
+console table,7,District of Columbia,US-DC,22
+custom console table,7,District of Columbia,US-DC,0
+custom furniture,7,District of Columbia,US-DC,3
+dining table,7,California,US-CA,79
+custom bench,7,California,US-CA,1
+console table,7,California,US-CA,17
+custom console table,7,California,US-CA,0
+custom furniture,7,California,US-CA,3
+dining table,7,Florida,US-FL,77
+custom bench,7,Florida,US-FL,0
+console table,7,Florida,US-FL,19
+custom console table,7,Florida,US-FL,0
+custom furniture,7,Florida,US-FL,4
+dining table,7,Connecticut,US-CT,79
+custom bench,7,Connecticut,US-CT,1
+console table,7,Connecticut,US-CT,17
+custom console table,7,Connecticut,US-CT,0
+custom furniture,7,Connecticut,US-CT,3
+dining table,7,Massachusetts,US-MA,77
+custom bench,7,Massachusetts,US-MA,1
+console table,7,Massachusetts,US-MA,19
+custom console table,7,Massachusetts,US-MA,0
+custom furniture,7,Massachusetts,US-MA,3
+dining table,7,Washington,US-WA,78
+custom bench,7,Washington,US-WA,1
+console table,7,Washington,US-WA,18
+custom console table,7,Washington,US-WA,0
+custom furniture,7,Washington,US-WA,3
+dining table,7,Georgia,US-GA,77
+custom bench,7,Georgia,US-GA,1
+console table,7,Georgia,US-GA,19
+custom console table,7,Georgia,US-GA,0
+custom furniture,7,Georgia,US-GA,3
+dining table,7,Maryland,US-MD,79
+custom bench,7,Maryland,US-MD,1
+console table,7,Maryland,US-MD,18
+custom console table,7,Maryland,US-MD,0
+custom furniture,7,Maryland,US-MD,2
+dining table,7,North Carolina,US-NC,75
+custom bench,7,North Carolina,US-NC,1
+console table,7,North Carolina,US-NC,19
+custom console table,7,North Carolina,US-NC,0
+custom furniture,7,North Carolina,US-NC,5
+dining table,7,Kansas,US-KS,75
+custom bench,7,Kansas,US-KS,1
+console table,7,Kansas,US-KS,20
+custom console table,7,Kansas,US-KS,0
+custom furniture,7,Kansas,US-KS,4
+dining table,7,Arizona,US-AZ,78
+custom bench,7,Arizona,US-AZ,1
+console table,7,Arizona,US-AZ,18
+custom console table,7,Arizona,US-AZ,0
+custom furniture,7,Arizona,US-AZ,3
+dining table,7,South Carolina,US-SC,76
+custom bench,7,South Carolina,US-SC,1
+console table,7,South Carolina,US-SC,20
+custom console table,7,South Carolina,US-SC,0
+custom furniture,7,South Carolina,US-SC,3
+dining table,7,Texas,US-TX,77
+custom bench,7,Texas,US-TX,1
+console table,7,Texas,US-TX,19
+custom console table,7,Texas,US-TX,0
+custom furniture,7,Texas,US-TX,3
+dining table,7,Virginia,US-VA,77
+custom bench,7,Virginia,US-VA,1
+console table,7,Virginia,US-VA,19
+custom console table,7,Virginia,US-VA,0
+custom furniture,7,Virginia,US-VA,3
+dining table,7,Alabama,US-AL,79
+custom bench,7,Alabama,US-AL,1
+console table,7,Alabama,US-AL,17
+custom console table,7,Alabama,US-AL,0
+custom furniture,7,Alabama,US-AL,3
+dining table,7,Delaware,US-DE,77
+custom bench,7,Delaware,US-DE,1
+console table,7,Delaware,US-DE,19
+custom console table,7,Delaware,US-DE,0
+custom furniture,7,Delaware,US-DE,3
+dining table,7,Nevada,US-NV,79
+custom bench,7,Nevada,US-NV,1
+console table,7,Nevada,US-NV,17
+custom console table,7,Nevada,US-NV,0
+custom furniture,7,Nevada,US-NV,3
+dining table,7,Illinois,US-IL,76
+custom bench,7,Illinois,US-IL,1
+console table,7,Illinois,US-IL,20
+custom console table,7,Illinois,US-IL,0
+custom furniture,7,Illinois,US-IL,3
+dining table,7,Pennsylvania,US-PA,77
+custom bench,7,Pennsylvania,US-PA,1
+console table,7,Pennsylvania,US-PA,19
+custom console table,7,Pennsylvania,US-PA,0
+custom furniture,7,Pennsylvania,US-PA,3
+dining table,7,Colorado,US-CO,76
+custom bench,7,Colorado,US-CO,1
+console table,7,Colorado,US-CO,19
+custom console table,7,Colorado,US-CO,0
+custom furniture,7,Colorado,US-CO,4
+dining table,7,Utah,US-UT,77
+custom bench,7,Utah,US-UT,1
+console table,7,Utah,US-UT,18
+custom console table,7,Utah,US-UT,0
+custom furniture,7,Utah,US-UT,4
+dining table,7,Ohio,US-OH,79
+custom bench,7,Ohio,US-OH,1
+console table,7,Ohio,US-OH,17
+custom console table,7,Ohio,US-OH,0
+custom furniture,7,Ohio,US-OH,3
+dining table,7,Oregon,US-OR,79
+custom bench,7,Oregon,US-OR,1
+console table,7,Oregon,US-OR,17
+custom console table,7,Oregon,US-OR,0
+custom furniture,7,Oregon,US-OR,3
+dining table,7,Louisiana,US-LA,78
+custom bench,7,Louisiana,US-LA,1
+console table,7,Louisiana,US-LA,18
+custom console table,7,Louisiana,US-LA,0
+custom furniture,7,Louisiana,US-LA,3
+dining table,7,Tennessee,US-TN,76
+custom bench,7,Tennessee,US-TN,1
+console table,7,Tennessee,US-TN,20
+custom console table,7,Tennessee,US-TN,0
+custom furniture,7,Tennessee,US-TN,3
+dining table,7,Minnesota,US-MN,77
+custom bench,7,Minnesota,US-MN,1
+console table,7,Minnesota,US-MN,19
+custom console table,7,Minnesota,US-MN,0
+custom furniture,7,Minnesota,US-MN,3
+dining table,7,Idaho,US-ID,79
+custom bench,7,Idaho,US-ID,1
+console table,7,Idaho,US-ID,15
+custom console table,7,Idaho,US-ID,0
+custom furniture,7,Idaho,US-ID,5
+dining table,7,Rhode Island,US-RI,78
+custom bench,7,Rhode Island,US-RI,1
+console table,7,Rhode Island,US-RI,18
+custom console table,7,Rhode Island,US-RI,0
+custom furniture,7,Rhode Island,US-RI,3
+dining table,7,Michigan,US-MI,77
+custom bench,7,Michigan,US-MI,1
+console table,7,Michigan,US-MI,19
+custom console table,7,Michigan,US-MI,0
+custom furniture,7,Michigan,US-MI,3
+dining table,7,Missouri,US-MO,78
+custom bench,7,Missouri,US-MO,1
+console table,7,Missouri,US-MO,18
+custom console table,7,Missouri,US-MO,0
+custom furniture,7,Missouri,US-MO,3
+dining table,7,Oklahoma,US-OK,80
+custom bench,7,Oklahoma,US-OK,1
+console table,7,Oklahoma,US-OK,16
+custom console table,7,Oklahoma,US-OK,0
+custom furniture,7,Oklahoma,US-OK,3
+dining table,7,New Hampshire,US-NH,79
+custom bench,7,New Hampshire,US-NH,1
+console table,7,New Hampshire,US-NH,16
+custom console table,7,New Hampshire,US-NH,0
+custom furniture,7,New Hampshire,US-NH,4
+dining table,7,Kentucky,US-KY,78
+custom bench,7,Kentucky,US-KY,1
+console table,7,Kentucky,US-KY,18
+custom console table,7,Kentucky,US-KY,0
+custom furniture,7,Kentucky,US-KY,3
+dining table,7,Mississippi,US-MS,77
+custom bench,7,Mississippi,US-MS,1
+console table,7,Mississippi,US-MS,19
+custom console table,7,Mississippi,US-MS,0
+custom furniture,7,Mississippi,US-MS,3
+dining table,7,Indiana,US-IN,78
+custom bench,7,Indiana,US-IN,1
+console table,7,Indiana,US-IN,18
+custom console table,7,Indiana,US-IN,0
+custom furniture,7,Indiana,US-IN,3
+dining table,7,Arkansas,US-AR,79
+custom bench,7,Arkansas,US-AR,1
+console table,7,Arkansas,US-AR,17
+custom console table,7,Arkansas,US-AR,0
+custom furniture,7,Arkansas,US-AR,3
+dining table,7,Maine,US-ME,78
+custom bench,7,Maine,US-ME,1
+console table,7,Maine,US-ME,16
+custom console table,7,Maine,US-ME,0
+custom furniture,7,Maine,US-ME,5
+dining table,7,Vermont,US-VT,78
+custom bench,7,Vermont,US-VT,1
+console table,7,Vermont,US-VT,16
+custom console table,7,Vermont,US-VT,0
+custom furniture,7,Vermont,US-VT,5
+dining table,7,New Mexico,US-NM,82
+custom bench,7,New Mexico,US-NM,1
+console table,7,New Mexico,US-NM,14
+custom console table,7,New Mexico,US-NM,0
+custom furniture,7,New Mexico,US-NM,3
+dining table,7,Nebraska,US-NE,77
+custom bench,7,Nebraska,US-NE,1
+console table,7,Nebraska,US-NE,18
+custom console table,7,Nebraska,US-NE,0
+custom furniture,7,Nebraska,US-NE,4
+dining table,7,Wisconsin,US-WI,76
+custom bench,7,Wisconsin,US-WI,1
+console table,7,Wisconsin,US-WI,19
+custom console table,7,Wisconsin,US-WI,0
+custom furniture,7,Wisconsin,US-WI,4
+dining table,7,Hawaii,US-HI,81
+custom bench,7,Hawaii,US-HI,1
+console table,7,Hawaii,US-HI,14
+custom console table,7,Hawaii,US-HI,0
+custom furniture,7,Hawaii,US-HI,4
+dining table,7,Iowa,US-IA,78
+custom bench,7,Iowa,US-IA,1
+console table,7,Iowa,US-IA,18
+custom console table,7,Iowa,US-IA,0
+custom furniture,7,Iowa,US-IA,3
+dining table,7,Montana,US-MT,76
+custom bench,7,Montana,US-MT,2
+console table,7,Montana,US-MT,17
+custom console table,7,Montana,US-MT,0
+custom furniture,7,Montana,US-MT,5
+dining table,7,West Virginia,US-WV,80
+custom bench,7,West Virginia,US-WV,1
+console table,7,West Virginia,US-WV,16
+custom console table,7,West Virginia,US-WV,0
+custom furniture,7,West Virginia,US-WV,3
+dining table,7,South Dakota,US-SD,77
+custom bench,7,South Dakota,US-SD,1
+console table,7,South Dakota,US-SD,19
+custom console table,7,South Dakota,US-SD,0
+custom furniture,7,South Dakota,US-SD,3
+dining table,7,North Dakota,US-ND,77
+custom bench,7,North Dakota,US-ND,1
+console table,7,North Dakota,US-ND,18
+custom console table,7,North Dakota,US-ND,0
+custom furniture,7,North Dakota,US-ND,4
+dining table,7,Alaska,US-AK,78
+custom bench,7,Alaska,US-AK,2
+console table,7,Alaska,US-AK,16
+custom console table,7,Alaska,US-AK,0
+custom furniture,7,Alaska,US-AK,4
+dining table,8,Wyoming,US-WY,93
+made to order furniture,8,Wyoming,US-WY,0
+modular furniture,8,Wyoming,US-WY,6
+built in furniture,8,Wyoming,US-WY,1
+dining table,8,New Jersey,US-NJ,98
+made to order furniture,8,New Jersey,US-NJ,0
+modular furniture,8,New Jersey,US-NJ,2
+built in furniture,8,New Jersey,US-NJ,0
+dining table,8,New York,US-NY,98
+made to order furniture,8,New York,US-NY,0
+modular furniture,8,New York,US-NY,2
+built in furniture,8,New York,US-NY,0
+dining table,8,District of Columbia,US-DC,97
+made to order furniture,8,District of Columbia,US-DC,0
+modular furniture,8,District of Columbia,US-DC,3
+built in furniture,8,District of Columbia,US-DC,0
+dining table,8,California,US-CA,98
+made to order furniture,8,California,US-CA,0
+modular furniture,8,California,US-CA,2
+built in furniture,8,California,US-CA,0
+dining table,8,Florida,US-FL,97
+made to order furniture,8,Florida,US-FL,0
+modular furniture,8,Florida,US-FL,3
+built in furniture,8,Florida,US-FL,0
+dining table,8,Connecticut,US-CT,97
+made to order furniture,8,Connecticut,US-CT,0
+modular furniture,8,Connecticut,US-CT,3
+built in furniture,8,Connecticut,US-CT,0
+dining table,8,Massachusetts,US-MA,98
+made to order furniture,8,Massachusetts,US-MA,0
+modular furniture,8,Massachusetts,US-MA,2
+built in furniture,8,Massachusetts,US-MA,0
+dining table,8,Washington,US-WA,98
+made to order furniture,8,Washington,US-WA,0
+modular furniture,8,Washington,US-WA,2
+built in furniture,8,Washington,US-WA,0
+dining table,8,Georgia,US-GA,98
+made to order furniture,8,Georgia,US-GA,0
+modular furniture,8,Georgia,US-GA,2
+built in furniture,8,Georgia,US-GA,0
+dining table,8,Maryland,US-MD,97
+made to order furniture,8,Maryland,US-MD,0
+modular furniture,8,Maryland,US-MD,3
+built in furniture,8,Maryland,US-MD,0
+dining table,8,North Carolina,US-NC,98
+made to order furniture,8,North Carolina,US-NC,0
+modular furniture,8,North Carolina,US-NC,2
+built in furniture,8,North Carolina,US-NC,0
+dining table,8,Kansas,US-KS,97
+made to order furniture,8,Kansas,US-KS,0
+modular furniture,8,Kansas,US-KS,2
+built in furniture,8,Kansas,US-KS,1
+dining table,8,Arizona,US-AZ,97
+made to order furniture,8,Arizona,US-AZ,0
+modular furniture,8,Arizona,US-AZ,3
+built in furniture,8,Arizona,US-AZ,0
+dining table,8,South Carolina,US-SC,98
+made to order furniture,8,South Carolina,US-SC,0
+modular furniture,8,South Carolina,US-SC,2
+built in furniture,8,South Carolina,US-SC,0
+dining table,8,Texas,US-TX,98
+made to order furniture,8,Texas,US-TX,0
+modular furniture,8,Texas,US-TX,2
+built in furniture,8,Texas,US-TX,0
+dining table,8,Virginia,US-VA,97
+made to order furniture,8,Virginia,US-VA,0
+modular furniture,8,Virginia,US-VA,3
+built in furniture,8,Virginia,US-VA,0
+dining table,8,Alabama,US-AL,97
+made to order furniture,8,Alabama,US-AL,0
+modular furniture,8,Alabama,US-AL,3
+built in furniture,8,Alabama,US-AL,0
+dining table,8,Delaware,US-DE,97
+made to order furniture,8,Delaware,US-DE,0
+modular furniture,8,Delaware,US-DE,3
+built in furniture,8,Delaware,US-DE,0
+dining table,8,Nevada,US-NV,98
+made to order furniture,8,Nevada,US-NV,0
+modular furniture,8,Nevada,US-NV,2
+built in furniture,8,Nevada,US-NV,0
+dining table,8,Illinois,US-IL,97
+made to order furniture,8,Illinois,US-IL,0
+modular furniture,8,Illinois,US-IL,3
+built in furniture,8,Illinois,US-IL,0
+dining table,8,Pennsylvania,US-PA,97
+made to order furniture,8,Pennsylvania,US-PA,0
+modular furniture,8,Pennsylvania,US-PA,3
+built in furniture,8,Pennsylvania,US-PA,0
+dining table,8,Colorado,US-CO,97
+made to order furniture,8,Colorado,US-CO,0
+modular furniture,8,Colorado,US-CO,3
+built in furniture,8,Colorado,US-CO,0
+dining table,8,Utah,US-UT,97
+made to order furniture,8,Utah,US-UT,0
+modular furniture,8,Utah,US-UT,3
+built in furniture,8,Utah,US-UT,0
+dining table,8,Ohio,US-OH,97
+made to order furniture,8,Ohio,US-OH,0
+modular furniture,8,Ohio,US-OH,3
+built in furniture,8,Ohio,US-OH,0
+dining table,8,Oregon,US-OR,97
+made to order furniture,8,Oregon,US-OR,0
+modular furniture,8,Oregon,US-OR,3
+built in furniture,8,Oregon,US-OR,0
+dining table,8,Louisiana,US-LA,97
+made to order furniture,8,Louisiana,US-LA,0
+modular furniture,8,Louisiana,US-LA,3
+built in furniture,8,Louisiana,US-LA,0
+dining table,8,Tennessee,US-TN,97
+made to order furniture,8,Tennessee,US-TN,0
+modular furniture,8,Tennessee,US-TN,3
+built in furniture,8,Tennessee,US-TN,0
+dining table,8,Minnesota,US-MN,97
+made to order furniture,8,Minnesota,US-MN,0
+modular furniture,8,Minnesota,US-MN,3
+built in furniture,8,Minnesota,US-MN,0
+dining table,8,Idaho,US-ID,97
+made to order furniture,8,Idaho,US-ID,0
+modular furniture,8,Idaho,US-ID,3
+built in furniture,8,Idaho,US-ID,0
+dining table,8,Rhode Island,US-RI,96
+made to order furniture,8,Rhode Island,US-RI,0
+modular furniture,8,Rhode Island,US-RI,3
+built in furniture,8,Rhode Island,US-RI,1
+dining table,8,Michigan,US-MI,97
+made to order furniture,8,Michigan,US-MI,0
+modular furniture,8,Michigan,US-MI,3
+built in furniture,8,Michigan,US-MI,0
+dining table,8,Missouri,US-MO,97
+made to order furniture,8,Missouri,US-MO,0
+modular furniture,8,Missouri,US-MO,3
+built in furniture,8,Missouri,US-MO,0
+dining table,8,Oklahoma,US-OK,97
+made to order furniture,8,Oklahoma,US-OK,0
+modular furniture,8,Oklahoma,US-OK,2
+built in furniture,8,Oklahoma,US-OK,1
+dining table,8,New Hampshire,US-NH,96
+made to order furniture,8,New Hampshire,US-NH,0
+modular furniture,8,New Hampshire,US-NH,3
+built in furniture,8,New Hampshire,US-NH,1
+dining table,8,Kentucky,US-KY,97
+made to order furniture,8,Kentucky,US-KY,0
+modular furniture,8,Kentucky,US-KY,2
+built in furniture,8,Kentucky,US-KY,1
+dining table,8,Mississippi,US-MS,97
+made to order furniture,8,Mississippi,US-MS,0
+modular furniture,8,Mississippi,US-MS,2
+built in furniture,8,Mississippi,US-MS,1
+dining table,8,Indiana,US-IN,97
+made to order furniture,8,Indiana,US-IN,0
+modular furniture,8,Indiana,US-IN,3
+built in furniture,8,Indiana,US-IN,0
+dining table,8,Arkansas,US-AR,97
+made to order furniture,8,Arkansas,US-AR,0
+modular furniture,8,Arkansas,US-AR,3
+built in furniture,8,Arkansas,US-AR,0
+dining table,8,Maine,US-ME,97
+made to order furniture,8,Maine,US-ME,0
+modular furniture,8,Maine,US-ME,2
+built in furniture,8,Maine,US-ME,1
+dining table,8,Vermont,US-VT,96
+made to order furniture,8,Vermont,US-VT,0
+modular furniture,8,Vermont,US-VT,3
+built in furniture,8,Vermont,US-VT,1
+dining table,8,New Mexico,US-NM,98
+made to order furniture,8,New Mexico,US-NM,0
+modular furniture,8,New Mexico,US-NM,2
+built in furniture,8,New Mexico,US-NM,0
+dining table,8,Nebraska,US-NE,96
+made to order furniture,8,Nebraska,US-NE,0
+modular furniture,8,Nebraska,US-NE,3
+built in furniture,8,Nebraska,US-NE,1
+dining table,8,Wisconsin,US-WI,96
+made to order furniture,8,Wisconsin,US-WI,0
+modular furniture,8,Wisconsin,US-WI,3
+built in furniture,8,Wisconsin,US-WI,1
+dining table,8,Hawaii,US-HI,97
+made to order furniture,8,Hawaii,US-HI,0
+modular furniture,8,Hawaii,US-HI,3
+built in furniture,8,Hawaii,US-HI,0
+dining table,8,Iowa,US-IA,96
+made to order furniture,8,Iowa,US-IA,0
+modular furniture,8,Iowa,US-IA,3
+built in furniture,8,Iowa,US-IA,1
+dining table,8,Montana,US-MT,96
+made to order furniture,8,Montana,US-MT,0
+modular furniture,8,Montana,US-MT,3
+built in furniture,8,Montana,US-MT,1
+dining table,8,West Virginia,US-WV,97
+made to order furniture,8,West Virginia,US-WV,0
+modular furniture,8,West Virginia,US-WV,2
+built in furniture,8,West Virginia,US-WV,1
+dining table,8,South Dakota,US-SD,96
+made to order furniture,8,South Dakota,US-SD,0
+modular furniture,8,South Dakota,US-SD,4
+built in furniture,8,South Dakota,US-SD,0
+dining table,8,North Dakota,US-ND,96
+made to order furniture,8,North Dakota,US-ND,0
+modular furniture,8,North Dakota,US-ND,4
+built in furniture,8,North Dakota,US-ND,0
+dining table,8,Alaska,US-AK,96
+made to order furniture,8,Alaska,US-AK,0
+modular furniture,8,Alaska,US-AK,3
+built in furniture,8,Alaska,US-AK,1
+custom furniture,geo_focus,Wyoming,US-WY,52
+custom cabinets,geo_focus,Wyoming,US-WY,16
+custom closet,geo_focus,Wyoming,US-WY,11
+custom dining table,geo_focus,Wyoming,US-WY,21
+made to order furniture,geo_focus,Wyoming,US-WY,0
+custom furniture,geo_focus,North Carolina,US-NC,46
+custom cabinets,geo_focus,North Carolina,US-NC,32
+custom closet,geo_focus,North Carolina,US-NC,15
+custom dining table,geo_focus,North Carolina,US-NC,6
+made to order furniture,geo_focus,North Carolina,US-NC,1
+custom furniture,geo_focus,Kansas,US-KS,38
+custom cabinets,geo_focus,Kansas,US-KS,44
+custom closet,geo_focus,Kansas,US-KS,10
+custom dining table,geo_focus,Kansas,US-KS,8
+made to order furniture,geo_focus,Kansas,US-KS,0
+custom furniture,geo_focus,District of Columbia,US-DC,33
+custom cabinets,geo_focus,District of Columbia,US-DC,28
+custom closet,geo_focus,District of Columbia,US-DC,33
+custom dining table,geo_focus,District of Columbia,US-DC,6
+made to order furniture,geo_focus,District of Columbia,US-DC,0
+custom furniture,geo_focus,Florida,US-FL,36
+custom cabinets,geo_focus,Florida,US-FL,32
+custom closet,geo_focus,Florida,US-FL,26
+custom dining table,geo_focus,Florida,US-FL,6
+made to order furniture,geo_focus,Florida,US-FL,0
+custom furniture,geo_focus,New York,US-NY,39
+custom cabinets,geo_focus,New York,US-NY,33
+custom closet,geo_focus,New York,US-NY,22
+custom dining table,geo_focus,New York,US-NY,6
+made to order furniture,geo_focus,New York,US-NY,0
+custom furniture,geo_focus,California,US-CA,37
+custom cabinets,geo_focus,California,US-CA,37
+custom closet,geo_focus,California,US-CA,19
+custom dining table,geo_focus,California,US-CA,7
+made to order furniture,geo_focus,California,US-CA,0
+custom furniture,geo_focus,Idaho,US-ID,32
+custom cabinets,geo_focus,Idaho,US-ID,53
+custom closet,geo_focus,Idaho,US-ID,10
+custom dining table,geo_focus,Idaho,US-ID,5
+made to order furniture,geo_focus,Idaho,US-ID,0
+custom furniture,geo_focus,Washington,US-WA,35
+custom cabinets,geo_focus,Washington,US-WA,42
+custom closet,geo_focus,Washington,US-WA,17
+custom dining table,geo_focus,Washington,US-WA,6
+made to order furniture,geo_focus,Washington,US-WA,0
+custom furniture,geo_focus,Connecticut,US-CT,39
+custom cabinets,geo_focus,Connecticut,US-CT,34
+custom closet,geo_focus,Connecticut,US-CT,19
+custom dining table,geo_focus,Connecticut,US-CT,8
+made to order furniture,geo_focus,Connecticut,US-CT,0
+custom furniture,geo_focus,Colorado,US-CO,33
+custom cabinets,geo_focus,Colorado,US-CO,41
+custom closet,geo_focus,Colorado,US-CO,19
+custom dining table,geo_focus,Colorado,US-CO,7
+made to order furniture,geo_focus,Colorado,US-CO,0
+custom furniture,geo_focus,Georgia,US-GA,36
+custom cabinets,geo_focus,Georgia,US-GA,37
+custom closet,geo_focus,Georgia,US-GA,20
+custom dining table,geo_focus,Georgia,US-GA,6
+made to order furniture,geo_focus,Georgia,US-GA,1
+custom furniture,geo_focus,Montana,US-MT,39
+custom cabinets,geo_focus,Montana,US-MT,42
+custom closet,geo_focus,Montana,US-MT,12
+custom dining table,geo_focus,Montana,US-MT,7
+made to order furniture,geo_focus,Montana,US-MT,0
+custom furniture,geo_focus,Vermont,US-VT,44
+custom cabinets,geo_focus,Vermont,US-VT,31
+custom closet,geo_focus,Vermont,US-VT,21
+custom dining table,geo_focus,Vermont,US-VT,4
+made to order furniture,geo_focus,Vermont,US-VT,0
+custom furniture,geo_focus,Utah,US-UT,34
+custom cabinets,geo_focus,Utah,US-UT,43
+custom closet,geo_focus,Utah,US-UT,16
+custom dining table,geo_focus,Utah,US-UT,7
+made to order furniture,geo_focus,Utah,US-UT,0
+custom furniture,geo_focus,Massachusetts,US-MA,37
+custom cabinets,geo_focus,Massachusetts,US-MA,27
+custom closet,geo_focus,Massachusetts,US-MA,28
+custom dining table,geo_focus,Massachusetts,US-MA,8
+made to order furniture,geo_focus,Massachusetts,US-MA,0
+custom furniture,geo_focus,Texas,US-TX,36
+custom cabinets,geo_focus,Texas,US-TX,42
+custom closet,geo_focus,Texas,US-TX,15
+custom dining table,geo_focus,Texas,US-TX,6
+made to order furniture,geo_focus,Texas,US-TX,1
+custom furniture,geo_focus,Illinois,US-IL,36
+custom cabinets,geo_focus,Illinois,US-IL,39
+custom closet,geo_focus,Illinois,US-IL,18
+custom dining table,geo_focus,Illinois,US-IL,7
+made to order furniture,geo_focus,Illinois,US-IL,0
+custom furniture,geo_focus,Arizona,US-AZ,33
+custom cabinets,geo_focus,Arizona,US-AZ,43
+custom closet,geo_focus,Arizona,US-AZ,16
+custom dining table,geo_focus,Arizona,US-AZ,7
+made to order furniture,geo_focus,Arizona,US-AZ,1
+custom furniture,geo_focus,Virginia,US-VA,35
+custom cabinets,geo_focus,Virginia,US-VA,39
+custom closet,geo_focus,Virginia,US-VA,19
+custom dining table,geo_focus,Virginia,US-VA,7
+made to order furniture,geo_focus,Virginia,US-VA,0
+custom furniture,geo_focus,New Hampshire,US-NH,32
+custom cabinets,geo_focus,New Hampshire,US-NH,41
+custom closet,geo_focus,New Hampshire,US-NH,21
+custom dining table,geo_focus,New Hampshire,US-NH,6
+made to order furniture,geo_focus,New Hampshire,US-NH,0
+custom furniture,geo_focus,New Jersey,US-NJ,36
+custom cabinets,geo_focus,New Jersey,US-NJ,29
+custom closet,geo_focus,New Jersey,US-NJ,28
+custom dining table,geo_focus,New Jersey,US-NJ,7
+made to order furniture,geo_focus,New Jersey,US-NJ,0
+custom furniture,geo_focus,Delaware,US-DE,23
+custom cabinets,geo_focus,Delaware,US-DE,23
+custom closet,geo_focus,Delaware,US-DE,48
+custom dining table,geo_focus,Delaware,US-DE,6
+made to order furniture,geo_focus,Delaware,US-DE,0
+custom furniture,geo_focus,Oregon,US-OR,33
+custom cabinets,geo_focus,Oregon,US-OR,46
+custom closet,geo_focus,Oregon,US-OR,15
+custom dining table,geo_focus,Oregon,US-OR,6
+made to order furniture,geo_focus,Oregon,US-OR,0
+custom furniture,geo_focus,South Carolina,US-SC,30
+custom cabinets,geo_focus,South Carolina,US-SC,31
+custom closet,geo_focus,South Carolina,US-SC,33
+custom dining table,geo_focus,South Carolina,US-SC,5
+made to order furniture,geo_focus,South Carolina,US-SC,1
+custom furniture,geo_focus,Maine,US-ME,37
+custom cabinets,geo_focus,Maine,US-ME,38
+custom closet,geo_focus,Maine,US-ME,20
+custom dining table,geo_focus,Maine,US-ME,5
+made to order furniture,geo_focus,Maine,US-ME,0
+custom furniture,geo_focus,Ohio,US-OH,38
+custom cabinets,geo_focus,Ohio,US-OH,38
+custom closet,geo_focus,Ohio,US-OH,18
+custom dining table,geo_focus,Ohio,US-OH,6
+made to order furniture,geo_focus,Ohio,US-OH,0
+custom furniture,geo_focus,Nebraska,US-NE,31
+custom cabinets,geo_focus,Nebraska,US-NE,49
+custom closet,geo_focus,Nebraska,US-NE,15
+custom dining table,geo_focus,Nebraska,US-NE,5
+made to order furniture,geo_focus,Nebraska,US-NE,0
+custom furniture,geo_focus,Missouri,US-MO,33
+custom cabinets,geo_focus,Missouri,US-MO,43
+custom closet,geo_focus,Missouri,US-MO,16
+custom dining table,geo_focus,Missouri,US-MO,7
+made to order furniture,geo_focus,Missouri,US-MO,1
+custom furniture,geo_focus,Pennsylvania,US-PA,30
+custom cabinets,geo_focus,Pennsylvania,US-PA,34
+custom closet,geo_focus,Pennsylvania,US-PA,30
+custom dining table,geo_focus,Pennsylvania,US-PA,6
+made to order furniture,geo_focus,Pennsylvania,US-PA,0
+custom furniture,geo_focus,Nevada,US-NV,35
+custom cabinets,geo_focus,Nevada,US-NV,35
+custom closet,geo_focus,Nevada,US-NV,23
+custom dining table,geo_focus,Nevada,US-NV,7
+made to order furniture,geo_focus,Nevada,US-NV,0
+custom furniture,geo_focus,Minnesota,US-MN,29
+custom cabinets,geo_focus,Minnesota,US-MN,48
+custom closet,geo_focus,Minnesota,US-MN,17
+custom dining table,geo_focus,Minnesota,US-MN,6
+made to order furniture,geo_focus,Minnesota,US-MN,0
+custom furniture,geo_focus,Louisiana,US-LA,33
+custom cabinets,geo_focus,Louisiana,US-LA,40
+custom closet,geo_focus,Louisiana,US-LA,19
+custom dining table,geo_focus,Louisiana,US-LA,7
+made to order furniture,geo_focus,Louisiana,US-LA,1
+custom furniture,geo_focus,Rhode Island,US-RI,33
+custom cabinets,geo_focus,Rhode Island,US-RI,35
+custom closet,geo_focus,Rhode Island,US-RI,24
+custom dining table,geo_focus,Rhode Island,US-RI,8
+made to order furniture,geo_focus,Rhode Island,US-RI,0
+custom furniture,geo_focus,Oklahoma,US-OK,38
+custom cabinets,geo_focus,Oklahoma,US-OK,41
+custom closet,geo_focus,Oklahoma,US-OK,12
+custom dining table,geo_focus,Oklahoma,US-OK,8
+made to order furniture,geo_focus,Oklahoma,US-OK,1
+custom furniture,geo_focus,Mississippi,US-MS,40
+custom cabinets,geo_focus,Mississippi,US-MS,37
+custom closet,geo_focus,Mississippi,US-MS,13
+custom dining table,geo_focus,Mississippi,US-MS,8
+made to order furniture,geo_focus,Mississippi,US-MS,2
+custom furniture,geo_focus,Alabama,US-AL,34
+custom cabinets,geo_focus,Alabama,US-AL,41
+custom closet,geo_focus,Alabama,US-AL,17
+custom dining table,geo_focus,Alabama,US-AL,6
+made to order furniture,geo_focus,Alabama,US-AL,2
+custom furniture,geo_focus,Tennessee,US-TN,32
+custom cabinets,geo_focus,Tennessee,US-TN,42
+custom closet,geo_focus,Tennessee,US-TN,18
+custom dining table,geo_focus,Tennessee,US-TN,7
+made to order furniture,geo_focus,Tennessee,US-TN,1
+custom furniture,geo_focus,North Dakota,US-ND,32
+custom cabinets,geo_focus,North Dakota,US-ND,52
+custom closet,geo_focus,North Dakota,US-ND,12
+custom dining table,geo_focus,North Dakota,US-ND,4
+made to order furniture,geo_focus,North Dakota,US-ND,0
+custom furniture,geo_focus,Michigan,US-MI,38
+custom cabinets,geo_focus,Michigan,US-MI,37
+custom closet,geo_focus,Michigan,US-MI,18
+custom dining table,geo_focus,Michigan,US-MI,6
+made to order furniture,geo_focus,Michigan,US-MI,1
+custom furniture,geo_focus,Maryland,US-MD,32
+custom cabinets,geo_focus,Maryland,US-MD,29
+custom closet,geo_focus,Maryland,US-MD,32
+custom dining table,geo_focus,Maryland,US-MD,7
+made to order furniture,geo_focus,Maryland,US-MD,0
+custom furniture,geo_focus,Hawaii,US-HI,35
+custom cabinets,geo_focus,Hawaii,US-HI,40
+custom closet,geo_focus,Hawaii,US-HI,19
+custom dining table,geo_focus,Hawaii,US-HI,6
+made to order furniture,geo_focus,Hawaii,US-HI,0
+custom furniture,geo_focus,Wisconsin,US-WI,32
+custom cabinets,geo_focus,Wisconsin,US-WI,48
+custom closet,geo_focus,Wisconsin,US-WI,14
+custom dining table,geo_focus,Wisconsin,US-WI,6
+made to order furniture,geo_focus,Wisconsin,US-WI,0
+custom furniture,geo_focus,Kentucky,US-KY,33
+custom cabinets,geo_focus,Kentucky,US-KY,43
+custom closet,geo_focus,Kentucky,US-KY,17
+custom dining table,geo_focus,Kentucky,US-KY,6
+made to order furniture,geo_focus,Kentucky,US-KY,1
+custom furniture,geo_focus,Indiana,US-IN,36
+custom cabinets,geo_focus,Indiana,US-IN,40
+custom closet,geo_focus,Indiana,US-IN,17
+custom dining table,geo_focus,Indiana,US-IN,6
+made to order furniture,geo_focus,Indiana,US-IN,1
+custom furniture,geo_focus,New Mexico,US-NM,37
+custom cabinets,geo_focus,New Mexico,US-NM,42
+custom closet,geo_focus,New Mexico,US-NM,16
+custom dining table,geo_focus,New Mexico,US-NM,5
+made to order furniture,geo_focus,New Mexico,US-NM,0
+custom furniture,geo_focus,Arkansas,US-AR,31
+custom cabinets,geo_focus,Arkansas,US-AR,50
+custom closet,geo_focus,Arkansas,US-AR,12
+custom dining table,geo_focus,Arkansas,US-AR,6
+made to order furniture,geo_focus,Arkansas,US-AR,1
+custom furniture,geo_focus,Iowa,US-IA,32
+custom cabinets,geo_focus,Iowa,US-IA,47
+custom closet,geo_focus,Iowa,US-IA,15
+custom dining table,geo_focus,Iowa,US-IA,5
+made to order furniture,geo_focus,Iowa,US-IA,1
+custom furniture,geo_focus,Alaska,US-AK,38
+custom cabinets,geo_focus,Alaska,US-AK,37
+custom closet,geo_focus,Alaska,US-AK,17
+custom dining table,geo_focus,Alaska,US-AK,8
+made to order furniture,geo_focus,Alaska,US-AK,0
+custom furniture,geo_focus,South Dakota,US-SD,31
+custom cabinets,geo_focus,South Dakota,US-SD,51
+custom closet,geo_focus,South Dakota,US-SD,14
+custom dining table,geo_focus,South Dakota,US-SD,4
+made to order furniture,geo_focus,South Dakota,US-SD,0
+custom furniture,geo_focus,West Virginia,US-WV,39
+custom cabinets,geo_focus,West Virginia,US-WV,39
+custom closet,geo_focus,West Virginia,US-WV,16
+custom dining table,geo_focus,West Virginia,US-WV,6
+made to order furniture,geo_focus,West Virginia,US-WV,0

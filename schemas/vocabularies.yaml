@@ -1,0 +1,381 @@
+# Controlled vocabularies — the single author for every enum in this repo.
+#
+# Rule: a field with a fixed value set is declared HERE and nowhere else. Schema
+# files, skill definitions, and prose reference a vocabulary by name
+# (`vocab:evidence_quality`) instead of restating its values. When the values
+# only exist in one place they cannot drift; before this file existed, "evidence"
+# had three incompatible vocabularies across ARCHITECTURE.md, schemas/evidence.md,
+# and schemas/assumptions.md.
+#
+# `scripts/validate_repo.py` enforces this: any value used for a governed field
+# anywhere under reports/ that is not declared below fails the commit. Adding a
+# value is a deliberate act — declare it here first, with what it means.
+#
+# `rank` (where present) is an ordered ladder, higher = stronger. Fields without
+# rank are unordered sets.
+
+version: 1
+last_updated: 2026-08-07
+
+vocabularies:
+
+  # ─── belief and hunch lineage ──────────────────────────────────────────────
+
+  hunch_status:
+    used_in: [reports/*/01-ideation/hunch-lineage.md]
+    schema: schemas/hunch.md
+    values:
+      proposed:             "Formulated but not founder-confirmed. Cannot be the run subject of a shotgun."
+      active:               "A hunch under test. One per idea by default; a founder decision may run two in parallel (precedent set 2026-08-09, predecessor repo). `active_hunch` in the lineage frontmatter is a list when more than one is live."
+      retained:             "Was active, survived a decision cycle unchanged, still active."
+      retired:              "Falsified or killed by evidence. The question is closed."
+      superseded:           "Retired UN-falsified — founder attention moved on. The question stays open and may be revived. Distinct from `retired`, which means evidence closed it."
+      folded_into_offering: "Turned out to be a value proposition, not a claim about the world — relocated to 04-mutation/offerings.md. Not a rejection. Requires `folded_into:` naming the offering ID."
+
+  hunch_validation_status:
+    used_in: [reports/*/01-ideation/hunch-lineage.md]
+    schema: schemas/hunch.md
+    values:
+      untested:     "No evidence gathered against this hunch yet."
+      under_review: "Evidence gathering in progress."
+      supported:    "Evidence so far supports it."
+      contested:    "Evidence points both ways."
+      killed:       "Evidence falsified it."
+      superseded_by_evidence: >-
+        Evidence pointed somewhere better without falsifying this hunch. Distinct from
+        `killed`: nothing here was shown to be wrong, so the claim may be revived if the
+        newer line dies.
+
+  sisp_origin:
+    used_in: [input-context/*/belief.md]
+    schema: schemas/hunch.md
+    values:
+      problem_observed:          "Founder saw the problem before having a solution in mind."
+      solution_or_analogy_first: "Founder started from a technology, product, or 'X for Y' analogy."
+      mixed:                     "Both, or the order is genuinely unclear to the founder."
+      unclear:                   "Not yet elicited."
+
+  sisp_status:
+    used_in: [input-context/*/belief.md]
+    schema: schemas/hunch.md
+    values:
+      not_indicated: "No solution-in-search-of-problem signal."
+      possible:      "Weak signal — a research instruction, not a rejection."
+      probable:      "Strong signal — the shotgun must test the problem without the solution's vocabulary."
+      unresolved:    "Elicited but not yet judged."
+
+  # ─── assumption graph ──────────────────────────────────────────────────────
+
+  assumption_status:
+    used_in: [reports/*/02-assumptions/graph.md]
+    schema: schemas/assumptions.md
+    values:
+      untested:          "No evidence gathered."
+      testing:           "A validation cycle is open."
+      weakly_supported:  "Some supporting evidence, below the confidence bar."
+      confirmed:         "Supported at customer_interview quality or better."
+      contested:         "Supporting and contradicting evidence both present."
+      killed:            "Falsified. Children dissolve with it."
+
+  assumption_category:
+    used_in: [reports/*/02-assumptions/graph.md]
+    schema: schemas/assumptions.md
+    note: >-
+      `willingness_to_pay` and `defensibility` are deliberately separate from the
+      neighbours they are easily confused with. `buyer` asks who decides;
+      `willingness_to_pay` asks whether money actually moves — a distinction that
+      collapses only in retrospect. `competition` asks who else is here;
+      `defensibility` asks whether we could hold it if they arrived.
+    values: [market, pain, buyer, willingness_to_pay, timing, technical, trust,
+             distribution, competition, defensibility, founder-market-fit]
+
+  lens:
+    used_in: [reports/*/02-assumptions/graph.md]
+    schema: schemas/assumptions.md
+    note: "DVF three-lens sweep."
+    values: [desirability, viability, feasibility]
+
+  validation_track:
+    used_in: [reports/*/02-assumptions/graph.md]
+    schema: schemas/assumptions.md
+    values:
+      customer_adoption:     "Will they use and pay for it."
+      strategic_partnership: "Will they co-develop, co-invest, or co-distribute."
+      investor_thesis:       "Will financial/VC investors fund this bet."
+
+  quadrant:
+    used_in: [reports/*/02-assumptions/graph.md]
+    schema: schemas/assumptions.md
+    note: "importance × uncertainty 2×2. uncertainty_score is populated only for leap_of_faith."
+    values: [leap_of_faith, known_important, uncertain_minor, ignore]
+
+  importance:
+    used_in: [reports/*/02-assumptions/graph.md]
+    schema: schemas/assumptions.md
+    values: {low: {rank: 1}, medium: {rank: 2}, high: {rank: 3}}
+
+  # ─── evidence ──────────────────────────────────────────────────────────────
+  #
+  # ONE hand-assigned strength scale, everything else derived (2026-08-09):
+  #
+  #   evidence_source_type — what kind of artifact the evidence is (unordered)
+  #   evidence_confidence  — per-ENTRY strength 1-5, the single human grading
+  #
+  # An assumption's evidence strength and confidence are COMPUTED by the
+  # generators from its linked entries (best entry, counts, verdicts) — never
+  # hand-set on the node. Three parallel ladders and three reconciliation maps
+  # used to exist here; they drifted, so they were consolidated to this one.
+
+  evidence_source_type:
+    used_in: [reports/*/03-validation/evidence.md]
+    schema: schemas/evidence.md
+    values: [article, post_mortem, founder_interview, procurement, job_post, forum,
+             market_report, expert_call, our_observation, customer_interview,
+             pilot_data, commercial_data, company_statement]
+    # company_statement (added 2026-08-12) — a company's own public claim about
+    # itself: marketing post, launch announcement, product page, careers blurb.
+    # Distinct from `article`, which is a third party reporting on them, and that
+    # distinction is the point: the subject is self-interested and unrefereed, so
+    # a company_statement caps out low on evidence_quality no matter how specific
+    # it sounds. Grade the MECHANISM it describes, never the superlative attached
+    # to it. First use: E62, Chef Robotics on capturing inside customer sites.
+
+
+  evidence_confidence:
+    used_in: [reports/*/03-validation/evidence.md]
+    schema: schemas/evidence.md
+    note: >-
+      Per-ENTRY strength, 1–5 — the ONE hand-assigned evidence grade. Assumption-
+      level strength is derived from linked entries by the generators; grade the
+      entry once and never re-judge it at the assumption.
+    values:
+      1: {means: "Founder intuition, pattern match, vague quote."}
+      2: {means: "Trend piece, analyst prediction, market size report."}
+      3: {means: "Job post or RFP naming the exact pain; repeated specific forum complaints."}
+      4: {means: "Expert or customer confirms pain from direct operational experience."}
+      5: {means: "Money moved, or budget repeatedly allocated. Founder post-mortem naming root cause."}
+
+  verdict:
+    used_in: [reports/*/03-validation/evidence.md]
+    schema: schemas/evidence.md
+    values: [supports, contradicts, ambiguous]
+
+  # ─── customer development ──────────────────────────────────────────────────
+
+  signal_type:
+    used_in: [reports/*/outreach/contacts.md]
+    schema: schemas/contact.md
+    note: "How the contact was found. `weight` is the multiplier in the interview score formula."
+    values:
+      post_engagement: {weight: 1.5,  means: "Authored or engaged a post about the pain."}
+      comment_signal:  {weight: 1.25, means: "Commented substantively on someone else's."}
+      job_posting:     {weight: 1.1,  means: "Their company is hiring against the pain."}
+      profile_fit:     {weight: 1.0,  means: "Matches the ICP on paper only."}
+      inbound_accept:
+        weight: 1.0
+        means: >-
+          They accepted a connection request without having been individually targeted —
+          found via the recently-added sweep. Weight 1.0, matching profile_fit, because
+          accepting says they are open to a conversation and nothing about whether they
+          have the pain. Any signal above 1.0 has to be earned by something they said.
+      peer_founder:
+        weight: 0.0
+        means: >-
+          A founder building in or near the same space. Weight 0 on purpose: their reply
+          is a relationship signal and often useful market colour, but it is never
+          customer or buyer evidence, and letting it score would inflate an assumption on
+          the enthusiasm of someone who shares our blind spot.
+
+  contact_role:
+    used_in: [reports/*/outreach/contacts.md]
+    schema: schemas/contact.md
+    note: "What they can validate. `pts` is the base term in the interview score formula."
+    values:
+      buyer:        {pts: 3, means: "Controls or directly influences the budget."}
+      practitioner: {pts: 2, means: "Does the work the assumption describes."}
+      expert:       {pts: 2, means: "Knows the domain without living in it daily."}
+      influencer:   {pts: 1, means: "Shapes opinion, doesn't buy or do."}
+      peer:         {pts: 1, means: "Peer founder or ecosystem contact. Relationship value only — never customer, buyer, or pain evidence (declared 2026-08-11 for C205; matches the counting_rules treatment of peer-founder replies)."}
+
+  relationship_type:
+    used_in: [reports/*/outreach/contacts.md]
+    schema: schemas/contact.md
+    note: >
+      Optional. Set it only when a contact must NOT be read as customer demand.
+      `non_customer: true` is what the funnel excludes from qualified replies — the
+      one author for that exclusion, since the field that used to duplicate it
+      (`validates_assumption: none`) was written where nothing read it, so a peer
+      founder counted as a qualified reply for three days. Undeclared here in the
+      same period: the four peer_founder_* values were in live data with no
+      declaration, which is why nothing caught it.
+    values:
+      peer_founder_competitor: {non_customer: true, means: "Builds the same thing. Landscape signal, never demand."}
+      peer_founder_expert:     {means: "Founder elsewhere in the space; useful domain testimony, not a buyer."}
+      peer_founder_integrator: {means: "Founder who deploys; can testify to integration labour first-hand."}
+      peer_founder_target:     {means: "Founder who is also a plausible buyer — counts as demand."}
+      operator_buyer:          {means: "Operates sites and holds budget."}
+      data_supplier_practitioner: {means: "Supplies or produces data; supply-side testimony."}
+
+  tier_side:
+    used_in: [reports/*/02-assumptions/graph.md, reports/*/outreach/companies.md]
+    schema: schemas/assumptions.md
+    note: "Structural side of a tier. Tier NAMES are per-idea and declared in graph.md; only the side vocabulary is global."
+    values: [demand, supply, competitor, expert]
+
+  degree:
+    used_in: [reports/*/outreach/contacts.md]
+    schema: schemas/contact.md
+    values: ["1st", "2nd", "3rd+", inmail_only]
+
+  outcome_modifier:
+    used_in: [reports/*/outreach/contacts.md, reports/*/03-validation/*/interviews/*.md]
+    schema: schemas/interview.md
+    note: "The one manual classification per interview. Proposed by startup-interview-capture, confirmed by the founder."
+    values:
+      strong_confirm:   {score: 1.0,  means: "Unprompted, specific, with a cost or a past action attached."}
+      moderate_confirm: {score: 0.0,  means: "Confirms when asked, without volunteering specifics."}
+      weak:             {score: -0.5, means: "Polite agreement, no behavioural evidence."}
+      contradiction:    {score: -1.0, means: "Reports the opposite, or that the pain is already solved."}
+
+  interview_stage:
+    used_in: [reports/*/03-validation/*/interviews/*.md]
+    schema: schemas/interview.md
+    values: [problem_discovery, solution_validation]
+
+  medium:
+    used_in: [reports/*/03-validation/*/interviews/*.md]
+    schema: schemas/interview.md
+    # whatsapp_text added 2026-08-25: async text-chat testimony captured as an interview
+    # (first case: C23 pre-call WhatsApp exchange). New vocabulary, not a typo.
+    values: [linkedin_video, zoom, phone, in_person, whatsapp_text]
+
+  synthesis_outcome:
+    used_in: [reports/*/03-validation/*/interviews/synthesis.md]
+    schema: schemas/synthesis.md
+    values:
+      next_assumption: "Confirmed and consistent across roles → surface the next child. Retains the hunch."
+      new_vertical:    "Pain real but the segment split → propose a sibling hunch."
+      mutate_thesis:   "Pain real but a different root cause → propose a child hunch."
+      kill:            "Score ≤ 0, or a root node died → retire the hunch or the affected branch."
+
+  synthesis_trigger:
+    used_in: [reports/*/03-validation/*/interviews/synthesis.md]
+    schema: schemas/synthesis.md
+    values: [cron_threshold_hit, manual, early_kill_flag]
+
+  # ─── idea lifecycle ────────────────────────────────────────────────────────
+
+  idea_lifecycle:
+    used_in: [reports/*/BRIEF.md]
+    note: "Generated into BRIEF.md frontmatter; never hand-authored. `superseded-by` carries a slug."
+    values:
+      active:        "Under current work."
+      dormant:       "Untouched, may be revived. Residual artifacts retain value."
+      superseded-by: "Evolved into another idea lineage; carries the successor slug."
+
+  # ─── method library ────────────────────────────────────────────────────────
+
+  shotgun_role:
+    used_in: [methods/shotgun-routing.yaml, methods/*/*.md]
+    schema: schemas/method.md
+    values: [primary, alternative, downstream]
+
+  method_category:
+    used_in: [methods/*/*.md]
+    schema: schemas/method.md
+    note: >-
+      Pick exactly one; if two apply equally use the more specific. `schemas/method.md`
+      carries the one-line meaning of each. `evaluation` and `market` were in use on cards
+      while declared nowhere — both are real and are kept: `evaluation` pressure-tests an
+      idea that already exists (distinct from `first-principles`, which reasons up from
+      fundamentals), and `market` asks a market-structure question such as whether a niche
+      expands (distinct from `market-signal`, which mines signals).
+    values: [analogical, inversion, constraint-removal, jtbd, adjacency, market,
+             market-signal, signal-detection, customer-validation, evaluation, timing,
+             historical, substitute, first-principles, root-cause, wedge-narrowing]
+
+  # ─── data layer ────────────────────────────────────────────────────────────
+
+  api_status:
+    used_in: [api-registry.yaml]
+    values:
+      keyless:     "Works now, no registration."
+      free_key:    "Free but needs registration."
+      paid:        "Costs money."
+      self_hosted: "Running locally — see local_endpoint."
+
+  # ─── public content ────────────────────────────────────────────────────────
+
+  x_post_status:
+    used_in: [content/x/queue.md]
+    note: >-
+      Lifecycle of one queued X draft. The skill never posts; `posted` is set by
+      the founder after they post by hand, which is why it is a status and not a
+      side effect.
+    values:
+      drafted:  "Written and queued. Not yet reviewed by the founder."
+      approved: "Founder cleared it to post, including any Tier 2 disclosure it carries."
+      posted:   "Sent by the founder. Record the live URL so edits can be diffed for voice recalibration."
+      killed:   "Rejected. Kept with a reason — dead drafts are the cheapest voice-calibration signal there is."
+
+  x_post_angle:
+    used_in: [content/x/queue.md]
+    schema: .claude/skills/startup-x-draft/references/sources.md
+    note: >-
+      Audience and grounding bar differ per angle; the routing table in the skill's
+      sources.md is the single explanation of each.
+    values: [build-in-public, domain-insight, method, contrarian]
+
+  x_disclosure_tier:
+    used_in: [content/x/queue.md]
+    schema: .claude/skills/startup-x-draft/references/disclosure.md
+    note: >-
+      Highest disclosure tier any claim in the draft touches. Tier 2 requires a
+      per-post founder yes before drafting; tier 3 is never drafted.
+    rank: true
+    values:
+      tier-0: "Founder's own reasoning, method, public sources, own activity counts."
+      tier-1: "Private findings, anonymized to role plus company category."
+      tier-2: "Names a company or person, or quotes anyone. Explicit founder permission per post."
+# ─── declared maps ───────────────────────────────────────────────────────────
+#
+# Derivations that were previously restated in prose in more than one file.
+
+maps:
+
+
+  source_type_to_confidence:
+    note: >-
+      Default per-entry confidence for a source type. An entry may be graded DOWN
+      with a stated reason in `notes` (e.g. a vague expert quote), never up.
+    article:            2
+    market_report:      2
+    our_observation:    2
+    forum:              3
+    job_post:           3
+    procurement:        4
+    expert_call:        4
+    founder_interview:  4
+    customer_interview: 4
+    post_mortem:        5
+    pilot_data:         5
+    commercial_data:    5
+
+
+  founder_label_to_entry_confidence:
+    note: >-
+      Founder shorthand used in external strategy docs (see CLAUDE.md → External
+      Strategy Docs), mapped to the per-entry 1-5 confidence grade. [C], [I],
+      [H], [U] are not evidence — they become priors or assumptions, never
+      ledger entries.
+    "[V]": 2
+    "[T]": 4
+    "[C]": null
+    "[I]": null
+    "[H]": null
+    "[U]": null
+
+  interview_score_formula:
+    note: "score = (contact_role.pts × signal_type.weight) + outcome_modifier.score"
+    synthesis_threshold: 10
+    early_kill: "score trending negative after 3+ completed interviews"

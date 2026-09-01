@@ -1,0 +1,267 @@
+# API Registry — Startup Assumption Lab
+#
+# The enable/disable switch for every data source that has a module in
+# scripts/data/. `_common.is_enabled(key)` gates each call on `enabled: true`
+# plus the presence of every listed env key. Toggle a source: set enabled: true/false.
+#
+# One entry per implemented source — nothing aspirational. Adding an API means
+# writing scripts/data/<name>.py first, then registering it here.
+#
+# categories field — routes the API to the right assumption type:
+#   pain        | timing      | market   | buyer
+#   technical   | competitive | distribution
+#
+# status field:
+#   keyless     = works right now, no registration
+#   free_key    = free but needs registration
+#   paid        = costs money
+#   self_hosted = running locally, no cloud key needed — check local_endpoint field for URL
+#
+# domain_specific field (optional, default false):
+#   true  = only relevant to a particular vertical (e.g. energy/wind operator data).
+#           These ship disabled. An idea opts in per-assumption via
+#           `domain_data_sources: [<api_key>, ...]` in graph.md — the pipeline never
+#           infers them from tier names or keywords. Keeps the framework industry-agnostic.
+
+apis:
+
+  # ─── Community & social ────────────────────────────────────────────────
+
+  hacker_news_algolia:
+    display_name: "Hacker News (Algolia)"
+    categories: [timing, technical, competitive, pain]
+    enabled: true
+    status: keyless
+    cost_model: free
+    cost_per_call: 0
+    free_tier: "Unlimited — no key needed"
+    env_keys: []
+    used_by: [scripts.data.hn, startup-ideate-shotgun]
+    notes: "hn.algolia.com/api — search posts and comments, no auth required."
+
+  reddit_json:
+    display_name: "Reddit JSON API (unauthenticated)"
+    categories: [pain, competitive, timing]
+    enabled: true
+    status: keyless
+    cost_model: free
+    cost_per_call: 0
+    free_tier: "Best-effort fallback; availability and limits are not guaranteed"
+    env_keys: []
+    used_by: [scripts.data.reddit, scripts.data.community_recon, startup-ideate-shotgun]
+    notes: "Fallback only when PRAW credentials are missing. Frequently blocked; do not treat empty results as evidence of absence."
+
+  reddit_oauth:
+    display_name: "Reddit Data API via PRAW/OAuth"
+    categories: [pain, competitive, timing]
+    enabled: false
+    status: free_key
+    cost_model: free
+    cost_per_call: 0
+    free_tier: "Subject to Reddit Data API approval, terms, and rate limits"
+    env_keys: [REDDIT_CLIENT_ID, REDDIT_CLIENT_SECRET]
+    used_by: [scripts.data.reddit, scripts.data.community_recon, startup-ideate-shotgun]
+    notes: "Optional enrichment only. Reddit approval is not expected; self-hosted Firecrawl is the primary Reddit discovery path."
+
+  # ─── News & media ──────────────────────────────────────────────────────
+
+  gdelt_rest:
+    display_name: "GDELT REST API"
+    categories: [timing, pain, competitive]
+    enabled: true
+    status: keyless
+    cost_model: free
+    cost_per_call: 0
+    free_tier: "Unlimited — no key, updates every 15 min, coverage since 2015"
+    env_keys: []
+    used_by: [scripts.data.gdelt, startup-outreach-intel]
+    notes: "Company-scoped news enrichment for outreach-intel. Not used by the belief/hunch ideation shotgun because that stage has no target company yet. Invoked via `scripts.data.gdelt news`."
+
+  gdelt_bigquery:
+    display_name: "GDELT via Google BigQuery"
+    categories: [timing, pain, competitive]
+    enabled: true
+    status: free_key
+    cost_model: free
+    cost_per_call: 0
+    free_tier: "1TB/month BigQuery free tier — covers heavy analytical queries"
+    env_keys: [GCP_PROJECT_ID, GOOGLE_APPLICATION_CREDENTIALS]
+    used_by: [scripts.data.gdelt]
+    notes: "More powerful than REST. Needs GCP project + service account JSON. Good for tone/volume trendlines. Invoked via `scripts.data.gdelt timeline`."
+
+  # ─── Web search ────────────────────────────────────────────────────────
+
+  exa_ai:
+    display_name: "Exa AI"
+    categories: [timing, technical, competitive, pain, market]
+    enabled: false                        # DEFAULT OFF — Exa is a fallback for GDELT. Re-enable only if
+                                          # GDELT is systematically returning empty for the current domain.
+                                          # See startup-outreach-intel/references/api-catalog.md → exa card
+                                          # for the "when to turn on" checklist.
+    status: free_key
+    cost_model: freemium
+    cost_per_call: 0.001
+    free_tier: "20,000 searches/month — confirmed"
+    env_keys: [EXA_API_KEY]
+    used_by: [scripts.data.exa, startup-outreach-intel]
+    notes: "Neural/semantic web search + full page text. GDELT-fallback only in intel — do not enable for discovery."
+
+  # ─── Jobs & labor ──────────────────────────────────────────────────────
+
+  adzuna:
+    display_name: "Adzuna Jobs API"
+    categories: [pain, buyer, market]
+    enabled: true
+    status: free_key
+    cost_model: freemium
+    cost_per_call: 0.001
+    free_tier: "Developer tier — 250 calls/month (register at developer.adzuna.com)"
+    # === Rate limits — enforced by intel_lib.query_adzuna() ===
+    limits:
+      max_calls_per_run: 50               # hard cap per intel invocation. One company = ~1 call (Phase 2 enrichment).
+                                          # A full 50-company enrichment run stays well under the 250/month free tier.
+      max_calls_per_month: 200            # safety valve — 50 buffer below the 250 free-tier ceiling.
+      cache_ttl_days: 30                  # Adzuna results cached in .intel-manifest.jsonl for 30 days.
+                                          # A rerun within 30d for the same company uses the cache — zero calls.
+      per_company_per_run: 1              # one call per unique company per run — never per-contact.
+                                          # Multiple contacts at the same company share one Adzuna lookup.
+    env_keys: [ADZUNA_APP_ID, ADZUNA_APP_KEY]
+    used_by: [scripts.data.adzuna, startup-outreach-intel, startup-ideate-shotgun]
+    notes: "UK-strong job search. Salary data included. Good for real-time posting volumes by role. Library caps at 50/run + 200/month + 30d cache to stay inside free tier."
+
+  # ─── Company identity & disclosures ────────────────────────────────────
+
+  gleif:
+    display_name: "GLEIF LEI API"
+    categories: [buyer, competitive, market]
+    enabled: true
+    status: keyless
+    cost_model: free
+    cost_per_call: 0
+    free_tier: "Unlimited — no key. 2M+ global entities."
+    env_keys: []
+    used_by: [scripts.data.gleif, startup-outreach-intel]
+    notes: "api.gleif.org — global legal entity identifiers + ownership hierarchies (who owns whom)."
+
+  edgar_fulltext:
+    display_name: "SEC EDGAR Full-Text Search"
+    categories: [pain, market, buyer, competitive]
+    enabled: true
+    status: keyless
+    cost_model: free
+    cost_per_call: 0
+    free_tier: "Unlimited — no key. Requires User-Agent header."
+    env_keys: []
+    used_by: [scripts.data.edgar, startup-outreach-intel]
+    notes: "efts.sec.gov/LATEST/search-index?q= — search across ALL 10-K/10-Q/8-K filings. Pain in risk factors = legally attested."
+
+  companies_house:
+    display_name: "Companies House API (UK)"
+    categories: [buyer, competitive, market]
+    enabled: true
+    status: free_key
+    cost_model: free
+    cost_per_call: 0
+    free_tier: "Free key — developer.company-information.service.gov.uk"
+    env_keys: [COMPANIES_HOUSE_API_KEY]
+    used_by: [scripts.data.companies_house, startup-outreach-intel]
+    notes: "UK company filings, directors, accounts. More relevant than EDGAR for UK/EU private companies."
+
+  # ─── Public procurement ────────────────────────────────────────────────
+
+  ted_eu:
+    display_name: "TED (Tenders Electronic Daily)"
+    categories: [pain, buyer]
+    enabled: true
+    status: keyless
+    cost_model: free
+    cost_per_call: 0
+    free_tier: "Unlimited — no key. All EU public tenders."
+    env_keys: []
+    used_by: [scripts.data.ted, startup-outreach-intel]
+    notes: "api.ted.europa.eu/v3 — EU public procurement. Your domain's terms → actual tender descriptions + values."
+
+  uk_contracts_finder:
+    display_name: "UK Contracts Finder / Find a Tender"
+    categories: [pain, buyer]
+    enabled: false
+    status: keyless
+    cost_model: free
+    cost_per_call: 0
+    free_tier: "Unlimited — no key. UK public procurement."
+    env_keys: []
+    used_by: []   # deliberate no-op module; nothing calls it
+    disabled_reason: >-
+      Every known endpoint ignores the keyword parameter (verified 2026-07-08), so
+      `query_uk_contracts()` is a deliberate no-op returning []. Full probe record —
+      which endpoints, which variants, what each did — is in the
+      scripts/data/uk_contracts.py docstring, which is where anyone reviving it will
+      land. Use TED EU for EU-wide procurement (UK cross-border awards appear there)
+      and Adzuna for UK hiring signal.
+    notes: >-
+      Was `enabled: true` here until 2026-08-07 while the module returned [] and three
+      prose files said DISABLED — the authoritative copy was the wrong one. Left as a
+      note because it is the clearest argument in the repo for why reachability has
+      exactly one author.
+
+  # ─── Grants & research funding ─────────────────────────────────────────
+
+  sbir:
+    display_name: "SBIR.gov"
+    categories: [timing, technical, competitive]
+    enabled: true
+    status: keyless
+    cost_model: free
+    cost_per_call: 0
+    free_tier: "Unlimited — no key"
+    env_keys: []
+    used_by: [scripts.data.sbir, startup-outreach-intel]
+    notes: "api.sbir.gov — startups getting government R&D grants = named stealth competitors."
+
+  cordis:
+    display_name: "CORDIS (EU Horizon Projects)"
+    categories: [timing, technical, competitive]
+    enabled: true
+    status: keyless
+    cost_model: free
+    cost_per_call: 0
+    free_tier: "Unlimited — no key. Every Horizon Europe funded project."
+    env_keys: []
+    used_by: [scripts.data.cordis, startup-outreach-intel]
+    notes: "cordis.europa.eu — EU research funding by topic. Recipients in your domain = named EU competitors."
+
+  openalex:
+    display_name: "OpenAlex + arXiv (paper-published researcher emails)"
+    categories: [contact]
+    enabled: true
+    status: keyless
+    cost_model: free
+    cost_per_call: 0
+    free_tier: "Unlimited with polite User-Agent (OPENALEX_MAILTO recommended)."
+    env_keys: []
+    used_by: [scripts.data.openalex]
+    notes: "Target-first: takes a CSV of qualified researchers, finds recent papers, extracts only emails the authors themselves published in arXiv source packages. Never guesses addresses. Used for the paper-mining email method."
+
+  # ─── Domain-specific (opt in per assumption via graph.md domain_data_sources) ───
+  #
+  # REGISTERED: none. The gate is live — `domain_data_sources` is read on every
+  # intel run and `intel_lib.DOMAIN_ADAPTERS` is what it resolves against — but no
+  # vertical adapter is registered, on purpose. A source belongs here only once an
+  # idea's own market needs it; the two that lived here were the predecessor idea's
+  # and fired for nobody. Adding one means an entry here, an adapter module, a
+  # DOMAIN_ADAPTERS row, and a card in api-catalog.md.
+
+  # ─── Self-hosted infrastructure ────────────────────────────────────────
+
+  firecrawl:
+    display_name: "Firecrawl"
+    categories: [pain, competitive, buyer]
+    enabled: true
+    status: self_hosted
+    cost_model: free
+    cost_per_call: 0
+    free_tier: "Unlimited — self-hosted instance"
+    env_keys: []
+    local_endpoint: "http://localhost:3002"
+    used_by: [scripts.data.firecrawl, scripts.data.reddit, scripts.data.community_recon, startup-ideate-shotgun]
+    notes: "Primary Reddit discovery path. Self-hosted from official Firecrawl images via infra/firecrawl/docker-compose.yml; searches the public web with Reddit domain restriction. No Reddit or Firecrawl cloud key."

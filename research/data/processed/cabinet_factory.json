@@ -1,0 +1,198 @@
+{
+  "assumptions": {
+    "linear_feet_per_kitchen": 27,
+    "boxes_per_kitchen": 14,
+    "price_per_linear_foot": 650,
+    "sheets_34_per_kitchen": 22,
+    "sheets_14_per_kitchen": 4,
+    "sheet_34_cost": 82.0,
+    "sheet_14_cost": 38.0,
+    "edgeband_cost_per_kitchen": 85.0,
+    "hardware_cost_per_kitchen": 470.0,
+    "doors_bought_in_per_kitchen": 2800.0,
+    "consumables_per_kitchen": 120.0,
+    "packaging_per_kitchen": 140.0,
+    "delivery_per_kitchen": 260.0,
+    "cycle": {
+      "CNC nest, cut and bore": {
+        "machine": 264,
+        "human": 55
+      },
+      "Edgeband": {
+        "machine": 80,
+        "human": 60
+      },
+      "Box assembly": {
+        "machine": 0,
+        "human": 350
+      },
+      "Hardware \u2014 hinges and slides": {
+        "machine": 0,
+        "human": 210
+      },
+      "QC and pack": {
+        "machine": 0,
+        "human": 60
+      }
+    },
+    "locking_joint_assembly_min": 95,
+    "capex": [
+      [
+        "Nested-base CNC router, ATC, vacuum table, drill block",
+        150000,
+        "cuts and bores every box part from the sheet in one operation"
+      ],
+      [
+        "Automatic edgebander \u2014 premill, glue, trim, scrape, buff",
+        95000,
+        "mandatory for frameless. The one machine with no cheap substitute."
+      ],
+      [
+        "Dust collection and compressor",
+        33000,
+        ""
+      ],
+      [
+        "Case clamp and assembly benches",
+        22000,
+        ""
+      ],
+      [
+        "Install, power, commissioning",
+        25000,
+        ""
+      ],
+      [
+        "Sheet vacuum lifter and material racking",
+        16000,
+        ""
+      ],
+      [
+        "Tooling, spoilboard, spares",
+        14000,
+        ""
+      ],
+      [
+        "Pack and shipping station",
+        8000,
+        ""
+      ],
+      [
+        "Software build \u2014 see the AI architecture",
+        120000,
+        "intake, layout engine, quoting, CAD/CAM generation, shop scheduling"
+      ],
+      [
+        "Lease deposit and fit-out, 5,000 sqft",
+        45000,
+        ""
+      ]
+    ],
+    "sqft": 5000,
+    "lease_usd_per_sqft_yr": 11.0,
+    "hourly_wage_loaded": 32.85,
+    "software_per_year": 18000,
+    "utilities_per_year": 14000,
+    "maintenance_pct_of_equipment": 0.055,
+    "insurance_pct_of_capex": 0.012,
+    "equipment_life_years": 8,
+    "operating_days_per_year": 250,
+    "machine_hours_per_day_attended": 7.0,
+    "human_hours_per_day": 7.5,
+    "oee": 0.75,
+    "designer_hours_per_kitchen_manual": 9.0,
+    "engineering_hours_per_kitchen_manual": 4.5,
+    "designer_wage_loaded": 52.0
+  },
+  "product": {
+    "price_per_kitchen": 17550,
+    "linear_feet": 27,
+    "boxes": 14
+  },
+  "materials": {
+    "total_per_kitchen": 5431.0,
+    "doors_share_pct": 51.6,
+    "variable_per_kitchen": 5831.0,
+    "material_pct_of_price": 33.2
+  },
+  "time": {
+    "machine_min": 344,
+    "human_min_screwed": 735,
+    "human_min_locking_joint": 480,
+    "human_hours_screwed": 12.2,
+    "human_hours_locking": 8.0,
+    "front_office_hours_manual": 13.5,
+    "total_hours_manual": 25.8
+  },
+  "capacity": {
+    "machine_bound_kitchens_yr": 228,
+    "shopfloor_2p_screwed": 306,
+    "shopfloor_2p_locking": 468,
+    "front_office_1p_manual": 138
+  },
+  "capex": {
+    "rows": [
+      {
+        "item": "Nested-base CNC router, ATC, vacuum table, drill block",
+        "usd": 150000,
+        "note": "cuts and bores every box part from the sheet in one operation"
+      },
+      {
+        "item": "Automatic edgebander \u2014 premill, glue, trim, scrape, buff",
+        "usd": 95000,
+        "note": "mandatory for frameless. The one machine with no cheap substitute."
+      },
+      {
+        "item": "Dust collection and compressor",
+        "usd": 33000,
+        "note": ""
+      },
+      {
+        "item": "Case clamp and assembly benches",
+        "usd": 22000,
+        "note": ""
+      },
+      {
+        "item": "Install, power, commissioning",
+        "usd": 25000,
+        "note": ""
+      },
+      {
+        "item": "Sheet vacuum lifter and material racking",
+        "usd": 16000,
+        "note": ""
+      },
+      {
+        "item": "Tooling, spoilboard, spares",
+        "usd": 14000,
+        "note": ""
+      },
+      {
+        "item": "Pack and shipping station",
+        "usd": 8000,
+        "note": ""
+      },
+      {
+        "item": "Software build \u2014 see the AI architecture",
+        "usd": 120000,
+        "note": "intake, layout engine, quoting, CAD/CAM generation, shop scheduling"
+      },
+      {
+        "item": "Lease deposit and fit-out, 5,000 sqft",
+        "usd": 45000,
+        "note": ""
+      }
+    ],
+    "total_usd": 528000,
+    "equipment_usd": 363000
+  },
+  "fixed": {
+    "lease": 55000,
+    "software and cloud": 18000,
+    "utilities": 14000,
+    "maintenance and tooling": 19965,
+    "insurance": 6336,
+    "equipment depreciation": 45375
+  },
+  "fixed_total": 158676
+}

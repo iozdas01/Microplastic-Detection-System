@@ -1,0 +1,25 @@
+custom_term,generic_term,level_vs_custom_furniture,mean_index,weeks_at_or_below_1,resolved,momentum_yoy,custom_share_of_generic,furniture_share_of_related,commercial_intent_queries,free_standing_furniture,demand_score
+custom cabinets,kitchen cabinets,1.0543,15.569,0.0,True,,0.07614,1.0,5,False,0.9137
+custom bar,,1.2025,11.832,0.0,True,,,0.466,0,False,0.8398
+custom closet,closet organizer,0.589,8.698,0.0,True,,0.29709,,0,False,0.6429
+custom desk,desk,0.6652,6.286,0.0,True,,0.00612,0.482,0,True,0.5318
+custom chair,,0.6937,5.126,0.034,True,,,0.417,0,True,0.5289
+custom vanity,,0.3422,5.053,0.0,True,,,0.75,0,False,0.4242
+custom shelving,,0.1029,1.519,0.748,True,,,1.0,0,False,0.3599
+custom sofa,sofa,0.4796,4.447,0.542,True,,0.007,0.184,0,True,0.3344
+custom bench,bench,0.3117,2.889,0.145,True,,0.00247,0.36,0,True,0.2894
+custom dining table,dining table,0.2088,1.973,0.908,False,,0.00552,1.0,0,True,
+custom coffee table,coffee table,0.1801,2.66,0.855,False,,0.00614,1.0,0,True,
+custom bed frame,bed frame,0.1388,2.05,0.905,False,,0.00373,1.0,0,True,
+custom stool,,0.0806,0.595,0.927,False,,,1.0,0,True,
+custom bookshelf,bookshelf,0.0759,0.718,0.935,False,,0.00481,,0,True,
+custom kitchen island,,0.0731,1.08,0.931,False,,,1.0,0,False,
+custom outdoor furniture,,0.0698,0.687,0.939,False,,,0.0,0,False,
+custom wardrobe,wardrobe,0.0548,0.508,0.92,False,,0.00202,1.0,1,True,
+custom headboard,,0.0497,0.469,0.939,False,,,,0,True,
+custom dining chair,dining chair,0.048,0.355,0.943,False,,0.01012,1.0,0,True,
+custom console table,console table,0.0413,0.305,0.95,False,,0.00842,,0,True,
+custom nightstand,nightstand,0.0403,0.397,0.947,False,,0.0054,,0,True,
+custom built ins,,0.007,0.103,1.0,False,,,,0,False,
+custom mantel,,0.007,0.069,0.992,False,,,1.0,0,False,
+custom conference table,,0.0058,0.053,1.0,False,,,1.0,0,True,

@@ -1,0 +1,24 @@
+phase,category,item,qty,unit_cost_usd,total_usd,basis
+1,Timber,Weinig OptiCut-class optimising crosscut with scanning,1,178000,178000,indicative; defect-skip optimisation is what protects the timber yield
+1,Timber,Straight-line / gang rip saw,1,118000,118000,indicative
+1,Timber,"Four-side moulder, Weinig Powermat-class, to S4S blanks",1,224000,224000,indicative
+1,Timber,"Dehumidification kiln and conditioning room, 6% MC control",1,142000,142000,"kigumi needs 0.1-0.2mm stability; this is a tolerance item, not a nicety"
+1,Machining,5-axis CNC machining centre — legs and stiles (SCM Accord / HOMAG CENTATEQ P-310 class),1,395000,395000,5-axis is required for tsugite and shiguchi geometry
+1,Machining,"5-axis CNC machining centre — rails, slats and keys",1,395000,395000,second centre so fixtures need not change between part families
+1,Robotics,"6-axis robot transfer cell with vision part ID, between machining centres",1,188000,188000,this is the autonomy: parts move machine to machine without a person
+1,Robotics,Robot load/unload gantry for the lumber line to CNC handoff,1,146000,146000,indicative
+1,Finishing,Wide-belt sander and profile sanding,1,96000,96000,indicative
+1,Finishing,"Oil application booth, cure racks and extraction",1,158000,158000,indicative
+1,Quality,Optical joint metrology — first-off and SPC on joint fit,1,68000,68000,the joint is the product; measuring it cannot be optional
+1,Services,"Dust and chip extraction, silo and briquetting",1,98000,98000,solid timber makes far more waste volume than panel work
+1,Services,"Compressor, dryer and ring main",1,28000,28000,indicative
+1,Packing,"Carton erector, part-kitting station, strapping and labelling",1,72000,72000,no assembly line — this is the last station in the plant
+1,Software,"5-axis CAM, joint parametrics, nesting and MES licences",1,145000,145000,perpetual plus first year; subscription carried in opex
+1,Software,Customer-facing configurator build and integration,1,150000,150000,the demand-side experiment the market model asks for
+1,Install,"Rigging, power distribution, air, commissioning and training",1,212000,212000,typically 8-12% of equipment value
+1,Facility,"Timber racking, floor prep, tooling and spares package",1,82000,82000,indicative
+2,Robotics,Robotic sanding cell with force-compliant end effector,1,214000,214000,phase 2 — removes the second-largest manual station
+2,Robotics,AMR fleet for inter-station and finished-goods transport,1,124000,124000,phase 2
+2,Finishing,Automated oil line with inline cure,1,186000,186000,phase 2
+3,Timber,"Automated rough-mill grading, scanning and infeed",1,340000,340000,phase 3 — the last manual touch on the timber side
+3,Packing,Automated kitting and carton pack cell,1,265000,265000,phase 3

@@ -1,0 +1,40 @@
+#!/bin/sh
+# Startup Assumption Lab — pre-commit gate.
+#
+# Install once per clone (git does not version .git/hooks):
+#     scripts/hooks/install.sh
+#
+# Checks that a fact still matches its single author, and that generated artifacts
+# are not stale. Every rule here exists because something drifted silently first —
+# see the docstring in scripts/validate_repo.py.
+#
+# Bypass for a genuine work-in-progress commit:  git commit --no-verify
+# If you find yourself bypassing routinely, the check is wrong. Fix the check.
+
+set -e
+
+REPO="$(git rev-parse --show-toplevel)"
+cd "$REPO"
+
+# Prefer the repo venv: the validators need PyYAML, and a system python3 on macOS
+# both lacks it and refuses `pip install` under PEP 668. Falling back to system
+# python3 only keeps the hook working on a clone that has not made a venv yet.
+if [ -x "$REPO/.venv/bin/python" ]; then
+    PY="$REPO/.venv/bin/python"
+elif command -v python3 >/dev/null 2>&1; then
+    PY=python3
+else
+    echo "pre-commit: no python found; skipping repo validation." >&2
+    exit 0
+fi
+
+fail=0
+
+"$PY" scripts/validate_repo.py --fix-hint || fail=1
+"$PY" scripts/validate_skill_catalog.py  || fail=1
+
+if [ "$fail" -ne 0 ]; then
+    echo ""
+    echo "pre-commit: validation failed. Fix the above, or commit with --no-verify."
+    exit 1
+fi

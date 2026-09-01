@@ -1,0 +1,8 @@
+step,value,unit,basis
+US consumer units,135761000.0,households,CEX CONSUNIT 2024
+US household furniture spend (TAM),88013112000.0,usd/yr,"CEX FURNITUR x consumer units, summed over income quintiles, 2024"
+Beachhead article,Kitchen and dining room furniture,article,highest beachhead score (0.6831) among articles this factory can physically build
+Serviceable population share,0.41912,share,Census CBSA vintage 2024: the top 25 metros hold 41.9% of the US population
+Blended revenue per order,2532.25,usd/order,"tier mix x tier price, plus the assembly attach earned inside serviced metros"
+"SAM (base, product + service)",52706167.77599999,usd/yr,product: article pool x (measured custom search share x willing multiple) x online-addressable share; service: the order count that implies x blended attach x assembly price
+"SOM (year 3, capacity-led)",2846133,usd/yr,"the smaller of factory capacity and market demand — demand binds; ramped over three years, valued at the blended tier price plus the assembly attach"

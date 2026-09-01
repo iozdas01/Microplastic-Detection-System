@@ -1,0 +1,115 @@
+name: startup-firecrawl
+
+x-firecrawl-environment: &firecrawl-environment
+  REDIS_URL: redis://redis:6379
+  REDIS_RATE_LIMIT_URL: redis://redis:6379
+  PLAYWRIGHT_MICROSERVICE_URL: http://playwright-service:3000/scrape
+  POSTGRES_USER: postgres
+  POSTGRES_PASSWORD: postgres
+  POSTGRES_DB: postgres
+  POSTGRES_HOST: nuq-postgres
+  POSTGRES_PORT: 5432
+  USE_DB_AUTHENTICATION: "false"
+  NUQ_RABBITMQ_URL: amqp://rabbitmq:5672
+  NUM_WORKERS_PER_QUEUE: 2
+  CRAWL_CONCURRENT_REQUESTS: 2
+  MAX_CONCURRENT_JOBS: 2
+  BROWSER_POOL_SIZE: 1
+  LOGGING_LEVEL: info
+  BULL_AUTH_KEY: startup-firecrawl-local
+  SEARXNG_ENDPOINT: http://searxng:8080
+
+services:
+  api:
+    image: ghcr.io/firecrawl/firecrawl:latest
+    restart: unless-stopped
+    environment:
+      <<: *firecrawl-environment
+      HOST: 0.0.0.0
+      PORT: 3002
+      EXTRACT_WORKER_PORT: 3004
+      WORKER_PORT: 3005
+      HARNESS_STARTUP_TIMEOUT_MS: 120000
+      ENV: local
+    command: node dist/src/harness.js --start-docker
+    depends_on:
+      redis:
+        condition: service_started
+      rabbitmq:
+        condition: service_healthy
+      nuq-postgres:
+        condition: service_healthy
+      playwright-service:
+        condition: service_started
+      searxng:
+        condition: service_started
+    ports:
+      - "127.0.0.1:3002:3002"
+    networks: [backend]
+
+  playwright-service:
+    image: ghcr.io/firecrawl/playwright-service:latest
+    restart: unless-stopped
+    environment:
+      PORT: 3000
+      MAX_CONCURRENT_PAGES: 2
+      BLOCK_MEDIA: "true"
+    networks: [backend]
+    mem_limit: 2g
+    tmpfs:
+      - /tmp/.cache:noexec,nosuid,size=512m
+
+  redis:
+    image: redis:alpine
+    restart: unless-stopped
+    command: redis-server --bind 0.0.0.0
+    networks: [backend]
+    mem_limit: 256m
+
+  searxng:
+    image: searxng/searxng:latest
+    restart: unless-stopped
+    environment:
+      SEARXNG_BASE_URL: http://searxng:8080/
+    volumes:
+      - ./searxng-settings.yml:/etc/searxng/settings.yml:ro
+    networks: [backend]
+    mem_limit: 512m
+
+  rabbitmq:
+    image: rabbitmq:3-management
+    restart: unless-stopped
+    command: rabbitmq-server
+    healthcheck:
+      test: ["CMD", "rabbitmq-diagnostics", "-q", "check_running"]
+      interval: 5s
+      timeout: 5s
+      retries: 12
+      start_period: 10s
+    networks: [backend]
+    mem_limit: 512m
+
+  nuq-postgres:
+    image: ghcr.io/firecrawl/nuq-postgres:latest
+    restart: unless-stopped
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_DB: postgres
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U postgres -d postgres"]
+      interval: 3s
+      timeout: 3s
+      retries: 20
+      start_period: 10s
+    volumes:
+      - postgres-data:/var/lib/postgresql/data
+    networks: [backend]
+    mem_limit: 768m
+
+networks:
+  backend:
+    driver: bridge
+
+volumes:
+  postgres-data:

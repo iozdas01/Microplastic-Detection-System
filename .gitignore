@@ -1,0 +1,54 @@
+# Secrets
+.env
+.env.local
+.env.*.local
+.gcp/
+*.json.key
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+venv/
+env/
+
+# Node
+node_modules/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Editors
+.vscode/
+.idea/
+*.swp
+
+# Scraper outputs / working files
+scrapers/outputs/
+*.log
+
+# Visual brainstorming sessions
+.superpowers/
+.gstack/
+
+# Git worktrees (managed by git worktree, not for committing)
+.claude/worktrees/
+
+# LinkedIn data export — contains connections' personal data + private message
+# content. Parsed locally by scripts/data/linkedin_export.py. Never commit.
+private/
+
+# Per-idea machine caches — visited-URL sets, run manifests, API response caches.
+# Regenerated on demand by the outreach skills; never review-worthy.
+reports/*/outreach/.*
+
+# research/ — bulk source downloads, re-fetched on demand by the collectors and too
+# large to track. The tidy extracts in research/data/processed/ and the JSON payloads
+# in research/data/raw/ are the provenance record that matters.
+research/data/raw/census-cbp/*.zip
+research/data/raw/census-cbp/*.txt
+research/data/raw/bls-cex/cx.series
+research/data/raw/census-mrts/*.xlsx
+research/data/raw/_probe/

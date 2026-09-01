@@ -1,0 +1,26 @@
+keyword,is_anchor,mean_index,vs_custom_furniture,batch
+custom bar,False,11.832,1.2025,4
+custom cabinets,False,15.569,1.0543,0
+custom furniture,True,14.767,1.0,0
+custom chair,False,5.126,0.6937,5
+custom desk,False,6.286,0.6652,1
+custom closet,False,8.698,0.589,0
+custom sofa,False,4.447,0.4796,3
+custom vanity,False,5.053,0.3422,2
+custom bench,False,2.889,0.3117,3
+custom dining table,False,1.973,0.2088,1
+custom coffee table,False,2.66,0.1801,2
+custom bed frame,False,2.05,0.1388,2
+custom shelving,False,1.519,0.1029,2
+custom stool,False,0.595,0.0806,5
+custom bookshelf,False,0.718,0.0759,1
+custom kitchen island,False,1.08,0.0731,0
+custom outdoor furniture,False,0.687,0.0698,4
+custom wardrobe,False,0.508,0.0548,3
+custom headboard,False,0.469,0.0497,1
+custom dining chair,False,0.355,0.048,5
+custom console table,False,0.305,0.0413,5
+custom nightstand,False,0.397,0.0403,4
+custom built ins,False,0.103,0.007,0
+custom mantel,False,0.069,0.007,4
+custom conference table,False,0.053,0.0058,3

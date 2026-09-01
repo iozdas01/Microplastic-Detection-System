@@ -1,0 +1,480 @@
+<title>Custom Cabinet Demand</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;600;700&family=IBM+Plex+Mono:wght@400;500;600&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&display=swap">
+
+<style>
+:root {
+    --ground:   #EEF1EC;
+    --surface:  #FAFBF9;
+    --sunk:     #E4E8E1;
+    --ink:      #14180F;
+    --muted:    #5C6459;
+    --faint:    #838C7F;
+    --rule:     #D2D8CE;
+    --accent:   #24467C;
+    --supply:   #24467C;
+    --demand:   #96701C;
+    --alarm:    #8E3A26;
+
+    --display: "Archivo", "Helvetica Neue", Arial, sans-serif;
+    --body: "Source Serif 4", Georgia, "Times New Roman", serif;
+    --mono: "IBM Plex Mono", ui-monospace, "SF Mono", Menlo, monospace;
+
+    --measure: 34rem;
+    --wide: 60rem;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --ground:  #12150F;
+      --surface: #191D16;
+      --sunk:    #0D0F0B;
+      --ink:     #E8ECE4;
+      --muted:   #9AA396;
+      --faint:   #79826F;
+      --rule:    #2D3329;
+      --accent:  #86ABE8;
+      --supply:  #86ABE8;
+      --demand:  #D6AC4A;
+      --alarm:   #D97D63;
+    }
+  }
+
+  :root[data-theme="dark"] {
+    --ground:  #12150F;
+    --surface: #191D16;
+    --sunk:    #0D0F0B;
+    --ink:     #E8ECE4;
+    --muted:   #9AA396;
+    --faint:   #79826F;
+    --rule:    #2D3329;
+    --accent:  #86ABE8;
+    --supply:  #86ABE8;
+    --demand:  #D6AC4A;
+    --alarm:   #D97D63;
+  }
+
+  * { box-sizing: border-box; }
+
+  body {
+    background: var(--ground);
+    color: var(--ink);
+    font-family: var(--body);
+    font-size: 1.0625rem;
+    line-height: 1.65;
+    margin: 0;
+    padding: 0 1.5rem 6rem;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  .page { max-width: var(--wide); margin: 0 auto; }
+
+  /* Every direct child sits in the measure column by default; .bleed opts out. */
+  .flow { display: flex; flex-direction: column; gap: 1.25rem; }
+  .flow > * { max-width: var(--measure); margin-inline: 0; }
+  .flow > .bleed { max-width: 100%; width: 100%; }
+
+  /* ---------- type ---------- */
+  h1, h2, h3 { font-family: var(--display); text-wrap: balance; margin: 0; line-height: 1.15; }
+
+  h1 {
+    font-size: clamp(2.4rem, 6vw, 3.9rem);
+    font-weight: 700;
+    letter-spacing: -0.033em;
+  }
+
+  h2 {
+    font-size: clamp(1.35rem, 2.6vw, 1.7rem);
+    font-weight: 600;
+    letter-spacing: -0.017em;
+    padding-top: 2.75rem;
+    margin-top: 1.5rem;
+    border-top: 1px solid var(--rule);
+  }
+
+  h3 {
+    font-size: 1.03rem;
+    font-weight: 600;
+    letter-spacing: -0.005em;
+    margin-top: 1.25rem;
+  }
+
+  p { margin: 0; }
+  strong { font-weight: 600; }
+
+  .eyebrow {
+    font-family: var(--mono);
+    font-size: 0.7rem;
+    font-weight: 500;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--faint);
+  }
+
+  .lede {
+    font-size: 1.2rem;
+    line-height: 1.55;
+    color: var(--muted);
+  }
+
+  .note {
+    font-family: var(--mono);
+    font-size: 0.76rem;
+    line-height: 1.6;
+    color: var(--faint);
+  }
+
+  a { color: var(--accent); text-decoration-thickness: 1px; text-underline-offset: 2px; }
+  a:focus-visible, summary:focus-visible {
+    outline: 2px solid var(--accent);
+    outline-offset: 3px;
+    border-radius: 2px;
+  }
+
+  /* ---------- masthead ---------- */
+  .masthead { padding: 4.5rem 0 0; }
+  .masthead h1 { margin-bottom: 1.25rem; }
+
+  .stamp {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem 1.5rem;
+    padding-top: 1.5rem;
+    margin-top: 1.75rem;
+    border-top: 1px solid var(--rule);
+  }
+  .stamp div { font-family: var(--mono); font-size: 0.72rem; color: var(--faint); }
+  .stamp b {
+    display: block;
+    font-weight: 500;
+    color: var(--ink);
+    letter-spacing: -0.01em;
+  }
+
+  /* ---------- the divergence ---------- */
+  .diverge {
+    background: var(--surface);
+    border: 1px solid var(--rule);
+    padding: clamp(1.5rem, 4vw, 2.5rem);
+    display: grid;
+    gap: 1.75rem;
+  }
+
+  .method { display: grid; gap: 0.6rem; }
+
+  .method-head {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 1rem;
+    flex-wrap: wrap;
+  }
+
+  .method-name {
+    font-family: var(--display);
+    font-weight: 600;
+    font-size: 1rem;
+    letter-spacing: -0.01em;
+  }
+
+  .method-value {
+    font-family: var(--mono);
+    font-weight: 600;
+    font-size: clamp(1.5rem, 4vw, 2.1rem);
+    letter-spacing: -0.03em;
+    font-variant-numeric: tabular-nums;
+  }
+
+  .bar { height: 0.6rem; background: var(--sunk); overflow: hidden; }
+  .bar span { display: block; height: 100%; }
+
+  .m-demand .method-value, .m-demand .method-name { color: var(--demand); }
+  .m-demand .bar span { background: var(--demand); }  /* width set inline, from data */
+  .m-supply .method-value, .m-supply .method-name { color: var(--supply); }
+  .m-supply .bar span { background: var(--supply); }
+
+  .verdict {
+    border-top: 1px solid var(--rule);
+    padding-top: 1.5rem;
+    font-size: 1.03rem;
+  }
+  .verdict b { color: var(--alarm); font-weight: 600; }
+
+  /* ---------- findings ---------- */
+  .findings { display: grid; gap: 0; border-top: 1px solid var(--rule); }
+
+  .finding {
+    display: grid;
+    grid-template-columns: 5.5rem 1fr;
+    gap: 0 1.5rem;
+    padding: 1.5rem 0;
+    border-bottom: 1px solid var(--rule);
+    align-items: start;
+  }
+  .finding .tier {
+    font-family: var(--mono);
+    font-size: 0.7rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--faint);
+    padding-top: 0.28rem;
+  }
+  .finding h3 { margin: 0 0 0.4rem; }
+  .finding p { color: var(--muted); max-width: 34rem; }
+
+  @media (max-width: 34rem) {
+    .finding { grid-template-columns: 1fr; gap: 0.5rem; }
+  }
+
+  /* ---------- stat row ---------- */
+  .stats {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(11rem, 1fr));
+    gap: 1px;
+    background: var(--rule);
+    border: 1px solid var(--rule);
+  }
+  .stat { background: var(--surface); padding: 1.25rem 1.15rem; }
+  .stat .n {
+    font-family: var(--mono);
+    font-size: 1.6rem;
+    font-weight: 600;
+    letter-spacing: -0.035em;
+    font-variant-numeric: tabular-nums;
+    display: block;
+    line-height: 1.1;
+  }
+  .stat .k {
+    font-family: var(--mono);
+    font-size: 0.7rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--faint);
+    display: block;
+    margin-top: 0.5rem;
+  }
+  .stat .s { font-size: 0.86rem; color: var(--muted); display: block; margin-top: 0.3rem; }
+  .stat.neg .n { color: var(--alarm); }
+
+  /* ---------- tables ---------- */
+  .scroll { overflow-x: auto; }
+  table {
+    border-collapse: collapse;
+    width: 100%;
+    font-family: var(--mono);
+    font-size: 0.81rem;
+    font-variant-numeric: tabular-nums;
+  }
+  caption {
+    text-align: left;
+    font-family: var(--mono);
+    font-size: 0.7rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--faint);
+    padding-bottom: 0.7rem;
+  }
+  th, td {
+    text-align: left;
+    padding: 0.5rem 0.9rem 0.5rem 0;
+    border-bottom: 1px solid var(--rule);
+    white-space: nowrap;
+  }
+  thead th {
+    font-weight: 500;
+    color: var(--faint);
+    font-size: 0.7rem;
+    letter-spacing: 0.07em;
+    text-transform: uppercase;
+    border-bottom: 1px solid var(--ink);
+  }
+  td.num, th.num { text-align: right; padding-right: 0; }
+  tbody tr:last-child td { border-bottom: none; }
+  td.wrap { white-space: normal; min-width: 13rem; font-family: var(--body); font-size: 0.95rem; }
+  tr.lead td { background: color-mix(in srgb, var(--accent) 7%, transparent); font-weight: 500; }
+  .dim { color: var(--faint); }
+
+  /* proportional cell — a bar drawn behind the number */
+  td.plot { width: 40%; padding-right: 0; }
+  .track { display: block; height: 0.5rem; background: var(--sunk); }
+  .track i { display: block; height: 100%; background: var(--accent); }
+
+  /* ---------- callouts ---------- */
+  .callout {
+    border-left: 2px solid var(--accent);
+    padding: 0.15rem 0 0.15rem 1.25rem;
+    color: var(--muted);
+  }
+  .callout b { color: var(--ink); font-weight: 600; }
+
+  details {
+    border: 1px solid var(--rule);
+    background: var(--surface);
+    padding: 1rem 1.25rem;
+  }
+  summary {
+    cursor: pointer;
+    font-family: var(--display);
+    font-weight: 600;
+    font-size: 0.95rem;
+  }
+  details[open] summary { margin-bottom: 1rem; }
+
+  footer {
+    margin-top: 4rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid var(--rule);
+    max-width: 100%;
+  }
+
+  /* figures — used by the factory plan page; additive, no existing rule touched */
+  figure { margin: 0; }
+  figure svg { display: block; margin: 0 auto; color: var(--ink); }
+  figcaption {
+    margin-top: 0.9rem;
+    font-family: var(--mono);
+    font-size: 0.76rem;
+    line-height: 1.55;
+    color: var(--muted);
+    max-width: 46rem;
+  }
+  .phases { display: grid; gap: 1px; background: var(--rule); }
+  .phase { background: var(--surface); padding: 1.15rem 1.15rem 1.25rem; }
+  .phase .k {
+    display: block; font-family: var(--mono); font-size: 0.7rem;
+    letter-spacing: 0.08em; text-transform: uppercase; color: var(--faint);
+  }
+  .phase .n {
+    display: block; font-family: var(--display); font-size: 1.5rem;
+    margin: 0.35rem 0 0.5rem;
+  }
+  .phase p { font-size: 0.86rem; color: var(--muted); margin: 0; }
+  @media (min-width: 46rem) { .phases { grid-template-columns: repeat(3, 1fr); } }
+</style>
+
+<div class="page flow">
+
+  <header class="masthead bleed">
+    <div class="flow">
+      <p class="eyebrow">Market case · 28 August 2026</p>
+      <h1>Custom kitchen cabinets: the market, and how we sized it</h1>
+      <p class="lede">Three numbers, built from Census data rather than a market report,
+      with every step shown. Nothing here is bought from a research firm.</p>
+    </div>
+  </header>
+
+  <h2 id="numbers">The three numbers</h2>
+
+  <p>TAM, SAM and SOM are three nested circles. Only the smallest one is anything like our
+  revenue.</p>
+
+  <div class="stats bleed">
+    <div class="stat"><span class="n">$16.02bn</span><span class="k">TAM</span><span class="s">the whole US cabinet industry</span></div>
+    <div class="stat"><span class="n">$182.9m</span><span class="k">SAM</span><span class="s">the part our model could serve</span></div>
+    <div class="stat"><span class="n">$18.8m</span><span class="k">SOM</span><span class="s">everything one factory can build</span></div>
+  </div>
+
+  <div class="findings">
+    <div class="finding"><span class="tier">TAM</span><div>
+      <h3>$16.02bn — the size of the pond</h3>
+      <p>What all 6,118 American cabinet makers sell between them, at
+      manufacturer prices. Not our revenue. It is the number that says this is a real
+      industry rather than a niche.</p></div></div>
+    <div class="finding"><span class="tier">SAM</span><div>
+      <h3>$182.9m — the part we could compete for</h3>
+      <p>Custom cabinets only (7.6% of the industry), and only the
+      share that can be sold direct rather than through a showroom. Still not our revenue —
+      it is what is available to win.</p></div></div>
+    <div class="finding"><span class="tier">SOM</span><div>
+      <h3>$18.8m — what we could actually build</h3>
+      <p>One panel cell running two shifts makes 21,094 cabinet boxes a
+      year, or 1,507 kitchens. That is
+      10% of the SAM — <b>so the factory runs out long
+      before the market does</b>, and no guess about market share is needed.</p></div></div>
+  </div>
+
+  <p class="callout">This is why the SOM is a capacity number and not a percentage.
+  Assuming "we will take 2% of the market" would be inventing the most important figure in
+  the model. Counting how many boxes a machine can cut in a year is not an assumption — it
+  is arithmetic on a cycle time. <b>The honest ceiling is
+  $18.8m, and reaching it is a selling problem, not a market-size
+  one.</b></p>
+
+  <h2 id="how">How each number was derived</h2>
+
+  <p>Start from something countable and multiply down. Three steps are <b>measured</b> from
+  public data, three are <b>arithmetic</b>, and one is an <b>assumption</b>.</p>
+
+  <figure class="bleed scroll"><svg viewBox="0 0 880 622" role="img" aria-label="Funnel from US cabinet manufacturing revenue down to year-three revenue, with each step labelled as measured, derived or assumed. The measured steps sit at the top; the assumed steps are the last two and are drawn dashed." style="max-width:100%;height:auto"><defs>
+    <marker id="ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7"
+            orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="currentColor"/>
+    </marker>
+    <marker id="arA" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7"
+            orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="var(--alarm)"/>
+    </marker>
+  </defs><text x="0" y="24" font-size="12" fill="currentColor" opacity="0.7">Bar width is logarithmic — a linear scale would make the last band invisible</text><rect x="0" y="58" width="424" height="42" rx="2" fill="currentColor" fill-opacity="0.06" stroke="currentColor" stroke-width="1.25" /><text x="12" y="85" font-size="13" fill="currentColor">$4.85bn</text><text x="438" y="76" font-size="12" fill="currentColor">What they pay those people</text><text x="438" y="92" font-size="10.5" fill="currentColor" opacity="0.85">MEASURED · Census CBP 2022, NAICS 337110</text><line x1="26" y1="100" x2="26" y2="130" stroke="currentColor" stroke-width="1.25" marker-end="url(#ar)" opacity="0.7"/><rect x="0" y="132" width="580" height="42" rx="2" fill="currentColor" fill-opacity="0.06" stroke="currentColor" stroke-width="1.25" /><text x="12" y="159" font-size="13" fill="currentColor">$16.02bn</text><text x="594" y="150" font-size="12" fill="currentColor">TAM — US cabinet manufacturing revenue</text><text x="594" y="166" font-size="10.5" fill="currentColor" opacity="0.85">DERIVED · payroll x 3.3x revenue-to-payroll multiple</text><line x1="26" y1="174" x2="26" y2="204" stroke="currentColor" stroke-width="1.25" marker-end="url(#ar)" opacity="0.7"/><rect x="0" y="206" width="289" height="42" rx="2" fill="currentColor" fill-opacity="0.06" stroke="currentColor" stroke-width="1.25" /><text x="12" y="233" font-size="13" fill="currentColor">$1.22bn</text><text x="303" y="224" font-size="12" fill="currentColor">The custom slice of it</text><text x="303" y="240" font-size="10.5" fill="currentColor" opacity="0.85">DERIVED · TAM x custom share</text><line x1="26" y1="248" x2="26" y2="278" stroke="currentColor" stroke-width="1.25" marker-end="url(#ar)" opacity="0.7"/><rect x="0" y="280" width="163" height="42" rx="2" fill="var(--alarm)" fill-opacity="0.10" stroke="var(--alarm)" stroke-width="2" stroke-dasharray='5 4'/><text x="12" y="307" font-size="13" fill="currentColor">$182.9m</text><text x="177" y="298" font-size="12" fill="currentColor">SAM — the part our model can serve</text><text x="177" y="314" font-size="10.5" fill="var(--alarm)" opacity="0.85">ASSUMED · TAM x 15% sellable direct</text><line x1="26" y1="322" x2="26" y2="352" stroke="currentColor" stroke-width="1.25" marker-end="url(#ar)" opacity="0.7"/><rect x="0" y="354" width="76" height="42" rx="2" fill="currentColor" fill-opacity="0.06" stroke="currentColor" stroke-width="1.25" /><text x="12" y="381" font-size="13" fill="currentColor">$18.8m</text><text x="90" y="372" font-size="12" fill="currentColor">SOM — everything the factory can build</text><text x="90" y="388" font-size="10.5" fill="currentColor" opacity="0.85">DERIVED · 7.2 min takt at the nesting CNC, 2 shifts, 72% OEE</text><line x1="26" y1="396" x2="26" y2="426" stroke="currentColor" stroke-width="1.25" marker-end="url(#ar)" opacity="0.7"/><rect x="0" y="428" width="60" height="42" rx="2" fill="var(--alarm)" fill-opacity="0.10" stroke="var(--alarm)" stroke-width="2" stroke-dasharray='5 4'/><text x="12" y="455" font-size="13" fill="currentColor">$8.7m</text><text x="74" y="446" font-size="12" fill="currentColor">Gross profit on that</text><text x="74" y="462" font-size="10.5" fill="var(--alarm)" opacity="0.85">ASSUMED · SOM x 46% gross margin</text><line x1="26" y1="470" x2="26" y2="500" stroke="currentColor" stroke-width="1.25" marker-end="url(#ar)" opacity="0.7"/><rect x="0" y="502" width="60" height="42" rx="2" fill="var(--alarm)" fill-opacity="0.10" stroke="var(--alarm)" stroke-width="2" stroke-dasharray='5 4'/><text x="12" y="529" font-size="13" fill="currentColor">$7.5m</text><text x="74" y="520" font-size="12" fill="currentColor">Operating profit after the factory</text><text x="74" y="536" font-size="10.5" fill="var(--alarm)" opacity="0.85">ASSUMED · gross profit - $1,150,000 annual fixed cost</text></svg><figcaption>Solid bands are measured or arithmetic on measured numbers. Dashed bands are judgements. Notice where the dashes start: everything down to the custom cabinet market is evidence, and everything below it is an assumption waiting to be tested.</figcaption></figure>
+<div class="bleed scroll"><table><caption>Every step</caption><thead><tr><th class="wrap">Step</th><th class="wrap">Kind</th><th class="num">Value</th><th class="wrap">Where it came from</th></tr></thead><tbody><tr><td class="wrap">What they pay those people</td><td class="wrap">measured</td><td class="num">$4.85bn</td><td class="wrap">Census CBP 2022, NAICS 337110</td></tr><tr><td class="wrap">TAM — US cabinet manufacturing revenue</td><td class="wrap">derived</td><td class="num">$16.02bn</td><td class="wrap">payroll x 3.3x revenue-to-payroll multiple</td></tr><tr><td class="wrap">Share of cabinet demand that wants custom</td><td class="wrap">measured</td><td class="num">7.61%</td><td class="wrap">Google Trends US 5y: &#x27;custom cabinets&#x27; vs &#x27;kitchen cabinets&#x27;, 0% of weeks at the index floor</td></tr><tr><td class="wrap">The custom slice of it</td><td class="wrap">derived</td><td class="num">$1.22bn</td><td class="wrap">TAM x custom share</td></tr><tr class="lead"><td class="wrap">SAM — the part our model can serve</td><td class="wrap">assumed</td><td class="num">$182.9m</td><td class="wrap">TAM x 15% sellable direct</td></tr><tr><td class="wrap">SOM — everything the factory can build</td><td class="wrap">derived</td><td class="num">$18.8m</td><td class="wrap">7.2 min takt at the nesting CNC, 2 shifts, 72% OEE</td></tr><tr class="lead"><td class="wrap">Gross profit on that</td><td class="wrap">assumed</td><td class="num">$8.7m</td><td class="wrap">SOM x 46% gross margin</td></tr><tr class="lead"><td class="wrap">Operating profit after the factory</td><td class="wrap">assumed</td><td class="num">$7.5m</td><td class="wrap">gross profit - $1,150,000 annual fixed cost</td></tr></tbody></table></div>
+
+  <p>The anchor is $4.85bn of payroll. 6,118
+  businesses pay that to 102,338 people every year.
+  Nobody pays wages out of demand that does not exist — which is why the top of this funnel
+  is evidence rather than an estimate.</p>
+
+  <h2 id="why">Why cabinets</h2>
+
+  <div class="bleed scroll"><table><caption>Cabinets against a chair</caption><thead><tr><th class="wrap"></th><th class="wrap">Custom cabinets</th><th class="wrap">A chair</th></tr></thead><tbody><tr><td class="wrap">Industry size</td><td class="wrap">$16.0bn</td><td class="wrap">$3.2bn</td></tr><tr><td class="wrap">Can search demand be measured?</td><td class="wrap">yes</td><td class="wrap">no — 94% of weeks at zero</td></tr><tr><td class="wrap">Every unit genuinely bespoke?</td><td class="wrap">yes — no two kitchens match</td><td class="wrap">no — a chair is a repeated design</td></tr><tr><td class="wrap">Fits one panel cell?</td><td class="wrap">yes</td><td class="wrap">no — solid timber, different plant</td></tr><tr><td class="wrap">Plant cost</td><td class="wrap">$3.2m</td><td class="wrap">$4.8m</td></tr><tr><td class="wrap">Where the margin comes from</td><td class="wrap">cost and fit at volume</td><td class="wrap">brand at low volume</td></tr></tbody></table></div>
+
+  <p>Three reasons, in order of weight.</p>
+
+  <p><b>The market is five times bigger.</b> Cabinet manufacturing is
+  $16.02bn against
+  $3.20bn for
+  the category containing every chair, table and dresser.</p>
+
+  <p><b>It is the only category we can actually measure.</b> Of the categories tested in
+  Google Trends, 15 sit at the index floor — their search index is zero or one in
+  more than 80% of weeks, which cannot be read. "custom cabinets" never does.</p>
+
+  <p><b>Every kitchen is a different shape.</b> That is the point. A chair is one design
+  made many times, which suits a mould and a brand. A kitchen is bespoke every single time,
+  which is exactly the job automation is good at and a hand shop is slow at.</p>
+
+  <p class="callout">The deciding line is the last row of the table. <b>An automated
+  factory's advantage is cost and fit at volume; a luxury chair's advantage is brand at low
+  volume.</b> A chair business would not need this factory at all.</p>
+
+  <h2 id="assumed">What is assumed, and which way it bends</h2>
+
+  <p>One number in the funnel is a judgement: <b>how much of a showroom-sold category can
+  be won online</b>. It is set at 15% and
+  nothing in any public dataset measures it. A configurator with real prices would.</p>
+
+  <p>Three further caveats sit on the measured numbers, and they do not all point the same
+  way. The $16.02bn <b>includes countertops</b> as well as cabinets, which
+  overstates it. It <b>counts only businesses with payroll</b>, missing the long tail of
+  one-person shops — 54% of establishments already have fewer than five staff. And custom
+  cabinetry is also built by architectural woodwork firms in a different industry code
+  worth $8.46bn,
+  none of which is counted here. <b>Two of the three push the market up.</b></p>
+
+  <p>The 7.6% custom share is a share of <i>searches</i>, not of
+  revenue, and it excludes semi-custom entirely — a factory box with configurable sizes and
+  finishes, which is what a configurator actually sells. So it is a floor, not a centre.</p>
+
+  <div class="bleed scroll"><table><caption>The custom slice if that share is wrong</caption><thead><tr><th class="wrap">Case</th><th class="num">Custom share</th><th class="num">Custom market</th><th class="num">SAM</th></tr></thead><tbody><tr><td class="wrap">low</td><td class="num">5.00%</td><td class="num">$800.9m</td><td class="num">$120.1m</td></tr><tr class="lead"><td class="wrap">measured</td><td class="num">7.61%</td><td class="num">$1.22bn</td><td class="num">$182.9m</td></tr><tr><td class="wrap">high</td><td class="num">37.00%</td><td class="num">$5.93bn</td><td class="num">$889.0m</td></tr></tbody></table></div>
+
+  <p class="note">Sources — establishment, employment and payroll data from Census County
+  Business Patterns 2022, NAICS 337110. Search data from Google Trends, United States, five
+  years. The revenue-to-payroll multiple, the online share and the cell cycle times are
+  stated in scripts/build_cabinet_tam.py. Compiled 28 August 2026.</p>
+
+  <footer>
+    <p class="note">Generated by scripts/build_cabinet_page.py from
+    data/processed/cabinet_tam_model.json. Change an assumption and re-run, and this page
+    rewrites itself.</p>
+  </footer>
+
+</div>

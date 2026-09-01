@@ -1,0 +1,77 @@
+use_default_settings: true
+
+general:
+  debug: false
+  instance_name: Startup Ideation Search
+
+search:
+  safe_search: 0
+  autocomplete: ""
+  formats:
+    - html
+    - json
+
+server:
+  port: 8080
+  bind_address: 0.0.0.0
+  secret_key: startup-ideation-local-only
+  limiter: false
+  image_proxy: false
+
+outgoing:
+  request_timeout: 15.0
+  max_request_timeout: 30.0
+  pool_connections: 50
+  pool_maxsize: 10
+
+# Engine selection, set 2026-08-17 after every default general engine failed.
+#
+# Diagnosis: the container's egress is healthy — DNS resolves and example.com
+# and bing.com both answer from inside it. The failure was engine-side:
+#
+#   google cse  → "Our systems have detected unusual traffic from your network"
+#                 (repeated 180s suspensions; the exit IP is flagged)
+#   duckduckgo  → ConnectTimeout to html.duckduckgo.com, 15s
+#
+# With both of those dead the default profile returned Wikipedia and nothing
+# else, so `site:reddit.com ...` searches came back genuinely empty and
+# Firecrawl correctly reported "No search results found".
+#
+# Anything disabled here is disabled because it was observed failing from this
+# network, not because it is a bad engine. Re-enable and re-test after a network
+# or exit-IP change.
+engines:
+  # ── Re-enabled 2026-08-17: different exit IP, per the
+  #    "re-enable and re-test after a network or exit-IP change" note above. ──
+  - name: google
+    disabled: false
+  - name: google cse
+    disabled: true      # Still off — was the flagged path; plain google suffices.
+  - name: duckduckgo
+    disabled: false
+  - name: startpage
+    disabled: true      # Google proxy — redundant once google itself answers.
+
+  # ── Verified reachable from inside the container ──────────────────────────
+  - name: bing
+    disabled: false
+
+  # ── Independent crawlers: no shared upstream with Google, so a Google-level
+  #    IP flag does not take them down with it. ──────────────────────────────
+  - name: brave
+    disabled: false
+  - name: mojeek
+    disabled: false
+  - name: qwant
+    disabled: false
+  - name: marginalia
+    disabled: false
+
+  # ── Forum and discussion search. Enabled deliberately: this instance is used
+  #    for customer-pain reconnaissance, where practitioner forum threads are
+  #    the target and a general web engine is a blunt instrument. These also
+  #    partly cover for Reddit's JSON API being blocked. ────────────────────
+  - name: crowdview
+    disabled: false
+  - name: boardreader
+    disabled: false

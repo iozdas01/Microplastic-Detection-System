@@ -1,0 +1,511 @@
+<title>Bay Area Hardwood Demand</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;600;700&family=IBM+Plex+Mono:wght@400;500;600&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&display=swap">
+
+<style>
+:root {
+    --ground:   #EEF1EC;
+    --surface:  #FAFBF9;
+    --sunk:     #E4E8E1;
+    --ink:      #14180F;
+    --muted:    #5C6459;
+    --faint:    #838C7F;
+    --rule:     #D2D8CE;
+    --accent:   #24467C;
+    --supply:   #24467C;
+    --demand:   #96701C;
+    --alarm:    #8E3A26;
+
+    --display: "Archivo", "Helvetica Neue", Arial, sans-serif;
+    --body: "Source Serif 4", Georgia, "Times New Roman", serif;
+    --mono: "IBM Plex Mono", ui-monospace, "SF Mono", Menlo, monospace;
+
+    --measure: 34rem;
+    --wide: 60rem;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --ground:  #12150F;
+      --surface: #191D16;
+      --sunk:    #0D0F0B;
+      --ink:     #E8ECE4;
+      --muted:   #9AA396;
+      --faint:   #79826F;
+      --rule:    #2D3329;
+      --accent:  #86ABE8;
+      --supply:  #86ABE8;
+      --demand:  #D6AC4A;
+      --alarm:   #D97D63;
+    }
+  }
+
+  :root[data-theme="dark"] {
+    --ground:  #12150F;
+    --surface: #191D16;
+    --sunk:    #0D0F0B;
+    --ink:     #E8ECE4;
+    --muted:   #9AA396;
+    --faint:   #79826F;
+    --rule:    #2D3329;
+    --accent:  #86ABE8;
+    --supply:  #86ABE8;
+    --demand:  #D6AC4A;
+    --alarm:   #D97D63;
+  }
+
+  * { box-sizing: border-box; }
+
+  body {
+    background: var(--ground);
+    color: var(--ink);
+    font-family: var(--body);
+    font-size: 1.0625rem;
+    line-height: 1.65;
+    margin: 0;
+    padding: 0 1.5rem 6rem;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  .page { max-width: var(--wide); margin: 0 auto; }
+
+  /* Every direct child sits in the measure column by default; .bleed opts out. */
+  .flow { display: flex; flex-direction: column; gap: 1.25rem; }
+  .flow > * { max-width: var(--measure); margin-inline: 0; }
+  .flow > .bleed { max-width: 100%; width: 100%; }
+
+  /* ---------- type ---------- */
+  h1, h2, h3 { font-family: var(--display); text-wrap: balance; margin: 0; line-height: 1.15; }
+
+  h1 {
+    font-size: clamp(2.4rem, 6vw, 3.9rem);
+    font-weight: 700;
+    letter-spacing: -0.033em;
+  }
+
+  h2 {
+    font-size: clamp(1.35rem, 2.6vw, 1.7rem);
+    font-weight: 600;
+    letter-spacing: -0.017em;
+    padding-top: 2.75rem;
+    margin-top: 1.5rem;
+    border-top: 1px solid var(--rule);
+  }
+
+  h3 {
+    font-size: 1.03rem;
+    font-weight: 600;
+    letter-spacing: -0.005em;
+    margin-top: 1.25rem;
+  }
+
+  p { margin: 0; }
+  strong { font-weight: 600; }
+
+  .eyebrow {
+    font-family: var(--mono);
+    font-size: 0.7rem;
+    font-weight: 500;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--faint);
+  }
+
+  .lede {
+    font-size: 1.2rem;
+    line-height: 1.55;
+    color: var(--muted);
+  }
+
+  .note {
+    font-family: var(--mono);
+    font-size: 0.76rem;
+    line-height: 1.6;
+    color: var(--faint);
+  }
+
+  a { color: var(--accent); text-decoration-thickness: 1px; text-underline-offset: 2px; }
+  a:focus-visible, summary:focus-visible {
+    outline: 2px solid var(--accent);
+    outline-offset: 3px;
+    border-radius: 2px;
+  }
+
+  /* ---------- masthead ---------- */
+  .masthead { padding: 4.5rem 0 0; }
+  .masthead h1 { margin-bottom: 1.25rem; }
+
+  .stamp {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem 1.5rem;
+    padding-top: 1.5rem;
+    margin-top: 1.75rem;
+    border-top: 1px solid var(--rule);
+  }
+  .stamp div { font-family: var(--mono); font-size: 0.72rem; color: var(--faint); }
+  .stamp b {
+    display: block;
+    font-weight: 500;
+    color: var(--ink);
+    letter-spacing: -0.01em;
+  }
+
+  /* ---------- the divergence ---------- */
+  .diverge {
+    background: var(--surface);
+    border: 1px solid var(--rule);
+    padding: clamp(1.5rem, 4vw, 2.5rem);
+    display: grid;
+    gap: 1.75rem;
+  }
+
+  .method { display: grid; gap: 0.6rem; }
+
+  .method-head {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 1rem;
+    flex-wrap: wrap;
+  }
+
+  .method-name {
+    font-family: var(--display);
+    font-weight: 600;
+    font-size: 1rem;
+    letter-spacing: -0.01em;
+  }
+
+  .method-value {
+    font-family: var(--mono);
+    font-weight: 600;
+    font-size: clamp(1.5rem, 4vw, 2.1rem);
+    letter-spacing: -0.03em;
+    font-variant-numeric: tabular-nums;
+  }
+
+  .bar { height: 0.6rem; background: var(--sunk); overflow: hidden; }
+  .bar span { display: block; height: 100%; }
+
+  .m-demand .method-value, .m-demand .method-name { color: var(--demand); }
+  .m-demand .bar span { background: var(--demand); }  /* width set inline, from data */
+  .m-supply .method-value, .m-supply .method-name { color: var(--supply); }
+  .m-supply .bar span { background: var(--supply); }
+
+  .verdict {
+    border-top: 1px solid var(--rule);
+    padding-top: 1.5rem;
+    font-size: 1.03rem;
+  }
+  .verdict b { color: var(--alarm); font-weight: 600; }
+
+  /* ---------- findings ---------- */
+  .findings { display: grid; gap: 0; border-top: 1px solid var(--rule); }
+
+  .finding {
+    display: grid;
+    grid-template-columns: 5.5rem 1fr;
+    gap: 0 1.5rem;
+    padding: 1.5rem 0;
+    border-bottom: 1px solid var(--rule);
+    align-items: start;
+  }
+  .finding .tier {
+    font-family: var(--mono);
+    font-size: 0.7rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--faint);
+    padding-top: 0.28rem;
+  }
+  .finding h3 { margin: 0 0 0.4rem; }
+  .finding p { color: var(--muted); max-width: 34rem; }
+
+  @media (max-width: 34rem) {
+    .finding { grid-template-columns: 1fr; gap: 0.5rem; }
+  }
+
+  /* ---------- stat row ---------- */
+  .stats {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(11rem, 1fr));
+    gap: 1px;
+    background: var(--rule);
+    border: 1px solid var(--rule);
+  }
+  .stat { background: var(--surface); padding: 1.25rem 1.15rem; }
+  .stat .n {
+    font-family: var(--mono);
+    font-size: 1.6rem;
+    font-weight: 600;
+    letter-spacing: -0.035em;
+    font-variant-numeric: tabular-nums;
+    display: block;
+    line-height: 1.1;
+  }
+  .stat .k {
+    font-family: var(--mono);
+    font-size: 0.7rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--faint);
+    display: block;
+    margin-top: 0.5rem;
+  }
+  .stat .s { font-size: 0.86rem; color: var(--muted); display: block; margin-top: 0.3rem; }
+  .stat.neg .n { color: var(--alarm); }
+
+  /* ---------- tables ---------- */
+  .scroll { overflow-x: auto; }
+  table {
+    border-collapse: collapse;
+    width: 100%;
+    font-family: var(--mono);
+    font-size: 0.81rem;
+    font-variant-numeric: tabular-nums;
+  }
+  caption {
+    text-align: left;
+    font-family: var(--mono);
+    font-size: 0.7rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--faint);
+    padding-bottom: 0.7rem;
+  }
+  th, td {
+    text-align: left;
+    padding: 0.5rem 0.9rem 0.5rem 0;
+    border-bottom: 1px solid var(--rule);
+    white-space: nowrap;
+  }
+  thead th {
+    font-weight: 500;
+    color: var(--faint);
+    font-size: 0.7rem;
+    letter-spacing: 0.07em;
+    text-transform: uppercase;
+    border-bottom: 1px solid var(--ink);
+  }
+  td.num, th.num { text-align: right; padding-right: 0; }
+  tbody tr:last-child td { border-bottom: none; }
+  td.wrap { white-space: normal; min-width: 13rem; font-family: var(--body); font-size: 0.95rem; }
+  tr.lead td { background: color-mix(in srgb, var(--accent) 7%, transparent); font-weight: 500; }
+  .dim { color: var(--faint); }
+
+  /* proportional cell — a bar drawn behind the number */
+  td.plot { width: 40%; padding-right: 0; }
+  .track { display: block; height: 0.5rem; background: var(--sunk); }
+  .track i { display: block; height: 100%; background: var(--accent); }
+
+  /* ---------- callouts ---------- */
+  .callout {
+    border-left: 2px solid var(--accent);
+    padding: 0.15rem 0 0.15rem 1.25rem;
+    color: var(--muted);
+  }
+  .callout b { color: var(--ink); font-weight: 600; }
+
+  details {
+    border: 1px solid var(--rule);
+    background: var(--surface);
+    padding: 1rem 1.25rem;
+  }
+  summary {
+    cursor: pointer;
+    font-family: var(--display);
+    font-weight: 600;
+    font-size: 0.95rem;
+  }
+  details[open] summary { margin-bottom: 1rem; }
+
+  footer {
+    margin-top: 4rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid var(--rule);
+    max-width: 100%;
+  }
+</style>
+
+<div class="page flow">
+
+  <header class="masthead bleed">
+    <div class="flow">
+      <p class="eyebrow">Demand evidence · compiled 27 August 2026</p>
+      <h1>Two ways to size this market, twelve times apart</h1>
+      <p class="lede">A bottom-up read on custom solid-wood furniture in the Bay Area, built
+      from household spend, industry payroll, import flows and search behaviour — no
+      syndicated market numbers.</p>
+    </div>
+    <div class="stamp"><div><b>15 collectors</b>10 run, 5 gated</div><div><b>Keyless</b>Runs with no credentials</div><div><b>1992–2026</b>Retail series coverage</div><div><b>10 counties</b>Bay Area definition</div></div>
+  </header>
+
+  <h2 id="divergence">The finding</h2>
+
+  <p>The custom slice of the Bay Area dining-furniture market can be sized two ways from
+  independent data. The two answers do not agree, and the disagreement is more useful than
+  either number.</p>
+
+  <div class="diverge bleed">
+    <div class="method m-demand">
+      <div class="method-head">
+        <span class="method-name">Demand-side · what people search for</span>
+        <span class="method-value">$3.8m<span class="note"> /yr</span></span>
+      </div>
+      <div class="bar"><span style="width:8.13%"></span></div>
+      <p class="note">Bay Area dining-furniture pool × the share of California search volume
+      that carries custom intent × a 5× price multiple for bespoke work.</p>
+    </div>
+
+    <div class="method m-supply">
+      <div class="method-head">
+        <span class="method-name">Supply-side · what makers actually pay staff</span>
+        <span class="method-value">$47.2m<span class="note"> /yr</span></span>
+      </div>
+      <div class="bar"><span style="width:100%"></span></div>
+      <p class="note">The $14.3m of annual payroll that Census County Business
+      Patterns records for the 38 wood household furniture establishments in the
+      10 Bay Area counties, at a 3.3× revenue-to-payroll multiple.</p>
+    </div>
+
+    <p class="verdict">Both cannot be right. The likeliest reading is that
+    <b>the category is real but is not bought through search.</b> Custom furniture moves
+    through interior designers, architects, showroom referral and repeat trade — channels
+    that leave almost no search footprint. If that is true, the go-to-market question is not
+    which keywords to buy. It is which twenty designers to know.</p>
+  </div>
+
+  <h2 id="categories">Which furniture people want customised</h2>
+
+  <p>Given that someone wants something custom-made, what is it? This sweeps
+  16 categories against the same anchor — <span class="note">custom furniture</span> = 1.000 —
+  across five years in California.</p>
+
+  <p>Two corrections have to be applied before the raw numbers mean anything. First,
+  several categories are inflated by accessories that share the phrase — <span class="note">custom sofa</span> (16% genuine), <span class="note">custom bench</span> (45% genuine), <span class="note">custom bar</span> (48% genuine). Each
+  category's index is discounted here by the share of its related search volume carrying an
+  accessory modifier. Second, scale without buying intent is worth little, so the last
+  column counts related queries containing <em>near me</em>, <em>cost</em>, <em>price</em>,
+  <em>companies</em> or <em>installation</em> — someone shopping, not browsing.</p>
+
+  <div class="bleed scroll"><table><caption>Custom demand by category, accessory-adjusted</caption><thead><tr><th>Category</th><th class="num">Raw index</th><th class="num">Genuinely furniture</th><th class="num">Adjusted</th><th class="num">Buying-intent queries</th></tr></thead><tbody><tr><td>custom bar</td><td class="num">1.213</td><td class="num">48%</td><td class="num">0.587</td><td class="num">0</td></tr><tr><td>custom desk</td><td class="num">0.667</td><td class="num">52%</td><td class="num">0.349</td><td class="num">0</td></tr><tr><td>custom vanity</td><td class="num">0.340</td><td class="num">74%</td><td class="num">0.253</td><td class="num">0</td></tr><tr><td>custom dining table</td><td class="num">0.208</td><td class="num">100%</td><td class="num">0.208</td><td class="num">0</td></tr><tr><td>custom coffee table</td><td class="num">0.181</td><td class="num">100%</td><td class="num">0.181</td><td class="num">0</td></tr><tr><td>custom bench</td><td class="num">0.312</td><td class="num">45%</td><td class="num">0.140</td><td class="num">0</td></tr><tr><td>custom bed frame</td><td class="num">0.140</td><td class="num">100%</td><td class="num">0.140</td><td class="num">0</td></tr><tr><td>custom shelving</td><td class="num">0.103</td><td class="num">100%</td><td class="num">0.103</td><td class="num">0</td></tr><tr><td>custom sofa</td><td class="num">0.478</td><td class="num">16%</td><td class="num">0.077</td><td class="num">0</td></tr><tr class="lead"><td>custom wardrobe</td><td class="num">0.055</td><td class="num">100%</td><td class="num">0.055</td><td class="num">1</td></tr><tr><td>custom headboard</td><td class="num">0.045</td><td class="num">100%</td><td class="num">0.045</td><td class="num">0</td></tr><tr><td>custom mantel</td><td class="num">0.007</td><td class="num">100%</td><td class="num">0.007</td><td class="num">0</td></tr><tr><td>custom conference table</td><td class="num">0.005</td><td class="num">100%</td><td class="num">0.005</td><td class="num">0</td></tr><tr><td>custom bookshelf</td><td class="num">0.076</td><td class="num"><span class="dim">too few</span></td><td class="num"><span class="dim">—</span></td><td class="num">0</td></tr><tr><td>custom outdoor furniture</td><td class="num">0.066</td><td class="num"><span class="dim">too few</span></td><td class="num"><span class="dim">—</span></td><td class="num">0</td></tr><tr><td>custom nightstand</td><td class="num">0.040</td><td class="num"><span class="dim">too few</span></td><td class="num"><span class="dim">—</span></td><td class="num">0</td></tr></tbody></table></div>
+
+  <p class="callout">Only 1 categories have both scale and buying intent, and
+  neither is freestanding furniture. <b>People want built-in storage customised — cabinets
+  and closets.</b> Custom wardrobe alone outranks the entire <span class="note">custom furniture</span>
+  category and custom dining tables run at 380% of it with not a single buying-intent query attached.</p>
+
+  <p>The evidence behind those two is unambiguous. For <span class="note">custom wardrobe</span> the top related queries are <span class="note">custom closet</span> (100), <span class="note">ikea custom wardrobe</span> (79), <span class="note">ikea wardrobe</span> (78), <span class="note">ikea</span> (78).</p>
+
+  
+  <p>By contrast <span class="note">custom dining table</span> returns exactly one related query — the plural of itself. There is not enough surrounding search behaviour to form a cluster, which is consistent with the divergence above: the demand exists, but it is not expressed as search.</p>
+
+  <div class="callout">
+    <p><b>What this changes.</b> The same shop, the same hardwood, the same CNC and finishing
+    line can make a closet system or a run of cabinetry as readily as a dining table — but
+    the cabinet buyer is searching, price-checking and location-filtering right now, and the
+    table buyer is not. If the plan depends on being findable, the wedge is built-in storage.
+    If the plan depends on designer relationships, the table is fine and search volume was
+    never going to measure it either way.</p>
+  </div>
+
+  <h2 id="findings">What the data says</h2>
+
+  <div class="findings bleed"><article class="finding"><div class="tier">Tier 2 · CEX</div><div><h3>The pool is $138.9m a year, not a slice of a billion-dollar abstraction</h3><p>3,157,577 Bay Area households × the measured Consumer Expenditure Survey spend on kitchen and dining room furniture. Cross-checked against actual retail sales: the build puts US kitchen-and-dining spend at 4.0% of all NAICS 442 store sales, which is the right shape for one room out of a category that covers the whole house.</p></div></article><article class="finding"><div class="tier">Tier 2 · CEX</div><div><h3>Even the richest fifth of households spend $92 a year on dining furniture</h3><p>That is the ceiling the whole model sits under. A $4,200 table is not an annual purchase out of a furniture budget — it is a once-a-decade or once-a-lifetime purchase. Acquisition maths has to survive that, because there is no second sale to amortise it against.</p></div></article><article class="finding"><div class="tier">Tier 1 · Trends</div><div><h3>Custom framing is 0.55% of the search volume of the generic term</h3><p>Across five years in California, <span class="note">custom dining table</span> runs at well under one percent of <span class="note">dining table</span>. The rising queries are dominated by seating capacity, extendability and named retail brands — not by bespoke framing. That is a product signal as much as a marketing one.</p></div></article><article class="finding"><div class="tier">Tier 2 · PPI</div><div><h3>Input costs have run 14 points ahead of output prices since 2020</h3><p>Hardwood lumber is up 42.7% since January 2020; the producer price index for nonupholstered wood household furniture is up 28.7%. Domestic makers absorbed the difference, and employment in furniture manufacturing fell 13.7% over the same period. Anyone entering is entering a margin squeeze already in progress.</p></div></article><article class="finding"><div class="tier">Tier 2 · PEP</div><div><h3>The Bay Area has lost 519,506 people to domestic migration since 2020</h3><p>Offset only recently by international arrivals. Moving is the single largest trigger of a furniture purchase, so net-negative domestic migration is a demand headwind that national furniture numbers hide completely.</p></div></article></div>
+
+  <h2 id="tam">The bottom-up TAM</h2>
+
+  <p>Every step traces to a collector output and a manifest line. The model is built from
+  household spend upward; nothing is a percentage of a global market figure.</p>
+
+  <div class="stats bleed"><div class="stat"><span class="n">$5.30bn</span><span class="k">US, kitchen &amp; dining</span><span class="s">CEX item 290410 × consumer units, 2024</span></div><div class="stat"><span class="n">$138.9m</span><span class="k">Bay Area pool</span><span class="s">Base case, West-region spend factor</span></div><div class="stat"><span class="n">38</span><span class="k">Makers in the Bay</span><span class="s">NAICS 337122 establishments, CBP 2022</span></div><div class="stat neg"><span class="n">-2.0%</span><span class="k">Retail, H1 2026</span><span class="s">NAICS 442 vs. H1 2025, like for like</span></div></div>
+
+  <div class="bleed scroll"><table><caption>Model steps — value and basis</caption><thead><tr><th>Step</th><th class="num">Value</th><th class="wrap">Basis</th></tr></thead><tbody><tr><td>US consumer units</td><td class="num">135,761,000</td><td class="wrap"><span class="dim">CEX CONSUNIT 2024</span></td></tr><tr><td>US spend on kitchen &amp; dining room furniture</td><td class="num">$5.30bn</td><td class="wrap"><span class="dim">CEX item 290410 x CONSUNIT, summed over income quintiles, 2024</span></td></tr><tr><td>Bay Area population share</td><td class="num">2.33%</td><td class="wrap"><span class="dim">Census PEP vintage 2024</span></td></tr><tr><td>West-region spend factor</td><td class="num">1.13×</td><td class="wrap"><span class="dim">CEX 290410 West / all CUs, 2024</span></td></tr><tr><td>Top-quintile spend factor</td><td class="num">2.36×</td><td class="wrap"><span class="dim">CEX 290410 Q5 / all CUs, 2024</span></td></tr><tr><td>Bay Area households</td><td class="num">3,157,577</td><td class="wrap"><span class="dim">US consumer units x Bay Area population share (ACS gives the exact count once CENSUS_API_KEY is set)</span></td></tr><tr><td>Bay Area dining-furniture pool (conservative)</td><td class="num">$123.1m</td><td class="wrap"><span class="dim">households x CEX 290410 per-CU spend, conservative factor</span></td></tr><tr><td>Bay Area dining-furniture pool (base)</td><td class="num">$138.9m</td><td class="wrap"><span class="dim">households x CEX 290410 per-CU spend, base factor</span></td></tr><tr><td>Bay Area dining-furniture pool (affluence_adjusted)</td><td class="num">$290.5m</td><td class="wrap"><span class="dim">households x CEX 290410 per-CU spend, affluence_adjusted factor</span></td></tr><tr><td>Custom search share</td><td class="num">0.55%</td><td class="wrap"><span class="dim">Google Trends, mean anchor-scaled interest of &#x27;custom dining table&#x27; vs &#x27;dining table&#x27;, California, 5 years</span></td></tr><tr><td>Bay Area custom/solid-wood pool (low price multiple 3.0x)</td><td class="num">$2.3m</td><td class="wrap"><span class="dim">base pool x custom search share x price multiple</span></td></tr><tr><td>Bay Area custom/solid-wood pool (base price multiple 5.0x)</td><td class="num">$3.8m</td><td class="wrap"><span class="dim">base pool x custom search share x price multiple</span></td></tr><tr><td>Bay Area custom/solid-wood pool (high price multiple 8.0x)</td><td class="num">$6.1m</td><td class="wrap"><span class="dim">base pool x custom search share x price multiple</span></td></tr></tbody></table></div>
+  <p><strong>Sanity check.</strong> The CEX build puts US kitchen-and-dining spend at 4.0% of all NAICS 442 retail sales ($132.71bn). A single-digit percentage is the expected shape, since 442 covers every room in the house plus home furnishings. If this ratio came out above ~10% the CEX build would be overstated.</p>
+
+  <h3>What $1,000,000 of revenue requires</h3>
+  <div class="bleed scroll"><table><caption>Orders needed for $1,000,000, against the demand-side market size</caption><thead><tr><th>Average selling price</th><th class="num">Orders / yr</th><th class="num">Orders / wk</th><th class="num">Share of the custom market</th></tr></thead><tbody><tr><td>$2,500</td><td class="num">400</td><td class="num">7.7</td><td class="num">26.1%</td></tr><tr><td>$4,200</td><td class="num">238</td><td class="num">4.6</td><td class="num">26.1%</td></tr><tr><td>$7,000</td><td class="num">143</td><td class="num">2.8</td><td class="num">26.1%</td></tr></tbody></table></div>
+
+  <p class="callout">At the demand-side sizing, a $1,000,000 business would be
+  26% of the entire addressable market. <b>That is the strongest argument
+  that the demand-side sizing is wrong</b> — and that the channel assumption underneath it is
+  wrong with it. Against the supply-side figure, the same $1,000,000 is
+  2.1%.</p>
+
+  <h3>Acquisition cost floor</h3>
+  <p>The CPC below is a placeholder. It is the only unmeasured number in the model, and Google Keyword Planner replaces it with a real bid — which is why that credential is worth the two days it takes.</p>
+  <div class="bleed scroll"><table><caption>At a $2.50 cost per click</caption><thead><tr><th>Site conversion</th><th class="num">Implied CAC</th><th class="num">Share of a base-ASP table</th></tr></thead><tbody><tr><td>0.5%</td><td class="num">$500</td><td class="num">11.9%</td></tr><tr><td>1.5%</td><td class="num">$167</td><td class="num">4.0%</td></tr><tr><td>3.0%</td><td class="num">$83</td><td class="num">2.0%</td></tr></tbody></table></div>
+
+  <h2 id="intent">Tier 1 — purchase intent</h2>
+
+  <p>Google Trends returns figures relative to whatever set of terms you ask about, so terms
+  queried separately are not comparable. Every batch here carries the same anchor term,
+  <span class="note">dining table</span>, and is rescaled by it — which makes all 28 terms
+  directly comparable to each other.</p>
+
+  <div class="bleed scroll"><table><caption>California, five years, scaled against the anchor = 1.000</caption><thead><tr><th>Keyword</th><th class="num">Relative interest</th><th></th></tr></thead><tbody><tr><td>desk</td><td class="num">4.182</td><td class="plot"><span class="track"><i style="width:100.00%"></i></span></td></tr><tr><td>sofa</td><td class="num">2.294</td><td class="plot"><span class="track"><i style="width:54.86%"></i></span></td></tr><tr><td>dresser</td><td class="num">1.123</td><td class="plot"><span class="track"><i style="width:26.86%"></i></span></td></tr><tr><td>bed frame</td><td class="num">1.121</td><td class="plot"><span class="track"><i style="width:26.81%"></i></span></td></tr><tr><td>dining table</td><td class="num">1.000</td><td class="plot"><span class="track"><i style="width:23.91%"></i></span></td></tr><tr><td>coffee table</td><td class="num">0.877</td><td class="plot"><span class="track"><i style="width:20.97%"></i></span></td></tr><tr><td>tv stand</td><td class="num">0.626</td><td class="plot"><span class="track"><i style="width:14.98%"></i></span></td></tr><tr><td>kitchen cabinets</td><td class="num">0.603</td><td class="plot"><span class="track"><i style="width:14.43%"></i></span></td></tr><tr><td>bookshelf</td><td class="num">0.503</td><td class="plot"><span class="track"><i style="width:12.02%"></i></span></td></tr><tr><td>wardrobe</td><td class="num">0.467</td><td class="plot"><span class="track"><i style="width:11.16%"></i></span></td></tr><tr><td>nightstand</td><td class="num">0.324</td><td class="plot"><span class="track"><i style="width:7.76%"></i></span></td></tr><tr><td>closet organizer</td><td class="num">0.114</td><td class="plot"><span class="track"><i style="width:2.73%"></i></span></td></tr><tr><td>custom furniture</td><td class="num">0.048</td><td class="plot"><span class="track"><i style="width:1.16%"></i></span></td></tr><tr><td>custom cabinets</td><td class="num">0.046</td><td class="plot"><span class="track"><i style="width:1.10%"></i></span></td></tr><tr><td>custom closet</td><td class="num">0.034</td><td class="plot"><span class="track"><i style="width:0.82%"></i></span></td></tr><tr><td>modular furniture</td><td class="num">0.030</td><td class="plot"><span class="track"><i style="width:0.71%"></i></span></td></tr><tr><td>custom desk</td><td class="num">0.025</td><td class="plot"><span class="track"><i style="width:0.60%"></i></span></td></tr><tr><td>custom sofa</td><td class="num">0.016</td><td class="plot"><span class="track"><i style="width:0.38%"></i></span></td></tr><tr><td>custom dining table</td><td class="num">0.006</td><td class="plot"><span class="track"><i style="width:0.13%"></i></span></td></tr><tr><td>custom coffee table</td><td class="num">0.005</td><td class="plot"><span class="track"><i style="width:0.13%"></i></span></td></tr><tr><td>custom bed frame</td><td class="num">0.004</td><td class="plot"><span class="track"><i style="width:0.10%"></i></span></td></tr><tr><td>custom bookshelf</td><td class="num">0.002</td><td class="plot"><span class="track"><i style="width:0.06%"></i></span></td></tr><tr><td>custom tv stand</td><td class="num">0.002</td><td class="plot"><span class="track"><i style="width:0.06%"></i></span></td></tr><tr><td>custom dresser</td><td class="num">0.002</td><td class="plot"><span class="track"><i style="width:0.05%"></i></span></td></tr><tr><td>custom nightstand</td><td class="num">0.002</td><td class="plot"><span class="track"><i style="width:0.04%"></i></span></td></tr><tr><td>built in furniture</td><td class="num">0.002</td><td class="plot"><span class="track"><i style="width:0.04%"></i></span></td></tr><tr><td>custom wardrobe</td><td class="num">0.001</td><td class="plot"><span class="track"><i style="width:0.02%"></i></span></td></tr><tr><td>made to order furniture</td><td class="num">0.000</td><td class="plot"><span class="track"><i style="width:0.00%"></i></span></td></tr></tbody></table></div>
+  <div class="bleed scroll"><table><caption>Rising related queries, by the term they belong to</caption><thead><tr><th>Seed term</th><th class="wrap">Rising query</th><th class="num">Change</th></tr></thead><tbody><tr><td><span class="dim">sofa</span></td><td class="wrap">anabei sofa</td><td class="num">Breakout</td></tr><tr><td><span class="dim">sofa</span></td><td class="wrap">koala sofa bed</td><td class="num">Breakout</td></tr><tr><td><span class="dim">desk</span></td><td class="wrap">walking pad under desk</td><td class="num">Breakout</td></tr><tr><td><span class="dim">bookshelf</span></td><td class="wrap">chiseled bookshelf</td><td class="num">Breakout</td></tr><tr><td><span class="dim">bookshelf</span></td><td class="wrap">chiseled bookshelf minecraft</td><td class="num">Breakout</td></tr><tr><td><span class="dim">wardrobe</span></td><td class="wrap">capsule wardrobe 2022</td><td class="num">Breakout</td></tr><tr><td><span class="dim">wardrobe</span></td><td class="wrap">capsule wardrobe 2023</td><td class="num">Breakout</td></tr><tr><td><span class="dim">wardrobe</span></td><td class="wrap">capsule wardrobe 2024</td><td class="num">Breakout</td></tr><tr><td><span class="dim">wardrobe</span></td><td class="wrap">lacey&#x27;s wardrobe</td><td class="num">Breakout</td></tr><tr><td><span class="dim">wardrobe</span></td><td class="wrap">miley cyrus wardrobe new year</td><td class="num">Breakout</td></tr><tr><td><span class="dim">wardrobe</span></td><td class="wrap">miley cyrus wardrobe accident</td><td class="num">Breakout</td></tr><tr><td><span class="dim">nightstand</span></td><td class="wrap">ikea storklinta nightstand</td><td class="num">Breakout</td></tr><tr><td><span class="dim">nightstand</span></td><td class="wrap">fluted nightstand</td><td class="num">Breakout</td></tr><tr><td><span class="dim">tv stand</span></td><td class="wrap">lg stand by me tv</td><td class="num">Breakout</td></tr><tr><td><span class="dim">modular furniture</span></td><td class="wrap">city furniture grant modular sectional</td><td class="num">Breakout</td></tr><tr><td><span class="dim">custom dining table</span></td><td class="wrap"><span class="dim">no rising queries — too little volume to form a cluster</span></td><td class="num"><span class="dim">—</span></td></tr></tbody></table></div>
+
+  <p class="callout">Two things are rising: <b>seating capacity and extendability</b> and
+  <b>DTC brands</b>.</p>
+
+  <div class="bleed scroll"><table><caption>Where the interest is (unanchored, 100 = peak California metro)</caption><thead><tr><th class="wrap">Metro</th><th class="num">Index</th></tr></thead><tbody><tr><td class="wrap">Wyoming</td><td class="num">21</td></tr><tr><td class="wrap">Kansas</td><td class="num">8</td></tr><tr><td class="wrap">Connecticut</td><td class="num">8</td></tr><tr><td class="wrap">Massachusetts</td><td class="num">8</td></tr><tr><td class="wrap">Nevada</td><td class="num">8</td></tr><tr><td class="wrap">Oklahoma</td><td class="num">8</td></tr><tr><td class="wrap">Mississippi</td><td class="num">8</td></tr><tr><td class="wrap">Alaska</td><td class="num">8</td></tr></tbody></table></div>
+
+  <h2 id="gov">Tier 2 — government data</h2>
+  <div class="bleed scroll"><table><caption>Furniture and home furnishings retail sales, NAICS 442 — Census MRTS</caption><thead><tr><th>Year</th><th class="num">Sales</th><th class="num">Year on year</th></tr></thead><tbody><tr><td>2019</td><td class="num">$118.04bn</td><td class="num">+1.3%</td></tr><tr><td>2020</td><td class="num">$111.12bn</td><td class="num">-5.9%</td></tr><tr><td>2021</td><td class="num">$138.05bn</td><td class="num">+24.2%</td></tr><tr><td>2022</td><td class="num">$140.50bn</td><td class="num">+1.8%</td></tr><tr><td>2023</td><td class="num">$135.59bn</td><td class="num">-3.5%</td></tr><tr><td>2024</td><td class="num">$132.71bn</td><td class="num">-2.1%</td></tr><tr><td>2025</td><td class="num">$135.57bn</td><td class="num">+2.2%</td></tr><tr><td>2026 <span class="dim">first 6 months</span></td><td class="num">$65.09bn</td><td class="num">-2.0%</td></tr></tbody></table></div>
+  <p class="note">The 2026 figure covers 6 months and is compared against the same months of 2025, not a full year.</p>
+  <div class="bleed scroll"><table><caption>Average annual household spend by income quintile, 2024 — BLS CEX</caption><thead><tr><th>Quintile</th><th class="num">Kitchen &amp; dining furniture</th><th class="num">All furniture</th></tr></thead><tbody><tr><td>Lowest 20%</td><td class="num">$15</td><td class="num">$275</td></tr><tr><td>Second 20%</td><td class="num">$9</td><td class="num">$371</td></tr><tr><td>Third 20%</td><td class="num">$22</td><td class="num">$462</td></tr><tr><td>Fourth 20%</td><td class="num">$57</td><td class="num">$795</td></tr><tr><td>Highest 20%</td><td class="num">$92</td><td class="num">$1,334</td></tr><tr><td>All households</td><td class="num">$39</td><td class="num">$648</td></tr><tr><td>West region</td><td class="num">$44</td><td class="num">$805</td></tr></tbody></table></div>
+  <div class="bleed scroll"><table><caption>Establishments by industry — Census County Business Patterns 2022</caption><thead><tr><th>NAICS</th><th class="wrap">Industry</th><th class="num">US</th><th class="num">California</th><th class="num">Bay Area</th></tr></thead><tbody><tr><td>337122</td><td class="wrap">Nonupholstered wood household furniture</td><td class="num">2,126</td><td class="num">193</td><td class="num">38</td></tr><tr><td>337211</td><td class="wrap">Wood office furniture</td><td class="num">307</td><td class="num">39</td><td class="num">9</td></tr><tr><td>337212</td><td class="wrap">Custom architectural woodwork and millwork</td><td class="num">2,352</td><td class="num">178</td><td class="num">30</td></tr><tr><td>321918</td><td class="wrap">Other millwork (incl. flooring)</td><td class="num">1,516</td><td class="num">81</td><td class="num">3</td></tr><tr><td>238350</td><td class="wrap">Finish carpentry contractors</td><td class="num">32,169</td><td class="num">2,782</td><td class="num">581</td></tr><tr><td>442110</td><td class="wrap">Furniture stores (retail)</td><td class="num">22,286</td><td class="num">2,201</td><td class="num">494</td></tr></tbody></table></div>
+  <p>The 38 wood household furniture makers are the real competitive set, and they are the same 38 establishments whose payroll produces the supply-side market figure at the top of this page. At the base multiple that is roughly <strong>$1.24m of revenue per establishment</strong> — small shops, not factories. A further 30 custom millwork shops sit alongside them.</p>
+  <div class="bleed scroll"><table><caption>US wood-furniture imports, all wooden HS lines — UN Comtrade</caption><thead><tr><th>Year</th><th class="num">Value</th><th></th></tr></thead><tbody><tr><td>2019</td><td class="num">$20.67bn</td><td class="plot"><span class="track"><i style="width:65.07%"></i></span></td></tr><tr><td>2020</td><td class="num">$21.24bn</td><td class="plot"><span class="track"><i style="width:66.88%"></i></span></td></tr><tr><td>2021</td><td class="num">$27.85bn</td><td class="plot"><span class="track"><i style="width:87.67%"></i></span></td></tr><tr><td>2022</td><td class="num">$31.77bn</td><td class="plot"><span class="track"><i style="width:100.00%"></i></span></td></tr><tr><td>2023</td><td class="num">$23.63bn</td><td class="plot"><span class="track"><i style="width:74.39%"></i></span></td></tr><tr><td>2024</td><td class="num">$25.40bn</td><td class="plot"><span class="track"><i style="width:79.97%"></i></span></td></tr><tr><td>2025</td><td class="num">$23.67bn</td><td class="plot"><span class="track"><i style="width:74.53%"></i></span></td></tr></tbody></table></div>
+  <div class="bleed scroll"><table><caption>HS 940360 — other wooden furniture, the line containing dining tables, 2025</caption><thead><tr><th>Origin</th><th class="num">Value</th></tr></thead><tbody><tr><td>Viet Nam</td><td class="num">$2.64bn</td></tr><tr><td>China</td><td class="num">$0.84bn</td></tr><tr><td>Mexico</td><td class="num">$0.40bn</td></tr><tr><td>Indonesia</td><td class="num">$0.35bn</td></tr><tr><td>Canada</td><td class="num">$0.34bn</td></tr><tr><td>Malaysia</td><td class="num">$0.31bn</td></tr></tbody></table></div>
+  <p>This is the tariff-exposed volume. Viet Nam and China together set the price umbrella that a domestic maker's quote is compared against — and the fact that domestic output prices rose only 28.7% while hardwood rose 42.7% suggests that umbrella is holding producers down, not lifting them.</p>
+  <div class="bleed scroll"><table><caption>Bay Area permitted housing units and net migration</caption><thead><tr><th>Year</th><th class="num">Permitted units</th><th class="num">Net migration</th><th class="num">Domestic only</th></tr></thead><tbody><tr><td>2021</td><td class="num">17,896</td><td class="num">-194,836</td><td class="num">-212,275</td></tr><tr><td>2022</td><td class="num">22,609</td><td class="num">-38,641</td><td class="num">-119,132</td></tr><tr><td>2023</td><td class="num">18,026</td><td class="num">+2,009</td><td class="num">-95,923</td></tr><tr><td>2024</td><td class="num">12,829</td><td class="num">+53,880</td><td class="num">-65,850</td></tr><tr><td>2025</td><td class="num">17,057</td><td class="num"><span class="dim">—</span></td><td class="num"><span class="dim">—</span></td></tr><tr><td>2026 <span class="dim">to Jul</span></td><td class="num">10,435</td><td class="num"><span class="dim">—</span></td><td class="num"><span class="dim">—</span></td></tr></tbody></table></div>
+
+  <h2 id="next">What is still missing</h2>
+
+  <p>5 collectors are gated behind 4 credentials. Each one replaces an
+  estimate with a measurement, listed here in the order worth doing.</p>
+
+  <div class="bleed scroll"><table><caption>Gated sources and what each would settle</caption><thead><tr><th>Source</th><th class="num">Cost</th><th class="num">Lead time</th><th class="wrap">What it replaces</th></tr></thead><tbody><tr><td>Census API key</td><td class="num">free</td><td class="num">2 min</td><td class="wrap">The estimated household count, and the assumed revenue-to-payroll multiple that the entire supply-side figure rests on</td></tr><tr><td>Etsy Open API</td><td class="num">free</td><td class="num">~1 day</td><td class="wrap">Nothing — it is net-new unit-level evidence: what custom tables actually sold for, and how many a given maker has sold</td></tr><tr><td>Google Keyword Planner</td><td class="num">free</td><td class="num">1–2 days</td><td class="wrap">The placeholder CPC — the only unmeasured number left in the model, and the one that sets the CAC floor</td></tr><tr><td>Semrush</td><td class="num">~$130/mo</td><td class="num">instant</td><td class="wrap">Nothing — net-new competitive detail on which queries carry competitor revenue</td></tr></tbody></table></div>
+
+  <details class="bleed">
+    <summary>Why the Census key is first, and what it would move</summary>
+    <div class="flow" style="gap:1rem; padding-top:0.25rem;">
+      <p>The supply-side figure — the one that contradicts the search-based sizing — is built
+      from one measured number and one assumed one. The measured half is the annual payroll
+      County Business Patterns records for the Bay Area establishments. The assumed half is
+      the multiple converting payroll to revenue.</p>
+      <p>The Economic Census publishes total receipts for NAICS 337122 directly. With a
+      Census key the multiple stops being an assumption and becomes a measurement, and the
+      central claim on this page either firms up or falls over. That is a two-minute signup
+      standing between the analysis and its own load-bearing number.</p>
+    </div>
+  </details>
+
+  <h2 id="method">How this was built</h2>
+
+  <p>Fifteen collectors, ten of which need no
+  credentials at all, landing 21,573 rows. Each writes the verbatim API payload to
+  <span class="note">data/raw/</span>, a tidy table to <span class="note">data/processed/</span>, and one line to
+  <span class="note">data/MANIFEST.jsonl</span> recording the URL, fetch time, row count and status. Nothing
+  downstream quotes a number without a manifest line behind it.</p>
+
+  <p>Two substitutions were needed. USITC DataWeb requires an account token, so import
+  figures come from UN Comtrade's public endpoint — the same underlying US statistics, same
+  HS lines. The Census MRTS API is now key-gated, so retail sales come from the published
+  workbook, which carries the identical series back to 1992.</p>
+
+  <p class="callout">This page is generated by <span class="note">scripts/build_page.py</span> from the
+  collector outputs — every figure, table and derived claim above is computed, not typed.
+  The model's assumptions all live in one block at the top of <span class="note">scripts/build_tam.py</span>.
+  <b>Change an assumption there, re-run the pipeline, and this page rewrites itself.</b></p>
+
+  <footer>
+    <p class="note">Sources — BLS Consumer Expenditure Survey; BLS CPI, PPI and Current Employment Statistics; Census Building Permits Survey; Census County Business Patterns 2022; Census Monthly Retail Trade Survey; Census Population Estimates vintage 2024; Google Trends, California, five years, anchored; UN Comtrade US imports by HS code. Collected 27 August 2026.
+    Generated by scripts/build_page.py.</p>
+  </footer>
+
+</div>

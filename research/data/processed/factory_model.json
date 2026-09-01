@@ -1,0 +1,316 @@
+{
+  "assumptions": {
+    "species": "white oak, FAS, kiln dried",
+    "timber_usd_per_board_foot": 7.5,
+    "rough_to_finished_yield": 0.55,
+    "finish_per_unit": 5.2,
+    "consumables_per_unit": 4.4,
+    "hardware_cost_per_unit": 0.0,
+    "packaging_per_unit": 18.0,
+    "freight_per_unit": 28.0,
+    "scrap_rate": 0.05,
+    "units_per_order": 4,
+    "assembly_mode": "customer",
+    "cycle_minutes": {
+      "timber prep \u2014 crosscut, rip, moulder": {
+        "machine": 3.2,
+        "handling": 1.4
+      },
+      "5-axis joinery \u2014 legs and stiles": {
+        "machine": 11.0,
+        "handling": 1.0
+      },
+      "5-axis joinery \u2014 rails, slats and keys": {
+        "machine": 8.5,
+        "handling": 1.0
+      },
+      "sanding and surface prep": {
+        "machine": 4.5,
+        "handling": 1.8
+      },
+      "finishing \u2014 oil and cure": {
+        "machine": 3.0,
+        "handling": 2.2
+      },
+      "QC, joint test-fit and flat-pack": {
+        "machine": 0.0,
+        "handling": 5.5
+      }
+    },
+    "changeover_allowance": 0.12,
+    "oee": 0.72,
+    "shifts": 2,
+    "machine_hours_per_shift": 7.0,
+    "operating_days_per_year": 250,
+    "building_sqft": 16000,
+    "building_cost_per_sqft": {
+      "fit_out_existing": 34.0,
+      "new_pemb_turnkey": 118.0
+    },
+    "building_scenario": "new_pemb_turnkey",
+    "land_cost": 0.0,
+    "power_connection_cost": 0.0,
+    "headcount": {
+      "lumber line operator": 1,
+      "CNC cell operator": 1,
+      "finishing": 1,
+      "QC and pack": 1,
+      "production engineer / CAM": 1
+    },
+    "wage_burden": 1.31,
+    "salaried_roles": {
+      "production engineer / CAM": 98000
+    },
+    "connected_load_kw": 210,
+    "load_duty_factor": 0.58,
+    "electricity_usd_per_kwh": 0.089,
+    "maintenance_pct_of_equipment": 0.055,
+    "software_subscription_per_year": 44000,
+    "insurance_pct_of_capex": 0.012,
+    "equipment_life_years": 8,
+    "building_life_years": 25
+  },
+  "notes": [],
+  "method": "solid timber, kigumi joinery, no fasteners, no factory assembly",
+  "materials": {
+    "species": "white oak, FAS, kiln dried",
+    "finished_board_feet": 5.67,
+    "rough_board_feet": 10.3,
+    "yield": 0.55,
+    "joinery_operations_per_unit": 47,
+    "rows": [
+      {
+        "item": "rough white oak, FAS, kiln dried",
+        "qty": 10.3,
+        "cost_usd": 77.25
+      },
+      {
+        "item": "finish (hardwax oil)",
+        "qty": null,
+        "cost_usd": 5.2
+      },
+      {
+        "item": "consumables and tooling",
+        "qty": null,
+        "cost_usd": 4.4
+      },
+      {
+        "item": "hardware",
+        "qty": 0,
+        "cost_usd": 0.0
+      }
+    ],
+    "total_per_unit_usd": 91.2,
+    "note": "There is no hardware line because kigumi has no fasteners. The timber yield does the damage instead: rough stock is 1.82x the finished volume."
+  },
+  "process": {
+    "stations": [
+      {
+        "station": "timber prep \u2014 crosscut, rip, moulder",
+        "machine_min": 3.2,
+        "handling_min": 1.4,
+        "cycle_min_per_unit": 5.15,
+        "is_machine_station": true,
+        "utilisation_at_takt": 0.383
+      },
+      {
+        "station": "5-axis joinery \u2014 legs and stiles",
+        "machine_min": 11.0,
+        "handling_min": 1.0,
+        "cycle_min_per_unit": 13.44,
+        "is_machine_station": true,
+        "utilisation_at_takt": 1.0
+      },
+      {
+        "station": "5-axis joinery \u2014 rails, slats and keys",
+        "machine_min": 8.5,
+        "handling_min": 1.0,
+        "cycle_min_per_unit": 10.64,
+        "is_machine_station": true,
+        "utilisation_at_takt": 0.792
+      },
+      {
+        "station": "sanding and surface prep",
+        "machine_min": 4.5,
+        "handling_min": 1.8,
+        "cycle_min_per_unit": 7.06,
+        "is_machine_station": true,
+        "utilisation_at_takt": 0.525
+      },
+      {
+        "station": "finishing \u2014 oil and cure",
+        "machine_min": 3.0,
+        "handling_min": 2.2,
+        "cycle_min_per_unit": 5.82,
+        "is_machine_station": true,
+        "utilisation_at_takt": 0.433
+      },
+      {
+        "station": "QC, joint test-fit and flat-pack",
+        "machine_min": 0.0,
+        "handling_min": 5.5,
+        "cycle_min_per_unit": 6.16,
+        "is_machine_station": false,
+        "utilisation_at_takt": 0.458
+      }
+    ],
+    "bottleneck": "5-axis joinery \u2014 legs and stiles",
+    "takt_min_per_unit": 13.44,
+    "machine_hours_per_year": 3500.0,
+    "nameplate_units_per_year": 11250,
+    "units_per_order": 4,
+    "nameplate_orders_per_year": 2812,
+    "units_per_shift": 22,
+    "basis": "2 shifts x 7.0h x 250 days at 72% OEE, gated by the slowest station",
+    "note": "No assembly station exists. The plant machines, finishes, test-fits and flat-packs; the customer assembles by hand."
+  },
+  "facility": {
+    "building_sqft": 16000,
+    "scenario": "new_pemb_turnkey",
+    "cost_per_sqft": 118.0,
+    "building_cost_usd": 1888000,
+    "land_cost_usd": 0.0,
+    "power_connection_cost_usd": 0.0,
+    "alternatives": {
+      "fit_out_existing": 544000,
+      "new_pemb_turnkey": 1888000
+    },
+    "note": "Land and three-phase service are owned, so both are zero. Solid timber needs more building than panel work: rough stock, the kiln and the conditioning room all take floor before a single part is cut."
+  },
+  "opex": {
+    "wage_basis": "BLS average hourly earnings, furniture production employees, 2026-07: $25.08/h, loaded to $32.85 at 1.31x",
+    "hourly_fte": 8,
+    "kwh_per_year": 426300,
+    "annual": {
+      "direct labour (hourly, loaded)": 459967,
+      "salaried": 128380,
+      "electricity": 37941,
+      "maintenance, tooling and spares": 159225,
+      "software subscription": 44000,
+      "insurance": 57396,
+      "equipment depreciation": 361875,
+      "building depreciation": 75520
+    },
+    "annual_total": 1324304
+  },
+  "unit_cost": {
+    "variable_breakdown": {
+      "timber and finish": 91.2,
+      "packaging": 18.0,
+      "freight": 28.0
+    },
+    "curve": [
+      {
+        "units": 2000,
+        "orders": 500,
+        "variable_per_unit": 137.2,
+        "fixed_per_unit": 662.15,
+        "total_per_unit": 799.35
+      },
+      {
+        "units": 4000,
+        "orders": 1000,
+        "variable_per_unit": 137.2,
+        "fixed_per_unit": 331.08,
+        "total_per_unit": 468.27
+      },
+      {
+        "units": 6000,
+        "orders": 1500,
+        "variable_per_unit": 137.2,
+        "fixed_per_unit": 220.72,
+        "total_per_unit": 357.91
+      },
+      {
+        "units": 8000,
+        "orders": 2000,
+        "variable_per_unit": 137.2,
+        "fixed_per_unit": 165.54,
+        "total_per_unit": 302.73
+      },
+      {
+        "units": 11250,
+        "orders": 2812,
+        "variable_per_unit": 137.2,
+        "fixed_per_unit": 117.72,
+        "total_per_unit": 254.91
+      },
+      {
+        "units": 12000,
+        "orders": 3000,
+        "variable_per_unit": 137.2,
+        "fixed_per_unit": 110.36,
+        "total_per_unit": 247.55
+      },
+      {
+        "units": 16000,
+        "orders": 4000,
+        "variable_per_unit": 137.2,
+        "fixed_per_unit": 82.77,
+        "total_per_unit": 219.96
+      }
+    ],
+    "variable_per_unit_usd": 137.2,
+    "annual_fixed_usd": 1324304,
+    "annual_fixed_cash_usd": 886909,
+    "units_per_order": 4,
+    "basis": "unit cost is per chair and full-absorption: it carries depreciation on both the equipment and the building. annual_fixed_cash_usd strips depreciation out, and is the number that matters for runway."
+  },
+  "assembly_scenarios": [
+    {
+      "mode": "customer",
+      "label": "Customer assembles by hand",
+      "note": "flat-packed parts; kigumi needs no tools, so the customer does the work",
+      "takt_min": 13.44,
+      "nameplate_units_per_year": 11250,
+      "variable_per_unit_usd": 137.2,
+      "freight_per_unit_usd": 28.0,
+      "added_capex_usd": 0,
+      "phase_1_capex_usd": 4783000,
+      "annual_fixed_usd": 1324304,
+      "cost_per_unit_at_4500": 431.49,
+      "selected": true
+    },
+    {
+      "mode": "robotic_ship_assembled",
+      "label": "Robot assembles in the factory, ship assembled",
+      "note": "an assembled chair is roughly six times the shipping volume of its parts, and the robot has to seat tapered joints under load",
+      "takt_min": 13.44,
+      "nameplate_units_per_year": 11250,
+      "variable_per_unit_usd": 263.8,
+      "freight_per_unit_usd": 124.0,
+      "added_capex_usd": 420000,
+      "phase_1_capex_usd": 5203000,
+      "annual_fixed_usd": 1404944,
+      "cost_per_unit_at_4500": 576.01,
+      "selected": false
+    },
+    {
+      "mode": "robotic_test_fit",
+      "label": "Robot test-fits every chair, then flat-packs",
+      "note": "the robot proves the joints fit and takes the chair apart again; ships flat, and catches the one defect this product actually has",
+      "takt_min": 13.44,
+      "nameplate_units_per_year": 11250,
+      "variable_per_unit_usd": 135.89,
+      "freight_per_unit_usd": 28.0,
+      "added_capex_usd": 340000,
+      "phase_1_capex_usd": 5123000,
+      "annual_fixed_usd": 1389584,
+      "cost_per_unit_at_4500": 444.69,
+      "selected": false
+    }
+  ],
+  "assembly_mode": {
+    "selected": "customer",
+    "label": "Customer assembles by hand",
+    "note": "flat-packed parts; kigumi needs no tools, so the customer does the work"
+  },
+  "capital_plan": {
+    "phase_1_equipment_usd": 2895000,
+    "phase_1_building_usd": 1888000,
+    "phase_1_total_usd": 4783000,
+    "phase_2_usd": 524000,
+    "phase_3_usd": 605000,
+    "all_phases_usd": 5912000
+  }
+}

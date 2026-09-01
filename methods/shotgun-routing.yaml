@@ -1,0 +1,293 @@
+version: 5
+purpose: >-
+  Route one shotgun run. In the test modes, examine one founder-confirmed belief
+  and active hunch through public-signal reconnaissance and a small, diverse
+  portfolio of interpretive lenses. In explore mode, form candidate hunches under
+  a belief that has none yet. Every method in a run receives the same immutable
+  run subject.
+
+run_modes:
+  explore:
+    requires: [belief]
+    forbids: [current_hunch]
+    when: >-
+      The belief is founder-confirmed and the lineage holds no active hunch. This is
+      the state startup-belief-intake always leaves behind — it writes the belief and
+      an empty lineage, and every hunch comes from here.
+    produces: "candidate hunches, written to the lineage as status: proposed"
+    pool: explore_pool
+  initial_test:
+    requires: [belief, current_hunch]
+    when: An active hunch exists and no shotgun has examined it yet.
+    produces: a retain / narrow / branch / retire recommendation
+    pool: lens_families
+  reframe:
+    requires: [belief, current_hunch, evidence_delta]
+    when: An active hunch and new evidence exist.
+    produces: a retain / narrow / branch / retire recommendation
+    pool: lens_families
+
+run_subject:
+  source:
+    belief: input-context/{slug}/belief.md
+    current_hunch: reports/{slug}/01-ideation/hunch-lineage.md#active_hunch
+  rules:
+    - Determine the run mode from run_modes before selecting anything.
+    - If the belief is missing, route to startup-belief-intake in every mode.
+    - In a test mode, a missing active hunch routes to explore mode, not to an error.
+    - In explore mode, an EXISTING active hunch is the error — a hunch under test must
+      be retired or superseded by the founder before the field is re-explored, or the
+      run silently competes with the hunch it was supposed to serve.
+    - Copy the exact run subject for the mode into context-manifest.json before research.
+    - Every method receives the same context manifest and must examine that subject.
+    - A method may report an out_of_scope_alternative but must not switch the run subject.
+
+pre_lens:
+  method: methods/ideation/public-signal-reconnaissance.md
+  required: true
+  execution: main_process
+  counts_toward_lens_total: false
+  prerequisites: [belief]          # current_hunch when the mode has one; see run_modes
+  produces:
+    - raw-corpus.json
+    - pain-clusters.json
+    - source-status.json
+    - evidence-matrix.md
+  why_it_may_run_without_a_hunch: >-
+    Recon COLLECTS, it does not interpret. Its output is a corpus and the clusters
+    found in it, both traceable to real posts, so there is no subject for it to
+    invent — the failure that gates every other method. In explore mode its search
+    frame comes from the belief and the belief boundaries instead of a hunch's
+    segment and problem.
+
+explore_pool:
+  purpose: >-
+    The smallest set that can propose a hunch from evidence rather than from the
+    model's priors. Deliberately excludes every method whose job is to pressure-test
+    a claim: there is no claim yet, and a lens handed none invents one.
+  stages:
+    - id: collect
+      method: methods/ideation/public-signal-reconnaissance.md
+      mode: main_process
+      subject: belief + belief boundaries
+    - id: interpret
+      mode: one_batched_agent
+      depends_on: collect
+      methods:
+        - method: methods/ideation/jtbd-substitute-map.md
+          subject: pain_clusters
+          rule: >-
+            Name the jobs and substitutes visible IN THE CORPUS. Do not rank them by
+            attractiveness — that is the next stage's job and it needs the segment view.
+        - method: methods/ideation/segment-wedge-map.md
+          subject: pain_clusters + jtbd_substitute_output
+          rule: >-
+            This card already asks "where should the first hunch enter?" — in explore
+            mode that question is the whole output rather than a check on an existing
+            answer.
+    - id: propose
+      mode: one_agent
+      depends_on: interpret
+      rule: >-
+        Compose two to four candidate hunches, each with the full component set
+        (segment, problem, mechanism, why_now, existing_workaround, plausible_buyer,
+        disconfirmation) and `unknown` wherever the corpus does not support a value.
+        Every component that IS filled cites the cluster or source that supports it.
+        A candidate with no citable segment and no citable problem is not a candidate.
+      writes:
+        file: reports/{slug}/01-ideation/hunch-lineage.md
+        status: proposed
+      forbids:
+        - Setting active_hunch. Only the founder promotes a proposal to active.
+        - Ranking the candidates into a recommendation. Present the evidence per
+          candidate and let the founder choose; a ranked list is a recommendation
+          wearing a table's clothes.
+
+selection:
+  source_folder: methods/ideation/
+  min_lenses: 4
+  max_lenses: 6
+  default_conditional_lenses: 0
+  max_conditional_lenses: 2
+  max_per_family: 1
+  max_parallel_agents: 3
+  rules:
+    - Run the pre_lens method once in the main process; never dispatch it as a research agent.
+    - >-
+      Select one primary method from every required lens family. Those four ARE the
+      default portfolio, and a default run is exactly four lenses.
+    - >-
+      Conditional families are OPT-IN and default to zero. One runs only when the founder
+      names it at the scout gate. A run may never add a conditional lens because its
+      `when:` reads as satisfied: the conditions are prose, a model can always argue one
+      is met, and both remaining conditional families dispatch research agents. Opting in
+      is the founder choosing to spend that budget.
+    - Select only one method from a family; alternatives are mutually exclusive.
+    - A method with unmet prerequisites cannot run.
+    - Dispatch selected lens agents in batches of at most three.
+    - Every selected method must evaluate the same belief and current_hunch.
+
+lens_families:
+  root_cause:
+    required: true
+    question: What causal chain sits underneath the surfaced observation?
+    primary: methods/ideation/five-whys.md
+    prerequisites: [belief, current_hunch, pain_clusters]
+    execution:
+      stage: interpretation
+      mode: analysis_batch
+      order: 10
+
+  job_and_substitute:
+    required: true
+    question: What progress is the user trying to make, and what do they hire or tolerate today?
+    primary: methods/ideation/jtbd-substitute-map.md
+    prerequisites: [belief, current_hunch, pain_clusters]
+    execution:
+      stage: interpretation
+      mode: analysis_batch
+      order: 20
+
+  timing_and_predecessors:
+    required: true
+    question: What failed before, what changed, and are all blocking conditions now sufficiently true?
+    primary: methods/ideation/why-now-predecessor-analysis.md
+    prerequisites: [belief, current_hunch, pain_clusters, interpretation_outputs]
+    execution:
+      stage: targeted_research
+      mode: research_agent
+      order: 10
+      depends_on: [root_cause, job_and_substitute, segment_and_wedge]
+
+  segment_and_wedge:
+    required: true
+    question: Which segment has the sharpest evidenced pain and the most credible entry surface?
+    primary: methods/ideation/segment-wedge-map.md
+    prerequisites: [belief, current_hunch, pain_clusters, jtbd_substitute_output]
+    execution:
+      stage: interpretation
+      mode: analysis_batch
+      order: 30
+      depends_on: [job_and_substitute]
+
+  statistical_anomaly:
+    required: false
+    when: >-
+      OPT-IN at the scout gate. A credible published number appears structurally
+      surprising and could materially redirect the field map.
+    question: Which quantitative anomaly reveals trapped value or a structural break?
+    primary: methods/ideation/nagging-number.md
+    prerequisites: [belief, current_hunch, pain_clusters]
+    execution:
+      stage: targeted_research
+      mode: research_agent
+      order: 20
+      depends_on: [root_cause, job_and_substitute, segment_and_wedge]
+
+  analogy_and_transition:
+    required: false
+    when: >-
+      OPT-IN at the scout gate. A strong adjacent model or a structurally declining
+      industry is central to the belief.
+    question: Does a proven model transfer, or is a declining industry's job being replaced from the side?
+    primary: methods/ideation/proven-model-transplant.md
+    alternatives:
+      - method: methods/ideation/dying-industry-replacement.md
+        when: The belief concerns a structurally declining or broken industry whose durable jobs can be decomposed.
+    prerequisites: [belief, current_hunch, pain_clusters]
+    execution:
+      stage: targeted_research
+      mode: research_agent
+      order: 30
+      depends_on: [root_cause, job_and_substitute, segment_and_wedge]
+
+  reframing:
+    required: false
+    when: >-
+      OPT-IN at the scout gate. A directional assumption or binding constraint is
+      suppressing materially different hunches.
+    question: What becomes visible when a relationship is inverted or a movable constraint is relaxed?
+    primary: methods/ideation/inversion.md
+    alternatives:
+      - method: methods/ideation/constraint-relaxation.md
+        when: Technology, regulation, cost, access, reliability, or ubiquity is the binding constraint.
+    prerequisites: [belief, current_hunch, pain_clusters]
+    execution:
+      stage: interpretation
+      mode: analysis_batch
+      order: 40
+      depends_on: [root_cause, job_and_substitute, segment_and_wedge]
+
+# Model per stage. A stage with no `model:` inherits the session model — that is the
+# default and the correct state for anything doing judgment. Only `execution_stages`
+# may declare `model:`; a lens family must not, or one fact gets two authors.
+execution_stages:
+  - id: interpretation
+    mode: one_batched_agent
+    rule: >-
+      Apply selected methods in execution.order. Five Whys starts from the
+      current hunch's problem observation verbatim; JTBD uses the current
+      segment and problem; Segment and Wedge consumes the JTBD output.
+  - id: targeted_research
+    mode: parallel_agents
+    model: sonnet
+    why_sonnet: >-
+      This stage searches, fetches and cites — the most mechanical work in the run and
+      the highest token volume. Its output is checked elsewhere: step 8 re-reads the
+      URLs these agents wrote to disk, in the main process on the session model, and may
+      not dispatch an agent to go find support for an unsourced claim. So a weaker
+      research agent cannot quietly promote its own guess into the synthesis. Judgment
+      stages are deliberately left unset (founder decision, 2026-08-20).
+    max_parallel_agents: 3
+    depends_on: interpretation
+    rule: >-
+      Research the current hunch and interpretation outputs. Do not broaden to
+      a different opportunity merely because it has stronger public evidence.
+  - id: synthesis
+    mode: one_agent
+    depends_on: targeted_research
+    rule: >-
+      Decide retain, narrow, branch, or retire for the current hunch. Only
+      synthesis may formulate a revised hunch, and founder confirmation is
+      required before lineage changes.
+
+excluded_folders:
+  - path: methods/validation/
+    why: Runs assumption- or experiment-specific tests after the shared hunch has been interpreted.
+  - path: methods/mutation/
+    why: Needs interview evidence that changed an existing hunch.
+  - path: methods/intake/
+    why: Needs the founder in the room and writes belief.md.
+  - path: methods/practices/
+    why: Needs real traffic, a real buyer, or evidence created in the world.
+  - path: methods/unused/
+    why: Parked and deliberately out of rotation.
+
+excluded_classes:
+  - assumption scoring and prioritization
+  - interview scripts and outreach
+  - landing pages, pricing, LOIs, pre-sales, and smoke tests
+  - evidence gates that require completed validation inputs
+  - thesis mutation methods with no direct belief or hunch relevance
+
+integrity:
+  - Every pre_lens, primary, and alternative path must resolve.
+  - Every referenced method path must start with methods/ideation/.
+  - The pre_lens method is orchestration and must not count as a lens agent.
+  - Every card in methods/ideation/ must appear once as pre_lens, primary, or alternative.
+  - Every lens family must declare execution.stage, execution.mode, and execution.order.
+  - >-
+    Every lens_families prerequisite must include current_hunch. The rule is deliberately
+    scoped to the test modes, because lens_families IS the test-mode pool and a lens with
+    no claim to test is the invented-result failure. explore_pool is exempt because its
+    two interpretive methods take pain_clusters as their subject, which is collected
+    evidence rather than a hypothesis.
+  - Every explore_pool method must declare its subject, and no explore_pool method may
+    write active_hunch.
+  - Only an execution_stages entry may carry `model:`. A lens family that declares one
+    is a second author for a routing fact.
+  - >-
+    Every conditional lens family must open its `when:` with "OPT-IN at the scout gate".
+    A conditional family whose `when:` reads as an automatic trigger is the bug this
+    contract exists to prevent.
+  - When a card is deleted, parked, or moved, update this file and methods/index.md in the same change.
