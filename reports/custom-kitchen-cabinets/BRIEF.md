@@ -4,14 +4,14 @@
 -->
 ---
 slug: custom-kitchen-cabinets
-generated: 2026-09-01T00:41Z
+generated: 2026-09-01T00:46Z
 lifecycle: active
 active_hunch: H1
 active_assumption: H1A2
 sources:
   belief: 875e755faa7c
-  lineage: c807efe3cc4c
-  graph: db1391a18952
+  lineage: 51ef6ef56d96
+  graph: eb15f61d1860
   evidence: 78686911dd15
   offerings: c3c76f1f29c0
   contacts: 8d02729cb28f
@@ -76,18 +76,18 @@ _Generated from the folder. Check here before creating a new artifact — if a f
 | `reports/custom-kitchen-cabinets/02-assumptions/graph.md` | The assumption DAG for H1 — what must be true, ranked, each with the cheapest test that would settle it. |
 | `reports/custom-kitchen-cabinets/03-validation/evidence.md` | The evidence ledger for this idea — every graded claim, linked to the assumption it moves and the direction it moves it. |
 | `reports/custom-kitchen-cabinets/04-mutation/offerings.md` | Candidate offerings for this idea — what would actually be sold, and to whom. |
-| `reports/custom-kitchen-cabinets/outreach/call-log.html` | generated — rebuild it, never edit it |
 | `reports/custom-kitchen-cabinets/outreach/contacts.md` | The contact ledger for this idea — one record per person approached, their signal, and where the conversation got to. |
+| `reports/custom-kitchen-cabinets/pages/autonomous-factory-plan.html` | generated — rebuild it, never edit it |
+| `reports/custom-kitchen-cabinets/pages/bay-area-hardwood-demand.html` | generated — rebuild it, never edit it |
+| `reports/custom-kitchen-cabinets/pages/build-board.html` | generated — rebuild it, never edit it |
+| `reports/custom-kitchen-cabinets/pages/business-plan.html` | generated — rebuild it, never edit it |
+| `reports/custom-kitchen-cabinets/pages/cabinet-demand-case.html` | generated — rebuild it, never edit it |
+| `reports/custom-kitchen-cabinets/pages/cabinet-plan-final.html` | generated — rebuild it, never edit it |
+| `reports/custom-kitchen-cabinets/pages/cabinet-plan.html` | generated — rebuild it, never edit it |
+| `reports/custom-kitchen-cabinets/pages/call-log.html` | generated — rebuild it, never edit it |
+| `reports/custom-kitchen-cabinets/pages/pages.yaml` | What each page in this folder is, and whether it still holds. |
+| `reports/custom-kitchen-cabinets/pages/us-configurable-furniture.html` | generated — rebuild it, never edit it |
 | `reports/custom-kitchen-cabinets/research/REPORT.md` | The measured US market size for this idea — TAM, the beachhead article, SAM and SOM, each step with its basis. |
-| `reports/custom-kitchen-cabinets/research/autonomous-factory-plan.html` | generated — rebuild it, never edit it |
-| `reports/custom-kitchen-cabinets/research/bay-area-hardwood-demand.html` | generated — rebuild it, never edit it |
-| `reports/custom-kitchen-cabinets/research/build-board.html` | generated — rebuild it, never edit it |
-| `reports/custom-kitchen-cabinets/research/business-plan.html` | generated — rebuild it, never edit it |
-| `reports/custom-kitchen-cabinets/research/cabinet-company-plan.html` | generated — rebuild it, never edit it |
-| `reports/custom-kitchen-cabinets/research/cabinet-demand-case.html` | generated — rebuild it, never edit it |
-| `reports/custom-kitchen-cabinets/research/cabinet-plan-final.html` | generated — rebuild it, never edit it |
-| `reports/custom-kitchen-cabinets/research/cabinet-plan.html` | generated — rebuild it, never edit it |
-| `reports/custom-kitchen-cabinets/research/us-configurable-furniture.html` | generated — rebuild it, never edit it |
 | `reports/custom-kitchen-cabinets/research/archive/bay-area-dining-2026-08-27.md` | Custom solid-wood furniture — Bay Area demand evidence |
 | `reports/custom-kitchen-cabinets/research/data/MANIFEST.jsonl` | — |
 | `reports/custom-kitchen-cabinets/research/data/processed/bay_area_building_permits.csv` | — |

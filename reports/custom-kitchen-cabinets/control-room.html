@@ -1066,6 +1066,22 @@ body::before {
   .cmap {padding:14px 10px;}.cmap-controls,.cmap-lenses,.cmap-controls label {width:100%;}.cmap-lenses button {flex:1;}.cmap-controls select {width:100%;max-width:none;}.cmap-stage svg {min-height:330px;}.cmap-axis {font-size:7px;}.cmap-readout {grid-template-columns:1fr;margin-inline:2px;}.cmap-axis-key {display:grid;gap:5px;}
 }
 
+.pg-grid {display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:14px;margin-top:16px;}
+.pg-card {display:block;padding:16px 18px;border:1px solid var(--rule);border-radius:10px;
+          background:var(--surface);text-decoration:none;color:inherit;transition:border-color .15s,transform .15s;}
+.pg-card:hover {border-color:var(--accent);transform:translateY(-1px);}
+.pg-title {font-weight:600;font-size:1.02rem;margin:0 0 6px;}
+.pg-note {margin:0;font-size:.86rem;line-height:1.5;color:var(--muted);}
+.pg-tag {display:inline-block;font-size:.68rem;letter-spacing:.06em;text-transform:uppercase;
+         padding:2px 7px;border-radius:4px;margin-bottom:8px;font-weight:600;}
+.pg-tag.current {background:var(--positive-soft,#E4EDE5);color:var(--positive,#3B6B46);}
+.pg-tag.generated {background:var(--accent-soft,#E4E9F3);color:var(--accent-ink,#1D3560);}
+.pg-tag.superseded {background:var(--surface-2);color:var(--muted);}
+.pg-tag.unlisted {background:var(--negative-soft,#F5E7E4);color:var(--negative,#8C3B2F);}
+.pg-group {margin-top:26px;}
+.pg-group h3 {margin:0 0 2px;font-size:.95rem;}
+.pg-group p.sub {margin:0;font-size:.82rem;color:var(--muted);}
+
 .tier-other {background:rgba(107,114,128,0.1);color:#9ca3af;}
 
 /* ── signal badges ── */
@@ -1363,7 +1379,7 @@ body::before {
 <!-- ── page header ── -->
 <header class="page-header">
   <h1>Strategy control room — <span class="idea-name">custom-kitchen-cabinets</span></h1>
-  <p class="subtitle">0 contacts &middot; last updated 2026-08-31 &middot; generated 2026-09-01T00:41:56+00:00</p>
+  <p class="subtitle">0 contacts &middot; last updated 2026-08-31 &middot; generated 2026-09-01T00:46:38+00:00</p>
 </header>
 
 <!-- ── tab nav ── -->
@@ -1371,6 +1387,7 @@ body::before {
   <button data-tab="thesis" onclick="switchTab('thesis')">Hunches <span class="count">H1</span></button>
   <button data-tab="patterns" onclick="switchTab('patterns')">Pain Patterns <span class="count">0</span></button>
   <button data-tab="offerings" onclick="switchTab('offerings')">Offerings <span class="count">1</span></button>
+  <button data-tab="pages" onclick="switchTab('pages')">Pages <span class="count">9</span></button>
   <button data-tab="companies" onclick="switchTab('companies')">Companies <span class="count">0</span></button>
   <button data-tab="startups" onclick="switchTab('startups')">Startups <span class="count">0</span></button>
   <button data-tab="email" onclick="switchTab('email')">Email <span class="count">0</span></button>
@@ -1637,6 +1654,28 @@ body::before {
 </section>
 </div><!-- /tab-panel offerings -->
 
+<div class="tab-panel" data-tab="pages">
+<section class="th-block">
+<h2>Every page for this idea</h2>
+<p class="pat-lede">This control room is the one page to open; everything below is a report it points at. <b>Superseded</b> pages are kept on purpose — a plan that was replaced still says what was believed and why it changed. <b>Generated</b> pages are rebuilt from data by a script and must never be hand-edited.</p>
+<div class="pg-group"><h3>The plan</h3><p class="sub">What this business is and what it would take to build it.</p><div class="pg-grid">
+<a class="pg-card" href="pages/build-board.html"><span class="pg-tag current">current</span><p class="pg-title">Cabinet Co Build Board</p><p class="pg-note">What to do in what order, with costs and decision gates. The free things that could kill the idea come before the expensive things that assume it works. Tick state is saved in your browser only.</p></a>
+<a class="pg-card" href="pages/cabinet-plan.html"><span class="pg-tag current">current</span><p class="pg-title">Kitchens Without Drafting</p><p class="pg-note">The full build plan, and the most complete statement of the idea: why cabinets rather than furniture, the product, the process, where the 13.5 design hours go, the AI stack, the manufacturing plan, the numbers, the build order, and what is still unresolved.</p></a>
+<a class="pg-card" href="pages/business-plan.html"><span class="pg-tag superseded">superseded</span><p class="pg-title">The Unattended Cell</p><p class="pg-note">&quot;The Unattended Cell&quot; — the furniture-factory business plan written before the thesis moved to cabinets. Superseded by cabinet-plan.html; kept because the cell economics and the honest market section still apply.</p></a>
+<a class="pg-card" href="pages/cabinet-plan-final.html"><span class="pg-tag superseded">superseded</span><p class="pg-title">Kitchens Without Drafting</p><p class="pg-note">A trimmed presentation cut of cabinet-plan.html — same seven opening sections, without the numbers, build order or unresolved questions. Despite the filename, cabinet-plan.html is the fuller and more current document.</p></a>
+</div></div>
+<div class="pg-group"><h3>The evidence</h3><p class="sub">What was measured, and how every number was derived.</p><div class="pg-grid">
+<a class="pg-card" href="pages/autonomous-factory-plan.html"><span class="pg-tag generated">generated</span><p class="pg-title">Autonomous Furniture Factory</p><p class="pg-note">The original autonomous-factory build proposal, with layout and flow diagrams. Rebuilt by scripts/research/build_plan_page.py.</p></a>
+<a class="pg-card" href="pages/cabinet-demand-case.html"><span class="pg-tag generated">generated</span><p class="pg-title">Custom Cabinet Demand</p><p class="pg-note">Is there demand for custom cabinets, and how every number behind that was derived. Rebuilt by scripts/research/build_cabinet_page.py.</p></a>
+<a class="pg-card" href="pages/us-configurable-furniture.html"><span class="pg-tag generated">generated</span><p class="pg-title">US Configurable Furniture</p><p class="pg-note">The US market page for the configurable-furniture thesis this idea started from — TAM, the article scorecard, SAM and SOM. Rebuilt by scripts/research/build_page_us.py.</p></a>
+<a class="pg-card" href="pages/bay-area-hardwood-demand.html"><span class="pg-tag superseded">superseded</span><p class="pg-title">Bay Area Hardwood Demand</p><p class="pg-note">The Bay Area dining-furniture demand page this project opened with, before the scope went national and then narrowed to cabinets. Superseded by us-configurable-furniture.html. Its markdown counterpart is in research/archive/.</p></a>
+</div></div>
+<div class="pg-group"><h3>Outreach</h3><p class="sub">Tools for the conversations themselves.</p><div class="pg-grid">
+<a class="pg-card" href="pages/call-log.html"><span class="pg-tag current">current</span><p class="pg-title">Discovery Call Log</p><p class="pg-note">Notes template for a discovery call — open it while you are on the phone. Saves to your browser only; the durable record goes to outreach/contacts.md and the evidence ledger.</p></a>
+</div></div>
+</section>
+</div><!-- /tab-panel pages -->
+
 <div class="tab-panel" data-tab="startups">
 <div class="co-empty"><p>No entry in <code>outreach/companies.md</code> carries <code>map: startup</code>.</p><p>Add supply-side companies with <code>job_covered</code>, <code>integration</code> and <code>liability_taken</code> declared, and they appear here.</p></div>
 </div><!-- /tab-panel startups -->
@@ -1832,7 +1871,7 @@ body::before {
 
 </div><!-- .page -->
 
-<div class="page-timestamp" aria-hidden="true">gen 2026-09-01T00:41:56+00:00</div>
+<div class="page-timestamp" aria-hidden="true">gen 2026-09-01T00:46:38+00:00</div>
 
 <!-- ── copy modal ── -->
 <div id="copyModal" class="modal-backdrop" role="dialog" aria-modal="true" aria-label="Outreach copy" onclick="modalBackdropClick(event)">

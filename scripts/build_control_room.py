@@ -42,7 +42,7 @@ import re
 import sys
 from collections import Counter, defaultdict
 from datetime import datetime, timezone
-from html import escape
+from html import escape, unescape
 from pathlib import Path
 
 try:
@@ -756,7 +756,8 @@ def render(
     tier_css_block = tier_css(list(stats["by_tier"].keys()))
     invite_log_html, invite_log_css = build_invite_log(contacts)
     tier_css_block = (tier_css_block + invite_log_css + EMAIL_CSS + TAB_CSS
-                      + PATTERNS_CSS + THESIS_CSS + HUNCH_CSS + COMPANIES_CSS)
+                      + PATTERNS_CSS + THESIS_CSS + HUNCH_CSS + COMPANIES_CSS
+                      + PAGES_CSS)
 
     companies_fm, companies_list = companies or ({}, [])
     companies_tab_html = render_companies_tab(companies_list, companies_fm, contacts)
@@ -791,6 +792,8 @@ def render(
     offerings_tab_html = render_offerings_tab(
         offerings, scored_patterns, thesis.get("offerings_fm") or {})
     offerings_count = len(offerings)
+    pages_tab_html = render_pages_tab(slug)
+    pages_count = len(list((REPO / "reports" / slug / "pages").glob("*.html")))
     # scalar or list — see build_brief.py, an idea may run one hunch per entry point
     _ah = (thesis.get("lineage_fm") or {}).get("active_hunch")
     _ah_list = [str(h).strip() for h in (_ah if isinstance(_ah, list) else [_ah]) if h]
@@ -1538,6 +1541,7 @@ body::before {{
   <button data-tab="thesis" onclick="switchTab('thesis')">Hunches <span class="count">{active_hunch}</span></button>
   <button data-tab="patterns" onclick="switchTab('patterns')">Pain Patterns <span class="count">{patterns_count}</span></button>
   <button data-tab="offerings" onclick="switchTab('offerings')">Offerings <span class="count">{offerings_count}</span></button>
+  <button data-tab="pages" onclick="switchTab('pages')">Pages <span class="count">{pages_count}</span></button>
   <button data-tab="companies" onclick="switchTab('companies')">Companies <span class="count">{companies_count}</span></button>
   <button data-tab="startups" onclick="switchTab('startups')">Startups <span class="count">{startups_count}</span></button>
   <button data-tab="email" onclick="switchTab('email')">Email <span class="count">{email_count}</span></button>
@@ -1551,6 +1555,10 @@ body::before {{
 <div class="tab-panel" data-tab="offerings">
 {offerings_tab_html}
 </div><!-- /tab-panel offerings -->
+
+<div class="tab-panel" data-tab="pages">
+{pages_tab_html}
+</div><!-- /tab-panel pages -->
 
 <div class="tab-panel" data-tab="startups">
 {startups_tab_html}
@@ -5227,6 +5235,107 @@ def render_thesis_tab(lineage_fm: dict, hunches: list[dict],
                    'history.</p></details>')
 
     out.append('</div>')
+    return "\n".join(out)
+
+
+PAGES_CSS = """
+.pg-grid {display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:14px;margin-top:16px;}
+.pg-card {display:block;padding:16px 18px;border:1px solid var(--rule);border-radius:10px;
+          background:var(--surface);text-decoration:none;color:inherit;transition:border-color .15s,transform .15s;}
+.pg-card:hover {border-color:var(--accent);transform:translateY(-1px);}
+.pg-title {font-weight:600;font-size:1.02rem;margin:0 0 6px;}
+.pg-note {margin:0;font-size:.86rem;line-height:1.5;color:var(--muted);}
+.pg-tag {display:inline-block;font-size:.68rem;letter-spacing:.06em;text-transform:uppercase;
+         padding:2px 7px;border-radius:4px;margin-bottom:8px;font-weight:600;}
+.pg-tag.current {background:var(--positive-soft,#E4EDE5);color:var(--positive,#3B6B46);}
+.pg-tag.generated {background:var(--accent-soft,#E4E9F3);color:var(--accent-ink,#1D3560);}
+.pg-tag.superseded {background:var(--surface-2);color:var(--muted);}
+.pg-tag.unlisted {background:var(--negative-soft,#F5E7E4);color:var(--negative,#8C3B2F);}
+.pg-group {margin-top:26px;}
+.pg-group h3 {margin:0 0 2px;font-size:.95rem;}
+.pg-group p.sub {margin:0;font-size:.82rem;color:var(--muted);}
+"""
+
+PAGE_GROUPS = [
+    ("plan", "The plan", "What this business is and what it would take to build it."),
+    ("evidence", "The evidence", "What was measured, and how every number was derived."),
+    ("outreach", "Outreach", "Tools for the conversations themselves."),
+]
+
+
+def _page_title(path: Path) -> str:
+    """A page's own <title> — read from the file so it cannot drift from a list."""
+    try:
+        head = path.read_text(encoding="utf-8", errors="replace")[:8000]
+    except OSError:
+        return path.stem
+    m = re.search(r"<title[^>]*>(.*?)</title>", head, re.S | re.I)
+    return unescape(re.sub(r"\s+", " ", m.group(1)).strip()) if m else path.stem
+
+
+def render_pages_tab(slug: str) -> str:
+    """Every openable page in reports/{slug}/pages/, grouped and labelled.
+
+    The control room is the one page you open for an idea; this tab is what makes that
+    true of the reports too, rather than leaving eight HTML files in a folder with names
+    that do not say which of them still holds. Titles come from each file, notes and
+    status from pages/pages.yaml — see that file for why the split is that way.
+    """
+    pages_dir = REPO / "reports" / slug / "pages"
+    if not pages_dir.is_dir():
+        return ('<div class="empty-state" role="status"><p>No <code>pages/</code> folder '
+                'for this idea yet.</p></div>')
+
+    listed: list[dict] = []
+    manifest = pages_dir / "pages.yaml"
+    if manifest.exists() and _HAS_YAML:
+        try:
+            listed = (yaml.safe_load(manifest.read_text(encoding="utf-8")) or {}).get("pages") or []
+        except yaml.YAMLError:
+            listed = []
+    by_file = {str(r.get("file")): r for r in listed if r.get("file")}
+
+    on_disk = sorted(f.name for f in pages_dir.glob("*.html"))
+    for name in on_disk:
+        by_file.setdefault(name, {"file": name, "status": "unlisted", "group": "plan",
+                                  "note": "Not listed in pages.yaml — add a row saying "
+                                          "what it is and whether it still holds."})
+
+    out = ['<section class="th-block">']
+    out.append("<h2>Every page for this idea</h2>")
+    out.append('<p class="pat-lede">This control room is the one page to open; everything '
+               'below is a report it points at. <b>Superseded</b> pages are kept on purpose — '
+               'a plan that was replaced still says what was believed and why it changed. '
+               '<b>Generated</b> pages are rebuilt from data by a script and must never be '
+               'hand-edited.</p>')
+
+    for gkey, gname, gsub in PAGE_GROUPS:
+        rows = [r for r in by_file.values() if (r.get("group") or "plan") == gkey
+                and (pages_dir / str(r["file"])).exists()]
+        if not rows:
+            continue
+        order = {"current": 0, "generated": 1, "unlisted": 2, "superseded": 3}
+        rows.sort(key=lambda r: (order.get(str(r.get("status")), 4), str(r["file"])))
+        out.append(f'<div class="pg-group"><h3>{escape(gname)}</h3>'
+                   f'<p class="sub">{escape(gsub)}</p><div class="pg-grid">')
+        for r in rows:
+            fn = str(r["file"])
+            status = str(r.get("status") or "unlisted")
+            title = _page_title(pages_dir / fn)
+            note = " ".join(str(r.get("note") or "").split())
+            out.append(
+                f'<a class="pg-card" href="pages/{escape(fn)}">'
+                f'<span class="pg-tag {escape(status)}">{escape(status)}</span>'
+                f'<p class="pg-title">{escape(title)}</p>'
+                f'<p class="pg-note">{escape(note)}</p></a>')
+        out.append("</div></div>")
+
+    missing = [f for f in by_file if not (pages_dir / str(f)).exists()]
+    if missing:
+        out.append('<p class="pat-lede" style="margin-top:20px">Listed in '
+                   '<code>pages.yaml</code> but not on disk: <b>'
+                   + escape(", ".join(sorted(missing))) + "</b>.</p>")
+    out.append("</section>")
     return "\n".join(out)
 
 

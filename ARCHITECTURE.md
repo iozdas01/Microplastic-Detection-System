@@ -185,7 +185,20 @@ Per idea, under `reports/{slug}/`:
   /04-mutation/         offerings.md (LIVING) · thesis-v{N}.md · {date}-mutation.md
   /outreach/            contacts.md, companies.md, research-map.md (LIVING) ·
                         results-{A_ID}.md (GENERATED) · copy/ · email/{campaign}/
+  /pages/               every other openable report for this idea + pages.yaml
+  /research/            what the collectors measured: REPORT.md, data/, archive/
 ```
+
+`pages/` exists because an idea accumulates readable deliverables — plans, evidence pages,
+a call-notes template — and eight HTML files in a folder do not say which of them still
+holds. **`control-room.html` stays the one page you open**; its Pages tab is generated from
+`pages/pages.yaml` and links the rest, tagged `current`, `generated` or `superseded`. That
+keeps the one-dashboard-per-idea rule while letting superseded work stay reachable: a plan
+that was replaced still records what was believed and why it changed.
+
+Titles on that tab are read from each page's own `<title>` rather than listed in the
+manifest, so the two cannot drift. `pages.yaml` authors only what a page does not state
+about itself — its one-line purpose and whether it has been superseded.
 
 `reports/lifecycle.yaml` is the one authored slug → `active`/`dormant`/`superseded-by` index.
 It deliberately records no findings and no hunch ID: the hunch has exactly one author

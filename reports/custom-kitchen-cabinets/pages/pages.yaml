@@ -1,0 +1,85 @@
+# What each page in this folder is, and whether it still holds.
+#
+# The control room's Pages tab is generated from this file. Titles are NOT listed here —
+# they are read from each page's own <title>, so they cannot drift. This file authors only
+# the two things a page does not state about itself: what it is for in one line, and whether
+# it has been superseded by a later one.
+#
+# Adding a page: drop the .html in this folder and add a row. A page with no row still
+# renders, flagged as unlisted — visible rather than silently missing.
+#
+# status: current | superseded | generated
+#   current    — hand-authored, still the live version
+#   superseded — kept for reference, a later page replaced it. Say which in `note`.
+#   generated  — rebuilt by a script in scripts/research/; never hand-edit it
+
+version: 1
+
+pages:
+  - file: cabinet-plan.html
+    status: current
+    group: plan
+    note: >-
+      The full build plan, and the most complete statement of the idea: why cabinets rather
+      than furniture, the product, the process, where the 13.5 design hours go, the AI stack,
+      the manufacturing plan, the numbers, the build order, and what is still unresolved.
+
+  - file: build-board.html
+    status: current
+    group: plan
+    note: >-
+      What to do in what order, with costs and decision gates. The free things that could
+      kill the idea come before the expensive things that assume it works. Tick state is
+      saved in your browser only.
+
+  - file: cabinet-plan-final.html
+    status: superseded
+    group: plan
+    note: >-
+      A trimmed presentation cut of cabinet-plan.html — same seven opening sections, without
+      the numbers, build order or unresolved questions. Despite the filename, cabinet-plan.html
+      is the fuller and more current document.
+
+  - file: cabinet-demand-case.html
+    status: generated
+    group: evidence
+    note: >-
+      Is there demand for custom cabinets, and how every number behind that was derived.
+      Rebuilt by scripts/research/build_cabinet_page.py.
+
+  - file: us-configurable-furniture.html
+    status: generated
+    group: evidence
+    note: >-
+      The US market page for the configurable-furniture thesis this idea started from — TAM,
+      the article scorecard, SAM and SOM. Rebuilt by scripts/research/build_page_us.py.
+
+  - file: autonomous-factory-plan.html
+    status: generated
+    group: evidence
+    note: >-
+      The original autonomous-factory build proposal, with layout and flow diagrams. Rebuilt
+      by scripts/research/build_plan_page.py.
+
+  - file: business-plan.html
+    status: superseded
+    group: plan
+    note: >-
+      "The Unattended Cell" — the furniture-factory business plan written before the thesis
+      moved to cabinets. Superseded by cabinet-plan.html; kept because the cell economics and
+      the honest market section still apply.
+
+  - file: bay-area-hardwood-demand.html
+    status: superseded
+    group: evidence
+    note: >-
+      The Bay Area dining-furniture demand page this project opened with, before the scope
+      went national and then narrowed to cabinets. Superseded by us-configurable-furniture.html.
+      Its markdown counterpart is in research/archive/.
+
+  - file: call-log.html
+    status: current
+    group: outreach
+    note: >-
+      Notes template for a discovery call — open it while you are on the phone. Saves to your
+      browser only; the durable record goes to outreach/contacts.md and the evidence ledger.

@@ -16,7 +16,7 @@ validation_status: untested
 parent_hunch: null
 created: 2026-08-31
 created_by: founder
-created_by_artifact: reports/custom-kitchen-cabinets/research/cabinet-plan-final.html
+created_by_artifact: reports/custom-kitchen-cabinets/pages/cabinet-plan.html
 change_reason: >-
   Carried in from the predecessor market-research pipeline now at `scripts/research/`, where the
   autonomous-furniture thesis was measured and moved. Custom cabinets was the only one of

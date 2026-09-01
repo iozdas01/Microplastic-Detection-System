@@ -177,7 +177,8 @@ Only the answers that are **not** a skill need writing down:
 |---|---|
 | Brainstorming / designing architecture | Work inline against `ARCHITECTURE.md`, and say you did |
 | Rebuilding an idea's control room | `python3 scripts/build_control_room.py {slug}` |
-| Browsing hunches → assumptions → evidence | The **Hunches** tab of that same `control-room.html`. One idea has exactly ONE html file — never add a second page beside it |
+| Browsing hunches → assumptions → evidence | The **Hunches** tab of that same `control-room.html` |
+| Opening any other report for an idea | The **Pages** tab of `control-room.html`, which lists everything in `reports/{slug}/pages/` with its status. Never build a second dashboard — one idea has exactly one generated control room |
 | Refreshing an idea's session brief | `python3 scripts/build_brief.py {slug}` |
 | Rebuilding the methods index | `python3 scripts/build_methods_index.py` |
 | Shared Reddit/HN problem reconnaissance | `scripts.data.community_recon` directly — or `/startup-ideate-shotgun` for the full workflow |

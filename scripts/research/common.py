@@ -27,6 +27,7 @@ ROOT = pathlib.Path(__file__).resolve().parent.parent.parent
 # `data/` under it. The code stays at `scripts/research/` because the collectors outlive
 # any single idea; only what they produce is idea-scoped.
 RESEARCH = ROOT / "reports" / "custom-kitchen-cabinets" / "research"
+PAGES = ROOT / "reports" / "custom-kitchen-cabinets" / "pages"
 RAW = RESEARCH / "data" / "raw"
 PROC = RESEARCH / "data" / "processed"
 MANIFEST = RESEARCH / "data" / "MANIFEST.jsonl"

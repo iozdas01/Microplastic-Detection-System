@@ -22,8 +22,9 @@ reports/custom-kitchen-cabinets/
   02-assumptions/     the assumption graph
   03-validation/      the evidence ledger, and interview notes as they land
   04-mutation/        offerings
-  outreach/           contacts, and call-log.html for taking notes during a call
-  research/           what the collectors measured: REPORT.md, the HTML reports, data/
+  outreach/           contacts, and the copy archive as it fills
+  pages/              every other readable report — plans, evidence, the call-notes sheet
+  research/           what the collectors measured: REPORT.md, data/, archive/
 ```
 
 There is one `reports/` tree, one `scripts/` tree and one `data/` directory, on purpose. The
@@ -71,8 +72,10 @@ no product and no spend.
 
 That is the next move, and it is what this repo was merged to do.
 
-- Session entry point: `reports/custom-kitchen-cabinets/BRIEF.md`
-- Everything in one page: `reports/custom-kitchen-cabinets/control-room.html`
-- The plan the outreach is testing: `reports/custom-kitchen-cabinets/research/cabinet-plan-final.html`
-- What to do in what order, with costs: `reports/custom-kitchen-cabinets/research/build-board.html`
-- Notes template for the calls themselves: `reports/custom-kitchen-cabinets/outreach/call-log.html`
+- **Open this:** `reports/custom-kitchen-cabinets/control-room.html` — the hunch, the ranked
+  assumptions, the evidence, the outreach funnel, and a **Pages** tab linking every other
+  report with its status.
+- Session entry point for an assistant: `reports/custom-kitchen-cabinets/BRIEF.md`
+- The plan the outreach is testing: `pages/cabinet-plan.html`
+- What to do in what order, with costs: `pages/build-board.html`
+- Notes template for the calls themselves: `pages/call-log.html`
