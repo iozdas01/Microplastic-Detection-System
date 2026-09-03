@@ -68,6 +68,12 @@ A fact written twice will drift, and the copy read first is usually the stale on
 - **Never hand-maintain a summary of data in the same file as that data.**
 - **Every living artifact opens with `purpose:`** — one line naming the fact it owns. The
   brief's inventory is generated from those lines.
+- **Never explain the method to the founder.** No page, report, generator or skill output
+  defines belief, hunch, assumption, evidence grade, or why the process works that way — the
+  founder built it. Write findings, data, and the legend a chart needs to be read; delete
+  anything that would survive as a sentence about the framework rather than about this idea.
+  This applies to writing the prose *and* to reviewing it: a generator paragraph that teaches
+  vocabulary is a bug, same as a duplicated fact.
 
 Enforced by `python3 scripts/validate_repo.py --fix-hint`. Set up a clone once with
 `scripts/setup.sh` — it creates `.venv` (nothing runs without it), installs the pre-commit

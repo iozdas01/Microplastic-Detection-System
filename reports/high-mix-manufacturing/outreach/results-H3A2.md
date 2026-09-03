@@ -11,7 +11,7 @@ _Generated 2026-09-03. Numbers are the funnel over contacts tagged H3A2._
 | LinkedIn | 19 | 0 | 0 | 0 | — |
 | phone | 4 | 4 | 4 | 4 | 100.0% |
 
-_Channels are counted separately on purpose: someone who answered the phone has not replied to a LinkedIn message. A reply rate over a handful of contacts is arithmetic, not a rate — read the counts, not the percentage._
+_Channels are counted separately._
 
 ## Contacts by status
 

@@ -3265,13 +3265,11 @@ def render_startups_tab(fm: dict, companies: list[dict],
         f"<em>{len(carries)}</em> of those carry any liability for the part. "
         f"<em>{len(owns)}</em> own the outcome &mdash; {by_factory}. "
         f"<em>{len(in_job)}</em> sit directly in the prove-out job, and "
-        f"<em>{len(in_job_factory)}</em> of those own their own factory. That is the belief "
-        "rendered: the way to carry the liability today is to buy the machines."
+        f"<em>{len(in_job_factory)}</em> of those own their own factory. Today the way to "
+        "carry the liability is to buy the machines."
         + (f" No startup here covers <em>{'</em>, <em>'.join(empty_lanes)}</em> at all."
            if empty_lanes else "")
-        + " This panel is derived from the entries below, so it moves when they do &mdash; "
-        "if a software-only company ever appears in the <code>owns the outcome</code> "
-        "column, the sentence above changes and the wedge has been taken.</p>")
+        + "</p>")
 
     # ── KPI strip ────────────────────────────────────────────────────────────
     funded = [e for e in rows if e.get("raised")]
@@ -3458,9 +3456,8 @@ def render_startups_tab(fm: dict, companies: list[dict],
         '<p>The supply side: companies selling into, or automating around, the same jobs '
         'the demand-side registry buys. Position is the job they cover against how far they '
         'vertically integrate. Dot area is capital raised. <strong>Colour is the liability '
-        'they take on the part</strong> &mdash; the axis the belief lives on, so it is the '
-        'one thing a glance has to answer. Every value reads a declared field in '
-        '<code>companies.md</code>; nothing here is inferred.</p>'
+        'they take on the part</strong>. Every value reads a declared field in '
+        '<code>companies.md</code>.</p>'
         '</div></div>'
         f'<div class="smap-claim">{claim}</div>'
         f'<div class="cmap-kpis">{kpis}</div>'
@@ -4100,10 +4097,8 @@ def render_patterns_tab(scored: list[dict], untagged: list[dict], entry_total: i
     out.append(
         '<p class="pat-lede">Columns are the structural <strong>sides</strong> of this '
         'market, resolved from each contact\'s tier via <code>icp_valid_tiers</code> in '
-        '<code>02-assumptions/graph.md</code>. A pattern reported from more than one column '
-        'is one that independent sides of the exchange feel separately — the strongest '
-        'shape a pattern can have, and where a way in usually sits. Those rows are '
-        'highlighted.</p>')
+        '<code>02-assumptions/graph.md</code>. Highlighted rows are reported from more '
+        'than one column.</p>')
     out.append('<div class="pat-matrix-wrap"><table class="pat-matrix"><thead><tr><th>pattern</th>')
     for k in envs_present:
         out.append(f'<th>{escape(env_label[k])}<span class="pat-envkey">{escape(k)}</span></th>')
@@ -4128,8 +4123,7 @@ def render_patterns_tab(scored: list[dict], untagged: list[dict], entry_total: i
     out.append('<section class="pat-cards"><h2>What repeats</h2>')
     out.append(f'<p class="pat-lede">{len(scored)} patterns across {entry_total} evidence '
                f'entries. Ranked by strength: <code>2&times;sources + 3&times;cross-side + '
-               f'3&times;built-workaround + unprompted &minus; 2&times;contradicting</code>. '
-               f'The arithmetic is on every card.</p>')
+               f'3&times;built-workaround + unprompted &minus; 2&times;contradicting</code>.</p>')
 
     for rank, s in enumerate(scored, 1):
         badges = []
@@ -5153,8 +5147,6 @@ def render_thesis_tab(lineage_fm: dict, hunches: list[dict],
         belief_details = ""
     out.append('<section class="hx-belief"><b>The durable belief</b>'
                f'<blockquote>{escape(belief_text)}</blockquote>'
-               '<p>The belief does not move when a hunch does. Every hunch below is one '
-               'testable expression of it; retiring a hunch leaves the belief intact.</p>'
                f'{belief_details}'
                '</section>')
     if artifacts:
@@ -5195,9 +5187,6 @@ def render_thesis_tab(lineage_fm: dict, hunches: list[dict],
     if shared:
         out.append('<section class="hx-hunch hx-shared"><header class="hx-hhead">'
                    '<div class="hx-htitle"><span class="hx-hid">Shared &amp; unattached</span></div>'
-                   '<p class="hx-hstmt">Assumptions serving more than one hunch, or left behind by '
-                   'one that is no longer active. Evidence here counts for every hunch it is '
-                   'attached to, which is why these are held once rather than duplicated.</p>'
                    '</header><div class="hx-alist">')
         for a in shared:
             out.append(_hx_assumption(a, evidence, ranks.get(str(a.get("id"))),
@@ -5215,9 +5204,8 @@ def render_thesis_tab(lineage_fm: dict, hunches: list[dict],
             for h in past)
         out.append(f'<details class="hx-past"><summary>{len(past)} hunches no longer active</summary>'
                    f'<ul>{rows}</ul>'
-                   '<p class="hx-empty">Why each moved is recorded in '
-                   '<code>01-ideation/hunch-lineage.md</code>, which is the only author of that '
-                   'history.</p></details>')
+                   '<p class="hx-empty">Why each moved: '
+                   '<code>01-ideation/hunch-lineage.md</code>.</p></details>')
 
     out.append('</div>')
     return "\n".join(out)
@@ -5288,11 +5276,6 @@ def render_pages_tab(slug: str) -> str:
 
     out = ['<section class="th-block">']
     out.append("<h2>Every page for this idea</h2>")
-    out.append('<p class="pat-lede">This control room is the one page to open; everything '
-               'below is a report it points at. <b>Superseded</b> pages are kept on purpose — '
-               'a plan that was replaced still says what was believed and why it changed. '
-               '<b>Generated</b> pages are rebuilt from data by a script and must never be '
-               'hand-edited.</p>')
 
     for gkey, gname, gsub in PAGE_GROUPS:
         rows = [r for r in by_file.values() if (r.get("group") or "plan") == gkey
@@ -5334,12 +5317,9 @@ def render_offerings_tab(offerings: list[dict], scored_patterns: list[dict],
 
     out = ['<section class="th-block">']
     out.append('<h2>Pain patterns &rarr; candidate offerings</h2>')
-    out.append('<p class="pat-lede">Every offering is <em>derived</em> from patterns in the '
-               'evidence ledger and carries the entry IDs that produced it. If an offering '
-               'cannot name its pattern and its evidence, it is not on this page. '
-               f'Status: <b>{escape(str(offerings_fm.get("status") or "candidate"))}</b> — '
-               'nothing here has been priced, quoted, or sold. This is the shortlist the '
-               'market gets asked about, not the answer.</p>')
+    out.append('<p class="pat-lede">Status: '
+               f'<b>{escape(str(offerings_fm.get("status") or "candidate"))}</b>. '
+               'Each card carries the pattern and entry IDs behind it.</p>')
 
     # inherited strength = sum of the strengths of the patterns behind it
     for o in offerings:
@@ -5536,9 +5516,7 @@ def write_results_files(slug: str, contacts: list[dict]) -> None:
             f"| {ph['qualified_replied']} "
             f"| {str(ph['reply_rate']) + '%' if ph['reply_rate'] is not None else '—'} |",
             "",
-            "_Channels are counted separately on purpose: someone who answered the phone has "
-            "not replied to a LinkedIn message. A reply rate over a handful of contacts is "
-            "arithmetic, not a rate — read the counts, not the percentage._",
+            "_Channels are counted separately._",
             "",
             "## Contacts by status",
             "",
