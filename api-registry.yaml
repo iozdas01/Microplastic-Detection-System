@@ -61,7 +61,18 @@ apis:
     free_tier: "Subject to Reddit Data API approval, terms, and rate limits"
     env_keys: [REDDIT_CLIENT_ID, REDDIT_CLIENT_SECRET]
     used_by: [scripts.data.reddit, scripts.data.community_recon, startup-ideate-shotgun]
-    notes: "Optional enrichment only. Reddit approval is not expected; self-hosted Firecrawl is the primary Reddit discovery path."
+    notes: >-
+      CLOSED - access applied for and REFUSED by Reddit (founder, 2026-09-02). Do not re-attempt or
+      plan around this path. Reddit discovery runs through self-hosted Firecrawl -> SearXNG -> the
+      `google cse` engine, which is keyless and was verified working 2026-09-02. RE-MEASURED
+      2026-09-03: that path is DOWN. `google cse` returns "Our systems have detected unusual traffic
+      from your network" (suspended_time=180) and duckduckgo/startpage/qwant all return CAPTCHA; only
+      bing answers and it ignores `site:`. The working substitute is Firecrawl SCRAPE (not search)
+      against a Reddit search URL - `POST /v2/scrape` on
+      https://www.reddit.com/search/?q=...&sort=new&t=year returns real posts, ~5-10 per page, and
+      old.reddit.com is blocked. Use that when search is suspended rather than recording an empty
+      result as absence of demand. PRAW is installed and reddit.py keeps a working OAuth path,
+      dormant.
 
   # ─── News & media ──────────────────────────────────────────────────────
 

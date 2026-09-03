@@ -440,12 +440,29 @@ def compute_stats(contacts: list[dict]) -> dict:
     return stats
 
 
-def compute_conversion_stats(contacts: list[dict]) -> dict:
+DEFAULT_CHANNEL = "linkedin"
+
+
+def _channel(c: dict) -> str:
+    """How the contact was reached. Absent means linkedin, so old cards need no backfill."""
+    return str(c.get("channel") or DEFAULT_CHANNEL)
+
+
+def compute_conversion_stats(contacts: list[dict],
+                             channel: str | None = DEFAULT_CHANNEL) -> dict:
     """The outreach funnel, without treating bare invites as messages.
+
+    SCOPED BY CHANNEL. Five contacts reached by telephone were logged
+    `outreach_status: replied` on 2026-09-03; being the only contacts with any status past
+    `pending`, they made the LinkedIn funnel read 5 contacted / 5 replied = 100%. Someone
+    who answered the phone has not replied to a LinkedIn message. Pass `channel=None` to
+    compute across every channel at once.
 
     Call progression (offered/asked/booked) is deliberately separate from
     confirmed scheduling, so an accepted call invitation cannot render as 0%.
     """
+    if channel is not None:
+        contacts = [c for c in contacts if _channel(c) == channel]
     outreach_started = [
         c for c in contacts
         if c.get("outreach_status") in OUTREACH_STARTED_STATUSES

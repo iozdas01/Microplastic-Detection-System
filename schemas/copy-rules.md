@@ -51,8 +51,39 @@ matches the intended contact, and confirm the button belongs to the primary prof
 rather than a sidebar recommendation ("People also viewed" cards carry their own invite
 affordances, and a loose selector once hit one). On any mismatch, stop and report.
 
-Respect the platform envelope: roughly 20 invites/day, 100/week, 100 profile views/day.
-Pace sends, never burst.
+**The only safe selector is the one carrying the contact's NAME (measured 2026-09-03).**
+Scoping to the primary card is not enough and neither is excluding `<aside>`: the
+"People similar to…" strip renders other people's Connect buttons in the page body, outside
+any aside. Gate every click on `aria-label` matching `Invite {intended name} to connect`, and
+confirm again against the name printed in the invitation modal before pressing send. Two
+name checks, or don't click. Also expect the control to be an `<a>` on some profiles and a
+`<button>` on others, the modal to live in a shadow root, and Connect to sit inside the
+"More" menu on 3rd-degree profiles rather than on the card.
+
+**Fastest reliable route:** `linkedin.com/preload/custom-invite/?vanityName={slug}` opens the
+invitation modal directly, skipping the card and the More menu entirely. The modal names the
+recipient, which is the second name check, so this route is both quicker and safer.
+
+**No daily invite cap (founder decision, 2026-09-03).** The previous "roughly 20 invites/day,
+100/week" guidance is removed at the founder's explicit instruction. Send as many invites in a
+day as the founder asks for; do not defer or trim a batch on volume grounds, and do not
+re-raise the cap as a concern on later runs — it has been decided.
+
+**AMENDED same day (founder instruction, 2026-09-03): space the sends out.** The cap is still
+gone — VOLUME is not limited — but the founder asked that a batch not be fired at machine
+speed, to keep the account clear of LinkedIn's rate heuristics. Leave roughly 20-40 seconds
+between invites and vary it; a 70-invite batch is therefore a ~40-minute run, and that is the
+expected shape, not a problem to optimise away. The two rules are not in tension: send every
+invite the founder asked for, just not all in the same minute.
+
+Nothing here licenses re-opening the cap question. If a run needs to be cut short, that is a
+platform response (below) or a founder decision, never a volume judgement of Claude's own.
+
+What remains is LinkedIn's own behaviour, which is theirs and not ours to set: the account can
+be rate-limited or restricted, and the warning signs are a captcha, an "unusual activity"
+interstitial, or the Connect button silently failing. On any of those, STOP sending
+immediately and report — that is a platform response to observe and act on, not a quota to
+pre-empt.
 
 ---
 
@@ -323,6 +354,38 @@ looks cold when it is not. Missing export means "prior contact unknown, go and l
 A follow-up after silence carries NO research anchor (the frame is established; restating it
 reads as a mail merge) and does NOT repeat the ignored ask — a second unanswered call ask
 converts silence into a decision.
+
+**LR-B30 — Re-contact decays with time and is bought back only by position (founder rule,
+2026-09-02).** LR-B25 says what the inbox state IS; this says whether to write at all. The
+founder's instruction, verbatim: *"the people i messaged before i dont want to message again
+depending on how old they are and the importance of their position."*
+
+Two variables, and they are not symmetric. Time is a gate; seniority is a modifier that only
+operates once the gate is open.
+
+| Prior state | Age | Buyer-authority role | Anyone else |
+|---|---|---|---|
+| Ours last, no reply | < 3 months | **Do not write.** | **Do not write.** |
+| Ours last, no reply | 3 to 12 months | Follow-up, no anchor, no repeat of the ignored ask | Drop |
+| Ours last, no reply | > 12 months | Fresh Msg 1 | Drop |
+| **They replied** | any | Not a re-contact at all | Not a re-contact at all |
+
+**Buyer-authority role** means a leadership token per LR-B5: Chief / VP / President / Head of
+/ Director / Owner / Managing Director. Seniority never opens the < 3 month gate. A VP who
+ignored a message three weeks ago ignored it as deliberately as an engineer did, and writing
+again converts a soft non-answer into a hard one for someone worth more later.
+
+**A reply, at any age, is not a re-contact.** It is an open thread and it is the most valuable
+asset in the ledger, so it routes to `/startup-outreach-reply` rather than being counted
+against this rule. Do not let "I do not want to message people again" retire the people who
+answered; they are the opposite case.
+
+Below the gate the contact is not off_scope, because nothing about their ICP fit failed, and
+it is not `no_reply` either: that status means "we messaged them for THIS assumption and they
+went quiet", and it counts as contacted in the funnel. Set **`outreach_status: held`**, add a
+dated note citing this rule and the date they become eligible, and let them age back in.
+A held contact is not in the campaign and must never appear in a contact-rate or reply-rate
+denominator.
 
 **LR-B6 — Claims must be live-snapshot verifiable.** Every factual claim about the contact
 must be derivable from a live profile snapshot taken in the current session. `contacts.md`

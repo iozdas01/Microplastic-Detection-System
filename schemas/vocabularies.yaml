@@ -102,6 +102,14 @@ vocabularies:
       customer_adoption:     "Will they use and pay for it."
       strategic_partnership: "Will they co-develop, co-invest, or co-distribute."
       investor_thesis:       "Will financial/VC investors fund this bet."
+      # Added 2026-09-02 for high-mix-manufacturing H1. Every prior idea in this repo was
+      # demand-only, so the three tracks above all ask "will someone buy". H1 is the first
+      # with a two-sided problem: it must secure a physical input stream before it has
+      # anything to sell, and the input holders are not customers. Splitting supply out
+      # matters because a supply assumption failing kills the idea in a different way from
+      # a demand assumption failing — you cannot fix it with better positioning.
+      supply:                "Will the people who hold the physical input hand it over, and on what terms."
+      operations:            "Can we actually run the process at the cost and cycle time the model assumes."
 
   quadrant:
     used_in: [reports/*/02-assumptions/graph.md]
@@ -215,6 +223,21 @@ vocabularies:
       peer_founder_target:     {means: "Founder who is also a plausible buyer — counts as demand."}
       operator_buyer:          {means: "Operates sites and holds budget."}
       data_supplier_practitioner: {means: "Supplies or produces data; supply-side testimony."}
+      field_practitioner: {means: "Does the work in the field as an employee — carries the
+        consequence of a failure personally but holds no budget. Declared 2026-09-03 for H3:
+        an employed blind fitter re-visits the window when a unit comes back the wrong size,
+        so their testimony on frequency and cause is first-hand, but they cannot buy. Distinct
+        from `operator_buyer`, which requires budget — using that value for fitters would have
+        overstated the buyer count in the tier analysis."}
+
+  outreach_channel:
+    used_in: [reports/*/outreach/contacts.md]
+    schema: schemas/contact.md
+    values:
+      linkedin: "Reached through LinkedIn. The DEFAULT when `channel:` is absent, so existing cards need no backfill."
+      phone: "Reached by telephone. Counted in its own funnel — a phone contact answering the phone is not a LinkedIn reply, and mixing them produced a 100% reply rate on 2026-09-03."
+      email: "Reached by email, including the researcher email campaigns."
+      in_person: "Met or visited on site."
 
   tier_side:
     used_in: [reports/*/02-assumptions/graph.md, reports/*/outreach/companies.md]
@@ -290,9 +313,15 @@ vocabularies:
       idea that already exists (distinct from `first-principles`, which reasons up from
       fundamentals), and `market` asks a market-structure question such as whether a niche
       expands (distinct from `market-signal`, which mines signals).
+      `founder-process` added 2026-09-03 and is the first category that does not examine an
+      idea or a market at all: it describes how the founder works — the cadence, the record,
+      the checks on their own reasoning. Every other value answers a question about the
+      outside world; this one answers a question about the operator. It was added rather than
+      forced into `evaluation`, which pressure-tests an idea rather than a habit.
     values: [analogical, inversion, constraint-removal, jtbd, adjacency, market,
              market-signal, signal-detection, customer-validation, evaluation, timing,
-             historical, substitute, first-principles, root-cause, wedge-narrowing]
+             historical, substitute, first-principles, root-cause, wedge-narrowing,
+             founder-process]
 
   # ─── data layer ────────────────────────────────────────────────────────────
 

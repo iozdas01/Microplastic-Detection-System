@@ -20,6 +20,7 @@ from typing import Any
 
 import requests
 import yaml
+from dotenv import load_dotenv
 
 
 # ---------------------------------------------------------------------------
@@ -28,6 +29,16 @@ import yaml
 
 REPO_ROOT = Path(__file__).resolve().parents[2]
 API_REGISTRY_PATH = REPO_ROOT / "api-registry.yaml"
+
+
+# ---------------------------------------------------------------------------
+# Credentials
+# ---------------------------------------------------------------------------
+
+# Load .env before anything reads os.environ. Without this every credentialed
+# source silently reports `enabled: false` even with a populated .env, because
+# is_enabled() gates on env_keys being present in the process environment.
+load_dotenv(REPO_ROOT / ".env")
 
 
 # ---------------------------------------------------------------------------

@@ -45,6 +45,17 @@ from datetime import datetime, timezone
 from html import escape, unescape
 from pathlib import Path
 
+# compute_conversion_stats lives in scripts/idea.py — the declared parsing
+# authority. A second copy lived here until 2026-09-03 and had already drifted:
+# only one of the two knew about channels, so the brief and the results files
+# disagreed about the same contacts.
+sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
+from scripts.idea import (  # noqa: E402
+    DEFAULT_CHANNEL,
+    compute_conversion_stats,
+    derive_assumption_evidence,
+)
+
 try:
     import yaml  # PyYAML — gates graph.md, offerings.md, evidence.md AND the intel files.
                  # Without it four of the five tabs render empty; main() hard-stops instead.
@@ -270,7 +281,7 @@ def _try_int(v):
         return None
 
 
-STATUS_ORDER = ["pending", "invited", "accepted", "email_drafted", "email_sent", "questions_by_email", "replied", "scheduled", "done", "no_reply", "declined", "off_scope"]
+STATUS_ORDER = ["pending", "invited", "accepted", "email_drafted", "email_sent", "questions_by_email", "replied", "scheduled", "done", "no_reply", "declined", "held", "off_scope"]
 ROLE_ORDER = ["buyer", "practitioner", "expert", "influencer"]
 SIGNAL_ORDER = ["post_engagement", "comment_signal", "job_posting", "profile_fit"]
 
@@ -366,73 +377,6 @@ CALL_PROGRESS_STAGES = {"offered_by_contact", "asked_by_founder", "scheduled", "
 NON_CUSTOMER_RELATIONSHIPS = {"peer_founder_competitor"}
 
 
-def compute_conversion_stats(contacts: list[dict]) -> dict:
-    """Compute the outreach funnel without treating bare invites as messages.
-
-    Call progression (offered/asked/booked) is deliberately separate from
-    confirmed scheduling, so an accepted call invitation cannot render as 0%.
-    """
-    outreach_started = [
-        c for c in contacts
-        if c.get("outreach_status") in OUTREACH_STARTED_STATUSES
-        or _is_contacted(c.get("outreach_status"))
-    ]
-    contacted = [c for c in contacts if _is_contacted(c.get("outreach_status"))]
-    replied = [c for c in contacts if _has_replied(c.get("outreach_status"))]
-    qualified_replied = [
-        c for c in replied
-        if c.get("relationship_type") not in NON_CUSTOMER_RELATIONSHIPS
-    ]
-    call_progressed = [
-        c for c in replied
-        if c.get("call_stage") in CALL_PROGRESS_STAGES
-        or c.get("outreach_status") in SCHEDULED_STATUSES
-    ]
-    scheduled = [c for c in contacts if c.get("outreach_status") in SCHEDULED_STATUSES]
-
-    def pct(n: int, d: int) -> float | None:
-        return round(100 * n / d, 1) if d else None
-
-    assumption_ids = sorted({
-        aid for c in contacts for aid in (c.get("assumptions_tested") or [])
-    })
-    by_assumption = {}
-    for aid in assumption_ids:
-        cohort = [c for c in contacts if aid in (c.get("assumptions_tested") or [])]
-        cohort_contacted = [c for c in cohort if _is_contacted(c.get("outreach_status"))]
-        cohort_replied = [c for c in cohort if _has_replied(c.get("outreach_status"))]
-        cohort_qualified_replied = [
-            c for c in cohort_replied
-            if c.get("relationship_type") not in NON_CUSTOMER_RELATIONSHIPS
-        ]
-        by_assumption[aid] = {
-            "targeted": len(cohort),
-            "contacted": len(cohort_contacted),
-            "replied": len(cohort_replied),
-            "qualified_replied": len(cohort_qualified_replied),
-            "reply_rate": pct(len(cohort_replied), len(cohort_contacted)),
-            "qualified_reply_rate": pct(
-                len(cohort_qualified_replied), len(cohort_contacted)
-            ),
-        }
-
-    return {
-        "targeted": len(contacts),
-        "outreach_started": len(outreach_started),
-        "contacted": len(contacted),
-        "replied": len(replied),
-        "qualified_replied": len(qualified_replied),
-        "call_progressed": len(call_progressed),
-        "scheduled": len(scheduled),
-        "target_to_contact_rate": pct(len(outreach_started), len(contacts)),
-        "reply_rate": pct(len(replied), len(contacted)),
-        "qualified_reply_rate": pct(len(qualified_replied), len(contacted)),
-        "reply_to_call_rate": pct(len(call_progressed), len(replied)),
-        "reply_to_scheduled_rate": pct(len(scheduled), len(replied)),
-        "by_assumption": by_assumption,
-    }
-
-
 # ─── helpers ─────────────────────────────────────────────────────────────────
 
 
@@ -467,6 +411,7 @@ def count_by_degree(contacts: list[dict]) -> dict:
 
 STATUS_COLORS = {
     "pending": "#94a3b8",
+    "held": "#9ca3af",
     "invited": "#60a5fa",
     "accepted": "#a78bfa",
     "email_drafted": "#94a3b8",
@@ -5036,6 +4981,13 @@ def _hx_components(h: dict) -> str:
 
     pairs: list[tuple[str, str]] = []   # (key, value-html)
     notes: list[str] = []               # flagged bullets that aren't Key: value
+    # A wrapped continuation line belongs to whatever was opened LAST, so track that
+    # explicitly. The previous rule appended continuations to the last pair only
+    # `if pairs and not notes` — so the moment one note-shaped bullet appeared, every
+    # later component lost every line but its first, and those lines piled into the note
+    # as one run-on paragraph. H3 rendered "Problem: ... Sun Glow states it plainly in its
+    # dealer" and dropped the sentence that carried the actual number (found 2026-09-03).
+    last: str | None = None
     for raw in comp.splitlines():
         s = raw.rstrip()
         if not s.strip():
@@ -5044,27 +4996,60 @@ def _hx_components(h: dict) -> str:
         if m:
             key = m.group(1) + (f" ({m.group(2)})" if m.group(2) else "")
             pairs.append((key, escape(m.group(3))))
+            last = "pair"
         elif s.startswith("- "):
             notes.append(escape(s[2:].strip()))
+            last = "note"
         elif s.startswith(("  ", "\t")):
-            if pairs and not notes:
+            if last == "pair" and pairs:
                 pairs[-1] = (pairs[-1][0], pairs[-1][1] + " " + escape(s.strip()))
-            elif notes:
+            elif last == "note" and notes:
                 notes[-1] += " " + escape(s.strip())
 
-    parts = []
+    # Three separate toggles, all CLOSED by default including on the active hunch.
+    # Previously this was one <details> force-opened whenever the hunch was active, which
+    # meant the one hunch a reader actually cares about was the one that dumped its entire
+    # body as a wall of prose above the assumptions. Splitting it lets a reader open the one
+    # part they want, and keeps the card scannable.
+    blocks = []
     if reason:
-        parts.append(f'<p class="hx-reason">{_inline_md(reason)}</p>')
+        blocks.append(("Why this hunch exists",
+                       f'<p class="hx-reason">{_inline_md(reason)}</p>'))
     if pairs:
         rows = "".join(f"<dt>{escape(k)}</dt><dd>{_inline_finish(v)}</dd>" for k, v in pairs)
-        parts.append(f'<dl class="hx-kv">{rows}</dl>')
+        blocks.append((f"Components ({len(pairs)})", f'<dl class="hx-kv">{rows}</dl>'))
     if notes:
         items = "".join(f'<li>{_inline_finish(n)}</li>' for n in notes)
-        parts.append(f'<div class="hx-notes"><b>Open questions &amp; decisions</b><ul>{items}</ul></div>')
-    is_active = str(h.get("status") or "").strip() == "active"
-    return (f'<details class="hx-comp"{" open" if is_active else ""}>'
-            '<summary>Components, context &amp; open questions</summary>'
-            '<div class="hx-comp-body">' + "".join(parts) + "</div></details>")
+        blocks.append((f"Open questions &amp; decisions ({len(notes)})",
+                       f'<div class="hx-notes"><ul>{items}</ul></div>'))
+    if not blocks:
+        return ""
+    return "".join(
+        f'<details class="hx-comp"><summary>{label}</summary>'
+        f'<div class="hx-comp-body">{body}</div></details>'
+        for label, body in blocks)
+
+_STMT_CLAMP = 320
+
+
+def _hx_statement(h: dict) -> str:
+    """Statement, clamped. Long statements get a lead-in plus a toggle for the rest.
+
+    Some lineage files put explanatory prose under `### Statement` before the claim itself,
+    so this block can run to several hundred words. Printing all of it pushed the assumptions
+    below the fold on the one hunch that matters.
+    """
+    text = " ".join(str(h.get("statement") or "").split())
+    if not text:
+        return ""
+    if len(text) <= _STMT_CLAMP:
+        return f'<p class="hx-hstmt">{_inline_md(text)}</p>'
+    cut = text.rfind(" ", 0, _STMT_CLAMP)
+    if cut < 0:
+        cut = _STMT_CLAMP
+    return (f'<p class="hx-hstmt">{_inline_md(text[:cut])}&hellip;</p>'
+            '<details class="hx-comp"><summary>Rest of the statement</summary>'
+            f'<div class="hx-comp-body"><p>{_inline_md(text[cut:].lstrip())}</p></div></details>')
 
 
 def _hx_hunch(h: dict, assumptions: list[dict], evidence: list[dict],
@@ -5093,7 +5078,7 @@ def _hx_hunch(h: dict, assumptions: list[dict], evidence: list[dict],
   <header class="hx-hhead">
     <div class="hx-htitle"><span class="hx-hid">{escape(hid)}</span>
       <span class="hx-chip hx-chip-active">{escape(str(h.get("status") or ""))}</span></div>
-    <p class="hx-hstmt">{escape(" ".join(str(h.get("statement") or "").split()))}</p>
+    {_hx_statement(h)}
     {_hx_components(h)}
     <div class="hx-hstats"><span><b>{len(mine)}</b> assumptions</span>
       <span><b>{sum(counts.values())}</b> evidence</span>
@@ -5226,7 +5211,7 @@ def render_thesis_tab(lineage_fm: dict, hunches: list[dict],
             f'<span class="hx-chip">{escape(str(h.get("status") or ""))}</span>'
             + (f'<span class="hx-chip">&rarr; {escape(str(h.get("superseded_by")))}</span>'
                if h.get("superseded_by") else "")
-            + f'<p>{escape(" ".join(str(h.get("statement") or "").split()))}</p></li>'
+            + f'<p>{_inline_md(" ".join(str(h.get("statement") or "").split()))}</p></li>'
             for h in past)
         out.append(f'<details class="hx-past"><summary>{len(past)} hunches no longer active</summary>'
                    f'<ul>{rows}</ul>'
@@ -5512,13 +5497,27 @@ def write_results_files(slug: str, contacts: list[dict]) -> None:
     numbers). Now every figure comes from compute_conversion_stats; the
     classification and routing decisions live in contacts.md only.
     """
-    conv = compute_conversion_stats(contacts)
+    conv = compute_conversion_stats(contacts)                     # LinkedIn only
+    conv_phone = compute_conversion_stats(contacts, channel="phone")
+    conv_all = compute_conversion_stats(contacts, channel=None)
     now = datetime.now(timezone.utc).strftime("%Y-%m-%d")
     order = {st: i for i, st in enumerate(STATUS_ORDER)}
-    for aid, s in conv["by_assumption"].items():
-        if not s["contacted"]:
-            continue
+    # Write a file for every assumption that has ANY contact, on any channel. Skipping the
+    # write when `contacted` was 0 left the previous run's file on disk claiming a 100%
+    # reply rate that no longer existed — a generated file that silently fails to
+    # regenerate is worse than one that says zero (found 2026-09-03).
+    all_aids = sorted(set(conv["by_assumption"]) | set(conv_phone["by_assumption"])
+                      | set(conv_all["by_assumption"]))
+    for aid in all_aids:
+        s = conv["by_assumption"].get(aid) or {
+            "targeted": 0, "contacted": 0, "replied": 0, "qualified_replied": 0,
+            "reply_rate": None, "qualified_reply_rate": None}
+        ph = conv_phone["by_assumption"].get(aid) or {
+            "targeted": 0, "contacted": 0, "replied": 0, "qualified_replied": 0,
+            "reply_rate": None, "qualified_reply_rate": None}
         cohort = [c for c in contacts if aid in (c.get("assumptions_tested") or [])]
+        if not cohort:
+            continue
         lines = [
             "<!-- GENERATED by scripts/build_control_room.py — DO NOT EDIT.",
             "     Every value is derived from outreach/contacts.md; fix that file and",
@@ -5528,11 +5527,18 @@ def write_results_files(slug: str, contacts: list[dict]) -> None:
             "",
             f"_Generated {now}. Numbers are the funnel over contacts tagged {aid}._",
             "",
-            "| targeted | contacted | replied | qualified replied | reply rate | qualified rate |",
+            "| channel | targeted | contacted | replied | qualified replied | reply rate |",
             "|---|---|---|---|---|---|",
-            f"| {s['targeted']} | {s['contacted']} | {s['replied']} | {s['qualified_replied']} "
-            f"| {s['reply_rate'] if s['reply_rate'] is not None else '—'}% "
-            f"| {s['qualified_reply_rate'] if s['qualified_reply_rate'] is not None else '—'}% |",
+            f"| LinkedIn | {s['targeted']} | {s['contacted']} | {s['replied']} "
+            f"| {s['qualified_replied']} "
+            f"| {str(s['reply_rate']) + '%' if s['reply_rate'] is not None else '—'} |",
+            f"| phone | {ph['targeted']} | {ph['contacted']} | {ph['replied']} "
+            f"| {ph['qualified_replied']} "
+            f"| {str(ph['reply_rate']) + '%' if ph['reply_rate'] is not None else '—'} |",
+            "",
+            "_Channels are counted separately on purpose: someone who answered the phone has "
+            "not replied to a LinkedIn message. A reply rate over a handful of contacts is "
+            "arithmetic, not a rate — read the counts, not the percentage._",
             "",
             "## Contacts by status",
             "",
@@ -5586,6 +5592,13 @@ def build_for_slug(slug: str) -> Path | None:
         REPORTS / slug / "01-ideation" / "hunch-lineage.md")
     graph_fm, assumptions = parse_graph_md(
         REPORTS / slug / "02-assumptions" / "graph.md")
+    # Wire the ledger onto the nodes. Without this every assumption card rendered
+    # `none` for evidence while the ledger held entries pointing straight at it — the
+    # cards read "untested / none" for H3A1-H3A3 on 2026-09-03 with six linked entries
+    # on file. build_brief.py already did this; the control room never did, so the two
+    # generated views of the same graph disagreed. Assumption-level strength is DERIVED
+    # (CLAUDE.md) — never read `evidence_for:`/`evidence_against:` off the node.
+    derive_assumption_evidence(assumptions, evidence_entries)
     offerings_fm, offerings = parse_offerings_md(
         REPORTS / slug / "04-mutation" / "offerings.md")
     belief_path = REPO / "input-context" / slug / "belief.md"

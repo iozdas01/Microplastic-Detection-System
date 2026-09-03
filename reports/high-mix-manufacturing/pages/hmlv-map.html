@@ -1,0 +1,302 @@
+<title>HMLV Industry Map</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,600;0,700;1,6..72,400&family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap">
+<style>
+  :root{
+    --ground:#F5F5F1; --surface:#FFFFFF; --surface-2:#EFEFE9;
+    --ink:#191C18; --ink-2:#3D423B; --muted:#6A7067;
+    --rule:#DEE0D7; --rule-2:#C9CCC1;
+    --accent:#28457F; --accent-soft:#E4E9F3; --accent-ink:#1D3560;
+    --caution:#8A6110; --caution-soft:#F5EDDD;
+    --positive:#3B6B46; --positive-soft:#E4EDE5;
+    --negative:#8C3B2F; --negative-soft:#F5E7E4;
+    --shadow:0 1px 2px rgba(25,28,24,.05), 0 8px 24px -16px rgba(25,28,24,.25);
+    --measure:70ch;
+    --fs-1:.75rem; --fs-2:.82rem; --fs-3:.94rem; --fs-4:1.06rem;
+    --fs-5:1.35rem; --fs-6:1.75rem; --fs-8:3.4rem;
+    color-scheme:light;
+  }
+  @media (prefers-color-scheme:dark){
+    :root:not([data-theme="light"]){
+      --ground:#131612; --surface:#1A1E19; --surface-2:#20251F;
+      --ink:#E9EBE4; --ink-2:#C3C8BE; --muted:#959B91;
+      --rule:#2B302A; --rule-2:#3A4038;
+      --accent:#93B2E8; --accent-soft:#1D2634; --accent-ink:#B4CBF0;
+      --caution:#D6A44E; --caution-soft:#2A2418;
+      --positive:#83B78D; --positive-soft:#1A241C;
+      --negative:#D98C7C; --negative-soft:#2B1C19;
+      --shadow:0 1px 2px rgba(0,0,0,.4), 0 8px 24px -16px rgba(0,0,0,.7);
+      color-scheme:dark;
+    }
+  }
+  :root[data-theme="dark"]{
+    --ground:#131612; --surface:#1A1E19; --surface-2:#20251F;
+    --ink:#E9EBE4; --ink-2:#C3C8BE; --muted:#959B91;
+    --rule:#2B302A; --rule-2:#3A4038;
+    --accent:#93B2E8; --accent-soft:#1D2634; --accent-ink:#B4CBF0;
+    --caution:#D6A44E; --caution-soft:#2A2418;
+    --positive:#83B78D; --positive-soft:#1A241C;
+    --negative:#D98C7C; --negative-soft:#2B1C19;
+    --shadow:0 1px 2px rgba(0,0,0,.4), 0 8px 24px -16px rgba(0,0,0,.7);
+    color-scheme:dark;
+  }
+  *{box-sizing:border-box}
+  body{background:var(--ground);color:var(--ink);
+    font-family:"IBM Plex Sans",-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+    font-size:var(--fs-3);line-height:1.62;-webkit-font-smoothing:antialiased;margin:0}
+  h1,h2,h3,h4{font-family:Newsreader,Georgia,serif;text-wrap:balance;line-height:1.15;margin:0}
+  p,ul,ol{margin:0}
+  a{color:var(--accent);text-underline-offset:2px}
+  code{font-family:"IBM Plex Mono",ui-monospace,monospace;font-size:.9em;background:var(--surface-2);padding:.06em .32em;border-radius:2px}
+  .wrap{max-width:1180px;margin:0 auto;padding:3rem 1.5rem 6rem}
+  header.top{border-bottom:2px solid var(--ink);padding-bottom:1.5rem;margin-bottom:2.5rem}
+  .kicker{font-family:"IBM Plex Mono",monospace;font-size:var(--fs-1);letter-spacing:.14em;
+    text-transform:uppercase;color:var(--muted);margin-bottom:.6rem}
+  h1{font-size:var(--fs-8);letter-spacing:-.02em}
+  .standfirst{font-size:var(--fs-4);color:var(--ink-2);max-width:var(--measure);margin-top:1rem}
+  h2{font-size:var(--fs-6);margin:3.5rem 0 1rem;padding-top:1.25rem;border-top:1px solid var(--rule-2)}
+  h3{font-size:var(--fs-5);margin:2rem 0 .6rem}
+  p+p{margin-top:.85rem}
+  .prose{max-width:var(--measure)}
+  .lede{font-size:var(--fs-4);color:var(--ink-2)}
+  .callout{background:var(--surface);border:1px solid var(--rule);border-left:3px solid var(--accent);
+    border-radius:3px;padding:1.1rem 1.3rem;margin:1.5rem 0;box-shadow:var(--shadow);max-width:var(--measure)}
+  .callout.warn{border-left-color:var(--caution);background:var(--caution-soft)}
+  .callout.bad{border-left-color:var(--negative);background:var(--negative-soft)}
+  .callout.good{border-left-color:var(--positive);background:var(--positive-soft)}
+  .callout h4{font-size:var(--fs-4);margin-bottom:.4rem}
+  .tablewrap{overflow-x:auto;margin:1.5rem 0;border:1px solid var(--rule);border-radius:3px;background:var(--surface)}
+  table{border-collapse:collapse;width:100%;font-size:var(--fs-2);min-width:760px}
+  th{text-align:left;font-family:"IBM Plex Mono",monospace;font-size:var(--fs-1);
+    text-transform:uppercase;letter-spacing:.08em;color:var(--muted);
+    padding:.7rem .8rem;border-bottom:1px solid var(--rule-2);white-space:nowrap;background:var(--surface-2)}
+  td{padding:.7rem .8rem;border-bottom:1px solid var(--rule);vertical-align:top}
+  tr:last-child td{border-bottom:none}
+  .tag{font-family:"IBM Plex Mono",monospace;font-size:var(--fs-1);padding:.14em .5em;
+    border-radius:2px;white-space:nowrap;font-weight:500}
+  .t-dead{background:var(--negative-soft);color:var(--negative)}
+  .t-alive{background:var(--positive-soft);color:var(--positive)}
+  .t-mixed{background:var(--caution-soft);color:var(--caution)}
+  .quote{font-family:Newsreader,Georgia,serif;font-size:var(--fs-5);line-height:1.4;
+    border-left:3px solid var(--accent);padding:.2rem 0 .2rem 1.2rem;margin:1.5rem 0;
+    color:var(--ink);max-width:var(--measure)}
+  .quote cite{display:block;font-family:"IBM Plex Sans",sans-serif;font-size:var(--fs-2);
+    font-style:normal;color:var(--muted);margin-top:.6rem}
+  .grid{display:grid;gap:1rem;margin:1.5rem 0}
+  @media(min-width:760px){.grid.c2{grid-template-columns:1fr 1fr}.grid.c3{grid-template-columns:repeat(3,1fr)}}
+  .card{background:var(--surface);border:1px solid var(--rule);border-radius:3px;padding:1.1rem 1.2rem}
+  .card h4{font-size:var(--fs-4);margin-bottom:.35rem}
+  .stat{font-family:"IBM Plex Mono",monospace;font-size:var(--fs-6);font-weight:600;line-height:1;display:block}
+  .stat-lbl{font-size:var(--fs-2);color:var(--muted);margin-top:.35rem;display:block}
+  ul.tight{padding-left:1.15rem}
+  ul.tight li{margin-bottom:.4rem}
+  .meta{font-size:var(--fs-2);color:var(--muted)}
+  .mapfig{margin:2rem 0;padding:0}
+<style>
+  .mapfig{margin:1.8rem 0}
+  .mapfig svg{max-width:100%;height:auto;display:block;background:var(--surface);
+    border:1px solid var(--rule);border-radius:3px;padding:.5rem}
+  figcaption{font-size:var(--fs-2);color:var(--muted);margin-top:.7rem;max-width:var(--measure)}
+  .sec{font-family:"IBM Plex Mono",monospace;font-size:var(--fs-1);letter-spacing:.1em;
+    text-transform:uppercase;color:var(--muted);margin:2rem 0 .5rem}
+</style>
+
+<div class="wrap">
+<header class="top">
+  <div class="kicker">high-mix-manufacturing · industry overview · 2026-09-02</div>
+  <h1>HMLV Industry Map</h1>
+  <p class="standfirst">The consumer side of high-mix low-volume manufacturing: which categories can actually support a factory-in-a-showroom, why the UK has a made-to-measure market and the US doesn't, and every company found across this idea's research. Built to choose a hunch from.</p>
+</header>
+
+<div class="callout">
+  <h4>How to read this</h4>
+  <p>The <strong>map</strong> scores consumer categories on what makes a showroom factory work. The <strong>UK vs US section</strong> answers whether an American version of the British made-to-measure market can exist. The <strong>table</strong> holds every company with outcomes and causes.</p>
+  <p class="meta" style="margin-top:.5rem">The B2B map was removed on 2026-09-02 — its axes restated the asset model twice and the focus is the consumer side for now. B2B companies remain in the table.</p>
+  <p class="meta" style="margin-top:.6rem">Cause-of-death detail and sources: <a href="predecessors.html">Predecessors and Survivors</a>. This page holds positions; that one holds why.</p>
+</div>
+
+<h2>The consumer map</h2>
+<div class="prose"><p class="lede">Not companies this time — <strong>categories</strong>, scored on what actually makes a factory-in-a-showroom work. Every proven example clears the same two tests.</p></div>
+
+<figure class="mapfig">
+<svg viewBox="0 0 900 580" role="img" aria-label="Map of consumer categories by whether the specification is taste-driven or measured from the customer, and whether it can be made same-visit on a cheap machine or needs a plant. The working zone is measured plus cheap and fast, containing eyewear, dental crowns, framing, orthotics and hearing aids." xmlns="http://www.w3.org/2000/svg">
+  <defs><marker id="a2" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="currentColor"/></marker></defs>
+
+  <rect x="470" y="60" width="400" height="215" fill="var(--positive-soft)" opacity=".55" rx="3"/>
+  <rect x="150" y="300" width="310" height="200" fill="var(--negative-soft)" opacity=".45" rx="3"/>
+
+  <line x1="465" y1="55" x2="465" y2="505" stroke="currentColor" stroke-opacity=".25"/>
+  <line x1="145" y1="290" x2="875" y2="290" stroke="currentColor" stroke-opacity=".25"/>
+
+  <line x1="145" y1="525" x2="875" y2="525" stroke="currentColor" stroke-opacity=".45" marker-end="url(#a2)"/>
+  <text x="290" y="547" text-anchor="middle" font-size="12" fill="currentColor" opacity=".8">spec comes from taste — they choose it</text>
+  <text x="670" y="547" text-anchor="middle" font-size="12" fill="currentColor" opacity=".8">spec comes from measuring them or their space</text>
+  <text x="140" y="150" text-anchor="end" font-size="12" fill="currentColor" opacity=".8">cheap machine,</text>
+  <text x="140" y="166" text-anchor="end" font-size="12" fill="currentColor" opacity=".8">same visit</text>
+  <text x="140" y="420" text-anchor="end" font-size="12" fill="currentColor" opacity=".8">needs a plant,</text>
+  <text x="140" y="436" text-anchor="end" font-size="12" fill="currentColor" opacity=".8">takes days</text>
+
+  <text x="670" y="88" text-anchor="middle" font-size="14" font-weight="600" fill="var(--positive)">THE WORKING ZONE — every proven example is here</text>
+  <text x="305" y="490" text-anchor="middle" font-size="13" font-weight="600" fill="var(--negative)">the D2C graveyard</text>
+
+  <g font-size="12">
+    <rect x="490" y="105" width="175" height="26" rx="3" fill="var(--surface)" stroke="var(--positive)" stroke-width="2"/><text x="577" y="122" text-anchor="middle" fill="var(--positive)" font-weight="600">prescription eyewear</text>
+    <rect x="490" y="141" width="175" height="26" rx="3" fill="var(--surface)" stroke="var(--positive)" stroke-width="2"/><text x="577" y="158" text-anchor="middle" fill="var(--positive)" font-weight="600">dental crowns</text>
+    <rect x="490" y="177" width="175" height="26" rx="3" fill="var(--surface)" stroke="var(--positive)"/><text x="577" y="194" text-anchor="middle" fill="var(--positive)">custom framing</text>
+    <rect x="490" y="213" width="175" height="26" rx="3" fill="var(--surface)" stroke="var(--positive)"/><text x="577" y="230" text-anchor="middle" fill="var(--positive)">hearing aids</text>
+    <rect x="690" y="105" width="170" height="26" rx="3" fill="var(--surface)" stroke="var(--positive)"/><text x="775" y="122" text-anchor="middle" fill="var(--positive)">orthotics / insoles</text>
+    <rect x="690" y="141" width="170" height="26" rx="3" fill="var(--surface)" stroke="var(--positive)"/><text x="775" y="158" text-anchor="middle" fill="var(--positive)">signage</text>
+    <rect x="690" y="195" width="170" height="42" rx="3" fill="var(--accent-soft)" stroke="var(--accent)" stroke-width="2"/><text x="775" y="212" text-anchor="middle" fill="var(--accent-ink)" font-weight="600">window coverings</text><text x="775" y="228" text-anchor="middle" fill="var(--accent-ink)" font-size="11">84% still bought offline</text>
+
+    <rect x="490" y="320" width="175" height="26" rx="3" fill="var(--surface)" stroke="var(--caution)"/><text x="577" y="337" text-anchor="middle" fill="var(--caution)">closet systems</text>
+    <rect x="490" y="356" width="175" height="26" rx="3" fill="var(--surface)" stroke="var(--caution)"/><text x="577" y="373" text-anchor="middle" fill="var(--caution)">fitted cabinetry</text>
+    <rect x="690" y="320" width="170" height="26" rx="3" fill="var(--surface)" stroke="var(--caution)"/><text x="775" y="337" text-anchor="middle" fill="var(--caution)">countertops</text>
+    <rect x="690" y="356" width="170" height="26" rx="3" fill="var(--surface)" stroke="var(--caution)"/><text x="775" y="373" text-anchor="middle" fill="var(--caution)">sliding wardrobes</text>
+
+    <rect x="175" y="105" width="175" height="26" rx="3" fill="var(--surface)" stroke="var(--muted)"/><text x="262" y="122" text-anchor="middle" fill="var(--muted)">engraving / trophies</text>
+    <rect x="175" y="141" width="175" height="26" rx="3" fill="var(--surface)" stroke="var(--muted)"/><text x="262" y="158" text-anchor="middle" fill="var(--muted)">personalised gifts</text>
+    <rect x="175" y="177" width="175" height="26" rx="3" fill="var(--surface)" stroke="var(--muted)"/><text x="262" y="194" text-anchor="middle" fill="var(--muted)">printed apparel</text>
+    <rect x="175" y="213" width="175" height="42" rx="3" fill="var(--surface-2)" stroke="var(--muted)"/><text x="262" y="230" text-anchor="middle" fill="var(--muted)">Build-A-Bear</text><text x="262" y="246" text-anchor="middle" fill="var(--muted)" font-size="11">owns no factories</text>
+
+    <rect x="175" y="330" width="160" height="26" rx="3" fill="var(--surface)" stroke="var(--negative)"/><text x="255" y="347" text-anchor="middle" fill="var(--negative)">Made.com †</text>
+    <rect x="175" y="366" width="160" height="26" rx="3" fill="var(--surface)" stroke="var(--negative)"/><text x="255" y="383" text-anchor="middle" fill="var(--negative)">Casper †</text>
+    <rect x="175" y="402" width="160" height="26" rx="3" fill="var(--surface)" stroke="var(--negative)"/><text x="255" y="419" text-anchor="middle" fill="var(--negative)">Interior Define †</text>
+    <rect x="175" y="438" width="160" height="26" rx="3" fill="var(--surface)" stroke="var(--negative)"/><text x="255" y="455" text-anchor="middle" fill="var(--negative)">Model No. †</text>
+  </g>
+
+  <g font-size="12">
+    <rect x="145" y="18" width="14" height="14" rx="2" fill="var(--surface)" stroke="var(--positive)" stroke-width="2"/><text x="167" y="30" fill="currentColor">proven at scale</text>
+    <rect x="290" y="18" width="14" height="14" rx="2" fill="var(--accent-soft)" stroke="var(--accent)" stroke-width="2"/><text x="312" y="30" fill="currentColor">clears the tests, nobody doing it in-store</text>
+    <rect x="600" y="18" width="14" height="14" rx="2" fill="var(--surface)" stroke="var(--caution)"/><text x="622" y="30" fill="currentColor">measured, but too slow / too big a machine</text>
+  </g>
+</svg>
+<figcaption>The working zone is the top right: the spec is measured off the customer, and the thing can be made on a cheap machine while they wait. Everything with a forty-year track record sits there. The D2C graveyard sits diagonally opposite.</figcaption>
+</figure>
+
+<div class="grid c2">
+  <div class="card"><h4>Why the top-right works</h4>
+    <p style="font-size:var(--fs-2)"><strong>LensCrafters</strong>, 1983: on-site grinding lab, "glasses in about an hour", ~900 in-store labs. By 1989 — 350 stores, <strong>$532M sales and $30M net income, roughly 40% of its parent's entire operating earnings.</strong></p>
+    <p style="font-size:var(--fs-2);margin-top:.5rem"><strong>CEREC</strong>: ~$150k per site, <strong>38,000+ practices</strong>, 50% less chair time, 35% higher practice profitability. That is the replication maths working.</p>
+  </div>
+  <div class="card"><h4>Why the bottom-left dies</h4>
+    <p style="font-size:var(--fs-2)">Taste-driven spec, shipped from a plant. The customer does the specifying work — and the mass-customisation research says that effort <em>itself</em> destroys the price premium. Then you pay CAC on top. Casper lost ~$300 a unit.</p>
+  </div>
+  <div class="card"><h4>The trap in the top-left</h4>
+    <p style="font-size:var(--fs-2)"><strong>Build-A-Bear does not operate any factories</strong> — $486M revenue, ~$70M operating income, 77% of goods from five vendors. Manufacturing-as-theatre works <em>while the manufacturing is fake</em>. If the customisation is taste rather than fit, an autonomous factory is expensive set dressing.</p>
+  </div>
+  <div class="card"><h4>The bottom-right problem</h4>
+    <p style="font-size:var(--fs-2)">Closets, cabinets, countertops are properly measured — but the machine is too big for a showroom and the job takes days. That is where <em>fitted furniture</em> actually sits, and it is why this is a distribution business rather than a same-visit one.</p>
+  </div>
+</div>
+
+<div class="callout">
+  <h4>The five conditions, and who clears them</h4>
+  <div class="tablewrap" style="margin-top:.8rem"><table>
+  <tr><th>Category</th><th>Measured, not chosen</th><th>Machine ≤$200k</th><th>Same visit</th><th>Alternative is worse</th><th>Ticket carries rent</th></tr>
+  <tr><td><strong>Prescription eyewear</strong></td><td>✓</td><td>✓</td><td>✓</td><td>✓ week-long mail lab</td><td>✓</td></tr>
+  <tr><td><strong>Dental crowns</strong></td><td>✓</td><td>✓ $150k</td><td>✓</td><td>✓ two visits + temporary</td><td>✓</td></tr>
+  <tr><td><strong>Window coverings</strong></td><td>✓</td><td>✓ cut to length</td><td>✓ plausible</td><td>~ 2–3 week wait</td><td>✓</td></tr>
+  <tr><td>Custom framing</td><td>✓</td><td>✓</td><td>✓</td><td>~</td><td>~</td></tr>
+  <tr><td>Orthotics</td><td>✓</td><td>✓</td><td>✓</td><td>✓</td><td>~</td></tr>
+  <tr><td>Closets / cabinetry</td><td>✓</td><td>✗</td><td>✗</td><td>~</td><td>✓</td></tr>
+  <tr><td>Countertops</td><td>✓</td><td>✗</td><td>✗</td><td>~</td><td>✓</td></tr>
+  <tr><td>Freestanding furniture</td><td>✗</td><td>✗</td><td>✗</td><td>✗</td><td>✗</td></tr>
+  </table></div>
+  <p class="meta" style="margin-top:.7rem"><strong>Window coverings is the only row that clears everything and has nobody doing it in-store.</strong> Made-to-measure by definition, 84% still bought offline, and the manufacturing is genuinely simple — cut to width, assemble a headrail. The industry runs on centralised plants shipping to installers, not showroom factories.</p>
+</div>
+
+<div class="callout warn">
+  <h4>The one thing with no precedent: autonomy</h4>
+  <p>LensCrafters has technicians. CEREC has a dentist. Every working example on this map has a <strong>skilled person between the customer and the machine.</strong> "Fully autonomous" is the part of the vision nobody has done — which makes it either the actual innovation, or the reason it hasn't happened.</p>
+</div>
+
+<h2>Why the UK has this market and the US doesn't</h2>
+<div class="prose">
+<p class="lede">Three separate searches turned up the same shape: a deep UK made-to-measure market, and almost nothing equivalent in the US. That is either the opportunity or the reason to walk away — so it was worth settling.</p>
+<p><strong>It is structural.</strong> The UK market exists because of specific conditions the US does not share.</p>
+</div>
+
+<div class="tablewrap"><table>
+<tr><th>&nbsp;</th><th>United Kingdom</th><th>United States</th><th>Effect on made-to-measure demand</th></tr>
+<tr><td><strong>Home size</strong></td><td><strong>818 sq ft</strong> average — smallest homes in Europe (76m² new-build vs Denmark's 137m²)</td><td><strong>2,164 sq ft</strong> average — nearly <strong>3×</strong></td><td>In 818 sq ft every inch must work. Fitted beats freestanding because there is no room to waste. At 2,164 sq ft you buy furniture and put it somewhere.</td></tr>
+<tr><td><strong>Built-in closets</strong></td><td><strong>Essentially none.</strong> Thick stone and timber walls made recessed closets impractical; exterior-wall closets meant damp and mould; property tax counted rooms; built-ins read as "utilitarian, even cheap"</td><td><strong>Standard in every home</strong></td><td><strong>This is the big one.</strong> A British homeowner with no closet must buy a wardrobe or have one fitted. An American already has one.</td></tr>
+<tr><td><strong>Housing age</strong></td><td>Median build period <strong>1955–1964</strong>. Oldest housing stock in Europe. Victorian stock has "complex and irregular floor plans… different shapes, angles, and projections"</td><td>Median owner-occupied home <strong>42 years</strong> old (~1983)</td><td>Older and more irregular means fewer standard sizes fit, so more must be made to measure.</td></tr>
+<tr><td><strong>Standardisation</strong></td><td>Historically fragmented, codified late</td><td><strong>Uniform Building Code, 1927</strong> — standardised room dimensions across cities early</td><td>US rooms and openings cluster on standard dimensions. Catalogue sizes fit.</td></tr>
+<tr><td><strong>Resulting market</strong></td><td>£19.5bn furniture retail; bespoke segment highly fragmented — top four firms are only ~10% of revenue</td><td>Custom closets ~$6bn; ~14m households installing or upgrading a year</td><td>Different <em>jobs</em>, not just different sizes — see below.</td></tr>
+</table></div>
+
+<div class="callout bad">
+  <h4>The bear case, and it is strong</h4>
+  <p>The empty US made-to-measure market is <strong>empty for a reason</strong>. Britain buys fitted furniture because its homes are a third the size, decades older, structurally irregular, and <em>come without any built-in storage at all</em>. America standardised room dimensions in 1927 and puts a closet in every bedroom.</p>
+  <p style="margin-top:.6rem">"Nobody has built Cutwrights for America" is not a gap waiting to be filled. It is a market that is smaller because the houses are different.</p>
+</div>
+
+<div class="callout good">
+  <h4>The nuance that saves part of it</h4>
+  <p>Americans <strong>do</strong> buy fitted storage — roughly <strong>$6bn a year in custom closets, ~14 million households</strong> installing or upgrading. So the demand is not absent. <strong>The job is different:</strong></p>
+  <ul class="tight" style="margin-top:.6rem">
+    <li><strong>UK job:</strong> "I have no storage. Build me some." — the whole object is bespoke</li>
+    <li><strong>US job:</strong> "My closet exists but the inside of it is bad." — a fitted <em>interior</em> in a standard opening</li>
+  </ul>
+  <p style="margin-top:.6rem">That second job is a genuinely different product: fewer variables, more repeatable, standard depths and heights, varying mainly in width and configuration. Which is <em>better</em> for an automated factory, not worse — and it is why Barker, CabinetNow, California Closets and the Container Store all survive in the US while the mail-order custom-furniture brands died.</p>
+</div>
+
+<div class="callout warn">
+  <h4>And US housing is ageing</h4>
+  <p>The median US home is now <strong>42 years old, up from 31 in 2005</strong>, and <strong>47% are at least 45 years old — up from 39% in 2014</strong>. Older stock is less standard. This is a slow tailwind, not a reason on its own, but it points the right way.</p>
+</div>
+
+<h2>Everything, in one table</h2>
+<div class="tablewrap"><table>
+<tr><th>Company</th><th>Side</th><th>What they do / did</th><th>Asset model</th><th>Outcome</th></tr>
+<tr><td><strong>Protolabs</strong> 1999–</td><td>B2B</td><td>CAD upload → firm quote in minutes → toolpaths → parts. CNC $70.4M/qtr and fastest growing; 3D printing shrinking −2.6%</td><td>owns ~1M sq ft</td><td><span class="tag t-alive">$501M FY25</span></td></tr>
+<tr><td><strong>Xometry</strong> 2013–</td><td>B2B</td><td>Marketplace, 5,000+ shops, CNC/sheet/IM/3DP</td><td>asset-light</td><td><span class="tag t-alive">$687M FY25, +41%</span></td></tr>
+<tr><td><strong>SendCutSend</strong> 2018–</td><td>B2B</td><td>Laser, router, waterjet. Metal, plastics, composites, wood. NV/KY/TX</td><td>owns factories</td><td><span class="tag t-alive">~$200M, $1B val, out of capacity</span></td></tr>
+<tr><td><strong>OSH Cut</strong></td><td>B2B</td><td>Sheet metal to 1″; ~9× SendCutSend's material range</td><td>owns</td><td><span class="tag t-alive">alive</span></td></tr>
+<tr><td>Fabworks</td><td>B2B</td><td>Instant quote, lead time and auto-configuration</td><td>owns</td><td><span class="tag t-alive">alive</span></td></tr>
+<tr><td>Ponoko</td><td>B2B</td><td>Non-metal materials, small rush orders</td><td>owns</td><td><span class="tag t-alive">alive</span></td></tr>
+<tr><td>Fictiv</td><td>B2B</td><td>Managed network</td><td>asset-light</td><td><span class="tag t-mixed">$200M raised, ~$300M post</span></td></tr>
+<tr><td>Jiga</td><td>B2B</td><td>Keeps the manufacturer in the loop; AI on the admin</td><td>asset-light</td><td><span class="tag t-mixed">alive, small</span></td></tr>
+<tr><td><strong>Cutwrights</strong> 2009–</td><td>B2B/C</td><td>Cut, edged, drilled panels. 24/7 instant quotes, 3–5 day lead. UK</td><td>owns</td><td><span class="tag t-alive">alive</span></td></tr>
+<tr><td>Cutr</td><td>B2B</td><td>Wood manufacturing marketplace + SaaS. NL</td><td>asset-light</td><td><span class="tag t-alive">alive</span></td></tr>
+<tr><td><strong>Shapeways</strong> 2007–2024</td><td>B2B/C</td><td>Owned printers + marketplace. 21M parts, 1M customers, 160 countries</td><td>owns + marketplace</td><td><span class="tag t-dead">Chapter 7 2024</span></td></tr>
+<tr><td><strong>Made.com</strong></td><td>B2C</td><td>Catalogue furniture, better lead times, Asian contract factories</td><td>asset-light</td><td><span class="tag t-dead">£775M → £3.4M</span></td></tr>
+<tr><td><strong>Interior Define</strong></td><td>B2C</td><td>Custom sofas, configurator, contract factories</td><td>asset-light</td><td><span class="tag t-dead">ABC 2022–23</span></td></tr>
+<tr><td><strong>Model No.</strong></td><td>B2C</td><td>Parametric configurator, LFAM + CNC, owned Oakland plant</td><td>owns</td><td><span class="tag t-dead">absorbed by supplier</span></td></tr>
+<tr><td><strong>Fab.com / Hem</strong></td><td>B2C</td><td>Flash sales → custom furniture, vertical integration as late rescue</td><td>owns (late)</td><td><span class="tag t-dead">$336M → $15M</span></td></tr>
+<tr><td><strong>Casper</strong></td><td>B2C</td><td>D2C mattresses</td><td>asset-light</td><td><span class="tag t-dead">−$300/unit, sold below raised</span></td></tr>
+<tr><td>Reflect.com (P&amp;G)</td><td>B2C</td><td>Mass-customised personal care</td><td>corporate</td><td><span class="tag t-dead">closed</span></td></tr>
+<tr><td>Original Spin (Levi's)</td><td>B2C</td><td>Custom-fit jeans</td><td>corporate</td><td><span class="tag t-dead">closed</span></td></tr>
+<tr><td>Inside Weather</td><td>B2C</td><td>On-demand configurable furniture, Bay Area workshop</td><td>owns</td><td><span class="tag t-mixed">alive, small</span></td></tr>
+<tr><td>Opendesk / 100kGarages</td><td>B2C</td><td>Distributed fabrication, 500+ workshops</td><td>asset-light</td><td><span class="tag t-mixed">alive, small</span></td></tr>
+<tr><td><strong>Barker Cabinets</strong></td><td>B2C</td><td>Custom-sized RTA cabinets ordered online, US-made</td><td>owns</td><td><span class="tag t-alive">alive</span></td></tr>
+<tr><td><strong>CabinetNow</strong></td><td>B2C</td><td>Custom-sized cabinet boxes and doors, instant pricing</td><td>owns</td><td><span class="tag t-alive">alive</span></td></tr>
+<tr><td><strong>California Closets</strong></td><td>B2C</td><td>Fitted closets, ⅔ franchised, ~$4.6M avg gross per franchise</td><td>franchise + owns</td><td><span class="tag t-alive">alive</span></td></tr>
+<tr><td><strong>Container Store</strong></td><td>B2C</td><td>Elfa + Closet Works; betting on Custom Spaces</td><td>owns</td><td><span class="tag t-alive">$1B+ sales</span></td></tr>
+<tr><td>Sears Kit Homes 1908–40</td><td>B2C</td><td>Pre-cut kit houses by rail, 70–75k sold, own mortgages</td><td>owns</td><td><span class="tag t-dead">financing arm collapsed</span></td></tr>
+<tr><td>Lustron 1948–50</td><td>B2C</td><td>All-steel prefab houses</td><td>owns</td><td><span class="tag t-dead">cost + delivery</span></td></tr>
+<tr><td>Operation Breakthrough 1969–73</td><td>gov</td><td>HUD industrialised housing programme</td><td>—</td><td><span class="tag t-dead">phased out</span></td></tr>
+<tr><td><strong>Katerra</strong> 2015–21</td><td>B2B</td><td>Fully vertically integrated construction — down to its own lightbulbs</td><td>owns everything</td><td><span class="tag t-dead">~$3bn destroyed</span></td></tr>
+<tr><td><strong>Veev</strong> 2008–23</td><td>B2C</td><td>Modular homes, ~170 units built</td><td>owns</td><td><span class="tag t-dead">$600M raised, ABC</span></td></tr>
+<tr><td><strong>Sekisui · Daiwa · Toyota Home</strong></td><td>B2C</td><td>Factory-built housing, high customisation, <em>premium</em> positioning</td><td>owns</td><td><span class="tag t-alive">decades, at scale</span></td></tr>
+</table></div>
+
+<h2>What the whole map says</h2>
+<div class="grid c2">
+  <div class="card"><h4>1. Both asset models work</h4><p style="font-size:var(--fs-2)">Xometry brokers and Protolabs owns; both are large and growing. Ownership is not a necessity, it is a margin choice — 44% vs 35.7%. Shapeways sat between the two and died.</p></div>
+  <div class="card"><h4>2. Consumer custom only works two ways</h4><p style="font-size:var(--fs-2)">Surface personalisation, or fitted-and-installed. Engineered geometry shipped as a parcel is a graveyard, and the academic research explains why: buyers won't pay a premium, and the specification effort is itself a cost.</p></div>
+  <div class="card"><h4>3. The demand signal is on the B2B side</h4><p style="font-size:var(--fs-2)">One company 35,000 overtime hours past capacity, spending $250M to expand, funded by Sequoia because it was turning orders away. Driver: AI physical infrastructure — data centres, robotics, aerospace, defence.</p></div>
+  <div class="card"><h4>4. Every incumbent stops at the same place</h4><p style="font-size:var(--fs-2)">Rule-based DFM rejects threads, internal radii, undercuts, thin walls and special tolerances into a 2–24 hour manual queue. "Often rejecting features that skilled machinists could easily manufacture."</p></div>
+</div>
+
+<div class="callout">
+  <h4>Which hunch this points at</h4>
+  <p>Nothing on this map supports a consumer furniture play. Two things it does support: <strong>the rejected-geometry slice</strong> on the B2B side, and <strong>fitted-and-installed</strong> on the consumer side, which is the only consumer quadrant with living companies in it.</p>
+  <p class="meta" style="margin-top:.6rem">Cheapest test of the first: upload a set of deliberately awkward parts to SendCutSend, OSH Cut and Xometry and count how many instant-quote versus get kicked to manual. An afternoon, no interviews, direct measurement of the gap.</p>
+</div>
+
+<footer>
+  <p><strong>Sources and limits.</strong> Assembled from web research across this idea's sessions, plus two direct forum fetches. Company positions are judgement calls from public information, not a database. Revenue figures are the most recent found and may be a quarter stale. No company on this map has been interviewed. Cause-of-death detail and every source link: <a href="predecessors.html">Predecessors and Survivors</a>.</p>
+</footer>
+</div>

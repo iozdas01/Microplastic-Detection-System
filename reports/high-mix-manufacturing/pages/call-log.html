@@ -1,0 +1,661 @@
+<title>Discovery Call Log</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,500;6..72,600&family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap">
+
+<style>
+  :root{
+    --ground:#F5F5F1; --surface:#FFFFFF; --surface-2:#EFEFE9; --sunk:#E7E7E0;
+    --ink:#191C18; --ink-2:#3D423B; --muted:#6A7067; --faint:#8B9188;
+    --rule:#DEE0D7; --rule-2:#C9CCC1;
+    --accent:#28457F; --accent-soft:#E4E9F3; --accent-ink:#1D3560;
+    --good:#3B6B46; --good-soft:#E4EDE5;
+    --warn:#8A6110; --warn-soft:#F5EDDD;
+    --bad:#8C3B2F;  --bad-soft:#F5E7E4;
+    --live:#B4241C;
+    --display:Newsreader,Georgia,serif;
+    --ui:"IBM Plex Sans",-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+    --mono:"IBM Plex Mono",ui-monospace,SFMono-Regular,Menlo,monospace;
+    color-scheme:light;
+  }
+  @media (prefers-color-scheme:dark){
+    :root:not([data-theme="light"]){
+      --ground:#131612; --surface:#1A1E19; --surface-2:#20251F; --sunk:#0F120E;
+      --ink:#E9EBE4; --ink-2:#C3C8BE; --muted:#959B91; --faint:#7C837A;
+      --rule:#2B302A; --rule-2:#3A4038;
+      --accent:#93B2E8; --accent-soft:#1D2634; --accent-ink:#B4CBF0;
+      --good:#83B78D; --good-soft:#19241B;
+      --warn:#D6A44E; --warn-soft:#2A2418;
+      --bad:#D98C7C;  --bad-soft:#2B1C19;
+      --live:#F1685E;
+      color-scheme:dark;
+    }
+  }
+  :root[data-theme="dark"]{
+    --ground:#131612; --surface:#1A1E19; --surface-2:#20251F; --sunk:#0F120E;
+    --ink:#E9EBE4; --ink-2:#C3C8BE; --muted:#959B91; --faint:#7C837A;
+    --rule:#2B302A; --rule-2:#3A4038;
+    --accent:#93B2E8; --accent-soft:#1D2634; --accent-ink:#B4CBF0;
+    --good:#83B78D; --good-soft:#19241B;
+    --warn:#D6A44E; --warn-soft:#2A2418;
+    --bad:#D98C7C;  --bad-soft:#2B1C19;
+    --live:#F1685E;
+    color-scheme:dark;
+  }
+
+  *{box-sizing:border-box}
+  body{background:var(--ground);color:var(--ink);font-family:var(--ui);
+       font-size:15px;line-height:1.55;-webkit-font-smoothing:antialiased;margin:0}
+  h1,h2,h3{font-family:var(--display);font-weight:600;margin:0;line-height:1.15;text-wrap:balance}
+  p{margin:0}
+  button,input,select,textarea{font:inherit;color:inherit}
+  :focus-visible{outline:2px solid var(--accent);outline-offset:2px;border-radius:3px}
+  @media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+
+  .wrap{max-width:1180px;margin:0 auto;padding:0 clamp(.9rem,3vw,2rem) 4rem}
+
+  header{display:flex;flex-wrap:wrap;gap:1rem;align-items:flex-end;justify-content:space-between;
+         padding:1.6rem 0 1rem;border-bottom:1px solid var(--rule);margin-bottom:1.2rem}
+  header h1{font-size:1.65rem;letter-spacing:-.015em}
+  .eyebrow{font-family:var(--mono);font-size:.68rem;letter-spacing:.13em;text-transform:uppercase;
+           color:var(--faint);margin-bottom:.3rem}
+  .hcount{font-family:var(--mono);font-size:.78rem;color:var(--muted);display:flex;gap:.9rem;flex-wrap:wrap}
+  .hcount b{color:var(--ink);font-weight:600}
+
+  .tabs{display:flex;gap:2px;background:var(--rule);border:1px solid var(--rule);
+        border-radius:5px;padding:2px;margin-bottom:1.3rem;width:fit-content}
+  .tabs button{background:transparent;border:0;padding:.45rem 1rem;border-radius:3px;cursor:pointer;
+        font-family:var(--mono);font-size:.75rem;letter-spacing:.06em;text-transform:uppercase;color:var(--muted)}
+  .tabs button[aria-selected="true"]{background:var(--surface);color:var(--ink);font-weight:600}
+
+  .grid{display:grid;gap:1.1rem}
+  @media(min-width:1000px){.grid.two{grid-template-columns:minmax(0,1.35fr) minmax(0,1fr);align-items:start}}
+
+  .card{background:var(--surface);border:1px solid var(--rule);border-radius:6px;padding:1.05rem 1.1rem}
+  .card + .card{margin-top:1.1rem}
+  .card h2{font-size:1.05rem;margin-bottom:.15rem}
+  .card .hint{font-size:.8rem;color:var(--muted);margin-bottom:.85rem}
+
+  label{display:block;font-family:var(--mono);font-size:.68rem;letter-spacing:.07em;
+        text-transform:uppercase;color:var(--faint);margin:0 0 .25rem}
+  input,select,textarea{width:100%;background:var(--ground);border:1px solid var(--rule-2);
+        border-radius:4px;padding:.5rem .6rem;font-size:.92rem}
+  textarea{resize:vertical;min-height:74px;line-height:1.5}
+  input:focus,select:focus,textarea:focus{background:var(--surface)}
+  .row{display:grid;gap:.7rem;margin-bottom:.7rem}
+  @media(min-width:520px){.row.c2{grid-template-columns:1fr 1fr}.row.c3{grid-template-columns:1fr 1fr 1fr}}
+
+  .q{border-top:1px solid var(--rule);padding-top:.8rem;margin-top:.8rem}
+  .q:first-of-type{border-top:0;margin-top:0;padding-top:0}
+  .q .ask{font-size:.95rem;color:var(--ink-2);margin-bottom:.5rem;display:flex;gap:.55rem}
+  .q .n{font-family:var(--mono);font-size:.72rem;color:var(--accent);font-weight:600;padding-top:.16rem;flex:none}
+
+  .btn{background:var(--accent);color:#fff;border:0;border-radius:4px;padding:.55rem 1rem;
+       font-weight:600;font-size:.88rem;cursor:pointer}
+  :root:not([data-theme="light"]) .btn{color:#0F1520}
+  @media (prefers-color-scheme:light){.btn{color:#fff}}
+  .btn.ghost{background:transparent;color:var(--muted);border:1px solid var(--rule-2);font-weight:500}
+  .btn.danger{background:transparent;color:var(--bad);border:1px solid var(--rule-2);font-weight:500}
+  .btn:disabled{opacity:.45;cursor:not-allowed}
+  .actions{display:flex;gap:.55rem;flex-wrap:wrap;margin-top:1rem;padding-top:.9rem;border-top:1px solid var(--rule)}
+
+  /* dictation */
+  .mic{display:flex;align-items:center;gap:.7rem;background:var(--surface-2);border:1px solid var(--rule);
+       border-radius:5px;padding:.6rem .75rem;margin-bottom:.7rem;flex-wrap:wrap}
+  .mic button{border:0;border-radius:999px;width:38px;height:38px;cursor:pointer;flex:none;
+       background:var(--accent);color:#fff;font-size:1rem;line-height:1}
+  .mic button.on{background:var(--live);animation:pulse 1.4s ease-in-out infinite}
+  @keyframes pulse{0%,100%{box-shadow:0 0 0 0 rgba(180,36,28,.45)}50%{box-shadow:0 0 0 7px rgba(180,36,28,0)}}
+  .mic .lbl{font-family:var(--mono);font-size:.72rem;color:var(--muted);flex:1;min-width:120px}
+  .mic .lbl b{color:var(--ink)}
+  .interim{color:var(--faint);font-style:italic}
+
+  /* dashboard */
+  .crit{border:1px solid var(--rule);border-radius:5px;padding:.8rem .9rem;margin-bottom:.7rem;background:var(--surface)}
+  .crit .top{display:flex;justify-content:space-between;gap:.8rem;align-items:baseline;margin-bottom:.35rem}
+  .crit .name{font-size:.92rem;font-weight:600}
+  .crit .val{font-family:var(--mono);font-size:1.05rem;font-weight:600;font-variant-numeric:tabular-nums;white-space:nowrap}
+  .crit .thr{font-family:var(--mono);font-size:.7rem;color:var(--faint)}
+  .crit .track{height:6px;background:var(--sunk);border-radius:3px;overflow:hidden;margin-top:.45rem}
+  .crit .track i{display:block;height:100%;border-radius:3px}
+  .crit.ok .val{color:var(--good)} .crit.ok .track i{background:var(--good)}
+  .crit.warnst .val{color:var(--warn)} .crit.warnst .track i{background:var(--warn)}
+  .crit.stop .val{color:var(--bad)} .crit.stop .track i{background:var(--bad)}
+  .crit.none .val{color:var(--faint)} .crit.none .track i{background:var(--rule-2)}
+  .pill{display:inline-block;font-family:var(--mono);font-size:.62rem;letter-spacing:.07em;
+        text-transform:uppercase;padding:.1rem .4rem;border-radius:3px;font-weight:600}
+  .pill.ok{background:var(--good-soft);color:var(--good)}
+  .pill.warnst{background:var(--warn-soft);color:var(--warn)}
+  .pill.stop{background:var(--bad-soft);color:var(--bad)}
+  .pill.none{background:var(--surface-2);color:var(--faint)}
+
+  table{border-collapse:collapse;width:100%;font-size:.83rem}
+  th,td{text-align:left;padding:.45rem .6rem;border-bottom:1px solid var(--rule);vertical-align:top}
+  th{font-family:var(--mono);font-size:.65rem;letter-spacing:.07em;text-transform:uppercase;
+     color:var(--faint);font-weight:500;white-space:nowrap;background:var(--surface-2)}
+  td.num{font-family:var(--mono);font-variant-numeric:tabular-nums;white-space:nowrap}
+  .scroll{overflow-x:auto;border:1px solid var(--rule);border-radius:5px;background:var(--surface)}
+  tbody tr:last-child td{border-bottom:0}
+  tbody tr.sel{background:var(--accent-soft)}
+
+  .empty{color:var(--muted);font-size:.88rem;padding:1.4rem .2rem;text-align:center}
+  .warnbox{background:var(--warn-soft);border:1px solid var(--warn);border-radius:5px;
+           padding:.7rem .85rem;font-size:.82rem;color:var(--ink-2);margin-bottom:1rem}
+  .warnbox b{color:var(--warn)}
+  .editnote{font-family:var(--mono);font-size:.7rem;color:var(--warn);align-self:center}
+  .foot{font-family:var(--mono);font-size:.7rem;color:var(--faint);margin-top:1.6rem;
+        padding-top:.9rem;border-top:1px solid var(--rule);line-height:1.7}
+</style>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.js"></script>
+<style>
+  #map{height:340px;border-radius:3px;border:1px solid var(--rule);margin-top:.5rem}
+  .rec{display:flex;gap:.5rem;align-items:center;flex-wrap:wrap;margin-top:.5rem}
+  .rec button{cursor:pointer}
+  .rec .dot{width:10px;height:10px;border-radius:50%;background:#c0392b;display:none}
+  .rec.on .dot{display:inline-block;animation:pulse 1s infinite}
+  @keyframes pulse{50%{opacity:.25}}
+</style>
+
+<div class="wrap">
+  <header>
+    <div>
+      <p class="eyebrow">Customer discovery</p>
+      <h1>Discovery Call Log</h1>
+    </div>
+    <div class="hcount" id="counts"></div>
+  </header>
+
+  <div id="unsupported" class="warnbox" hidden>
+    <b>Dictation unavailable in this browser.</b> Speech-to-text uses the built-in Web Speech
+    API, which works in Chrome, Edge and Safari but not Firefox. Everything else works — type
+    your notes instead.
+  </div>
+
+  <div class="tabs" role="tablist">
+    <button role="tab" id="tab-call" aria-selected="true">Call</button>
+    <button role="tab" id="tab-log" aria-selected="false">Log</button>
+    <button role="tab" id="tab-dash" aria-selected="false">Dashboard</button>
+  </div>
+
+  <div id="view-call" class="grid two">
+    <div>
+      <div class="card">
+        <h2>Who are you calling?</h2>
+        <p class="hint">The script and the fields change with the audience.</p>
+        <div class="row c2">
+          <div><label for="f-aud">Audience</label>
+            <select id="f-aud">
+              <option value="mover">Home mover</option>
+              <option value="junk">Junk removal</option>
+              <option value="reman">Remanufacturer / liquidator</option>
+            </select></div>
+          <div><label for="f-name">Business or person</label><input id="f-name" placeholder="e.g. Bay Area Movers"></div>
+        </div>
+        <div class="row c3">
+          <div><label for="f-city">City</label><input id="f-city" placeholder="Fresno, CA"></div>
+          <div><label for="f-phone">Phone</label><input id="f-phone" placeholder="(555) 010-0000"></div>
+          <div><label for="f-out">Outcome</label>
+            <select id="f-out">
+              <option value="">—</option>
+              <option>Good conversation</option>
+              <option>Brief / rushed</option>
+              <option>No answer</option>
+              <option>Refused</option>
+              <option>Callback booked</option>
+            </select></div>
+        </div>
+      </div>
+
+      <div class="card">
+        <h2>The script</h2>
+        <p class="hint">Ask about what they already do. Never pitch, and never ask whether they
+          would buy something.</p>
+        <div class="mic">
+          <button id="mic" type="button" aria-label="Toggle dictation">●</button>
+          <span class="lbl" id="miclbl">Click the mic, then talk. Text lands in the last box you clicked.</span>
+        </div>
+        <div id="script"></div>
+      </div>
+
+      <div class="card">
+        <h2>Anything else</h2>
+        <p class="hint">Quotes in their words are worth more than your summary.</p>
+        <div class="rec" id="recwrap">
+          <span class="dot"></span>
+          <button type="button" id="recbtn">Record a voice note</button>
+          <span class="hint" id="recstat">After the call — California is two-party consent, so don't record them without asking.</span>
+        </div>
+        <textarea id="f-notes" placeholder="Verbatim quotes, tangents, who else to call…"></textarea>
+        <div class="actions">
+          <button class="btn" id="save">Save call</button>
+          <button class="btn ghost" id="clear">Clear form</button>
+          <span id="editing" class="editnote"></span>
+        </div>
+      </div>
+    </div>
+
+    <div>
+      <div class="card">
+        <h2>Still go?</h2>
+        <p class="hint">Live against the stop conditions. Grey means not enough calls yet.</p>
+        <div id="crit-mini"></div>
+      </div>
+    </div>
+  </div>
+
+  <div id="view-log" hidden>
+    <div class="card">
+      <h2>Where you have called</h2>
+      <p class="hint">Pins drop when you save a call with a city. Geocoded via OpenStreetMap.</p>
+      <div id="map"></div>
+
+      <h2 style="margin-top:2rem">Every call</h2>
+      <p class="hint">Click a row to load it back into the form and edit it.</p>
+      <div class="scroll"><table>
+        <thead><tr><th>When</th><th>Who</th><th>Audience</th><th>City</th><th>Outcome</th><th class="num">Key figure</th></tr></thead>
+        <tbody id="logbody"></tbody>
+      </table></div>
+      <div class="actions">
+        <button class="btn" id="exp-csv">Export CSV</button>
+        <button class="btn ghost" id="exp-json">Export JSON</button>
+        <button class="btn danger" id="wipe">Delete all</button>
+      </div>
+    </div>
+  </div>
+
+  <div id="view-dash" hidden>
+    <div class="grid two">
+      <div>
+        <div class="card">
+          <h2>Stop conditions</h2>
+          <p class="hint">Each one is a reason to stop or change course, not a score.</p>
+          <div id="crit-full"></div>
+        </div>
+      </div>
+      <div>
+        <div class="card">
+          <h2>What the calls say</h2>
+          <p class="hint">Medians across everyone who answered that question.</p>
+          <div class="scroll"><table><tbody id="aggbody"></tbody></table></div>
+        </div>
+        <div class="card">
+          <h2>Coverage</h2>
+          <div class="scroll"><table><tbody id="covbody"></tbody></table></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <p class="foot" id="foot"></p>
+</div>
+
+<script>
+(function(){
+  "use strict";
+  var KEY = "discovery-call-log-h1-reman";
+
+  // ---- question sets -----------------------------------------------------------
+  var SCRIPTS = {
+    mover: [
+      {q:"Do you take away stuff people don't want to bring with them?", k:"takes_away", t:"select", opts:["","Yes, always offer it","Sometimes","Only if asked","No"]},
+      {q:"What do you charge for that?", k:"haul_fee", t:"number", u:"$ per job"},
+      {q:"Where does it go after that?", k:"destination", t:"select", opts:["","Landfill / dump","Donation","We resell it","Customer deals with it","We leave it"]},
+      {q:"How often does that come up?", k:"left_freq", t:"select", opts:["","Most jobs","Often","Sometimes","Rarely","Never"]},
+      {q:"What happens to the stuff that's still in good shape?", k:"good_stuff", t:"text"},
+      {q:"Does it cost you anything to get rid of it?", k:"dump_cost", t:"number", u:"$ per job"},
+      {q:"Anything about that side of it that's a pain?", k:"annoyance", t:"text"},
+      {q:"Last job where someone left a load behind - what was it and where did it go?", k:"last_left", t:"text"}
+    ],
+    junk: [
+      {q:"Do you do a lot of furniture, or mostly other stuff?", k:"furniture_pct", t:"number", u:"% of loads"},
+      {q:"What happens to a sofa after you pick it up?", k:"sofa_path", t:"text"},
+      {q:"What does it cost you to dump it?", k:"tipping", t:"number", u:"$ per ton"},
+      {q:"Do you ever sell any of it on?", k:"resell", t:"text"},
+      {q:"Is furniture worse than other junk, or about the same?", k:"annoyance", t:"text"},
+      {q:"How many pickups in a week?", k:"pickups_wk", t:"number", u:"pickups"},
+      {q:"Would you rather sell it than dump it? What would you want for it?", k:"would_sell", t:"text"}
+    ],
+    reman: [
+      {q:"What happens to a workstation once it arrives with you?", k:"process", t:"text"},
+      {q:"Which bit takes the longest?", k:"time_sink", t:"text"},
+      {q:"Roughly how many hours of work go into one?", k:"labour_hrs", t:"number", u:"hours"},
+      {q:"Do you turn stuff away? What kind?", k:"reject_reason", t:"text"},
+      {q:"Of what shows up, how much is actually usable?", k:"yield_pct", t:"number", u:"% usable"},
+      {q:"If you could hand one step to a machine, which?", k:"automate_first", t:"text"},
+      {q:"Has anyone tried automating that? What happened?", k:"why_manual", t:"text"},
+      {q:"What does it sell for next to new?", k:"pct_of_new", t:"number", u:"% of new price"}
+    ]
+  };
+
+  // ---- storage -----------------------------------------------------------------
+  function load(){
+    try { var r = localStorage.getItem(KEY); return r ? JSON.parse(r) : []; }
+    catch(e){ return []; }
+  }
+  function save(rows){
+    try { localStorage.setItem(KEY, JSON.stringify(rows)); return true; }
+    catch(e){ return false; }
+  }
+  var calls = load(), editingId = null;
+
+  var $ = function(id){ return document.getElementById(id); };
+
+  // ---- script rendering --------------------------------------------------------
+  function renderScript(){
+    var aud = $("f-aud").value, list = SCRIPTS[aud], html = "";
+    for (var i=0;i<list.length;i++){
+      var s = list[i], id = "q_"+s.k, ctl;
+      if (s.t === "select"){
+        ctl = '<select id="'+id+'" data-k="'+s.k+'">';
+        for (var j=0;j<s.opts.length;j++) ctl += '<option>'+s.opts[j]+'</option>';
+        ctl += '</select>';
+      } else if (s.t === "number"){
+        ctl = '<input id="'+id+'" data-k="'+s.k+'" type="number" inputmode="decimal" placeholder="'+(s.u||"")+'">';
+      } else {
+        ctl = '<textarea id="'+id+'" data-k="'+s.k+'" rows="2" placeholder="their words"></textarea>';
+      }
+      html += '<div class="q"><div class="ask"><span class="n">'+(i+1)+'</span><span>'+s.q+'</span></div>'+ctl+'</div>';
+    }
+    $("script").innerHTML = html;
+  }
+
+  function formValues(){
+    var aud = $("f-aud").value, out = {
+      id: editingId || (Date.now()+"-"+Math.random().toString(36).slice(2,7)),
+      at: new Date().toISOString(),
+      audience: aud,
+      name: $("f-name").value.trim(),
+      city: $("f-city").value.trim(),
+      phone: $("f-phone").value.trim(),
+      outcome: $("f-out").value,
+      notes: $("f-notes").value.trim(),
+      a: {}
+    };
+    var list = SCRIPTS[aud];
+    for (var i=0;i<list.length;i++){
+      var el = $("q_"+list[i].k);
+      if (!el) continue;
+      var v = el.value.trim();
+      if (v !== "") out.a[list[i].k] = (list[i].t === "number") ? parseFloat(v) : v;
+    }
+    return out;
+  }
+
+  function fillForm(c){
+    $("f-aud").value = c.audience; renderScript();
+    $("f-name").value = c.name||""; $("f-city").value = c.city||"";
+    $("f-phone").value = c.phone||""; $("f-out").value = c.outcome||"";
+    $("f-notes").value = c.notes||"";
+    Object.keys(c.a||{}).forEach(function(k){ var el = $("q_"+k); if (el) el.value = c.a[k]; });
+    editingId = c.id;
+    $("editing").textContent = "editing an existing call";
+    $("save").textContent = "Update call";
+  }
+
+  function clearForm(){
+    ["f-name","f-city","f-phone","f-notes"].forEach(function(i){ $(i).value=""; });
+    $("f-out").value = ""; renderScript(); editingId = null;
+    $("editing").textContent = ""; $("save").textContent = "Save call";
+  }
+
+  // ---- stats -------------------------------------------------------------------
+  function vals(aud, k){
+    return calls.filter(function(c){ return c.audience===aud && c.a && c.a[k]!=null && c.a[k]!==""; })
+                .map(function(c){ return c.a[k]; });
+  }
+  function median(a){
+    if (!a.length) return null;
+    var s = a.slice().sort(function(x,y){ return x-y; }), m = Math.floor(s.length/2);
+    return s.length%2 ? s[m] : (s[m-1]+s[m])/2;
+  }
+  function share(aud, k, yes){
+    var v = vals(aud,k); if (!v.length) return null;
+    var n = v.filter(function(x){ return yes.indexOf(x) > -1; }).length;
+    return {pct:n/v.length, n:v.length};
+  }
+  var money = function(n){ return "$" + Math.round(n).toLocaleString(); };
+
+  function criteria(){
+    var out = [];
+    var D = "—";
+
+    var lf = share("mover","left_freq",["Most jobs","Often"]);
+    out.push({name:"Movers who say furniture gets left behind regularly",
+      thr:"below 40% and there is no supply", min:4, n:lf?lf.n:0,
+      val: lf==null ? D : Math.round(lf.pct*100)+"%", frac: lf==null ? 0 : lf.pct,
+      state: lf==null ? "none" : (lf.pct>=0.6 ? "ok" : lf.pct>=0.4 ? "warnst" : "stop"),
+      why:"This is the whole supply side. If furniture rarely gets left behind, there is nothing to collect."});
+
+    var d = share("mover","destination",["Landfill / dump"]);
+    out.push({name:"Share going straight to landfill",
+      thr:"higher is better for you", min:4, n:d?d.n:0,
+      val: d==null ? D : Math.round(d.pct*100)+"%", frac: d==null ? 0 : d.pct,
+      state: d==null ? "none" : (d.pct>=0.5 ? "ok" : d.pct>=0.3 ? "warnst" : "stop"),
+      why:"Low means donation and resale already take the good pieces, and you would inherit what nobody wanted."});
+
+    var hf = vals("mover","haul_fee"), mhf = median(hf);
+    out.push({name:"What movers charge to haul it away",
+      thr:"above $0 means negative-cost input", min:3, n:hf.length,
+      val: mhf==null ? D : money(mhf), frac: mhf==null ? 0 : Math.min(mhf/150,1),
+      state: mhf==null ? "none" : (mhf>0 ? "ok" : "warnst"),
+      why:"If someone already pays to make it disappear, your feedstock can cost less than nothing. That is what makes pallet recycling work."});
+
+    var y = vals("reman","yield_pct"), my = median(y);
+    out.push({name:"Usable share of what arrives",
+      thr:"stop below 30%", min:2, n:y.length,
+      val: my==null ? D : my+"%", frac: my==null ? 0 : Math.min(my/100,1),
+      state: my==null ? "none" : (my>=50 ? "ok" : my>=30 ? "warnst" : "stop"),
+      why:"Most discarded furniture is MDF or particleboard, which cannot be recycled into new board. Low yield means automation cannot rescue it."});
+
+    var lh = vals("reman","labour_hrs"), mlh = median(lh);
+    out.push({name:"Labour hours per unit remanufactured",
+      thr:"higher means automation is worth more", min:2, n:lh.length,
+      val: mlh==null ? D : mlh+" hrs", frac: mlh==null ? 0 : Math.min(mlh/8,1),
+      state: mlh==null ? "none" : (mlh>=3 ? "ok" : mlh>=1.5 ? "warnst" : "stop"),
+      why:"The whole bet is that labour is the binding cost. Under about ninety minutes a unit, there is nothing for a robot to take out."});
+
+    return out;
+  }
+
+  function critHTML(c, full){
+    var pct = Math.round((c.frac||0)*100);
+    var enough = c.n >= c.min;
+    var st = enough ? c.state : "none";
+    var label = st==="ok" ? "ok" : st==="warnst" ? "watch" : st==="stop" ? "stop" : "need "+(c.min-c.n)+" more";
+    return '<div class="crit '+st+'">'
+      + '<div class="top"><span class="name">'+c.name+'</span><span class="val">'+c.val+'</span></div>'
+      + '<div class="thr">'+c.thr+' · '+c.n+' answered <span class="pill '+st+'">'+label+'</span></div>'
+      + '<div class="track"><i style="width:'+pct+'%"></i></div>'
+      + (full ? '<div class="thr" style="margin-top:.45rem;line-height:1.5">'+c.why+'</div>' : '')
+      + '</div>';
+  }
+
+  function keyFigure(c){
+    if (c.audience==="mover" && c.a.haul_fee!=null) return money(c.a.haul_fee)+" haul";
+    if (c.audience==="junk" && c.a.furniture_pct!=null) return c.a.furniture_pct+"% furniture";
+    if (c.audience==="reman" && c.a.labour_hrs!=null) return c.a.labour_hrs+" hrs/unit";
+    return "—";
+  }
+
+  function render(){
+    var by = {mover:0, junk:0, reman:0};
+    calls.forEach(function(c){ if (by[c.audience]!=null) by[c.audience]++; });
+    $("counts").innerHTML = '<span><b>'+calls.length+'</b> calls</span>'
+      + '<span><b>'+by.mover+'</b> movers</span><span><b>'+by.junk+'</b> junk removal</span>'
+      + '<span><b>'+by.reman+'</b> remanufacturers</span>';
+
+    var cr = criteria();
+    $("crit-mini").innerHTML = cr.map(function(c){ return critHTML(c,false); }).join("");
+    $("crit-full").innerHTML = cr.map(function(c){ return critHTML(c,true); }).join("");
+
+    if (!calls.length){
+      $("logbody").innerHTML = '<tr><td colspan="6"><div class="empty">No calls yet. The first one is the hardest.</div></td></tr>';
+    } else {
+      $("logbody").innerHTML = calls.slice().reverse().map(function(c){
+        return '<tr data-id="'+c.id+'"'+(c.id===editingId?' class="sel"':'')+' style="cursor:pointer">'
+          + '<td class="num">'+new Date(c.at).toLocaleDateString(undefined,{month:"short",day:"numeric"})+'</td>'
+          + '<td>'+(c.name||"—")+'</td><td>'+c.audience+'</td><td>'+(c.city||"—")+'</td>'
+          + '<td>'+(c.outcome||"—")+'</td><td class="num">'+keyFigure(c)+'</td></tr>';
+      }).join("");
+    }
+
+    var agg = [
+      ["Shops: quote to cut from files", median(vals("shop","quote_from_files")), money],
+      ["Shops: charge per linear foot", median(vals("shop","per_lf")), function(n){return "$"+n;}],
+      ["Shops: design hours per kitchen", median(vals("shop","design_hours")), function(n){return n+" h";}],
+      ["Shops: actual lead time", median(vals("shop","lead_weeks")), function(n){return n+" wks";}],
+      ["Remodelers: paid per linear foot", median(vals("remodeler","per_lf")), function(n){return "$"+n;}],
+      ["Remodelers: lead time experienced", median(vals("remodeler","lead_weeks")), function(n){return n+" wks";}],
+      ["Homeowners: total quoted", median(vals("homeowner","quoted_total")), money],
+      ["Homeowners: weeks waiting", median(vals("homeowner","wait_weeks")), function(n){return n+" wks";}]
+    ];
+    $("aggbody").innerHTML = agg.map(function(r){
+      return '<tr><td>'+r[0]+'</td><td class="num">'+(r[1]==null?"—":r[2](r[1]))+'</td></tr>';
+    }).join("");
+
+    $("covbody").innerHTML = [
+      ["Cabinet shops", by.shop, 20],["Remodelers / GCs", by.remodeler, 12],["Homeowners", by.homeowner, 10]
+    ].map(function(r){
+      return '<tr><td>'+r[0]+'</td><td class="num">'+r[1]+' / '+r[2]+'</td></tr>';
+    }).join("");
+
+    $("foot").textContent = "Saved in this browser only, on this device. Export regularly — clearing site data deletes everything. "
+      + (calls.length ? "Last saved " + new Date(calls[calls.length-1].at).toLocaleString() + "." : "");
+  }
+
+  // ---- dictation ----------------------------------------------------------------
+  var SR = window.SpeechRecognition || window.webkitSpeechRecognition, rec = null, listening = false, target = null;
+  document.addEventListener("focusin", function(e){
+    if (e.target.matches("textarea, input[type=text], input:not([type])")) target = e.target;
+  });
+  if (!SR){ $("unsupported").hidden = false; $("mic").disabled = true; }
+  else {
+    rec = new SR(); rec.continuous = true; rec.interimResults = true; rec.lang = "en-US";
+    rec.onresult = function(ev){
+      var fin = "", intr = "";
+      for (var i = ev.resultIndex; i < ev.results.length; i++){
+        var tr = ev.results[i][0].transcript;
+        if (ev.results[i].isFinal) fin += tr; else intr += tr;
+      }
+      if (fin && target){
+        target.value = (target.value ? target.value.replace(/\s+$/,"") + " " : "") + fin.trim();
+      }
+      $("miclbl").innerHTML = listening
+        ? '<b>Listening</b> — into ' + (target ? (target.dataset.k || "notes") : "notes")
+          + (intr ? ' · <span class="interim">' + intr + '</span>' : '')
+        : "Click the mic, then talk.";
+    };
+    rec.onerror = function(ev){
+      if (ev.error === "not-allowed" || ev.error === "service-not-allowed"){
+        stop(); $("miclbl").innerHTML = "<b>Microphone blocked.</b> Allow it in the address bar, then try again.";
+      } else if (ev.error === "no-speech"){ /* Chrome fires this on silence; ignore */ }
+    };
+    rec.onend = function(){ if (listening){ try { rec.start(); } catch(e){ stop(); } } };
+  }
+  function start(){
+    if (!rec) return;
+    if (!target) target = $("f-notes");
+    listening = true; $("mic").classList.add("on");
+    $("miclbl").innerHTML = "<b>Listening</b> — click a box first to steer where the words go.";
+    try { rec.start(); } catch(e){}
+  }
+  function stop(){
+    listening = false; $("mic").classList.remove("on");
+    $("miclbl").textContent = "Click the mic, then talk. Text lands in the last box you clicked.";
+    if (rec) try { rec.stop(); } catch(e){}
+  }
+  $("mic").addEventListener("click", function(){ listening ? stop() : start(); });
+
+  // ---- export --------------------------------------------------------------------
+  function allKeys(){
+    var s = {};
+    calls.forEach(function(c){ Object.keys(c.a||{}).forEach(function(k){ s[k]=1; }); });
+    return Object.keys(s).sort();
+  }
+  function toCSV(){
+    var ks = allKeys(), head = ["at","audience","name","city","phone","outcome"].concat(ks,["notes"]);
+    var esc = function(v){ v = v==null ? "" : String(v); return /[",\n]/.test(v) ? '"'+v.replace(/"/g,'""')+'"' : v; };
+    var lines = [head.join(",")];
+    calls.forEach(function(c){
+      var r = [c.at,c.audience,c.name,c.city,c.phone,c.outcome];
+      ks.forEach(function(k){ r.push(c.a ? c.a[k] : ""); });
+      r.push(c.notes);
+      lines.push(r.map(esc).join(","));
+    });
+    return lines.join("\n");
+  }
+  function fallbackSave(name, text){
+    try {
+      var a = document.createElement("a");
+      a.href = URL.createObjectURL(new Blob([text], {type:"text/plain"}));
+      a.download = name; document.body.appendChild(a); a.click(); a.remove();
+    } catch(e){}
+  }
+  async function exportAs(kind){
+    if (!calls.length) return;
+    var name = "discovery-calls-" + new Date().toISOString().slice(0,10) + "." + kind;
+    var data = kind === "csv" ? toCSV() : JSON.stringify(calls, null, 2);
+    var dl = null;
+    try { dl = await window.claude.use("downloads"); } catch(e){}
+    if (dl && dl.save){ try { await dl.save({filename:name, data:data}); return; } catch(e){} }
+    fallbackSave(name, data);
+  }
+  $("exp-csv").addEventListener("click", function(){ exportAs("csv"); });
+  $("exp-json").addEventListener("click", function(){ exportAs("json"); });
+
+  // ---- wiring ---------------------------------------------------------------------
+  $("f-aud").addEventListener("change", renderScript);
+  $("save").addEventListener("click", function(){
+    var v = formValues();
+    if (!v.name && !v.notes && !Object.keys(v.a).length) return;
+    var prev = calls.find(function(c){ return c.id === v.id; });
+    if (prev && prev.lat!=null){ v.lat = prev.lat; v.lon = prev.lon; }
+
+    function commit(){
+      var i = calls.findIndex(function(c){ return c.id === v.id; });
+      if (i > -1) calls[i] = v; else calls.push(v);
+      if (!save(calls)) alert("Could not save — this browser is blocking site storage. Export before you lose anything.");
+      clearForm(); render(); drawPins();
+    }
+
+    if (v.lat==null && (v.city || v.name)){
+      geocode([v.name, v.city].filter(Boolean).join(", "), function(pt){
+        if (pt){ v.lat = pt.lat; v.lon = pt.lon; }
+        else if (v.city){
+          geocode(v.city, function(pt2){
+            if (pt2){ v.lat = pt2.lat; v.lon = pt2.lon; }
+            commit();
+          });
+          return;
+        }
+        commit();
+      });
+    } else commit();
+  });
+  $("clear").addEventListener("click", clearForm);
+  $("logbody").addEventListener("click", function(e){
+    var tr = e.target.closest("tr[data-id]"); if (!tr) return;
+    var c = calls.find(function(x){ return x.id === tr.dataset.id; });
+    if (c){ fillForm(c); showTab("call"); render(); }
+  });
+  $("wipe").addEventListener("click", function(){
+    if (!calls.length) return;
+    if (confirm("Delete all " + calls.length + " calls from this browser? Export first if you have not.")){
+      calls = []; save(calls); clearForm(); render();
+    }
+  });
+
+  function showTab(which){
+    [["call","view-call"],["log","view-log"],["dash","view-dash"]].forEach(function(p){
+      $("tab-"+p[0]).setAttribute("aria-selected", String(p[0]===which));
+      $(p[1]).hidden = (p[0] !== which);
+    });
+  }
+  $("tab-call").addEventListener("click", function(){ showTab("call"); });
+  $("tab-log").addEventListener("click", function(){ showTab("log"); render(); });
+  $("tab-dash").addEventListener("click", function(){ showTab("dash"); render(); });
+
+  renderScript(); render();
+})();
+</script>

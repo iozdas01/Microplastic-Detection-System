@@ -24,10 +24,11 @@
 version: 1
 
 ideas:
-  custom-kitchen-cabinets:
+  high-mix-manufacturing:
     lifecycle: active
     note: >-
-      Seeded 2026-08-31 from the market-evidence pipeline now at scripts/research/, which measured its way
-      from configurable furniture to fitted cabinetry. Belief and H1 are recorded, the
-      assumption graph is built, and every node is untested — the ledger holds only desk
-      measurement. Next step is the first trade outreach on the root pain assumption.
+      Redirected 2026-09-02 to H2: selling high-variability custom machining out of accessible
+      Turkish CNC capacity, aimed at parts blocked in the supply chain. H1 (furniture
+      remanufacturing) is superseded un-falsified and parked. A network audit the same day
+      found zero furniture manufacturers and one machinist among 1,739 first-degree
+      connections, which narrowed outreach to supply chain, procurement and maintenance roles.

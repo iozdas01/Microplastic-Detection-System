@@ -1,0 +1,55 @@
+{
+  "belief": "The problem is that software and machines don't talk, and you have to own both to fix it.",
+  "mode": "explore",
+  "hypotheses": [
+    {
+      "id": "W1",
+      "label": "Made-to-measure window coverings arrive the wrong size and the buyer eats it",
+      "queries": [
+        "custom blinds arrived wrong size",
+        "made to measure blinds too small",
+        "blinds don't fit window ordered",
+        "measured wrong custom blinds no refund",
+        "shades came in wrong size",
+        "custom shades gap on the sides"
+      ],
+      "subreddits": ["HomeImprovement", "DIY", "HomeDecorating", "InteriorDesign", "Renovations"]
+    },
+    {
+      "id": "W2",
+      "label": "The measuring step itself is where it goes wrong, and nobody owns the error",
+      "queries": [
+        "how to measure for blinds inside mount",
+        "measured blinds wrong whose fault",
+        "blinds installer measured wrong",
+        "window not square blinds",
+        "measure twice blinds still wrong"
+      ],
+      "subreddits": ["HomeImprovement", "DIY", "Flipping", "Construction"]
+    },
+    {
+      "id": "W3",
+      "label": "Named retailers with recurring fit and remake complaints",
+      "queries": [
+        "blinds.com wrong size review",
+        "selectblinds bad experience",
+        "3 day blinds complaint",
+        "budget blinds problem review",
+        "home depot custom blinds wrong",
+        "blinds remake policy refused"
+      ],
+      "subreddits": ["HomeImprovement", "DIY", "Consumer", "mildlyinfuriating"]
+    },
+    {
+      "id": "W4",
+      "label": "Lead times and remakes on a made-to-order product",
+      "queries": [
+        "waiting weeks for custom blinds",
+        "blinds remake took another month",
+        "custom shutters delayed",
+        "window treatment lead time ridiculous"
+      ],
+      "subreddits": ["HomeImprovement", "InteriorDesign", "Renovations"]
+    }
+  ]
+}

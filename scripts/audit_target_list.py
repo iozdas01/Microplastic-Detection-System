@@ -101,6 +101,15 @@ def audit(slug: str):
     graph_text = graph_path.read_text()
     contacts = parse_contacts_md(contacts_path)
 
+    # Contacts parked out of the campaign are not audited. `held` means ICP-valid but
+    # deliberately outside the active hunch (LR-B30, and hunch changes); `off_scope` means
+    # already rejected. Auditing either re-reports settled decisions, and after a hunch is
+    # parked its assumptions live in 02-assumptions/archive/ rather than graph.md, so every
+    # held contact would raise a permanent "missing ICP" that no action can clear.
+    EXCLUDED_FROM_AUDIT = {"held", "off_scope"}
+    contacts = [c for c in contacts
+                if (c.get("outreach_status") or "").strip() not in EXCLUDED_FROM_AUDIT]
+
     all_aids = {a for c in contacts for a in c["assumptions_tested"]}
     icps = {aid: parse_assumption_icp(graph_text, aid) for aid in all_aids}
     missing_icp = [aid for aid, icp in icps.items() if not icp.get("icp_valid_tiers")]

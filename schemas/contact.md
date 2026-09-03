@@ -60,6 +60,20 @@ tier: isp                             # MUST be one of the tier names this assum
                                       # contact_role is about them as an individual signal source;
                                       # tier is about their org's position in the market
 
+size_band: micro                      # OPTIONAL, and orthogonal to tier. tier says WHERE in the
+                                      # value chain their company sits; size_band says HOW BIG it is.
+                                      # Band names are idea-defined, declared in that idea's graph.md
+                                      # frontmatter under `size_bands` (NOT a fixed enum here) — the
+                                      # bands come from that idea's own market sizing.
+                                      # Set it from an observable: the company's LinkedIn headcount
+                                      # range. Leave EMPTY rather than guessing — an unbanded contact
+                                      # is visible, a wrongly banded one silently corrupts any
+                                      # per-band reply-rate comparison.
+                                      # Why it exists: a contact list can pass every ICP check and
+                                      # still sample only the bottom of a market. Banding is what
+                                      # makes "we tested the whole market" checkable instead of
+                                      # asserted.
+
 assumptions_tested: [A2]              # list of assumption IDs from graph.md — the ONE author
                                       # for which assumptions this contact tests. There used to
                                       # be a second, `validates_assumption`, constrained to
@@ -80,6 +94,12 @@ response_likelihood: 7                # 1-10 JUDGEMENT, higher = more likely to 
 likelihood_factors: >                 # the terms behind that judgement — REQUIRED whenever a score
                                       # is set, because the score is not reproducible without it
   post_engagement (+3) · 2nd degree (+2) · open_to_work (+2)
+channel: linkedin                     # vocab:outreach_channel. How this contact was REACHED.
+                                      # Defaults to `linkedin` when absent, so existing cards
+                                      # need no backfill. The conversion funnel is computed
+                                      # PER CHANNEL: a phone contact who answered the phone is
+                                      # not a LinkedIn reply, and counting the two together
+                                      # produced a 100% reply rate on 2026-09-03.
 outreach_pattern:                     # optional cluster tag; currently unused post outreach-strategy retirement.
                                       # startup-outreach-check now buckets replies by signal_type + degree.
                                       # Left in schema for backwards-compat with existing rows; safe to leave empty.
@@ -112,7 +132,7 @@ relationship_type:                    # optional routing/classification label, e
                                       # A peer founder can still be a target or expert, but a
                                       # peer_founder_competitor must be separated from buyer
                                       # evidence and customer conversion analysis.
-outreach_status: pending              # pending | invited | accepted | replied | scheduled | done | no_reply | declined | off_scope
+outreach_status: pending              # pending | invited | accepted | replied | scheduled | done | no_reply | declined | off_scope | held
 message_stage:                        # optional audit detail: msg1_sent | msg2_sent
 call_stage:                           # none | offered_by_contact | asked_by_founder | scheduled | completed
                                       # Call progression is reported separately from confirmed
@@ -186,6 +206,12 @@ pending → invited → accepted → replied → scheduled → done
 - `replied` — substantive reply received (set by `startup-outreach-check`)
 - `declined` — the contact declined the invite ON LINKEDIN (their action; set only by
   `startup-outreach-check` on confirmed negative reply with founder confirmation)
+- `held` — ICP-VALID but deliberately not contacted in this campaign (our action; set by
+  LR-B30). Added 2026-09-02. It exists because `no_reply` was being used for this and
+  `no_reply` counts as *contacted* in the funnel, so eleven people who were never messaged
+  for the active assumption were reported as a 29% contact rate. `held` is NOT a contacted
+  status and never enters a reply-rate denominator. Every `held` contact carries a reason
+  and, where the block is temporal, the date it becomes eligible again.
 - `off_scope` — OUR ICP audit rejected them (our action; set by `startup-outreach-targets`
   during audit, ONLY when a mandatory `notes:` rationale is written explaining which ICP
   field failed and what the profile visit revealed)

@@ -1,0 +1,15 @@
+family,family_adjusted,terms_swept,terms_measured,best_term,best_term_adjusted,buyer_mix,calibration_only
+sign_display,2.4296,4,4,custom signs,1.7288,consumer/mixed,False
+soft_goods_cal,1.8674,2,2,custom t shirts,1.1585,mixed,True
+wood_panel,1.6559,4,2,custom cabinets,1.0626,consumer,False
+auto_moto,1.3819,4,2,custom wheels,0.7608,consumer,False
+trailer_equip,0.5241,2,1,custom trailer,0.5241,consumer/mixed,False
+additive,0.4441,3,1,3d printing service,0.4441,business/mixed,False
+plastics,0.4436,3,1,custom acrylic,0.4436,business/mixed,False
+metal_fab,0.2621,6,2,custom gates,0.1334,consumer/mixed,False
+machining,0.2108,4,1,precision machining,0.2108,business/mixed,False
+stone_surface,0.1868,1,1,custom countertops,0.1868,consumer,False
+industrial,0.0,3,0,—,,business/mixed,False
+cutting,0.0,3,0,—,,business/mixed,False
+anchor,0.0,1,0,—,,mixed,False
+parts_repair,0.0,4,0,—,,business/mixed,False

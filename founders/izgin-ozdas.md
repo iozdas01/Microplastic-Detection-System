@@ -17,8 +17,8 @@ current_role: Founder in Residence | The Bridge
 # Accenture ended Aug 2026 (LinkedIn export, Positions.csv). Kept here because
 # skills that read current_employer for outreach copy must not still say "at Accenture".
 previous_employer: Accenture UK & Ireland (Sep 2025 - Aug 2026)
-current_focus: Building at the intersection of AI, engineering, and industrial systems; currently in Entrepreneurs First's The Bridge residency in San Francisco; paired with cofounder Christian Bakhos (founders/christian-bakhos.md) on 2026-08-23.
-last_updated: 2026-08-23
+current_focus: Building at the intersection of AI, engineering, and industrial systems; currently in Entrepreneurs First's The Bridge residency in San Francisco. Solo founder from 2026-08-31.
+last_updated: 2026-08-31
 
 # Per-founder outreach identity. The single author for facts the outreach skills
 # used to hardcode: which LinkedIn account this founder's contacts live on, the
@@ -68,7 +68,7 @@ current_activity:
 
   - organization: Entrepreneurs First
     program: The Bridge (S26)
-    role: Founder resident (solo 2026-08 → paired with Christian Bakhos 2026-08-23)
+    role: Founder resident (solo 2026-08 → paired 2026-08-23 → solo again from 2026-08-31)
     period: 2026-08-03 to 2026-10-02
     location: San Francisco, California, United States
     status: current
@@ -77,7 +77,7 @@ current_activity:
       - private_program_material
     notes:
       - Eight-week, full-time company-building residency focused on cofounder formation, market selection, customer evidence, building, and shipping; started 2026-08-03.
-      - A first cofounder pairing formed early in the programme and ended in August 2026, along with its joint thesis; treat any pre-split direction as history. On 2026-08-23 Izgin paired with Christian Bakhos (founders/christian-bakhos.md) on the manufacturing-execution-layer idea, which predates the pairing — the current idea lineage is the one in reports/.
+      - Two cofounder pairings formed and ended during the programme: the first early in 2026-08 (with its joint thesis), the second 2026-08-23 to 2026-08-31. Treat any pre-split direction as history. Building solo from 2026-08-31. The current idea lineage is the one in reports/, and it predates both pairings.
       - The programme culminates in an Investment Committee; participation is confirmed, but investment is not.
 
 # Machine-readable affiliations used by scoring and outreach skills for

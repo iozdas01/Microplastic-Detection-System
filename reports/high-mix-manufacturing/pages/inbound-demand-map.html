@@ -1,0 +1,459 @@
+<meta charset="utf-8">
+<title>Inbound Demand Map</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;600;700&family=IBM+Plex+Mono:wght@400;500;600&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&display=swap">
+
+<style>
+:root {
+    --ground:   #EEF1EC;
+    --surface:  #FAFBF9;
+    --sunk:     #E4E8E1;
+    --ink:      #14180F;
+    --muted:    #5C6459;
+    --faint:    #838C7F;
+    --rule:     #D2D8CE;
+    --accent:   #24467C;
+    --supply:   #24467C;
+    --demand:   #96701C;
+    --alarm:    #8E3A26;
+
+    --display: "Archivo", "Helvetica Neue", Arial, sans-serif;
+    --body: "Source Serif 4", Georgia, "Times New Roman", serif;
+    --mono: "IBM Plex Mono", ui-monospace, "SF Mono", Menlo, monospace;
+
+    --measure: 34rem;
+    --wide: 60rem;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --ground:  #12150F;
+      --surface: #191D16;
+      --sunk:    #0D0F0B;
+      --ink:     #E8ECE4;
+      --muted:   #9AA396;
+      --faint:   #79826F;
+      --rule:    #2D3329;
+      --accent:  #86ABE8;
+      --supply:  #86ABE8;
+      --demand:  #D6AC4A;
+      --alarm:   #D97D63;
+    }
+  }
+
+  :root[data-theme="dark"] {
+    --ground:  #12150F;
+    --surface: #191D16;
+    --sunk:    #0D0F0B;
+    --ink:     #E8ECE4;
+    --muted:   #9AA396;
+    --faint:   #79826F;
+    --rule:    #2D3329;
+    --accent:  #86ABE8;
+    --supply:  #86ABE8;
+    --demand:  #D6AC4A;
+    --alarm:   #D97D63;
+  }
+
+  * { box-sizing: border-box; }
+
+  body {
+    background: var(--ground);
+    color: var(--ink);
+    font-family: var(--body);
+    font-size: 1.0625rem;
+    line-height: 1.65;
+    margin: 0;
+    padding: 0 1.5rem 6rem;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  .page { max-width: var(--wide); margin: 0 auto; }
+
+  /* Every direct child sits in the measure column by default; .bleed opts out. */
+  .flow { display: flex; flex-direction: column; gap: 1.25rem; }
+  .flow > * { max-width: var(--measure); margin-inline: 0; }
+  .flow > .bleed { max-width: 100%; width: 100%; }
+
+  /* ---------- type ---------- */
+  h1, h2, h3 { font-family: var(--display); text-wrap: balance; margin: 0; line-height: 1.15; }
+
+  h1 {
+    font-size: clamp(2.4rem, 6vw, 3.9rem);
+    font-weight: 700;
+    letter-spacing: -0.033em;
+  }
+
+  h2 {
+    font-size: clamp(1.35rem, 2.6vw, 1.7rem);
+    font-weight: 600;
+    letter-spacing: -0.017em;
+    padding-top: 2.75rem;
+    margin-top: 1.5rem;
+    border-top: 1px solid var(--rule);
+  }
+
+  h3 {
+    font-size: 1.03rem;
+    font-weight: 600;
+    letter-spacing: -0.005em;
+    margin-top: 1.25rem;
+  }
+
+  p { margin: 0; }
+  strong { font-weight: 600; }
+
+  .eyebrow {
+    font-family: var(--mono);
+    font-size: 0.7rem;
+    font-weight: 500;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--faint);
+  }
+
+  .lede {
+    font-size: 1.2rem;
+    line-height: 1.55;
+    color: var(--muted);
+  }
+
+  .note {
+    font-family: var(--mono);
+    font-size: 0.76rem;
+    line-height: 1.6;
+    color: var(--faint);
+  }
+
+  a { color: var(--accent); text-decoration-thickness: 1px; text-underline-offset: 2px; }
+  a:focus-visible, summary:focus-visible {
+    outline: 2px solid var(--accent);
+    outline-offset: 3px;
+    border-radius: 2px;
+  }
+
+  /* ---------- masthead ---------- */
+  .masthead { padding: 4.5rem 0 0; }
+  .masthead h1 { margin-bottom: 1.25rem; }
+
+  .stamp {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem 1.5rem;
+    padding-top: 1.5rem;
+    margin-top: 1.75rem;
+    border-top: 1px solid var(--rule);
+  }
+  .stamp div { font-family: var(--mono); font-size: 0.72rem; color: var(--faint); }
+  .stamp b {
+    display: block;
+    font-weight: 500;
+    color: var(--ink);
+    letter-spacing: -0.01em;
+  }
+
+  /* ---------- the divergence ---------- */
+  .diverge {
+    background: var(--surface);
+    border: 1px solid var(--rule);
+    padding: clamp(1.5rem, 4vw, 2.5rem);
+    display: grid;
+    gap: 1.75rem;
+  }
+
+  .method { display: grid; gap: 0.6rem; }
+
+  .method-head {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 1rem;
+    flex-wrap: wrap;
+  }
+
+  .method-name {
+    font-family: var(--display);
+    font-weight: 600;
+    font-size: 1rem;
+    letter-spacing: -0.01em;
+  }
+
+  .method-value {
+    font-family: var(--mono);
+    font-weight: 600;
+    font-size: clamp(1.5rem, 4vw, 2.1rem);
+    letter-spacing: -0.03em;
+    font-variant-numeric: tabular-nums;
+  }
+
+  .bar { height: 0.6rem; background: var(--sunk); overflow: hidden; }
+  .bar span { display: block; height: 100%; }
+
+  .m-demand .method-value, .m-demand .method-name { color: var(--demand); }
+  .m-demand .bar span { background: var(--demand); }  /* width set inline, from data */
+  .m-supply .method-value, .m-supply .method-name { color: var(--supply); }
+  .m-supply .bar span { background: var(--supply); }
+
+  .verdict {
+    border-top: 1px solid var(--rule);
+    padding-top: 1.5rem;
+    font-size: 1.03rem;
+  }
+  .verdict b { color: var(--alarm); font-weight: 600; }
+
+  /* ---------- findings ---------- */
+  .findings { display: grid; gap: 0; border-top: 1px solid var(--rule); }
+
+  .finding {
+    display: grid;
+    grid-template-columns: 5.5rem 1fr;
+    gap: 0 1.5rem;
+    padding: 1.5rem 0;
+    border-bottom: 1px solid var(--rule);
+    align-items: start;
+  }
+  .finding .tier {
+    font-family: var(--mono);
+    font-size: 0.7rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--faint);
+    padding-top: 0.28rem;
+  }
+  .finding h3 { margin: 0 0 0.4rem; }
+  .finding p { color: var(--muted); max-width: 34rem; }
+
+  @media (max-width: 34rem) {
+    .finding { grid-template-columns: 1fr; gap: 0.5rem; }
+  }
+
+  /* ---------- stat row ---------- */
+  .stats {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(11rem, 1fr));
+    gap: 1px;
+    background: var(--rule);
+    border: 1px solid var(--rule);
+  }
+  .stat { background: var(--surface); padding: 1.25rem 1.15rem; }
+  .stat .n {
+    font-family: var(--mono);
+    font-size: 1.6rem;
+    font-weight: 600;
+    letter-spacing: -0.035em;
+    font-variant-numeric: tabular-nums;
+    display: block;
+    line-height: 1.1;
+  }
+  .stat .k {
+    font-family: var(--mono);
+    font-size: 0.7rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--faint);
+    display: block;
+    margin-top: 0.5rem;
+  }
+  .stat .s { font-size: 0.86rem; color: var(--muted); display: block; margin-top: 0.3rem; }
+  .stat.neg .n { color: var(--alarm); }
+
+  /* ---------- tables ---------- */
+  .scroll { overflow-x: auto; }
+  table {
+    border-collapse: collapse;
+    width: 100%;
+    font-family: var(--mono);
+    font-size: 0.81rem;
+    font-variant-numeric: tabular-nums;
+  }
+  caption {
+    text-align: left;
+    font-family: var(--mono);
+    font-size: 0.7rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--faint);
+    padding-bottom: 0.7rem;
+  }
+  th, td {
+    text-align: left;
+    padding: 0.5rem 0.9rem 0.5rem 0;
+    border-bottom: 1px solid var(--rule);
+    white-space: nowrap;
+  }
+  thead th {
+    font-weight: 500;
+    color: var(--faint);
+    font-size: 0.7rem;
+    letter-spacing: 0.07em;
+    text-transform: uppercase;
+    border-bottom: 1px solid var(--ink);
+  }
+  td.num, th.num { text-align: right; padding-right: 0; }
+  tbody tr:last-child td { border-bottom: none; }
+  td.wrap { white-space: normal; min-width: 13rem; font-family: var(--body); font-size: 0.95rem; }
+  tr.lead td { background: color-mix(in srgb, var(--accent) 7%, transparent); font-weight: 500; }
+  .dim { color: var(--faint); }
+
+  /* proportional cell — a bar drawn behind the number */
+  td.plot { width: 40%; padding-right: 0; }
+  .track { display: block; height: 0.5rem; background: var(--sunk); }
+  .track i { display: block; height: 100%; background: var(--accent); }
+
+  /* ---------- callouts ---------- */
+  .callout {
+    border-left: 2px solid var(--accent);
+    padding: 0.15rem 0 0.15rem 1.25rem;
+    color: var(--muted);
+  }
+  .callout b { color: var(--ink); font-weight: 600; }
+
+  details {
+    border: 1px solid var(--rule);
+    background: var(--surface);
+    padding: 1rem 1.25rem;
+  }
+  summary {
+    cursor: pointer;
+    font-family: var(--display);
+    font-weight: 600;
+    font-size: 0.95rem;
+  }
+  details[open] summary { margin-bottom: 1rem; }
+
+  footer {
+    margin-top: 4rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid var(--rule);
+    max-width: 100%;
+  }
+
+  /* figures — used by the factory plan page; additive, no existing rule touched */
+  figure { margin: 0; }
+  figure svg { display: block; margin: 0 auto; color: var(--ink); }
+  figcaption {
+    margin-top: 0.9rem;
+    font-family: var(--mono);
+    font-size: 0.76rem;
+    line-height: 1.55;
+    color: var(--muted);
+    max-width: 46rem;
+  }
+  .phases { display: grid; gap: 1px; background: var(--rule); }
+  .phase { background: var(--surface); padding: 1.15rem 1.15rem 1.25rem; }
+  .phase .k {
+    display: block; font-family: var(--mono); font-size: 0.7rem;
+    letter-spacing: 0.08em; text-transform: uppercase; color: var(--faint);
+  }
+  .phase .n {
+    display: block; font-family: var(--display); font-size: 1.5rem;
+    margin: 0.35rem 0 0.5rem;
+  }
+  .phase p { font-size: 0.86rem; color: var(--muted); margin: 0; }
+  @media (min-width: 46rem) { .phases { grid-template-columns: repeat(3, 1fr); } }
+</style>
+
+<div class="page flow">
+
+  <header>
+    <h1>Where "make me this" demand actually arrives</h1>
+    <p class="lede">43 search terms across every machinable material, anchored on
+    a single term so they are comparable to each other, then discounted by how much of each
+    term means something other than manufacturing. United States, five years, to
+    2 September 2026.</p>
+  </header>
+
+  <div class="stats">
+    <div class="stat"><span class="n">Signs &amp; display</span><span class="k">Largest measurable family</span><span class="s">2.430× the anchor, adjusted</span></div>
+    <div class="stat"><span class="n">17</span><span class="k">Terms that measured anything</span><span class="s">of 43 swept — 25 sat at the resolution floor</span></div>
+    <div class="stat neg"><span class="n">0 of 4</span><span class="k">Blocked-part terms measurable</span><span class="s">the lane H2 is testing has no inbound web demand</span></div>
+  </div>
+
+  <h2>The instrument, and what it cannot see</h2>
+
+  <p>Google Trends returns an integer 0-100 index scaled to the largest term in each batch.
+  Query five terms of wildly different size together and the small ones quantise to zero —
+  not because they are small, but because the instrument has run out of resolution. So every
+  batch here carries the same anchor, <b>"custom furniture"</b>, and every term is reported
+  as a ratio to it. Any term sitting at or below 1 for more than half the weeks is marked
+  <b>unmeasured</b> rather than ranked, because a series that is mostly zeros has no
+  recoverable ordering.</p>
+
+  <p><b>This measures arrival by search, and nothing else.</b> A maintenance engineer whose
+  production line is down does not open Google and type "cnc machining service" — they phone
+  a shop they already use, or they email the OEM. A zero here is evidence that a category
+  does not arrive through a search box. It is <i>not</i> evidence that the pain is absent,
+  and reading it that way would be the single biggest mistake available on this page.</p>
+
+
+  <h2>Families, ranked</h2>
+
+  <div class="bleed scroll"><table><caption>Adjusted demand by family — measured terms only, anchor = 1.000</caption><thead><tr><th class="wrap">Family</th><th>Adjusted</th><th>Terms measured</th><th>Buyer</th><th class="wrap">Entry term</th></tr></thead><tbody><tr class="lead"><td class="wrap">Signs &amp; display</td><td><span class="track"><i style="width:100.00%"></i></span> 2.430</td><td>4 of 4</td><td>consumer/mixed</td><td class="wrap">custom signs</td></tr><tr><td class="wrap">Soft goods (calibration) — calibration only</td><td><span class="track"><i style="width:76.86%"></i></span> 1.867</td><td>2 of 2</td><td>mixed</td><td class="wrap">custom t shirts</td></tr><tr><td class="wrap">Cabinets, closets &amp; built-ins</td><td><span class="track"><i style="width:68.16%"></i></span> 1.656</td><td>2 of 4</td><td>consumer</td><td class="wrap">custom cabinets</td></tr><tr><td class="wrap">Automotive &amp; powersports</td><td><span class="track"><i style="width:56.88%"></i></span> 1.382</td><td>2 of 4</td><td>consumer</td><td class="wrap">custom wheels</td></tr><tr><td class="wrap">Trailers &amp; truck equipment</td><td><span class="track"><i style="width:21.57%"></i></span> 0.524</td><td>1 of 2</td><td>consumer/mixed</td><td class="wrap">custom trailer</td></tr><tr><td class="wrap">3D printing services</td><td><span class="track"><i style="width:18.28%"></i></span> 0.444</td><td>1 of 3</td><td>business/mixed</td><td class="wrap">3d printing service</td></tr><tr><td class="wrap">Plastics &amp; acrylic</td><td><span class="track"><i style="width:18.26%"></i></span> 0.444</td><td>1 of 3</td><td>business/mixed</td><td class="wrap">custom acrylic</td></tr><tr><td class="wrap">Metal fabrication</td><td><span class="track"><i style="width:10.79%"></i></span> 0.262</td><td>2 of 6</td><td>consumer/mixed</td><td class="wrap">custom gates</td></tr><tr><td class="wrap">Machining</td><td><span class="track"><i style="width:8.68%"></i></span> 0.211</td><td>1 of 4</td><td>business/mixed</td><td class="wrap">precision machining</td></tr><tr><td class="wrap">Stone &amp; surfaces</td><td><span class="track"><i style="width:7.69%"></i></span> 0.187</td><td>1 of 1</td><td>consumer</td><td class="wrap">custom countertops</td></tr><tr><td class="wrap">Industrial hardware</td><td><span class="track"><i style="width:0.00%"></i></span> 0.000</td><td>0 of 3</td><td>business/mixed</td><td class="wrap">—</td></tr><tr><td class="wrap">Laser &amp; waterjet cutting</td><td><span class="track"><i style="width:0.00%"></i></span> 0.000</td><td>0 of 3</td><td>business/mixed</td><td class="wrap">—</td></tr><tr><td class="wrap">Blocked &amp; obsolete parts</td><td><span class="track"><i style="width:0.00%"></i></span> 0.000</td><td>0 of 4</td><td>business/mixed</td><td class="wrap">—</td></tr></tbody></table></div>
+
+  <p>Soft goods are in the table but excluded from the ranking. They are not machinable and
+  are carried only as calibration: a category known to sustain real made-to-order web
+  businesses, so the machinable families can be read against something whose demand is
+  proven rather than against zero.</p>
+
+
+  <h2>Terms that measured something</h2>
+
+  <div class="bleed scroll"><table><caption>Measured terms — adjusted for contamination</caption><thead><tr><th class="wrap">Term</th><th class="wrap">Family</th><th>Buyer</th><th class="num">Raw</th><th class="num">Adjusted</th><th class="num">On-topic</th><th class="num">Buying intent</th><th class="num">YoY</th></tr></thead><tbody><tr class="lead"><td class="wrap">custom signs</td><td class="wrap">Signs &amp; display</td><td>mixed</td><td class="num">1.73</td><td class="num">1.729</td><td class="num">100%</td><td class="num">21%</td><td class="num">41%</td></tr><tr><td class="wrap">custom t shirts</td><td class="wrap">Soft goods (calibration)</td><td>mixed</td><td class="num">1.16</td><td class="num">1.159</td><td class="num">100%</td><td class="num">14%</td><td class="num">3%</td></tr><tr><td class="wrap">custom cabinets</td><td class="wrap">Cabinets, closets &amp; built-ins</td><td>consumer</td><td class="num">1.06</td><td class="num">1.063</td><td class="num">100%</td><td class="num">29%</td><td class="num">45%</td></tr><tr><td class="wrap">custom wheels</td><td class="wrap">Automotive &amp; powersports</td><td>consumer</td><td class="num">1.52</td><td class="num">0.761</td><td class="num">50%</td><td class="num">33%</td><td class="num">70%</td></tr><tr><td class="wrap">custom embroidery</td><td class="wrap">Soft goods (calibration)</td><td>mixed</td><td class="num">0.71</td><td class="num">0.709</td><td class="num">100%</td><td class="num">16%</td><td class="num">73%</td></tr><tr><td class="wrap">custom exhaust</td><td class="wrap">Automotive &amp; powersports</td><td>consumer</td><td class="num">0.62</td><td class="num">0.621</td><td class="num">100%</td><td class="num">33%</td><td class="num">109%</td></tr><tr><td class="wrap">custom closet</td><td class="wrap">Cabinets, closets &amp; built-ins</td><td>consumer</td><td class="num">0.59</td><td class="num">0.593</td><td class="num">100%</td><td class="num">29%</td><td class="num">73%</td></tr><tr><td class="wrap">custom trailer</td><td class="wrap">Trailers &amp; truck equipment</td><td>mixed</td><td class="num">0.52</td><td class="num">0.524</td><td class="num">100%</td><td class="num">20%</td><td class="num">180%</td></tr><tr><td class="wrap">3d printing service</td><td class="wrap">3D printing services</td><td>mixed</td><td class="num">0.48</td><td class="num">0.444</td><td class="num">92%</td><td class="num">91%</td><td class="num">-24%</td></tr><tr><td class="wrap">custom acrylic</td><td class="wrap">Plastics &amp; acrylic</td><td>mixed</td><td class="num">0.50</td><td class="num">0.444</td><td class="num">89%</td><td class="num">0%</td><td class="num">241%</td></tr><tr><td class="wrap">custom engraving</td><td class="wrap">Signs &amp; display</td><td>mixed</td><td class="num">0.31</td><td class="num">0.307</td><td class="num">100%</td><td class="num">25%</td><td class="num">105%</td></tr><tr><td class="wrap">custom neon sign</td><td class="wrap">Signs &amp; display</td><td>consumer</td><td class="num">0.23</td><td class="num">0.234</td><td class="num">100%</td><td class="num">0%</td><td class="num">54%</td></tr><tr><td class="wrap">precision machining</td><td class="wrap">Machining</td><td>business</td><td class="num">0.25</td><td class="num">0.211</td><td class="num">85%</td><td class="num">18%</td><td class="num">105%</td></tr><tr><td class="wrap">custom countertops</td><td class="wrap">Stone &amp; surfaces</td><td>consumer</td><td class="num">0.19</td><td class="num">0.187</td><td class="num">100%</td><td class="num">33%</td><td class="num">45%</td></tr><tr><td class="wrap">custom metal signs</td><td class="wrap">Signs &amp; display</td><td>mixed</td><td class="num">0.16</td><td class="num">0.160</td><td class="num">100%</td><td class="num">17%</td><td class="num">16%</td></tr><tr><td class="wrap">custom gates</td><td class="wrap">Metal fabrication</td><td>consumer</td><td class="num">0.13</td><td class="num">0.133</td><td class="num">100%</td><td class="num">50%</td><td class="num">143%</td></tr><tr><td class="wrap">metal fabrication near me</td><td class="wrap">Metal fabrication</td><td>mixed</td><td class="num">0.13</td><td class="num">0.129</td><td class="num">100%</td><td class="num">75%</td><td class="num">43%</td></tr></tbody></table></div>
+
+  <p><b>On-topic</b> is the share of a term's own related queries that are actually about
+  having something made. It is the correction that matters most, because two terms near the
+  top of the raw index are not what they appear to be.</p>
+
+
+  <h2>What the raw index got wrong</h2>
+
+  <p><b>"custom wheels"</b> looked like the second-largest category in the whole sweep at
+  1.52× the anchor. Its top related queries are <span class="mono">hot wheels custom
+  wheels</span> — a die-cast toy — and <span class="mono">rimtyme custom wheels and
+  tires</span>, a tire retail chain. Half the term is not manufacturing demand.</p>
+
+  <p><b>"machine shop near me"</b> looked like the strongest trade term at 0.46×. Its
+  related queries are <span class="mono">sewing machine shop near me</span>,
+  <span class="mono">washing machine shop near me</span> and <span class="mono">diesel
+  machine shop near me</span>. Three quarters of it is appliance and engine repair. The
+  machining share is a minority of a term that was never large.</p>
+
+  <div class="bleed scroll"><table><caption>Terms discounted below half their raw value</caption><thead><tr><th class="wrap">Term</th><th class="wrap">Family</th><th>Buyer</th><th class="num">Raw</th><th class="num">Adjusted</th><th class="num">On-topic</th><th class="num">Buying intent</th><th class="num">YoY</th></tr></thead><tbody><tr><td class="wrap">machine shop near me</td><td class="wrap">Machining</td><td>mixed</td><td class="num">0.46</td><td class="num">0.115</td><td class="num">25%</td><td class="num">100%</td><td class="num">39%</td></tr></tbody></table></div>
+
+
+  <h2>The inversion: intent runs opposite to volume</h2>
+
+  <p>The trade terms are tiny and almost every searcher is a buyer. The consumer terms are
+  large and most searchers are browsing. <span class="mono">custom signs</span> is the
+  biggest measured term on the page and only 21% of its related queries carry buying
+  intent. <span class="mono">waterjet cutting service</span> is the smallest term in the
+  entire sweep and 100% of its related queries do.</p>
+
+  <div class="bleed scroll"><table><caption>High buying intent, below the resolution floor</caption><thead><tr><th class="wrap">Term</th><th class="wrap">Family</th><th>Buyer</th><th>Adjusted</th><th>Verdict</th><th class="num">Buying intent</th></tr></thead><tbody><tr><td class="wrap">custom wood furniture</td><td class="wrap">Cabinets, closets &amp; built-ins</td><td>consumer</td><td>0.103</td><td>unmeasured</td><td class="num">100%</td></tr><tr><td class="wrap">custom car parts</td><td class="wrap">Automotive &amp; powersports</td><td>consumer</td><td>0.089</td><td>unmeasured</td><td class="num">100%</td></tr><tr><td class="wrap">waterjet cutting service</td><td class="wrap">Laser &amp; waterjet cutting</td><td>business</td><td>0.001</td><td>unmeasured</td><td class="num">100%</td></tr><tr><td class="wrap">laser cutting service</td><td class="wrap">Laser &amp; waterjet cutting</td><td>mixed</td><td>0.038</td><td>unmeasured</td><td class="num">86%</td></tr><tr><td class="wrap">cnc machining service</td><td class="wrap">Machining</td><td>business</td><td>0.027</td><td>unmeasured</td><td class="num">70%</td></tr></tbody></table></div>
+
+  <p>These are not small markets — machining and fabrication are enormous industries. They
+  are markets that <b>do not arrive through a search box</b>, which is a statement about
+  channel, not about size. A website is the wrong instrument to catch them with.</p>
+
+
+  <h2>Below the floor</h2>
+
+  <p>Reported, not ranked. Momentum figures on these rows are computed against a baseline
+  near zero and are noise — a term moving from 0.02 to 0.7 reads as +3450% and means
+  nothing.</p>
+
+  <div class="bleed scroll"><table><caption>Terms that did not resolve</caption><thead><tr><th class="wrap">Term</th><th class="wrap">Family</th><th>Buyer</th><th class="num">Raw</th><th class="num">Adjusted</th><th class="num">On-topic</th><th class="num">Buying intent</th><th class="num">YoY</th></tr></thead><tbody><tr><td class="wrap">custom enclosure</td><td class="wrap">Industrial hardware</td><td>business</td><td class="num">0.14</td><td class="num">0.137</td><td class="num">100%</td><td class="num">0%</td><td class="num">382%</td></tr><tr><td class="wrap">custom wood furniture</td><td class="wrap">Cabinets, closets &amp; built-ins</td><td>consumer</td><td class="num">0.10</td><td class="num">0.103</td><td class="num">100%</td><td class="num">100%</td><td class="num">239%</td></tr><tr><td class="wrap">custom truck bed</td><td class="wrap">Trailers &amp; truck equipment</td><td>consumer</td><td class="num">0.10</td><td class="num">0.099</td><td class="num">100%</td><td class="num">0%</td><td class="num">174%</td></tr><tr><td class="wrap">custom car parts</td><td class="wrap">Automotive &amp; powersports</td><td>consumer</td><td class="num">0.09</td><td class="num">0.089</td><td class="num">100%</td><td class="num">100%</td><td class="num">145%</td></tr><tr><td class="wrap">custom metal fabrication</td><td class="wrap">Metal fabrication</td><td>mixed</td><td class="num">0.09</td><td class="num">0.088</td><td class="num">100%</td><td class="num">50%</td><td class="num">105%</td></tr><tr><td class="wrap">custom fire pit</td><td class="wrap">Metal fabrication</td><td>consumer</td><td class="num">0.07</td><td class="num">0.066</td><td class="num">100%</td><td class="num">0%</td><td class="num">320%</td></tr><tr><td class="wrap">laser cutting service</td><td class="wrap">Laser &amp; waterjet cutting</td><td>mixed</td><td class="num">0.04</td><td class="num">0.038</td><td class="num">100%</td><td class="num">86%</td><td class="num">286%</td></tr><tr><td class="wrap">custom laser cutting</td><td class="wrap">Laser &amp; waterjet cutting</td><td>mixed</td><td class="num">0.03</td><td class="num">0.028</td><td class="num">100%</td><td class="num">0%</td><td class="num">1267%</td></tr><tr><td class="wrap">cnc machining service</td><td class="wrap">Machining</td><td>business</td><td class="num">0.03</td><td class="num">0.027</td><td class="num">100%</td><td class="num">70%</td><td class="num">1267%</td></tr><tr><td class="wrap">custom silicone mold</td><td class="wrap">Plastics &amp; acrylic</td><td>mixed</td><td class="num">0.01</td><td class="num">0.013</td><td class="num">100%</td><td class="num">0%</td><td class="num">660%</td></tr><tr><td class="wrap">custom tooling</td><td class="wrap">Industrial hardware</td><td>business</td><td class="num">0.01</td><td class="num">0.013</td><td class="num">100%</td><td class="num">0%</td><td class="num">4000%</td></tr><tr><td class="wrap">custom machined parts</td><td class="wrap">Machining</td><td>business</td><td class="num">0.00</td><td class="num">0.004</td><td class="num">100%</td><td class="num">0%</td><td class="num">—</td></tr><tr><td class="wrap">waterjet cutting service</td><td class="wrap">Laser &amp; waterjet cutting</td><td>business</td><td class="num">0.00</td><td class="num">0.001</td><td class="num">100%</td><td class="num">100%</td><td class="num">—</td></tr><tr><td class="wrap">custom brackets</td><td class="wrap">Industrial hardware</td><td>mixed</td><td class="num">0.10</td><td class="num">—</td><td class="num">—</td><td class="num">—</td><td class="num">238%</td></tr><tr><td class="wrap">custom steel table</td><td class="wrap">Metal fabrication</td><td>consumer</td><td class="num">0.08</td><td class="num">—</td><td class="num">—</td><td class="num">—</td><td class="num">—</td></tr><tr><td class="wrap">obsolete parts</td><td class="wrap">Blocked &amp; obsolete parts</td><td>business</td><td class="num">0.06</td><td class="num">—</td><td class="num">—</td><td class="num">—</td><td class="num">19%</td></tr><tr><td class="wrap">part no longer available</td><td class="wrap">Blocked &amp; obsolete parts</td><td>mixed</td><td class="num">0.04</td><td class="num">—</td><td class="num">—</td><td class="num">—</td><td class="num">35%</td></tr><tr><td class="wrap">custom railings</td><td class="wrap">Metal fabrication</td><td>mixed</td><td class="num">0.03</td><td class="num">—</td><td class="num">—</td><td class="num">—</td><td class="num">67%</td></tr><tr><td class="wrap">custom motorcycle parts</td><td class="wrap">Automotive &amp; powersports</td><td>consumer</td><td class="num">0.03</td><td class="num">—</td><td class="num">—</td><td class="num">—</td><td class="num">160%</td></tr><tr><td class="wrap">custom replacement part</td><td class="wrap">Blocked &amp; obsolete parts</td><td>mixed</td><td class="num">0.02</td><td class="num">—</td><td class="num">—</td><td class="num">—</td><td class="num">3450%</td></tr><tr><td class="wrap">custom injection molding</td><td class="wrap">Plastics &amp; acrylic</td><td>business</td><td class="num">0.02</td><td class="num">—</td><td class="num">—</td><td class="num">—</td><td class="num">—</td></tr><tr><td class="wrap">custom built ins</td><td class="wrap">Cabinets, closets &amp; built-ins</td><td>consumer</td><td class="num">0.01</td><td class="num">—</td><td class="num">—</td><td class="num">—</td><td class="num">100%</td></tr><tr><td class="wrap">reverse engineering parts</td><td class="wrap">Blocked &amp; obsolete parts</td><td>business</td><td class="num">0.00</td><td class="num">—</td><td class="num">—</td><td class="num">—</td><td class="num">800%</td></tr><tr><td class="wrap">custom 3d printed parts</td><td class="wrap">3D printing services</td><td>mixed</td><td class="num">0.00</td><td class="num">—</td><td class="num">—</td><td class="num">—</td><td class="num">—</td></tr><tr><td class="wrap">rapid prototyping service</td><td class="wrap">3D printing services</td><td>business</td><td class="num">0.00</td><td class="num">—</td><td class="num">—</td><td class="num">—</td><td class="num">—</td></tr></tbody></table></div>
+
+  <p class="note">Source — Google Trends, United States, five years, collected by
+  scripts/research/t1_demand_sweep.py and scored by scripts/research/analyse_demand_sweep.py.
+  The off-topic vocabulary used for the contamination discount is declared in that second
+  file and is auditable line by line. Compiled 2 September 2026.</p>
+
+  <footer>
+    <p class="note">Generated by scripts/research/build_demand_map_page.py from
+    data/processed/demand_sweep_ranking.csv and demand_sweep_families.csv. Re-run the sweep
+    and this page rewrites itself.</p>
+  </footer>
+
+</div>

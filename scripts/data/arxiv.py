@@ -65,6 +65,7 @@ AXIS_KEYWORDS: dict[str, int] = {
 }
 
 MIN_SCORE = 4
+DEFAULT_QUERY = "cat:cs.RO"
 
 
 def _score(text: str) -> tuple[int, list[str]]:
@@ -115,14 +116,22 @@ def scan(
     since: str,
     max_results: int = 400,
     exclude_map: Path | None = None,
+    query: str = DEFAULT_QUERY,
+    min_score: int = MIN_SCORE,
 ) -> dict:
-    """Scan arXiv cs.RO since `since`, rank on the brownfield axis, drop classified ids."""
+    """Scan an arXiv query since `since`, rank on the brownfield axis, drop classified ids.
+
+    `query` is an arXiv search_query string and defaults to `cat:cs.RO`, the batch-1
+    selection. Themes that do not live in the robotics category — agent/tool-use work in
+    cs.AI, MES and interoperability work in eess.SY — need their own query, which is why
+    this is a parameter rather than a constant.
+    """
     errors: list[str] = []
     collected: list[dict] = []
 
     for start in range(0, max_results, PAGE_SIZE):
         query = urllib.parse.urlencode({
-            "search_query": "cat:cs.RO",
+            "search_query": query,
             "start": start,
             "max_results": min(PAGE_SIZE, max_results - start),
             "sortBy": "submittedDate",
@@ -149,7 +158,7 @@ def scan(
     on_axis = []
     for paper in in_window:
         score, hits = _score(f"{paper['title']} {paper['abstract']}")
-        if score < MIN_SCORE:
+        if score < min_score:
             continue
         base_id = paper["arxiv_id"].split("v")[0]
         paper = {
@@ -163,6 +172,7 @@ def scan(
     on_axis.sort(key=lambda p: (-p["axis_score"], p["published"]), reverse=False)
 
     return {
+        "query": query,
         "scanned": len(collected),
         "in_window": len(in_window),
         "on_axis": len(on_axis),
@@ -327,6 +337,10 @@ def main(argv: list[str] | None = None) -> int:
     parser.add_argument("--emails", default=None, metavar="IDS",
                         help="comma-separated arXiv ids: mine author-published "
                              "emails from their source packages and exit")
+    parser.add_argument("--query", default=DEFAULT_QUERY,
+                        help="arXiv search_query (default: cat:cs.RO)")
+    parser.add_argument("--min-score", type=int, default=MIN_SCORE,
+                        help=f"axis-score floor (default: {MIN_SCORE})")
     parser.add_argument("--keep-personal", action="store_true",
                         help="keep gmail/qq-style addresses (dropped by default)")
     args = parser.parse_args(argv)
@@ -340,6 +354,8 @@ def main(argv: list[str] | None = None) -> int:
         since=args.since,
         max_results=args.max_results,
         exclude_map=args.exclude_map,
+        query=args.query,
+        min_score=args.min_score,
     )
     if args.shortlist:
         write_shortlist(result, args.shortlist)

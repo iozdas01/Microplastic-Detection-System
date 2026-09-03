@@ -21,3 +21,5 @@ those live in `reports/{slug}/`.
 - Invite batches source 2nd-degree contacts first; 3rd-degree only when the 2nd-degree pool for the ICP is exhausted (founder rule, 2026-08-21).
 - First invites NEVER carry copy — always a bare connection request, no note; first copy is the post-acceptance DM (LR-B29, founder rule, 2026-08-24).
 - Claude may SEND a LinkedIn message only when the founder approved its exact logged text in chat, per-message, verbatim, with thread-name verification; approvals lapse on edit (copy-rules amendment, founder decision 2026-08-25).
+- Re-contact decays with time, bought back only by position: silence under 3 months is a decision and seniority does not override it; a contact who REPLIED is a continuation, not a re-contact (LR-B30, founder rule, 2026-09-02).
+- A contact list can pass every ICP check and still sample only the bottom of its market: band contacts by company size against that idea's own measured ladder BEFORE sending, and keep the band on the contact so per-band reply rates are comparable (2026-09-03).

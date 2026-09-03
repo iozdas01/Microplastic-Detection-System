@@ -664,6 +664,47 @@ def check_purpose_declared(errors):
                 ))
 
 
+def check_status_vs_evidence(errors):
+    """14. status-evidence — an assumption cannot be `untested` once evidence links to it.
+
+    `schemas/vocabularies.yaml` defines assumption_status.untested as "No evidence
+    gathered." On 2026-09-03 H3A1-H3A3 all read `untested` while six ledger entries
+    pointed straight at them, including three CONTRADICTING H3A3 — so the graph said
+    nothing had been learned while the ledger said the willingness-to-pay node was in
+    trouble. Status is a founder decision and is never auto-flipped; this check just
+    refuses to let the two drift silently.
+    """
+    for graph in ROOT.glob("reports/*/02-assumptions/graph.md"):
+        slug = graph.parents[1].name
+        ledger = ROOT / "reports" / slug / "03-validation" / "evidence.md"
+        if not ledger.exists():
+            continue
+        linked = {}
+        for line in ledger.read_text(encoding="utf-8").splitlines():
+            s = line.strip()
+            if s.startswith("assumption_linked:"):
+                aid = s.split(":", 1)[1].strip()
+                if aid and aid != "unassigned":
+                    linked[aid] = linked.get(aid, 0) + 1
+        aid = None
+        for lineno, line in enumerate(graph.read_text(encoding="utf-8").splitlines(), 1):
+            s = line.strip()
+            if s.startswith("- id:"):
+                aid = s.split(":", 1)[1].strip()
+            elif s.startswith("status:") and aid:
+                if s.split(":", 1)[1].strip() == "untested" and linked.get(aid):
+                    errors.append((
+                        "status-evidence",
+                        "%s:%d %s is `untested` but %d ledger entr%s to it"
+                        % (graph.relative_to(ROOT), lineno, aid, linked[aid],
+                           "y links" if linked[aid] == 1 else "ies link"),
+                        "set status per schemas/vocabularies.yaml assumption_status "
+                        "(weakly_supported / contested / confirmed / killed) — a founder "
+                        "call, not an automatic one",
+                    ))
+                aid = None
+
+
 CHECKS = [
     ("brief-fresh", check_brief_fresh),
     ("state-prose", check_state_prose),
@@ -678,6 +719,7 @@ CHECKS = [
     ("doc-paths", check_doc_paths_exist),
     ("lifecycle-slugs", check_lifecycle_slugs),
     ("purpose", check_purpose_declared),
+    ("status-evidence", check_status_vs_evidence),
 ]
 
 

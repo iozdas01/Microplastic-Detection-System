@@ -4,7 +4,7 @@ The pipeline that produced this repo's active idea. Built to the tiered source p
 purchase intent first, then government data, then industry sources.
 
 **The code lives here; everything it writes lands in
-`reports/custom-kitchen-cabinets/research/`** — outputs are per-idea state and belong with
+`reports/high-mix-manufacturing/research/`** — outputs are per-idea state and belong with
 that idea's other artifacts. Paths are anchored once, in `common.py`.
 
 It answers four questions with measurements rather than syndicated market numbers:
@@ -19,7 +19,7 @@ It answers four questions with measurements rather than syndicated market number
   times, a named equipment schedule, capital plan and unit-cost curve.
 
 The Bay Area / dining-table version this started as is kept in
-`reports/custom-kitchen-cabinets/research/archive/bay-area-dining-2026-08-27.md`; its model
+`reports/high-mix-manufacturing/research/archive/bay-area-dining-2026-08-27.md`; its model
 and report generator (`build_tam.py`, `build_report.py`) still run if you want the local view.
 
 ## Run it
@@ -43,7 +43,7 @@ what each key would add and how to get it. Keys are read from `.env` at the repo
 
 ## Output
 
-Everything below is relative to `reports/custom-kitchen-cabinets/research/`.
+Everything below is relative to `reports/high-mix-manufacturing/research/`.
 
 | Path | What |
 |---|---|

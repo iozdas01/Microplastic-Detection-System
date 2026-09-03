@@ -47,8 +47,8 @@ reports/*/outreach/.*
 # Bulk source downloads — re-fetched on demand by the collectors in scripts/research/ and
 # too large to track. The tidy extracts in data/processed/ and the JSON payloads in
 # data/raw/ are the provenance record that matters.
-reports/custom-kitchen-cabinets/research/data/raw/census-cbp/*.zip
-reports/custom-kitchen-cabinets/research/data/raw/census-cbp/*.txt
-reports/custom-kitchen-cabinets/research/data/raw/bls-cex/cx.series
-reports/custom-kitchen-cabinets/research/data/raw/census-mrts/*.xlsx
-reports/custom-kitchen-cabinets/research/data/raw/_probe/
+reports/high-mix-manufacturing/research/data/raw/census-cbp/*.zip
+reports/high-mix-manufacturing/research/data/raw/census-cbp/*.txt
+reports/high-mix-manufacturing/research/data/raw/bls-cex/cx.series
+reports/high-mix-manufacturing/research/data/raw/census-mrts/*.xlsx
+reports/high-mix-manufacturing/research/data/raw/_probe/

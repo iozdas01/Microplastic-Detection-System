@@ -1,0 +1,84 @@
+{
+  "belief": "The problem is that software and machines don't talk, and you have to own both to fix it.",
+  "mode": "explore",
+  "hypotheses": [
+    {
+      "id": "P1",
+      "label": "Quoting or estimating a one-off job takes days and blocks the sale",
+      "queries": [
+        "how long does it take you to quote a custom job",
+        "estimating one off parts takes forever",
+        "customer waiting weeks for a quote shop",
+        "quoting is the bottleneck in our shop",
+        "spend more time quoting than making",
+        "lost the job because quote took too long"
+      ],
+      "subreddits": ["Machinists", "CNC", "Cabinetry", "Welding", "metalworking", "Manufacturing", "smallbusiness", "Construction"]
+    },
+    {
+      "id": "P2",
+      "label": "The same job information is re-drawn or re-entered across systems",
+      "queries": [
+        "redrawing customer drawings from scratch",
+        "retyping the same job into our ERP",
+        "double data entry shop floor",
+        "customer sends a PDF and we redraw it",
+        "exporting DXF then fixing it every time",
+        "our CAD and CAM do not talk to each other"
+      ],
+      "subreddits": ["Machinists", "CNC", "CAD", "SolidWorks", "Fusion360", "Cabinetry", "AskEngineers", "Manufacturing"]
+    },
+    {
+      "id": "P3",
+      "label": "Programming and setup for a one-off dwarfs the actual cutting time",
+      "queries": [
+        "programming takes longer than machining the part",
+        "setup time kills us on small batches",
+        "nesting sheets by hand takes hours",
+        "one off part not worth programming",
+        "cad cam programmer is our bottleneck",
+        "fighting the post processor again"
+      ],
+      "subreddits": ["Machinists", "CNC", "hobbycnc", "Fusion360", "Manufacturing", "metalworking", "Welding", "woodworking"]
+    },
+    {
+      "id": "P4",
+      "label": "Buyer side - trying to get something made to size and failing on price or lead time",
+      "queries": [
+        "nobody will quote my small custom job",
+        "tried to get something custom made and gave up",
+        "custom quote came back way more than expected",
+        "lead time for made to measure is months",
+        "shop would not take a one off job",
+        "why is made to measure so expensive"
+      ],
+      "subreddits": ["HomeImprovement", "InteriorDesign", "woodworking", "DIY", "Cabinetry", "Machinists", "engineering", "smallbusiness"]
+    },
+    {
+      "id": "P5",
+      "label": "COUNTER-QUERY - operators who say their existing software already handles this",
+      "queries": [
+        "our CAM software handles quoting fine",
+        "cabinet vision worth the money",
+        "best quoting software actually works",
+        "software paid for itself in our shop",
+        "mozaik microvellum worth it",
+        "we automated our quoting and it works"
+      ],
+      "subreddits": ["Machinists", "CNC", "Cabinetry", "Manufacturing", "woodworking", "metalworking", "smallbusiness", "AskEngineers"]
+    },
+    {
+      "id": "P6",
+      "label": "PREDECESSORS - companies that tried on-demand or vertically integrated custom manufacturing and failed",
+      "queries": [
+        "Katerra failure vertically integrated construction",
+        "Fab.com Hem furniture what went wrong",
+        "on demand manufacturing startup shut down",
+        "Shapeways Ponoko custom manufacturing business model",
+        "made.com collapse furniture",
+        "why did custom furniture startups fail"
+      ],
+      "subreddits": ["startups", "Entrepreneur", "Manufacturing", "construction", "woodworking", "business", "SecurityAnalysis", "hardware"]
+    }
+  ]
+}

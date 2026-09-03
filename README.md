@@ -1,8 +1,16 @@
-# Furniture Manufacturing — Assumption Lab
+# HMLV Manufacturing — Assumption Lab
 
-Testing one idea: **custom cabinetry costs three times stock cabinetry, and most of that
-premium is a designer's afternoon rather than a manufacturing cost.** If that is right, the
-same machines sell a custom kitchen at a semi-custom price.
+Testing one belief: **software and machines don't talk, and you have to own both to fix it.**
+
+Scoped (2026-08-31) to manufacturing where **the design-to-machine handoff is per-order and
+still manual** — every job needs its own geometry, toolpath, cost and schedule, and a person
+moves that between CAD, CAM, ERP and the floor by hand.
+
+**Which industry is deliberately still open.** Picking the wedge is the question this repo
+exists to answer, not an input to it. Cabinetry and millwork are one candidate lane among
+several, not the frame — the repo was called Furniture Manufacturing while the belief was
+still cabinet-specific, and the belief has since been raised a level. `belief.md` carries
+that history in its version log; don't strip it.
 
 ## Layout
 
@@ -15,7 +23,7 @@ scripts/              the assumption pipeline — generators, validators, loader
 scripts/data/         shared query library (Reddit, HN, news, LinkedIn export)
 scripts/research/     market-evidence collectors — Census, BLS, Trends, Comtrade
 
-reports/custom-kitchen-cabinets/
+reports/high-mix-manufacturing/
   BRIEF.md            generated session entry point — read this first
   control-room.html   generated: hunch → assumptions → evidence → outreach, one page
   01-ideation/        the hunch lineage
@@ -33,7 +41,9 @@ all three; that meant "reports" named two different things depending on where yo
 
 The collectors produced this idea rather than the other way round: they started on configurable
 furniture sold direct to consumers and measured their way to fitted kitchen cabinets, the only
-one of 24 categories where search carried commercial intent. Their findings enter the pipeline
+one of 24 categories where search carried commercial intent. That measurement is what the
+belief was later generalised FROM — it is provenance, and it is furniture-shaped for good
+reason. Their findings enter the pipeline
 as ledger entries in `03-validation/evidence.md`, graded as what they are — desk measurement,
 not buyer evidence. `scripts/research/README.md` says how to run them.
 
@@ -61,7 +71,7 @@ idea's current state — and loads only the artifacts the task needs.
 
 ## Where the idea stands
 
-One idea is active: `custom-kitchen-cabinets`.
+One idea is active: `high-mix-manufacturing`.
 
 The belief and hunch are recorded, the assumption graph is built, and **every assumption is
 untested**. The ledger holds six entries and all six are our own desk measurement at 2/5 — no
@@ -72,10 +82,10 @@ no product and no spend.
 
 That is the next move, and it is what this repo was merged to do.
 
-- **Open this:** `reports/custom-kitchen-cabinets/control-room.html` — the hunch, the ranked
+- **Open this:** `reports/high-mix-manufacturing/control-room.html` — the hunch, the ranked
   assumptions, the evidence, the outreach funnel, and a **Pages** tab linking every other
   report with its status.
-- Session entry point for an assistant: `reports/custom-kitchen-cabinets/BRIEF.md`
+- Session entry point for an assistant: `reports/high-mix-manufacturing/BRIEF.md`
 - The plan the outreach is testing: `pages/cabinet-plan.html`
 - What to do in what order, with costs: `pages/build-board.html`
 - Notes template for the calls themselves: `pages/call-log.html`

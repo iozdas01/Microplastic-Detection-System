@@ -1,23 +1,20 @@
 ---
-team: two
+team: one
 founders:
   - name: Izgin Ozdas
     profile: founders/izgin-ozdas.md
     status: confirmed
-  - name: Christian Bakhos
-    profile: founders/christian-bakhos.md
-    status: confirmed   # paired 2026-08-23; profile built from public LinkedIn, not yet self-confirmed
 ---
 
 # Founders
 
-This project has **two founders** (paired 2026-08-23). Every skill or script that reads
+This project has **one founder**. A cofounder pairing ran 2026-08-23 to 2026-08-31 and
+ended; the venture is solo from 2026-08-31. Every skill or script that reads
 `founder.md` must load every profile listed above:
 
 | Founder | Status | Profile |
 |---|---|---|
 | Izgin Ozdas | confirmed | [founders/izgin-ozdas.md](founders/izgin-ozdas.md) |
-| Christian Bakhos | confirmed | [founders/christian-bakhos.md](founders/christian-bakhos.md) |
 
 Each profile is the durable, cross-idea record of that founder's experience,
 access, and founder-market-fit inputs. Use the records as context, not proof:

@@ -1,0 +1,460 @@
+<meta charset="utf-8">
+<title>Window Coverings Market Ladder</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;600;700&family=IBM+Plex+Mono:wght@400;500;600&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&display=swap">
+
+<style>
+:root {
+    --ground:   #EEF1EC;
+    --surface:  #FAFBF9;
+    --sunk:     #E4E8E1;
+    --ink:      #14180F;
+    --muted:    #5C6459;
+    --faint:    #838C7F;
+    --rule:     #D2D8CE;
+    --accent:   #24467C;
+    --supply:   #24467C;
+    --demand:   #96701C;
+    --alarm:    #8E3A26;
+
+    --display: "Archivo", "Helvetica Neue", Arial, sans-serif;
+    --body: "Source Serif 4", Georgia, "Times New Roman", serif;
+    --mono: "IBM Plex Mono", ui-monospace, "SF Mono", Menlo, monospace;
+
+    --measure: 34rem;
+    --wide: 60rem;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --ground:  #12150F;
+      --surface: #191D16;
+      --sunk:    #0D0F0B;
+      --ink:     #E8ECE4;
+      --muted:   #9AA396;
+      --faint:   #79826F;
+      --rule:    #2D3329;
+      --accent:  #86ABE8;
+      --supply:  #86ABE8;
+      --demand:  #D6AC4A;
+      --alarm:   #D97D63;
+    }
+  }
+
+  :root[data-theme="dark"] {
+    --ground:  #12150F;
+    --surface: #191D16;
+    --sunk:    #0D0F0B;
+    --ink:     #E8ECE4;
+    --muted:   #9AA396;
+    --faint:   #79826F;
+    --rule:    #2D3329;
+    --accent:  #86ABE8;
+    --supply:  #86ABE8;
+    --demand:  #D6AC4A;
+    --alarm:   #D97D63;
+  }
+
+  * { box-sizing: border-box; }
+
+  body {
+    background: var(--ground);
+    color: var(--ink);
+    font-family: var(--body);
+    font-size: 1.0625rem;
+    line-height: 1.65;
+    margin: 0;
+    padding: 0 1.5rem 6rem;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  .page { max-width: var(--wide); margin: 0 auto; }
+
+  /* Every direct child sits in the measure column by default; .bleed opts out. */
+  .flow { display: flex; flex-direction: column; gap: 1.25rem; }
+  .flow > * { max-width: var(--measure); margin-inline: 0; }
+  .flow > .bleed { max-width: 100%; width: 100%; }
+
+  /* ---------- type ---------- */
+  h1, h2, h3 { font-family: var(--display); text-wrap: balance; margin: 0; line-height: 1.15; }
+
+  h1 {
+    font-size: clamp(2.4rem, 6vw, 3.9rem);
+    font-weight: 700;
+    letter-spacing: -0.033em;
+  }
+
+  h2 {
+    font-size: clamp(1.35rem, 2.6vw, 1.7rem);
+    font-weight: 600;
+    letter-spacing: -0.017em;
+    padding-top: 2.75rem;
+    margin-top: 1.5rem;
+    border-top: 1px solid var(--rule);
+  }
+
+  h3 {
+    font-size: 1.03rem;
+    font-weight: 600;
+    letter-spacing: -0.005em;
+    margin-top: 1.25rem;
+  }
+
+  p { margin: 0; }
+  strong { font-weight: 600; }
+
+  .eyebrow {
+    font-family: var(--mono);
+    font-size: 0.7rem;
+    font-weight: 500;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--faint);
+  }
+
+  .lede {
+    font-size: 1.2rem;
+    line-height: 1.55;
+    color: var(--muted);
+  }
+
+  .note {
+    font-family: var(--mono);
+    font-size: 0.76rem;
+    line-height: 1.6;
+    color: var(--faint);
+  }
+
+  a { color: var(--accent); text-decoration-thickness: 1px; text-underline-offset: 2px; }
+  a:focus-visible, summary:focus-visible {
+    outline: 2px solid var(--accent);
+    outline-offset: 3px;
+    border-radius: 2px;
+  }
+
+  /* ---------- masthead ---------- */
+  .masthead { padding: 4.5rem 0 0; }
+  .masthead h1 { margin-bottom: 1.25rem; }
+
+  .stamp {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem 1.5rem;
+    padding-top: 1.5rem;
+    margin-top: 1.75rem;
+    border-top: 1px solid var(--rule);
+  }
+  .stamp div { font-family: var(--mono); font-size: 0.72rem; color: var(--faint); }
+  .stamp b {
+    display: block;
+    font-weight: 500;
+    color: var(--ink);
+    letter-spacing: -0.01em;
+  }
+
+  /* ---------- the divergence ---------- */
+  .diverge {
+    background: var(--surface);
+    border: 1px solid var(--rule);
+    padding: clamp(1.5rem, 4vw, 2.5rem);
+    display: grid;
+    gap: 1.75rem;
+  }
+
+  .method { display: grid; gap: 0.6rem; }
+
+  .method-head {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 1rem;
+    flex-wrap: wrap;
+  }
+
+  .method-name {
+    font-family: var(--display);
+    font-weight: 600;
+    font-size: 1rem;
+    letter-spacing: -0.01em;
+  }
+
+  .method-value {
+    font-family: var(--mono);
+    font-weight: 600;
+    font-size: clamp(1.5rem, 4vw, 2.1rem);
+    letter-spacing: -0.03em;
+    font-variant-numeric: tabular-nums;
+  }
+
+  .bar { height: 0.6rem; background: var(--sunk); overflow: hidden; }
+  .bar span { display: block; height: 100%; }
+
+  .m-demand .method-value, .m-demand .method-name { color: var(--demand); }
+  .m-demand .bar span { background: var(--demand); }  /* width set inline, from data */
+  .m-supply .method-value, .m-supply .method-name { color: var(--supply); }
+  .m-supply .bar span { background: var(--supply); }
+
+  .verdict {
+    border-top: 1px solid var(--rule);
+    padding-top: 1.5rem;
+    font-size: 1.03rem;
+  }
+  .verdict b { color: var(--alarm); font-weight: 600; }
+
+  /* ---------- findings ---------- */
+  .findings { display: grid; gap: 0; border-top: 1px solid var(--rule); }
+
+  .finding {
+    display: grid;
+    grid-template-columns: 5.5rem 1fr;
+    gap: 0 1.5rem;
+    padding: 1.5rem 0;
+    border-bottom: 1px solid var(--rule);
+    align-items: start;
+  }
+  .finding .tier {
+    font-family: var(--mono);
+    font-size: 0.7rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--faint);
+    padding-top: 0.28rem;
+  }
+  .finding h3 { margin: 0 0 0.4rem; }
+  .finding p { color: var(--muted); max-width: 34rem; }
+
+  @media (max-width: 34rem) {
+    .finding { grid-template-columns: 1fr; gap: 0.5rem; }
+  }
+
+  /* ---------- stat row ---------- */
+  .stats {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(11rem, 1fr));
+    gap: 1px;
+    background: var(--rule);
+    border: 1px solid var(--rule);
+  }
+  .stat { background: var(--surface); padding: 1.25rem 1.15rem; }
+  .stat .n {
+    font-family: var(--mono);
+    font-size: 1.6rem;
+    font-weight: 600;
+    letter-spacing: -0.035em;
+    font-variant-numeric: tabular-nums;
+    display: block;
+    line-height: 1.1;
+  }
+  .stat .k {
+    font-family: var(--mono);
+    font-size: 0.7rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--faint);
+    display: block;
+    margin-top: 0.5rem;
+  }
+  .stat .s { font-size: 0.86rem; color: var(--muted); display: block; margin-top: 0.3rem; }
+  .stat.neg .n { color: var(--alarm); }
+
+  /* ---------- tables ---------- */
+  .scroll { overflow-x: auto; }
+  table {
+    border-collapse: collapse;
+    width: 100%;
+    font-family: var(--mono);
+    font-size: 0.81rem;
+    font-variant-numeric: tabular-nums;
+  }
+  caption {
+    text-align: left;
+    font-family: var(--mono);
+    font-size: 0.7rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--faint);
+    padding-bottom: 0.7rem;
+  }
+  th, td {
+    text-align: left;
+    padding: 0.5rem 0.9rem 0.5rem 0;
+    border-bottom: 1px solid var(--rule);
+    white-space: nowrap;
+  }
+  thead th {
+    font-weight: 500;
+    color: var(--faint);
+    font-size: 0.7rem;
+    letter-spacing: 0.07em;
+    text-transform: uppercase;
+    border-bottom: 1px solid var(--ink);
+  }
+  td.num, th.num { text-align: right; padding-right: 0; }
+  tbody tr:last-child td { border-bottom: none; }
+  td.wrap { white-space: normal; min-width: 13rem; font-family: var(--body); font-size: 0.95rem; }
+  tr.lead td { background: color-mix(in srgb, var(--accent) 7%, transparent); font-weight: 500; }
+  .dim { color: var(--faint); }
+
+  /* proportional cell — a bar drawn behind the number */
+  td.plot { width: 40%; padding-right: 0; }
+  .track { display: block; height: 0.5rem; background: var(--sunk); }
+  .track i { display: block; height: 100%; background: var(--accent); }
+
+  /* ---------- callouts ---------- */
+  .callout {
+    border-left: 2px solid var(--accent);
+    padding: 0.15rem 0 0.15rem 1.25rem;
+    color: var(--muted);
+  }
+  .callout b { color: var(--ink); font-weight: 600; }
+
+  details {
+    border: 1px solid var(--rule);
+    background: var(--surface);
+    padding: 1rem 1.25rem;
+  }
+  summary {
+    cursor: pointer;
+    font-family: var(--display);
+    font-weight: 600;
+    font-size: 0.95rem;
+  }
+  details[open] summary { margin-bottom: 1rem; }
+
+  footer {
+    margin-top: 4rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid var(--rule);
+    max-width: 100%;
+  }
+
+  /* figures — used by the factory plan page; additive, no existing rule touched */
+  figure { margin: 0; }
+  figure svg { display: block; margin: 0 auto; color: var(--ink); }
+  figcaption {
+    margin-top: 0.9rem;
+    font-family: var(--mono);
+    font-size: 0.76rem;
+    line-height: 1.55;
+    color: var(--muted);
+    max-width: 46rem;
+  }
+  .phases { display: grid; gap: 1px; background: var(--rule); }
+  .phase { background: var(--surface); padding: 1.15rem 1.15rem 1.25rem; }
+  .phase .k {
+    display: block; font-family: var(--mono); font-size: 0.7rem;
+    letter-spacing: 0.08em; text-transform: uppercase; color: var(--faint);
+  }
+  .phase .n {
+    display: block; font-family: var(--display); font-size: 1.5rem;
+    margin: 0.35rem 0 0.5rem;
+  }
+  .phase p { font-size: 0.86rem; color: var(--muted); margin: 0; }
+  @media (min-width: 46rem) { .phases { grid-template-columns: repeat(3, 1fr); } }
+</style>
+
+<div class="page flow">
+
+  <header>
+    <h1>The window-coverings market, smallest business to enterprise</h1>
+    <p class="lede">Every US firm in the trade, bucketed by its own annual receipts, with what
+    a remake costs a business at each rung. Census SUSB 2022 — the only free source that
+    reports receipts by firm size. Compiled 3 September 2026.</p>
+  </header>
+
+  <div class="stats">
+    <div class="stat"><span class="n">$5.25bn</span><span class="k">US blinds trade</span><span class="s">manufacturing plus specialty retail, 2,203 firms</span></div>
+    <div class="stat"><span class="n">63%</span><span class="k">held by 10 manufacturers</span><span class="s">of all US blind and shade manufacturing revenue</span></div>
+    <div class="stat neg"><span class="n">$9.3m ARR</span><span class="k">Software ceiling, blinds only</span><span class="s">every firm buying, no competitor, no churn</span></div>
+  </div>
+
+  <h2>Why this question has a structural answer</h2>
+
+  <p>The founder's question was whether even enterprise has the measurement problem, or
+  whether they simply do not care. The ladder answers it, but not in the shape the question
+  assumed. <b>The pain concentrates exactly where the buyers are fewest, and the buyers
+  concentrate exactly where the pain is trivial.</b></p>
+
+  <p>Ten manufacturers hold 62.5% of a
+  $2.48bn industry. Each of those ten carries
+  $4.6m&ndash;$15.5m
+  of remade order value a year. At the other end of the same ladder, 27 manufacturers under
+  $100k of receipts carry about $1,700&ndash;$5,800 each. A firm losing five thousand dollars a
+  year cannot buy anything. A firm losing fifteen million can buy almost anything.</p>
+
+
+  <h2>Blind &amp; shade manufacturers <span class="note">NAICS 337920</span></h2>
+
+  <p>302 firms · 329 establishments ·
+  $2.48bn receipts</p>
+
+  <div class="bleed scroll"><table><caption>Blind &amp; shade manufacturers by firm receipts band</caption><thead><tr><th>Band ($k)</th><th>Firms</th><th>Receipts</th><th class="num">% of industry</th><th class="num">Per firm</th><th class="num">Remade per firm, 3–10%</th></tr></thead><tbody><tr><td>&lt;100</td><td>27</td><td><span class="track"><i style="width:0.10%"></i></span> $1.6m</td><td class="num">0.1%</td><td class="num">$58k</td><td class="num">$2k – $6k</td></tr><tr><td>100-499</td><td>89</td><td><span class="track"><i style="width:1.67%"></i></span> $25.9m</td><td class="num">1.0%</td><td class="num">$291k</td><td class="num">$9k – $29k</td></tr><tr><td>500-999</td><td>39</td><td><span class="track"><i style="width:1.74%"></i></span> $27.0m</td><td class="num">1.1%</td><td class="num">$692k</td><td class="num">$21k – $69k</td></tr><tr><td>1,000-2,499</td><td>59</td><td><span class="track"><i style="width:5.95%"></i></span> $92.2m</td><td class="num">3.7%</td><td class="num">$1.6m</td><td class="num">$47k – $156k</td></tr><tr><td>2,500-4,999</td><td>28</td><td><span class="track"><i style="width:6.01%"></i></span> $93.1m</td><td class="num">3.8%</td><td class="num">$3.3m</td><td class="num">$100k – $333k</td></tr><tr><td>5,000-7,499</td><td>17</td><td><span class="track"><i style="width:6.72%"></i></span> $104.1m</td><td class="num">4.2%</td><td class="num">$6.1m</td><td class="num">$184k – $612k</td></tr><tr><td>7,500-9,999</td><td>6</td><td><span class="track"><i style="width:3.24%"></i></span> $50.2m</td><td class="num">2.0%</td><td class="num">$8.4m</td><td class="num">$251k – $836k</td></tr><tr><td>10,000-14,999</td><td>11</td><td><span class="track"><i style="width:7.57%"></i></span> $117.3m</td><td class="num">4.7%</td><td class="num">$10.7m</td><td class="num">$320k – $1.1m</td></tr><tr><td>15,000-19,999</td><td>6</td><td><span class="track"><i style="width:6.53%"></i></span> $101.1m</td><td class="num">4.1%</td><td class="num">$16.8m</td><td class="num">$505k – $1.7m</td></tr><tr><td>25,000-29,999</td><td>3</td><td><span class="track"><i style="width:4.98%"></i></span> $77.1m</td><td class="num">3.1%</td><td class="num">$25.7m</td><td class="num">$771k – $2.6m</td></tr><tr class="lead"><td>100,000+</td><td>10</td><td><span class="track"><i style="width:100.00%"></i></span> $1.55bn</td><td class="num">62.5%</td><td class="num">$154.9m</td><td class="num">$4.6m – $15.5m</td></tr></tbody></table></div>
+
+
+  <h2>Window treatment stores <span class="note">NAICS 442291</span></h2>
+
+  <p>1,901 firms · 2,170 establishments ·
+  $2.77bn receipts</p>
+
+  <div class="bleed scroll"><table><caption>Window treatment stores by firm receipts band</caption><thead><tr><th>Band ($k)</th><th>Firms</th><th>Receipts</th><th class="num">% of industry</th><th class="num">Per firm</th><th class="num">Remade per firm, 3–10%</th></tr></thead><tbody><tr><td>&lt;100</td><td>166</td><td><span class="track"><i style="width:1.31%"></i></span> $8.6m</td><td class="num">0.3%</td><td class="num">$52k</td><td class="num">$2k – $5k</td></tr><tr><td>100-499</td><td>635</td><td><span class="track"><i style="width:27.58%"></i></span> $182.0m</td><td class="num">6.6%</td><td class="num">$287k</td><td class="num">$9k – $29k</td></tr><tr><td>500-999</td><td>462</td><td><span class="track"><i style="width:50.00%"></i></span> $330.0m</td><td class="num">11.9%</td><td class="num">$714k</td><td class="num">$21k – $71k</td></tr><tr><td>1,000-2,499</td><td>432</td><td><span class="track"><i style="width:100.00%"></i></span> $660.0m</td><td class="num">23.8%</td><td class="num">$1.5m</td><td class="num">$46k – $153k</td></tr><tr><td>2,500-4,999</td><td>149</td><td><span class="track"><i style="width:74.24%"></i></span> $490.0m</td><td class="num">17.7%</td><td class="num">$3.3m</td><td class="num">$99k – $329k</td></tr><tr><td>5,000-7,499</td><td>22</td><td><span class="track"><i style="width:20.44%"></i></span> $134.9m</td><td class="num">4.9%</td><td class="num">$6.1m</td><td class="num">$184k – $613k</td></tr><tr><td>7,500-9,999</td><td>10</td><td><span class="track"><i style="width:12.60%"></i></span> $83.2m</td><td class="num">3.0%</td><td class="num">$8.3m</td><td class="num">$250k – $832k</td></tr><tr><td>10,000-14,999</td><td>10</td><td><span class="track"><i style="width:14.78%"></i></span> $97.6m</td><td class="num">3.5%</td><td class="num">$9.8m</td><td class="num">$293k – $976k</td></tr><tr><td>15,000-19,999</td><td>5</td><td><span class="track"><i style="width:11.81%"></i></span> $77.9m</td><td class="num">2.8%</td><td class="num">$15.6m</td><td class="num">$468k – $1.6m</td></tr><tr class="lead"><td>100,000+</td><td>4</td><td><span class="track"><i style="width:79.76%"></i></span> $526.4m</td><td class="num">19.0%</td><td class="num">$131.6m</td><td class="num">$3.9m – $13.2m</td></tr></tbody></table></div>
+
+
+  <h2>The venture question</h2>
+
+  <p>Price every firm in both industries at what its revenue could carry — nothing below
+  $500k of receipts, $3k up to $2.5m, $12k to $10m, $40k to $30m, $150k above that — assume
+  <i>all</i> of them buy, assume no competitor and no churn, and a blinds-only software
+  business tops out at <b>$9.3m of ARR</b>. That is a ceiling nobody reaches, and it is
+  not a venture outcome.</p>
+
+  <p>The value being destroyed is much larger than the fee anyone would pay to stop it:
+  <b>$157.5m&ndash;$525.0m</b> of order value is remade each year
+  across the trade. Charging against that value rather than per seat is a different
+  calculation, and it has not been run.</p>
+
+  <h2>Where it could be venture-scale</h2>
+
+  <p>Every industry below cuts a product to a dimension somebody took at a site — the same
+  measure-to-machine path, in a different material. Blinds is
+  4.6% of the pool.</p>
+
+  <div class="bleed scroll"><table><caption>Adjacent made-to-measure industries, US 2022</caption><thead><tr><th>NAICS</th><th class="wrap">Industry</th><th class="num">Firms</th><th class="num">Receipts</th></tr></thead><tbody><tr><td>238350</td><td class="wrap">Finish carpentry contractors</td><td class="num">31,854</td><td class="num">$42.97bn</td></tr><tr><td>337110</td><td class="wrap">Wood kitchen cabinet and countertop manufacturing</td><td class="num">6,017</td><td class="num">$20.32bn</td></tr><tr><td>321911</td><td class="wrap">Wood window and door manufacturing</td><td class="num">920</td><td class="num">$19.13bn</td></tr><tr><td>238150</td><td class="wrap">Glass and glazing contractors</td><td class="num">6,548</td><td class="num">$18.08bn</td></tr><tr><td>327991</td><td class="wrap">Cut stone and stone product manufacturing</td><td class="num">2,031</td><td class="num">$8.00bn</td></tr><tr><td></td><td class="wrap"><b>Adjacent total</b></td><td class="num"></td><td class="num"><b>$108.50bn</b></td></tr></tbody></table></div>
+
+  <p>Three routes survive the arithmetic, and they are three different companies. Take
+  manufacturing revenue rather than a tool fee, against a
+  $2.48bn manufacturing TAM where one percent is
+  $24.8m. Generalise the measure-to-machine
+  path across made-to-measure generally, against $113.75bn. Or go global.
+  Blinds survives as a <b>beachhead</b> — 302 manufacturers is a countable market to learn in
+  — but the ladder says it is not the destination.</p>
+
+  <h2>What the first five calls already say</h2>
+
+  <p>Five founder-conducted phone calls into US dealers and workrooms, logged as E7&ndash;E11,
+  complicate this before any of it is acted on. Stoneside measures free but makes the
+  <i>customer</i> liable when the customer supplied the dimensions — one cited case ran to 23
+  windows reordered. A national retailer charges <b>$225 to send a measurer</b>, says it is
+  "not accurate enough", and <b>declines jobs outright</b> when the travel is too far. Every
+  dealer contacted sends a human to the window and none uses software to capture or verify.
+  And the family-run owners were <b>not enthusiastic</b> about a software fix.</p>
+
+  <p>Read together with the ladder, those calls point away from the remake as the thing to
+  sell against. The dealer has already transferred remake liability to the customer where it
+  can. What it has not solved is the <b>truck roll</b>: $225 a visit, and revenue simply
+  refused when the window is too far away. That is a cost the dealer cannot push onto anyone,
+  and it is not what this page sized.</p>
+
+  <p class="note">Source — US Census SUSB 2022, "Number of Firms and Establishments,
+  Employment, Annual Payroll and Receipts by Industry and Enterprise Receipts Size", keyless
+  bulk workbook. Collected by scripts/research/t2_susb_market_ladder.py, laddered by
+  scripts/research/analyse_market_ladder.py. The 3–10% remake rate is ASSUMED, not measured —
+  it is what H3A1 exists to settle, and every dollar figure here moves linearly with it. Seat
+  prices are modelled. NAICS undercounts the trade: Budget Blinds franchisees and the
+  big-box channel appear in neither code.</p>
+
+  <footer>
+    <p class="note">Generated by scripts/research/build_market_ladder_page.py.</p>
+  </footer>
+
+</div>

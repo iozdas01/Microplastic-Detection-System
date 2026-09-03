@@ -1,0 +1,308 @@
+<title>Bottom-Up Sizing</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,600;0,700;1,6..72,400&family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap">
+<style>
+  :root{
+    --ground:#F5F5F1; --surface:#FFFFFF; --surface-2:#EFEFE9;
+    --ink:#191C18; --ink-2:#3D423B; --muted:#6A7067;
+    --rule:#DEE0D7; --rule-2:#C9CCC1;
+    --accent:#28457F; --accent-soft:#E4E9F3; --accent-ink:#1D3560;
+    --caution:#8A6110; --caution-soft:#F5EDDD;
+    --positive:#3B6B46; --positive-soft:#E4EDE5;
+    --negative:#8C3B2F; --negative-soft:#F5E7E4;
+    --shadow:0 1px 2px rgba(25,28,24,.05), 0 8px 24px -16px rgba(25,28,24,.25);
+    --measure:70ch;
+    --fs-1:.75rem; --fs-2:.82rem; --fs-3:.94rem; --fs-4:1.06rem;
+    --fs-5:1.35rem; --fs-6:1.75rem; --fs-8:3.4rem;
+    color-scheme:light;
+  }
+  @media (prefers-color-scheme:dark){
+    :root:not([data-theme="light"]){
+      --ground:#131612; --surface:#1A1E19; --surface-2:#20251F;
+      --ink:#E9EBE4; --ink-2:#C3C8BE; --muted:#959B91;
+      --rule:#2B302A; --rule-2:#3A4038;
+      --accent:#93B2E8; --accent-soft:#1D2634; --accent-ink:#B4CBF0;
+      --caution:#D6A44E; --caution-soft:#2A2418;
+      --positive:#83B78D; --positive-soft:#1A241C;
+      --negative:#D98C7C; --negative-soft:#2B1C19;
+      --shadow:0 1px 2px rgba(0,0,0,.4), 0 8px 24px -16px rgba(0,0,0,.7);
+      color-scheme:dark;
+    }
+  }
+  :root[data-theme="dark"]{
+    --ground:#131612; --surface:#1A1E19; --surface-2:#20251F;
+    --ink:#E9EBE4; --ink-2:#C3C8BE; --muted:#959B91;
+    --rule:#2B302A; --rule-2:#3A4038;
+    --accent:#93B2E8; --accent-soft:#1D2634; --accent-ink:#B4CBF0;
+    --caution:#D6A44E; --caution-soft:#2A2418;
+    --positive:#83B78D; --positive-soft:#1A241C;
+    --negative:#D98C7C; --negative-soft:#2B1C19;
+    --shadow:0 1px 2px rgba(0,0,0,.4), 0 8px 24px -16px rgba(0,0,0,.7);
+    color-scheme:dark;
+  }
+  *{box-sizing:border-box}
+  body{background:var(--ground);color:var(--ink);
+    font-family:"IBM Plex Sans",-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+    font-size:var(--fs-3);line-height:1.62;-webkit-font-smoothing:antialiased;margin:0}
+  h1,h2,h3,h4{font-family:Newsreader,Georgia,serif;text-wrap:balance;line-height:1.15;margin:0}
+  p,ul,ol{margin:0}
+  a{color:var(--accent);text-underline-offset:2px}
+  code{font-family:"IBM Plex Mono",ui-monospace,monospace;font-size:.9em;background:var(--surface-2);padding:.06em .32em;border-radius:2px}
+  .wrap{max-width:1180px;margin:0 auto;padding:3rem 1.5rem 6rem}
+  header.top{border-bottom:2px solid var(--ink);padding-bottom:1.5rem;margin-bottom:2.5rem}
+  .kicker{font-family:"IBM Plex Mono",monospace;font-size:var(--fs-1);letter-spacing:.14em;
+    text-transform:uppercase;color:var(--muted);margin-bottom:.6rem}
+  h1{font-size:var(--fs-8);letter-spacing:-.02em}
+  .standfirst{font-size:var(--fs-4);color:var(--ink-2);max-width:var(--measure);margin-top:1rem}
+  h2{font-size:var(--fs-6);margin:3.5rem 0 1rem;padding-top:1.25rem;border-top:1px solid var(--rule-2)}
+  h3{font-size:var(--fs-5);margin:2rem 0 .6rem}
+  p+p{margin-top:.85rem}
+  .prose{max-width:var(--measure)}
+  .lede{font-size:var(--fs-4);color:var(--ink-2)}
+  .callout{background:var(--surface);border:1px solid var(--rule);border-left:3px solid var(--accent);
+    border-radius:3px;padding:1.1rem 1.3rem;margin:1.5rem 0;box-shadow:var(--shadow);max-width:var(--measure)}
+  .callout.warn{border-left-color:var(--caution);background:var(--caution-soft)}
+  .callout.bad{border-left-color:var(--negative);background:var(--negative-soft)}
+  .callout.good{border-left-color:var(--positive);background:var(--positive-soft)}
+  .callout h4{font-size:var(--fs-4);margin-bottom:.4rem}
+  .tablewrap{overflow-x:auto;margin:1.5rem 0;border:1px solid var(--rule);border-radius:3px;background:var(--surface)}
+  table{border-collapse:collapse;width:100%;font-size:var(--fs-2);min-width:760px}
+  th{text-align:left;font-family:"IBM Plex Mono",monospace;font-size:var(--fs-1);
+    text-transform:uppercase;letter-spacing:.08em;color:var(--muted);
+    padding:.7rem .8rem;border-bottom:1px solid var(--rule-2);white-space:nowrap;background:var(--surface-2)}
+  td{padding:.7rem .8rem;border-bottom:1px solid var(--rule);vertical-align:top}
+  tr:last-child td{border-bottom:none}
+  .tag{font-family:"IBM Plex Mono",monospace;font-size:var(--fs-1);padding:.14em .5em;
+    border-radius:2px;white-space:nowrap;font-weight:500}
+  .t-dead{background:var(--negative-soft);color:var(--negative)}
+  .t-alive{background:var(--positive-soft);color:var(--positive)}
+  .t-mixed{background:var(--caution-soft);color:var(--caution)}
+  .quote{font-family:Newsreader,Georgia,serif;font-size:var(--fs-5);line-height:1.4;
+    border-left:3px solid var(--accent);padding:.2rem 0 .2rem 1.2rem;margin:1.5rem 0;
+    color:var(--ink);max-width:var(--measure)}
+  .quote cite{display:block;font-family:"IBM Plex Sans",sans-serif;font-size:var(--fs-2);
+    font-style:normal;color:var(--muted);margin-top:.6rem}
+  .grid{display:grid;gap:1rem;margin:1.5rem 0}
+  @media(min-width:760px){.grid.c2{grid-template-columns:1fr 1fr}.grid.c3{grid-template-columns:repeat(3,1fr)}}
+  .card{background:var(--surface);border:1px solid var(--rule);border-radius:3px;padding:1.1rem 1.2rem}
+  .card h4{font-size:var(--fs-4);margin-bottom:.35rem}
+  .stat{font-family:"IBM Plex Mono",monospace;font-size:var(--fs-6);font-weight:600;line-height:1;display:block}
+  .stat-lbl{font-size:var(--fs-2);color:var(--muted);margin-top:.35rem;display:block}
+  ul.tight{padding-left:1.15rem}
+  ul.tight li{margin-bottom:.4rem}
+  .meta{font-size:var(--fs-2);color:var(--muted)}
+  .mapfig{margin:2rem 0;padding:0}
+<style>
+  .io{display:grid;grid-template-columns:1fr auto;gap:.5rem;align-items:center;
+    padding:.55rem .7rem;border-bottom:1px solid var(--rule)}
+  .io:last-child{border-bottom:none}
+  .io label{font-size:var(--fs-2)}
+  .io .badge{font-family:"IBM Plex Mono",monospace;font-size:10px;letter-spacing:.06em;
+    text-transform:uppercase;padding:.1em .4em;border-radius:2px;margin-left:.4rem;white-space:nowrap}
+  .b-src{background:var(--positive-soft);color:var(--positive)}
+  .b-call{background:var(--accent-soft);color:var(--accent-ink)}
+  .b-guess{background:var(--caution-soft);color:var(--caution)}
+  .io input{width:120px;text-align:right;font-family:"IBM Plex Mono",monospace;
+    font-size:var(--fs-2);padding:.35rem .5rem;border:1px solid var(--rule-2);
+    border-radius:2px;background:var(--surface);color:var(--ink)}
+  .panel{background:var(--surface);border:1px solid var(--rule);border-radius:3px;margin:1rem 0}
+  .panel h3{font-size:var(--fs-4);padding:.7rem .8rem;margin:0;border-bottom:1px solid var(--rule-2);
+    background:var(--surface-2)}
+  .out{display:flex;justify-content:space-between;padding:.5rem .8rem;border-bottom:1px solid var(--rule);
+    font-size:var(--fs-2)}
+  .out:last-child{border-bottom:none}
+  .out b{font-family:"IBM Plex Mono",monospace}
+  .big{font-family:"IBM Plex Mono",monospace;font-size:var(--fs-6);font-weight:600;display:block}
+  .sens{display:flex;align-items:center;gap:.6rem;padding:.5rem .8rem;border-bottom:1px solid var(--rule)}
+  .sens .bar{flex:1;height:6px;background:var(--surface-2);border-radius:3px;overflow:hidden}
+  .sens .bar i{display:block;height:100%;background:var(--accent)}
+  .sens .lbl{font-size:var(--fs-2);min-width:190px}
+  .sens .n{font-family:"IBM Plex Mono",monospace;font-size:var(--fs-2);color:var(--muted);min-width:70px;text-align:right}
+</style>
+
+<div class="wrap">
+<header class="top">
+  <div class="kicker">high-mix-manufacturing · H1 · bottom-up model</div>
+  <h1>Bottom-Up Sizing</h1>
+  <p class="standfirst">Built from one removal company upward, not from a market report downward. Change any number and everything recalculates. Saved to this browser only.</p>
+</header>
+
+<div class="callout">
+  <h4>Read the badges</h4>
+  <p><span class="badge b-src">sourced</span> came from published data · <span class="badge b-call">from calls</span> you get this by asking someone · <span class="badge b-guess">guess</span> is my assumption and probably wrong</p>
+  <p class="meta" style="margin-top:.5rem">The sensitivity panel at the bottom ranks inputs by how much they move the answer. Start your calls at the top of that list.</p>
+</div>
+
+<div class="grid c2">
+<div>
+  <div class="panel">
+    <h3>Supply — what exists</h3>
+    <div class="io"><label>US furniture discarded per year <span class="badge b-src">sourced</span></label><input id="i_tons" value="12100000"></div>
+    <div class="io"><label>Share that is solid wood or metal frame <span class="badge b-guess">guess</span></label><input id="i_recov" value="15"></div>
+    <div class="io"><label>Average weight per piece (lb) <span class="badge b-guess">guess</span></label><input id="i_wt" value="60"></div>
+    <div class="io"><label>Your metro's share of US population (%) <span class="badge b-src">sourced</span></label><input id="i_metro" value="1.4"></div>
+    <div class="io"><label>Share of local flow you can capture (%) <span class="badge b-call">from calls</span></label><input id="i_capture" value="5"></div>
+  </div>
+
+  <div class="panel">
+    <h3>Unit economics</h3>
+    <div class="io"><label>Acquisition — negative if you're paid to take it <span class="badge b-call">from calls</span></label><input id="i_acq" value="0"></div>
+    <div class="io"><label>Pickup &amp; transport per piece <span class="badge b-guess">guess</span></label><input id="i_trans" value="40"></div>
+    <div class="io"><label>Storage per piece <span class="badge b-guess">guess</span></label><input id="i_store" value="15"></div>
+    <div class="io"><label>Labour hours per piece <span class="badge b-call">from calls</span></label><input id="i_hrs" value="2.5"></div>
+    <div class="io"><label>Loaded labour rate ($/hr) <span class="badge b-src">sourced</span></label><input id="i_rate" value="30"></div>
+    <div class="io"><label>Finish, hardware, consumables <span class="badge b-guess">guess</span></label><input id="i_mat" value="25"></div>
+    <div class="io"><label>Listing, delivery, returns <span class="badge b-guess">guess</span></label><input id="i_fulfil" value="50"></div>
+    <div class="io"><label>Sale price per piece <span class="badge b-call">from calls</span></label><input id="i_price" value="600"></div>
+    <div class="io"><label>Customer acquisition cost <span class="badge b-guess">guess</span></label><input id="i_cac" value="150"></div>
+  </div>
+
+  <div class="panel">
+    <h3>Fixed costs</h3>
+    <div class="io"><label>Annual fixed — rent, machines, salaries <span class="badge b-guess">guess</span></label><input id="i_fixed" value="750000"></div>
+  </div>
+</div>
+
+<div>
+  <div class="panel">
+    <h3>What the model says</h3>
+    <div class="out"><span>Recoverable pieces per year, US</span><b id="o_us">—</b></div>
+    <div class="out"><span>Recoverable pieces, your metro</span><b id="o_metro">—</b></div>
+    <div class="out"><span><b>Pieces you could capture per year</b></span><b id="o_units">—</b></div>
+    <div class="out"><span>That is per working day</span><b id="o_day">—</b></div>
+  </div>
+
+  <div class="panel">
+    <h3>Per piece</h3>
+    <div class="out"><span>Total cost to produce and sell</span><b id="o_cost">—</b></div>
+    <div class="out"><span>Contribution per piece</span><b id="o_contrib">—</b></div>
+    <div class="out"><span>Gross margin</span><b id="o_gm">—</b></div>
+  </div>
+
+  <div class="panel">
+    <h3>At that volume</h3>
+    <div class="out"><span>Revenue</span><b id="o_rev">—</b></div>
+    <div class="out"><span>Gross profit</span><b id="o_gp">—</b></div>
+    <div class="out"><span>Less fixed costs</span><b id="o_op">—</b></div>
+    <div class="out"><span>Break-even volume</span><b id="o_be">—</b></div>
+  </div>
+
+  <div class="panel" id="verdictpanel">
+    <h3>Is it VC-scale?</h3>
+    <div style="padding:.9rem .8rem">
+      <span class="big" id="o_verdict">—</span>
+      <span class="meta" id="o_verdictwhy" style="display:block;margin-top:.5rem"></span>
+    </div>
+  </div>
+</div>
+</div>
+
+<h2>Which number should you go get first?</h2>
+<div class="prose"><p class="lede">Each bar is how much gross profit swings if that input is 50% worse than you have it. Longest bar is the call you should make next.</p></div>
+<div class="panel" id="sensbox"></div>
+
+<div class="callout warn">
+  <h4>What this model cannot tell you</h4>
+  <ul class="tight" style="margin-top:.5rem">
+    <li><strong>Whether anyone will buy.</strong> The sale price is an input, not a finding. Restoration Hardware marks reclaimed pine up 4× ($45 → $180/board foot) and Apple keeps 85% of new price on refurbished — so a premium is <em>achievable</em>. It is not automatic.</li>
+    <li><strong>Whether supply aggregates.</strong> Kaiyo raised ~$50m to do only the collect-and-resell half and wound down in 2024 on logistics cost.</li>
+    <li><strong>Whether the recoverable share is real.</strong> Most discarded furniture is MDF or particleboard, which cannot be recycled into new board. The 15% default is a guess and it is the single biggest swing in the model.</li>
+  </ul>
+</div>
+
+<footer>
+  <p>Sourced inputs: 12.1M tons US furniture discarded annually (EPA, 2018); ~1.4% metro population share is a placeholder for the Bay Area. Everything badged <em>guess</em> is mine and should be replaced by something you heard from a person. Values save to this browser only.</p>
+</footer>
+</div>
+
+<script>
+(function(){
+  var K="hmlv-sizing-v1";
+  var IDS=["i_tons","i_recov","i_wt","i_metro","i_capture","i_acq","i_trans","i_store",
+           "i_hrs","i_rate","i_mat","i_fulfil","i_price","i_cac","i_fixed"];
+  function $(id){return document.getElementById(id);}
+  function n(id){var v=parseFloat($(id).value);return isNaN(v)?0:v;}
+  function money(x){var s=Math.abs(x)>=1000000?"$"+(x/1000000).toFixed(2)+"m":
+    Math.abs(x)>=1000?"$"+Math.round(x/1000)+"k":"$"+Math.round(x);
+    return (x<0?"-":"")+s.replace("$-","$");}
+  function num(x){return Math.round(x).toLocaleString();}
+
+  function calc(){
+    var tons=n("i_tons"), recov=n("i_recov")/100, wt=n("i_wt");
+    var pieces_us = wt>0 ? (tons*2000*recov)/wt : 0;
+    var metro = pieces_us * (n("i_metro")/100);
+    var units = metro * (n("i_capture")/100);
+
+    var cost = n("i_acq")+n("i_trans")+n("i_store")+(n("i_hrs")*n("i_rate"))
+             + n("i_mat")+n("i_fulfil")+n("i_cac");
+    var price=n("i_price");
+    var contrib = price - cost;
+    var gm = price>0 ? contrib/price : 0;
+    var rev = units*price, gp = units*contrib, fixed=n("i_fixed");
+    var op = gp - fixed;
+    var be = contrib>0 ? fixed/contrib : Infinity;
+
+    $("o_us").textContent=num(pieces_us);
+    $("o_metro").textContent=num(metro);
+    $("o_units").textContent=num(units);
+    $("o_day").textContent=num(units/250)+" / day";
+    $("o_cost").textContent=money(cost);
+    $("o_contrib").textContent=money(contrib);
+    $("o_gm").textContent=Math.round(gm*100)+"%";
+    $("o_rev").textContent=money(rev);
+    $("o_gp").textContent=money(gp);
+    $("o_op").textContent=money(op);
+    $("o_be").textContent= isFinite(be) ? num(be)+" pieces" : "never";
+
+    var v=$("o_verdict"), w=$("o_verdictwhy");
+    if (contrib<=0){ v.textContent="No"; v.style.color="var(--negative)";
+      w.textContent="Contribution is negative — every piece loses money before fixed costs."; }
+    else if (rev>=100000000){ v.textContent="Plausibly"; v.style.color="var(--positive)";
+      w.textContent="Above $100m revenue in one metro, which is the rough bar for a venture outcome. Check the capture rate is believable."; }
+    else if (rev>=20000000){ v.textContent="Maybe"; v.style.color="var(--caution)";
+      w.textContent="A real business in one metro. Venture scale needs this replicated across metros — which is a logistics question, and logistics is what killed Kaiyo."; }
+    else { v.textContent="Not yet"; v.style.color="var(--caution)";
+      w.textContent="Under $20m in one metro. Fine as a business, hard to raise against unless the model replicates cheaply."; }
+
+    // sensitivity: 50% worse on each lever
+    var levers=[
+      {id:"i_recov", lbl:"Recoverable share"},
+      {id:"i_capture", lbl:"Capture rate"},
+      {id:"i_price", lbl:"Sale price"},
+      {id:"i_hrs", lbl:"Labour hours"},
+      {id:"i_cac", lbl:"Customer acquisition"},
+      {id:"i_trans", lbl:"Transport"}
+    ];
+    var base=gp, rows=[];
+    levers.forEach(function(L){
+      var el=$(L.id), orig=el.value;
+      var bad = (L.id==="i_recov"||L.id==="i_capture"||L.id==="i_price")
+              ? parseFloat(orig)*0.5 : parseFloat(orig)*1.5;
+      el.value=bad;
+      var t=n("i_tons"), r=n("i_recov")/100, ww=n("i_wt");
+      var pu = ww>0 ? (t*2000*r)/ww : 0;
+      var u = pu*(n("i_metro")/100)*(n("i_capture")/100);
+      var c = n("i_acq")+n("i_trans")+n("i_store")+(n("i_hrs")*n("i_rate"))+n("i_mat")+n("i_fulfil")+n("i_cac");
+      var g = u*(n("i_price")-c);
+      el.value=orig;
+      rows.push({lbl:L.lbl, swing:Math.abs(base-g)});
+    });
+    var max=Math.max.apply(null,rows.map(function(r){return r.swing;}))||1;
+    rows.sort(function(a,b){return b.swing-a.swing;});
+    $("sensbox").innerHTML=rows.map(function(r){
+      return '<div class="sens"><span class="lbl">'+r.lbl+'</span>'
+        +'<span class="bar"><i style="width:'+Math.round(r.swing/max*100)+'%"></i></span>'
+        +'<span class="n">'+money(r.swing)+'</span></div>';
+    }).join("");
+
+    try{ var o={}; IDS.forEach(function(i){o[i]=$(i).value;});
+      localStorage.setItem(K,JSON.stringify(o)); }catch(e){}
+  }
+
+  try{ var saved=JSON.parse(localStorage.getItem(K)||"{}");
+    IDS.forEach(function(i){ if(saved[i]!=null) $(i).value=saved[i]; }); }catch(e){}
+  IDS.forEach(function(i){ $(i).addEventListener("input",calc); });
+  calc();
+})();
+</script>

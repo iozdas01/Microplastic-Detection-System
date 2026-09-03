@@ -55,6 +55,7 @@ Pick exactly one. If two apply equally, use the more specific one.
 | `first-principles` | Reason from fundamentals; score or rate systematically rather than intuitively |
 | `root-cause` | Drill to the underlying cause of a problem (Five Whys family) |
 | `wedge-narrowing` | Find the minimum viable entry point that makes the larger market accessible |
+| `founder-process` | How the founder works rather than what they are examining — cadence, record-keeping, and checks on their own reasoning |
 
 ---
 

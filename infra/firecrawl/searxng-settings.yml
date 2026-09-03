@@ -1,3 +1,17 @@
+# ⚠ THIS FILE IS PROBABLY NOT THE ONE RUNNING. VERIFY BEFORE EDITING. ⚠
+#
+# The `startup-firecrawl` compose project is shared across sibling repos, and
+# whichever repo started the stack owns the bind mount. Check with:
+#
+#   docker inspect startup-firecrawl-searxng-1 \
+#     --format '{{range .Mounts}}{{.Source}}{{println}}{{end}}' | grep searxng
+#
+# On 2026-09-02 that pointed at "Startup Ideation/infra/firecrawl/", meaning
+# every edit made here since — including the 2026-08-17 re-enable below — was a
+# no-op. That mis-lead cost a full ideation run: the 2026-08-31 shotgun recorded
+# "google and duckduckgo returned no results" when in truth they were disabled
+# in the live file and never ran at all. Edit the MOUNTED file, then restart.
+
 use_default_settings: true
 
 general:
@@ -33,6 +47,16 @@ outgoing:
 #                 (repeated 180s suspensions; the exit IP is flagged)
 #   duckduckgo  → ConnectTimeout to html.duckduckgo.com, 15s
 #
+# SUPERSEDED 2026-09-02. Re-measured against the actually-mounted file:
+#   google cse  → WORKING, and the only engine returning on-topic results.
+#                 44 records over 9 sequential calls, zero empties. It is now
+#                 the primary discovery engine.
+#   duckduckgo  → CAPTCHA        startpage → Suspended: CAPTCHA
+#   brave       → Suspended      mojeek/qwant → access denied / CAPTCHA
+#   bing        → answers, but ignores site: and returns dictionary pages
+#   `google`    → not a valid engine name in searxng 2026.7.26; only
+#                 `google cse` exists. Listing it is silently ignored.
+#
 # With both of those dead the default profile returned Wikipedia and nothing
 # else, so `site:reddit.com ...` searches came back genuinely empty and
 # Firecrawl correctly reported "No search results found".
@@ -41,16 +65,13 @@ outgoing:
 # network, not because it is a bad engine. Re-enable and re-test after a network
 # or exit-IP change.
 engines:
-  # ── Re-enabled 2026-08-17: different exit IP, per the
-  #    "re-enable and re-test after a network or exit-IP change" note above. ──
-  - name: google
-    disabled: false
+  # ── Verified 2026-09-02 against the mounted file. ────────────────────────
   - name: google cse
-    disabled: true      # Still off — was the flagged path; plain google suffices.
+    disabled: false     # PRIMARY. The only engine returning on-topic results.
   - name: duckduckgo
-    disabled: false
+    disabled: false     # CAPTCHA as of 2026-09-02; harmless to leave enabled.
   - name: startpage
-    disabled: true      # Google proxy — redundant once google itself answers.
+    disabled: false     # Suspended: CAPTCHA as of 2026-09-02.
 
   # ── Verified reachable from inside the container ──────────────────────────
   - name: bing

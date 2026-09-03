@@ -1,0 +1,15 @@
+naics,kind_of_business,total_sales_usd_m,ecommerce_sales_usd_m,suppression_flag,ecommerce_share
+,Total Retail Trade …………………………............……………………………………,7040995,1012636,,0.1438
+441,Motor vehicle and parts dealers …………………………...………………………………,1521010,,D,
+442,Furniture and home furnishings stores …………………………...………………………………,143646,4779,,0.0333
+443,Electronics and appliance stores …………………………...………………………………,92760,2788,,0.0301
+444,Building mat. and garden equip. and supplies dealers …………………………………,511690,3878,,0.0076
+445,Food and beverage stores …………………………...……………………………………...…………,957185,27445,,0.0287
+446,Health and personal care stores …………………………...………………………………………,402880,,D,
+447,Gasoline stations …………………………...……………………………………...…………,736082,,D,
+448,Clothing and clothing access. stores ……………….…………...………………………,303413,20968,,0.0691
+451,"Sporting goods, hobby, musical instrument, and book stores ………………....……",102993,6128,,0.0595
+452,General merchandise stores …………………………...……………………………………...…………,862133,,D,
+453,Miscellaneous store retailers …………………………...……………………………………...…………,171265,,S,
+454,Nonstore retailers …………………………...……………………………………...…………,1235938,873421,,0.7067
+4541,Electronic shopping and mail-order houses ……………………………………………...…………,1117046,870459,,0.7793
