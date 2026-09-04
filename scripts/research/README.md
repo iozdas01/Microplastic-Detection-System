@@ -48,11 +48,11 @@ Everything below is relative to `reports/high-mix-manufacturing/research/`.
 | Path | What |
 |---|---|
 | `REPORT.md` | The findings, regenerated from whatever the collectors landed |
-| `cabinet-plan-final.html` | The current plan — the one the outreach is testing |
-| `build-board.html` | What to do in what order, with costs and decision gates |
-| `cabinet-demand-case.html` | Is there demand for custom cabinets, and how every number was derived |
-| `us-configurable-furniture.html` | The market page |
-| `autonomous-factory-plan.html` | The build proposal, with layout and flow diagrams |
+| `../pages/window-covering-market.html` | The H3 market on one page — Census layers, calls, entry options |
+| `../pages/window-covering-players.html` | Seven layers, seven numbers, seven calls |
+| `../pages/market-ladder.html` | The market as a ladder of business sizes, with remake cost per rung |
+| `../pages/startup-map.html` | The startup scene, arranged by risk taken on the outcome |
+| `../pages/outreach-send-sheet.html` | The researcher email campaign as a working surface |
 | `data/reference/equipment.csv` | The machine schedule — the one input that is typed, not fetched |
 | `data/processed/us_article_scorecard.csv` | Every furniture article, sized and scored |
 | `data/processed/*.csv` | Tidy tables, one per dataset |

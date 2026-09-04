@@ -337,7 +337,7 @@ def main() -> None:
           f"cost is ${r3['modelled_cost_per_unit_usd']:,.0f} a unit against a "
           f"${b['revenue_per_order_usd']:,} order \u2014 {r3['actual_gross_margin']:.0%}. "
           f"They converge near 5,000 units a year. The cost build-up is in "
-          f"`reports/autonomous-factory-plan.html`.\n")
+          f"`data/processed/factory_model.json`.\n")
 
     # --------------------------------------------------------------------- CAC
     cac = m["cac"]

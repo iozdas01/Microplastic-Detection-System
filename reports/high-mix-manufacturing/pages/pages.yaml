@@ -16,14 +16,6 @@
 version: 1
 
 pages:
-  - file: sizing.html
-    status: current
-    group: evidence
-    note: >-
-      Bottom-up model for H1, built from one removal company upward rather than from a market
-      report down. Every input is badged sourced / from-calls / guess, and the sensitivity
-      panel ranks which unknown moves gross profit most - that ranking is the call list.
-
   - file: hmlv-map.html
     status: current
     group: evidence
@@ -42,78 +34,6 @@ pages:
       industrialise made-to-order production across 120 years - the dead AND the ones still
       running - what killed each, why the survivors survived, a positioning map of all of
       them, what happened to US furniture manufacturing, and where the wedge ranking landed.
-      Read this before cabinet-plan.html - it contradicts parts of it.
-
-  - file: cabinet-plan.html
-    status: superseded
-    group: plan
-    note: >-
-      The full build plan, and the most complete statement of the idea: why cabinets rather
-      than furniture, the product, the process, where the 13.5 design hours go, the AI stack,
-      the manufacturing plan, the numbers, the build order, and what is still unresolved.
-
-  - file: build-board.html
-    status: current
-    group: plan
-    note: >-
-      What to do in what order, with costs and decision gates. The free things that could
-      kill the idea come before the expensive things that assume it works. Tick state is
-      saved in your browser only.
-
-  - file: cabinet-plan-final.html
-    status: superseded
-    group: plan
-    note: >-
-      A trimmed presentation cut of cabinet-plan.html — same seven opening sections, without
-      the numbers, build order or unresolved questions. Despite the filename, cabinet-plan.html
-      is the fuller and more current document.
-
-  - file: cabinet-demand-case.html
-    status: generated
-    group: evidence
-    note: >-
-      Is there demand for custom cabinets, and how every number behind that was derived.
-      Rebuilt by scripts/research/build_cabinet_page.py.
-
-  - file: us-configurable-furniture.html
-    status: generated
-    group: evidence
-    note: >-
-      The US market page for the configurable-furniture thesis this idea started from — TAM,
-      the article scorecard, SAM and SOM. Rebuilt by scripts/research/build_page_us.py.
-
-  - file: autonomous-factory-plan.html
-    status: generated
-    group: evidence
-    note: >-
-      The original autonomous-factory build proposal, with layout and flow diagrams. Rebuilt
-      by scripts/research/build_plan_page.py.
-
-  - file: business-plan.html
-    status: superseded
-    group: plan
-    note: >-
-      "The Unattended Cell" — the furniture-factory business plan written before the thesis
-      moved to cabinets. Superseded by cabinet-plan.html; kept because the cell economics and
-      the honest market section still apply.
-
-  - file: bay-area-hardwood-demand.html
-    status: superseded
-    group: evidence
-    note: >-
-      The Bay Area dining-furniture demand page this project opened with, before the scope
-      went national and then narrowed to cabinets. Superseded by us-configurable-furniture.html.
-      Its markdown counterpart is in research/archive/.
-
-  - file: inbound-demand-map.html
-    status: generated
-    group: evidence
-    note: >-
-      Where "make me this" demand actually arrives, across every machinable material — 43
-      search terms anchored on one comparable scale, then discounted by how much of each term
-      means something other than manufacturing. Answers the founder's question directly and
-      contains the finding that the blocked-part lane H2 is testing has no inbound web demand
-      at all. Rebuilt by scripts/research/build_demand_map_page.py.
 
   - file: market-ladder.html
     status: generated
@@ -164,3 +84,15 @@ pages:
       businesses, and an online retailer's rate is the only one uncontaminated by a
       professional measuring visit. Carries the worked example for layer 1 off the measured
       $225 visit. Rebuilt by scripts/research/build_players_page.py.
+
+  - file: startup-map.html
+    status: generated
+    group: evidence
+    note: >-
+      The startup scene, arranged by how much risk each company takes on the outcome rather
+      than by sector, because that is the axis the belief turns on. Quiet at rest — name,
+      stage, raise, one line — with everything else on click. Two lanes render empty, which is
+      the finding: there is no middle ground between selling a licence and owning the part.
+      Continues the map begun under manufacturing-execution-layer; carries a standing note
+      that no window-covering company is on it yet. Rebuilt by
+      scripts/research/build_startup_map_page.py.

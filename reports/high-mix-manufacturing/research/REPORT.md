@@ -1,11 +1,11 @@
 ---
 purpose: The measured US market size for this idea — TAM, the beachhead article, SAM and SOM, each step with its basis.
-generated: 2026-08-31 by scripts/research/build_report_us.py
+generated: 2026-09-03 by scripts/research/build_report_us.py
 ---
 
 # Configurable furniture from an autonomous factory — US market size
 
-Generated 2026-08-31 from `scripts/research/run_all.py`. Every figure traces to a file in `data/processed/` and a line in `data/MANIFEST.jsonl`. Numbers that are assumptions rather than measurements are marked **(assumption)** where they are used.
+Generated 2026-09-03 from `scripts/research/run_all.py`. Every figure traces to a file in `data/processed/` and a line in `data/MANIFEST.jsonl`. Numbers that are assumptions rather than measurements are marked **(assumption)** where they are used.
 
 ## The three numbers
 
@@ -120,7 +120,7 @@ One cell, 250 operating days, 7.0h of machine time per shift, 95% yield, 0.224h 
 
 Gross profit is the blended figure from the tier table. Year 3 is 21.6 orders a week out of a single cell — a manufacturing number, and the plant is not short of room to make it.
 
-**The factory does not deliver the assumed margin at this volume.** The tier ladder assumes 56%; at 1,124 units the modelled cost is $1,727 a unit against a $2,532 order — 32%. They converge near 5,000 units a year. The cost build-up is in `reports/autonomous-factory-plan.html`.
+**The factory does not deliver the assumed margin at this volume.** The tier ladder assumes 56%; at 1,124 units the modelled cost is $1,727 a unit against a $2,532 order — 32%. They converge near 5,000 units a year. The cost build-up is in `data/processed/factory_model.json`.
 
 ### Can you buy the demand to fill the line?
 
@@ -263,8 +263,6 @@ The top income quintile spends $92 a year on the beachhead article. A $2,320 uni
 
 | Source | Blocked on |
 |---|---|
-| census-acs / bay-area-households | CENSUS_API_KEY not set |
-| census-econ / industry-shipments | CENSUS_API_KEY not set |
 | etsy / listings-and-shop-sales | ETSY_API_KEY not set |
 | google-ads / keyword-metrics | missing: GOOGLE_ADS_DEVELOPER_TOKEN, GOOGLE_ADS_CLIENT_ID, GOOGLE_ADS_CLIENT_SECRET, GOOGLE_ADS_REFRESH_TOKEN, GOOGLE_AD |
 | semrush / competitor-organic-keywords | SEMRUSH_API_KEY not set |
@@ -281,16 +279,29 @@ See `scripts/research/CREDENTIALS.md`. Keyword Planner is the one that matters m
 | analysis | factory-model | 23 | ok | 2026-08-28 12:38 |
 | bls-cex | furniture-expenditure | 1,430 | ok | 2026-08-27 20:41 |
 | bls-prices | prices-and-employment | 1,378 | ok | 2026-08-28 10:45 |
-| census-acs | bay-area-households | 0 | blocked_no_credential | 2026-08-27 20:17 |
+| census-acs | bay-area-households | 12 | ok | 2026-09-03 17:02 |
+| census-arts | retail-ecommerce-share | 14 | ok | 2026-09-03 17:00 |
+| census-arts | retail-ecommerce-total-by-year | 25 | ok | 2026-09-03 17:00 |
 | census-bps | bay-area-permits | 92 | ok | 2026-08-27 20:13 |
 | census-cbp | establishments-by-naics | 457 | ok | 2026-08-28 12:35 |
-| census-econ | industry-shipments | 0 | blocked_no_credential | 2026-08-27 20:17 |
+| census-cbp | window-covering-structure | 22 | ok | 2026-09-03 13:20 |
+| census-econ | industry-shipments | 12 | ok | 2026-09-03 17:02 |
+| census-merchline | 2012-window-treatment-line | 91 | ok | 2026-09-03 17:01 |
+| census-merchline | 2017-window-treatment-line | 24 | ok | 2026-09-03 17:01 |
+| census-merchline | 2022-window-treatment-line | 23 | ok | 2026-09-03 17:01 |
+| census-merchline | window-treatment-online-share | 3 | ok | 2026-09-03 17:01 |
 | census-mrts | monthly-retail-442 | 2,070 | ok | 2026-08-27 20:13 |
 | census-popest | county-population-migration | 60 | ok | 2026-08-27 20:13 |
 | census-popest | metro-coverage | 387 | ok | 2026-08-27 21:06 |
+| census-susb | market-ladder-ranked | 21 | ok | 2026-09-03 15:18 |
+| census-susb | window-coverings-ladder | 131 | ok | 2026-09-03 15:18 |
 | etsy | listings-and-shop-sales | 0 | blocked_no_credential | 2026-08-27 20:43 |
+| etsy-browser | search-and-shop-demand | 847 | ok | 2026-09-02 00:00 |
 | google-ads | keyword-metrics | 0 | blocked_no_credential | 2026-08-27 20:43 |
+| google-trends | custom-demand-sweep | 422 | ok | 2026-09-02 17:55 |
 | google-trends | custom-furniture-categories | 118 | ok | 2026-08-28 12:23 |
+| google-trends | demand-sweep-ranking | 44 | ok | 2026-09-02 18:10 |
 | google-trends | purchase-intent-terms | 14,968 | ok | 2026-08-28 12:19 |
+| google-trends | sign-split | 53 | ok | 2026-09-02 18:13 |
 | semrush | competitor-organic-keywords | 0 | blocked_no_credential | 2026-08-27 20:43 |
 | un-comtrade | us-wood-furniture-imports | 4,663 | ok | 2026-08-27 20:17 |

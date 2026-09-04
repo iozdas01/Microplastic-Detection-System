@@ -4,7 +4,7 @@
 -->
 ---
 slug: high-mix-manufacturing
-generated: 2026-09-03T23:24Z
+generated: 2026-09-04T00:35Z
 lifecycle: active
 active_hunch: H3
 active_assumption: H3A4
@@ -12,7 +12,7 @@ sources:
   belief: 5880a564c646
   lineage: 4f5be1ae15c7
   graph: fa8784a0bc6e
-  evidence: 942c57cc2b8b
+  evidence: 196250b5b2d3
   offerings: fa8f60094cb6
   contacts: 199b7ffd9059
 ---
@@ -49,7 +49,7 @@ _← = `active_assumption`. Ranking: leap-of-faith gate → DAG roots first → 
 
 ## Evidence
 
-**14 entries** · 5 supports / 6 contradicts / 3 ambiguous · latest 2026-09-03
+**19 entries** · 6 supports / 8 contradicts / 5 ambiguous · latest 2026-09-03
 
 For **H3A4**: 1 entries.
 
@@ -98,6 +98,7 @@ _Generated from the folder. Check here before creating a new artifact — if a f
 | `reports/high-mix-manufacturing/04-mutation/offerings.md` | Candidate offerings for this idea — what would actually be sold, and to whom. |
 | `reports/high-mix-manufacturing/04-mutation/archive/offerings-cabinets-2026-09-02.md` | Candidate offerings for this idea — what would actually be sold, and to whom. |
 | `reports/high-mix-manufacturing/outreach/PLAN.md` | The one plan for the belief-level outreach block — which channel does what, in what order, and what each is allowed to prove. |
+| `reports/high-mix-manufacturing/outreach/companies.md` | The company registry for this idea — one entry per organisation, its sector, what it actually makes, and why it is on the list. |
 | `reports/high-mix-manufacturing/outreach/contacts.md` | The contact ledger for this idea — one record per person approached, their signal, and where the conversation got to. |
 | `reports/high-mix-manufacturing/outreach/research-map-shortlist.csv` | — |
 | `reports/high-mix-manufacturing/outreach/research-map.md` | What each recent paper's METHOD reveals about where the design-to-machine handoff is actually being closed, who is closing it, and which of those tea… |
@@ -117,22 +118,13 @@ _Generated from the folder. Check here before creating a new artifact — if a f
 | `reports/high-mix-manufacturing/outreach/linkedin/belief-experts-2026-09/replies.md` | Reply copy for LinkedIn threads where a contact has already responded, with the read of why they responded the way they did. |
 | `reports/high-mix-manufacturing/outreach/linkedin/belief-experts-2026-09/targets.csv` | — |
 | `reports/high-mix-manufacturing/outreach/linkedin/h3-window-coverings-2026-09/log.md` | What was invited on the H3 window-coverings LinkedIn track, when, in which market-size band, and what came back. |
-| `reports/high-mix-manufacturing/pages/autonomous-factory-plan.html` | generated — rebuild it, never edit it |
-| `reports/high-mix-manufacturing/pages/bay-area-hardwood-demand.html` | generated — rebuild it, never edit it |
-| `reports/high-mix-manufacturing/pages/build-board.html` | generated — rebuild it, never edit it |
-| `reports/high-mix-manufacturing/pages/business-plan.html` | generated — rebuild it, never edit it |
-| `reports/high-mix-manufacturing/pages/cabinet-demand-case.html` | generated — rebuild it, never edit it |
-| `reports/high-mix-manufacturing/pages/cabinet-plan-final.html` | generated — rebuild it, never edit it |
-| `reports/high-mix-manufacturing/pages/cabinet-plan.html` | generated — rebuild it, never edit it |
 | `reports/high-mix-manufacturing/pages/call-log.html` | generated — rebuild it, never edit it |
 | `reports/high-mix-manufacturing/pages/hmlv-map.html` | generated — rebuild it, never edit it |
-| `reports/high-mix-manufacturing/pages/inbound-demand-map.html` | generated — rebuild it, never edit it |
 | `reports/high-mix-manufacturing/pages/market-ladder.html` | generated — rebuild it, never edit it |
 | `reports/high-mix-manufacturing/pages/outreach-send-sheet.html` | generated — rebuild it, never edit it |
 | `reports/high-mix-manufacturing/pages/pages.yaml` | What each page in this folder is, and whether it still holds. |
 | `reports/high-mix-manufacturing/pages/predecessors.html` | generated — rebuild it, never edit it |
-| `reports/high-mix-manufacturing/pages/sizing.html` | generated — rebuild it, never edit it |
-| `reports/high-mix-manufacturing/pages/us-configurable-furniture.html` | generated — rebuild it, never edit it |
+| `reports/high-mix-manufacturing/pages/startup-map.html` | generated — rebuild it, never edit it |
 | `reports/high-mix-manufacturing/pages/window-covering-market.html` | generated — rebuild it, never edit it |
 | `reports/high-mix-manufacturing/pages/window-covering-players.html` | generated — rebuild it, never edit it |
 | `reports/high-mix-manufacturing/research/REPORT-h2.md` | Bottom-up market size for H2 — machined replacements for parts blocked in the supply chain. |
@@ -140,6 +132,7 @@ _Generated from the folder. Check here before creating a new artifact — if a f
 | `reports/high-mix-manufacturing/research/etsy-demand-2026-09-02.md` | What consumer-marketplace demand for machine-made goods actually looks like on Etsy, priced and volume-calibrated, and which of it a single self-cont… |
 | `reports/high-mix-manufacturing/research/archive/bay-area-dining-2026-08-27.md` | Custom solid-wood furniture — Bay Area demand evidence |
 | `reports/high-mix-manufacturing/research/data/MANIFEST.jsonl` | — |
+| `reports/high-mix-manufacturing/research/data/processed/acs_bay_area_households.csv` | — |
 | `reports/high-mix-manufacturing/research/data/processed/bay_area_building_permits.csv` | — |
 | `reports/high-mix-manufacturing/research/data/processed/bay_area_population.csv` | — |
 | `reports/high-mix-manufacturing/research/data/processed/bls_prices.csv` | — |
@@ -154,6 +147,7 @@ _Generated from the folder. Check here before creating a new artifact — if a f
 | `reports/high-mix-manufacturing/research/data/processed/demand_sweep_families.csv` | — |
 | `reports/high-mix-manufacturing/research/data/processed/demand_sweep_ranking.csv` | — |
 | `reports/high-mix-manufacturing/research/data/processed/demand_sweep_related.csv` | — |
+| `reports/high-mix-manufacturing/research/data/processed/econ_census_industry.csv` | — |
 | `reports/high-mix-manufacturing/research/data/processed/etsy_categories.csv` | — |
 | `reports/high-mix-manufacturing/research/data/processed/etsy_shops.csv` | — |
 | `reports/high-mix-manufacturing/research/data/processed/factory_bom.csv` | — |
@@ -170,6 +164,7 @@ _Generated from the folder. Check here before creating a new artifact — if a f
 | `reports/high-mix-manufacturing/research/data/processed/metro_coverage.csv` | — |
 | `reports/high-mix-manufacturing/research/data/processed/mrts_furniture_monthly.csv` | — |
 | `reports/high-mix-manufacturing/research/data/processed/retail_ecommerce_share.csv` | — |
+| `reports/high-mix-manufacturing/research/data/processed/retail_ecommerce_total_by_year.csv` | — |
 | `reports/high-mix-manufacturing/research/data/processed/sign_split.csv` | — |
 | `reports/high-mix-manufacturing/research/data/processed/sign_split_batch1.csv` | — |
 | `reports/high-mix-manufacturing/research/data/processed/sign_split_batch1_related.csv` | — |
@@ -187,6 +182,8 @@ _Generated from the folder. Check here before creating a new artifact — if a f
 | `reports/high-mix-manufacturing/research/data/processed/trends_related_queries.csv` | — |
 | `reports/high-mix-manufacturing/research/data/processed/us_article_scorecard.csv` | — |
 | `reports/high-mix-manufacturing/research/data/processed/window_covering_structure.csv` | — |
+| `reports/high-mix-manufacturing/research/data/processed/window_treatment_merch_line.csv` | — |
+| `reports/high-mix-manufacturing/research/data/processed/window_treatment_online_share.csv` | — |
 | `reports/high-mix-manufacturing/research/data/processed/archive-bay-area-ca/custom_categories_adjusted.csv` | — |
 | `reports/high-mix-manufacturing/research/data/processed/archive-bay-area-ca/trends_by_metro.csv` | — |
 | `reports/high-mix-manufacturing/research/data/processed/archive-bay-area-ca/trends_custom_categories.csv` | — |
@@ -200,11 +197,16 @@ _Generated from the folder. Check here before creating a new artifact — if a f
 | `reports/high-mix-manufacturing/research/data/raw/bls-cex/cx.series` | — |
 | `reports/high-mix-manufacturing/research/data/raw/bls-cex/cx.subcategory` | — |
 | `reports/high-mix-manufacturing/research/data/raw/bls-prices/prices-and-employment-*.json` | 2 dated snapshots — latest 2026-08-28 · — |
+| `reports/high-mix-manufacturing/research/data/raw/census-acs/2026-09-03-bay-area-households.json` | — |
 | `reports/high-mix-manufacturing/research/data/raw/census-arts/arts-ecommerce-2022.xlsx` | — |
 | `reports/high-mix-manufacturing/research/data/raw/census-bps/2026-08-27-bay-area-permits.json` | — |
 | `reports/high-mix-manufacturing/research/data/raw/census-cbp/cbp22co.txt` | — |
 | `reports/high-mix-manufacturing/research/data/raw/census-cbp/cbp22co.zip` | �Q�Z9 |
 | `reports/high-mix-manufacturing/research/data/raw/census-cbp/cbp22us.zip` | — |
+| `reports/high-mix-manufacturing/research/data/raw/census-econ/2026-09-03-industry-shipments.json` | — |
+| `reports/high-mix-manufacturing/research/data/raw/census-merchline/2026-09-03-2012-20280.json` | — |
+| `reports/high-mix-manufacturing/research/data/raw/census-merchline/2026-09-03-2017-5000625000.json` | — |
+| `reports/high-mix-manufacturing/research/data/raw/census-merchline/2026-09-03-2022-5000625000.json` | — |
 | `reports/high-mix-manufacturing/research/data/raw/census-mrts/mrtssales92-present.xlsx` | — |
 | `reports/high-mix-manufacturing/research/data/raw/census-popest/2026-08-27-county-population-migration.json` | — |
 | `reports/high-mix-manufacturing/research/data/raw/census-popest/2026-08-27-metro-coverage.json` | — |

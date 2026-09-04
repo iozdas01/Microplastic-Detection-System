@@ -48,8 +48,7 @@ entries:
       Google Trends, United States, five years, collected 2026-09-03 by
       scripts/research/t1_demand_sweep.py. Forty-three terms across every machinable
       material, each batch anchored on "custom furniture" so all terms are comparable.
-      Scored by scripts/research/analyse_demand_sweep.py; rendered at
-      pages/inbound-demand-map.html.
+      Scored by scripts/research/analyse_demand_sweep.py.
     claim: >-
       The blocked-part vocabulary has no measurable inbound search demand in the US. All
       four terms swept for it — "obsolete parts", "custom replacement part", "part no
@@ -251,8 +250,12 @@ entries:
     confidence: 4
     source_type: customer_interview
     source: >-
-      Phone call with a national blinds retailer. Founder-conducted. Company name recorded by
-      the founder as "the national blinds guys"; the exact legal entity is not pinned down.
+      Phone call with a blinds retailer. Founder-conducted. Company name recorded by the
+      founder as "the national blinds guys"; the exact legal entity is not pinned down.
+      CORRECTED 2026-09-03: asked to confirm, the founder said the person "seemed like she
+      owned it". So "national" was the founder's own uncertain shorthand, not something the
+      contact said. Treat the firm size as UNKNOWN — the original wording implied a large
+      chain, and E12 makes firm size the difference between a buyer and a non-buyer.
     claim: >-
       They charge $225 to send someone out to measure. They said it is "not accurate enough",
       and they decline jobs outright when sending someone out is too far.
@@ -265,6 +268,10 @@ entries:
       long, which means the measurement visit bounds their serviceable radius. A cost that is
       both certain and territory-limiting is a better thing to attack than a remake rate
       nobody publishes.
+      The size correction cuts the other way, though: declining jobs on drive distance is
+      owner-operator behaviour, not national-chain behaviour, and an owner-operator is the
+      firm E12 says cannot buy anything. The $225 stays the sharpest costed number in the
+      ledger; who carries it is now less certain, not more.
     limits: >-
       "Not accurate enough" was said about their own paid visit, and the founder did not
       capture what inaccuracy rate they meant or what it costs them downstream. No figure for
@@ -463,7 +470,6 @@ entries:
       measurable with a free Census API key via merchandise-line detail, or approximately from
       the revenue split between 442291 window treatment stores and the online-only sellers.
       Until then no percentage belongs in the hunch statement.
-```
 
   # ─── Blinds.com in-home measure appointment, 2026-09-03. Founder-conducted, in person. ───
   # An installer/technician working the SF and Oakland service area. First look inside the
@@ -555,3 +561,90 @@ entries:
       neutral router could. If the answer is nothing, the wedge is the measurement layer they
       would buy, not the router they already run.
 
+
+  # ─── Economic Census merchandise line, collected 2026-09-03 once CENSUS_API_KEY existed. ───
+  # E14 left the online share of window coverings as an OPEN QUESTION and named the exact
+  # source that would close it. E18 closes it. E19 carries the size numbers that came with it.
+
+  - id: E18
+    date: 2026-09-03
+    hunch: H3
+    assumption_linked: unassigned
+    verdict: contradicts
+    confidence: 4
+    source_type: commercial_data
+    source: >-
+      2017 Economic Census, dataset `ecnnapcsprd`, product line NAPCS 5000625000 "Retail sales
+      of window treatments, including rods, poles, and fixtures", split across the industries
+      that sold it. Benchmarked against Census ARTS all-retail e-commerce for the same year.
+      Collected by scripts/research/t2_census_merchline_window.py.
+    claim: >-
+      In 2017, electronic shopping and mail-order houses (NAICS 454110) booked $3.76bn of the
+      $11.80bn US retail window-treatment line — 31.9%. All US retail was 8.8% e-commerce that
+      year, so the category was 3.6x more online-penetrated than retail as a whole. The
+      visit-based channels were the minority: in-home direct selling 12.2% and window treatment
+      stores 11.9%, 24.1% together. The largest single channel was home centers at 33.7%.
+    why_it_matters: >-
+      The H3 statement says the measuring step "caps the category's online share". A category
+      selling at 3.6x the all-retail online rate is not behaving like one with a cap, and 31.9%
+      is roughly double the 16% that was recalled from memory and corrected in E14. If a cap
+      exists it sits far above where the hunch implied, and above the point at which "you must
+      send someone to the window" can be the binding constraint on the whole category. What
+      survives is the narrower claim: the visit binds the MADE-TO-MEASURE part, which this line
+      cannot isolate.
+    limits: >-
+      Three limits, and the first is the one that matters. (1) The line bundles a $12 curtain
+      rod with a motorised made-to-measure shade — nothing in the Economic Census isolates
+      made-to-measure, so this is the online share of the CATEGORY, never of the part H3 is
+      about. (2) 2017, not 2022: the 2022 NAICS revision dissolved subsector 454 and moved the
+      online-only sellers into the storefront industries, so 2022 publishes a line total
+      ($9.63bn) with no online row at all — see E19. (3) 31.9% is a floor for online, not a
+      ceiling: 454110 includes mail order, but home centers' and specialists' own websites are
+      counted inside their store industries, so the true online figure is higher.
+      Graded 4 rather than the default 5 for commercial_data because of limit (1) — the
+      measurement is exact, the fit to the question is not.
+    next: >-
+      Two things settle whether the cap claim survives. Ask sellers directly what share of
+      their own MADE-TO-MEASURE orders ship without a visit — that is the number this line
+      cannot give and a dealer can. And decide whether H3's statement should be narrowed from
+      "the category's online share" to "the made-to-measure share", because as written this
+      entry contradicts it.
+
+  - id: E19
+    date: 2026-09-03
+    hunch: H3
+    assumption_linked: unassigned
+    verdict: ambiguous
+    confidence: 5
+    source_type: commercial_data
+    source: >-
+      2022 Economic Census, datasets `ecnbasic` (NAICS 337920, 449122) and `ecnnapcsprd`
+      (NAPCS 5000625000). Collected by scripts/research/t2_census_merchline_window.py and
+      scripts/research/t2_census_econ.py.
+    claim: >-
+      Measured 2022 sizes for the trade. Blind and shade MANUFACTURING (337920): 320
+      establishments and $2.59bn of shipments nationally, 53 establishments and $389m in
+      California. Window Treatment RETAILERS (449122): 3,276 establishments, 2,988 firms,
+      $4.78bn of sales, 14,199 employees. The whole retail window-treatment merchandise line
+      across every industry that sells it: $9.63bn over 65,753 establishments, of which 449122
+      booked $4.60bn (47.7%) and home centers $2.82bn (29.2%).
+    why_it_matters: >-
+      Replaces an unsourced pair of numbers and explains a jump that would otherwise read as
+      growth. The recon asserted "484 establishments, ~$2.4-2.5bn, NAICS 337920" with no URL;
+      the revenue was close to right ($2.59bn) and the establishment count was not (320). More
+      importantly, 449122 in 2022 is 3.1x the revenue of its 2017 predecessor 442291 ($1.52bn,
+      1,816 establishments) — not because window treatment retail tripled, but because the 2022
+      NAICS revision moved the online-only sellers into it. Blinds.com and its peers now sit in
+      the same industry code as the storefronts they compete with, which is precisely why the
+      online share is only measurable for 2017 (E18) and why any post-2022 "window treatment
+      retail" figure quietly includes the online channel.
+    limits: >-
+      Manufacturing shipments and retail sales are different denominators and must not be added
+      or compared: the $2.59bn made and the $9.63bn sold are the same product at two points in
+      the chain, with imports and margin between them. The 2022 line total is not comparable to
+      2017's $11.80bn either — the establishment universe was reclassified between the two.
+    next: >-
+      Use $9.63bn as the retail denominator and $2.59bn as the manufacturing one, and say which
+      is which every time. Where a per-seller figure is needed, 449122's $4.78bn over 2,988
+      firms is the measured average for a window treatment retailer.
+```

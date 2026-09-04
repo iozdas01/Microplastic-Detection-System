@@ -20,7 +20,9 @@ TIER1 = ["t1_google_trends", "t1_custom_categories", "t1_google_ads_keywords",
          "t1_semrush", "t1_etsy_supply"]
 TIER2 = ["t2_census_mrts", "t2_bls_cex", "t2_bls_prices", "t2_cbp_supply",
          "t2_permits", "t2_popest", "t2_metro_coverage", "t2_trade_imports",
-         "t2_census_acs", "t2_census_econ"]
+         "t2_census_acs", "t2_census_econ",
+         # ARTS before merchline: merchline reads the all-retail benchmark ARTS writes.
+         "t2_census_arts_ecommerce", "t2_census_merchline_window"]
 
 
 def main() -> None:
@@ -50,8 +52,7 @@ def main() -> None:
     # build_tam_us consumes both. The dependency runs supply -> demand, not the reverse.
     for name in ("analyse_custom_categories", "analyse_custom_demand",
                  "build_cabinet_tam", "build_factory", "build_tam_us",
-                 "build_report_us", "build_page_us", "build_cabinet_page",
-                 "build_plan_page"):
+                 "build_report_us"):
         try:
             importlib.import_module(name).main()
         except Exception:  # noqa: BLE001

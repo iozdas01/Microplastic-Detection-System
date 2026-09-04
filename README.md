@@ -86,6 +86,6 @@ That is the next move, and it is what this repo was merged to do.
   assumptions, the evidence, the outreach funnel, and a **Pages** tab linking every other
   report with its status.
 - Session entry point for an assistant: `reports/high-mix-manufacturing/BRIEF.md`
-- The plan the outreach is testing: `pages/cabinet-plan.html`
-- What to do in what order, with costs: `pages/build-board.html`
+- The market the outreach is testing: `pages/window-covering-market.html`
+- Who to call, ranked by leverage: `pages/window-covering-players.html`
 - Notes template for the calls themselves: `pages/call-log.html`
