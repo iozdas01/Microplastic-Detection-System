@@ -580,8 +580,9 @@ entries:
       Collected by scripts/research/t2_census_merchline_window.py.
     claim: >-
       In 2017, electronic shopping and mail-order houses (NAICS 454110) booked $3.76bn of the
-      $11.80bn US retail window-treatment line — 31.9%. All US retail was 8.8% e-commerce that
-      year, so the category was 3.6x more online-penetrated than retail as a whole. The
+      $11.80bn US retail window-treatment line — 31.9%, a figure Census publishes directly as
+      NAICSALL_PCT rather than one derived here. All US retail was 8.8% e-commerce that year
+      (ARTS), so the category ran roughly 3.6x the all-retail rate. The
       visit-based channels were the minority: in-home direct selling 12.2% and window treatment
       stores 11.9%, 24.1% together. The largest single channel was home centers at 33.7%.
     why_it_matters: >-
@@ -601,6 +602,25 @@ entries:
       ($9.63bn) with no online row at all — see E19. (3) 31.9% is a floor for online, not a
       ceiling: 454110 includes mail order, but home centers' and specialists' own websites are
       counted inside their store industries, so the true online figure is higher.
+      (4) The 3.6x is a comparison across two different measurement bases and is directional,
+      not like-for-like. 454110 classifies the SELLER (and includes catalogue mail-order, which
+      2017 NAICS collapsed into the same code and which cannot be split out); ARTS classifies
+      the TRANSACTION across all sellers including store-based ones selling online. The two
+      errors run in opposite directions and partly cancel. The claim that needs no adjustment
+      is the within-table one: the visit-heavy channels — in-home direct selling 12.2% and
+      window treatment stores 11.9% — total 24.1%, less than the remote channel alone.
+      Prefer "bought from a nonstore seller" to "e-commerce" when quoting this; the latter is
+      an inference about the transaction, the former is what the row actually says.
+      (5) US ONLY, and not by omission — `ecnnapcsprd` publishes no geography below the
+      nation (its only geo variables are GEO_ID and NATION; a state query returns HTTP 400).
+      The sister dataset `ecnnapcsind` does carry state, but returns the line for California
+      only through the two channels with physical presence — window treatment stores $221.1m
+      (91.1% of those stores' revenue) and other direct selling $222.7m (83.2%) — and zero
+      for electronic shopping, home centers and department stores, which is non-publication
+      rather than absence. A state-level online share would be meaningless anyway: an
+      establishment is located where the seller is, not where the customer is, so a nonstore
+      retailer's sales all land in one state regardless of where the blinds went. The 31.9%
+      works nationally and nowhere else. Do not attempt a California version.
       Graded 4 rather than the default 5 for commercial_data because of limit (1) — the
       measurement is exact, the fit to the question is not.
     next: >-
@@ -647,4 +667,272 @@ entries:
       Use $9.63bn as the retail denominator and $2.59bn as the manufacturing one, and say which
       is which every time. Where a per-seller figure is needed, 449122's $4.78bn over 2,988
       firms is the measured average for a window treatment retailer.
+
+  # ─── Anthropic Model Hardware Standard, previewed 2026-08-27. Desk research 2026-09-03. ───
+  # The mechanics live in pages/system-architecture.html, which already carries the machine
+  # inventory and the phase-4 plan. This entry records only what MHS does to the BELIEF.
+
+  - id: E20
+    date: 2026-09-03
+    hunch: H3
+    assumption_linked: unassigned
+    verdict: ambiguous
+    confidence: 2
+    source_type: company_statement
+    source: >-
+      Anthropic, "Previewing the Model Hardware Standard", research preview announcement,
+      2026-08-27. https://www.anthropic.com/news/model-hardware-standard-research-preview
+    claim: >-
+      MHS is an open specification giving AI agents a standardised driver — read/write
+      primitives, standard-format device discovery, and natural-language tags documenting each
+      device's capabilities and safety limits. Anthropic's stated effect is that hardware
+      integration drops from "weeks, if not months" to "hours or minutes"; launch partners
+      report Carnegie Mellon at about eight hours against several weeks for a vendor build, and
+      University of Washington connecting six instruments in under a week. Model-agnostic,
+      reachable over MCP, research preview with stated intent to open-source. Named vendors are
+      lab automation and cobots — Tecan, QIAGEN, Danaher, MBF Bioscience, Automata, Universal
+      Robots, Doosan, AWS Strands Robots, Hugging Face LeRobot, Raspberry Pi. Stated limits:
+      it needs a programmable interface and does not work with hardware lacking one, and Claude
+      "did not yet understand the underlying physics" in liquid handling, with spatial and
+      physical reasoning still requiring expert oversight.
+    why_it_matters: >-
+      Logged as AMBIGUOUS because it does two opposite things to the belief on the same day.
+      It CONFIRMS the prediction half — Anthropic is building for exactly "manufacturing done
+      through an app", and it is the founder's why-now with a date on it, six days before this
+      entry. It ERODES the precondition half as a source of advantage: belief.md v3 names
+      "interoperability stops being the bottleneck" as the primary threat to the belief, and
+      MHS is that threat arriving, from a company that intends to open-source it. The company
+      therefore cannot be the interoperability layer. What survives is the layer above it —
+      knowing what to send the machines, which is precisely the gap Anthropic names in its own
+      limitations, and which a mechanical engineer who ran a high-mix shop and measured the
+      CAD-to-machine handoff is unusually placed to fill. Note also that this partially
+      vindicates the `mess_is_the_market` thesis the founder reversed on 2026-08-31: MHS
+      commoditises the programmable greenfield fastest, leaving the un-programmable installed
+      base as the durable part.
+    limits: >-
+      A company's own announcement about its own unreleased product — graded 2, the
+      company_statement floor, and the mechanism is what to grade, never the "hours or minutes"
+      superlative. Research preview, not shipped or open-sourced yet. The integration-time
+      figures come from launch partners Anthropic selected. Every named vendor is lab
+      automation or cobots: no CNC, panel-saw, or woodworking controls vendor — no Homag,
+      Biesse, SCM, Fanuc or Siemens — is on the list, so nothing here has reached the machines
+      this wedge needs. pages/system-architecture.html already found only one genuinely
+      MHS-ready machine on a blind fabricator's floor.
+      Checked 2026-09-03: there is NO paper, NO published specification, NO GitHub repository
+      and NO public documentation. The announcement and modelhardwarestandard.com carry prose
+      plus an application form (https://forms.gle/UdQ8JubjMN1R5CJt8) and nothing else. The
+      annotation layer is described only in words — no tag syntax, no schema, no field names,
+      no sample reference file. So nothing can be built against MHS today, and no claim of MHS
+      compatibility is checkable by anyone, us included. Do not cite a paper; there isn't one.
+    next: >-
+      The event to watch for is a woodworking or CNC controls vendor adopting MHS; that is what
+      would move it from lab automation into this trade, and it is checkable monthly for free.
+      Until then the un-programmable installed base is the moat rather than the standard, and
+      the pitch should say the edge is the judgement above the interface, not the interface.
+
+  # ─── Paper-mine batch 4, 2026-09-03. Two rows with no author-published address, kept here ───
+  # because the finding outlives the contact. Rows dropped from research-map.md; ids in the
+  # shortlist CSV. Both are technical claims — they may kill a technical premise, never a hunch.
+
+  - id: E21
+    date: 2026-09-03
+    hunch: H3
+    assumption_linked: unassigned
+    verdict: ambiguous
+    confidence: 3
+    source_type: article
+    source: >-
+      "LAP: An Agent-to-Instrument Protocol for Autonomous Science", arXiv 2606.03755,
+      2026-06-03. https://arxiv.org/abs/2606.03755
+    claim: >-
+      An independent group specified the same edge MHS is standardising, three months earlier
+      and in public. LAP names the gap precisely: MCP standardises agent-to-tool and Google's
+      A2A standardises agent-to-agent, but neither models the agent-to-instrument edge, where
+      operations are stateful, safety-critical, exclusively owned, physically embodied, and
+      produce measurements carrying units, calibration and uncertainty. It adds four
+      primitives: the InstrumentCard, a signed capability and physical-limit description; a
+      first-class reservation for exclusive instrument locking; a safety-fence handshake with
+      operator-confirmation tokens cryptographically bound to a task and its parameters; and a
+      MeasurementResult schema that is physically typed (QUDT/UCUM), calibration-anchored and
+      uncertainty-bearing. It encapsulates rather than replaces SiLA 2 and OPC-UA.
+    why_it_matters: >-
+      Two things, and they pull in opposite directions, which is why this is ambiguous.
+      First, it answers a question MHS cannot: the founder asked for a concrete example of the
+      semantic layer, and Anthropic has published none — no spec, no syntax, no sample file
+      (E20). LAP's InstrumentCard is the public, specified analogue of exactly that object,
+      and it is readable today. Second, it is independent convergence on the architecture in
+      pages/system-architecture.html: LAP's MeasurementResult is required to carry its own
+      uncertainty, which is the trust envelope — "a measurement system that cannot report its
+      own uncertainty converts a known cost into an unknown one" — arrived at by a different
+      group for a different domain with no knowledge of this repo. A load-bearing design
+      decision getting independent support is worth more than another market number.
+      The cost side: the agent-to-instrument edge now has at least two candidate standards and
+      neither is ours. Whatever the company is, it is not that layer.
+    limits: >-
+      A protocol DESIGN paper. Roles, a six-layer architecture, a JSON-RPC method set and state
+      machines are specified, and a closed-loop campaign is walked through the protocol — on
+      paper. No deployment, no instruments, no measured integration cost. Scoped to autonomous
+      science, not manufacturing, so the InstrumentCard is shaped for lab instruments rather
+      than for machine tools. No author-published address in the source package, so the row was
+      dropped from the research map and the team is not currently reachable.
+    next: >-
+      Read the InstrumentCard and MeasurementResult schemas properly before designing the
+      MachineProfile — this is free prior art for the object Agent B has to emit. And watch
+      whether LAP and MHS converge or fork; two competing agent-to-instrument standards would
+      delay the whole premise by years, which is the risk to track rather than to assume away.
+
+  - id: E22
+    date: 2026-09-03
+    hunch: H3
+    assumption_linked: unassigned
+    verdict: supports
+    confidence: 2
+    source_type: article
+    source: >-
+      "Semantic Graph Unification for Industrial Digital Threads: Bridging 11 Heterogeneous
+      Manufacturing Systems Through Ontology-Driven Knowledge Graphs", arXiv 2608.24918,
+      2026-08-24. https://arxiv.org/abs/2608.24918
+    claim: >-
+      Unifying ERP, MES, PLM, SCADA, QMS and SCM into one RDF knowledge graph, the authors
+      measure what the silos cost: blocking the 24 cross-system tools drops recall from 1.00 to
+      0.31 and F1 from 1.00 to 0.48, so 69% of discoverable signals require joins that cross a
+      system boundary. They also state the structural reason point-to-point integration fails —
+      it scales as O(n squared) and accumulates brittle dependencies.
+    why_it_matters: >-
+      A number for the belief's link 1. The claim that software and machines do not talk is
+      usually argued anecdotally; this puts 69% on how much is invisible without crossing the
+      boundary, and the O(n squared) point is the same fixed-cost argument the pitch makes,
+      arrived at from graph theory rather than from unit economics.
+    limits: >-
+      Eleven SIMULATED sources, not eleven real installations, and the verification manifest
+      was author-constructed — the authors say plainly this is verification, not independent
+      validation. So 69% is a property of their synthetic estate and must never be quoted as an
+      industry figure. No author-published address; row dropped from the map.
+    next: >-
+      If a number like this is ever needed for the pitch it has to come from a real estate, not
+      this one. Useful as a framing for why point-to-point integration is not the answer;
+      useless as a measurement.
+
+  - id: E23
+    date: 2026-09-03
+    hunch: H3
+    assumption_linked: unassigned
+    verdict: supports
+    confidence: 2
+    source_type: article
+    source: >-
+      "Previewing the Model Hardware Standard", Anthropic, 2026-08-27.
+      https://www.anthropic.com/news/model-hardware-standard-research-preview
+      Origin detail from HHMI: https://www.hhmi.org/news/how-one-postdocs-problem-solving-changing-way-scientists-work
+    claim: >-
+      Anthropic opened a gated research preview of the Model Hardware Standard: a driver
+      specification exposing any programmable device through read/write primitives, with a
+      natural-language annotation layer that compiles into a machine-readable reference file
+      naming what a device measures, what is adjustable and what safety limits are enforced.
+      Reported partner results include a laser relock at QuEra going from 58% at ~150s per
+      attempt to 99.3% at 0.9-5.4s, hardware integration at HHMI Janelia falling from multi-day
+      to minutes, and a dose-response setup at Carnegie Mellon integrated in eight hours against
+      the several weeks a vendor build takes. It originated with one Janelia postdoc's shared
+      memory dictionary for a mixed-vendor microscopy rig.
+    why_it_matters: >-
+      Direct evidence for the belief's precondition clause - interoperability is being paid for
+      by someone with the balance sheet to make it stick, which is what "the precondition is
+      arriving" looks like. Two structural details transfer regardless of whether MHS itself
+      ever reaches this trade. First, the annotation layer is a format for writing down tacit
+      operator knowledge that appears nowhere in any API, which is the same artifact a
+      deduction table is. Second, the QuEra result is an agent searching a physical system
+      overnight and emitting a DETERMINISTIC script - the agent leaves before runtime. That is
+      the pattern to copy, and it works there because a relock attempt consumes nothing and
+      resets itself, which is not true of anything that cuts material.
+    limits: >-
+      An announcement, not a paper. No specification, no driver implementation, no repository is
+      public; access is application-only. Every figure is Anthropic's, unverified. Anthropic's
+      own stated limitation is decisive here: it requires hardware with a programmable
+      interface, and the blind fabrication floor is almost entirely below that line - the only
+      MHS-ready machine found there is the shutter router. Under the repo rule an announcement
+      may not move a thesis, hunch or lane, and this one does not.
+    next: >-
+      The leading indicator is not more lab partners; it is a machine-tool builder shipping
+      native write access, which cannot even begin before the spec is public. One open question
+      would change the machine inventory materially: whether a PLC over Modbus TCP counts as a
+      programmable interface. Worth asking if preview access is ever granted.
+
+  - id: E24
+    date: 2026-09-03
+    hunch: H3
+    assumption_linked: unassigned
+    verdict: ambiguous
+    confidence: 3
+    source_type: article
+    source: >-
+      BlindMatrix manufacturer ERP product page, swept 2026-09-03.
+      https://blindmatrix.com/erp-for-manufacturers/ Corroborated by BlinQ
+      (https://www.blinq.com.au/) and Quoterite (https://quoterite.com/).
+    claim: >-
+      BlindMatrix states its software will "generate the cut sheets, allowances, and
+      manufacturing calculations" and "send the information about the cut lengths after adding
+      or deducting the allowances" to integrated cutting tables via XML or CSV, plus barcode
+      work orders. It claims 1,000+ businesses across the UK, US, Australia, Canada, New Zealand
+      and South Africa. BlinQ ships order deductions and labels; Quoterite ships linked quoting
+      and ordering. Aggregator revenue estimates: BlindMatrix ~$22m, Windowmaker ~$21.8m,
+      Cyncly ~$420m.
+    why_it_matters: >-
+      Deduction-to-cut-list is a commodity feature of this trade's ERP, not an opening. Any
+      product plan that entered by automating the office arithmetic is entering against
+      twenty-year incumbents who already ship it to a thousand shops. It also cuts the other
+      way and that is the more useful half: if the office side is already automated at this
+      density, the remaining remake cost is pushed toward the window, which is where H3 says it
+      is. And an order-to-cutting-table pipeline already installed in a thousand fabricators is
+      the precondition for routing across them, not a competitor to it.
+    limits: >-
+      Company-authored marketing copy, not a demonstration or a customer account. "Integrated
+      cutting tables" is unquantified - which machines, how many customers actually use it, and
+      whether the integration is live or a professional-services project are all unknown.
+      Revenue figures are aggregator estimates with no filing behind them and should be read as
+      bands. Penetration among the SMALL fabricators that make up most of the trade is not
+      established; the market-ladder page already found the bottom of the ladder cannot afford
+      software.
+    next: >-
+      Ask any fabricator two things: which system they run, and whether their cut lengths are
+      calculated by the software or by a person. The answer decides whether the office half of
+      rework is already solved in the field or only on a website.
+
+  - id: E25
+    date: 2026-09-03
+    hunch: H3
+    assumption_linked: unassigned
+    verdict: ambiguous
+    confidence: 3
+    source_type: article
+    source: >-
+      Capability sweep of nine software companies selling into window coverings and the
+      adjacent window/door trade, 2026-09-03. Rendered at pages/capability-matrix.html;
+      per-company sources on entries CO166-CO178 in outreach/companies.md.
+    claim: >-
+      Across every software product found in this trade - BlindMatrix, BlinQ, Quoterite,
+      Cyncly, Windowmaker, Measure Square - not one captures a measurement without a person on
+      site. Windowmaker, established 1983, sells an on-site measuring app that pairs with a
+      laser, cross-validates readings against each other and derives frame sizes from
+      clearances; every one of those features assumes a surveyor is standing at the opening.
+      The comparable job HAS been removed in six other made-to-measure trades: roofing
+      (EagleView), house exteriors (Hover, $60m Series D at $490m post led by three insurance
+      carriers), optical (SiVIEW), footwear (Volumental), apparel (3DLOOK) and dental (Dandy).
+    why_it_matters: >-
+      The lane H3 is entering is empty of the thing H3 claims, and full of tools that stop one
+      step short of it. Six other trades prove the job is removable and fundable, and that the
+      party paying for measurement errors will fund its removal - the Hover round was led by
+      Travelers, State Farm Ventures and Nationwide. Also relevant to how far any of it travels:
+      all six are vertical-locked, and the only one that generalised (Hover) did so across
+      products on ONE capture surface, never across domains.
+    limits: >-
+      Genuinely ambiguous and must not be read as confirmation. Forty-three years of an
+      incumbent stopping at assisted recording is equally consistent with two opposite readings:
+      that the visit cannot be removed at the accuracy this trade needs, or that nobody holding
+      that distribution ever tried. Nothing on a website distinguishes them. Absence of a
+      product is also not absence of an attempt - failed attempts do not publish.
+    next: >-
+      Ask someone who has been in the trade twenty years whether anyone ever tried to let the
+      customer measure, and what happened. A single answer separates "untried" from "tried and
+      failed", and it is the cheapest question on the list.
+
 ```

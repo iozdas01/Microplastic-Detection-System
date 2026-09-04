@@ -59,6 +59,45 @@ alone. Do not review more often than the file grows.
         economic filter, not a technical one: it selects machines whose setup cost per job
         exceeds their run time. Untested.
 
+- 2026-09-03 — "The OpenRouter for machines." Anthropic just published a standard driver spec
+  so agents can read from and write to physical equipment; if that spec spreads, the layer
+  above it — one endpoint that routes a job to whichever machine, anywhere, can actually run
+  it — is the thing worth owning.
+  source: founder, mid-conversation, reacting to the MHS announcement
+  trigger: Model Hardware Standard research preview, announced 2026-08-27 —
+           https://www.anthropic.com/news/model-hardware-standard-research-preview
+  status: parked
+  note: (commentary) OpenRouter's business exists because model APIs converged on one request
+        shape; the analogue here needs MHS adoption wide enough that machines are substitutable
+        at the interface, which the preview does not yet establish. Untested.
+
+- 2026-09-03 — do the whole thing with a world model instead: reconstruct the opening as a
+  scene rather than a number, and let the model reason about whether the product will actually
+  fit, rather than encoding deductions by hand.
+  source: founder, mid-conversation, after the MHS strategic read
+  trigger: the finding that half of wrong-size orders trace to a trained technician holding a
+           tape — i.e. the error is judgement, not metrology
+  status: parked (founder: "right now that cannot be the wedge")
+  note: (commentary) Cuts against two positions taken the same day — a vision-driven model
+        routes around machines with no programmable interface, so "the installed base is not
+        MHS-ready" is a barrier with a clock on it; and "knowing what to send the machines" is
+        the training target rather than a durable edge. Current world models are weak on precise
+        metric geometry, which is the part that has to be right, so the plausible shape is
+        hybrid — metrology for the number, model for the judgement. Untested, no evidence.
+
+- 2026-09-03 — vibe coded furniture D2C
+  source: founder, mid-conversation, unprompted
+  trigger: (none given)
+  status: parked
+  note: (commentary) Worth checking against the active idea's own belief file before treating
+        this as new — that belief records "vibe manufacturing" as its starting solution, in the
+        founder's words, meaning a D2C site where a customer specifies what they need and a
+        factory the company owns makes it. If those are the same idea this is a restatement
+        rather than a candidate, and the parking file should not hold a second copy of a live
+        one. If the difference is that the customer DESCRIBES the piece in natural language
+        rather than configuring it from options, that is a real distinction and worth its own
+        entry — the founder is the one who can say which.
+
 ---
 
 ## Review history

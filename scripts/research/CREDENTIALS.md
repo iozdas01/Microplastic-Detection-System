@@ -5,7 +5,7 @@ replacing an estimate with a measurement. They are listed in the order worth doi
 
 | # | Key | Unlocks | Cost | Time | Replaces |
 |---|---|---|---|---|---|
-| 1 | `CENSUS_API_KEY` | ACS households/income/movers, Economic Census receipts | free | ~2 min | The estimated household count, and the assumed revenue-to-payroll multiple in the supply-side cross-check |
+| 1 | ~~`CENSUS_API_KEY`~~ **held since 2026-09-03** | Economic Census `ecnbasic` receipts, `ecnnapcsprd`/`ecnlines` **merchandise-line sales**; ACS households/income/movers | free | ~2 min | Done — the online share of window coverings is now measured (E18) and the trade's size with it (E19) |
 | 2 | `GOOGLE_ADS_*` (5 vars) | Keyword Planner volume **and CPC** | free | ~1–2 days | The placeholder $2.50 CPC — the only unmeasured number left in the model |
 | 3 | `ETSY_API_KEY` | Listing prices and lifetime shop sales | free | ~1 day | Nothing yet — this is net-new unit-level evidence |
 | 4 | `SEMRUSH_API_KEY` | Competitor organic keywords | ~$130/mo | instant | Nothing yet — net-new competitive detail |
@@ -24,10 +24,38 @@ by email within a minute or two; click the activation link.
 CENSUS_API_KEY=...
 ```
 
-Then `.venv/bin/python scripts/run_all.py --tier2`. This is the highest-value key because
-it fixes two things at once: the exact Bay Area household count (currently estimated from
-population share) and the measured revenue-to-payroll ratio (currently a 3.3× assumption
-that the whole supply-side cross-check rests on).
+Paste it into the repo-root `.env`, where a commented placeholder is already waiting:
+
+```
+CENSUS_API_KEY=...
+```
+
+**Held since 2026-09-03, and what it produced.** The Economic Census returns HTTP 302 without
+a key. With one, `t2_census_merchline_window.py` measured the online share of the US retail
+window-treatment line — 31.9% through electronic shopping and mail-order houses in 2017, 3.6x
+the all-retail e-commerce rate that year (E18) — which closed the open question E14 had left
+open, and `t2_census_econ.py` and `t2_census_acs.py` both went from `blocked_no_credential` to
+running.
+
+**The dataset is `ecnnapcsprd`, not `ecnprdlines`.** This table named `ecnprdlines` before the
+key existed; no such dataset is published. Merchandise lines are `ecnnapcsprd` (product by
+industry) and `ecnnapcsind` (industry by product) for 2017 and 2022, and `ecnlines` for 2012.
+Only 2017 answers the channel question: the 2022 NAICS revision dissolved subsector 454 and
+folded the online-only sellers into the storefront industries, so 2022 publishes the line
+total with no online row (E19).
+
+**If the key ever has to be replaced**, the activation email ends the key with a full stop.
+Pasting the sentence rather than the token gives a 41-character value and every call returns
+302 `Invalid Key` — the same symptom as having no key at all. The token is 40 hex characters.
+
+Everything else Census in this repo is keyless: CBP (establishment counts), SUSB (receipts by
+firm size — the market ladder) and ARTS (retail e-commerce by kind of business, which also
+owns the all-retail benchmark series E18 is read against). The key adds measurement; it never
+unblocked the pipeline.
+
+Still outstanding on this key: the measured revenue-to-payroll ratio for the Bay Area
+supply-side cross-check (currently a 3.3x assumption). ACS now runs, so the household count
+is no longer estimated from population share.
 
 ## 2. Google Ads / Keyword Planner
 

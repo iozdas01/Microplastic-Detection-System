@@ -12,11 +12,10 @@ does NOT mean 3.3% of furniture is bought online — a sofa bought on Wayfair is
 nonstore retailers (454), not under 442. So this table gives channel STRUCTURE, and it cannot
 give the online share of any single product category.
 
-There is no keyless source for the online share of window coverings specifically. Merchandise
--line detail lives in the Economic Census, whose API returns HTTP 302 without a key. Until
-that key exists, the category's online share is an OPEN QUESTION, not a known number — which
-is precisely why the H3 statement asserts that the measuring step caps the online share
-without claiming what the share is.
+There is no keyless source for the online share of window coverings specifically.
+Merchandise-line detail lives in the Economic Census, which needs a key;
+`t2_census_merchline_window.py` collects it and owns that share. This collector owns the
+all-retail benchmark it has to be read against, published here for every year back to 1998.
 """
 from __future__ import annotations
 
@@ -43,11 +42,15 @@ def main() -> None:
 
         wb = openpyxl.load_workbook(dest, read_only=True, data_only=True)
         ws = wb[wb.sheetnames[0]]
-        rows = []
+        rows, header_years, total_row = [], [], []
         for r in ws.iter_rows(values_only=True):
             cells = list(r)
+            if cells and str(cells[0]).strip() == "NAICS Code":
+                header_years = cells[1:]
             if len(cells) < 3:
                 continue
+            if cells[1] and str(cells[1]).startswith("Total Retail Trade"):
+                total_row = cells
             code = str(cells[0]).strip() if cells[0] is not None else ""
             label = str(cells[1]).strip().rstrip(". ") if cells[1] is not None else ""
             total, ecom = cells[2], cells[3] if len(cells) > 3 else None
@@ -74,6 +77,25 @@ def main() -> None:
         record(SOURCE, "retail-ecommerce-share", URL, len(rows),
                note=f"ARTS {YEAR} e-commerce by kind of business — by SELLER type, "
                     f"not by merchandise line")
+
+        # The same workbook carries every year back to 1998 in paired columns. The
+        # all-retail rate is the benchmark any single category's online share has to be
+        # read against, and it has to be the rate for the SAME year — 8.8% in 2017 is a
+        # different question from 14.4% in 2022. Emitted here so no other collector has
+        # to reopen this workbook.
+        years = [str(c).rstrip("r") for c in header_years if c and str(c)[:2] in ("19", "20")]
+        series = []
+        for i, y in enumerate(years):
+            total, ecom = total_row[2 + i * 2], total_row[3 + i * 2]
+            if not isinstance(total, (int, float)) or not isinstance(ecom, (int, float)):
+                continue
+            series.append({"year": int(y), "total_sales_usd_m": total,
+                           "ecommerce_sales_usd_m": ecom,
+                           "ecommerce_share": round(ecom / total, 4)})
+        save_csv("retail_ecommerce_total_by_year", series)
+        record(SOURCE, "retail-ecommerce-total-by-year", URL, len(series),
+               note="All-retail e-commerce share, every published year — the benchmark "
+                    "a single category's share must be read against")
 
         log("")
         log(f"  US retail e-commerce share, {YEAR} (by kind of business):")

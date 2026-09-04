@@ -1,0 +1,134 @@
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Pitch slide — EF Form SCI · week 6</title>
+<style>
+  :root {
+    --ink:#14161a; --mut:#5d646e; --line:#e2e5ea; --bg:#f4f5f7; --card:#fff;
+    --ledger:#0b6b4f; --ledger-bg:#e3f3ec; --recon:#7a5a12; --recon-bg:#faf0d8;
+    --edge:#1f4f8f; --edge-bg:#e6eefa; --open:#8a3312; --open-bg:#fbe9e2;
+  }
+  * { box-sizing:border-box; }
+  body { margin:0; background:var(--bg); color:var(--ink);
+    font:14px/1.45 -apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif; }
+  .wrap { padding:24px; display:flex; justify-content:center; }
+  .slide { width:1280px; height:720px; background:var(--card); padding:34px 40px 28px;
+    display:flex; flex-direction:column; box-shadow:0 2px 18px rgba(0,0,0,.13);
+    border-radius:4px; }
+  header { display:flex; justify-content:space-between; align-items:baseline;
+    border-bottom:2px solid var(--ink); padding-bottom:9px; margin-bottom:14px; }
+  h1 { font-size:25px; margin:0; letter-spacing:-.3px; }
+  .meta { font-size:11px; color:var(--mut); text-align:right; line-height:1.4; }
+  .one { font-size:15.5px; line-height:1.4; margin:0 0 13px; padding:9px 13px;
+    background:#f7f9fb; border-left:3px solid var(--ink); }
+  .cols { display:grid; grid-template-columns:1.3fr 1fr 0.92fr 1.02fr; gap:18px;
+    flex:1; min-height:0; }
+  h2 { font-size:10px; text-transform:uppercase; letter-spacing:.11em; color:var(--mut);
+    margin:0 0 7px; padding-bottom:4px; border-bottom:1px solid var(--line); }
+  .lead { margin:0 0 8px; font-size:12.2px; line-height:1.44; }
+  ul { margin:0; padding-left:14px; }
+  li { font-size:11.4px; line-height:1.4; margin-bottom:5.5px; }
+  .stack > * + * { margin-top:13px; }
+  .cite { display:inline-block; font-size:9px; font-weight:600; padding:.5px 4px;
+    border-radius:3px; vertical-align:1px; white-space:nowrap; }
+  .cite-ledger { color:var(--ledger); background:var(--ledger-bg); }
+  .cite-recon  { color:var(--recon);  background:var(--recon-bg); }
+  .cite-edge   { color:var(--edge);   background:var(--edge-bg); }
+  .cite-open   { color:var(--open);   background:var(--open-bg); }
+  .open { margin-top:13px; padding:10px 13px; background:#fdf6f3;
+    border:1px solid #f2d9cf; border-radius:3px; }
+  .open h2 { color:var(--open); border-bottom-color:#f2d9cf; }
+  .open ul { columns:2; column-gap:26px; }
+  .open li { break-inside:avoid; }
+  footer { margin-top:10px; font-size:9.5px; color:var(--mut);
+    display:flex; justify-content:space-between; }
+  #overflow { display:none; position:fixed; top:0; left:0; right:0; z-index:9;
+    background:#b3261e; color:#fff; padding:7px 14px; font-size:12px; font-weight:600; }
+  @media print {
+    @page { size:1280px 720px; margin:0; }
+    body { background:#fff; } .wrap { padding:0; }
+    .slide { box-shadow:none; border-radius:0; }
+  }
+</style>
+
+<div id="overflow"></div>
+<div class="wrap"><div class="slide">
+  <header>
+    <h1>The human is the integration layer</h1>
+    <div class="meta">EF Form SCI · week 6<br>due 2026-09-06</div>
+  </header>
+
+  <p class="one">Making one of something should cost what making a thousand costs per unit. We are building the app that configures the machines so it can — starting with made-to-measure window coverings.</p>
+
+  <div class="cols">
+    <section>
+      <h2>Problem</h2>
+      <p class="lead">Interoperability is a fixed cost, paid only when there is a production run to spread it over. Made-to-order has no run — so a person retypes the number between design, machine and order system instead. That person is the integration layer, and in window coverings they cost $225 a visit.</p>
+      <ul>
+<li>That retailer told us the $225 visit is still &quot;not accurate enough&quot; — and they decline jobs when the drive is too far, so it caps their radius. <span class="cite cite-ledger" title="said in a call / measured">E8</span></li>
+<li>Inside the largest player, a measure technician put wrong-size orders at roughly 50/50 between his own error and the factory&#x27;s. Half the errors survive a trained person. <span class="cite cite-ledger" title="said in a call / measured">E15</span></li>
+<li>The industry already prices this. SelectBlinds sells a free-remake guarantee at checkout; Sun Glow tells dealers one remake wipes out 1.5 similar jobs. <span class="cite cite-recon" title="public source">public source</span></li>
+<li>And the demand is already there: 31.9% of the US retail window-treatment line was bought from sellers with no shop, against 8.8% e-commerce across all retail. <span class="cite cite-ledger" title="said in a call / measured">E18</span></li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Solution</h2>
+      <p class="lead">Collapse the fixed cost — the app configures the machines, so it is paid per job rather than per production run. Anthropic previewed the Model Hardware Standard on 27 August: machine integration from weeks to hours.</p>
+      <ul>
+<li>Own the chain — a customisable furniture factory on CNC capacity we already run. Manufacturing revenue, not a seat fee. <span class="cite cite-edge" title="about us">about us</span></li>
+<li>Or route it — the app drives whichever machines the shop already has. </li>
+<li>One test decides: whether a measurement taken without a trained person can be trusted. If yes, routing works and the visit disappears. If no, you inherit the $225 and only owning the chain pays. <span class="cite cite-ledger" title="said in a call / measured">E8</span></li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Team</h2>
+      <ul>
+<li>Mechanical engineer, around manufacturing since thirteen. Two years running a high-mix precision shop where the same number got retyped between CAD, the machines and the ERP. <span class="cite cite-edge" title="about us">about us</span></li>
+<li>A year at Cambridge on machine-readable annotation of engineering drawings — this exact handoff, measured. <span class="cite cite-edge" title="about us">about us</span></li>
+<li>IMTEK CNC capacity in Türkiye plus EU customs union freight. <span class="cite cite-edge" title="about us">about us</span></li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Market</h2>
+      <ul>
+<li>The beachhead is countable: a $9.63bn US retail window-treatment line made by 320 manufacturers, ten of whom hold 62.5% of revenue. <span class="cite cite-ledger" title="said in a call / measured">E19 E12</span></li>
+<li>It is not the market. Everything cut to a site-taken dimension is a $108.5bn US pool — carpentry, cabinets, windows and doors, glazing, stone. Blinds is 4.6% of it. <span class="cite cite-ledger" title="said in a call / measured">E13</span></li>
+<li>We take manufacturing revenue rather than a software licence, so the ceiling is the category itself and not what two thousand small firms can afford in seat fees. <span class="cite cite-ledger" title="said in a call / measured">E13</span></li>
+      </ul>
+    </section>
+  </div>
+
+  <div class="open">
+    <h2>What we do not know yet</h2>
+    <ul>
+<li>The misfit rate. Nobody publishes it, we have not measured it, and the thesis moves on it. Ten conversations running now. <span class="cite cite-ledger" title="said in a call / measured">E15</span></li>
+<li>Why we are not the graveyard. Model No. owned its factory and a configurator; Interior Define went asset-light. Both died of customer acquisition cost, which neither owning a factory nor better software fixes. <span class="cite cite-recon" title="public source">public source</span></li>
+<li>Who pays. Manufacturer, dealer and consumer each eat it in different cases, and family-run owners were cool on software — pointing at ~10 enterprise buyers, not PLG. <span class="cite cite-ledger" title="said in a call / measured">E10 E12</span></li>
+<li>If integration is being standardised and open-sourced, the moat is not connecting machines. Our answer is the judgement above the interface — and an installed base that is not MHS-ready: one machine on a blind fabricator&#x27;s floor is. <span class="cite cite-ledger" title="said in a call / measured">E20</span></li>
+    </ul>
+  </div>
+
+  <footer>
+    <span>Green = someone told us or we measured it · blue = about us ·
+      amber = public source · red = our claim, untested</span>
+    <span>Generated by scripts/research/build_pitch_slide_page.py</span>
+  </footer>
+</div></div>
+
+<script>
+  // The slide is a fixed 16:9 box, so anything that does not fit is simply not there.
+  // Measure the three columns against the space the grid actually gave them and say so.
+  (function () {
+    var over = [].slice.call(document.querySelectorAll('.cols section, .open'))
+      .filter(function (el) { return el.scrollHeight - el.clientHeight > 1; });
+    var cols = document.querySelector('.cols');
+    if (cols && cols.scrollHeight - cols.clientHeight > 1) over.push(cols);
+    if (!over.length) return;
+    var b = document.getElementById('overflow');
+    b.textContent = 'Content is overflowing the slide and is being clipped — trim the '
+      + 'slide: block in outreach/copy/H3-discovery-pitch.md and rebuild.';
+    b.style.display = 'block';
+  })();
+</script>

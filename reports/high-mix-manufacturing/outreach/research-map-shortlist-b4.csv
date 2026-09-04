@@ -1,0 +1,6 @@
+arxiv_id,published,axis_score,already_classified,title,url,axis_terms
+2605.04003v1,2026-05-05,10,no,"Physics-Grounded Multi-Agent Architecture for Traceable, Risk-Aware Human-AI Decision Support in Manufacturing",https://arxiv.org/abs/2605.04003,deployment|digital twin|manufacturing
+2602.18296v2,2026-02-20,7,yes,Context-Aware Mapping of 2D Drawing Annotations to 3D CAD Features Using LLM-Assisted Reasoning for Manufacturing Automation,https://arxiv.org/abs/2602.18296,industrial|manufacturing
+2602.20663v1,2026-02-24,7,no,ICSSPulse: A Modular LLM-Assisted Platform for Industrial Control System Penetration Testing,https://arxiv.org/abs/2602.20663,factory|industrial
+2606.03755v1,2026-06-02,5,no,LAP: An Agent-to-Instrument Protocol for Autonomous Science,https://arxiv.org/abs/2606.03755,calibration|demonstration
+2606.01338v2,2026-05-31,4,no,Benchmarking Local LLMs for Natural-Language-to-SQL Querying in Biopharmaceutical Manufacturing: An Empirical Benchmark on Consumer-Grade Hardware,https://arxiv.org/abs/2606.01338,manufacturing

@@ -4,11 +4,11 @@
 -->
 # Outreach results — H3A2 · high-mix-manufacturing
 
-_Generated 2026-09-03. Numbers are the funnel over contacts tagged H3A2._
+_Generated 2026-09-04. Numbers are the funnel over contacts tagged H3A2._
 
 | channel | targeted | contacted | replied | qualified replied | reply rate |
 |---|---|---|---|---|---|
-| LinkedIn | 19 | 0 | 0 | 0 | — |
+| LinkedIn | 19 | 3 | 0 | 0 | 0.0% |
 | phone | 4 | 4 | 4 | 4 | 100.0% |
 
 _Channels are counted separately._
@@ -20,14 +20,11 @@ _Channels are counted separately._
 | C100 | Kris Decker | invited | none |
 | C104 | Elizabeth B. | invited | none |
 | C105 | Steven Chiang | invited | none |
-| C106 | Fernando Antonio Martinez Almaraz | invited | none |
-| C107 | Julio Tinajero | invited | none |
 | C108 | Javier Bustamante Martinez | invited | none |
 | C109 | Heather Barrows | invited | none |
 | C110 | Armando Pedraza | invited | none |
 | C111 | Abubakr Abushanab | invited | none |
 | C116 | Vivek Rao | invited | none |
-| C117 | Praveen Perfeito | invited | none |
 | C39 | Suhey Perez | invited | none |
 | C46 | Dave Yews | invited | none |
 | C47 | Alun Harry | invited | none |
@@ -36,6 +33,9 @@ _Channels are counted separately._
 | C54 | Dustin Hayes | invited | none |
 | C55 | Christopher Vermont | invited | none |
 | C95 | Marcelo Mazzafera | invited | none |
+| C106 | Fernando Antonio Martinez Almaraz | accepted | none |
+| C107 | Julio Tinajero | accepted | none |
+| C117 | Praveen Perfeito | accepted | none |
 | C90 | Stoneside Blinds and Shades | replied | completed |
 | C91 | National blinds retailer | replied | completed |
 | C92 | Art Shade Shop | replied | completed |

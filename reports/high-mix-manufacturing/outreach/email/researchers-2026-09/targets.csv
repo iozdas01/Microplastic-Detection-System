@@ -1,41 +1,45 @@
 target_id,tier,name,org,email,arxiv_id,paper_url,theme,draft_ref,outreach_status,sent_on,replied_on,notes
-R1,A,Jonathan Zornow,Sewbo,jon@sewbo.com,2606.16078,https://arxiv.org/abs/2606.16078,digital-thread,A1,pending,,,"Founder; decade on robotic sewing. DXF->trajectory parser on a real line."
-R2,A,Carlos Calle,Levi Strauss & Co.,ccalle@levi.com,2606.16078,https://arxiv.org/abs/2606.16078,digital-thread,A1-variant,pending,,,"Buyer side of the same deployment. Write only after Zornow replies - same paper twice reads as a blast."
-R3,A,Omkar Salunkhe,Chalmers,omkar.salunkhe@chalmers.se,2608.21417,https://arxiv.org/abs/2608.21417,mcp-agents,A2,pending,,,"Hands on the MCP server."
-R4,A,Siyuan Chen,Chalmers,siyuan.chen@chalmers.se,2608.21417,https://arxiv.org/abs/2608.21417,mcp-agents,A2,pending,,,"Co-author on the MCP server."
-R5,A,Johan Stahre,Chalmers,johan.stahre@chalmers.se,2608.21417,https://arxiv.org/abs/2608.21417,mcp-agents,A2-senior,pending,,,"Chalmers Production Systems. Intro multiplier across European manufacturing research."
-R6,A,Anders Skoogh,Chalmers,anders.skoogh@chalmers.se,2608.21417,https://arxiv.org/abs/2608.21417,mcp-agents,A2-senior,pending,,,"As above."
-R7,A,Muhammad Tayyab Khan,NTU Singapore,khan0022@e.ntu.edu.sg,2608.24039,https://arxiv.org/abs/2608.24039,cad-to-plan,A3,pending,,,"First author. Closest paper in the batch to H2A3 quoting."
-R8,A,Seung Ki Moon,NTU Singapore,skmoon@ntu.edu.sg,2608.24039,https://arxiv.org/abs/2608.24039,cad-to-plan,A3-senior,pending,,,"PI."
-R9,A,Martin Ruskowski,DFKI Innovative Factory Systems,martin.ruskowski@dfki.de,2604.06949,https://arxiv.org/abs/2604.06949,interoperability,A4,pending,,,"SmartFactory-KL. HIGHEST leverage in the batch for the belief's link 2."
-R10,A,Achim Wagner,DFKI,achim.wagner@dfki.de,2604.06949,https://arxiv.org/abs/2604.06949,interoperability,A4-alt,pending,,,"Fallback if Ruskowski does not answer."
-R11,A,Lihui Wang,KTH,lihuiw@kth.se,2606.08214,https://arxiv.org/abs/2606.08214,agentic-commissioning,A5,pending,,,"Senior; cloud and adaptive manufacturing."
-R12,A,Xi Vincent Wang,KTH,wangxi@kth.se,2606.08214,https://arxiv.org/abs/2606.08214,agentic-commissioning,A5,pending,,,"Co-PI."
-R13,A,Tianyu Wang,KTH,tianyuwa@kth.se,2606.08214,https://arxiv.org/abs/2606.08214,agentic-commissioning,A5-tech,pending,,,"Technical follow-up if the PIs route it down."
+R1,A,Jonathan Zornow,Sewbo,jon@sewbo.com,2606.16078,https://arxiv.org/abs/2606.16078,digital-thread,A1,pending,,,Founder; decade on robotic sewing. DXF->trajectory parser on a real line.
+R2,A,Carlos Calle,Levi Strauss & Co.,ccalle@levi.com,2606.16078,https://arxiv.org/abs/2606.16078,digital-thread,A1-variant,pending,,,Buyer side of the same deployment. Write only after Zornow replies - same paper twice reads as a blast.
+R3,A,Omkar Salunkhe,Chalmers,omkar.salunkhe@chalmers.se,2608.21417,https://arxiv.org/abs/2608.21417,mcp-agents,A2,pending,,,Hands on the MCP server.
+R4,A,Siyuan Chen,Chalmers,siyuan.chen@chalmers.se,2608.21417,https://arxiv.org/abs/2608.21417,mcp-agents,A2,pending,,,Co-author on the MCP server.
+R5,A,Johan Stahre,Chalmers,johan.stahre@chalmers.se,2608.21417,https://arxiv.org/abs/2608.21417,mcp-agents,A2-senior,pending,,,Chalmers Production Systems. Intro multiplier across European manufacturing research.
+R6,A,Anders Skoogh,Chalmers,anders.skoogh@chalmers.se,2608.21417,https://arxiv.org/abs/2608.21417,mcp-agents,A2-senior,pending,,,As above.
+R7,A,Muhammad Tayyab Khan,NTU Singapore,khan0022@e.ntu.edu.sg,2608.24039,https://arxiv.org/abs/2608.24039,cad-to-plan,D1,pending,,,"First author, and he has TWO papers on this seam: 2608.24039 and 2602.18296, the second binding drawing annotations to CAD features at 86.29% F1 - directly comparable to the founder's Cambridge 100% DXF / 74% STEP. D1 is the better copy and cites that number; A3 is the older draft. ONE email only - he is a single person with two papers."
+R8,A,Seung Ki Moon,NTU Singapore,skmoon@ntu.edu.sg,2608.24039,https://arxiv.org/abs/2608.24039,cad-to-plan,A3-senior,pending,,,PI.
+R9,A,Martin Ruskowski,DFKI Innovative Factory Systems,martin.ruskowski@dfki.de,2604.06949,https://arxiv.org/abs/2604.06949,interoperability,A4,pending,,,SmartFactory-KL. HIGHEST leverage in the batch for the belief's link 2.
+R10,A,Achim Wagner,DFKI,achim.wagner@dfki.de,2604.06949,https://arxiv.org/abs/2604.06949,interoperability,A4-alt,pending,,,Fallback if Ruskowski does not answer.
+R11,A,Lihui Wang,KTH,lihuiw@kth.se,2606.08214,https://arxiv.org/abs/2606.08214,agentic-commissioning,A5,pending,,,Senior; cloud and adaptive manufacturing.
+R12,A,Xi Vincent Wang,KTH,wangxi@kth.se,2606.08214,https://arxiv.org/abs/2606.08214,agentic-commissioning,A5,pending,,,Co-PI.
+R13,A,Tianyu Wang,KTH,tianyuwa@kth.se,2606.08214,https://arxiv.org/abs/2606.08214,agentic-commissioning,A5-tech,pending,,,Technical follow-up if the PIs route it down.
 R14,A,Yunho Kim,Neuromeka,yunho.kim@neuromeka.com,2604.22235,https://arxiv.org/abs/2604.22235,deployment-numbers,A6,pending,,,"VENDOR validating on its own process - control case, not pain evidence."
-R15,B,Florian Toper,Mercedes-Benz,florian.toeper@mercedes-benz.com,2608.28175,https://arxiv.org/abs/2608.28175,per-part-setup-cost,B1,pending,,,"OEM engineer candid about per-new-part setup labour."
-R16,B,Hanxiao Liu,Peking University,hx.liu@pku.edu.cn,2608.17962,https://arxiv.org/abs/2608.17962,industrial-data,B2,pending,,,"PRISM dataset."
+R15,B,Florian Toper,Mercedes-Benz,florian.toeper@mercedes-benz.com,2608.28175,https://arxiv.org/abs/2608.28175,per-part-setup-cost,B1,pending,,,OEM engineer candid about per-new-part setup labour.
+R16,B,Hanxiao Liu,Peking University,hx.liu@pku.edu.cn,2608.17962,https://arxiv.org/abs/2608.17962,industrial-data,B2,pending,,,PRISM dataset.
 R17,B,Tengbo Yu,Peking University,yutengbo26@stu.pku.edu.cn,2608.17962,https://arxiv.org/abs/2608.17962,industrial-data,B2-alt,pending,,,"First author, student address."
-R18,B,Huan Zhao,HUST,huanzhao@hust.edu.cn,2606.25754,https://arxiv.org/abs/2606.25754,finishing,B3,pending,,,"Robotic polishing - the furniture-finishing analogue."
-R19,B,Han Ding,HUST,dinghan@hust.edu.cn,2606.25754,https://arxiv.org/abs/2606.25754,finishing,B3-senior,pending,,,"Major robotic-machining group."
-R20,B,Ziwei Wang,NTU Singapore,ziwei.wang@ntu.edu.sg,2609.01596,https://arxiv.org/abs/2609.01596,contact-rich,B4,pending,,,"Paper published 2026-09-01 - cite the recency."
-R21,B,Aditya Chetan,Cornell,achetan@cs.cornell.edu,2605.21625,https://arxiv.org/abs/2605.21625,furniture,B5,pending,,,"Flat-Pack Bench - furniture-specific."
-R22,B,Markus Knauer,TU Munchen (address on paper),m.knauer@tum.de,2604.20468,https://arxiv.org/abs/2604.20468,operator-adaptation,B6,pending,,,"MOMO multimodal skill adaptation."
-R23,C,Maximilian Haug,Fraunhofer Austria,maximilian.haug@fraunhofer.at,2604.18627,https://arxiv.org/abs/2604.18627,intros,,pending,,,"Better as an intro source than a technical call. No draft written."
-R24,C,Damien Chablat,CNRS / LS2N,damien.chablat@cnrs.fr,2608.25509,https://arxiv.org/abs/2608.25509,process-robotics,,pending,,,"Narrow. No draft written."
-R25,C,Mihai Duduta,University of Toronto,duduta@mie.utoronto.ca,2608.00369,https://arxiv.org/abs/2608.00369,build-your-own-process,,pending,,,"Built its own production process because none existed to buy. No draft written."
+R18,B,Huan Zhao,HUST,huanzhao@hust.edu.cn,2606.25754,https://arxiv.org/abs/2606.25754,finishing,B3,pending,,,Robotic polishing - the furniture-finishing analogue.
+R19,B,Han Ding,HUST,dinghan@hust.edu.cn,2606.25754,https://arxiv.org/abs/2606.25754,finishing,B3-senior,pending,,,Major robotic-machining group.
+R20,B,Ziwei Wang,NTU Singapore,ziwei.wang@ntu.edu.sg,2609.01596,https://arxiv.org/abs/2609.01596,contact-rich,B4,pending,,,Paper published 2026-09-01 - cite the recency.
+R21,B,Aditya Chetan,Cornell,achetan@cs.cornell.edu,2605.21625,https://arxiv.org/abs/2605.21625,furniture,B5,pending,,,Flat-Pack Bench - furniture-specific.
+R22,B,Markus Knauer,TU Munchen (address on paper),m.knauer@tum.de,2604.20468,https://arxiv.org/abs/2604.20468,operator-adaptation,B6,pending,,,MOMO multimodal skill adaptation.
+R23,C,Maximilian Haug,Fraunhofer Austria,maximilian.haug@fraunhofer.at,2604.18627,https://arxiv.org/abs/2604.18627,intros,,pending,,,Better as an intro source than a technical call. No draft written.
+R24,C,Damien Chablat,CNRS / LS2N,damien.chablat@cnrs.fr,2608.25509,https://arxiv.org/abs/2608.25509,process-robotics,,pending,,,Narrow. No draft written.
+R25,C,Mihai Duduta,University of Toronto,duduta@mie.utoronto.ca,2608.00369,https://arxiv.org/abs/2608.00369,build-your-own-process,,pending,,,Built its own production process because none existed to buy. No draft written.
 R26,C,Diego Romeres,MERL,,2607.01212,https://arxiv.org/abs/2607.01212,furniture,,blocked,,,"UNREACHABLE - no address in source package or HTML render. Corresponding author. MERL publishes contact on its people pages; look it up, do not guess a pattern."
-R27,A,Yeonseok Lee,Sling AI,ylee@sling.ai.kr,2605.10568,https://arxiv.org/abs/2605.10568,gcode-verification,A7,pending,,,"Solo author small company. Highest reply probability in the campaign."
-R28,A,Amir Barati Farimani,Carnegie Mellon,barati@cmu.edu,2607.02448,https://arxiv.org/abs/2607.02448,dfm-agents,A8,pending,,,"STEP parsing + GraphSAGE on MFCAD++ 59665 parts."
-R29,B,Hyungki Kim,Chungnam National University,hk.kim@cnu.ac.kr,2607.27558,https://arxiv.org/abs/2607.27558,legacy-drawings,B7,pending,,,"Raster drawings - the brownfield case nobody else works on."
-R30,B,Mingi Kim,Chungnam National University,mingi@o.cnu.ac.kr,2607.27558,https://arxiv.org/abs/2607.27558,legacy-drawings,B7-alt,pending,,,"First author. Hold until Hyungki Kim has had a week."
-R31,B,Hanjie Chen,Rice University,hanjie@rice.edu,2605.10865,https://arxiv.org/abs/2605.10865,cad-benchmarks,B8,pending,,,"BenchCAD - 17900 programs across 106 industrial part families."
-R32,B,Haozhe Zhang,University of Virginia,hz5sq@virginia.edu,2605.10865,https://arxiv.org/abs/2605.10865,cad-benchmarks,B8-alt,pending,,,"First author. Hold until Chen has had a week."
-R33,B,Xiaoli Zhang,Colorado School of Mines,xlzhang@mines.edu,2608.22128,https://arxiv.org/abs/2608.22128,process-suitability,B9,pending,,,"Additive not subtractive - secondary, but the information gap matches H2A3."
-R34,C,Qiaojie Zheng,Colorado School of Mines,zheng@mines.edu,2608.22128,https://arxiv.org/abs/2608.22128,process-suitability,,pending,,,"Co-author. No draft."
-R35,C,Bin Yang,EIT,ybin@eitech.edu.cn,2607.05750,https://arxiv.org/abs/2607.05750,cad-agents,,pending,,,"ArtisanCAD. Adds nothing the CMU/Rice rows do not carry. No draft."
-R36,C,Wenfa Luo,IM Motors,luowenfa@immotors.com,2607.05750,https://arxiv.org/abs/2607.05750,cad-agents,,pending,,,"OEM co-author on ArtisanCAD - the interesting one of that trio. No draft."
-R37,A,Midhun Xavier,IndustriAgents,midhun@industriagents.com,2603.24703,https://arxiv.org/abs/2603.24703,mcp-industrial-protocols,A9,pending,,,"MCP adapters for Modbus/OPC UA/Sparkplug B. Sharpest live challenge to the belief's link 2."
-R38,A,Melwin Xavier,Lulea University of Technology,melwin.xavier@ltu.se,2603.24703,https://arxiv.org/abs/2603.24703,mcp-industrial-protocols,A9-academic,pending,,,"Academic co-author. Hold until Midhun has had a week."
-R39,C,Di Zhang,Imperial College London,d.zhang17@imperial.ac.uk,2608.29379,https://arxiv.org/abs/2608.29379,semantics-physics,,pending,,,"London-based. No draft - send only if Tier A underperforms."
+R27,A,Yeonseok Lee,Sling AI,ylee@sling.ai.kr,2605.10568,https://arxiv.org/abs/2605.10568,gcode-verification,A7,pending,,,Solo author small company. Highest reply probability in the campaign.
+R28,A,Amir Barati Farimani,Carnegie Mellon,barati@cmu.edu,2607.02448,https://arxiv.org/abs/2607.02448,dfm-agents,A8,pending,,,STEP parsing + GraphSAGE on MFCAD++ 59665 parts.
+R29,B,Hyungki Kim,Chungnam National University,hk.kim@cnu.ac.kr,2607.27558,https://arxiv.org/abs/2607.27558,legacy-drawings,B7,pending,,,Raster drawings - the brownfield case nobody else works on.
+R30,B,Mingi Kim,Chungnam National University,mingi@o.cnu.ac.kr,2607.27558,https://arxiv.org/abs/2607.27558,legacy-drawings,B7-alt,pending,,,First author. Hold until Hyungki Kim has had a week.
+R31,B,Hanjie Chen,Rice University,hanjie@rice.edu,2605.10865,https://arxiv.org/abs/2605.10865,cad-benchmarks,B8,pending,,,BenchCAD - 17900 programs across 106 industrial part families.
+R32,B,Haozhe Zhang,University of Virginia,hz5sq@virginia.edu,2605.10865,https://arxiv.org/abs/2605.10865,cad-benchmarks,B8-alt,pending,,,First author. Hold until Chen has had a week.
+R33,B,Xiaoli Zhang,Colorado School of Mines,xlzhang@mines.edu,2608.22128,https://arxiv.org/abs/2608.22128,process-suitability,D5,pending,,,"Additive not subtractive, but D5 carries the batch's decisive number - material-selection accuracy 37.5% ungrounded to 90.0% grounded, model held constant, 96 physical trials. D5 supersedes B9. Co-author R34 has no draft by design: one address per paper."
+R34,C,Qiaojie Zheng,Colorado School of Mines,zheng@mines.edu,2608.22128,https://arxiv.org/abs/2608.22128,process-suitability,,pending,,,Co-author. No draft.
+R35,C,Bin Yang,EIT,ybin@eitech.edu.cn,2607.05750,https://arxiv.org/abs/2607.05750,cad-agents,,pending,,,ArtisanCAD. Adds nothing the CMU/Rice rows do not carry. No draft.
+R36,C,Wenfa Luo,IM Motors,luowenfa@immotors.com,2607.05750,https://arxiv.org/abs/2607.05750,cad-agents,,pending,,,OEM co-author on ArtisanCAD - the interesting one of that trio. No draft.
+R37,A,Midhun Xavier,IndustriAgents,midhun@industriagents.com,2603.24703,https://arxiv.org/abs/2603.24703,mcp-industrial-protocols,A9,pending,,,MCP adapters for Modbus/OPC UA/Sparkplug B. Sharpest live challenge to the belief's link 2.
+R38,A,Melwin Xavier,Lulea University of Technology,melwin.xavier@ltu.se,2603.24703,https://arxiv.org/abs/2603.24703,mcp-industrial-protocols,A9-academic,pending,,,Academic co-author. Hold until Midhun has had a week.
+R39,C,Di Zhang,Imperial College London,d.zhang17@imperial.ac.uk,2608.29379,https://arxiv.org/abs/2608.29379,semantics-physics,,pending,,,London-based. No draft - send only if Tier A underperforms.
 R40,C,Grama Chethan,unaffiliated,,2608.24918,https://arxiv.org/abs/2608.24918,digital-thread,,blocked,,,"UNREACHABLE - arXiv redacts submitter address, no affiliation stated. Two papers, both squarely on the belief. The O(n2) integration finding needs promoting to evidence.md."
+R42,A,Farhad Imani,University of Connecticut,farhad.imani@uconn.edu,2605.04003,https://arxiv.org/abs/2605.04003,cnc-agents,D2,pending,,,First real metal-cutting contact in the map. Critic enforcing physical plausibility and safety bounds before human approval is the trust envelope by another name.
+R43,B,Aldo Gangemi,Universita di Bologna,aldo.gangemi@unibo.it,2605.07639,https://arxiv.org/abs/2605.07639,tacit-knowledge,D3,pending,,,Alternate on same paper: andreagiovanni.nuzzolese@cnr.it (CNR). One address only - two on one paper reads as a blast.
+R44,B,Christos Emmanouilidis,University of Groningen,c.emmanouilidis@rug.nl,2601.22754,https://arxiv.org/abs/2601.22754,tacit-knowledge,D4,pending,,,"Alternates: g.gil.de.avalle@rug.nl, m.maruster@rug.nl. Operator-support framing; the troubleshooting flowchart is exactly Agent A's input artefact."
+R46,B,Carsten Ellwein,ISW University of Stuttgart,carsten.ellwein@isw.uni-stuttgart.de,2602.16499,https://arxiv.org/abs/2602.16499,standards-layer,D6,pending,,,The European standards-side view of the edge MHS is standardising from the agent side. Ask what AAS does that MHS will not.

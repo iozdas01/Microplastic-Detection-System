@@ -207,61 +207,93 @@ def _parse_email_replies(path: Path) -> dict[str, dict]:
     return out
 
 
+def _parse_campaign_drafts(path: Path) -> dict[str, dict]:
+    """Draft copy from an email campaign's drafts.md, keyed by draft_ref.
+
+    The campaigns author `## A1 · Name — Org · `addr`` with a `**Subject:**` line and the body
+    as a blockquote. That is a different shape from the LinkedIn copy archives, which is why
+    the older `_parse_email_drafts` never matched a single one of these files.
+    """
+    if not path.exists():
+        return {}
+    text = path.read_text(encoding="utf-8")
+    out: dict[str, dict] = {}
+    blocks = re.split(r"^## (?=[A-Z]\d)", text, flags=re.M)[1:]
+    for block in blocks:
+        head, _, rest = block.partition("\n")
+        m = re.match(r"([A-Za-z0-9-]+)", head.strip())
+        if not m:
+            continue
+        subject = re.search(r"^\*\*Subject:\*\*\s*(.+)$", rest, re.M)
+        quoted = re.findall(r"^>\s?(.*)$", rest, re.M)
+        body = "\n".join(quoted).strip()
+        out[m.group(1)] = {
+            "draft_subject": subject.group(1).strip() if subject else "",
+            "draft_body": body,
+        }
+    return out
+
+
 def parse_email_campaign(slug: str) -> list[dict]:
-    """Project durable email campaign files into dashboard-ready records."""
+    """Project durable email campaign files into dashboard-ready records.
+
+    Driven by `targets.csv`, which the campaigns declare as their state — their own logs say
+    so ("targets.csv is the state; this file is the dated history"). An earlier version drove
+    off `*/email-log.csv`, a file no campaign in this repo has ever written, so the tab
+    rendered empty however many targets existed.
+    """
     root = REPORTS / slug / "outreach" / "email"
     records: list[dict] = []
     if not root.exists():
         return records
-    for log_path in sorted(root.glob("*/email-log.csv")):
-        campaign_dir = log_path.parent
-        target_path = campaign_dir / "targets.csv"
-        if not target_path.exists():
-            continue
-        with target_path.open(encoding="utf-8", newline="") as fh:
-            targets = {row.get("target_id", ""): row for row in csv.DictReader(fh)}
-        drafts = _parse_email_drafts(campaign_dir / "drafts.md")
+    for target_path in sorted(root.glob("*/targets.csv")):
+        campaign_dir = target_path.parent
+        drafts = _parse_campaign_drafts(campaign_dir / "drafts.md")
         replies = _parse_email_replies(campaign_dir / "replies.md")
-        with log_path.open(encoding="utf-8", newline="") as fh:
+        with target_path.open(encoding="utf-8", newline="") as fh:
             for row in csv.DictReader(fh):
                 target_id = row.get("target_id", "")
-                target = targets.get(target_id, {})
-                draft = drafts.get(row.get("draft_id", ""), {})
+                if not target_id:
+                    continue
+                ref = row.get("draft_ref", "")
+                draft = drafts.get(ref, {})
+                if not draft and ref:
+                    base = re.split(r"[-_]", ref)[0]
+                    draft = drafts.get(base, {})
                 reply = replies.get(target_id, {})
-                reply_status = row.get("reply_status", "")
-                sent_at = row.get("sent_at", "")
-                state = "replied" if reply_status == "positive_reply" else ("sent" if sent_at else "draft")
-                notes = row.get("notes", "")
-                copy_kind = "exact_sent" if reply.get("exact_sent_copy") else "stored_draft"
-                if not draft.get("draft_body") and draft.get("visible_sent_fragment"):
-                    copy_kind = "partial_sent"
+                sent_at = row.get("sent_on", "")
+                reply_at = row.get("replied_on", "")
+                status = row.get("outreach_status", "")
+                state = ("replied" if reply_at or status == "replied"
+                         else "sent" if sent_at or status in ("email_sent", "sent")
+                         else "draft")
                 records.append({
                     "campaign_id": campaign_dir.name,
                     "target_id": target_id,
-                    "draft_id": row.get("draft_id", ""),
-                    "contact_id": row.get("contact_id", "") or target.get("contact_id", ""),
+                    "draft_id": row.get("draft_ref", ""),
+                    "contact_id": row.get("contact_id", ""),
                     "name": row.get("name", ""),
-                    "company": row.get("company", ""),
-                    "role": target.get("title", ""),
+                    "company": row.get("org", ""),
+                    "role": row.get("theme", "") or row.get("degree", ""),
                     "email": row.get("email", ""),
-                    "profile_url": target.get("profile_url", ""),
-                    "paper_url": draft.get("paper_url", "") or target.get("trigger_source_url", ""),
-                    "paper_note": draft.get("paper_note", "") or target.get("trigger", ""),
-                    "draft_subject": draft.get("draft_subject", "") or row.get("subject", ""),
-                    "sent_subject": row.get("subject", "") if sent_at else "",
+                    "profile_url": row.get("linkedin_url", ""),
+                    "paper_url": row.get("paper_url", ""),
+                    "paper_note": row.get("arxiv_id", ""),
+                    "draft_subject": draft.get("draft_subject", ""),
+                    "sent_subject": draft.get("draft_subject", "") if sent_at else "",
                     "draft_body": draft.get("draft_body", ""),
-                    "visible_sent_fragment": draft.get("visible_sent_fragment", ""),
+                    "visible_sent_fragment": "",
                     "exact_sent_copy": reply.get("exact_sent_copy", ""),
-                    "copy_kind": copy_kind,
+                    "copy_kind": "exact_sent" if reply.get("exact_sent_copy") else "stored_draft",
                     "state": state,
                     "sent_at": sent_at,
-                    "sent_account": row.get("send_account", ""),
-                    "reply_at": row.get("reply_at", ""),
+                    "sent_account": "",
+                    "reply_at": reply_at,
                     "reply_body": reply.get("reply_body", ""),
                     "next_draft_body": reply.get("next_draft_body", ""),
                     "next_draft_status": reply.get("next_draft_status", ""),
-                    "followup_due": row.get("followup_1_due", ""),
-                    "notes": notes,
+                    "followup_due": "",
+                    "notes": row.get("notes", ""),
                 })
     state_rank = {"replied": 0, "sent": 1, "draft": 2}
     records.sort(key=lambda r: (state_rank.get(r["state"], 9), r.get("sent_at") or "9999", r["name"]))
@@ -1489,7 +1521,7 @@ body::before {{
   <button data-tab="pages" onclick="switchTab('pages')">Pages <span class="count">{pages_count}</span></button>
   <button data-tab="companies" onclick="switchTab('companies')">Companies <span class="count">{companies_count}</span></button>
   <button data-tab="startups" onclick="switchTab('startups')">Startups <span class="count">{startups_count}</span></button>
-  <button data-tab="email" onclick="switchTab('email')">Email <span class="count">{email_count}</span></button>
+  <button data-tab="email" onclick="switchTab('email')">Research &amp; papers <span class="count">{email_count}</span></button>
   <button class="active" data-tab="contacts" onclick="switchTab('contacts')">Contacts <span class="count">{total}</span></button>
 </nav>
 
@@ -3632,8 +3664,12 @@ EMAIL_CSS = """
 .email-researcher-btn span {display:block;margin-top:3px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;color:var(--text-dimmer);font-size:10px;}
 .email-researcher-btn:hover strong,.email-researcher-btn:focus-visible strong {color:var(--accent);text-decoration:underline;text-underline-offset:3px;}
 .email-researcher-btn:focus-visible {outline:1px solid var(--accent);outline-offset:5px;border-radius:2px;}
-.email-row-subject {min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;font-family:Georgia,"Iowan Old Style",serif;color:var(--text-dim);font-size:12.5px;}
+.email-row-subject {min-width:0;}
+.email-row-subject-text {display:block;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;font-family:Georgia,"Iowan Old Style",serif;color:var(--text-dim);font-size:12.5px;}
+.email-row-paper {display:inline-block;margin-top:3px;font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:10px;color:#60a5fa;text-decoration:none;opacity:.85;}
+.email-row-paper:hover {opacity:1;text-decoration:underline;}
 .email-state {flex-shrink:0;border:1px solid color-mix(in srgb,var(--email-state) 50%,transparent);color:var(--email-state);border-radius:999px;padding:4px 8px;font-size:9px;font-weight:800;text-transform:uppercase;letter-spacing:.08em;}
+.email-row-addr {display:block;font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:10.5px;color:#60a5fa;opacity:.85;margin-top:2px;}
 .email-row-date {color:var(--text-dimmer);font-size:10px;font-variant-numeric:tabular-nums;text-align:right;}
 .email-address {display:inline-block;margin-top:9px;color:var(--accent);font-size:11px;}
 .email-address:hover {text-decoration:underline;}
@@ -3758,8 +3794,8 @@ def _render_email_script() -> str:
   function row(r, idx) {
     var date = r.reply_at || r.sent_at || "Not sent";
     return '<article class="email-row" data-state="' + esc(r.state) + '">' +
-      '<button class="email-researcher-btn" type="button" data-email-open="' + idx + '" aria-label="Open outreach record for ' + esc(r.name) + '"><strong>' + esc(r.name) + '</strong><span>' + esc(r.company) + ' · ' + esc(r.role) + '</span></button>' +
-      '<div class="email-row-subject" title="' + esc(r.sent_subject || r.draft_subject || "Subject unavailable") + '">' + esc(r.sent_subject || r.draft_subject || "Subject unavailable") + '</div>' +
+      '<button class="email-researcher-btn" type="button" data-email-open="' + idx + '" aria-label="Open outreach record for ' + esc(r.name) + '"><strong>' + esc(r.name) + '</strong><span>' + esc(r.company) + (r.role ? ' · ' + esc(r.role) : '') + '</span>' + (r.email ? '<span class="email-row-addr">' + esc(r.email) + '</span>' : '') + '</button>' +
+      '<div class="email-row-subject"><span class="email-row-subject-text" title="' + esc(r.sent_subject || r.draft_subject || "Subject unavailable") + '">' + esc(r.sent_subject || r.draft_subject || "Subject unavailable") + '</span>' + (r.paper_url ? '<a class="email-row-paper" href="' + esc(r.paper_url) + '" target="_blank" rel="noopener" onclick="event.stopPropagation()" title="Open the paper">' + esc(r.paper_note || "paper") + ' \u2197</a>' : '') + '</div>' +
       '<span class="email-state">' + esc(compactState(r)) + '</span>' +
       '<time class="email-row-date">' + esc(date) + '</time>' +
       '</article>';

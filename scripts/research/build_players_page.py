@@ -18,12 +18,31 @@ from __future__ import annotations
 
 import csv
 import html
+import sys
 from collections import defaultdict
 from pathlib import Path
+
+sys.path.insert(0, str(Path(__file__).parent))
+from build_field_map_page import LAYER_COLOR, parse as parse_companies  # noqa: E402
 
 ROOT = Path(__file__).resolve().parents[2]
 SLUG = "high-mix-manufacturing"
 STRUCT = ROOT / f"reports/{SLUG}/research/data/processed/window_covering_structure.csv"
+LADDER = ROOT / f"reports/{SLUG}/research/data/processed/market_ladder_ranked.csv"
+COMPANIES = ROOT / f"reports/{SLUG}/outreach/companies.md"
+
+# Which measured pool, if any, a layer's revenue sits in. The point of this table is the
+# blanks: NAICS 442291 counts SPECIALIST STORES only, so franchise networks, big box and
+# online retailers are in no code at all and must render as unmeasured rather than as zero.
+LAYER_POOL = {
+    "1": ("442291", "shared with layer 2 — the split between fabricating and non-fabricating is not in the data"),
+    "2": ("442291", "shared with layer 1"),
+    "3": (None, "franchise networks are not a NAICS code; franchisee revenue lands in 442291 or 238390 by establishment"),
+    "4": (None, "straddles manufacturing and retail on one P&L; not separable in either code"),
+    "5": (None, "home centres file under 444110 — window coverings are invisible inside it"),
+    "6": (None, "electronic shopping files under 454110, where blinds are one product line among thousands"),
+    "7": ("337920", "the whole of blind and shade manufacturing"),
+}
 OUT = ROOT / f"reports/{SLUG}/pages/window-covering-players.html"
 
 # leverage: how many businesses one conversation tells you about.
@@ -127,12 +146,40 @@ th:first-child,td:first-child{text-align:left}
 th{font-size:11px;text-transform:uppercase;letter-spacing:.07em;color:var(--faint);font-weight:650}
 td.big{font-weight:650}
 .hint{color:var(--faint);font-size:13px;margin-top:10px}
+.unm{color:var(--hot);font-weight:650}
+.chips{display:flex;flex-wrap:wrap;gap:6px}
+.chip{font-size:12px;font-weight:600;border:1px solid;border-radius:20px;padding:2px 10px}
+.chip.empty{border-color:var(--line);color:var(--faint);font-weight:400;font-style:italic}
+.shape{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:22px 24px}
+.bar{display:flex;height:46px;border-radius:7px;overflow:hidden;margin:14px 0 10px}
+.bar div{display:grid;place-items:center;font-size:12.5px;font-weight:650;color:#fff;
+padding:0 8px;text-align:center}
+.bkey{display:flex;flex-wrap:wrap;gap:8px 20px;font-size:13px;color:var(--mut);margin-top:4px}
+.bkey span{display:flex;align-items:center;gap:7px}
+.bsw{width:11px;height:11px;border-radius:3px;flex:none}
 @media(max-width:640px){dl{grid-template-columns:1fr}dt{padding-top:12px}}
 @media(prefers-color-scheme:dark){
 :root{--bg:#141317;--fg:#eceaf0;--mut:#9d99a6;--faint:#6f6b77;--line:#2c2933;--card:#1c1b21;
 --accent:#84b8e0;--hot:#e0a86a;--ok:#7fc0a0}
 code{background:#26242c}.pill{background:#2b2118}}
 """
+
+
+def ladder():
+    """Firms and receipts per NAICS, summed across the SUSB receipts bands."""
+    agg = defaultdict(lambda: {"firms": 0, "receipts": 0})
+    for r in csv.DictReader(LADDER.open(encoding="utf-8")):
+        agg[r["naics"]]["firms"] += int(r["firms"])
+        agg[r["naics"]]["receipts"] += int(r["receipts_usd"])
+    return agg
+
+
+def by_layer():
+    """Companies actually spoken to, keyed by the layer they sit on."""
+    out = defaultdict(list)
+    for c in parse_companies(COMPANIES.read_text(encoding="utf-8")):
+        out[c["window_layer"]].append(c)
+    return out
 
 
 def counts():
@@ -144,14 +191,34 @@ def counts():
 
 def build() -> Path:
     c = counts()
+    lad = ladder()
+    cos = by_layer()
     cards = []
     for L in LAYERS:
         hot = L["leverage"] > 1
         pill = f'<span class="pill">1 call ≈ {L["leverage"]:,} businesses</span>' if hot else ""
+
+        naics, pool_note = LAYER_POOL[L["n"]]
+        if naics:
+            d = lad[naics]
+            size = (f'<b>${d["receipts"]/1e9:.2f}bn</b> across <b>{d["firms"]:,}</b> firms '
+                    f'&mdash; NAICS {naics}. <span class="m">{pool_note}</span>')
+        else:
+            size = f'<span class="unm">not counted in any NAICS code</span> &mdash; {pool_note}'
+
+        here = cos.get(L["n"], [])
+        chips = "".join(
+            f'<span class="chip" style="border-color:{LAYER_COLOR[L["n"]]};'
+            f'color:{LAYER_COLOR[L["n"]]}">{html.escape(x["canonical_name"] or x["heading"])}</span>'
+            for x in here
+        ) or '<span class="chip empty">nobody yet</span>'
+
         cards.append(f"""<div class="L{' hot' if hot else ''}">
  <div class="Lh"><span class="Ln">LAYER {L['n']}</span><span class="Lt">{L['name']}</span>{pill}</div>
  <p class="Lw">{L['what']}</p>
  <dl>
+  <dt>Measured size</dt><dd>{size}</dd>
+  <dt>Spoken to</dt><dd class="chips">{chips}</dd>
   <dt>Feels</dt><dd class="m">{L['feels']}</dd>
   <dt>Sizing formula</dt><dd><code>{L['formula']}</code></dd>
   <dt>Already have</dt><dd class="m">{L['have']}</dd>
@@ -176,14 +243,23 @@ def build() -> Path:
         annual.append(f"<tr><td>{jobs:,} jobs</td><td class='big'>${jobs*225:,}</td>"
                       f"<td>${jobs*225/12:,.0f}</td></tr>")
 
+    # E19: $9.63bn is the 2022 Census retail product line for window treatments. The SUSB
+    # specialist-store receipts are a different instrument on the same year, so the gap is
+    # read as "what 442291 cannot see", never as a subtraction of like from like.
+    line = 9_634_125_000
+    spec, spec_f = lad["442291"]["receipts"], lad["442291"]["firms"]
+    mfg, mfg_f = lad["337920"]["receipts"], lad["337920"]["firms"]
+    dark = line - spec
+    dark_pct = dark / line * 100
+
     doc = f"""<!doctype html><html lang="en"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Window Coverings — Who to Call</title><style>{CSS}</style></head><body><div class="wrap">
+<title>Window Coverings, Layer by Layer</title><style>{CSS}</style></head><body><div class="wrap">
 
 <h1>Seven layers, seven numbers, seven calls</h1>
-<p class="dek">The same failure — a wrong measurement — costs something different at every
-layer of this trade. So you do not need one number for "the market". You need seven small
-ones, and each is obtainable from one conversation with someone reachable.</p>
+<p class="dek">The commercial map of the trade: who sells window coverings, what each layer is
+worth where anyone counts it, which of them we have actually spoken to, and what the same
+failure — a wrong measurement — costs at each one.</p>
 <p class="gen">Census counts generated from window_covering_structure.csv. Taxonomy and sizing
 formulas authored in scripts/research/build_players_page.py — do not edit this file.</p>
 
@@ -193,6 +269,30 @@ formulas authored in scripts/research/build_players_page.py — do not edit this
 trade, and the biggest sellers are filed under home centres. That is usually bad news. Here it
 is not, because <b>every layer's cost shows up on a different line and each one is separately
 askable.</b> Size them one at a time and they cross-check each other.</p>
+</div>
+
+<div class="sec">
+<h2>The shape of the market</h2>
+<div class="shape">
+<p style="margin:0 0 4px"><b>${line/1e9:.2f}bn</b> of window treatments were sold at retail in
+the US in 2022. Here is how much of that any statistical agency can see:</p>
+<div class="bar">
+ <div style="flex:{spec:.4f};background:#2f7fa8">specialist stores &middot; ${spec/1e9:.2f}bn</div>
+ <div style="flex:{dark:.4f};background:#8a5a1e">no code counts this &middot; ${dark/1e9:.2f}bn</div>
+</div>
+<div class="bkey">
+ <span><span class="bsw" style="background:#2f7fa8"></span>NAICS 442291, {spec_f:,} firms &mdash; layers 1 and 2</span>
+ <span><span class="bsw" style="background:#8a5a1e"></span>franchise, big box, online, and the integrated nationals &mdash; layers 3 to 6</span>
+</div>
+<p class="hint" style="margin-top:14px"><b>{dark_pct:.0f}% of this trade sits in layers with no
+industry code.</b> Home centres file under 444110 and e-commerce under 454110, where window
+coverings are one line among thousands; franchise networks are not a code at all. That is why
+this page sizes bottom-up, one layer at a time &mdash; and it is also why the layers with the
+most revenue are the ones nobody has a number for.</p>
+<p class="hint">Separately, blind and shade <b>manufacturing</b> is ${mfg/1e9:.2f}bn across
+{mfg_f:,} firms (NAICS 337920) &mdash; layer 7. Do not add it to the retail figure: it is the
+same product one step earlier in the chain, with imports and margin in between.</p>
+</div>
 </div>
 
 <div class="sec">

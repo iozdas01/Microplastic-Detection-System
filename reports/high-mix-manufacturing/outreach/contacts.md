@@ -1,11 +1,11 @@
 ---
 purpose: The contact ledger for this idea — one record per person approached, their signal, and where the conversation got to.
 idea: high-mix-manufacturing
-last_updated: 2026-09-03
+last_updated: 2026-09-04
 totals:
   targeted: 94
-  invited: 74
-  accepted: 0
+  invited: 65
+  accepted: 9
   scheduled: 0
   done: 0
   no_reply: 0
@@ -2189,7 +2189,7 @@ open_to_work: false
 
 close_variant:
 relationship_type: field_practitioner
-outreach_status: invited
+outreach_status: accepted
 message_stage:
 call_stage: none
 found_date: 2026-09-03
@@ -2204,6 +2204,7 @@ evidence_score:
 outcome_modifier:
 prior_contact_status: pending
 notes: "[invited 2026-09-03] Bare connection request, no note (LR-B29), sent by Claude with per-invite name verification against the invitation modal. Campaign: outreach/linkedin/h3-window-coverings-2026-09/. Location: Edgewater, New Jersey, US. Found via LinkedIn people search 2026-09-03 (Pass 4, Phase B — no companies.md registry exists yet). Headline and company are from the SEARCH RESULT only; /startup-outreach-draft must re-open the live profile before any claim is written (LR-B6)."
+  [accepted 2026-09-04] Connection accepted; LinkedIn connections list reads "Connected on September 3, 2026". No message from them. Awaiting Msg 1.
 
 ## Richard Jones
 
@@ -2240,7 +2241,7 @@ open_to_work: false
 
 close_variant:
 relationship_type: field_practitioner
-outreach_status: invited
+outreach_status: accepted
 message_stage:
 call_stage: none
 found_date: 2026-09-03
@@ -2255,6 +2256,7 @@ evidence_score:
 outcome_modifier:
 prior_contact_status: pending
 notes: "[invited 2026-09-03] Bare connection request, no note (LR-B29), sent by Claude with per-invite name verification against the invitation modal. Campaign: outreach/linkedin/h3-window-coverings-2026-09/. Location: London, UK. Found via LinkedIn people search 2026-09-03 (Pass 4, Phase B — no companies.md registry exists yet). Headline and company are from the SEARCH RESULT only; /startup-outreach-draft must re-open the live profile before any claim is written (LR-B6)."
+  [accepted 2026-09-04] Connection accepted; LinkedIn connections list reads "Connected on September 3, 2026". No message from them. Awaiting Msg 1.
 
 ## Andy Andre
 
@@ -2699,7 +2701,7 @@ open_to_work: false
 
 close_variant:
 relationship_type: field_practitioner
-outreach_status: invited
+outreach_status: accepted
 message_stage:
 call_stage: none
 found_date: 2026-09-03
@@ -2714,6 +2716,7 @@ evidence_score:
 outcome_modifier:
 prior_contact_status: pending
 notes: "[invited 2026-09-03] Bare connection request, no note (LR-B29), sent by Claude with per-invite name verification against the invitation modal. Campaign: outreach/linkedin/h3-window-coverings-2026-09/. Location: Calgary, Canada. Found via LinkedIn people search 2026-09-03 (Pass 4, Phase B — no companies.md registry exists yet). Headline and company are from the SEARCH RESULT only; /startup-outreach-draft must re-open the live profile before any claim is written (LR-B6)."
+  [accepted 2026-09-04] Connection accepted; LinkedIn connections list reads "Connected on September 3, 2026". No message from them. Awaiting Msg 1.
 
 ## Leanna Thompson
 
@@ -5101,7 +5104,7 @@ open_to_work: false
 
 close_variant:
 relationship_type: operator_buyer
-outreach_status: invited
+outreach_status: accepted
 message_stage:
 call_stage: none
 found_date: 2026-09-03
@@ -5116,6 +5119,7 @@ evidence_score:
 outcome_modifier:
 prior_contact_status: pending
 notes: "[invited 2026-09-03] Bare connection request, no note (LR-B29), sent by Claude with per-invite name verification against the invitation modal. Campaign: outreach/linkedin/h3-window-coverings-2026-09/. [sourced 2026-09-03] Enterprise/top-band pass against the H3 ICP after the market ladder showed the existing pool sat almost entirely in the micro band. Headline and company read from LinkedIn people search on 2026-09-03; profile NOT yet opened, so degree and title are search-result facts and must be re-verified live before any draft (LR-B6, LR-B25)."
+  [accepted 2026-09-04] Connection accepted; LinkedIn connections list reads "Connected on September 3, 2026". No message from them. Awaiting Msg 1.
 
 ## Kris Decker
 
@@ -5458,7 +5462,7 @@ open_to_work: false
 
 close_variant:
 relationship_type: operator_buyer
-outreach_status: invited
+outreach_status: accepted
 message_stage:
 call_stage: none
 found_date: 2026-09-03
@@ -5473,6 +5477,7 @@ evidence_score:
 outcome_modifier:
 prior_contact_status: pending
 notes: "[invited 2026-09-03] Bare connection request, no note (LR-B29), sent by Claude with per-invite name verification against the invitation modal. Campaign: outreach/linkedin/h3-window-coverings-2026-09/. [sourced 2026-09-03] Enterprise/top-band pass against the H3 ICP after the market ladder showed the existing pool sat almost entirely in the micro band. Headline and company read from LinkedIn people search on 2026-09-03; profile NOT yet opened, so degree and title are search-result facts and must be re-verified live before any draft (LR-B6, LR-B25)."
+  [accepted 2026-09-04] Connection accepted; LinkedIn connections list reads "Connected on September 3, 2026". No message from them. Awaiting Msg 1.
 
 ## Julio Tinajero
 
@@ -5509,7 +5514,7 @@ open_to_work: false
 
 close_variant:
 relationship_type: operator_buyer
-outreach_status: invited
+outreach_status: accepted
 message_stage:
 call_stage: none
 found_date: 2026-09-03
@@ -5524,6 +5529,7 @@ evidence_score:
 outcome_modifier:
 prior_contact_status: pending
 notes: "[invited 2026-09-03] Bare connection request, no note (LR-B29), sent by Claude with per-invite name verification against the invitation modal. Campaign: outreach/linkedin/h3-window-coverings-2026-09/. [sourced 2026-09-03] Enterprise/top-band pass against the H3 ICP after the market ladder showed the existing pool sat almost entirely in the micro band. Headline and company read from LinkedIn people search on 2026-09-03; profile NOT yet opened, so degree and title are search-result facts and must be re-verified live before any draft (LR-B6, LR-B25)."
+  [accepted 2026-09-04] Connection accepted; LinkedIn connections list reads "Connected on September 3, 2026". No message from them. Awaiting Msg 1.
 
 ## Javier Bustamante Martinez
 
@@ -5815,7 +5821,7 @@ open_to_work: false
 
 close_variant:
 relationship_type: operator_buyer
-outreach_status: invited
+outreach_status: accepted
 message_stage:
 call_stage: none
 found_date: 2026-09-03
@@ -5830,6 +5836,7 @@ evidence_score:
 outcome_modifier:
 prior_contact_status: pending
 notes: "[invited 2026-09-03] Bare connection request, no note (LR-B29), sent by Claude with per-invite name verification against the invitation modal. Campaign: outreach/linkedin/h3-window-coverings-2026-09/. [sourced 2026-09-03] Enterprise/top-band pass against the H3 ICP after the market ladder showed the existing pool sat almost entirely in the micro band. Headline and company read from LinkedIn people search on 2026-09-03; profile NOT yet opened, so degree and title are search-result facts and must be re-verified live before any draft (LR-B6, LR-B25)."
+  [accepted 2026-09-04] Connection accepted; LinkedIn connections list reads "Connected on September 3, 2026". No message from them. Awaiting Msg 1.
 
 ## Ranjan Mada
 
@@ -5917,7 +5924,7 @@ open_to_work: false
 
 close_variant:
 relationship_type: operator_buyer
-outreach_status: invited
+outreach_status: accepted
 message_stage:
 call_stage: none
 found_date: 2026-09-03
@@ -5932,6 +5939,7 @@ evidence_score:
 outcome_modifier:
 prior_contact_status: pending
 notes: "[invited 2026-09-03] Bare connection request, no note (LR-B29), sent by Claude with per-invite name verification against the invitation modal. Campaign: outreach/linkedin/h3-window-coverings-2026-09/. [sourced 2026-09-03] Enterprise/top-band pass against the H3 ICP after the market ladder showed the existing pool sat almost entirely in the micro band. Headline and company read from LinkedIn people search on 2026-09-03; profile NOT yet opened, so degree and title are search-result facts and must be re-verified live before any draft (LR-B6, LR-B25)."
+  [accepted 2026-09-04] Connection accepted; LinkedIn connections list reads "Connected on September 3, 2026". No message from them. Awaiting Msg 1.
 
 ## Vivek Rao
 
@@ -6019,7 +6027,7 @@ open_to_work: false
 
 close_variant:
 relationship_type: operator_buyer
-outreach_status: invited
+outreach_status: accepted
 message_stage:
 call_stage: none
 found_date: 2026-09-03
@@ -6034,3 +6042,4 @@ evidence_score:
 outcome_modifier:
 prior_contact_status: pending
 notes: "[invited 2026-09-03] Bare connection request, no note (LR-B29), sent by Claude with per-invite name verification against the invitation modal. Campaign: outreach/linkedin/h3-window-coverings-2026-09/. [sourced 2026-09-03] Enterprise/top-band pass against the H3 ICP after the market ladder showed the existing pool sat almost entirely in the micro band. Headline and company read from LinkedIn people search on 2026-09-03; profile NOT yet opened, so degree and title are search-result facts and must be re-verified live before any draft (LR-B6, LR-B25)."
+  [accepted 2026-09-04] Connection accepted; LinkedIn connections list reads "Connected on September 3, 2026". No message from them. Awaiting Msg 1.

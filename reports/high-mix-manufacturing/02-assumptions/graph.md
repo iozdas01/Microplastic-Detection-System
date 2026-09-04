@@ -244,6 +244,15 @@ assumptions:
       Ask manufacturers and dealers about the last remake they did before asking for a rate.
       "Walk me through the last remake. What went wrong, and where was the error made?" then
       "roughly what share of orders come back?" They track it monthly; it hits cost of goods.
+      Then force the SPLIT, because the rate alone does not say which half of the pipeline is
+      broken: "of the remakes you did last month, how many were a bad measurement at the
+      window, and how many were a mistake made in the office after the order came in?" That
+      one question decides whether capture or the office arithmetic is the product, and the
+      answer is no longer symmetric — E24 records that deduction-to-cut-list is a commodity
+      feature of this trade's ERP, sold to a claimed 1,000+ businesses. So a HIGH office share
+      means either they do not run such a system or they run it and it is not trusted, and
+      both of those are worth knowing. Follow with "which system do you run, and are your cut
+      lengths calculated by the software or by a person?"
     disconfirmation: >-
       If the median reported rate across five manufacturers is under about 1% of orders, the
       pain is too thin to build on and H3 dies.

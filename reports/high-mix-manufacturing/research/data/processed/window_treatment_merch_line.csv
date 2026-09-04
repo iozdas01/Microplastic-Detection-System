@@ -1,0 +1,139 @@
+year,product_code,product_line,naics,naics_label,channel,sales_usd_k,share_of_line_pct,establishments
+2017,5000625000,"Retail sales of window treatments, including rods, poles, and fixtures",00,Total for all sectors,,11803558.0,100.0,57159
+2017,5000625000,"Retail sales of window treatments, including rods, poles, and fixtures",314120,Curtain and linen mills,,16222.0,0.1,51
+2017,5000625000,"Retail sales of window treatments, including rods, poles, and fixtures",442110,Furniture stores,,84227.0,0.7,1003
+2017,5000625000,"Retail sales of window treatments, including rods, poles, and fixtures",442210,Floor covering stores,,138616.0,1.2,1919
+2017,5000625000,"Retail sales of window treatments, including rods, poles, and fixtures",442291,Window treatment stores,window_treatment_specialist,1404159.0,11.9,1816
+2017,5000625000,"Retail sales of window treatments, including rods, poles, and fixtures",442299,All other home furnishings stores,,162939.0,1.4,2350
+2017,5000625000,"Retail sales of window treatments, including rods, poles, and fixtures",443141,Household appliance stores,,65.0,0.0,12
+2017,5000625000,"Retail sales of window treatments, including rods, poles, and fixtures",443142,Electronics stores,,0.0,0.0,0
+2017,5000625000,"Retail sales of window treatments, including rods, poles, and fixtures",444110,Home centers,home_center,3974472.0,33.7,4703
+2017,5000625000,"Retail sales of window treatments, including rods, poles, and fixtures",444120,Paint and wallpaper stores,,31635.0,0.3,390
+2017,5000625000,"Retail sales of window treatments, including rods, poles, and fixtures",444130,Hardware stores,,22638.0,0.2,2924
+2017,5000625000,"Retail sales of window treatments, including rods, poles, and fixtures",444190,Other building material dealers,,20119.0,0.2,775
+2017,5000625000,"Retail sales of window treatments, including rods, poles, and fixtures",445110,Supermarkets and other grocery (except convenience) stores,,5057.0,0.0,1083
+2017,5000625000,"Retail sales of window treatments, including rods, poles, and fixtures",448110,Men's clothing stores,,170.0,0.0,25
+2017,5000625000,"Retail sales of window treatments, including rods, poles, and fixtures",448120,Women's clothing stores,,602.0,0.0,22
+2017,5000625000,"Retail sales of window treatments, including rods, poles, and fixtures",448140,Family clothing stores,,15036.0,0.1,559
+2017,5000625000,"Retail sales of window treatments, including rods, poles, and fixtures",451130,"Sewing, needlework, and piece goods stores",,0.0,0.0,0
+2017,5000625000,"Retail sales of window treatments, including rods, poles, and fixtures",452210,Department stores,,260199.0,2.2,1409
+2017,5000625000,"Retail sales of window treatments, including rods, poles, and fixtures",452311,Warehouse clubs and supercenters,,211432.0,1.8,2434
+2017,5000625000,"Retail sales of window treatments, including rods, poles, and fixtures",452319,All other general merchandise stores,,231590.0,2.0,32766
+2017,5000625000,"Retail sales of window treatments, including rods, poles, and fixtures",453220,"Gift, novelty, and souvenir stores",,107.0,0.0,19
+2017,5000625000,"Retail sales of window treatments, including rods, poles, and fixtures",453998,All other miscellaneous store retailers (except tobacco stores),,142.0,0.0,32
+2017,5000625000,"Retail sales of window treatments, including rods, poles, and fixtures",454110,Electronic shopping and mail-order houses,online_and_mail_order,3764692.0,31.9,235
+2017,5000625000,"Retail sales of window treatments, including rods, poles, and fixtures",454390,Other direct selling establishments,direct_selling_in_home,1443419.0,12.2,2480
+2022,5000625000,"Retail sales of window treatments, including rods, poles, and fixtures",00,Total for all sectors,,9634125.0,100.0,65753
+2022,5000625000,"Retail sales of window treatments, including rods, poles, and fixtures",238990,All Other Specialty Trade Contractors,,0.0,0.0,0
+2022,5000625000,"Retail sales of window treatments, including rods, poles, and fixtures",314120,Curtain and Linen Mills,,6546.0,0.1,23
+2022,5000625000,"Retail sales of window treatments, including rods, poles, and fixtures",444110,Home Centers,home_center,2817425.0,29.2,4379
+2022,5000625000,"Retail sales of window treatments, including rods, poles, and fixtures",444120,Paint and Wallpaper Retailers,,55693.0,0.6,1059
+2022,5000625000,"Retail sales of window treatments, including rods, poles, and fixtures",444140,Hardware Retailers,,40164.0,0.4,3072
+2022,5000625000,"Retail sales of window treatments, including rods, poles, and fixtures",444180,Other Building Material Dealers,,40806.0,0.4,828
+2022,5000625000,"Retail sales of window treatments, including rods, poles, and fixtures",445110,Supermarkets and Other Grocery Retailers (except Convenience Retailers),,14833.0,0.2,4649
+2022,5000625000,"Retail sales of window treatments, including rods, poles, and fixtures",449110,Furniture Retailers,,128247.0,1.3,1216
+2022,5000625000,"Retail sales of window treatments, including rods, poles, and fixtures",449121,Floor Covering Retailers,,226899.0,2.4,1485
+2022,5000625000,"Retail sales of window treatments, including rods, poles, and fixtures",449122,Window Treatment Retailers,window_treatment_specialist_incl_online,4598187.0,47.7,3276
+2022,5000625000,"Retail sales of window treatments, including rods, poles, and fixtures",449129,All Other Home Furnishings Retailers,,99819.0,1.0,796
+2022,5000625000,"Retail sales of window treatments, including rods, poles, and fixtures",449210,Electronics and Appliance Retailers,,7017.0,0.1,53
+2022,5000625000,"Retail sales of window treatments, including rods, poles, and fixtures",455110,Department Stores,,0.0,0.0,1030
+2022,5000625000,"Retail sales of window treatments, including rods, poles, and fixtures",455211,Warehouse Clubs and Supercenters,,0.0,0.0,2345
+2022,5000625000,"Retail sales of window treatments, including rods, poles, and fixtures",455219,All Other General Merchandise Retailers,,0.0,0.0,36091
+2022,5000625000,"Retail sales of window treatments, including rods, poles, and fixtures",456199,All Other Health and Personal Care Retailers,,0.0,0.0,0
+2022,5000625000,"Retail sales of window treatments, including rods, poles, and fixtures",458110,Clothing and Clothing Accessories Retailers,,563460.0,5.8,5015
+2022,5000625000,"Retail sales of window treatments, including rods, poles, and fixtures",459130,"Sewing, Needlework, and Piece Goods Retailers",,70535.0,0.7,179
+2022,5000625000,"Retail sales of window treatments, including rods, poles, and fixtures",459420,"Gift, Novelty, and Souvenir Retailers",,0.0,0.0,60
+2022,5000625000,"Retail sales of window treatments, including rods, poles, and fixtures",459999,All Other Miscellaneous Retailers,,0.0,0.0,0
+2022,5000625000,"Retail sales of window treatments, including rods, poles, and fixtures",541410,Interior design services,,0.0,0.0,23
+2022,5000625000,"Retail sales of window treatments, including rods, poles, and fixtures",811420,Reupholstery and Furniture Repair,,1504.0,0.0,0
+2012,20280,"Curtains, draperies, blinds, slipcovers, bed & table coverings",44-45,Retail trade,,31726790.0,100.0,67150
+2012,20280,"Curtains, draperies, blinds, slipcovers, bed & table coverings",442,Furniture and home furnishings stores,,6330880.0,20.0,13086
+2012,20280,"Curtains, draperies, blinds, slipcovers, bed & table coverings",4421,Furniture stores,,802247.0,2.5,3386
+2012,20280,"Curtains, draperies, blinds, slipcovers, bed & table coverings",4543903,"Direct selling, other merchandise",,52176.0,0.2,187
+2012,20280,"Curtains, draperies, blinds, slipcovers, bed & table coverings",44211,Furniture stores,,802247.0,2.5,3386
+2012,20280,"Curtains, draperies, blinds, slipcovers, bed & table coverings",442110,Furniture stores,,802247.0,2.5,3386
+2012,20280,"Curtains, draperies, blinds, slipcovers, bed & table coverings",4422,Home furnishings stores,,5528633.0,17.4,9700
+2012,20280,"Curtains, draperies, blinds, slipcovers, bed & table coverings",44221,Floor covering stores,,172446.0,0.5,1821
+2012,20280,"Curtains, draperies, blinds, slipcovers, bed & table coverings",442210,Floor covering stores,,172446.0,0.5,1821
+2012,20280,"Curtains, draperies, blinds, slipcovers, bed & table coverings",44229,Other home furnishings stores,,5356187.0,16.9,7879
+2012,20280,"Curtains, draperies, blinds, slipcovers, bed & table coverings",442291,Window treatment stores,window_treatment_specialist,834506.0,2.6,1720
+2012,20280,"Curtains, draperies, blinds, slipcovers, bed & table coverings",442299,All other home furnishings stores,,4521681.0,14.3,6159
+2012,20280,"Curtains, draperies, blinds, slipcovers, bed & table coverings",444,Building material and garden equipment and supplies dealers,,1656571.0,5.2,6431
+2012,20280,"Curtains, draperies, blinds, slipcovers, bed & table coverings",4441,Building material and supplies dealers,home_center,1655944.0,5.2,6414
+2012,20280,"Curtains, draperies, blinds, slipcovers, bed & table coverings",44411,Home centers,,0.0,0.0,4593
+2012,20280,"Curtains, draperies, blinds, slipcovers, bed & table coverings",444110,Home centers,home_center,0.0,0.0,4593
+2012,20280,"Curtains, draperies, blinds, slipcovers, bed & table coverings",44412,Paint and wallpaper stores,,0.0,0.0,424
+2012,20280,"Curtains, draperies, blinds, slipcovers, bed & table coverings",444120,Paint and wallpaper stores,,0.0,0.0,424
+2012,20280,"Curtains, draperies, blinds, slipcovers, bed & table coverings",44413,Hardware stores,,22679.0,0.1,1180
+2012,20280,"Curtains, draperies, blinds, slipcovers, bed & table coverings",444130,Hardware stores,,22679.0,0.1,1180
+2012,20280,"Curtains, draperies, blinds, slipcovers, bed & table coverings",44419,Other building material dealers,,15661.0,0.0,217
+2012,20280,"Curtains, draperies, blinds, slipcovers, bed & table coverings",444190,Other building material dealers,,15661.0,0.0,217
+2012,20280,"Curtains, draperies, blinds, slipcovers, bed & table coverings",4441901,Retail lumber yards,,3309.0,0.0,89
+2012,20280,"Curtains, draperies, blinds, slipcovers, bed & table coverings",4441902,All other building material dealers,,12352.0,0.0,128
+2012,20280,"Curtains, draperies, blinds, slipcovers, bed & table coverings",4442,Lawn and garden equipment and supplies stores,,627.0,0.0,17
+2012,20280,"Curtains, draperies, blinds, slipcovers, bed & table coverings",44422,"Nursery, garden center, and farm supply stores",,627.0,0.0,17
+2012,20280,"Curtains, draperies, blinds, slipcovers, bed & table coverings",444220,"Nursery, garden center, and farm supply stores",,627.0,0.0,17
+2012,20280,"Curtains, draperies, blinds, slipcovers, bed & table coverings",445,Food and beverage stores,,1702059.0,5.4,5535
+2012,20280,"Curtains, draperies, blinds, slipcovers, bed & table coverings",4451,Grocery stores,,1701933.0,5.4,5532
+2012,20280,"Curtains, draperies, blinds, slipcovers, bed & table coverings",44511,Supermarkets and other grocery (except convenience) stores,,1701843.0,5.4,5517
+2012,20280,"Curtains, draperies, blinds, slipcovers, bed & table coverings",445110,Supermarkets and other grocery (except convenience) stores,,1701843.0,5.4,5517
+2012,20280,"Curtains, draperies, blinds, slipcovers, bed & table coverings",44512,Convenience stores,,90.0,0.0,15
+2012,20280,"Curtains, draperies, blinds, slipcovers, bed & table coverings",445120,Convenience stores,,90.0,0.0,15
+2012,20280,"Curtains, draperies, blinds, slipcovers, bed & table coverings",448,Clothing and clothing accessories stores,,926403.0,2.9,4603
+2012,20280,"Curtains, draperies, blinds, slipcovers, bed & table coverings",4481,Clothing stores,,926215.0,2.9,4600
+2012,20280,"Curtains, draperies, blinds, slipcovers, bed & table coverings",44811,Men's clothing stores,,2279.0,0.0,7
+2012,20280,"Curtains, draperies, blinds, slipcovers, bed & table coverings",448110,Men's clothing stores,,2279.0,0.0,7
+2012,20280,"Curtains, draperies, blinds, slipcovers, bed & table coverings",44812,Women's clothing stores,,54034.0,0.2,519
+2012,20280,"Curtains, draperies, blinds, slipcovers, bed & table coverings",448120,Women's clothing stores,,54034.0,0.2,519
+2012,20280,"Curtains, draperies, blinds, slipcovers, bed & table coverings",44813,Children's and infants' clothing stores,,32131.0,0.1,585
+2012,20280,"Curtains, draperies, blinds, slipcovers, bed & table coverings",448130,Children's and infants' clothing stores,,32131.0,0.1,585
+2012,20280,"Curtains, draperies, blinds, slipcovers, bed & table coverings",44814,Family clothing stores,,833826.0,2.6,3442
+2012,20280,"Curtains, draperies, blinds, slipcovers, bed & table coverings",448140,Family clothing stores,,833826.0,2.6,3442
+2012,20280,"Curtains, draperies, blinds, slipcovers, bed & table coverings",44815,Clothing accessories stores,,2724.0,0.0,16
+2012,20280,"Curtains, draperies, blinds, slipcovers, bed & table coverings",448150,Clothing accessories stores,,2724.0,0.0,16
+2012,20280,"Curtains, draperies, blinds, slipcovers, bed & table coverings",44819,Other clothing stores,,1221.0,0.0,31
+2012,20280,"Curtains, draperies, blinds, slipcovers, bed & table coverings",448190,Other clothing stores,,1221.0,0.0,31
+2012,20280,"Curtains, draperies, blinds, slipcovers, bed & table coverings",451,"Sporting goods, hobby, musical instrument, and book stores",,95470.0,0.3,1430
+2012,20280,"Curtains, draperies, blinds, slipcovers, bed & table coverings",4511,"Sporting goods, hobby, and musical instrument stores",,95470.0,0.3,1430
+2012,20280,"Curtains, draperies, blinds, slipcovers, bed & table coverings",45113,"Sewing, needlework, and piece goods stores",,94296.0,0.3,1426
+2012,20280,"Curtains, draperies, blinds, slipcovers, bed & table coverings",451130,"Sewing, needlework, and piece goods stores",,94296.0,0.3,1426
+2012,20280,"Curtains, draperies, blinds, slipcovers, bed & table coverings",452,General merchandise stores,,15994766.0,50.4,31697
+2012,20280,"Curtains, draperies, blinds, slipcovers, bed & table coverings",4521,Department stores,,6929770.0,21.8,7930
+2012,20280,"Curtains, draperies, blinds, slipcovers, bed & table coverings",4529,Other general merchandise stores,,9064996.0,28.6,23767
+2012,20280,"Curtains, draperies, blinds, slipcovers, bed & table coverings",45211,Department stores,,6929770.0,21.8,7930
+2012,20280,"Curtains, draperies, blinds, slipcovers, bed & table coverings",452111,Department stores (except discount department stores),,2043583.0,6.4,3205
+2012,20280,"Curtains, draperies, blinds, slipcovers, bed & table coverings",452112,Discount department stores,,4886187.0,15.4,4725
+2012,20280,"Curtains, draperies, blinds, slipcovers, bed & table coverings",45291,Warehouse clubs and supercenters,,7656844.0,24.1,5022
+2012,20280,"Curtains, draperies, blinds, slipcovers, bed & table coverings",452910,Warehouse clubs and supercenters,,7656844.0,24.1,5022
+2012,20280,"Curtains, draperies, blinds, slipcovers, bed & table coverings",45299,All other general merchandise stores,,1408152.0,4.4,18745
+2012,20280,"Curtains, draperies, blinds, slipcovers, bed & table coverings",452990,All other general merchandise stores,,1408152.0,4.4,18745
+2012,20280,"Curtains, draperies, blinds, slipcovers, bed & table coverings",4529901,Variety stores,,674708.0,2.1,12557
+2012,20280,"Curtains, draperies, blinds, slipcovers, bed & table coverings",4529904,Miscellaneous general merchandise stores,,733444.0,2.3,6188
+2012,20280,"Curtains, draperies, blinds, slipcovers, bed & table coverings",453,Miscellaneous store retailers,,40657.0,0.1,1600
+2012,20280,"Curtains, draperies, blinds, slipcovers, bed & table coverings",4532,"Office supplies, stationery, and gift stores",,24033.0,0.1,813
+2012,20280,"Curtains, draperies, blinds, slipcovers, bed & table coverings",45322,"Gift, novelty, and souvenir stores",,23651.0,0.1,811
+2012,20280,"Curtains, draperies, blinds, slipcovers, bed & table coverings",45411323,"Mail-order houses, other specialized merchandise",,852608.0,2.7,93
+2012,20280,"Curtains, draperies, blinds, slipcovers, bed & table coverings",453220,"Gift, novelty, and souvenir stores",,23651.0,0.1,811
+2012,20280,"Curtains, draperies, blinds, slipcovers, bed & table coverings",4533,Used merchandise stores,,15158.0,0.0,701
+2012,20280,"Curtains, draperies, blinds, slipcovers, bed & table coverings",45331,Used merchandise stores,,15158.0,0.0,701
+2012,20280,"Curtains, draperies, blinds, slipcovers, bed & table coverings",453310,Used merchandise stores,,15158.0,0.0,701
+2012,20280,"Curtains, draperies, blinds, slipcovers, bed & table coverings",4539,Other miscellaneous store retailers,,1466.0,0.0,86
+2012,20280,"Curtains, draperies, blinds, slipcovers, bed & table coverings",45392,Art dealers,,77.0,0.0,9
+2012,20280,"Curtains, draperies, blinds, slipcovers, bed & table coverings",453920,Art dealers,,77.0,0.0,9
+2012,20280,"Curtains, draperies, blinds, slipcovers, bed & table coverings",45399,All other miscellaneous store retailers,,1389.0,0.0,77
+2012,20280,"Curtains, draperies, blinds, slipcovers, bed & table coverings",453991,Tobacco stores,,86.0,0.0,12
+2012,20280,"Curtains, draperies, blinds, slipcovers, bed & table coverings",453998,All other miscellaneous store retailers (except tobacco stores),,1303.0,0.0,65
+2012,20280,"Curtains, draperies, blinds, slipcovers, bed & table coverings",454,Nonstore retailers,nonstore_all,4979979.0,15.7,2766
+2012,20280,"Curtains, draperies, blinds, slipcovers, bed & table coverings",4541,Electronic shopping and mail-order houses,online_and_mail_order,4174354.0,13.2,905
+2012,20280,"Curtains, draperies, blinds, slipcovers, bed & table coverings",45411,Electronic shopping and mail-order houses,online_and_mail_order,4174354.0,13.2,905
+2012,20280,"Curtains, draperies, blinds, slipcovers, bed & table coverings",454111,Electronic shopping,online_and_mail_order,2932945.0,9.2,676
+2012,20280,"Curtains, draperies, blinds, slipcovers, bed & table coverings",4541111,"Electronic shopping, general merchandise",,2541753.0,8.0,304
+2012,20280,"Curtains, draperies, blinds, slipcovers, bed & table coverings",4541112,"Electronic shopping, specialized merchandise",,391192.0,1.2,372
+2012,20280,"Curtains, draperies, blinds, slipcovers, bed & table coverings",45411123,"Electronic shopping, other specialized merchandise",,391192.0,1.2,372
+2012,20280,"Curtains, draperies, blinds, slipcovers, bed & table coverings",454113,Mail-order houses,online_and_mail_order,1229474.0,3.9,210
+2012,20280,"Curtains, draperies, blinds, slipcovers, bed & table coverings",4541131,"Mail-order houses, general merchandise",,264934.0,0.8,112
+2012,20280,"Curtains, draperies, blinds, slipcovers, bed & table coverings",4541132,"Mail-order houses, specialized merchandise",,852608.0,2.7,93
+2012,20280,"Curtains, draperies, blinds, slipcovers, bed & table coverings",4543,Direct selling establishments,direct_selling_in_home,805625.0,2.5,1861
+2012,20280,"Curtains, draperies, blinds, slipcovers, bed & table coverings",45439,Other direct selling establishments,direct_selling_in_home,805625.0,2.5,1861
+2012,20280,"Curtains, draperies, blinds, slipcovers, bed & table coverings",454390,Other direct selling establishments,direct_selling_in_home,805625.0,2.5,1861
+2012,20280,"Curtains, draperies, blinds, slipcovers, bed & table coverings",4543901,"Direct selling, furniture, home furnishings, electronics, and appliances",,753449.0,2.4,1674

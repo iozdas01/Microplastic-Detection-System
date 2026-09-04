@@ -4,7 +4,7 @@
 -->
 # Outreach results — H2A1 · high-mix-manufacturing
 
-_Generated 2026-09-03. Numbers are the funnel over contacts tagged H2A1._
+_Generated 2026-09-04. Numbers are the funnel over contacts tagged H2A1._
 
 | channel | targeted | contacted | replied | qualified replied | reply rate |
 |---|---|---|---|---|---|

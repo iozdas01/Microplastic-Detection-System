@@ -42,6 +42,7 @@ Not in the shotgun pool: these answer downstream validation questions rather tha
 | Nurture Coefficient | market-signal | computed over 20–30 completed outreach touchpoints | [nurture-coefficient.md](validation/nurture-coefficient.md) |
 | Pain Point Scorecard | first-principles | ranks a slate of mined candidates — runs *after* a shotgun, on its output | [pain-point-scorecard.md](validation/pain-point-scorecard.md) |
 | Path-Out Test | market | asks whether a specific niche expands; presupposes the niche | [path-out-test.md](validation/path-out-test.md) |
+| Predecessor Base Rate | historical | needs a named category with predecessors whose outcomes have already resolved — there is nothing to enumerate before a vertical is chosen | [predecessor-base-rate.md](validation/predecessor-base-rate.md) |
 | Search Trend Validation | market-signal | demand proxy for a specific term set; sharper once a hunch names the terms | [search-trend-validation.md](validation/search-trend-validation.md) |
 | Stated Want vs. Latent Need | customer-validation | reads what customers said in interviews — no interviews exist yet | [stated-want-vs-latent-need.md](validation/stated-want-vs-latent-need.md) |
 | The Well Test | customer-validation | tests demand *shape* for a named idea after its core problem has been interpreted | [the-well-test.md](validation/the-well-test.md) |

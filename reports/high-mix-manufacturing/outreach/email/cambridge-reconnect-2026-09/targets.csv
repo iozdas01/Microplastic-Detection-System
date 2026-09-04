@@ -1,6 +1,6 @@
 target_id,name,org,email,linkedin_url,degree,draft_ref,outreach_status,sent_on,notes
-X1,Sam Brooks,Cambridge IfM (DIAL),sjb351@cam.ac.uk,,n/a,E1,pending,,"Senior Research Associate, DIAL. Published address from his IfM people page. Ask is a reintroduction, not a name."
-X2,Florian Urmetzer,Cambridge IfM,,,2nd,,pending,,"Fallback route into IfM. Shows as a LinkedIn mutual connection. Only if Sam does not reply within a week."
-X3,James Heslop,Universal Wolf,,https://www.linkedin.com/in/,3rd,,pending,,"Engineering Manager. MOST LIKELY the lost contact. Bare connection request only (LR-B29). URL not captured - find via LinkedIn search."
+X1,Sam Brooks,Cambridge IfM (DIAL),sjb351@cam.ac.uk,,n/a,E2,sent,2026-09-03,"Founder's MPhil advisor - confirmed 2026-09-03. Draft E1 already treats him as a former supervisor and asks for the introduction rather than the name, which is the right shape; no rewrite needed."
+X2,Florian Urmetzer,Cambridge IfM,,,2nd,,pending,,"Founder's ISMM programme director, not a LinkedIn mutual - corrected 2026-09-03 by the founder. A direct relationship, so no route-in is needed and no warm intro has to be manufactured. Founder likely already holds the address; nothing was mined. Reclassify before writing: this is a person to talk to about the whole idea, not a fallback if Sam is slow."
+X3,James Heslop,Universal Wolf,,https://www.linkedin.com/in/,3rd,,pending,,Engineering Manager. MOST LIKELY the lost contact. Bare connection request only (LR-B29). URL not captured - find via LinkedIn search.
 X4,Ryan Illingworth,Universal Wolf,,https://www.linkedin.com/in/,3rd,,pending,,"Technical Officer NPI, Blyth. NPI is the design-to-manufacture handoff function. Strong second candidate."
 X5,Balint Polos,Universal Wolf,,https://www.linkedin.com/in/,3rd,,pending,,"CAD Engineer, Durham. Literally the CAD role but likelier a participant than the sponsor."

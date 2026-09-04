@@ -19,7 +19,8 @@ from common import ENV, census_rows, get, guard, log, record, save_csv, save_raw
 SOURCE = "census-econ"
 YEAR = 2022
 BASE = f"https://api.census.gov/data/{YEAR}/ecnbasic"
-NAICS = {"337122": "Nonupholstered wood household furniture manufacturing",
+NAICS = {"337920": "Blind and shade manufacturing",
+         "337122": "Nonupholstered wood household furniture manufacturing",
          "337211": "Wood office furniture manufacturing",
          "337212": "Custom architectural woodwork and millwork",
          "3371": "Household and institutional furniture manufacturing",

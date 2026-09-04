@@ -16,6 +16,29 @@
 version: 1
 
 pages:
+  - file: capability-matrix.html
+    status: generated
+    group: evidence
+    note: >-
+      Every software company selling into the window-covering trade scored on the ten jobs
+      between a customer wanting a blind and a machine cutting one, ordered by revenue.
+      Carries the finding the page exists for: the middle of the pipeline - quoting, orders,
+      deductions to cut list, file out to the cutting table - is occupied by incumbents up to
+      forty-three years old, while both ends are empty. Nobody captures a measurement without
+      a person on site, and nobody routes a job across shops or reads a machine back. Rebuilt
+      by scripts/research/build_capability_matrix_page.py.
+
+  - file: system-architecture.html
+    status: current
+    group: plan
+    note: >-
+      How the product is actually built: two subsystems joined only by the Order schema, the
+      six data objects with their real fields, five transforms of which four are pure, and the
+      three agents - all of which run at setup, never in the request path. Carries the machine
+      inventory for a blind fabricator's floor with each machine's control type and what it
+      will accept today, and the finding that the only MHS-ready machine there is the shutter
+      router. Proposed design, not built.
+
   - file: hmlv-map.html
     status: current
     group: evidence
@@ -46,11 +69,25 @@ pages:
       scripts/research/build_market_ladder_page.py.
 
   - file: call-log.html
-    status: current
+    status: superseded
     group: outreach
     note: >-
-      Notes template for a discovery call — open it while you are on the phone. Saves to your
-      browser only; the durable record goes to outreach/contacts.md and the evidence ledger.
+      Retired 2026-09-04 at the founder's call. It was a blank notes template to open while on
+      the phone, not a record — it never held a company. Nothing replaces its note-taking
+      function; field-map.html took its place in this list by holding the companies the founder
+      believed were in here.
+
+  - file: field-map.html
+    status: generated
+    group: outreach
+    note: >-
+      The five window-covering companies behind the H3 evidence, placed on a schematic San
+      Francisco map and banded by which of the seven trade layers each sits on. Carries the
+      finding that the three with a street address are a 1934 independent, a designer's
+      workroom and a national's appointment-only suite — three different layers within four
+      miles. Also renders the two that cannot be placed, including the unidentified retailer
+      that is the sole source of the $225 visit. Generated from outreach/companies.md by
+      scripts/research/build_field_map_page.py.
 
   - file: outreach-send-sheet.html
     status: generated
@@ -78,12 +115,13 @@ pages:
     status: generated
     group: evidence
     note: >-
-      The market as seven layers, each with its own cost structure for the same failure, its
-      own sizing formula, its own missing number and its own person to phone. Ranks the calls
-      by leverage rather than by layer order: a franchisor aggregates remake data across ~1,000
-      businesses, and an online retailer's rate is the only one uncontaminated by a
-      professional measuring visit. Carries the worked example for layer 1 off the measured
-      $225 visit. Rebuilt by scripts/research/build_players_page.py.
+      The commercial map of the trade. Seven layers, each with its own cost structure for the
+      same failure, its own sizing formula, its own missing number and its own person to phone
+      — now also with the measured revenue behind each layer where a NAICS code exists, and
+      the companies actually spoken to placed on it. Leads with the shape of the market: 73%
+      of the $9.63bn US retail line sits in layers no industry code counts, which is why this
+      page sizes bottom-up. Ranks calls by leverage, not layer order. Rebuilt by
+      scripts/research/build_players_page.py.
 
   - file: startup-map.html
     status: generated
@@ -96,3 +134,26 @@ pages:
       Continues the map begun under manufacturing-execution-layer; carries a standing note
       that no window-covering company is on it yet. Rebuilt by
       scripts/research/build_startup_map_page.py.
+
+  - file: pitch-slide.html
+    status: generated
+    group: outreach
+    note: >-
+      The pitch as the single slide EF Form SCI asks for — one-liner, problem, solution, team,
+      market, plus what we do not know yet, which the brief explicitly asks to see rather than
+      have papered over. Every claim is badged by where it comes from: a call or a measurement,
+      a public source, a fact about the founder, or an untested claim of ours. Cmd-P gives one
+      landscape page to upload. Authored in the `slide:` block of
+      outreach/copy/H3-discovery-pitch.md; rebuilt by
+      scripts/research/build_pitch_slide_page.py.
+
+  - file: progress-log.html
+    status: generated
+    group: evidence
+    note: >-
+      What the founder was trying to find out on each working day, newest first, with each
+      day's Truth line flagged against the day before it. The diff on that one line is the
+      point: a question that changed with evidence behind it reads differently from one that
+      changed because the old one got boring, and from one that has not moved in a week.
+      Authored in progress-log.md by /startup-daily-log; rebuilt by
+      scripts/research/build_progress_log_page.py.

@@ -1,13 +1,27 @@
 ---
 idea_slug: high-mix-manufacturing
 created: 2026-08-31
-last_confirmed: 2026-08-31
+last_confirmed: 2026-09-03
 purpose: The founder-owned durable belief this idea rests on, plus its boundaries and SISP check.
 ---
 
 # Belief
 
-> The problem is that software and machines don't talk, and you have to own both to fix it.
+> Manufacturing will be done through an app, and interoperability is the precondition for it.
+
+**Owning both ends is an OPTION, not the belief** (founder correction, 2026-09-03, stated
+twice). The v2 statement led with "you have to own both to fix it", which read as a claim
+about company structure and was repeatedly quoted back to the founder as though the belief
+committed them to building a factory. It does not. How the app reaches the machines — own the
+factory, route to machines owned by others, or something between — is a question the idea maze
+is still open on, and the belief is silent on it by design.
+
+The belief's own conditional, which is what makes it aimable: **interoperability is required
+when the batch is one.** Interoperability is a fixed cost and only gets paid where there is a
+production run to spread it over; made-to-order has no run, so it is never paid and a person
+carries the number by hand instead. That is why app-driven manufacturing has to arrive in
+high-mix low-volume first — not because high-mix is advanced, but because it is the only place
+where the existing economics never worked at all.
 
 ## How the founder states it
 
@@ -113,26 +127,36 @@ factory is the greenfield, asset-heavy play. The founder made this change knowin
 
 ## What would threaten the belief itself
 
-- A company reaching batch-size-one economics on machines it does not own — a Xometry,
-  Protolabs or Zoo/KittyCAD-style layer pricing, engineering and dispatching one-off jobs
-  across third-party shops at catalogue-like cost and lead time. That falsifies link 2
-  directly, and link 2 is what makes this an asset-heavy company rather than a software one.
-- Interoperability standards closing the gap without anyone owning both ends — STEP AP242,
-  MTConnect, UMATI or QIF reaching the point where CAD, CAM, ERP and machine actually pass
-  data cleanly. If the coupling stops being broken, owning it stops being worth anything.
-- NOT accepted as a belief-level threat (founder decision, 2026-08-31): "owned-factory
-  operators fail at the same rate as asset-light ones." It was offered and rejected, and the
-  rejection is recorded so it is not re-proposed. The reasoning that made it weak: the D2C
-  custom-goods graveyard mostly died of customer-acquisition cost, not manufacturing —
-  Interior Define died in 2022-23 on contract-factory and shipping costs while asset-light;
-  Model No. owned its Oakland factory and parametric configurator and was absorbed by its
-  3D-printing supplier. Owning a factory does not fix CAC. A finding that D2C custom goods
-  have an acquisition-cost problem threatens the **company**, not this belief. Do not let
-  those two get logged as the same thing.
+**Rewritten for v3.** Both v2 threats attacked link 2 — "you have to own both ends" — which v3
+demotes out of the belief. Under v3 they no longer threaten the belief at all; they are
+evidence about which implementation to pick, and they moved here from the threat list
+deliberately rather than being deleted:
 
-The two accepted threats share a shape worth naming: both attack link 2, not link 1. Nothing
-the founder accepted would falsify "the coupling is broken" — only "you have to own both ends
-to fix it." That is the correct place for the risk to sit, since link 1 is the first-hand half.
+- A Xometry/Protolabs/Zoo-style layer reaching batch-size-one economics on machines it does not
+  own is now **consistent with** the belief — it would be app-driven manufacturing happening.
+  It threatens the owned-factory option, not the belief.
+- Owned-factory operators failing at the same rate as asset-light ones remains a question about
+  the company, as the founder ruled on 2026-08-31.
+
+What actually threatens v3:
+
+- **Interoperability stops being the bottleneck.** STEP AP242, MTConnect, UMATI or QIF maturing,
+  or one vendor's stack becoming dominant enough that CAD, CAM, ERP and machine simply pass data.
+  Then app-driven manufacturing arrives without anyone having to fix interoperability, and the
+  precondition half of the belief is wrong. This was already on the v2 list and is promoted to
+  the primary threat, because v3 rests on it far more heavily than v2 did. **It is no longer
+  hypothetical: Anthropic previewed the Model Hardware Standard on 2026-08-27 and intends to
+  open-source it (E20).** That does not falsify the belief — it dates it, and it moves the
+  defensible part from connecting machines to knowing what to send them.
+- **App-driven manufacturing arrives without interoperability.** A single closed stack — one
+  machine maker's cloud, end to end — delivers the outcome by eliminating the interoperability
+  problem rather than solving it. Same result, and the belief's causal claim is still wrong.
+- **Manufacturing does not go through an app.** The per-order coordination stays human because
+  the residual judgement in it does not automate. This falsifies the belief head-on and is the
+  only one of the three that kills it rather than reroutes it.
+- **The batch-size-one conditional fails.** App-driven manufacturing shows up first in high
+  volume rather than high-mix. That would not kill the belief but would falsify the reason the
+  founder expects to be early, which is what the wedge choice rests on.
 
 ## Version history
 
@@ -166,3 +190,26 @@ spare capacity.
 v1 SISP status: possible. Starting solution recorded as "an autonomous panel factory selling
 configurable furniture direct to consumers"; origin `solution_or_analogy_first`. The v2 belief
 returns to that starting position, which is why v2's SISP status is raised to `probable`.
+
+### v2 — created 2026-08-31, last_confirmed 2026-08-31
+
+Displaced 2026-09-03 by founder correction, stated twice in one session: *"the belief is that
+manufacturing will be done via an app - and that interoperability is required for this to
+happen"* and *"the both ends thing is an OPTION BUT NOT THE BELIEF"*. Not a change of mind —
+a correction of the record. The v3 body was already present in v2's own "How the founder states
+it" section ("vibe manufacturing… go into a website and just manufacture what they need";
+"there is no interoperability at all within the system"); the headline statement below simply
+did not carry it, and the headline is what propagates into BRIEF.md and every pitch. Three
+separate sessions quoted the headline back as the belief and got the emphasis wrong.
+
+> The problem is that software and machines don't talk, and you have to own both to fix it.
+
+v2 in-scope: manufacturing where the design-to-machine handoff is per-order and currently
+manual. v2 out-of-scope: unknown until the wedge is chosen. v2 SISP status: probable.
+
+v2 structured the belief as two links — (1) the coupling is broken, first-hand and measured;
+(2) therefore the fix requires owning both ends, which was advice rather than observation. v3
+keeps link 1, adds the prediction and the batch-size-one conditional that v2 held only in its
+prose, and demotes link 2 to an implementation option. Link 2's weakness was already recorded
+in v2 ("Asked twice for a specific occasion behind link 2, the founder gave the general
+statement rather than a named event"), so the demotion follows the file's own evidence.

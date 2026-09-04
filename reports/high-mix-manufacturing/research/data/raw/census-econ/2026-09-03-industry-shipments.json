@@ -1,0 +1,146 @@
+{
+  "337920-us": [
+    {
+      "NAME": "United States",
+      "NAICS2022": "337920",
+      "NAICS2022_LABEL": "Blind and Shade Manufacturing",
+      "ESTAB": "320",
+      "RCPTOT": "2593295",
+      "PAYANN": "597776",
+      "EMP": "11653",
+      "us": "1"
+    }
+  ],
+  "337920-california": [
+    {
+      "NAME": "California",
+      "NAICS2022": "337920",
+      "NAICS2022_LABEL": "Blind and Shade Manufacturing",
+      "ESTAB": "53",
+      "RCPTOT": "389347",
+      "PAYANN": "119103",
+      "EMP": "1966",
+      "state": "06"
+    }
+  ],
+  "337122-us": [
+    {
+      "NAME": "United States",
+      "NAICS2022": "337122",
+      "NAICS2022_LABEL": "Nonupholstered Wood Household Furniture Manufacturing",
+      "ESTAB": "1810",
+      "RCPTOT": "4000422",
+      "PAYANN": "889510",
+      "EMP": "21628",
+      "us": "1"
+    }
+  ],
+  "337122-california": [
+    {
+      "NAME": "California",
+      "NAICS2022": "337122",
+      "NAICS2022_LABEL": "Nonupholstered Wood Household Furniture Manufacturing",
+      "ESTAB": "160",
+      "RCPTOT": "223677",
+      "PAYANN": "62529",
+      "EMP": "1413",
+      "state": "06"
+    }
+  ],
+  "337211-us": [
+    {
+      "NAME": "United States",
+      "NAICS2022": "337211",
+      "NAICS2022_LABEL": "Wood office furniture manufacturing",
+      "ESTAB": "333",
+      "RCPTOT": "3335761",
+      "PAYANN": "679791",
+      "EMP": "13299",
+      "us": "1"
+    }
+  ],
+  "337211-california": [
+    {
+      "NAME": "California",
+      "NAICS2022": "337211",
+      "NAICS2022_LABEL": "Wood office furniture manufacturing",
+      "ESTAB": "45",
+      "RCPTOT": "219452",
+      "PAYANN": "56640",
+      "EMP": "1160",
+      "state": "06"
+    }
+  ],
+  "337212-us": [
+    {
+      "NAME": "United States",
+      "NAICS2022": "337212",
+      "NAICS2022_LABEL": "Custom Architectural Woodwork and Millwork Manufacturing",
+      "ESTAB": "2273",
+      "RCPTOT": "10017333",
+      "PAYANN": "2796850",
+      "EMP": "47896",
+      "us": "1"
+    }
+  ],
+  "337212-california": [
+    {
+      "NAME": "California",
+      "NAICS2022": "337212",
+      "NAICS2022_LABEL": "Custom Architectural Woodwork and Millwork Manufacturing",
+      "ESTAB": "198",
+      "RCPTOT": "949999",
+      "PAYANN": "277276",
+      "EMP": "4398",
+      "state": "06"
+    }
+  ],
+  "3371-us": [
+    {
+      "NAME": "United States",
+      "NAICS2022": "3371",
+      "NAICS2022_LABEL": "Household and institutional furniture and kitchen cabinet manufacturing",
+      "ESTAB": "10113",
+      "RCPTOT": "48938689",
+      "PAYANN": "10793022",
+      "EMP": "235897",
+      "us": "1"
+    }
+  ],
+  "3371-california": [
+    {
+      "NAME": "California",
+      "NAICS2022": "3371",
+      "NAICS2022_LABEL": "Household and institutional furniture and kitchen cabinet manufacturing",
+      "ESTAB": "1190",
+      "RCPTOT": "4727735",
+      "PAYANN": "957156",
+      "EMP": "19644",
+      "state": "06"
+    }
+  ],
+  "337-us": [
+    {
+      "NAME": "United States",
+      "NAICS2022": "337",
+      "NAICS2022_LABEL": "Furniture and Related Product Manufacturing",
+      "ESTAB": "14399",
+      "RCPTOT": "88686569",
+      "PAYANN": "18545649",
+      "EMP": "378328",
+      "us": "1"
+    }
+  ],
+  "337-california": [
+    {
+      "NAME": "California",
+      "NAICS2022": "337",
+      "NAICS2022_LABEL": "Furniture and Related Product Manufacturing",
+      "ESTAB": "1682",
+      "RCPTOT": "8079793",
+      "PAYANN": "1674219",
+      "EMP": "32316",
+      "state": "06"
+    }
+  ]
+}

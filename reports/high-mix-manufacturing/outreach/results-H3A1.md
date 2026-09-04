@@ -4,11 +4,11 @@
 -->
 # Outreach results — H3A1 · high-mix-manufacturing
 
-_Generated 2026-09-03. Numbers are the funnel over contacts tagged H3A1._
+_Generated 2026-09-04. Numbers are the funnel over contacts tagged H3A1._
 
 | channel | targeted | contacted | replied | qualified replied | reply rate |
 |---|---|---|---|---|---|
-| LinkedIn | 67 | 0 | 0 | 0 | — |
+| LinkedIn | 67 | 8 | 0 | 0 | 0.0% |
 | phone | 5 | 5 | 5 | 5 | 100.0% |
 
 _Channels are counted separately._
@@ -20,19 +20,13 @@ _Channels are counted separately._
 | C102 | Casey Ogden | invited | none |
 | C103 | Rose Mauloni | invited | none |
 | C105 | Steven Chiang | invited | none |
-| C106 | Fernando Antonio Martinez Almaraz | invited | none |
-| C107 | Julio Tinajero | invited | none |
 | C110 | Armando Pedraza | invited | none |
 | C111 | Abubakr Abushanab | invited | none |
 | C112 | James McLaughlin | invited | none |
-| C113 | William DeSemple | invited | none |
 | C116 | Vivek Rao | invited | none |
-| C117 | Praveen Perfeito | invited | none |
 | C39 | Suhey Perez | invited | none |
 | C40 | Paul Stuart | invited | none |
 | C41 | Zac Dellicompagni | invited | none |
-| C42 | Andrii Bondar | invited | none |
-| C43 | Richard Jones | invited | none |
 | C44 | Andy Andre | invited | none |
 | C45 | Levi Flaherty | invited | none |
 | C46 | Dave Yews | invited | none |
@@ -41,7 +35,6 @@ _Channels are counted separately._
 | C49 | Glenn Mcavoy | invited | none |
 | C50 | Ben Simpson | invited | none |
 | C51 | MJ Khah | invited | none |
-| C52 | Chris Chase | invited | none |
 | C53 | Leanna Thompson | invited | none |
 | C54 | Dustin Hayes | invited | none |
 | C55 | Christopher Vermont | invited | none |
@@ -83,7 +76,14 @@ _Channels are counted separately._
 | C96 | Benjamin Grimes | invited | none |
 | C97 | Elizabeth Papagni | invited | none |
 | C98 | Nathaniel Erebia | invited | none |
-| C99 | Amber Hall | invited | none |
+| C106 | Fernando Antonio Martinez Almaraz | accepted | none |
+| C107 | Julio Tinajero | accepted | none |
+| C113 | William DeSemple | accepted | none |
+| C117 | Praveen Perfeito | accepted | none |
+| C42 | Andrii Bondar | accepted | none |
+| C43 | Richard Jones | accepted | none |
+| C52 | Chris Chase | accepted | none |
+| C99 | Amber Hall | accepted | none |
 | C90 | Stoneside Blinds and Shades | replied | completed |
 | C91 | National blinds retailer | replied | completed |
 | C92 | Art Shade Shop | replied | completed |

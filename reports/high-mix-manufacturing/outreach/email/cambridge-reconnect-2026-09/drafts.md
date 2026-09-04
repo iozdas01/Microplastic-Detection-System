@@ -121,3 +121,98 @@ exactly the kind of soft artefact that reads as traction without being it.
 When it is time, note that he is one company and a warm one. An LOI from a case-study
 participant who already likes you is real, but it evidences that *he* would buy — not that a
 market would. Log it as one contact's commitment, not as validation of H2.
+
+---
+
+## E2 · Dr Sam Brooks — follow-up after the call · `sjb351@cam.ac.uk`
+
+Added 2026-09-03. A call happened "earlier this week" — **this campaign's `targets.csv` still
+says X1 is `pending` and the frontmatter still says `drafted_not_sent`, so neither the E1 send
+nor the call is on the record.** Fix that before this goes out.
+
+The ask is an **introduction to the professor Sam named who works on headless agentic MCP
+services**. Same principle as E1: ask for the introduction, not the name.
+
+**The update is two sentences on purpose** (founder instruction, 2026-09-03). The body is the
+technical argument, because that is what earns the introduction: Sam has to be able to forward
+this to a colleague and have the colleague want to reply. A progress report cannot do that; a
+specific claim about where MHS does and does not help can.
+
+**No advisor ask.** Two asks of different weight in one email turns the technical note into a
+pitch. The sequence is intro → conversation → reason to keep talking → ask.
+
+**Subject:** MHS, and the professor you mentioned
+
+> Hi Sam,
+>
+> Thanks for the time earlier this week.
+>
+> Would you be willing to introduce me to the professor working on headless agentic MCP
+> services? Anthropic's Model Hardware Standard last week makes it timely and I would like to
+> hear how he reads it.
+>
+> In case it has not crossed his desk: MHS was announced on 27 August as MCP for physical
+> devices — agents read sensors and write actuators through one standard driver interface
+> instead of a bespoke integration per machine. Research preview with an initial cohort of
+> scientific labs and advanced manufacturers, and they say the full spec will be open-sourced.
+> The headline result is a QuEra agent at 99.3% success over 700 laser-lock recovery trials,
+> against 58% for hand-written scripts.
+>
+> I think this matters more for MES than for robotics. MES integration is expensive not because
+> any one pair of systems will not talk, but because ERP, MES, PLM, SCADA, QMS and the machines
+> integrate point-to-point, so the cost goes as O(n²) and the nth adapter is never worth
+> building. That is precisely why a person retypes the number — it is cheaper than the adapter.
+> If MHS holds up outside a lab, the machine side of that becomes O(n) and the MES stops owning
+> the equipment layer.
+>
+> The consequence I care about is for high-mix. MES assumes a route engineered once and then
+> repeated, because repetition is the only thing that amortises the integration. Take the
+> integration cost out and the route can be authored per order, which is the whole thing I am
+> chasing.
+>
+> Where I would want his view is the half it does not touch. MHS standardises how you talk to
+> the machine, not what the part is. The gap I measured in the thesis sits above it — getting
+> process intent out of a design artifact, where I got 100% F1 annotating DXF and 74% on STEP.
+> Below that line it looks like commoditisation. Above it, nothing has moved.
+>
+> It also seems to settle an argument I have been reading through. Luleå's IndustriConnect
+> wraps Modbus, MQTT/Sparkplug B and OPC UA in MCP adapters, benchmarked over 870 runs but
+> mock-first, no plant equipment. Chalmers put an MCP server between an LLM and ABB RobotStudio
+> and got natural language to RAPID, though everything downstream of the protocol is still ABB.
+> Crude and three months old, against fifteen years of ISA-95, OPC UA and AAS. MHS lands hard
+> on the crude side, and I am not sure the ontology people have noticed yet.
+>
+> Briefly on me: still the same problem, now being tested in made-to-measure window coverings,
+> where one retailer charges $225 a visit to send a person out to take a dimension and told me
+> it is still not accurate enough. That $225 is the O(n²) tax with a face on it.
+>
+> Would value his read, and yours.
+>
+> Best,
+> Izgin
+
+### Claim by claim
+
+| Claim in the email | Where it comes from |
+|---|---|
+| MHS announced 27 Aug 2026; MCP for physical devices; sensors and actuators through a standard driver; research preview, labs and advanced manufacturers; spec to be open-sourced | Anthropic announcement, [CNBC 2026-08-27](https://www.cnbc.com/2026/08/27/anthropic-pushes-into-physical-world-with-new-standard-to-help-ai-agents-operate-machines.html). **External and not in the ledger — the only claim here we did not produce. Verify against Anthropic's own page before sending.** |
+| QuEra agent, 99.3% over 700 laser-lock recovery trials, vs 58% for hand-written scripts | Same announcement, same caveat |
+| Point-to-point ERP/MES/PLM/SCADA/QMS integration scales O(n²) | arXiv 2608.24918 (Grama Chethan), `research-map.md` — recorded there as "the most precise statement of link 1 found anywhere in this sweep". **Still not promoted to `evidence.md`; the map says to do it once the ledger settles.** |
+| DXF 100% F1, STEP 74% | Founder's Cambridge MPhil, `belief.md` link 1 |
+| IndustriConnect: MCP adapters over Modbus, MQTT/Sparkplug B, OPC UA; 870 runs; mock-first, no plant equipment | arXiv 2603.24703, Luleå · `research-map.md` |
+| Chalmers MCP server to ABB RobotStudio; natural language to RAPID; everything downstream is ABB | arXiv 2608.21417 · `research-map.md`, classified `vendor_stack` for exactly that reason |
+| Two directions that do not talk to each other: ontology-and-standards vs MCP adapters | `research-map.md`, batch 3 finding |
+| $225 a visit, "still not accurate enough" | `E8` |
+
+### Why this shape
+
+- **The ask is the second sentence, and MHS is the reason it is urgent.** Sam can forward the
+  whole thing untouched and the colleague has something to disagree with in paragraph four.
+- **It gives before it takes.** Three papers the professor may not have side by side, and a
+  claim about where MHS stops. That is the reciprocity E1 offered and this one delivers.
+- **The O(n²) line is the spine.** It connects MES economics, the thesis, and the $225 visit
+  into one mechanism, and it is somebody else's finding rather than the founder's opinion.
+- **"I am not sure the ontology people have noticed yet" is deliberate.** It is an opinion a
+  researcher can push back on, which is what makes a reply likely.
+- **No owned-factory commitment, no "vibe manufacturing", no LOI, no market size.** Per the H3
+  pitch rules and E1's standing note.

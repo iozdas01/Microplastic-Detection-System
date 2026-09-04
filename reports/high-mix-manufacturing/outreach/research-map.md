@@ -1,8 +1,8 @@
 ---
 purpose: What each recent paper's METHOD reveals about where the design-to-machine handoff is actually being closed, who is closing it, and which of those teams is reachable by email.
 idea: high-mix-manufacturing
-last_updated: 2026-09-02
-batch: 3
+last_updated: 2026-09-03
+batch: 5
 batch_1_scanned: 200
 batch_1_on_axis: 166
 batch_1_classified: 18
@@ -15,9 +15,95 @@ batch_3_scanned: 221
 batch_3_on_axis: 221
 batch_3_classified: 4
 batch_3_window: "2026-03-25 to 2026-08-29"
+batch_4_scanned: 104
+batch_4_on_axis: 21
+batch_4_classified: 4
+batch_4_window: "2026-01-30 to 2026-08-22"
+batch_5_scanned: 169
+batch_5_on_axis: 24
+batch_5_classified: 2
+batch_5_window: "2024-01-01 to 2026-06-11"
+batch_5_source: openalex
 shortlist: research-map-shortlist.csv
 
 method_note: >-
+  Batch 4, 2026-09-03, run on the axis the Anthropic Model Hardware Standard opened
+  (announced 2026-08-27, E20): agent-to-instrument protocols, machine-readable capability
+  description, and natural-language annotation of knowledge that exists in no system. Four
+  queries, 104 scanned, 21 on-axis, and **4 new rows**, all reachable.
+
+  **Correction, same day.** This batch first wrote six rows and two were re-classifications of
+  papers already in this map — 2602.18296 and 2608.22128. The scan had flagged both:
+  `scripts.data.arxiv` returns an `already_classified` field per paper and the run ignored it,
+  which is a different failure from the one the skill warns about. Both duplicate rows were
+  removed and the earlier rows kept, per "main wins every ID contest". The duplicate campaign
+  targets they produced (R41, R45) were removed too — R7 and R33 already reach those authors,
+  and a second email to the same address is worse than the same-paper-twice blast the campaign
+  already has a rule against. **Check `already_classified` on every future scan.**
+
+  **The four queries, recorded verbatim so this batch is reproducible** — earlier batches
+  described their queries in prose and could not be re-run exactly, which is why the machining
+  gap stayed unmeasurable for three rounds:
+
+    B4-1  all:"large language model" AND (all:"CNC" OR all:"machine tool" OR all:"G-code"
+          OR all:"manufacturing execution" OR all:"OPC UA" OR all:"digital thread"
+          OR all:"machine control")                               19 scanned, 5 on-axis
+    B4-2  all:"laboratory automation" AND (all:"agent" OR all:"large language model"
+          OR all:"protocol" OR all:"instrument")                  25 scanned, 3 on-axis
+    B4-3  (all:"asset administration shell" OR all:"capability description"
+          OR all:"semantic interoperability" OR all:"machine-readable capability")
+          AND all:"manufacturing"                                 14 scanned, 5 on-axis
+    B4-4  (all:"tacit knowledge" OR all:"process parameter" OR all:"shop floor")
+          AND (all:"large language model" OR all:"knowledge extraction")
+                                                                  46 scanned, 8 on-axis
+
+  All run with `--since 2026-01-01 --max 300 --min-score 4` against the default cs.RO-free
+  full-text index, via `python -m scripts.data.arxiv --query`.
+
+  **Where the work is, counted rather than impressed.** Across all 46 campaign targets:
+  Europe 18 (Sweden 8, Germany 5, Austria/France/UK/Italy/Netherlands 1 each), USA 11,
+  China 6, Singapore 4, South Korea 4, Canada 1, unknown 2. Corrected same day: an "EIT" row
+  was first counted as European and is Eastern Institute of Technology, Ningbo (ybin@eitech.edu.cn).
+  Note also that head-count overstates reachable groups — Chalmers, KTH and DFKI are four,
+  three and two authors of ONE paper each, and the campaign sends one address per paper, so
+  Europe is 12 distinct sends rather than 18 people. This is a European and American
+  literature with an Asian minority — not the reverse. Two caveats on that count: it measures
+  who publishes on arXiv, and the map's own note already records that the MES and machining
+  literature lives in journals (CIRP Annals, Journal of Manufacturing Systems, Robotics and
+  CIM) that an arXiv scan cannot see at all. Read it as the shape of the arXiv slice. **The CNC/machining
+  query that 429'd on batches 1-3 finally returned** — 2605.04003 is the first real
+  metal-cutting row in this map.
+
+  Two rows were dropped for having no author-published address and both carried findings, so
+  both were promoted to the evidence ledger rather than deleted: LAP (E21) and the semantic
+  graph unification result (E22). Three more were dropped as unusable — two returned mangled
+  LaTeX artefacts instead of addresses (2605.11234, 2603.14541) and one was off-axis
+  (2606.22376, superconducting-qubit calibration).
+
+  **The batch's real finding, corrected 2026-09-03 after the framing was challenged.** This
+  batch was first written up as "the axis MHS opened", which overstated it. Sorted against what
+  MHS actually is — a driver with read/write primitives, device discovery, and a
+  natural-language capability and safety-limit description — the six rows fall out as:
+
+    ON the MHS axis (the interface itself)   2   LAP 2606.03755 (E21), AAS 2602.16499
+    agents NEAR machines, not the interface  1   MAKA 2605.04003
+    our architecture, not MHS                4   2602.18296, 2605.07639, 2601.22754, 2608.22128
+
+  The queries were aimed at agent-to-instrument territory and the yield mostly was not, which
+  is itself the result: **four queries over 104 papers returned essentially one paper on the
+  interface itself.**
+
+  **That "close to empty" reading lasted about twenty minutes and was wrong — see batch 5.** An
+  OpenAlex pass the same evening found the work immediately, in journals arXiv does not index.
+  The caveat was right and is now substantiated: absence on arXiv is not absence. Do not run
+  this axis on arXiv alone again.
+
+  A second finding, which does hold: **three independent groups converged on the architecture
+  already written in pages/system-architecture.html** — deterministic-first with LLM escalation only
+  on ambiguity, a human-in-the-loop step kept as a first-class outcome, and a measurement
+  result that carries its own uncertainty. None of them cites the others. That is convergence
+  on a design, not evidence about a market, and it must not be logged as the latter.
+
   Batch 3 (same day) finally landed the digital-thread and interoperability queries after
   repeated 429s. It is the smallest batch and the most on-belief: four rows, two reachable.
   The CNC/machining query STILL has not returned and remains the outstanding gap.
@@ -891,3 +977,239 @@ outreach_status: pending
 outreach_note: "London-based and reachable, on the constraint problem the Chalmers and KTH rows also hit. No draft written — send only if the Tier A wave underperforms."
 published_emails: [d.zhang17@imperial.ac.uk]
 source_url: https://arxiv.org/abs/2608.29379
+
+---
+
+# Batch 4 — 2026-09-03 · the agent-to-instrument axis
+
+Run after MHS (E20) to find who else is building the layer between a reasoning agent and a
+physical machine. Six rows, all reachable. Ordered by how directly the method bears on the
+architecture the founder has already drawn.
+
+## 2605.04003 — UConn, MAKA on a Ti-6Al-4V blade testbed
+
+canonical_name: "University of Connecticut"
+paper_date: 2026-05-04
+site_control: lab_cell
+handoff_automated: program_to_verified
+integration_labour: bespoke_per_cell
+variability_handled: task_family
+real_data_cost: not_quantified
+handoff_automated_detail: >
+  Multi-agent architecture separating intent routing, tools-only quantitative analysis,
+  knowledge-graph retrieval and a critic that enforces physical plausibility, safety bounds
+  and provenance completeness before anything reaches a human for approval. **Improves
+  successful tool execution by up to 87.5 percentage points** over an unstructured
+  single-model pattern with identical tool access. Fused from path-tracking error fields,
+  cutting-force and deflection simulation, and scan-based inspection deviation maps across
+  **16 blades**.
+real_data_cost_detail: >
+  Sixteen blades of real inspection data is the whole empirical base, and the compensation
+  results are digital-twin what-if studies rather than cuts taken. Reads as: the architecture
+  is validated, the physical benefit is predicted. Do not quote the deviation improvement as
+  a machining result.
+bottleneck_named: "LLMs do not reliably execute risk-constrained multi-step numerical workflows or provide auditable provenance."
+coupling_door: supports_broken
+coupling_door_detail: >
+  The first genuinely metal-cutting row in this map, and it confirms link 1 in the hardest
+  domain: even with inspection, simulation and process knowledge all present, they had to
+  build the orchestration because nothing joined them.
+ownership_door: supports_owning
+ownership_door_detail: >
+  Ran on a testbed the authors control, fusing three data sources they own end to end. No
+  claim of carry to a machine shop they do not run.
+outreach_status: pending
+outreach_note: "The CNC contact this map has been missing since batch 1. Critic-enforced safety bounds before human approval is the same shape as the trust envelope."
+published_emails: [farhad.imani@uconn.edu]
+source_url: https://arxiv.org/abs/2605.04003
+
+## 2605.07639 — Bologna / CNR, tacit knowledge to knowledge graph
+
+canonical_name: "(multi-institution) Università di Bologna · CNR"
+paper_date: 2026-05-07
+site_control: simulation_only
+handoff_automated: intent_to_program
+integration_labour: not_reported
+variability_handled: task_family
+real_data_cost: not_quantified
+handoff_automated_detail: >
+  Neuro-symbolic pipeline — Logic-Augmented Generation plus an active-inference-inspired
+  loop — turning procedural knowledge into an ontology-grounded knowledge graph. This is
+  Agent A's job stated as a research problem: capture the implicit assumptions, contextual
+  constraints and experience-based judgements that are "rarely documented".
+real_data_cost_detail: >
+  Evaluated on assembly-like repair procedures from instructional videos, which the authors
+  themselves call a reproducible PROXY domain. No shop floor, no operator interview. The
+  hardest part of Agent A — the edge cases nobody wrote down — is exactly what a video of a
+  documented procedure does not contain.
+bottleneck_named: "Tacit knowledge is difficult to capture, formalize and reuse in machine-interpretable form."
+coupling_door: supports_broken
+coupling_door_detail: >
+  Independent statement that the knowledge which makes a per-order job work is not in any
+  system. That is the premise the FabricatorProfile rests on.
+ownership_door: neutral
+outreach_status: pending
+outreach_note: "Two senior semantic-web authors. The deduction table is a tacit-knowledge extraction problem with money attached, which is what their proxy domain lacks."
+published_emails: [aldo.gangemi@unibo.it, andreagiovanni.nuzzolese@cnr.it]
+source_url: https://arxiv.org/abs/2605.07639
+
+## 2601.22754 — Groningen, VLMs on troubleshooting flowcharts
+
+canonical_name: "University of Groningen"
+paper_date: 2026-01-22
+site_control: simulation_only
+handoff_automated: none
+integration_labour: not_reported
+variability_handled: task_family
+real_data_cost: not_quantified
+handoff_automated_detail: >
+  Evaluates two vision-language models on extracting structured procedural knowledge from
+  flowchart-like industrial troubleshooting guides, comparing plain instruction prompting
+  against prompting that cues the layout patterns. Finds model-specific trade-offs between
+  layout sensitivity and semantic robustness. Automates no machine step — it reads documents.
+bottleneck_named: "Manual extraction from these guides is labour-intensive and error-prone."
+coupling_door: supports_broken
+coupling_door_detail: >
+  The laminated sheet taped to the machine, as a research object. Directly the input Agent A
+  is specified to read.
+ownership_door: neutral
+outreach_status: pending
+outreach_note: "Operator-support framing and three reachable authors. Weakest method in the batch; kept because the input artefact is exactly ours."
+published_emails: [c.emmanouilidis@rug.nl, g.gil.de.avalle@rug.nl, m.maruster@rug.nl]
+source_url: https://arxiv.org/abs/2601.22754
+
+## 2602.16499 — ISW Stuttgart, software-heavy Asset Administration Shells
+
+canonical_name: "ISW, University of Stuttgart"
+paper_date: 2026-02-16
+site_control: simulation_only
+handoff_automated: none
+integration_labour: standards_layer
+variability_handled: single_task
+real_data_cost: none
+integration_labour_detail: >
+  A classification of software architectures that embed services directly into the Asset
+  Administration Shell, differentiated on software-quality criteria and manufacturing use
+  cases. It is an interpretation guideline, not an implementation — no deployment, no
+  measured integration cost. Its value here is the map of what the European standards camp
+  is actually building while MHS approaches the same edge from the agent side.
+bottleneck_named: "No systematic analysis exists of architectures integrating software services into the AAS."
+coupling_door: supports_closing
+coupling_door_detail: >
+  The one row in this batch pointing at link 1 closing rather than staying broken. If AAS
+  matures into a carrier for services and not just data, part of the coupling problem is
+  solved by a standard rather than by a company — which is the primary threat named in
+  belief.md v3, arriving from Europe rather than from Anthropic.
+ownership_door: supports_layer
+outreach_status: pending
+outreach_note: "ISW is a serious manufacturing-automation institute and this is the standards-side view of the same edge MHS is standardising. Ask what AAS does that MHS will not."
+published_emails: [carsten.ellwein@isw.uni-stuttgart.de]
+source_url: https://arxiv.org/abs/2602.16499
+
+---
+
+# Batch 5 — 2026-09-03 · OpenAlex, the journal literature arXiv cannot see
+
+Run the same evening as batch 4, after batch 4's "the interface layer is close to empty"
+reading was challenged. It took three OpenAlex queries to falsify it. **The work exists; arXiv
+just does not index the venues it lives in** — IEEE Access, Nature Communications, Matter,
+Robotics and Computer-Integrated Manufacturing, Procedia CIRP. The map has warned about this
+since batch 1 and batch 4 still drew a conclusion from an arXiv-only scan.
+
+Queries, via the OpenAlex REST API with `title_and_abstract.search`, `from_publication_date:2024-01-01`:
+
+    B5-1  self-driving laboratory AND orchestration            73 hits
+    B5-2  skill-based AND plug-and-produce                      37 hits
+    B5-3  asset administration shell AND agent                  60 hits
+
+**The commercialisation read, which is what this batch was run for.** MHS standardises the
+driver — the layer that talks to one device. It creates demand for two adjacent layers it does
+not supply, and both already have published prior art:
+
+1. **Generating the capability description.** MHS needs a reference file per device. Stuttgart
+   automated exactly that for manufacturing two years earlier, at a measured 62-79%, with the
+   code public. Whoever generates these at scale for machine tools owns the onboarding cost.
+2. **Orchestration above the driver.** ChemOS 2.0 (Toronto, Matter, 77 citations) and IvoryOS
+   (UBC, Nature Communications) are the lab-science versions. **There is no manufacturing
+   equivalent in this batch.** That is the gap, and unlike batch 4's version of the claim it
+   now rests on a search that could see the journals.
+
+Two rows classified. The rest are listed below with what they are, unclassified because
+neither the arXiv source-package miner nor OpenAlex returned an author-published address — a
+journal PDF is not a source package, and address mining for this batch needs a different tool.
+
+## 2506.11180 — MCP for manufacturing capabilities, Helmut Schmidt University
+
+canonical_name: "Helmut Schmidt University Hamburg"
+paper_date: 2026-06-11
+site_control: lab_cell
+handoff_automated: intent_to_program
+integration_labour: standards_layer
+variability_handled: task_family
+real_data_cost: none
+integration_labour_detail: >
+  **The closest published prior art to MHS, and it uses Anthropic's own MCP.** Resource
+  functions on a laboratory-scale manufacturing system are exposed over MCP; a general-purpose
+  LLM then plans and executes a multi-step process including constraint handling and resource
+  invocation. Their argument is the interesting part: explicit capability modelling — ontologies,
+  AAS — "requires considerable manual effort and often results in representations that are not
+  easily accessible to LLMs", so skip the formal model and expose the functions directly.
+  Published three months BEFORE the MHS preview and reaching a compatible conclusion.
+bottleneck_named: "Explicit capability and skill modelling requires considerable manual effort."
+coupling_door: supports_closing
+coupling_door_detail: >
+  Directly against link 1 as a durable moat: if a general-purpose LLM can drive resource
+  functions over a standard protocol with no semantic model at all, the coupling is closing
+  without anyone owning both ends. Work-in-progress on a lab-scale rig, so it is a signal
+  rather than a result — but it is the signal pointing at the primary threat in belief.md v3.
+ownership_door: supports_layer
+ownership_door_detail: >
+  Worked as a layer over resources through a standard interface. What it does NOT show: that
+  this survives contact with a real machine tool. "Laboratory-scale manufacturing system" is
+  doing a lot of work in that sentence, and the whole question is whether it scales to
+  equipment with no programmable interface.
+outreach_status: pending
+outreach_note: "Highest-priority contact of both batches and not yet reachable — no address in the source package. Köcher and Gehlhoff publish institutional addresses; find via HSU Hamburg."
+published_emails: []
+source_url: https://arxiv.org/abs/2506.11180
+
+## 2403.17209 — Generating the AAS with LLM agents, University of Stuttgart
+
+canonical_name: "University of Stuttgart (IAS)"
+paper_date: 2024-03-25
+site_control: simulation_only
+handoff_automated: none
+integration_labour: standards_layer
+variability_handled: open_set
+real_data_cost: none
+integration_labour_detail: >
+  LLM agents read raw technical datasheets and emit standardised Asset Administration Shell
+  instance models via a "semantic node" structure. **Effective generation rate 62-79%**, with a
+  comparative analysis across LLMs and a RAG ablation. Code public at
+  github.com/YuchenXia/AASbyLLM. Published in IEEE Access, cited 82.
+integration_labour_detail_note: >
+  This is the MHS annotation layer, for manufacturing, two years early and with a number on it.
+  MHS says a user writes device information in natural language and a reference file is
+  produced; this measures how well that can be done automatically from the datasheet the vendor
+  already publishes. 62-79% is the number to beat, and the gap to 100% is the manual effort
+  that a business could sell away.
+bottleneck_named: "Manual effort in creating AAS models from technical documentation."
+coupling_door: supports_closing
+ownership_door: supports_layer
+outreach_status: pending
+outreach_note: "Reachable in principle — Stuttgart IAS publishes addresses — but the source package returned only LaTeX artefacts. Same university as R46 Ellwein, different institute (IAS vs ISW)."
+published_emails: []
+source_url: https://arxiv.org/abs/2403.17209
+
+## Batch 5 shortlist — found, not yet classified, no address mined
+
+- **ChemOS 2.0** — orchestration architecture for chemical self-driving labs. Toronto. Matter
+  2024, 77 citations, OA. `10.1016/j.matt.2024.04.022`
+- **IvoryOS** — interoperable web interface orchestrating Python-based self-driving labs. UBC.
+  Nature Communications 2025. `10.1038/s41467-025-60514-w`
+- **Rapid and automated configuration of robot manufacturing cells** — Cranfield and
+  Loughborough. Robotics and Computer-Integrated Manufacturing 2024. `10.1016/j.rcim.2024.102862`
+- **Decentralized Skill-based Control Concept for Adaptable Production Plants** — OTH
+  Amberg-Weiden. Procedia CIRP 2026. `10.1016/j.procir.2025.09.044`
+- **Seamless integration of legacy robotic systems into a self-driving lab** — the brownfield
+  question, answered for labs. Science and Technology of Advanced Materials 2025.

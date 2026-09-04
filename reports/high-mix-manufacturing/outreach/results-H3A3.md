@@ -4,11 +4,11 @@
 -->
 # Outreach results — H3A3 · high-mix-manufacturing
 
-_Generated 2026-09-03. Numbers are the funnel over contacts tagged H3A3._
+_Generated 2026-09-04. Numbers are the funnel over contacts tagged H3A3._
 
 | channel | targeted | contacted | replied | qualified replied | reply rate |
 |---|---|---|---|---|---|
-| LinkedIn | 15 | 0 | 0 | 0 | — |
+| LinkedIn | 15 | 3 | 0 | 0 | 0.0% |
 | phone | 3 | 3 | 3 | 3 | 100.0% |
 
 _Channels are counted separately._
@@ -24,14 +24,14 @@ _Channels are counted separately._
 | C104 | Elizabeth B. | invited | none |
 | C109 | Heather Barrows | invited | none |
 | C112 | James McLaughlin | invited | none |
-| C113 | William DeSemple | invited | none |
 | C114 | Ranjan Mada | invited | none |
-| C115 | Dan Williams | invited | none |
 | C95 | Marcelo Mazzafera | invited | none |
 | C96 | Benjamin Grimes | invited | none |
 | C97 | Elizabeth Papagni | invited | none |
 | C98 | Nathaniel Erebia | invited | none |
-| C99 | Amber Hall | invited | none |
+| C113 | William DeSemple | accepted | none |
+| C115 | Dan Williams | accepted | none |
+| C99 | Amber Hall | accepted | none |
 | C90 | Stoneside Blinds and Shades | replied | completed |
 | C93 | Susan Lind Chastain Inc | replied | completed |
 | C94 | Family-run window covering owners (aggregate) | replied | completed |

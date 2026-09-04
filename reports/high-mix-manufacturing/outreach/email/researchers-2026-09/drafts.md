@@ -624,3 +624,206 @@ being interested — the natural moment is the end of the call:
 
 That is an advisor conversation starting, without asking anyone for anything they'd have to
 decline.
+
+---
+
+# Batch 4 drafts — the agent-to-instrument axis (2026-09-03)
+
+Written after MHS (E20) and the batch-4 paper mine. Four new emails plus two that supersede
+older drafts to authors already in the campaign (D1 over A3, D5 over B9); one address each — a second address on the same paper reads as a blast and the campaign already has that
+rule from R2.
+
+**What is different about this batch.** These six are the first where the founder has a
+*proposed architecture* to put in front of someone, and three of the six independently
+converged on parts of it. So the ask is not "tell me about your paper" — it is "here is a
+design that arrives at your conclusion from a different direction, where is it wrong."
+Researchers answer that. Keep the architecture as an offer, never an attachment on the first
+send: `pages/system-architecture.html` is a proposed design and says so, and leading with a
+document nobody asked for is how a cold email becomes a pitch.
+
+**Standing rules for all six.** No AI vocabulary in the subject line. Name their number, not
+their topic. One question, and it must be one they can answer in three sentences. Never claim
+MHS compatibility — there is no public spec (E20).
+
+---
+
+## D1 · Muhammad Tayyab Khan — Nanyang Technological University · `khan0022@e.ntu.edu.sg`
+
+**Supersedes A3 for target R7.** Same person — he has two papers on this seam and A3 was
+written about the other one (`2608.24039`). Send D1 OR A3, never both.
+
+**Subject:** 86% on drawing-to-feature binding — the other half of a number I measured
+
+> Dear Dr Khan,
+>
+> I read your context-aware mapping paper — 83.67% precision and 90.46% recall binding GD&T
+> callouts to 3D features across 20 CAD-drawing pairs.
+>
+> I spent a year at Cambridge measuring the adjacent half of that handoff: machine-readable
+> annotation of DXF at 100% F1 and STEP at 74%. Your numbers are the first I have found on
+> the binding step itself rather than the extraction step, so together they bracket the thing
+> I keep telling people is broken.
+>
+> One question, if you have three sentences to spare: in your ablation, how much of the gap
+> between the deterministic scorer and the full system was ambiguity that a human resolved
+> instantly versus ambiguity that was genuinely hard? I am trying to work out whether the
+> human-in-the-loop step shrinks with scale or is a permanent floor.
+>
+> I am building in this area commercially and would happily share what I have if it is useful.
+>
+> Izgin
+
+| Claim | Grounding |
+|---|---|
+| 83.67% / 90.46% / 20 pairs | Paper abstract, `2602.18296` |
+| Cambridge DXF 100% F1, STEP 74% | Founder's MPhil, recorded in `belief.md` |
+| "the first I have found on the binding step" | True across research-map batches 1–4 |
+
+---
+
+## D2 · Farhad Imani — University of Connecticut · `farhad.imani@uconn.edu`
+
+**Subject:** The critic step in MAKA — does it ever refuse a compensation a human then approves?
+
+> Dear Professor Imani,
+>
+> Your MAKA paper is the clearest statement I have read of why an LLM with tool access is not
+> the same thing as a system you can let near a machine — the +87.5 point gap on multi-step
+> tool execution against identical tool access makes that concrete.
+>
+> I am designing something structurally similar for a much less exotic domain: made-to-measure
+> window coverings, where a wrong dimension is total scrap rather than a deviation. I arrived
+> at the same shape you did — a verification step that enforces physical bounds before
+> anything reaches a person, and a human approval that is a first-class outcome rather than a
+> failure state.
+>
+> The question I cannot answer from the paper: across your 16 blades, how often did the critic
+> block a candidate that the engineer then approved anyway? I am trying to find out whether an
+> over-cautious verifier degrades into something operators route around.
+>
+> Izgin
+
+| Claim | Grounding |
+|---|---|
+| +87.5 percentage points, identical tool access | Paper abstract, `2605.04003` |
+| 16 blades | Paper abstract |
+| "wrong dimension is total scrap" | `E8`, `E15`, and Sun Glow's dealer guide (recon) |
+
+---
+
+## D3 · Aldo Gangemi — Università di Bologna · `aldo.gangemi@unibo.it`
+
+**Subject:** Tacit knowledge extraction where the tacit part costs money
+
+> Dear Professor Gangemi,
+>
+> Your Logic-Augmented Generation paper frames the problem exactly as I have run into it —
+> the implicit assumptions and experience-based judgements that are, in your words, rarely
+> documented.
+>
+> I am working on a commercial version of that in made-to-measure manufacturing. Every
+> fabricator keeps a private table of deductions — how much to subtract from a measured
+> opening for this fabric, this mechanism, this mounting — and it exists on a laminated sheet
+> taped to a machine and in one person's head. Getting it wrong produces scrap, so the tacit
+> knowledge has a price on it.
+>
+> You used instructional videos as a reproducible proxy. My question: when you looked at real
+> procedural sources, was the missing knowledge mostly absent from the documentation, or
+> present but contradicted by practice? Those need different extraction strategies and I
+> cannot tell which I am facing.
+>
+> Izgin
+
+| Claim | Grounding |
+|---|---|
+| "rarely documented" framing | Paper abstract, `2605.07639` |
+| Instructional videos as proxy domain | Paper abstract |
+| Deduction tables per fabricator | `pages/system-architecture.html`, Agent A |
+
+---
+
+## D4 · Christos Emmanouilidis — University of Groningen · `c.emmanouilidis@rug.nl`
+
+**Subject:** The laminated sheet taped to the machine
+
+> Dear Professor Emmanouilidis,
+>
+> Your VLM troubleshooting-guide paper is about the exact artefact I keep finding on shop
+> floors — a diagram whose spatial layout carries as much meaning as its text, and which no
+> system can read.
+>
+> I am building an onboarding step for made-to-measure fabricators that has to ingest
+> precisely this class of document: the supplier's technical PDF, the deduction sheet taped to
+> the machine, a stack of past order-to-cut-list pairs.
+>
+> Your finding of model-specific trade-offs between layout sensitivity and semantic robustness
+> is the practical thing I need. If you were deploying tomorrow against documents you had not
+> seen, would you pick the layout-sensitive model and accept semantic errors, or the reverse?
+>
+> Izgin
+
+| Claim | Grounding |
+|---|---|
+| Layout/semantics trade-off | Paper abstract, `2601.22754` |
+| The document set | `pages/system-architecture.html`, Agent A "Looks at" |
+
+---
+
+## D5 · Xiaoli Zhang — Colorado School of Mines · `xlzhang@mines.edu`
+
+**Supersedes B9 for target R33.** Same person, same paper; D5 cites the 37.5→90.0 number
+and B9 does not. Send D5, not B9.
+
+**Subject:** 37.5% to 90% on material selection — was it the knowledge base or the geometry?
+
+> Dear Professor Zhang,
+>
+> The number in your printability paper I cannot stop thinking about is material-selection
+> accuracy going from 37.5% ungrounded to 90.0% grounded, with the model held constant. And
+> 96 physical trials behind it rather than a benchmark.
+>
+> I am building toward the same claim in a different trade — that the product is the structured
+> domain knowledge attached to the model, not the model. Your result is the cleanest evidence
+> for it I have found.
+>
+> The question: how much of that jump came from the structured material/printer knowledge
+> versus from the geometry evidence? If the knowledge base is doing most of the work, the
+> implication for people like me is that the moat is a per-shop knowledge asset, which is a
+> very different company from a better model.
+>
+> Izgin
+
+| Claim | Grounding |
+|---|---|
+| 37.5% → 90.0%, model held constant | Paper abstract, `2608.22128` |
+| 96 physical validation trials | Paper abstract |
+
+---
+
+## D6 · Carsten Ellwein — ISW, University of Stuttgart · `carsten.ellwein@isw.uni-stuttgart.de`
+
+**Subject:** Software-heavy AAS and the agent-side standards arriving from the other direction
+
+> Dear Dr Ellwein,
+>
+> Your classification of software-heavy Asset Administration Shells landed for me at a useful
+> moment. Anthropic previewed a Model Hardware Standard on 27 August aimed at the same edge —
+> letting agents operate equipment — but from the agent side, and with no published
+> specification yet.
+>
+> My read is that these are two camps converging on one interface: AAS embedding services into
+> a digital twin, and the agent protocols describing capability and safety limits for a
+> reasoning client. I cannot tell whether they compose or compete.
+>
+> If you have a view: is there anything AAS does for a manufacturing asset that a
+> capability-description layer written for agents would not eventually absorb? I am making a
+> build decision that depends on the answer and I would rather hear it from someone who has
+> mapped the architectures.
+>
+> Izgin
+
+| Claim | Grounding |
+|---|---|
+| Software-heavy AAS classification | Paper abstract, `2602.16499` |
+| MHS previewed 2026-08-27, no public spec | `E20` |
+| "two camps converging" | Founder's read — stated as a read, not a fact |

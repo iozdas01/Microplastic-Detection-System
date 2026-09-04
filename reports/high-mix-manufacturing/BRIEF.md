@@ -4,17 +4,17 @@
 -->
 ---
 slug: high-mix-manufacturing
-generated: 2026-09-04T00:35Z
+generated: 2026-09-04T06:14Z
 lifecycle: active
 active_hunch: H3
 active_assumption: H3A4
 sources:
-  belief: 5880a564c646
+  belief: 57d36bf439d8
   lineage: 4f5be1ae15c7
-  graph: fa8784a0bc6e
-  evidence: 196250b5b2d3
+  graph: d2727fa216ee
+  evidence: c2431ad93fad
   offerings: fa8f60094cb6
-  contacts: 199b7ffd9059
+  contacts: d4bbf0eb6a7f
 ---
 
 # high-mix-manufacturing — session brief
@@ -25,7 +25,7 @@ _Generated digest. Load this first; load a full source file only for the task th
 
 ## Belief
 
-> The problem is that software and machines don't talk, and you have to own both to fix it.
+> Manufacturing will be done through an app, and interoperability is the precondition for it.
 
 _Founder-owned. Changes only with explicit confirmation._ → `input-context/high-mix-manufacturing/belief.md`
 
@@ -49,7 +49,7 @@ _← = `active_assumption`. Ranking: leap-of-faith gate → DAG roots first → 
 
 ## Evidence
 
-**19 entries** · 6 supports / 8 contradicts / 5 ambiguous · latest 2026-09-03
+**25 entries** · 8 supports / 8 contradicts / 9 ambiguous · latest 2026-09-03
 
 For **H3A4**: 1 entries.
 
@@ -60,11 +60,11 @@ For **H3A4**: 1 entries.
 
 ## Outreach
 
-**112 targeted** · 1 contacted · 1 replied · 1 call-progressed · 0 scheduled
+**112 targeted** · 10 contacted · 1 replied · 1 call-progressed · 0 scheduled
 
-Reply rate 100.0% of contacted · reply→call 100.0%
+Reply rate 10.0% of contacted · reply→call 100.0%
 
-By assumption: H2A1 1/1 replied · H2A2 0/0 replied · H2A3 1/1 replied · H3A1 0/0 replied · H3A2 0/0 replied · H3A3 0/0 replied
+By assumption: H2A1 1/1 replied · H2A2 0/0 replied · H2A3 1/1 replied · H3A1 0/8 replied · H3A2 0/3 replied · H3A3 0/3 replied
 
 ## What already exists for this idea
 
@@ -82,6 +82,7 @@ _Generated from the folder. Check here before creating a new artifact — if a f
 | `reports/high-mix-manufacturing/01-ideation/methods/2026-08-31/jtbd-substitute-map.md` | JTBD and current substitute map |
 | `reports/high-mix-manufacturing/01-ideation/methods/2026-08-31/segment-wedge-map.md` | Segment and wedge map |
 | `reports/high-mix-manufacturing/01-ideation/methods/2026-08-31/why-now-predecessor-analysis.md` | Why-now and predecessor analysis |
+| `reports/high-mix-manufacturing/01-ideation/methods/2026-09-03/predecessor-base-rate.md` | The measured outcome rate for D2C made-to-order furniture companies, and the variable that actually separates the survivors from the dead. |
 | `reports/high-mix-manufacturing/01-ideation/recon/2026-08-31/` | 7 files — open the folder to see them |
 | `reports/high-mix-manufacturing/01-ideation/recon/2026-09-02/round-1-corpus.json` | — |
 | `reports/high-mix-manufacturing/01-ideation/recon/2026-09-02/round-1-query-plan.json` | — |
@@ -100,6 +101,7 @@ _Generated from the folder. Check here before creating a new artifact — if a f
 | `reports/high-mix-manufacturing/outreach/PLAN.md` | The one plan for the belief-level outreach block — which channel does what, in what order, and what each is allowed to prove. |
 | `reports/high-mix-manufacturing/outreach/companies.md` | The company registry for this idea — one entry per organisation, its sector, what it actually makes, and why it is on the list. |
 | `reports/high-mix-manufacturing/outreach/contacts.md` | The contact ledger for this idea — one record per person approached, their signal, and where the conversation got to. |
+| `reports/high-mix-manufacturing/outreach/research-map-shortlist-b4.csv` | — |
 | `reports/high-mix-manufacturing/outreach/research-map-shortlist.csv` | — |
 | `reports/high-mix-manufacturing/outreach/research-map.md` | What each recent paper's METHOD reveals about where the design-to-machine handoff is actually being closed, who is closing it, and which of those tea… |
 | `reports/high-mix-manufacturing/outreach/results-*.md` | 6 generated files — rebuild them, never edit |
@@ -117,14 +119,20 @@ _Generated from the folder. Check here before creating a new artifact — if a f
 | `reports/high-mix-manufacturing/outreach/linkedin/belief-experts-2026-09/log.md` | What was sent to whom on the belief-experts LinkedIn track, when, and what came back. |
 | `reports/high-mix-manufacturing/outreach/linkedin/belief-experts-2026-09/replies.md` | Reply copy for LinkedIn threads where a contact has already responded, with the read of why they responded the way they did. |
 | `reports/high-mix-manufacturing/outreach/linkedin/belief-experts-2026-09/targets.csv` | — |
+| `reports/high-mix-manufacturing/outreach/linkedin/h3-window-coverings-2026-09/drafts.md` | Msg 1 LinkedIn copy for the H3 window-coverings track, by market-size band, with the traceability behind every claim. |
 | `reports/high-mix-manufacturing/outreach/linkedin/h3-window-coverings-2026-09/log.md` | What was invited on the H3 window-coverings LinkedIn track, when, in which market-size band, and what came back. |
 | `reports/high-mix-manufacturing/pages/call-log.html` | generated — rebuild it, never edit it |
+| `reports/high-mix-manufacturing/pages/capability-matrix.html` | generated — rebuild it, never edit it |
+| `reports/high-mix-manufacturing/pages/field-map.html` | generated — rebuild it, never edit it |
 | `reports/high-mix-manufacturing/pages/hmlv-map.html` | generated — rebuild it, never edit it |
 | `reports/high-mix-manufacturing/pages/market-ladder.html` | generated — rebuild it, never edit it |
 | `reports/high-mix-manufacturing/pages/outreach-send-sheet.html` | generated — rebuild it, never edit it |
 | `reports/high-mix-manufacturing/pages/pages.yaml` | What each page in this folder is, and whether it still holds. |
+| `reports/high-mix-manufacturing/pages/pitch-slide.html` | generated — rebuild it, never edit it |
 | `reports/high-mix-manufacturing/pages/predecessors.html` | generated — rebuild it, never edit it |
+| `reports/high-mix-manufacturing/pages/progress-log.html` | generated — rebuild it, never edit it |
 | `reports/high-mix-manufacturing/pages/startup-map.html` | generated — rebuild it, never edit it |
+| `reports/high-mix-manufacturing/pages/system-architecture.html` | generated — rebuild it, never edit it |
 | `reports/high-mix-manufacturing/pages/window-covering-market.html` | generated — rebuild it, never edit it |
 | `reports/high-mix-manufacturing/pages/window-covering-players.html` | generated — rebuild it, never edit it |
 | `reports/high-mix-manufacturing/research/REPORT-h2.md` | Bottom-up market size for H2 — machined replacements for parts blocked in the supply chain. |

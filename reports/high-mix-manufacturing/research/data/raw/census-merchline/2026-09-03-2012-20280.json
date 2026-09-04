@@ -1,0 +1,821 @@
+[
+  {
+    "NAICS2012": "44-45",
+    "NAICS2012_LABEL": "Retail trade",
+    "PSCODE2012": "20280",
+    "RCPTOT": "31726790",
+    "KB_PCT": "100.0",
+    "ESTAB": "67150",
+    "us": "1"
+  },
+  {
+    "NAICS2012": "442",
+    "NAICS2012_LABEL": "Furniture and home furnishings stores",
+    "PSCODE2012": "20280",
+    "RCPTOT": "6330880",
+    "KB_PCT": "20.0",
+    "ESTAB": "13086",
+    "us": "1"
+  },
+  {
+    "NAICS2012": "4421",
+    "NAICS2012_LABEL": "Furniture stores",
+    "PSCODE2012": "20280",
+    "RCPTOT": "802247",
+    "KB_PCT": "2.5",
+    "ESTAB": "3386",
+    "us": "1"
+  },
+  {
+    "NAICS2012": "4543903",
+    "NAICS2012_LABEL": "Direct selling, other merchandise",
+    "PSCODE2012": "20280",
+    "RCPTOT": "52176",
+    "KB_PCT": "0.2",
+    "ESTAB": "187",
+    "us": "1"
+  },
+  {
+    "NAICS2012": "44211",
+    "NAICS2012_LABEL": "Furniture stores",
+    "PSCODE2012": "20280",
+    "RCPTOT": "802247",
+    "KB_PCT": "2.5",
+    "ESTAB": "3386",
+    "us": "1"
+  },
+  {
+    "NAICS2012": "442110",
+    "NAICS2012_LABEL": "Furniture stores",
+    "PSCODE2012": "20280",
+    "RCPTOT": "802247",
+    "KB_PCT": "2.5",
+    "ESTAB": "3386",
+    "us": "1"
+  },
+  {
+    "NAICS2012": "4422",
+    "NAICS2012_LABEL": "Home furnishings stores",
+    "PSCODE2012": "20280",
+    "RCPTOT": "5528633",
+    "KB_PCT": "17.4",
+    "ESTAB": "9700",
+    "us": "1"
+  },
+  {
+    "NAICS2012": "44221",
+    "NAICS2012_LABEL": "Floor covering stores",
+    "PSCODE2012": "20280",
+    "RCPTOT": "172446",
+    "KB_PCT": "0.5",
+    "ESTAB": "1821",
+    "us": "1"
+  },
+  {
+    "NAICS2012": "442210",
+    "NAICS2012_LABEL": "Floor covering stores",
+    "PSCODE2012": "20280",
+    "RCPTOT": "172446",
+    "KB_PCT": "0.5",
+    "ESTAB": "1821",
+    "us": "1"
+  },
+  {
+    "NAICS2012": "44229",
+    "NAICS2012_LABEL": "Other home furnishings stores",
+    "PSCODE2012": "20280",
+    "RCPTOT": "5356187",
+    "KB_PCT": "16.9",
+    "ESTAB": "7879",
+    "us": "1"
+  },
+  {
+    "NAICS2012": "442291",
+    "NAICS2012_LABEL": "Window treatment stores",
+    "PSCODE2012": "20280",
+    "RCPTOT": "834506",
+    "KB_PCT": "2.6",
+    "ESTAB": "1720",
+    "us": "1"
+  },
+  {
+    "NAICS2012": "442299",
+    "NAICS2012_LABEL": "All other home furnishings stores",
+    "PSCODE2012": "20280",
+    "RCPTOT": "4521681",
+    "KB_PCT": "14.3",
+    "ESTAB": "6159",
+    "us": "1"
+  },
+  {
+    "NAICS2012": "444",
+    "NAICS2012_LABEL": "Building material and garden equipment and supplies dealers",
+    "PSCODE2012": "20280",
+    "RCPTOT": "1656571",
+    "KB_PCT": "5.2",
+    "ESTAB": "6431",
+    "us": "1"
+  },
+  {
+    "NAICS2012": "4441",
+    "NAICS2012_LABEL": "Building material and supplies dealers",
+    "PSCODE2012": "20280",
+    "RCPTOT": "1655944",
+    "KB_PCT": "5.2",
+    "ESTAB": "6414",
+    "us": "1"
+  },
+  {
+    "NAICS2012": "44411",
+    "NAICS2012_LABEL": "Home centers",
+    "PSCODE2012": "20280",
+    "RCPTOT": "0",
+    "KB_PCT": "0.0",
+    "ESTAB": "4593",
+    "us": "1"
+  },
+  {
+    "NAICS2012": "444110",
+    "NAICS2012_LABEL": "Home centers",
+    "PSCODE2012": "20280",
+    "RCPTOT": "0",
+    "KB_PCT": "0.0",
+    "ESTAB": "4593",
+    "us": "1"
+  },
+  {
+    "NAICS2012": "44412",
+    "NAICS2012_LABEL": "Paint and wallpaper stores",
+    "PSCODE2012": "20280",
+    "RCPTOT": "0",
+    "KB_PCT": "0.0",
+    "ESTAB": "424",
+    "us": "1"
+  },
+  {
+    "NAICS2012": "444120",
+    "NAICS2012_LABEL": "Paint and wallpaper stores",
+    "PSCODE2012": "20280",
+    "RCPTOT": "0",
+    "KB_PCT": "0.0",
+    "ESTAB": "424",
+    "us": "1"
+  },
+  {
+    "NAICS2012": "44413",
+    "NAICS2012_LABEL": "Hardware stores",
+    "PSCODE2012": "20280",
+    "RCPTOT": "22679",
+    "KB_PCT": "0.1",
+    "ESTAB": "1180",
+    "us": "1"
+  },
+  {
+    "NAICS2012": "444130",
+    "NAICS2012_LABEL": "Hardware stores",
+    "PSCODE2012": "20280",
+    "RCPTOT": "22679",
+    "KB_PCT": "0.1",
+    "ESTAB": "1180",
+    "us": "1"
+  },
+  {
+    "NAICS2012": "44419",
+    "NAICS2012_LABEL": "Other building material dealers",
+    "PSCODE2012": "20280",
+    "RCPTOT": "15661",
+    "KB_PCT": "0.0",
+    "ESTAB": "217",
+    "us": "1"
+  },
+  {
+    "NAICS2012": "444190",
+    "NAICS2012_LABEL": "Other building material dealers",
+    "PSCODE2012": "20280",
+    "RCPTOT": "15661",
+    "KB_PCT": "0.0",
+    "ESTAB": "217",
+    "us": "1"
+  },
+  {
+    "NAICS2012": "4441901",
+    "NAICS2012_LABEL": "Retail lumber yards",
+    "PSCODE2012": "20280",
+    "RCPTOT": "3309",
+    "KB_PCT": "0.0",
+    "ESTAB": "89",
+    "us": "1"
+  },
+  {
+    "NAICS2012": "4441902",
+    "NAICS2012_LABEL": "All other building material dealers",
+    "PSCODE2012": "20280",
+    "RCPTOT": "12352",
+    "KB_PCT": "0.0",
+    "ESTAB": "128",
+    "us": "1"
+  },
+  {
+    "NAICS2012": "4442",
+    "NAICS2012_LABEL": "Lawn and garden equipment and supplies stores",
+    "PSCODE2012": "20280",
+    "RCPTOT": "627",
+    "KB_PCT": "0.0",
+    "ESTAB": "17",
+    "us": "1"
+  },
+  {
+    "NAICS2012": "44422",
+    "NAICS2012_LABEL": "Nursery, garden center, and farm supply stores",
+    "PSCODE2012": "20280",
+    "RCPTOT": "627",
+    "KB_PCT": "0.0",
+    "ESTAB": "17",
+    "us": "1"
+  },
+  {
+    "NAICS2012": "444220",
+    "NAICS2012_LABEL": "Nursery, garden center, and farm supply stores",
+    "PSCODE2012": "20280",
+    "RCPTOT": "627",
+    "KB_PCT": "0.0",
+    "ESTAB": "17",
+    "us": "1"
+  },
+  {
+    "NAICS2012": "445",
+    "NAICS2012_LABEL": "Food and beverage stores",
+    "PSCODE2012": "20280",
+    "RCPTOT": "1702059",
+    "KB_PCT": "5.4",
+    "ESTAB": "5535",
+    "us": "1"
+  },
+  {
+    "NAICS2012": "4451",
+    "NAICS2012_LABEL": "Grocery stores",
+    "PSCODE2012": "20280",
+    "RCPTOT": "1701933",
+    "KB_PCT": "5.4",
+    "ESTAB": "5532",
+    "us": "1"
+  },
+  {
+    "NAICS2012": "44511",
+    "NAICS2012_LABEL": "Supermarkets and other grocery (except convenience) stores",
+    "PSCODE2012": "20280",
+    "RCPTOT": "1701843",
+    "KB_PCT": "5.4",
+    "ESTAB": "5517",
+    "us": "1"
+  },
+  {
+    "NAICS2012": "445110",
+    "NAICS2012_LABEL": "Supermarkets and other grocery (except convenience) stores",
+    "PSCODE2012": "20280",
+    "RCPTOT": "1701843",
+    "KB_PCT": "5.4",
+    "ESTAB": "5517",
+    "us": "1"
+  },
+  {
+    "NAICS2012": "44512",
+    "NAICS2012_LABEL": "Convenience stores",
+    "PSCODE2012": "20280",
+    "RCPTOT": "90",
+    "KB_PCT": "0.0",
+    "ESTAB": "15",
+    "us": "1"
+  },
+  {
+    "NAICS2012": "445120",
+    "NAICS2012_LABEL": "Convenience stores",
+    "PSCODE2012": "20280",
+    "RCPTOT": "90",
+    "KB_PCT": "0.0",
+    "ESTAB": "15",
+    "us": "1"
+  },
+  {
+    "NAICS2012": "448",
+    "NAICS2012_LABEL": "Clothing and clothing accessories stores",
+    "PSCODE2012": "20280",
+    "RCPTOT": "926403",
+    "KB_PCT": "2.9",
+    "ESTAB": "4603",
+    "us": "1"
+  },
+  {
+    "NAICS2012": "4481",
+    "NAICS2012_LABEL": "Clothing stores",
+    "PSCODE2012": "20280",
+    "RCPTOT": "926215",
+    "KB_PCT": "2.9",
+    "ESTAB": "4600",
+    "us": "1"
+  },
+  {
+    "NAICS2012": "44811",
+    "NAICS2012_LABEL": "Men's clothing stores",
+    "PSCODE2012": "20280",
+    "RCPTOT": "2279",
+    "KB_PCT": "0.0",
+    "ESTAB": "7",
+    "us": "1"
+  },
+  {
+    "NAICS2012": "448110",
+    "NAICS2012_LABEL": "Men's clothing stores",
+    "PSCODE2012": "20280",
+    "RCPTOT": "2279",
+    "KB_PCT": "0.0",
+    "ESTAB": "7",
+    "us": "1"
+  },
+  {
+    "NAICS2012": "44812",
+    "NAICS2012_LABEL": "Women's clothing stores",
+    "PSCODE2012": "20280",
+    "RCPTOT": "54034",
+    "KB_PCT": "0.2",
+    "ESTAB": "519",
+    "us": "1"
+  },
+  {
+    "NAICS2012": "448120",
+    "NAICS2012_LABEL": "Women's clothing stores",
+    "PSCODE2012": "20280",
+    "RCPTOT": "54034",
+    "KB_PCT": "0.2",
+    "ESTAB": "519",
+    "us": "1"
+  },
+  {
+    "NAICS2012": "44813",
+    "NAICS2012_LABEL": "Children's and infants' clothing stores",
+    "PSCODE2012": "20280",
+    "RCPTOT": "32131",
+    "KB_PCT": "0.1",
+    "ESTAB": "585",
+    "us": "1"
+  },
+  {
+    "NAICS2012": "448130",
+    "NAICS2012_LABEL": "Children's and infants' clothing stores",
+    "PSCODE2012": "20280",
+    "RCPTOT": "32131",
+    "KB_PCT": "0.1",
+    "ESTAB": "585",
+    "us": "1"
+  },
+  {
+    "NAICS2012": "44814",
+    "NAICS2012_LABEL": "Family clothing stores",
+    "PSCODE2012": "20280",
+    "RCPTOT": "833826",
+    "KB_PCT": "2.6",
+    "ESTAB": "3442",
+    "us": "1"
+  },
+  {
+    "NAICS2012": "448140",
+    "NAICS2012_LABEL": "Family clothing stores",
+    "PSCODE2012": "20280",
+    "RCPTOT": "833826",
+    "KB_PCT": "2.6",
+    "ESTAB": "3442",
+    "us": "1"
+  },
+  {
+    "NAICS2012": "44815",
+    "NAICS2012_LABEL": "Clothing accessories stores",
+    "PSCODE2012": "20280",
+    "RCPTOT": "2724",
+    "KB_PCT": "0.0",
+    "ESTAB": "16",
+    "us": "1"
+  },
+  {
+    "NAICS2012": "448150",
+    "NAICS2012_LABEL": "Clothing accessories stores",
+    "PSCODE2012": "20280",
+    "RCPTOT": "2724",
+    "KB_PCT": "0.0",
+    "ESTAB": "16",
+    "us": "1"
+  },
+  {
+    "NAICS2012": "44819",
+    "NAICS2012_LABEL": "Other clothing stores",
+    "PSCODE2012": "20280",
+    "RCPTOT": "1221",
+    "KB_PCT": "0.0",
+    "ESTAB": "31",
+    "us": "1"
+  },
+  {
+    "NAICS2012": "448190",
+    "NAICS2012_LABEL": "Other clothing stores",
+    "PSCODE2012": "20280",
+    "RCPTOT": "1221",
+    "KB_PCT": "0.0",
+    "ESTAB": "31",
+    "us": "1"
+  },
+  {
+    "NAICS2012": "451",
+    "NAICS2012_LABEL": "Sporting goods, hobby, musical instrument, and book stores",
+    "PSCODE2012": "20280",
+    "RCPTOT": "95470",
+    "KB_PCT": "0.3",
+    "ESTAB": "1430",
+    "us": "1"
+  },
+  {
+    "NAICS2012": "4511",
+    "NAICS2012_LABEL": "Sporting goods, hobby, and musical instrument stores",
+    "PSCODE2012": "20280",
+    "RCPTOT": "95470",
+    "KB_PCT": "0.3",
+    "ESTAB": "1430",
+    "us": "1"
+  },
+  {
+    "NAICS2012": "45113",
+    "NAICS2012_LABEL": "Sewing, needlework, and piece goods stores",
+    "PSCODE2012": "20280",
+    "RCPTOT": "94296",
+    "KB_PCT": "0.3",
+    "ESTAB": "1426",
+    "us": "1"
+  },
+  {
+    "NAICS2012": "451130",
+    "NAICS2012_LABEL": "Sewing, needlework, and piece goods stores",
+    "PSCODE2012": "20280",
+    "RCPTOT": "94296",
+    "KB_PCT": "0.3",
+    "ESTAB": "1426",
+    "us": "1"
+  },
+  {
+    "NAICS2012": "452",
+    "NAICS2012_LABEL": "General merchandise stores",
+    "PSCODE2012": "20280",
+    "RCPTOT": "15994766",
+    "KB_PCT": "50.4",
+    "ESTAB": "31697",
+    "us": "1"
+  },
+  {
+    "NAICS2012": "4521",
+    "NAICS2012_LABEL": "Department stores",
+    "PSCODE2012": "20280",
+    "RCPTOT": "6929770",
+    "KB_PCT": "21.8",
+    "ESTAB": "7930",
+    "us": "1"
+  },
+  {
+    "NAICS2012": "4529",
+    "NAICS2012_LABEL": "Other general merchandise stores",
+    "PSCODE2012": "20280",
+    "RCPTOT": "9064996",
+    "KB_PCT": "28.6",
+    "ESTAB": "23767",
+    "us": "1"
+  },
+  {
+    "NAICS2012": "45211",
+    "NAICS2012_LABEL": "Department stores",
+    "PSCODE2012": "20280",
+    "RCPTOT": "6929770",
+    "KB_PCT": "21.8",
+    "ESTAB": "7930",
+    "us": "1"
+  },
+  {
+    "NAICS2012": "452111",
+    "NAICS2012_LABEL": "Department stores (except discount department stores)",
+    "PSCODE2012": "20280",
+    "RCPTOT": "2043583",
+    "KB_PCT": "6.4",
+    "ESTAB": "3205",
+    "us": "1"
+  },
+  {
+    "NAICS2012": "452112",
+    "NAICS2012_LABEL": "Discount department stores",
+    "PSCODE2012": "20280",
+    "RCPTOT": "4886187",
+    "KB_PCT": "15.4",
+    "ESTAB": "4725",
+    "us": "1"
+  },
+  {
+    "NAICS2012": "45291",
+    "NAICS2012_LABEL": "Warehouse clubs and supercenters",
+    "PSCODE2012": "20280",
+    "RCPTOT": "7656844",
+    "KB_PCT": "24.1",
+    "ESTAB": "5022",
+    "us": "1"
+  },
+  {
+    "NAICS2012": "452910",
+    "NAICS2012_LABEL": "Warehouse clubs and supercenters",
+    "PSCODE2012": "20280",
+    "RCPTOT": "7656844",
+    "KB_PCT": "24.1",
+    "ESTAB": "5022",
+    "us": "1"
+  },
+  {
+    "NAICS2012": "45299",
+    "NAICS2012_LABEL": "All other general merchandise stores",
+    "PSCODE2012": "20280",
+    "RCPTOT": "1408152",
+    "KB_PCT": "4.4",
+    "ESTAB": "18745",
+    "us": "1"
+  },
+  {
+    "NAICS2012": "452990",
+    "NAICS2012_LABEL": "All other general merchandise stores",
+    "PSCODE2012": "20280",
+    "RCPTOT": "1408152",
+    "KB_PCT": "4.4",
+    "ESTAB": "18745",
+    "us": "1"
+  },
+  {
+    "NAICS2012": "4529901",
+    "NAICS2012_LABEL": "Variety stores",
+    "PSCODE2012": "20280",
+    "RCPTOT": "674708",
+    "KB_PCT": "2.1",
+    "ESTAB": "12557",
+    "us": "1"
+  },
+  {
+    "NAICS2012": "4529904",
+    "NAICS2012_LABEL": "Miscellaneous general merchandise stores",
+    "PSCODE2012": "20280",
+    "RCPTOT": "733444",
+    "KB_PCT": "2.3",
+    "ESTAB": "6188",
+    "us": "1"
+  },
+  {
+    "NAICS2012": "453",
+    "NAICS2012_LABEL": "Miscellaneous store retailers",
+    "PSCODE2012": "20280",
+    "RCPTOT": "40657",
+    "KB_PCT": "0.1",
+    "ESTAB": "1600",
+    "us": "1"
+  },
+  {
+    "NAICS2012": "4532",
+    "NAICS2012_LABEL": "Office supplies, stationery, and gift stores",
+    "PSCODE2012": "20280",
+    "RCPTOT": "24033",
+    "KB_PCT": "0.1",
+    "ESTAB": "813",
+    "us": "1"
+  },
+  {
+    "NAICS2012": "45322",
+    "NAICS2012_LABEL": "Gift, novelty, and souvenir stores",
+    "PSCODE2012": "20280",
+    "RCPTOT": "23651",
+    "KB_PCT": "0.1",
+    "ESTAB": "811",
+    "us": "1"
+  },
+  {
+    "NAICS2012": "45411323",
+    "NAICS2012_LABEL": "Mail-order houses, other specialized merchandise",
+    "PSCODE2012": "20280",
+    "RCPTOT": "852608",
+    "KB_PCT": "2.7",
+    "ESTAB": "93",
+    "us": "1"
+  },
+  {
+    "NAICS2012": "453220",
+    "NAICS2012_LABEL": "Gift, novelty, and souvenir stores",
+    "PSCODE2012": "20280",
+    "RCPTOT": "23651",
+    "KB_PCT": "0.1",
+    "ESTAB": "811",
+    "us": "1"
+  },
+  {
+    "NAICS2012": "4533",
+    "NAICS2012_LABEL": "Used merchandise stores",
+    "PSCODE2012": "20280",
+    "RCPTOT": "15158",
+    "KB_PCT": "0.0",
+    "ESTAB": "701",
+    "us": "1"
+  },
+  {
+    "NAICS2012": "45331",
+    "NAICS2012_LABEL": "Used merchandise stores",
+    "PSCODE2012": "20280",
+    "RCPTOT": "15158",
+    "KB_PCT": "0.0",
+    "ESTAB": "701",
+    "us": "1"
+  },
+  {
+    "NAICS2012": "453310",
+    "NAICS2012_LABEL": "Used merchandise stores",
+    "PSCODE2012": "20280",
+    "RCPTOT": "15158",
+    "KB_PCT": "0.0",
+    "ESTAB": "701",
+    "us": "1"
+  },
+  {
+    "NAICS2012": "4539",
+    "NAICS2012_LABEL": "Other miscellaneous store retailers",
+    "PSCODE2012": "20280",
+    "RCPTOT": "1466",
+    "KB_PCT": "0.0",
+    "ESTAB": "86",
+    "us": "1"
+  },
+  {
+    "NAICS2012": "45392",
+    "NAICS2012_LABEL": "Art dealers",
+    "PSCODE2012": "20280",
+    "RCPTOT": "77",
+    "KB_PCT": "0.0",
+    "ESTAB": "9",
+    "us": "1"
+  },
+  {
+    "NAICS2012": "453920",
+    "NAICS2012_LABEL": "Art dealers",
+    "PSCODE2012": "20280",
+    "RCPTOT": "77",
+    "KB_PCT": "0.0",
+    "ESTAB": "9",
+    "us": "1"
+  },
+  {
+    "NAICS2012": "45399",
+    "NAICS2012_LABEL": "All other miscellaneous store retailers",
+    "PSCODE2012": "20280",
+    "RCPTOT": "1389",
+    "KB_PCT": "0.0",
+    "ESTAB": "77",
+    "us": "1"
+  },
+  {
+    "NAICS2012": "453991",
+    "NAICS2012_LABEL": "Tobacco stores",
+    "PSCODE2012": "20280",
+    "RCPTOT": "86",
+    "KB_PCT": "0.0",
+    "ESTAB": "12",
+    "us": "1"
+  },
+  {
+    "NAICS2012": "453998",
+    "NAICS2012_LABEL": "All other miscellaneous store retailers (except tobacco stores)",
+    "PSCODE2012": "20280",
+    "RCPTOT": "1303",
+    "KB_PCT": "0.0",
+    "ESTAB": "65",
+    "us": "1"
+  },
+  {
+    "NAICS2012": "454",
+    "NAICS2012_LABEL": "Nonstore retailers",
+    "PSCODE2012": "20280",
+    "RCPTOT": "4979979",
+    "KB_PCT": "15.7",
+    "ESTAB": "2766",
+    "us": "1"
+  },
+  {
+    "NAICS2012": "4541",
+    "NAICS2012_LABEL": "Electronic shopping and mail-order houses",
+    "PSCODE2012": "20280",
+    "RCPTOT": "4174354",
+    "KB_PCT": "13.2",
+    "ESTAB": "905",
+    "us": "1"
+  },
+  {
+    "NAICS2012": "45411",
+    "NAICS2012_LABEL": "Electronic shopping and mail-order houses",
+    "PSCODE2012": "20280",
+    "RCPTOT": "4174354",
+    "KB_PCT": "13.2",
+    "ESTAB": "905",
+    "us": "1"
+  },
+  {
+    "NAICS2012": "454111",
+    "NAICS2012_LABEL": "Electronic shopping",
+    "PSCODE2012": "20280",
+    "RCPTOT": "2932945",
+    "KB_PCT": "9.2",
+    "ESTAB": "676",
+    "us": "1"
+  },
+  {
+    "NAICS2012": "4541111",
+    "NAICS2012_LABEL": "Electronic shopping, general merchandise",
+    "PSCODE2012": "20280",
+    "RCPTOT": "2541753",
+    "KB_PCT": "8.0",
+    "ESTAB": "304",
+    "us": "1"
+  },
+  {
+    "NAICS2012": "4541112",
+    "NAICS2012_LABEL": "Electronic shopping, specialized merchandise",
+    "PSCODE2012": "20280",
+    "RCPTOT": "391192",
+    "KB_PCT": "1.2",
+    "ESTAB": "372",
+    "us": "1"
+  },
+  {
+    "NAICS2012": "45411123",
+    "NAICS2012_LABEL": "Electronic shopping, other specialized merchandise",
+    "PSCODE2012": "20280",
+    "RCPTOT": "391192",
+    "KB_PCT": "1.2",
+    "ESTAB": "372",
+    "us": "1"
+  },
+  {
+    "NAICS2012": "454113",
+    "NAICS2012_LABEL": "Mail-order houses",
+    "PSCODE2012": "20280",
+    "RCPTOT": "1229474",
+    "KB_PCT": "3.9",
+    "ESTAB": "210",
+    "us": "1"
+  },
+  {
+    "NAICS2012": "4541131",
+    "NAICS2012_LABEL": "Mail-order houses, general merchandise",
+    "PSCODE2012": "20280",
+    "RCPTOT": "264934",
+    "KB_PCT": "0.8",
+    "ESTAB": "112",
+    "us": "1"
+  },
+  {
+    "NAICS2012": "4541132",
+    "NAICS2012_LABEL": "Mail-order houses, specialized merchandise",
+    "PSCODE2012": "20280",
+    "RCPTOT": "852608",
+    "KB_PCT": "2.7",
+    "ESTAB": "93",
+    "us": "1"
+  },
+  {
+    "NAICS2012": "4543",
+    "NAICS2012_LABEL": "Direct selling establishments",
+    "PSCODE2012": "20280",
+    "RCPTOT": "805625",
+    "KB_PCT": "2.5",
+    "ESTAB": "1861",
+    "us": "1"
+  },
+  {
+    "NAICS2012": "45439",
+    "NAICS2012_LABEL": "Other direct selling establishments",
+    "PSCODE2012": "20280",
+    "RCPTOT": "805625",
+    "KB_PCT": "2.5",
+    "ESTAB": "1861",
+    "us": "1"
+  },
+  {
+    "NAICS2012": "454390",
+    "NAICS2012_LABEL": "Other direct selling establishments",
+    "PSCODE2012": "20280",
+    "RCPTOT": "805625",
+    "KB_PCT": "2.5",
+    "ESTAB": "1861",
+    "us": "1"
+  },
+  {
+    "NAICS2012": "4543901",
+    "NAICS2012_LABEL": "Direct selling, furniture, home furnishings, electronics, and appliances",
+    "PSCODE2012": "20280",
+    "RCPTOT": "753449",
+    "KB_PCT": "2.4",
+    "ESTAB": "1674",
+    "us": "1"
+  }
+]
