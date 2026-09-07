@@ -50,7 +50,7 @@ margin-bottom:28px;font-size:13.5px}
 pre{background:#191820}.why{background:#1a1920}}
 </style></head><body><div class="wrap">
 <h1>Researcher send sheet</h1>
-<p class="sub">18 drafts · 38 contactable addresses · campaign <code>researchers-2026-09</code>
+<p class="sub">18 drafts · 42 contactable addresses · campaign <code>researchers-2026-09</code>
  · <span id="cnt">0</span> marked sent</p>
 <div class="note"><b>Generated from <code>drafts.md</code> and <code>targets.csv</code> —
 do not edit this page.</b> Fix the source and rerun
@@ -122,9 +122,9 @@ Izgin</pre>
   <label class="sent"><input type="checkbox">sent</label>
  </div></div><div class="card" data-ref="A3" data-subject="Two papers on the same seam I spent a year measuring">
  <div class="hd"><span class="ref">A3</span><div class="who">
-  <div class="name">Muhammad Tayyab Khan</div>
-  <div class="org">NTU Singapore</div>
-  <div class="mail">khan0022@e.ntu.edu.sg</div></div></div>
+  <div class="name">Muhammad Tayyab Khan / Seung Ki Moon</div>
+  <div class="org"></div>
+  <div class="mail">—</div></div></div>
  <div class="why">Why - **Khan has published twice this year on the exact seam the founder measured at Cambridge.** Citing both is what separates this email from a template — nobody who skimmed one paper knows there is a second. Send ONE email covering both, not two emails.</div>
  <div class="subj"><b>Subject</b>Two papers on the same seam I spent a year measuring</div>
  <pre>Hi Tayyab,
@@ -145,7 +145,7 @@ Izgin</pre>
  <div class="acts">
   <button data-copy="subject">copy subject</button>
   <button data-copy="body">copy email</button>
-  <a class="btn" href="mailto:khan0022@e.ntu.edu.sg?subject=Two%20papers%20on%20the%20same%20seam%20I%20spent%20a%20year%20measuring">open in mail</a>
+  <a class="btn" href="mailto:—?subject=Two%20papers%20on%20the%20same%20seam%20I%20spent%20a%20year%20measuring">open in mail</a>
   <span class="paper"><a href="https://arxiv.org/abs/2602.18296" target="_blank" rel="noopener">arXiv 2602.18296</a> · <a href="https://arxiv.org/abs/2608.24039" target="_blank" rel="noopener">arXiv 2608.24039</a></span>
   <label class="sent"><input type="checkbox">sent</label>
  </div></div><div class="card" data-ref="A4" data-subject="Does the vendor-neutral layer hold, or do you end up owning the machines?">
@@ -487,8 +487,8 @@ Izgin</pre>
  </div></div><div class="card" data-ref="B9" data-subject="Judging suitability before the part exists">
  <div class="hd"><span class="ref">B9</span><div class="who">
   <div class="name">Xiaoli Zhang</div>
-  <div class="org">Colorado School of Mines</div>
-  <div class="mail">xlzhang@mines.edu</div></div></div>
+  <div class="org"></div>
+  <div class="mail">—</div></div></div>
  
  <div class="subj"><b>Subject</b>Judging suitability before the part exists</div>
  <pre>Dear Professor Zhang,
@@ -503,11 +503,61 @@ Background: two years in high-mix precision manufacturing, then a Cambridge MPhi
 
 Would 25 minutes be possible?
 
-Izgin Who else should I be reading on this? I&#x27;d rather find the person who thinks I&#x27;m wrong. I&#x27;m going to be building this for the next couple of years. If it stays interesting to you, I&#x27;d like to keep you in the loop and come back with harder questions.</pre>
+Izgin Who else should I be reading on this? I&#x27;d rather find the person who thinks I&#x27;m wrong. I&#x27;m going to be building this for the next couple of years. If it stays interesting to you, I&#x27;d like to keep you in the loop and come back with harder questions. Dear Dr Khan,
+
+I read your context-aware mapping paper — 83.67% precision and 90.46% recall binding GD&amp;T callouts to 3D features across 20 CAD-drawing pairs.
+
+I spent a year at Cambridge measuring the adjacent half of that handoff: machine-readable annotation of DXF at 100% F1 and STEP at 74%. Your numbers are the first I have found on the binding step itself rather than the extraction step, so together they bracket the thing I keep telling people is broken.
+
+One question, if you have three sentences to spare: in your ablation, how much of the gap between the deterministic scorer and the full system was ambiguity that a human resolved instantly versus ambiguity that was genuinely hard? I am trying to work out whether the human-in-the-loop step shrinks with scale or is a permanent floor.
+
+I am building in this area commercially and would happily share what I have if it is useful.
+
+Izgin Dear Professor Imani,
+
+Your MAKA paper is the clearest statement I have read of why an LLM with tool access is not the same thing as a system you can let near a machine — the +87.5 point gap on multi-step tool execution against identical tool access makes that concrete.
+
+I am designing something structurally similar for a much less exotic domain: made-to-measure window coverings, where a wrong dimension is total scrap rather than a deviation. I arrived at the same shape you did — a verification step that enforces physical bounds before anything reaches a person, and a human approval that is a first-class outcome rather than a failure state.
+
+The question I cannot answer from the paper: across your 16 blades, how often did the critic block a candidate that the engineer then approved anyway? I am trying to find out whether an over-cautious verifier degrades into something operators route around.
+
+Izgin Dear Professor Gangemi,
+
+Your Logic-Augmented Generation paper frames the problem exactly as I have run into it — the implicit assumptions and experience-based judgements that are, in your words, rarely documented.
+
+I am working on a commercial version of that in made-to-measure manufacturing. Every fabricator keeps a private table of deductions — how much to subtract from a measured opening for this fabric, this mechanism, this mounting — and it exists on a laminated sheet taped to a machine and in one person&#x27;s head. Getting it wrong produces scrap, so the tacit knowledge has a price on it.
+
+You used instructional videos as a reproducible proxy. My question: when you looked at real procedural sources, was the missing knowledge mostly absent from the documentation, or present but contradicted by practice? Those need different extraction strategies and I cannot tell which I am facing.
+
+Izgin Dear Professor Emmanouilidis,
+
+Your VLM troubleshooting-guide paper is about the exact artefact I keep finding on shop floors — a diagram whose spatial layout carries as much meaning as its text, and which no system can read.
+
+I am building an onboarding step for made-to-measure fabricators that has to ingest precisely this class of document: the supplier&#x27;s technical PDF, the deduction sheet taped to the machine, a stack of past order-to-cut-list pairs.
+
+Your finding of model-specific trade-offs between layout sensitivity and semantic robustness is the practical thing I need. If you were deploying tomorrow against documents you had not seen, would you pick the layout-sensitive model and accept semantic errors, or the reverse?
+
+Izgin Dear Professor Zhang,
+
+The number in your printability paper I cannot stop thinking about is material-selection accuracy going from 37.5% ungrounded to 90.0% grounded, with the model held constant. And 96 physical trials behind it rather than a benchmark.
+
+I am building toward the same claim in a different trade — that the product is the structured domain knowledge attached to the model, not the model. Your result is the cleanest evidence for it I have found.
+
+The question: how much of that jump came from the structured material/printer knowledge versus from the geometry evidence? If the knowledge base is doing most of the work, the implication for people like me is that the moat is a per-shop knowledge asset, which is a very different company from a better model.
+
+Izgin Dear Dr Ellwein,
+
+Your classification of software-heavy Asset Administration Shells landed for me at a useful moment. Anthropic previewed a Model Hardware Standard on 27 August aimed at the same edge — letting agents operate equipment — but from the agent side, and with no published specification yet.
+
+My read is that these are two camps converging on one interface: AAS embedding services into a digital twin, and the agent protocols describing capability and safety limits for a reasoning client. I cannot tell whether they compose or compete.
+
+If you have a view: is there anything AAS does for a manufacturing asset that a capability-description layer written for agents would not eventually absorb? I am making a build decision that depends on the answer and I would rather hear it from someone who has mapped the architectures.
+
+Izgin</pre>
  <div class="acts">
   <button data-copy="subject">copy subject</button>
   <button data-copy="body">copy email</button>
-  <a class="btn" href="mailto:xlzhang@mines.edu?subject=Judging%20suitability%20before%20the%20part%20exists">open in mail</a>
+  <a class="btn" href="mailto:—?subject=Judging%20suitability%20before%20the%20part%20exists">open in mail</a>
   <span class="paper"><a href="https://arxiv.org/abs/2608.22128" target="_blank" rel="noopener">arXiv 2608.22128</a></span>
   <label class="sent"><input type="checkbox">sent</label>
  </div></div>

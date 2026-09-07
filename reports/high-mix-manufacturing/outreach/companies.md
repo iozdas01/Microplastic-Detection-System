@@ -88,8 +88,16 @@ migration_note: >-
 
 # Companies — manufacturing-execution-layer
 
+**Pruned 2026-09-04 (founder decision).** 149 entries were deleted: every demand-side company
+sourced for H1 and H2 (CNC job shops, precision and aerospace suppliers, semicap, the four CAM
+incumbents, and the 2026-08-20 UniMaaS grant scrape that was never targeted or contacted). None
+carried an interview or an assumption, and H3 does not buy from any of them. Their CO-ids are
+burned and must never be reassigned; git holds the entries if an H1 or H2 revival needs them.
 
-
+What remains is 34: the 16 supply-side startups, which are landscape intelligence rather than
+outreach targets and were explicitly left untouched; the 6 window-covering trade software
+vendors and 7 remote-measurement analogues that the H3 capability matrix reads; and the 5
+window-covering sellers on the demand side.
 
 ## Cyncly
 
@@ -143,6 +151,7 @@ liability_notes: >
   None evidenced.
 map_note: >
   `touches_proveout: none` - axis does not transfer.
+
 
 ## BlindMatrix
 
@@ -202,6 +211,7 @@ liability_notes: >
 map_note: >
   `touches_proveout: none` - axis does not transfer.
 
+
 ## Windowmaker Software
 
 id: CO175
@@ -259,6 +269,7 @@ liability_notes: >
 map_note: >
   `touches_proveout: none` - axis does not transfer.
 
+
 ## BlinQ Software
 
 id: CO176
@@ -308,6 +319,7 @@ liability_notes: >
   None evidenced.
 map_note: >
   `touches_proveout: none` - axis does not transfer.
+
 
 ## Quoterite
 
@@ -359,6 +371,7 @@ liability_notes: >
 map_note: >
   `touches_proveout: none` - axis does not transfer.
 
+
 ## Measure Square
 
 id: CO178
@@ -403,6 +416,7 @@ liability_notes: >
   None evidenced.
 map_note: >
   `touches_proveout: none` - axis does not transfer.
+
 
 ## Hover
 
@@ -461,6 +475,7 @@ map_note: >
   `touches_proveout: none` - that axis measures machining first-run exposure and does not
   transfer. Here for the spec_capture lane.
 
+
 ## EagleView
 
 id: CO168
@@ -515,6 +530,7 @@ liability_notes: >
 map_note: >
   `touches_proveout: none` - axis does not transfer. Here for the spec_capture lane.
 
+
 ## Volumental
 
 id: CO169
@@ -563,6 +579,7 @@ liability_notes: >
 map_note: >
   `touches_proveout: none` - axis does not transfer. Here for the spec_capture lane.
 
+
 ## 3DLOOK
 
 id: CO170
@@ -609,6 +626,7 @@ liability_notes: >
   None evidenced.
 map_note: >
   `touches_proveout: none` - axis does not transfer. Here for the spec_capture lane.
+
 
 ## Dandy
 
@@ -660,6 +678,7 @@ liability_notes: >
   guarantee was found in this sweep; graded down per schema rule.
 map_note: >
   `touches_proveout: none` - axis does not transfer. Here for the spec_capture lane.
+
 
 ## SiVIEW
 
@@ -731,6 +750,7 @@ map_note: >
   machining first-run risk and does not transfer to this company. The prove-out columns on the
   startup map were drawn for a different thesis, and SiVIEW is here as an analogue for the
   spec_capture lane, not as a machining rival.
+
 
 ## Smartex
 
@@ -825,2418 +845,6 @@ map_note: >
   measures machining first-run risk and does not transfer.
 
 
-## Provenance
-
-All 18 entries below come from one source on 2026-08-20: the consortium of **UniMaaS**
-(Unified Modeling and Automated Scheduling for Manufacturing as a Service), Horizon Europe
-grant 101177842, call HORIZON-CL4-2024-TWIN-TRANSITION-01-03, HORIZON-RIA under
-HORIZON.2.4.1 Manufacturing Technologies. €6,483,593.82 EU contribution, 1 Jan 2025 →
-31 Dec 2027. Coordinator NTUA.
-
-Entry point was the arXiv paper `2602.12419` (Jradi et al., *Intent-Driven Smart
-Manufacturing Integrating Knowledge Graphs and Large Language Models*), which names no
-company; the consortium was resolved from CORDIS.
-
-**No pain scores.** The scoring formula in `startup-outreach-intel` is assumption-scoped and
-this idea has no assumption graph yet. `tier_side` is recorded because it is global
-vocabulary; `tier` names are declared per-idea in `graph.md`, which does not exist yet, so
-tier is left empty rather than invented.
-
-Two checks were run on the project's own outputs and both came back empty on the founder's
-question:
-
-- **Public deliverables are unpublished.** The deliverables page (last modified 2025-07-21)
-  lists 21 D-numbers with titles and due months and carries no files. D3.1 *Requirements and
-  Pilots Description* (M12, ~Jan 2026) and D9.1 *Use Cases framework definition* (M24,
-  ~Dec 2026) are the two worth re-checking later.
-- **Nine research outputs are attributed to the grant** via OpenAIRE, dated 2025-01 to
-  2026-06. Subjects: supply-chain antifragility, generative-AI effects on labour
-  productivity, sustainable production planning for Industry 5.0, circular supply-chain
-  operations strategy, lean Industry 5.0 in an automotive supplier, lean Industry 4.0
-  adoption in Spanish manufacturing SMEs, path planning under neural abstraction, plus two
-  sister-project brochures. **None concerns machine reprogramming, safety certification,
-  or liability.**
-
-Sources: cordis.europa.eu/project/id/101177842 · unimaas-project.eu ·
-arxiv.org/abs/2602.12419 · api.openaire.eu (projectID=101177842) · zenodo.org
-
----
-
-## Aegean Airlines
-
-id: CO1
-map: none
-map_excluded_because: "UniMaaS grant scrape 2026-08-20, never intentionally targeted and never contacted; kept as registry history, not a map entry."
-canonical_name: Aeroporia Aigaiou Anonymi Aeroporiki Etaireia
-also_known_as: [Aegean Airlines, AEGEAN]
-country: GR
-tier_side: demand
-tier: ""
-sector: Air transport — in-house aircraft maintenance (MRO)
-makes_or_does: >
-  Operates a commercial passenger fleet and its own maintenance organisation. The work in
-  scope is A-, B-, C- and D-checks — routine inspections through full overhauls — each
-  needing personnel, equipment and parts planned well in advance.
-unimaas_role: >
-  Owns the Aircraft Maintenance pilot, supported by NTUA and Queen's University Belfast.
-  Stated pain: "Unexpected tasks can appear at any time, while changes in how aircraft are
-  used can shift maintenance timelines. These uncertainties often lead to delays,
-  last-minute adjustments, and increased costs." UniMaaS supplies predictive risk-informed
-  scheduling over historical plus live data, component relationship mapping for cascade
-  effects, and Digital Product Passports for part lifecycle tracking.
-eu_contribution_eur: 200000
-hmlv_relevance: >
-  Genuinely high-mix low-volume and genuinely liability-bound — every task is signed off
-  under EASA Part-145 by a licensed engineer. But the pilot targets *scheduling* the work,
-  not automating the execution of it, and the sign-off requirement is not treated as a
-  problem anywhere in the pilot description.
-source_url: https://unimaas-project.eu/aircraft-maintenance-use-case/
-first_added: 2026-08-20
-
-## Adient
-
-id: CO2
-map: none
-map_excluded_because: "UniMaaS grant scrape 2026-08-20, never intentionally targeted and never contacted; kept as registry history, not a map entry."
-canonical_name: Adient Ltd & Co KG
-also_known_as: [Adient plc, Adient Germany]
-country: DE
-tier_side: demand
-tier: ""
-sector: Automotive tier-1 supplier — seating
-makes_or_does: >
-  Automotive seats, built across separate specialised lines — foam, leather, and seat
-  structures — frequently on different sites, with final assembly separate again. Adient plc
-  is the world's largest automotive seating supplier, revenue on the order of $14B.
-unimaas_role: >
-  Owns the Automotive Seat Manufacturing pilot, supported by Queen's University Belfast and
-  Universitat Politècnica de València. Stated pain is a fragmented supply chain on
-  incompatible ERP/MRP/JIT systems from different vendors: "Supply chain decisions are often
-  made with limited visibility, and disruptions can quickly create delays or
-  inefficiencies." UniMaaS supplies service-based supply-chain planning across production,
-  transport and container management, with real-time data, AI prediction and digital twins.
-eu_contribution_eur: 207500
-hmlv_relevance: >
-  Out of belief scope on volume — automotive seating is high-volume line production, not
-  HMLV. Included because it is a named manufacturer inside the cohort and useful as a
-  contrast case, not as a target segment.
-source_url: https://unimaas-project.eu/automotive-seat-manufacturing-use-case/
-first_added: 2026-08-20
-
-## Catone Logistica
-
-id: CO3
-map: none
-map_excluded_because: "UniMaaS grant scrape 2026-08-20, never intentionally targeted and never contacted; kept as registry history, not a map entry."
-canonical_name: Catone Logistica S.R.L.
-also_known_as: [Catone Group]
-country: IT
-tier_side: demand
-tier: ""
-sector: Cold-chain logistics and warehousing
-makes_or_does: >
-  Temperature-controlled distribution of sensitive and frozen goods, running a fleet of over
-  200 refrigerated vehicles with monitoring and security systems, plus high-volume warehouse
-  operations.
-unimaas_role: >
-  Owns the Logistics & Warehouse Management pilot, supported by NTUA and Queen's University
-  Belfast. Pain is coordinating high-volume warehouse operations with automated systems
-  while holding temperature, energy use and worker wellbeing. UniMaaS supplies AI
-  orchestration with predictive pallet-movement and transport scheduling. Explicit design
-  constraint: "human operators remain central in the loop to oversee operations, ensuring
-  safety and compliance." Targets ~15% storage efficiency, ~10% energy, ~10% fuel.
-eu_contribution_eur: 186250
-hmlv_relevance: >
-  Not manufacturing. Relevant only as the clearest statement in the whole consortium that
-  the human stays in the loop for safety and compliance — stated as a requirement to design
-  around, never as a cost to remove.
-source_url: https://unimaas-project.eu/logistics-warehouse-management/
-first_added: 2026-08-20
-
-## ANV Production
-
-id: CO4
-map: none
-map_excluded_because: "UniMaaS grant scrape 2026-08-20, never intentionally targeted and never contacted; kept as registry history, not a map entry."
-canonical_name: ANV Production Spolka z Ograniczona Odpowiedzialnoscia
-also_known_as: [ANV Production Sp. z o.o.]
-country: PL
-tier_side: demand
-tier: ""
-sector: Unconfirmed — SME, likely construction / additive manufacturing
-makes_or_does: >
-  UNVERIFIED. The only SME industrial partner without a stated pilot role. Its country and
-  size make it the plausible industrial counterpart to Łukasiewicz–PIAP on the 3D
-  Construction Printing pilot, but no source consulted says so. Check the company's own site
-  before using this entry for anything.
-unimaas_role: "Not stated on the project site. Smallest industrial allocation in the consortium."
-eu_contribution_eur: 124375
-hmlv_relevance: "Unknown until the company is identified."
-source_url: https://cordis.europa.eu/project/id/101177842
-first_added: 2026-08-20
-
-## Łukasiewicz — PIAP
-
-id: CO5
-map: none
-map_excluded_because: "UniMaaS grant scrape 2026-08-20, never intentionally targeted and never contacted; kept as registry history, not a map entry."
-canonical_name: Siec Badawcza Lukasiewicz - Przemyslowy Instytut Automatyki i Pomiarow PIAP
-also_known_as: [Łukasiewicz Research Network, PIAP, Industrial Research Institute for Automation and Measurements]
-country: PL
-tier_side: expert
-tier: ""
-sector: Applied research institute — industrial automation, robotics, measurement
-makes_or_does: >
-  Polish state research network institute; PIAP's own history is mobile robots and
-  industrial automation systems, including bomb-disposal robots. Applied engineering rather
-  than pure academia.
-unimaas_role: >
-  Implements the 3D Construction Printing pilot: 3D printing offered as a service across
-  concrete printing, metal manufacturing and machining, with customers requesting customised
-  products online and the system dynamically assigning production to the most appropriate
-  provider. Barriers stated as traditional methods plus "regulations and standards for newer
-  approaches are not always in place." Targets ~10% downtime, ~10% energy, up to 15% waste.
-eu_contribution_eur: 332500
-hmlv_relevance: >
-  The single most belief-relevant entry in the consortium. Custom parts, one-off, routed
-  dynamically to whichever provider fits — that is HMLV execution — and the pilot names
-  missing regulations and standards as a live barrier. It stops short of who is liable, but
-  it is the one place the question is adjacent.
-source_url: https://unimaas-project.eu/3d-construction-printing/
-first_added: 2026-08-20
-
-## National Technical University of Athens
-
-id: CO6
-map: none
-map_excluded_because: "UniMaaS grant scrape 2026-08-20, never intentionally targeted and never contacted; kept as registry history, not a map entry."
-canonical_name: Ethnicon Metsovion Polytechnion
-also_known_as: [NTUA, National Technical University of Athens]
-country: GR
-tier_side: expert
-tier: ""
-sector: University — School of Electrical & Computer Engineering
-makes_or_does: "Research. Coordinator of UniMaaS."
-unimaas_role: >
-  Coordinator; supports the Aegean and Catone pilots. Co-authors of arXiv 2602.12419:
-  Dimitrios Spatharakis, Lydia Mavraidi, Ioannis Dimolitsas, Symeon Papavassiliou.
-  Contributed the ISA-95-aligned Neo4j knowledge graph and the intent-to-subgraph mapping.
-eu_contribution_eur: 645000
-hmlv_relevance: "Author-side contact for the intent-translation work."
-source_url: https://cordis.europa.eu/project/id/101177842
-first_added: 2026-08-20
-
-## École de technologie supérieure
-
-id: CO7
-map: none
-map_excluded_because: "UniMaaS grant scrape 2026-08-20, never intentionally targeted and never contacted; kept as registry history, not a map entry."
-canonical_name: Ecole de Technologie Superieure
-also_known_as: [ÉTS, ETS Montreal]
-country: CA
-tier_side: expert
-tier: ""
-sector: University — Department of Software and IT Engineering
-makes_or_does: "Research."
-unimaas_role: >
-  Non-EU partner. Lead authors of arXiv 2602.12419: Takoua Jradi, John Violos, Aris
-  Leivadeas. Owns the fine-tuned Mistral-7B intent-to-requirement-model translation.
-eu_contribution_eur: 367500
-hmlv_relevance: "Author-side contact; closest thing in the consortium to a natural-language execution interface."
-source_url: https://arxiv.org/abs/2602.12419
-first_added: 2026-08-20
-
-## Flanders Make
-
-id: CO8
-map: none
-map_excluded_because: "UniMaaS grant scrape 2026-08-20, never intentionally targeted and never contacted; kept as registry history, not a map entry."
-canonical_name: Flanders Make
-also_known_as: []
-country: BE
-tier_side: expert
-tier: ""
-sector: Strategic research centre for the manufacturing industry
-makes_or_does: "Applied manufacturing research with and for Flemish industry."
-unimaas_role: "Largest single allocation in the consortium. Specific workstream not stated publicly."
-eu_contribution_eur: 724625
-hmlv_relevance: >
-  Worth a look independent of UniMaaS — an industry-facing manufacturing research centre
-  with standing relationships to many small manufacturers is a route to HMLV shops.
-source_url: https://cordis.europa.eu/project/id/101177842
-first_added: 2026-08-20
-
-## CyberEthics Lab
-
-id: CO9
-map: none
-map_excluded_because: "UniMaaS grant scrape 2026-08-20, never intentionally targeted and never contacted; kept as registry history, not a map entry."
-canonical_name: CyberEthics Lab SRL
-also_known_as: [CyberEthics Lab SRLS, CEL]
-country: IT
-hq: Via Giuseppe Vasi 18/A, Rome
-headcount: 12
-tier_side: expert
-tier: ""
-sector: SME — ethics, legal and social aspects of technology; trustworthy AI
-makes_or_does: >
-  A professional consortium-ethics partner. Twelve people, self-described as an Italian SME
-  built on "the experience and knowledge of its multidisciplinary core members, teaching at
-  University and working as researchers." Co-founder and managing director Carmela
-  Occhipinti, a political scientist. Team also lists Antonio Fiorentino, Emanuela Tangari,
-  Luigi Briguglio, Lorena Volpini, Franca Russo, Francesca Morpurgo, Lucas Pereira Carwile,
-  Piero Corte, Giovanna Pascarella, Helena Marini, Valeria Cesaroni.
-  Twelve services sold, of which the load-bearing ones are: technology impact assessment on
-  privacy (incl. supplying a DPO), ethics assessment of technology, a six-dimension Social
-  Acceptance of Technology methodology, **medical device assessment — CE-mark advisory,
-  pre-assessment and guidance through notified bodies, on MDR expertise**, responsible
-  research and innovation, external ethics advisors, grant writing, and PESTLE market watch.
-  Eight EU projects listed: OptimAIse, MARCONNECT, 6G-DALI, ICAREWOUNDS, PRESERVE, UniMaaS,
-  SECUR-EU, COMFORTage.
-unimaas_role: >
-  Owns the ETHAI assessment framework — deliverables D1.4 (interim, M18) and D2.2 (final,
-  M36). This is the consortium's entire treatment of the responsibility question, and its
-  framing is assessment and compliance, not risk transfer.
-  ETHAI ("Ethics of AI") is their own methodology and it was **not built for manufacturing**:
-  it was developed inside COMFORTage, a dementia-and-frailty-care project, and published as
-  Volpini, Prosseda, Morpurgo, Glišović Krivec & Krivec, "The ETHAI Methodology", AIAI 2025
-  (IFIP AICT vol. 754, Springer). Volpini and Morpurgo are on CEL's own team list. It
-  integrates the EU Guidelines for Trustworthy AI with bioethical principles, care ethics and
-  neuroethics, and runs a cyclical four-phase loop: ethics requirements identification →
-  requirement translation → implementation and refinement → assessment and evaluation.
-  UniMaaS is getting a healthcare ethics methodology ported across.
-eu_contribution_eur: 440625
-hmlv_relevance: >
-  Two edges, pointing opposite ways.
-  AGAINST the belief being addressed by anyone here: given €6.5M and an explicit ethics
-  workstream, the project's answer to "who is answerable" is a framework that identifies,
-  translates and evaluates requirements — it documents human oversight rather than removing
-  it. All four ETHAI phases are assessment; none is transfer. And a twelve-person ethics SME
-  drew €440,625, more than double what either Aegean (€200,000) or Adient (€207,500) received
-  — the consortium bought a lot of assessment and no underwriting.
-  FOR the belief being reachable: CEL sells CE-mark advisory through notified bodies under
-  MDR as a commercial service. That is the conformity-assessment route named in belief.md as
-  the older unresearched precedent — medical devices, elevators, boilers, pressure vessels.
-  They know the mechanism professionally and are simply not applying it to UniMaaS. That
-  makes them a live expert contact on how liability actually moves under a CE regime, which
-  is a different and better reason to talk to them than their UniMaaS role.
-source_url: https://cyberethicslab.com/en/services/
-sources_secondary:
-  - https://cyberethicslab.com/en/about/
-  - https://cyberethicslab.com/en/projects/
-  - https://link.springer.com/chapter/10.1007/978-3-031-97313-0_19
-  - https://unimaas-project.eu/public-deliverables/
-first_added: 2026-08-20
-last_enriched: 2026-08-20
-
-## Netcompany
-
-id: CO10
-map: none
-map_excluded_because: "UniMaaS grant scrape 2026-08-20, never intentionally targeted and never contacted; kept as registry history, not a map entry."
-canonical_name: Netcompany S.A.
-also_known_as: [Netcompany-Intrasoft, Netcompany SA Belgium]
-country: LU
-tier_side: expert
-tier: ""
-sector: IT services and systems integration
-makes_or_does: "Large-scale software delivery and integration, much of it public sector."
-unimaas_role: >
-  Platform and integration side. A Belgian third-party entry carries a further €45,680 under
-  the same grant.
-eu_contribution_eur: 463130
-hmlv_relevance: "Systems integrator, not a manufacturer. Landscape only."
-source_url: https://cordis.europa.eu/project/id/101177842
-first_added: 2026-08-20
-
-## Netcompany SA (Belgium, third party)
-
-id: CO11
-map: none
-map_excluded_because: "UniMaaS grant scrape 2026-08-20, never intentionally targeted and never contacted; kept as registry history, not a map entry."
-canonical_name: Netcompany SA
-also_known_as: []
-country: BE
-tier_side: expert
-tier: ""
-sector: IT services
-makes_or_does: "Third-party entity of CO10 under the same grant."
-unimaas_role: "Third-party allocation."
-eu_contribution_eur: 45680
-hmlv_relevance: "None on its own. Recorded so the consortium list is complete."
-source_url: https://cordis.europa.eu/project/id/101177842
-first_added: 2026-08-20
-
-## Queen's University Belfast
-
-id: CO12
-map: none
-map_excluded_because: "UniMaaS grant scrape 2026-08-20, never intentionally targeted and never contacted; kept as registry history, not a map entry."
-canonical_name: The Queen's University of Belfast
-also_known_as: [QUB]
-country: UK
-tier_side: expert
-tier: ""
-sector: University
-makes_or_does: "Research."
-unimaas_role: "Supports three of the four pilots — Aegean, Adient and Catone. The broadest pilot exposure of any academic partner."
-eu_contribution_eur: 448266
-hmlv_relevance: "Best-placed academic partner to know what all three industrial pilots actually reported."
-source_url: https://cordis.europa.eu/project/id/101177842
-first_added: 2026-08-20
-
-## Technische Universität Berlin
-
-id: CO13
-map: none
-map_excluded_because: "UniMaaS grant scrape 2026-08-20, never intentionally targeted and never contacted; kept as registry history, not a map entry."
-canonical_name: Technische Universitat Berlin
-also_known_as: [TU Berlin]
-country: DE
-tier_side: expert
-tier: ""
-sector: University
-makes_or_does: "Research."
-unimaas_role: "Not stated publicly."
-eu_contribution_eur: 466125
-hmlv_relevance: "Landscape only."
-source_url: https://cordis.europa.eu/project/id/101177842
-first_added: 2026-08-20
-
-## Université catholique de Louvain
-
-id: CO14
-map: none
-map_excluded_because: "UniMaaS grant scrape 2026-08-20, never intentionally targeted and never contacted; kept as registry history, not a map entry."
-canonical_name: Universite Catholique de Louvain
-also_known_as: [UCLouvain]
-country: BE
-tier_side: expert
-tier: ""
-sector: University
-makes_or_does: "Research."
-unimaas_role: "Not stated publicly."
-eu_contribution_eur: 391875
-hmlv_relevance: "Landscape only."
-source_url: https://cordis.europa.eu/project/id/101177842
-first_added: 2026-08-20
-
-## Universitat Politècnica de València
-
-id: CO15
-map: none
-map_excluded_because: "UniMaaS grant scrape 2026-08-20, never intentionally targeted and never contacted; kept as registry history, not a map entry."
-canonical_name: Universitat Politecnica de Valencia
-also_known_as: [UPV]
-country: ES
-tier_side: expert
-tier: ""
-sector: University
-makes_or_does: "Research."
-unimaas_role: >
-  Supports the Adient pilot. Likely home of the lean-Industry-4.0-in-Spanish-manufacturing-SMEs
-  output attributed to the grant.
-eu_contribution_eur: 387562
-hmlv_relevance: "The Spanish manufacturing-SME survey work is the nearest thing in the portfolio to small-shop reality."
-source_url: https://cordis.europa.eu/project/id/101177842
-first_added: 2026-08-20
-
-## INRIA
-
-id: CO16
-map: none
-map_excluded_because: "UniMaaS grant scrape 2026-08-20, never intentionally targeted and never contacted; kept as registry history, not a map entry."
-canonical_name: Institut National de Recherche en Informatique et Automatique
-also_known_as: [Inria]
-country: FR
-tier_side: expert
-tier: ""
-sector: National research institute — computer science and automation
-makes_or_does: "Research."
-unimaas_role: >
-  Not stated publicly. The path-planning-under-neural-abstraction output attributed to the
-  grant is the plausible fit.
-eu_contribution_eur: 299830
-hmlv_relevance: >
-  Verified control of learned policies is the technical half of the liability question. If
-  anyone in this consortium is working on why an autonomous motion plan can be trusted, it
-  is here. Unconfirmed.
-source_url: https://cordis.europa.eu/project/id/101177842
-first_added: 2026-08-20
-
-## Odin Solutions
-
-id: CO17
-map: none
-map_excluded_because: "UniMaaS grant scrape 2026-08-20, never intentionally targeted and never contacted; kept as registry history, not a map entry."
-canonical_name: Odin Solutions Sociedad Limitada
-also_known_as: [OdinS]
-country: ES
-tier_side: expert
-tier: ""
-sector: SME — IoT platforms and industrial data integration
-makes_or_does: "IoT and data-platform engineering for industrial and smart-infrastructure projects."
-unimaas_role: "Data Modelling Suite side — dataspaces, monitoring, data exchange."
-eu_contribution_eur: 385625
-hmlv_relevance: "Landscape only."
-source_url: https://odins.es/en/rdi/unimaas/
-first_added: 2026-08-20
-
-## Four Dot Infinity
-
-id: CO18
-map: none
-map_excluded_because: "UniMaaS grant scrape 2026-08-20, never intentionally targeted and never contacted; kept as registry history, not a map entry."
-canonical_name: Four Dot Infinity Information and Telecommunications Solutions Private Company
-also_known_as: [Four Dot Infinity, 4DI]
-country: GR
-tier_side: expert
-tier: ""
-sector: SME — ICT and telecommunications solutions
-makes_or_does: "Software and telecom systems engineering."
-unimaas_role: "Platform / dissemination side."
-eu_contribution_eur: 367125
-hmlv_relevance: "Landscape only."
-source_url: https://fourdotinfinity.com/project-unimaas/
-first_added: 2026-08-20
-
-## Provenance — semicap batch (2026-08-21)
-
-CO19–CO29 come from one trigger on 2026-08-21: a founder-reported contact conversation on
-memory-chip shortages (raw note: `input-context/manufacturing-execution-layer/2026-08-21-semicap-contact-note.md`),
-followed by same-day desk research on the semiconductor-equipment supply chain. They map the
-`semicap_supplier` candidate ICP tier declared on H1A2 in `graph.md` the same day.
-
-**First-pass entries, not enriched.** Sourced from press and the companies' own sites at
-registry level only; none has been through `startup-outreach-intel` Phase 0.6. No pain
-scores. The tier is a candidate under H1A2's normal evidence bar — these entries exist so
-interview targeting can start, not because the tier is validated.
-
-Sources: technologyreview.com (High-NA EUV) · quartr.com + makesureiknowit.com (ASML
-supplier network) · techzine.eu/news/infrastructure/133009 (NTS/Frencken/KMWE Southeast
-Asia capacity) · jpmorgan.com + idc.com (memory shortage) · company sites below.
-
-## ASML
-
-id: CO19
-canonical_name: ASML Holding N.V.
-also_known_as: [ASML]
-country: NL
-tier_side: demand
-tier: ""
-sector: Semiconductor equipment OEM — lithography
-makes_or_does: >
-  Sole maker of EUV lithography systems worldwide (High-NA TWINSCAN EXE ~$380–400M per
-  tool). A tool has 100k+ parts; ASML makes ~15% in-house and outsources >90% of component
-  production to 800+ suppliers in a network of 5,000+ companies.
-hmlv_relevance: >
-  Anchor of the tier, not the ICP itself — tier left empty on purpose. Its supplier
-  qualification lists define who belongs in `semicap_supplier`, and its order ramp under
-  the memory shortage is the load that hits those suppliers' prove-out capacity.
-source_url: https://www.asml.com/en
-first_added: 2026-08-21
-
-## Carl Zeiss SMT
-
-id: CO20
-canonical_name: Carl Zeiss SMT GmbH
-also_known_as: [Zeiss SMT]
-country: DE
-tier_side: demand
-tier: semicap_supplier
-sector: Semiconductor equipment optics
-makes_or_does: >
-  The only company in the world that can make EUV mirrors and projection optics — the
-  most precise optical surfaces ever manufactured, in single-digit unit volumes.
-hmlv_relevance: >
-  Extreme end of HMLV precision: one-off optics where a first-article failure costs months.
-  Large enough to have internal process discipline; the interview question is whether
-  prove-out pain lives here or in their own machining suppliers.
-source_url: https://www.zeiss.com/semiconductor-manufacturing-technology/home.html
-first_added: 2026-08-21
-
-## TRUMPF
-
-id: CO21
-canonical_name: TRUMPF SE + Co. KG
-also_known_as: [TRUMPF]
-country: DE
-tier_side: demand
-tier: semicap_supplier
-sector: Industrial lasers and machine tools
-makes_or_does: >
-  Sole supplier of the EUV light-source lasers in ASML's machines; also a major maker of
-  laser/press-brake fabrication machines — i.e. simultaneously a semicap supplier and an
-  equipment vendor to our job-shop wedge classes.
-hmlv_relevance: >
-  Doubly relevant: HMLV producer of one-of-a-kind laser systems, and OEM of the
-  laser/press-brake machine classes inside H1's practice-anchored wedge.
-source_url: https://www.trumpf.com/en_INT/
-first_added: 2026-08-21
-
-## VDL ETG
-
-id: CO22
-canonical_name: VDL Enabling Technologies Group B.V.
-also_known_as: [VDL ETG, VDL Groep]
-country: NL
-tier_side: demand
-tier: semicap_supplier
-sector: Contract manufacturing — high-precision modules and mechanical structures
-makes_or_does: >
-  One of ASML's largest suppliers; builds key mechanical structures and modules for EUV
-  platforms. Part of VDL Groep; production sites in NL, Singapore, Vietnam.
-hmlv_relevance: >
-  Classic top-of-tier ICP candidate: large machine shops running never-made,
-  ultra-tolerance parts in small batches against ASML delivery schedules — first-run risk
-  with named-person consequence at industrial scale.
-source_url: https://www.vdletg.com/
-first_added: 2026-08-21
-
-## Prodrive Technologies
-
-id: CO23
-canonical_name: Prodrive Technologies B.V.
-also_known_as: [Prodrive]
-country: NL
-tier_side: demand
-tier: semicap_supplier
-sector: Electronics and mechatronics manufacturing
-makes_or_does: >
-  Custom electronic modules, linear motors and servo drives for ASML's maglev wafer-stage
-  systems, plus broader mechatronic manufacturing.
-hmlv_relevance: >
-  High-mix electronics/mechatronics rather than pure machining — useful for testing
-  whether the prove-out ritual carries beyond cutting-metal classes (a founder-flagged
-  unknown on H1).
-source_url: https://prodrive-technologies.com/
-first_added: 2026-08-21
-
-## KMWE
-
-id: CO24
-canonical_name: KMWE Group B.V.
-also_known_as: [KMWE]
-country: NL
-tier_side: demand
-tier: semicap_supplier
-sector: Precision machining and mechatronic assembly
-makes_or_does: >
-  Design, machining and assembly of high-precision components and modules for semicon and
-  aerospace; expanding capacity in Southeast Asia alongside NTS and Frencken.
-hmlv_relevance: >
-  The closest thing in this batch to our existing job-shop ICP, at supplier-network scale —
-  precision machining for the two highest-consequence sectors (semicon + aerospace) in one
-  company. Strong first interview candidate.
-source_url: https://www.kmwe.com/
-first_added: 2026-08-21
-
-## NTS Group
-
-id: CO25
-canonical_name: NTS Group B.V.
-also_known_as: [NTS]
-country: NL
-tier_side: demand
-tier: semicap_supplier
-sector: Opto-mechatronic systems and modules
-makes_or_does: >
-  Develops and builds opto-mechatronic systems, modules and critical components for
-  high-tech OEMs including semicon equipment makers.
-hmlv_relevance: "Same profile as KMWE/Frencken: HMLV precision modules against OEM qualification and delivery pressure."
-source_url: https://www.nts-group.nl/
-first_added: 2026-08-21
-
-## Frencken Group
-
-id: CO26
-canonical_name: Frencken Group Limited
-also_known_as: [Frencken]
-country: SG
-tier_side: demand
-tier: semicap_supplier
-sector: Mechatronics and integrated manufacturing
-makes_or_does: >
-  SGX-listed mechatronics manufacturer with Dutch roots; supplies modules to ASML among
-  others; expanding Southeast Asian capacity for the semicon ramp.
-hmlv_relevance: "ICP candidate; also a window on whether the prove-out ritual looks the same in Asian plants as in the Dutch/US corpus voice."
-source_url: https://www.frenckengroup.com/
-first_added: 2026-08-21
-
-## Neways Electronics
-
-id: CO27
-canonical_name: Neways Electronics International N.V.
-also_known_as: [Neways]
-country: NL
-tier_side: demand
-tier: semicap_supplier
-sector: Electronics manufacturing services
-makes_or_does: "EMS provider building cabinets, cable systems and electronics for semicap OEMs including ASML."
-hmlv_relevance: >
-  Electronics-side HMLV — like Prodrive, a test of how far the ritual extends beyond
-  machining. Lower priority than the machining-heavy entries.
-source_url: https://www.newayselectronics.com/
-first_added: 2026-08-21
-
-## Ichor Systems
-
-id: CO28
-canonical_name: Ichor Holdings, Ltd.
-also_known_as: [Ichor Systems]
-country: US
-tier_side: demand
-tier: semicap_supplier
-sector: Fluid delivery subsystems for semiconductor equipment
-makes_or_does: >
-  Designs and builds gas and chemical delivery subsystems and weldments for semicap OEMs —
-  Lam Research and Applied Materials historically its dominant customers.
-hmlv_relevance: >
-  The US wing of the same tier: high-mix welded and machined assemblies against OEM ramps.
-  Welding-heavy work also touches the cobot-welding landscape from the robot scan.
-linkedin_slug: ichor-systems-inc.
-source_url: https://www.ichorsystems.com/
-first_added: 2026-08-21
-
-## Ultra Clean Holdings
-
-id: CO29
-canonical_name: Ultra Clean Holdings, Inc.
-also_known_as: [UCT, Ultra Clean Technology]
-country: US
-tier_side: demand
-tier: semicap_supplier
-sector: Outsourced subsystems and modules for semiconductor equipment
-makes_or_does: >
-  Builds chambers, frames, gas panels and full modules for semicap OEMs; one of the
-  largest US outsourced manufacturing partners in the sector.
-hmlv_relevance: "US-wing ICP candidate at scale; its machine shops carry exactly the never-made-part, OEM-deadline profile of H1."
-linkedin_slug: ultra-clean-technology
-source_url: https://www.uct.com/
-first_added: 2026-08-21
-
-## IMG Altair
-
-id: CO30
-canonical_name: IMG Altair, LLC
-also_known_as: [Altair Technologies]
-country: US
-tier_side: demand
-tier: semicap_supplier
-sector: Precision machine shop — semicap components (Ichor Systems subsidiary)
-makes_or_does: "Fremont, CA machine shop in Ichor's IMG group; precision components for semiconductor equipment."
-hmlv_relevance: "A true semicap machine shop — the layer beneath the tier-1s where H1's prove-out ritual should be sharpest. Its President (C8) is the batch's top buyer target."
-linkedin_slug: altair-technologies
-source_url: https://www.linkedin.com/company/altair-technologies/
-first_added: 2026-08-21
-
-## IMG Larkin
-
-id: CO31
-canonical_name: IMG Larkin, LLC
-also_known_as: []
-country: US
-tier_side: demand
-tier: semicap_supplier
-sector: Precision machine shop — semicap/defense (Ichor Systems group)
-makes_or_does: "Machine shop in Ichor's IMG group; details to verify on enrichment (found via IMG Altair's people page)."
-hmlv_relevance: "Second IMG-group shop; its President (C9) is an independent buyer voice."
-linkedin_slug: ""
-source_url: https://www.linkedin.com/company/altair-technologies/people/
-first_added: 2026-08-21
-
-## Westcoast Precision
-
-id: CO32
-canonical_name: Westcoast Precision, Inc.
-also_known_as: []
-country: US
-tier_side: demand
-tier: semicap_supplier
-sector: Precision manufacturing — Silicon Valley job shop
-makes_or_does: "San Jose precision manufacturer serving Silicon Valley OEMs (semicap among them)."
-hmlv_relevance: "Owner-operated Silicon Valley shop — pain and budget in one skull (H1A3's special case); founder-CEO is C16."
-linkedin_slug: westcoast-precision
-source_url: https://www.linkedin.com/company/westcoast-precision/
-first_added: 2026-08-21
-
-## ALIGN Precision
-
-id: CO33
-canonical_name: ALIGN Precision
-also_known_as: []
-country: US
-tier_side: demand
-tier: aerospace_supplier
-sector: Tight-tolerance manufacturing — defense and space
-makes_or_does: "Tempe/Chandler, AZ tight-tolerance manufacturer for defense and space programs."
-hmlv_relevance: "High-consequence aerospace/defense tier of H1A2's segment; three practitioner contacts (C17–C19) plus an engineering manager (C20)."
-linkedin_slug: align-precision
-source_url: https://www.linkedin.com/company/align-precision/
-first_added: 2026-08-21
-
-## Provenance — contact-derived batch (2026-08-21)
-
-CO34–CO41 were discovered through LinkedIn outreach targeting (batch 1, H1A2): each is the
-employer or shop of a logged contact. Registry-level entries from live profile snapshots;
-none enriched via startup-outreach-intel. Mapping dimension deliberately undecided —
-founder note 2026-08-21: get the companies first, decide what to map them by after.
-Candidate dimension already visible in the data: WHICH prove-out machine classes each runs
-(5-axis CNC, laser, press brake, EDM) — several contacts name their machines publicly.
-
-## Cyclone Manufacturing
-
-id: CO34
-canonical_name: Cyclone Manufacturing Inc.
-also_known_as: [Mubea Cyclone]
-country: CA
-tier_side: demand
-tier: aerospace_supplier
-sector: Aerospace structural machining
-makes_or_does: "Major aerospace machining supplier (Mississauga, ON): 4/5-axis milling of titanium, aluminium, composites; vacuum fixturing; Vericut program verification in-house."
-hmlv_relevance: "C29 (senior CNC programmer, 14 yrs) works here — program-author side of the prove-out ritual at aerospace scale."
-linkedin_slug: ""
-source_url: https://www.linkedin.com/in/rahat-ghafoor-b29b271a/
-first_added: 2026-08-21
-
-## Custom Machining (Freeport)
-
-id: CO35
-map: none
-map_excluded_because: "job_shop tier retired as a demand tier (founder decision 2026-08-25); contact cards and evidence are unaffected."
-canonical_name: Custom Machining
-country: US
-tier_side: demand
-tier: job_shop
-sector: Job shop — CNC machining
-makes_or_does: "4-employee Freeport, IL job shop, short-lead-time medium jobs; owner Nick Saxby (C22) grew it from a side business over 14 years."
-hmlv_relevance: "Archetypal small job shop; owner posts about buying extra material on first runs 'in case something goes wrong' — the prove-out pain verbatim."
-linkedin_slug: ""
-source_url: https://www.linkedin.com/in/nick-saxby-5890467b/
-first_added: 2026-08-21
-
-## Bain Machine / Ronal Machine
-
-id: CO36
-canonical_name: Bain Machine
-also_known_as: [Ronal Machine, Ron-Al Mold & Machine]
-country: US
-tier_side: demand
-tier: precision_tier_supplier
-sector: Precision multi-op machining + mold & machine — defense chain
-chain_served: "Defense tier 1/tier 2 (owner testimony, WhatsApp 2026-08-25: 'custom high margin complex multi operation work... Doing the work for tier 1 and tier 2 defense' — self-reported, verify on call). Retiered job_shop → precision_tier_supplier by founder decision 2026-08-25."
-makes_or_does: "Two Cleveland-area shops under one owner (George Bain, C23): Bain Machine (acquired 2024) and Ronal Machine, formerly Ron-Al Mold & Machine (acquired Dec 2025). Multi-operation lathe/mill with outside ops and custom workholding; 50%+ gross margin work per owner."
-hmlv_relevance: "Moldmaking is one-off by definition; a two-shop owner can compare prove-out cost across shops."
-linkedin_slug: ""
-source_url: https://www.bainmachine.com/
-first_added: 2026-08-21
-
-## Holzman Machine
-
-id: CO37
-canonical_name: Holzman Machine LLC
-country: US
-tier_side: demand
-tier: precision_tier_supplier
-sector: Precision job shop — aircraft, drones, medical
-makes_or_does: "Clearwater, FL precision machine shop serving aircraft, drones, medical and other industries; owner Russell Holzman (C24), ex 5-axis Mastercam programmer."
-hmlv_relevance: "High-consequence mix (aircraft/medical) in a small owner-operated shop — pain and budget in one skull."
-linkedin_slug: ""
-source_url: https://www.linkedin.com/in/russell-holzman-37123b99/
-first_added: 2026-08-21
-
-## PGI Steel
-
-id: CO38
-map: none
-map_excluded_because: "job_shop tier retired as a demand tier (founder decision 2026-08-25); contact cards and evidence are unaffected."
-canonical_name: Precision Grinding, Inc. (PGI Steel)
-country: US
-tier_side: demand
-tier: job_shop
-sector: Steel processing and machining
-makes_or_does: "Odenville, AL steel plate processing and machining operation; machine shop managed by Rob Russell (C32)."
-hmlv_relevance: "Custom steel parts to order — recurring never-made-part work; shop-manager vantage on prove-out scheduling."
-linkedin_slug: ""
-source_url: https://www.linkedin.com/in/rob-russell-008565a2/
-first_added: 2026-08-21
-
-## Chemring Energetic Devices
-
-id: CO39
-canonical_name: Chemring Energetic Devices
-country: US
-tier_side: demand
-tier: aerospace_supplier
-sector: Defense — energetic devices
-makes_or_does: "Chicago-area (Downers Grove) manufacturer of energetic devices for defense/space; CNC and toolroom operations managed by Jeffrey Sundwall (C34)."
-hmlv_relevance: "First-run mistakes near energetics are safety events — the extreme end of consequence-per-mistake."
-linkedin_slug: ""
-source_url: https://www.linkedin.com/in/jeffrey-sundwall/
-first_added: 2026-08-21
-
-## Raphe mPhibr
-
-id: CO40
-canonical_name: Raphe mPhibr
-country: IN
-tier_side: demand
-tier: oem_inhouse_shop
-sector: Drone / UAV manufacturing
-makes_or_does: "Indian drone manufacturer (Noida); in-house 5-axis machining on Hermle, Haas and DMG centres (per C30's public profile)."
-hmlv_relevance: "Drone airframes are low-volume aerospace machining; geography open per founder rule."
-linkedin_slug: ""
-source_url: https://www.linkedin.com/in/jagjit-singh4/
-first_added: 2026-08-21
-
-## Royce Ayr Cutting Tools
-
-id: CO41
-map: none
-map_excluded_because: "job_shop tier retired as a demand tier (founder decision 2026-08-25); contact cards and evidence are unaffected."
-canonical_name: Royce Ayr Cutting Tools
-country: CA
-tier_side: demand
-tier: job_shop
-sector: Cutting tool manufacturing
-makes_or_does: "Kitchener, ON cutting-tool maker; employs C27 (CNC machinist, open to work)."
-hmlv_relevance: "Tooling manufacture is small-batch precision grinding/machining; peripheral but valid prove-out testimony."
-linkedin_slug: ""
-source_url: https://www.linkedin.com/in/shivang-mehta-5a06b2202/
-first_added: 2026-08-21
-
-## Provenance — contact-derived batch 4 (2026-08-23)
-
-CO42–CO86 are the employers of the batch-4 contacts (C52–C101), taken from LinkedIn
-search-card snapshots only: `sector` and `hmlv_relevance` are inferred from the contact's
-headline and public company description, not from a site read. None enriched via
-startup-outreach-intel; `linkedin_slug` left empty until a company page is visited.
-Entries for OEM in-house shops (F1 teams, launch companies, robotics) are tiered by the
-work pattern per the 2026-08-21 size/position-open ICP note.
-
-## AusTex Machine & Design
-
-id: CO42
-map: none
-map_excluded_because: "job_shop tier retired as a demand tier (founder decision 2026-08-25); contact cards and evidence are unaffected."
-canonical_name: AusTex Machine & Design
-country: US
-tier_side: demand
-tier: job_shop
-sector: Job shop (Buda, TX)
-hmlv_relevance: "Owner-run CNC job shop; 52 is shop manager/co-owner."
-linkedin_slug: ""
-source_url: https://www.linkedin.com/in/everett-sharp-46b335142/
-first_added: 2026-08-23
-
-## SJS Machine
-
-id: CO43
-map: none
-map_excluded_because: "job_shop tier retired as a demand tier (founder decision 2026-08-25); contact cards and evidence are unaffected."
-canonical_name: SJS Machine
-country: US
-tier_side: demand
-tier: job_shop
-sector: Job shop (Fayetteville, TN)
-hmlv_relevance: "CNC machining & fabrication, tooling/fixtures, engineering-change work — HMLV by nature."
-linkedin_slug: ""
-source_url: https://www.linkedin.com/in/stanley-evans-093367110/
-first_added: 2026-08-23
-
-## Wilzetta Machine
-
-id: CO44
-map: none
-map_excluded_because: "job_shop tier retired as a demand tier (founder decision 2026-08-25); contact cards and evidence are unaffected."
-canonical_name: Wilzetta Machine
-country: US
-tier_side: demand
-tier: job_shop
-sector: Job shop (Prague, OK)
-hmlv_relevance: "Precision milling and turning shop; owner is 55."
-linkedin_slug: ""
-source_url: https://www.linkedin.com/in/joshua-bland-aa0b12114/
-first_added: 2026-08-23
-
-## MRS Machining
-
-id: CO45
-map: none
-map_excluded_because: "job_shop tier retired as a demand tier (founder decision 2026-08-25); contact cards and evidence are unaffected."
-canonical_name: MRS Machining
-country: US
-tier_side: demand
-tier: job_shop
-sector: Job shop (Augusta, WI)
-hmlv_relevance: "Top Shops-designated CNC job shop; president 56."
-linkedin_slug: ""
-source_url: https://www.linkedin.com/in/matt-guse%E2%9C%9D%F0%9F%9A%B4%E2%80%8D%E2%99%80%EF%B8%8F-3aa35914/
-first_added: 2026-08-23
-
-## Progressive Machining & Fabrication
-
-id: CO46
-map: none
-map_excluded_because: "job_shop tier retired as a demand tier (founder decision 2026-08-25); contact cards and evidence are unaffected."
-canonical_name: Progressive Machining & Fabrication
-country: US
-tier_side: demand
-tier: job_shop
-sector: Job shop (Anderson, SC)
-hmlv_relevance: "Machining and fabrication job shop; owner 57."
-linkedin_slug: ""
-source_url: https://www.linkedin.com/in/john-shaw-907670ba/
-first_added: 2026-08-23
-
-## Mil-Spec Manufacturing LLC
-
-id: CO47
-canonical_name: Mil-Spec Manufacturing LLC
-country: US
-tier_side: demand
-tier: precision_tier_supplier
-sector: Job shop (Salisbury, NC)
-hmlv_relevance: "SDVOSB defence-oriented CNC shop; owner 58."
-linkedin_slug: ""
-source_url: https://www.linkedin.com/in/kurtiswolfinger/
-first_added: 2026-08-23
-
-## Norse Manufacturing Solutions LLC
-
-id: CO48
-map: none
-map_excluded_because: "job_shop tier retired as a demand tier (founder decision 2026-08-25); contact cards and evidence are unaffected."
-canonical_name: Norse Manufacturing Solutions LLC
-country: US
-tier_side: demand
-tier: job_shop
-sector: Job shop (Minneapolis, MN)
-hmlv_relevance: "Small owner-engineer machining shop; owner 59."
-linkedin_slug: ""
-source_url: https://www.linkedin.com/in/theodore-simpson-09302a152/
-first_added: 2026-08-23
-
-## Steel Valley Machining
-
-id: CO49
-map: none
-map_excluded_because: "job_shop tier retired as a demand tier (founder decision 2026-08-25); contact cards and evidence are unaffected."
-canonical_name: Steel Valley Machining
-country: US
-tier_side: demand
-tier: job_shop
-sector: Job shop (Youngstown, OH)
-hmlv_relevance: "Owner-machinist CNC shop; owner 60."
-linkedin_slug: ""
-source_url: https://www.linkedin.com/in/greg-ellis-127b7a183/
-first_added: 2026-08-23
-
-## Covenant MFG
-
-id: CO50
-map: none
-map_excluded_because: "job_shop tier retired as a demand tier (founder decision 2026-08-25); contact cards and evidence are unaffected."
-canonical_name: Covenant MFG
-country: US
-tier_side: demand
-tier: job_shop
-sector: Job shop (Sacramento, CA)
-hmlv_relevance: "Machined parts for OEMs/startups/R&D — prototype-heavy mix; owner 61."
-linkedin_slug: ""
-source_url: https://www.linkedin.com/in/caleb-h-599689a6/
-first_added: 2026-08-23
-
-## Lakewood Machine & Tool
-
-id: CO51
-map: none
-map_excluded_because: "job_shop tier retired as a demand tier (founder decision 2026-08-25); contact cards and evidence are unaffected."
-canonical_name: Lakewood Machine & Tool
-country: CA
-tier_side: demand
-tier: job_shop
-sector: Job shop (Newmarket, ON)
-hmlv_relevance: "CNC machine shop; owner 62 is a Practical Machinist personality."
-linkedin_slug: ""
-source_url: https://www.linkedin.com/in/iansandusky/
-first_added: 2026-08-23
-
-## nVenia (a Duravant company)
-
-id: CO52
-canonical_name: nVenia (a Duravant company)
-country: US
-tier_side: demand
-tier: oem_inhouse_shop
-sector: OEM in-house machine shop (Antioch, IL)
-hmlv_relevance: "Packaging machinery OEM; in-house shop does custom/spare parts — HMLV. 63 manages it."
-linkedin_slug: ""
-source_url: https://www.linkedin.com/in/joe-hoeft-34a211ba/
-first_added: 2026-08-23
-
-## Finkl Steel
-
-id: CO53
-map: none
-map_excluded_because: "job_shop tier retired as a demand tier (founder decision 2026-08-25); contact cards and evidence are unaffected."
-canonical_name: Finkl Steel
-country: US
-tier_side: demand
-tier: job_shop
-sector: Forging + machining (Chicago, IL)
-hmlv_relevance: "Finkl Steel machines large forgings/die blocks in low volume; 64 manages machining."
-linkedin_slug: ""
-source_url: https://www.linkedin.com/in/jacob-s-rahdarian-cmfge/
-first_added: 2026-08-23
-
-## Meyer Tool & Manufacturing
-
-id: CO54
-canonical_name: Meyer Tool & Manufacturing
-country: US
-tier_side: demand
-tier: precision_tier_supplier
-sector: Custom vacuum/cryogenic fabrication (Alsip, IL)
-hmlv_relevance: "One-off vacuum chambers and cryostats for labs — pure HMLV; 65 supervises the machine shop."
-linkedin_slug: ""
-source_url: https://www.linkedin.com/in/kenny-urban/
-first_added: 2026-08-23
-
-## Trio Manufacturing, Inc.
-
-id: CO55
-map: none
-map_excluded_because: "job_shop tier retired as a demand tier (founder decision 2026-08-25); contact cards and evidence are unaffected."
-canonical_name: Trio Manufacturing, Inc.
-country: US
-tier_side: demand
-tier: job_shop
-sector: Contract manufacturer (Long Beach, CA)
-hmlv_relevance: "Contract machining; 66 runs the floor."
-linkedin_slug: ""
-source_url: https://www.linkedin.com/in/tyler-phillips-a8384769/
-first_added: 2026-08-23
-
-## The Engineering Machining Company
-
-id: CO56
-map: none
-map_excluded_because: "job_shop tier retired as a demand tier (founder decision 2026-08-25); contact cards and evidence are unaffected."
-canonical_name: The Engineering Machining Company
-country: GB
-tier_side: demand
-tier: job_shop
-sector: Job shop (Wallsend, UK)
-hmlv_relevance: "Owner-programmer contract machining; owner 67."
-linkedin_slug: ""
-source_url: https://www.linkedin.com/in/ernie-craig-62b84818/
-first_added: 2026-08-23
-
-## South Shore Manufacturing Inc.
-
-id: CO57
-map: none
-map_excluded_because: "job_shop tier retired as a demand tier (founder decision 2026-08-25); contact cards and evidence are unaffected."
-canonical_name: South Shore Manufacturing Inc.
-country: US
-tier_side: demand
-tier: job_shop
-sector: Job shop (Scituate, MA)
-hmlv_relevance: "Wire EDM, waterjet, laser, CNC milling; president 68."
-linkedin_slug: ""
-source_url: https://www.linkedin.com/in/patrick-johnson-47aa81/
-first_added: 2026-08-23
-
-## Advanced Machine Program Design MFG
-
-id: CO58
-map: none
-map_excluded_because: "job_shop tier retired as a demand tier (founder decision 2026-08-25); contact cards and evidence are unaffected."
-canonical_name: Advanced Machine Program Design MFG
-country: US
-tier_side: demand
-tier: job_shop
-sector: Job shop (Santa Clara, CA)
-hmlv_relevance: "Program-design + machining shop; owner/lead machinist 69."
-linkedin_slug: ""
-source_url: https://www.linkedin.com/in/joseph-garza-a4561784/
-first_added: 2026-08-23
-
-## Circle D Specialties
-
-id: CO59
-map: none
-map_excluded_because: "job_shop tier retired as a demand tier (founder decision 2026-08-25); contact cards and evidence are unaffected."
-canonical_name: Circle D Specialties
-country: US
-tier_side: demand
-tier: job_shop
-sector: Specialty drivetrain manufacturer (Houston, TX)
-hmlv_relevance: "Short-run performance transmission components; 71 manages CNC."
-linkedin_slug: ""
-source_url: https://www.linkedin.com/in/samuel-snipes-87505b8b/
-first_added: 2026-08-23
-
-## Boston Gear (Altra Industrial Motion)
-
-id: CO60
-canonical_name: Boston Gear (Altra Industrial Motion)
-country: US
-tier_side: demand
-tier: precision_tier_supplier
-sector: Gear manufacturer (Kannapolis, NC)
-hmlv_relevance: "Boston Gear plant runs 1-100 piece lathe orders — HMLV inside a larger maker; 72 is setup machinist."
-linkedin_slug: ""
-source_url: https://www.linkedin.com/in/stevenjmetz/
-first_added: 2026-08-23
-
-## Toolcraft Machining, Inc.
-
-id: CO61
-map: none
-map_excluded_because: "job_shop tier retired as a demand tier (founder decision 2026-08-25); contact cards and evidence are unaffected."
-canonical_name: Toolcraft Machining, Inc.
-country: US
-tier_side: demand
-tier: job_shop
-sector: Job shop (Milwaukee, WI)
-hmlv_relevance: "Contract CNC machining; 73 is machinist/programmer."
-linkedin_slug: ""
-source_url: https://www.linkedin.com/in/vincent-rath-270589169/
-first_added: 2026-08-23
-
-## Holland Manufacturing Corporation
-
-id: CO62
-map: none
-map_excluded_because: "job_shop tier retired as a demand tier (founder decision 2026-08-25); contact cards and evidence are unaffected."
-canonical_name: Holland Manufacturing Corporation
-country: US
-tier_side: demand
-tier: job_shop
-sector: Manufacturer (Chicago area)
-hmlv_relevance: "Machining; 74 is machinist/programmer."
-linkedin_slug: ""
-source_url: https://www.linkedin.com/in/david-glaze-046851b8/
-first_added: 2026-08-23
-
-## JMP Precision Engineering Limited
-
-id: CO63
-canonical_name: JMP Precision Engineering Limited
-country: GB
-tier_side: demand
-tier: aerospace_supplier
-sector: Precision subcontractor (Bristol, UK)
-hmlv_relevance: "Aerospace/automotive precision machining; 75 senior programmer-machinist."
-linkedin_slug: ""
-source_url: https://www.linkedin.com/in/stephin-johny/
-first_added: 2026-08-23
-
-## MiRus
-
-id: CO64
-canonical_name: MiRus
-country: US
-tier_side: demand
-tier: precision_tier_supplier
-sector: Medical implant / precision machining (Marietta, GA)
-hmlv_relevance: "AS9100D multi-axis machining of superalloys; 76 senior programmer."
-linkedin_slug: ""
-source_url: https://www.linkedin.com/in/edward-cortes-cnc-programmer-machinist-multi-axis-mill-aerospace-atlanta-ga/
-first_added: 2026-08-23
-
-## Red Bull Racing
-
-id: CO65
-canonical_name: Red Bull Racing
-country: GB
-tier_side: demand
-tier: oem_inhouse_shop
-sector: F1 in-house machine shop (Milton Keynes, UK)
-hmlv_relevance: "One-off race parts on race deadlines; 77 machinist."
-linkedin_slug: ""
-source_url: https://www.linkedin.com/in/liampearce5/
-first_added: 2026-08-23
-
-## Mercedes-AMG Petronas F1 Team
-
-id: CO66
-canonical_name: Mercedes-AMG Petronas F1 Team
-country: GB
-tier_side: demand
-tier: oem_inhouse_shop
-sector: F1 in-house machine shop (Brackley, UK)
-hmlv_relevance: "Prototype aero parts, one-offs; 78 programmer/machinist."
-linkedin_slug: ""
-source_url: https://www.linkedin.com/in/lee-moreton-495bb3195/
-first_added: 2026-08-23
-
-## Alloyed
-
-id: CO67
-canonical_name: Alloyed
-country: GB
-tier_side: demand
-tier: precision_tier_supplier
-sector: Advanced alloys / additive + machining (Oxfordshire, UK)
-hmlv_relevance: "New-part machining of novel alloys; 79 lead NPI machinist."
-linkedin_slug: ""
-source_url: https://www.linkedin.com/in/sebastian-dutton-5b2518147/
-first_added: 2026-08-23
-
-## Figure AI
-
-id: CO68
-canonical_name: Figure AI
-country: US
-tier_side: demand
-tier: oem_inhouse_shop
-sector: Robotics OEM in-house prototype shop (Santa Clara, CA)
-hmlv_relevance: "Prototype machining for humanoid robots; 80 lead machinist."
-linkedin_slug: ""
-source_url: https://www.linkedin.com/in/zambrose1/
-first_added: 2026-08-23
-
-## Precision Products Inc
-
-id: CO69
-map: none
-map_excluded_because: "job_shop tier retired as a demand tier (founder decision 2026-08-25); contact cards and evidence are unaffected."
-canonical_name: Precision Products Inc
-country: US
-tier_side: demand
-tier: job_shop
-sector: Job shop (Moss Point, MS)
-hmlv_relevance: "Precision CNC machining; 81 programmer."
-linkedin_slug: ""
-source_url: https://www.linkedin.com/in/austin-sharlow-2127b8200/
-first_added: 2026-08-23
-
-## Prosper-Tech Machine & Tool LLC
-
-id: CO70
-canonical_name: Prosper-Tech Machine & Tool LLC
-country: US
-tier_side: demand
-tier: aerospace_supplier
-sector: AS9100 job shop (Richmond, MI)
-hmlv_relevance: "Second-generation aerospace-certified CNC shop; GM 82."
-linkedin_slug: ""
-source_url: https://www.linkedin.com/in/andrew-devroy-b7920a68/
-first_added: 2026-08-23
-
-## Carr Machine & Tool
-
-id: CO71
-canonical_name: Carr Machine & Tool
-country: US
-tier_side: demand
-tier: aerospace_supplier
-sector: Aerospace job shop (Elk Grove Village, IL)
-hmlv_relevance: "Aerospace CNC job shop; CEO 83 hosts a manufacturing podcast."
-linkedin_slug: ""
-source_url: https://www.linkedin.com/in/jimmycarr/
-first_added: 2026-08-23
-
-## CesiumAstro
-
-id: CO72
-canonical_name: CesiumAstro
-country: US
-tier_side: demand
-tier: aerospace_supplier
-sector: Space hardware OEM in-house shop (Austin, TX)
-hmlv_relevance: "Prototype/flight hardware machining; 84 manages the shop."
-linkedin_slug: ""
-source_url: https://www.linkedin.com/in/kevin-griffiths-8a003317/
-first_added: 2026-08-23
-
-## United CNC Machining LLC
-
-id: CO73
-canonical_name: United CNC Machining LLC
-country: US
-tier_side: demand
-tier: aerospace_supplier
-sector: Defence/aerospace prototype job shop (Detroit, MI)
-hmlv_relevance: "Prototype and limited-production machined components; owner 85."
-linkedin_slug: ""
-source_url: https://www.linkedin.com/in/glenncharest/
-first_added: 2026-08-23
-
-## Senior Aerospace Ketema
-
-id: CO74
-canonical_name: Senior Aerospace Ketema
-country: US
-tier_side: demand
-tier: aerospace_supplier
-sector: Aerospace tier-1 machining (El Cajon, CA)
-hmlv_relevance: "Senior plc aerospace machining site; 86 programmer."
-linkedin_slug: ""
-source_url: https://www.linkedin.com/in/jeffnortonmacrob/
-first_added: 2026-08-23
-
-## RBC AeroComponents
-
-id: CO75
-canonical_name: RBC AeroComponents
-country: US
-tier_side: demand
-tier: aerospace_supplier
-sector: Aerospace component supplier (Atlanta, GA)
-hmlv_relevance: "Precision aerospace components; 87 programmer."
-linkedin_slug: ""
-source_url: https://www.linkedin.com/in/michael-roberts-2b5605199/
-first_added: 2026-08-23
-
-## McCay Tool & Engineering Company
-
-id: CO76
-canonical_name: McCay Tool & Engineering Company
-country: US
-tier_side: demand
-tier: aerospace_supplier
-sector: Aerospace tool & engineering job shop (Missouri)
-hmlv_relevance: "Aerospace machining and tooling; 88 programmer."
-linkedin_slug: ""
-source_url: https://www.linkedin.com/in/kyle-stoff-808976216/
-first_added: 2026-08-23
-
-## Cal Tech Precision Inc
-
-id: CO77
-canonical_name: Cal Tech Precision Inc
-country: US
-tier_side: demand
-tier: aerospace_supplier
-sector: Aerospace precision machining (Bellflower, CA)
-hmlv_relevance: "Aerospace CNC machining; 89 programmer."
-linkedin_slug: ""
-source_url: https://www.linkedin.com/in/oswaldo-madrigal-a8067b41/
-first_added: 2026-08-23
-
-## Blue Origin
-
-id: CO78
-canonical_name: Blue Origin
-country: US
-tier_side: demand
-tier: oem_inhouse_shop
-sector: Launch OEM in-house machine shop (Huntsville, AL)
-hmlv_relevance: "Engine hardware in Inconel; 90 machinist III, 91 machinist II."
-linkedin_slug: ""
-source_url: https://www.linkedin.com/in/jeffmcdade86/
-first_added: 2026-08-23
-
-## SpaceX
-
-id: CO79
-canonical_name: SpaceX
-country: US
-tier_side: demand
-tier: oem_inhouse_shop
-sector: Launch OEM in-house machine shop (Hawthorne, CA)
-hmlv_relevance: "Prototype and production engine/structure machining; 92, 93 machinists."
-linkedin_slug: ""
-source_url: https://www.linkedin.com/in/myke-hauge-b0b8217b/
-first_added: 2026-08-23
-
-## Martin-Baker Aircraft Co Ltd
-
-id: CO80
-canonical_name: Martin-Baker Aircraft Co Ltd
-country: GB
-tier_side: demand
-tier: aerospace_supplier
-sector: Aerospace (ejection seats) in-house machining (Denham, UK)
-hmlv_relevance: "Low-volume life-critical parts; 94, 95 machinists."
-linkedin_slug: ""
-source_url: https://www.linkedin.com/in/martin-bascombe-173857115/
-first_added: 2026-08-23
-
-## Rolls-Royce
-
-id: CO81
-canonical_name: Rolls-Royce
-country: GB
-tier_side: demand
-tier: aerospace_supplier
-sector: Aero-engine OEM machining (Glasgow, UK)
-hmlv_relevance: "Engine component machining; 96 machinist."
-linkedin_slug: ""
-source_url: https://www.linkedin.com/in/michael-coutts-a8655a12a/
-first_added: 2026-08-23
-
-## Joby Aviation
-
-id: CO82
-canonical_name: Joby Aviation
-country: US
-tier_side: demand
-tier: oem_inhouse_shop
-sector: eVTOL OEM prototype shop (Bay Area, CA)
-hmlv_relevance: "Quick-reaction prototype machining; 97 staff ME."
-linkedin_slug: ""
-source_url: https://www.linkedin.com/in/nathan-meyer82/
-first_added: 2026-08-23
-
-## Ayar Makina San. ve Tic. Ltd. Şti.
-
-id: CO83
-canonical_name: Ayar Makina San. ve Tic. Ltd. Şti.
-country: TR
-tier_side: demand
-tier: aerospace_supplier
-sector: Aerospace machining supplier (Türkiye)
-hmlv_relevance: "5-axis aerospace parts; 98 senior programmer."
-linkedin_slug: ""
-source_url: https://www.linkedin.com/in/zihni-ercan-demir-415aa5a1/
-first_added: 2026-08-23
-
-## Baykar Technologies
-
-id: CO84
-canonical_name: Baykar Technologies
-country: TR
-tier_side: demand
-tier: oem_inhouse_shop
-sector: UAV OEM in-house machining (Türkiye)
-hmlv_relevance: "UAV structural/engine parts; 99 machining team leader."
-linkedin_slug: ""
-source_url: https://www.linkedin.com/in/erkut-ay/
-first_added: 2026-08-23
-
-## FM Industries
-
-id: CO85
-canonical_name: FM Industries
-country: US
-tier_side: demand
-tier: semicap_supplier
-sector: Semicap precision machining (Fremont, CA)
-hmlv_relevance: "Precision components for semiconductor equipment OEMs; 100 level-III machinist."
-linkedin_slug: ""
-source_url: https://www.linkedin.com/in/kevin-valdes-069923265/
-first_added: 2026-08-23
-
-## Dan-Kar Engineering
-
-id: CO86
-canonical_name: Dan-Kar Engineering
-country: US
-tier_side: demand
-tier: semicap_supplier
-sector: Semicap/lab precision job shop (Woburn, MA)
-hmlv_relevance: "Precision plastics and metal machining for semiconductor equipment OEMs; owner 101."
-linkedin_slug: ""
-source_url: https://www.linkedin.com/in/romeo-belisle-ba364416a/
-first_added: 2026-08-23
-
-## Provenance — ICP tier revision (2026-08-25)
-
-Founder rule 2026-08-25, authored in `graph.md` H1A2: the `job_shop` demand tier is
-retired. A target must be a precision-parts supplier with an identifiable position in a
-tier supply chain of HMLV manufactured goods, or an OEM in-house HMLV precision shop
-(new tiers `precision_tier_supplier` and `oem_inhouse_shop`; `aerospace_supplier` and
-`semicap_supplier` unchanged).
-
-16 entries were retiered on that date: chain-positioned precision shops moved to their
-chain's tier (CO37, CO47, CO54, CO60, CO63, CO64, CO67), OEM in-house shops moved to
-`oem_inhouse_shop` (CO40, CO52, CO65, CO66, CO68, CO78, CO79, CO82, CO84). Entries still
-carrying `tier: job_shop` are out of ICP by the graph rule — the tier line is left
-standing deliberately: tier VALIDITY is authored in `graph.md`, only membership here.
-
-## SHR Precision Machining, LLC
-
-id: CO87
-canonical_name: SHR Precision Machining, LLC
-country: US
-tier_side: demand
-tier: precision_tier_supplier
-sector: Precision CNC machining (Tustin, CA)
-hmlv_relevance: "Owner C143. SoCal aero/med corridor; chain to verify at enrichment."
-linkedin_slug: ""
-source_url: https://www.linkedin.com/in/dominic-hajdukovic-a1b8b743/
-first_added: 2026-08-25
-
-## AM-PRECISION-RMA Inc.
-
-id: CO88
-canonical_name: AM-PRECISION-RMA Inc.
-country: CA
-tier_side: demand
-tier: precision_tier_supplier
-sector: Custom CNC machining for tool & die, mold and automation manufacturing (Windsor, ON)
-hmlv_relevance: "Owner C144. One-off tooling for the automation/machinery chain — HMLV by construction."
-linkedin_slug: ""
-source_url: https://www.linkedin.com/in/alexey-mironov-875274163/
-first_added: 2026-08-25
-
-## A3 Precision Swiss Machining, LLC
-
-id: CO89
-canonical_name: A3 Precision Swiss Machining, LLC
-country: US
-tier_side: demand
-tier: precision_tier_supplier
-sector: Swiss-turn precision machining (Lorain, OH)
-hmlv_relevance: "Owner C145. Swiss work is small tight-tolerance chain parts; end chain to verify."
-linkedin_slug: ""
-source_url: https://www.linkedin.com/in/iosif-joe-iancu-26b15886/
-first_added: 2026-08-25
-
-## DPPI (Precision CNC Machine Shop)
-
-id: CO90
-canonical_name: DPPI (Precision CNC Machine Shop)
-country: US
-tier_side: demand
-tier: precision_tier_supplier
-sector: Precision CNC milling & turning, one-of-a-kind prototypes + production (Chicago)
-hmlv_relevance: "President C146. Prototype line of business is prove-out-dense."
-linkedin_slug: ""
-source_url: https://www.linkedin.com/in/rick-rasmussen-6392941a/
-first_added: 2026-08-25
-
-## Limitless Precision Machining LLC
-
-id: CO91
-canonical_name: Limitless Precision Machining LLC
-country: US
-tier_side: demand
-tier: precision_tier_supplier
-sector: Precision machining (Chippewa Falls, WI)
-hmlv_relevance: "Owner C147. Chain to verify."
-linkedin_slug: ""
-source_url: https://www.linkedin.com/in/mitchell-harmston-49aa09203/
-first_added: 2026-08-25
-
-## Pearland Precision
-
-id: CO92
-canonical_name: Pearland Precision
-country: US
-tier_side: demand
-tier: aerospace_supplier
-sector: Tight-tolerance CNC machining, AS9100 (Pearland, TX)
-hmlv_relevance: "Owner C148. AS9100 = chain-positioned aero subcontractor per ICP rule 2026-08-25."
-linkedin_slug: ""
-source_url: https://www.linkedin.com/in/chad-maurer-49b134a8/
-first_added: 2026-08-25
-
-## Quikteck, LLC
-
-id: CO93
-canonical_name: Quikteck, LLC
-country: US
-tier_side: demand
-tier: aerospace_supplier
-sector: AS9100 & ITAR aerospace manufacturing, 5-axis CNC + fabrication + welding, OEM partner (LA)
-hmlv_relevance: "CEO/Owner C149. High-consequence aero tier; strongest batch-6 chain evidence."
-linkedin_slug: ""
-source_url: https://www.linkedin.com/in/bon-huynh-a3a570177/
-first_added: 2026-08-25
-
-## Butler Precision Technologies
-
-id: CO94
-canonical_name: Butler Precision Technologies
-country: US
-tier_side: demand
-tier: precision_tier_supplier
-sector: Precision milling, turning & fabrication (Bristol, PA)
-hmlv_relevance: "Owner C150. Chain to verify."
-linkedin_slug: ""
-source_url: https://www.linkedin.com/in/bruce-butler67/
-first_added: 2026-08-25
-
-## BT High Precision Machining
-
-id: CO95
-canonical_name: BT High Precision Machining
-country: US
-tier_side: demand
-tier: precision_tier_supplier
-sector: High-precision machining (SF Bay Area)
-hmlv_relevance: "Owner C151. Semicap-chain candidate on geography (ICP candidate tier 2026-08-21); verify customers."
-linkedin_slug: ""
-source_url: https://www.linkedin.com/in/bang-tien-1b418a16b/
-first_added: 2026-08-25
-
-## AXIS Design and Machining
-
-id: CO96
-canonical_name: AXIS Design and Machining
-country: US
-tier_side: demand
-tier: precision_tier_supplier
-sector: CAD design + CNC machining (Glendale, AZ)
-hmlv_relevance: "Owner C152. AZ aero/semicap corridor; chain to verify."
-linkedin_slug: ""
-source_url: https://www.linkedin.com/in/todd-white-39740760/
-first_added: 2026-08-25
-
-## VIP Machining, Inc.
-
-id: CO97
-canonical_name: VIP Machining, Inc.
-country: US
-tier_side: demand
-tier: precision_tier_supplier
-sector: Precision machining (Corry, PA); sister co Burke Forging & Heat Treating (Rochester, NY)
-hmlv_relevance: "Owner C153. Qualify on the machining arm; forging arm is commodity-side."
-linkedin_slug: ""
-source_url: https://www.linkedin.com/in/ronald-thompson-7570072a/
-first_added: 2026-08-25
-
-## Primex Precision
-
-id: CO98
-canonical_name: Primex Precision
-country: US
-tier_side: demand
-tier: precision_tier_supplier
-sector: CNC precision machining (St. Louis)
-hmlv_relevance: "Owner C154. Chain to verify."
-linkedin_slug: ""
-source_url: https://www.linkedin.com/in/eparker-primex/
-first_added: 2026-08-25
-
-## Precision Fab and Machining LLC
-
-id: CO99
-canonical_name: Precision Fab and Machining LLC
-country: US
-tier_side: demand
-tier: precision_tier_supplier
-sector: Precision fabrication and machining (Lancaster, SC)
-hmlv_relevance: "Owner-operator C157. Chain to verify."
-linkedin_slug: ""
-source_url: https://www.linkedin.com/in/darryl-newton-181239a1/
-first_added: 2026-08-25
-
-## Manik Machining
-
-id: CO100
-canonical_name: Manik Machining
-country: US
-tier_side: demand
-tier: precision_tier_supplier
-sector: Precision machining (Troy, MI)
-hmlv_relevance: "Owner C158. Detroit corridor — verify chain is machinery/defense/aero, not volume automotive."
-linkedin_slug: ""
-source_url: https://www.linkedin.com/in/erik-curtin-6b512646/
-first_added: 2026-08-25
-
-## Specialty Machining Inc
-
-id: CO101
-canonical_name: Specialty Machining Inc
-country: US
-tier_side: demand
-tier: precision_tier_supplier
-sector: Precision machining incl. endoscope parts (Newberry, FL); sister Modern Endoscope Parts LLC
-hmlv_relevance: "Owner C159. Medical-device chain named on the owner's card."
-linkedin_slug: ""
-source_url: https://www.linkedin.com/in/davidabello/
-first_added: 2026-08-25
-
-## Advanced Machining and Design
-
-id: CO102
-canonical_name: Advanced Machining and Design
-country: US
-tier_side: demand
-tier: precision_tier_supplier
-sector: CNC machining, vertical machining centers (Mooreton, ND)
-hmlv_relevance: "Owner C160. Chain to verify."
-linkedin_slug: ""
-source_url: https://www.linkedin.com/in/chris-berndt-08b37a8/
-first_added: 2026-08-25
-
-## Bidwell Advanced Manufacturing LLC
-
-id: CO103
-canonical_name: Bidwell Advanced Manufacturing LLC
-country: US
-tier_side: demand
-tier: precision_tier_supplier
-sector: Advanced manufacturing / CNC (Greater Hartford, CT)
-hmlv_relevance: "Owner C161. CT aero corridor (P&W chain) — verify."
-linkedin_slug: ""
-source_url: https://www.linkedin.com/in/brianrbidwell/
-first_added: 2026-08-25
-
-## Dailey's CNC Machining
-
-id: CO104
-canonical_name: Dailey's CNC Machining
-country: US
-tier_side: demand
-tier: precision_tier_supplier
-sector: CNC machining, 5-axis (Columbus, IN)
-hmlv_relevance: "Owner C162. Engine/machinery tier-supply geography; verify."
-linkedin_slug: ""
-source_url: https://www.linkedin.com/in/joseph-dailey-8ab957274/
-first_added: 2026-08-25
-
-## H&K Precision Machine
-
-id: CO105
-canonical_name: H&K Precision Machine
-country: US
-tier_side: demand
-tier: precision_tier_supplier
-sector: Precision machining (Grand Rapids, MI)
-hmlv_relevance: "Owner C163. Chain to verify."
-linkedin_slug: ""
-source_url: https://www.linkedin.com/in/harry-host-ii-51615929/
-first_added: 2026-08-25
-
-## ADDMAN
-
-id: CO106
-canonical_name: ADDMAN
-country: US
-tier_side: demand
-tier: precision_tier_supplier
-sector: Aerospace/defense contract manufacturing — metal additive + machining (Mooresville, NC)
-hmlv_relevance: "Sr Director C166. First-article on printed-then-machined parts; probes whether sim-to-real pain generalizes past pure CNC."
-linkedin_slug: ""
-source_url: https://www.linkedin.com/in/james-otoole-kam/
-first_added: 2026-08-25
-
-## McLaren Racing
-
-id: CO107
-canonical_name: McLaren Racing
-country: GB
-tier_side: demand
-tier: oem_inhouse_shop
-sector: Formula 1 team — in-house machining and additive manufacturing (Woking, UK)
-hmlv_relevance: "Director C167. F1 teams are the ICP's named oem_inhouse_shop archetype: every part never-made."
-linkedin_slug: ""
-source_url: https://www.linkedin.com/in/spencer-ford-50b6b886/
-first_added: 2026-08-25
-
-## Harmonic Drive LLC
-
-id: CO108
-canonical_name: Harmonic Drive LLC
-country: US
-tier_side: demand
-tier: precision_tier_supplier
-sector: Strain-wave precision gears for robotics/motion control (Beverly, MA)
-hmlv_relevance: "Director of Machining Ops C168. Robotics/machinery chain at its tightest-tolerance tier."
-linkedin_slug: ""
-source_url: https://www.linkedin.com/in/chris-moffatt-a28b113b/
-first_added: 2026-08-25
-
-## RCO Engineering
-
-id: CO109
-canonical_name: RCO Engineering
-country: US
-tier_side: demand
-tier: aerospace_supplier
-sector: Engineering + manufacturing incl. dedicated aerospace machining group (Roseville, MI)
-hmlv_relevance: "Aerospace Machining Director C169, who built the group."
-linkedin_slug: ""
-source_url: https://www.linkedin.com/in/jason-benoit-4bba45111/
-first_added: 2026-08-25
-
-## Collins Aerospace Krosno (Raytheon Technologies)
-
-id: CO110
-canonical_name: Collins Aerospace Krosno (Raytheon Technologies)
-country: PL
-tier_side: demand
-tier: aerospace_supplier
-sector: Landing systems machining plant (Krosno, Poland)
-hmlv_relevance: "Director Operations Machining C171. Tier-1 aero machining at enterprise scale."
-linkedin_slug: ""
-source_url: https://www.linkedin.com/in/jacek-gaj-44a4a117/
-first_added: 2026-08-25
-
-## QPE Advanced Machining
-
-id: CO111
-canonical_name: QPE Advanced Machining
-country: AU
-tier_side: demand
-tier: precision_tier_supplier
-sector: Advanced precision machining (Vale Park, South Australia)
-hmlv_relevance: "Head of Machining C173. AU defense/aero tier chain; verify."
-linkedin_slug: ""
-source_url: https://www.linkedin.com/in/ramesh-meruga-3b9b3074/
-first_added: 2026-08-25
-
-## ADV Imagine
-
-id: CO112
-canonical_name: ADV Imagine
-country: US
-tier_side: demand
-tier: aerospace_supplier
-sector: Composites manufacturing, 5-axis CNC machining to aerospace tolerances (Santa Ana, CA)
-hmlv_relevance: "CNC Director C174. Boundary probe: prove-out pain in composites, where scrap is unrepairable. Company name confirmed on live profile 2026-08-25 (advfiberglass.com)."
-linkedin_slug: ""
-source_url: https://www.linkedin.com/in/michael-gerwatosky/
-first_added: 2026-08-25
-
-## Royal Industries
-
-id: CO113
-canonical_name: Royal Industries
-country: US
-tier_side: demand
-tier: aerospace_supplier
-sector: Aerospace & defense precision machining, mission-critical components
-hmlv_relevance: "Owner C175. Chain named on card."
-linkedin_slug: ""
-source_url: https://www.linkedin.com/in/nick-newton-84170bb3/
-first_added: 2026-08-25
-
-## Precision Machine Concepts, Inc.
-
-id: CO114
-canonical_name: Precision Machine Concepts, Inc.
-country: US
-tier_side: demand
-tier: precision_tier_supplier
-sector: Prototype + production CNC machining (West Henrietta, NY)
-hmlv_relevance: "Owner C176. Rochester optics/instrument corridor; verify."
-linkedin_slug: ""
-source_url: https://www.linkedin.com/in/john-oechsle-4ab79941/
-first_added: 2026-08-25
-
-## R&D Precision Machining, Inc.
-
-id: CO115
-canonical_name: R&D Precision Machining, Inc.
-country: US
-tier_side: demand
-tier: precision_tier_supplier
-sector: R&D precision machining (Alpharetta, GA)
-hmlv_relevance: "Owner C177. R&D machining = never-made parts as the business model; verify chain."
-linkedin_slug: ""
-source_url: https://www.linkedin.com/in/paul-galamba/
-first_added: 2026-08-25
-
-## Hoover Precision Machining, LLC
-
-id: CO116
-canonical_name: Hoover Precision Machining, LLC
-country: US
-tier_side: demand
-tier: precision_tier_supplier
-sector: Precision machining (Greater Lexington, KY)
-hmlv_relevance: "Owner C178. Chain to verify."
-linkedin_slug: ""
-source_url: https://www.linkedin.com/in/mark-hoover-177739126/
-first_added: 2026-08-25
-
-## Deedrick Precision Machining
-
-id: CO117
-canonical_name: Deedrick Precision Machining
-country: US
-tier_side: demand
-tier: precision_tier_supplier
-sector: Precision machining (Sadorus, IL)
-hmlv_relevance: "Owner C179. Chain to verify."
-linkedin_slug: ""
-source_url: https://www.linkedin.com/in/ray-batista-b91b5712/
-first_added: 2026-08-25
-
-## Nolte Precise Manufacturing
-
-id: CO118
-canonical_name: Nolte Precise Manufacturing
-country: US
-tier_side: demand
-tier: precision_tier_supplier
-sector: Precise manufacturing (Cincinnati, OH)
-hmlv_relevance: "Owner C180. GE Aerospace tier-supply geography; verify."
-linkedin_slug: ""
-source_url: https://www.linkedin.com/in/dougcoster/
-first_added: 2026-08-25
-
-## Genesis Precision
-
-id: CO119
-canonical_name: Genesis Precision
-country: US
-tier_side: demand
-tier: precision_tier_supplier
-sector: Precision CNC lathe machining (Phoenix, AZ)
-hmlv_relevance: "Owner C181. AZ aero/semicap corridor; verify."
-linkedin_slug: ""
-source_url: https://www.linkedin.com/in/jon-schaeffer-94648678/
-first_added: 2026-08-25
-
-## Advanced Precision Machining, LLC (Longmont)
-
-id: CO120
-canonical_name: Advanced Precision Machining, LLC (Longmont)
-country: US
-tier_side: demand
-tier: precision_tier_supplier
-sector: Precision machining (Longmont, CO)
-hmlv_relevance: "Co-Owner/CEO C182. CO aero/instrument corridor; verify."
-linkedin_slug: ""
-source_url: https://www.linkedin.com/in/coloradocncmachineshopkirk/
-first_added: 2026-08-25
-
-## Twin City Precision Machining LLC
-
-id: CO121
-canonical_name: Twin City Precision Machining LLC
-country: US
-tier_side: demand
-tier: precision_tier_supplier
-sector: Fixtures, mechanical assemblies, machine components (Minneapolis, MN)
-hmlv_relevance: "Owner C183. Machinery-chain one-off work; verify."
-linkedin_slug: ""
-source_url: https://www.linkedin.com/in/michael-lamphere-03b507186/
-first_added: 2026-08-25
-
-## B2 Machining
-
-id: CO122
-canonical_name: B2 Machining
-country: US
-tier_side: demand
-tier: precision_tier_supplier
-sector: CNC machining (Fremont, CA)
-hmlv_relevance: "Owner C184. Semicap-chain candidate on geography; verify customers."
-linkedin_slug: ""
-source_url: https://www.linkedin.com/in/bryan-bach-bba6b75/
-first_added: 2026-08-25
-
-## Solid Machine
-
-id: CO123
-canonical_name: Solid Machine
-country: US
-tier_side: demand
-tier: precision_tier_supplier
-sector: Precision machining of components (Greater Boston, MA)
-hmlv_relevance: "Owner C185. MA instrument/defense corridor; verify."
-linkedin_slug: ""
-source_url: https://www.linkedin.com/in/briangodbout/
-first_added: 2026-08-25
-
-## Precision Advanced Machining Co.
-
-id: CO124
-canonical_name: Precision Advanced Machining Co.
-country: US
-tier_side: demand
-tier: precision_tier_supplier
-sector: Precision machining (Clinton Township, MI)
-hmlv_relevance: "Owner C187. Detroit corridor — verify chain not volume automotive."
-linkedin_slug: ""
-source_url: https://www.linkedin.com/in/jerrydecker/
-first_added: 2026-08-25
-
-## Precision Machine Enterprises
-
-id: CO125
-canonical_name: Precision Machine Enterprises
-country: US
-tier_side: demand
-tier: precision_tier_supplier
-sector: CNC machine shop (Greater Lewiston)
-hmlv_relevance: "Owner C188. Chain to verify."
-linkedin_slug: ""
-source_url: https://www.linkedin.com/in/anthony-brook/
-first_added: 2026-08-25
-
-## Coastal Precision Machine
-
-id: CO126
-canonical_name: Coastal Precision Machine
-country: US
-tier_side: demand
-tier: precision_tier_supplier
-sector: Tight-tolerance precision machining (Richmond Hill, GA)
-hmlv_relevance: "Owner C189. Near Gulfstream Savannah chain; verify."
-linkedin_slug: ""
-source_url: https://www.linkedin.com/in/clancy-montano-7b4b267a/
-first_added: 2026-08-25
-
-## Machining Specialists
-
-id: CO127
-canonical_name: Machining Specialists
-country: US
-tier_side: demand
-tier: precision_tier_supplier
-sector: Precision CNC machining (St Paul, MN)
-hmlv_relevance: "Owner C190. Chain to verify."
-linkedin_slug: ""
-source_url: https://www.linkedin.com/in/randybierwerth/
-first_added: 2026-08-25
-
-## Magellan Aerospace Limited
-
-id: CO128
-canonical_name: Magellan Aerospace Limited
-country: GB
-tier_side: demand
-tier: aerospace_supplier
-sector: Tier-1 aerostructures and aeroengine components; Wrexham UK machining site
-hmlv_relevance: "Head of Machining C172; his About leads with right-first-time quality in AS9100 CNC machining — H1A2 vocabulary verbatim."
-linkedin_slug: ""
-source_url: https://www.linkedin.com/in/jamie-bowen-ba5731205/
-first_added: 2026-08-25
-
-## Hill Country CNC Machining, LLC
-
-id: CO129
-canonical_name: Hill Country CNC Machining, LLC
-country: US
-tier_side: demand
-tier: aerospace_supplier
-sector: Veteran-owned builder of aerospace, industrial and oilfield equipment (Burlington, TX)
-hmlv_relevance: "Owner C156; company name confirmed on live profile 2026-08-25."
-linkedin_slug: ""
-source_url: https://www.linkedin.com/in/michael-j-hoiden-329a5913/
-first_added: 2026-08-25
-
-<!-- Batch: 2026-08-25 SF Bay walk-up field-observation sweep (CO130–CO145).
-     Purpose: shops the founder can physically visit to observe the at-machine
-     "last 5%"/offset process (George Bain, E5). Discovery grounded in each shop's
-     self-published pages fetched live 2026-08-25 (Phase 0.6-style; no API keys) —
-     every claim's source is the site on source_url unless noted. street_address and
-     walkup_notes fields added for this batch: field visits need a door, not a domain.
-     Certs and chain claims are the shop's own words — verify on the doorstep. -->
-
-## Standard Metal Products (SMP Machine)
-
-id: CO130
-canonical_name: Standard Metal Products
-also_known_as: [SMP Machine, Inc.]
-country: US
-tier_side: demand
-tier: precision_tier_supplier
-sector: Prototype + production CNC machining and waterjet (San Francisco, SoMa)
-chain_served: "Scientific/medical/transportation chains — self-published customers incl. NASA, Stanford Linear Accelerator, biotech and medical devices. No certs published."
-street_address: "558 Bryant St, San Francisco, CA 94107"
-makes_or_does: "Precision CNC machining and waterjet since 1993 — prototype and production for transportation, biotech, medical devices and SF startups; CNC mill/lathe, CMM inspection."
-hmlv_relevance: "Ground-floor SoMa shop, the easiest literal walk-up in SF proper; long culture of serving local inventors — good odds of watching a first-run dial-in. Hours ~8:30–4 weekdays; no ITAR barrier."
-walkup_notes: "Walk-up leg: SF on foot. Non-ITAR."
-linkedin_slug: ""
-source_url: https://smpmachine.com/
-first_added: 2026-08-25
-status: off_scope
-audit: "[off_scope 2026-08-25] Founder call: field-visit bar tightened to certified (AS9100/ITAR) suppliers with named aerospace/defense OEM-chain evidence; this shop is a generalist/prototype floor without it. Do not re-add absent new chain evidence."
-
-## San Francisco Machine Works
-
-id: CO131
-canonical_name: San Francisco Machine Works
-country: US
-tier_side: demand
-tier: precision_tier_supplier
-sector: One-man precision prototype CNC shop (San Francisco, Bayview)
-chain_served: "Medical/scientific/aerospace precision parts for UCSF and Stanford labs plus hardware startups (self-published)."
-street_address: "1258 Fitzgerald Ave, San Francisco, CA 94124"
-makes_or_does: "Quick-turn precision CNC machining — prototypes and short-run production in aluminum, steel, stainless, titanium; founded 2000 by Kyle Brutschy, ex Silicon Valley job-shop machinist."
-hmlv_relevance: "Closest possible match to 'watch one machinist take the program the last 5%' — the founder IS the machinist. Text/call ahead rather than cold walk-up. Non-ITAR."
-walkup_notes: "Walk-up leg: SF on foot. Contact page says email/text/call for a quote."
-linkedin_slug: ""
-source_url: https://www.sanfranciscomachineworks.com/
-first_added: 2026-08-25
-status: off_scope
-audit: "[off_scope 2026-08-25] Founder call: field-visit bar tightened to certified (AS9100/ITAR) aerospace/defense OEM-chain suppliers; one-man lab-prototype shop, no certs, no chain position. Do not re-add absent new chain evidence."
-
-## Production Specialties
-
-id: CO132
-canonical_name: Production Specialties
-country: US
-tier_side: demand
-tier: precision_tier_supplier
-sector: Multi-op CNC milling/turning/grinding since 1959 (San Francisco, Bayview)
-chain_served: "Aerospace, defense/military, pump & valve, oil & gas (self-published industries; no certs published — verify chain position on the doorstep)."
-street_address: "2380 Jerrold Ave, San Francisco, CA 94124"
-makes_or_does: "CNC lathes (Mori Seiki/Haas, 10–24 in swing), vertical + horizontal mills, CNC cylindrical grinding, deep-hole drilling, gear cutting — billets to castings, 15,000 sq ft."
-hmlv_relevance: "Only SF-proper shop with explicit visit-us language ('visit during normal business hours', 7:00–3:30) and the deepest multi-op floor in city limits — the closest thing to George's lathe+mill+outside-ops world inside SF."
-walkup_notes: "Walk-up leg: SF on foot. Front-office check-in expected; does defense work, no ITAR registration published."
-linkedin_slug: ""
-source_url: https://productionspecialties.net/
-first_added: 2026-08-25
-status: off_scope
-audit: "[off_scope 2026-08-25] Founder call: field-visit bar tightened to certified aerospace/defense OEM-chain suppliers; aero/defense self-listed but zero certs published and no named chain. Flip status only if certification or a named prime surfaces."
-
-## Petersen Precision Engineering
-
-id: CO133
-canonical_name: Petersen Precision Engineering, LLC
-country: US
-tier_side: demand
-tier: aerospace_supplier
-sector: 140-person precision components house — CNC, grinding, lapping, fine blanking (Redwood City)
-chain_served: "Medical, aerospace & defense, electronics, scientific instruments; ISO 9001 + AS9100 certified, ISO 13485-compliant (own wording)."
-street_address: "611 Broadway Street, Redwood City, CA 94063"
-makes_or_does: "~100 machine tools in 50,000 sq ft: 4-axis HMCs, VMCs, CNC Swiss screw machines, CNC lathes, wire EDM; prototype to volume, 2 shifts Mon–Sat."
-hmlv_relevance: "Flagship Peninsula visit — publishes guest hours (7:00–3:30 weekdays), the strongest explicit visitor accommodation found; certified tier position across three chains."
-walkup_notes: "Walk-up leg: Caltrain corridor (~0.7 mi from Redwood City station)."
-linkedin_slug: ""
-source_url: https://www.petersenprecision.com/
-first_added: 2026-08-25
-
-## R.M. Machining
-
-id: CO134
-canonical_name: R.M. Machining, Inc.
-country: US
-tier_side: demand
-tier: aerospace_supplier
-sector: Woman-owned precision CNC job work, R&D + production (San Carlos)
-chain_served: "Aerospace, defense, communications, medical; ISO 9001 + AS9100, ITAR registered."
-street_address: "950 Terminal Way, San Carlos, CA 94070"
-makes_or_does: "Custom precision CNC milling to 4th axis (18x14x8 in envelope) and CNC turning 1/2–10 in OD, since 1983."
-hmlv_relevance: "Terminal Way machining corridor — faces PerFormex (CO135), two doorsteps in one stop. ITAR: expect no casual floor access; office M–F 9:00–4:30."
-walkup_notes: "Walk-up leg: Caltrain corridor (~1 mi from San Carlos station). ITAR flag."
-linkedin_slug: ""
-source_url: https://www.rm-machining.com/
-first_added: 2026-08-25
-
-## PerFormex Machining
-
-id: CO135
-canonical_name: PerFormex Machining, Inc.
-country: US
-tier_side: demand
-tier: aerospace_supplier
-sector: Close-tolerance (.0001 in) machining for microwave/radar/avionics since 1977 (San Carlos)
-chain_served: "Microwave tube industry, radar guidance, aerospace/avionics, semiconductor, medical; ISO 9001, ITAR registered."
-street_address: "963 Terminal Way, San Carlos, CA 94070"
-makes_or_does: "28 CNC lathes and mills in 14,000 sq ft; tolerances to .0001 in for the most demanding industry segments."
-hmlv_relevance: "Across the street from R.M. Machining (CO134). Exactly the high-consequence tolerance band where the last 5% decides scrap. ITAR: no casual floor access; M–F 8:00–4:30."
-walkup_notes: "Walk-up leg: Caltrain corridor. ITAR flag."
-linkedin_slug: ""
-source_url: https://www.performexmachining.com/
-first_added: 2026-08-25
-
-## American Prototype & Production
-
-id: CO136
-canonical_name: American Prototype & Production, Inc.
-country: US
-tier_side: demand
-tier: semicap_supplier
-sector: CNC milling/turning for science and industry since 1989 (San Carlos)
-chain_served: "25+ years in semiconductor capital equipment plus medical-device and biotech startups (self-published; no certs published)."
-street_address: "555 Bragato Road, San Carlos, CA 94070"
-makes_or_does: "CNC milling & turning, short run to production, 'Start-Ups and R&D to Fortune 500'; also laser cutting/engraving."
-hmlv_relevance: "Most likely Peninsula floor to actually watch a first-run dial-in: no ITAR, startup-prototype DNA, walkable from the Terminal Way pair in one Caltrain loop."
-walkup_notes: "Walk-up leg: Caltrain corridor (~0.8 mi from station). Non-ITAR."
-linkedin_slug: ""
-source_url: https://www.americanprototype.com/
-first_added: 2026-08-25
-status: off_scope
-audit: "[off_scope 2026-08-25] Founder call: field-visit bar tightened to certified aerospace/defense OEM-chain suppliers; no certs published, semicap/startup prototype profile. Do not re-add absent new chain evidence."
-
-## Rapid Axis
-
-id: CO137
-canonical_name: Rapid Axis
-country: US
-tier_side: demand
-tier: aerospace_supplier
-sector: 3/4/5-axis CNC machining + sheet metal/DMLS, hybrid in-house/partner model (Redwood City)
-chain_served: "Aerospace & defense, semiconductor/electronics, medical, robotics; ISO 9001, ITAR; named clients NASA, Collins Aerospace, Rivian, ThermoFisher (self-published)."
-street_address: "1482 Oddstad Dr., Redwood City, CA 94063"
-makes_or_does: "Full 3/4/5-axis CNC machining in-house at Redwood City plus 'carefully selected partners' — drawing to quote in one business day."
-hmlv_relevance: "CAVEAT: hybrid shop/broker mix — phone-verify the machining floor is at Oddstad Dr before visiting. ITAR: no casual floor access."
-walkup_notes: "Walk-up leg: Caltrain corridor (Seaport area, Redwood City). ITAR flag; verify floor first."
-linkedin_slug: ""
-source_url: https://www.rapidaxis.com/
-first_added: 2026-08-25
-
-## Glint Manufacturing
-
-id: CO138
-canonical_name: Glint Manufacturing LLC
-country: US
-tier_side: demand
-tier: precision_tier_supplier
-sector: Young precision CNC + fabrication shop, est. 2021 (West Oakland)
-chain_served: "Research labs and AV/robotics — self-published client logos incl. Berkeley Lab (LBNL), Sandia, JBEI, Waymo; ISO 9001 per directory listing (CAGE 11YX7)."
-street_address: "2821 Union St, Oakland, CA 94608"
-makes_or_does: "Precision CNC milling/turning, manual machining, 12kW fiber laser, design assistance and reverse engineering — single parts to volume."
-hmlv_relevance: "Small young shop, easy to reach the owner directly — good doorstep odds; national-lab one-off work is HMLV by definition. Non-ITAR."
-walkup_notes: "Walk-up leg: East Bay. West Oakland industrial block."
-linkedin_slug: ""
-source_url: https://glintmfg.com/
-first_added: 2026-08-25
-status: off_scope
-audit: "[off_scope 2026-08-25] Founder call: field-visit bar tightened to certified aerospace/defense OEM-chain suppliers; young lab/AV shop, no aerospace chain. Do not re-add absent new chain evidence."
-
-## KAD Models & Prototypes
-
-id: CO139
-canonical_name: KAD Models & Prototypes, Inc.
-country: US
-tier_side: demand
-tier: precision_tier_supplier
-sector: 7-person prototype machine shop, founded 2011 (Alameda)
-chain_served: "Medical (Medtronic), biotech (Bio-Rad), consumer/tech (Tesla, Google, Square) and aerospace/defense prototypes; ISO certified + ITAR registered (own blog)."
-street_address: "1750 Clement Avenue, Alameda, CA 94501"
-makes_or_does: "Prototype precision CNC machining plus quick-turn molding/casting, prototype through production; titanium/Inconel/magnesium, parts to 128 in."
-hmlv_relevance: "Very approachable prototype culture (~7 people, shop dogs); most work commercial so ITAR only walls off the defense jobs. Hours M–F 8am–7pm."
-walkup_notes: "Walk-up leg: East Bay. Near Park St, Alameda. Partial ITAR flag (defense jobs only)."
-linkedin_slug: ""
-source_url: https://kadmodels.com/
-first_added: 2026-08-25
-status: off_scope
-audit: "[off_scope 2026-08-25] Founder call: field-visit bar tightened to certified aerospace/defense OEM-chain production suppliers; ITAR-registered but a 7-person models/prototype shop, not an OEM production tier. Do not re-add absent new chain evidence."
-
-## Hawk CNC
-
-id: CO140
-canonical_name: Hawk CNC
-country: US
-tier_side: demand
-tier: precision_tier_supplier
-sector: Veteran-owned boutique 5-axis prototype shop (Oakland, Fruitvale)
-chain_served: "Aerospace, automation, automotive, medical, technology (self-published; no certs published)."
-street_address: "4210 East 12th St, Oakland, CA 94601"
-makes_or_does: "Multi-axis precision machining and rapid prototyping — Haas UMC-750 5-axis, Fadal 6030 3-axis — with no minimum order, design-to-manufacturing."
-hmlv_relevance: "Best visit-odds on the East Bay list: explicitly welcomes single-prototype orders and direct phone contact, near Fruitvale BART. A 5-axis first run on a UMC-750 is precisely the last-5% scene. Non-ITAR."
-walkup_notes: "Walk-up leg: East Bay. Fruitvale industrial strip, near BART."
-linkedin_slug: ""
-source_url: https://www.hawk-cnc.com/
-first_added: 2026-08-25
-status: off_scope
-audit: "[off_scope 2026-08-25] Founder call: field-visit bar tightened to certified aerospace/defense OEM-chain suppliers; boutique prototype shop, no certs, no named chain. Do not re-add absent new chain evidence."
-
-## Edward Köehn Co.
-
-id: CO141
-canonical_name: Edward Köehn Co., Inc.
-country: US
-tier_side: demand
-tier: precision_tier_supplier
-sector: Precision-turned components — Swiss CNC + screw machining since 1943 (West Berkeley)
-chain_served: "Biomedical, industrial, electrical, energy; ISO 9001."
-street_address: "820 Folger Avenue, Berkeley, CA 94710"
-makes_or_does: "Swiss CNC turning, CNC turning/milling, Brown & Sharpe screw machining and second ops; family-owned, third generation, own building since 1943."
-hmlv_relevance: "The turning-side counterpart: 'dial in a first run' here means Swiss lathe setup — the offset story on the lathe side of George's lathe+mill world. Non-ITAR."
-walkup_notes: "Walk-up leg: East Bay. West Berkeley industrial."
-linkedin_slug: ""
-source_url: https://ekmfg.com/
-first_added: 2026-08-25
-status: off_scope
-audit: "[off_scope 2026-08-25] Founder call: field-visit bar tightened to certified aerospace/defense OEM-chain suppliers; turned-parts house serving biomedical/industrial, no aerospace chain. Do not re-add absent new chain evidence."
-
-## M.A.R.'s Engineering
-
-id: CO142
-canonical_name: M.A.R.'s Engineering Company, Inc.
-country: US
-tier_side: demand
-tier: aerospace_supplier
-sector: AS9100 precision CNC + screw machining production house (San Leandro)
-chain_served: "Aerospace, defense, medical devices, electronics; ISO 9001 + AS9100."
-street_address: "699 Montague Avenue, San Leandro, CA 94577"
-makes_or_does: "Precision CNC milling/turning, single/multi-spindle screw machining, centerless grinding, waterjet, EDM and finishing for Bay Area OEMs and startups."
-hmlv_relevance: "Certified aerospace production floor — more volume-oriented than the prototype shops, useful contrast case for whether prove-out pain scales with production maturity."
-walkup_notes: "Walk-up leg: East Bay. San Leandro industrial zone near Davis St. Non-ITAR (none published)."
-linkedin_slug: ""
-source_url: https://www.marseng.com/
-first_added: 2026-08-25
-
-## Tridecs
-
-id: CO143
-canonical_name: Tridecs Corporation
-country: US
-tier_side: demand
-tier: precision_tier_supplier
-sector: Family-owned tight-tolerance CNC shop since 1969 (Hayward)
-chain_served: "Aerospace, defense, medical, industrial (self-published; ISO 9001:2015-based QMS, certification not claimed)."
-street_address: "3513 Arden Road, Hayward, CA 94545"
-makes_or_does: "Complex prototype + production parts to ±0.0002 in: 18 VMCs, 5 HMCs (Makino/Hyundai), full 5-axis (YCM NFX400), 5 live-tool CNC lathes, in-house CMM; aluminum to titanium and PEEK."
-hmlv_relevance: "Deepest multi-op machine roster on the list — exactly the environment for watching a first-run dial-in across mill AND lathe; family-owned, own 15,000 sq ft building. Non-ITAR."
-walkup_notes: "Walk-up leg: East Bay. Hayward industrial park."
-linkedin_slug: ""
-source_url: https://www.tridecs.com/
-first_added: 2026-08-25
-status: off_scope
-audit: "[off_scope 2026-08-25] Founder call: field-visit bar tightened to CERTIFIED aerospace/defense OEM-chain suppliers; strong floor but QMS is 'ISO 9001-based', not certified, and aero/defense is self-listed with no named prime. Closest borderline of the culls — flip on cert or named-prime evidence."
-
-## JAVA Machining
-
-id: CO144
-canonical_name: JAVA Machining LLC
-country: US
-tier_side: demand
-tier: precision_tier_supplier
-sector: Automation-forward precision CNC shop (Hayward)
-chain_served: "Drones/autonomy, aerospace & defense, semiconductor & high-tech; ISO 9001 (ITAR 'available upon contract requirement'; CAGE 184B8)."
-street_address: "24167 Clawiter Rd., Hayward, CA 94545"
-makes_or_does: "Prototype, short-run and production tight-tolerance parts — Okuma MH4000 4-axis HMC with 6-pallet pool, Haas UMC 5-axis with robotic pallet loader."
-hmlv_relevance: "Automation-forward small shop: the interesting question on this floor is what the robots DIDN'T remove — who still enters the offsets. Not currently ITAR-registered, floor access negotiable."
-walkup_notes: "Walk-up leg: East Bay. Clawiter Rd corridor, Hayward."
-linkedin_slug: ""
-source_url: https://javamachining.com/
-first_added: 2026-08-25
-status: off_scope
-audit: "[off_scope 2026-08-25] Founder call: field-visit bar tightened to certified aerospace/defense OEM-chain suppliers; ISO only (ITAR 'available upon requirement'), no named prime. Do not re-add absent new chain evidence."
-
-## IMT Precision
-
-id: CO145
-canonical_name: IMT Precision
-country: US
-tier_side: demand
-tier: semicap_supplier
-sector: Large-format CNC machining + UHV chamber fabrication, 30+ years (Hayward)
-chain_served: "National labs & research, semiconductor, aerospace & defense, space systems; ISO 9001 + ITAR."
-street_address: "31902 Hayman Street, Hayward, CA 94544"
-makes_or_does: "Multi-axis CNC milling/turning/boring to a 200x135x42 in envelope, UHV chamber fabrication, assembly/integration, metrology; 10-ton crane."
-hmlv_relevance: "One-off giant parts for labs and semicap — the extreme end of never-made-before. ITAR-registered: expect controlled access, least casual visit on the list; likely needs an arranged tour."
-walkup_notes: "Walk-up leg: East Bay (far Hayward). ITAR flag — arrange ahead."
-linkedin_slug: ""
-source_url: https://imtp.com/
-first_added: 2026-08-25
-
----
-
-## Startup scene — provenance
-
-The 15 entries `CO146`-`CO160` are the **startup / supply side** of this idea: the companies
-selling into, or automating around, the same manufacturing jobs the demand-side registry buys.
-They were added 2026-08-27 and every name is repo-grounded — none was invented for the map:
-
-- **Named by the interviewed shop owner on 2026-08-25** (`03-validation/H1A2-2026-08-25/`):
-  Paperless Parts, CloudNC, Toolpath, Normark, Xometry, Harmoni (the estimating and shop-data
-  vendor landscape he tracks); Anduril, Hadrian, SendCutSend, OSH Cut (the ones "getting
-  there" on automated production).
-- **Named by the founder in the same thread:** Isembard, as the greenfield contrast case.
-- **Named in the evidence ledger and assumption graph:** CGTech/VERICUT (`graph.md` H1A2
-  corpus C1, prove-out scope map), CAMplete (`E7`, `E8`), Hexagon ESPRIT (`E7`), Autodesk
-  Fusion CAM (contacts ledger, logged as competitor-side intelligence).
-
-Funding and stage figures were researched on 2026-08-27 from public press and aggregators;
-each entry carries `funding_source` so an aggregator number never reads as a filing. Where no
-public figure exists the field is blank with `funding_source: unknown` and the entry says so —
-no estimate is derived.
-
-`liability_taken` is the axis that carries the belief. Read the map by that column: if the
-`owns_outcome` lane holds only companies that own their own factory, and every `software_only`
-entry is `none`, that is the belief's claim rendered — nobody sells a tool into the prove-out
-job while carrying the first-run risk.
-
----
 
 ## CloudNC
 
@@ -3292,6 +900,7 @@ sources: >
 first_added: 2026-08-27
 status: mapped
 
+
 ## Toolpath
 
 id: CO147
@@ -3343,6 +952,7 @@ sources: >
 first_added: 2026-08-27
 status: mapped
 
+
 ## Paperless Parts
 
 id: CO148
@@ -3392,6 +1002,7 @@ sources: >
   clay.com/dossier/paperless-parts-funding
 first_added: 2026-08-27
 status: mapped
+
 
 ## Xometry
 
@@ -3448,6 +1059,7 @@ sources: >
 first_added: 2026-08-27
 status: mapped
 
+
 ## Hadrian
 
 id: CO150
@@ -3501,6 +1113,7 @@ sources: >
   tracxn.com/d/companies/hadrian · interview 2026-08-25
 first_added: 2026-08-27
 status: mapped
+
 
 ## SendCutSend
 
@@ -3558,6 +1171,7 @@ sources: >
 first_added: 2026-08-27
 status: mapped
 
+
 ## OSH Cut
 
 id: CO152
@@ -3610,6 +1224,7 @@ sources: >
 first_added: 2026-08-27
 status: mapped
 
+
 ## Isembard
 
 id: CO153
@@ -3660,6 +1275,7 @@ sources: >
   isembard.com/blogs-and-articles/reshoring-the-future-of-manufacturing · interview 2026-08-25
 first_added: 2026-08-27
 status: mapped
+
 
 ## Anduril Industries
 
@@ -3715,6 +1331,7 @@ sources: >
 first_added: 2026-08-27
 status: mapped
 
+
 ## Harmoni
 
 id: CO155
@@ -3769,6 +1386,7 @@ sources: >
 first_added: 2026-08-27
 status: mapped
 
+
 ## Normark
 
 id: CO156
@@ -3808,216 +1426,6 @@ sources: >
 first_added: 2026-08-27
 status: unresolved
 
-## CGTech (VERICUT)
-
-id: CO157
-map: none
-map_excluded_because: >
-  Sandvik subsidiary since 2020, not a startup. Founder call 2026-08-27: the startup map is for startups, not incumbents. Retained in the registry because VERICUT is the incumbent sitting directly in the prove-out job and graph.md H1A2 cites the corpus evidence about it — the competitive fact is preserved, the map entry is not.
-canonical_name: CGTech, Inc.
-also_known_as: [CGTech, VERICUT, Vericut]
-country: US
-tier_side: supply
-tier: ""
-sector: NC simulation, verification and optimization software
-job_covered: program_verification
-integration: software_only
-sells_to: shop
-liability_taken: none
-touches_proveout: direct
-stage: incumbent_subsidiary
-funding_source: filing
-founded: 1988
-headcount: ""
-headcount_source: ""
-headcount_note: "No specific figure published. LinkedIn bands CGTech at 201-500; the midpoint would be an invented number, so nothing is recorded. Now a Sandvik subsidiary, so a standalone payroll count may no longer exist."
-services:
-  - "VERICUT NC program simulation"
-  - "VERICUT collision, gouge and overtravel verification"
-  - "VERICUT Force feed-rate optimization"
-  - "Grinder-dressing and additive simulation modules"
-  - "Machine, control and fixture modelling"
-  - "CAM-, control- and toolmaker-neutral post verification"
-makes_or_does: >
-  VERICUT — the reference NC simulation and verification product: simulates posted G-code
-  against a model of the actual machine, control and fixture to catch collisions, gouges and
-  overtravel before the program reaches the floor. CAM-, control- and toolmaker-neutral.
-  Irvine, CA. Acquired by Sandvik in 2020, reported within Sandvik Coromant.
-funding_notes: >
-  Not venture funded. Wholly owned by Sandvik AB since the 2020 acquisition; terms not broken
-  out in Sandvik reporting.
-hmlv_relevance: >
-  The incumbent sitting directly in the prove-out job, and therefore the sharpest test of H1.
-  It appears in the corpus twice and neither appearance is a success story: shops run the sim
-  AND still run the prove-out ritual, and a shop in the corpus paid for the Force pack five
-  years without confidence it earned its keep. If verification software solved first runs,
-  H1A2 would already be dead. On the map to be argued with, not ignored.
-liability_notes: >
-  None. The licence disclaims outcome, and the product copy for an adjacent module concedes
-  "collisions are a possibility". A program that passes VERICUT still gets proven out slowly —
-  which is literally the founder's own outreach opener.
-source_url: https://vericut.com/
-sources: >
-  home.sandvik 2020 acquisition release · schnitgercorp.com/2020/10/20 · vericut.com ·
-  graph.md H1A2 corpus C1 · 01-ideation/recon/2026-08-20/prove-out-scope-map.md
-first_added: 2026-08-27
-status: mapped
-
-## CAMplete Solutions
-
-id: CO158
-map: none
-map_excluded_because: >
-  Autodesk subsidiary since Oct 2020, not a startup. Founder call 2026-08-27, naming this entry specifically. Retained in the registry because evidence E7 and E8 cite CAMplete by name as the tool a space-hardware shop credits for faster prove-outs — deleting the entry would orphan those citations.
-canonical_name: CAMplete Solutions Inc.
-also_known_as: [CAMplete, CAMplete TruePath, Camplete]
-country: CA
-tier_side: supply
-tier: ""
-sector: 5-axis post-processing and G-code verification software
-job_covered: program_verification
-integration: software_only
-sells_to: machine_builder
-liability_taken: none
-touches_proveout: direct
-stage: incumbent_subsidiary
-funding_source: filing
-headcount: ""
-headcount_source: ""
-headcount_note: "CONFLICTED and probably meaningless: PitchBook 5, RocketReach 2, LinkedIn band 11-50. Acquired by Autodesk in Oct 2020, so the team is absorbed and no standalone count is credible. Nothing recorded."
-services:
-  - "CAMplete TruePath 5-axis post-processing"
-  - "CAMplete TurnMill multitasking post-processing"
-  - "Full G-code verification in a machine-specific 3D model"
-  - "Machine-specific post processors bundled with the machine tool"
-makes_or_does: >
-  CAMplete TruePath — posts and simulates 5-axis and multitasking toolpaths in a dedicated 3D
-  model of the specific machine, bridging any major CAM system to the machine tool. Ontario,
-  Canada. Distributed with the machine: standard on all Matsuura 5-axis, partnered with Doosan
-  Machine Tools America, Phillips Federal and the Haas F1 Team. Acquired by Autodesk
-  (announced 2021), now sold as "Autodesk Fusion with CAMplete".
-funding_notes: >
-  Not venture funded. Wholly owned by Autodesk; terms undisclosed. No founding year is
-  recorded — none was verified, and an estimate here would read as a fact.
-hmlv_relevance: >
-  The strongest counter-evidence on the map, and it comes from this idea's own ledger. E7 and
-  E8: a space-hardware OEM's in-house shop runs Esprit for CAM and CAMplete for machine
-  simulation, and its manager says "our prove outs are much faster thanks to Camplete." E8 is
-  graded AMBIGUOUS for good reason — much faster than an unstated baseline, no figure, no
-  residual step named — but any H1 pitch has to answer it. Note also `sells_to:
-  machine_builder`: distribution through Matsuura and Doosan is a route to the shop that none
-  of the venture-backed software entries on this map have.
-liability_notes: >
-  None. Simulation licence bundled with the machine; the machinist still signs the first run.
-source_url: https://camplete.com/
-sources: >
-  autodesk.com/products/camplete/overview · matsuurausa.com/camplete-simulation-matsuura ·
-  ctemag.com Doosan partnership · phillipscorp.com/federal · evidence.md E7, E8
-first_added: 2026-08-27
-status: mapped
-
-## Hexagon (ESPRIT CAM)
-
-id: CO159
-map: none
-map_excluded_because: >
-  Public incumbent (Nasdaq Stockholm: HEXA B), 24,768 people group-wide. Not a startup. Founder call 2026-08-27. Retained because E7 names ESPRIT as the CAM half of that same shop's stack.
-canonical_name: Hexagon AB — Manufacturing Intelligence division
-also_known_as: [Hexagon, ESPRIT, ESPRIT EDGE, Esprit, D.P. Technology]
-country: SE
-tier_side: supply
-tier: ""
-sector: CAM software and metrology (public incumbent)
-job_covered: cam_programming
-integration: software_only
-sells_to: shop
-liability_taken: none
-touches_proveout: adjacent
-stage: public
-funding_source: filing
-headcount: 5924
-headcount_source: "Manufacturing Intelligence division, Dec 2025"
-headcount_note: "Division-level, not group: Hexagon AB as a whole is 24,768 (Dec 2025). An earlier 7,500 figure for the division circulates from 2023. The division number is the relevant one — ESPRIT sits inside it."
-services:
-  - "ESPRIT EDGE CAM for milling"
-  - "ESPRIT CAM for turning and mill-turn"
-  - "ESPRIT CAM for Swiss and wire EDM"
-  - "Metrology and inspection hardware"
-  - "Digital-twin and AI machining tooling"
-makes_or_does: >
-  ESPRIT / ESPRIT EDGE — CAM programming for mill, turn, mill-turn, Swiss and wire EDM,
-  originally D.P. Technology, acquired by Hexagon. Sits inside Hexagon's Manufacturing
-  Intelligence division alongside its metrology and inspection hardware, which is the part of
-  the portfolio that closes the loop back from the measured part.
-funding_notes: >
-  Public (Nasdaq Stockholm: HEXA B). Manufacturing Intelligence division revenue EUR 433M in
-  Q1 2026, +9% organic, 23.7% operating margin, aerospace and defense strong. Division-level
-  only — no separate ESPRIT figure is published, so none is recorded.
-hmlv_relevance: >
-  The CAM half of the same E7 shop that runs CAMplete: "we use Esprit for cam and Camplete for
-  machine simulation." Worth watching for the one thing no pure-software startup on this map
-  can copy — Hexagon owns CAM, simulation-adjacent tooling AND the metrology that measures the
-  finished part, so it is the incumbent best positioned to close a program-to-measurement loop
-  if it decides to.
-liability_notes: >
-  None. Perpetual or subscription CAM licence.
-source_url: https://hexagon.com/products/product-groups/computer-aided-manufacturing-cad-cam-software/esprit-about-us
-sources: >
-  hexagon.com/company/divisions/manufacturing-intelligence · Hexagon Q1 2026 report ·
-  Hexagon year-end report 2025 (api.alertir.com) · wfmz.com D.P. Technology acquisition ·
-  evidence.md E7
-first_added: 2026-08-27
-status: mapped
-
-## Autodesk (Fusion CAM)
-
-id: CO160
-map: none
-map_excluded_because: >
-  Public incumbent (NASDAQ: ADSK), 14,716 people. Not a startup — and it is the parent of CAMplete and a CloudNC investor, which is exactly the platform position that disqualifies it from a startup map. Founder call 2026-08-27.
-canonical_name: Autodesk, Inc.
-also_known_as: [Autodesk, Fusion, Fusion 360, Autodesk Advanced Manufacturing]
-country: US
-tier_side: supply
-tier: ""
-sector: CAD/CAM platform (public incumbent)
-job_covered: cam_programming
-integration: software_only
-sells_to: shop
-liability_taken: none
-touches_proveout: adjacent
-stage: public
-funding_source: filing
-founded: 1982
-headcount: 14716
-headcount_source: "Autodesk Inc. company-wide, Mar 2026"
-headcount_note: "Company-wide, not the CAM line. FY2026 reporting gives 14,300; Revelio 14,716 (Mar 2026). No Advanced Manufacturing headcount is broken out."
-services:
-  - "Fusion CAD/CAM seat"
-  - "Fusion integrated CAM for milling and turning"
-  - "Autodesk Fusion with CAMplete (5-axis post and verification)"
-  - "Host platform for third-party CAM add-ins including CloudNC CAM Assist"
-makes_or_does: >
-  Fusion with integrated CAM — the volume CAD/CAM seat in small and mid shops. Autodesk
-  Advanced Manufacturing also owns CAMplete (acquired 2021), and Autodesk led CloudNC's $45M
-  Series B, so it is simultaneously the platform, the owner of a verification layer, and an
-  investor in the AI-CAM challenger.
-funding_notes: >
-  Public (NASDAQ: ADSK). No CAM-specific revenue is broken out, so none is recorded.
-hmlv_relevance: >
-  The platform every other software entry on this map either plugs into (CloudNC's CAM Assist
-  is a Fusion add-in), is owned by (CAMplete), or competes with. That triple position is the
-  distribution risk for H1: whatever gets built for the prove-out job either rides Autodesk's
-  seat or has to reach the machinist some other way. The founder also has a contact inside
-  Autodesk Research on the contacts ledger, logged as competitor-side intelligence.
-liability_notes: >
-  None.
-source_url: https://www.autodesk.com/products/fusion-360/
-sources: >
-  autodesk.com/products/camplete/overview · cloudnc.com Series B release ·
-  outreach/contacts.md (Autodesk Research contact card)
-first_added: 2026-08-27
-status: mapped
 
 ## VulcanForms
 
@@ -4084,6 +1492,7 @@ sources: >
   reveliolabs.com/companies/vulcanforms/employees · metal-am.com $355M / 150-laser facility
 first_added: 2026-08-27
 status: mapped
+
 
 ## Bright Machines
 
@@ -4163,6 +1572,7 @@ sources: >
   techcrunch.com 2018-10-23 ($179M out of stealth) · caplight.com (Oct 2022 valuation)
 first_added: 2026-08-27
 status: mapped
+
 
 ## Atomic Industries
 
@@ -4267,6 +1677,7 @@ sources: >
   plasticsnews.com "Atomic adds AI to the mold making process"
 first_added: 2026-08-27
 status: mapped
+
 
 ## Senra Systems
 
@@ -4390,6 +1801,7 @@ sources: >
 first_added: 2026-08-27
 status: mapped
 
+
 ## Tensr
 
 id: CO165
@@ -4505,9 +1917,10 @@ first_added: 2026-08-28
 status: mapped
 
 
+
 ## Stoneside Blinds & Shades
 
-id: CO173
+id: CO179
 map: client
 canonical_name: Stoneside Blinds & Shades
 also_known_as: [Stoneside]
@@ -4550,11 +1963,16 @@ liability_notes: >
   none the moment the customer self-measures, which they state explicitly.
 known_contacts: [E7, E9, E11]
 first_added: 2026-09-04
+id_note: >
+  Allocated CO173 on 2026-09-04 against a stale next-free number; that id
+  was already held by a trade-software entry. Renumbered to CO179 on 2026-09-04.
+  Nothing outside this file cited the colliding id, so no citation was orphaned.
 status: mapped
+
 
 ## Art Shade Shop
 
-id: CO174
+id: CO180
 map: client
 canonical_name: Art Shade Shop
 also_known_as: []
@@ -4593,11 +2011,16 @@ liability_notes: >
   Not established. Graded warranty as the trade default and flagged rather than assumed.
 known_contacts: [E9]
 first_added: 2026-09-04
+id_note: >
+  Allocated CO174 on 2026-09-04 against a stale next-free number; that id
+  was already held by a trade-software entry. Renumbered to CO180 on 2026-09-04.
+  Nothing outside this file cited the colliding id, so no citation was orphaned.
 status: mapped
+
 
 ## Susan Lind Chastain Inc.
 
-id: CO175
+id: CO181
 map: client
 canonical_name: Susan Lind Chastain Inc.
 also_known_as: [Susan Lind Chastain, SLC2]
@@ -4642,11 +2065,16 @@ liability_notes: >
   unestablished and is the question worth asking them.
 known_contacts: [E9]
 first_added: 2026-09-04
+id_note: >
+  Allocated CO175 on 2026-09-04 against a stale next-free number; that id
+  was already held by a trade-software entry. Renumbered to CO181 on 2026-09-04.
+  Nothing outside this file cited the colliding id, so no citation was orphaned.
 status: mapped
+
 
 ## Blinds.com
 
-id: CO176
+id: CO182
 map: client
 canonical_name: Global Custom Commerce, Inc.
 also_known_as: [Blinds.com, "Blinds.com, a Home Depot company"]
@@ -4692,11 +2120,16 @@ liability_notes: >
   measurement error. Evidenced in the founder's appointment and on the public product pages.
 known_contacts: [E15, E16, E17]
 first_added: 2026-09-04
+id_note: >
+  Allocated CO176 on 2026-09-04 against a stale next-free number; that id
+  was already held by a trade-software entry. Renumbered to CO182 on 2026-09-04.
+  Nothing outside this file cited the colliding id, so no citation was orphaned.
 status: mapped
+
 
 ## Unidentified national blinds retailer ($225 visit)
 
-id: CO177
+id: CO183
 map: client
 canonical_name: ""
 also_known_as: ["the national blinds guys"]
@@ -4734,4 +2167,8 @@ liability_notes: >
   Not established.
 known_contacts: [E8]
 first_added: 2026-09-04
+id_note: >
+  Allocated CO177 on 2026-09-04 against a stale next-free number; that id
+  was already held by a trade-software entry. Renumbered to CO183 on 2026-09-04.
+  Nothing outside this file cited the colliding id, so no citation was orphaned.
 status: unidentified

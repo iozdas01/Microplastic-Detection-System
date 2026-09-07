@@ -357,10 +357,17 @@ SIGNAL_ORDER = ["post_engagement", "comment_signal", "job_posting", "profile_fit
 # A completed call is `interviewed`, and a sent message is `msg{N}_sent`. Both were
 # once missing from these sets, so the one interview that actually happened counted
 # as neither contacted, replied nor booked. Any msg{N}_sent counts as contacted.
+#
+# `accepted` is NOT contacted. A first invite carries no note (copy-rules LR-B29), so
+# an accepted connection request is an opened door, not a message — the Msg 1 that
+# follows lands as `msg1_sent`. Counting it here put nine people who had never been
+# written to into the reply-rate denominator and turned 1 reply from 1 real message
+# into a 10% reply rate. They still count as `outreach_started`, which is labelled
+# "messaged or invited" and is true of them.
 CONTACTED_STATUSES = {
-    "accepted", "replied", "scheduled", "done", "no_reply", "declined", "interviewed",
+    "replied", "scheduled", "done", "no_reply", "declined", "interviewed",
 }
-OUTREACH_STARTED_STATUSES = CONTACTED_STATUSES | {"invited"}
+OUTREACH_STARTED_STATUSES = CONTACTED_STATUSES | {"invited", "accepted"}
 REPLIED_STATUSES = {"replied", "scheduled", "done", "interviewed"}
 SCHEDULED_STATUSES = {"scheduled", "done", "interviewed"}
 CALL_PROGRESS_STAGES = {"offered_by_contact", "asked_by_founder", "scheduled", "completed"}

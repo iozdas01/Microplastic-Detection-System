@@ -1,9 +1,9 @@
 ---
 purpose: The contact ledger for this idea — one record per person approached, their signal, and where the conversation got to.
 idea: high-mix-manufacturing
-last_updated: 2026-09-04
+last_updated: 2026-09-05
 totals:
-  targeted: 94
+  targeted: 95
   invited: 65
   accepted: 9
   scheduled: 0
@@ -83,7 +83,7 @@ role_pts: 2
 tier: manufacturing_operations
 size_band: 
 
-assumptions_tested: [H2A1, H2A2, H2A3]
+assumptions_tested: [H0A1]
 validation_rationale: >
   Liaison engineering IS the unavailable-or-nonconforming-part function on an aircraft build — when a part is missing, late, or out of spec, he is the person who decides what happens next. He can describe blocked-part events from direct daily experience (H2A1), name who signs off a non-OEM substitution in the most compliance-heavy environment there is (H2A2), and say whether anyone ever went out to a machine shop (H2A3).
 
@@ -96,10 +96,10 @@ mutuals_count:
 active_last_30d: unknown
 open_to_work: false
 
-close_variant:
+close_variant: soft_ask
 relationship_type: operator_buyer
-outreach_status: held
-message_stage:
+outreach_status: msg1_sent
+message_stage: msg1_sent
 call_stage: none
 found_date: 2026-09-02
 invited_date:
@@ -112,8 +112,7 @@ interviews: []
 evidence_score:
 outcome_modifier:
 prior_contact_status: pending
-notes: "[msg1 drafted 2026-09-02] soft_ask. Live snapshot: Boeing since Jan 2026 (9 mos), prior Pratt & Whitney 2y8m, Georgia Tech. Copy at outreach/copy/H2A1-linkedin.md. [H3 hold 2026-09-03] Sourced against H1/H2 ICPs. H3 (made-to-measure window coverings) is the active hunch and this contact does not validate it. NOT off_scope: their ICP fit for their own assumption is intact, and H1/H2 are superseded un-falsified, so this reverses in one pass if either lane is revived."
-
+notes: "[live snapshot 2026-09-05] VERIFIED: Liaison Engineer, Boeing, Everett WA, since Jan 2026 (9 mos). Prior Pratt & Whitney 2y8m - Structures Engineer, Design Engineer, Project Engineer. Georgia Tech. 26 mutual connections. No recent posts, so no post_engagement hook exists. Card was already accurate. [audit H0A1 keep 2026-09-05] Liaison engineering IS per-instance disposition - when a part reaches the floor wrong, he engineers the fix. That is H0A1's failure event seen from the point where it costs hours. Aerospace build rates are low, so the high-volume exclusion does not apply. Re-screened against the H0A1 ICP declared 2026-09-05; status held -> pending so copy can be drafted. Prior H2 assumption links replaced. [msg1 drafted 2026-09-02] soft_ask. Live snapshot: Boeing since Jan 2026 (9 mos), prior Pratt & Whitney 2y8m, Georgia Tech. Copy at outreach/copy/H2A1-linkedin.md. [H3 hold 2026-09-03] Sourced against H1/H2 ICPs. H3 (made-to-measure window coverings) is the active hunch and this contact does not validate it. NOT off_scope: their ICP fit for their own assumption is intact, and H1/H2 are superseded un-falsified, so this reverses in one pass if either lane is revived. [msg1 drafted 2026-09-05, MCP framing] Founder-set anchor: what he is building, with the Cambridge work as provenance rather than as the subject. Live profile re-read 2026-09-05 (LR-B6). Copy at outreach/copy/H1-H2-linkedin.md. UNSENT and NOT to be sent by Claude. Live-verified 2026-09-05, card already correct. [msg1 sent 2026-09-05 18:44] Sent by the founder by hand, and REWORDED: he replaced the frame with his own, "I am currently researching the real2sim gap in CNC's", which names the gap concretely instead of pointing at it. That rewrite is what exposed the dangling-referent defect in the drafted version. No reply yet."
 ## Matthew Cliffe
 
 id: C2
@@ -147,7 +146,7 @@ mutuals_count:
 active_last_30d: unknown
 open_to_work: false
 
-close_variant:
+close_variant: 
 relationship_type: operator_buyer
 outreach_status: held
 message_stage:
@@ -163,15 +162,14 @@ interviews: []
 evidence_score:
 outcome_modifier:
 prior_contact_status: replied
-notes: "Prior exchange in the archive: he replied 2026-07-15. Open with continuity, not a cold intro. [not drafted 2026-09-02] LR-B25: thread exists and THEY REPLIED (2026-07-15). Msg 1 is the wrong shape — route to /startup-outreach-reply. [H3 hold 2026-09-03] Sourced against H1/H2 ICPs. H3 (made-to-measure window coverings) is the active hunch and this contact does not validate it. NOT off_scope: their ICP fit for their own assumption is intact, and H1/H2 are superseded un-falsified, so this reverses in one pass if either lane is revived."
-
+notes: "Prior exchange in the archive: he replied 2026-07-15. Open with continuity, not a cold intro. [not drafted 2026-09-02] LR-B25: thread exists and THEY REPLIED (2026-07-15). Msg 1 is the wrong shape — route to /startup-outreach-reply. [H3 hold 2026-09-03] Sourced against H1/H2 ICPs. H3 (made-to-measure window coverings) is the active hunch and this contact does not validate it. NOT off_scope: their ICP fit for their own assumption is intact, and H1/H2 are superseded un-falsified, so this reverses in one pass if either lane is revived. [msg1 drafted 2026-09-05, MCP framing] Founder-set anchor: what he is building, with the Cambridge work as provenance rather than as the subject. Live profile re-read 2026-09-05 (LR-B6). Copy at outreach/copy/H1-H2-linkedin.md. UNSENT and NOT to be sent by Claude. Live-verified 2026-09-05, card already correct. [unheld 2026-09-05] Founder decision: the MCP framing is written for this lane, so this contact leaves `held` and re-enters the campaign as `pending`. The H3 hold that put them here is lifted for them, not for the lane. [founder decision 2026-09-05] DO NOT MESSAGE AGAIN. The founder's instruction, and the inbox supports it: a thread exists from 2026-07-15 and it ended with the founder's own "Ah okay, thanks for the response! Enjoy the rest of your day", which is how a no gets closed politely. He REPLIED, so this is not an LR-B30 time gate and never ages back in. Held, not off_scope: his ICP fit did not fail, the answer did. The drafted Msg 1 stays in the archive unsent as the record of what was nearly sent to someone who had already declined. THIS IS THE MISS THAT MATTERS: LR-B25 was never run on this batch of fourteen before drafting, which is exactly the silent failure that rule exists to prevent."
 ## Can Tafulcan
 
 id: C3
 name: Can Tafulcan
 linkedin_url: https://www.linkedin.com/in/can-tafulcan-460324134/
 linkedin_account: Izgin
-company: LyondellBasell
+company: LyondellBasell (role ended Jul 2026)
 role: Maintenance Engineer
 
 signal_type: profile_fit
@@ -198,10 +196,10 @@ mutuals_count:
 active_last_30d: unknown
 open_to_work: false
 
-close_variant:
+close_variant: soft_ask
 relationship_type: operator_buyer
-outreach_status: held
-message_stage:
+outreach_status: msg1_sent
+message_stage: msg1_sent
 call_stage: none
 found_date: 2026-09-02
 invited_date:
@@ -214,8 +212,7 @@ interviews: []
 evidence_score:
 outcome_modifier:
 prior_contact_status: pending
-notes: "[msg1 drafted 2026-09-02] soft_ask, written in Turkish (informal, LR-6). LIVE CORRECTION: LyondellBasell role ENDED Jul 2026, export had it as current. Drafted from the prior in-ICP role (LR-B8), past tense. Copy at outreach/copy/H2A1-linkedin.md. [H3 hold 2026-09-03] Sourced against H1/H2 ICPs. H3 (made-to-measure window coverings) is the active hunch and this contact does not validate it. NOT off_scope: their ICP fit for their own assumption is intact, and H1/H2 are superseded un-falsified, so this reverses in one pass if either lane is revived."
-
+notes: "[msg1 drafted 2026-09-02] soft_ask, written in Turkish (informal, LR-6). LIVE CORRECTION: LyondellBasell role ENDED Jul 2026, export had it as current. Drafted from the prior in-ICP role (LR-B8), past tense. Copy at outreach/copy/H2A1-linkedin.md. [H3 hold 2026-09-03] Sourced against H1/H2 ICPs. H3 (made-to-measure window coverings) is the active hunch and this contact does not validate it. NOT off_scope: their ICP fit for their own assumption is intact, and H1/H2 are superseded un-falsified, so this reverses in one pass if either lane is revived. [msg1 drafted 2026-09-05, MCP framing] Founder-set anchor: what he is building, with the Cambridge work as provenance rather than as the subject. Live profile re-read 2026-09-05 (LR-B6). Copy at outreach/copy/H1-H2-linkedin.md. UNSENT and NOT to be sent by Claude. CORRECTED: the LyondellBasell role reads Jul 2023 to Jul 2026 and has ENDED. The card said current. Copy is written so it is true either way. [unheld 2026-09-05] Founder decision: the MCP framing is written for this lane, so this contact leaves `held` and re-enters the campaign as `pending`. The H3 hold that put them here is lifted for them, not for the lane. [msg1 sent 2026-09-05 18:46] Sent by the founder by hand and REWRITTEN COMPLETELY, in Turkish and in a personal register: "Can selam - nasilsin?? I am doing some research for my startup and my agents gave me your name to contact haha. numaran ayni mi?" The drafted cold message was not used. He is a personal contact, which the ledger did not know; treat the relationship as warm."
 ## Margaux Ratcliff
 
 id: C4
@@ -249,10 +246,10 @@ mutuals_count:
 active_last_30d: unknown
 open_to_work: false
 
-close_variant:
+close_variant: soft_ask
 relationship_type: operator_buyer
-outreach_status: held
-message_stage:
+outreach_status: msg1_sent
+message_stage: msg1_sent
 call_stage: none
 found_date: 2026-09-02
 invited_date:
@@ -265,8 +262,7 @@ interviews: []
 evidence_score:
 outcome_modifier:
 prior_contact_status: pending
-notes: "[msg1 drafted 2026-09-02] soft_ask. Live snapshot confirms Viasat current (4y4m); anchor is her own wording on antenna operating data and return rates. Georgia Tech. Copy at outreach/copy/H2A1-linkedin.md. [H3 hold 2026-09-03] Sourced against H1/H2 ICPs. H3 (made-to-measure window coverings) is the active hunch and this contact does not validate it. NOT off_scope: their ICP fit for their own assumption is intact, and H1/H2 are superseded un-falsified, so this reverses in one pass if either lane is revived."
-
+notes: "[msg1 drafted 2026-09-02] soft_ask. Live snapshot confirms Viasat current (4y4m); anchor is her own wording on antenna operating data and return rates. Georgia Tech. Copy at outreach/copy/H2A1-linkedin.md. [H3 hold 2026-09-03] Sourced against H1/H2 ICPs. H3 (made-to-measure window coverings) is the active hunch and this contact does not validate it. NOT off_scope: their ICP fit for their own assumption is intact, and H1/H2 are superseded un-falsified, so this reverses in one pass if either lane is revived. [msg1 drafted 2026-09-05, MCP framing] Founder-set anchor: what he is building, with the Cambridge work as provenance rather than as the subject. Live profile re-read 2026-09-05 (LR-B6). Copy at outreach/copy/H1-H2-linkedin.md. UNSENT and NOT to be sent by Claude. Live-verified 2026-09-05, card already correct. [unheld 2026-09-05] Founder decision: the MCP framing is written for this lane, so this contact leaves `held` and re-enters the campaign as `pending`. The H3 hold that put them here is lifted for them, not for the lane. [LR-B25 2026-09-05] Inbox check clean, no thread. [msg1 sent 2026-09-05 by founder, by hand] Observed in the founder's own LinkedIn inbox on 2026-09-05 during a reconciliation pass, timestamp 6:49 PM. The thread shows the founder's message last and no reply yet. The copy sent is NOT the copy archived in this repo: the founder is now opening with "I am building the MCP layer for machines in manufacturing" and asking whether the gap shows up in rework rates. See outreach/linkedin/belief-experts-2026-09/drafts.md for the record of that framing."
 ## Heath Holtz
 
 id: C5
@@ -274,7 +270,7 @@ name: Heath Holtz
 linkedin_url: https://www.linkedin.com/in/heath-holtz-b57535/
 linkedin_account: Izgin
 company: Kohler Co.
-role: Chief Operations, Supply Chain & Sustainability
+role: Chief Operations, Supply Chain and Sustainability Officer
 
 signal_type: profile_fit
 signal_multiplier: 1.0
@@ -300,10 +296,10 @@ mutuals_count:
 active_last_30d: unknown
 open_to_work: false
 
-close_variant:
+close_variant: soft_ask
 relationship_type: operator_buyer
-outreach_status: held
-message_stage:
+outreach_status: msg1_sent
+message_stage: msg1_sent
 call_stage: none
 found_date: 2026-09-02
 invited_date:
@@ -316,15 +312,14 @@ interviews: []
 evidence_score:
 outcome_modifier:
 prior_contact_status: no_reply
-notes: "Founder messaged 2019-10-03, no reply. Seven years stale and about something unrelated — effectively a fresh approach, but the founder should confirm before sending. [msg1 drafted 2026-09-02] soft_ask, senior register (LR-B5). Founder messaged 2019-10-03, no reply; ~7 years stale so LR-B25 treats this as fresh Msg 1, not a follow-up. FOUNDER TO CONFIRM before sending. Live: Kohler C-level since Feb 2024, 50 sites / 18 countries. Copy at outreach/copy/H2A1-linkedin.md. [H3 hold 2026-09-03] Sourced against H1/H2 ICPs. H3 (made-to-measure window coverings) is the active hunch and this contact does not validate it. NOT off_scope: their ICP fit for their own assumption is intact, and H1/H2 are superseded un-falsified, so this reverses in one pass if either lane is revived."
-
+notes: "Founder messaged 2019-10-03, no reply. Seven years stale and about something unrelated — effectively a fresh approach, but the founder should confirm before sending. [msg1 drafted 2026-09-02] soft_ask, senior register (LR-B5). Founder messaged 2019-10-03, no reply; ~7 years stale so LR-B25 treats this as fresh Msg 1, not a follow-up. FOUNDER TO CONFIRM before sending. Live: Kohler C-level since Feb 2024, 50 sites / 18 countries. Copy at outreach/copy/H2A1-linkedin.md. [H3 hold 2026-09-03] Sourced against H1/H2 ICPs. H3 (made-to-measure window coverings) is the active hunch and this contact does not validate it. NOT off_scope: their ICP fit for their own assumption is intact, and H1/H2 are superseded un-falsified, so this reverses in one pass if either lane is revived. [msg1 drafted 2026-09-05, MCP framing] Founder-set anchor: what he is building, with the Cambridge work as provenance rather than as the subject. Live profile re-read 2026-09-05 (LR-B6). Copy at outreach/copy/H1-H2-linkedin.md. UNSENT and NOT to be sent by Claude. CORRECTED: promoted Apr 2026, Sustainability added to the remit. Kohler is 18,000 associates across 50 plants in 18 countries; he came from Nissan and Target. [unheld 2026-09-05] Founder decision: the MCP framing is written for this lane, so this contact leaves `held` and re-enters the campaign as `pending`. The H3 hold that put them here is lifted for them, not for the lane. [LR-B25 2026-09-05] A thread exists from 2019-10-03: a student connection note, ours last, no reply. Nearly seven years and he now holds buyer authority, so LR-B30 puts this well above the twelve-month line and a fresh Msg 1 is correct. [msg1 sent 2026-09-05 by founder, by hand] Observed in the founder's own LinkedIn inbox on 2026-09-05 during a reconciliation pass, timestamp 7:12 PM. The thread shows the founder's message last and no reply yet. The copy sent is NOT the copy archived in this repo: the founder is now opening with "I am building the MCP layer for machines in manufacturing" and asking whether the gap shows up in rework rates. See outreach/linkedin/belief-experts-2026-09/drafts.md for the record of that framing."
 ## Akshaya Satish
 
 id: C6
 name: Akshaya Satish
 linkedin_url: https://www.linkedin.com/in/akshaya19/
 linkedin_account: Izgin
-company: Tata Advanced Systems Limited
+company: Tata Advanced Systems Limited (role ended Jul 2026)
 role: Executive Manufacturing Engineer
 
 signal_type: profile_fit
@@ -338,7 +333,7 @@ role_pts: 2
 tier: manufacturing_operations
 size_band: 
 
-assumptions_tested: [H2A1, H2A2, H2A3]
+assumptions_tested: [H0A1]
 validation_rationale: >
   Manufacturing engineering in aerospace and defence — high-mix, low-volume, long-lead, heavily qualified parts. Exactly the environment where the blocked-part event is frequent and the non-OEM answer is hardest, which makes her a strong test of H2A2 rather than a friendly one.
 
@@ -351,10 +346,10 @@ mutuals_count:
 active_last_30d: unknown
 open_to_work: false
 
-close_variant:
+close_variant: soft_ask
 relationship_type: operator_buyer
-outreach_status: held
-message_stage:
+outreach_status: replied
+message_stage: msg1_drafted
 call_stage: none
 found_date: 2026-09-02
 invited_date:
@@ -367,8 +362,7 @@ interviews: []
 evidence_score:
 outcome_modifier:
 prior_contact_status: replied
-notes: "Prior exchange in the archive: replied 2026-08-12. Warm and recent — continue the thread. [not drafted 2026-09-02] LR-B25: thread exists and THEY REPLIED (2026-08-12). Route to /startup-outreach-reply. [H3 hold 2026-09-03] Sourced against H1/H2 ICPs. H3 (made-to-measure window coverings) is the active hunch and this contact does not validate it. NOT off_scope: their ICP fit for their own assumption is intact, and H1/H2 are superseded un-falsified, so this reverses in one pass if either lane is revived."
-
+notes: "[live snapshot 2026-09-05] VERIFIED WITH A CORRECTION: the Tata role ENDED Jul 2026 and no current role is listed, so `company` is now stale and she may be between roles. Executive Manufacturing Engineer Aug 2023-Jul 2026 on the C295 military aircraft Final Assembly Line at Vadodara, Graduate Manufacturing Engineer before that on the C295 greenfield programme, plus 6 mos at Airbus Defence and Space in Seville on the San Pablo FAL. Industrialisation and APQP. Low-rate aerospace with a real per-order industrialisation step. Copy MUST use past tense about Tata. [audit H0A1 keep 2026-09-05] Aerospace at Tata Advanced Systems is low-rate with per-order engineering. Executive Manufacturing Engineer sits on the handoff. Re-screened against the H0A1 ICP declared 2026-09-05; status held -> pending so copy can be drafted. Prior H2 assumption links replaced. Prior exchange in the archive: replied 2026-08-12. Warm and recent — continue the thread. [not drafted 2026-09-02] LR-B25: thread exists and THEY REPLIED (2026-08-12). Route to /startup-outreach-reply. [H3 hold 2026-09-03] Sourced against H1/H2 ICPs. H3 (made-to-measure window coverings) is the active hunch and this contact does not validate it. NOT off_scope: their ICP fit for their own assumption is intact, and H1/H2 are superseded un-falsified, so this reverses in one pass if either lane is revived. [msg1 drafted 2026-09-05, MCP framing] Founder-set anchor: what he is building, with the Cambridge work as provenance rather than as the subject. Live profile re-read 2026-09-05 (LR-B6). Copy at outreach/copy/H1-H2-linkedin.md. UNSENT and NOT to be sent by Claude. CORRECTED: the Tata role reads Aug 2023 to Jul 2026 and has ENDED. Work was the C295 military aircraft final assembly line. [LR-B25 2026-09-05] NOT A COLD CONTACT. A thread exists and SHE REPLIED: on 2026-08-24 the founder wrote "Akshaya thank you - I have sent Cristina a connection request", so she had answered and referred someone on. Routing corrected from Msg 1 to the reply arc; the drafted cold message must not be sent. Find out who Cristina is and whether that referral was ever followed up."
 ## Haroon Tahir
 
 id: C7
@@ -404,7 +398,7 @@ open_to_work: false
 
 close_variant:
 relationship_type: operator_buyer
-outreach_status: held
+outreach_status: off_scope
 message_stage:
 call_stage: none
 found_date: 2026-09-02
@@ -418,7 +412,7 @@ interviews: []
 evidence_score:
 outcome_modifier:
 prior_contact_status: replied
-notes: "Prior exchange in the archive: replied 2026-08-11. Warm and recent. [not drafted 2026-09-02] LR-B25: thread exists and THEY REPLIED (2026-08-11). Route to /startup-outreach-reply. [H3 hold 2026-09-03] Sourced against H1/H2 ICPs. H3 (made-to-measure window coverings) is the active hunch and this contact does not validate it. NOT off_scope: their ICP fit for their own assumption is intact, and H1/H2 are superseded un-falsified, so this reverses in one pass if either lane is revived."
+notes: "[audit off_scope 2026-09-05] Fails icp_out_of_scope on H0A1: Tesla - high-volume repeat manufacturing. Controls engineering on a line that runs the same part thousands of times. Sourced against H2 from the founder 1st-degree network; H2 is superseded and this contact does not reach the belief-level nodes either. Prior exchange in the archive: replied 2026-08-11. Warm and recent. [not drafted 2026-09-02] LR-B25: thread exists and THEY REPLIED (2026-08-11). Route to /startup-outreach-reply. [H3 hold 2026-09-03] Sourced against H1/H2 ICPs. H3 (made-to-measure window coverings) is the active hunch and this contact does not validate it. NOT off_scope: their ICP fit for their own assumption is intact, and H1/H2 are superseded un-falsified, so this reverses in one pass if either lane is revived."
 
 ## Clynton Thoresson
 
@@ -455,7 +449,7 @@ open_to_work: false
 
 close_variant:
 relationship_type: operator_buyer
-outreach_status: held
+outreach_status: off_scope
 message_stage:
 call_stage: none
 found_date: 2026-09-02
@@ -469,7 +463,7 @@ interviews: []
 evidence_score:
 outcome_modifier:
 prior_contact_status: no_reply
-notes: "FLAG: founder messaged 2026-08-11 (3 weeks ago), no reply. Do NOT re-blast blind — founder decides whether to follow up or leave it. [not drafted 2026-09-02] LR-B25: founder messaged 2026-08-11 (3 weeks), ours last, silent. That is a FOLLOW-UP, not a Msg 1 — carries no research anchor and must not repeat the ignored ask. Needs founder decision before drafting. [LR-B30 hold 2026-09-02] Messaged 2026-08-11, 22 days, no reply. Gate is closed under 3 months and VP seniority does not open it. Do not write. Eligible as a no-anchor follow-up from 2026-11-11."
+notes: "[audit off_scope 2026-09-05] Fails icp_out_of_scope on H0A1: Agratas is a gigafactory: high-volume repeat. Noted for later as a possible EXPERT-tier contact - a VP of IT Manufacturing owns the MES integration layer first-hand - but he is not demand for H0A1 and must not be counted as such. Sourced against H2 from the founder 1st-degree network; H2 is superseded and this contact does not reach the belief-level nodes either. FLAG: founder messaged 2026-08-11 (3 weeks ago), no reply. Do NOT re-blast blind — founder decides whether to follow up or leave it. [not drafted 2026-09-02] LR-B25: founder messaged 2026-08-11 (3 weeks), ours last, silent. That is a FOLLOW-UP, not a Msg 1 — carries no research anchor and must not repeat the ignored ask. Needs founder decision before drafting. [LR-B30 hold 2026-09-02] Messaged 2026-08-11, 22 days, no reply. Gate is closed under 3 months and VP seniority does not open it. Do not write. Eligible as a no-anchor follow-up from 2026-11-11."
 
 ## Peter Macron
 
@@ -491,7 +485,7 @@ role_pts: 2
 tier: manufacturing_operations
 size_band: 
 
-assumptions_tested: [H2A1, H2A2]
+assumptions_tested: [H0A1]
 validation_rationale: >
   Manufacturing engineering at Boeing — same environment as Charles Evans, from the process side rather than the disposition side. A useful cross-check: if two people at the same manufacturer describe blocked parts differently, that difference is itself the finding.
 
@@ -506,8 +500,8 @@ open_to_work: false
 
 close_variant:
 relationship_type: operator_buyer
-outreach_status: held
-message_stage:
+outreach_status: pending
+message_stage: msg1_drafted
 call_stage: none
 found_date: 2026-09-02
 invited_date:
@@ -520,7 +514,7 @@ interviews: []
 evidence_score:
 outcome_modifier:
 prior_contact_status: no_reply
-notes: "FLAG: founder messaged 2026-08-10 (3 weeks ago), no reply. Do NOT re-blast blind — founder decides. [not drafted 2026-09-02] LR-B25: founder messaged 2026-08-10 (3 weeks), ours last, silent. Follow-up shape, not Msg 1. Needs founder decision before drafting. [LR-B30 hold 2026-09-02] Messaged 2026-08-10, 23 days, no reply, no buyer authority. Do not write. Charles Evans (C1) covers Boeing for this assumption, so nothing is lost."
+notes: "[live snapshot 2026-09-05] VERIFIED: Manufacturing Engineer, Boeing, North Charleston SC, since Jun 2023 (3y4m). Internships at FN America, Timken (applications engineering and manufacturing R&D) and JELD-WEN. Georgia Tech. Mid-level, so he can describe the failure well and cannot price it - H0A1 only. [audit H0A1 keep 2026-09-05] Boeing manufacturing engineering at aircraft build rates - low volume, per-order work packages. Same tier logic as C1. Re-screened against the H0A1 ICP declared 2026-09-05; status held -> pending so copy can be drafted. Prior H2 assumption links replaced. FLAG: founder messaged 2026-08-10 (3 weeks ago), no reply. Do NOT re-blast blind — founder decides. [not drafted 2026-09-02] LR-B25: founder messaged 2026-08-10 (3 weeks), ours last, silent. Follow-up shape, not Msg 1. Needs founder decision before drafting. [LR-B30 hold 2026-09-02] Messaged 2026-08-10, 23 days, no reply, no buyer authority. Do not write. Charles Evans (C1) covers Boeing for this assumption, so nothing is lost."
 
 ## Mia Huff
 
@@ -555,10 +549,10 @@ mutuals_count:
 active_last_30d: unknown
 open_to_work: false
 
-close_variant:
+close_variant: soft_ask
 relationship_type: operator_buyer
-outreach_status: held
-message_stage:
+outreach_status: msg1_sent
+message_stage: msg1_sent
 call_stage: none
 found_date: 2026-09-02
 invited_date:
@@ -571,8 +565,7 @@ interviews: []
 evidence_score:
 outcome_modifier:
 prior_contact_status: pending
-notes: "[msg1 drafted 2026-09-02] soft_ask. Live snapshot upgraded her: 'LCM Supplier Change Project Lead' at J&J through 2025 makes her the sharpest test of H2A2 in the batch. Georgia Tech. Copy at outreach/copy/H2A1-linkedin.md. [H3 hold 2026-09-03] Sourced against H1/H2 ICPs. H3 (made-to-measure window coverings) is the active hunch and this contact does not validate it. NOT off_scope: their ICP fit for their own assumption is intact, and H1/H2 are superseded un-falsified, so this reverses in one pass if either lane is revived."
-
+notes: "[msg1 drafted 2026-09-02] soft_ask. Live snapshot upgraded her: 'LCM Supplier Change Project Lead' at J&J through 2025 makes her the sharpest test of H2A2 in the batch. Georgia Tech. Copy at outreach/copy/H2A1-linkedin.md. [H3 hold 2026-09-03] Sourced against H1/H2 ICPs. H3 (made-to-measure window coverings) is the active hunch and this contact does not validate it. NOT off_scope: their ICP fit for their own assumption is intact, and H1/H2 are superseded un-falsified, so this reverses in one pass if either lane is revived. [msg1 drafted 2026-09-05, MCP framing] Founder-set anchor: what he is building, with the Cambridge work as provenance rather than as the subject. Live profile re-read 2026-09-05 (LR-B6). Copy at outreach/copy/H1-H2-linkedin.md. UNSENT and NOT to be sent by Claude. Live-verified: in post since Jan 2026 after the J&J rotational programme. [unheld 2026-09-05] Founder decision: the MCP framing is written for this lane, so this contact leaves `held` and re-enters the campaign as `pending`. The H3 hold that put them here is lifted for them, not for the lane. [LR-B25 2026-09-05] Inbox check clean, no thread. [msg1 sent 2026-09-05 by founder, by hand] Observed in the founder's own LinkedIn inbox on 2026-09-05 during a reconciliation pass, timestamp 7:13 PM. The thread shows the founder's message last and no reply yet. The copy sent is NOT the copy archived in this repo: the founder is now opening with "I am building the MCP layer for machines in manufacturing" and asking whether the gap shows up in rework rates. See outreach/linkedin/belief-experts-2026-09/drafts.md for the record of that framing."
 ## Ruilong Ma, Ph.D.
 
 id: C11
@@ -606,10 +599,10 @@ mutuals_count:
 active_last_30d: unknown
 open_to_work: false
 
-close_variant:
+close_variant: soft_ask
 relationship_type: operator_buyer
-outreach_status: held
-message_stage:
+outreach_status: msg1_sent
+message_stage: msg1_sent
 call_stage: none
 found_date: 2026-09-02
 invited_date:
@@ -622,8 +615,7 @@ interviews: []
 evidence_score:
 outcome_modifier:
 prior_contact_status: replied
-notes: "Prior exchange is from 2019-10-15 — treat as effectively cold but not a stranger. [not drafted 2026-09-02] LR-B25: thread exists and they replied, but in 2019. Route to /startup-outreach-reply, which decides continuation vs fresh. [H3 hold 2026-09-03] Sourced against H1/H2 ICPs. H3 (made-to-measure window coverings) is the active hunch and this contact does not validate it. NOT off_scope: their ICP fit for their own assumption is intact, and H1/H2 are superseded un-falsified, so this reverses in one pass if either lane is revived."
-
+notes: "Prior exchange is from 2019-10-15 — treat as effectively cold but not a stranger. [not drafted 2026-09-02] LR-B25: thread exists and they replied, but in 2019. Route to /startup-outreach-reply, which decides continuation vs fresh. [H3 hold 2026-09-03] Sourced against H1/H2 ICPs. H3 (made-to-measure window coverings) is the active hunch and this contact does not validate it. NOT off_scope: their ICP fit for their own assumption is intact, and H1/H2 are superseded un-falsified, so this reverses in one pass if either lane is revived. [msg1 drafted 2026-09-05, MCP framing] Founder-set anchor: what he is building, with the Cambridge work as provenance rather than as the subject. Live profile re-read 2026-09-05 (LR-B6). Copy at outreach/copy/H1-H2-linkedin.md. UNSENT and NOT to be sent by Claude. Live-verified 2026-09-05, card already correct. [unheld 2026-09-05] Founder decision: the MCP framing is written for this lane, so this contact leaves `held` and re-enters the campaign as `pending`. The H3 hold that put them here is lifted for them, not for the lane. [LR-B25 2026-09-05] A thread exists from 2019-10-14 and it is personal rather than commercial: the founder rescheduling a call because a friend was in hospital. Ours last, no reply, seven years. Fresh Msg 1 stands, but the history is warmer than the ledger implied. [msg1 sent 2026-09-05 by founder, by hand] Observed in the founder's own LinkedIn inbox on 2026-09-05 during a reconciliation pass, timestamp 7:14 PM. The thread shows the founder's message last and no reply yet. The copy sent is NOT the copy archived in this repo: the founder is now opening with "I am building the MCP layer for machines in manufacturing" and asking whether the gap shows up in rework rates. See outreach/linkedin/belief-experts-2026-09/drafts.md for the record of that framing."
 ## Blossom Tariro Kafumbata
 
 id: C12
@@ -644,7 +636,7 @@ role_pts: 2
 tier: manufacturing_operations
 size_band: 
 
-assumptions_tested: [H2A1, H2A3]
+assumptions_tested: [H0A1]
 validation_rationale: >
   Manufacturing planning — the planner is the person who personally chases a late part and reschedules around it, which is the single most direct first-hand view of H2A1's frequency and cost.
 
@@ -659,7 +651,7 @@ open_to_work: false
 
 close_variant:
 relationship_type: operator_buyer
-outreach_status: held
+outreach_status: off_scope
 message_stage:
 call_stage: none
 found_date: 2026-09-02
@@ -673,7 +665,7 @@ interviews: []
 evidence_score:
 outcome_modifier:
 prior_contact_status: pending
-notes: "[H3 hold 2026-09-03] Sourced against H1/H2 ICPs. H3 (made-to-measure window coverings) is the active hunch and this contact does not validate it. NOT off_scope: their ICP fit for their own assumption is intact, and H1/H2 are superseded un-falsified, so this reverses in one pass if either lane is revived."
+notes: "[audit off_scope 2026-09-05 - live read] Live read 2026-09-05: TWO MONTHS into the JKH role (started Aug 2026), and she founds Finlay Systems, which sells AI and enterprise systems into operations-heavy industries. That makes her landscape and possibly competitor-adjacent, never demand. Prior roles are Luminance solutions engineering and fintech product. Cambridge IfM placement 2023-24 is a genuine shared-institution link and the reason to keep the card rather than delete it. [audit H0A1 keep 2026-09-05] Manufacturing Systems and Planning is the handoff function by name. JKH Ltd is unidentified in this repo - verify the company on the profile visit before sending anything. Re-screened against the H0A1 ICP declared 2026-09-05; status held -> pending so copy can be drafted. Prior H2 assumption links replaced. [H3 hold 2026-09-03] Sourced against H1/H2 ICPs. H3 (made-to-measure window coverings) is the active hunch and this contact does not validate it. NOT off_scope: their ICP fit for their own assumption is intact, and H1/H2 are superseded un-falsified, so this reverses in one pass if either lane is revived."
 
 ## ADESH KUMAR
 
@@ -695,7 +687,7 @@ role_pts: 3
 tier: manufacturing_operations
 size_band: 
 
-assumptions_tested: [H2A1, H2A2, H2A3]
+assumptions_tested: [H0A1]
 validation_rationale: >
   Production manager — owns line output, so the cost of a stopped line lands on him. Can price the wait in H2A1 and says whether he would authorise a machined substitute in H2A2.
 
@@ -724,8 +716,7 @@ interviews: []
 evidence_score:
 outcome_modifier:
 prior_contact_status: replied
-notes: "Prior exchange in the archive: replied 2026-02-12. [not drafted 2026-09-02] LR-B25: thread exists and THEY REPLIED (2026-02-12). Route to /startup-outreach-reply. [H3 hold 2026-09-03] Sourced against H1/H2 ICPs. H3 (made-to-measure window coverings) is the active hunch and this contact does not validate it. NOT off_scope: their ICP fit for their own assumption is intact, and H1/H2 are superseded un-falsified, so this reverses in one pass if either lane is revived."
-
+notes: "[audit 2026-09-05] UNVERIFIED - the experience page returned 'Something went wrong' on 2026-09-05 and the company 'RMG' is unidentified in this repo. Do not draft or send until the profile loads and the company is established. Held out of the H0A1 draft batch for that reason. [audit H0A1 keep 2026-09-05] Production Manager, but RMG is unidentified and the abbreviation is ambiguous. Verify the company before sending; drop if it is volume apparel. Re-screened against the H0A1 ICP declared 2026-09-05; status held -> pending so copy can be drafted. Prior H2 assumption links replaced. Prior exchange in the archive: replied 2026-02-12. [not drafted 2026-09-02] LR-B25: thread exists and THEY REPLIED (2026-02-12). Route to /startup-outreach-reply. [H3 hold 2026-09-03] Sourced against H1/H2 ICPs. H3 (made-to-measure window coverings) is the active hunch and this contact does not validate it. NOT off_scope: their ICP fit for their own assumption is intact, and H1/H2 are superseded un-falsified, so this reverses in one pass if either lane is revived. PROFILE WOULD NOT LOAD 2026-09-05 (LinkedIn returned 'Something went wrong'). No draft written: LR-B6 needs a live snapshot and there is none. Retry before writing to him."
 ## Moussa Chidiac
 
 id: C14
@@ -746,7 +737,7 @@ role_pts: 3
 tier: manufacturing_operations
 size_band: 
 
-assumptions_tested: [H2A1, H2A3]
+assumptions_tested: [H0A1, H0A2]
 validation_rationale: >
   Operations at a precast concrete manufacturer — heavy plant, custom moulds and formwork, and equipment that is repaired rather than replaced. A different industry from the aerospace-heavy rest of the batch, which is what stops the sample being one sector's opinion.
 
@@ -759,10 +750,10 @@ mutuals_count:
 active_last_30d: unknown
 open_to_work: false
 
-close_variant:
+close_variant: soft_ask
 relationship_type: operator_buyer
-outreach_status: held
-message_stage:
+outreach_status: msg1_sent
+message_stage: msg1_sent
 call_stage: none
 found_date: 2026-09-02
 invited_date:
@@ -775,8 +766,7 @@ interviews: []
 evidence_score:
 outcome_modifier:
 prior_contact_status: pending
-notes: "[H3 hold 2026-09-03] Sourced against H1/H2 ICPs. H3 (made-to-measure window coverings) is the active hunch and this contact does not validate it. NOT off_scope: their ICP fit for their own assumption is intact, and H1/H2 are superseded un-falsified, so this reverses in one pass if either lane is revived."
-
+notes: "[live snapshot 2026-09-05] VERIFIED and STRONGER than the card said: 9y8m at Creagh Concrete, and he came up through the drawing office - Structural Engineer Feb 2017, Senior Structural Engineer Aug 2019, Operations Manager since Jan 2021 (5y9m). Also 2 yrs self-employed as a CAD designer. He has been on BOTH ends of the same drawing, which is rare and is exactly what H0A1 needs. Also holds budget, so he reaches H0A2. NOTE for the call, deliberately NOT in the copy: a 1-month Operations Consultant contract at Tharsus in Jan 2022 - Tharsus is Universal Wolf's former name, the founder's own Cambridge case-study company. Too thin a link to open with; a strong thing to have in hand. [audit H0A1 keep 2026-09-05] Precast concrete is made-to-order: every element is drawn for one building. Operations Manager holds budget, so this contact reaches H0A2 as well as H0A1. Re-screened against the H0A1 ICP declared 2026-09-05; status held -> pending so copy can be drafted. Prior H2 assumption links replaced. [H3 hold 2026-09-03] Sourced against H1/H2 ICPs. H3 (made-to-measure window coverings) is the active hunch and this contact does not validate it. NOT off_scope: their ICP fit for their own assumption is intact, and H1/H2 are superseded un-falsified, so this reverses in one pass if either lane is revived. [msg1 drafted 2026-09-05, MCP framing] Founder-set anchor: what he is building, with the Cambridge work as provenance rather than as the subject. Live profile re-read 2026-09-05 (LR-B6). Copy at outreach/copy/H1-H2-linkedin.md. UNSENT and NOT to be sent by Claude. Live-verified 2026-09-05, card already correct. [LR-B25 2026-09-05] Inbox check clean, no thread. [msg1 sent 2026-09-05 by founder, by hand] Observed in the founder's own LinkedIn inbox on 2026-09-05 during a reconciliation pass, timestamp 7:15 PM. The thread shows the founder's message last and no reply yet. The copy sent is NOT the copy archived in this repo: the founder is now opening with "I am building the MCP layer for machines in manufacturing" and asking whether the gap shows up in rework rates. See outreach/linkedin/belief-experts-2026-09/drafts.md for the record of that framing."
 ## Grace Reed
 
 id: C15
@@ -797,7 +787,7 @@ role_pts: 3
 tier: manufacturing_operations
 size_band: 
 
-assumptions_tested: [H2A1, H2A3]
+assumptions_tested: [H0A1, H0A2]
 validation_rationale: >
   Directs production at a studio that builds one-off custom robotic and interactive installations — genuinely high-mix, quantity-of-one work, which is the variability side of H2 rather than the obsolescence side. Best contact in the batch for H2A3's 'nobody would quote it' question.
 
@@ -810,10 +800,10 @@ mutuals_count:
 active_last_30d: unknown
 open_to_work: false
 
-close_variant:
+close_variant: soft_ask
 relationship_type: operator_buyer
-outreach_status: held
-message_stage:
+outreach_status: pending
+message_stage: msg1_drafted
 call_stage: none
 found_date: 2026-09-02
 invited_date:
@@ -826,8 +816,7 @@ interviews: []
 evidence_score:
 outcome_modifier:
 prior_contact_status: pending
-notes: "[msg1 drafted 2026-09-02] soft_ask. Live snapshot upgraded her materially: prior roles were cost estimating and quoting for one-off builds (KPMG take-offs, then costing/quotes at acrylicize). Best contact in the batch for H2A3. Copy at outreach/copy/H2A1-linkedin.md. [H3 hold 2026-09-03] Sourced against H1/H2 ICPs. H3 (made-to-measure window coverings) is the active hunch and this contact does not validate it. NOT off_scope: their ICP fit for their own assumption is intact, and H1/H2 are superseded un-falsified, so this reverses in one pass if either lane is revived."
-
+notes: "[live snapshot 2026-09-05] VERIFIED, and the headline is misleading - it reads 'Experiential Design Leader' but the experience is Director of Production at Deeplocal since Jul 2022 (4y3m), New York. Before that acrylicize Head of Projects: experiential builds with budgets up to $4m, and she wrote the costing documents - estimates, quotes, SOWs, fee agreements - and oversaw production partners 'to ensure projects adhered to design intent, timeline and budget'. That sentence is H0A1. Before that KPMG construction cost analysis and an architecture background. Pronouns She/Her per her profile. Strongest contact in this tier. [audit H0A1 keep 2026-09-05] Deeplocal builds one-off experiential installations - every job is designed once and made once, which is the scope statement almost word for word. Director of Production owns the handoff and the hours lost to fixing it. Re-screened against the H0A1 ICP declared 2026-09-05; status held -> pending so copy can be drafted. Prior H2 assumption links replaced. [msg1 drafted 2026-09-02] soft_ask. Live snapshot upgraded her materially: prior roles were cost estimating and quoting for one-off builds (KPMG take-offs, then costing/quotes at acrylicize). Best contact in the batch for H2A3. Copy at outreach/copy/H2A1-linkedin.md. [H3 hold 2026-09-03] Sourced against H1/H2 ICPs. H3 (made-to-measure window coverings) is the active hunch and this contact does not validate it. NOT off_scope: their ICP fit for their own assumption is intact, and H1/H2 are superseded un-falsified, so this reverses in one pass if either lane is revived. [msg1 drafted 2026-09-05, MCP framing] Founder-set anchor: what he is building, with the Cambridge work as provenance rather than as the subject. Live profile re-read 2026-09-05 (LR-B6). Copy at outreach/copy/H1-H2-linkedin.md. UNSENT and NOT to be sent by Claude. Live-verified 2026-09-05, card already correct. [LR-B25 2026-09-05] Inbox check clean; the Grace search returned Grace Ling, a different person."
 ## Awase Mustafa
 
 id: C16
@@ -877,8 +866,7 @@ interviews: []
 evidence_score:
 outcome_modifier:
 prior_contact_status: pending
-notes: "Distributor, not an asset owner. Competence gate: ask about frequency and sourcing behaviour, NOT about who signs off a non-OEM part in a plant he does not run. [H3 hold 2026-09-03] Sourced against H1/H2 ICPs. H3 (made-to-measure window coverings) is the active hunch and this contact does not validate it. NOT off_scope: their ICP fit for their own assumption is intact, and H1/H2 are superseded un-falsified, so this reverses in one pass if either lane is revived."
-
+notes: "Distributor, not an asset owner. Competence gate: ask about frequency and sourcing behaviour, NOT about who signs off a non-OEM part in a plant he does not run. [H3 hold 2026-09-03] Sourced against H1/H2 ICPs. H3 (made-to-measure window coverings) is the active hunch and this contact does not validate it. NOT off_scope: their ICP fit for their own assumption is intact, and H1/H2 are superseded un-falsified, so this reverses in one pass if either lane is revived. NOT DRAFTED 2026-09-05. Live profile confirms Bayouni Trading is a distributor in Saudi Arabia, not a manufacturer, so an MCP-layer-for-machines message has no purchase. Not off_scope, just wrong frame."
 ## Priyadharshni Baskaran
 
 id: C17
@@ -914,7 +902,7 @@ open_to_work: false
 
 close_variant:
 relationship_type: operator_buyer
-outreach_status: held
+outreach_status: off_scope
 message_stage:
 call_stage: none
 found_date: 2026-09-02
@@ -928,7 +916,7 @@ interviews: []
 evidence_score:
 outcome_modifier:
 prior_contact_status: pending
-notes: "Competence gate: junior. Ask only what she has seen on the line (H2A1). Do NOT ask about sign-off authority or procurement policy — an out-of-competence answer enters the ledger as durable wrong evidence. [H3 hold 2026-09-03] Sourced against H1/H2 ICPs. H3 (made-to-measure window coverings) is the active hunch and this contact does not validate it. NOT off_scope: their ICP fit for their own assumption is intact, and H1/H2 are superseded un-falsified, so this reverses in one pass if either lane is revived."
+notes: "[audit off_scope 2026-09-05] Fails icp_out_of_scope on H0A1: Manufacturing Graduate - fails the students/graduates exclusion. No budget, no history, no rate to state. Sourced against H2 from the founder 1st-degree network; H2 is superseded and this contact does not reach the belief-level nodes either. Competence gate: junior. Ask only what she has seen on the line (H2A1). Do NOT ask about sign-off authority or procurement policy — an out-of-competence answer enters the ledger as durable wrong evidence. [H3 hold 2026-09-03] Sourced against H1/H2 ICPs. H3 (made-to-measure window coverings) is the active hunch and this contact does not validate it. NOT off_scope: their ICP fit for their own assumption is intact, and H1/H2 are superseded un-falsified, so this reverses in one pass if either lane is revived."
 
 ## Kwan Mok
 
@@ -1068,8 +1056,8 @@ open_to_work: false
 close_variant:
 relationship_type: operator_buyer
 outreach_status: replied
-message_stage: msg1_sent
-call_stage: offered_by_contact
+message_stage: msg2_sent
+call_stage: asked_by_founder
 found_date: 2026-09-02
 invited_date: 2026-09-02
 accepted_date:
@@ -1081,8 +1069,7 @@ interviews: []
 evidence_score:
 outcome_modifier:
 prior_contact_status: checked
-notes: "[reply 2026-09-02] Replied on LinkedIn: 'Hi Izgin! Yes sure that sounds good :) I'm happy to have a chat\' — read from the inbox list preview; the thread is still UNREAD and was not opened. He OFFERED the call, so call_stage is offered_by_contact. Next step is /startup-outreach-reply for Msg 2. [msg1 drafted 2026-09-02] Live-verified. Aston Martin F1 since Oct 2025; was at Cambridge IfM May-Aug 2024, which does NOT overlap the founder's Oct 2024 start - copy says 'just before I got there' for that reason. Copy in outreach/copy/H2A1-linkedin.md. [msg1 SENT 2026-09-02 by founder, by hand]"
-
+notes: "[reply 2026-09-02] Replied on LinkedIn: 'Hi Izgin! Yes sure that sounds good :) I'm happy to have a chat\' — read from the inbox list preview; the thread is still UNREAD and was not opened. He OFFERED the call, so call_stage is offered_by_contact. Next step is /startup-outreach-reply for Msg 2. [msg1 drafted 2026-09-02] Live-verified. Aston Martin F1 since Oct 2025; was at Cambridge IfM May-Aug 2024, which does NOT overlap the founder's Oct 2024 start - copy says 'just before I got there' for that reason. Copy in outreach/copy/H2A1-linkedin.md. [msg1 SENT 2026-09-02 by founder, by hand] [msg2 sent 2026-09-03] Thread read live 2026-09-05. Viliam replied and the founder answered the same day: "Sounds great thank you! What times next week would you be available? I am in SF right now so will be in PDT time I am usually free 9-9". The ball is HIS. He was appearing in the control room's reply-waiting list only because no msg2 marker had been logged; the marker is now here and the panel drops him."
 ## Samir Oliveira
 
 id: C21
@@ -1103,7 +1090,7 @@ role_pts: 3
 tier: manufacturing_operations
 size_band: 
 
-assumptions_tested: [H2A1, H2A3]
+assumptions_tested: [H0A1]
 validation_rationale: >
   Runs pre-assembly packages for offshore wind, where a missing part does not delay a shift, it delays a vessel. The cost of waiting is unusually legible in this role.
 
@@ -1118,7 +1105,7 @@ open_to_work: false
 
 close_variant:
 relationship_type: operator_buyer
-outreach_status: held
+outreach_status: off_scope
 message_stage:
 call_stage: none
 found_date: 2026-09-02
@@ -1132,7 +1119,7 @@ interviews: []
 evidence_score:
 outcome_modifier:
 prior_contact_status: checked
-notes: "[LR-B30 HOLD 2026-09-02] Messaged 2026-07-14, 50 days, no reply. Eligible 2026-10-14."
+notes: "[audit off_scope 2026-09-05 - live read] Live read 2026-09-05: offshore wind CONSTRUCTION and O&M, not manufacturing engineering - Dogger Bank tower pre-assembly at GE Vernova, before that site O&M at Invenergy and Goldwind and blade services at LM Wind Power. His one manufacturing stint (Nordex, 395 hubs and 325 nacelles) is series production. No per-order design step anywhere. Fails H0A1 ICP. [audit H0A1 keep 2026-09-05] Site pre-assembly on GE Vernova energy projects is one-off by definition: every site package is engineered for that site. Package Manager owns schedule and rework. Re-screened against the H0A1 ICP declared 2026-09-05; status held -> pending so copy can be drafted. Prior H2 assumption links replaced. [LR-B30 HOLD 2026-09-02] Messaged 2026-07-14, 50 days, no reply. Eligible 2026-10-14."
 
 ## Efe BEK
 
@@ -1154,7 +1141,7 @@ role_pts: 3
 tier: manufacturing_operations
 size_band: 
 
-assumptions_tested: [H2A1, H2A3]
+assumptions_tested: [H0A1]
 validation_rationale: >
   Heads process engineering at a wind turbine manufacturer, so he owns how parts actually get made and what happens when one is not available. Turkish, which the founder shares.
 
@@ -1169,7 +1156,7 @@ open_to_work: false
 
 close_variant:
 relationship_type: operator_buyer
-outreach_status: held
+outreach_status: off_scope
 message_stage:
 call_stage: none
 found_date: 2026-09-02
@@ -1183,7 +1170,7 @@ interviews: []
 evidence_score:
 outcome_modifier:
 prior_contact_status: checked
-notes: "[LR-B30 2026-09-02] They REPLIED 2026-07-13. Continuation - route to /startup-outreach-reply."
+notes: "[audit off_scope 2026-09-05 - live read] Live read 2026-09-05: wind BLADE manufacturing, which is moulded series production - 14y7m at TPI Composites through production management, continuous improvement and blade process engineering, now Head of Process Engineering at Enercon Windtech. Serious operations leader, wrong mix/volume point. Fails the same icp_out_of_scope line as Tesla. Turkish and senior: worth keeping as network, not as H0A1 demand. [audit H0A1 keep 2026-09-05] Head of Process Engineering at a wind turbine builder. Verify on the visit whether Enercon Windtech runs series or project work; if series, this goes off_scope on the same line as Tesla. Re-screened against the H0A1 ICP declared 2026-09-05; status held -> pending so copy can be drafted. Prior H2 assumption links replaced. [LR-B30 2026-09-02] They REPLIED 2026-07-13. Continuation - route to /startup-outreach-reply."
 
 ## Lauren Gwin
 
@@ -1256,7 +1243,7 @@ role_pts: 2
 tier: manufacturing_operations
 size_band: 
 
-assumptions_tested: [H2A1, H2A2]
+assumptions_tested: [H0A1]
 validation_rationale: >
   Systems engineering lead in defence, where programme lifetimes outrun supplier lifetimes and part substitution is a routine engineering event rather than an exception.
 
@@ -1271,7 +1258,7 @@ open_to_work: false
 
 close_variant:
 relationship_type: operator_buyer
-outreach_status: held
+outreach_status: off_scope
 message_stage:
 call_stage: none
 found_date: 2026-09-02
@@ -1285,7 +1272,7 @@ interviews: []
 evidence_score:
 outcome_modifier:
 prior_contact_status: unchecked
-notes: "[wave 2, 2026-09-02] Added on the company-first recount. NOT yet live-snapshot verified and prior-contact state NOT checked (LR-B25) - both required before drafting. [H3 hold 2026-09-03] Sourced against H1/H2 ICPs. H3 (made-to-measure window coverings) is the active hunch and this contact does not validate it. NOT off_scope: their ICP fit for their own assumption is intact, and H1/H2 are superseded un-falsified, so this reverses in one pass if either lane is revived."
+notes: "[audit off_scope 2026-09-05 - live read] Live read 2026-09-05: Systems Engineering Lead on RADAR subsystems at Lockheed Moorestown, 6y1m - requirements, integration and test across software/network/hardware teams. He never sees a drawing reach a shop floor. Role-title screen said low-rate defence; the profile says systems engineering. Fails icp_valid_titles for H0A1. [audit H0A1 keep 2026-09-05] Low-rate defence - programme volumes in the tens, heavy per-order engineering. A Systems Engineering Lead carries the consequence when the design reaching manufacture is wrong. Re-screened against the H0A1 ICP declared 2026-09-05; status held -> pending so copy can be drafted. Prior H2 assumption links replaced. [wave 2, 2026-09-02] Added on the company-first recount. NOT yet live-snapshot verified and prior-contact state NOT checked (LR-B25) - both required before drafting. [H3 hold 2026-09-03] Sourced against H1/H2 ICPs. H3 (made-to-measure window coverings) is the active hunch and this contact does not validate it. NOT off_scope: their ICP fit for their own assumption is intact, and H1/H2 are superseded un-falsified, so this reverses in one pass if either lane is revived."
 
 ## Enoch Koech
 
@@ -1322,7 +1309,7 @@ open_to_work: false
 
 close_variant:
 relationship_type: operator_buyer
-outreach_status: held
+outreach_status: off_scope
 message_stage:
 call_stage: none
 found_date: 2026-09-02
@@ -1336,7 +1323,7 @@ interviews: []
 evidence_score:
 outcome_modifier:
 prior_contact_status: unchecked
-notes: "[wave 2, 2026-09-02] Added on the company-first recount. NOT yet live-snapshot verified and prior-contact state NOT checked (LR-B25) - both required before drafting. [H3 hold 2026-09-03] Sourced against H1/H2 ICPs. H3 (made-to-measure window coverings) is the active hunch and this contact does not validate it. NOT off_scope: their ICP fit for their own assumption is intact, and H1/H2 are superseded un-falsified, so this reverses in one pass if either lane is revived."
+notes: "[audit off_scope 2026-09-05] Fails icp_out_of_scope on H0A1: Nissan - high-volume automotive. Sourced against H2 from the founder 1st-degree network; H2 is superseded and this contact does not reach the belief-level nodes either. [wave 2, 2026-09-02] Added on the company-first recount. NOT yet live-snapshot verified and prior-contact state NOT checked (LR-B25) - both required before drafting. [H3 hold 2026-09-03] Sourced against H1/H2 ICPs. H3 (made-to-measure window coverings) is the active hunch and this contact does not validate it. NOT off_scope: their ICP fit for their own assumption is intact, and H1/H2 are superseded un-falsified, so this reverses in one pass if either lane is revived."
 
 ## Howard Chu
 
@@ -1373,7 +1360,7 @@ open_to_work: false
 
 close_variant:
 relationship_type: operator_buyer
-outreach_status: held
+outreach_status: off_scope
 message_stage:
 call_stage: none
 found_date: 2026-09-02
@@ -1387,7 +1374,7 @@ interviews: []
 evidence_score:
 outcome_modifier:
 prior_contact_status: unchecked
-notes: "[wave 2, 2026-09-02] Added on the company-first recount. NOT yet live-snapshot verified and prior-contact state NOT checked (LR-B25) - both required before drafting. [H3 hold 2026-09-03] Sourced against H1/H2 ICPs. H3 (made-to-measure window coverings) is the active hunch and this contact does not validate it. NOT off_scope: their ICP fit for their own assumption is intact, and H1/H2 are superseded un-falsified, so this reverses in one pass if either lane is revived."
+notes: "[audit off_scope 2026-09-05] Fails icp_out_of_scope on H0A1: Nissan - high-volume automotive. Sourced against H2 from the founder 1st-degree network; H2 is superseded and this contact does not reach the belief-level nodes either. [wave 2, 2026-09-02] Added on the company-first recount. NOT yet live-snapshot verified and prior-contact state NOT checked (LR-B25) - both required before drafting. [H3 hold 2026-09-03] Sourced against H1/H2 ICPs. H3 (made-to-measure window coverings) is the active hunch and this contact does not validate it. NOT off_scope: their ICP fit for their own assumption is intact, and H1/H2 are superseded un-falsified, so this reverses in one pass if either lane is revived."
 
 ## Olgac Aker
 
@@ -1424,7 +1411,7 @@ open_to_work: false
 
 close_variant:
 relationship_type: operator_buyer
-outreach_status: held
+outreach_status: off_scope
 message_stage:
 call_stage: none
 found_date: 2026-09-02
@@ -1438,7 +1425,7 @@ interviews: []
 evidence_score:
 outcome_modifier:
 prior_contact_status: checked
-notes: "[LR-B30 HOLD 2026-09-02] Messaged 2026-08-11, 22 days, no reply. Eligible 2026-11-11."
+notes: "[audit off_scope 2026-09-05] Fails icp_out_of_scope on H0A1: Tesla - high-volume repeat manufacturing. Sourced against H2 from the founder 1st-degree network; H2 is superseded and this contact does not reach the belief-level nodes either. [LR-B30 HOLD 2026-09-02] Messaged 2026-08-11, 22 days, no reply. Eligible 2026-11-11."
 
 ## Bonnie Yang
 
@@ -1460,7 +1447,7 @@ role_pts: 2
 tier: manufacturing_operations
 size_band: 
 
-assumptions_tested: [H2A1, H2A3]
+assumptions_tested: [H0A1]
 validation_rationale: >
   Industrial engineering at Boeing works the line itself, so she sees where a missing part actually stops work rather than where the schedule says it should.
 
@@ -1473,10 +1460,10 @@ mutuals_count:
 active_last_30d: unknown
 open_to_work: false
 
-close_variant:
+close_variant: soft_ask
 relationship_type: operator_buyer
-outreach_status: held
-message_stage:
+outreach_status: msg1_sent
+message_stage: msg1_sent
 call_stage: none
 found_date: 2026-09-02
 invited_date:
@@ -1489,8 +1476,7 @@ interviews: []
 evidence_score:
 outcome_modifier:
 prior_contact_status: checked
-notes: "[msg1 drafted 2026-09-02] Live-verified. 7yrs at Boeing, Georgia Tech. Copy in outreach/copy/H2A1-linkedin.md. [H3 hold 2026-09-03] Sourced against H1/H2 ICPs. H3 (made-to-measure window coverings) is the active hunch and this contact does not validate it. NOT off_scope: their ICP fit for their own assumption is intact, and H1/H2 are superseded un-falsified, so this reverses in one pass if either lane is revived."
-
+notes: "[audit 2026-09-05] NOT YET VERIFIED - no live read taken this session. Boeing industrial engineering is borderline on FUNCTION rather than on volume, and the borderline is what the profile visit was supposed to settle. Held out of the H0A1 draft batch until verified. [audit H0A1 keep 2026-09-05] Boeing industrial engineering - borderline on function rather than on volume; keep at lower priority than C1 and C9, and verify on the profile visit that the role touches the drawing-to-floor path. Re-screened against the H0A1 ICP declared 2026-09-05; status held -> pending so copy can be drafted. Prior H2 assumption links replaced. [msg1 drafted 2026-09-02] Live-verified. 7yrs at Boeing, Georgia Tech. Copy in outreach/copy/H2A1-linkedin.md. [H3 hold 2026-09-03] Sourced against H1/H2 ICPs. H3 (made-to-measure window coverings) is the active hunch and this contact does not validate it. NOT off_scope: their ICP fit for their own assumption is intact, and H1/H2 are superseded un-falsified, so this reverses in one pass if either lane is revived. [msg1 drafted 2026-09-05, MCP framing] Founder-set anchor: what he is building, with the Cambridge work as provenance rather than as the subject. Live profile re-read 2026-09-05 (LR-B6). Copy at outreach/copy/H1-H2-linkedin.md. UNSENT and NOT to be sent by Claude. Live-verified 2026-09-05, card already correct. [unheld 2026-09-05] Founder decision: the MCP framing is written for this lane, so this contact leaves `held` and re-enters the campaign as `pending`. The H3 hold that put them here is lifted for them, not for the lane. [LR-B25 2026-09-05] Inbox check clean, no thread. [msg1 sent 2026-09-05 by founder, by hand] Observed in the founder's own LinkedIn inbox on 2026-09-05 during a reconciliation pass, timestamp 7:15 PM. The thread shows the founder's message last and no reply yet. The copy sent is NOT the copy archived in this repo: the founder is now opening with "I am building the MCP layer for machines in manufacturing" and asking whether the gap shows up in rework rates. See outreach/linkedin/belief-experts-2026-09/drafts.md for the record of that framing."
 ## Mostafa Elzamar
 
 id: C29
@@ -1526,7 +1512,7 @@ open_to_work: false
 
 close_variant:
 relationship_type: operator_buyer
-outreach_status: held
+outreach_status: off_scope
 message_stage:
 call_stage: none
 found_date: 2026-09-02
@@ -1540,7 +1526,7 @@ interviews: []
 evidence_score:
 outcome_modifier:
 prior_contact_status: checked
-notes: "[LR-B30 2026-09-02] They REPLIED 2026-08-12. Continuation - route to /startup-outreach-reply."
+notes: "[audit off_scope 2026-09-05] Fails icp_out_of_scope on H0A1: Schaeffler - bearings, among the highest-volume repeat manufacturing there is. Sourced against H2 from the founder 1st-degree network; H2 is superseded and this contact does not reach the belief-level nodes either. [LR-B30 2026-09-02] They REPLIED 2026-08-12. Continuation - route to /startup-outreach-reply."
 
 ## Engin Sengezer
 
@@ -1577,7 +1563,7 @@ open_to_work: false
 
 close_variant:
 relationship_type: operator_buyer
-outreach_status: held
+outreach_status: off_scope
 message_stage:
 call_stage: none
 found_date: 2026-09-02
@@ -1591,7 +1577,7 @@ interviews: []
 evidence_score:
 outcome_modifier:
 prior_contact_status: checked
-notes: "[LR-B30 HOLD 2026-09-02] Messaged 2026-08-11, 22 days, no reply. Eligible 2026-11-11."
+notes: "[audit off_scope 2026-09-05] Fails icp_out_of_scope on H0A1: Intel - semiconductor process, the opposite end of the mix/volume axis. Sourced against H2 from the founder 1st-degree network; H2 is superseded and this contact does not reach the belief-level nodes either. [LR-B30 HOLD 2026-09-02] Messaged 2026-08-11, 22 days, no reply. Eligible 2026-11-11."
 
 ## Bismenjeet Singh
 
@@ -1613,7 +1599,7 @@ role_pts: 2
 tier: manufacturing_operations
 size_band: 
 
-assumptions_tested: [H2A1]
+assumptions_tested: [H0A1]
 validation_rationale: >
   Electromechanical engineering in defence manufacturing, where builds run long and parts get discontinued mid-programme.
 
@@ -1626,10 +1612,10 @@ mutuals_count:
 active_last_30d: unknown
 open_to_work: false
 
-close_variant:
+close_variant: soft_ask
 relationship_type: operator_buyer
-outreach_status: held
-message_stage:
+outreach_status: msg1_sent
+message_stage: msg1_sent
 call_stage: none
 found_date: 2026-09-02
 invited_date:
@@ -1642,8 +1628,7 @@ interviews: []
 evidence_score:
 outcome_modifier:
 prior_contact_status: unchecked
-notes: "[wave 2, 2026-09-02] Added on the company-first recount. NOT yet live-snapshot verified and prior-contact state NOT checked (LR-B25) - both required before drafting. [H3 hold 2026-09-03] Sourced against H1/H2 ICPs. H3 (made-to-measure window coverings) is the active hunch and this contact does not validate it. NOT off_scope: their ICP fit for their own assumption is intact, and H1/H2 are superseded un-falsified, so this reverses in one pass if either lane is revived."
-
+notes: "[audit 2026-09-05] NOT YET VERIFIED - no live read taken this session. Junior (Electromechanical Engineer T2), so H0A1 only and never H0A2 even if verified. Held out of the H0A1 draft batch. [audit H0A1 keep 2026-09-05] Low-rate defence electromechanical work. Junior (T2), so he can describe the failure but not price it - H0A1 only, never H0A2. Re-screened against the H0A1 ICP declared 2026-09-05; status held -> pending so copy can be drafted. Prior H2 assumption links replaced. [wave 2, 2026-09-02] Added on the company-first recount. NOT yet live-snapshot verified and prior-contact state NOT checked (LR-B25) - both required before drafting. [H3 hold 2026-09-03] Sourced against H1/H2 ICPs. H3 (made-to-measure window coverings) is the active hunch and this contact does not validate it. NOT off_scope: their ICP fit for their own assumption is intact, and H1/H2 are superseded un-falsified, so this reverses in one pass if either lane is revived. [msg1 drafted 2026-09-05, MCP framing] Founder-set anchor: what he is building, with the Cambridge work as provenance rather than as the subject. Live profile re-read 2026-09-05 (LR-B6). Copy at outreach/copy/H1-H2-linkedin.md. UNSENT and NOT to be sent by Claude. Live-verified. His own entry says he sends drawing packages to vendors for quotes and lead times, which is the handoff this idea is about. [unheld 2026-09-05] Founder decision: the MCP framing is written for this lane, so this contact leaves `held` and re-enters the campaign as `pending`. The H3 hold that put them here is lifted for them, not for the lane. [LR-B25 2026-09-05] Inbox check clean, no thread. [msg1 sent 2026-09-05 by founder, by hand] Observed in the founder's own LinkedIn inbox on 2026-09-05 during a reconciliation pass, timestamp 7:16 PM. The thread shows the founder's message last and no reply yet. The copy sent is NOT the copy archived in this repo: the founder is now opening with "I am building the MCP layer for machines in manufacturing" and asking whether the gap shows up in rework rates. See outreach/linkedin/belief-experts-2026-09/drafts.md for the record of that framing."
 ## Matt Havard
 
 id: C32
@@ -1679,7 +1664,7 @@ open_to_work: false
 
 close_variant:
 relationship_type: operator_buyer
-outreach_status: held
+outreach_status: off_scope
 message_stage:
 call_stage: none
 found_date: 2026-09-02
@@ -1693,7 +1678,7 @@ interviews: []
 evidence_score:
 outcome_modifier:
 prior_contact_status: checked
-notes: "[msg1 drafted 2026-09-02] Live-verified. Ex-Tesla 4680 NPI across engineering and supply chain. Copy in outreach/copy/H2A1-linkedin.md. [H3 hold 2026-09-03] Sourced against H1/H2 ICPs. H3 (made-to-measure window coverings) is the active hunch and this contact does not validate it. NOT off_scope: their ICP fit for their own assumption is intact, and H1/H2 are superseded un-falsified, so this reverses in one pass if either lane is revived."
+notes: "[audit off_scope 2026-09-05] Fails icp_out_of_scope on H0A1: Rivian - volume EV manufacturing. Sourced against H2 from the founder 1st-degree network; H2 is superseded and this contact does not reach the belief-level nodes either. [msg1 drafted 2026-09-02] Live-verified. Ex-Tesla 4680 NPI across engineering and supply chain. Copy in outreach/copy/H2A1-linkedin.md. [H3 hold 2026-09-03] Sourced against H1/H2 ICPs. H3 (made-to-measure window coverings) is the active hunch and this contact does not validate it. NOT off_scope: their ICP fit for their own assumption is intact, and H1/H2 are superseded un-falsified, so this reverses in one pass if either lane is revived."
 
 ## Michael Wallis
 
@@ -1730,7 +1715,7 @@ open_to_work: false
 
 close_variant:
 relationship_type: operator_buyer
-outreach_status: held
+outreach_status: off_scope
 message_stage:
 call_stage: none
 found_date: 2026-09-02
@@ -1744,7 +1729,7 @@ interviews: []
 evidence_score:
 outcome_modifier:
 prior_contact_status: checked
-notes: "[LR-B30 DROP 2026-09-02] Messaged 2024-11-05, no reply, no buyer-authority token. Stale-and-junior drops."
+notes: "[audit off_scope 2026-09-05] Fails icp_out_of_scope on H0A1: McLaren Aerothermal Engineer - a design-analysis function. He does not see the drawing reach the floor. Sourced against H2 from the founder 1st-degree network; H2 is superseded and this contact does not reach the belief-level nodes either. [LR-B30 DROP 2026-09-02] Messaged 2024-11-05, no reply, no buyer-authority token. Stale-and-junior drops."
 
 ## Chris Tagnon
 
@@ -1760,13 +1745,13 @@ signal_multiplier: 1.0
 signal_source_url:
 signal_excerpt:
 
-contact_role: buyer
-role_pts: 3
+contact_role: influencer
+role_pts: 1
 
 tier: manufacturing_operations
 size_band: 
 
-assumptions_tested: [H2A1, H2A3]
+assumptions_tested: []
 validation_rationale: >
   Sits alongside the managing director at an applied performance engineering business, which is close enough to the commercial decision to say what a delay actually costs.
 
@@ -1779,9 +1764,9 @@ mutuals_count:
 active_last_30d: unknown
 open_to_work: false
 
-close_variant:
+close_variant: soft_ask
 relationship_type: operator_buyer
-outreach_status: held
+outreach_status: pending
 message_stage:
 call_stage: none
 found_date: 2026-09-02
@@ -1795,8 +1780,7 @@ interviews: []
 evidence_score:
 outcome_modifier:
 prior_contact_status: unchecked
-notes: "[wave 2, 2026-09-02] Added on the company-first recount. NOT yet live-snapshot verified and prior-contact state NOT checked (LR-B25) - both required before drafting. [H3 hold 2026-09-03] Sourced against H1/H2 ICPs. H3 (made-to-measure window coverings) is the active hunch and this contact does not validate it. NOT off_scope: their ICP fit for their own assumption is intact, and H1/H2 are superseded un-falsified, so this reverses in one pass if either lane is revived."
-
+notes: "[audit downgrade 2026-09-05] Live read: 'Engineering Associate to the Managing Director - Special Projects, developing Value Creation thesis' at Aston Martin Performance Technologies, 1 yr, plus Founder & CEO of CAST Energy and a King's Cambridge E-Lab residency. That is a strategy role held by a founder, not an operator who owns a drawing reaching the floor. F1 was the right instinct about the COMPANY and the wrong one about the PERSON. Reclassified contact_role buyer -> influencer: high-value intro multiplier into low-volume motorsport manufacturing and Cambridge, never counted as demand for H0A1. [audit H0A1 keep 2026-09-05] Aston Martin Performance Technologies is F1: nothing is made twice, and per-order engineering is the entire operating model. Engineering Associate to the MD sees both the drawing and the cost of it being wrong. Re-screened against the H0A1 ICP declared 2026-09-05; status held -> pending so copy can be drafted. Prior H2 assumption links replaced. [wave 2, 2026-09-02] Added on the company-first recount. NOT yet live-snapshot verified and prior-contact state NOT checked (LR-B25) - both required before drafting. [H3 hold 2026-09-03] Sourced against H1/H2 ICPs. H3 (made-to-measure window coverings) is the active hunch and this contact does not validate it. NOT off_scope: their ICP fit for their own assumption is intact, and H1/H2 are superseded un-falsified, so this reverses in one pass if either lane is revived. [msg1 drafted 2026-09-05, MCP framing] Founder-set anchor: what he is building, with the Cambridge work as provenance rather than as the subject. Live profile re-read 2026-09-05 (LR-B6). Copy at outreach/copy/H1-H2-linkedin.md. UNSENT and NOT to be sent by Claude. Live-verified. Also Founder and CEO of CAST Energy and a resident at the King's entrepreneurship lab in Cambridge, which overlaps the founder's own Cambridge year. That overlap is the opener. [unheld 2026-09-05] Founder decision: the MCP framing is written for this lane, so this contact leaves `held` and re-enters the campaign as `pending`. The H3 hold that put them here is lifted for them, not for the lane. [LR-B25 2026-09-05] Inbox check clean; the Chris search returned only unrelated threads."
 ## Tom Cho
 
 id: C35
@@ -1832,7 +1816,7 @@ open_to_work: false
 
 close_variant:
 relationship_type: operator_buyer
-outreach_status: held
+outreach_status: off_scope
 message_stage:
 call_stage: none
 found_date: 2026-09-02
@@ -1846,7 +1830,7 @@ interviews: []
 evidence_score:
 outcome_modifier:
 prior_contact_status: checked
-notes: "[LR-B30 DROP 2026-09-02] Messaged 2019-10-02, no reply, no buyer-authority token. Drops."
+notes: "[audit off_scope 2026-09-05] Fails icp_out_of_scope on H0A1: Ford - high-volume automotive, and exterior lighting is a component design role rather than the handoff. Sourced against H2 from the founder 1st-degree network; H2 is superseded and this contact does not reach the belief-level nodes either. [LR-B30 DROP 2026-09-02] Messaged 2019-10-02, no reply, no buyer-authority token. Drops."
 
 ## Jia Wei, Ph.D.
 
@@ -1883,7 +1867,7 @@ open_to_work: false
 
 close_variant:
 relationship_type: operator_buyer
-outreach_status: held
+outreach_status: off_scope
 message_stage:
 call_stage: none
 found_date: 2026-09-02
@@ -1897,7 +1881,7 @@ interviews: []
 evidence_score:
 outcome_modifier:
 prior_contact_status: checked
-notes: "[LR-B30 HOLD 2026-09-02] Messaged 2026-08-06, 27 days, no reply. Eligible 2026-11-06."
+notes: "[audit off_scope 2026-09-05] Fails icp_out_of_scope on H0A1: ABB Senior R&D Engineer - research, not operations. Possible expert-tier value, never demand. Sourced against H2 from the founder 1st-degree network; H2 is superseded and this contact does not reach the belief-level nodes either. [LR-B30 HOLD 2026-09-02] Messaged 2026-08-06, 27 days, no reply. Eligible 2026-11-06."
 
 ## Oliver Junnila
 
@@ -1932,10 +1916,10 @@ mutuals_count:
 active_last_30d: unknown
 open_to_work: false
 
-close_variant:
+close_variant: soft_ask
 relationship_type: operator_buyer
-outreach_status: held
-message_stage:
+outreach_status: msg1_sent
+message_stage: msg1_sent
 call_stage: none
 found_date: 2026-09-02
 invited_date:
@@ -1948,8 +1932,7 @@ interviews: []
 evidence_score:
 outcome_modifier:
 prior_contact_status: unchecked
-notes: "[wave 2, 2026-09-02] Added on the company-first recount. NOT yet live-snapshot verified and prior-contact state NOT checked (LR-B25) - both required before drafting. [H3 hold 2026-09-03] Sourced against H1/H2 ICPs. H3 (made-to-measure window coverings) is the active hunch and this contact does not validate it. NOT off_scope: their ICP fit for their own assumption is intact, and H1/H2 are superseded un-falsified, so this reverses in one pass if either lane is revived."
-
+notes: "[wave 2, 2026-09-02] Added on the company-first recount. NOT yet live-snapshot verified and prior-contact state NOT checked (LR-B25) - both required before drafting. [H3 hold 2026-09-03] Sourced against H1/H2 ICPs. H3 (made-to-measure window coverings) is the active hunch and this contact does not validate it. NOT off_scope: their ICP fit for their own assumption is intact, and H1/H2 are superseded un-falsified, so this reverses in one pass if either lane is revived. [msg1 drafted 2026-09-05, MCP framing] Founder-set anchor: what he is building, with the Cambridge work as provenance rather than as the subject. Live profile re-read 2026-09-05 (LR-B6). Copy at outreach/copy/H1-H2-linkedin.md. UNSENT and NOT to be sent by Claude. Live-verified 2026-09-05, card already correct. [unheld 2026-09-05] Founder decision: the MCP framing is written for this lane, so this contact leaves `held` and re-enters the campaign as `pending`. The H3 hold that put them here is lifted for them, not for the lane. [LR-B25 2026-09-05] Inbox check clean, no thread. [msg1 sent 2026-09-05 by founder, by hand] Observed in the founder's own LinkedIn inbox on 2026-09-05 during a reconciliation pass, timestamp 7:16 PM. The thread shows the founder's message last and no reply yet. The copy sent is NOT the copy archived in this repo: the founder is now opening with "I am building the MCP layer for machines in manufacturing" and asking whether the gap shows up in rework rates. See outreach/linkedin/belief-experts-2026-09/drafts.md for the record of that framing."
 ## Eric Yoshikawa, MBA, MAM
 
 id: C38
@@ -1985,7 +1968,7 @@ open_to_work: false
 
 close_variant:
 relationship_type: operator_buyer
-outreach_status: held
+outreach_status: off_scope
 message_stage:
 call_stage: none
 found_date: 2026-09-02
@@ -1999,7 +1982,7 @@ interviews: []
 evidence_score:
 outcome_modifier:
 prior_contact_status: checked
-notes: "[LR-B30 2026-09-02] They REPLIED 2021-02-17. Continuation - route to /startup-outreach-reply."
+notes: "[audit off_scope 2026-09-05] Fails icp_out_of_scope on H0A1: Honeywell via Intelliswift, advanced test engineering. Volume electronics and a test function, not the design-to-manufacture handoff. Sourced against H2 from the founder 1st-degree network; H2 is superseded and this contact does not reach the belief-level nodes either. [LR-B30 2026-09-02] They REPLIED 2021-02-17. Continuation - route to /startup-outreach-reply."
 
 ## Suhey Perez
 
@@ -2160,8 +2143,8 @@ id: C42
 name: Andrii Bondar
 linkedin_url: https://www.linkedin.com/in/bondarandrii/
 linkedin_account: Izgin
-company: NY City Blinds & Window Treatments (past)
-role: Regional Installation Manager, 10+ yrs luxury window treatments
+company: Blinds To Go
+role: Installation Manager, Manhattan area
 
 signal_type: profile_fit
 signal_multiplier: 1.0
@@ -2174,27 +2157,33 @@ role_pts: 2
 tier: dealer_installer
 size_band: 
 
-assumptions_tested: [H3A1]
+assumptions_tested: [H3A4]
 validation_rationale: >
-  A regional installation manager aggregates across crews and jobs, so he is one of the few contacts who can give a frequency rather than a story. Luxury/motorised work also has the highest unit value, which is where a remake hurts most.
+  He leads the Manhattan install crews at Blinds To Go and spent seven months as a design
+  consultant taking the measurements himself, so he has stood on both ends of H3A4: what a visit
+  costs to make in Manhattan, and which ones are worth making. His own posts describe protective
+  shoe covers and laser measuring as core practice, so the visit economics are not abstract to
+  him.
 
-response_likelihood: 5
+response_likelihood: 8
 likelihood_factors: >
-  3rd degree, cold (0) · regional manager sees many crews, so reports a rate not an anecdote (+3) · luxury segment where a remake costs most (+2)
+  1st degree, accepted (+3) · leads a multi-crew install team so reports a rate not an anecdote
+  (+3) · posts about measurement and installation practice, active in the last 30 days (+1) ·
+  profile_fit signal (0), start 3, capped at 8
 outreach_pattern:
-degree: "3rd+"
+degree: "1st"
 mutuals_count:
 active_last_30d: unknown
 open_to_work: false
 
-close_variant:
+close_variant: soft_ask
 relationship_type: field_practitioner
-outreach_status: accepted
-message_stage:
-call_stage: none
+outreach_status: replied
+message_stage: msg3_sent
+call_stage: asked_by_founder
 found_date: 2026-09-03
 invited_date: 2026-09-03
-accepted_date:
+accepted_date: unknown  # observed 1st-degree 2026-09-04; LinkedIn does not show the date
 scheduled_date:
 interview_date:
 
@@ -2203,9 +2192,7 @@ interviews: []
 evidence_score:
 outcome_modifier:
 prior_contact_status: pending
-notes: "[invited 2026-09-03] Bare connection request, no note (LR-B29), sent by Claude with per-invite name verification against the invitation modal. Campaign: outreach/linkedin/h3-window-coverings-2026-09/. Location: Edgewater, New Jersey, US. Found via LinkedIn people search 2026-09-03 (Pass 4, Phase B — no companies.md registry exists yet). Headline and company are from the SEARCH RESULT only; /startup-outreach-draft must re-open the live profile before any claim is written (LR-B6)."
-  [accepted 2026-09-04] Connection accepted; LinkedIn connections list reads "Connected on September 3, 2026". No message from them. Awaiting Msg 1.
-
+notes: "[invited 2026-09-03] Bare connection request, no note (LR-B29), sent by Claude with per-invite name verification against the invitation modal. Campaign: outreach/linkedin/h3-window-coverings-2026-09/. Location: Edgewater, New Jersey, US. Found via LinkedIn people search 2026-09-03 (Pass 4, Phase B — no companies.md registry exists yet). Headline and company are from the SEARCH RESULT only; /startup-outreach-draft must re-open the live profile before any claim is written (LR-B6). [msg1 drafted 2026-09-04] Post-acceptance Msg 1 for H3A4, soft_ask, standard register. Live profile re-read 2026-09-04 (LR-B6); LR-B25 first-name inbox check clean, positive control (Viliam) returned its thread in the same batch. CORRECTED from the search-result cache: he is at Blinds To Go leading the Manhattan team, not at NY City Blinds, which he left in 2018. Copy at outreach/copy/H3-linkedin.md. [accepted 2026-09-04] Connection accepted; LinkedIn connections list reads 'Connected on September 3, 2026'. No message from them. [msg1 sent] 2026-09-04 by the founder, by hand, in his own rewording of the draft: the opening names interoperability as the research subject and reaches it through measurement mis-matches, with the window-to-factory trip second, in a warmer register. 476 chars, 26 over the ~450 DM cap. The as-sent text is in outreach/copy/H3-linkedin.md; the eight other H3 drafts there still carry the drafted opening, so the two openings can be compared on reply rate. Awaiting reply. [replied 2026-09-04] Thread read live 2026-09-05. Full arc: founder's Msg 1 at 12:18, Andrii "Absolutely" at 12:50, founder asked for a call next week at 13:31, Andrii "Sure / I will" at 13:41 then "Let's chat Tuesday about my availability for next week" at 13:43. [msg3 sent 2026-09-05] Founder replied 09:34 "Sounds great - I will message you Tuesday!". FIRST CALL AGREEMENT SOURCED FROM LINKEDIN in this campaign. NEXT ACTION IS THE FOUNDER'S AND IT IS DATED: message him Tuesday 2026-09-08 to fix a time. He has agreed to talk, not yet to a slot, so this is call_stage asked_by_founder rather than scheduled. Nothing he has said is evidence yet: no question was asked and no claim was made."
 ## Richard Jones
 
 id: C43
@@ -2226,27 +2213,32 @@ role_pts: 2
 tier: dealer_installer
 size_band: 
 
-assumptions_tested: [H3A1]
+assumptions_tested: [H3A4]
 validation_rationale: >
-  Runs installations at the same firm as Paul Stuart, which makes the pair a useful cross-check: if the manager and the surveyor describe misfit frequency differently, that gap is itself the finding.
+  Installations manager at a UK dealer since Jan 2024 and a self-employed installation specialist
+  across Essex and London since 2022. He is the H3A4 unit of analysis twice over: he carries the
+  visit cost as an employer and as a sole trader, and his Appeal Home Shading entry uses 'Survey /
+  Installation' as his own term for the trip.
 
-response_likelihood: 5
+response_likelihood: 8
 likelihood_factors: >
-  3rd degree, cold (0) · manages installs, sees the return rate (+3) · small firm (+1)
+  1st degree, accepted (+3) · runs installs for a dealer and separately trades as a self-employed
+  installation specialist, so he sees both cost structures (+2) · used 'survey' as his own word
+  for the measuring visit on a prior role (+1) · profile_fit (0), start 3, capped at 8
 outreach_pattern:
-degree: "3rd+"
+degree: "1st"
 mutuals_count:
 active_last_30d: unknown
 open_to_work: false
 
-close_variant:
+close_variant: soft_ask
 relationship_type: field_practitioner
-outreach_status: accepted
-message_stage:
+outreach_status: msg1_sent
+message_stage: msg1_sent
 call_stage: none
 found_date: 2026-09-03
 invited_date: 2026-09-03
-accepted_date:
+accepted_date: unknown  # observed 1st-degree 2026-09-04; LinkedIn does not show the date
 scheduled_date:
 interview_date:
 
@@ -2255,7 +2247,7 @@ interviews: []
 evidence_score:
 outcome_modifier:
 prior_contact_status: pending
-notes: "[invited 2026-09-03] Bare connection request, no note (LR-B29), sent by Claude with per-invite name verification against the invitation modal. Campaign: outreach/linkedin/h3-window-coverings-2026-09/. Location: London, UK. Found via LinkedIn people search 2026-09-03 (Pass 4, Phase B — no companies.md registry exists yet). Headline and company are from the SEARCH RESULT only; /startup-outreach-draft must re-open the live profile before any claim is written (LR-B6)."
+notes: "[invited 2026-09-03] Bare connection request, no note (LR-B29), sent by Claude with per-invite name verification against the invitation modal. Campaign: outreach/linkedin/h3-window-coverings-2026-09/. Location: London, UK. Found via LinkedIn people search 2026-09-03 (Pass 4, Phase B — no companies.md registry exists yet). Headline and company are from the SEARCH RESULT only; /startup-outreach-draft must re-open the live profile before any claim is written (LR-B6). [msg1 drafted 2026-09-04] Post-acceptance Msg 1 for H3A4, soft_ask, standard register. Live profile re-read 2026-09-04 (LR-B6); LR-B25 first-name inbox check clean, positive control (Viliam) returned its thread in the same batch. Copy at outreach/copy/H3-linkedin.md. UNSENT: the founder sends by hand. [msg1 sent 2026-09-05] Sent by the founder by hand. NOTE: this one went out carrying the SUPERSEDED anchor, which described the Cambridge year as research into how a window measurement reaches the factory. The founder corrected that on 2026-09-05: the MPhil was on the broken digital thread between CAD-CAM systems, not on window measurement. Every remaining draft was rewritten to the true claim; this one cannot be recalled. If he asks what the Cambridge work was, answer with the interoperability version, which is what the profile supports."
   [accepted 2026-09-04] Connection accepted; LinkedIn connections list reads "Connected on September 3, 2026". No message from them. Awaiting Msg 1.
 
 ## Andy Andre
@@ -2599,8 +2591,8 @@ open_to_work: false
 
 close_variant:
 relationship_type: field_practitioner
-outreach_status: invited
-message_stage:
+outreach_status: msg1_sent
+message_stage: msg1_sent
 call_stage: none
 found_date: 2026-09-03
 invited_date: 2026-09-03
@@ -2613,8 +2605,7 @@ interviews: []
 evidence_score:
 outcome_modifier:
 prior_contact_status: pending
-notes: "[invited 2026-09-03] Bare connection request, no note (LR-B29), sent by Claude with per-invite name verification against the invitation modal. Campaign: outreach/linkedin/h3-window-coverings-2026-09/. Location: Rochdale, UK. Found via LinkedIn people search 2026-09-03 (Pass 4, Phase B — no companies.md registry exists yet). Headline and company are from the SEARCH RESULT only; /startup-outreach-draft must re-open the live profile before any claim is written (LR-B6)."
-
+notes: "[invited 2026-09-03] Bare connection request, no note (LR-B29), sent by Claude with per-invite name verification against the invitation modal. Campaign: outreach/linkedin/h3-window-coverings-2026-09/. Location: Rochdale, UK. Found via LinkedIn people search 2026-09-03 (Pass 4, Phase B — no companies.md registry exists yet). Headline and company are from the SEARCH RESULT only; /startup-outreach-draft must re-open the live profile before any claim is written (LR-B6). [msg1 sent 2026-09-05 by founder, by hand] Observed in the founder's own LinkedIn inbox on 2026-09-05 during a reconciliation pass, timestamp 6:14 PM. The thread shows the founder's message last and no reply yet. The copy sent is NOT the copy archived in this repo: the founder is now opening with "I am building the MCP layer for machines in manufacturing" and asking whether the gap shows up in rework rates. See outreach/linkedin/belief-experts-2026-09/drafts.md for the record of that framing. Invite had been accepted; the ledger still said invited."
 ## MJ Khah
 
 id: C51
@@ -2672,41 +2663,46 @@ id: C52
 name: Chris Chase
 linkedin_url: https://www.linkedin.com/in/chris-chase-9814b320/
 linkedin_account: Izgin
-company: Hunter Douglas dealer network
-role: Hunter Douglas master blind and shutter installer
+company: C & S Blind Installations Inc.
+role: Independent business owner, blind and drapery installation
 
 signal_type: profile_fit
 signal_multiplier: 1.0
 signal_source_url:
 signal_excerpt:
 
-contact_role: practitioner
-role_pts: 2
+contact_role: buyer
+role_pts: 3
 
 tier: dealer_installer
 size_band: micro
 
-assumptions_tested: [H3A1]
+assumptions_tested: [H3A4]
 validation_rationale: >
-  Certified to Hunter Douglas standards and does repair work, so he sees both fresh misfits and the ones that get remediated rather than remade — a distinction that changes the true cost.
+  He OWNS the installation company rather than working inside a dealer network, which the cached
+  entry missed. That makes him the cleanest H3A4 respondent on the list: the cost of driving
+  across Calgary to a window comes out of his own margin, and after thirteen years he can say
+  which jobs he declines on distance without consulting anyone.
 
-response_likelihood: 5
+response_likelihood: 8
 likelihood_factors: >
-  3rd degree, cold (0) · certified against the largest global manufacturer's standard (+3) · does repairs too, sees failure modes (+2)
+  1st degree, accepted (+3) · owns the business so carries the visit cost himself, which is the
+  H3A4 unit of analysis (+2) · thirteen years in one metro, so distance and drive time are a lived
+  constraint (+1) · profile_fit (0), start 3, capped at 8
 outreach_pattern:
-degree: "3rd+"
+degree: "1st"
 mutuals_count:
 active_last_30d: unknown
 open_to_work: false
 
-close_variant:
+close_variant: soft_ask
 relationship_type: field_practitioner
-outreach_status: accepted
-message_stage:
+outreach_status: msg1_sent
+message_stage: msg1_sent
 call_stage: none
 found_date: 2026-09-03
 invited_date: 2026-09-03
-accepted_date:
+accepted_date: unknown  # observed 1st-degree 2026-09-04; LinkedIn does not show the date
 scheduled_date:
 interview_date:
 
@@ -2715,7 +2711,7 @@ interviews: []
 evidence_score:
 outcome_modifier:
 prior_contact_status: pending
-notes: "[invited 2026-09-03] Bare connection request, no note (LR-B29), sent by Claude with per-invite name verification against the invitation modal. Campaign: outreach/linkedin/h3-window-coverings-2026-09/. Location: Calgary, Canada. Found via LinkedIn people search 2026-09-03 (Pass 4, Phase B — no companies.md registry exists yet). Headline and company are from the SEARCH RESULT only; /startup-outreach-draft must re-open the live profile before any claim is written (LR-B6)."
+notes: "[invited 2026-09-03] Bare connection request, no note (LR-B29), sent by Claude with per-invite name verification against the invitation modal. Campaign: outreach/linkedin/h3-window-coverings-2026-09/. Location: Calgary, Canada. Found via LinkedIn people search 2026-09-03 (Pass 4, Phase B — no companies.md registry exists yet). Headline and company are from the SEARCH RESULT only; /startup-outreach-draft must re-open the live profile before any claim is written (LR-B6). [msg1 drafted 2026-09-04] Post-acceptance Msg 1 for H3A4, soft_ask, senior register. Live profile re-read 2026-09-04 (LR-B6); LR-B25 first-name inbox check clean, positive control (Viliam) returned its thread in the same batch. CORRECTED from the search-result cache: he is the independent owner of C & S Blind Installations Inc. in Calgary, not a contractor inside the Hunter Douglas dealer network. contact_role raised to buyer accordingly. Copy at outreach/copy/H3-linkedin.md. UNSENT: the founder sends by hand. [msg1 sent 2026-09-05 10:53] Sent by the founder by hand, found by an inbox check the same day rather than reported. Sent verbatim from the draft, the only one of the five that was. The as-sent text is in outreach/copy/H3-linkedin.md; it is NOT the drafted text and it is not the later two-frame rewrite either, so treat this send as its own copy variant. No reply as of 2026-09-05."
   [accepted 2026-09-04] Connection accepted; LinkedIn connections list reads "Connected on September 3, 2026". No message from them. Awaiting Msg 1.
 
 ## Leanna Thompson
@@ -5089,27 +5085,34 @@ role_pts: 3
 tier: national_retail_channel
 size_band: enterprise
 
-assumptions_tested: [H3A1, H3A3]
+assumptions_tested: [H3A5]
 validation_rationale: >
-  Blinds.com is Home Depot's made-to-measure arm and publishes SureFit, which caps free customer-error remakes at four windows per household. The recon reads that cap as evidence the claim volume was worth capping. As VP Merchandising she owns the category P&L that cap protects and can state the rate behind it (H3A1) and who the cost is charged to (H3A3).
+  REROUTED from H3A1/H3A3 to H3A5 on 2026-09-04. Blinds.com sends nobody to measure, so she cannot
+  name a visit fee and asking her H3A4 would collect a courteous opinion outside her competence.
+  What she owns is the mirror question and H3A5's disconfirmation test: her own profile says she
+  drives online sales for every window treatment category, so she is the one person on this list
+  who can rank why the category still sells offline, and say whether measurement leads that
+  ranking or fabric and colour do.
 
-response_likelihood: 4
+response_likelihood: 7
 likelihood_factors: >
-  profile_fit (0) · start 3 · 3rd+ (0) · VP owns the category P&L the remake hits (+2) · senior and busy (-1)
+  1st degree, accepted (+3) · owns the category P&L at the largest online-only made-to-measure
+  seller in the US (+2) · no posts or visible activity to read (0) · profile_fit (0), start 3,
+  capped at 7 for seniority and inbox volume
 outreach_pattern:
-degree: "3rd+"
+degree: "1st"
 mutuals_count:
 active_last_30d: unknown
 open_to_work: false
 
-close_variant:
+close_variant: soft_ask
 relationship_type: operator_buyer
-outreach_status: accepted
-message_stage:
+outreach_status: msg1_sent
+message_stage: msg1_sent
 call_stage: none
 found_date: 2026-09-03
 invited_date: 2026-09-03
-accepted_date:
+accepted_date: unknown  # observed 1st-degree 2026-09-04; LinkedIn does not show the date
 scheduled_date:
 interview_date:
 
@@ -5118,7 +5121,7 @@ interviews: []
 evidence_score:
 outcome_modifier:
 prior_contact_status: pending
-notes: "[invited 2026-09-03] Bare connection request, no note (LR-B29), sent by Claude with per-invite name verification against the invitation modal. Campaign: outreach/linkedin/h3-window-coverings-2026-09/. [sourced 2026-09-03] Enterprise/top-band pass against the H3 ICP after the market ladder showed the existing pool sat almost entirely in the micro band. Headline and company read from LinkedIn people search on 2026-09-03; profile NOT yet opened, so degree and title are search-result facts and must be re-verified live before any draft (LR-B6, LR-B25)."
+notes: "[invited 2026-09-03] Bare connection request, no note (LR-B29), sent by Claude with per-invite name verification against the invitation modal. Campaign: outreach/linkedin/h3-window-coverings-2026-09/. [sourced 2026-09-03] Enterprise/top-band pass against the H3 ICP after the market ladder showed the existing pool sat almost entirely in the micro band. Headline and company read from LinkedIn people search on 2026-09-03; profile NOT yet opened, so degree and title are search-result facts and must be re-verified live before any draft (LR-B6, LR-B25). [msg1 drafted 2026-09-04] Post-acceptance Msg 1 for H3A5, soft_ask, senior register. Live profile re-read 2026-09-04 (LR-B6); LR-B25 first-name inbox check clean, positive control (Viliam) returned its thread in the same batch. Live snapshot confirms the cached title and company unchanged. Copy at outreach/copy/H3-linkedin.md. UNSENT: the founder sends by hand. [msg1 sent 2026-09-05 10:55] Sent by the founder by hand, found by an inbox check the same day rather than reported. "Thanks for connecting." added after the greeting. The as-sent text is in outreach/copy/H3-linkedin.md; it is NOT the drafted text and it is not the later two-frame rewrite either, so treat this send as its own copy variant. No reply as of 2026-09-05."
   [accepted 2026-09-04] Connection accepted; LinkedIn connections list reads "Connected on September 3, 2026". No message from them. Awaiting Msg 1.
 
 ## Kris Decker
@@ -5207,8 +5210,8 @@ open_to_work: false
 
 close_variant:
 relationship_type: operator_buyer
-outreach_status: invited
-message_stage:
+outreach_status: msg1_sent
+message_stage: msg1_sent
 call_stage: none
 found_date: 2026-09-03
 invited_date: 2026-09-03
@@ -5221,8 +5224,7 @@ interviews: []
 evidence_score:
 outcome_modifier:
 prior_contact_status: pending
-notes: "[invited 2026-09-03] Bare connection request, no note (LR-B29), sent by Claude with per-invite name verification against the invitation modal. Campaign: outreach/linkedin/h3-window-coverings-2026-09/. [sourced 2026-09-03] Enterprise/top-band pass against the H3 ICP after the market ladder showed the existing pool sat almost entirely in the micro band. Headline and company read from LinkedIn people search on 2026-09-03; profile NOT yet opened, so degree and title are search-result facts and must be re-verified live before any draft (LR-B6, LR-B25)."
-
+notes: "[invited 2026-09-03] Bare connection request, no note (LR-B29), sent by Claude with per-invite name verification against the invitation modal. Campaign: outreach/linkedin/h3-window-coverings-2026-09/. [sourced 2026-09-03] Enterprise/top-band pass against the H3 ICP after the market ladder showed the existing pool sat almost entirely in the micro band. Headline and company read from LinkedIn people search on 2026-09-03; profile NOT yet opened, so degree and title are search-result facts and must be re-verified live before any draft (LR-B6, LR-B25). [msg1 sent 2026-09-05 by founder, by hand] Observed in the founder's own LinkedIn inbox on 2026-09-05 during a reconciliation pass, timestamp 10:53 AM. The thread shows the founder's message last and no reply yet. The copy sent is NOT the copy archived in this repo: the founder is now opening with "I am building the MCP layer for machines in manufacturing" and asking whether the gap shows up in rework rates. See outreach/linkedin/belief-experts-2026-09/drafts.md for the record of that framing. Invite had been accepted; the ledger still said invited."
 ## Casey Ogden
 
 id: C102
@@ -5309,8 +5311,8 @@ open_to_work: false
 
 close_variant:
 relationship_type: operator_buyer
-outreach_status: invited
-message_stage:
+outreach_status: msg1_sent
+message_stage: msg1_sent
 call_stage: none
 found_date: 2026-09-03
 invited_date: 2026-09-03
@@ -5323,8 +5325,7 @@ interviews: []
 evidence_score:
 outcome_modifier:
 prior_contact_status: pending
-notes: "[invited 2026-09-03] Bare connection request, no note (LR-B29), sent by Claude with per-invite name verification against the invitation modal. Campaign: outreach/linkedin/h3-window-coverings-2026-09/. [sourced 2026-09-03] Enterprise/top-band pass against the H3 ICP after the market ladder showed the existing pool sat almost entirely in the micro band. Headline and company read from LinkedIn people search on 2026-09-03; profile NOT yet opened, so degree and title are search-result facts and must be re-verified live before any draft (LR-B6, LR-B25)."
-
+notes: "[invited 2026-09-03] Bare connection request, no note (LR-B29), sent by Claude with per-invite name verification against the invitation modal. Campaign: outreach/linkedin/h3-window-coverings-2026-09/. [sourced 2026-09-03] Enterprise/top-band pass against the H3 ICP after the market ladder showed the existing pool sat almost entirely in the micro band. Headline and company read from LinkedIn people search on 2026-09-03; profile NOT yet opened, so degree and title are search-result facts and must be re-verified live before any draft (LR-B6, LR-B25). [msg1 sent 2026-09-05 by founder, by hand] Observed in the founder's own LinkedIn inbox on 2026-09-05 during a reconciliation pass, timestamp 6:15 PM. The thread shows the founder's message last and no reply yet. The copy sent is NOT the copy archived in this repo: the founder is now opening with "I am building the MCP layer for machines in manufacturing" and asking whether the gap shows up in rework rates. See outreach/linkedin/belief-experts-2026-09/drafts.md for the record of that framing. Invite had been accepted; the ledger still said invited."
 ## Elizabeth B.
 
 id: C104
@@ -5434,7 +5435,7 @@ name: Fernando Antonio Martinez Almaraz
 linkedin_url: https://www.linkedin.com/in/fernando-antonio-martinez-almaraz-32773b71/
 linkedin_account: Izgin
 company: Springs Window Fashions
-role: Quality Engineering Manager
+role: Quality Manager
 
 signal_type: profile_fit
 signal_multiplier: 1.0
@@ -5447,27 +5448,33 @@ role_pts: 2
 tier: window_covering_manufacturer
 size_band: enterprise
 
-assumptions_tested: [H3A1, H3A2]
+assumptions_tested: [H3A1]
 validation_rationale: >
-  Springs Window Fashions (Levolor, Bali) covers all major residential and commercial channels, so its quality data spans the industry rather than one niche. A Quality Engineering Manager owns the categorisation that H3A2 turns on - whether a returned unit is logged as a manufacturing defect or as a wrong incoming dimension - and that categorisation is the source of any rate he could quote for H3A1.
+  REROUTED from H3A2 to H3A1 alone on 2026-09-04. A plant quality manager books no measuring
+  visits, so H3A4 is outside his competence, but the remake rate is exactly what his function
+  measures. His thirteen years in automotive quality before Springs is the useful asymmetry: he
+  knows what a normal external-defect rate looks like in an industry that tracks it obsessively,
+  so a window-covering figure will read as high or low to him rather than just as a number.
 
-response_likelihood: 6
+response_likelihood: 8
 likelihood_factors: >
-  profile_fit (0) · start 3 · 3rd+ (0) · quality engineering owns the defect-vs-mismeasure split directly (+3) · engineer-level contacts answer technical questions readily (0)
+  1st degree, accepted (+3) · quality owner at a manufacturer, so remakes land on his desk as data
+  rather than as a story (+2) · thirteen years of automotive quality gives him a defect-rate
+  baseline outside this industry to compare against (+1) · profile_fit (0), start 3, capped at 8
 outreach_pattern:
-degree: "3rd+"
+degree: "1st"
 mutuals_count:
 active_last_30d: unknown
 open_to_work: false
 
-close_variant:
+close_variant: soft_ask
 relationship_type: operator_buyer
-outreach_status: accepted
-message_stage:
+outreach_status: msg1_sent
+message_stage: msg1_sent
 call_stage: none
 found_date: 2026-09-03
 invited_date: 2026-09-03
-accepted_date:
+accepted_date: unknown  # observed 1st-degree 2026-09-04; LinkedIn does not show the date
 scheduled_date:
 interview_date:
 
@@ -5476,7 +5483,7 @@ interviews: []
 evidence_score:
 outcome_modifier:
 prior_contact_status: pending
-notes: "[invited 2026-09-03] Bare connection request, no note (LR-B29), sent by Claude with per-invite name verification against the invitation modal. Campaign: outreach/linkedin/h3-window-coverings-2026-09/. [sourced 2026-09-03] Enterprise/top-band pass against the H3 ICP after the market ladder showed the existing pool sat almost entirely in the micro band. Headline and company read from LinkedIn people search on 2026-09-03; profile NOT yet opened, so degree and title are search-result facts and must be re-verified live before any draft (LR-B6, LR-B25)."
+notes: "[invited 2026-09-03] Bare connection request, no note (LR-B29), sent by Claude with per-invite name verification against the invitation modal. Campaign: outreach/linkedin/h3-window-coverings-2026-09/. [sourced 2026-09-03] Enterprise/top-band pass against the H3 ICP after the market ladder showed the existing pool sat almost entirely in the micro band. Headline and company read from LinkedIn people search on 2026-09-03; profile NOT yet opened, so degree and title are search-result facts and must be re-verified live before any draft (LR-B6, LR-B25). [msg1 drafted 2026-09-04] Post-acceptance Msg 1 for H3A1, soft_ask, standard register. Live profile re-read 2026-09-04 (LR-B6); LR-B25 first-name inbox check clean, positive control (Viliam) returned its thread in the same batch. CORRECTED: his title reads Quality Manager, not Quality Engineering Manager. Copy at outreach/copy/H3-linkedin.md. UNSENT: the founder sends by hand. [msg1 sent 2026-09-05 10:56] Sent by the founder by hand, found by an inbox check the same day rather than reported. The founder fixed the clause himself: "a wrong measurement rather than a bad manufactured part", replacing the drafted "a wrong number rather than a bad part" that he had flagged as not making sense. The as-sent text is in outreach/copy/H3-linkedin.md; it is NOT the drafted text and it is not the later two-frame rewrite either, so treat this send as its own copy variant. No reply as of 2026-09-05."
   [accepted 2026-09-04] Connection accepted; LinkedIn connections list reads "Connected on September 3, 2026". No message from them. Awaiting Msg 1.
 
 ## Julio Tinajero
@@ -5485,8 +5492,8 @@ id: C107
 name: Julio Tinajero
 linkedin_url: https://www.linkedin.com/in/julio-tinajero-9b5a5332/
 linkedin_account: Izgin
-company: Springs Window Fashions
-role: Plant Operations Manager (1,300 employees)
+company: Springs Window Fashions (Reynosa; role ended Oct 2025)
+role: Plant Operations Manager, Reynosa
 
 signal_type: profile_fit
 signal_multiplier: 1.0
@@ -5499,27 +5506,33 @@ role_pts: 2
 tier: window_covering_manufacturer
 size_band: enterprise
 
-assumptions_tested: [H3A1, H3A2]
+assumptions_tested: [H3A1]
 validation_rationale: >
-  Runs a 1,300-employee Springs plant - his own headline states the size, which independently confirms the enterprise band rather than leaving it inferred. Remakes re-enter his production schedule as rush work, so he feels them as disruption as well as cost, and can say what share of the line's output they consume (H3A1) and whether the wrong number arrived or was created inside his plant (H3A2).
+  REROUTED from H3A2 to H3A1 alone on 2026-09-04, and drafted from the PRIOR role per LR-B8. His
+  own entry says he cut external defects by half in eighteen months across three shifts and 1,300
+  people at Springs Reynosa. A person who moved that number knows what was driving it, which is
+  the causal split H3A1 needs and that no published source provides. He cannot speak to the
+  measuring visit, which happens at the dealer, so H3A4 is not asked.
 
-response_likelihood: 5
+response_likelihood: 7
 likelihood_factors: >
-  profile_fit (0) · start 3 · 3rd+ (0) · runs a 1,300-person plant making this exact product (+3) · plant managers are hard to reach on LinkedIn (-1)
+  1st degree, accepted (+3) · ran a $67m P&L at the plant, so he saw the remake cost as money
+  rather than as a defect count (+2) · left the role in Oct 2025, so recall is recent but he no
+  longer has the reports in front of him (-1) · profile_fit (0), start 3, capped at 7
 outreach_pattern:
-degree: "3rd+"
+degree: "1st"
 mutuals_count:
 active_last_30d: unknown
 open_to_work: false
 
-close_variant:
+close_variant: soft_ask
 relationship_type: operator_buyer
-outreach_status: accepted
-message_stage:
+outreach_status: msg1_sent
+message_stage: msg1_sent
 call_stage: none
 found_date: 2026-09-03
 invited_date: 2026-09-03
-accepted_date:
+accepted_date: unknown  # observed 1st-degree 2026-09-04; LinkedIn does not show the date
 scheduled_date:
 interview_date:
 
@@ -5528,7 +5541,7 @@ interviews: []
 evidence_score:
 outcome_modifier:
 prior_contact_status: pending
-notes: "[invited 2026-09-03] Bare connection request, no note (LR-B29), sent by Claude with per-invite name verification against the invitation modal. Campaign: outreach/linkedin/h3-window-coverings-2026-09/. [sourced 2026-09-03] Enterprise/top-band pass against the H3 ICP after the market ladder showed the existing pool sat almost entirely in the micro band. Headline and company read from LinkedIn people search on 2026-09-03; profile NOT yet opened, so degree and title are search-result facts and must be re-verified live before any draft (LR-B6, LR-B25)."
+notes: "[invited 2026-09-03] Bare connection request, no note (LR-B29), sent by Claude with per-invite name verification against the invitation modal. Campaign: outreach/linkedin/h3-window-coverings-2026-09/. [sourced 2026-09-03] Enterprise/top-band pass against the H3 ICP after the market ladder showed the existing pool sat almost entirely in the micro band. Headline and company read from LinkedIn people search on 2026-09-03; profile NOT yet opened, so degree and title are search-result facts and must be re-verified live before any draft (LR-B6, LR-B25). [msg1 drafted 2026-09-04] Post-acceptance Msg 1 for H3A1, soft_ask, senior register. Live profile re-read 2026-09-04 (LR-B6); LR-B25 first-name inbox check clean, positive control (Viliam) returned its thread in the same batch. CORRECTED, and this is the reason LR-B6 exists: the Springs role ENDED Oct 2025. His headline still reads as current, so the two disagree; the message is written so it is true either way. Copy at outreach/copy/H3-linkedin.md. UNSENT: the founder sends by hand. [msg1 sent 2026-09-05 10:58] Sent by the founder by hand, found by an inbox check the same day rather than reported. Frame replaced with the founder's own, plainer version: whether the software gap "traces all the way down to quality issues". Shorter and in plant language. The as-sent text is in outreach/copy/H3-linkedin.md; it is NOT the drafted text and it is not the later two-frame rewrite either, so treat this send as its own copy variant. No reply as of 2026-09-05."
   [accepted 2026-09-04] Connection accepted; LinkedIn connections list reads "Connected on September 3, 2026". No message from them. Awaiting Msg 1.
 
 ## Javier Bustamante Martinez
@@ -5668,8 +5681,8 @@ open_to_work: false
 
 close_variant:
 relationship_type: operator_buyer
-outreach_status: invited
-message_stage:
+outreach_status: msg1_sent
+message_stage: msg1_sent
 call_stage: none
 found_date: 2026-09-03
 invited_date: 2026-09-03
@@ -5682,8 +5695,7 @@ interviews: []
 evidence_score:
 outcome_modifier:
 prior_contact_status: pending
-notes: "[invited 2026-09-03] Bare connection request, no note (LR-B29), sent by Claude with per-invite name verification against the invitation modal. Campaign: outreach/linkedin/h3-window-coverings-2026-09/. [sourced 2026-09-03] Enterprise/top-band pass against the H3 ICP after the market ladder showed the existing pool sat almost entirely in the micro band. Headline and company read from LinkedIn people search on 2026-09-03; profile NOT yet opened, so degree and title are search-result facts and must be re-verified live before any draft (LR-B6, LR-B25)."
-
+notes: "[invited 2026-09-03] Bare connection request, no note (LR-B29), sent by Claude with per-invite name verification against the invitation modal. Campaign: outreach/linkedin/h3-window-coverings-2026-09/. [sourced 2026-09-03] Enterprise/top-band pass against the H3 ICP after the market ladder showed the existing pool sat almost entirely in the micro band. Headline and company read from LinkedIn people search on 2026-09-03; profile NOT yet opened, so degree and title are search-result facts and must be re-verified live before any draft (LR-B6, LR-B25). [msg1 sent 2026-09-05 by founder, by hand] Observed in the founder's own LinkedIn inbox on 2026-09-05 during a reconciliation pass, timestamp 6:14 PM. The thread shows the founder's message last and no reply yet. The copy sent is NOT the copy archived in this repo: the founder is now opening with "I am building the MCP layer for machines in manufacturing" and asking whether the gap shows up in rework rates. See outreach/linkedin/belief-experts-2026-09/drafts.md for the record of that framing. Invite had been accepted; the ledger still said invited."
 ## Abubakr Abushanab
 
 id: C111
@@ -5792,8 +5804,8 @@ id: C113
 name: William DeSemple
 linkedin_url: https://www.linkedin.com/in/william-desemple-69253069/
 linkedin_account: Izgin
-company: Norman Window Fashions
-role: General Manager
+company: Norman International Inc.
+role: General Manager, Western US and Canada
 
 signal_type: profile_fit
 signal_multiplier: 1.0
@@ -5806,27 +5818,33 @@ role_pts: 3
 tier: window_covering_manufacturer
 size_band: enterprise
 
-assumptions_tested: [H3A1, H3A3]
+assumptions_tested: [H3A4]
 validation_rationale: >
-  Second Norman general manager, Greater Seattle against C112's Northeast. Same reasoning and the same pairing logic as C110/C111 - a rate that holds across two regions of one manufacturer is worth more than either region alone, and a rate that does not hold tells you the number is local.
+  REROUTED from H3A3 to H3A4 on 2026-09-04. Sixteen years running Norman's western US and Canada
+  region puts him above the individual dealer, so he can say whether a visit cost is one company's
+  problem or the category's, which is precisely what H3A4's disconfirmation test needs and what E8
+  alone cannot settle. His six years selling for a shutter dealer before that means he has also
+  carried the cost personally, so he is a route into H3A6 later without a second sourcing pass.
 
-response_likelihood: 5
+response_likelihood: 8
 likelihood_factors: >
-  profile_fit (0) · start 3 · 3rd+ (0) · GM carries the remake on a P&L he owns (+2) · third Norman contact, so redundancy is real (0)
+  1st degree, accepted (+3) · sixteen years running a manufacturer's western region, so he sees
+  visit economics across many dealers rather than one (+2) · six prior years selling inside a
+  shutter dealer, so he has carried the visit himself (+1) · profile_fit (0), start 3, capped at 8
 outreach_pattern:
-degree: "3rd+"
+degree: "1st"
 mutuals_count:
 active_last_30d: unknown
 open_to_work: false
 
-close_variant:
+close_variant: soft_ask
 relationship_type: operator_buyer
-outreach_status: accepted
-message_stage:
+outreach_status: msg1_sent
+message_stage: msg1_sent
 call_stage: none
 found_date: 2026-09-03
 invited_date: 2026-09-03
-accepted_date:
+accepted_date: unknown  # observed 1st-degree 2026-09-04; LinkedIn does not show the date
 scheduled_date:
 interview_date:
 
@@ -5835,7 +5853,7 @@ interviews: []
 evidence_score:
 outcome_modifier:
 prior_contact_status: pending
-notes: "[invited 2026-09-03] Bare connection request, no note (LR-B29), sent by Claude with per-invite name verification against the invitation modal. Campaign: outreach/linkedin/h3-window-coverings-2026-09/. [sourced 2026-09-03] Enterprise/top-band pass against the H3 ICP after the market ladder showed the existing pool sat almost entirely in the micro band. Headline and company read from LinkedIn people search on 2026-09-03; profile NOT yet opened, so degree and title are search-result facts and must be re-verified live before any draft (LR-B6, LR-B25)."
+notes: "[invited 2026-09-03] Bare connection request, no note (LR-B29), sent by Claude with per-invite name verification against the invitation modal. Campaign: outreach/linkedin/h3-window-coverings-2026-09/. [sourced 2026-09-03] Enterprise/top-band pass against the H3 ICP after the market ladder showed the existing pool sat almost entirely in the micro band. Headline and company read from LinkedIn people search on 2026-09-03; profile NOT yet opened, so degree and title are search-result facts and must be re-verified live before any draft (LR-B6, LR-B25). [msg1 drafted 2026-09-04] Post-acceptance Msg 1 for H3A4, soft_ask, senior register. Live profile re-read 2026-09-04 (LR-B6); LR-B25 first-name inbox check clean, positive control (Viliam) returned its thread in the same batch. CORRECTED: the company is Norman International Inc. and his remit is Western US and Canada, not Norman Window Fashions unqualified. Copy at outreach/copy/H3-linkedin.md. UNSENT: the founder sends by hand. [msg1_sent 2026-09-05 14:02] Sent by the founder by hand; confirmed by an inbox read 2026-09-05. Sent on the PREVIOUS framing ("I spent a year at Cambridge on why the machines and the software that drives them never share one thread"), four hours before the MCP rewrite. He is the only one of the six not on the MCP anchor. No reply yet."
   [accepted 2026-09-04] Connection accepted; LinkedIn connections list reads "Connected on September 3, 2026". No message from them. Awaiting Msg 1.
 
 ## Ranjan Mada
@@ -5909,27 +5927,34 @@ role_pts: 3
 tier: window_covering_manufacturer
 size_band: enterprise
 
-assumptions_tested: [H3A3]
+assumptions_tested: [H3A4]
 validation_rationale: >
-  H3A3 only. 3 Day Blinds measures and installs with its own consultants rather than relying on the customer, which makes it the structural opposite of SelectBlinds. If the cost lands differently when the seller owns the measurement, that shows up on the revenue side first, and the CRO is who sees it. Not asked about rates or attribution.
+  REROUTED from H3A3 to H3A4 on 2026-09-04, and he is now the strongest H3A4 contact on the list.
+  3 Day Blinds sends its own consultants to measure, and his own role description carries the
+  company line 'We Design, we Measure, we Install, you Relax', so the visit is not a cost centre
+  he has to look up. He also came to it from running online retail, which means he has personally
+  made the trade H3A4 asks about, in both directions.
 
-response_likelihood: 3
+response_likelihood: 8
 likelihood_factors: >
-  profile_fit (0) · start 3 · 3rd+ (0) · owns the revenue side of a remake guarantee (+1) · CRO is a commercial not operational answer (-1)
+  1st degree, accepted (+3) · owns the revenue line at the company whose model IS the assumption,
+  and his own profile names the measuring step (+3) · one mutual connection, Bruno (+1) · comments
+  on other people's posts within the last week, so the account is live (+1) · start 3, capped at 8
+  for seniority
 outreach_pattern:
-degree: "3rd+"
+degree: "1st"
 mutuals_count:
 active_last_30d: unknown
 open_to_work: false
 
-close_variant:
+close_variant: soft_ask
 relationship_type: operator_buyer
-outreach_status: accepted
-message_stage:
-call_stage: none
+outreach_status: replied
+message_stage: msg2_sent
+call_stage: asked_by_founder
 found_date: 2026-09-03
 invited_date: 2026-09-03
-accepted_date:
+accepted_date: unknown  # observed 1st-degree 2026-09-04; LinkedIn does not show the date
 scheduled_date:
 interview_date:
 
@@ -5938,7 +5963,7 @@ interviews: []
 evidence_score:
 outcome_modifier:
 prior_contact_status: pending
-notes: "[invited 2026-09-03] Bare connection request, no note (LR-B29), sent by Claude with per-invite name verification against the invitation modal. Campaign: outreach/linkedin/h3-window-coverings-2026-09/. [sourced 2026-09-03] Enterprise/top-band pass against the H3 ICP after the market ladder showed the existing pool sat almost entirely in the micro band. Headline and company read from LinkedIn people search on 2026-09-03; profile NOT yet opened, so degree and title are search-result facts and must be re-verified live before any draft (LR-B6, LR-B25)."
+notes: "[invited 2026-09-03] Bare connection request, no note (LR-B29), sent by Claude with per-invite name verification against the invitation modal. Campaign: outreach/linkedin/h3-window-coverings-2026-09/. [sourced 2026-09-03] Enterprise/top-band pass against the H3 ICP after the market ladder showed the existing pool sat almost entirely in the micro band. Headline and company read from LinkedIn people search on 2026-09-03; profile NOT yet opened, so degree and title are search-result facts and must be re-verified live before any draft (LR-B6, LR-B25). [msg1 drafted 2026-09-04] Post-acceptance Msg 1 for H3A4, soft_ask, senior register. Live profile re-read 2026-09-04 (LR-B6); LR-B25 first-name inbox check clean, positive control (Viliam) returned its thread in the same batch. The linkedin_url /in/conversion/ is CORRECT and not broken: it is his own vanity slug. A prior session flagged it as invalid; it resolves to his live profile. Copy at outreach/copy/H3-linkedin.md. UNSENT: the founder sends by hand. [msg1_sent 2026-09-05 18:12] Sent by the founder by hand; confirmed by an inbox read 2026-09-05. MCP framing, sent verbatim from the draft. No reply yet. [replied 2026-09-05] HE ANSWERED. Reported by the founder, not read by Claude: the founder instructed that the thread NOT be opened in the browser, so his exact wording is not in this ledger and the reply excerpt is second-hand. What he asked was what the end goal of the research is. He is Chief Revenue Officer of a company whose whole model is measure and install, which makes this the most valuable reply the campaign has produced. [msg2 drafted 2026-09-05] Answers the question in one line and asks for a call this week. The end goal is stated as the founder states it: an intent layer for MCP machine orchestration. NO COST QUESTION: H3A4's next_action wants the per-visit fee, but LR-B11 puts money at Msg 4 and its own note says an assumption's next_action describes the interview rather than the message. Asking a CRO for a per-visit cost in message two reads as qualifying a lead. Availability offered as a range per the founder, not a booking link (LR-M9). Copy at outreach/copy/H3-linkedin.md. UNSENT. [msg2 sent 2026-09-05 by founder, by hand] Observed in the founder's inbox on 2026-09-05, timestamp 7:08 PM. Answers his question and asks for a call, offering 9am to 9pm PDT. The message states the end goal as an intent layer for MCP machine orchestration, which is a product reveal made by founder decision."
   [accepted 2026-09-04] Connection accepted; LinkedIn connections list reads "Connected on September 3, 2026". No message from them. Awaiting Msg 1.
 
 ## Vivek Rao
@@ -5998,8 +6023,8 @@ id: C117
 name: Praveen Perfeito
 linkedin_url: https://www.linkedin.com/in/praveen-perfeito-75852a64/
 linkedin_account: Izgin
-company: BlindMatrix Ltd.
-role: Technical Lead
+company: BlindMatrix Ltd. (role ended Jun 2026)
+role: Tech lead, e-commerce
 
 signal_type: profile_fit
 signal_multiplier: 1.0
@@ -6012,26 +6037,402 @@ role_pts: 2
 tier: industry_software_vendor
 size_band: 
 
-assumptions_tested: [H3A1, H3A2]
+assumptions_tested: [H3A5]
 validation_rationale: >
-  2nd degree, and the cheaper way into BlindMatrix than the founder. A technical lead knows whether remakes are a first-class tracked field in the product or something customers record in free text - which decides whether the industry rate H3A1 needs is recoverable from software at all, and whether the system captures error attribution (H3A2). size_band left empty for the same reason as C116.
+  REROUTED from H3A1/H3A2 to H3A5 on 2026-09-04, expert side. He spent nearly six years building
+  the e-commerce module of the industry's own software, which is the online ordering path H3A5 is
+  about, seen across every customer that deployed it. He is not a buyer and never carried a
+  remake, so nothing he says can be logged as pain evidence; his competence is the failure
+  mechanism, not the economics.
 
-response_likelihood: 6
+response_likelihood: 7
 likelihood_factors: >
-  profile_fit (0) · start 3 · 2nd degree (+2) · technical lead knows what the system records (+2) · not the person who reads the aggregate (-1)
+  1st degree, accepted (+3) · built the online ordering path for the industry's own software, so
+  he has seen what breaks across many blind companies rather than one (+2) · one mutual
+  connection, Anto (+1) · the role ended Jun 2026 and his headline has not caught up, so currency
+  is uncertain (-1) · start 3, capped at 7
 outreach_pattern:
-degree: "2nd"
+degree: "1st"
+mutuals_count:
+active_last_30d: unknown
+open_to_work: false
+
+close_variant: soft_ask
+relationship_type: operator_buyer
+outreach_status: msg1_sent
+message_stage: msg1_sent
+call_stage: none
+found_date: 2026-09-03
+invited_date: 2026-09-03
+accepted_date: unknown  # observed 1st-degree 2026-09-04; LinkedIn does not show the date
+scheduled_date:
+interview_date:
+
+interviews: []
+
+evidence_score:
+outcome_modifier:
+prior_contact_status: pending
+notes: "[invited 2026-09-03] Bare connection request, no note (LR-B29), sent by Claude with per-invite name verification against the invitation modal. Campaign: outreach/linkedin/h3-window-coverings-2026-09/. [sourced 2026-09-03] Enterprise/top-band pass against the H3 ICP after the market ladder showed the existing pool sat almost entirely in the micro band. Headline and company read from LinkedIn people search on 2026-09-03; profile NOT yet opened, so degree and title are search-result facts and must be re-verified live before any draft (LR-B6, LR-B25). [msg1 drafted 2026-09-04] Post-acceptance Msg 1 for H3A5, soft_ask, standard register. Live profile re-read 2026-09-04 (LR-B6); LR-B25 first-name inbox check clean, positive control (Viliam) returned its thread in the same batch. CORRECTED: his title is Tech Lead e-Commerce and the BlindMatrix entry ends Jun 2026 while his headline still reads as current. Copy at outreach/copy/H3-linkedin.md. UNSENT: the founder sends by hand. [msg1_sent 2026-09-05 18:13] Sent by the founder by hand; confirmed by an inbox read 2026-09-05. MCP framing, sent verbatim from the draft. No reply yet. [copy defect, sent 2026-09-05] This message went out with a DANGLING REFERENT: it asked whether "that gap" shows up in rework rates, and no gap had been named anywhere in it. The MCP anchor replaced an earlier one that had named the gap, and the frame was left pointing at nothing. Founder-caught after sending. Not recallable. If they reply asking what gap, the answer is the one the corrected drafts now state: design software and the machines never share one thread. Every unsent draft was rewritten the same day."
+  [accepted 2026-09-04] Connection accepted; LinkedIn connections list reads "Connected on September 3, 2026". No message from them. Awaiting Msg 1.
+
+---
+
+### Batch 2026-09-05 — accepted connections found in the network sweep
+
+Four contacts who accepted between 2026-09-04 and 2026-09-05 and were found by reading the
+recently-added connections list rather than by a sourcing pass. Three more accepted in the
+same window and are NOT recorded here because they fail the H3 ICP: a robot-kit manufacturer,
+a robotics engineer and an aerospace entrepreneur. They belong to the H1 and H2 lanes and
+nothing about them changed.
+
+## Bruno Campos
+
+id: C118
+name: Bruno Campos
+linkedin_url: https://www.linkedin.com/in/camposbruno/
+linkedin_account: Izgin
+company: SelectBlinds
+role: Vice President of Marketing
+
+signal_type: profile_fit
+signal_multiplier: 1.0
+signal_source_url:
+signal_excerpt:
+
+contact_role: buyer
+role_pts: 3
+
+tier: window_covering_manufacturer
+size_band: enterprise
+
+assumptions_tested: [H3A5]
+validation_rationale: >
+  The highest-value contact in this ledger. SelectBlinds is the company whose FIT Protection
+  free-remake guarantee sits in the H3 hunch statement and in the pitch, and he runs the marketing
+  function that offers it at checkout. He also spent a career selling boxed goods online at Nike
+  and AB InBev before selling made-to-measure, so he can rank why this category behaves
+  differently rather than guessing. On the call, do NOT open on FIT Protection: the discovery
+  pitch's own trap list says naming it makes the conversation about their policy instead of their
+  losses.
+
+response_likelihood: 9
+likelihood_factors: >
+  1st degree, accepted 2026-09-04 (+3) · his employer is the source of the single most cited piece
+  of evidence in this ledger, so the fit is not incidental (+2) · a career in digital commerce at
+  Nike and AB InBev before this, which is exactly the comparison H3A5 needs (+1) · already a
+  mutual connection on C115's profile (0), start 3, capped at 9
+outreach_pattern:
+degree: "1st"
+mutuals_count:
+active_last_30d: unknown
+open_to_work: false
+
+close_variant: soft_ask
+relationship_type: target_customer
+outreach_status: msg1_sent
+message_stage: msg1_sent
+call_stage: none
+found_date: 2026-09-05
+invited_date:
+accepted_date: unknown  # accepted before this session saw them; LinkedIn shows the day, not the invite
+scheduled_date:
+interview_date:
+
+interviews: []
+
+evidence_score:
+outcome_modifier:
+prior_contact_status: checked
+notes: "Found 2026-09-05 in the recently-added connections list; he accepted an invite on 2026-09-04. Live profile read 2026-09-05: the headline says CMO at Select Blinds US, the experience entry says Vice-president of marketing, Jul 2024 to present, Phoenix. The copy says 'run marketing', which is true of both. LR-B25 first-name inbox check clean 2026-09-05. [msg1 drafted 2026-09-05] Post-acceptance Msg 1 for H3A5, soft_ask. Copy at outreach/copy/H3-linkedin.md. UNSENT: the founder sends by hand. [msg1 sent 2026-09-05 10:53] Sent by the founder by hand, found by an inbox check the same day rather than reported. Opening changed to "Bruno hi! Thanks for connecting." in place of "How are you?". The as-sent text is in outreach/copy/H3-linkedin.md; it is NOT the drafted text and it is not the later two-frame rewrite either, so treat this send as its own copy variant. No reply as of 2026-09-05."
+## Armando Pedraza
+
+id: C119
+name: Armando Pedraza
+linkedin_url: https://www.linkedin.com/in/armando-pedraza-7280b228b/
+linkedin_account: Izgin
+company: Hunter Douglas, Inc.
+role: Quality Engineer
+
+signal_type: profile_fit
+signal_multiplier: 1.0
+signal_source_url:
+signal_excerpt:
+
+contact_role: practitioner
+role_pts: 2
+
+tier: window_covering_manufacturer
+size_band: enterprise
+
+assumptions_tested: [H3A1]
+validation_rationale: >
+  He updates the rework and customer-complaint numbers across three production lines at a
+  window-covering manufacturer, which is H3A1 stated as a job rather than as a question. His six
+  years as a dimensional and tooling specialist at an automotive supplier before this means he can
+  also speak to the factory-tolerance half that E15 opened up, which no other contact on the list
+  can.
+
+response_likelihood: 8
+likelihood_factors: >
+  1st degree, accepted 2026-09-05 (+3) · his own role description names the rework KPI as
+  something he personally updates, so the H3A1 number is on his desk (+2) · six prior years on
+  dimensional and tooling work, so he reads a tolerance the way the assumption needs (+1) ·
+  profile_fit signal (0), start 3, capped at 8
+outreach_pattern:
+degree: "1st"
+mutuals_count:
+active_last_30d: unknown
+open_to_work: false
+
+close_variant: soft_ask
+relationship_type: field_practitioner
+outreach_status: msg1_sent
+message_stage: msg1_sent
+call_stage: none
+found_date: 2026-09-05
+invited_date:
+accepted_date: unknown  # accepted before this session saw them; LinkedIn shows the day, not the invite
+scheduled_date:
+interview_date:
+
+interviews: []
+
+evidence_score:
+outcome_modifier:
+prior_contact_status: checked
+notes: "Found 2026-09-05 in the recently-added connections list; accepted 2026-09-05. Live profile read the same day. Apodaca, Nuevo Leon, Mexico. LR-B25 first-name inbox check clean 2026-09-05. [msg1 drafted 2026-09-05] Post-acceptance Msg 1 for H3A1, soft_ask. Copy at outreach/copy/H3-linkedin.md. UNSENT: the founder sends by hand. [msg1_sent 2026-09-05 18:14] Sent by the founder by hand; confirmed by an inbox read 2026-09-05. MCP framing, sent verbatim from the draft. No reply yet. [copy defect, sent 2026-09-05] This message went out with a DANGLING REFERENT: it asked whether "that gap" shows up in rework rates, and no gap had been named anywhere in it. The MCP anchor replaced an earlier one that had named the gap, and the frame was left pointing at nothing. Founder-caught after sending. Not recallable. If they reply asking what gap, the answer is the one the corrected drafts now state: design software and the machines never share one thread. Every unsent draft was rewritten the same day."
+## Ben Simpson
+
+id: C120
+name: Ben Simpson
+linkedin_url: https://www.linkedin.com/in/ben-simpson-975b90184/
+linkedin_account: Izgin
+company: Self-employed
+role: Curtain and blinds installer, self-employed
+
+signal_type: profile_fit
+signal_multiplier: 1.0
+signal_source_url:
+signal_excerpt:
+
+contact_role: buyer
+role_pts: 3
+
+tier: dealer_installer
+size_band: micro
+
+assumptions_tested: [H3A4]
+validation_rationale: >
+  Nine years fitting curtains and blinds on his own books around Manchester. Like C52 he is both
+  the person who drives to the window and the person who decides the drive is worth making, so the
+  H3A4 pair can be asked of one person without an approval chain. His profile carries one line and
+  no description, so the grounded clause rests on tenure and trading status rather than on his own
+  words; expect a lower reply rate than the richer profiles.
+
+response_likelihood: 7
+likelihood_factors: >
+  1st degree, accepted 2026-09-04 (+3) · self-employed, so he both makes the visit and decides
+  whether it is worth making, which is the H3A4 unit of analysis (+2) · nine years in one city
+  (+1) · profile is a single line with no description, so there is less to ground a message in
+  (-2), start 3, capped at 7
+outreach_pattern:
+degree: "1st"
+mutuals_count:
+active_last_30d: unknown
+open_to_work: false
+
+close_variant: soft_ask
+relationship_type: field_practitioner
+outreach_status: msg1_sent
+message_stage: msg1_sent
+call_stage: none
+found_date: 2026-09-05
+invited_date:
+accepted_date: unknown  # accepted before this session saw them; LinkedIn shows the day, not the invite
+scheduled_date:
+interview_date:
+
+interviews: []
+
+evidence_score:
+outcome_modifier:
+prior_contact_status: checked
+notes: "Found 2026-09-05 in the recently-added connections list; accepted 2026-09-04. Live profile read 2026-09-05 and it is SPARSE: one experience entry, no description, no posts. Copy drafted from the headline and tenure, per the skill's sparse-profile rule. LR-B25 first-name inbox check clean 2026-09-05. [msg1 drafted 2026-09-05] Post-acceptance Msg 1 for H3A4, soft_ask. Copy at outreach/copy/H3-linkedin.md. UNSENT: the founder sends by hand. [msg1_sent 2026-09-05 18:14] Sent by the founder by hand; confirmed by an inbox read 2026-09-05. MCP framing, sent verbatim from the draft. No reply yet."
+## Rose Mauloni
+
+id: C121
+name: Rose Mauloni
+linkedin_url: https://www.linkedin.com/in/rosemauloni/
+linkedin_account: Izgin
+company: Wayfair
+role: Merchandise Manager
+
+signal_type: profile_fit
+signal_multiplier: 1.0
+signal_source_url:
+signal_excerpt:
+
+contact_role: buyer
+role_pts: 3
+
+tier: national_retail_channel
+size_band: enterprise
+
+assumptions_tested: [H3A5]
+validation_rationale: >
+  CORRECTS the assumption that she is a furniture contact. She has owned the WINDOW category at
+  Birch Lane and now Wayfair for three years, alongside rugs, bedding and bath. That mix is the
+  natural experiment H3A5 needs: the same merchant, the same customers, the same site, and one
+  category that will not move online the way the others did. She can rank the reasons from sales
+  data rather than from opinion, and if she ranks fabric or colour above measurement, that counts
+  fully against the hunch.
+
+response_likelihood: 8
+likelihood_factors: >
+  1st degree, accepted 2026-09-04 (+3) · has owned the Window category at the largest online home
+  retailer for three years, so the offline-versus-online question is her P&L (+2) · carries boxed
+  categories alongside window, which gives her the controlled comparison H3A5 wants (+1) ·
+  profile_fit signal (0), start 3, capped at 8
+outreach_pattern:
+degree: "1st"
+mutuals_count:
+active_last_30d: unknown
+open_to_work: false
+
+close_variant: soft_ask
+relationship_type: target_customer
+outreach_status: msg1_sent
+message_stage: msg1_sent
+call_stage: none
+found_date: 2026-09-05
+invited_date:
+accepted_date: unknown  # accepted before this session saw them; LinkedIn shows the day, not the invite
+scheduled_date:
+interview_date:
+
+interviews: []
+
+evidence_score:
+outcome_modifier:
+prior_contact_status: checked
+notes: "Found 2026-09-05 in the recently-added connections list; accepted 2026-09-04. Live profile read 2026-09-05: she moved from Senior Merchant at Birch Lane to Merchandise Manager at Wayfair in Mar 2026 and again in Jun 2026, so the Birch Lane headline seen in the connections list is one role behind. Boston, Massachusetts. LR-B25 first-name inbox check clean 2026-09-05. [msg1 drafted 2026-09-05] Post-acceptance Msg 1 for H3A5, soft_ask. Copy at outreach/copy/H3-linkedin.md. UNSENT: the founder sends by hand. [msg1_sent 2026-09-05 18:15] Sent by the founder by hand; confirmed by an inbox read 2026-09-05. MCP framing, sent verbatim from the draft. No reply yet."
+## Leonard
+
+id: C122
+name: Leonard
+linkedin_url:
+linkedin_account: Izgin
+company: Sanyo
+role:
+
+signal_type: profile_fit
+signal_multiplier: 1.0
+signal_source_url:
+signal_excerpt: >
+  "I would say on average, we see one of these errors every 50 manufactured details. So if a
+  project has 200 details on it, we'll see this 4 times."
+
+contact_role: buyer
+role_pts: 3
+
+tier: manufacturing_operations
+size_band: 
+
+assumptions_tested: []
+validation_rationale: >
+  BELIEF-LEVEL, not H3. Sanyo builds machines; the active graph is window coverings, so
+  `assumptions_tested` is deliberately empty and nothing he said may be scored against an H3
+  node. He tests link 1 of belief.md directly and better than anyone contacted so far: he
+  manages the designers whose output feeds manufacture, owns the process, decides whether
+  verification headcount is justified, and replaces people who fall outside the speed/accuracy
+  band. He gave an error rate (1 in 50 manufactured details), a cost-of-accuracy figure
+  (110-125% of budgeted hours), the standing remedy (checkers) and the reason it is refused
+  (cost justification) — the whole economics of the handoff, unprompted, in one message.
+
+response_likelihood: 9
+likelihood_factors: >
+  already in an active exchange and writing long-form unprompted (+4) · 27 years in role with
+  direct process ownership (+2) · profile_fit (0) · start 3 · capped at 9
+outreach_pattern:
+degree:
 mutuals_count:
 active_last_30d: unknown
 open_to_work: false
 
 close_variant:
 relationship_type: operator_buyer
-outreach_status: accepted
-message_stage:
+outreach_status: replied
+message_stage: msg2_sent
 call_stage: none
-found_date: 2026-09-03
-invited_date: 2026-09-03
+found_date: 2026-09-05
+invited_date:
+accepted_date:
+scheduled_date:
+interview_date: 2026-09-05
+
+interviews:
+  - date: 2026-09-05
+    path: reports/high-mix-manufacturing/03-validation/belief-2026-09-05/interviews/leonard-sanyo-2026-09-05-notes.md
+    stage: problem_discovery
+    medium: linkedin_text
+
+evidence_score:
+outcome_modifier:
+prior_contact_status: pending
+notes: "[captured 2026-09-05] Existed nowhere in this repo until now — the exchange ran entirely outside the outreach machinery and the 1-in-50 rate lived only in chat. Card created from the message itself. FIELDS UNVERIFIED and left blank rather than guessed: surname, LinkedIn URL, exact job title, degree, which Sanyo entity, and headcount band. `contact_role: buyer` is inferred from him managing designers, owning process stoutness and deciding checker headcount — confirm it. `medium: linkedin_text` assumes LinkedIn DM; correct it if the channel was email or WhatsApp. Evidence E26 (supports, the rate) and E27 (contradicts, willingness to pay) are logged. `outcome_modifier` and `evidence_score` deliberately BLANK: proposed moderate_confirm, awaiting founder confirmation per the capture contract. [msg2 sent 2026-09-05] Two questions: whether checkers were ever actually run or only ever costed, and what the last non-small error cost."
+
+## Joseph Garza
+
+id: C123
+name: Joseph Garza
+linkedin_url: https://www.linkedin.com/in/joseph-garza-a4561784/
+linkedin_account: Izgin
+company: Advanced Machine Program & Design MFG.
+role: Owner
+
+signal_type: profile_fit
+signal_multiplier: 1.0
+signal_source_url: https://www.linkedin.com/in/joseph-garza-a4561784/
+signal_excerpt: >
+  "the margin for between the quote and the 1st good part depends on speed, complexity of the
+  part and features, outside processes like Plating or Anodizing. All these have to come into
+  factor before sending out a quote... It all comes down to Experience and being very high
+  performing shop... The Key Driver in all of it is quality and Solving customers problems."
+
+contact_role: buyer
+role_pts: 3
+
+tier: manufacturing_operations
+size_band: micro
+
+assumptions_tested: []
+validation_rationale: >
+  BELIEF-LEVEL, not H3. He runs a job shop, not a window-covering business, so
+  `assumptions_tested` is empty and nothing he says may be scored against an H3 node. What he
+  can testify to is the quote side of link 1: he prices work off whatever a customer sends him
+  and then has to make the first good part for that price, and he owns the consequence when the
+  two disagree. He is also 45 minutes from the founder while the founder is in San Francisco,
+  which makes him the cheapest shop visit on the list.
+
+response_likelihood: 8
+likelihood_factors: >
+  1st degree and already replied at length (+4) · owner, so no approval chain (+2) ·
+  wrote "this is Worth a Conversation" and invited more questions (+2) · comments rather than
+  posts, so low platform activity (-1) · start 3, capped at 8
+outreach_pattern:
+degree: "1st"
+mutuals_count: 2
+active_last_30d: true
+open_to_work: false
+
+close_variant: soft_ask
+relationship_type: operator_buyer
+outreach_status: replied
+message_stage: msg2_sent
+call_stage: offered_by_contact
+found_date: 2026-09-05
+invited_date:
 accepted_date:
 scheduled_date:
 interview_date:
@@ -6041,5 +6442,3099 @@ interviews: []
 evidence_score:
 outcome_modifier:
 prior_contact_status: pending
-notes: "[invited 2026-09-03] Bare connection request, no note (LR-B29), sent by Claude with per-invite name verification against the invitation modal. Campaign: outreach/linkedin/h3-window-coverings-2026-09/. [sourced 2026-09-03] Enterprise/top-band pass against the H3 ICP after the market ladder showed the existing pool sat almost entirely in the micro band. Headline and company read from LinkedIn people search on 2026-09-03; profile NOT yet opened, so degree and title are search-result facts and must be re-verified live before any draft (LR-B6, LR-B25)."
-  [accepted 2026-09-04] Connection accepted; LinkedIn connections list reads "Connected on September 3, 2026". No message from them. Awaiting Msg 1.
+notes: "[captured 2026-09-05] Existed nowhere in this repo until now: Msg 1 went out 2026-08-25, before this outreach machinery existed, and the thread lived only in LinkedIn. Card created from the thread the founder pasted plus a live profile read on 2026-09-05 (LR-B6): headline reads OWNER, Santa Clara California, Advanced Machine Program & Design MFG., De Anza College, 218 connections, 2 mutuals (Maximilian, Nathan), no posts in the last year and three comments, the most recent on cnc machining as an owner. Shop address from public listings is 451 Aldo Ave, Santa Clara. A web search attributed a second company, Primex Precision of Farmington Missouri, to a Joseph Garza; the Primex site names no founder and nothing on this profile mentions it, so it is a DIFFERENT PERSON until proven otherwise and must not enter any message. FIELDS UNVERIFIED and left blank rather than guessed: headcount, what the shop actually machines, and who its customers are. `size_band: micro` is inferred from a single Santa Clara address and 218 connections, not from a headcount source. [msg1 sent 2026-08-25 by founder, by hand] H2-era framing, before the repo tracked copy: asked where the margin on a new job goes between the quote and the first good part, off the Cambridge research, closing on a permission ask. [reply 2026-08-31] Substantive and warm, apologised for the delay, answered in estimating terms, said 'Sure, this is Worth a Conversation' and 'Any more questions, please feel free'. Logged as E28 (ambiguous). [msg2 drafted 2026-09-05] Settled on the third pass. Founder instruction: ask for a call and nothing else, agree with what he said rather than pivot off it, and name the work as capturing intent. The message opens by agreeing that the money is at quoting and at whether the quote survives prove out, gives the direction in one clause, and asks for half an hour Tuesday or Wednesday. Deliberately absent: the Turkiye capacity, which to a shop owner reads as a competitor announcement, the shop visit, which was pulled as the larger ask, and the acronyms. An alternate carries the why-now (E20, the Model Hardware Standard) in plain words. The cost is recorded rather than argued: per copy/H3-discovery-pitch.md a contact who has heard the thesis reacts to it instead of reporting, and Joseph has named no job or number yet, so grade anything after this as a reaction. Both drafts, the two superseded passes and the call question order are in outreach/linkedin/belief-experts-2026-09/replies.md. UNSENT: the founder sends by hand. [msg2 sent 2026-09-05 by founder, by hand] Observed in the founder's inbox on 2026-09-05, timestamp 6:09 PM. The Msg 2 drafted this session went out, in the settled third-pass version that opens by agreeing with him about quoting and prove out. Awaiting his reply."
+---
+
+## Nathan Meyer
+
+id: C124
+name: Nathan Meyer
+linkedin_url: https://www.linkedin.com/in/nathan-meyer-joby/
+linkedin_account: Izgin
+company: Joby Aviation
+role: Advanced manufacturing and R&D prototyping
+
+signal_type: profile_fit
+signal_multiplier: 1.0
+signal_source_url:
+signal_excerpt:
+
+contact_role: practitioner
+role_pts: 2
+
+tier: 
+size_band: enterprise
+
+assumptions_tested: []
+validation_rationale: >
+  Backfilled 2026-09-05 after an inbox check found the whole thread absent from this ledger.
+  He is the warmest relationship the campaign has produced and none of it was recorded: he
+  answered a cold message inside a day, offered either written answers or a call, took a call
+  on 2026-08-27, and then volunteered two referrals and an offer of introductions at IMTS. He
+  sits in the first-article and prove-out lane, which belongs to H1 and H2, so he cannot carry
+  H3 evidence and no H3 question should be put to him. He is recorded because a person this
+  generous going unlogged is how a relationship gets dropped, which is what nearly happened.
+
+response_likelihood: 9
+likelihood_factors: >
+  1st degree and already replying (+3) · answered a cold message within a day and offered a
+  call unprompted (+3) · volunteered two named referrals and an introduction offer without
+  being asked (+2) · eight days of silence from our side is a real debt against the next
+  message (-1), start 3, capped at 9
+outreach_pattern:
+degree: "1st"
+mutuals_count:
+active_last_30d: unknown
+open_to_work: false
+
+close_variant: soft_ask
+relationship_type: field_practitioner
+outreach_status: msg5_sent
+message_stage: msg5_sent
+call_stage: completed
+found_date: 2026-08-25
+invited_date:
+accepted_date: unknown
+scheduled_date: 2026-08-27
+interview_date: 2026-08-27
+
+interviews: []
+
+evidence_score:
+outcome_modifier:
+prior_contact_status: replied
+notes: "[id C124, not C122 — allocated 2026-09-05 against a stale next-free number while another session was writing C122 Leonard and C123 Joseph Garza into the same file. Theirs landed first and keeps the id; this one renumbered. C122 is NOT burned, it belongs to Leonard.] [backfilled 2026-09-05] Thread read live during an inbox check; it was never in this ledger. Arc: founder cold-messaged him about why a first article of a never-made part costs so much more than the ones after, citing the Cambridge work. He replied the same day: 'That's a problem I've spent most of my career inside of. Send the questions over whenever you're ready, glad to work through them in writing, or find 30 minutes if a call is easier on your end.' [call 2026-08-27] HAPPENED WITHOUT THE FOUNDER. Christian, the co-founder at the time, took it alone and the founder missed it. NOTHING FROM THAT CALL WAS EVER CAPTURED and the pairing ended 2026-08-31, so unless Christian's own notes surface it is lost. That is the single largest uncaptured item in this repo. [reply 2026-08-28] Volunteered two referrals unprompted: David Liu (linkedin.com/in/davidliuxyz, local, recently started his own venture) and Jim Belosic (linkedin.com/in/belosic, now in Reno). Asked 'Sounds like you and Christian already know Chris over at Hydrian?' and offered to network and make introductions at IMTS. [no reply from us, 8 days] The founder did not answer that message; the silence ran 2026-08-28 to 2026-09-05. [msg5 drafted 2026-09-05] Repair message only, no ask, per founder decision: it thanks the two referrals, offers to let him make the introductions himself, discloses that the co-founder pairing ended, answers that Chris at Hydrian was Christian's connection and not the founder's, and declines IMTS. His standing offer of written answers is deliberately NOT redeemed: his lane is H1/H2, superseded, so anything he says lands against a hunch nobody is testing. Redeem it later and against the belief, not against H3. Copy at outreach/copy/H1-H2-linkedin.md. UNSENT. [msg5_sent 2026-09-05 17:55] Sent by the founder by hand; confirmed by an inbox read 2026-09-05. Repair message sent with the founder's own additions: an opening thank-you, and a closing line naming the MCP layer for manufacturing machine control with an invitation to react. The drafted version deliberately asked for nothing; the sent version ends on a light ask. No reply yet."
+## Shane Duncan
+
+id: C125
+name: Shane Duncan
+linkedin_url: https://www.linkedin.com/in/shane-duncan-b7575a200/
+linkedin_account: Izgin
+company: B&B Manufacturing
+role: CNC Programming Supervisor
+
+signal_type: profile_fit
+signal_multiplier: 1.0
+signal_source_url: https://www.linkedin.com/in/shane-duncan-b7575a200/
+signal_excerpt: >
+  "I would say most jobs get held up the most in the quality department."
+
+contact_role: practitioner
+role_pts: 2
+
+tier: manufacturing_operations
+size_band:
+
+assumptions_tested: []
+validation_rationale: >
+  BELIEF-LEVEL, not H3. He supervises the programmers at a machining company, so nothing he says
+  may be scored against an H3 node. He is the best-placed contact this idea has on the question
+  the founder actually asked him: why a program that looks right still needs a person standing at
+  the machine for the first part. He programmed 5 axis work himself and now runs the group that
+  does, so where a new job stalls between the print landing and a good first part is his daily
+  visibility, not an opinion.
+
+response_likelihood: 8
+likelihood_factors: >
+  1st degree and replied twice within a day (+4) · supervises the group, so reports a pattern
+  rather than one job (+2) · answered a call offer by continuing in text, so prefers DMs (-1) ·
+  no public activity in the last year (-1), start 3, capped at 8
+
+outreach_pattern:
+degree: "1st"
+mutuals_count: 4
+active_last_30d: false
+open_to_work: false
+
+close_variant: direct_question
+relationship_type: data_supplier_practitioner
+outreach_status: replied
+message_stage: msg2_sent
+call_stage: none
+found_date: 2026-09-05
+invited_date:
+accepted_date:
+scheduled_date:
+interview_date:
+
+interviews: []
+
+evidence_score:
+outcome_modifier:
+prior_contact_status: pending
+notes: "[captured 2026-09-05] Existed nowhere in this repo until now: the whole exchange ran on LinkedIn before this machinery covered it. Card created from the thread the founder pasted plus a live profile read on 2026-09-05 (LR-B6): CNC Programming Supervisor at B&B Manufacturing, 1st degree, United States, 500+ connections, 4 mutuals (Ian, Oswaldo and two more), 579 followers, one comment in the last year. FIELDS UNVERIFIED and left blank rather than guessed: which B&B Manufacturing this is, its location, sector and size. A search on 2026-09-05 could not settle whether they are an aerospace shop, so nothing about first article inspection or AS9102 may enter a message until he says it himself. The 5 axis history in Msg 1 came from an earlier reading of his experience section and is not re-verified here. [msg1 sent 2026-08-25 by founder, by hand] Date inferred from the thread sitting in the same afternoon batch as C123; correct it if wrong. Asked why a program that looks right still needs someone standing at the machine for the first part, permission close. [reply 2026-08-25] 'Sure, I'd be glad to answer some of your question.' [msg2 sent 2026-08-25 by founder, by hand] Which step between the print landing and a good first part backs up most often, with a call offered as an alternative. [reply 2026-08-26] 'I would say most jobs get held up the most in the quality department.' He answered in text rather than taking the call, so the call is NOT re-asked in Msg 3. Logged as E29. [msg3 drafted 2026-09-05] One drill on what quality was actually waiting on for the last new part, plus how long it sat. Copy in outreach/linkedin/belief-experts-2026-09/replies.md. UNSENT: the founder sends by hand."
+
+---
+
+### Batch 2026-09-05 — mined from the founder's own connections
+
+Found by screening the LinkedIn export COMPANY-first against the H0A1 ICP rather than by a
+browser sweep. The network is mostly robotics and software, and a title-first screen returned
+almost nothing; screening on the employer being an organisation that makes things to order
+surfaced a cryogenics cluster the campaign had never touched. That cluster is IMTEK's own
+industry, which is why it was hiding in plain sight.
+
+## Paul Rowe
+
+id: C129
+name: Paul Rowe
+linkedin_url: https://www.linkedin.com/in/paul-rowe-21558718/
+linkedin_account: Izgin
+company: Wessington Cryogenics
+role: Technical Director
+
+signal_type: profile_fit
+signal_multiplier: 1.0
+signal_source_url:
+signal_excerpt:
+
+contact_role: buyer
+role_pts: 3
+
+tier: machine_builder
+size_band: small
+
+assumptions_tested: [H0A1]
+validation_rationale: >
+  The strongest H0A1 contact in the network and nobody had found him. Wessington builds coded
+  cryogenic storage vessels, multi-coded liquid nitrogen, argon, oxygen and helium vessels, and
+  intermodal ISO tank containers. Every one is certified and built to order, which is the
+  definition of the lane. He ran the company from 1991 to 2022 and is now Technical Director, so
+  he has both the drawing and thirty one years of what happens when it is wrong. It is also
+  IMTEK's own industry, so the founder can hold the conversation.
+
+response_likelihood: 9
+likelihood_factors: >
+  1st degree (+3) · thirty five years at one made-to-order vessel manufacturer, thirty one of them
+  as the person who owned the drawing (+3) · the founder's own industry, so the vocabulary is
+  shared (+1) · prior outbound 2020 with no reply, but nearly six years stale so LR-B30 treats
+  this as a fresh Msg 1 (0), start 3, capped at 9
+outreach_pattern:
+degree: "1st"
+mutuals_count:
+active_last_30d: unknown
+open_to_work: false
+
+close_variant: soft_ask
+relationship_type: target_customer
+outreach_status: msg1_sent
+message_stage: msg1_sent
+call_stage: none
+found_date: 2026-09-05
+invited_date:
+accepted_date:
+scheduled_date:
+interview_date:
+
+interviews: []
+
+evidence_score:
+outcome_modifier:
+prior_contact_status: checked
+notes: "[id C129, not C125 — allocated against a stale next-free number while another session wrote C125 Shane Duncan into the same file; theirs landed first and keeps the id.] Found 2026-09-05 by mining the LinkedIn export company-first against the H0A1 ICP. Live profile read the same day: Wessington 35 yrs 9 mos total, Managing Director 1991 to Apr 2022, Technical Director since Feb 2022. His own entry names dewars, multi-coded gas vessels and ISO tank containers. LR-B25: a thread EXISTS from 2020-10-07, the founder writing as a Georgia Tech student saying they were a fan of Wessington. Ours was last and there was no reply. At nearly six years LR-B30 puts this above the twelve-month line, so it is a fresh Msg 1 and the opener names the old message rather than pretending it did not happen. [msg1 drafted 2026-09-05, MCP framing] soft_ask. Copy at outreach/copy/H1-H2-linkedin.md. UNSENT and NOT to be sent by Claude. [msg1 sent 2026-09-05 by founder, by hand] Observed in the founder's own LinkedIn inbox on 2026-09-05 during a reconciliation pass, timestamp 7:16 PM. The thread shows the founder's message last and no reply yet. The copy sent is NOT the copy archived in this repo: the founder is now opening with "I am building the MCP layer for machines in manufacturing" and asking whether the gap shows up in rework rates. See outreach/linkedin/belief-experts-2026-09/drafts.md for the record of that framing."
+## Sigal Lavenda
+
+id: C130
+name: Sigal Lavenda
+linkedin_url: https://www.linkedin.com/in/sigal-lavenda-2b043ba3/
+linkedin_account: Izgin
+company: Ricor Cryogenic & Vacuum Systems
+role: Vice President Research And Development
+
+signal_type: profile_fit
+signal_multiplier: 1.0
+signal_source_url:
+signal_excerpt:
+
+contact_role: buyer
+role_pts: 3
+
+tier: machine_builder
+size_band: mid
+
+assumptions_tested: [H0A1]
+validation_rationale: >
+  Ricor builds cryocoolers, which are low-volume precision assemblies. As VP R&D she owns the
+  design side of the handoff H0A1 is about, and her fourteen years at Rafael Advanced Defense
+  Systems, latterly carrying a business unit P&L of roughly $300m, means she can speak to what the
+  correction actually costs rather than only that it happens.
+
+response_likelihood: 7
+likelihood_factors: >
+  1st degree (+3) · runs R&D at a cryocooler manufacturer, so the handoff is her function (+2) ·
+  fourteen years at a defence prime including a business unit P&L, so she can price the answer as
+  well as describe it (+1) · no prior contact and a senior inbox (0), start 3, capped at 7
+outreach_pattern:
+degree: "1st"
+mutuals_count:
+active_last_30d: unknown
+open_to_work: false
+
+close_variant: soft_ask
+relationship_type: target_customer
+outreach_status: pending
+message_stage:
+call_stage: none
+found_date: 2026-09-05
+invited_date:
+accepted_date:
+scheduled_date:
+interview_date:
+
+interviews: []
+
+evidence_score:
+outcome_modifier:
+prior_contact_status: checked
+notes: "Found 2026-09-05 by mining the LinkedIn export. Live profile read the same day: Ricor since Oct 2021, prior Rafael Advanced Defense Systems 14 yrs 8 mos. LR-B25 inbox check clean. [msg1 drafted 2026-09-05, MCP framing] soft_ask. Copy at outreach/copy/H1-H2-linkedin.md. UNSENT and NOT to be sent by Claude."
+
+## Jadon Pauling
+
+id: C131
+name: Jadon Pauling
+linkedin_url: https://www.linkedin.com/in/jadonpauling/
+linkedin_account: Izgin
+company: Factory Automation Systems
+role: Project Engineer
+
+signal_type: profile_fit
+signal_multiplier: 1.0
+signal_source_url:
+signal_excerpt:
+
+contact_role: practitioner
+role_pts: 2
+
+tier: manufacturing_operations
+size_band: small
+
+assumptions_tested: [H0A1]
+validation_rationale: >
+  An integrator sees the same handoff at every customer it builds for, which is the one vantage
+  point a single manufacturer cannot give. Project Engineer sits in the H0A1 valid titles. He is
+  two years in, so expect mechanism rather than economics, and treat anything he says about cost
+  as second-hand.
+
+response_likelihood: 7
+likelihood_factors: >
+  1st degree (+3) · project engineer at an integrator, so he sees the handoff across many
+  customers rather than one (+2) · shared Georgia Tech affiliation on the founder's own profile
+  (+1) · two years in role, so less history to draw on (-1), start 3, capped at 7
+outreach_pattern:
+degree: "1st"
+mutuals_count:
+active_last_30d: unknown
+open_to_work: false
+
+close_variant: soft_ask
+relationship_type: target_customer
+outreach_status: pending
+message_stage:
+call_stage: none
+found_date: 2026-09-05
+invited_date:
+accepted_date:
+scheduled_date:
+interview_date:
+
+interviews: []
+
+evidence_score:
+outcome_modifier:
+prior_contact_status: checked
+notes: "Found 2026-09-05 by mining the LinkedIn export. Live profile read the same day: Factory Automation Systems, Atlanta, since Aug 2024; Georgia Tech graduate tutor before that. LR-B25 inbox check clean. [msg1 drafted 2026-09-05, MCP framing] soft_ask. Copy at outreach/copy/H1-H2-linkedin.md. UNSENT and NOT to be sent by Claude."
+
+## Omnish Adroja
+
+id: C132
+name: Omnish Adroja
+linkedin_url: https://www.linkedin.com/in/omnish-adroja-9ab329180/
+linkedin_account: Izgin
+company: Villonex Cryogenics
+role: Founder & MD
+
+signal_type: profile_fit
+signal_multiplier: 1.0
+signal_source_url:
+signal_excerpt:
+
+contact_role: buyer
+role_pts: 3
+
+tier: machine_builder
+size_band: micro
+
+assumptions_tested: [H0A1]
+validation_rationale: >
+  A one-year-old cryogenics manufacturer in Ahmedabad. Useful as the micro end of the H0A1 ladder:
+  a founder building the process at the same time as the product notices the handoff in a way an
+  established firm has already absorbed. His profile carries one line and no description, so
+  expect a lower reply rate and treat any rate he gives as a founder's impression rather than a
+  tracked number.
+
+response_likelihood: 6
+likelihood_factors: >
+  1st degree (+3) · founder, so he carries the cost himself (+2) · the company is one year old and
+  the profile is a single line, so there is little to ground a message in and little history to
+  report (-2), start 3, capped at 6
+outreach_pattern:
+degree: "1st"
+mutuals_count:
+active_last_30d: unknown
+open_to_work: false
+
+close_variant: soft_ask
+relationship_type: target_customer
+outreach_status: pending
+message_stage:
+call_stage: none
+found_date: 2026-09-05
+invited_date:
+accepted_date:
+scheduled_date:
+interview_date:
+
+interviews: []
+
+evidence_score:
+outcome_modifier:
+prior_contact_status: checked
+notes: "Found 2026-09-05 by mining the LinkedIn export. Live profile read the same day: Villonex Cryogenics, Ahmedabad, since Oct 2025, one experience entry and no description. LR-B25 inbox check clean. [msg1 drafted 2026-09-05, MCP framing] soft_ask. Copy at outreach/copy/H1-H2-linkedin.md. UNSENT and NOT to be sent by Claude."
+
+---
+
+### Batch 2026-09-05 (c) — the rest of the export mine
+
+## RP Singh
+
+id: C133
+name: RP Singh
+linkedin_url: https://www.linkedin.com/in/rp-singh-b0428561/
+linkedin_account: Izgin
+company: Linoxy Cryogenic Solutions
+role: Founder
+
+signal_type: profile_fit
+signal_multiplier: 1.0
+signal_source_url:
+signal_excerpt:
+
+contact_role: buyer
+role_pts: 3
+
+tier: machine_builder
+size_band: micro
+
+assumptions_tested: [H0A1]
+validation_rationale: >
+  PARTIAL ICP match, recorded per LR-B12. Linoxy provides installation, commissioning, operation
+  and maintenance plus project management for cryogenic equipment; it does not manufacture. So he
+  can speak to the MECHANISM of a spec failing between design and the plant, and to what
+  correcting it costs on site, but not to a manufacturer's rework rate. Four decades across
+  National Dairy Development Board, Philips Cryogenics and Stirling Cryogenics, commissioning for
+  BHEL, IGCAR and the Institute of Plasma Research, is unusually deep recall. Do not log anything
+  he says as a manufacturer's base rate.
+
+response_likelihood: 7
+likelihood_factors: >
+  1st degree (+3) · four decades in cryogenics and fourteen years running his own firm, so he has
+  seen the handoff across employers rather than at one (+2) · commissioned bespoke plants for
+  national research and power clients, which is one-off engineering by definition (+1) · Linoxy
+  sells services and consultancy rather than manufacturing, so he is adjacent to the ICP rather
+  than inside it (-1), start 3, capped at 7
+outreach_pattern:
+degree: "1st"
+mutuals_count:
+active_last_30d: unknown
+open_to_work: false
+
+close_variant: soft_ask
+relationship_type: target_customer
+outreach_status: pending
+message_stage:
+call_stage: none
+found_date: 2026-09-05
+invited_date:
+accepted_date:
+scheduled_date:
+interview_date:
+
+interviews: []
+
+evidence_score:
+outcome_modifier:
+prior_contact_status: checked
+notes: "Found 2026-09-05 by mining the LinkedIn export company-first against the H0A1 ICP. Live profile read the same day: Linoxy since Oct 2012 (14 yrs), Stirling Cryogenics 2002-2012, Philips 1989-2002, National Dairy Development Board 1979-1989. His own entry states more than four decades in cryogenics. LR-B25 inbox check clean (searched Singh; the Jagjit Singh and Jai Singhal threads are different people). Cryogenics is IMTEK's own industry, which is why this cluster went unnoticed for so long."
+
+## Micah Zinnerman
+
+id: C134
+name: Micah Zinnerman
+linkedin_url: https://www.linkedin.com/in/zinnerman/
+linkedin_account: Izgin
+company: Nordstern Automation
+role: Managing Director
+
+signal_type: profile_fit
+signal_multiplier: 1.0
+signal_source_url:
+signal_excerpt:
+
+contact_role: expert
+role_pts: 2
+
+tier: industry_software_vendor
+size_band: micro
+
+assumptions_tested: [H0A1]
+validation_rationale: >
+  EXPERT side, not a buyer. Nordstern is a consultancy taking robot and control cells from design
+  through virtual commissioning to site acceptance, so what he can testify to is the MECHANISM
+  across many customers, and it is the widest such view in the ledger. He cannot speak to any one
+  manufacturer's economics and nothing he says should be logged as buyer pain. His
+  virtual-commissioning and digital-twin work is also the closest thing in the network to what an
+  MCP layer would have to interoperate with.
+
+response_likelihood: 9
+likelihood_factors: >
+  1st degree and HE HAS ALREADY SAID YES (+4) · runs an integrator taking cells from design to
+  site acceptance, so he sees the handoff at every customer rather than one (+2) · Tesla, KUKA,
+  Raytheon and Gestamp commissioning behind him (+1) · his yes has sat unanswered for three weeks,
+  which costs something (-1), start 3, capped at 9
+outreach_pattern:
+degree: "1st"
+mutuals_count:
+active_last_30d: unknown
+open_to_work: false
+
+close_variant: soft_ask
+relationship_type: field_practitioner
+outreach_status: msg2_sent
+message_stage: msg2_sent
+call_stage: asked_by_founder
+found_date: 2026-09-05
+invited_date:
+accepted_date:
+scheduled_date:
+interview_date:
+
+interviews: []
+
+evidence_score:
+outcome_modifier:
+prior_contact_status: checked
+notes: "Backfilled 2026-09-05 during an export mine; the thread was never in this ledger. HE REPLIED 2026-08-14 AND IT IS STILL UNREAD: 'Thanks for reaching out. What you guys are working on sounds very promising; and I might add that you have a very impressive profile! I would be happy to answer your questions to the best of my ability.' That is an explicit yes that has gone unanswered for three weeks. Read from the conversation-list preview only; the thread was NOT opened, per the no-opening-unread rule. Live profile read 2026-09-05: Nordstern since Jun 2022, prior Micropsi Industries, Raytheon SPY-6, teamtechnik, Tesla Model 3, KUKA, Gestamp. His own entry reports inheriting an EV battery friction-stir-welding line with deformation risk and bringing it to above 98% acceptance. [msg2 drafted 2026-09-05] Arc stage 1, frequency and context, anchored on the last cell he commissioned rather than the general case. [msg2 sent 2026-09-05 18:41] Sent by the founder, closing on availability: "I am available 9am-9pm PDT time!". The three-week-old yes has finally been answered and a call is on the table."
+## Vanessa McNiven
+
+id: C135
+name: Vanessa McNiven
+linkedin_url: https://www.linkedin.com/in/vanessa-mcniven-54944941/
+linkedin_account: Izgin
+company: Institute for Manufacturing, University of Cambridge
+role: Executive Course Director
+
+signal_type: profile_fit
+signal_multiplier: 1.0
+signal_source_url:
+signal_excerpt:
+
+contact_role: influencer
+role_pts: 1
+
+tier: 
+size_band: 
+
+assumptions_tested: []
+validation_rationale: >
+  NOT A CUSTOMER and must never be logged as evidence. She is Executive Course Director of the
+  MPhil the founder took, and was an Industrial Tutor on it for ten years before that. Her value
+  is the ISMM industrial network, which places students inside UK manufacturers every year, and
+  that is the population H0A1 needs. Her own background is Senior Body Engineer at Ford and
+  Production Manager at Marconi Data Systems, so she can judge whether the problem is real before
+  deciding who to point at. relationship_type is set to a non-customer value so she cannot enter a
+  reply-rate denominator.
+
+response_likelihood: 8
+likelihood_factors: >
+  1st degree and she ran the founder's own MPhil, which is the strongest shared context available
+  (+4) · Ford body engineering and production management before academia, so she understands the
+  problem rather than only the network (+1) · not a buyer and never will be, so the ceiling is
+  referrals (0), start 3, capped at 8
+outreach_pattern:
+degree: "1st"
+mutuals_count:
+active_last_30d: unknown
+open_to_work: false
+
+close_variant: soft_ask
+relationship_type: peer_founder_competitor
+outreach_status: pending
+message_stage:
+call_stage: none
+found_date: 2026-09-05
+invited_date:
+accepted_date:
+scheduled_date:
+interview_date:
+
+interviews: []
+
+evidence_score:
+outcome_modifier:
+prior_contact_status: checked
+notes: "Found 2026-09-05 by mining the LinkedIn export. Live profile read the same day: Executive Course Director of MPhil ISMM since Nov 2022, Industrial Tutor on the same course 2012-2022, IfM Industrial Research Fellow 2001-2009, Ford Senior Body Engineer 1996-2000. LR-B25 inbox check clean. [msg1 drafted 2026-09-05] LR-B26 shape: the shared context REPLACES the research anchor, so the message does not name Cambridge at its own course director; it names ISMM, the research project and the DIAL group, which only someone who was there would produce. It volunteers the E26 finding rather than requesting one, and the ask is for names, not for her own answers."
+
+## Mustafa Akin
+
+id: C136
+name: Mustafa Akin
+linkedin_url: https://www.linkedin.com/in/mustafa-akin58/
+linkedin_account: Izgin
+company: Keystone Tile
+role: Team Lead / Coordinator
+
+signal_type: profile_fit
+signal_multiplier: 1.0
+signal_source_url:
+signal_excerpt:
+
+contact_role: practitioner
+role_pts: 1
+
+tier: 
+size_band: 
+
+assumptions_tested: []
+validation_rationale: >
+  OFF SCOPE, and recorded rather than dropped so a later sourcing pass does not rediscover him.
+  The export made him look like a made-to-measure contact because Keystone Tile reads as a maker.
+  The live profile says otherwise: his role description is a product and design team lead's, and
+  his background is user-experience design at PepsiCo and DevMountain. The nearest manufacturing
+  work is a four-month aircraft-equipment design contract in 2018. He fails the H0A1 icp_segment
+  on both halves, company and role.
+
+response_likelihood: 2
+likelihood_factors: >
+  Not scored for outreach; off_scope.
+outreach_pattern:
+degree: "1st"
+mutuals_count:
+active_last_30d: unknown
+open_to_work: false
+
+close_variant: soft_ask
+relationship_type: field_practitioner
+outreach_status: off_scope
+message_stage:
+call_stage: none
+found_date: 2026-09-05
+invited_date:
+accepted_date:
+scheduled_date:
+interview_date:
+
+interviews: []
+
+evidence_score:
+outcome_modifier:
+prior_contact_status: checked
+notes: "Screened 2026-09-05 from the export mine. Live profile read the same day. NOT drafted and NOT messaged. The failing evidence: Keystone Tile is a tile distributor, and his own role description names product managers, developers, user feedback and end-user experience, not manufacture."
+
+## Glenn Charest
+
+id: C137
+name: Glenn Charest
+linkedin_url: https://www.linkedin.com/in/glenncharest/
+linkedin_account: Izgin
+company: United CNC Machining
+role: CEO and owner
+
+signal_type: profile_fit
+signal_multiplier: 1.0
+signal_source_url: https://www.linkedin.com/in/glenncharest/
+signal_excerpt:
+
+contact_role: buyer
+role_pts: 3
+
+tier: job_shop_fabricator
+size_band:
+
+assumptions_tested: [H0A1]
+validation_rationale: >
+  Owns the shop and its P&L. Headline names aerospace, space, defence and naval work, which is low-rate per-order machining where every job is quoted, programmed and proved out on its own.
+
+response_likelihood: 6
+likelihood_factors: >
+  2nd degree, invite needed (0) · owner or general manager so can answer both the cost and the willingness to pay (+3) · profile_fit signal (0), start 3, capped at 6
+outreach_pattern:
+degree: "2nd"
+mutuals_count:
+active_last_30d: unknown
+open_to_work: false
+
+close_variant:
+relationship_type: operator_buyer
+outreach_status: invited
+message_stage:
+call_stage: none
+found_date: 2026-09-05
+invited_date: 2026-09-05
+accepted_date:
+scheduled_date:
+interview_date:
+
+interviews: []
+
+evidence_score:
+outcome_modifier:
+prior_contact_status: pending
+notes: "[UNVERIFIED 2026-09-05] No live profile read exists for this contact. Screened on company and title only, which the H0A1 icp_verification_rule now says is not enough — the invite went out before that rule existed. DO NOT draft or send a DM off this card: read the profile first and confirm the vertical, the production shape, the function and the tenure, then record what it showed here. [invite sent 2026-09-05] Bare connection request, no note (LR-B29). Sent by Claude via linkedin.com/preload/custom-invite; recipient name "Glenn Charest" verified in the invitation modal against the ledger before clicking. [sourced 2026-09-05] H0A1 batch, LinkedIn people search restricted to 2nd degree, Pass 4 Phase B. Name, headline and location are SEARCH RESULT facts only; the profile was NOT opened, so degree, current employer and title must be re-verified live before any message is written (LR-B6, LR-B25). Location as listed: Detroit Metropolitan Area. Pass 1 against the founder's own export returned nothing for this ICP, so every contact in this batch is cold. NOT YET INVITED: the founder sends every invite by hand, bare, with no note (LR-B29)."
+
+## Gabrielle Devroy
+
+id: C138
+name: Gabrielle Devroy
+linkedin_url: https://www.linkedin.com/in/gabrielle-devroy-3332b444/
+linkedin_account: Izgin
+company: (AS9100 machine shop, name not in the search result)
+role: Second-generation machine shop owner
+
+signal_type: profile_fit
+signal_multiplier: 1.0
+signal_source_url: https://www.linkedin.com/in/gabrielle-devroy-3332b444/
+signal_excerpt:
+
+contact_role: buyer
+role_pts: 3
+
+tier: job_shop_fabricator
+size_band:
+
+assumptions_tested: [H0A1]
+validation_rationale: >
+  Second-generation owner of an AS9100 shop. AS9100 means first article inspection on every new part number, which is the prove-out step H0A1 is about, and she carries the cost of it.
+
+response_likelihood: 6
+likelihood_factors: >
+  2nd degree, invite needed (0) · owner or general manager so can answer both the cost and the willingness to pay (+3) · profile_fit signal (0), start 3, capped at 6
+outreach_pattern:
+degree: "2nd"
+mutuals_count:
+active_last_30d: unknown
+open_to_work: false
+
+close_variant:
+relationship_type: operator_buyer
+outreach_status: invited
+message_stage:
+call_stage: none
+found_date: 2026-09-05
+invited_date: 2026-09-05
+accepted_date:
+scheduled_date:
+interview_date:
+
+interviews: []
+
+evidence_score:
+outcome_modifier:
+prior_contact_status: pending
+notes: "[UNVERIFIED 2026-09-05] No live profile read exists for this contact. Screened on company and title only, which the H0A1 icp_verification_rule now says is not enough — the invite went out before that rule existed. DO NOT draft or send a DM off this card: read the profile first and confirm the vertical, the production shape, the function and the tenure, then record what it showed here. [invite sent 2026-09-05] Bare connection request, no note (LR-B29). Sent by Claude via linkedin.com/preload/custom-invite; recipient name "Gabrielle Devroy" verified in the invitation modal against the ledger before clicking. [sourced 2026-09-05] H0A1 batch, LinkedIn people search restricted to 2nd degree, Pass 4 Phase B. Name, headline and location are SEARCH RESULT facts only; the profile was NOT opened, so degree, current employer and title must be re-verified live before any message is written (LR-B6, LR-B25). Location as listed: St Clair, Michigan, US. Pass 1 against the founder's own export returned nothing for this ICP, so every contact in this batch is cold. NOT YET INVITED: the founder sends every invite by hand, bare, with no note (LR-B29)."
+
+## Stanley Evans
+
+id: C139
+name: Stanley Evans
+linkedin_url: https://www.linkedin.com/in/stanley-evans-093367110/
+linkedin_account: Izgin
+company: SJS Machine
+role: Owner
+
+signal_type: profile_fit
+signal_multiplier: 1.0
+signal_source_url: https://www.linkedin.com/in/stanley-evans-093367110/
+signal_excerpt:
+
+contact_role: buyer
+role_pts: 3
+
+tier: job_shop_fabricator
+size_band:
+
+assumptions_tested: [H0A1]
+validation_rationale: >
+  Owner of a shop doing CNC machining, fabrication, production parts and tooling and fixtures. A vendor to Toyota running fixtures and one-offs sees both ends of the handoff, and the headline mentions engineering change.
+
+response_likelihood: 6
+likelihood_factors: >
+  2nd degree, invite needed (0) · owner or general manager so can answer both the cost and the willingness to pay (+3) · profile_fit signal (0), start 3, capped at 6
+outreach_pattern:
+degree: "2nd"
+mutuals_count:
+active_last_30d: unknown
+open_to_work: false
+
+close_variant:
+relationship_type: operator_buyer
+outreach_status: invited
+message_stage:
+call_stage: none
+found_date: 2026-09-05
+invited_date: 2026-09-05
+accepted_date:
+scheduled_date:
+interview_date:
+
+interviews: []
+
+evidence_score:
+outcome_modifier:
+prior_contact_status: pending
+notes: "[UNVERIFIED 2026-09-05] No live profile read exists for this contact. Screened on company and title only, which the H0A1 icp_verification_rule now says is not enough — the invite went out before that rule existed. DO NOT draft or send a DM off this card: read the profile first and confirm the vertical, the production shape, the function and the tenure, then record what it showed here. [invite sent 2026-09-05] Bare connection request, no note (LR-B29). Sent by Claude via linkedin.com/preload/custom-invite; recipient name "Stanley Evans" verified in the invitation modal against the ledger before clicking. [sourced 2026-09-05] H0A1 batch, LinkedIn people search restricted to 2nd degree, Pass 4 Phase B. Name, headline and location are SEARCH RESULT facts only; the profile was NOT opened, so degree, current employer and title must be re-verified live before any message is written (LR-B6, LR-B25). Location as listed: Fayetteville, Tennessee, US. Pass 1 against the founder's own export returned nothing for this ICP, so every contact in this batch is cold. NOT YET INVITED: the founder sends every invite by hand, bare, with no note (LR-B29)."
+
+## Rick Rasmussen
+
+id: C140
+name: Rick Rasmussen
+linkedin_url: https://www.linkedin.com/in/rick-rasmussen-6392941a/
+linkedin_account: Izgin
+company: (precision CNC shop, name not in the search result)
+role: President
+
+signal_type: profile_fit
+signal_multiplier: 1.0
+signal_source_url: https://www.linkedin.com/in/rick-rasmussen-6392941a/
+signal_excerpt:
+
+contact_role: buyer
+role_pts: 3
+
+tier: job_shop_fabricator
+size_band:
+
+assumptions_tested: [H0A1]
+validation_rationale: >
+  Runs a precision CNC shop whose stated work is prototypes, components, devices and equipment. Prototype work is per-order by definition, so his shop has no repeat-run engineering to amortise.
+
+response_likelihood: 6
+likelihood_factors: >
+  2nd degree, invite needed (0) · owner or general manager so can answer both the cost and the willingness to pay (+3) · profile_fit signal (0), start 3, capped at 6
+outreach_pattern:
+degree: "2nd"
+mutuals_count:
+active_last_30d: unknown
+open_to_work: false
+
+close_variant:
+relationship_type: operator_buyer
+outreach_status: invited
+message_stage:
+call_stage: none
+found_date: 2026-09-05
+invited_date: 2026-09-05
+accepted_date:
+scheduled_date:
+interview_date:
+
+interviews: []
+
+evidence_score:
+outcome_modifier:
+prior_contact_status: pending
+notes: "[UNVERIFIED 2026-09-05] No live profile read exists for this contact. Screened on company and title only, which the H0A1 icp_verification_rule now says is not enough — the invite went out before that rule existed. DO NOT draft or send a DM off this card: read the profile first and confirm the vertical, the production shape, the function and the tenure, then record what it showed here. [invite sent 2026-09-05] Bare connection request, no note (LR-B29). Sent by Claude via linkedin.com/preload/custom-invite; name "Rick Rasmussen" verified in the invitation modal against the ledger before clicking. [sourced 2026-09-05] H0A1 batch, LinkedIn people search restricted to 2nd degree, Pass 4 Phase B. Name, headline and location are SEARCH RESULT facts only; the profile was NOT opened, so degree, current employer and title must be re-verified live before any message is written (LR-B6, LR-B25). Location as listed: US. Pass 1 against the founder's own export returned nothing for this ICP, so every contact in this batch is cold. NOT YET INVITED: the founder sends every invite by hand, bare, with no note (LR-B29)."
+
+## Brian Kippen
+
+id: C141
+name: Brian Kippen
+linkedin_url: https://www.linkedin.com/in/brian-kippen-76037332/
+linkedin_account: Izgin
+company: KAD Models & Prototypes
+role: CEO
+
+signal_type: profile_fit
+signal_multiplier: 1.0
+signal_source_url: https://www.linkedin.com/in/brian-kippen-76037332/
+signal_excerpt:
+
+contact_role: buyer
+role_pts: 3
+
+tier: job_shop_fabricator
+size_band:
+
+assumptions_tested: [H0A1]
+validation_rationale: >
+  Runs a model and prototype shop in Berkeley, 30 minutes from the founder. Every job is a one-off from a customer's file, which is the purest form of the per-order handoff, and he is close enough to visit.
+
+response_likelihood: 7
+likelihood_factors: >
+  2nd degree, invite needed (0) · owner or general manager so can answer both the cost and the willingness to pay (+3) · profile_fit signal (0) · Bay Area while the founder is in San Francisco (+1), start 3, capped at 7
+outreach_pattern:
+degree: "2nd"
+mutuals_count:
+active_last_30d: unknown
+open_to_work: false
+
+close_variant:
+relationship_type: operator_buyer
+outreach_status: invited
+message_stage:
+call_stage: none
+found_date: 2026-09-05
+invited_date: 2026-09-05
+accepted_date:
+scheduled_date:
+interview_date:
+
+interviews: []
+
+evidence_score:
+outcome_modifier:
+prior_contact_status: pending
+notes: "[UNVERIFIED 2026-09-05] No live profile read exists for this contact. Screened on company and title only, which the H0A1 icp_verification_rule now says is not enough — the invite went out before that rule existed. DO NOT draft or send a DM off this card: read the profile first and confirm the vertical, the production shape, the function and the tenure, then record what it showed here. [invite sent 2026-09-05] Bare connection request, no note (LR-B29). Sent by Claude via linkedin.com/preload/custom-invite; name "Brian Kippen" verified in the invitation modal against the ledger before clicking. [sourced 2026-09-05] H0A1 batch, LinkedIn people search restricted to 2nd degree, Pass 4 Phase B. Name, headline and location are SEARCH RESULT facts only; the profile was NOT opened, so degree, current employer and title must be re-verified live before any message is written (LR-B6, LR-B25). Location as listed: Berkeley, California, US. Pass 1 against the founder's own export returned nothing for this ICP, so every contact in this batch is cold. NOT YET INVITED: the founder sends every invite by hand, bare, with no note (LR-B29)."
+
+## Everett Sharp
+
+id: C142
+name: Everett Sharp
+linkedin_url: https://www.linkedin.com/in/everett-sharp-46b335142/
+linkedin_account: Izgin
+company: AusTex Machine & Design
+role: Shop manager and co-owner
+
+signal_type: profile_fit
+signal_multiplier: 1.0
+signal_source_url: https://www.linkedin.com/in/everett-sharp-46b335142/
+signal_excerpt:
+
+contact_role: buyer
+role_pts: 3
+
+tier: job_shop_fabricator
+size_band:
+
+assumptions_tested: [H0A1]
+validation_rationale: >
+  Co-owner and shop manager at a machine and design shop, so he sits on both the design side and the floor side of the same handoff and can say where a job stops moving.
+
+response_likelihood: 6
+likelihood_factors: >
+  2nd degree, invite needed (0) · owner or general manager so can answer both the cost and the willingness to pay (+3) · profile_fit signal (0), start 3, capped at 6
+outreach_pattern:
+degree: "2nd"
+mutuals_count:
+active_last_30d: unknown
+open_to_work: false
+
+close_variant:
+relationship_type: operator_buyer
+outreach_status: invited
+message_stage:
+call_stage: none
+found_date: 2026-09-05
+invited_date: 2026-09-05
+accepted_date:
+scheduled_date:
+interview_date:
+
+interviews: []
+
+evidence_score:
+outcome_modifier:
+prior_contact_status: pending
+notes: "[UNVERIFIED 2026-09-05] No live profile read exists for this contact. Screened on company and title only, which the H0A1 icp_verification_rule now says is not enough — the invite went out before that rule existed. DO NOT draft or send a DM off this card: read the profile first and confirm the vertical, the production shape, the function and the tenure, then record what it showed here. [invite sent 2026-09-05] Bare connection request, no note (LR-B29). Sent by Claude via linkedin.com/preload/custom-invite; name "Everett Sharp" verified in the invitation modal against the ledger before clicking. [sourced 2026-09-05] H0A1 batch, LinkedIn people search restricted to 2nd degree, Pass 4 Phase B. Name, headline and location are SEARCH RESULT facts only; the profile was NOT opened, so degree, current employer and title must be re-verified live before any message is written (LR-B6, LR-B25). Location as listed: Buda, Texas, US. Pass 1 against the founder's own export returned nothing for this ICP, so every contact in this batch is cold. NOT YET INVITED: the founder sends every invite by hand, bare, with no note (LR-B29)."
+
+## Scott Williams
+
+id: C143
+name: Scott Williams
+linkedin_url: https://www.linkedin.com/in/scott-williams-75547230/
+linkedin_account: Izgin
+company: Velocity Custom Fabrication
+role: Owner and VP of operations and engineering
+
+signal_type: profile_fit
+signal_multiplier: 1.0
+signal_source_url: https://www.linkedin.com/in/scott-williams-75547230/
+signal_excerpt:
+
+contact_role: buyer
+role_pts: 3
+
+tier: job_shop_fabricator
+size_band:
+
+assumptions_tested: [H0A1]
+validation_rationale: >
+  Owner of a custom fabrication shop holding both the operations and the engineering title. Custom fabrication is per-order work and he is the person who decides whether checking before release is worth paying for.
+
+response_likelihood: 6
+likelihood_factors: >
+  2nd degree, invite needed (0) · owner or general manager so can answer both the cost and the willingness to pay (+3) · profile_fit signal (0), start 3, capped at 6
+outreach_pattern:
+degree: "2nd"
+mutuals_count:
+active_last_30d: unknown
+open_to_work: false
+
+close_variant:
+relationship_type: operator_buyer
+outreach_status: invited
+message_stage:
+call_stage: none
+found_date: 2026-09-05
+invited_date: 2026-09-05
+accepted_date:
+scheduled_date:
+interview_date:
+
+interviews: []
+
+evidence_score:
+outcome_modifier:
+prior_contact_status: pending
+notes: "[UNVERIFIED 2026-09-05] No live profile read exists for this contact. Screened on company and title only, which the H0A1 icp_verification_rule now says is not enough — the invite went out before that rule existed. DO NOT draft or send a DM off this card: read the profile first and confirm the vertical, the production shape, the function and the tenure, then record what it showed here. [invite sent 2026-09-05] Bare connection request, no note (LR-B29). Sent by Claude via linkedin.com/preload/custom-invite; name "Scott Williams" verified in the invitation modal against the ledger before clicking. [sourced 2026-09-05] H0A1 batch, LinkedIn people search restricted to 2nd degree, Pass 4 Phase B. Name, headline and location are SEARCH RESULT facts only; the profile was NOT opened, so degree, current employer and title must be re-verified live before any message is written (LR-B6, LR-B25). Location as listed: Tulsa, Oklahoma, US. Pass 1 against the founder's own export returned nothing for this ICP, so every contact in this batch is cold. NOT YET INVITED: the founder sends every invite by hand, bare, with no note (LR-B29)."
+
+## Chase Hettinger
+
+id: C144
+name: Chase Hettinger
+linkedin_url: https://www.linkedin.com/in/chase-hettinger-13606a159/
+linkedin_account: Izgin
+company: Consolidated Precision Manufacturing
+role: Owner
+
+signal_type: profile_fit
+signal_multiplier: 1.0
+signal_source_url: https://www.linkedin.com/in/chase-hettinger-13606a159/
+signal_excerpt:
+
+contact_role: buyer
+role_pts: 3
+
+tier: job_shop_fabricator
+size_band:
+
+assumptions_tested: [H0A1]
+validation_rationale: >
+  Owner of a precision manufacturing shop. Owner-operators are the only tier in this ICP who can answer both halves of the belief, what the errors cost and whether they would pay to remove them.
+
+response_likelihood: 6
+likelihood_factors: >
+  2nd degree, invite needed (0) · owner or general manager so can answer both the cost and the willingness to pay (+3) · profile_fit signal (0), start 3, capped at 6
+outreach_pattern:
+degree: "2nd"
+mutuals_count:
+active_last_30d: unknown
+open_to_work: false
+
+close_variant:
+relationship_type: operator_buyer
+outreach_status: invited
+message_stage:
+call_stage: none
+found_date: 2026-09-05
+invited_date: 2026-09-05
+accepted_date:
+scheduled_date:
+interview_date:
+
+interviews: []
+
+evidence_score:
+outcome_modifier:
+prior_contact_status: pending
+notes: "[UNVERIFIED 2026-09-05] No live profile read exists for this contact. Screened on company and title only, which the H0A1 icp_verification_rule now says is not enough — the invite went out before that rule existed. DO NOT draft or send a DM off this card: read the profile first and confirm the vertical, the production shape, the function and the tenure, then record what it showed here. [invite sent 2026-09-05] Bare connection request, no note (LR-B29). Sent by Claude via linkedin.com/preload/custom-invite; name "Chase Hettinger" verified in the invitation modal against the ledger before clicking. [sourced 2026-09-05] H0A1 batch, LinkedIn people search restricted to 2nd degree, Pass 4 Phase B. Name, headline and location are SEARCH RESULT facts only; the profile was NOT opened, so degree, current employer and title must be re-verified live before any message is written (LR-B6, LR-B25). Location as listed: Chandler, Arizona, US. Pass 1 against the founder's own export returned nothing for this ICP, so every contact in this batch is cold. NOT YET INVITED: the founder sends every invite by hand, bare, with no note (LR-B29)."
+
+## Chelsea Sutton
+
+id: C145
+name: Chelsea Sutton
+linkedin_url: https://www.linkedin.com/in/chelsea-sutton-8378943a/
+linkedin_account: Izgin
+company: Smith Metal LLC
+role: Vice president and co-owner
+
+signal_type: profile_fit
+signal_multiplier: 1.0
+signal_source_url: https://www.linkedin.com/in/chelsea-sutton-8378943a/
+signal_excerpt:
+
+contact_role: buyer
+role_pts: 3
+
+tier: job_shop_fabricator
+size_band:
+
+assumptions_tested: [H0A1]
+validation_rationale: >
+  Co-owner of a CNC machining business. Carries the cost of a bad job directly, and the VP title means she is inside the quoting decision rather than downstream of it.
+
+response_likelihood: 6
+likelihood_factors: >
+  2nd degree, invite needed (0) · owner or general manager so can answer both the cost and the willingness to pay (+3) · profile_fit signal (0), start 3, capped at 6
+outreach_pattern:
+degree: "2nd"
+mutuals_count:
+active_last_30d: unknown
+open_to_work: false
+
+close_variant:
+relationship_type: operator_buyer
+outreach_status: invited
+message_stage:
+call_stage: none
+found_date: 2026-09-05
+invited_date: 2026-09-05
+accepted_date:
+scheduled_date:
+interview_date:
+
+interviews: []
+
+evidence_score:
+outcome_modifier:
+prior_contact_status: pending
+notes: "[UNVERIFIED 2026-09-05] No live profile read exists for this contact. Screened on company and title only, which the H0A1 icp_verification_rule now says is not enough — the invite went out before that rule existed. DO NOT draft or send a DM off this card: read the profile first and confirm the vertical, the production shape, the function and the tenure, then record what it showed here. [invite sent 2026-09-05] Bare connection request, no note (LR-B29). Sent by Claude via linkedin.com/preload/custom-invite; name "Chelsea Sutton" verified in the invitation modal against the ledger before clicking. [sourced 2026-09-05] H0A1 batch, LinkedIn people search restricted to 2nd degree, Pass 4 Phase B. Name, headline and location are SEARCH RESULT facts only; the profile was NOT opened, so degree, current employer and title must be re-verified live before any message is written (LR-B6, LR-B25). Location as listed: Augusta, Michigan, US. Pass 1 against the founder's own export returned nothing for this ICP, so every contact in this batch is cold. NOT YET INVITED: the founder sends every invite by hand, bare, with no note (LR-B29)."
+
+## John Shaw
+
+id: C146
+name: John Shaw
+linkedin_url: https://www.linkedin.com/in/john-shaw-907670ba/
+linkedin_account: Izgin
+company: Progressive Machining & Fabrication
+role: Owner
+
+signal_type: profile_fit
+signal_multiplier: 1.0
+signal_source_url: https://www.linkedin.com/in/john-shaw-907670ba/
+signal_excerpt:
+
+contact_role: buyer
+role_pts: 3
+
+tier: job_shop_fabricator
+size_band:
+
+assumptions_tested: [H0A1]
+validation_rationale: >
+  Owner of a shop that both machines and fabricates, so a single job can cross two processes inside his building before it is right, which is where per-order information gets lost.
+
+response_likelihood: 6
+likelihood_factors: >
+  2nd degree, invite needed (0) · owner or general manager so can answer both the cost and the willingness to pay (+3) · profile_fit signal (0), start 3, capped at 6
+outreach_pattern:
+degree: "2nd"
+mutuals_count:
+active_last_30d: unknown
+open_to_work: false
+
+close_variant:
+relationship_type: operator_buyer
+outreach_status: invited
+message_stage:
+call_stage: none
+found_date: 2026-09-05
+invited_date: 2026-09-05
+accepted_date:
+scheduled_date:
+interview_date:
+
+interviews: []
+
+evidence_score:
+outcome_modifier:
+prior_contact_status: pending
+notes: "[UNVERIFIED 2026-09-05] No live profile read exists for this contact. Screened on company and title only, which the H0A1 icp_verification_rule now says is not enough — the invite went out before that rule existed. DO NOT draft or send a DM off this card: read the profile first and confirm the vertical, the production shape, the function and the tenure, then record what it showed here. [invite sent 2026-09-05] Bare connection request, no note (LR-B29). Sent by Claude via linkedin.com/preload/custom-invite; name "John Shaw" verified in the invitation modal against the ledger before clicking. [sourced 2026-09-05] H0A1 batch, LinkedIn people search restricted to 2nd degree, Pass 4 Phase B. Name, headline and location are SEARCH RESULT facts only; the profile was NOT opened, so degree, current employer and title must be re-verified live before any message is written (LR-B6, LR-B25). Location as listed: Anderson, South Carolina, US. Pass 1 against the founder's own export returned nothing for this ICP, so every contact in this batch is cold. NOT YET INVITED: the founder sends every invite by hand, bare, with no note (LR-B29)."
+
+## Dave Ellis
+
+id: C147
+name: Dave Ellis
+linkedin_url: https://www.linkedin.com/in/dave-ellis-5ab80950/
+linkedin_account: Izgin
+company: Ellis Design and Fabrication
+role: Business owner
+
+signal_type: profile_fit
+signal_multiplier: 1.0
+signal_source_url: https://www.linkedin.com/in/dave-ellis-5ab80950/
+signal_excerpt:
+
+contact_role: buyer
+role_pts: 3
+
+tier: job_shop_fabricator
+size_band:
+
+assumptions_tested: [H0A1]
+validation_rationale: >
+  The company name is design AND fabrication, so the design-to-machine handoff happens inside one small business he owns. That makes the cost of it visible to one person rather than split across departments.
+
+response_likelihood: 6
+likelihood_factors: >
+  2nd degree, invite needed (0) · owner or general manager so can answer both the cost and the willingness to pay (+3) · profile_fit signal (0), start 3, capped at 6
+outreach_pattern:
+degree: "2nd"
+mutuals_count:
+active_last_30d: unknown
+open_to_work: false
+
+close_variant:
+relationship_type: operator_buyer
+outreach_status: invited
+message_stage:
+call_stage: none
+found_date: 2026-09-05
+invited_date: 2026-09-05
+accepted_date:
+scheduled_date:
+interview_date:
+
+interviews: []
+
+evidence_score:
+outcome_modifier:
+prior_contact_status: pending
+notes: "[UNVERIFIED 2026-09-05] No live profile read exists for this contact. Screened on company and title only, which the H0A1 icp_verification_rule now says is not enough — the invite went out before that rule existed. DO NOT draft or send a DM off this card: read the profile first and confirm the vertical, the production shape, the function and the tenure, then record what it showed here. [invite sent 2026-09-05] Bare connection request, no note (LR-B29). Sent by Claude via linkedin.com/preload/custom-invite; name "Dave Ellis" verified in the invitation modal against the ledger before clicking. [sourced 2026-09-05] H0A1 batch, LinkedIn people search restricted to 2nd degree, Pass 4 Phase B. Name, headline and location are SEARCH RESULT facts only; the profile was NOT opened, so degree, current employer and title must be re-verified live before any message is written (LR-B6, LR-B25). Location as listed: San Tan Valley, Arizona, US. Pass 1 against the founder's own export returned nothing for this ICP, so every contact in this batch is cold. NOT YET INVITED: the founder sends every invite by hand, bare, with no note (LR-B29)."
+
+## Brian Bixler
+
+id: C148
+name: Brian Bixler
+linkedin_url: https://www.linkedin.com/in/brian-bixler-7785b7a2/
+linkedin_account: Izgin
+company: Brandt Tool & Die Co., Inc.
+role: Owner
+
+signal_type: profile_fit
+signal_multiplier: 1.0
+signal_source_url: https://www.linkedin.com/in/brian-bixler-7785b7a2/
+signal_excerpt:
+
+contact_role: buyer
+role_pts: 3
+
+tier: job_shop_fabricator
+size_band:
+
+assumptions_tested: [H0A1]
+validation_rationale: >
+  Owns a tool and die shop. Tool and die is the extreme of one-off engineering: every die is designed, cut and tried out once, and the try-out is the prove-out step this assumption is about.
+
+response_likelihood: 6
+likelihood_factors: >
+  2nd degree, invite needed (0) · owner or general manager so can answer both the cost and the willingness to pay (+3) · profile_fit signal (0), start 3, capped at 6
+outreach_pattern:
+degree: "2nd"
+mutuals_count:
+active_last_30d: unknown
+open_to_work: false
+
+close_variant:
+relationship_type: operator_buyer
+outreach_status: invited
+message_stage:
+call_stage: none
+found_date: 2026-09-05
+invited_date: 2026-09-05
+accepted_date:
+scheduled_date:
+interview_date:
+
+interviews: []
+
+evidence_score:
+outcome_modifier:
+prior_contact_status: pending
+notes: "[UNVERIFIED 2026-09-05] No live profile read exists for this contact. Screened on company and title only, which the H0A1 icp_verification_rule now says is not enough — the invite went out before that rule existed. DO NOT draft or send a DM off this card: read the profile first and confirm the vertical, the production shape, the function and the tenure, then record what it showed here. [invite sent 2026-09-05] Bare connection request, no note (LR-B29). Sent by Claude via linkedin.com/preload/custom-invite; name "Brian Bixler" verified in the invitation modal against the ledger before clicking. [sourced 2026-09-05] H0A1 batch, LinkedIn people search restricted to 2nd degree, Pass 4 Phase B. Name, headline and location are SEARCH RESULT facts only; the profile was NOT opened, so degree, current employer and title must be re-verified live before any message is written (LR-B6, LR-B25). Location as listed: Littlestown, Pennsylvania, US. Pass 1 against the founder's own export returned nothing for this ICP, so every contact in this batch is cold. NOT YET INVITED: the founder sends every invite by hand, bare, with no note (LR-B29)."
+
+## Zoltan Voros
+
+id: C149
+name: Zoltan Voros
+linkedin_url: https://www.linkedin.com/in/zoltan-voros-06064327/
+linkedin_account: Izgin
+company: Vortool Manufacturing Ltd.
+role: Owner and tool and diemaker
+
+signal_type: profile_fit
+signal_multiplier: 1.0
+signal_source_url: https://www.linkedin.com/in/zoltan-voros-06064327/
+signal_excerpt:
+
+contact_role: buyer
+role_pts: 3
+
+tier: job_shop_fabricator
+size_band:
+
+assumptions_tested: [H0A1]
+validation_rationale: >
+  Owner who still makes the tools himself. Someone who both quotes the job and cuts it can say what he found out about a part after the price had already gone out, without translating it through anyone.
+
+response_likelihood: 6
+likelihood_factors: >
+  2nd degree, invite needed (0) · owner or general manager so can answer both the cost and the willingness to pay (+3) · profile_fit signal (0), start 3, capped at 6
+outreach_pattern:
+degree: "2nd"
+mutuals_count:
+active_last_30d: unknown
+open_to_work: false
+
+close_variant:
+relationship_type: operator_buyer
+outreach_status: invited
+message_stage:
+call_stage: none
+found_date: 2026-09-05
+invited_date: 2026-09-05
+accepted_date:
+scheduled_date:
+interview_date:
+
+interviews: []
+
+evidence_score:
+outcome_modifier:
+prior_contact_status: pending
+notes: "[UNVERIFIED 2026-09-05] No live profile read exists for this contact. Screened on company and title only, which the H0A1 icp_verification_rule now says is not enough — the invite went out before that rule existed. DO NOT draft or send a DM off this card: read the profile first and confirm the vertical, the production shape, the function and the tenure, then record what it showed here. [invite sent 2026-09-05] Bare connection request, no note (LR-B29). Sent by Claude via linkedin.com/preload/custom-invite; name "Zoltan Voros" verified in the invitation modal against the ledger before clicking. [sourced 2026-09-05] H0A1 batch, LinkedIn people search restricted to 2nd degree, Pass 4 Phase B. Name, headline and location are SEARCH RESULT facts only; the profile was NOT opened, so degree, current employer and title must be re-verified live before any message is written (LR-B6, LR-B25). Location as listed: Surrey, British Columbia, Canada. Pass 1 against the founder's own export returned nothing for this ICP, so every contact in this batch is cold. NOT YET INVITED: the founder sends every invite by hand, bare, with no note (LR-B29)."
+
+## Andrew Kurzrok
+
+id: C150
+name: Andrew Kurzrok
+linkedin_url: https://www.linkedin.com/in/akurzrok/
+linkedin_account: Izgin
+company: Hopewell Sheet Metal Mfg.
+role: President
+
+signal_type: profile_fit
+signal_multiplier: 1.0
+signal_source_url: https://www.linkedin.com/in/akurzrok/
+signal_excerpt:
+
+contact_role: buyer
+role_pts: 3
+
+tier: job_shop_fabricator
+size_band:
+
+assumptions_tested: [H0A1]
+validation_rationale: >
+  President of a sheet metal manufacturer. Sheet metal jobs are cut from customer-supplied flat patterns, so a wrong or ambiguous file becomes scrap material rather than a rework, which sharpens the cost question.
+
+response_likelihood: 6
+likelihood_factors: >
+  2nd degree, invite needed (0) · owner or general manager so can answer both the cost and the willingness to pay (+3) · profile_fit signal (0), start 3, capped at 6
+outreach_pattern:
+degree: "2nd"
+mutuals_count:
+active_last_30d: unknown
+open_to_work: false
+
+close_variant:
+relationship_type: operator_buyer
+outreach_status: invited
+message_stage:
+call_stage: none
+found_date: 2026-09-05
+invited_date: 2026-09-05
+accepted_date:
+scheduled_date:
+interview_date:
+
+interviews: []
+
+evidence_score:
+outcome_modifier:
+prior_contact_status: pending
+notes: "[UNVERIFIED 2026-09-05] No live profile read exists for this contact. Screened on company and title only, which the H0A1 icp_verification_rule now says is not enough — the invite went out before that rule existed. DO NOT draft or send a DM off this card: read the profile first and confirm the vertical, the production shape, the function and the tenure, then record what it showed here. [invite sent 2026-09-05] Bare connection request, no note (LR-B29). Sent by Claude via linkedin.com/preload/custom-invite; name "Andrew Kurzrok" verified in the invitation modal against the ledger before clicking. [sourced 2026-09-05] H0A1 batch, LinkedIn people search restricted to 2nd degree, Pass 4 Phase B. Name, headline and location are SEARCH RESULT facts only; the profile was NOT opened, so degree, current employer and title must be re-verified live before any message is written (LR-B6, LR-B25). Location as listed: Washington, DC, US. Pass 1 against the founder's own export returned nothing for this ICP, so every contact in this batch is cold. NOT YET INVITED: the founder sends every invite by hand, bare, with no note (LR-B29)."
+
+## Christopher Carlson
+
+id: C151
+name: Christopher Carlson
+linkedin_url: https://www.linkedin.com/in/christopher-carlson-3665b2159/
+linkedin_account: Izgin
+company: Carlson Brothers Machining and Excavating LLC
+role: Co-owner
+
+signal_type: profile_fit
+signal_multiplier: 1.0
+signal_source_url: https://www.linkedin.com/in/christopher-carlson-3665b2159/
+signal_excerpt:
+
+contact_role: buyer
+role_pts: 3
+
+tier: job_shop_fabricator
+size_band:
+
+assumptions_tested: [H0A1]
+validation_rationale: >
+  Co-owner of a small machining business. The smallest shops are where the per-order handoff is most obviously manual, because there is no ERP layer between the drawing and the machine.
+
+response_likelihood: 6
+likelihood_factors: >
+  2nd degree, invite needed (0) · owner or general manager so can answer both the cost and the willingness to pay (+3) · profile_fit signal (0), start 3, capped at 6
+outreach_pattern:
+degree: "2nd"
+mutuals_count:
+active_last_30d: unknown
+open_to_work: false
+
+close_variant:
+relationship_type: operator_buyer
+outreach_status: invited
+message_stage:
+call_stage: none
+found_date: 2026-09-05
+invited_date: 2026-09-05
+accepted_date:
+scheduled_date:
+interview_date:
+
+interviews: []
+
+evidence_score:
+outcome_modifier:
+prior_contact_status: pending
+notes: "[UNVERIFIED 2026-09-05] No live profile read exists for this contact. Screened on company and title only, which the H0A1 icp_verification_rule now says is not enough — the invite went out before that rule existed. DO NOT draft or send a DM off this card: read the profile first and confirm the vertical, the production shape, the function and the tenure, then record what it showed here. [invite sent 2026-09-05] Bare connection request, no note (LR-B29). Sent by Claude via linkedin.com/preload/custom-invite; name "Christopher Carlson" verified in the invitation modal against the ledger before clicking. [sourced 2026-09-05] H0A1 batch, LinkedIn people search restricted to 2nd degree, Pass 4 Phase B. Name, headline and location are SEARCH RESULT facts only; the profile was NOT opened, so degree, current employer and title must be re-verified live before any message is written (LR-B6, LR-B25). Location as listed: Sharon, Wisconsin, US. Pass 1 against the founder's own export returned nothing for this ICP, so every contact in this batch is cold. NOT YET INVITED: the founder sends every invite by hand, bare, with no note (LR-B29)."
+
+## WOJCIECH CWYNAR
+
+id: C152
+name: WOJCIECH CWYNAR
+linkedin_url: https://www.linkedin.com/in/wojciech-cwynar-272aa658/
+linkedin_account: Izgin
+company: Hyde CNC Services Ltd
+role: Business owner
+
+signal_type: profile_fit
+signal_multiplier: 1.0
+signal_source_url: https://www.linkedin.com/in/wojciech-cwynar-272aa658/
+signal_excerpt:
+
+contact_role: buyer
+role_pts: 3
+
+tier: job_shop_fabricator
+size_band:
+
+assumptions_tested: [H0A1]
+validation_rationale: >
+  Owner who was a CNC machinist-programmer before that, per his own past-role line. He has personally done the step the assumption is about and now carries its cost as the owner.
+
+response_likelihood: 6
+likelihood_factors: >
+  2nd degree, invite needed (0) · owner or general manager so can answer both the cost and the willingness to pay (+3) · profile_fit signal (0), start 3, capped at 6
+outreach_pattern:
+degree: "2nd"
+mutuals_count:
+active_last_30d: unknown
+open_to_work: false
+
+close_variant:
+relationship_type: operator_buyer
+outreach_status: invited
+message_stage:
+call_stage: none
+found_date: 2026-09-05
+invited_date: 2026-09-05
+accepted_date:
+scheduled_date:
+interview_date:
+
+interviews: []
+
+evidence_score:
+outcome_modifier:
+prior_contact_status: pending
+notes: "[UNVERIFIED 2026-09-05] No live profile read exists for this contact. Screened on company and title only, which the H0A1 icp_verification_rule now says is not enough — the invite went out before that rule existed. DO NOT draft or send a DM off this card: read the profile first and confirm the vertical, the production shape, the function and the tenure, then record what it showed here. [invite sent 2026-09-05] Bare connection request, no note (LR-B29). Sent by Claude via linkedin.com/preload/custom-invite; name "WOJCIECH CWYNAR" verified in the invitation modal against the ledger before clicking. [sourced 2026-09-05] H0A1 batch, LinkedIn people search restricted to 2nd degree, Pass 4 Phase B. Name, headline and location are SEARCH RESULT facts only; the profile was NOT opened, so degree, current employer and title must be re-verified live before any message is written (LR-B6, LR-B25). Location as listed: Hyde, England, UK. Pass 1 against the founder's own export returned nothing for this ICP, so every contact in this batch is cold. NOT YET INVITED: the founder sends every invite by hand, bare, with no note (LR-B29)."
+
+## Greg Ellis
+
+id: C153
+name: Greg Ellis
+linkedin_url: https://www.linkedin.com/in/greg-ellis-127b7a183/
+linkedin_account: Izgin
+company: (own business, name not in the search result)
+role: Business owner, mechanical engineer and machinist
+
+signal_type: profile_fit
+signal_multiplier: 1.0
+signal_source_url: https://www.linkedin.com/in/greg-ellis-127b7a183/
+signal_excerpt:
+
+contact_role: buyer
+role_pts: 3
+
+tier: job_shop_fabricator
+size_band:
+
+assumptions_tested: [H0A1]
+validation_rationale: >
+  Describes himself as owner, mechanical engineer and machinist in one line, which is the whole handoff inside one person. He can say which part of it actually takes the time.
+
+response_likelihood: 6
+likelihood_factors: >
+  2nd degree, invite needed (0) · owner or general manager so can answer both the cost and the willingness to pay (+3) · profile_fit signal (0), start 3, capped at 6
+outreach_pattern:
+degree: "2nd"
+mutuals_count:
+active_last_30d: unknown
+open_to_work: false
+
+close_variant:
+relationship_type: operator_buyer
+outreach_status: invited
+message_stage:
+call_stage: none
+found_date: 2026-09-05
+invited_date: 2026-09-05
+accepted_date:
+scheduled_date:
+interview_date:
+
+interviews: []
+
+evidence_score:
+outcome_modifier:
+prior_contact_status: pending
+notes: "[UNVERIFIED 2026-09-05] No live profile read exists for this contact. Screened on company and title only, which the H0A1 icp_verification_rule now says is not enough — the invite went out before that rule existed. DO NOT draft or send a DM off this card: read the profile first and confirm the vertical, the production shape, the function and the tenure, then record what it showed here. [invite sent 2026-09-05] Bare connection request, no note (LR-B29). Sent by Claude via linkedin.com/preload/custom-invite; name "Greg Ellis" verified in the invitation modal against the ledger before clicking. [sourced 2026-09-05] H0A1 batch, LinkedIn people search restricted to 2nd degree, Pass 4 Phase B. Name, headline and location are SEARCH RESULT facts only; the profile was NOT opened, so degree, current employer and title must be re-verified live before any message is written (LR-B6, LR-B25). Location as listed: Youngstown-Warren area, Ohio, US. Pass 1 against the founder's own export returned nothing for this ICP, so every contact in this batch is cold. NOT YET INVITED: the founder sends every invite by hand, bare, with no note (LR-B29)."
+
+## Rick Hafner
+
+id: C154
+name: Rick Hafner
+linkedin_url: https://www.linkedin.com/in/rickhafner/
+linkedin_account: Izgin
+company: CNC Machined Parts Depot
+role: Owner
+
+signal_type: profile_fit
+signal_multiplier: 1.0
+signal_source_url: https://www.linkedin.com/in/rickhafner/
+signal_excerpt:
+
+contact_role: buyer
+role_pts: 3
+
+tier: job_shop_fabricator
+size_band:
+
+assumptions_tested: [H0A1]
+validation_rationale: >
+  Owner of a machined-parts business selling direct. Selling parts online means quoting from whatever a customer sends, which is the belief's link one arriving as a daily commercial problem.
+
+response_likelihood: 6
+likelihood_factors: >
+  2nd degree, invite needed (0) · owner or general manager so can answer both the cost and the willingness to pay (+3) · profile_fit signal (0), start 3, capped at 6
+outreach_pattern:
+degree: "2nd"
+mutuals_count:
+active_last_30d: unknown
+open_to_work: false
+
+close_variant:
+relationship_type: operator_buyer
+outreach_status: invited
+message_stage:
+call_stage: none
+found_date: 2026-09-05
+invited_date: 2026-09-05
+accepted_date:
+scheduled_date:
+interview_date:
+
+interviews: []
+
+evidence_score:
+outcome_modifier:
+prior_contact_status: pending
+notes: "[UNVERIFIED 2026-09-05] No live profile read exists for this contact. Screened on company and title only, which the H0A1 icp_verification_rule now says is not enough — the invite went out before that rule existed. DO NOT draft or send a DM off this card: read the profile first and confirm the vertical, the production shape, the function and the tenure, then record what it showed here. [invite sent 2026-09-05] Bare connection request, no note (LR-B29). Sent by Claude via linkedin.com/preload/custom-invite; name "Rick Hafner" verified in the invitation modal against the ledger before clicking. [sourced 2026-09-05] H0A1 batch, LinkedIn people search restricted to 2nd degree, Pass 4 Phase B. Name, headline and location are SEARCH RESULT facts only; the profile was NOT opened, so degree, current employer and title must be re-verified live before any message is written (LR-B6, LR-B25). Location as listed: US. Pass 1 against the founder's own export returned nothing for this ICP, so every contact in this batch is cold. NOT YET INVITED: the founder sends every invite by hand, bare, with no note (LR-B29)."
+
+## Travis Kemp
+
+id: C155
+name: Travis Kemp
+linkedin_url: https://www.linkedin.com/in/travis-kemp-6a837b13b/
+linkedin_account: Izgin
+company: (own business, name not in the search result)
+role: President and founder
+
+signal_type: profile_fit
+signal_multiplier: 1.0
+signal_source_url: https://www.linkedin.com/in/travis-kemp-6a837b13b/
+signal_excerpt:
+
+contact_role: buyer
+role_pts: 3
+
+tier: job_shop_fabricator
+size_band:
+
+assumptions_tested: [H0A1]
+validation_rationale: >
+  Founder-president whose listed skills are machining and 3D printing, so he runs per-order production across two processes. Company unidentified in the search result and must be established on the profile before any message.
+
+response_likelihood: 6
+likelihood_factors: >
+  2nd degree, invite needed (0) · owner or general manager so can answer both the cost and the willingness to pay (+3) · profile_fit signal (0), start 3, capped at 6
+outreach_pattern:
+degree: "2nd"
+mutuals_count:
+active_last_30d: unknown
+open_to_work: false
+
+close_variant:
+relationship_type: operator_buyer
+outreach_status: invited
+message_stage:
+call_stage: none
+found_date: 2026-09-05
+invited_date: 2026-09-05
+accepted_date:
+scheduled_date:
+interview_date:
+
+interviews: []
+
+evidence_score:
+outcome_modifier:
+prior_contact_status: pending
+notes: "[UNVERIFIED 2026-09-05] No live profile read exists for this contact. Screened on company and title only, which the H0A1 icp_verification_rule now says is not enough — the invite went out before that rule existed. DO NOT draft or send a DM off this card: read the profile first and confirm the vertical, the production shape, the function and the tenure, then record what it showed here. [invite sent 2026-09-05] Bare connection request, no note (LR-B29). Sent by Claude via linkedin.com/preload/custom-invite; name "Travis Kemp" verified in the invitation modal against the ledger before clicking. [sourced 2026-09-05] H0A1 batch, LinkedIn people search restricted to 2nd degree, Pass 4 Phase B. Name, headline and location are SEARCH RESULT facts only; the profile was NOT opened, so degree, current employer and title must be re-verified live before any message is written (LR-B6, LR-B25). Location as listed: South Lebanon, Ohio, US. Pass 1 against the founder's own export returned nothing for this ICP, so every contact in this batch is cold. NOT YET INVITED: the founder sends every invite by hand, bare, with no note (LR-B29)."
+
+## Li Hsu
+
+id: C156
+name: Li Hsu
+linkedin_url: https://www.linkedin.com/in/li-hsu-95004636/
+linkedin_account: Izgin
+company: Custom Industrial Manufacturing Inc
+role: Owner
+
+signal_type: profile_fit
+signal_multiplier: 1.0
+signal_source_url: https://www.linkedin.com/in/li-hsu-95004636/
+signal_excerpt:
+
+contact_role: buyer
+role_pts: 3
+
+tier: job_shop_fabricator
+size_band:
+
+assumptions_tested: [H0A1]
+validation_rationale: >
+  Owner of a company whose name is custom industrial manufacturing. Custom is the whole ICP in one word, and an owner can answer the willingness-to-pay half that H0A2 needs.
+
+response_likelihood: 6
+likelihood_factors: >
+  2nd degree, invite needed (0) · owner or general manager so can answer both the cost and the willingness to pay (+3) · profile_fit signal (0), start 3, capped at 6
+outreach_pattern:
+degree: "2nd"
+mutuals_count:
+active_last_30d: unknown
+open_to_work: false
+
+close_variant:
+relationship_type: operator_buyer
+outreach_status: invited
+message_stage:
+call_stage: none
+found_date: 2026-09-05
+invited_date: 2026-09-05
+accepted_date:
+scheduled_date:
+interview_date:
+
+interviews: []
+
+evidence_score:
+outcome_modifier:
+prior_contact_status: pending
+notes: "[UNVERIFIED 2026-09-05] No live profile read exists for this contact. Screened on company and title only, which the H0A1 icp_verification_rule now says is not enough — the invite went out before that rule existed. DO NOT draft or send a DM off this card: read the profile first and confirm the vertical, the production shape, the function and the tenure, then record what it showed here. [invite sent 2026-09-05] Bare connection request, no note (LR-B29). Sent by Claude via linkedin.com/preload/custom-invite; name "Li Hsu" verified in the invitation modal against the ledger before clicking. [sourced 2026-09-05] H0A1 batch, LinkedIn people search restricted to 2nd degree, Pass 4 Phase B. Name, headline and location are SEARCH RESULT facts only; the profile was NOT opened, so degree, current employer and title must be re-verified live before any message is written (LR-B6, LR-B25). Location as listed: US. Pass 1 against the founder's own export returned nothing for this ICP, so every contact in this batch is cold. NOT YET INVITED: the founder sends every invite by hand, bare, with no note (LR-B29)."
+
+## EMRE YURTEMRE
+
+id: C157
+name: EMRE YURTEMRE
+linkedin_url: https://www.linkedin.com/in/emryrtemr/
+linkedin_account: Izgin
+company: SELSA Makina
+role: General manager
+
+signal_type: profile_fit
+signal_multiplier: 1.0
+signal_source_url: https://www.linkedin.com/in/emryrtemr/
+signal_excerpt:
+
+contact_role: buyer
+role_pts: 3
+
+tier: machine_builder
+size_band:
+
+assumptions_tested: [H0A1]
+validation_rationale: >
+  General manager of a special machine design and CNC manufacturing firm. Special machine building is the segment E26 came from, and this is the second machine builder available to test whether the one-in-fifty rate is a property of the work or one manager's model.
+
+response_likelihood: 6
+likelihood_factors: >
+  2nd degree, invite needed (0) · owner or general manager so can answer both the cost and the willingness to pay (+3) · profile_fit signal (0), start 3, capped at 6
+outreach_pattern:
+degree: "2nd"
+mutuals_count:
+active_last_30d: unknown
+open_to_work: false
+
+close_variant:
+relationship_type: operator_buyer
+outreach_status: invited
+message_stage:
+call_stage: none
+found_date: 2026-09-05
+invited_date: 2026-09-05
+accepted_date:
+scheduled_date:
+interview_date:
+
+interviews: []
+
+evidence_score:
+outcome_modifier:
+prior_contact_status: pending
+notes: "[UNVERIFIED 2026-09-05] No live profile read exists for this contact. Screened on company and title only, which the H0A1 icp_verification_rule now says is not enough — the invite went out before that rule existed. DO NOT draft or send a DM off this card: read the profile first and confirm the vertical, the production shape, the function and the tenure, then record what it showed here. [invite sent 2026-09-05] Bare connection request, no note (LR-B29). Sent by Claude via linkedin.com/preload/custom-invite; name "EMRE YURTEMRE" verified in the invitation modal against the ledger before clicking. [sourced 2026-09-05] H0A1 batch, LinkedIn people search restricted to 2nd degree, Pass 4 Phase B. Name, headline and location are SEARCH RESULT facts only; the profile was NOT opened, so degree, current employer and title must be re-verified live before any message is written (LR-B6, LR-B25). Location as listed: Türkiye. Pass 1 against the founder's own export returned nothing for this ICP, so every contact in this batch is cold. NOT YET INVITED: the founder sends every invite by hand, bare, with no note (LR-B29)."
+
+## Özgür DURSUN
+
+id: C158
+name: Özgür DURSUN
+linkedin_url: https://www.linkedin.com/in/%C3%B6zg%C3%BCr-dursun-msc-b980bb72/
+linkedin_account: Izgin
+company: Poykal
+role: General manager
+
+signal_type: profile_fit
+signal_multiplier: 1.0
+signal_source_url: https://www.linkedin.com/in/%C3%B6zg%C3%BCr-dursun-msc-b980bb72/
+signal_excerpt:
+
+contact_role: buyer
+role_pts: 3
+
+tier: job_shop_fabricator
+size_band:
+
+assumptions_tested: [H0A1]
+validation_rationale: >
+  General manager of a precision machining firm serving aerospace and defence. Low-rate aerospace work is per-order with formal first article inspection, and the GM owns the schedule that inspection sits in.
+
+response_likelihood: 6
+likelihood_factors: >
+  2nd degree, invite needed (0) · owner or general manager so can answer both the cost and the willingness to pay (+3) · profile_fit signal (0), start 3, capped at 6
+outreach_pattern:
+degree: "2nd"
+mutuals_count:
+active_last_30d: unknown
+open_to_work: false
+
+close_variant:
+relationship_type: operator_buyer
+outreach_status: invited
+message_stage:
+call_stage: none
+found_date: 2026-09-05
+invited_date: 2026-09-05
+accepted_date:
+scheduled_date:
+interview_date:
+
+interviews: []
+
+evidence_score:
+outcome_modifier:
+prior_contact_status: pending
+notes: "[UNVERIFIED 2026-09-05] No live profile read exists for this contact. Screened on company and title only, which the H0A1 icp_verification_rule now says is not enough — the invite went out before that rule existed. DO NOT draft or send a DM off this card: read the profile first and confirm the vertical, the production shape, the function and the tenure, then record what it showed here. [invite sent 2026-09-05] Bare connection request, no note (LR-B29). Sent by Claude via linkedin.com/preload/custom-invite; name "Özgür DURSUN" verified in the invitation modal against the ledger before clicking. [sourced 2026-09-05] H0A1 batch, LinkedIn people search restricted to 2nd degree, Pass 4 Phase B. Name, headline and location are SEARCH RESULT facts only; the profile was NOT opened, so degree, current employer and title must be re-verified live before any message is written (LR-B6, LR-B25). Location as listed: Istanbul, Türkiye. Pass 1 against the founder's own export returned nothing for this ICP, so every contact in this batch is cold. NOT YET INVITED: the founder sends every invite by hand, bare, with no note (LR-B29)."
+
+## Tacettin ŞAL
+
+id: C159
+name: Tacettin ŞAL
+linkedin_url: https://www.linkedin.com/in/tacettinsal/
+linkedin_account: Izgin
+company: ŞAL Makina
+role: Owner
+
+signal_type: profile_fit
+signal_multiplier: 1.0
+signal_source_url: https://www.linkedin.com/in/tacettinsal/
+signal_excerpt:
+
+contact_role: buyer
+role_pts: 3
+
+tier: job_shop_fabricator
+size_band:
+
+assumptions_tested: [H0A1]
+validation_rationale: >
+  Owner of a precision CNC machining and engineering business. Turkish-speaking owner, which lets the conversation run in the founder's own language once ICP fit is already established.
+
+response_likelihood: 6
+likelihood_factors: >
+  2nd degree, invite needed (0) · owner or general manager so can answer both the cost and the willingness to pay (+3) · profile_fit signal (0), start 3, capped at 6
+outreach_pattern:
+degree: "2nd"
+mutuals_count:
+active_last_30d: unknown
+open_to_work: false
+
+close_variant:
+relationship_type: operator_buyer
+outreach_status: invited
+message_stage:
+call_stage: none
+found_date: 2026-09-05
+invited_date: 2026-09-05
+accepted_date:
+scheduled_date:
+interview_date:
+
+interviews: []
+
+evidence_score:
+outcome_modifier:
+prior_contact_status: pending
+notes: "[UNVERIFIED 2026-09-05] No live profile read exists for this contact. Screened on company and title only, which the H0A1 icp_verification_rule now says is not enough — the invite went out before that rule existed. DO NOT draft or send a DM off this card: read the profile first and confirm the vertical, the production shape, the function and the tenure, then record what it showed here. [invite sent 2026-09-05] Bare connection request, no note (LR-B29). Sent by Claude via linkedin.com/preload/custom-invite; name "Tacettin ŞAL" verified in the invitation modal against the ledger before clicking. [sourced 2026-09-05] H0A1 batch, LinkedIn people search restricted to 2nd degree, Pass 4 Phase B. Name, headline and location are SEARCH RESULT facts only; the profile was NOT opened, so degree, current employer and title must be re-verified live before any message is written (LR-B6, LR-B25). Location as listed: Türkiye. Pass 1 against the founder's own export returned nothing for this ICP, so every contact in this batch is cold. NOT YET INVITED: the founder sends every invite by hand, bare, with no note (LR-B29)."
+
+## Ahmet Çakın
+
+id: C160
+name: Ahmet Çakın
+linkedin_url: https://www.linkedin.com/in/ahmet-%C3%A7ak%C4%B1n-71832352/
+linkedin_account: Izgin
+company: Phoenix Tooling Limited
+role: Company owner
+
+signal_type: profile_fit
+signal_multiplier: 1.0
+signal_source_url: https://www.linkedin.com/in/ahmet-%C3%A7ak%C4%B1n-71832352/
+signal_excerpt:
+
+contact_role: buyer
+role_pts: 3
+
+tier: job_shop_fabricator
+size_band:
+
+assumptions_tested: [H0A1]
+validation_rationale: >
+  Owns a tooling company. Tooling is engineered once per job and proved out once, so the error and the hours land on the same person who quoted it.
+
+response_likelihood: 6
+likelihood_factors: >
+  2nd degree, invite needed (0) · owner or general manager so can answer both the cost and the willingness to pay (+3) · profile_fit signal (0), start 3, capped at 6
+outreach_pattern:
+degree: "2nd"
+mutuals_count:
+active_last_30d: unknown
+open_to_work: false
+
+close_variant:
+relationship_type: operator_buyer
+outreach_status: invited
+message_stage:
+call_stage: none
+found_date: 2026-09-05
+invited_date: 2026-09-05
+accepted_date:
+scheduled_date:
+interview_date:
+
+interviews: []
+
+evidence_score:
+outcome_modifier:
+prior_contact_status: pending
+notes: "[UNVERIFIED 2026-09-05] No live profile read exists for this contact. Screened on company and title only, which the H0A1 icp_verification_rule now says is not enough — the invite went out before that rule existed. DO NOT draft or send a DM off this card: read the profile first and confirm the vertical, the production shape, the function and the tenure, then record what it showed here. [invite sent 2026-09-05] Bare connection request, no note (LR-B29). Sent by Claude via linkedin.com/preload/custom-invite; name "Ahmet Çakın" verified in the invitation modal against the ledger before clicking. [sourced 2026-09-05] H0A1 batch, LinkedIn people search restricted to 2nd degree, Pass 4 Phase B. Name, headline and location are SEARCH RESULT facts only; the profile was NOT opened, so degree, current employer and title must be re-verified live before any message is written (LR-B6, LR-B25). Location as listed: Ankara, Türkiye. Pass 1 against the founder's own export returned nothing for this ICP, so every contact in this batch is cold. NOT YET INVITED: the founder sends every invite by hand, bare, with no note (LR-B29)."
+
+## Serdar Alper
+
+id: C161
+name: Serdar Alper
+linkedin_url: https://www.linkedin.com/in/serdar-alper-78031728/
+linkedin_account: Izgin
+company: Damen Shipyards, Workboats Division
+role: Manufacturing engineering manager
+
+signal_type: profile_fit
+signal_multiplier: 1.0
+signal_source_url: https://www.linkedin.com/in/serdar-alper-78031728/
+signal_excerpt:
+
+contact_role: practitioner
+role_pts: 2
+
+tier: machine_builder
+size_band:
+
+assumptions_tested: [H0A1]
+validation_rationale: >
+  Manufacturing engineering manager at a shipyard workboats division. Ships are project-based one-offs and the ICP note explicitly keeps project-based plant and one-off build shops in scope.
+
+response_likelihood: 5
+likelihood_factors: >
+  2nd degree, invite needed (0) · inside the handoff daily so reports what happens rather than what is decided (+2) · profile_fit signal (0), start 3, capped at 5
+outreach_pattern:
+degree: "2nd"
+mutuals_count:
+active_last_30d: unknown
+open_to_work: false
+
+close_variant:
+relationship_type: operator_buyer
+outreach_status: invited
+message_stage:
+call_stage: none
+found_date: 2026-09-05
+invited_date: 2026-09-05
+accepted_date:
+scheduled_date:
+interview_date:
+
+interviews: []
+
+evidence_score:
+outcome_modifier:
+prior_contact_status: pending
+notes: "[UNVERIFIED 2026-09-05] No live profile read exists for this contact. Screened on company and title only, which the H0A1 icp_verification_rule now says is not enough — the invite went out before that rule existed. DO NOT draft or send a DM off this card: read the profile first and confirm the vertical, the production shape, the function and the tenure, then record what it showed here. [invite sent 2026-09-05] Bare connection request, no note (LR-B29). Sent by Claude via linkedin.com/preload/custom-invite; name "Serdar Alper" verified in the invitation modal against the ledger before clicking. [sourced 2026-09-05] H0A1 batch, LinkedIn people search restricted to 2nd degree, Pass 4 Phase B. Name, headline and location are SEARCH RESULT facts only; the profile was NOT opened, so degree, current employer and title must be re-verified live before any message is written (LR-B6, LR-B25). Location as listed: Türkiye. Pass 1 against the founder's own export returned nothing for this ICP, so every contact in this batch is cold. NOT YET INVITED: the founder sends every invite by hand, bare, with no note (LR-B29)."
+
+## İbrahim Alper Ozan
+
+id: C162
+name: İbrahim Alper Ozan
+linkedin_url: https://www.linkedin.com/in/ibrahim-alper-ozan-b695a03b/
+linkedin_account: Izgin
+company: (not in the search result)
+role: Manufacturing engineering manager
+
+signal_type: profile_fit
+signal_multiplier: 1.0
+signal_source_url: https://www.linkedin.com/in/ibrahim-alper-ozan-b695a03b/
+signal_excerpt:
+
+contact_role: practitioner
+role_pts: 2
+
+tier: manufacturing_operations
+size_band:
+
+assumptions_tested: [H0A1]
+validation_rationale: >
+  Manufacturing engineering manager, the role that owns the drawing when it reaches the floor. Employer is not visible in the search result and has to be established on the profile before any message.
+
+response_likelihood: 5
+likelihood_factors: >
+  2nd degree, invite needed (0) · inside the handoff daily so reports what happens rather than what is decided (+2) · profile_fit signal (0), start 3, capped at 5
+outreach_pattern:
+degree: "2nd"
+mutuals_count:
+active_last_30d: unknown
+open_to_work: false
+
+close_variant:
+relationship_type: operator_buyer
+outreach_status: pending
+message_stage:
+call_stage: none
+found_date: 2026-09-05
+invited_date:
+accepted_date:
+scheduled_date:
+interview_date:
+
+interviews: []
+
+evidence_score:
+outcome_modifier:
+prior_contact_status: pending
+notes: "[sourced 2026-09-05] H0A1 batch, LinkedIn people search restricted to 2nd degree, Pass 4 Phase B. Name, headline and location are SEARCH RESULT facts only; the profile was NOT opened, so degree, current employer and title must be re-verified live before any message is written (LR-B6, LR-B25). Location as listed: Ankara, Türkiye. Pass 1 against the founder's own export returned nothing for this ICP, so every contact in this batch is cold. NOT YET INVITED: the founder sends every invite by hand, bare, with no note (LR-B29)."
+
+## Simon (Xiao Long) Jiang
+
+id: C163
+name: Simon (Xiao Long) Jiang
+linkedin_url: https://www.linkedin.com/in/xiaolongjiang/
+linkedin_account: Izgin
+company: (not in the search result)
+role: CNC programming manager
+
+signal_type: profile_fit
+signal_multiplier: 1.0
+signal_source_url: https://www.linkedin.com/in/xiaolongjiang/
+signal_excerpt:
+
+contact_role: practitioner
+role_pts: 2
+
+tier: manufacturing_operations
+size_band:
+
+assumptions_tested: [H0A1]
+validation_rationale: >
+  Runs the programming group, which is the exact seat Shane Duncan (C125) sits in and the one that can say whether a program that looks right still needs a person at the machine.
+
+response_likelihood: 5
+likelihood_factors: >
+  2nd degree, invite needed (0) · inside the handoff daily so reports what happens rather than what is decided (+2) · profile_fit signal (0), start 3, capped at 5
+outreach_pattern:
+degree: "2nd"
+mutuals_count:
+active_last_30d: unknown
+open_to_work: false
+
+close_variant:
+relationship_type: operator_buyer
+outreach_status: pending
+message_stage:
+call_stage: none
+found_date: 2026-09-05
+invited_date:
+accepted_date:
+scheduled_date:
+interview_date:
+
+interviews: []
+
+evidence_score:
+outcome_modifier:
+prior_contact_status: pending
+notes: "[sourced 2026-09-05] H0A1 batch, LinkedIn people search restricted to 2nd degree, Pass 4 Phase B. Name, headline and location are SEARCH RESULT facts only; the profile was NOT opened, so degree, current employer and title must be re-verified live before any message is written (LR-B6, LR-B25). Location as listed: Elgin, Illinois, US. Pass 1 against the founder's own export returned nothing for this ICP, so every contact in this batch is cold. NOT YET INVITED: the founder sends every invite by hand, bare, with no note (LR-B29)."
+
+## Adriaan Te Brugge
+
+id: C164
+name: Adriaan Te Brugge
+linkedin_url: https://www.linkedin.com/in/adriaantebrugge/
+linkedin_account: Izgin
+company: (not in the search result)
+role: Machine shop manager and senior CNC programmer
+
+signal_type: profile_fit
+signal_multiplier: 1.0
+signal_source_url: https://www.linkedin.com/in/adriaantebrugge/
+signal_excerpt:
+
+contact_role: practitioner
+role_pts: 2
+
+tier: manufacturing_operations
+size_band:
+
+assumptions_tested: [H0A1]
+validation_rationale: >
+  Both shop manager and senior programmer, so he sees a new part from the file arriving to the first good one coming off, without handing it to anyone else.
+
+response_likelihood: 5
+likelihood_factors: >
+  2nd degree, invite needed (0) · inside the handoff daily so reports what happens rather than what is decided (+2) · profile_fit signal (0), start 3, capped at 5
+outreach_pattern:
+degree: "2nd"
+mutuals_count:
+active_last_30d: unknown
+open_to_work: false
+
+close_variant:
+relationship_type: operator_buyer
+outreach_status: pending
+message_stage:
+call_stage: none
+found_date: 2026-09-05
+invited_date:
+accepted_date:
+scheduled_date:
+interview_date:
+
+interviews: []
+
+evidence_score:
+outcome_modifier:
+prior_contact_status: pending
+notes: "[sourced 2026-09-05] H0A1 batch, LinkedIn people search restricted to 2nd degree, Pass 4 Phase B. Name, headline and location are SEARCH RESULT facts only; the profile was NOT opened, so degree, current employer and title must be re-verified live before any message is written (LR-B6, LR-B25). Location as listed: Canada. Pass 1 against the founder's own export returned nothing for this ICP, so every contact in this batch is cold. NOT YET INVITED: the founder sends every invite by hand, bare, with no note (LR-B29)."
+
+## Daniel Schimke
+
+id: C165
+name: Daniel Schimke
+linkedin_url: https://www.linkedin.com/in/daniel-schimke-6494aa97/
+linkedin_account: Izgin
+company: Specialized Bicycle Components
+role: R&D machine shop manager
+
+signal_type: profile_fit
+signal_multiplier: 1.0
+signal_source_url: https://www.linkedin.com/in/daniel-schimke-6494aa97/
+signal_excerpt:
+
+contact_role: practitioner
+role_pts: 2
+
+tier: manufacturing_operations
+size_band:
+
+assumptions_tested: [H0A1]
+validation_rationale: >
+  Runs an R&D machine shop, where every part is a one-off from a designer's model and nothing is ever re-run. Ninety minutes from the founder while he is in San Francisco.
+
+response_likelihood: 6
+likelihood_factors: >
+  2nd degree, invite needed (0) · inside the handoff daily so reports what happens rather than what is decided (+2) · profile_fit signal (0) · Bay Area while the founder is in San Francisco (+1), start 3, capped at 6
+outreach_pattern:
+degree: "2nd"
+mutuals_count:
+active_last_30d: unknown
+open_to_work: false
+
+close_variant:
+relationship_type: operator_buyer
+outreach_status: pending
+message_stage:
+call_stage: none
+found_date: 2026-09-05
+invited_date:
+accepted_date:
+scheduled_date:
+interview_date:
+
+interviews: []
+
+evidence_score:
+outcome_modifier:
+prior_contact_status: pending
+notes: "[sourced 2026-09-05] H0A1 batch, LinkedIn people search restricted to 2nd degree, Pass 4 Phase B. Name, headline and location are SEARCH RESULT facts only; the profile was NOT opened, so degree, current employer and title must be re-verified live before any message is written (LR-B6, LR-B25). Location as listed: Santa Cruz, California, US. Pass 1 against the founder's own export returned nothing for this ICP, so every contact in this batch is cold. NOT YET INVITED: the founder sends every invite by hand, bare, with no note (LR-B29)."
+
+## Emily Coker
+
+id: C166
+name: Emily Coker
+linkedin_url: https://www.linkedin.com/in/emily-coker/
+linkedin_account: Izgin
+company: Axon
+role: Senior machinist and shop manager
+
+signal_type: profile_fit
+signal_multiplier: 1.0
+signal_source_url: https://www.linkedin.com/in/emily-coker/
+signal_excerpt:
+
+contact_role: practitioner
+role_pts: 2
+
+tier: manufacturing_operations
+size_band:
+
+assumptions_tested: [H0A1]
+validation_rationale: >
+  Manages an in-house shop making one-offs for a product company, and is local to the founder. In-house shops carry the handoff cost internally, which is a different accounting from a job shop and worth contrasting.
+
+response_likelihood: 6
+likelihood_factors: >
+  2nd degree, invite needed (0) · inside the handoff daily so reports what happens rather than what is decided (+2) · profile_fit signal (0) · Bay Area while the founder is in San Francisco (+1), start 3, capped at 6
+outreach_pattern:
+degree: "2nd"
+mutuals_count:
+active_last_30d: unknown
+open_to_work: false
+
+close_variant:
+relationship_type: operator_buyer
+outreach_status: pending
+message_stage:
+call_stage: none
+found_date: 2026-09-05
+invited_date:
+accepted_date:
+scheduled_date:
+interview_date:
+
+interviews: []
+
+evidence_score:
+outcome_modifier:
+prior_contact_status: pending
+notes: "[sourced 2026-09-05] H0A1 batch, LinkedIn people search restricted to 2nd degree, Pass 4 Phase B. Name, headline and location are SEARCH RESULT facts only; the profile was NOT opened, so degree, current employer and title must be re-verified live before any message is written (LR-B6, LR-B25). Location as listed: Oakland, California, US. Pass 1 against the founder's own export returned nothing for this ICP, so every contact in this batch is cold. NOT YET INVITED: the founder sends every invite by hand, bare, with no note (LR-B29)."
+
+## Kassandra Nguyen
+
+id: C167
+name: Kassandra Nguyen
+linkedin_url: https://www.linkedin.com/in/knguyen91939/
+linkedin_account: Izgin
+company: Simbe Robotics
+role: Mechanical engineer and shop manager
+
+signal_type: profile_fit
+signal_multiplier: 1.0
+signal_source_url: https://www.linkedin.com/in/knguyen91939/
+signal_excerpt:
+
+contact_role: practitioner
+role_pts: 2
+
+tier: manufacturing_operations
+size_band:
+
+assumptions_tested: [H0A1]
+validation_rationale: >
+  Designs the part AND runs the shop that makes it, at one company, in the founder's own city. She is the single clearest test of whether the handoff still costs anything when both ends are the same person.
+
+response_likelihood: 6
+likelihood_factors: >
+  2nd degree, invite needed (0) · inside the handoff daily so reports what happens rather than what is decided (+2) · profile_fit signal (0) · Bay Area while the founder is in San Francisco (+1), start 3, capped at 6
+outreach_pattern:
+degree: "2nd"
+mutuals_count:
+active_last_30d: unknown
+open_to_work: false
+
+close_variant:
+relationship_type: operator_buyer
+outreach_status: pending
+message_stage:
+call_stage: none
+found_date: 2026-09-05
+invited_date:
+accepted_date:
+scheduled_date:
+interview_date:
+
+interviews: []
+
+evidence_score:
+outcome_modifier:
+prior_contact_status: pending
+notes: "[sourced 2026-09-05] H0A1 batch, LinkedIn people search restricted to 2nd degree, Pass 4 Phase B. Name, headline and location are SEARCH RESULT facts only; the profile was NOT opened, so degree, current employer and title must be re-verified live before any message is written (LR-B6, LR-B25). Location as listed: San Francisco Bay Area, US. Pass 1 against the founder's own export returned nothing for this ICP, so every contact in this batch is cold. NOT YET INVITED: the founder sends every invite by hand, bare, with no note (LR-B29)."
+
+## March Tighe
+
+id: C168
+name: March Tighe
+linkedin_url: https://www.linkedin.com/in/marchtighe/
+linkedin_account: Izgin
+company: (not in the search result)
+role: Operations manager, trades shops and facilities
+
+signal_type: profile_fit
+signal_multiplier: 1.0
+signal_source_url: https://www.linkedin.com/in/marchtighe/
+signal_excerpt:
+
+contact_role: practitioner
+role_pts: 2
+
+tier: manufacturing_operations
+size_band:
+
+assumptions_tested: [H0A1]
+validation_rationale: >
+  Operations manager over machining, prototyping and lab fit-out work. Employer not visible in the search result; the role sits across several one-off shops at once, which is where the same-or-different question gets a real answer.
+
+response_likelihood: 5
+likelihood_factors: >
+  2nd degree, invite needed (0) · inside the handoff daily so reports what happens rather than what is decided (+2) · profile_fit signal (0), start 3, capped at 5
+outreach_pattern:
+degree: "2nd"
+mutuals_count:
+active_last_30d: unknown
+open_to_work: false
+
+close_variant:
+relationship_type: operator_buyer
+outreach_status: pending
+message_stage:
+call_stage: none
+found_date: 2026-09-05
+invited_date:
+accepted_date:
+scheduled_date:
+interview_date:
+
+interviews: []
+
+evidence_score:
+outcome_modifier:
+prior_contact_status: pending
+notes: "[sourced 2026-09-05] H0A1 batch, LinkedIn people search restricted to 2nd degree, Pass 4 Phase B. Name, headline and location are SEARCH RESULT facts only; the profile was NOT opened, so degree, current employer and title must be re-verified live before any message is written (LR-B6, LR-B25). Location as listed: US. Pass 1 against the founder's own export returned nothing for this ICP, so every contact in this batch is cold. NOT YET INVITED: the founder sends every invite by hand, bare, with no note (LR-B29)."
+
+## Shawn N.
+
+id: C169
+name: Shawn N.
+linkedin_url: https://www.linkedin.com/in/shawn-n-a7b367103/
+linkedin_account: Izgin
+company: (not in the search result)
+role: Engineering manager
+
+signal_type: profile_fit
+signal_multiplier: 1.0
+signal_source_url: https://www.linkedin.com/in/shawn-n-a7b367103/
+signal_excerpt:
+
+contact_role: practitioner
+role_pts: 2
+
+tier: manufacturing_operations
+size_band:
+
+assumptions_tested: [H0A1]
+validation_rationale: >
+  Engineering manager whose listed skills are computer numerical control. Employer is not visible in the search result and must be established before any message is written.
+
+response_likelihood: 5
+likelihood_factors: >
+  2nd degree, invite needed (0) · inside the handoff daily so reports what happens rather than what is decided (+2) · profile_fit signal (0), start 3, capped at 5
+outreach_pattern:
+degree: "2nd"
+mutuals_count:
+active_last_30d: unknown
+open_to_work: false
+
+close_variant:
+relationship_type: operator_buyer
+outreach_status: pending
+message_stage:
+call_stage: none
+found_date: 2026-09-05
+invited_date:
+accepted_date:
+scheduled_date:
+interview_date:
+
+interviews: []
+
+evidence_score:
+outcome_modifier:
+prior_contact_status: pending
+notes: "[sourced 2026-09-05] H0A1 batch, LinkedIn people search restricted to 2nd degree, Pass 4 Phase B. Name, headline and location are SEARCH RESULT facts only; the profile was NOT opened, so degree, current employer and title must be re-verified live before any message is written (LR-B6, LR-B25). Location as listed: North Hartland, Vermont, US. Pass 1 against the founder's own export returned nothing for this ICP, so every contact in this batch is cold. NOT YET INVITED: the founder sends every invite by hand, bare, with no note (LR-B29)."
+
+## Rajveer Yadav
+
+id: C170
+name: Rajveer Yadav
+linkedin_url: https://www.linkedin.com/in/rajveer-yadav-a977b1148/
+linkedin_account: Izgin
+company: (not in the search result)
+role: Production manager, machine shop operations
+
+signal_type: profile_fit
+signal_multiplier: 1.0
+signal_source_url: https://www.linkedin.com/in/rajveer-yadav-a977b1148/
+signal_excerpt:
+
+contact_role: practitioner
+role_pts: 2
+
+tier: manufacturing_operations
+size_band:
+
+assumptions_tested: [H0A1]
+validation_rationale: >
+  Production manager over machine shop operations, so the queue between a job arriving and a good part existing is his to explain.
+
+response_likelihood: 5
+likelihood_factors: >
+  2nd degree, invite needed (0) · inside the handoff daily so reports what happens rather than what is decided (+2) · profile_fit signal (0), start 3, capped at 5
+outreach_pattern:
+degree: "2nd"
+mutuals_count:
+active_last_30d: unknown
+open_to_work: false
+
+close_variant:
+relationship_type: operator_buyer
+outreach_status: pending
+message_stage:
+call_stage: none
+found_date: 2026-09-05
+invited_date:
+accepted_date:
+scheduled_date:
+interview_date:
+
+interviews: []
+
+evidence_score:
+outcome_modifier:
+prior_contact_status: pending
+notes: "[sourced 2026-09-05] H0A1 batch, LinkedIn people search restricted to 2nd degree, Pass 4 Phase B. Name, headline and location are SEARCH RESULT facts only; the profile was NOT opened, so degree, current employer and title must be re-verified live before any message is written (LR-B6, LR-B25). Location as listed: India. Pass 1 against the founder's own export returned nothing for this ICP, so every contact in this batch is cold. NOT YET INVITED: the founder sends every invite by hand, bare, with no note (LR-B29)."
+
+## Rob Russell
+
+id: C171
+name: Rob Russell
+linkedin_url: https://www.linkedin.com/in/rob-russell-008565a2/
+linkedin_account: Izgin
+company: PGI Steel
+role: Machine shop manager
+
+signal_type: profile_fit
+signal_multiplier: 1.0
+signal_source_url: https://www.linkedin.com/in/rob-russell-008565a2/
+signal_excerpt:
+
+contact_role: practitioner
+role_pts: 2
+
+tier: manufacturing_operations
+size_band:
+
+assumptions_tested: [H0A1]
+validation_rationale: >
+  Runs the machine shop inside a steel business, where jobs arrive per order from other departments and customers rather than from a repeat production schedule.
+
+response_likelihood: 5
+likelihood_factors: >
+  2nd degree, invite needed (0) · inside the handoff daily so reports what happens rather than what is decided (+2) · profile_fit signal (0), start 3, capped at 5
+outreach_pattern:
+degree: "2nd"
+mutuals_count:
+active_last_30d: unknown
+open_to_work: false
+
+close_variant:
+relationship_type: operator_buyer
+outreach_status: pending
+message_stage:
+call_stage: none
+found_date: 2026-09-05
+invited_date:
+accepted_date:
+scheduled_date:
+interview_date:
+
+interviews: []
+
+evidence_score:
+outcome_modifier:
+prior_contact_status: pending
+notes: "[sourced 2026-09-05] H0A1 batch, LinkedIn people search restricted to 2nd degree, Pass 4 Phase B. Name, headline and location are SEARCH RESULT facts only; the profile was NOT opened, so degree, current employer and title must be re-verified live before any message is written (LR-B6, LR-B25). Location as listed: Odenville, Alabama, US. Pass 1 against the founder's own export returned nothing for this ICP, so every contact in this batch is cold. NOT YET INVITED: the founder sends every invite by hand, bare, with no note (LR-B29)."
+
+## Jeremy Bellanti
+
+id: C172
+name: Jeremy Bellanti
+linkedin_url: https://www.linkedin.com/in/jeremy-bellanti-9a429768/
+linkedin_account: Izgin
+company: American Axle
+role: Manager of manufacturing prototype operations
+
+signal_type: profile_fit
+signal_multiplier: 1.0
+signal_source_url: https://www.linkedin.com/in/jeremy-bellanti-9a429768/
+signal_excerpt:
+
+contact_role: practitioner
+role_pts: 2
+
+tier: manufacturing_operations
+size_band:
+
+assumptions_tested: [H0A1]
+validation_rationale: >
+  Runs prototype operations inside a large automotive supplier. Prototypes are the per-order island inside a high-volume company, which makes him the one person there who is in scope while the rest of the plant is explicitly out.
+
+response_likelihood: 5
+likelihood_factors: >
+  2nd degree, invite needed (0) · inside the handoff daily so reports what happens rather than what is decided (+2) · profile_fit signal (0), start 3, capped at 5
+outreach_pattern:
+degree: "2nd"
+mutuals_count:
+active_last_30d: unknown
+open_to_work: false
+
+close_variant:
+relationship_type: operator_buyer
+outreach_status: pending
+message_stage:
+call_stage: none
+found_date: 2026-09-05
+invited_date:
+accepted_date:
+scheduled_date:
+interview_date:
+
+interviews: []
+
+evidence_score:
+outcome_modifier:
+prior_contact_status: pending
+notes: "[sourced 2026-09-05] H0A1 batch, LinkedIn people search restricted to 2nd degree, Pass 4 Phase B. Name, headline and location are SEARCH RESULT facts only; the profile was NOT opened, so degree, current employer and title must be re-verified live before any message is written (LR-B6, LR-B25). Location as listed: Brighton, Michigan, US. Pass 1 against the founder's own export returned nothing for this ICP, so every contact in this batch is cold. NOT YET INVITED: the founder sends every invite by hand, bare, with no note (LR-B29)."
+
+## Oliver Smith
+
+id: C173
+name: Oliver Smith
+linkedin_url: https://www.linkedin.com/in/oliver-j-smith/
+linkedin_account: Izgin
+company: (not in the search result)
+role: NPI and manufacturing engineer, CNC programmer
+
+signal_type: profile_fit
+signal_multiplier: 1.0
+signal_source_url: https://www.linkedin.com/in/oliver-j-smith/
+signal_excerpt:
+
+contact_role: practitioner
+role_pts: 2
+
+tier: manufacturing_operations
+size_band:
+
+assumptions_tested: [H0A1]
+validation_rationale: >
+  Holds all three roles the handoff passes through, new product introduction, manufacturing engineering and programming, so nothing about the handoff is second-hand to him.
+
+response_likelihood: 5
+likelihood_factors: >
+  2nd degree, invite needed (0) · inside the handoff daily so reports what happens rather than what is decided (+2) · profile_fit signal (0), start 3, capped at 5
+outreach_pattern:
+degree: "2nd"
+mutuals_count:
+active_last_30d: unknown
+open_to_work: false
+
+close_variant:
+relationship_type: operator_buyer
+outreach_status: pending
+message_stage:
+call_stage: none
+found_date: 2026-09-05
+invited_date:
+accepted_date:
+scheduled_date:
+interview_date:
+
+interviews: []
+
+evidence_score:
+outcome_modifier:
+prior_contact_status: pending
+notes: "[sourced 2026-09-05] H0A1 batch, LinkedIn people search restricted to 2nd degree, Pass 4 Phase B. Name, headline and location are SEARCH RESULT facts only; the profile was NOT opened, so degree, current employer and title must be re-verified live before any message is written (LR-B6, LR-B25). Location as listed: UK. Pass 1 against the founder's own export returned nothing for this ICP, so every contact in this batch is cold. NOT YET INVITED: the founder sends every invite by hand, bare, with no note (LR-B29)."
+
+## Jagannath Rao
+
+id: C174
+name: Jagannath Rao
+linkedin_url: https://www.linkedin.com/in/jagannath-rao-091b53a1/
+linkedin_account: Izgin
+company: (not in the search result)
+role: Senior production engineer
+
+signal_type: profile_fit
+signal_multiplier: 1.0
+signal_source_url: https://www.linkedin.com/in/jagannath-rao-091b53a1/
+signal_excerpt:
+
+contact_role: practitioner
+role_pts: 2
+
+tier: manufacturing_operations
+size_band:
+
+assumptions_tested: [H0A1]
+validation_rationale: >
+  Fifteen years of CNC programming across mill-turn, VMC and HMC by his own headline. Long tenure at the machine is what makes a rate answer recall rather than estimate.
+
+response_likelihood: 5
+likelihood_factors: >
+  2nd degree, invite needed (0) · inside the handoff daily so reports what happens rather than what is decided (+2) · profile_fit signal (0), start 3, capped at 5
+outreach_pattern:
+degree: "2nd"
+mutuals_count:
+active_last_30d: unknown
+open_to_work: false
+
+close_variant:
+relationship_type: operator_buyer
+outreach_status: pending
+message_stage:
+call_stage: none
+found_date: 2026-09-05
+invited_date:
+accepted_date:
+scheduled_date:
+interview_date:
+
+interviews: []
+
+evidence_score:
+outcome_modifier:
+prior_contact_status: pending
+notes: "[sourced 2026-09-05] H0A1 batch, LinkedIn people search restricted to 2nd degree, Pass 4 Phase B. Name, headline and location are SEARCH RESULT facts only; the profile was NOT opened, so degree, current employer and title must be re-verified live before any message is written (LR-B6, LR-B25). Location as listed: India. Pass 1 against the founder's own export returned nothing for this ICP, so every contact in this batch is cold. NOT YET INVITED: the founder sends every invite by hand, bare, with no note (LR-B29)."
+
+## Jeff Brackus
+
+id: C175
+name: Jeff Brackus
+linkedin_url: https://www.linkedin.com/in/brackusj/
+linkedin_account: Izgin
+company: Advanced Precision Machining, Inc.
+role: General manager
+
+signal_type: profile_fit
+signal_multiplier: 1.0
+signal_source_url: https://www.linkedin.com/in/brackusj/
+signal_excerpt:
+
+contact_role: buyer
+role_pts: 3
+
+tier: job_shop_fabricator
+size_band:
+
+assumptions_tested: [H0A1]
+validation_rationale: >
+  General manager of a precision machining company, so he owns the schedule and the labour cost of a job that has to be fixed on the floor.
+
+response_likelihood: 6
+likelihood_factors: >
+  2nd degree, invite needed (0) · owner or general manager so can answer both the cost and the willingness to pay (+3) · profile_fit signal (0), start 3, capped at 6
+outreach_pattern:
+degree: "2nd"
+mutuals_count:
+active_last_30d: unknown
+open_to_work: false
+
+close_variant:
+relationship_type: operator_buyer
+outreach_status: invited
+message_stage:
+call_stage: none
+found_date: 2026-09-05
+invited_date: 2026-09-05
+accepted_date:
+scheduled_date:
+interview_date:
+
+interviews: []
+
+evidence_score:
+outcome_modifier:
+prior_contact_status: pending
+notes: "[UNVERIFIED 2026-09-05] No live profile read exists for this contact. Screened on company and title only, which the H0A1 icp_verification_rule now says is not enough — the invite went out before that rule existed. DO NOT draft or send a DM off this card: read the profile first and confirm the vertical, the production shape, the function and the tenure, then record what it showed here. [invite sent 2026-09-05] Bare connection request, no note (LR-B29). Sent by Claude via linkedin.com/preload/custom-invite; name "Jeff Brackus" verified in the invitation modal against the ledger before clicking. [sourced 2026-09-05] H0A1 batch, LinkedIn people search restricted to 2nd degree, Pass 4 Phase B. Name, headline and location are SEARCH RESULT facts only; the profile was NOT opened, so degree, current employer and title must be re-verified live before any message is written (LR-B6, LR-B25). Location as listed: Meridian, Idaho, US. Pass 1 against the founder's own export returned nothing for this ICP, so every contact in this batch is cold. NOT YET INVITED: the founder sends every invite by hand, bare, with no note (LR-B29)."
+
+## William Ellison
+
+id: C176
+name: William Ellison
+linkedin_url: https://www.linkedin.com/in/william-ellison-6998174b/
+linkedin_account: Izgin
+company: Precision Grinding Industries, Inc
+role: General manager
+
+signal_type: profile_fit
+signal_multiplier: 1.0
+signal_source_url: https://www.linkedin.com/in/william-ellison-6998174b/
+signal_excerpt:
+
+contact_role: buyer
+role_pts: 3
+
+tier: job_shop_fabricator
+size_band:
+
+assumptions_tested: [H0A1]
+validation_rationale: >
+  General manager of a precision grinding business. Grinding is the last operation before a part is accepted, so a mistake found there has already had every earlier operation paid for.
+
+response_likelihood: 6
+likelihood_factors: >
+  2nd degree, invite needed (0) · owner or general manager so can answer both the cost and the willingness to pay (+3) · profile_fit signal (0), start 3, capped at 6
+outreach_pattern:
+degree: "2nd"
+mutuals_count:
+active_last_30d: unknown
+open_to_work: false
+
+close_variant:
+relationship_type: operator_buyer
+outreach_status: invited
+message_stage:
+call_stage: none
+found_date: 2026-09-05
+invited_date: 2026-09-05
+accepted_date:
+scheduled_date:
+interview_date:
+
+interviews: []
+
+evidence_score:
+outcome_modifier:
+prior_contact_status: pending
+notes: "[UNVERIFIED 2026-09-05] No live profile read exists for this contact. Screened on company and title only, which the H0A1 icp_verification_rule now says is not enough — the invite went out before that rule existed. DO NOT draft or send a DM off this card: read the profile first and confirm the vertical, the production shape, the function and the tenure, then record what it showed here. [invite sent 2026-09-05] Bare connection request, no note (LR-B29). Sent by Claude via linkedin.com/preload/custom-invite; name "William Ellison" verified in the invitation modal against the ledger before clicking. [sourced 2026-09-05] H0A1 batch, LinkedIn people search restricted to 2nd degree, Pass 4 Phase B. Name, headline and location are SEARCH RESULT facts only; the profile was NOT opened, so degree, current employer and title must be re-verified live before any message is written (LR-B6, LR-B25). Location as listed: Piedmont, South Carolina, US. Pass 1 against the founder's own export returned nothing for this ICP, so every contact in this batch is cold. NOT YET INVITED: the founder sends every invite by hand, bare, with no note (LR-B29)."
+
+## Fatih Bıyıklı
+
+id: C177
+name: Fatih Bıyıklı
+linkedin_url: https://www.linkedin.com/in/fatihbiyikli/
+linkedin_account: Izgin
+company: Impro Industries Mexico
+role: General manager
+
+signal_type: profile_fit
+signal_multiplier: 1.0
+signal_source_url: https://www.linkedin.com/in/fatihbiyikli/
+signal_excerpt:
+
+contact_role: buyer
+role_pts: 3
+
+tier: job_shop_fabricator
+size_band:
+
+assumptions_tested: [H0A1]
+validation_rationale: >
+  General manager of a precision machining plant. Higher volume than most of this batch, which is useful as the boundary case: the ICP excludes repeat production, so his answer says where the line actually falls.
+
+response_likelihood: 6
+likelihood_factors: >
+  2nd degree, invite needed (0) · owner or general manager so can answer both the cost and the willingness to pay (+3) · profile_fit signal (0), start 3, capped at 6
+outreach_pattern:
+degree: "2nd"
+mutuals_count:
+active_last_30d: unknown
+open_to_work: false
+
+close_variant:
+relationship_type: operator_buyer
+outreach_status: invited
+message_stage:
+call_stage: none
+found_date: 2026-09-05
+invited_date: 2026-09-05
+accepted_date:
+scheduled_date:
+interview_date:
+
+interviews: []
+
+evidence_score:
+outcome_modifier:
+prior_contact_status: pending
+notes: "[UNVERIFIED 2026-09-05] No live profile read exists for this contact. Screened on company and title only, which the H0A1 icp_verification_rule now says is not enough — the invite went out before that rule existed. DO NOT draft or send a DM off this card: read the profile first and confirm the vertical, the production shape, the function and the tenure, then record what it showed here. [invite sent 2026-09-05] Bare connection request, no note (LR-B29). Sent by Claude via linkedin.com/preload/custom-invite; name "Fatih Bıyıklı" verified in the invitation modal against the ledger before clicking. [sourced 2026-09-05] H0A1 batch, LinkedIn people search restricted to 2nd degree, Pass 4 Phase B. Name, headline and location are SEARCH RESULT facts only; the profile was NOT opened, so degree, current employer and title must be re-verified live before any message is written (LR-B6, LR-B25). Location as listed: San Luis Potosí, Mexico. Pass 1 against the founder's own export returned nothing for this ICP, so every contact in this batch is cold. NOT YET INVITED: the founder sends every invite by hand, bare, with no note (LR-B29)."
+
+## Mike Zhang
+
+id: C178
+name: Mike Zhang
+linkedin_url: https://www.linkedin.com/in/mike-zhang-355688210/
+linkedin_account: Izgin
+company: HuanYi Precision
+role: Founder and owner
+
+signal_type: profile_fit
+signal_multiplier: 1.0
+signal_source_url: https://www.linkedin.com/in/mike-zhang-355688210/
+signal_excerpt:
+
+contact_role: buyer
+role_pts: 3
+
+tier: job_shop_fabricator
+size_band:
+
+assumptions_tested: [H0A1]
+validation_rationale: >
+  Founder-owner of a CNC machining business quoting international customers from their files, which is the handoff at its most remote and least forgiving.
+
+response_likelihood: 6
+likelihood_factors: >
+  2nd degree, invite needed (0) · owner or general manager so can answer both the cost and the willingness to pay (+3) · profile_fit signal (0), start 3, capped at 6
+outreach_pattern:
+degree: "2nd"
+mutuals_count:
+active_last_30d: unknown
+open_to_work: false
+
+close_variant:
+relationship_type: operator_buyer
+outreach_status: invited
+message_stage:
+call_stage: none
+found_date: 2026-09-05
+invited_date: 2026-09-05
+accepted_date:
+scheduled_date:
+interview_date:
+
+interviews: []
+
+evidence_score:
+outcome_modifier:
+prior_contact_status: pending
+notes: "[UNVERIFIED 2026-09-05] No live profile read exists for this contact. Screened on company and title only, which the H0A1 icp_verification_rule now says is not enough — the invite went out before that rule existed. DO NOT draft or send a DM off this card: read the profile first and confirm the vertical, the production shape, the function and the tenure, then record what it showed here. [invite sent 2026-09-05] Bare connection request, no note (LR-B29). Sent by Claude via linkedin.com/preload/custom-invite; name "Mike Zhang" verified in the invitation modal against the ledger before clicking. [sourced 2026-09-05] H0A1 batch, LinkedIn people search restricted to 2nd degree, Pass 4 Phase B. Name, headline and location are SEARCH RESULT facts only; the profile was NOT opened, so degree, current employer and title must be re-verified live before any message is written (LR-B6, LR-B25). Location as listed: China. Pass 1 against the founder's own export returned nothing for this ICP, so every contact in this batch is cold. NOT YET INVITED: the founder sends every invite by hand, bare, with no note (LR-B29)."
+
+## Linda S
+
+id: C179
+name: Linda S
+linkedin_url: https://www.linkedin.com/in/lindashan/
+linkedin_account: Izgin
+company: Dongguan Sibai Metal Works Ltd.
+role: Owner
+
+signal_type: profile_fit
+signal_multiplier: 1.0
+signal_source_url: https://www.linkedin.com/in/lindashan/
+signal_excerpt:
+
+contact_role: buyer
+role_pts: 3
+
+tier: job_shop_fabricator
+size_band:
+
+assumptions_tested: [H0A1]
+validation_rationale: >
+  Owner of a customised precision CNC machining works. Customised is the qualifier that keeps her in scope where a volume contract manufacturer would not be.
+
+response_likelihood: 6
+likelihood_factors: >
+  2nd degree, invite needed (0) · owner or general manager so can answer both the cost and the willingness to pay (+3) · profile_fit signal (0), start 3, capped at 6
+outreach_pattern:
+degree: "2nd"
+mutuals_count:
+active_last_30d: unknown
+open_to_work: false
+
+close_variant:
+relationship_type: operator_buyer
+outreach_status: pending
+message_stage:
+call_stage: none
+found_date: 2026-09-05
+invited_date:
+accepted_date:
+scheduled_date:
+interview_date:
+
+interviews: []
+
+evidence_score:
+outcome_modifier:
+prior_contact_status: pending
+notes: "[UNVERIFIED 2026-09-05] No live profile read exists for this contact. Screened on company and title only, which the H0A1 icp_verification_rule now says is not enough — the invite went out before that rule existed. DO NOT draft or send a DM off this card: read the profile first and confirm the vertical, the production shape, the function and the tenure, then record what it showed here. [invite UNCERTAIN 2026-09-05] The browser extension disconnected on the batch that would have sent this invite. The modal for "Linda (单艳娇) S" was confirmed open and named correctly, but the send click and the disconnect cannot be ordered from here. Status left `pending`. CHECK LinkedIn sent-invitations before re-sending - a duplicate invite is visible to the recipient. [sourced 2026-09-05] H0A1 batch, LinkedIn people search restricted to 2nd degree, Pass 4 Phase B. Name, headline and location are SEARCH RESULT facts only; the profile was NOT opened, so degree, current employer and title must be re-verified live before any message is written (LR-B6, LR-B25). Location as listed: Dongguan, China. Pass 1 against the founder's own export returned nothing for this ICP, so every contact in this batch is cold. NOT YET INVITED: the founder sends every invite by hand, bare, with no note (LR-B29)."
+
+## Howard Chen
+
+id: C180
+name: Howard Chen
+linkedin_url: https://www.linkedin.com/in/founfacthoward/
+linkedin_account: Izgin
+company: FounFact INC.
+role: Owner
+
+signal_type: profile_fit
+signal_multiplier: 1.0
+signal_source_url: https://www.linkedin.com/in/founfacthoward/
+signal_excerpt:
+
+contact_role: buyer
+role_pts: 3
+
+tier: job_shop_fabricator
+size_band:
+
+assumptions_tested: [H0A1]
+validation_rationale: >
+  Owner whose About text is about production processes. Asia-based owners quote almost entirely from files with no site visit, which is the strongest form of the remote handoff.
+
+response_likelihood: 6
+likelihood_factors: >
+  2nd degree, invite needed (0) · owner or general manager so can answer both the cost and the willingness to pay (+3) · profile_fit signal (0), start 3, capped at 6
+outreach_pattern:
+degree: "2nd"
+mutuals_count:
+active_last_30d: unknown
+open_to_work: false
+
+close_variant:
+relationship_type: operator_buyer
+outreach_status: pending
+message_stage:
+call_stage: none
+found_date: 2026-09-05
+invited_date:
+accepted_date:
+scheduled_date:
+interview_date:
+
+interviews: []
+
+evidence_score:
+outcome_modifier:
+prior_contact_status: pending
+notes: "[UNVERIFIED 2026-09-05] No live profile read exists for this contact. Screened on company and title only, which the H0A1 icp_verification_rule now says is not enough — the invite went out before that rule existed. DO NOT draft or send a DM off this card: read the profile first and confirm the vertical, the production shape, the function and the tenure, then record what it showed here. [sourced 2026-09-05] H0A1 batch, LinkedIn people search restricted to 2nd degree, Pass 4 Phase B. Name, headline and location are SEARCH RESULT facts only; the profile was NOT opened, so degree, current employer and title must be re-verified live before any message is written (LR-B6, LR-B25). Location as listed: Taipei, Taiwan. Pass 1 against the founder's own export returned nothing for this ICP, so every contact in this batch is cold. NOT YET INVITED: the founder sends every invite by hand, bare, with no note (LR-B29)."
+
+## Aakash Vekariya
+
+id: C181
+name: Aakash Vekariya
+linkedin_url: https://www.linkedin.com/in/aakash-vekariya-16992b15b/
+linkedin_account: Izgin
+company: CNC Works
+role: Owner
+
+signal_type: profile_fit
+signal_multiplier: 1.0
+signal_source_url: https://www.linkedin.com/in/aakash-vekariya-16992b15b/
+signal_excerpt:
+
+contact_role: buyer
+role_pts: 3
+
+tier: job_shop_fabricator
+size_band:
+
+assumptions_tested: [H0A1]
+validation_rationale: >
+  Company owner in CNC machining. Included to keep the batch from being entirely North American and European, since the belief claims the economics are structural rather than regional.
+
+response_likelihood: 6
+likelihood_factors: >
+  2nd degree, invite needed (0) · owner or general manager so can answer both the cost and the willingness to pay (+3) · profile_fit signal (0), start 3, capped at 6
+outreach_pattern:
+degree: "2nd"
+mutuals_count:
+active_last_30d: unknown
+open_to_work: false
+
+close_variant:
+relationship_type: operator_buyer
+outreach_status: pending
+message_stage:
+call_stage: none
+found_date: 2026-09-05
+invited_date:
+accepted_date:
+scheduled_date:
+interview_date:
+
+interviews: []
+
+evidence_score:
+outcome_modifier:
+prior_contact_status: pending
+notes: "[UNVERIFIED 2026-09-05] No live profile read exists for this contact. Screened on company and title only, which the H0A1 icp_verification_rule now says is not enough — the invite went out before that rule existed. DO NOT draft or send a DM off this card: read the profile first and confirm the vertical, the production shape, the function and the tenure, then record what it showed here. [sourced 2026-09-05] H0A1 batch, LinkedIn people search restricted to 2nd degree, Pass 4 Phase B. Name, headline and location are SEARCH RESULT facts only; the profile was NOT opened, so degree, current employer and title must be re-verified live before any message is written (LR-B6, LR-B25). Location as listed: Surat, Gujarat, India. Pass 1 against the founder's own export returned nothing for this ICP, so every contact in this batch is cold. NOT YET INVITED: the founder sends every invite by hand, bare, with no note (LR-B29)."
+
+## Candy Jin
+
+id: C182
+name: Candy Jin
+linkedin_url: https://www.linkedin.com/in/candy-jin-%F0%9F%87%BA%F0%9F%87%B8-6a6b421a4/
+linkedin_account: Izgin
+company: InnoX Tech
+role: Founder and CEO
+
+signal_type: profile_fit
+signal_multiplier: 1.0
+signal_source_url: https://www.linkedin.com/in/candy-jin-%F0%9F%87%BA%F0%9F%87%B8-6a6b421a4/
+signal_excerpt:
+
+contact_role: buyer
+role_pts: 3
+
+tier: job_shop_fabricator
+size_band:
+
+assumptions_tested: [H0A1]
+validation_rationale: >
+  Runs a rapid prototype business spanning CNC, 3D printing and sheet metal. Rapid quoting from customer files is her core operation, though the sales-facing headline means the profile needs a careful read before any claim.
+
+response_likelihood: 6
+likelihood_factors: >
+  2nd degree, invite needed (0) · owner or general manager so can answer both the cost and the willingness to pay (+3) · profile_fit signal (0), start 3, capped at 6
+outreach_pattern:
+degree: "2nd"
+mutuals_count:
+active_last_30d: unknown
+open_to_work: false
+
+close_variant:
+relationship_type: operator_buyer
+outreach_status: pending
+message_stage:
+call_stage: none
+found_date: 2026-09-05
+invited_date:
+accepted_date:
+scheduled_date:
+interview_date:
+
+interviews: []
+
+evidence_score:
+outcome_modifier:
+prior_contact_status: pending
+notes: "[UNVERIFIED 2026-09-05] No live profile read exists for this contact. Screened on company and title only, which the H0A1 icp_verification_rule now says is not enough — the invite went out before that rule existed. DO NOT draft or send a DM off this card: read the profile first and confirm the vertical, the production shape, the function and the tenure, then record what it showed here. [sourced 2026-09-05] H0A1 batch, LinkedIn people search restricted to 2nd degree, Pass 4 Phase B. Name, headline and location are SEARCH RESULT facts only; the profile was NOT opened, so degree, current employer and title must be re-verified live before any message is written (LR-B6, LR-B25). Location as listed: US and China. Pass 1 against the founder's own export returned nothing for this ICP, so every contact in this batch is cold. NOT YET INVITED: the founder sends every invite by hand, bare, with no note (LR-B29)."
+
+## Thilina Bowatta
+
+id: C183
+name: Thilina Bowatta
+linkedin_url: https://www.linkedin.com/in/thilinabowatta/
+linkedin_account: Izgin
+company: (not in the search result)
+role: New product development engineer
+
+signal_type: profile_fit
+signal_multiplier: 1.0
+signal_source_url: https://www.linkedin.com/in/thilinabowatta/
+signal_excerpt:
+
+contact_role: practitioner
+role_pts: 2
+
+tier: manufacturing_operations
+size_band:
+
+assumptions_tested: [H0A1]
+validation_rationale: >
+  New product development engineer, the person who hands the design over. He can say what he sends the shop and what comes back as a question, which is the customer side of the same handoff.
+
+response_likelihood: 5
+likelihood_factors: >
+  2nd degree, invite needed (0) · inside the handoff daily so reports what happens rather than what is decided (+2) · profile_fit signal (0), start 3, capped at 5
+outreach_pattern:
+degree: "2nd"
+mutuals_count:
+active_last_30d: unknown
+open_to_work: false
+
+close_variant:
+relationship_type: operator_buyer
+outreach_status: pending
+message_stage:
+call_stage: none
+found_date: 2026-09-05
+invited_date:
+accepted_date:
+scheduled_date:
+interview_date:
+
+interviews: []
+
+evidence_score:
+outcome_modifier:
+prior_contact_status: pending
+notes: "[sourced 2026-09-05] H0A1 batch, LinkedIn people search restricted to 2nd degree, Pass 4 Phase B. Name, headline and location are SEARCH RESULT facts only; the profile was NOT opened, so degree, current employer and title must be re-verified live before any message is written (LR-B6, LR-B25). Location as listed: West Gosford, New South Wales, Australia. Pass 1 against the founder's own export returned nothing for this ICP, so every contact in this batch is cold. NOT YET INVITED: the founder sends every invite by hand, bare, with no note (LR-B29)."
+
+## Yassine Saidat
+
+id: C184
+name: Yassine Saidat
+linkedin_url: https://www.linkedin.com/in/yassine-saidat-33165b7a/
+linkedin_account: Izgin
+company: (not in the search result)
+role: Supplier quality and NPI engineer
+
+signal_type: profile_fit
+signal_multiplier: 1.0
+signal_source_url: https://www.linkedin.com/in/yassine-saidat-33165b7a/
+signal_excerpt:
+
+contact_role: practitioner
+role_pts: 2
+
+tier: manufacturing_operations
+size_band:
+
+assumptions_tested: [H0A1]
+validation_rationale: >
+  Supplier quality and new product introduction across aerospace and automotive, so he sees first article failures across many suppliers rather than one shop. Weakest fit in the batch: he audits the handoff rather than carrying its cost.
+
+response_likelihood: 5
+likelihood_factors: >
+  2nd degree, invite needed (0) · inside the handoff daily so reports what happens rather than what is decided (+2) · profile_fit signal (0), start 3, capped at 5
+outreach_pattern:
+degree: "2nd"
+mutuals_count:
+active_last_30d: unknown
+open_to_work: false
+
+close_variant:
+relationship_type: operator_buyer
+outreach_status: pending
+message_stage:
+call_stage: none
+found_date: 2026-09-05
+invited_date:
+accepted_date:
+scheduled_date:
+interview_date:
+
+interviews: []
+
+evidence_score:
+outcome_modifier:
+prior_contact_status: pending
+notes: "[sourced 2026-09-05] H0A1 batch, LinkedIn people search restricted to 2nd degree, Pass 4 Phase B. Name, headline and location are SEARCH RESULT facts only; the profile was NOT opened, so degree, current employer and title must be re-verified live before any message is written (LR-B6, LR-B25). Location as listed: UK. Pass 1 against the founder's own export returned nothing for this ICP, so every contact in this batch is cold. NOT YET INVITED: the founder sends every invite by hand, bare, with no note (LR-B29)."
+
+## Charles Khairallah
+
+id: C185
+name: Charles Khairallah
+linkedin_url: https://www.linkedin.com/in/charles-khairallah-9936704/
+linkedin_account: Izgin
+company: Robotics Design Inc
+role: Owner
+
+signal_type: profile_fit
+signal_multiplier: 1.0
+signal_source_url: https://www.linkedin.com/in/charles-khairallah-9936704/
+signal_excerpt:
+
+contact_role: buyer
+role_pts: 3
+
+tier: machine_builder
+size_band:
+
+assumptions_tested: [H0A1]
+validation_rationale: >
+  Owner of a custom robotics design and build house, which is design-to-order machine building rather than a product line. Borderline against the ICP's exclusion of robotics startup founders: this is an established design firm, not a startup, and that has to be confirmed on the profile before any message.
+
+response_likelihood: 6
+likelihood_factors: >
+  2nd degree, invite needed (0) · owner or general manager so can answer both the cost and the willingness to pay (+3) · profile_fit signal (0), start 3, capped at 6
+outreach_pattern:
+degree: "2nd"
+mutuals_count:
+active_last_30d: unknown
+open_to_work: false
+
+close_variant:
+relationship_type: operator_buyer
+outreach_status: pending
+message_stage:
+call_stage: none
+found_date: 2026-09-05
+invited_date:
+accepted_date:
+scheduled_date:
+interview_date:
+
+interviews: []
+
+evidence_score:
+outcome_modifier:
+prior_contact_status: pending
+notes: "[UNVERIFIED 2026-09-05] No live profile read exists for this contact. Screened on company and title only, which the H0A1 icp_verification_rule now says is not enough — the invite went out before that rule existed. DO NOT draft or send a DM off this card: read the profile first and confirm the vertical, the production shape, the function and the tenure, then record what it showed here. [sourced 2026-09-05] H0A1 batch, LinkedIn people search restricted to 2nd degree, Pass 4 Phase B. Name, headline and location are SEARCH RESULT facts only; the profile was NOT opened, so degree, current employer and title must be re-verified live before any message is written (LR-B6, LR-B25). Location as listed: Montreal, Quebec, Canada. Pass 1 against the founder's own export returned nothing for this ICP, so every contact in this batch is cold. NOT YET INVITED: the founder sends every invite by hand, bare, with no note (LR-B29)."

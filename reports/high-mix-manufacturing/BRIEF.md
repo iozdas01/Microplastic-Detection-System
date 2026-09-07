@@ -4,17 +4,17 @@
 -->
 ---
 slug: high-mix-manufacturing
-generated: 2026-09-04T06:14Z
+generated: 2026-09-06T03:16Z
 lifecycle: active
 active_hunch: H3
 active_assumption: H3A4
 sources:
   belief: 57d36bf439d8
   lineage: 4f5be1ae15c7
-  graph: d2727fa216ee
-  evidence: c2431ad93fad
+  graph: 1df31c3755b4
+  evidence: 695c1111a273
   offerings: fa8f60094cb6
-  contacts: d4bbf0eb6a7f
+  contacts: 3ed425b673c8
 ---
 
 # high-mix-manufacturing — session brief
@@ -37,34 +37,36 @@ Made-to-measure window coverings stay a home-visit business because nothing can 
 
 Lineage: H1 superseded · H2 superseded
 
-## Assumptions — top 3 of 6 by the declared ranking
+## Assumptions — top 3 of 8 by the declared ranking
 
 | # | ID | claim | status | evidence | next action |
 |---|---|---|---|---|---|
-| 1 | **H3A4** ← | The home measuring visit is a real, per-order cost that the seller carries, and it loses them business — they… | `weakly_supported` | `4/5 · 1E (1+/0-)` | Two questions, in this order, before mentioning software at all: "what does it cost you t… |
-| 2 | **H3A1** | Remakes caused by wrong measurements are a material and tracked cost for made-to-measure window covering manu… | `untested` | `none` | Ask manufacturers and dealers about the last remake they did before asking for a rate. "W… |
-| 3 | **H3A6** | A seller would drop the visit for an order if a remote measurement could be trusted — the visit is a workarou… | `weakly_supported` | `2/5 · 1E (0+/0-)` | "If you could trust a measurement the customer sent you, would you still send someone out… |
+| 1 | **H0A1** | In HMLV manufacturing, the per-order design-to-manufacture handoff produces errors that reach the floor at a… | `weakly_supported` | `none` | Ask the same two questions of five more HMLV operators, in this order and before any ment… |
+| 2 | **H3A4** ← | The home measuring visit is a real, per-order cost that the seller carries, and it loses them business — they… | `weakly_supported` | `4/5 · 1E (1+/0-)` | Two questions, in this order, before mentioning software at all: "what does it cost you t… |
+| 3 | **H0A2** | The party carrying that cost would pay to remove it, rather than absorbing it as the price of speed. | `weakly_contradicted` | `none` | Ask what they have already TRIED, never what they would buy. "Has anyone ever been put on… |
 
 _← = `active_assumption`. Ranking: leap-of-faith gate → DAG roots first → kill_power → uncertainty → cheapest test (`schemas/assumptions.md`)._
 
+> ⚠️ `active_assumption` is **H3A4** but the ranking puts **H0A1** first. Either a score is wrong or the choice was deliberate — say which.
+
 ## Evidence
 
-**25 entries** · 8 supports / 8 contradicts / 9 ambiguous · latest 2026-09-03
+**29 entries** · 9 supports / 9 contradicts / 11 ambiguous · latest 2026-09-05
 
 For **H3A4**: 1 entries.
 
-- `E2` 2026-09-03 → **H2A4** (contradicts) — The blocked-part vocabulary has no measurable inbound search demand in the US. All four terms swept for it — "obsolete parts", "custom replacement pa…
-- `E3` 2026-09-03 → **H2A4** (supports) — Buying intent runs inverse to search volume across the whole sweep. The trade terms sit below the resolution floor but nearly every related query the…
-- `E4` 2026-09-03 → **unassigned** (ambiguous) — Signs and display is the largest measurable family of made-to-order demand across every machinable material — 2.43x the "custom furniture" anchor, an…
-- `E5` 2026-09-03 → **unassigned** (supports) — "custom cabinets" survives a cross-material sweep — 1.06x the anchor, 29% buying intent, up 45% year on year, and one of only two wood-and-panel term…
+- `E26` 2026-09-05 → **unassigned** (supports) — Design errors reaching manufacture run at roughly one per 50 manufactured details in machine building - a 200-detail project sees four, and most mach…
+- `E27` 2026-09-05 → **unassigned** (contradicts) — The party carrying this cost has consciously priced it and declines to remove it. Sanyo's standing policy is to get machines to manufacturing as fast…
+- `E28` 2026-09-05 → **unassigned** (ambiguous) — Asked where the margin on a new job goes between the quote and the first good part, a job shop owner answers entirely in estimating terms: "speed, co…
+- `E29` 2026-09-05 → **unassigned** (ambiguous) — "I would say most jobs get held up the most in the quality department." Asked to name the bottleneck between a print arriving and a good first part c…
 
 ## Outreach
 
-**112 targeted** · 10 contacted · 1 replied · 1 call-progressed · 0 scheduled
+**177 targeted** · 35 contacted · 9 replied · 6 call-progressed · 0 scheduled
 
-Reply rate 10.0% of contacted · reply→call 100.0%
+Reply rate 25.7% of contacted · reply→call 66.7%
 
-By assumption: H2A1 1/1 replied · H2A2 0/0 replied · H2A3 1/1 replied · H3A1 0/8 replied · H3A2 0/3 replied · H3A3 0/3 replied
+By assumption: H0A1 2/7 replied · H0A2 0/1 replied · H2A1 1/7 replied · H2A2 0/5 replied · H2A3 1/4 replied · H3A1 0/6 replied · H3A2 0/1 replied · H3A3 0/2 replied · H3A4 2/6 replied · H3A5 0/4 replied
 
 ## What already exists for this idea
 
@@ -91,11 +93,12 @@ _Generated from the folder. Check here before creating a new artifact — if a f
 | `reports/high-mix-manufacturing/01-ideation/recon/2026-09-03-window-coverings/findings.md` | What public reviews and trade sources say about misfits in made-to-measure window coverings. |
 | `reports/high-mix-manufacturing/01-ideation/recon/2026-09-03-window-coverings/query-plan.json` | — |
 | `reports/high-mix-manufacturing/01-ideation/recon/2026-09-03-window-coverings/stderr.log` | — |
-| `reports/high-mix-manufacturing/02-assumptions/graph.md` | The assumption DAG for the active hunch — what must be true, ranked, each with the cheapest test that would settle it. |
+| `reports/high-mix-manufacturing/02-assumptions/graph.md` | The assumption DAG for this idea — what must be true, ranked, each with the cheapest test that would settle it. Holds the active hunch's nodes plus a… |
 | `reports/high-mix-manufacturing/02-assumptions/archive/graph-cabinets-2026-09-02.md` | The assumption DAG for H1 — what must be true, ranked, each with the cheapest test that would settle it. |
 | `reports/high-mix-manufacturing/02-assumptions/archive/graph-h1-remanufacturing-2026-09-02.md` | The assumption DAG for H1 (remanufacturing) — parked with its hunch, not falsified. |
 | `reports/high-mix-manufacturing/02-assumptions/archive/graph-h2-blocked-parts-2026-09-03.md` | The assumption DAG for H2 (blocked-part machining) — parked with its hunch, not falsified. |
 | `reports/high-mix-manufacturing/03-validation/evidence.md` | The evidence ledger for this idea — every graded claim, linked to the assumption it moves and the direction it moves it. |
+| `reports/high-mix-manufacturing/03-validation/belief-2026-09-05/interviews/leonard-sanyo-2026-09-05-notes.md` | Interview: Leonard (Sanyo) · belief-level · 2026-09-05 |
 | `reports/high-mix-manufacturing/04-mutation/offerings.md` | Candidate offerings for this idea — what would actually be sold, and to whom. |
 | `reports/high-mix-manufacturing/04-mutation/archive/offerings-cabinets-2026-09-02.md` | Candidate offerings for this idea — what would actually be sold, and to whom. |
 | `reports/high-mix-manufacturing/outreach/PLAN.md` | The one plan for the belief-level outreach block — which channel does what, in what order, and what each is allowed to prove. |
@@ -104,10 +107,13 @@ _Generated from the folder. Check here before creating a new artifact — if a f
 | `reports/high-mix-manufacturing/outreach/research-map-shortlist-b4.csv` | — |
 | `reports/high-mix-manufacturing/outreach/research-map-shortlist.csv` | — |
 | `reports/high-mix-manufacturing/outreach/research-map.md` | What each recent paper's METHOD reveals about where the design-to-machine handoff is actually being closed, who is closing it, and which of those tea… |
-| `reports/high-mix-manufacturing/outreach/results-*.md` | 6 generated files — rebuild them, never edit |
-| `reports/high-mix-manufacturing/outreach/target-list-audit-*.md` | 2 dated snapshots — latest 2026-09-03 · Target list audit — high-mix-manufacturing — 2026-09-03 |
+| `reports/high-mix-manufacturing/outreach/results-*.md` | 10 generated files — rebuild them, never edit |
+| `reports/high-mix-manufacturing/outreach/target-list-audit-*.md` | 3 dated snapshots — latest 2026-09-05 · Target list audit — high-mix-manufacturing — 2026-09-05 |
+| `reports/high-mix-manufacturing/outreach/copy/H0A1-linkedin.md` | Msg 1 LinkedIn copy for the belief-level H0A1 lane, with the live-snapshot source for every claim in it. |
+| `reports/high-mix-manufacturing/outreach/copy/H1-H2-linkedin.md` | LinkedIn copy for contacts in the superseded H1 and H2 lanes, kept because the threads are live even though the hunches are not. |
 | `reports/high-mix-manufacturing/outreach/copy/H2A1-linkedin.md` | Sent and drafted LinkedIn copy for H2A1, with the traceability behind every claim. |
 | `reports/high-mix-manufacturing/outreach/copy/H3-discovery-pitch.md` | What the founder says to open an H3 conversation, and separately what the founder says when asked what they are building. |
+| `reports/high-mix-manufacturing/outreach/copy/H3-linkedin.md` | Every LinkedIn message drafted for the H3 lane, with the live-snapshot source for each claim in it. |
 | `reports/high-mix-manufacturing/outreach/copy/H3A1-email.md` | Sent and drafted email copy for H3, with the reasoning behind each send. |
 | `reports/high-mix-manufacturing/outreach/email/cambridge-reconnect-2026-09/drafts.md` | Copy for reopening the Cambridge DIAL relationship and recovering the Universal Wolf case-study contact. |
 | `reports/high-mix-manufacturing/outreach/email/cambridge-reconnect-2026-09/targets.csv` | — |

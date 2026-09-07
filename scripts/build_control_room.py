@@ -51,7 +51,9 @@ from pathlib import Path
 # disagreed about the same contacts.
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
 from scripts.idea import (  # noqa: E402
+    CONTACTED_STATUSES,
     DEFAULT_CHANNEL,
+    _channel,
     compute_conversion_stats,
     derive_assumption_evidence,
 )
@@ -130,6 +132,13 @@ def parse_contact_block(block: str) -> dict:
         elif v in (">", "|"):
             out[k] = ""
         else:
+            # Strip a matched surrounding quote pair. Contact records quote any value that
+            # could be read as something else — `degree: "1st"`, `notes: "..."` — and keeping
+            # the quotes meant normalize_degree() saw '"1st"', matched nothing, and filed every
+            # quoted contact as inmail_only. That silently emptied the degree tabs and hid the
+            # whole 1st-degree batch from the task panel.
+            if len(v) >= 2 and v[0] == v[-1] and v[0] in ("\"", "'"):
+                v = v[1:-1]
             out[k] = v
     return out
 
@@ -373,40 +382,9 @@ def compute_stats(contacts: list[dict]) -> dict:
     return stats
 
 
-# A completed call is `interviewed`, and a sent message is `msg{N}_sent`. Both were
-# missing from these sets, so the one interview that actually happened counted as
-# neither contacted, replied nor booked, and nine messaged contacts were absent from
-# the reply-rate denominator. Any msg{N}_sent counts as contacted via _is_contacted().
-CONTACTED_STATUSES = {
-    "accepted", "replied", "scheduled", "done", "no_reply", "declined", "interviewed",
-}
-OUTREACH_STARTED_STATUSES = CONTACTED_STATUSES | {"invited"}
-REPLIED_STATUSES = {"replied", "scheduled", "done", "interviewed"}
-SCHEDULED_STATUSES = {"scheduled", "done", "interviewed"}
-_MSG_SENT_RE = re.compile(r"^msg(\d+)_sent$")
-
-
-def _is_contacted(status) -> bool:
-    """True once a message has actually gone out. Accepts any msg{N}_sent so a new
-    message stage never silently drops contacts out of the funnel."""
-    s = str(status or "")
-    return s in CONTACTED_STATUSES or bool(_MSG_SENT_RE.match(s))
-
-
-def _has_replied(status) -> bool:
-    """True once the contact has answered at least once.
-
-    msg2_sent and beyond imply a reply: /startup-outreach-reply only drafts Msg 2
-    after a reply lands, so the arc stage is itself the evidence. Without this the
-    reply count fell every time a thread advanced, because REPLIED_STATUSES is a
-    plain set and msg{N}_sent is not in it."""
-    s = str(status or "")
-    if s in REPLIED_STATUSES:
-        return True
-    m = _MSG_SENT_RE.match(s)
-    return bool(m) and int(m.group(1)) >= 2
-CALL_PROGRESS_STAGES = {"offered_by_contact", "asked_by_founder", "scheduled", "completed"}
-NON_CUSTOMER_RELATIONSHIPS = {"peer_founder_competitor"}
+# CONTACTED_STATUSES and the rest of the funnel vocabulary live in scripts/idea.py,
+# imported at the top of this file. A second copy lived here and was already one
+# `accepted` out of step with the authority it duplicated.
 
 
 # ─── helpers ─────────────────────────────────────────────────────────────────
@@ -837,6 +815,11 @@ def render(
                 "outreach_status": c.get("outreach_status", "pending"),
                 "message_stage": c.get("message_stage", ""),
                 "call_stage": c.get("call_stage", ""),
+                # The task panel is a LINKEDIN worklist. Without this it listed the five
+                # shops the founder phoned as "reply waiting" — conversations that already
+                # happened and already produced E7-E11 and E15-E17. compute_conversion_stats
+                # was channel-scoped on 2026-09-03 and this panel was not; same bug, later.
+                "channel": _channel(c),
                 "reply_type": c.get("reply_type", ""),
                 "response_likelihood": _try_int(c.get("response_likelihood", "")),
                 "likelihood_factors": c.get("likelihood_factors", ""),
@@ -1296,13 +1279,21 @@ body::before {{
 #q:focus {{border-color:var(--accent);}}
 #q::placeholder {{color:var(--text-dimmer);}}
 /* ── pending tasks panel ── */
-.task-panel {{margin:18px 0;display:grid;gap:12px;}}
-.task-panel-head {{font-size:15px;font-weight:700;letter-spacing:.02em;}}
+.task-panel {{margin:4px 0 24px;display:grid;gap:14px;max-width:820px;}}
+.task-panel-head {{font-size:19px;font-weight:800;letter-spacing:-.01em;margin-bottom:2px;}}
+.task-panel-head .task-auto {{display:block;font-size:11px;font-weight:500;letter-spacing:.02em;color:var(--text-dimmer);margin-top:4px;}}
 .task-auto {{font-size:11px;font-weight:400;opacity:.6;margin-left:8px;}}
-.task-block {{border:1px solid var(--border,#3333);border-radius:10px;padding:12px 16px;background:var(--card-bg,rgba(127,127,127,.06));}}
-.task-block h3 {{font-size:13px;margin:0 0 8px;}}
-.task-block ul {{list-style:none;margin:0;padding:0;display:grid;gap:5px;}}
-.task-block li {{font-size:13px;display:flex;gap:8px;align-items:baseline;flex-wrap:wrap;}}
+.task-block {{border:1px solid var(--border,#3333);border-radius:10px;padding:14px 18px;background:var(--card-bg,rgba(127,127,127,.06));}}
+.task-block h3 {{font-size:12px;text-transform:uppercase;letter-spacing:.07em;margin:0 0 10px;color:var(--text-dim);}}
+.task-block ul {{list-style:none;margin:0;padding:0;display:grid;gap:1px;}}
+.task-block li {{font-size:13px;display:flex;gap:10px;align-items:center;flex-wrap:nowrap;
+  padding:7px 0;border-top:1px solid var(--border-subtle,rgba(127,127,127,.14));}}
+/* the meta column absorbs the slack so every action control lines up down the right edge */
+.task-block li .task-meta {{flex:1;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;}}
+.task-block li .task-copy-btn, .task-block li .task-approve, .task-block li > a {{flex:none;}}
+.task-approve {{display:inline-flex;align-items:center;gap:5px;white-space:nowrap;font-size:12px;opacity:.8;}}
+.task-block li:first-child {{border-top:0;}}
+.task-block li strong {{min-width:150px;}}
 .task-meta {{opacity:.65;font-size:12px;}}
 .task-hint {{font-size:11.5px;opacity:.65;margin:8px 0 0;}}
 .task-hot {{border-left:4px solid #e05d44;}}
@@ -1515,6 +1506,7 @@ body::before {{
 
 <!-- ── tab nav ── -->
 <nav class="tab-nav">
+  <button data-tab="tasks" onclick="switchTab('tasks')">To do <span class="count" id="taskTabCount">0</span></button>
   <button data-tab="thesis" onclick="switchTab('thesis')">Hunches <span class="count">{active_hunch}</span></button>
   <button data-tab="patterns" onclick="switchTab('patterns')">Pain Patterns <span class="count">{patterns_count}</span></button>
   <button data-tab="offerings" onclick="switchTab('offerings')">Offerings <span class="count">{offerings_count}</span></button>
@@ -1524,6 +1516,11 @@ body::before {{
   <button data-tab="email" onclick="switchTab('email')">Research &amp; papers <span class="count">{email_count}</span></button>
   <button class="active" data-tab="contacts" onclick="switchTab('contacts')">Contacts <span class="count">{total}</span></button>
 </nav>
+
+<!-- ── pending tasks (auto-derived from contacts.md + copy archive on every rebuild) ── -->
+<div class="tab-panel" data-tab="tasks">
+<section class="task-panel" id="taskPanel" aria-label="Pending tasks"></section>
+</div>
 
 <div class="tab-panel" data-tab="thesis">
 {thesis_tab_html}
@@ -1625,9 +1622,6 @@ body::before {{
   </div>
 </section>
 {invite_log_html}
-
-<!-- ── pending tasks (auto-derived from contacts.md + copy archive on every rebuild) ── -->
-<section class="task-panel" id="taskPanel" aria-label="Pending tasks"></section>
 
 <!-- ── degree tabs ── -->
 <div class="degree-tabs">
@@ -2147,17 +2141,33 @@ document.querySelectorAll(".tab").forEach(function(btn) {{
   function sentMarker(c) {{ return /\\[msg\\d+ sent\\]/i.test(c.notes || ""); }}
   function hasCopy(c) {{ return !!(COPY_BY_ID && COPY_BY_ID[c.id]); }}
 
-  var sendMsg1 = [], draftNeeded = [], replyNeeded = [], invitesQueued = 0, awaiting = 0;
+  var sendMsg1 = [], draftNeeded = [], replyNeeded = [], gated = [], invitesQueued = 0, awaiting = 0;
+  // LR-B30: someone messaged inside the last three months with no reply must not be written to
+  // again. The gate lives in the contact's notes and outlives any status change, so a re-screen
+  // that flips `held` to `pending` cannot quietly put them back in a send queue.
+  function b30(c) {{
+    var n = c.notes || "";
+    return /\\[LR-B30[^\\]]*\\]/i.test(n) && !/\\[msg\\d+ sent/i.test(n);
+  }}
   CONTACTS.forEach(function(c) {{
     var s = c.outreach_status || "pending";
     if (s === "accepted") {{
       if (sentMarker(c)) return;
-      (hasCopy(c) ? sendMsg1 : draftNeeded).push(c);
+      if (b30(c)) gated.push(c); else (hasCopy(c) ? sendMsg1 : draftNeeded).push(c);
     }} else if (s === "replied") {{
+      // Only LinkedIn threads are ours to answer here. A phone call is not an open thread.
+      // Absent channel means LinkedIn - that is the declared default in vocabularies.yaml, and
+      // testing === "linkedin" dropped every card that relied on it (C122, 2026-09-05).
       // A reply the founder has already answered (msg2+ sent marker) is their turn, not ours.
-      if (!/\\[msg[2-9] sent\\]/i.test(c.notes || "")) replyNeeded.push(c);
+      var ch = c.channel || "linkedin";
+      if (ch === "linkedin" && !/\\[msg[2-9] sent\\b/i.test(c.notes || "")) replyNeeded.push(c);
     }} else if (s === "pending") {{
-      invitesQueued++;
+      // A 1st-degree contact needs no invite, so a drafted message to one is a SEND, not a
+      // queue entry. Without this the whole 1st-degree batch was invisible on this page.
+      if (b30(c)) gated.push(c);
+      else if (c.degree === "1st" && hasCopy(c)) sendMsg1.push(c);
+      else if (c.degree === "1st") draftNeeded.push(c);
+      else invitesQueued++;
     }} else if (s === "invited") {{
       awaiting++;
     }}
@@ -2191,10 +2201,18 @@ document.querySelectorAll(".tab").forEach(function(btn) {{
     blocks.push('<div class="task-block task-hot"><h3>Reply waiting (' + replyNeeded.length + ')</h3><ul>' +
       replyNeeded.map(function(c) {{ return personLink(c, hasCopy(c)); }}).join("") + "</ul></div>");
   }}
+  if (gated.length) {{
+    blocks.push('<div class="task-block task-cool"><h3>Held by LR-B30 (' + gated.length + ')</h3><ul>' +
+      gated.map(function(c) {{ return personLink(c, false); }}).join("") +
+      '</ul><p class="task-hint">Messaged inside the last three months with no reply. Do not write again yet, whatever their status says.</p></div>');
+  }}
   blocks.push('<div class="task-block task-cool"><h3>Queue</h3><p class="task-hint">' +
     invitesQueued + " targets waiting for the next invite window · " + awaiting + " invites out awaiting acceptance</p></div>");
 
-  panel.innerHTML = '<div class="task-panel-head">Pending tasks <span class="task-auto">auto-generated from the ledger</span></div>' + blocks.join("");
+  var openCount = sendMsg1.length + draftNeeded.length + replyNeeded.length;
+  var badge = document.getElementById("taskTabCount");
+  if (badge) badge.textContent = openCount;
+  panel.innerHTML = '<div class="task-panel-head">To do <span class="task-auto">auto-generated from the ledger on every rebuild</span></div>' + blocks.join("");
   panel.addEventListener("click", function(e) {{
     var btn = e.target.closest("[data-task-cid]");
     if (btn) openCopyModal(btn.getAttribute("data-task-cid"));
@@ -3964,9 +3982,9 @@ function switchTab(name) {
 }
 window.addEventListener('hashchange', () => {
   const t = (location.hash || '#contacts').slice(1).split('?')[0];
-  if (['contacts','companies','email','patterns','thesis','offerings'].includes(t)) switchTab(t);
+  if (['tasks','contacts','companies','email','patterns','thesis','offerings'].includes(t)) switchTab(t);
 });
-['companies','email','patterns','thesis','offerings'].forEach(n => {
+['tasks','companies','email','patterns','thesis','offerings'].forEach(n => {
   if (location.hash.startsWith('#' + n)) switchTab(n);
 });
 

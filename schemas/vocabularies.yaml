@@ -73,6 +73,11 @@ vocabularies:
       untested:          "No evidence gathered."
       testing:           "A validation cycle is open."
       weakly_supported:  "Some supporting evidence, below the confidence bar."
+      # Added 2026-09-05 for H0A2. The vocabulary had no negative mirror of
+      # weakly_supported, and the three candidates were all wrong: `contested`
+      # requires evidence in BOTH directions, `untested` denies an entry that
+      # exists and is graded, and `killed` overstates a single n=1 answer.
+      weakly_contradicted: "Some contradicting evidence and none supporting, below the bar to kill."
       confirmed:         "Supported at customer_interview quality or better."
       contested:         "Supporting and contradicting evidence both present."
       killed:            "Falsified. Children dissolve with it."
@@ -270,7 +275,11 @@ vocabularies:
     schema: schemas/interview.md
     # whatsapp_text added 2026-08-25: async text-chat testimony captured as an interview
     # (first case: C23 pre-call WhatsApp exchange). New vocabulary, not a typo.
-    values: [linkedin_video, zoom, phone, in_person, whatsapp_text]
+    # linkedin_text added 2026-09-05, same reasoning, different platform: a long-form LinkedIn
+    # DM reply is testimony, not a message stage. First case C122, who gave a rate, a mechanism
+    # and a rejected remedy in one message without a call. Distinct from whatsapp_text because
+    # the funnel counts LinkedIn and non-LinkedIn contact separately.
+    values: [linkedin_video, zoom, phone, in_person, whatsapp_text, linkedin_text]
 
   synthesis_outcome:
     used_in: [reports/*/03-validation/*/interviews/synthesis.md]

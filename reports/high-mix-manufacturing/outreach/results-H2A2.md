@@ -4,11 +4,11 @@
 -->
 # Outreach results — H2A2 · high-mix-manufacturing
 
-_Generated 2026-09-04. Numbers are the funnel over contacts tagged H2A2._
+_Generated 2026-09-06. Numbers are the funnel over contacts tagged H2A2._
 
 | channel | targeted | contacted | replied | qualified replied | reply rate |
 |---|---|---|---|---|---|
-| LinkedIn | 20 | 0 | 0 | 0 | — |
+| LinkedIn | 15 | 5 | 0 | 0 | 0.0% |
 | phone | 0 | 0 | 0 | 0 | — |
 
 _Channels are counted separately._
@@ -17,23 +17,18 @@ _Channels are counted separately._
 
 | id | name | status | call stage |
 |---|---|---|---|
-| C1 | Charles Evans | held | none |
-| C10 | Mia Huff | held | none |
-| C11 | Ruilong Ma, Ph.D. | held | none |
-| C13 | ADESH KUMAR | held | none |
 | C18 | Kwan Mok | held | none |
 | C19 | Ken Lee | held | none |
 | C2 | Matthew Cliffe | held | none |
 | C23 | Lauren Gwin | held | none |
-| C24 | Regu Nammalwar | held | none |
-| C25 | Enoch Koech | held | none |
-| C26 | Howard Chu | held | none |
-| C27 | Olgac Aker | held | none |
-| C3 | Can Tafulcan | held | none |
-| C35 | Tom Cho | held | none |
-| C38 | Eric Yoshikawa, MBA, MAM | held | none |
-| C4 | Margaux Ratcliff | held | none |
-| C5 | Heath Holtz | held | none |
-| C6 | Akshaya Satish | held | none |
-| C8 | Clynton Thoresson | held | none |
-| C9 | Peter Macron | held | none |
+| C25 | Enoch Koech | off_scope | none |
+| C26 | Howard Chu | off_scope | none |
+| C27 | Olgac Aker | off_scope | none |
+| C35 | Tom Cho | off_scope | none |
+| C38 | Eric Yoshikawa, MBA, MAM | off_scope | none |
+| C8 | Clynton Thoresson | off_scope | none |
+| C10 | Mia Huff | msg1_sent | none |
+| C11 | Ruilong Ma, Ph.D. | msg1_sent | none |
+| C3 | Can Tafulcan | msg1_sent | none |
+| C4 | Margaux Ratcliff | msg1_sent | none |
+| C5 | Heath Holtz | msg1_sent | none |

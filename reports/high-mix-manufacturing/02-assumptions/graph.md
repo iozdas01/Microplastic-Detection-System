@@ -1,9 +1,13 @@
 ---
-purpose: The assumption DAG for the active hunch — what must be true, ranked, each with the cheapest test that would settle it.
+purpose: The assumption DAG for this idea — what must be true, ranked, each with the cheapest test that would settle it. Holds the active hunch's nodes plus any belief-level (H0) node that outlives whichever hunch is current.
 idea: high-mix-manufacturing
 hunch_id: H3
+# H0 = belief-level: nodes that test belief.md itself and survive a hunch change.
+# Declared 2026-09-05 with H0A1/H0A2. Validator pattern is (?:H\d+)?A\w+, so H0 is legal;
+# it is used instead of a bare A{n} because flat IDs are the retired form.
+belief_level_prefix: H0
 belief_file: input-context/high-mix-manufacturing/belief.md
-last_updated: 2026-09-03
+last_updated: 2026-09-05
 active_assumption: H3A4
 
 # Idea-owned market vocabulary. Bands are the OBSERVABLE proxy (LinkedIn company
@@ -25,6 +29,27 @@ size_bands:
       scale. The 10 largest makers hold 62.5% of manufacturing receipts and the 4
       largest specialty retailers 19.0% of retail receipts, so this band IS the
       market by value however few names are in it.
+# Idea-owned HMLV vertical vocabulary. Founder-declared 2026-09-05 with sources.
+# Referenced by H0A1/H0A2 as icp_valid_verticals; never restated inside a node.
+# These are the five places where per-order engineering is the normal case rather
+# than the exception, which is what makes them the belief's scope rather than a
+# list of industries that happen to sound bespoke.
+hmlv_verticals:
+  aerospace_space: >-
+    Specialised aircraft parts, satellite components, custom jet-engine insulation covers.
+    Precision matters more than output quantity.
+  medical_devices: >-
+    Tailored surgical tools, patient-specific implants, custom diagnostic equipment, in
+    small lots. Patient-specific is per-order engineering by definition.
+  industrial_machinery: >-
+    Specialised fork trucks, pumps, valves and industrial controls built to unique customer
+    specification. The Sanyo shape - E26 and E27 came from here.
+  sheet_metal_and_machining: >-
+    Unique electronic chassis, brackets and one-off mechanical parts, different clients
+    through the day. The largest and most reachable pool; the 2026-09-05 invite batch is
+    almost entirely this.
+  specialised_electronics: >-
+    Low-volume circuit boards, custom thermostats, building automation controls.
 ---
 
 # Assumption graph — H3
@@ -49,6 +74,164 @@ keyless measures the real figure; the Economic Census product-line endpoint woul
 free CENSUS_API_KEY.
 
 assumptions:
+
+  - id: H0A1
+    assumption: >-
+      In HMLV manufacturing, the per-order design-to-manufacture handoff produces errors that
+      reach the floor at a rate the people running it can state, and correcting them consumes
+      real hours.
+    hunch: belief
+    category: pain
+    lens: desirability
+    validation_track: customer_adoption
+    why_it_matters: >-
+      BELIEF-LEVEL, not H3. This is link 1 of belief.md turned into something a person can
+      answer, and it survives whichever hunch is active. It exists because the first operator
+      ever asked gave a rate unprompted — one error per 50 manufactured details, with accurate
+      designers running 110-125% of budgeted hours to hold it there. That second number is the
+      one that matters: accuracy is already being bought, in hours, and 10-25% of a program's
+      budget is the price any software closing this handoff has to beat.
+    importance: high
+    quadrant: leap_of_faith
+    uncertainty_score: 3
+    kill_power: 5
+    test_cost: 1
+    test_method: founder
+    parent_assumptions: []
+    child_assumptions: [H0A2]
+    evidence_for: [E26]
+    evidence_against: []
+    status: weakly_supported
+    status_reason: >-
+      One entry, confidence 4, n=1. E26 is first-hand from 27 years in the role and the numbers
+      came without being pushed for, which is why it is not `untested` — but a single recalled
+      estimate from one machine builder is not a base rate, and nothing says his firm counts
+      these at all.
+    next_action: >-
+      Ask the same two questions of five more HMLV operators, in this order and before any
+      mention of software: "roughly how often does something reach the floor that has to be
+      fixed there?" then "who fixes it, and how long does it take?" Ask for the last one before
+      asking for a rate — an incident produces a story, a rate produces a policy. Then test the
+      speed/accuracy trade-off separately, because if it holds everywhere it is a law and if it
+      is one manager's model of his own team it is not.
+    disconfirmation: >-
+      If five or more HMLV operators cannot state any rate and cannot name hours lost to
+      correcting design errors, the pain is not felt by the people who carry it and this dies —
+      taking link 1 of the belief with it.
+    stop_rule: "Stop after 8 operator conversations, or 3 weeks."
+    icp_segment: >-
+      People inside HMLV manufacturers who see the handoff fail and carry the consequence —
+      whoever owns the drawing when it is wrong, and whoever pays for the hours spent fixing
+      it on the floor. Three role bands, all valid, sourced in this order (founder, 2026-09-05):
+      (1) people who see the machines on the line — they can describe the failure and its
+      frequency first-hand; (2) revenue and budget owners — the only band that reaches H0A2,
+      because only they can say what it would be worth to remove; (3) senior leadership at
+      larger firms — fine to contact, explicitly NOT the best first option, because distance
+      from the floor turns a rate into a policy.
+    icp_valid_verticals: [aerospace_space, medical_devices, industrial_machinery,
+                          sheet_metal_and_machining, specialised_electronics]   # vocab: hmlv_verticals
+    icp_valid_tiers:
+      - {name: machine_builder, side: demand}
+      - {name: job_shop_fabricator, side: demand}
+      - {name: manufacturing_operations, side: demand}
+      - {name: industry_software_vendor, side: expert}
+    domain_data_sources: []
+    icp_valid_titles: [Owner, Managing Director, General Manager, Engineering Manager,
+                       Design Manager, Chief Engineer, Head of Engineering, Technical Director,
+                       Mechanical Design Engineer, NPI Manager, NPI Engineer,
+                       Applications Engineer, Project Engineer, Production Manager,
+                       Plant Manager, Manufacturing Engineering Manager, CAD/CAM Manager,
+                       # quoting a one-off IS the handoff, priced
+                       Estimator, Head of Estimating]
+    icp_out_of_scope:
+      - >-
+        high-volume repeat manufacturers, where the engineering was done once and is re-run.
+        This is the specific failure that produced the first 26 contacts in this tier: sourced
+        from the founder's 1st-degree network, they are Tesla, Ford, Nissan, Intel and
+        Schaeffler, which is the opposite of the scope. Low-rate aerospace and defence,
+        project-based plant, precast and one-off build shops are NOT excluded by this line.
+      - >-
+        robotics and automation STARTUP founders. Nine of the ten hits in the founder's export
+        were these. They are peers and landscape signal, never demand.
+      - "assembly with no per-order engineering step"
+      - "consultants and manufacturing software vendors — expert tier only, never demand"
+      - "students, graduates and interns — no budget, no history, no rate to state"
+      - >-
+        NOT an exclusion, a priority (founder, 2026-09-05): very large firms are acceptable
+        but are not the best first option. Prefer companies small enough that the person
+        answering still walks past the machines. Only the high-volume-repeat line above
+        actually excludes anyone on size-adjacent grounds.
+
+    icp_verification_rule: >-
+      VERIFY THE PROFILE BEFORE THE INVITE GOES OUT — not before the first message, and not
+      after they accept. Founder rule, 2026-09-05. The check is against the vertical and the
+      production shape declared above, never against how the job title sounds. Measured
+      2026-09-05: of 26 contacts that passed a company-and-title screen, 13 failed on volume
+      and four more failed only on the live profile read — a radar systems lead, an offshore
+      construction manager, a wind-blade process head and a two-month-tenure consultant, all
+      of whom had clean titles. Titles are the least reliable field on LinkedIn. A card whose
+      company is recorded as "(name not pinned down)" has not been verified at all.
+
+  - id: H0A2
+    assumption: >-
+      The party carrying that cost would pay to remove it, rather than absorbing it as the
+      price of speed.
+    hunch: belief
+    category: buyer
+    lens: desirability
+    validation_track: customer_adoption
+    why_it_matters: >-
+      The node that can kill this, and the only evidence on it is negative. A quantified pain
+      whose owner declines to remove it is the harder case, not the encouraging one. It is
+      separated from H0A1 because the first operator asked answered YES to the pain and NO to
+      paying, in the same message — proof the two questions have different answers and must
+      never be averaged into one verdict.
+    importance: high
+    quadrant: leap_of_faith
+    uncertainty_score: 5
+    kill_power: 5
+    test_cost: 1
+    test_method: founder
+    parent_assumptions: [H0A1]
+    child_assumptions: []
+    evidence_for: []
+    evidence_against: [E27]
+    status: weakly_contradicted
+    status_reason: >-
+      E27 only. One operator has consciously priced this and refuses: ship fast, repair on the
+      floor, and dedicated checkers are "hard to justify the cost". What he refuses is a HUMAN
+      checker at human cost and he was never asked about a cheap one — but read as revealed
+      behaviour it is still a no, and it is the only answer on record.
+    next_action: >-
+      Ask what they have already TRIED, never what they would buy. "Has anyone ever been put on
+      checking drawings before release?" and "what happened?" Tried-and-abandoned and
+      never-attempted point at opposite conclusions. Only after that, and only after they have
+      told a story about a bad one, ask what it would have been worth to catch it.
+    disconfirmation: >-
+      If four of six HMLV operators, asked what they have actually done about it, name no
+      attempt and reject a cheap remedy, then the pain is real and unsellable to this buyer.
+      That does not kill the belief — it re-aims it at a different party or a different point
+      in the chain, and it should do so before more outreach is spent here.
+    stop_rule: "Stop after 6 operator conversations that reached this question."
+    icp_segment: >-
+      The same people as H0A1, filtered to band 2 — those who could authorise spending against
+      it: budget holders, owners, and managers who decide whether verification headcount
+      exists. Band 1 can describe the pain but never prices it, so a band-1 answer here is
+      opinion, not evidence.
+    icp_valid_verticals: [aerospace_space, medical_devices, industrial_machinery,
+                          sheet_metal_and_machining, specialised_electronics]   # vocab: hmlv_verticals
+    icp_valid_tiers:
+      - {name: machine_builder, side: demand}
+      - {name: job_shop_fabricator, side: demand}
+      - {name: manufacturing_operations, side: demand}
+    domain_data_sources: []
+    icp_valid_titles: [Owner, Managing Director, General Manager, Engineering Manager,
+                       Head of Engineering, Technical Director, Operations Director,
+                       Plant Manager, Production Manager, Head of Estimating]
+    icp_out_of_scope:
+      - "anyone without budget authority — they can describe the pain but not price it"
+      - "high-volume repeat manufacturers, per H0A1"
+      - "robotics and automation startup founders, per H0A1"
 
   - id: H3A4
     assumption: >-

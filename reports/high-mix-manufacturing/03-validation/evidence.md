@@ -1,7 +1,7 @@
 ---
 purpose: The evidence ledger for this idea — every graded claim, linked to the assumption it moves and the direction it moves it.
 idea: high-mix-manufacturing
-last_updated: 2026-09-03
+last_updated: 2026-09-05
 ---
 
 # Evidence ledger — high-mix-manufacturing
@@ -934,5 +934,144 @@ entries:
       Ask someone who has been in the trade twenty years whether anyone ever tried to let the
       customer measure, and what happened. A single answer separates "untried" from "tried and
       failed", and it is the cheapest question on the list.
+  - id: E26
+    date: 2026-09-05
+    hunch: belief
+    assumption_linked: unassigned
+    verdict: supports
+    confidence: 4
+    source_type: founder_interview
+    source: >-
+      C122 Leonard, Sanyo - 27 years in the role, manages the design team whose output feeds
+      manufacture. Async text reply, founder-conducted, 2026-09-05. Full notes at
+      03-validation/belief-2026-09-05/interviews/leonard-sanyo-2026-09-05-notes.md
+    claim: >-
+      Design errors reaching manufacture run at roughly one per 50 manufactured details in
+      machine building - a 200-detail project sees four, and most machines carry at least 50
+      manufactured components. The rate is not random: it trades directly against designer
+      speed. Designers who produce almost no errors across 200 details habitually run at
+      110-125% of budgeted hours, and designers who finish under budget make errors at roughly
+      double the rate.
+    why_it_matters: >-
+      The first quantified rate this idea has for link 1 of the belief, from the segment the
+      belief was drawn from, given without being pushed for it. It also converts the pain from
+      a defect rate into a PRICE: accuracy is currently bought with hours, and the exchange
+      rate is 10-25% of a program's budget. That is the number any software claiming to close
+      the handoff has to beat, and it exists whether or not anyone counts the errors.
+    limits: >-
+      n=1, and every figure is a recalled estimate rather than a query against a system -
+      nothing in the message says Sanyo tracks these. The speed/accuracy correlation may be
+      Leonard's model of his own team rather than a property of the work. "Detail" is his unit
+      and is not defined; it is assumed to mean an individually manufactured component. Machine
+      building, not window coverings: this may not be cited against any H3 node.
+    next: >-
+      Ask a second machine builder for the same two numbers before treating either as a base
+      rate. Then ask Leonard whether 1-in-50 is felt or tracked.
+
+  - id: E27
+    date: 2026-09-05
+    hunch: belief
+    assumption_linked: unassigned
+    verdict: contradicts
+    confidence: 4
+    source_type: founder_interview
+    source: >-
+      Same message and same contact as E26. Split into its own entry because it grades a
+      different claim in the opposite direction.
+    claim: >-
+      The party carrying this cost has consciously priced it and declines to remove it. Sanyo's
+      standing policy is to get machines to manufacturing as fast as possible and repair on the
+      floor. The known remedy - dedicated checkers verifying all dimensional information before
+      release - is named unprompted and rejected as "hard to justify the cost". The deployed
+      control is not process but hiring: designers falling outside the speed/accuracy band are
+      replaced. In his words, "I accept the small mistakes and the time required to take care
+      of those small mistakes."
+    why_it_matters: >-
+      A quantified pain that its owner refuses to pay to remove is the harder case, not the
+      encouraging one, and it lands on the same nerve as H3A3 in a different industry: the cost
+      is real, measured, and absorbed. It also names the substitute and its failure mode -
+      verification priced as a full-time person never clears the bar, which is the fixed-cost
+      argument in belief.md arriving from the buyer's own mouth rather than from a paper.
+    limits: >-
+      What is refused is a HUMAN checker at human cost; nothing here prices a cheap one, and he
+      was never asked. His acceptance is also load-bearing for a 27-year professional identity,
+      which is the kind of position that moves when the price does and not before. Read as
+      revealed behaviour it is still a no: what he does is accept the errors. Whether the
+      refusal survives a cheaper remedy is untested and is the next question, not this entry's.
+    next: >-
+      Sent 2026-09-05: whether checkers were ever actually run or only ever costed, and what
+      the last non-small error cost. Tried-and-failed and never-attempted point at opposite
+      conclusions, and this message cannot tell them apart.
+
+  - id: E28
+    date: 2026-09-05
+    hunch: belief
+    assumption_linked: unassigned
+    verdict: ambiguous
+    confidence: 2
+    source_type: founder_interview
+    source: >-
+      Joseph Garza (C123), owner, Advanced Machine Program & Design MFG., Santa Clara. LinkedIn
+      reply on 2026-08-31 to a Msg 1 sent 2026-08-25.
+    claim: >-
+      Asked where the margin on a new job goes between the quote and the first good part, a job
+      shop owner answers entirely in estimating terms: "speed, complexity of the part and
+      features, outside processes like Plating or Anodizing. All these have to come into factor
+      before sending out a quote." He names the differentiators as experience, being a high
+      performing shop, quality, and solving customers' problems. No number, no specific job, and
+      no mention of drawings, models, files or anything arriving from the customer.
+    why_it_matters: >-
+      The first answer this idea has from someone who sets the price and then has to hit it. It
+      puts the risk at estimating time and on work that leaves the building, which is a
+      competing explanation for where a job's margin goes and one the belief has to beat rather
+      than assume away. Outside processes are also the one item on his list that is a handoff to
+      another party, which is the shape link 1 predicts, arriving without the vocabulary.
+    limits: >-
+      Generic DM commentary, not a recalled job, and every clause of it would survive being
+      written by any shop owner in the country, which is why this is a 2. He was never asked
+      about what the customer sends or what is missing from it, so the absence of the
+      information handoff from his answer is not evidence that it costs him nothing. n=1, and
+      the question itself was framed in margin terms, which invites an estimating answer.
+    next: >-
+      The same question, now asked on a call rather than in a DM: the last job whose margin came
+      out worse than quoted, and what he found out about the part after the price had gone out. A
+      specific job is the only thing that turns this from commentary into evidence. Read anything
+      he says after 2026-09-05 with the reveal in mind, since the Msg 2 the founder chose to send
+      states what is being built before he has named a job.
+
+  - id: E29
+    date: 2026-09-05
+    hunch: belief
+    assumption_linked: unassigned
+    verdict: ambiguous
+    confidence: 4
+    source_type: founder_interview
+    source: >-
+      Shane Duncan (C125), CNC Programming Supervisor, B&B Manufacturing. LinkedIn reply
+      2026-08-26, answering which step between the print landing and a good first part backs up
+      most often for his group.
+    claim: >-
+      "I would say most jobs get held up the most in the quality department." Asked to name the
+      bottleneck between a print arriving and a good first part coming off the machine, the man
+      who supervises the programmers puts it after the machining, in inspection, and says it is
+      most jobs rather than the difficult ones.
+    why_it_matters: >-
+      The first answer this idea has to the prove-out question from someone who can see every job
+      his group runs. It puts the constraint on the CHECK rather than on the cutting or the
+      program, which is the half of the belief that says a person has to stand there and verify
+      what the software produced. It also relocates where the money would be: if the queue is in
+      inspection, then anything that makes a part self-evidently right pays out in the quality
+      department's calendar, not in cycle time.
+    limits: >-
+      Ambiguous because two very different mechanisms produce the same sentence and this one
+      sentence cannot separate them. Reading A, the one the belief predicts: jobs sit because
+      verifying a new part against what the customer specified is slow and manual. Reading B, the
+      ordinary operations answer: the quality department is understaffed or the CMM is a shared
+      bottleneck, which would be true whatever the software did. No mechanism, no duration, no
+      cost, and no job named. "Most jobs" is his quantifier, not a measurement.
+    next: >-
+      Drafted 2026-09-05, unsent: on the last new part that sat in quality, what it was actually
+      waiting on and roughly how long it sat. The answer separates reading A from reading B, and
+      until it does this entry cannot move any node.
 
 ```

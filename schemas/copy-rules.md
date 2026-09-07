@@ -39,6 +39,14 @@ reports instead of sending. Unapproved messages remain founder-sent by hand, alw
 "Send without a note". A note is message text riding on an irreversible send, so it falls
 under the message ban.
 
+**But ONLY to a contact whose live profile has been read and recorded (founder rule,
+2026-09-05).** An invite is irreversible and carries the founder's name, so it is gated on
+the same verification as copy — a title and a company name are not enough, and "we can
+qualify them if they accept" is not a plan. The verification procedure is authored once, in
+`startup-outreach-targets` → "The live-profile gate"; do not restate it here. A contact whose
+`notes:` carry no dated profile read stays `pending` and is not invited, by Claude or by a
+batch Claude prepares.
+
 **LR-B29 — First invites NEVER carry copy (founder rule, 2026-08-24).** A 2nd/3rd-degree
 first touch is a bare connection request, always — no connection note, whether Claude
 clicks it or the founder does. Connection notes are retired entirely: the first copy any

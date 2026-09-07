@@ -7,6 +7,12 @@ last_updated: 2026-09-02
 
 # H2A1 — LinkedIn copy
 
+> **Seven blocks below are marked `[REMOVED superseded 2026-09-05]`.** Those contacts were
+> redrafted on the MCP framing and their live copy now lives in `H1-H2-linkedin.md`. The text
+> stays here as the record of what was drafted under the H2 framing and never sent; the marker
+> is what stops two files claiming to author the same contact's copy.
+
+
 All Msg 1. Every contact below is **1st-degree**, so each is a direct DM, no invite (LR-B29
 does not apply). Every factual claim was taken from a live profile snapshot on 2026-09-02
 (LR-B6) and each experience detail page was fetched separately (LR-B13).
@@ -27,7 +33,7 @@ research frame before the grounded clause (LR-B17).
 
 ---
 
-## C1 · Charles Evans · Boeing
+## C1 · [REMOVED superseded 2026-09-05, redrafted on the MCP framing in H1-H2-linkedin.md] Charles Evans · Boeing
 
 status: drafted, not sent · close_variant: soft_ask · 410 chars
 
@@ -48,7 +54,7 @@ the longest.
 
 ---
 
-## C3 · Can Tafulcan · formerly LyondellBasell
+## C3 · [REMOVED superseded 2026-09-05, redrafted on the MCP framing in H1-H2-linkedin.md] Can Tafulcan · formerly LyondellBasell
 
 status: drafted, not sent · close_variant: soft_ask · 358 chars · **written in Turkish**
 
@@ -71,7 +77,7 @@ bonus (`sourcing_bias_cap`).
 
 ---
 
-## C4 · Margaux Ratcliff · Viasat
+## C4 · [REMOVED superseded 2026-09-05, redrafted on the MCP framing in H1-H2-linkedin.md] Margaux Ratcliff · Viasat
 
 status: drafted, not sent · close_variant: soft_ask · 436 chars
 
@@ -87,7 +93,7 @@ status: drafted, not sent · close_variant: soft_ask · 436 chars
 
 ---
 
-## C5 · Heath Holtz · Kohler Co.
+## C5 · [REMOVED superseded 2026-09-05, redrafted on the MCP framing in H1-H2-linkedin.md] Heath Holtz · Kohler Co.
 
 status: drafted, not sent · close_variant: soft_ask · 433 chars · **senior register (LR-B5)**
 
@@ -106,7 +112,7 @@ Founder should confirm before sending.
 
 ---
 
-## C10 · Mia Huff · DePuy Synthes
+## C10 · [REMOVED superseded 2026-09-05, redrafted on the MCP framing in H1-H2-linkedin.md] Mia Huff · DePuy Synthes
 
 status: drafted, not sent · close_variant: soft_ask · 406 chars
 
@@ -126,7 +132,7 @@ actually done.
 
 ---
 
-## C15 · Grace Reed · Deeplocal
+## C15 · [REMOVED superseded 2026-09-05, redrafted on the MCP framing in H1-H2-linkedin.md] Grace Reed · Deeplocal
 
 status: drafted, not sent · close_variant: soft_ask · 377 chars
 
@@ -205,7 +211,7 @@ own problem rather than ours (LR-B28).
 
 ---
 
-## C28 · Bonnie Yang · Boeing
+## C28 · [REMOVED superseded 2026-09-05, redrafted on the MCP framing in H1-H2-linkedin.md] Bonnie Yang · Boeing
 
 status: drafted, not sent · close_variant: soft_ask · 376 chars
 

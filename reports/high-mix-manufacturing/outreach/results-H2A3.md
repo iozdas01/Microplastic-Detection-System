@@ -4,11 +4,11 @@
 -->
 # Outreach results — H2A3 · high-mix-manufacturing
 
-_Generated 2026-09-04. Numbers are the funnel over contacts tagged H2A3._
+_Generated 2026-09-06. Numbers are the funnel over contacts tagged H2A3._
 
 | channel | targeted | contacted | replied | qualified replied | reply rate |
 |---|---|---|---|---|---|
-| LinkedIn | 23 | 1 | 1 | 1 | 100.0% |
+| LinkedIn | 13 | 4 | 1 | 1 | 25.0% |
 | phone | 0 | 0 | 0 | 0 | — |
 
 _Channels are counted separately._
@@ -17,26 +17,16 @@ _Channels are counted separately._
 
 | id | name | status | call stage |
 |---|---|---|---|
-| C20 | Viliam Kacerik | replied | offered_by_contact |
-| C1 | Charles Evans | held | none |
-| C12 | Blossom Tariro Kafumbata | held | none |
-| C13 | ADESH KUMAR | held | none |
-| C14 | Moussa Chidiac | held | none |
-| C15 | Grace Reed | held | none |
+| C20 | Viliam Kacerik | replied | asked_by_founder |
 | C16 | Awase Mustafa | held | none |
 | C19 | Ken Lee | held | none |
 | C2 | Matthew Cliffe | held | none |
-| C21 | Samir Oliveira | held | none |
-| C22 | Efe BEK | held | none |
-| C28 | Bonnie Yang | held | none |
-| C29 | Mostafa Elzamar | held | none |
-| C3 | Can Tafulcan | held | none |
-| C30 | Engin Sengezer | held | none |
-| C32 | Matt Havard | held | none |
-| C33 | Michael Wallis | held | none |
-| C34 | Chris Tagnon | held | none |
-| C37 | Oliver Junnila | held | none |
-| C5 | Heath Holtz | held | none |
-| C6 | Akshaya Satish | held | none |
-| C7 | Haroon Tahir | held | none |
-| C8 | Clynton Thoresson | held | none |
+| C29 | Mostafa Elzamar | off_scope | none |
+| C30 | Engin Sengezer | off_scope | none |
+| C32 | Matt Havard | off_scope | none |
+| C33 | Michael Wallis | off_scope | none |
+| C7 | Haroon Tahir | off_scope | none |
+| C8 | Clynton Thoresson | off_scope | none |
+| C3 | Can Tafulcan | msg1_sent | none |
+| C37 | Oliver Junnila | msg1_sent | none |
+| C5 | Heath Holtz | msg1_sent | none |

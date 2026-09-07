@@ -4,11 +4,11 @@
 -->
 # Outreach results — H2A1 · high-mix-manufacturing
 
-_Generated 2026-09-04. Numbers are the funnel over contacts tagged H2A1._
+_Generated 2026-09-06. Numbers are the funnel over contacts tagged H2A1._
 
 | channel | targeted | contacted | replied | qualified replied | reply rate |
 |---|---|---|---|---|---|
-| LinkedIn | 38 | 1 | 1 | 1 | 100.0% |
+| LinkedIn | 25 | 7 | 1 | 1 | 14.3% |
 | phone | 0 | 0 | 0 | 0 | — |
 
 _Channels are counted separately._
@@ -17,41 +17,28 @@ _Channels are counted separately._
 
 | id | name | status | call stage |
 |---|---|---|---|
-| C20 | Viliam Kacerik | replied | offered_by_contact |
-| C1 | Charles Evans | held | none |
-| C10 | Mia Huff | held | none |
-| C11 | Ruilong Ma, Ph.D. | held | none |
-| C12 | Blossom Tariro Kafumbata | held | none |
-| C13 | ADESH KUMAR | held | none |
-| C14 | Moussa Chidiac | held | none |
-| C15 | Grace Reed | held | none |
+| C20 | Viliam Kacerik | replied | asked_by_founder |
 | C16 | Awase Mustafa | held | none |
-| C17 | Priyadharshni Baskaran | held | none |
 | C18 | Kwan Mok | held | none |
 | C19 | Ken Lee | held | none |
 | C2 | Matthew Cliffe | held | none |
-| C21 | Samir Oliveira | held | none |
-| C22 | Efe BEK | held | none |
 | C23 | Lauren Gwin | held | none |
-| C24 | Regu Nammalwar | held | none |
-| C25 | Enoch Koech | held | none |
-| C26 | Howard Chu | held | none |
-| C27 | Olgac Aker | held | none |
-| C28 | Bonnie Yang | held | none |
-| C29 | Mostafa Elzamar | held | none |
-| C3 | Can Tafulcan | held | none |
-| C30 | Engin Sengezer | held | none |
-| C31 | Bismenjeet Singh | held | none |
-| C32 | Matt Havard | held | none |
-| C33 | Michael Wallis | held | none |
-| C34 | Chris Tagnon | held | none |
-| C35 | Tom Cho | held | none |
-| C36 | Jia Wei, Ph.D. | held | none |
-| C37 | Oliver Junnila | held | none |
-| C38 | Eric Yoshikawa, MBA, MAM | held | none |
-| C4 | Margaux Ratcliff | held | none |
-| C5 | Heath Holtz | held | none |
-| C6 | Akshaya Satish | held | none |
-| C7 | Haroon Tahir | held | none |
-| C8 | Clynton Thoresson | held | none |
-| C9 | Peter Macron | held | none |
+| C17 | Priyadharshni Baskaran | off_scope | none |
+| C25 | Enoch Koech | off_scope | none |
+| C26 | Howard Chu | off_scope | none |
+| C27 | Olgac Aker | off_scope | none |
+| C29 | Mostafa Elzamar | off_scope | none |
+| C30 | Engin Sengezer | off_scope | none |
+| C32 | Matt Havard | off_scope | none |
+| C33 | Michael Wallis | off_scope | none |
+| C35 | Tom Cho | off_scope | none |
+| C36 | Jia Wei, Ph.D. | off_scope | none |
+| C38 | Eric Yoshikawa, MBA, MAM | off_scope | none |
+| C7 | Haroon Tahir | off_scope | none |
+| C8 | Clynton Thoresson | off_scope | none |
+| C10 | Mia Huff | msg1_sent | none |
+| C11 | Ruilong Ma, Ph.D. | msg1_sent | none |
+| C3 | Can Tafulcan | msg1_sent | none |
+| C37 | Oliver Junnila | msg1_sent | none |
+| C4 | Margaux Ratcliff | msg1_sent | none |
+| C5 | Heath Holtz | msg1_sent | none |

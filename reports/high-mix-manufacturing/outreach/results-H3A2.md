@@ -4,11 +4,11 @@
 -->
 # Outreach results — H3A2 · high-mix-manufacturing
 
-_Generated 2026-09-04. Numbers are the funnel over contacts tagged H3A2._
+_Generated 2026-09-06. Numbers are the funnel over contacts tagged H3A2._
 
 | channel | targeted | contacted | replied | qualified replied | reply rate |
 |---|---|---|---|---|---|
-| LinkedIn | 19 | 3 | 0 | 0 | 0.0% |
+| LinkedIn | 16 | 1 | 0 | 0 | 0.0% |
 | phone | 4 | 4 | 4 | 4 | 100.0% |
 
 _Channels are counted separately._
@@ -22,7 +22,6 @@ _Channels are counted separately._
 | C105 | Steven Chiang | invited | none |
 | C108 | Javier Bustamante Martinez | invited | none |
 | C109 | Heather Barrows | invited | none |
-| C110 | Armando Pedraza | invited | none |
 | C111 | Abubakr Abushanab | invited | none |
 | C116 | Vivek Rao | invited | none |
 | C39 | Suhey Perez | invited | none |
@@ -33,10 +32,8 @@ _Channels are counted separately._
 | C54 | Dustin Hayes | invited | none |
 | C55 | Christopher Vermont | invited | none |
 | C95 | Marcelo Mazzafera | invited | none |
-| C106 | Fernando Antonio Martinez Almaraz | accepted | none |
-| C107 | Julio Tinajero | accepted | none |
-| C117 | Praveen Perfeito | accepted | none |
 | C90 | Stoneside Blinds and Shades | replied | completed |
 | C91 | National blinds retailer | replied | completed |
 | C92 | Art Shade Shop | replied | completed |
 | C93 | Susan Lind Chastain Inc | replied | completed |
+| C110 | Armando Pedraza | msg1_sent | none |

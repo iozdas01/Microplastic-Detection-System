@@ -4,7 +4,8 @@ idea: high-mix-manufacturing
 campaign: cambridge-reconnect-2026-09
 created: 2026-09-02
 channel: email
-status: drafted_not_sent
+status: active
+last_updated: 2026-09-04
 ---
 
 # Cambridge reconnect — recovering the Universal Wolf contact
@@ -216,3 +217,65 @@ pitch. The sequence is intro → conversation → reason to keep talking → ask
   researcher can push back on, which is what makes a reply likely.
 - **No owned-factory commitment, no "vibe manufacturing", no LOI, no market size.** Per the H3
   pitch rules and E1's standing note.
+
+---
+
+## E3 · Dr Sam Brooks — reply to his answer on E2 · `sjb351@cam.ac.uk`
+
+Added 2026-09-04. Sam replied to E2: named the constraint ("you need machines with an API or
+another controllable interface — this might exclude lots of older machines"), put in a request
+to trial MHS in the DIAL lab, and named the professor — **Karel Kruger**, Associate Professor
+in Automation Systems at the IfM, ex-Stellenbosch, holonic and multi-agent manufacturing
+systems, SOHOMA exec committee. Kruger has agreed to a call; Sam offered a joint intro and
+asked whether to join himself.
+
+**Answer his question first: yes.** He holds DIAL on one side and the thesis on the other.
+
+**The founder's instinct — "a chip that encodes the machine's abilities" — is a resource
+holon** (PROSA, Van Brussel et al., 1998), which is Kruger's own tradition. Sent as "a chip"
+it invites a reply explaining a 1998 paper. Sent as "why did it never leave the lab cell" it
+invites the answer only he has.
+
+**Subject:** Re: MHS, and the professor you mentioned
+
+> Hi Sam,
+>
+> Yes please to both — the intro, and to you joining the call.
+>
+> And I hope the lab request lands. That's the result I want most: not what works on kit
+> somebody picked for a demo, but what breaks on kit nobody did. Tell me either way, even if
+> it's a no.
+>
+> On your point, you're right — though I think "no API" is three different problems. A closed
+> control (FOCAS, Heidenhain, or just an RS-232 port someone drip-feeds through) is a retrofit
+> box and people already sell those. A manual lathe has a person as its interface and nothing
+> changes that. The interesting one is the machines that will tell you everything and won't be
+> written to. MTConnect has retrofitted the first case since 2008 and is read-only by design,
+> which makes me think the constraint was never the connection.
+>
+> That's what I want to ask Karel. My instinct was to bridge it with something on the machine
+> that publishes what it can do — but that's a resource holon, and his field has had that since
+> the nineties without it leaving the lab cell. I'd like to know which half stopped it: writing
+> the description, or nobody being willing to let the thing write back. Stuttgart now has LLM
+> agents generating Asset Administration Shells from vendor datasheets at 62-79%, so if it was
+> the description that has just got cheap. If it was the write path, no protocol fixes it and
+> MHS won't either.
+>
+> Whenever suits you both. I'll work to UK time.
+>
+> Best,
+> Izgin
+
+### Claim by claim
+
+| Claim | Source |
+|---|---|
+| MTConnect retrofits machine data since 2008, read-only by design, no write-back | Standard's design scope; verified 2026-09-04 ([MMS](https://www.mmsonline.com/columns/the-difference-between-mtconnect-and-opc-ua), [PTC](https://www.ptc.com/en/technologies/iiot/industrial-automation/mtconnect)). External, not in the ledger |
+| A machine publishing its own capabilities is a resource holon, late 1990s | PROSA, Van Brussel/Wyns/Valckenaers, *Computers in Industry* 1998 |
+| Stuttgart: LLM agents generate AAS from datasheets at 62-79%, code public | arXiv 2403.17209 · `research-map.md` batch 5 |
+| Retrofit gateways for FOCAS/Heidenhain/RS-232 are sold today | Category fact; no product named on purpose |
+
+Cut from the draft and held for the call, not lost: the Helmut Schmidt bet (arXiv 2506.11180 —
+skip the capability model, expose resource functions over MCP, published three months before
+MHS) and the window-coverings demand test. No $225, no market size, no LOI, no "vibe
+manufacturing". Do not send this in the same thread as the E1 Universal Wolf chase.

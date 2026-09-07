@@ -25,6 +25,8 @@ No paid API, no MCP. Always exhaust source 1 before touching source 2 — browsi
 - `icp_valid_tiers` — allowed tier values for this idea, each tagged with a `side`
 - `icp_valid_titles` — whitelisted role titles
 - `icp_out_of_scope` — explicit rejects (industries, company types, role types)
+- `icp_valid_verticals` — when declared, the industry list the company itself must sit in
+- `icp_verification_rule` — when declared, an idea-specific gate ON TOP of the ones below
 
 **Before adding ANY contact to `contacts.md`, verify:**
 1. Contact's `tier` ∈ `icp_valid_tiers` for the target assumption
@@ -32,6 +34,40 @@ No paid API, no MCP. Always exhaust source 1 before touching source 2 — browsi
 3. Contact has a `validation_rationale` explaining WHY this specific person can validate this specific assumption (not "domain-adjacent" or "might intro" — a named specific pain visibility)
 
 If the assumption doesn't have ICP fields filled in `graph.md`, **STOP and ask the founder to declare the ICP first**. Don't infer it from the assumption text — declared ICP is the durable contract.
+
+### The live-profile gate — HARD RULE, applies BEFORE the invite
+
+**No contact is invited on the strength of a title and a company name. Read the live profile
+first, and check it against the assumption's declared industry properties — not against how
+the role sounds.** This gate sits before the INVITE, not before the first message. An invite
+is an irreversible outward action carrying the founder's name; "we can qualify them if they
+accept" spends the founder's reputation to buy information a profile visit gives away free,
+and it fills the queue with people who will never answer the question being asked.
+
+Measured, and why this is a rule rather than advice: on one batch of 26 contacts that had all
+passed a company-and-title screen, **half failed** — four on nothing but the live read. A
+systems lead doing radar integration; an operations manager whose plant was construction; a
+process head whose product was moulded in series; someone two months into the role running a
+consultancy selling to the same buyers. Every one had a clean, in-ICP job title.
+
+What the profile must establish, in this order — stop at the first failure:
+
+1. **The company's industry matches `icp_valid_verticals`.** A company whose name or line of
+   business is not established is NOT verified; a card recording the employer as "(name not
+   pinned down)" has failed this check, not passed it.
+2. **The company's production shape matches the assumption** — batch size, whether engineering
+   is per-order or done once and re-run, whether the site builds or only assembles. No title
+   carries this, and it is the check that fails most often.
+3. **The person's function actually touches the thing being tested.** Design-analysis,
+   research, integration and site-construction roles frequently carry manufacturing-sounding
+   titles while never seeing the work the assumption is about.
+4. **Tenure is long enough to have a history.** Someone weeks into a role can describe a
+   process but has no incidents of their own, and incidents are the evidence.
+5. **They are not a competitor or a peer founder** wearing an operator's title.
+
+Record what the visit revealed in `notes:` with the date, whether the contact passes or fails.
+An unverified contact stays `pending` and is never invited; write down what is missing so the
+next pass can finish it rather than re-doing it.
 
 ## Post-write audit — MANDATORY
 

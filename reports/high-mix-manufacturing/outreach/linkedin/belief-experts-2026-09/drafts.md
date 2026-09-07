@@ -2,7 +2,7 @@
 purpose: Msg 1 LinkedIn copy for the belief-level expert track, with the traceability behind every claim.
 idea: high-mix-manufacturing
 track: belief-experts
-last_updated: 2026-09-02
+last_updated: 2026-09-05
 ---
 
 # Belief-experts — LinkedIn Msg 1
@@ -191,3 +191,52 @@ And the closing line, on every call that goes well:
 
 
 *(432 chars, cap 450.)*
+
+---
+
+## 2026-09-05 — the framing the founder is actually sending
+
+Recorded from the founder's own LinkedIn inbox on 2026-09-05, not drafted here. Twenty-four
+threads carried a message that evening and morning, and the opener had changed. This section
+exists because the copy in this repo no longer matches the copy in the field, and the field
+copy is the one the reply rate will be measured on.
+
+**The shape, from two verbatim sends:**
+
+> Paul hi! I wrote to you as a student in 2020, so this is overdue.
+>
+> I am building the MCP layer for machines in manufacturing, after a year at Cambridge on why
+> design software and machines never share one thread. What I want to know is whether that gap
+> shows up in rework rates. You have built coded cryogenic vessels and ISO tanks at Wessington
+> for thirty five years, thirty one running it. Would you be open to a few questions for my
+> research?
+
+> Bismenjeet hi! Thanks for connecting. I am working on the MCP layer for machines in
+> manufacturing, after a year at Cambridge on why design software and the machines never share
+> one thread. What I want to know is whether that gap shows up in rework rates on made-to-order
+> work. You design space radar boards at Northrop and send drawing packages out to vendors for
+> quotes and lead times yourself. Would you be open to a few questions for my research?
+
+**What changed, structurally.** The grounded clause and the permission close are unchanged and
+still per-contact. Two things are new:
+
+1. **The founder now says what they are building in Msg 1.** "I am building the MCP layer for
+   machines in manufacturing" is a solution statement, and `copy/H3-discovery-pitch.md` section 1
+   says the thesis is deflected once and given only when asked twice, because a contact who has
+   heard it reacts to the idea instead of reporting what happened. That rule is now being
+   overridden by default rather than per contact. **Grade every reply in this wave accordingly:
+   what comes back is a response to a proposition.**
+2. **The question moved from a bottleneck to a rate.** "Whether that gap shows up in rework
+   rates" asks for a number rather than a story, and it names the mechanism before they do. It
+   is a sharper question and a more leading one at the same time.
+
+**"MCP" is being sent to people outside the repo's vocabulary.** It is an acronym for a
+protocol most of these recipients have never met. Whether that reads as credible or as noise is
+now an open empirical question with about twenty threads running on it, so it is worth watching
+rather than correcting: if the reply rate holds, the acronym is not the problem it looks like.
+
+**Do not treat this section as approved copy.** It is a record of what went out, written so
+that the next reply round knows what the contact was actually told. If the founder wants this
+framing to become the standard, it belongs in `schemas/copy-rules.md` as an amendment with the
+product-reveal rule updated to match, not left as a divergence between the archive and the
+field.
