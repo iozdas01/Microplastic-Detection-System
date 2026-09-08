@@ -4,11 +4,11 @@
 -->
 # Outreach results — H3A1 · high-mix-manufacturing
 
-_Generated 2026-09-06. Numbers are the funnel over contacts tagged H3A1._
+_Generated 2026-09-08. Numbers are the funnel over contacts tagged H3A1._
 
 | channel | targeted | contacted | replied | qualified replied | reply rate |
 |---|---|---|---|---|---|
-| LinkedIn | 62 | 6 | 0 | 0 | 0.0% |
+| LinkedIn | 102 | 6 | 0 | 0 | 0.0% |
 | phone | 5 | 5 | 5 | 5 | 100.0% |
 
 _Channels are counted separately._
@@ -17,11 +17,49 @@ _Channels are counted separately._
 
 | id | name | status | call stage |
 |---|---|---|---|
+| C190 | Patricia Salazar | pending | none |
+| C196 | Lee Bozier-Lown | pending | none |
+| C202 | Jeston Fernandes | pending | none |
+| C203 | David Hernandez | pending | none |
+| C204 | Oscar Acuna Cordero | pending | none |
+| C205 | Hugo Padilla | pending | none |
+| C206 | Valeria Camacho Fallas | pending | none |
+| C207 | Mac Jones | pending | none |
+| C208 | Leopoldo Sanchez IV | pending | none |
+| C209 | Troy Gentry | pending | none |
+| C210 | Satheesh Chemmala | pending | none |
+| C211 | Robert Krajcirik | pending | none |
+| C212 | William R Roman | pending | none |
+| C213 | Erik Alfonso Munoz Elizalde | pending | none |
+| C214 | Javier Bustamante Martinez | pending | none |
+| C215 | Ivan Castillo | pending | none |
+| C216 | Maria Antonieta Ochoa Vejar | pending | none |
+| C217 | Adrian Guerra | pending | none |
+| C218 | Arnoldo Garcia | pending | none |
+| C219 | Erica Frazier | pending | none |
+| C220 | Jeffery Hull | pending | none |
+| C221 | Evan Lang | pending | none |
+| C222 | Dave Littlewood | pending | none |
+| C223 | Steve Hind | pending | none |
+| C224 | Ross Rhoades | pending | none |
+| C225 | Jason Curtis | pending | none |
+| C226 | Steven Mondrush | pending | none |
 | C102 | Casey Ogden | invited | none |
 | C105 | Steven Chiang | invited | none |
 | C111 | Abubakr Abushanab | invited | none |
 | C112 | James McLaughlin | invited | none |
 | C116 | Vivek Rao | invited | none |
+| C186 | Tom Burns | invited | none |
+| C187 | Israel De la Cerda Villar | invited | none |
+| C188 | Dave Hardy | invited | none |
+| C189 | Erick Alvarez Barrios | invited | none |
+| C191 | Jessica Thompson | invited | none |
+| C192 | Steven Chiang | invited | none |
+| C193 | Ranjan Mada | invited | none |
+| C194 | James McLaughlin | invited | none |
+| C197 | Rodolfo Angelelli | invited | none |
+| C200 | Luigi Parini | invited | none |
+| C201 | Alexis Matamoros Vega | invited | none |
 | C39 | Suhey Perez | invited | none |
 | C40 | Paul Stuart | invited | none |
 | C41 | Zac Dellicompagni | invited | none |
@@ -78,6 +116,8 @@ _Channels are counted separately._
 | C92 | Art Shade Shop | replied | completed |
 | C93 | Susan Lind Chastain Inc | replied | completed |
 | C94 | Family-run window covering owners (aggregate) | replied | completed |
+| C195 | Craig Paradisi | off_scope | none |
+| C198 | Soumia Imediazen | off_scope | none |
 | C103 | Rose Mauloni | msg1_sent | none |
 | C106 | Fernando Antonio Martinez Almaraz | msg1_sent | none |
 | C107 | Julio Tinajero | msg1_sent | none |

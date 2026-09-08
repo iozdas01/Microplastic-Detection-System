@@ -2,8 +2,8 @@
 idea_slug: high-mix-manufacturing
 belief_file: input-context/high-mix-manufacturing/belief.md
 active_hunch: H3
-next_hunch_id: H4
-last_updated: 2026-09-03
+next_hunch_id: H5
+last_updated: 2026-09-07
 purpose: The hunch lineage for this idea — which falsifiable interpretation of the belief is under test, and why.
 ---
 
@@ -217,3 +217,76 @@ online share.
   tolerance and out-of-square windows.
 - Source: `recon/2026-09-03-window-coverings/findings.md`. Review samples are self-selected
   and describe the tail, not the distribution.
+
+## H4
+
+status: proposed
+validation_status: untested
+parent_hunch: H3
+created: 2026-09-07
+created_by: drift-check (startup-outreach-reply)
+change_reason: >-
+  Two contradicting entries now sit against H3's MECHANISM clause, and a third trigger fired
+  at the same time. E30: asked whether blinds arrive not matching the customer's
+  measurements, a UK installations manager rejected the premise and said what the survey is
+  actually for — obstructions, how a given blind has to operate, per-product clearance. E32:
+  the same source named the incumbent fix for the intent gap and dosed it at six months of
+  training per technician plus factory floor time, with no tool involved. Separately, the
+  founder's own outgoing messages on 2026-09-07 tested rework rate and margin, which is the
+  belief-level framing and appears nowhere in H3's statement.
+  H3 keeps the observation (the category stays a home-visit business) and loses the reason.
+  This proposal changes ONLY the mechanism clause; segment, lane and entry point are H3's.
+evidence_delta: [E30, E32]
+
+### Lane and entry point
+
+Unchanged from H3. Lane: made-to-measure furniture and interiors. Entry point: window
+coverings.
+
+### Statement
+
+Made-to-measure window coverings stay a home-visit business because what the visit produces
+is a fit judgement rather than a number — which product can operate in this opening, what
+obstructions are in the way, how much clearance the mechanism needs — and that judgement is
+what cannot be sent down the wire. A verified dimension does not carry it.
+
+_Grounding: "customers don't always know to look out for obstructions or understand how some
+blinds need to operate or fit. Different blinds require more space" — Richard Jones (C43),
+verbatim, E30. The clauses "fit judgement rather than a number" and "cannot be sent down the
+wire" are AGENT-PHRASED and need the founder's word before they stand._
+
+### Components
+
+- Segment: unchanged from H3 and still unknown. E30 adds one candidate the H3 framing did not
+  distinguish: the vertically integrated seller who surveys, manufactures and installs, and
+  therefore never experiences the handoff H3 was built around.
+- Problem: the constraint on remote selling is not that the number might be wrong, it is that
+  a correct number is insufficient. AGENT-PHRASED.
+- Mechanism: product-fit constraints (obstruction, operating clearance, stack space, per-product
+  minimums) live in a trained person's head and are applied at the window. Nothing in the order
+  carries them, which is the same shape as the belief's "machines don't register manufacturing
+  intent", one step upstream of the machine.
+- Why now: UNVERIFIED, and weaker than H3's. H3 could at least point at depth-capable phones.
+  A fit-judgement hunch needs a reason those constraints became encodable recently, and no
+  candidate answer has been written. This is the clause most likely to sink the proposal.
+- Existing workaround: **six months of technician training plus factory floor exposure**, which
+  a UK operator says works and pays for itself (E32). This is the first named incumbent
+  solution in the H3 lane that its own user says SUCCEEDS, and any version of this hunch has
+  to beat it, not ignore it.
+- Plausible buyer: unknown, and the training answer makes it harder — a firm that has already
+  paid for six-month ramps has bought the fix and retains the asset.
+- Cheapest next test: the same-or-different fork, asked of every seller already in the H3 pool.
+  Is the list of things that catch a customer out the same list at every window, or a different
+  one every time? Same means the judgement is a rule set and encodable. Different means it is
+  irreducibly a person's, and this hunch is a consultancy at best.
+- Hunch disconfirmation: if sellers describe the fit call as different at every window, or if
+  they rank fabric, colour or installation above fit judgement as the reason people do not buy
+  online, this dies alongside H3A5 rather than replacing it.
+
+### Evidence
+
+- Supports: nothing yet. E30 supports the mechanism only in the sense that it contradicts H3's.
+- Contradicts: not tested.
+- Still unknown: everything. **n=1, one market, one company, one conversation, and the half of
+  it that named training arrived after the founder disclosed what she was looking for.** This
+  proposal exists so the finding is not lost, not because it is established.

@@ -1,0 +1,253 @@
+{
+  "components": 166,
+  "exact_boolean_checks": 228,
+  "positive_contacts": [
+    {
+      "a": "01_flow_chamber",
+      "b": "fitting_sample_in",
+      "intersection_mm3": 4.938584,
+      "explanation": "Nominal male thread overlaps mating tap-drill envelope; female helix not modelled"
+    },
+    {
+      "a": "01_flow_chamber",
+      "b": "fitting_backwash",
+      "intersection_mm3": 4.938584,
+      "explanation": "Nominal male thread overlaps mating tap-drill envelope; female helix not modelled"
+    },
+    {
+      "a": "02_filtrate_chamber",
+      "b": "lower_retainer_screw_1",
+      "intersection_mm3": 4.516869,
+      "explanation": "Nominal male thread overlaps mating tap-drill envelope; female helix not modelled"
+    },
+    {
+      "a": "02_filtrate_chamber",
+      "b": "lower_retainer_screw_2",
+      "intersection_mm3": 4.516869,
+      "explanation": "Nominal male thread overlaps mating tap-drill envelope; female helix not modelled"
+    },
+    {
+      "a": "02_filtrate_chamber",
+      "b": "lower_retainer_screw_3",
+      "intersection_mm3": 4.516869,
+      "explanation": "Nominal male thread overlaps mating tap-drill envelope; female helix not modelled"
+    },
+    {
+      "a": "02_filtrate_chamber",
+      "b": "lower_retainer_screw_4",
+      "intersection_mm3": 4.516869,
+      "explanation": "Nominal male thread overlaps mating tap-drill envelope; female helix not modelled"
+    },
+    {
+      "a": "02_filtrate_chamber",
+      "b": "fitting_filtrate_out",
+      "intersection_mm3": 4.938584,
+      "explanation": "Nominal male thread overlaps mating tap-drill envelope; female helix not modelled"
+    },
+    {
+      "a": "fitting_sample_in",
+      "b": "tube_sample_in",
+      "intersection_mm3": 2.250806,
+      "explanation": "Flexible tube interference over tapered barbs"
+    },
+    {
+      "a": "fitting_backwash",
+      "b": "tube_backwash",
+      "intersection_mm3": 2.250806,
+      "explanation": "Flexible tube interference over tapered barbs"
+    },
+    {
+      "a": "fitting_filtrate_out",
+      "b": "tube_filtrate_out",
+      "intersection_mm3": 2.250806,
+      "explanation": "Flexible tube interference over tapered barbs"
+    },
+    {
+      "a": "11_led_heat_sink",
+      "b": "pcb_screw_1",
+      "intersection_mm3": 1.843211,
+      "explanation": "Nominal male thread overlaps mating tap-drill envelope; female helix not modelled"
+    },
+    {
+      "a": "11_led_heat_sink",
+      "b": "pcb_screw_2",
+      "intersection_mm3": 1.204742,
+      "explanation": "Nominal male thread overlaps mating tap-drill envelope; female helix not modelled"
+    },
+    {
+      "a": "11_led_heat_sink",
+      "b": "clamp_screw_m6x70_1",
+      "intersection_mm3": 53.754555,
+      "explanation": "Nominal male thread overlaps mating tap-drill envelope; female helix not modelled"
+    },
+    {
+      "a": "11_led_heat_sink",
+      "b": "clamp_screw_m6x70_2",
+      "intersection_mm3": 53.754555,
+      "explanation": "Nominal male thread overlaps mating tap-drill envelope; female helix not modelled"
+    },
+    {
+      "a": "11_led_heat_sink",
+      "b": "clamp_screw_m6x70_3",
+      "intersection_mm3": 53.754555,
+      "explanation": "Nominal male thread overlaps mating tap-drill envelope; female helix not modelled"
+    },
+    {
+      "a": "11_led_heat_sink",
+      "b": "clamp_screw_m6x70_4",
+      "intersection_mm3": 53.754555,
+      "explanation": "Nominal male thread overlaps mating tap-drill envelope; female helix not modelled"
+    },
+    {
+      "a": "led_ceramic_01",
+      "b": "led_dome_01",
+      "intersection_mm3": 0.119649,
+      "explanation": "LED encapsulant seats 0.02 mm into its ceramic package"
+    },
+    {
+      "a": "led_ceramic_02",
+      "b": "led_dome_02",
+      "intersection_mm3": 0.119649,
+      "explanation": "LED encapsulant seats 0.02 mm into its ceramic package"
+    },
+    {
+      "a": "led_ceramic_03",
+      "b": "led_dome_03",
+      "intersection_mm3": 0.119649,
+      "explanation": "LED encapsulant seats 0.02 mm into its ceramic package"
+    },
+    {
+      "a": "led_ceramic_04",
+      "b": "led_dome_04",
+      "intersection_mm3": 0.119649,
+      "explanation": "LED encapsulant seats 0.02 mm into its ceramic package"
+    },
+    {
+      "a": "led_ceramic_05",
+      "b": "led_dome_05",
+      "intersection_mm3": 0.119649,
+      "explanation": "LED encapsulant seats 0.02 mm into its ceramic package"
+    },
+    {
+      "a": "led_ceramic_06",
+      "b": "led_dome_06",
+      "intersection_mm3": 0.119649,
+      "explanation": "LED encapsulant seats 0.02 mm into its ceramic package"
+    },
+    {
+      "a": "led_ceramic_07",
+      "b": "led_dome_07",
+      "intersection_mm3": 0.119649,
+      "explanation": "LED encapsulant seats 0.02 mm into its ceramic package"
+    },
+    {
+      "a": "led_ceramic_08",
+      "b": "led_dome_08",
+      "intersection_mm3": 0.119649,
+      "explanation": "LED encapsulant seats 0.02 mm into its ceramic package"
+    },
+    {
+      "a": "led_ceramic_09",
+      "b": "led_dome_09",
+      "intersection_mm3": 0.119649,
+      "explanation": "LED encapsulant seats 0.02 mm into its ceramic package"
+    },
+    {
+      "a": "led_ceramic_10",
+      "b": "led_dome_10",
+      "intersection_mm3": 0.119649,
+      "explanation": "LED encapsulant seats 0.02 mm into its ceramic package"
+    },
+    {
+      "a": "led_ceramic_11",
+      "b": "led_dome_11",
+      "intersection_mm3": 0.119649,
+      "explanation": "LED encapsulant seats 0.02 mm into its ceramic package"
+    },
+    {
+      "a": "led_ceramic_12",
+      "b": "led_dome_12",
+      "intersection_mm3": 0.119649,
+      "explanation": "LED encapsulant seats 0.02 mm into its ceramic package"
+    },
+    {
+      "a": "led_ceramic_13",
+      "b": "led_dome_13",
+      "intersection_mm3": 0.119649,
+      "explanation": "LED encapsulant seats 0.02 mm into its ceramic package"
+    },
+    {
+      "a": "led_ceramic_14",
+      "b": "led_dome_14",
+      "intersection_mm3": 0.119649,
+      "explanation": "LED encapsulant seats 0.02 mm into its ceramic package"
+    },
+    {
+      "a": "led_ceramic_15",
+      "b": "led_dome_15",
+      "intersection_mm3": 0.119649,
+      "explanation": "LED encapsulant seats 0.02 mm into its ceramic package"
+    },
+    {
+      "a": "led_ceramic_16",
+      "b": "led_dome_16",
+      "intersection_mm3": 0.119649,
+      "explanation": "LED encapsulant seats 0.02 mm into its ceramic package"
+    },
+    {
+      "a": "led_ceramic_17",
+      "b": "led_dome_17",
+      "intersection_mm3": 0.119649,
+      "explanation": "LED encapsulant seats 0.02 mm into its ceramic package"
+    },
+    {
+      "a": "led_ceramic_18",
+      "b": "led_dome_18",
+      "intersection_mm3": 0.119649,
+      "explanation": "LED encapsulant seats 0.02 mm into its ceramic package"
+    },
+    {
+      "a": "led_ceramic_19",
+      "b": "led_dome_19",
+      "intersection_mm3": 0.119649,
+      "explanation": "LED encapsulant seats 0.02 mm into its ceramic package"
+    },
+    {
+      "a": "19_focus_ring",
+      "b": "focus_lock_screw",
+      "intersection_mm3": 2.553274,
+      "explanation": "Nominal focus-lock screw thread overlaps its tap-drill envelope"
+    },
+    {
+      "a": "22_camera_housing",
+      "b": "camera_cover_screw_1",
+      "intersection_mm3": 3.242776,
+      "explanation": "Nominal male thread overlaps mating tap-drill envelope; female helix not modelled"
+    },
+    {
+      "a": "22_camera_housing",
+      "b": "camera_cover_screw_2",
+      "intersection_mm3": 3.242776,
+      "explanation": "Nominal male thread overlaps mating tap-drill envelope; female helix not modelled"
+    },
+    {
+      "a": "22_camera_housing",
+      "b": "camera_cover_screw_3",
+      "intersection_mm3": 3.242776,
+      "explanation": "Nominal male thread overlaps mating tap-drill envelope; female helix not modelled"
+    },
+    {
+      "a": "22_camera_housing",
+      "b": "camera_cover_screw_4",
+      "intersection_mm3": 3.242776,
+      "explanation": "Nominal male thread overlaps mating tap-drill envelope; female helix not modelled"
+    },
+    {
+      "a": "22_camera_housing",
+      "b": "camera_id_plate",
+      "intersection_mm3": 27.04,
+      "explanation": "Bonded label plate is seated into housing surface"
+    }
+  ],
+  "unexpected": []
+}

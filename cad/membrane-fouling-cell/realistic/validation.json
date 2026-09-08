@@ -1,0 +1,93 @@
+{
+  "component_count": 166,
+  "solid_count": 166,
+  "units": "mm",
+  "datum": "Membrane top Z=0; optical axis +Z",
+  "all_breps_valid": true,
+  "critical_interference_checks": [
+    {
+      "a": "01_flow_chamber",
+      "b": "02_filtrate_chamber",
+      "intersection_mm3": 0
+    },
+    {
+      "a": "01_flow_chamber",
+      "b": "03_window_retainer",
+      "intersection_mm3": 0
+    },
+    {
+      "a": "01_flow_chamber",
+      "b": "04_upper_quartz_window",
+      "intersection_mm3": 0
+    },
+    {
+      "a": "01_flow_chamber",
+      "b": "06_membrane_carrier",
+      "intersection_mm3": 0
+    },
+    {
+      "a": "03_window_retainer",
+      "b": "04_upper_quartz_window",
+      "intersection_mm3": 0
+    },
+    {
+      "a": "03_window_retainer",
+      "b": "05_window_cushion",
+      "intersection_mm3": 0
+    },
+    {
+      "a": "02_filtrate_chamber",
+      "b": "09_lower_quartz_window",
+      "intersection_mm3": 0
+    },
+    {
+      "a": "09_lower_quartz_window",
+      "b": "lower_window_seal",
+      "intersection_mm3": 0
+    },
+    {
+      "a": "06_membrane_carrier",
+      "b": "07_membrane_sheet",
+      "intersection_mm3": 0
+    },
+    {
+      "a": "06_membrane_carrier",
+      "b": "08_membrane_support_screen",
+      "intersection_mm3": 0
+    },
+    {
+      "a": "07_membrane_sheet",
+      "b": "08_membrane_support_screen",
+      "intersection_mm3": 0
+    },
+    {
+      "a": "11_led_heat_sink",
+      "b": "14_led_array_board",
+      "intersection_mm3": 0
+    },
+    {
+      "a": "11_led_heat_sink",
+      "b": "12_polariser_rotation_ring",
+      "intersection_mm3": 0
+    },
+    {
+      "a": "10_lower_window_retainer",
+      "b": "12_polariser_rotation_ring",
+      "intersection_mm3": 0
+    },
+    {
+      "a": "15_diffuser",
+      "b": "12_polariser_rotation_ring",
+      "intersection_mm3": 0
+    }
+  ],
+  "screw_tip_clearance_mm": 1.1,
+  "thread_engagement_envelope_mm": 12.9,
+  "nominal_window_pad_mm": 0.3,
+  "errors": [],
+  "limits": [
+    "Geometry/packaging review only; no pressure, optical, thermal or seal qualification.",
+    "Purchased-part dimensions and cosmetic thread geometry are representative.",
+    "Compact reference layout omits an external camera support and focus stage."
+  ]
+}

@@ -4,17 +4,17 @@
 -->
 ---
 slug: high-mix-manufacturing
-generated: 2026-09-06T03:16Z
+generated: 2026-09-08T00:49Z
 lifecycle: active
 active_hunch: H3
 active_assumption: H3A4
 sources:
   belief: 57d36bf439d8
-  lineage: 4f5be1ae15c7
-  graph: 1df31c3755b4
-  evidence: 695c1111a273
+  lineage: 75f67086516a
+  graph: cfba88593f76
+  evidence: 28caca3489ed
   offerings: fa8f60094cb6
-  contacts: 3ed425b673c8
+  contacts: 293cb4c9f048
 ---
 
 # high-mix-manufacturing — session brief
@@ -35,7 +35,7 @@ _Founder-owned. Changes only with explicit confirmation._ → `input-context/hig
 
 Made-to-measure window coverings stay a home-visit business because nothing can verify a measurement except a person standing at the window, and that single step caps the category's online share.
 
-Lineage: H1 superseded · H2 superseded
+Lineage: H1 superseded · H2 superseded · H4 proposed
 
 ## Assumptions — top 3 of 8 by the declared ranking
 
@@ -51,22 +51,22 @@ _← = `active_assumption`. Ranking: leap-of-faith gate → DAG roots first → 
 
 ## Evidence
 
-**29 entries** · 9 supports / 9 contradicts / 11 ambiguous · latest 2026-09-05
+**32 entries** · 9 supports / 12 contradicts / 11 ambiguous · latest 2026-09-07
 
 For **H3A4**: 1 entries.
 
+- `E30` 2026-09-07 → **H3A5** (contradicts) — "We don't rely on customers measurements, we Survey ourselves. Reason being customers don't always know to look out for obstructions or understand ho…
+- `E31` 2026-09-07 → **H3A1** (contradicts) — "We manufacture our own blinds and the process we use works very well, our remedial rate is very very low." No figure, no period, no denominator. "Re…
+- `E32` 2026-09-07 → **H3A5** (contradicts) — Asked nothing about solutions, he named one and dosed it: "heavily investing in training our field team + the factory technicians makes a huge differ…
 - `E26` 2026-09-05 → **unassigned** (supports) — Design errors reaching manufacture run at roughly one per 50 manufactured details in machine building - a 200-detail project sees four, and most mach…
-- `E27` 2026-09-05 → **unassigned** (contradicts) — The party carrying this cost has consciously priced it and declines to remove it. Sanyo's standing policy is to get machines to manufacturing as fast…
-- `E28` 2026-09-05 → **unassigned** (ambiguous) — Asked where the margin on a new job goes between the quote and the first good part, a job shop owner answers entirely in estimating terms: "speed, co…
-- `E29` 2026-09-05 → **unassigned** (ambiguous) — "I would say most jobs get held up the most in the quality department." Asked to name the bottleneck between a print arriving and a good first part c…
 
 ## Outreach
 
-**177 targeted** · 35 contacted · 9 replied · 6 call-progressed · 0 scheduled
+**218 targeted** · 35 contacted · 10 replied · 6 call-progressed · 0 scheduled
 
-Reply rate 25.7% of contacted · reply→call 66.7%
+Reply rate 28.6% of contacted · reply→call 60.0%
 
-By assumption: H0A1 2/7 replied · H0A2 0/1 replied · H2A1 1/7 replied · H2A2 0/5 replied · H2A3 1/4 replied · H3A1 0/6 replied · H3A2 0/1 replied · H3A3 0/2 replied · H3A4 2/6 replied · H3A5 0/4 replied
+By assumption: H0A1 2/7 replied · H0A2 0/1 replied · H2A1 1/7 replied · H2A2 0/5 replied · H2A3 1/4 replied · H3A1 0/6 replied · H3A2 0/1 replied · H3A3 0/2 replied · H3A4 3/6 replied · H3A5 0/4 replied
 
 ## What already exists for this idea
 
@@ -108,7 +108,7 @@ _Generated from the folder. Check here before creating a new artifact — if a f
 | `reports/high-mix-manufacturing/outreach/research-map-shortlist.csv` | — |
 | `reports/high-mix-manufacturing/outreach/research-map.md` | What each recent paper's METHOD reveals about where the design-to-machine handoff is actually being closed, who is closing it, and which of those tea… |
 | `reports/high-mix-manufacturing/outreach/results-*.md` | 10 generated files — rebuild them, never edit |
-| `reports/high-mix-manufacturing/outreach/target-list-audit-*.md` | 3 dated snapshots — latest 2026-09-05 · Target list audit — high-mix-manufacturing — 2026-09-05 |
+| `reports/high-mix-manufacturing/outreach/target-list-audit-*.md` | 4 dated snapshots — latest 2026-09-07 · Target list audit — high-mix-manufacturing — 2026-09-07 |
 | `reports/high-mix-manufacturing/outreach/copy/H0A1-linkedin.md` | Msg 1 LinkedIn copy for the belief-level H0A1 lane, with the live-snapshot source for every claim in it. |
 | `reports/high-mix-manufacturing/outreach/copy/H1-H2-linkedin.md` | LinkedIn copy for contacts in the superseded H1 and H2 lanes, kept because the threads are live even though the hunches are not. |
 | `reports/high-mix-manufacturing/outreach/copy/H2A1-linkedin.md` | Sent and drafted LinkedIn copy for H2A1, with the traceability behind every claim. |

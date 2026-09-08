@@ -7,7 +7,7 @@ hunch_id: H3
 # it is used instead of a bare A{n} because flat IDs are the retired form.
 belief_level_prefix: H0
 belief_file: input-context/high-mix-manufacturing/belief.md
-last_updated: 2026-09-05
+last_updated: 2026-09-07
 active_assumption: H3A4
 
 # Idea-owned market vocabulary. Bands are the OBSERVABLE proxy (LinkedIn company
@@ -312,12 +312,23 @@ assumptions:
     child_assumptions: [H3A6]
     evidence_for: []
     evidence_against: []
-    status: untested
+    status: weakly_contradicted
+    status_reason: >-
+      E30 at confidence 4 is the first practitioner account of what the visit is for, and it
+      is not measurement: a UK installations manager rejects the customer-number premise
+      outright and names obstructions, operating clearance and per-product space as what
+      catches customers out. E32 adds that his firm closed the same intent gap with a
+      six-month training ramp rather than with any tool. Nothing supports the node. Weak
+      rather than killed because n=1, one market, and he was never asked to RANK measurement
+      against fabric, colour and installation, which is what the node actually requires.
+      Set 2026-09-07 from the ledger.
     next_action: >-
       Ask sellers who do both: "what makes someone buy in the showroom rather than on the
       site?" Rank what they say. Measurement has to come first or near it, unprompted. Then
       ask the online-only sellers the mirror question — what their customers get wrong, and
-      whether it is dimensions or colour.
+      whether it is dimensions or colour. Add the same-or-different fork to every one of
+      these after E30: is the list of things that catch customers out the same list at every
+      window, or a different one every time?
     disconfirmation: >-
       If sellers rank fabric, colour or installation above measurement as the reason people
       do not buy online, measurement is not the constraint and the hunch is wrong about
@@ -416,13 +427,20 @@ assumptions:
     child_assumptions: [H3A2, H3A3]
     evidence_for: []
     evidence_against: []
-    status: untested
+    status: weakly_contradicted
     status_reason: >-
-      Back to `untested` on 2026-09-03. It briefly read `weakly_supported` on the strength of
-      E8 and E11, but on re-reading, neither entry is about a remake RATE: E8 reports a
+      Set 2026-09-07. Was `untested` from 2026-09-03: it briefly read `weakly_supported` on
+      the strength of E8 and E11, but neither entry is about a remake RATE — E8 reports a
       measuring-visit fee and refused jobs (now linked to H3A4) and E11 is a prompted
-      hypothetical about software (now H3A6). Nobody has given a rate, so nothing supports the
-      claim this node actually makes.
+      hypothetical about software (now H3A6). E31 is now the first entry that speaks to the
+      rate and it denies one exists ("our remedial rate is very very low"), so by the
+      vocabulary this is one contradicting entry against none supporting. Read it narrowly.
+      E31 carries NO number, so the rate this node asks for is still unmeasured; it is graded
+      2 because it followed the founder naming rework and margin as her subject; and the
+      speaker's firm manufactures and installs under one roof, which is exactly the case this
+      node's own why_it_matters says is symmetric — a seller who surveys to keep the rate low
+      produces a low rate whether or not the hunch is right. Nothing here has moved the
+      hunch; it has moved the status field only.
     next_action: >-
       Ask manufacturers and dealers about the last remake they did before asking for a rate.
       "Walk me through the last remake. What went wrong, and where was the error made?" then

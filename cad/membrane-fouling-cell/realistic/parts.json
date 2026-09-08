@@ -1,0 +1,4360 @@
+{
+  "materials": {
+    "aluminium": {
+      "color": "#bfc6cb",
+      "metalness": 0.82,
+      "roughness": 0.29
+    },
+    "edge_metal": {
+      "color": "#d9dfe2",
+      "metalness": 0.91,
+      "roughness": 0.19
+    },
+    "black_anodised": {
+      "color": "#23272b",
+      "metalness": 0.65,
+      "roughness": 0.29
+    },
+    "rubber_grip": {
+      "color": "#141719",
+      "metalness": 0.05,
+      "roughness": 0.66
+    },
+    "stainless": {
+      "color": "#bfc6cd",
+      "metalness": 0.97,
+      "roughness": 0.21
+    },
+    "seal": {
+      "color": "#a84922",
+      "metalness": 0.0,
+      "roughness": 0.69
+    },
+    "quartz": {
+      "color": "#dcf2f4",
+      "metalness": 0.0,
+      "roughness": 0.06,
+      "transmission": 0.93,
+      "ior": 1.46,
+      "opacity": 0.27
+    },
+    "optical_glass": {
+      "color": "#81afa9",
+      "metalness": 0.12,
+      "roughness": 0.07,
+      "transmission": 0.8,
+      "ior": 1.5,
+      "opacity": 0.55
+    },
+    "polarising_glass": {
+      "color": "#64767c",
+      "metalness": 0.1,
+      "roughness": 0.09,
+      "transmission": 0.7,
+      "ior": 1.5,
+      "opacity": 0.6
+    },
+    "ptfe": {
+      "color": "#f2f0e6",
+      "metalness": 0.0,
+      "roughness": 0.8
+    },
+    "membrane": {
+      "color": "#e8e4d7",
+      "metalness": 0.0,
+      "roughness": 0.95
+    },
+    "pcb": {
+      "color": "#e1e5dd",
+      "metalness": 0.05,
+      "roughness": 0.5
+    },
+    "green_pcb": {
+      "color": "#184a3c",
+      "metalness": 0.05,
+      "roughness": 0.55
+    },
+    "gold": {
+      "color": "#b9954e",
+      "metalness": 0.8,
+      "roughness": 0.3
+    },
+    "ceramic": {
+      "color": "#deddd4",
+      "metalness": 0.0,
+      "roughness": 0.48
+    },
+    "led": {
+      "color": "#bff696",
+      "metalness": 0.05,
+      "roughness": 0.14,
+      "emissive": "#60e426",
+      "emissiveIntensity": 1.6
+    },
+    "diffuser": {
+      "color": "#e5efd9",
+      "metalness": 0.0,
+      "roughness": 0.78,
+      "transmission": 0.35,
+      "opacity": 0.63
+    },
+    "silicone": {
+      "color": "#c9e0df",
+      "metalness": 0.0,
+      "roughness": 0.15,
+      "transmission": 0.82,
+      "ior": 1.41,
+      "opacity": 0.32
+    },
+    "label": {
+      "color": "#30383c",
+      "metalness": 0.3,
+      "roughness": 0.5
+    }
+  },
+  "components": [
+    {
+      "name": "01_flow_chamber",
+      "material": "aluminium",
+      "group": "cell",
+      "explode": [
+        0,
+        0,
+        28
+      ],
+      "description": "90 mm body; 5 mm crossflow gap; two nominal 10-32 side ports",
+      "volume_mm3": 81803.44545,
+      "solids": 1,
+      "bbox": {
+        "min": [
+          -45.0,
+          -45.0,
+          -3.5000000000000004
+        ],
+        "max": [
+          45.0,
+          45.0,
+          11.0
+        ]
+      }
+    },
+    {
+      "name": "02_filtrate_chamber",
+      "material": "aluminium",
+      "group": "cell",
+      "explode": [
+        0,
+        0,
+        -17
+      ],
+      "description": "40 mm optical plenum, separate pressure window and outlet",
+      "volume_mm3": 130451.41309,
+      "solids": 1,
+      "bbox": {
+        "min": [
+          -45.0,
+          -45.0,
+          -23.5
+        ],
+        "max": [
+          45.0,
+          45.0,
+          -3.4999999
+        ]
+      }
+    },
+    {
+      "name": "03_window_retainer",
+      "material": "aluminium",
+      "group": "cell",
+      "explode": [
+        0,
+        0,
+        64
+      ],
+      "description": "Chamfered viewing aperture and recessed compliant window pad",
+      "volume_mm3": 53387.71625,
+      "solids": 1,
+      "bbox": {
+        "min": [
+          -45.0,
+          -45.0,
+          11.0
+        ],
+        "max": [
+          45.0,
+          45.0,
+          19.0
+        ]
+      }
+    },
+    {
+      "name": "04_upper_quartz_window",
+      "material": "quartz",
+      "group": "windows",
+      "explode": [
+        0,
+        0,
+        48
+      ],
+      "description": "63.5 \u00d7 6.35 mm fused-silica envelope",
+      "volume_mm3": 20109.95308,
+      "solids": 1,
+      "bbox": {
+        "min": [
+          -31.75,
+          -31.75,
+          5.0
+        ],
+        "max": [
+          31.75,
+          31.75,
+          11.35
+        ]
+      }
+    },
+    {
+      "name": "05_window_cushion",
+      "material": "ptfe",
+      "group": "seals",
+      "explode": [
+        0,
+        0,
+        57
+      ],
+      "description": "0.30 mm nominal compliant clamp pad",
+      "volume_mm3": 627.5135,
+      "solids": 1,
+      "bbox": {
+        "min": [
+          -31.75,
+          -31.75,
+          11.35
+        ],
+        "max": [
+          31.75,
+          31.75,
+          11.65
+        ]
+      }
+    },
+    {
+      "name": "06_membrane_carrier",
+      "material": "ptfe",
+      "group": "membrane",
+      "explode": [
+        0,
+        0,
+        7
+      ],
+      "description": "47 mm carrier with a separate membrane and support screen",
+      "volume_mm3": 1919.25343,
+      "solids": 1,
+      "bbox": {
+        "min": [
+          -23.5000001,
+          -23.5000001,
+          -3.5
+        ],
+        "max": [
+          23.5000001,
+          23.5000001,
+          1.0000002520206265e-07
+        ]
+      }
+    },
+    {
+      "name": "07_membrane_sheet",
+      "material": "membrane",
+      "group": "membrane",
+      "explode": [
+        0,
+        0,
+        12
+      ],
+      "description": "Representative sheet; 25 \u00d7 25 mm observation area fits the clear aperture",
+      "volume_mm3": 198.03815,
+      "solids": 1,
+      "bbox": {
+        "min": [
+          -20.5,
+          -20.5,
+          -0.15
+        ],
+        "max": [
+          20.5,
+          20.5,
+          0.0
+        ]
+      }
+    },
+    {
+      "name": "08_membrane_support_screen",
+      "material": "stainless",
+      "group": "membrane",
+      "explode": [
+        0,
+        0,
+        4
+      ],
+      "description": "Illustrative 2 mm pitch support screen; pore/support design unverified",
+      "volume_mm3": 55.82148,
+      "solids": 1,
+      "bbox": {
+        "min": [
+          -20.5,
+          -20.5,
+          -0.35
+        ],
+        "max": [
+          20.5,
+          20.5,
+          -0.15
+        ]
+      }
+    },
+    {
+      "name": "09_lower_quartz_window",
+      "material": "quartz",
+      "group": "windows",
+      "explode": [
+        0,
+        0,
+        -29
+      ],
+      "description": "Pressure window separates filtrate from dry polariser",
+      "volume_mm3": 6080.48975,
+      "solids": 1,
+      "bbox": {
+        "min": [
+          -25.4,
+          -25.4,
+          -23.5
+        ],
+        "max": [
+          25.4,
+          25.4,
+          -20.5
+        ]
+      }
+    },
+    {
+      "name": "10_lower_window_retainer",
+      "material": "black_anodised",
+      "group": "windows",
+      "explode": [
+        0,
+        0,
+        -36
+      ],
+      "description": "",
+      "volume_mm3": 2823.93208,
+      "solids": 1,
+      "bbox": {
+        "min": [
+          -35.0,
+          -35.0,
+          -24.7
+        ],
+        "max": [
+          35.0,
+          35.0,
+          -23.5
+        ]
+      }
+    },
+    {
+      "name": "lower_retainer_screw_1",
+      "material": "stainless",
+      "group": "fasteners",
+      "explode": [
+        0,
+        0,
+        -41
+      ],
+      "description": "",
+      "volume_mm3": 81.53462,
+      "solids": 1,
+      "bbox": {
+        "min": [
+          29.35,
+          -2.6500000000000004,
+          -27.200000000000003
+        ],
+        "max": [
+          34.65,
+          2.65,
+          -18.7
+        ]
+      }
+    },
+    {
+      "name": "lower_retainer_screw_2",
+      "material": "stainless",
+      "group": "fasteners",
+      "explode": [
+        0,
+        0,
+        -41
+      ],
+      "description": "",
+      "volume_mm3": 81.53462,
+      "solids": 1,
+      "bbox": {
+        "min": [
+          -34.65,
+          -2.6500000000000004,
+          -27.200000000000003
+        ],
+        "max": [
+          -29.35,
+          2.65,
+          -18.7
+        ]
+      }
+    },
+    {
+      "name": "lower_retainer_screw_3",
+      "material": "stainless",
+      "group": "fasteners",
+      "explode": [
+        0,
+        0,
+        -41
+      ],
+      "description": "",
+      "volume_mm3": 81.53462,
+      "solids": 1,
+      "bbox": {
+        "min": [
+          -2.65,
+          29.35,
+          -27.200000000000003
+        ],
+        "max": [
+          2.65,
+          34.65,
+          -18.7
+        ]
+      }
+    },
+    {
+      "name": "lower_retainer_screw_4",
+      "material": "stainless",
+      "group": "fasteners",
+      "explode": [
+        0,
+        0,
+        -41
+      ],
+      "description": "",
+      "volume_mm3": 81.53462,
+      "solids": 1,
+      "bbox": {
+        "min": [
+          -2.65,
+          -34.65,
+          -27.200000000000003
+        ],
+        "max": [
+          2.65,
+          -29.35,
+          -18.7
+        ]
+      }
+    },
+    {
+      "name": "window_seal",
+      "material": "seal",
+      "group": "seals",
+      "explode": [
+        0,
+        0,
+        37
+      ],
+      "description": "Nominal compressed cross-section; seal chemistry and squeeze need specification",
+      "volume_mm3": 390.26027,
+      "solids": 1,
+      "bbox": {
+        "min": [
+          -27.1392001,
+          -27.1392001,
+          3.6649998999999998
+        ],
+        "max": [
+          27.1392001,
+          27.1392001,
+          5.0000001
+        ]
+      }
+    },
+    {
+      "name": "cell_face_seal",
+      "material": "seal",
+      "group": "seals",
+      "explode": [
+        0,
+        0,
+        20
+      ],
+      "description": "Nominal compressed cross-section; seal chemistry and squeeze need specification",
+      "volume_mm3": 910.54538,
+      "solids": 1,
+      "bbox": {
+        "min": [
+          -29.6768001,
+          -29.6768001,
+          -3.5000001
+        ],
+        "max": [
+          29.6768001,
+          29.6768001,
+          -1.5349999
+        ]
+      }
+    },
+    {
+      "name": "lower_window_seal",
+      "material": "seal",
+      "group": "seals",
+      "explode": [
+        0,
+        0,
+        -23
+      ],
+      "description": "Nominal compressed cross-section; seal chemistry and squeeze need specification",
+      "volume_mm3": 345.23023,
+      "solids": 1,
+      "bbox": {
+        "min": [
+          -24.1392001,
+          -24.1392001,
+          -20.5000001
+        ],
+        "max": [
+          24.1392001,
+          24.1392001,
+          -19.164999899999998
+        ]
+      }
+    },
+    {
+      "name": "fitting_sample_in",
+      "material": "stainless",
+      "group": "fluidics",
+      "explode": [
+        -25,
+        0,
+        28
+      ],
+      "description": "Hex shoulder, cosmetic male thread, hollow tapered barb",
+      "volume_mm3": 560.99918,
+      "solids": 1,
+      "bbox": {
+        "min": [
+          -63.7,
+          -5.196152422706633,
+          -2.3000000000000007
+        ],
+        "max": [
+          -40.3,
+          5.196152422706633,
+          6.700000000000004
+        ]
+      }
+    },
+    {
+      "name": "tube_sample_in",
+      "material": "silicone",
+      "group": "tubing",
+      "explode": [
+        -25,
+        0,
+        28
+      ],
+      "description": "Flexible silicone tube stub; interference over barbs is intentional",
+      "volume_mm3": 512.61367,
+      "solids": 1,
+      "bbox": {
+        "min": [
+          -82.0,
+          -3.3,
+          -1.0999999999999979
+        ],
+        "max": [
+          -54.0,
+          3.3,
+          5.500000000000008
+        ]
+      }
+    },
+    {
+      "name": "fitting_backwash",
+      "material": "stainless",
+      "group": "fluidics",
+      "explode": [
+        25,
+        0,
+        28
+      ],
+      "description": "Hex shoulder, cosmetic male thread, hollow tapered barb",
+      "volume_mm3": 560.99918,
+      "solids": 1,
+      "bbox": {
+        "min": [
+          40.3,
+          -5.196152422706633,
+          -2.300000000000001
+        ],
+        "max": [
+          63.7,
+          5.196152422706633,
+          6.700000000000002
+        ]
+      }
+    },
+    {
+      "name": "tube_backwash",
+      "material": "silicone",
+      "group": "tubing",
+      "explode": [
+        25,
+        0,
+        28
+      ],
+      "description": "Flexible silicone tube stub; interference over barbs is intentional",
+      "volume_mm3": 512.61367,
+      "solids": 1,
+      "bbox": {
+        "min": [
+          54.0,
+          -3.3,
+          -1.0999999999999979
+        ],
+        "max": [
+          82.0,
+          3.3,
+          5.500000000000008
+        ]
+      }
+    },
+    {
+      "name": "fitting_filtrate_out",
+      "material": "stainless",
+      "group": "fluidics",
+      "explode": [
+        25,
+        0,
+        -17
+      ],
+      "description": "Hex shoulder, cosmetic male thread, hollow tapered barb",
+      "volume_mm3": 560.99918,
+      "solids": 1,
+      "bbox": {
+        "min": [
+          40.3,
+          -5.196152422706633,
+          -14.000000000000002
+        ],
+        "max": [
+          63.7,
+          5.196152422706633,
+          -4.999999999999998
+        ]
+      }
+    },
+    {
+      "name": "tube_filtrate_out",
+      "material": "silicone",
+      "group": "tubing",
+      "explode": [
+        25,
+        0,
+        -17
+      ],
+      "description": "Flexible silicone tube stub; interference over barbs is intentional",
+      "volume_mm3": 512.61367,
+      "solids": 1,
+      "bbox": {
+        "min": [
+          54.0,
+          -3.3,
+          -12.799999999999997
+        ],
+        "max": [
+          82.0,
+          3.3,
+          -6.199999999999993
+        ]
+      }
+    },
+    {
+      "name": "11_led_heat_sink",
+      "material": "aluminium",
+      "group": "illumination",
+      "explode": [
+        0,
+        0,
+        -90
+      ],
+      "description": "Machined LED carrier with integral underside heat-sink channels",
+      "volume_mm3": 115599.85994,
+      "solids": 1,
+      "bbox": {
+        "min": [
+          -45.0,
+          -45.0,
+          -52.50000000000001
+        ],
+        "max": [
+          45.0,
+          45.0000001,
+          -36.4999999
+        ]
+      }
+    },
+    {
+      "name": "dry_gap_spacer_1",
+      "material": "stainless",
+      "group": "fasteners",
+      "explode": [
+        0,
+        0,
+        -74
+      ],
+      "description": "",
+      "volume_mm3": 783.90277,
+      "solids": 1,
+      "bbox": {
+        "min": [
+          -39.5,
+          -39.5,
+          -36.5
+        ],
+        "max": [
+          -28.5,
+          -28.5,
+          -23.5
+        ]
+      }
+    },
+    {
+      "name": "dry_gap_spacer_2",
+      "material": "stainless",
+      "group": "fasteners",
+      "explode": [
+        0,
+        0,
+        -74
+      ],
+      "description": "",
+      "volume_mm3": 783.90277,
+      "solids": 1,
+      "bbox": {
+        "min": [
+          28.5,
+          -39.5,
+          -36.5
+        ],
+        "max": [
+          39.5,
+          -28.5,
+          -23.5
+        ]
+      }
+    },
+    {
+      "name": "dry_gap_spacer_3",
+      "material": "stainless",
+      "group": "fasteners",
+      "explode": [
+        0,
+        0,
+        -74
+      ],
+      "description": "",
+      "volume_mm3": 783.90277,
+      "solids": 1,
+      "bbox": {
+        "min": [
+          -39.5,
+          28.5,
+          -36.5
+        ],
+        "max": [
+          -28.5,
+          39.5,
+          -23.5
+        ]
+      }
+    },
+    {
+      "name": "dry_gap_spacer_4",
+      "material": "stainless",
+      "group": "fasteners",
+      "explode": [
+        0,
+        0,
+        -74
+      ],
+      "description": "",
+      "volume_mm3": 783.90277,
+      "solids": 1,
+      "bbox": {
+        "min": [
+          28.5,
+          28.5,
+          -36.5
+        ],
+        "max": [
+          39.5,
+          39.5,
+          -23.5
+        ]
+      }
+    },
+    {
+      "name": "12_polariser_rotation_ring",
+      "material": "black_anodised",
+      "group": "polariser",
+      "explode": [
+        0,
+        0,
+        -53
+      ],
+      "description": "Scalloped rotating holder; mounted in dry optical gap",
+      "volume_mm3": 7683.62906,
+      "solids": 1,
+      "bbox": {
+        "min": [
+          -29.0000001,
+          -29.0000001,
+          -32.2
+        ],
+        "max": [
+          29.0000001,
+          29.0000001,
+          -25.6
+        ]
+      }
+    },
+    {
+      "name": "13_polariser",
+      "material": "polarising_glass",
+      "group": "polariser",
+      "explode": [
+        0,
+        0,
+        -53
+      ],
+      "description": "Representative laminated linear polariser",
+      "volume_mm3": 1161.76096,
+      "solids": 1,
+      "bbox": {
+        "min": [
+          -21.5,
+          -21.5,
+          -29.500000000000004
+        ],
+        "max": [
+          21.5,
+          21.5,
+          -28.700000000000003
+        ]
+      }
+    },
+    {
+      "name": "polariser_bezel_top",
+      "material": "black_anodised",
+      "group": "polariser",
+      "explode": [
+        0,
+        0,
+        -53
+      ],
+      "description": "",
+      "volume_mm3": 115.8368,
+      "solids": 1,
+      "bbox": {
+        "min": [
+          -21.5,
+          -21.5,
+          -28.700000000000003
+        ],
+        "max": [
+          21.5,
+          21.5,
+          -27.900000000000002
+        ]
+      }
+    },
+    {
+      "name": "polariser_bezel_bottom",
+      "material": "black_anodised",
+      "group": "polariser",
+      "explode": [
+        0,
+        0,
+        -53
+      ],
+      "description": "",
+      "volume_mm3": 115.8368,
+      "solids": 1,
+      "bbox": {
+        "min": [
+          -21.5,
+          -21.5,
+          -30.300000000000004
+        ],
+        "max": [
+          21.5,
+          21.5,
+          -29.500000000000004
+        ]
+      }
+    },
+    {
+      "name": "polariser_index_pin",
+      "material": "stainless",
+      "group": "polariser",
+      "explode": [
+        0,
+        0,
+        -53
+      ],
+      "description": "",
+      "volume_mm3": 36.94513,
+      "solids": 1,
+      "bbox": {
+        "min": [
+          -1.4,
+          -34.0,
+          -30.3
+        ],
+        "max": [
+          1.4,
+          -28.0,
+          -27.500000000000004
+        ]
+      }
+    },
+    {
+      "name": "polariser_retention_clip_45",
+      "material": "stainless",
+      "group": "polariser",
+      "explode": [
+        0,
+        0,
+        -45
+      ],
+      "description": "Representative spring retention clip; attachment detail to be specified",
+      "volume_mm3": 109.92,
+      "solids": 1,
+      "bbox": {
+        "min": [
+          18.03122292025696,
+          18.031222920256962,
+          -33.0
+        ],
+        "max": [
+          26.799347006970148,
+          26.79934700697015,
+          -24.7
+        ]
+      }
+    },
+    {
+      "name": "polariser_retention_clip_135",
+      "material": "stainless",
+      "group": "polariser",
+      "explode": [
+        0,
+        0,
+        -45
+      ],
+      "description": "Representative spring retention clip; attachment detail to be specified",
+      "volume_mm3": 109.92,
+      "solids": 1,
+      "bbox": {
+        "min": [
+          -26.79934700697015,
+          18.031222920256965,
+          -33.0
+        ],
+        "max": [
+          -18.03122292025696,
+          26.799347006970155,
+          -24.7
+        ]
+      }
+    },
+    {
+      "name": "polariser_retention_clip_225",
+      "material": "stainless",
+      "group": "polariser",
+      "explode": [
+        0,
+        0,
+        -45
+      ],
+      "description": "Representative spring retention clip; attachment detail to be specified",
+      "volume_mm3": 109.92,
+      "solids": 1,
+      "bbox": {
+        "min": [
+          -26.799347006970166,
+          -26.799347006970155,
+          -33.0
+        ],
+        "max": [
+          -18.031222920256972,
+          -18.031222920256962,
+          -24.7
+        ]
+      }
+    },
+    {
+      "name": "polariser_retention_clip_315",
+      "material": "stainless",
+      "group": "polariser",
+      "explode": [
+        0,
+        0,
+        -45
+      ],
+      "description": "Representative spring retention clip; attachment detail to be specified",
+      "volume_mm3": 109.92,
+      "solids": 1,
+      "bbox": {
+        "min": [
+          18.031222920256955,
+          -26.799347006970155,
+          -33.0
+        ],
+        "max": [
+          26.799347006970148,
+          -18.031222920256965,
+          -24.7
+        ]
+      }
+    },
+    {
+      "name": "14_led_array_board",
+      "material": "pcb",
+      "group": "illumination",
+      "explode": [
+        0,
+        0,
+        -84
+      ],
+      "description": "",
+      "volume_mm3": 2642.05429,
+      "solids": 1,
+      "bbox": {
+        "min": [
+          -23.0,
+          -23.0,
+          -40.5
+        ],
+        "max": [
+          23.0,
+          23.0,
+          -38.9
+        ]
+      }
+    },
+    {
+      "name": "led_ceramic_01",
+      "material": "ceramic",
+      "group": "illumination",
+      "explode": [
+        0,
+        0,
+        -84
+      ],
+      "description": "",
+      "volume_mm3": 6.62221,
+      "solids": 1,
+      "bbox": {
+        "min": [
+          -9.750000000000002,
+          -15.60640646055102,
+          -38.9
+        ],
+        "max": [
+          -6.25,
+          -12.106406460551016,
+          -38.35
+        ]
+      }
+    },
+    {
+      "name": "led_dome_01",
+      "material": "led",
+      "group": "illumination",
+      "explode": [
+        0,
+        0,
+        -84
+      ],
+      "description": "",
+      "volume_mm3": 5.50422,
+      "solids": 1,
+      "bbox": {
+        "min": [
+          -9.379999999999999,
+          -15.236406460551017,
+          -38.37
+        ],
+        "max": [
+          -6.62,
+          -12.476406460551019,
+          -36.989999999999995
+        ]
+      }
+    },
+    {
+      "name": "led_pad_01_-1",
+      "material": "gold",
+      "group": "illumination",
+      "explode": [
+        0,
+        0,
+        -84
+      ],
+      "description": "",
+      "volume_mm3": 0.12,
+      "solids": 1,
+      "bbox": {
+        "min": [
+          -10.55,
+          -15.106406460551018,
+          -38.9
+        ],
+        "max": [
+          -9.75,
+          -12.606406460551018,
+          -38.839999999999996
+        ]
+      }
+    },
+    {
+      "name": "led_pad_01_1",
+      "material": "gold",
+      "group": "illumination",
+      "explode": [
+        0,
+        0,
+        -84
+      ],
+      "description": "",
+      "volume_mm3": 0.12,
+      "solids": 1,
+      "bbox": {
+        "min": [
+          -6.25,
+          -15.106406460551018,
+          -38.9
+        ],
+        "max": [
+          -5.45,
+          -12.606406460551018,
+          -38.839999999999996
+        ]
+      }
+    },
+    {
+      "name": "led_ceramic_02",
+      "material": "ceramic",
+      "group": "illumination",
+      "explode": [
+        0,
+        0,
+        -84
+      ],
+      "description": "",
+      "volume_mm3": 6.62221,
+      "solids": 1,
+      "bbox": {
+        "min": [
+          -1.7500000000000002,
+          -15.60640646055102,
+          -38.9
+        ],
+        "max": [
+          1.7500000000000002,
+          -12.106406460551016,
+          -38.35
+        ]
+      }
+    },
+    {
+      "name": "led_dome_02",
+      "material": "led",
+      "group": "illumination",
+      "explode": [
+        0,
+        0,
+        -84
+      ],
+      "description": "",
+      "volume_mm3": 5.50422,
+      "solids": 1,
+      "bbox": {
+        "min": [
+          -1.38,
+          -15.236406460551017,
+          -38.37
+        ],
+        "max": [
+          1.38,
+          -12.476406460551019,
+          -36.989999999999995
+        ]
+      }
+    },
+    {
+      "name": "led_pad_02_-1",
+      "material": "gold",
+      "group": "illumination",
+      "explode": [
+        0,
+        0,
+        -84
+      ],
+      "description": "",
+      "volume_mm3": 0.12,
+      "solids": 1,
+      "bbox": {
+        "min": [
+          -2.55,
+          -15.106406460551018,
+          -38.9
+        ],
+        "max": [
+          -1.7499999999999998,
+          -12.606406460551018,
+          -38.839999999999996
+        ]
+      }
+    },
+    {
+      "name": "led_pad_02_1",
+      "material": "gold",
+      "group": "illumination",
+      "explode": [
+        0,
+        0,
+        -84
+      ],
+      "description": "",
+      "volume_mm3": 0.12,
+      "solids": 1,
+      "bbox": {
+        "min": [
+          1.75,
+          -15.106406460551018,
+          -38.9
+        ],
+        "max": [
+          2.55,
+          -12.606406460551018,
+          -38.839999999999996
+        ]
+      }
+    },
+    {
+      "name": "led_ceramic_03",
+      "material": "ceramic",
+      "group": "illumination",
+      "explode": [
+        0,
+        0,
+        -84
+      ],
+      "description": "",
+      "volume_mm3": 6.62221,
+      "solids": 1,
+      "bbox": {
+        "min": [
+          6.25,
+          -15.60640646055102,
+          -38.9
+        ],
+        "max": [
+          9.750000000000002,
+          -12.106406460551016,
+          -38.35
+        ]
+      }
+    },
+    {
+      "name": "led_dome_03",
+      "material": "led",
+      "group": "illumination",
+      "explode": [
+        0,
+        0,
+        -84
+      ],
+      "description": "",
+      "volume_mm3": 5.50422,
+      "solids": 1,
+      "bbox": {
+        "min": [
+          6.62,
+          -15.236406460551017,
+          -38.37
+        ],
+        "max": [
+          9.379999999999999,
+          -12.476406460551019,
+          -36.989999999999995
+        ]
+      }
+    },
+    {
+      "name": "led_pad_03_-1",
+      "material": "gold",
+      "group": "illumination",
+      "explode": [
+        0,
+        0,
+        -84
+      ],
+      "description": "",
+      "volume_mm3": 0.12,
+      "solids": 1,
+      "bbox": {
+        "min": [
+          5.449999999999999,
+          -15.106406460551018,
+          -38.9
+        ],
+        "max": [
+          6.249999999999999,
+          -12.606406460551018,
+          -38.839999999999996
+        ]
+      }
+    },
+    {
+      "name": "led_pad_03_1",
+      "material": "gold",
+      "group": "illumination",
+      "explode": [
+        0,
+        0,
+        -84
+      ],
+      "description": "",
+      "volume_mm3": 0.12,
+      "solids": 1,
+      "bbox": {
+        "min": [
+          9.75,
+          -15.106406460551018,
+          -38.9
+        ],
+        "max": [
+          10.55,
+          -12.606406460551018,
+          -38.839999999999996
+        ]
+      }
+    },
+    {
+      "name": "led_ceramic_04",
+      "material": "ceramic",
+      "group": "illumination",
+      "explode": [
+        0,
+        0,
+        -84
+      ],
+      "description": "",
+      "volume_mm3": 6.62221,
+      "solids": 1,
+      "bbox": {
+        "min": [
+          -13.750000000000002,
+          -8.678203230275509,
+          -38.9
+        ],
+        "max": [
+          -10.249999999999998,
+          -5.178203230275509,
+          -38.35
+        ]
+      }
+    },
+    {
+      "name": "led_dome_04",
+      "material": "led",
+      "group": "illumination",
+      "explode": [
+        0,
+        0,
+        -84
+      ],
+      "description": "",
+      "volume_mm3": 5.50422,
+      "solids": 1,
+      "bbox": {
+        "min": [
+          -13.379999999999999,
+          -8.30820323027551,
+          -38.37
+        ],
+        "max": [
+          -10.620000000000001,
+          -5.548203230275509,
+          -36.989999999999995
+        ]
+      }
+    },
+    {
+      "name": "led_pad_04_-1",
+      "material": "gold",
+      "group": "illumination",
+      "explode": [
+        0,
+        0,
+        -84
+      ],
+      "description": "",
+      "volume_mm3": 0.12,
+      "solids": 1,
+      "bbox": {
+        "min": [
+          -14.55,
+          -8.178203230275509,
+          -38.9
+        ],
+        "max": [
+          -13.75,
+          -5.678203230275509,
+          -38.839999999999996
+        ]
+      }
+    },
+    {
+      "name": "led_pad_04_1",
+      "material": "gold",
+      "group": "illumination",
+      "explode": [
+        0,
+        0,
+        -84
+      ],
+      "description": "",
+      "volume_mm3": 0.12,
+      "solids": 1,
+      "bbox": {
+        "min": [
+          -10.25,
+          -8.178203230275509,
+          -38.9
+        ],
+        "max": [
+          -9.45,
+          -5.678203230275509,
+          -38.839999999999996
+        ]
+      }
+    },
+    {
+      "name": "led_ceramic_05",
+      "material": "ceramic",
+      "group": "illumination",
+      "explode": [
+        0,
+        0,
+        -84
+      ],
+      "description": "",
+      "volume_mm3": 6.62221,
+      "solids": 1,
+      "bbox": {
+        "min": [
+          -5.75,
+          -8.678203230275509,
+          -38.9
+        ],
+        "max": [
+          -2.25,
+          -5.178203230275509,
+          -38.35
+        ]
+      }
+    },
+    {
+      "name": "led_dome_05",
+      "material": "led",
+      "group": "illumination",
+      "explode": [
+        0,
+        0,
+        -84
+      ],
+      "description": "",
+      "volume_mm3": 5.50422,
+      "solids": 1,
+      "bbox": {
+        "min": [
+          -5.38,
+          -8.30820323027551,
+          -38.37
+        ],
+        "max": [
+          -2.62,
+          -5.548203230275509,
+          -36.989999999999995
+        ]
+      }
+    },
+    {
+      "name": "led_pad_05_-1",
+      "material": "gold",
+      "group": "illumination",
+      "explode": [
+        0,
+        0,
+        -84
+      ],
+      "description": "",
+      "volume_mm3": 0.12,
+      "solids": 1,
+      "bbox": {
+        "min": [
+          -6.550000000000001,
+          -8.178203230275509,
+          -38.9
+        ],
+        "max": [
+          -5.750000000000001,
+          -5.678203230275509,
+          -38.839999999999996
+        ]
+      }
+    },
+    {
+      "name": "led_pad_05_1",
+      "material": "gold",
+      "group": "illumination",
+      "explode": [
+        0,
+        0,
+        -84
+      ],
+      "description": "",
+      "volume_mm3": 0.12,
+      "solids": 1,
+      "bbox": {
+        "min": [
+          -2.25,
+          -8.178203230275509,
+          -38.9
+        ],
+        "max": [
+          -1.45,
+          -5.678203230275509,
+          -38.839999999999996
+        ]
+      }
+    },
+    {
+      "name": "led_ceramic_06",
+      "material": "ceramic",
+      "group": "illumination",
+      "explode": [
+        0,
+        0,
+        -84
+      ],
+      "description": "",
+      "volume_mm3": 6.62221,
+      "solids": 1,
+      "bbox": {
+        "min": [
+          2.25,
+          -8.678203230275509,
+          -38.9
+        ],
+        "max": [
+          5.75,
+          -5.178203230275509,
+          -38.35
+        ]
+      }
+    },
+    {
+      "name": "led_dome_06",
+      "material": "led",
+      "group": "illumination",
+      "explode": [
+        0,
+        0,
+        -84
+      ],
+      "description": "",
+      "volume_mm3": 5.50422,
+      "solids": 1,
+      "bbox": {
+        "min": [
+          2.62,
+          -8.30820323027551,
+          -38.37
+        ],
+        "max": [
+          5.38,
+          -5.548203230275509,
+          -36.989999999999995
+        ]
+      }
+    },
+    {
+      "name": "led_pad_06_-1",
+      "material": "gold",
+      "group": "illumination",
+      "explode": [
+        0,
+        0,
+        -84
+      ],
+      "description": "",
+      "volume_mm3": 0.12,
+      "solids": 1,
+      "bbox": {
+        "min": [
+          1.4500000000000002,
+          -8.178203230275509,
+          -38.9
+        ],
+        "max": [
+          2.25,
+          -5.678203230275509,
+          -38.839999999999996
+        ]
+      }
+    },
+    {
+      "name": "led_pad_06_1",
+      "material": "gold",
+      "group": "illumination",
+      "explode": [
+        0,
+        0,
+        -84
+      ],
+      "description": "",
+      "volume_mm3": 0.12,
+      "solids": 1,
+      "bbox": {
+        "min": [
+          5.75,
+          -8.178203230275509,
+          -38.9
+        ],
+        "max": [
+          6.55,
+          -5.678203230275509,
+          -38.839999999999996
+        ]
+      }
+    },
+    {
+      "name": "led_ceramic_07",
+      "material": "ceramic",
+      "group": "illumination",
+      "explode": [
+        0,
+        0,
+        -84
+      ],
+      "description": "",
+      "volume_mm3": 6.62221,
+      "solids": 1,
+      "bbox": {
+        "min": [
+          10.249999999999998,
+          -8.678203230275509,
+          -38.9
+        ],
+        "max": [
+          13.750000000000002,
+          -5.178203230275509,
+          -38.35
+        ]
+      }
+    },
+    {
+      "name": "led_dome_07",
+      "material": "led",
+      "group": "illumination",
+      "explode": [
+        0,
+        0,
+        -84
+      ],
+      "description": "",
+      "volume_mm3": 5.50422,
+      "solids": 1,
+      "bbox": {
+        "min": [
+          10.620000000000001,
+          -8.30820323027551,
+          -38.37
+        ],
+        "max": [
+          13.379999999999999,
+          -5.548203230275509,
+          -36.989999999999995
+        ]
+      }
+    },
+    {
+      "name": "led_pad_07_-1",
+      "material": "gold",
+      "group": "illumination",
+      "explode": [
+        0,
+        0,
+        -84
+      ],
+      "description": "",
+      "volume_mm3": 0.12,
+      "solids": 1,
+      "bbox": {
+        "min": [
+          9.45,
+          -8.178203230275509,
+          -38.9
+        ],
+        "max": [
+          10.25,
+          -5.678203230275509,
+          -38.839999999999996
+        ]
+      }
+    },
+    {
+      "name": "led_pad_07_1",
+      "material": "gold",
+      "group": "illumination",
+      "explode": [
+        0,
+        0,
+        -84
+      ],
+      "description": "",
+      "volume_mm3": 0.12,
+      "solids": 1,
+      "bbox": {
+        "min": [
+          13.75,
+          -8.178203230275509,
+          -38.9
+        ],
+        "max": [
+          14.55,
+          -5.678203230275509,
+          -38.839999999999996
+        ]
+      }
+    },
+    {
+      "name": "led_ceramic_08",
+      "material": "ceramic",
+      "group": "illumination",
+      "explode": [
+        0,
+        0,
+        -84
+      ],
+      "description": "",
+      "volume_mm3": 6.62221,
+      "solids": 1,
+      "bbox": {
+        "min": [
+          -17.75,
+          -1.7500000000000002,
+          -38.9
+        ],
+        "max": [
+          -14.249999999999998,
+          1.7500000000000002,
+          -38.35
+        ]
+      }
+    },
+    {
+      "name": "led_dome_08",
+      "material": "led",
+      "group": "illumination",
+      "explode": [
+        0,
+        0,
+        -84
+      ],
+      "description": "",
+      "volume_mm3": 5.50422,
+      "solids": 1,
+      "bbox": {
+        "min": [
+          -17.38,
+          -1.38,
+          -38.37
+        ],
+        "max": [
+          -14.620000000000001,
+          1.38,
+          -36.989999999999995
+        ]
+      }
+    },
+    {
+      "name": "led_pad_08_-1",
+      "material": "gold",
+      "group": "illumination",
+      "explode": [
+        0,
+        0,
+        -84
+      ],
+      "description": "",
+      "volume_mm3": 0.12,
+      "solids": 1,
+      "bbox": {
+        "min": [
+          -18.549999999999997,
+          -1.25,
+          -38.9
+        ],
+        "max": [
+          -17.749999999999996,
+          1.25,
+          -38.839999999999996
+        ]
+      }
+    },
+    {
+      "name": "led_pad_08_1",
+      "material": "gold",
+      "group": "illumination",
+      "explode": [
+        0,
+        0,
+        -84
+      ],
+      "description": "",
+      "volume_mm3": 0.12,
+      "solids": 1,
+      "bbox": {
+        "min": [
+          -14.25,
+          -1.25,
+          -38.9
+        ],
+        "max": [
+          -13.45,
+          1.25,
+          -38.839999999999996
+        ]
+      }
+    },
+    {
+      "name": "led_ceramic_09",
+      "material": "ceramic",
+      "group": "illumination",
+      "explode": [
+        0,
+        0,
+        -84
+      ],
+      "description": "",
+      "volume_mm3": 6.62221,
+      "solids": 1,
+      "bbox": {
+        "min": [
+          -9.750000000000002,
+          -1.7500000000000002,
+          -38.9
+        ],
+        "max": [
+          -6.25,
+          1.7500000000000002,
+          -38.35
+        ]
+      }
+    },
+    {
+      "name": "led_dome_09",
+      "material": "led",
+      "group": "illumination",
+      "explode": [
+        0,
+        0,
+        -84
+      ],
+      "description": "",
+      "volume_mm3": 5.50422,
+      "solids": 1,
+      "bbox": {
+        "min": [
+          -9.379999999999999,
+          -1.38,
+          -38.37
+        ],
+        "max": [
+          -6.62,
+          1.38,
+          -36.989999999999995
+        ]
+      }
+    },
+    {
+      "name": "led_pad_09_-1",
+      "material": "gold",
+      "group": "illumination",
+      "explode": [
+        0,
+        0,
+        -84
+      ],
+      "description": "",
+      "volume_mm3": 0.12,
+      "solids": 1,
+      "bbox": {
+        "min": [
+          -10.55,
+          -1.25,
+          -38.9
+        ],
+        "max": [
+          -9.75,
+          1.25,
+          -38.839999999999996
+        ]
+      }
+    },
+    {
+      "name": "led_pad_09_1",
+      "material": "gold",
+      "group": "illumination",
+      "explode": [
+        0,
+        0,
+        -84
+      ],
+      "description": "",
+      "volume_mm3": 0.12,
+      "solids": 1,
+      "bbox": {
+        "min": [
+          -6.25,
+          -1.25,
+          -38.9
+        ],
+        "max": [
+          -5.45,
+          1.25,
+          -38.839999999999996
+        ]
+      }
+    },
+    {
+      "name": "led_ceramic_10",
+      "material": "ceramic",
+      "group": "illumination",
+      "explode": [
+        0,
+        0,
+        -84
+      ],
+      "description": "",
+      "volume_mm3": 6.62221,
+      "solids": 1,
+      "bbox": {
+        "min": [
+          -1.7500000000000002,
+          -1.7500000000000002,
+          -38.9
+        ],
+        "max": [
+          1.7500000000000002,
+          1.7500000000000002,
+          -38.35
+        ]
+      }
+    },
+    {
+      "name": "led_dome_10",
+      "material": "led",
+      "group": "illumination",
+      "explode": [
+        0,
+        0,
+        -84
+      ],
+      "description": "",
+      "volume_mm3": 5.50422,
+      "solids": 1,
+      "bbox": {
+        "min": [
+          -1.38,
+          -1.38,
+          -38.37
+        ],
+        "max": [
+          1.38,
+          1.38,
+          -36.989999999999995
+        ]
+      }
+    },
+    {
+      "name": "led_pad_10_-1",
+      "material": "gold",
+      "group": "illumination",
+      "explode": [
+        0,
+        0,
+        -84
+      ],
+      "description": "",
+      "volume_mm3": 0.12,
+      "solids": 1,
+      "bbox": {
+        "min": [
+          -2.55,
+          -1.25,
+          -38.9
+        ],
+        "max": [
+          -1.7499999999999998,
+          1.25,
+          -38.839999999999996
+        ]
+      }
+    },
+    {
+      "name": "led_pad_10_1",
+      "material": "gold",
+      "group": "illumination",
+      "explode": [
+        0,
+        0,
+        -84
+      ],
+      "description": "",
+      "volume_mm3": 0.12,
+      "solids": 1,
+      "bbox": {
+        "min": [
+          1.75,
+          -1.25,
+          -38.9
+        ],
+        "max": [
+          2.55,
+          1.25,
+          -38.839999999999996
+        ]
+      }
+    },
+    {
+      "name": "led_ceramic_11",
+      "material": "ceramic",
+      "group": "illumination",
+      "explode": [
+        0,
+        0,
+        -84
+      ],
+      "description": "",
+      "volume_mm3": 6.62221,
+      "solids": 1,
+      "bbox": {
+        "min": [
+          6.25,
+          -1.7500000000000002,
+          -38.9
+        ],
+        "max": [
+          9.750000000000002,
+          1.7500000000000002,
+          -38.35
+        ]
+      }
+    },
+    {
+      "name": "led_dome_11",
+      "material": "led",
+      "group": "illumination",
+      "explode": [
+        0,
+        0,
+        -84
+      ],
+      "description": "",
+      "volume_mm3": 5.50422,
+      "solids": 1,
+      "bbox": {
+        "min": [
+          6.62,
+          -1.38,
+          -38.37
+        ],
+        "max": [
+          9.379999999999999,
+          1.38,
+          -36.989999999999995
+        ]
+      }
+    },
+    {
+      "name": "led_pad_11_-1",
+      "material": "gold",
+      "group": "illumination",
+      "explode": [
+        0,
+        0,
+        -84
+      ],
+      "description": "",
+      "volume_mm3": 0.12,
+      "solids": 1,
+      "bbox": {
+        "min": [
+          5.449999999999999,
+          -1.25,
+          -38.9
+        ],
+        "max": [
+          6.249999999999999,
+          1.25,
+          -38.839999999999996
+        ]
+      }
+    },
+    {
+      "name": "led_pad_11_1",
+      "material": "gold",
+      "group": "illumination",
+      "explode": [
+        0,
+        0,
+        -84
+      ],
+      "description": "",
+      "volume_mm3": 0.12,
+      "solids": 1,
+      "bbox": {
+        "min": [
+          9.75,
+          -1.25,
+          -38.9
+        ],
+        "max": [
+          10.55,
+          1.25,
+          -38.839999999999996
+        ]
+      }
+    },
+    {
+      "name": "led_ceramic_12",
+      "material": "ceramic",
+      "group": "illumination",
+      "explode": [
+        0,
+        0,
+        -84
+      ],
+      "description": "",
+      "volume_mm3": 6.62221,
+      "solids": 1,
+      "bbox": {
+        "min": [
+          14.249999999999998,
+          -1.7500000000000002,
+          -38.9
+        ],
+        "max": [
+          17.75,
+          1.7500000000000002,
+          -38.35
+        ]
+      }
+    },
+    {
+      "name": "led_dome_12",
+      "material": "led",
+      "group": "illumination",
+      "explode": [
+        0,
+        0,
+        -84
+      ],
+      "description": "",
+      "volume_mm3": 5.50422,
+      "solids": 1,
+      "bbox": {
+        "min": [
+          14.620000000000001,
+          -1.38,
+          -38.37
+        ],
+        "max": [
+          17.38,
+          1.38,
+          -36.989999999999995
+        ]
+      }
+    },
+    {
+      "name": "led_pad_12_-1",
+      "material": "gold",
+      "group": "illumination",
+      "explode": [
+        0,
+        0,
+        -84
+      ],
+      "description": "",
+      "volume_mm3": 0.12,
+      "solids": 1,
+      "bbox": {
+        "min": [
+          13.45,
+          -1.25,
+          -38.9
+        ],
+        "max": [
+          14.25,
+          1.25,
+          -38.839999999999996
+        ]
+      }
+    },
+    {
+      "name": "led_pad_12_1",
+      "material": "gold",
+      "group": "illumination",
+      "explode": [
+        0,
+        0,
+        -84
+      ],
+      "description": "",
+      "volume_mm3": 0.12,
+      "solids": 1,
+      "bbox": {
+        "min": [
+          17.75,
+          -1.25,
+          -38.9
+        ],
+        "max": [
+          18.55,
+          1.25,
+          -38.839999999999996
+        ]
+      }
+    },
+    {
+      "name": "led_ceramic_13",
+      "material": "ceramic",
+      "group": "illumination",
+      "explode": [
+        0,
+        0,
+        -84
+      ],
+      "description": "",
+      "volume_mm3": 6.62221,
+      "solids": 1,
+      "bbox": {
+        "min": [
+          -13.750000000000002,
+          5.178203230275509,
+          -38.9
+        ],
+        "max": [
+          -10.249999999999998,
+          8.678203230275509,
+          -38.35
+        ]
+      }
+    },
+    {
+      "name": "led_dome_13",
+      "material": "led",
+      "group": "illumination",
+      "explode": [
+        0,
+        0,
+        -84
+      ],
+      "description": "",
+      "volume_mm3": 5.50422,
+      "solids": 1,
+      "bbox": {
+        "min": [
+          -13.379999999999999,
+          5.548203230275509,
+          -38.37
+        ],
+        "max": [
+          -10.620000000000001,
+          8.30820323027551,
+          -36.989999999999995
+        ]
+      }
+    },
+    {
+      "name": "led_pad_13_-1",
+      "material": "gold",
+      "group": "illumination",
+      "explode": [
+        0,
+        0,
+        -84
+      ],
+      "description": "",
+      "volume_mm3": 0.12,
+      "solids": 1,
+      "bbox": {
+        "min": [
+          -14.55,
+          5.678203230275509,
+          -38.9
+        ],
+        "max": [
+          -13.75,
+          8.178203230275509,
+          -38.839999999999996
+        ]
+      }
+    },
+    {
+      "name": "led_pad_13_1",
+      "material": "gold",
+      "group": "illumination",
+      "explode": [
+        0,
+        0,
+        -84
+      ],
+      "description": "",
+      "volume_mm3": 0.12,
+      "solids": 1,
+      "bbox": {
+        "min": [
+          -10.25,
+          5.678203230275509,
+          -38.9
+        ],
+        "max": [
+          -9.45,
+          8.178203230275509,
+          -38.839999999999996
+        ]
+      }
+    },
+    {
+      "name": "led_ceramic_14",
+      "material": "ceramic",
+      "group": "illumination",
+      "explode": [
+        0,
+        0,
+        -84
+      ],
+      "description": "",
+      "volume_mm3": 6.62221,
+      "solids": 1,
+      "bbox": {
+        "min": [
+          -5.75,
+          5.178203230275509,
+          -38.9
+        ],
+        "max": [
+          -2.25,
+          8.678203230275509,
+          -38.35
+        ]
+      }
+    },
+    {
+      "name": "led_dome_14",
+      "material": "led",
+      "group": "illumination",
+      "explode": [
+        0,
+        0,
+        -84
+      ],
+      "description": "",
+      "volume_mm3": 5.50422,
+      "solids": 1,
+      "bbox": {
+        "min": [
+          -5.38,
+          5.548203230275509,
+          -38.37
+        ],
+        "max": [
+          -2.62,
+          8.30820323027551,
+          -36.989999999999995
+        ]
+      }
+    },
+    {
+      "name": "led_pad_14_-1",
+      "material": "gold",
+      "group": "illumination",
+      "explode": [
+        0,
+        0,
+        -84
+      ],
+      "description": "",
+      "volume_mm3": 0.12,
+      "solids": 1,
+      "bbox": {
+        "min": [
+          -6.550000000000001,
+          5.678203230275509,
+          -38.9
+        ],
+        "max": [
+          -5.750000000000001,
+          8.178203230275509,
+          -38.839999999999996
+        ]
+      }
+    },
+    {
+      "name": "led_pad_14_1",
+      "material": "gold",
+      "group": "illumination",
+      "explode": [
+        0,
+        0,
+        -84
+      ],
+      "description": "",
+      "volume_mm3": 0.12,
+      "solids": 1,
+      "bbox": {
+        "min": [
+          -2.25,
+          5.678203230275509,
+          -38.9
+        ],
+        "max": [
+          -1.45,
+          8.178203230275509,
+          -38.839999999999996
+        ]
+      }
+    },
+    {
+      "name": "led_ceramic_15",
+      "material": "ceramic",
+      "group": "illumination",
+      "explode": [
+        0,
+        0,
+        -84
+      ],
+      "description": "",
+      "volume_mm3": 6.62221,
+      "solids": 1,
+      "bbox": {
+        "min": [
+          2.25,
+          5.178203230275509,
+          -38.9
+        ],
+        "max": [
+          5.75,
+          8.678203230275509,
+          -38.35
+        ]
+      }
+    },
+    {
+      "name": "led_dome_15",
+      "material": "led",
+      "group": "illumination",
+      "explode": [
+        0,
+        0,
+        -84
+      ],
+      "description": "",
+      "volume_mm3": 5.50422,
+      "solids": 1,
+      "bbox": {
+        "min": [
+          2.62,
+          5.548203230275509,
+          -38.37
+        ],
+        "max": [
+          5.38,
+          8.30820323027551,
+          -36.989999999999995
+        ]
+      }
+    },
+    {
+      "name": "led_pad_15_-1",
+      "material": "gold",
+      "group": "illumination",
+      "explode": [
+        0,
+        0,
+        -84
+      ],
+      "description": "",
+      "volume_mm3": 0.12,
+      "solids": 1,
+      "bbox": {
+        "min": [
+          1.4500000000000002,
+          5.678203230275509,
+          -38.9
+        ],
+        "max": [
+          2.25,
+          8.178203230275509,
+          -38.839999999999996
+        ]
+      }
+    },
+    {
+      "name": "led_pad_15_1",
+      "material": "gold",
+      "group": "illumination",
+      "explode": [
+        0,
+        0,
+        -84
+      ],
+      "description": "",
+      "volume_mm3": 0.12,
+      "solids": 1,
+      "bbox": {
+        "min": [
+          5.75,
+          5.678203230275509,
+          -38.9
+        ],
+        "max": [
+          6.55,
+          8.178203230275509,
+          -38.839999999999996
+        ]
+      }
+    },
+    {
+      "name": "led_ceramic_16",
+      "material": "ceramic",
+      "group": "illumination",
+      "explode": [
+        0,
+        0,
+        -84
+      ],
+      "description": "",
+      "volume_mm3": 6.62221,
+      "solids": 1,
+      "bbox": {
+        "min": [
+          10.249999999999998,
+          5.178203230275509,
+          -38.9
+        ],
+        "max": [
+          13.750000000000002,
+          8.678203230275509,
+          -38.35
+        ]
+      }
+    },
+    {
+      "name": "led_dome_16",
+      "material": "led",
+      "group": "illumination",
+      "explode": [
+        0,
+        0,
+        -84
+      ],
+      "description": "",
+      "volume_mm3": 5.50422,
+      "solids": 1,
+      "bbox": {
+        "min": [
+          10.620000000000001,
+          5.548203230275509,
+          -38.37
+        ],
+        "max": [
+          13.379999999999999,
+          8.30820323027551,
+          -36.989999999999995
+        ]
+      }
+    },
+    {
+      "name": "led_pad_16_-1",
+      "material": "gold",
+      "group": "illumination",
+      "explode": [
+        0,
+        0,
+        -84
+      ],
+      "description": "",
+      "volume_mm3": 0.12,
+      "solids": 1,
+      "bbox": {
+        "min": [
+          9.45,
+          5.678203230275509,
+          -38.9
+        ],
+        "max": [
+          10.25,
+          8.178203230275509,
+          -38.839999999999996
+        ]
+      }
+    },
+    {
+      "name": "led_pad_16_1",
+      "material": "gold",
+      "group": "illumination",
+      "explode": [
+        0,
+        0,
+        -84
+      ],
+      "description": "",
+      "volume_mm3": 0.12,
+      "solids": 1,
+      "bbox": {
+        "min": [
+          13.75,
+          5.678203230275509,
+          -38.9
+        ],
+        "max": [
+          14.55,
+          8.178203230275509,
+          -38.839999999999996
+        ]
+      }
+    },
+    {
+      "name": "led_ceramic_17",
+      "material": "ceramic",
+      "group": "illumination",
+      "explode": [
+        0,
+        0,
+        -84
+      ],
+      "description": "",
+      "volume_mm3": 6.62221,
+      "solids": 1,
+      "bbox": {
+        "min": [
+          -9.750000000000002,
+          12.106406460551016,
+          -38.9
+        ],
+        "max": [
+          -6.25,
+          15.60640646055102,
+          -38.35
+        ]
+      }
+    },
+    {
+      "name": "led_dome_17",
+      "material": "led",
+      "group": "illumination",
+      "explode": [
+        0,
+        0,
+        -84
+      ],
+      "description": "",
+      "volume_mm3": 5.50422,
+      "solids": 1,
+      "bbox": {
+        "min": [
+          -9.379999999999999,
+          12.476406460551019,
+          -38.37
+        ],
+        "max": [
+          -6.62,
+          15.236406460551017,
+          -36.989999999999995
+        ]
+      }
+    },
+    {
+      "name": "led_pad_17_-1",
+      "material": "gold",
+      "group": "illumination",
+      "explode": [
+        0,
+        0,
+        -84
+      ],
+      "description": "",
+      "volume_mm3": 0.12,
+      "solids": 1,
+      "bbox": {
+        "min": [
+          -10.55,
+          12.606406460551018,
+          -38.9
+        ],
+        "max": [
+          -9.75,
+          15.106406460551018,
+          -38.839999999999996
+        ]
+      }
+    },
+    {
+      "name": "led_pad_17_1",
+      "material": "gold",
+      "group": "illumination",
+      "explode": [
+        0,
+        0,
+        -84
+      ],
+      "description": "",
+      "volume_mm3": 0.12,
+      "solids": 1,
+      "bbox": {
+        "min": [
+          -6.25,
+          12.606406460551018,
+          -38.9
+        ],
+        "max": [
+          -5.45,
+          15.106406460551018,
+          -38.839999999999996
+        ]
+      }
+    },
+    {
+      "name": "led_ceramic_18",
+      "material": "ceramic",
+      "group": "illumination",
+      "explode": [
+        0,
+        0,
+        -84
+      ],
+      "description": "",
+      "volume_mm3": 6.62221,
+      "solids": 1,
+      "bbox": {
+        "min": [
+          -1.7500000000000002,
+          12.106406460551016,
+          -38.9
+        ],
+        "max": [
+          1.7500000000000002,
+          15.60640646055102,
+          -38.35
+        ]
+      }
+    },
+    {
+      "name": "led_dome_18",
+      "material": "led",
+      "group": "illumination",
+      "explode": [
+        0,
+        0,
+        -84
+      ],
+      "description": "",
+      "volume_mm3": 5.50422,
+      "solids": 1,
+      "bbox": {
+        "min": [
+          -1.38,
+          12.476406460551019,
+          -38.37
+        ],
+        "max": [
+          1.38,
+          15.236406460551017,
+          -36.989999999999995
+        ]
+      }
+    },
+    {
+      "name": "led_pad_18_-1",
+      "material": "gold",
+      "group": "illumination",
+      "explode": [
+        0,
+        0,
+        -84
+      ],
+      "description": "",
+      "volume_mm3": 0.12,
+      "solids": 1,
+      "bbox": {
+        "min": [
+          -2.55,
+          12.606406460551018,
+          -38.9
+        ],
+        "max": [
+          -1.7499999999999998,
+          15.106406460551018,
+          -38.839999999999996
+        ]
+      }
+    },
+    {
+      "name": "led_pad_18_1",
+      "material": "gold",
+      "group": "illumination",
+      "explode": [
+        0,
+        0,
+        -84
+      ],
+      "description": "",
+      "volume_mm3": 0.12,
+      "solids": 1,
+      "bbox": {
+        "min": [
+          1.75,
+          12.606406460551018,
+          -38.9
+        ],
+        "max": [
+          2.55,
+          15.106406460551018,
+          -38.839999999999996
+        ]
+      }
+    },
+    {
+      "name": "led_ceramic_19",
+      "material": "ceramic",
+      "group": "illumination",
+      "explode": [
+        0,
+        0,
+        -84
+      ],
+      "description": "",
+      "volume_mm3": 6.62221,
+      "solids": 1,
+      "bbox": {
+        "min": [
+          6.25,
+          12.106406460551016,
+          -38.9
+        ],
+        "max": [
+          9.750000000000002,
+          15.60640646055102,
+          -38.35
+        ]
+      }
+    },
+    {
+      "name": "led_dome_19",
+      "material": "led",
+      "group": "illumination",
+      "explode": [
+        0,
+        0,
+        -84
+      ],
+      "description": "",
+      "volume_mm3": 5.50422,
+      "solids": 1,
+      "bbox": {
+        "min": [
+          6.62,
+          12.476406460551019,
+          -38.37
+        ],
+        "max": [
+          9.379999999999999,
+          15.236406460551017,
+          -36.989999999999995
+        ]
+      }
+    },
+    {
+      "name": "led_pad_19_-1",
+      "material": "gold",
+      "group": "illumination",
+      "explode": [
+        0,
+        0,
+        -84
+      ],
+      "description": "",
+      "volume_mm3": 0.12,
+      "solids": 1,
+      "bbox": {
+        "min": [
+          5.449999999999999,
+          12.606406460551018,
+          -38.9
+        ],
+        "max": [
+          6.249999999999999,
+          15.106406460551018,
+          -38.839999999999996
+        ]
+      }
+    },
+    {
+      "name": "led_pad_19_1",
+      "material": "gold",
+      "group": "illumination",
+      "explode": [
+        0,
+        0,
+        -84
+      ],
+      "description": "",
+      "volume_mm3": 0.12,
+      "solids": 1,
+      "bbox": {
+        "min": [
+          9.75,
+          12.606406460551018,
+          -38.9
+        ],
+        "max": [
+          10.55,
+          15.106406460551018,
+          -38.839999999999996
+        ]
+      }
+    },
+    {
+      "name": "pcb_screw_1",
+      "material": "stainless",
+      "group": "fasteners",
+      "explode": [
+        0,
+        0,
+        -84
+      ],
+      "description": "",
+      "volume_mm3": 37.33775,
+      "solids": 1,
+      "bbox": {
+        "min": [
+          -2.2,
+          -22.7,
+          -42.9
+        ],
+        "max": [
+          2.2,
+          -18.3,
+          -37.199999999999996
+        ]
+      }
+    },
+    {
+      "name": "pcb_screw_2",
+      "material": "stainless",
+      "group": "fasteners",
+      "explode": [
+        0,
+        0,
+        -84
+      ],
+      "description": "",
+      "volume_mm3": 37.33775,
+      "solids": 1,
+      "bbox": {
+        "min": [
+          -2.2,
+          18.3,
+          -42.9
+        ],
+        "max": [
+          2.2,
+          22.7,
+          -37.199999999999996
+        ]
+      }
+    },
+    {
+      "name": "15_diffuser",
+      "material": "diffuser",
+      "group": "illumination",
+      "explode": [
+        0,
+        0,
+        -69
+      ],
+      "description": "1 mm diffuser envelope above the 19 green emitters",
+      "volume_mm3": 1520.53084,
+      "solids": 1,
+      "bbox": {
+        "min": [
+          -22.0,
+          -22.0,
+          -35.95
+        ],
+        "max": [
+          22.0,
+          22.0,
+          -34.95
+        ]
+      }
+    },
+    {
+      "name": "diffuser_carrier",
+      "material": "black_anodised",
+      "group": "illumination",
+      "explode": [
+        0,
+        0,
+        -69
+      ],
+      "description": "",
+      "volume_mm3": 210.24795,
+      "solids": 1,
+      "bbox": {
+        "min": [
+          -24.0,
+          -24.0,
+          -36.45
+        ],
+        "max": [
+          24.0,
+          24.0,
+          -35.95
+        ]
+      }
+    },
+    {
+      "name": "led_power_gland",
+      "material": "black_anodised",
+      "group": "illumination",
+      "explode": [
+        0,
+        0,
+        -90
+      ],
+      "description": "",
+      "volume_mm3": 600.35294,
+      "solids": 1,
+      "bbox": {
+        "min": [
+          -5.5,
+          45.0,
+          -47.5
+        ],
+        "max": [
+          5.5,
+          53.0,
+          -36.5
+        ]
+      }
+    },
+    {
+      "name": "led_power_lead",
+      "material": "rubber_grip",
+      "group": "tubing",
+      "explode": [
+        0,
+        0,
+        -90
+      ],
+      "description": "",
+      "volume_mm3": 425.74864,
+      "solids": 1,
+      "bbox": {
+        "min": [
+          -2.2,
+          45.0,
+          -44.2
+        ],
+        "max": [
+          2.2,
+          73.0,
+          -39.79999999999999
+        ]
+      }
+    },
+    {
+      "name": "16_analyser_rotation_ring",
+      "material": "black_anodised",
+      "group": "analyser",
+      "explode": [
+        0,
+        0,
+        82
+      ],
+      "description": "Knurled, independently rotatable analyser",
+      "volume_mm3": 3512.30847,
+      "solids": 1,
+      "bbox": {
+        "min": [
+          -21.0,
+          -21.0,
+          62.0
+        ],
+        "max": [
+          21.0,
+          21.0,
+          70.0
+        ]
+      }
+    },
+    {
+      "name": "17_analyser",
+      "material": "polarising_glass",
+      "group": "analyser",
+      "explode": [
+        0,
+        0,
+        82
+      ],
+      "description": "",
+      "volume_mm3": 1869.64033,
+      "solids": 1,
+      "bbox": {
+        "min": [
+          -17.25,
+          -17.25,
+          65.0
+        ],
+        "max": [
+          17.25,
+          17.25,
+          67.0
+        ]
+      }
+    },
+    {
+      "name": "analyser_retaining_bezel",
+      "material": "black_anodised",
+      "group": "analyser",
+      "explode": [
+        0,
+        0,
+        82
+      ],
+      "description": "",
+      "volume_mm3": 126.29202,
+      "solids": 1,
+      "bbox": {
+        "min": [
+          -17.25,
+          -17.25,
+          63.8
+        ],
+        "max": [
+          17.25,
+          17.25,
+          65.0
+        ]
+      }
+    },
+    {
+      "name": "18_lens_front_cell",
+      "material": "black_anodised",
+      "group": "lens",
+      "explode": [
+        0,
+        0,
+        97
+      ],
+      "description": "",
+      "volume_mm3": 2722.1426,
+      "solids": 1,
+      "bbox": {
+        "min": [
+          -20.75,
+          -20.75,
+          70.0
+        ],
+        "max": [
+          20.75,
+          20.75,
+          77.0
+        ]
+      }
+    },
+    {
+      "name": "lens_forward_barrel",
+      "material": "black_anodised",
+      "group": "lens",
+      "explode": [
+        0,
+        0,
+        97
+      ],
+      "description": "",
+      "volume_mm3": 5820.98314,
+      "solids": 1,
+      "bbox": {
+        "min": [
+          -19.9,
+          -19.9,
+          77.0
+        ],
+        "max": [
+          19.9,
+          19.9,
+          92.0
+        ]
+      }
+    },
+    {
+      "name": "lens_focus_end_ring",
+      "material": "black_anodised",
+      "group": "lens",
+      "explode": [
+        0,
+        0,
+        97
+      ],
+      "description": "",
+      "volume_mm3": 753.60701,
+      "solids": 1,
+      "bbox": {
+        "min": [
+          -21.8,
+          -21.8,
+          92.0
+        ],
+        "max": [
+          21.8,
+          21.8,
+          93.2
+        ]
+      }
+    },
+    {
+      "name": "lens_scale_barrel",
+      "material": "black_anodised",
+      "group": "lens",
+      "explode": [
+        0,
+        0,
+        97
+      ],
+      "description": "",
+      "volume_mm3": 5515.45823,
+      "solids": 1,
+      "bbox": {
+        "min": [
+          -20.4,
+          -20.4,
+          110.0
+        ],
+        "max": [
+          20.4,
+          20.4,
+          120.0
+        ]
+      }
+    },
+    {
+      "name": "lens_rear_barrel",
+      "material": "black_anodised",
+      "group": "lens",
+      "explode": [
+        0,
+        0,
+        97
+      ],
+      "description": "",
+      "volume_mm3": 6790.00928,
+      "solids": 1,
+      "bbox": {
+        "min": [
+          -18.9,
+          -18.9,
+          127.0
+        ],
+        "max": [
+          18.9,
+          18.9,
+          138.5
+        ]
+      }
+    },
+    {
+      "name": "lens_mount_adapter",
+      "material": "black_anodised",
+      "group": "lens",
+      "explode": [
+        0,
+        0,
+        97
+      ],
+      "description": "",
+      "volume_mm3": 945.46165,
+      "solids": 1,
+      "bbox": {
+        "min": [
+          -15.75,
+          -15.75,
+          138.5
+        ],
+        "max": [
+          15.75,
+          15.75,
+          142.0
+        ]
+      }
+    },
+    {
+      "name": "19_focus_ring",
+      "material": "rubber_grip",
+      "group": "lens",
+      "explode": [
+        0,
+        0,
+        97
+      ],
+      "description": "112 real machined/grip scallops",
+      "volume_mm3": 13170.62891,
+      "solids": 1,
+      "bbox": {
+        "min": [
+          -23.0000001,
+          -23.0000001,
+          93.2
+        ],
+        "max": [
+          23.0000001,
+          23.0000001,
+          110.0
+        ]
+      }
+    },
+    {
+      "name": "20_aperture_ring",
+      "material": "black_anodised",
+      "group": "lens",
+      "explode": [
+        0,
+        0,
+        97
+      ],
+      "description": "",
+      "volume_mm3": 5674.63283,
+      "solids": 1,
+      "bbox": {
+        "min": [
+          -21.4,
+          -21.4,
+          120.0
+        ],
+        "max": [
+          21.4,
+          21.4,
+          127.0
+        ]
+      }
+    },
+    {
+      "name": "lens_silver_witness_focus",
+      "material": "edge_metal",
+      "group": "lens",
+      "explode": [
+        0,
+        0,
+        97
+      ],
+      "description": "",
+      "volume_mm3": 1.12962,
+      "solids": 1,
+      "bbox": {
+        "min": [
+          -20.45,
+          -20.45,
+          110.15
+        ],
+        "max": [
+          20.45,
+          20.45,
+          110.37
+        ]
+      }
+    },
+    {
+      "name": "lens_silver_witness_aperture",
+      "material": "edge_metal",
+      "group": "lens",
+      "explode": [
+        0,
+        0,
+        97
+      ],
+      "description": "",
+      "volume_mm3": 1.04668,
+      "solids": 1,
+      "bbox": {
+        "min": [
+          -18.95,
+          -18.95,
+          127.15
+        ],
+        "max": [
+          18.95,
+          18.95,
+          127.37
+        ]
+      }
+    },
+    {
+      "name": "lens_front_element",
+      "material": "optical_glass",
+      "group": "lens",
+      "explode": [
+        0,
+        0,
+        97
+      ],
+      "description": "Curved representative front optical element; not an optical prescription",
+      "volume_mm3": 2565.72617,
+      "solids": 1,
+      "bbox": {
+        "min": [
+          -17.4,
+          -17.4,
+          71.85
+        ],
+        "max": [
+          17.400000000001818,
+          17.4,
+          76.15
+        ]
+      }
+    },
+    {
+      "name": "lens_element_retainer",
+      "material": "black_anodised",
+      "group": "lens",
+      "explode": [
+        0,
+        0,
+        97
+      ],
+      "description": "",
+      "volume_mm3": 157.86503,
+      "solids": 1,
+      "bbox": {
+        "min": [
+          -17.5,
+          -17.5,
+          71.1
+        ],
+        "max": [
+          17.5,
+          17.5,
+          72.1
+        ]
+      }
+    },
+    {
+      "name": "lens_internal_baffle",
+      "material": "black_anodised",
+      "group": "lens",
+      "explode": [
+        0,
+        0,
+        97
+      ],
+      "description": "",
+      "volume_mm3": 263.42254,
+      "solids": 1,
+      "bbox": {
+        "min": [
+          -14.0,
+          -14.0,
+          119.2
+        ],
+        "max": [
+          14.0,
+          14.0,
+          119.8
+        ]
+      }
+    },
+    {
+      "name": "lens_rear_element",
+      "material": "optical_glass",
+      "group": "lens",
+      "explode": [
+        0,
+        0,
+        97
+      ],
+      "description": "",
+      "volume_mm3": 817.46548,
+      "solids": 1,
+      "bbox": {
+        "min": [
+          -12.4,
+          -12.4,
+          133.7
+        ],
+        "max": [
+          12.40000000000103,
+          12.4,
+          136.3
+        ]
+      }
+    },
+    {
+      "name": "focus_lock_screw",
+      "material": "stainless",
+      "group": "lens",
+      "explode": [
+        0,
+        0,
+        97
+      ],
+      "description": "",
+      "volume_mm3": 48.75843,
+      "solids": 1,
+      "bbox": {
+        "min": [
+          -2.25,
+          -25.4,
+          100.75
+        ],
+        "max": [
+          2.25,
+          -19.4,
+          105.25
+        ]
+      }
+    },
+    {
+      "name": "camera_mount_flange",
+      "material": "stainless",
+      "group": "camera",
+      "explode": [
+        0,
+        0,
+        119
+      ],
+      "description": "",
+      "volume_mm3": 1471.47173,
+      "solids": 1,
+      "bbox": {
+        "min": [
+          -16.0,
+          -16.0,
+          142.0
+        ],
+        "max": [
+          16.0,
+          16.0,
+          147.0
+        ]
+      }
+    },
+    {
+      "name": "21_camera_front_cover",
+      "material": "aluminium",
+      "group": "camera",
+      "explode": [
+        0,
+        0,
+        119
+      ],
+      "description": "",
+      "volume_mm3": 4257.02099,
+      "solids": 1,
+      "bbox": {
+        "min": [
+          -22.0,
+          -22.0,
+          147.0
+        ],
+        "max": [
+          22.000000000000004,
+          22.000000000000004,
+          150.0
+        ]
+      }
+    },
+    {
+      "name": "22_camera_housing",
+      "material": "aluminium",
+      "group": "camera",
+      "explode": [
+        0,
+        0,
+        119
+      ],
+      "description": "Separate covers, rounded edges, side cooling slots and connector openings",
+      "volume_mm3": 18498.43031,
+      "solids": 1,
+      "bbox": {
+        "min": [
+          -22.0,
+          -22.0,
+          150.0
+        ],
+        "max": [
+          22.000000000000004,
+          22.000000000000004,
+          178.0
+        ]
+      }
+    },
+    {
+      "name": "23_camera_rear_cover",
+      "material": "aluminium",
+      "group": "camera",
+      "explode": [
+        0,
+        0,
+        134
+      ],
+      "description": "",
+      "volume_mm3": 5606.21565,
+      "solids": 1,
+      "bbox": {
+        "min": [
+          -22.0,
+          -22.0,
+          178.0
+        ],
+        "max": [
+          22.000000000000004,
+          22.000000000000004,
+          181.0
+        ]
+      }
+    },
+    {
+      "name": "camera_cover_screw_1",
+      "material": "stainless",
+      "group": "camera",
+      "explode": [
+        0,
+        0,
+        141
+      ],
+      "description": "",
+      "volume_mm3": 49.6843,
+      "solids": 1,
+      "bbox": {
+        "min": [
+          -19.2,
+          -19.2,
+          172.2
+        ],
+        "max": [
+          -14.8,
+          -14.8,
+          180.9
+        ]
+      }
+    },
+    {
+      "name": "camera_cover_screw_2",
+      "material": "stainless",
+      "group": "camera",
+      "explode": [
+        0,
+        0,
+        141
+      ],
+      "description": "",
+      "volume_mm3": 49.6843,
+      "solids": 1,
+      "bbox": {
+        "min": [
+          14.8,
+          -19.2,
+          172.2
+        ],
+        "max": [
+          19.2,
+          -14.8,
+          180.9
+        ]
+      }
+    },
+    {
+      "name": "camera_cover_screw_3",
+      "material": "stainless",
+      "group": "camera",
+      "explode": [
+        0,
+        0,
+        141
+      ],
+      "description": "",
+      "volume_mm3": 49.6843,
+      "solids": 1,
+      "bbox": {
+        "min": [
+          -19.2,
+          14.8,
+          172.2
+        ],
+        "max": [
+          -14.8,
+          19.2,
+          180.9
+        ]
+      }
+    },
+    {
+      "name": "camera_cover_screw_4",
+      "material": "stainless",
+      "group": "camera",
+      "explode": [
+        0,
+        0,
+        141
+      ],
+      "description": "",
+      "volume_mm3": 49.6843,
+      "solids": 1,
+      "bbox": {
+        "min": [
+          14.8,
+          14.8,
+          172.2
+        ],
+        "max": [
+          19.2,
+          19.2,
+          180.9
+        ]
+      }
+    },
+    {
+      "name": "camera_id_plate",
+      "material": "label",
+      "group": "camera",
+      "explode": [
+        0,
+        0,
+        119
+      ],
+      "description": "",
+      "volume_mm3": 67.6,
+      "solids": 1,
+      "bbox": {
+        "min": [
+          -13.0,
+          -22.12,
+          157.5
+        ],
+        "max": [
+          13.0,
+          -21.92,
+          170.5
+        ]
+      }
+    },
+    {
+      "name": "camera_usb_shell",
+      "material": "stainless",
+      "group": "camera",
+      "explode": [
+        0,
+        0,
+        119
+      ],
+      "description": "",
+      "volume_mm3": 58.32,
+      "solids": 1,
+      "bbox": {
+        "min": [
+          -13.95,
+          21.25,
+          157.29999999999998
+        ],
+        "max": [
+          -1.6499999999999986,
+          23.650000000000002,
+          162.7
+        ]
+      }
+    },
+    {
+      "name": "camera_usb_insulator",
+      "material": "rubber_grip",
+      "group": "camera",
+      "explode": [
+        0,
+        0,
+        119
+      ],
+      "description": "",
+      "volume_mm3": 56.924,
+      "solids": 1,
+      "bbox": {
+        "min": [
+          -13.149999999999999,
+          21.25,
+          158.1
+        ],
+        "max": [
+          -2.4499999999999993,
+          22.650000000000002,
+          161.9
+        ]
+      }
+    },
+    {
+      "name": "camera_usb_tongue",
+      "material": "green_pcb",
+      "group": "camera",
+      "explode": [
+        0,
+        0,
+        119
+      ],
+      "description": "",
+      "volume_mm3": 2.952,
+      "solids": 1,
+      "bbox": {
+        "min": [
+          -11.899999999999999,
+          22.65,
+          159.70000000000002
+        ],
+        "max": [
+          -3.6999999999999993,
+          23.25,
+          160.3
+        ]
+      }
+    },
+    {
+      "name": "camera_io_shell",
+      "material": "stainless",
+      "group": "camera",
+      "explode": [
+        0,
+        0,
+        119
+      ],
+      "description": "",
+      "volume_mm3": 113.47904,
+      "solids": 1,
+      "bbox": {
+        "min": [
+          5.4,
+          20.5,
+          156.0
+        ],
+        "max": [
+          13.4,
+          25.3,
+          164.0
+        ]
+      }
+    },
+    {
+      "name": "camera_io_insulator",
+      "material": "rubber_grip",
+      "group": "camera",
+      "explode": [
+        0,
+        0,
+        119
+      ],
+      "description": "",
+      "volume_mm3": 76.55276,
+      "solids": 1,
+      "bbox": {
+        "min": [
+          6.550000000000001,
+          20.5,
+          157.15
+        ],
+        "max": [
+          12.25,
+          23.5,
+          162.85
+        ]
+      }
+    },
+    {
+      "name": "camera_io_pin_1",
+      "material": "gold",
+      "group": "camera",
+      "explode": [
+        0,
+        0,
+        119
+      ],
+      "description": "",
+      "volume_mm3": 0.43138,
+      "solids": 1,
+      "bbox": {
+        "min": [
+          10.775,
+          23.5,
+          159.675
+        ],
+        "max": [
+          11.424999999999999,
+          24.8,
+          160.325
+        ]
+      }
+    },
+    {
+      "name": "camera_io_pin_2",
+      "material": "gold",
+      "group": "camera",
+      "explode": [
+        0,
+        0,
+        119
+      ],
+      "description": "",
+      "volume_mm3": 0.43138,
+      "solids": 1,
+      "bbox": {
+        "min": [
+          9.925,
+          23.5,
+          158.20275681356645
+        ],
+        "max": [
+          10.575,
+          24.8,
+          158.85275681356643
+        ]
+      }
+    },
+    {
+      "name": "camera_io_pin_3",
+      "material": "gold",
+      "group": "camera",
+      "explode": [
+        0,
+        0,
+        119
+      ],
+      "description": "",
+      "volume_mm3": 0.43138,
+      "solids": 1,
+      "bbox": {
+        "min": [
+          8.225000000000001,
+          23.5,
+          158.20275681356645
+        ],
+        "max": [
+          8.875,
+          24.8,
+          158.85275681356643
+        ]
+      }
+    },
+    {
+      "name": "camera_io_pin_4",
+      "material": "gold",
+      "group": "camera",
+      "explode": [
+        0,
+        0,
+        119
+      ],
+      "description": "",
+      "volume_mm3": 0.43138,
+      "solids": 1,
+      "bbox": {
+        "min": [
+          7.375,
+          23.5,
+          159.675
+        ],
+        "max": [
+          8.025,
+          24.8,
+          160.325
+        ]
+      }
+    },
+    {
+      "name": "camera_io_pin_5",
+      "material": "gold",
+      "group": "camera",
+      "explode": [
+        0,
+        0,
+        119
+      ],
+      "description": "",
+      "volume_mm3": 0.43138,
+      "solids": 1,
+      "bbox": {
+        "min": [
+          8.225,
+          23.5,
+          161.14724318643357
+        ],
+        "max": [
+          8.874999999999998,
+          24.8,
+          161.79724318643355
+        ]
+      }
+    },
+    {
+      "name": "camera_io_pin_6",
+      "material": "gold",
+      "group": "camera",
+      "explode": [
+        0,
+        0,
+        119
+      ],
+      "description": "",
+      "volume_mm3": 0.43138,
+      "solids": 1,
+      "bbox": {
+        "min": [
+          9.925,
+          23.5,
+          161.14724318643357
+        ],
+        "max": [
+          10.575,
+          24.8,
+          161.79724318643355
+        ]
+      }
+    },
+    {
+      "name": "clamp_washer_1",
+      "material": "stainless",
+      "group": "fasteners",
+      "explode": [
+        0,
+        0,
+        64
+      ],
+      "description": "",
+      "volume_mm3": 152.46124,
+      "solids": 1,
+      "bbox": {
+        "min": [
+          -40.4,
+          -40.4,
+          19.0
+        ],
+        "max": [
+          -27.6,
+          -27.6,
+          20.6
+        ]
+      }
+    },
+    {
+      "name": "clamp_screw_m6x70_1",
+      "material": "stainless",
+      "group": "fasteners",
+      "explode": [
+        0,
+        0,
+        127
+      ],
+      "description": "5 mm hex socket; cosmetic annular thread crests",
+      "volume_mm3": 2302.27612,
+      "solids": 1,
+      "bbox": {
+        "min": [
+          -39.0,
+          -39.0,
+          -49.4
+        ],
+        "max": [
+          -29.0,
+          -29.0,
+          26.6
+        ]
+      }
+    },
+    {
+      "name": "clamp_washer_2",
+      "material": "stainless",
+      "group": "fasteners",
+      "explode": [
+        0,
+        0,
+        64
+      ],
+      "description": "",
+      "volume_mm3": 152.46124,
+      "solids": 1,
+      "bbox": {
+        "min": [
+          27.6,
+          -40.4,
+          19.0
+        ],
+        "max": [
+          40.4,
+          -27.6,
+          20.6
+        ]
+      }
+    },
+    {
+      "name": "clamp_screw_m6x70_2",
+      "material": "stainless",
+      "group": "fasteners",
+      "explode": [
+        0,
+        0,
+        127
+      ],
+      "description": "5 mm hex socket; cosmetic annular thread crests",
+      "volume_mm3": 2302.27612,
+      "solids": 1,
+      "bbox": {
+        "min": [
+          29.0,
+          -39.0,
+          -49.4
+        ],
+        "max": [
+          39.0,
+          -29.0,
+          26.6
+        ]
+      }
+    },
+    {
+      "name": "clamp_washer_3",
+      "material": "stainless",
+      "group": "fasteners",
+      "explode": [
+        0,
+        0,
+        64
+      ],
+      "description": "",
+      "volume_mm3": 152.46124,
+      "solids": 1,
+      "bbox": {
+        "min": [
+          -40.4,
+          27.6,
+          19.0
+        ],
+        "max": [
+          -27.6,
+          40.4,
+          20.6
+        ]
+      }
+    },
+    {
+      "name": "clamp_screw_m6x70_3",
+      "material": "stainless",
+      "group": "fasteners",
+      "explode": [
+        0,
+        0,
+        127
+      ],
+      "description": "5 mm hex socket; cosmetic annular thread crests",
+      "volume_mm3": 2302.27612,
+      "solids": 1,
+      "bbox": {
+        "min": [
+          -39.0,
+          29.0,
+          -49.4
+        ],
+        "max": [
+          -29.0,
+          39.0,
+          26.6
+        ]
+      }
+    },
+    {
+      "name": "clamp_washer_4",
+      "material": "stainless",
+      "group": "fasteners",
+      "explode": [
+        0,
+        0,
+        64
+      ],
+      "description": "",
+      "volume_mm3": 152.46124,
+      "solids": 1,
+      "bbox": {
+        "min": [
+          27.6,
+          27.6,
+          19.0
+        ],
+        "max": [
+          40.4,
+          40.4,
+          20.6
+        ]
+      }
+    },
+    {
+      "name": "clamp_screw_m6x70_4",
+      "material": "stainless",
+      "group": "fasteners",
+      "explode": [
+        0,
+        0,
+        127
+      ],
+      "description": "5 mm hex socket; cosmetic annular thread crests",
+      "volume_mm3": 2302.27612,
+      "solids": 1,
+      "bbox": {
+        "min": [
+          29.0,
+          29.0,
+          -49.4
+        ],
+        "max": [
+          39.0,
+          39.0,
+          26.6
+        ]
+      }
+    }
+  ],
+  "validation": {
+    "component_count": 166,
+    "solid_count": 166,
+    "units": "mm",
+    "datum": "Membrane top Z=0; optical axis +Z",
+    "all_breps_valid": true,
+    "critical_interference_checks": [
+      {
+        "a": "01_flow_chamber",
+        "b": "02_filtrate_chamber",
+        "intersection_mm3": 0
+      },
+      {
+        "a": "01_flow_chamber",
+        "b": "03_window_retainer",
+        "intersection_mm3": 0
+      },
+      {
+        "a": "01_flow_chamber",
+        "b": "04_upper_quartz_window",
+        "intersection_mm3": 0
+      },
+      {
+        "a": "01_flow_chamber",
+        "b": "06_membrane_carrier",
+        "intersection_mm3": 0
+      },
+      {
+        "a": "03_window_retainer",
+        "b": "04_upper_quartz_window",
+        "intersection_mm3": 0
+      },
+      {
+        "a": "03_window_retainer",
+        "b": "05_window_cushion",
+        "intersection_mm3": 0
+      },
+      {
+        "a": "02_filtrate_chamber",
+        "b": "09_lower_quartz_window",
+        "intersection_mm3": 0
+      },
+      {
+        "a": "09_lower_quartz_window",
+        "b": "lower_window_seal",
+        "intersection_mm3": 0
+      },
+      {
+        "a": "06_membrane_carrier",
+        "b": "07_membrane_sheet",
+        "intersection_mm3": 0
+      },
+      {
+        "a": "06_membrane_carrier",
+        "b": "08_membrane_support_screen",
+        "intersection_mm3": 0
+      },
+      {
+        "a": "07_membrane_sheet",
+        "b": "08_membrane_support_screen",
+        "intersection_mm3": 0
+      },
+      {
+        "a": "11_led_heat_sink",
+        "b": "14_led_array_board",
+        "intersection_mm3": 0
+      },
+      {
+        "a": "11_led_heat_sink",
+        "b": "12_polariser_rotation_ring",
+        "intersection_mm3": 0
+      },
+      {
+        "a": "10_lower_window_retainer",
+        "b": "12_polariser_rotation_ring",
+        "intersection_mm3": 0
+      },
+      {
+        "a": "15_diffuser",
+        "b": "12_polariser_rotation_ring",
+        "intersection_mm3": 0
+      }
+    ],
+    "screw_tip_clearance_mm": 1.1,
+    "thread_engagement_envelope_mm": 12.9,
+    "nominal_window_pad_mm": 0.3,
+    "errors": [],
+    "limits": [
+      "Geometry/packaging review only; no pressure, optical, thermal or seal qualification.",
+      "Purchased-part dimensions and cosmetic thread geometry are representative.",
+      "Compact reference layout omits an external camera support and focus stage."
+    ]
+  }
+}

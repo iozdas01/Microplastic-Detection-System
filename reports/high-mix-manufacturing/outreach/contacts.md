@@ -1,7 +1,7 @@
 ---
 purpose: The contact ledger for this idea — one record per person approached, their signal, and where the conversation got to.
 idea: high-mix-manufacturing
-last_updated: 2026-09-05
+last_updated: 2026-09-07
 totals:
   targeted: 95
   invited: 65
@@ -2233,8 +2233,8 @@ open_to_work: false
 
 close_variant: soft_ask
 relationship_type: field_practitioner
-outreach_status: msg1_sent
-message_stage: msg1_sent
+outreach_status: replied
+message_stage: msg4_drafted
 call_stage: none
 found_date: 2026-09-03
 invited_date: 2026-09-03
@@ -2247,8 +2247,13 @@ interviews: []
 evidence_score:
 outcome_modifier:
 prior_contact_status: pending
-notes: "[invited 2026-09-03] Bare connection request, no note (LR-B29), sent by Claude with per-invite name verification against the invitation modal. Campaign: outreach/linkedin/h3-window-coverings-2026-09/. Location: London, UK. Found via LinkedIn people search 2026-09-03 (Pass 4, Phase B — no companies.md registry exists yet). Headline and company are from the SEARCH RESULT only; /startup-outreach-draft must re-open the live profile before any claim is written (LR-B6). [msg1 drafted 2026-09-04] Post-acceptance Msg 1 for H3A4, soft_ask, standard register. Live profile re-read 2026-09-04 (LR-B6); LR-B25 first-name inbox check clean, positive control (Viliam) returned its thread in the same batch. Copy at outreach/copy/H3-linkedin.md. UNSENT: the founder sends by hand. [msg1 sent 2026-09-05] Sent by the founder by hand. NOTE: this one went out carrying the SUPERSEDED anchor, which described the Cambridge year as research into how a window measurement reaches the factory. The founder corrected that on 2026-09-05: the MPhil was on the broken digital thread between CAD-CAM systems, not on window measurement. Every remaining draft was rewritten to the true claim; this one cannot be recalled. If he asks what the Cambridge work was, answer with the interoperability version, which is what the profile supports."
+notes: "[reply 2026-09-05] Richard replied to Msg 1 the same weekend, warm and offering: "Hi Izzie I'm great thank you, how are you? Yes no problem, what is you you need to know?" Short register, so LR-matched to ONE question. [msg2 drafted 2026-09-05] Aimed at H3A2 (where the error originates) with the LR-M7 cost clause carried by "who picked up the cost in the end". H3A1 rate and H3A4 visit cost deliberately held for later rounds. Copy at outreach/copy/H3-linkedin.md. UNSENT: the founder sends by hand. [invited 2026-09-03] Bare connection request, no note (LR-B29), sent by Claude with per-invite name verification against the invitation modal. Campaign: outreach/linkedin/h3-window-coverings-2026-09/. Location: London, UK. Found via LinkedIn people search 2026-09-03 (Pass 4, Phase B — no companies.md registry exists yet). Headline and company are from the SEARCH RESULT only; /startup-outreach-draft must re-open the live profile before any claim is written (LR-B6). [msg1 drafted 2026-09-04] Post-acceptance Msg 1 for H3A4, soft_ask, standard register. Live profile re-read 2026-09-04 (LR-B6); LR-B25 first-name inbox check clean, positive control (Viliam) returned its thread in the same batch. Copy at outreach/copy/H3-linkedin.md. UNSENT: the founder sends by hand. [msg1 sent 2026-09-05] Sent by the founder by hand. NOTE: this one went out carrying the SUPERSEDED anchor, which described the Cambridge year as research into how a window measurement reaches the factory. The founder corrected that on 2026-09-05: the MPhil was on the broken digital thread between CAD-CAM systems, not on window measurement. Every remaining draft was rewritten to the true claim; this one cannot be recalled. If he asks what the Cambridge work was, answer with the interoperability version, which is what the profile supports."
   [accepted 2026-09-04] Connection accepted; LinkedIn connections list reads "Connected on September 3, 2026". No message from them. Awaiting Msg 1.
+  [msg2 sent 2026-09-07 13:16] Sent by the founder by hand and NOT the drafted text. Drafted: "when a blind turns up on site and doesn't fit, can you talk me through the last time that happened? What was out, and who picked up the cost in the end". As sent: "do you ever get blinds and they don't fit the customers measurements?" The rewrite dropped the last-time anchor, dropped the LR-M7 cost clause, and turned it into a yes/no carrying a presupposition.
+  [reply 2026-09-07 13:21] He rejected the presupposition: "We don't rely on customers measurements, we Survey ourselves. Reason being customers don't always know to look out for obstructions or understand how some blinds need to operate or fit. Different blinds require more space for example. This catches customers out." Logged as E30, confidence 4, contradicts H3A5. This half of the thread is CLEAN, it landed before any disclosure.
+  [msg3 sent 2026-09-07 13:23-13:24] Two messages, founder-written, no draft existed. The first fed him E8's $225 figure and the refused-distant-jobs finding, then asserted "even though they go out and take measurements sometimes the blinds are not coming out correctly from the factory". The second disclosed the thesis in full: interoperability, fifteen years on manufacturing lines, "machines don't register the manufacturing intent", and "looking into the re-work rates right now and if it contributes to margin". Everything after this timestamp on this thread is contaminated and is graded down for it.
+  [reply 2026-09-07 13:29] He answered the disclosure rather than a question: "our remedial rate is very very low" (E31, confidence 2, contradicts H3A1, NO number given), then named training as the fix at six months minimum against a UK norm of one, plus factory floor exposure for field techs (E32, confidence 3, contradicts the belief mechanism). E32 is the counter-query answer, who tried and SUCCEEDED, and it arrived unprompted. Both graded down for following the disclosure and because training is his own job function.
+  [msg4 drafted 2026-09-07] LR-M4 drill on the six-versus-one month figure he volunteered, anchored to the last installer he signed off. Copy at outreach/copy/H3-linkedin.md. Deliberately does NOT re-ask the remedial rate: he has committed to a position and would defend it. The same-or-different fork (LR-M5) is held for Msg 5, it needs his list first. UNSENT: the founder sends by hand.
 
 ## Andy Andre
 
@@ -2299,7 +2304,7 @@ interviews: []
 evidence_score:
 outcome_modifier:
 prior_contact_status: pending
-notes: "[invited 2026-09-03] Bare connection request, no note (LR-B29), sent by Claude with per-invite name verification against the invitation modal. Campaign: outreach/linkedin/h3-window-coverings-2026-09/. Location: Stafford, Virginia, US. Found via LinkedIn people search 2026-09-03 (Pass 4, Phase B — no companies.md registry exists yet). Headline and company are from the SEARCH RESULT only; /startup-outreach-draft must re-open the live profile before any claim is written (LR-B6)."
+notes: "[reply 2026-09-05] Richard replied to Msg 1 the same weekend, warm and offering: "Hi Izzie I'm great thank you, how are you? Yes no problem, what is you you need to know?" Short register, so LR-matched to ONE question. [msg2 drafted 2026-09-05] Aimed at H3A2 (where the error originates) with the LR-M7 cost clause carried by "who picked up the cost in the end". H3A1 rate and H3A4 visit cost deliberately held for later rounds. Copy at outreach/copy/H3-linkedin.md. UNSENT: the founder sends by hand. [invited 2026-09-03] Bare connection request, no note (LR-B29), sent by Claude with per-invite name verification against the invitation modal. Campaign: outreach/linkedin/h3-window-coverings-2026-09/. Location: Stafford, Virginia, US. Found via LinkedIn people search 2026-09-03 (Pass 4, Phase B — no companies.md registry exists yet). Headline and company are from the SEARCH RESULT only; /startup-outreach-draft must re-open the live profile before any claim is written (LR-B6)."
 
 ## Levi Flaherty
 
@@ -2350,7 +2355,7 @@ interviews: []
 evidence_score:
 outcome_modifier:
 prior_contact_status: pending
-notes: "[invited 2026-09-03] Bare connection request, no note (LR-B29), sent by Claude with per-invite name verification against the invitation modal. Campaign: outreach/linkedin/h3-window-coverings-2026-09/. Location: Greater Hartford, US. Found via LinkedIn people search 2026-09-03 (Pass 4, Phase B — no companies.md registry exists yet). Headline and company are from the SEARCH RESULT only; /startup-outreach-draft must re-open the live profile before any claim is written (LR-B6)."
+notes: "[reply 2026-09-05] Richard replied to Msg 1 the same weekend, warm and offering: "Hi Izzie I'm great thank you, how are you? Yes no problem, what is you you need to know?" Short register, so LR-matched to ONE question. [msg2 drafted 2026-09-05] Aimed at H3A2 (where the error originates) with the LR-M7 cost clause carried by "who picked up the cost in the end". H3A1 rate and H3A4 visit cost deliberately held for later rounds. Copy at outreach/copy/H3-linkedin.md. UNSENT: the founder sends by hand. [invited 2026-09-03] Bare connection request, no note (LR-B29), sent by Claude with per-invite name verification against the invitation modal. Campaign: outreach/linkedin/h3-window-coverings-2026-09/. Location: Greater Hartford, US. Found via LinkedIn people search 2026-09-03 (Pass 4, Phase B — no companies.md registry exists yet). Headline and company are from the SEARCH RESULT only; /startup-outreach-draft must re-open the live profile before any claim is written (LR-B6)."
 
 ## Dave Yews
 
@@ -2401,7 +2406,7 @@ interviews: []
 evidence_score:
 outcome_modifier:
 prior_contact_status: pending
-notes: "[invited 2026-09-03] Bare connection request, no note (LR-B29), sent by Claude with per-invite name verification against the invitation modal. Campaign: outreach/linkedin/h3-window-coverings-2026-09/. Location kept from the search result. REINSTATED 2026-09-03 after an incorrect off_scope: they were marked off for not matching icp_valid_titles, but that field is advisory and is not enforced by audit_target_list.py — they pass icp_valid_tiers (dealer_installer) and hit no icp_out_of_scope pattern. Tagged to H3A2 as well as H3A1: an installer answers WHERE THE ERROR ENTERS from first hand, which is H3A2, and should not be asked for a company-wide remake rate, which is H3A1 and belongs to the owners and production managers. Headline/company are from the SEARCH RESULT only; /startup-outreach-draft must re-open the live profile (LR-B6)."
+notes: "[reply 2026-09-05] Richard replied to Msg 1 the same weekend, warm and offering: "Hi Izzie I'm great thank you, how are you? Yes no problem, what is you you need to know?" Short register, so LR-matched to ONE question. [msg2 drafted 2026-09-05] Aimed at H3A2 (where the error originates) with the LR-M7 cost clause carried by "who picked up the cost in the end". H3A1 rate and H3A4 visit cost deliberately held for later rounds. Copy at outreach/copy/H3-linkedin.md. UNSENT: the founder sends by hand. [invited 2026-09-03] Bare connection request, no note (LR-B29), sent by Claude with per-invite name verification against the invitation modal. Campaign: outreach/linkedin/h3-window-coverings-2026-09/. Location kept from the search result. REINSTATED 2026-09-03 after an incorrect off_scope: they were marked off for not matching icp_valid_titles, but that field is advisory and is not enforced by audit_target_list.py — they pass icp_valid_tiers (dealer_installer) and hit no icp_out_of_scope pattern. Tagged to H3A2 as well as H3A1: an installer answers WHERE THE ERROR ENTERS from first hand, which is H3A2, and should not be asked for a company-wide remake rate, which is H3A1 and belongs to the owners and production managers. Headline/company are from the SEARCH RESULT only; /startup-outreach-draft must re-open the live profile (LR-B6)."
 
 ## Alun Harry
 
@@ -2452,7 +2457,7 @@ interviews: []
 evidence_score:
 outcome_modifier:
 prior_contact_status: pending
-notes: "[invited 2026-09-03] Bare connection request, no note (LR-B29), sent by Claude with per-invite name verification against the invitation modal. Campaign: outreach/linkedin/h3-window-coverings-2026-09/. Location kept from the search result. REINSTATED 2026-09-03 after an incorrect off_scope: they were marked off for not matching icp_valid_titles, but that field is advisory and is not enforced by audit_target_list.py — they pass icp_valid_tiers (dealer_installer) and hit no icp_out_of_scope pattern. Tagged to H3A2 as well as H3A1: an installer answers WHERE THE ERROR ENTERS from first hand, which is H3A2, and should not be asked for a company-wide remake rate, which is H3A1 and belongs to the owners and production managers. Headline/company are from the SEARCH RESULT only; /startup-outreach-draft must re-open the live profile (LR-B6)."
+notes: "[reply 2026-09-05] Richard replied to Msg 1 the same weekend, warm and offering: "Hi Izzie I'm great thank you, how are you? Yes no problem, what is you you need to know?" Short register, so LR-matched to ONE question. [msg2 drafted 2026-09-05] Aimed at H3A2 (where the error originates) with the LR-M7 cost clause carried by "who picked up the cost in the end". H3A1 rate and H3A4 visit cost deliberately held for later rounds. Copy at outreach/copy/H3-linkedin.md. UNSENT: the founder sends by hand. [invited 2026-09-03] Bare connection request, no note (LR-B29), sent by Claude with per-invite name verification against the invitation modal. Campaign: outreach/linkedin/h3-window-coverings-2026-09/. Location kept from the search result. REINSTATED 2026-09-03 after an incorrect off_scope: they were marked off for not matching icp_valid_titles, but that field is advisory and is not enforced by audit_target_list.py — they pass icp_valid_tiers (dealer_installer) and hit no icp_out_of_scope pattern. Tagged to H3A2 as well as H3A1: an installer answers WHERE THE ERROR ENTERS from first hand, which is H3A2, and should not be asked for a company-wide remake rate, which is H3A1 and belongs to the owners and production managers. Headline/company are from the SEARCH RESULT only; /startup-outreach-draft must re-open the live profile (LR-B6)."
 
 ## Anthony Brooks
 
@@ -2503,7 +2508,7 @@ interviews: []
 evidence_score:
 outcome_modifier:
 prior_contact_status: pending
-notes: "[invited 2026-09-03] Bare connection request, no note (LR-B29), sent by Claude with per-invite name verification against the invitation modal. Campaign: outreach/linkedin/h3-window-coverings-2026-09/. Location kept from the search result. REINSTATED 2026-09-03 after an incorrect off_scope: they were marked off for not matching icp_valid_titles, but that field is advisory and is not enforced by audit_target_list.py — they pass icp_valid_tiers (dealer_installer) and hit no icp_out_of_scope pattern. Tagged to H3A2 as well as H3A1: an installer answers WHERE THE ERROR ENTERS from first hand, which is H3A2, and should not be asked for a company-wide remake rate, which is H3A1 and belongs to the owners and production managers. Headline/company are from the SEARCH RESULT only; /startup-outreach-draft must re-open the live profile (LR-B6)."
+notes: "[reply 2026-09-05] Richard replied to Msg 1 the same weekend, warm and offering: "Hi Izzie I'm great thank you, how are you? Yes no problem, what is you you need to know?" Short register, so LR-matched to ONE question. [msg2 drafted 2026-09-05] Aimed at H3A2 (where the error originates) with the LR-M7 cost clause carried by "who picked up the cost in the end". H3A1 rate and H3A4 visit cost deliberately held for later rounds. Copy at outreach/copy/H3-linkedin.md. UNSENT: the founder sends by hand. [invited 2026-09-03] Bare connection request, no note (LR-B29), sent by Claude with per-invite name verification against the invitation modal. Campaign: outreach/linkedin/h3-window-coverings-2026-09/. Location kept from the search result. REINSTATED 2026-09-03 after an incorrect off_scope: they were marked off for not matching icp_valid_titles, but that field is advisory and is not enforced by audit_target_list.py — they pass icp_valid_tiers (dealer_installer) and hit no icp_out_of_scope pattern. Tagged to H3A2 as well as H3A1: an installer answers WHERE THE ERROR ENTERS from first hand, which is H3A2, and should not be asked for a company-wide remake rate, which is H3A1 and belongs to the owners and production managers. Headline/company are from the SEARCH RESULT only; /startup-outreach-draft must re-open the live profile (LR-B6)."
 
 ## Glenn Mcavoy
 
@@ -2554,7 +2559,7 @@ interviews: []
 evidence_score:
 outcome_modifier:
 prior_contact_status: pending
-notes: "[invited 2026-09-03] Bare connection request, no note (LR-B29), sent by Claude with per-invite name verification against the invitation modal. Campaign: outreach/linkedin/h3-window-coverings-2026-09/. Location: Oldham, UK. Found via LinkedIn people search 2026-09-03 (Pass 4, Phase B — no companies.md registry exists yet). Headline and company are from the SEARCH RESULT only; /startup-outreach-draft must re-open the live profile before any claim is written (LR-B6)."
+notes: "[reply 2026-09-05] Richard replied to Msg 1 the same weekend, warm and offering: "Hi Izzie I'm great thank you, how are you? Yes no problem, what is you you need to know?" Short register, so LR-matched to ONE question. [msg2 drafted 2026-09-05] Aimed at H3A2 (where the error originates) with the LR-M7 cost clause carried by "who picked up the cost in the end". H3A1 rate and H3A4 visit cost deliberately held for later rounds. Copy at outreach/copy/H3-linkedin.md. UNSENT: the founder sends by hand. [invited 2026-09-03] Bare connection request, no note (LR-B29), sent by Claude with per-invite name verification against the invitation modal. Campaign: outreach/linkedin/h3-window-coverings-2026-09/. Location: Oldham, UK. Found via LinkedIn people search 2026-09-03 (Pass 4, Phase B — no companies.md registry exists yet). Headline and company are from the SEARCH RESULT only; /startup-outreach-draft must re-open the live profile before any claim is written (LR-B6)."
 
 ## Ben Simpson
 
@@ -2605,7 +2610,7 @@ interviews: []
 evidence_score:
 outcome_modifier:
 prior_contact_status: pending
-notes: "[invited 2026-09-03] Bare connection request, no note (LR-B29), sent by Claude with per-invite name verification against the invitation modal. Campaign: outreach/linkedin/h3-window-coverings-2026-09/. Location: Rochdale, UK. Found via LinkedIn people search 2026-09-03 (Pass 4, Phase B — no companies.md registry exists yet). Headline and company are from the SEARCH RESULT only; /startup-outreach-draft must re-open the live profile before any claim is written (LR-B6). [msg1 sent 2026-09-05 by founder, by hand] Observed in the founder's own LinkedIn inbox on 2026-09-05 during a reconciliation pass, timestamp 6:14 PM. The thread shows the founder's message last and no reply yet. The copy sent is NOT the copy archived in this repo: the founder is now opening with "I am building the MCP layer for machines in manufacturing" and asking whether the gap shows up in rework rates. See outreach/linkedin/belief-experts-2026-09/drafts.md for the record of that framing. Invite had been accepted; the ledger still said invited."
+notes: "[reply 2026-09-05] Richard replied to Msg 1 the same weekend, warm and offering: "Hi Izzie I'm great thank you, how are you? Yes no problem, what is you you need to know?" Short register, so LR-matched to ONE question. [msg2 drafted 2026-09-05] Aimed at H3A2 (where the error originates) with the LR-M7 cost clause carried by "who picked up the cost in the end". H3A1 rate and H3A4 visit cost deliberately held for later rounds. Copy at outreach/copy/H3-linkedin.md. UNSENT: the founder sends by hand. [invited 2026-09-03] Bare connection request, no note (LR-B29), sent by Claude with per-invite name verification against the invitation modal. Campaign: outreach/linkedin/h3-window-coverings-2026-09/. Location: Rochdale, UK. Found via LinkedIn people search 2026-09-03 (Pass 4, Phase B — no companies.md registry exists yet). Headline and company are from the SEARCH RESULT only; /startup-outreach-draft must re-open the live profile before any claim is written (LR-B6). [msg1 sent 2026-09-05 by founder, by hand] Observed in the founder's own LinkedIn inbox on 2026-09-05 during a reconciliation pass, timestamp 6:14 PM. The thread shows the founder's message last and no reply yet. The copy sent is NOT the copy archived in this repo: the founder is now opening with "I am building the MCP layer for machines in manufacturing" and asking whether the gap shows up in rework rates. See outreach/linkedin/belief-experts-2026-09/drafts.md for the record of that framing. Invite had been accepted; the ledger still said invited."
 ## MJ Khah
 
 id: C51
@@ -2655,7 +2660,7 @@ interviews: []
 evidence_score:
 outcome_modifier:
 prior_contact_status: pending
-notes: "[invited 2026-09-03] Bare connection request, no note (LR-B29), sent by Claude with per-invite name verification against the invitation modal. Campaign: outreach/linkedin/h3-window-coverings-2026-09/. Location: Greater Manchester, UK. Found via LinkedIn people search 2026-09-03 (Pass 4, Phase B — no companies.md registry exists yet). Headline and company are from the SEARCH RESULT only; /startup-outreach-draft must re-open the live profile before any claim is written (LR-B6)."
+notes: "[reply 2026-09-05] Richard replied to Msg 1 the same weekend, warm and offering: "Hi Izzie I'm great thank you, how are you? Yes no problem, what is you you need to know?" Short register, so LR-matched to ONE question. [msg2 drafted 2026-09-05] Aimed at H3A2 (where the error originates) with the LR-M7 cost clause carried by "who picked up the cost in the end". H3A1 rate and H3A4 visit cost deliberately held for later rounds. Copy at outreach/copy/H3-linkedin.md. UNSENT: the founder sends by hand. [invited 2026-09-03] Bare connection request, no note (LR-B29), sent by Claude with per-invite name verification against the invitation modal. Campaign: outreach/linkedin/h3-window-coverings-2026-09/. Location: Greater Manchester, UK. Found via LinkedIn people search 2026-09-03 (Pass 4, Phase B — no companies.md registry exists yet). Headline and company are from the SEARCH RESULT only; /startup-outreach-draft must re-open the live profile before any claim is written (LR-B6)."
 
 ## Chris Chase
 
@@ -2711,7 +2716,7 @@ interviews: []
 evidence_score:
 outcome_modifier:
 prior_contact_status: pending
-notes: "[invited 2026-09-03] Bare connection request, no note (LR-B29), sent by Claude with per-invite name verification against the invitation modal. Campaign: outreach/linkedin/h3-window-coverings-2026-09/. Location: Calgary, Canada. Found via LinkedIn people search 2026-09-03 (Pass 4, Phase B — no companies.md registry exists yet). Headline and company are from the SEARCH RESULT only; /startup-outreach-draft must re-open the live profile before any claim is written (LR-B6). [msg1 drafted 2026-09-04] Post-acceptance Msg 1 for H3A4, soft_ask, senior register. Live profile re-read 2026-09-04 (LR-B6); LR-B25 first-name inbox check clean, positive control (Viliam) returned its thread in the same batch. CORRECTED from the search-result cache: he is the independent owner of C & S Blind Installations Inc. in Calgary, not a contractor inside the Hunter Douglas dealer network. contact_role raised to buyer accordingly. Copy at outreach/copy/H3-linkedin.md. UNSENT: the founder sends by hand. [msg1 sent 2026-09-05 10:53] Sent by the founder by hand, found by an inbox check the same day rather than reported. Sent verbatim from the draft, the only one of the five that was. The as-sent text is in outreach/copy/H3-linkedin.md; it is NOT the drafted text and it is not the later two-frame rewrite either, so treat this send as its own copy variant. No reply as of 2026-09-05."
+notes: "[reply 2026-09-05] Richard replied to Msg 1 the same weekend, warm and offering: "Hi Izzie I'm great thank you, how are you? Yes no problem, what is you you need to know?" Short register, so LR-matched to ONE question. [msg2 drafted 2026-09-05] Aimed at H3A2 (where the error originates) with the LR-M7 cost clause carried by "who picked up the cost in the end". H3A1 rate and H3A4 visit cost deliberately held for later rounds. Copy at outreach/copy/H3-linkedin.md. UNSENT: the founder sends by hand. [invited 2026-09-03] Bare connection request, no note (LR-B29), sent by Claude with per-invite name verification against the invitation modal. Campaign: outreach/linkedin/h3-window-coverings-2026-09/. Location: Calgary, Canada. Found via LinkedIn people search 2026-09-03 (Pass 4, Phase B — no companies.md registry exists yet). Headline and company are from the SEARCH RESULT only; /startup-outreach-draft must re-open the live profile before any claim is written (LR-B6). [msg1 drafted 2026-09-04] Post-acceptance Msg 1 for H3A4, soft_ask, senior register. Live profile re-read 2026-09-04 (LR-B6); LR-B25 first-name inbox check clean, positive control (Viliam) returned its thread in the same batch. CORRECTED from the search-result cache: he is the independent owner of C & S Blind Installations Inc. in Calgary, not a contractor inside the Hunter Douglas dealer network. contact_role raised to buyer accordingly. Copy at outreach/copy/H3-linkedin.md. UNSENT: the founder sends by hand. [msg1 sent 2026-09-05 10:53] Sent by the founder by hand, found by an inbox check the same day rather than reported. Sent verbatim from the draft, the only one of the five that was. The as-sent text is in outreach/copy/H3-linkedin.md; it is NOT the drafted text and it is not the later two-frame rewrite either, so treat this send as its own copy variant. No reply as of 2026-09-05."
   [accepted 2026-09-04] Connection accepted; LinkedIn connections list reads "Connected on September 3, 2026". No message from them. Awaiting Msg 1.
 
 ## Leanna Thompson
@@ -2763,7 +2768,7 @@ interviews: []
 evidence_score:
 outcome_modifier:
 prior_contact_status: pending
-notes: "[invited 2026-09-03] Bare connection request, no note (LR-B29), sent by Claude with per-invite name verification against the invitation modal. Campaign: outreach/linkedin/h3-window-coverings-2026-09/. Location kept from the search result. REINSTATED 2026-09-03 after an incorrect off_scope: they were marked off for not matching icp_valid_titles, but that field is advisory and is not enforced by audit_target_list.py — they pass icp_valid_tiers (dealer_installer) and hit no icp_out_of_scope pattern. Tagged to H3A2 as well as H3A1: an installer answers WHERE THE ERROR ENTERS from first hand, which is H3A2, and should not be asked for a company-wide remake rate, which is H3A1 and belongs to the owners and production managers. Headline/company are from the SEARCH RESULT only; /startup-outreach-draft must re-open the live profile (LR-B6)."
+notes: "[reply 2026-09-05] Richard replied to Msg 1 the same weekend, warm and offering: "Hi Izzie I'm great thank you, how are you? Yes no problem, what is you you need to know?" Short register, so LR-matched to ONE question. [msg2 drafted 2026-09-05] Aimed at H3A2 (where the error originates) with the LR-M7 cost clause carried by "who picked up the cost in the end". H3A1 rate and H3A4 visit cost deliberately held for later rounds. Copy at outreach/copy/H3-linkedin.md. UNSENT: the founder sends by hand. [invited 2026-09-03] Bare connection request, no note (LR-B29), sent by Claude with per-invite name verification against the invitation modal. Campaign: outreach/linkedin/h3-window-coverings-2026-09/. Location kept from the search result. REINSTATED 2026-09-03 after an incorrect off_scope: they were marked off for not matching icp_valid_titles, but that field is advisory and is not enforced by audit_target_list.py — they pass icp_valid_tiers (dealer_installer) and hit no icp_out_of_scope pattern. Tagged to H3A2 as well as H3A1: an installer answers WHERE THE ERROR ENTERS from first hand, which is H3A2, and should not be asked for a company-wide remake rate, which is H3A1 and belongs to the owners and production managers. Headline/company are from the SEARCH RESULT only; /startup-outreach-draft must re-open the live profile (LR-B6)."
 
 ## Dustin Hayes
 
@@ -2814,7 +2819,7 @@ interviews: []
 evidence_score:
 outcome_modifier:
 prior_contact_status: pending
-notes: "[invited 2026-09-03] Bare connection request, no note (LR-B29), sent by Claude with per-invite name verification against the invitation modal. Campaign: outreach/linkedin/h3-window-coverings-2026-09/. Location kept from the search result. REINSTATED 2026-09-03 after an incorrect off_scope: they were marked off for not matching icp_valid_titles, but that field is advisory and is not enforced by audit_target_list.py — they pass icp_valid_tiers (dealer_installer) and hit no icp_out_of_scope pattern. Tagged to H3A2 as well as H3A1: an installer answers WHERE THE ERROR ENTERS from first hand, which is H3A2, and should not be asked for a company-wide remake rate, which is H3A1 and belongs to the owners and production managers. Headline/company are from the SEARCH RESULT only; /startup-outreach-draft must re-open the live profile (LR-B6)."
+notes: "[reply 2026-09-05] Richard replied to Msg 1 the same weekend, warm and offering: "Hi Izzie I'm great thank you, how are you? Yes no problem, what is you you need to know?" Short register, so LR-matched to ONE question. [msg2 drafted 2026-09-05] Aimed at H3A2 (where the error originates) with the LR-M7 cost clause carried by "who picked up the cost in the end". H3A1 rate and H3A4 visit cost deliberately held for later rounds. Copy at outreach/copy/H3-linkedin.md. UNSENT: the founder sends by hand. [invited 2026-09-03] Bare connection request, no note (LR-B29), sent by Claude with per-invite name verification against the invitation modal. Campaign: outreach/linkedin/h3-window-coverings-2026-09/. Location kept from the search result. REINSTATED 2026-09-03 after an incorrect off_scope: they were marked off for not matching icp_valid_titles, but that field is advisory and is not enforced by audit_target_list.py — they pass icp_valid_tiers (dealer_installer) and hit no icp_out_of_scope pattern. Tagged to H3A2 as well as H3A1: an installer answers WHERE THE ERROR ENTERS from first hand, which is H3A2, and should not be asked for a company-wide remake rate, which is H3A1 and belongs to the owners and production managers. Headline/company are from the SEARCH RESULT only; /startup-outreach-draft must re-open the live profile (LR-B6)."
 
 ## Christopher Vermont
 
@@ -2865,7 +2870,7 @@ interviews: []
 evidence_score:
 outcome_modifier:
 prior_contact_status: pending
-notes: "[invited 2026-09-03] Bare connection request, no note (LR-B29), sent by Claude with per-invite name verification against the invitation modal. Campaign: outreach/linkedin/h3-window-coverings-2026-09/. Location kept from the search result. REINSTATED 2026-09-03 after an incorrect off_scope: they were marked off for not matching icp_valid_titles, but that field is advisory and is not enforced by audit_target_list.py — they pass icp_valid_tiers (dealer_installer) and hit no icp_out_of_scope pattern. Tagged to H3A2 as well as H3A1: an installer answers WHERE THE ERROR ENTERS from first hand, which is H3A2, and should not be asked for a company-wide remake rate, which is H3A1 and belongs to the owners and production managers. Headline/company are from the SEARCH RESULT only; /startup-outreach-draft must re-open the live profile (LR-B6)."
+notes: "[reply 2026-09-05] Richard replied to Msg 1 the same weekend, warm and offering: "Hi Izzie I'm great thank you, how are you? Yes no problem, what is you you need to know?" Short register, so LR-matched to ONE question. [msg2 drafted 2026-09-05] Aimed at H3A2 (where the error originates) with the LR-M7 cost clause carried by "who picked up the cost in the end". H3A1 rate and H3A4 visit cost deliberately held for later rounds. Copy at outreach/copy/H3-linkedin.md. UNSENT: the founder sends by hand. [invited 2026-09-03] Bare connection request, no note (LR-B29), sent by Claude with per-invite name verification against the invitation modal. Campaign: outreach/linkedin/h3-window-coverings-2026-09/. Location kept from the search result. REINSTATED 2026-09-03 after an incorrect off_scope: they were marked off for not matching icp_valid_titles, but that field is advisory and is not enforced by audit_target_list.py — they pass icp_valid_tiers (dealer_installer) and hit no icp_out_of_scope pattern. Tagged to H3A2 as well as H3A1: an installer answers WHERE THE ERROR ENTERS from first hand, which is H3A2, and should not be asked for a company-wide remake rate, which is H3A1 and belongs to the owners and production managers. Headline/company are from the SEARCH RESULT only; /startup-outreach-draft must re-open the live profile (LR-B6)."
 
 ## Nolan Smith
 
@@ -2916,7 +2921,7 @@ interviews: []
 evidence_score:
 outcome_modifier:
 prior_contact_status: pending
-notes: "[invited 2026-09-03] Bare connection request, no note (LR-B29), sent by Claude with per-invite name verification against the invitation modal. Campaign: outreach/linkedin/h3-window-coverings-2026-09/. Location: Greater Fort Wayne, US. Found via LinkedIn people search 2026-09-03 (Pass 4, Phase B — no companies.md registry exists yet). Headline and company are from the SEARCH RESULT only; /startup-outreach-draft must re-open the live profile before any claim is written (LR-B6)."
+notes: "[reply 2026-09-05] Richard replied to Msg 1 the same weekend, warm and offering: "Hi Izzie I'm great thank you, how are you? Yes no problem, what is you you need to know?" Short register, so LR-matched to ONE question. [msg2 drafted 2026-09-05] Aimed at H3A2 (where the error originates) with the LR-M7 cost clause carried by "who picked up the cost in the end". H3A1 rate and H3A4 visit cost deliberately held for later rounds. Copy at outreach/copy/H3-linkedin.md. UNSENT: the founder sends by hand. [invited 2026-09-03] Bare connection request, no note (LR-B29), sent by Claude with per-invite name verification against the invitation modal. Campaign: outreach/linkedin/h3-window-coverings-2026-09/. Location: Greater Fort Wayne, US. Found via LinkedIn people search 2026-09-03 (Pass 4, Phase B — no companies.md registry exists yet). Headline and company are from the SEARCH RESULT only; /startup-outreach-draft must re-open the live profile before any claim is written (LR-B6)."
 
 ## Paul Holden
 
@@ -2967,7 +2972,7 @@ interviews: []
 evidence_score:
 outcome_modifier:
 prior_contact_status: pending
-notes: "[invited 2026-09-03] Bare connection request, no note (LR-B29), sent by Claude with per-invite name verification against the invitation modal. Campaign: outreach/linkedin/h3-window-coverings-2026-09/. Location: Bolton, UK. Found via LinkedIn people search 2026-09-03 (Pass 4, Phase B — no companies.md registry exists yet). Headline and company are from the SEARCH RESULT only; /startup-outreach-draft must re-open the live profile before any claim is written (LR-B6)."
+notes: "[reply 2026-09-05] Richard replied to Msg 1 the same weekend, warm and offering: "Hi Izzie I'm great thank you, how are you? Yes no problem, what is you you need to know?" Short register, so LR-matched to ONE question. [msg2 drafted 2026-09-05] Aimed at H3A2 (where the error originates) with the LR-M7 cost clause carried by "who picked up the cost in the end". H3A1 rate and H3A4 visit cost deliberately held for later rounds. Copy at outreach/copy/H3-linkedin.md. UNSENT: the founder sends by hand. [invited 2026-09-03] Bare connection request, no note (LR-B29), sent by Claude with per-invite name verification against the invitation modal. Campaign: outreach/linkedin/h3-window-coverings-2026-09/. Location: Bolton, UK. Found via LinkedIn people search 2026-09-03 (Pass 4, Phase B — no companies.md registry exists yet). Headline and company are from the SEARCH RESULT only; /startup-outreach-draft must re-open the live profile before any claim is written (LR-B6)."
 
 ## Chris Dickens
 
@@ -3018,7 +3023,7 @@ interviews: []
 evidence_score:
 outcome_modifier:
 prior_contact_status: pending
-notes: "[invited 2026-09-03] Bare connection request, no note (LR-B29), sent by Claude with per-invite name verification against the invitation modal. Campaign: outreach/linkedin/h3-window-coverings-2026-09/. Location: Boughton, UK. Found via LinkedIn people search 2026-09-03 (Pass 4, Phase B — no companies.md registry exists yet). Headline and company are from the SEARCH RESULT only; /startup-outreach-draft must re-open the live profile before any claim is written (LR-B6)."
+notes: "[reply 2026-09-05] Richard replied to Msg 1 the same weekend, warm and offering: "Hi Izzie I'm great thank you, how are you? Yes no problem, what is you you need to know?" Short register, so LR-matched to ONE question. [msg2 drafted 2026-09-05] Aimed at H3A2 (where the error originates) with the LR-M7 cost clause carried by "who picked up the cost in the end". H3A1 rate and H3A4 visit cost deliberately held for later rounds. Copy at outreach/copy/H3-linkedin.md. UNSENT: the founder sends by hand. [invited 2026-09-03] Bare connection request, no note (LR-B29), sent by Claude with per-invite name verification against the invitation modal. Campaign: outreach/linkedin/h3-window-coverings-2026-09/. Location: Boughton, UK. Found via LinkedIn people search 2026-09-03 (Pass 4, Phase B — no companies.md registry exists yet). Headline and company are from the SEARCH RESULT only; /startup-outreach-draft must re-open the live profile before any claim is written (LR-B6)."
 
 ## Dan Powell
 
@@ -3069,7 +3074,7 @@ interviews: []
 evidence_score:
 outcome_modifier:
 prior_contact_status: pending
-notes: "[invited 2026-09-03] Bare connection request, no note (LR-B29), sent by Claude with per-invite name verification against the invitation modal. Campaign: outreach/linkedin/h3-window-coverings-2026-09/. Location: Powys, Wales, UK. Found via LinkedIn people search 2026-09-03 (Pass 4, Phase B — no companies.md registry exists yet). Headline and company are from the SEARCH RESULT only; /startup-outreach-draft must re-open the live profile before any claim is written (LR-B6)."
+notes: "[reply 2026-09-05] Richard replied to Msg 1 the same weekend, warm and offering: "Hi Izzie I'm great thank you, how are you? Yes no problem, what is you you need to know?" Short register, so LR-matched to ONE question. [msg2 drafted 2026-09-05] Aimed at H3A2 (where the error originates) with the LR-M7 cost clause carried by "who picked up the cost in the end". H3A1 rate and H3A4 visit cost deliberately held for later rounds. Copy at outreach/copy/H3-linkedin.md. UNSENT: the founder sends by hand. [invited 2026-09-03] Bare connection request, no note (LR-B29), sent by Claude with per-invite name verification against the invitation modal. Campaign: outreach/linkedin/h3-window-coverings-2026-09/. Location: Powys, Wales, UK. Found via LinkedIn people search 2026-09-03 (Pass 4, Phase B — no companies.md registry exists yet). Headline and company are from the SEARCH RESULT only; /startup-outreach-draft must re-open the live profile before any claim is written (LR-B6)."
 
 ## Tim Pacholski
 
@@ -3120,7 +3125,7 @@ interviews: []
 evidence_score:
 outcome_modifier:
 prior_contact_status: pending
-notes: "[invited 2026-09-03] Bare connection request, no note (LR-B29), sent by Claude with per-invite name verification against the invitation modal. Campaign: outreach/linkedin/h3-window-coverings-2026-09/. Location: New Berlin, Wisconsin, US. Found via LinkedIn people search 2026-09-03 (Pass 4, Phase B — no companies.md registry exists yet). Headline and company are from the SEARCH RESULT only; /startup-outreach-draft must re-open the live profile before any claim is written (LR-B6)."
+notes: "[reply 2026-09-05] Richard replied to Msg 1 the same weekend, warm and offering: "Hi Izzie I'm great thank you, how are you? Yes no problem, what is you you need to know?" Short register, so LR-matched to ONE question. [msg2 drafted 2026-09-05] Aimed at H3A2 (where the error originates) with the LR-M7 cost clause carried by "who picked up the cost in the end". H3A1 rate and H3A4 visit cost deliberately held for later rounds. Copy at outreach/copy/H3-linkedin.md. UNSENT: the founder sends by hand. [invited 2026-09-03] Bare connection request, no note (LR-B29), sent by Claude with per-invite name verification against the invitation modal. Campaign: outreach/linkedin/h3-window-coverings-2026-09/. Location: New Berlin, Wisconsin, US. Found via LinkedIn people search 2026-09-03 (Pass 4, Phase B — no companies.md registry exists yet). Headline and company are from the SEARCH RESULT only; /startup-outreach-draft must re-open the live profile before any claim is written (LR-B6)."
 
 ## Greg Thompson
 
@@ -3171,7 +3176,7 @@ interviews: []
 evidence_score:
 outcome_modifier:
 prior_contact_status: pending
-notes: "[invited 2026-09-03] Bare connection request, no note (LR-B29), sent by Claude with per-invite name verification against the invitation modal. Campaign: outreach/linkedin/h3-window-coverings-2026-09/. Location: San Diego County, California, US. Found via LinkedIn people search 2026-09-03 (Pass 4, Phase B — no companies.md registry exists yet). Headline and company are from the SEARCH RESULT only; /startup-outreach-draft must re-open the live profile before any claim is written (LR-B6)."
+notes: "[reply 2026-09-05] Richard replied to Msg 1 the same weekend, warm and offering: "Hi Izzie I'm great thank you, how are you? Yes no problem, what is you you need to know?" Short register, so LR-matched to ONE question. [msg2 drafted 2026-09-05] Aimed at H3A2 (where the error originates) with the LR-M7 cost clause carried by "who picked up the cost in the end". H3A1 rate and H3A4 visit cost deliberately held for later rounds. Copy at outreach/copy/H3-linkedin.md. UNSENT: the founder sends by hand. [invited 2026-09-03] Bare connection request, no note (LR-B29), sent by Claude with per-invite name verification against the invitation modal. Campaign: outreach/linkedin/h3-window-coverings-2026-09/. Location: San Diego County, California, US. Found via LinkedIn people search 2026-09-03 (Pass 4, Phase B — no companies.md registry exists yet). Headline and company are from the SEARCH RESULT only; /startup-outreach-draft must re-open the live profile before any claim is written (LR-B6)."
 
 ## Toby Dishmon
 
@@ -3222,7 +3227,7 @@ interviews: []
 evidence_score:
 outcome_modifier:
 prior_contact_status: pending
-notes: "[invited 2026-09-03] Bare connection request, no note (LR-B29), sent by Claude with per-invite name verification against the invitation modal. Campaign: outreach/linkedin/h3-window-coverings-2026-09/. Location: Greensboro–Winston-Salem, US. Found via LinkedIn people search 2026-09-03 (Pass 4, Phase B — no companies.md registry exists yet). Headline and company are from the SEARCH RESULT only; /startup-outreach-draft must re-open the live profile before any claim is written (LR-B6)."
+notes: "[reply 2026-09-05] Richard replied to Msg 1 the same weekend, warm and offering: "Hi Izzie I'm great thank you, how are you? Yes no problem, what is you you need to know?" Short register, so LR-matched to ONE question. [msg2 drafted 2026-09-05] Aimed at H3A2 (where the error originates) with the LR-M7 cost clause carried by "who picked up the cost in the end". H3A1 rate and H3A4 visit cost deliberately held for later rounds. Copy at outreach/copy/H3-linkedin.md. UNSENT: the founder sends by hand. [invited 2026-09-03] Bare connection request, no note (LR-B29), sent by Claude with per-invite name verification against the invitation modal. Campaign: outreach/linkedin/h3-window-coverings-2026-09/. Location: Greensboro–Winston-Salem, US. Found via LinkedIn people search 2026-09-03 (Pass 4, Phase B — no companies.md registry exists yet). Headline and company are from the SEARCH RESULT only; /startup-outreach-draft must re-open the live profile before any claim is written (LR-B6)."
 
 ## Katie Judds
 
@@ -3273,7 +3278,7 @@ interviews: []
 evidence_score:
 outcome_modifier:
 prior_contact_status: pending
-notes: "[invited 2026-09-03] Bare connection request, no note (LR-B29), sent by Claude with per-invite name verification against the invitation modal. Campaign: outreach/linkedin/h3-window-coverings-2026-09/. Location: Chicago, Illinois, US. Found via LinkedIn people search 2026-09-03 (Pass 4, Phase B — no companies.md registry exists yet). Headline and company are from the SEARCH RESULT only; /startup-outreach-draft must re-open the live profile before any claim is written (LR-B6)."
+notes: "[reply 2026-09-05] Richard replied to Msg 1 the same weekend, warm and offering: "Hi Izzie I'm great thank you, how are you? Yes no problem, what is you you need to know?" Short register, so LR-matched to ONE question. [msg2 drafted 2026-09-05] Aimed at H3A2 (where the error originates) with the LR-M7 cost clause carried by "who picked up the cost in the end". H3A1 rate and H3A4 visit cost deliberately held for later rounds. Copy at outreach/copy/H3-linkedin.md. UNSENT: the founder sends by hand. [invited 2026-09-03] Bare connection request, no note (LR-B29), sent by Claude with per-invite name verification against the invitation modal. Campaign: outreach/linkedin/h3-window-coverings-2026-09/. Location: Chicago, Illinois, US. Found via LinkedIn people search 2026-09-03 (Pass 4, Phase B — no companies.md registry exists yet). Headline and company are from the SEARCH RESULT only; /startup-outreach-draft must re-open the live profile before any claim is written (LR-B6)."
 
 ## Melissa Whitley
 
@@ -3324,7 +3329,7 @@ interviews: []
 evidence_score:
 outcome_modifier:
 prior_contact_status: pending
-notes: "[invited 2026-09-03] Bare connection request, no note (LR-B29), sent by Claude with per-invite name verification against the invitation modal. Campaign: outreach/linkedin/h3-window-coverings-2026-09/. Location: Brackendale, British Columbia, Canada. Found via LinkedIn people search 2026-09-03 (Pass 4, Phase B — no companies.md registry exists yet). Headline and company are from the SEARCH RESULT only; /startup-outreach-draft must re-open the live profile before any claim is written (LR-B6)."
+notes: "[reply 2026-09-05] Richard replied to Msg 1 the same weekend, warm and offering: "Hi Izzie I'm great thank you, how are you? Yes no problem, what is you you need to know?" Short register, so LR-matched to ONE question. [msg2 drafted 2026-09-05] Aimed at H3A2 (where the error originates) with the LR-M7 cost clause carried by "who picked up the cost in the end". H3A1 rate and H3A4 visit cost deliberately held for later rounds. Copy at outreach/copy/H3-linkedin.md. UNSENT: the founder sends by hand. [invited 2026-09-03] Bare connection request, no note (LR-B29), sent by Claude with per-invite name verification against the invitation modal. Campaign: outreach/linkedin/h3-window-coverings-2026-09/. Location: Brackendale, British Columbia, Canada. Found via LinkedIn people search 2026-09-03 (Pass 4, Phase B — no companies.md registry exists yet). Headline and company are from the SEARCH RESULT only; /startup-outreach-draft must re-open the live profile before any claim is written (LR-B6)."
 
 ## Kevin Hogue
 
@@ -3375,7 +3380,7 @@ interviews: []
 evidence_score:
 outcome_modifier:
 prior_contact_status: pending
-notes: "[invited 2026-09-03] Bare connection request, no note (LR-B29), sent by Claude with per-invite name verification against the invitation modal. Campaign: outreach/linkedin/h3-window-coverings-2026-09/. Location: Mesa, Arizona, US. Found via LinkedIn people search 2026-09-03 (Pass 4, Phase B — no companies.md registry exists yet). Headline and company are from the SEARCH RESULT only; /startup-outreach-draft must re-open the live profile before any claim is written (LR-B6)."
+notes: "[reply 2026-09-05] Richard replied to Msg 1 the same weekend, warm and offering: "Hi Izzie I'm great thank you, how are you? Yes no problem, what is you you need to know?" Short register, so LR-matched to ONE question. [msg2 drafted 2026-09-05] Aimed at H3A2 (where the error originates) with the LR-M7 cost clause carried by "who picked up the cost in the end". H3A1 rate and H3A4 visit cost deliberately held for later rounds. Copy at outreach/copy/H3-linkedin.md. UNSENT: the founder sends by hand. [invited 2026-09-03] Bare connection request, no note (LR-B29), sent by Claude with per-invite name verification against the invitation modal. Campaign: outreach/linkedin/h3-window-coverings-2026-09/. Location: Mesa, Arizona, US. Found via LinkedIn people search 2026-09-03 (Pass 4, Phase B — no companies.md registry exists yet). Headline and company are from the SEARCH RESULT only; /startup-outreach-draft must re-open the live profile before any claim is written (LR-B6)."
 
 ## Justin Munchinsky
 
@@ -3426,7 +3431,7 @@ interviews: []
 evidence_score:
 outcome_modifier:
 prior_contact_status: pending
-notes: "[invited 2026-09-03] Bare connection request, no note (LR-B29), sent by Claude with per-invite name verification against the invitation modal. Campaign: outreach/linkedin/h3-window-coverings-2026-09/. Location: Red Deer, Alberta, Canada. Found via LinkedIn people search 2026-09-03 (Pass 4, Phase B — no companies.md registry exists yet). Headline and company are from the SEARCH RESULT only; /startup-outreach-draft must re-open the live profile before any claim is written (LR-B6)."
+notes: "[reply 2026-09-05] Richard replied to Msg 1 the same weekend, warm and offering: "Hi Izzie I'm great thank you, how are you? Yes no problem, what is you you need to know?" Short register, so LR-matched to ONE question. [msg2 drafted 2026-09-05] Aimed at H3A2 (where the error originates) with the LR-M7 cost clause carried by "who picked up the cost in the end". H3A1 rate and H3A4 visit cost deliberately held for later rounds. Copy at outreach/copy/H3-linkedin.md. UNSENT: the founder sends by hand. [invited 2026-09-03] Bare connection request, no note (LR-B29), sent by Claude with per-invite name verification against the invitation modal. Campaign: outreach/linkedin/h3-window-coverings-2026-09/. Location: Red Deer, Alberta, Canada. Found via LinkedIn people search 2026-09-03 (Pass 4, Phase B — no companies.md registry exists yet). Headline and company are from the SEARCH RESULT only; /startup-outreach-draft must re-open the live profile before any claim is written (LR-B6)."
 
 ## Peter Nias
 
@@ -3477,7 +3482,7 @@ interviews: []
 evidence_score:
 outcome_modifier:
 prior_contact_status: pending
-notes: "[invited 2026-09-03] Bare connection request, no note (LR-B29), sent by Claude with per-invite name verification against the invitation modal. Campaign: outreach/linkedin/h3-window-coverings-2026-09/. Location: Stockport, UK. Found via LinkedIn people search 2026-09-03 (Pass 4, Phase B — no companies.md registry exists yet). Headline and company are from the SEARCH RESULT only; /startup-outreach-draft must re-open the live profile before any claim is written (LR-B6)."
+notes: "[reply 2026-09-05] Richard replied to Msg 1 the same weekend, warm and offering: "Hi Izzie I'm great thank you, how are you? Yes no problem, what is you you need to know?" Short register, so LR-matched to ONE question. [msg2 drafted 2026-09-05] Aimed at H3A2 (where the error originates) with the LR-M7 cost clause carried by "who picked up the cost in the end". H3A1 rate and H3A4 visit cost deliberately held for later rounds. Copy at outreach/copy/H3-linkedin.md. UNSENT: the founder sends by hand. [invited 2026-09-03] Bare connection request, no note (LR-B29), sent by Claude with per-invite name verification against the invitation modal. Campaign: outreach/linkedin/h3-window-coverings-2026-09/. Location: Stockport, UK. Found via LinkedIn people search 2026-09-03 (Pass 4, Phase B — no companies.md registry exists yet). Headline and company are from the SEARCH RESULT only; /startup-outreach-draft must re-open the live profile before any claim is written (LR-B6)."
 
 ## Donald Marsh
 
@@ -3528,7 +3533,7 @@ interviews: []
 evidence_score:
 outcome_modifier:
 prior_contact_status: pending
-notes: "[invited 2026-09-03] Bare connection request, no note (LR-B29), sent by Claude with per-invite name verification against the invitation modal. Campaign: outreach/linkedin/h3-window-coverings-2026-09/. Location: Chelmsford, UK. Found via LinkedIn people search 2026-09-03 (Pass 4, Phase B — no companies.md registry exists yet). Headline and company are from the SEARCH RESULT only; /startup-outreach-draft must re-open the live profile before any claim is written (LR-B6)."
+notes: "[reply 2026-09-05] Richard replied to Msg 1 the same weekend, warm and offering: "Hi Izzie I'm great thank you, how are you? Yes no problem, what is you you need to know?" Short register, so LR-matched to ONE question. [msg2 drafted 2026-09-05] Aimed at H3A2 (where the error originates) with the LR-M7 cost clause carried by "who picked up the cost in the end". H3A1 rate and H3A4 visit cost deliberately held for later rounds. Copy at outreach/copy/H3-linkedin.md. UNSENT: the founder sends by hand. [invited 2026-09-03] Bare connection request, no note (LR-B29), sent by Claude with per-invite name verification against the invitation modal. Campaign: outreach/linkedin/h3-window-coverings-2026-09/. Location: Chelmsford, UK. Found via LinkedIn people search 2026-09-03 (Pass 4, Phase B — no companies.md registry exists yet). Headline and company are from the SEARCH RESULT only; /startup-outreach-draft must re-open the live profile before any claim is written (LR-B6)."
 
 ## ray price
 
@@ -3579,7 +3584,7 @@ interviews: []
 evidence_score:
 outcome_modifier:
 prior_contact_status: pending
-notes: "[invited 2026-09-03] Bare connection request, no note (LR-B29), sent by Claude with per-invite name verification against the invitation modal. Campaign: outreach/linkedin/h3-window-coverings-2026-09/. Location: Milton Keynes, UK. Found via LinkedIn people search 2026-09-03 (Pass 4, Phase B — no companies.md registry exists yet). Headline and company are from the SEARCH RESULT only; /startup-outreach-draft must re-open the live profile before any claim is written (LR-B6)."
+notes: "[reply 2026-09-05] Richard replied to Msg 1 the same weekend, warm and offering: "Hi Izzie I'm great thank you, how are you? Yes no problem, what is you you need to know?" Short register, so LR-matched to ONE question. [msg2 drafted 2026-09-05] Aimed at H3A2 (where the error originates) with the LR-M7 cost clause carried by "who picked up the cost in the end". H3A1 rate and H3A4 visit cost deliberately held for later rounds. Copy at outreach/copy/H3-linkedin.md. UNSENT: the founder sends by hand. [invited 2026-09-03] Bare connection request, no note (LR-B29), sent by Claude with per-invite name verification against the invitation modal. Campaign: outreach/linkedin/h3-window-coverings-2026-09/. Location: Milton Keynes, UK. Found via LinkedIn people search 2026-09-03 (Pass 4, Phase B — no companies.md registry exists yet). Headline and company are from the SEARCH RESULT only; /startup-outreach-draft must re-open the live profile before any claim is written (LR-B6)."
 
 ## Philip Robbins
 
@@ -3630,7 +3635,7 @@ interviews: []
 evidence_score:
 outcome_modifier:
 prior_contact_status: pending
-notes: "[invited 2026-09-03] Bare connection request, no note (LR-B29), sent by Claude with per-invite name verification against the invitation modal. Campaign: outreach/linkedin/h3-window-coverings-2026-09/. Location: UK. Found via LinkedIn people search 2026-09-03 (Pass 4, Phase B — no companies.md registry exists yet). Headline and company are from the SEARCH RESULT only; /startup-outreach-draft must re-open the live profile before any claim is written (LR-B6)."
+notes: "[reply 2026-09-05] Richard replied to Msg 1 the same weekend, warm and offering: "Hi Izzie I'm great thank you, how are you? Yes no problem, what is you you need to know?" Short register, so LR-matched to ONE question. [msg2 drafted 2026-09-05] Aimed at H3A2 (where the error originates) with the LR-M7 cost clause carried by "who picked up the cost in the end". H3A1 rate and H3A4 visit cost deliberately held for later rounds. Copy at outreach/copy/H3-linkedin.md. UNSENT: the founder sends by hand. [invited 2026-09-03] Bare connection request, no note (LR-B29), sent by Claude with per-invite name verification against the invitation modal. Campaign: outreach/linkedin/h3-window-coverings-2026-09/. Location: UK. Found via LinkedIn people search 2026-09-03 (Pass 4, Phase B — no companies.md registry exists yet). Headline and company are from the SEARCH RESULT only; /startup-outreach-draft must re-open the live profile before any claim is written (LR-B6)."
 
 ## Gina du Toit
 
@@ -3681,7 +3686,7 @@ interviews: []
 evidence_score:
 outcome_modifier:
 prior_contact_status: pending
-notes: "[invited 2026-09-03] Bare connection request, no note (LR-B29), sent by Claude with per-invite name verification against the invitation modal. Campaign: outreach/linkedin/h3-window-coverings-2026-09/. Location: Durban, South Africa. Found via LinkedIn people search 2026-09-03 (Pass 4, Phase B — no companies.md registry exists yet). Headline and company are from the SEARCH RESULT only; /startup-outreach-draft must re-open the live profile before any claim is written (LR-B6)."
+notes: "[reply 2026-09-05] Richard replied to Msg 1 the same weekend, warm and offering: "Hi Izzie I'm great thank you, how are you? Yes no problem, what is you you need to know?" Short register, so LR-matched to ONE question. [msg2 drafted 2026-09-05] Aimed at H3A2 (where the error originates) with the LR-M7 cost clause carried by "who picked up the cost in the end". H3A1 rate and H3A4 visit cost deliberately held for later rounds. Copy at outreach/copy/H3-linkedin.md. UNSENT: the founder sends by hand. [invited 2026-09-03] Bare connection request, no note (LR-B29), sent by Claude with per-invite name verification against the invitation modal. Campaign: outreach/linkedin/h3-window-coverings-2026-09/. Location: Durban, South Africa. Found via LinkedIn people search 2026-09-03 (Pass 4, Phase B — no companies.md registry exists yet). Headline and company are from the SEARCH RESULT only; /startup-outreach-draft must re-open the live profile before any claim is written (LR-B6)."
 
 ## Adam Baratynski
 
@@ -3732,7 +3737,7 @@ interviews: []
 evidence_score:
 outcome_modifier:
 prior_contact_status: pending
-notes: "[invited 2026-09-03] Bare connection request, no note (LR-B29), sent by Claude with per-invite name verification against the invitation modal. Campaign: outreach/linkedin/h3-window-coverings-2026-09/. Location: New Zealand. Found via LinkedIn people search 2026-09-03 (Pass 4, Phase B — no companies.md registry exists yet). Headline and company are from the SEARCH RESULT only; /startup-outreach-draft must re-open the live profile before any claim is written (LR-B6)."
+notes: "[reply 2026-09-05] Richard replied to Msg 1 the same weekend, warm and offering: "Hi Izzie I'm great thank you, how are you? Yes no problem, what is you you need to know?" Short register, so LR-matched to ONE question. [msg2 drafted 2026-09-05] Aimed at H3A2 (where the error originates) with the LR-M7 cost clause carried by "who picked up the cost in the end". H3A1 rate and H3A4 visit cost deliberately held for later rounds. Copy at outreach/copy/H3-linkedin.md. UNSENT: the founder sends by hand. [invited 2026-09-03] Bare connection request, no note (LR-B29), sent by Claude with per-invite name verification against the invitation modal. Campaign: outreach/linkedin/h3-window-coverings-2026-09/. Location: New Zealand. Found via LinkedIn people search 2026-09-03 (Pass 4, Phase B — no companies.md registry exists yet). Headline and company are from the SEARCH RESULT only; /startup-outreach-draft must re-open the live profile before any claim is written (LR-B6)."
 
 ## Jesse Evans
 
@@ -3783,7 +3788,7 @@ interviews: []
 evidence_score:
 outcome_modifier:
 prior_contact_status: pending
-notes: "[invited 2026-09-03] Bare connection request, no note (LR-B29), sent by Claude with per-invite name verification against the invitation modal. Campaign: outreach/linkedin/h3-window-coverings-2026-09/. Location: Logan, Utah, US. Found via LinkedIn people search 2026-09-03 (Pass 4, Phase B — no companies.md registry exists yet). Headline and company are from the SEARCH RESULT only; /startup-outreach-draft must re-open the live profile before any claim is written (LR-B6)."
+notes: "[reply 2026-09-05] Richard replied to Msg 1 the same weekend, warm and offering: "Hi Izzie I'm great thank you, how are you? Yes no problem, what is you you need to know?" Short register, so LR-matched to ONE question. [msg2 drafted 2026-09-05] Aimed at H3A2 (where the error originates) with the LR-M7 cost clause carried by "who picked up the cost in the end". H3A1 rate and H3A4 visit cost deliberately held for later rounds. Copy at outreach/copy/H3-linkedin.md. UNSENT: the founder sends by hand. [invited 2026-09-03] Bare connection request, no note (LR-B29), sent by Claude with per-invite name verification against the invitation modal. Campaign: outreach/linkedin/h3-window-coverings-2026-09/. Location: Logan, Utah, US. Found via LinkedIn people search 2026-09-03 (Pass 4, Phase B — no companies.md registry exists yet). Headline and company are from the SEARCH RESULT only; /startup-outreach-draft must re-open the live profile before any claim is written (LR-B6)."
 
 ## Kenneth Brown
 
@@ -3834,7 +3839,7 @@ interviews: []
 evidence_score:
 outcome_modifier:
 prior_contact_status: pending
-notes: "[invited 2026-09-03] Bare connection request, no note (LR-B29), sent by Claude with per-invite name verification against the invitation modal. Campaign: outreach/linkedin/h3-window-coverings-2026-09/. Location: United States. Found via LinkedIn people search 2026-09-03 (Pass 4, Phase B — no companies.md registry exists yet). Headline and company are from the SEARCH RESULT only; /startup-outreach-draft must re-open the live profile before any claim is written (LR-B6)."
+notes: "[reply 2026-09-05] Richard replied to Msg 1 the same weekend, warm and offering: "Hi Izzie I'm great thank you, how are you? Yes no problem, what is you you need to know?" Short register, so LR-matched to ONE question. [msg2 drafted 2026-09-05] Aimed at H3A2 (where the error originates) with the LR-M7 cost clause carried by "who picked up the cost in the end". H3A1 rate and H3A4 visit cost deliberately held for later rounds. Copy at outreach/copy/H3-linkedin.md. UNSENT: the founder sends by hand. [invited 2026-09-03] Bare connection request, no note (LR-B29), sent by Claude with per-invite name verification against the invitation modal. Campaign: outreach/linkedin/h3-window-coverings-2026-09/. Location: United States. Found via LinkedIn people search 2026-09-03 (Pass 4, Phase B — no companies.md registry exists yet). Headline and company are from the SEARCH RESULT only; /startup-outreach-draft must re-open the live profile before any claim is written (LR-B6)."
 
 ## yana nickels
 
@@ -3885,7 +3890,7 @@ interviews: []
 evidence_score:
 outcome_modifier:
 prior_contact_status: pending
-notes: "[invited 2026-09-03] Bare connection request, no note (LR-B29), sent by Claude with per-invite name verification against the invitation modal. Campaign: outreach/linkedin/h3-window-coverings-2026-09/. Location: Eatontown, New Jersey, US. Found via LinkedIn people search 2026-09-03 (Pass 4, Phase B — no companies.md registry exists yet). Headline and company are from the SEARCH RESULT only; /startup-outreach-draft must re-open the live profile before any claim is written (LR-B6)."
+notes: "[reply 2026-09-05] Richard replied to Msg 1 the same weekend, warm and offering: "Hi Izzie I'm great thank you, how are you? Yes no problem, what is you you need to know?" Short register, so LR-matched to ONE question. [msg2 drafted 2026-09-05] Aimed at H3A2 (where the error originates) with the LR-M7 cost clause carried by "who picked up the cost in the end". H3A1 rate and H3A4 visit cost deliberately held for later rounds. Copy at outreach/copy/H3-linkedin.md. UNSENT: the founder sends by hand. [invited 2026-09-03] Bare connection request, no note (LR-B29), sent by Claude with per-invite name verification against the invitation modal. Campaign: outreach/linkedin/h3-window-coverings-2026-09/. Location: Eatontown, New Jersey, US. Found via LinkedIn people search 2026-09-03 (Pass 4, Phase B — no companies.md registry exists yet). Headline and company are from the SEARCH RESULT only; /startup-outreach-draft must re-open the live profile before any claim is written (LR-B6)."
 
 ## Andres Leree
 
@@ -3936,7 +3941,7 @@ interviews: []
 evidence_score:
 outcome_modifier:
 prior_contact_status: pending
-notes: "[invited 2026-09-03] Bare connection request, no note (LR-B29), sent by Claude with per-invite name verification against the invitation modal. Campaign: outreach/linkedin/h3-window-coverings-2026-09/. Location: Tijuana, Baja California, Mexico. Found via LinkedIn people search 2026-09-03 (Pass 4, Phase B — no companies.md registry exists yet). Headline and company are from the SEARCH RESULT only; /startup-outreach-draft must re-open the live profile before any claim is written (LR-B6)."
+notes: "[reply 2026-09-05] Richard replied to Msg 1 the same weekend, warm and offering: "Hi Izzie I'm great thank you, how are you? Yes no problem, what is you you need to know?" Short register, so LR-matched to ONE question. [msg2 drafted 2026-09-05] Aimed at H3A2 (where the error originates) with the LR-M7 cost clause carried by "who picked up the cost in the end". H3A1 rate and H3A4 visit cost deliberately held for later rounds. Copy at outreach/copy/H3-linkedin.md. UNSENT: the founder sends by hand. [invited 2026-09-03] Bare connection request, no note (LR-B29), sent by Claude with per-invite name verification against the invitation modal. Campaign: outreach/linkedin/h3-window-coverings-2026-09/. Location: Tijuana, Baja California, Mexico. Found via LinkedIn people search 2026-09-03 (Pass 4, Phase B — no companies.md registry exists yet). Headline and company are from the SEARCH RESULT only; /startup-outreach-draft must re-open the live profile before any claim is written (LR-B6)."
 
 ## Neil Vickers
 
@@ -3987,7 +3992,7 @@ interviews: []
 evidence_score:
 outcome_modifier:
 prior_contact_status: pending
-notes: "[invited 2026-09-03] Bare connection request, no note (LR-B29), sent by Claude with per-invite name verification against the invitation modal. Campaign: outreach/linkedin/h3-window-coverings-2026-09/. Location: Luton, UK. Found via LinkedIn people search 2026-09-03 (Pass 4, Phase B — no companies.md registry exists yet). Headline and company are from the SEARCH RESULT only; /startup-outreach-draft must re-open the live profile before any claim is written (LR-B6)."
+notes: "[reply 2026-09-05] Richard replied to Msg 1 the same weekend, warm and offering: "Hi Izzie I'm great thank you, how are you? Yes no problem, what is you you need to know?" Short register, so LR-matched to ONE question. [msg2 drafted 2026-09-05] Aimed at H3A2 (where the error originates) with the LR-M7 cost clause carried by "who picked up the cost in the end". H3A1 rate and H3A4 visit cost deliberately held for later rounds. Copy at outreach/copy/H3-linkedin.md. UNSENT: the founder sends by hand. [invited 2026-09-03] Bare connection request, no note (LR-B29), sent by Claude with per-invite name verification against the invitation modal. Campaign: outreach/linkedin/h3-window-coverings-2026-09/. Location: Luton, UK. Found via LinkedIn people search 2026-09-03 (Pass 4, Phase B — no companies.md registry exists yet). Headline and company are from the SEARCH RESULT only; /startup-outreach-draft must re-open the live profile before any claim is written (LR-B6)."
 
 ## Gavin Barrow
 
@@ -4038,7 +4043,7 @@ interviews: []
 evidence_score:
 outcome_modifier:
 prior_contact_status: pending
-notes: "[invited 2026-09-03] Bare connection request, no note (LR-B29), sent by Claude with per-invite name verification against the invitation modal. Campaign: outreach/linkedin/h3-window-coverings-2026-09/. Location: Upwey, Victoria, Australia. Found via LinkedIn people search 2026-09-03 (Pass 4, Phase B — no companies.md registry exists yet). Headline and company are from the SEARCH RESULT only; /startup-outreach-draft must re-open the live profile before any claim is written (LR-B6)."
+notes: "[reply 2026-09-05] Richard replied to Msg 1 the same weekend, warm and offering: "Hi Izzie I'm great thank you, how are you? Yes no problem, what is you you need to know?" Short register, so LR-matched to ONE question. [msg2 drafted 2026-09-05] Aimed at H3A2 (where the error originates) with the LR-M7 cost clause carried by "who picked up the cost in the end". H3A1 rate and H3A4 visit cost deliberately held for later rounds. Copy at outreach/copy/H3-linkedin.md. UNSENT: the founder sends by hand. [invited 2026-09-03] Bare connection request, no note (LR-B29), sent by Claude with per-invite name verification against the invitation modal. Campaign: outreach/linkedin/h3-window-coverings-2026-09/. Location: Upwey, Victoria, Australia. Found via LinkedIn people search 2026-09-03 (Pass 4, Phase B — no companies.md registry exists yet). Headline and company are from the SEARCH RESULT only; /startup-outreach-draft must re-open the live profile before any claim is written (LR-B6)."
 
 ## Jeremy Clarke
 
@@ -4089,7 +4094,7 @@ interviews: []
 evidence_score:
 outcome_modifier:
 prior_contact_status: pending
-notes: "[invited 2026-09-03] Bare connection request, no note (LR-B29), sent by Claude with per-invite name verification against the invitation modal. Campaign: outreach/linkedin/h3-window-coverings-2026-09/. Location: Bradford, UK. Found via LinkedIn people search 2026-09-03 (Pass 4, Phase B — no companies.md registry exists yet). Headline and company are from the SEARCH RESULT only; /startup-outreach-draft must re-open the live profile before any claim is written (LR-B6)."
+notes: "[reply 2026-09-05] Richard replied to Msg 1 the same weekend, warm and offering: "Hi Izzie I'm great thank you, how are you? Yes no problem, what is you you need to know?" Short register, so LR-matched to ONE question. [msg2 drafted 2026-09-05] Aimed at H3A2 (where the error originates) with the LR-M7 cost clause carried by "who picked up the cost in the end". H3A1 rate and H3A4 visit cost deliberately held for later rounds. Copy at outreach/copy/H3-linkedin.md. UNSENT: the founder sends by hand. [invited 2026-09-03] Bare connection request, no note (LR-B29), sent by Claude with per-invite name verification against the invitation modal. Campaign: outreach/linkedin/h3-window-coverings-2026-09/. Location: Bradford, UK. Found via LinkedIn people search 2026-09-03 (Pass 4, Phase B — no companies.md registry exists yet). Headline and company are from the SEARCH RESULT only; /startup-outreach-draft must re-open the live profile before any claim is written (LR-B6)."
 
 ## Wayne Hayes
 
@@ -4140,7 +4145,7 @@ interviews: []
 evidence_score:
 outcome_modifier:
 prior_contact_status: pending
-notes: "[invited 2026-09-03] Bare connection request, no note (LR-B29), sent by Claude with per-invite name verification against the invitation modal. Campaign: outreach/linkedin/h3-window-coverings-2026-09/. Location: Ireland. Found via LinkedIn people search 2026-09-03 (Pass 4, Phase B — no companies.md registry exists yet). Headline and company are from the SEARCH RESULT only; /startup-outreach-draft must re-open the live profile before any claim is written (LR-B6)."
+notes: "[reply 2026-09-05] Richard replied to Msg 1 the same weekend, warm and offering: "Hi Izzie I'm great thank you, how are you? Yes no problem, what is you you need to know?" Short register, so LR-matched to ONE question. [msg2 drafted 2026-09-05] Aimed at H3A2 (where the error originates) with the LR-M7 cost clause carried by "who picked up the cost in the end". H3A1 rate and H3A4 visit cost deliberately held for later rounds. Copy at outreach/copy/H3-linkedin.md. UNSENT: the founder sends by hand. [invited 2026-09-03] Bare connection request, no note (LR-B29), sent by Claude with per-invite name verification against the invitation modal. Campaign: outreach/linkedin/h3-window-coverings-2026-09/. Location: Ireland. Found via LinkedIn people search 2026-09-03 (Pass 4, Phase B — no companies.md registry exists yet). Headline and company are from the SEARCH RESULT only; /startup-outreach-draft must re-open the live profile before any claim is written (LR-B6)."
 
 ## Troy Liddell
 
@@ -4191,7 +4196,7 @@ interviews: []
 evidence_score:
 outcome_modifier:
 prior_contact_status: pending
-notes: "[invited 2026-09-03] Bare connection request, no note (LR-B29), sent by Claude with per-invite name verification against the invitation modal. Campaign: outreach/linkedin/h3-window-coverings-2026-09/. Location: Nelson, New Zealand. Found via LinkedIn people search 2026-09-03 (Pass 4, Phase B — no companies.md registry exists yet). Headline and company are from the SEARCH RESULT only; /startup-outreach-draft must re-open the live profile before any claim is written (LR-B6)."
+notes: "[reply 2026-09-05] Richard replied to Msg 1 the same weekend, warm and offering: "Hi Izzie I'm great thank you, how are you? Yes no problem, what is you you need to know?" Short register, so LR-matched to ONE question. [msg2 drafted 2026-09-05] Aimed at H3A2 (where the error originates) with the LR-M7 cost clause carried by "who picked up the cost in the end". H3A1 rate and H3A4 visit cost deliberately held for later rounds. Copy at outreach/copy/H3-linkedin.md. UNSENT: the founder sends by hand. [invited 2026-09-03] Bare connection request, no note (LR-B29), sent by Claude with per-invite name verification against the invitation modal. Campaign: outreach/linkedin/h3-window-coverings-2026-09/. Location: Nelson, New Zealand. Found via LinkedIn people search 2026-09-03 (Pass 4, Phase B — no companies.md registry exists yet). Headline and company are from the SEARCH RESULT only; /startup-outreach-draft must re-open the live profile before any claim is written (LR-B6)."
 
 ## Sajit Sharma
 
@@ -4242,7 +4247,7 @@ interviews: []
 evidence_score:
 outcome_modifier:
 prior_contact_status: pending
-notes: "[invited 2026-09-03] Bare connection request, no note (LR-B29), sent by Claude with per-invite name verification against the invitation modal. Campaign: outreach/linkedin/h3-window-coverings-2026-09/. Location: Greystanes, New South Wales, Australia. Found via LinkedIn people search 2026-09-03 (Pass 4, Phase B — no companies.md registry exists yet). Headline and company are from the SEARCH RESULT only; /startup-outreach-draft must re-open the live profile before any claim is written (LR-B6)."
+notes: "[reply 2026-09-05] Richard replied to Msg 1 the same weekend, warm and offering: "Hi Izzie I'm great thank you, how are you? Yes no problem, what is you you need to know?" Short register, so LR-matched to ONE question. [msg2 drafted 2026-09-05] Aimed at H3A2 (where the error originates) with the LR-M7 cost clause carried by "who picked up the cost in the end". H3A1 rate and H3A4 visit cost deliberately held for later rounds. Copy at outreach/copy/H3-linkedin.md. UNSENT: the founder sends by hand. [invited 2026-09-03] Bare connection request, no note (LR-B29), sent by Claude with per-invite name verification against the invitation modal. Campaign: outreach/linkedin/h3-window-coverings-2026-09/. Location: Greystanes, New South Wales, Australia. Found via LinkedIn people search 2026-09-03 (Pass 4, Phase B — no companies.md registry exists yet). Headline and company are from the SEARCH RESULT only; /startup-outreach-draft must re-open the live profile before any claim is written (LR-B6)."
 
 ## Losana Mata
 
@@ -4293,7 +4298,7 @@ interviews: []
 evidence_score:
 outcome_modifier:
 prior_contact_status: pending
-notes: "[invited 2026-09-03] Bare connection request, no note (LR-B29), sent by Claude with per-invite name verification against the invitation modal. Campaign: outreach/linkedin/h3-window-coverings-2026-09/. Location: Greater Sydney, Australia. Found via LinkedIn people search 2026-09-03 (Pass 4, Phase B — no companies.md registry exists yet). Headline and company are from the SEARCH RESULT only; /startup-outreach-draft must re-open the live profile before any claim is written (LR-B6)."
+notes: "[reply 2026-09-05] Richard replied to Msg 1 the same weekend, warm and offering: "Hi Izzie I'm great thank you, how are you? Yes no problem, what is you you need to know?" Short register, so LR-matched to ONE question. [msg2 drafted 2026-09-05] Aimed at H3A2 (where the error originates) with the LR-M7 cost clause carried by "who picked up the cost in the end". H3A1 rate and H3A4 visit cost deliberately held for later rounds. Copy at outreach/copy/H3-linkedin.md. UNSENT: the founder sends by hand. [invited 2026-09-03] Bare connection request, no note (LR-B29), sent by Claude with per-invite name verification against the invitation modal. Campaign: outreach/linkedin/h3-window-coverings-2026-09/. Location: Greater Sydney, Australia. Found via LinkedIn people search 2026-09-03 (Pass 4, Phase B — no companies.md registry exists yet). Headline and company are from the SEARCH RESULT only; /startup-outreach-draft must re-open the live profile before any claim is written (LR-B6)."
 
 ## Kendal Franklin
 
@@ -4344,7 +4349,7 @@ interviews: []
 evidence_score:
 outcome_modifier:
 prior_contact_status: pending
-notes: "[invited 2026-09-03] Bare connection request, no note (LR-B29), sent by Claude with per-invite name verification against the invitation modal. Campaign: outreach/linkedin/h3-window-coverings-2026-09/. Location: Atlanta, US. Found via LinkedIn people search 2026-09-03 (Pass 4, Phase B — no companies.md registry exists yet). Headline and company are from the SEARCH RESULT only; /startup-outreach-draft must re-open the live profile before any claim is written (LR-B6)."
+notes: "[reply 2026-09-05] Richard replied to Msg 1 the same weekend, warm and offering: "Hi Izzie I'm great thank you, how are you? Yes no problem, what is you you need to know?" Short register, so LR-matched to ONE question. [msg2 drafted 2026-09-05] Aimed at H3A2 (where the error originates) with the LR-M7 cost clause carried by "who picked up the cost in the end". H3A1 rate and H3A4 visit cost deliberately held for later rounds. Copy at outreach/copy/H3-linkedin.md. UNSENT: the founder sends by hand. [invited 2026-09-03] Bare connection request, no note (LR-B29), sent by Claude with per-invite name verification against the invitation modal. Campaign: outreach/linkedin/h3-window-coverings-2026-09/. Location: Atlanta, US. Found via LinkedIn people search 2026-09-03 (Pass 4, Phase B — no companies.md registry exists yet). Headline and company are from the SEARCH RESULT only; /startup-outreach-draft must re-open the live profile before any claim is written (LR-B6)."
 
 ## Jason Webb
 
@@ -4395,7 +4400,7 @@ interviews: []
 evidence_score:
 outcome_modifier:
 prior_contact_status: pending
-notes: "[invited 2026-09-03] Bare connection request, no note (LR-B29), sent by Claude with per-invite name verification against the invitation modal. Campaign: outreach/linkedin/h3-window-coverings-2026-09/. Location: Tooele, Utah, US. Found via LinkedIn people search 2026-09-03 (Pass 4, Phase B — no companies.md registry exists yet). Headline and company are from the SEARCH RESULT only; /startup-outreach-draft must re-open the live profile before any claim is written (LR-B6)."
+notes: "[reply 2026-09-05] Richard replied to Msg 1 the same weekend, warm and offering: "Hi Izzie I'm great thank you, how are you? Yes no problem, what is you you need to know?" Short register, so LR-matched to ONE question. [msg2 drafted 2026-09-05] Aimed at H3A2 (where the error originates) with the LR-M7 cost clause carried by "who picked up the cost in the end". H3A1 rate and H3A4 visit cost deliberately held for later rounds. Copy at outreach/copy/H3-linkedin.md. UNSENT: the founder sends by hand. [invited 2026-09-03] Bare connection request, no note (LR-B29), sent by Claude with per-invite name verification against the invitation modal. Campaign: outreach/linkedin/h3-window-coverings-2026-09/. Location: Tooele, Utah, US. Found via LinkedIn people search 2026-09-03 (Pass 4, Phase B — no companies.md registry exists yet). Headline and company are from the SEARCH RESULT only; /startup-outreach-draft must re-open the live profile before any claim is written (LR-B6)."
 
 ## Arun V S
 
@@ -4446,7 +4451,7 @@ interviews: []
 evidence_score:
 outcome_modifier:
 prior_contact_status: pending
-notes: "[invited 2026-09-03] Bare connection request, no note (LR-B29), sent by Claude with per-invite name verification against the invitation modal. Campaign: outreach/linkedin/h3-window-coverings-2026-09/. Location: Sharjah, UAE. Found via LinkedIn people search 2026-09-03 (Pass 4, Phase B — no companies.md registry exists yet). Headline and company are from the SEARCH RESULT only; /startup-outreach-draft must re-open the live profile before any claim is written (LR-B6)."
+notes: "[reply 2026-09-05] Richard replied to Msg 1 the same weekend, warm and offering: "Hi Izzie I'm great thank you, how are you? Yes no problem, what is you you need to know?" Short register, so LR-matched to ONE question. [msg2 drafted 2026-09-05] Aimed at H3A2 (where the error originates) with the LR-M7 cost clause carried by "who picked up the cost in the end". H3A1 rate and H3A4 visit cost deliberately held for later rounds. Copy at outreach/copy/H3-linkedin.md. UNSENT: the founder sends by hand. [invited 2026-09-03] Bare connection request, no note (LR-B29), sent by Claude with per-invite name verification against the invitation modal. Campaign: outreach/linkedin/h3-window-coverings-2026-09/. Location: Sharjah, UAE. Found via LinkedIn people search 2026-09-03 (Pass 4, Phase B — no companies.md registry exists yet). Headline and company are from the SEARCH RESULT only; /startup-outreach-draft must re-open the live profile before any claim is written (LR-B6)."
 
 ## Saboor Ali
 
@@ -4497,7 +4502,7 @@ interviews: []
 evidence_score:
 outcome_modifier:
 prior_contact_status: pending
-notes: "[invited 2026-09-03] Bare connection request, no note (LR-B29), sent by Claude with per-invite name verification against the invitation modal. Campaign: outreach/linkedin/h3-window-coverings-2026-09/. Location: Sharjah, UAE. Found via LinkedIn people search 2026-09-03 (Pass 4, Phase B — no companies.md registry exists yet). Headline and company are from the SEARCH RESULT only; /startup-outreach-draft must re-open the live profile before any claim is written (LR-B6)."
+notes: "[reply 2026-09-05] Richard replied to Msg 1 the same weekend, warm and offering: "Hi Izzie I'm great thank you, how are you? Yes no problem, what is you you need to know?" Short register, so LR-matched to ONE question. [msg2 drafted 2026-09-05] Aimed at H3A2 (where the error originates) with the LR-M7 cost clause carried by "who picked up the cost in the end". H3A1 rate and H3A4 visit cost deliberately held for later rounds. Copy at outreach/copy/H3-linkedin.md. UNSENT: the founder sends by hand. [invited 2026-09-03] Bare connection request, no note (LR-B29), sent by Claude with per-invite name verification against the invitation modal. Campaign: outreach/linkedin/h3-window-coverings-2026-09/. Location: Sharjah, UAE. Found via LinkedIn people search 2026-09-03 (Pass 4, Phase B — no companies.md registry exists yet). Headline and company are from the SEARCH RESULT only; /startup-outreach-draft must re-open the live profile before any claim is written (LR-B6)."
 
 ## yadvinder singh
 
@@ -4548,7 +4553,7 @@ interviews: []
 evidence_score:
 outcome_modifier:
 prior_contact_status: pending
-notes: "[invited 2026-09-03] Bare connection request, no note (LR-B29), sent by Claude with per-invite name verification against the invitation modal. Campaign: outreach/linkedin/h3-window-coverings-2026-09/. Location: South Geelong, Victoria, Australia. Found via LinkedIn people search 2026-09-03 (Pass 4, Phase B — no companies.md registry exists yet). Headline and company are from the SEARCH RESULT only; /startup-outreach-draft must re-open the live profile before any claim is written (LR-B6)."
+notes: "[reply 2026-09-05] Richard replied to Msg 1 the same weekend, warm and offering: "Hi Izzie I'm great thank you, how are you? Yes no problem, what is you you need to know?" Short register, so LR-matched to ONE question. [msg2 drafted 2026-09-05] Aimed at H3A2 (where the error originates) with the LR-M7 cost clause carried by "who picked up the cost in the end". H3A1 rate and H3A4 visit cost deliberately held for later rounds. Copy at outreach/copy/H3-linkedin.md. UNSENT: the founder sends by hand. [invited 2026-09-03] Bare connection request, no note (LR-B29), sent by Claude with per-invite name verification against the invitation modal. Campaign: outreach/linkedin/h3-window-coverings-2026-09/. Location: South Geelong, Victoria, Australia. Found via LinkedIn people search 2026-09-03 (Pass 4, Phase B — no companies.md registry exists yet). Headline and company are from the SEARCH RESULT only; /startup-outreach-draft must re-open the live profile before any claim is written (LR-B6)."
 
 ## Glenn Burns
 
@@ -4599,7 +4604,7 @@ interviews: []
 evidence_score:
 outcome_modifier:
 prior_contact_status: pending
-notes: "[invited 2026-09-03] Bare connection request, no note (LR-B29), sent by Claude with per-invite name verification against the invitation modal. Campaign: outreach/linkedin/h3-window-coverings-2026-09/. Location: New York City Metro, US. Found via LinkedIn people search 2026-09-03 (Pass 4, Phase B — no companies.md registry exists yet). Headline and company are from the SEARCH RESULT only; /startup-outreach-draft must re-open the live profile before any claim is written (LR-B6)."
+notes: "[reply 2026-09-05] Richard replied to Msg 1 the same weekend, warm and offering: "Hi Izzie I'm great thank you, how are you? Yes no problem, what is you you need to know?" Short register, so LR-matched to ONE question. [msg2 drafted 2026-09-05] Aimed at H3A2 (where the error originates) with the LR-M7 cost clause carried by "who picked up the cost in the end". H3A1 rate and H3A4 visit cost deliberately held for later rounds. Copy at outreach/copy/H3-linkedin.md. UNSENT: the founder sends by hand. [invited 2026-09-03] Bare connection request, no note (LR-B29), sent by Claude with per-invite name verification against the invitation modal. Campaign: outreach/linkedin/h3-window-coverings-2026-09/. Location: New York City Metro, US. Found via LinkedIn people search 2026-09-03 (Pass 4, Phase B — no companies.md registry exists yet). Headline and company are from the SEARCH RESULT only; /startup-outreach-draft must re-open the live profile before any claim is written (LR-B6)."
 
 ## Stoneside Blinds and Shades
 
@@ -4651,7 +4656,7 @@ interviews: []
 evidence_score:
 outcome_modifier:
 prior_contact_status: phone
-notes: "[called 2026-09-03] Free measure visit; customer liable if they supply their own dimensions. 23-window reorder case. Own factories, 4-5 week lead time. Source for E7, E9, E11. E11 is a Mom Test false positive and must not be counted as demand."
+notes: "[reply 2026-09-05] Richard replied to Msg 1 the same weekend, warm and offering: "Hi Izzie I'm great thank you, how are you? Yes no problem, what is you you need to know?" Short register, so LR-matched to ONE question. [msg2 drafted 2026-09-05] Aimed at H3A2 (where the error originates) with the LR-M7 cost clause carried by "who picked up the cost in the end". H3A1 rate and H3A4 visit cost deliberately held for later rounds. Copy at outreach/copy/H3-linkedin.md. UNSENT: the founder sends by hand. [called 2026-09-03] Free measure visit; customer liable if they supply their own dimensions. 23-window reorder case. Own factories, 4-5 week lead time. Source for E7, E9, E11. E11 is a Mom Test false positive and must not be counted as demand."
 
 ## National blinds retailer
 
@@ -4703,7 +4708,7 @@ interviews: []
 evidence_score:
 outcome_modifier:
 prior_contact_status: phone
-notes: "[called 2026-09-03] $225 per measure visit, 'not accurate enough', declines distant jobs. Source for E8, E9. IDENTITY NOT CONFIRMED - founder's notes say 'the national blinds guys'; pin the legal entity before any follow-up."
+notes: "[reply 2026-09-05] Richard replied to Msg 1 the same weekend, warm and offering: "Hi Izzie I'm great thank you, how are you? Yes no problem, what is you you need to know?" Short register, so LR-matched to ONE question. [msg2 drafted 2026-09-05] Aimed at H3A2 (where the error originates) with the LR-M7 cost clause carried by "who picked up the cost in the end". H3A1 rate and H3A4 visit cost deliberately held for later rounds. Copy at outreach/copy/H3-linkedin.md. UNSENT: the founder sends by hand. [called 2026-09-03] $225 per measure visit, 'not accurate enough', declines distant jobs. Source for E8, E9. IDENTITY NOT CONFIRMED - founder's notes say 'the national blinds guys'; pin the legal entity before any follow-up."
 
 ## Art Shade Shop
 
@@ -4755,7 +4760,7 @@ interviews: []
 evidence_score:
 outcome_modifier:
 prior_contact_status: phone
-notes: "[called 2026-09-03] Must measure and visit in person; no software; sends people for visits. Source for E9."
+notes: "[reply 2026-09-05] Richard replied to Msg 1 the same weekend, warm and offering: "Hi Izzie I'm great thank you, how are you? Yes no problem, what is you you need to know?" Short register, so LR-matched to ONE question. [msg2 drafted 2026-09-05] Aimed at H3A2 (where the error originates) with the LR-M7 cost clause carried by "who picked up the cost in the end". H3A1 rate and H3A4 visit cost deliberately held for later rounds. Copy at outreach/copy/H3-linkedin.md. UNSENT: the founder sends by hand. [called 2026-09-03] Must measure and visit in person; no software; sends people for visits. Source for E9."
 
 ## Susan Lind Chastain Inc
 
@@ -4807,7 +4812,7 @@ interviews: []
 evidence_score:
 outcome_modifier:
 prior_contact_status: phone
-notes: "[called 2026-09-03] Same manual measure pattern. Asked founder to email; founder sending blinds photos. PREMISES VISIT being arranged - highest-value next step in the batch. Source for E9. [email SENT 2026-09-03 by founder, by hand] To Christopher Adams (VP). Asks for a workroom visit at 1330 Natoma St and flags the designer-channel question outright. Copy and reasoning in outreach/copy/H3A1-email.md. Awaiting reply."
+notes: "[reply 2026-09-05] Richard replied to Msg 1 the same weekend, warm and offering: "Hi Izzie I'm great thank you, how are you? Yes no problem, what is you you need to know?" Short register, so LR-matched to ONE question. [msg2 drafted 2026-09-05] Aimed at H3A2 (where the error originates) with the LR-M7 cost clause carried by "who picked up the cost in the end". H3A1 rate and H3A4 visit cost deliberately held for later rounds. Copy at outreach/copy/H3-linkedin.md. UNSENT: the founder sends by hand. [called 2026-09-03] Same manual measure pattern. Asked founder to email; founder sending blinds photos. PREMISES VISIT being arranged - highest-value next step in the batch. Source for E9. [email SENT 2026-09-03 by founder, by hand] To Christopher Adams (VP). Asks for a workroom visit at 1330 Natoma St and flags the designer-channel question outright. Copy and reasoning in outreach/copy/H3A1-email.md. Awaiting reply."
 
 ## Family-run window covering owners (aggregate)
 
@@ -4859,7 +4864,7 @@ interviews: []
 evidence_score:
 outcome_modifier:
 prior_contact_status: phone
-notes: "[called 2026-09-03] Not enthusiastic about a software answer. Source for E10. AGGREGATE CARD - split into named contacts before any follow-up; the reason for the no was not captured and is the thing worth going back for."
+notes: "[reply 2026-09-05] Richard replied to Msg 1 the same weekend, warm and offering: "Hi Izzie I'm great thank you, how are you? Yes no problem, what is you you need to know?" Short register, so LR-matched to ONE question. [msg2 drafted 2026-09-05] Aimed at H3A2 (where the error originates) with the LR-M7 cost clause carried by "who picked up the cost in the end". H3A1 rate and H3A4 visit cost deliberately held for later rounds. Copy at outreach/copy/H3-linkedin.md. UNSENT: the founder sends by hand. [called 2026-09-03] Not enthusiastic about a software answer. Source for E10. AGGREGATE CARD - split into named contacts before any follow-up; the reason for the no was not captured and is the thing worth going back for."
 
 ## Marcelo Mazzafera
 
@@ -4910,7 +4915,7 @@ interviews: []
 evidence_score:
 outcome_modifier:
 prior_contact_status: pending
-notes: "[invited 2026-09-03] Bare connection request, no note (LR-B29), sent by Claude with per-invite name verification against the invitation modal. Campaign: outreach/linkedin/h3-window-coverings-2026-09/. [sourced 2026-09-03] Enterprise/top-band pass against the H3 ICP after the market ladder showed the existing pool sat almost entirely in the micro band. Headline and company read from LinkedIn people search on 2026-09-03; profile NOT yet opened, so degree and title are search-result facts and must be re-verified live before any draft (LR-B6, LR-B25)."
+notes: "[reply 2026-09-05] Richard replied to Msg 1 the same weekend, warm and offering: "Hi Izzie I'm great thank you, how are you? Yes no problem, what is you you need to know?" Short register, so LR-matched to ONE question. [msg2 drafted 2026-09-05] Aimed at H3A2 (where the error originates) with the LR-M7 cost clause carried by "who picked up the cost in the end". H3A1 rate and H3A4 visit cost deliberately held for later rounds. Copy at outreach/copy/H3-linkedin.md. UNSENT: the founder sends by hand. [invited 2026-09-03] Bare connection request, no note (LR-B29), sent by Claude with per-invite name verification against the invitation modal. Campaign: outreach/linkedin/h3-window-coverings-2026-09/. [sourced 2026-09-03] Enterprise/top-band pass against the H3 ICP after the market ladder showed the existing pool sat almost entirely in the micro band. Headline and company read from LinkedIn people search on 2026-09-03; profile NOT yet opened, so degree and title are search-result facts and must be re-verified live before any draft (LR-B6, LR-B25)."
 
 ## Benjamin Grimes
 
@@ -4961,7 +4966,7 @@ interviews: []
 evidence_score:
 outcome_modifier:
 prior_contact_status: pending
-notes: "[invited 2026-09-03] Bare connection request, no note (LR-B29), sent by Claude with per-invite name verification against the invitation modal. Campaign: outreach/linkedin/h3-window-coverings-2026-09/. [sourced 2026-09-03] Enterprise/top-band pass against the H3 ICP after the market ladder showed the existing pool sat almost entirely in the micro band. Headline and company read from LinkedIn people search on 2026-09-03; profile NOT yet opened, so degree and title are search-result facts and must be re-verified live before any draft (LR-B6, LR-B25)."
+notes: "[reply 2026-09-05] Richard replied to Msg 1 the same weekend, warm and offering: "Hi Izzie I'm great thank you, how are you? Yes no problem, what is you you need to know?" Short register, so LR-matched to ONE question. [msg2 drafted 2026-09-05] Aimed at H3A2 (where the error originates) with the LR-M7 cost clause carried by "who picked up the cost in the end". H3A1 rate and H3A4 visit cost deliberately held for later rounds. Copy at outreach/copy/H3-linkedin.md. UNSENT: the founder sends by hand. [invited 2026-09-03] Bare connection request, no note (LR-B29), sent by Claude with per-invite name verification against the invitation modal. Campaign: outreach/linkedin/h3-window-coverings-2026-09/. [sourced 2026-09-03] Enterprise/top-band pass against the H3 ICP after the market ladder showed the existing pool sat almost entirely in the micro band. Headline and company read from LinkedIn people search on 2026-09-03; profile NOT yet opened, so degree and title are search-result facts and must be re-verified live before any draft (LR-B6, LR-B25)."
 
 ## Elizabeth Papagni
 
@@ -5012,7 +5017,7 @@ interviews: []
 evidence_score:
 outcome_modifier:
 prior_contact_status: pending
-notes: "[invited 2026-09-03] Bare connection request, no note (LR-B29), sent by Claude with per-invite name verification against the invitation modal. Campaign: outreach/linkedin/h3-window-coverings-2026-09/. [sourced 2026-09-03] Enterprise/top-band pass against the H3 ICP after the market ladder showed the existing pool sat almost entirely in the micro band. Headline and company read from LinkedIn people search on 2026-09-03; profile NOT yet opened, so degree and title are search-result facts and must be re-verified live before any draft (LR-B6, LR-B25)."
+notes: "[reply 2026-09-05] Richard replied to Msg 1 the same weekend, warm and offering: "Hi Izzie I'm great thank you, how are you? Yes no problem, what is you you need to know?" Short register, so LR-matched to ONE question. [msg2 drafted 2026-09-05] Aimed at H3A2 (where the error originates) with the LR-M7 cost clause carried by "who picked up the cost in the end". H3A1 rate and H3A4 visit cost deliberately held for later rounds. Copy at outreach/copy/H3-linkedin.md. UNSENT: the founder sends by hand. [invited 2026-09-03] Bare connection request, no note (LR-B29), sent by Claude with per-invite name verification against the invitation modal. Campaign: outreach/linkedin/h3-window-coverings-2026-09/. [sourced 2026-09-03] Enterprise/top-band pass against the H3 ICP after the market ladder showed the existing pool sat almost entirely in the micro band. Headline and company read from LinkedIn people search on 2026-09-03; profile NOT yet opened, so degree and title are search-result facts and must be re-verified live before any draft (LR-B6, LR-B25)."
 
 ## Nathaniel Erebia
 
@@ -5063,7 +5068,7 @@ interviews: []
 evidence_score:
 outcome_modifier:
 prior_contact_status: pending
-notes: "[invited 2026-09-03] Bare connection request, no note (LR-B29), sent by Claude with per-invite name verification against the invitation modal. Campaign: outreach/linkedin/h3-window-coverings-2026-09/. [sourced 2026-09-03] Enterprise/top-band pass against the H3 ICP after the market ladder showed the existing pool sat almost entirely in the micro band. Headline and company read from LinkedIn people search on 2026-09-03; profile NOT yet opened, so degree and title are search-result facts and must be re-verified live before any draft (LR-B6, LR-B25)."
+notes: "[reply 2026-09-05] Richard replied to Msg 1 the same weekend, warm and offering: "Hi Izzie I'm great thank you, how are you? Yes no problem, what is you you need to know?" Short register, so LR-matched to ONE question. [msg2 drafted 2026-09-05] Aimed at H3A2 (where the error originates) with the LR-M7 cost clause carried by "who picked up the cost in the end". H3A1 rate and H3A4 visit cost deliberately held for later rounds. Copy at outreach/copy/H3-linkedin.md. UNSENT: the founder sends by hand. [invited 2026-09-03] Bare connection request, no note (LR-B29), sent by Claude with per-invite name verification against the invitation modal. Campaign: outreach/linkedin/h3-window-coverings-2026-09/. [sourced 2026-09-03] Enterprise/top-band pass against the H3 ICP after the market ladder showed the existing pool sat almost entirely in the micro band. Headline and company read from LinkedIn people search on 2026-09-03; profile NOT yet opened, so degree and title are search-result facts and must be re-verified live before any draft (LR-B6, LR-B25)."
 
 ## Amber Hall
 
@@ -5121,7 +5126,7 @@ interviews: []
 evidence_score:
 outcome_modifier:
 prior_contact_status: pending
-notes: "[invited 2026-09-03] Bare connection request, no note (LR-B29), sent by Claude with per-invite name verification against the invitation modal. Campaign: outreach/linkedin/h3-window-coverings-2026-09/. [sourced 2026-09-03] Enterprise/top-band pass against the H3 ICP after the market ladder showed the existing pool sat almost entirely in the micro band. Headline and company read from LinkedIn people search on 2026-09-03; profile NOT yet opened, so degree and title are search-result facts and must be re-verified live before any draft (LR-B6, LR-B25). [msg1 drafted 2026-09-04] Post-acceptance Msg 1 for H3A5, soft_ask, senior register. Live profile re-read 2026-09-04 (LR-B6); LR-B25 first-name inbox check clean, positive control (Viliam) returned its thread in the same batch. Live snapshot confirms the cached title and company unchanged. Copy at outreach/copy/H3-linkedin.md. UNSENT: the founder sends by hand. [msg1 sent 2026-09-05 10:55] Sent by the founder by hand, found by an inbox check the same day rather than reported. "Thanks for connecting." added after the greeting. The as-sent text is in outreach/copy/H3-linkedin.md; it is NOT the drafted text and it is not the later two-frame rewrite either, so treat this send as its own copy variant. No reply as of 2026-09-05."
+notes: "[reply 2026-09-05] Richard replied to Msg 1 the same weekend, warm and offering: "Hi Izzie I'm great thank you, how are you? Yes no problem, what is you you need to know?" Short register, so LR-matched to ONE question. [msg2 drafted 2026-09-05] Aimed at H3A2 (where the error originates) with the LR-M7 cost clause carried by "who picked up the cost in the end". H3A1 rate and H3A4 visit cost deliberately held for later rounds. Copy at outreach/copy/H3-linkedin.md. UNSENT: the founder sends by hand. [invited 2026-09-03] Bare connection request, no note (LR-B29), sent by Claude with per-invite name verification against the invitation modal. Campaign: outreach/linkedin/h3-window-coverings-2026-09/. [sourced 2026-09-03] Enterprise/top-band pass against the H3 ICP after the market ladder showed the existing pool sat almost entirely in the micro band. Headline and company read from LinkedIn people search on 2026-09-03; profile NOT yet opened, so degree and title are search-result facts and must be re-verified live before any draft (LR-B6, LR-B25). [msg1 drafted 2026-09-04] Post-acceptance Msg 1 for H3A5, soft_ask, senior register. Live profile re-read 2026-09-04 (LR-B6); LR-B25 first-name inbox check clean, positive control (Viliam) returned its thread in the same batch. Live snapshot confirms the cached title and company unchanged. Copy at outreach/copy/H3-linkedin.md. UNSENT: the founder sends by hand. [msg1 sent 2026-09-05 10:55] Sent by the founder by hand, found by an inbox check the same day rather than reported. "Thanks for connecting." added after the greeting. The as-sent text is in outreach/copy/H3-linkedin.md; it is NOT the drafted text and it is not the later two-frame rewrite either, so treat this send as its own copy variant. No reply as of 2026-09-05."
   [accepted 2026-09-04] Connection accepted; LinkedIn connections list reads "Connected on September 3, 2026". No message from them. Awaiting Msg 1.
 
 ## Kris Decker
@@ -5173,7 +5178,7 @@ interviews: []
 evidence_score:
 outcome_modifier:
 prior_contact_status: pending
-notes: "[invited 2026-09-03] Bare connection request, no note (LR-B29), sent by Claude with per-invite name verification against the invitation modal. Campaign: outreach/linkedin/h3-window-coverings-2026-09/. [sourced 2026-09-03] Enterprise/top-band pass against the H3 ICP after the market ladder showed the existing pool sat almost entirely in the micro band. Headline and company read from LinkedIn people search on 2026-09-03; profile NOT yet opened, so degree and title are search-result facts and must be re-verified live before any draft (LR-B6, LR-B25)."
+notes: "[reply 2026-09-05] Richard replied to Msg 1 the same weekend, warm and offering: "Hi Izzie I'm great thank you, how are you? Yes no problem, what is you you need to know?" Short register, so LR-matched to ONE question. [msg2 drafted 2026-09-05] Aimed at H3A2 (where the error originates) with the LR-M7 cost clause carried by "who picked up the cost in the end". H3A1 rate and H3A4 visit cost deliberately held for later rounds. Copy at outreach/copy/H3-linkedin.md. UNSENT: the founder sends by hand. [invited 2026-09-03] Bare connection request, no note (LR-B29), sent by Claude with per-invite name verification against the invitation modal. Campaign: outreach/linkedin/h3-window-coverings-2026-09/. [sourced 2026-09-03] Enterprise/top-band pass against the H3 ICP after the market ladder showed the existing pool sat almost entirely in the micro band. Headline and company read from LinkedIn people search on 2026-09-03; profile NOT yet opened, so degree and title are search-result facts and must be re-verified live before any draft (LR-B6, LR-B25)."
 
 ## Bruno Campos
 
@@ -5224,7 +5229,7 @@ interviews: []
 evidence_score:
 outcome_modifier:
 prior_contact_status: pending
-notes: "[invited 2026-09-03] Bare connection request, no note (LR-B29), sent by Claude with per-invite name verification against the invitation modal. Campaign: outreach/linkedin/h3-window-coverings-2026-09/. [sourced 2026-09-03] Enterprise/top-band pass against the H3 ICP after the market ladder showed the existing pool sat almost entirely in the micro band. Headline and company read from LinkedIn people search on 2026-09-03; profile NOT yet opened, so degree and title are search-result facts and must be re-verified live before any draft (LR-B6, LR-B25). [msg1 sent 2026-09-05 by founder, by hand] Observed in the founder's own LinkedIn inbox on 2026-09-05 during a reconciliation pass, timestamp 10:53 AM. The thread shows the founder's message last and no reply yet. The copy sent is NOT the copy archived in this repo: the founder is now opening with "I am building the MCP layer for machines in manufacturing" and asking whether the gap shows up in rework rates. See outreach/linkedin/belief-experts-2026-09/drafts.md for the record of that framing. Invite had been accepted; the ledger still said invited."
+notes: "[reply 2026-09-05] Richard replied to Msg 1 the same weekend, warm and offering: "Hi Izzie I'm great thank you, how are you? Yes no problem, what is you you need to know?" Short register, so LR-matched to ONE question. [msg2 drafted 2026-09-05] Aimed at H3A2 (where the error originates) with the LR-M7 cost clause carried by "who picked up the cost in the end". H3A1 rate and H3A4 visit cost deliberately held for later rounds. Copy at outreach/copy/H3-linkedin.md. UNSENT: the founder sends by hand. [invited 2026-09-03] Bare connection request, no note (LR-B29), sent by Claude with per-invite name verification against the invitation modal. Campaign: outreach/linkedin/h3-window-coverings-2026-09/. [sourced 2026-09-03] Enterprise/top-band pass against the H3 ICP after the market ladder showed the existing pool sat almost entirely in the micro band. Headline and company read from LinkedIn people search on 2026-09-03; profile NOT yet opened, so degree and title are search-result facts and must be re-verified live before any draft (LR-B6, LR-B25). [msg1 sent 2026-09-05 by founder, by hand] Observed in the founder's own LinkedIn inbox on 2026-09-05 during a reconciliation pass, timestamp 10:53 AM. The thread shows the founder's message last and no reply yet. The copy sent is NOT the copy archived in this repo: the founder is now opening with "I am building the MCP layer for machines in manufacturing" and asking whether the gap shows up in rework rates. See outreach/linkedin/belief-experts-2026-09/drafts.md for the record of that framing. Invite had been accepted; the ledger still said invited."
 ## Casey Ogden
 
 id: C102
@@ -5274,7 +5279,7 @@ interviews: []
 evidence_score:
 outcome_modifier:
 prior_contact_status: pending
-notes: "[invited 2026-09-03] Bare connection request, no note (LR-B29), sent by Claude with per-invite name verification against the invitation modal. Campaign: outreach/linkedin/h3-window-coverings-2026-09/. [sourced 2026-09-03] Enterprise/top-band pass against the H3 ICP after the market ladder showed the existing pool sat almost entirely in the micro band. Headline and company read from LinkedIn people search on 2026-09-03; profile NOT yet opened, so degree and title are search-result facts and must be re-verified live before any draft (LR-B6, LR-B25)."
+notes: "[reply 2026-09-05] Richard replied to Msg 1 the same weekend, warm and offering: "Hi Izzie I'm great thank you, how are you? Yes no problem, what is you you need to know?" Short register, so LR-matched to ONE question. [msg2 drafted 2026-09-05] Aimed at H3A2 (where the error originates) with the LR-M7 cost clause carried by "who picked up the cost in the end". H3A1 rate and H3A4 visit cost deliberately held for later rounds. Copy at outreach/copy/H3-linkedin.md. UNSENT: the founder sends by hand. [invited 2026-09-03] Bare connection request, no note (LR-B29), sent by Claude with per-invite name verification against the invitation modal. Campaign: outreach/linkedin/h3-window-coverings-2026-09/. [sourced 2026-09-03] Enterprise/top-band pass against the H3 ICP after the market ladder showed the existing pool sat almost entirely in the micro band. Headline and company read from LinkedIn people search on 2026-09-03; profile NOT yet opened, so degree and title are search-result facts and must be re-verified live before any draft (LR-B6, LR-B25)."
 
 ## Rose Mauloni
 
@@ -5325,7 +5330,7 @@ interviews: []
 evidence_score:
 outcome_modifier:
 prior_contact_status: pending
-notes: "[invited 2026-09-03] Bare connection request, no note (LR-B29), sent by Claude with per-invite name verification against the invitation modal. Campaign: outreach/linkedin/h3-window-coverings-2026-09/. [sourced 2026-09-03] Enterprise/top-band pass against the H3 ICP after the market ladder showed the existing pool sat almost entirely in the micro band. Headline and company read from LinkedIn people search on 2026-09-03; profile NOT yet opened, so degree and title are search-result facts and must be re-verified live before any draft (LR-B6, LR-B25). [msg1 sent 2026-09-05 by founder, by hand] Observed in the founder's own LinkedIn inbox on 2026-09-05 during a reconciliation pass, timestamp 6:15 PM. The thread shows the founder's message last and no reply yet. The copy sent is NOT the copy archived in this repo: the founder is now opening with "I am building the MCP layer for machines in manufacturing" and asking whether the gap shows up in rework rates. See outreach/linkedin/belief-experts-2026-09/drafts.md for the record of that framing. Invite had been accepted; the ledger still said invited."
+notes: "[reply 2026-09-05] Richard replied to Msg 1 the same weekend, warm and offering: "Hi Izzie I'm great thank you, how are you? Yes no problem, what is you you need to know?" Short register, so LR-matched to ONE question. [msg2 drafted 2026-09-05] Aimed at H3A2 (where the error originates) with the LR-M7 cost clause carried by "who picked up the cost in the end". H3A1 rate and H3A4 visit cost deliberately held for later rounds. Copy at outreach/copy/H3-linkedin.md. UNSENT: the founder sends by hand. [invited 2026-09-03] Bare connection request, no note (LR-B29), sent by Claude with per-invite name verification against the invitation modal. Campaign: outreach/linkedin/h3-window-coverings-2026-09/. [sourced 2026-09-03] Enterprise/top-band pass against the H3 ICP after the market ladder showed the existing pool sat almost entirely in the micro band. Headline and company read from LinkedIn people search on 2026-09-03; profile NOT yet opened, so degree and title are search-result facts and must be re-verified live before any draft (LR-B6, LR-B25). [msg1 sent 2026-09-05 by founder, by hand] Observed in the founder's own LinkedIn inbox on 2026-09-05 during a reconciliation pass, timestamp 6:15 PM. The thread shows the founder's message last and no reply yet. The copy sent is NOT the copy archived in this repo: the founder is now opening with "I am building the MCP layer for machines in manufacturing" and asking whether the gap shows up in rework rates. See outreach/linkedin/belief-experts-2026-09/drafts.md for the record of that framing. Invite had been accepted; the ledger still said invited."
 ## Elizabeth B.
 
 id: C104
@@ -5375,7 +5380,7 @@ interviews: []
 evidence_score:
 outcome_modifier:
 prior_contact_status: pending
-notes: "[invited 2026-09-03] Bare connection request, no note (LR-B29), sent by Claude with per-invite name verification against the invitation modal. Campaign: outreach/linkedin/h3-window-coverings-2026-09/. [sourced 2026-09-03] Enterprise/top-band pass against the H3 ICP after the market ladder showed the existing pool sat almost entirely in the micro band. Headline and company read from LinkedIn people search on 2026-09-03; profile NOT yet opened, so degree and title are search-result facts and must be re-verified live before any draft (LR-B6, LR-B25)."
+notes: "[reply 2026-09-05] Richard replied to Msg 1 the same weekend, warm and offering: "Hi Izzie I'm great thank you, how are you? Yes no problem, what is you you need to know?" Short register, so LR-matched to ONE question. [msg2 drafted 2026-09-05] Aimed at H3A2 (where the error originates) with the LR-M7 cost clause carried by "who picked up the cost in the end". H3A1 rate and H3A4 visit cost deliberately held for later rounds. Copy at outreach/copy/H3-linkedin.md. UNSENT: the founder sends by hand. [invited 2026-09-03] Bare connection request, no note (LR-B29), sent by Claude with per-invite name verification against the invitation modal. Campaign: outreach/linkedin/h3-window-coverings-2026-09/. [sourced 2026-09-03] Enterprise/top-band pass against the H3 ICP after the market ladder showed the existing pool sat almost entirely in the micro band. Headline and company read from LinkedIn people search on 2026-09-03; profile NOT yet opened, so degree and title are search-result facts and must be re-verified live before any draft (LR-B6, LR-B25)."
 
 ## Steven Chiang
 
@@ -5426,7 +5431,7 @@ interviews: []
 evidence_score:
 outcome_modifier:
 prior_contact_status: pending
-notes: "[invited 2026-09-03] Bare connection request, no note (LR-B29), sent by Claude with per-invite name verification against the invitation modal. Campaign: outreach/linkedin/h3-window-coverings-2026-09/. [sourced 2026-09-03] Enterprise/top-band pass against the H3 ICP after the market ladder showed the existing pool sat almost entirely in the micro band. Headline and company read from LinkedIn people search on 2026-09-03; profile NOT yet opened, so degree and title are search-result facts and must be re-verified live before any draft (LR-B6, LR-B25)."
+notes: "[reply 2026-09-05] Richard replied to Msg 1 the same weekend, warm and offering: "Hi Izzie I'm great thank you, how are you? Yes no problem, what is you you need to know?" Short register, so LR-matched to ONE question. [msg2 drafted 2026-09-05] Aimed at H3A2 (where the error originates) with the LR-M7 cost clause carried by "who picked up the cost in the end". H3A1 rate and H3A4 visit cost deliberately held for later rounds. Copy at outreach/copy/H3-linkedin.md. UNSENT: the founder sends by hand. [invited 2026-09-03] Bare connection request, no note (LR-B29), sent by Claude with per-invite name verification against the invitation modal. Campaign: outreach/linkedin/h3-window-coverings-2026-09/. [sourced 2026-09-03] Enterprise/top-band pass against the H3 ICP after the market ladder showed the existing pool sat almost entirely in the micro band. Headline and company read from LinkedIn people search on 2026-09-03; profile NOT yet opened, so degree and title are search-result facts and must be re-verified live before any draft (LR-B6, LR-B25)."
 
 ## Fernando Antonio Martinez Almaraz
 
@@ -5483,7 +5488,7 @@ interviews: []
 evidence_score:
 outcome_modifier:
 prior_contact_status: pending
-notes: "[invited 2026-09-03] Bare connection request, no note (LR-B29), sent by Claude with per-invite name verification against the invitation modal. Campaign: outreach/linkedin/h3-window-coverings-2026-09/. [sourced 2026-09-03] Enterprise/top-band pass against the H3 ICP after the market ladder showed the existing pool sat almost entirely in the micro band. Headline and company read from LinkedIn people search on 2026-09-03; profile NOT yet opened, so degree and title are search-result facts and must be re-verified live before any draft (LR-B6, LR-B25). [msg1 drafted 2026-09-04] Post-acceptance Msg 1 for H3A1, soft_ask, standard register. Live profile re-read 2026-09-04 (LR-B6); LR-B25 first-name inbox check clean, positive control (Viliam) returned its thread in the same batch. CORRECTED: his title reads Quality Manager, not Quality Engineering Manager. Copy at outreach/copy/H3-linkedin.md. UNSENT: the founder sends by hand. [msg1 sent 2026-09-05 10:56] Sent by the founder by hand, found by an inbox check the same day rather than reported. The founder fixed the clause himself: "a wrong measurement rather than a bad manufactured part", replacing the drafted "a wrong number rather than a bad part" that he had flagged as not making sense. The as-sent text is in outreach/copy/H3-linkedin.md; it is NOT the drafted text and it is not the later two-frame rewrite either, so treat this send as its own copy variant. No reply as of 2026-09-05."
+notes: "[reply 2026-09-05] Richard replied to Msg 1 the same weekend, warm and offering: "Hi Izzie I'm great thank you, how are you? Yes no problem, what is you you need to know?" Short register, so LR-matched to ONE question. [msg2 drafted 2026-09-05] Aimed at H3A2 (where the error originates) with the LR-M7 cost clause carried by "who picked up the cost in the end". H3A1 rate and H3A4 visit cost deliberately held for later rounds. Copy at outreach/copy/H3-linkedin.md. UNSENT: the founder sends by hand. [invited 2026-09-03] Bare connection request, no note (LR-B29), sent by Claude with per-invite name verification against the invitation modal. Campaign: outreach/linkedin/h3-window-coverings-2026-09/. [sourced 2026-09-03] Enterprise/top-band pass against the H3 ICP after the market ladder showed the existing pool sat almost entirely in the micro band. Headline and company read from LinkedIn people search on 2026-09-03; profile NOT yet opened, so degree and title are search-result facts and must be re-verified live before any draft (LR-B6, LR-B25). [msg1 drafted 2026-09-04] Post-acceptance Msg 1 for H3A1, soft_ask, standard register. Live profile re-read 2026-09-04 (LR-B6); LR-B25 first-name inbox check clean, positive control (Viliam) returned its thread in the same batch. CORRECTED: his title reads Quality Manager, not Quality Engineering Manager. Copy at outreach/copy/H3-linkedin.md. UNSENT: the founder sends by hand. [msg1 sent 2026-09-05 10:56] Sent by the founder by hand, found by an inbox check the same day rather than reported. The founder fixed the clause himself: "a wrong measurement rather than a bad manufactured part", replacing the drafted "a wrong number rather than a bad part" that he had flagged as not making sense. The as-sent text is in outreach/copy/H3-linkedin.md; it is NOT the drafted text and it is not the later two-frame rewrite either, so treat this send as its own copy variant. No reply as of 2026-09-05."
   [accepted 2026-09-04] Connection accepted; LinkedIn connections list reads "Connected on September 3, 2026". No message from them. Awaiting Msg 1.
 
 ## Julio Tinajero
@@ -5541,7 +5546,7 @@ interviews: []
 evidence_score:
 outcome_modifier:
 prior_contact_status: pending
-notes: "[invited 2026-09-03] Bare connection request, no note (LR-B29), sent by Claude with per-invite name verification against the invitation modal. Campaign: outreach/linkedin/h3-window-coverings-2026-09/. [sourced 2026-09-03] Enterprise/top-band pass against the H3 ICP after the market ladder showed the existing pool sat almost entirely in the micro band. Headline and company read from LinkedIn people search on 2026-09-03; profile NOT yet opened, so degree and title are search-result facts and must be re-verified live before any draft (LR-B6, LR-B25). [msg1 drafted 2026-09-04] Post-acceptance Msg 1 for H3A1, soft_ask, senior register. Live profile re-read 2026-09-04 (LR-B6); LR-B25 first-name inbox check clean, positive control (Viliam) returned its thread in the same batch. CORRECTED, and this is the reason LR-B6 exists: the Springs role ENDED Oct 2025. His headline still reads as current, so the two disagree; the message is written so it is true either way. Copy at outreach/copy/H3-linkedin.md. UNSENT: the founder sends by hand. [msg1 sent 2026-09-05 10:58] Sent by the founder by hand, found by an inbox check the same day rather than reported. Frame replaced with the founder's own, plainer version: whether the software gap "traces all the way down to quality issues". Shorter and in plant language. The as-sent text is in outreach/copy/H3-linkedin.md; it is NOT the drafted text and it is not the later two-frame rewrite either, so treat this send as its own copy variant. No reply as of 2026-09-05."
+notes: "[reply 2026-09-05] Richard replied to Msg 1 the same weekend, warm and offering: "Hi Izzie I'm great thank you, how are you? Yes no problem, what is you you need to know?" Short register, so LR-matched to ONE question. [msg2 drafted 2026-09-05] Aimed at H3A2 (where the error originates) with the LR-M7 cost clause carried by "who picked up the cost in the end". H3A1 rate and H3A4 visit cost deliberately held for later rounds. Copy at outreach/copy/H3-linkedin.md. UNSENT: the founder sends by hand. [invited 2026-09-03] Bare connection request, no note (LR-B29), sent by Claude with per-invite name verification against the invitation modal. Campaign: outreach/linkedin/h3-window-coverings-2026-09/. [sourced 2026-09-03] Enterprise/top-band pass against the H3 ICP after the market ladder showed the existing pool sat almost entirely in the micro band. Headline and company read from LinkedIn people search on 2026-09-03; profile NOT yet opened, so degree and title are search-result facts and must be re-verified live before any draft (LR-B6, LR-B25). [msg1 drafted 2026-09-04] Post-acceptance Msg 1 for H3A1, soft_ask, senior register. Live profile re-read 2026-09-04 (LR-B6); LR-B25 first-name inbox check clean, positive control (Viliam) returned its thread in the same batch. CORRECTED, and this is the reason LR-B6 exists: the Springs role ENDED Oct 2025. His headline still reads as current, so the two disagree; the message is written so it is true either way. Copy at outreach/copy/H3-linkedin.md. UNSENT: the founder sends by hand. [msg1 sent 2026-09-05 10:58] Sent by the founder by hand, found by an inbox check the same day rather than reported. Frame replaced with the founder's own, plainer version: whether the software gap "traces all the way down to quality issues". Shorter and in plant language. The as-sent text is in outreach/copy/H3-linkedin.md; it is NOT the drafted text and it is not the later two-frame rewrite either, so treat this send as its own copy variant. No reply as of 2026-09-05."
   [accepted 2026-09-04] Connection accepted; LinkedIn connections list reads "Connected on September 3, 2026". No message from them. Awaiting Msg 1.
 
 ## Javier Bustamante Martinez
@@ -5593,7 +5598,7 @@ interviews: []
 evidence_score:
 outcome_modifier:
 prior_contact_status: pending
-notes: "[invited 2026-09-03] Bare connection request, no note (LR-B29), sent by Claude with per-invite name verification against the invitation modal. Campaign: outreach/linkedin/h3-window-coverings-2026-09/. [sourced 2026-09-03] Enterprise/top-band pass against the H3 ICP after the market ladder showed the existing pool sat almost entirely in the micro band. Headline and company read from LinkedIn people search on 2026-09-03; profile NOT yet opened, so degree and title are search-result facts and must be re-verified live before any draft (LR-B6, LR-B25)."
+notes: "[reply 2026-09-05] Richard replied to Msg 1 the same weekend, warm and offering: "Hi Izzie I'm great thank you, how are you? Yes no problem, what is you you need to know?" Short register, so LR-matched to ONE question. [msg2 drafted 2026-09-05] Aimed at H3A2 (where the error originates) with the LR-M7 cost clause carried by "who picked up the cost in the end". H3A1 rate and H3A4 visit cost deliberately held for later rounds. Copy at outreach/copy/H3-linkedin.md. UNSENT: the founder sends by hand. [invited 2026-09-03] Bare connection request, no note (LR-B29), sent by Claude with per-invite name verification against the invitation modal. Campaign: outreach/linkedin/h3-window-coverings-2026-09/. [sourced 2026-09-03] Enterprise/top-band pass against the H3 ICP after the market ladder showed the existing pool sat almost entirely in the micro band. Headline and company read from LinkedIn people search on 2026-09-03; profile NOT yet opened, so degree and title are search-result facts and must be re-verified live before any draft (LR-B6, LR-B25)."
 
 ## Heather Barrows
 
@@ -5644,7 +5649,7 @@ interviews: []
 evidence_score:
 outcome_modifier:
 prior_contact_status: pending
-notes: "[invited 2026-09-03] Bare connection request, no note (LR-B29), sent by Claude with per-invite name verification against the invitation modal. Campaign: outreach/linkedin/h3-window-coverings-2026-09/. [sourced 2026-09-03] Enterprise/top-band pass against the H3 ICP after the market ladder showed the existing pool sat almost entirely in the micro band. Headline and company read from LinkedIn people search on 2026-09-03; profile NOT yet opened, so degree and title are search-result facts and must be re-verified live before any draft (LR-B6, LR-B25)."
+notes: "[reply 2026-09-05] Richard replied to Msg 1 the same weekend, warm and offering: "Hi Izzie I'm great thank you, how are you? Yes no problem, what is you you need to know?" Short register, so LR-matched to ONE question. [msg2 drafted 2026-09-05] Aimed at H3A2 (where the error originates) with the LR-M7 cost clause carried by "who picked up the cost in the end". H3A1 rate and H3A4 visit cost deliberately held for later rounds. Copy at outreach/copy/H3-linkedin.md. UNSENT: the founder sends by hand. [invited 2026-09-03] Bare connection request, no note (LR-B29), sent by Claude with per-invite name verification against the invitation modal. Campaign: outreach/linkedin/h3-window-coverings-2026-09/. [sourced 2026-09-03] Enterprise/top-band pass against the H3 ICP after the market ladder showed the existing pool sat almost entirely in the micro band. Headline and company read from LinkedIn people search on 2026-09-03; profile NOT yet opened, so degree and title are search-result facts and must be re-verified live before any draft (LR-B6, LR-B25)."
 
 ## Armando Pedraza
 
@@ -5695,7 +5700,7 @@ interviews: []
 evidence_score:
 outcome_modifier:
 prior_contact_status: pending
-notes: "[invited 2026-09-03] Bare connection request, no note (LR-B29), sent by Claude with per-invite name verification against the invitation modal. Campaign: outreach/linkedin/h3-window-coverings-2026-09/. [sourced 2026-09-03] Enterprise/top-band pass against the H3 ICP after the market ladder showed the existing pool sat almost entirely in the micro band. Headline and company read from LinkedIn people search on 2026-09-03; profile NOT yet opened, so degree and title are search-result facts and must be re-verified live before any draft (LR-B6, LR-B25). [msg1 sent 2026-09-05 by founder, by hand] Observed in the founder's own LinkedIn inbox on 2026-09-05 during a reconciliation pass, timestamp 6:14 PM. The thread shows the founder's message last and no reply yet. The copy sent is NOT the copy archived in this repo: the founder is now opening with "I am building the MCP layer for machines in manufacturing" and asking whether the gap shows up in rework rates. See outreach/linkedin/belief-experts-2026-09/drafts.md for the record of that framing. Invite had been accepted; the ledger still said invited."
+notes: "[reply 2026-09-05] Richard replied to Msg 1 the same weekend, warm and offering: "Hi Izzie I'm great thank you, how are you? Yes no problem, what is you you need to know?" Short register, so LR-matched to ONE question. [msg2 drafted 2026-09-05] Aimed at H3A2 (where the error originates) with the LR-M7 cost clause carried by "who picked up the cost in the end". H3A1 rate and H3A4 visit cost deliberately held for later rounds. Copy at outreach/copy/H3-linkedin.md. UNSENT: the founder sends by hand. [invited 2026-09-03] Bare connection request, no note (LR-B29), sent by Claude with per-invite name verification against the invitation modal. Campaign: outreach/linkedin/h3-window-coverings-2026-09/. [sourced 2026-09-03] Enterprise/top-band pass against the H3 ICP after the market ladder showed the existing pool sat almost entirely in the micro band. Headline and company read from LinkedIn people search on 2026-09-03; profile NOT yet opened, so degree and title are search-result facts and must be re-verified live before any draft (LR-B6, LR-B25). [msg1 sent 2026-09-05 by founder, by hand] Observed in the founder's own LinkedIn inbox on 2026-09-05 during a reconciliation pass, timestamp 6:14 PM. The thread shows the founder's message last and no reply yet. The copy sent is NOT the copy archived in this repo: the founder is now opening with "I am building the MCP layer for machines in manufacturing" and asking whether the gap shows up in rework rates. See outreach/linkedin/belief-experts-2026-09/drafts.md for the record of that framing. Invite had been accepted; the ledger still said invited."
 ## Abubakr Abushanab
 
 id: C111
@@ -5745,7 +5750,7 @@ interviews: []
 evidence_score:
 outcome_modifier:
 prior_contact_status: pending
-notes: "[invited 2026-09-03] Bare connection request, no note (LR-B29), sent by Claude with per-invite name verification against the invitation modal. Campaign: outreach/linkedin/h3-window-coverings-2026-09/. [sourced 2026-09-03] Enterprise/top-band pass against the H3 ICP after the market ladder showed the existing pool sat almost entirely in the micro band. Headline and company read from LinkedIn people search on 2026-09-03; profile NOT yet opened, so degree and title are search-result facts and must be re-verified live before any draft (LR-B6, LR-B25)."
+notes: "[reply 2026-09-05] Richard replied to Msg 1 the same weekend, warm and offering: "Hi Izzie I'm great thank you, how are you? Yes no problem, what is you you need to know?" Short register, so LR-matched to ONE question. [msg2 drafted 2026-09-05] Aimed at H3A2 (where the error originates) with the LR-M7 cost clause carried by "who picked up the cost in the end". H3A1 rate and H3A4 visit cost deliberately held for later rounds. Copy at outreach/copy/H3-linkedin.md. UNSENT: the founder sends by hand. [invited 2026-09-03] Bare connection request, no note (LR-B29), sent by Claude with per-invite name verification against the invitation modal. Campaign: outreach/linkedin/h3-window-coverings-2026-09/. [sourced 2026-09-03] Enterprise/top-band pass against the H3 ICP after the market ladder showed the existing pool sat almost entirely in the micro band. Headline and company read from LinkedIn people search on 2026-09-03; profile NOT yet opened, so degree and title are search-result facts and must be re-verified live before any draft (LR-B6, LR-B25)."
 
 ## James McLaughlin
 
@@ -5796,7 +5801,7 @@ interviews: []
 evidence_score:
 outcome_modifier:
 prior_contact_status: pending
-notes: "[invited 2026-09-03] Bare connection request, no note (LR-B29), sent by Claude with per-invite name verification against the invitation modal. Campaign: outreach/linkedin/h3-window-coverings-2026-09/. [sourced 2026-09-03] Enterprise/top-band pass against the H3 ICP after the market ladder showed the existing pool sat almost entirely in the micro band. Headline and company read from LinkedIn people search on 2026-09-03; profile NOT yet opened, so degree and title are search-result facts and must be re-verified live before any draft (LR-B6, LR-B25)."
+notes: "[reply 2026-09-05] Richard replied to Msg 1 the same weekend, warm and offering: "Hi Izzie I'm great thank you, how are you? Yes no problem, what is you you need to know?" Short register, so LR-matched to ONE question. [msg2 drafted 2026-09-05] Aimed at H3A2 (where the error originates) with the LR-M7 cost clause carried by "who picked up the cost in the end". H3A1 rate and H3A4 visit cost deliberately held for later rounds. Copy at outreach/copy/H3-linkedin.md. UNSENT: the founder sends by hand. [invited 2026-09-03] Bare connection request, no note (LR-B29), sent by Claude with per-invite name verification against the invitation modal. Campaign: outreach/linkedin/h3-window-coverings-2026-09/. [sourced 2026-09-03] Enterprise/top-band pass against the H3 ICP after the market ladder showed the existing pool sat almost entirely in the micro band. Headline and company read from LinkedIn people search on 2026-09-03; profile NOT yet opened, so degree and title are search-result facts and must be re-verified live before any draft (LR-B6, LR-B25)."
 
 ## William DeSemple
 
@@ -5853,7 +5858,7 @@ interviews: []
 evidence_score:
 outcome_modifier:
 prior_contact_status: pending
-notes: "[invited 2026-09-03] Bare connection request, no note (LR-B29), sent by Claude with per-invite name verification against the invitation modal. Campaign: outreach/linkedin/h3-window-coverings-2026-09/. [sourced 2026-09-03] Enterprise/top-band pass against the H3 ICP after the market ladder showed the existing pool sat almost entirely in the micro band. Headline and company read from LinkedIn people search on 2026-09-03; profile NOT yet opened, so degree and title are search-result facts and must be re-verified live before any draft (LR-B6, LR-B25). [msg1 drafted 2026-09-04] Post-acceptance Msg 1 for H3A4, soft_ask, senior register. Live profile re-read 2026-09-04 (LR-B6); LR-B25 first-name inbox check clean, positive control (Viliam) returned its thread in the same batch. CORRECTED: the company is Norman International Inc. and his remit is Western US and Canada, not Norman Window Fashions unqualified. Copy at outreach/copy/H3-linkedin.md. UNSENT: the founder sends by hand. [msg1_sent 2026-09-05 14:02] Sent by the founder by hand; confirmed by an inbox read 2026-09-05. Sent on the PREVIOUS framing ("I spent a year at Cambridge on why the machines and the software that drives them never share one thread"), four hours before the MCP rewrite. He is the only one of the six not on the MCP anchor. No reply yet."
+notes: "[reply 2026-09-05] Richard replied to Msg 1 the same weekend, warm and offering: "Hi Izzie I'm great thank you, how are you? Yes no problem, what is you you need to know?" Short register, so LR-matched to ONE question. [msg2 drafted 2026-09-05] Aimed at H3A2 (where the error originates) with the LR-M7 cost clause carried by "who picked up the cost in the end". H3A1 rate and H3A4 visit cost deliberately held for later rounds. Copy at outreach/copy/H3-linkedin.md. UNSENT: the founder sends by hand. [invited 2026-09-03] Bare connection request, no note (LR-B29), sent by Claude with per-invite name verification against the invitation modal. Campaign: outreach/linkedin/h3-window-coverings-2026-09/. [sourced 2026-09-03] Enterprise/top-band pass against the H3 ICP after the market ladder showed the existing pool sat almost entirely in the micro band. Headline and company read from LinkedIn people search on 2026-09-03; profile NOT yet opened, so degree and title are search-result facts and must be re-verified live before any draft (LR-B6, LR-B25). [msg1 drafted 2026-09-04] Post-acceptance Msg 1 for H3A4, soft_ask, senior register. Live profile re-read 2026-09-04 (LR-B6); LR-B25 first-name inbox check clean, positive control (Viliam) returned its thread in the same batch. CORRECTED: the company is Norman International Inc. and his remit is Western US and Canada, not Norman Window Fashions unqualified. Copy at outreach/copy/H3-linkedin.md. UNSENT: the founder sends by hand. [msg1_sent 2026-09-05 14:02] Sent by the founder by hand; confirmed by an inbox read 2026-09-05. Sent on the PREVIOUS framing ("I spent a year at Cambridge on why the machines and the software that drives them never share one thread"), four hours before the MCP rewrite. He is the only one of the six not on the MCP anchor. No reply yet."
   [accepted 2026-09-04] Connection accepted; LinkedIn connections list reads "Connected on September 3, 2026". No message from them. Awaiting Msg 1.
 
 ## Ranjan Mada
@@ -5905,7 +5910,7 @@ interviews: []
 evidence_score:
 outcome_modifier:
 prior_contact_status: pending
-notes: "[invited 2026-09-03] Bare connection request, no note (LR-B29), sent by Claude with per-invite name verification against the invitation modal. Campaign: outreach/linkedin/h3-window-coverings-2026-09/. [sourced 2026-09-03] Enterprise/top-band pass against the H3 ICP after the market ladder showed the existing pool sat almost entirely in the micro band. Headline and company read from LinkedIn people search on 2026-09-03; profile NOT yet opened, so degree and title are search-result facts and must be re-verified live before any draft (LR-B6, LR-B25)."
+notes: "[reply 2026-09-05] Richard replied to Msg 1 the same weekend, warm and offering: "Hi Izzie I'm great thank you, how are you? Yes no problem, what is you you need to know?" Short register, so LR-matched to ONE question. [msg2 drafted 2026-09-05] Aimed at H3A2 (where the error originates) with the LR-M7 cost clause carried by "who picked up the cost in the end". H3A1 rate and H3A4 visit cost deliberately held for later rounds. Copy at outreach/copy/H3-linkedin.md. UNSENT: the founder sends by hand. [invited 2026-09-03] Bare connection request, no note (LR-B29), sent by Claude with per-invite name verification against the invitation modal. Campaign: outreach/linkedin/h3-window-coverings-2026-09/. [sourced 2026-09-03] Enterprise/top-band pass against the H3 ICP after the market ladder showed the existing pool sat almost entirely in the micro band. Headline and company read from LinkedIn people search on 2026-09-03; profile NOT yet opened, so degree and title are search-result facts and must be re-verified live before any draft (LR-B6, LR-B25)."
 
 ## Dan Williams
 
@@ -5963,7 +5968,7 @@ interviews: []
 evidence_score:
 outcome_modifier:
 prior_contact_status: pending
-notes: "[invited 2026-09-03] Bare connection request, no note (LR-B29), sent by Claude with per-invite name verification against the invitation modal. Campaign: outreach/linkedin/h3-window-coverings-2026-09/. [sourced 2026-09-03] Enterprise/top-band pass against the H3 ICP after the market ladder showed the existing pool sat almost entirely in the micro band. Headline and company read from LinkedIn people search on 2026-09-03; profile NOT yet opened, so degree and title are search-result facts and must be re-verified live before any draft (LR-B6, LR-B25). [msg1 drafted 2026-09-04] Post-acceptance Msg 1 for H3A4, soft_ask, senior register. Live profile re-read 2026-09-04 (LR-B6); LR-B25 first-name inbox check clean, positive control (Viliam) returned its thread in the same batch. The linkedin_url /in/conversion/ is CORRECT and not broken: it is his own vanity slug. A prior session flagged it as invalid; it resolves to his live profile. Copy at outreach/copy/H3-linkedin.md. UNSENT: the founder sends by hand. [msg1_sent 2026-09-05 18:12] Sent by the founder by hand; confirmed by an inbox read 2026-09-05. MCP framing, sent verbatim from the draft. No reply yet. [replied 2026-09-05] HE ANSWERED. Reported by the founder, not read by Claude: the founder instructed that the thread NOT be opened in the browser, so his exact wording is not in this ledger and the reply excerpt is second-hand. What he asked was what the end goal of the research is. He is Chief Revenue Officer of a company whose whole model is measure and install, which makes this the most valuable reply the campaign has produced. [msg2 drafted 2026-09-05] Answers the question in one line and asks for a call this week. The end goal is stated as the founder states it: an intent layer for MCP machine orchestration. NO COST QUESTION: H3A4's next_action wants the per-visit fee, but LR-B11 puts money at Msg 4 and its own note says an assumption's next_action describes the interview rather than the message. Asking a CRO for a per-visit cost in message two reads as qualifying a lead. Availability offered as a range per the founder, not a booking link (LR-M9). Copy at outreach/copy/H3-linkedin.md. UNSENT. [msg2 sent 2026-09-05 by founder, by hand] Observed in the founder's inbox on 2026-09-05, timestamp 7:08 PM. Answers his question and asks for a call, offering 9am to 9pm PDT. The message states the end goal as an intent layer for MCP machine orchestration, which is a product reveal made by founder decision."
+notes: "[reply 2026-09-05] Richard replied to Msg 1 the same weekend, warm and offering: "Hi Izzie I'm great thank you, how are you? Yes no problem, what is you you need to know?" Short register, so LR-matched to ONE question. [msg2 drafted 2026-09-05] Aimed at H3A2 (where the error originates) with the LR-M7 cost clause carried by "who picked up the cost in the end". H3A1 rate and H3A4 visit cost deliberately held for later rounds. Copy at outreach/copy/H3-linkedin.md. UNSENT: the founder sends by hand. [invited 2026-09-03] Bare connection request, no note (LR-B29), sent by Claude with per-invite name verification against the invitation modal. Campaign: outreach/linkedin/h3-window-coverings-2026-09/. [sourced 2026-09-03] Enterprise/top-band pass against the H3 ICP after the market ladder showed the existing pool sat almost entirely in the micro band. Headline and company read from LinkedIn people search on 2026-09-03; profile NOT yet opened, so degree and title are search-result facts and must be re-verified live before any draft (LR-B6, LR-B25). [msg1 drafted 2026-09-04] Post-acceptance Msg 1 for H3A4, soft_ask, senior register. Live profile re-read 2026-09-04 (LR-B6); LR-B25 first-name inbox check clean, positive control (Viliam) returned its thread in the same batch. The linkedin_url /in/conversion/ is CORRECT and not broken: it is his own vanity slug. A prior session flagged it as invalid; it resolves to his live profile. Copy at outreach/copy/H3-linkedin.md. UNSENT: the founder sends by hand. [msg1_sent 2026-09-05 18:12] Sent by the founder by hand; confirmed by an inbox read 2026-09-05. MCP framing, sent verbatim from the draft. No reply yet. [replied 2026-09-05] HE ANSWERED. Reported by the founder, not read by Claude: the founder instructed that the thread NOT be opened in the browser, so his exact wording is not in this ledger and the reply excerpt is second-hand. What he asked was what the end goal of the research is. He is Chief Revenue Officer of a company whose whole model is measure and install, which makes this the most valuable reply the campaign has produced. [msg2 drafted 2026-09-05] Answers the question in one line and asks for a call this week. The end goal is stated as the founder states it: an intent layer for MCP machine orchestration. NO COST QUESTION: H3A4's next_action wants the per-visit fee, but LR-B11 puts money at Msg 4 and its own note says an assumption's next_action describes the interview rather than the message. Asking a CRO for a per-visit cost in message two reads as qualifying a lead. Availability offered as a range per the founder, not a booking link (LR-M9). Copy at outreach/copy/H3-linkedin.md. UNSENT. [msg2 sent 2026-09-05 by founder, by hand] Observed in the founder's inbox on 2026-09-05, timestamp 7:08 PM. Answers his question and asks for a call, offering 9am to 9pm PDT. The message states the end goal as an intent layer for MCP machine orchestration, which is a product reveal made by founder decision."
   [accepted 2026-09-04] Connection accepted; LinkedIn connections list reads "Connected on September 3, 2026". No message from them. Awaiting Msg 1.
 
 ## Vivek Rao
@@ -6015,7 +6020,7 @@ interviews: []
 evidence_score:
 outcome_modifier:
 prior_contact_status: pending
-notes: "[invited 2026-09-03] Bare connection request, no note (LR-B29), sent by Claude with per-invite name verification against the invitation modal. Campaign: outreach/linkedin/h3-window-coverings-2026-09/. [sourced 2026-09-03] Enterprise/top-band pass against the H3 ICP after the market ladder showed the existing pool sat almost entirely in the micro band. Headline and company read from LinkedIn people search on 2026-09-03; profile NOT yet opened, so degree and title are search-result facts and must be re-verified live before any draft (LR-B6, LR-B25)."
+notes: "[reply 2026-09-05] Richard replied to Msg 1 the same weekend, warm and offering: "Hi Izzie I'm great thank you, how are you? Yes no problem, what is you you need to know?" Short register, so LR-matched to ONE question. [msg2 drafted 2026-09-05] Aimed at H3A2 (where the error originates) with the LR-M7 cost clause carried by "who picked up the cost in the end". H3A1 rate and H3A4 visit cost deliberately held for later rounds. Copy at outreach/copy/H3-linkedin.md. UNSENT: the founder sends by hand. [invited 2026-09-03] Bare connection request, no note (LR-B29), sent by Claude with per-invite name verification against the invitation modal. Campaign: outreach/linkedin/h3-window-coverings-2026-09/. [sourced 2026-09-03] Enterprise/top-band pass against the H3 ICP after the market ladder showed the existing pool sat almost entirely in the micro band. Headline and company read from LinkedIn people search on 2026-09-03; profile NOT yet opened, so degree and title are search-result facts and must be re-verified live before any draft (LR-B6, LR-B25)."
 
 ## Praveen Perfeito
 
@@ -6073,7 +6078,7 @@ interviews: []
 evidence_score:
 outcome_modifier:
 prior_contact_status: pending
-notes: "[invited 2026-09-03] Bare connection request, no note (LR-B29), sent by Claude with per-invite name verification against the invitation modal. Campaign: outreach/linkedin/h3-window-coverings-2026-09/. [sourced 2026-09-03] Enterprise/top-band pass against the H3 ICP after the market ladder showed the existing pool sat almost entirely in the micro band. Headline and company read from LinkedIn people search on 2026-09-03; profile NOT yet opened, so degree and title are search-result facts and must be re-verified live before any draft (LR-B6, LR-B25). [msg1 drafted 2026-09-04] Post-acceptance Msg 1 for H3A5, soft_ask, standard register. Live profile re-read 2026-09-04 (LR-B6); LR-B25 first-name inbox check clean, positive control (Viliam) returned its thread in the same batch. CORRECTED: his title is Tech Lead e-Commerce and the BlindMatrix entry ends Jun 2026 while his headline still reads as current. Copy at outreach/copy/H3-linkedin.md. UNSENT: the founder sends by hand. [msg1_sent 2026-09-05 18:13] Sent by the founder by hand; confirmed by an inbox read 2026-09-05. MCP framing, sent verbatim from the draft. No reply yet. [copy defect, sent 2026-09-05] This message went out with a DANGLING REFERENT: it asked whether "that gap" shows up in rework rates, and no gap had been named anywhere in it. The MCP anchor replaced an earlier one that had named the gap, and the frame was left pointing at nothing. Founder-caught after sending. Not recallable. If they reply asking what gap, the answer is the one the corrected drafts now state: design software and the machines never share one thread. Every unsent draft was rewritten the same day."
+notes: "[reply 2026-09-05] Richard replied to Msg 1 the same weekend, warm and offering: "Hi Izzie I'm great thank you, how are you? Yes no problem, what is you you need to know?" Short register, so LR-matched to ONE question. [msg2 drafted 2026-09-05] Aimed at H3A2 (where the error originates) with the LR-M7 cost clause carried by "who picked up the cost in the end". H3A1 rate and H3A4 visit cost deliberately held for later rounds. Copy at outreach/copy/H3-linkedin.md. UNSENT: the founder sends by hand. [invited 2026-09-03] Bare connection request, no note (LR-B29), sent by Claude with per-invite name verification against the invitation modal. Campaign: outreach/linkedin/h3-window-coverings-2026-09/. [sourced 2026-09-03] Enterprise/top-band pass against the H3 ICP after the market ladder showed the existing pool sat almost entirely in the micro band. Headline and company read from LinkedIn people search on 2026-09-03; profile NOT yet opened, so degree and title are search-result facts and must be re-verified live before any draft (LR-B6, LR-B25). [msg1 drafted 2026-09-04] Post-acceptance Msg 1 for H3A5, soft_ask, standard register. Live profile re-read 2026-09-04 (LR-B6); LR-B25 first-name inbox check clean, positive control (Viliam) returned its thread in the same batch. CORRECTED: his title is Tech Lead e-Commerce and the BlindMatrix entry ends Jun 2026 while his headline still reads as current. Copy at outreach/copy/H3-linkedin.md. UNSENT: the founder sends by hand. [msg1_sent 2026-09-05 18:13] Sent by the founder by hand; confirmed by an inbox read 2026-09-05. MCP framing, sent verbatim from the draft. No reply yet. [copy defect, sent 2026-09-05] This message went out with a DANGLING REFERENT: it asked whether "that gap" shows up in rework rates, and no gap had been named anywhere in it. The MCP anchor replaced an earlier one that had named the gap, and the frame was left pointing at nothing. Founder-caught after sending. Not recallable. If they reply asking what gap, the answer is the one the corrected drafts now state: design software and the machines never share one thread. Every unsent draft was rewritten the same day."
   [accepted 2026-09-04] Connection accepted; LinkedIn connections list reads "Connected on September 3, 2026". No message from them. Awaiting Msg 1.
 
 ---
@@ -6144,7 +6149,7 @@ interviews: []
 evidence_score:
 outcome_modifier:
 prior_contact_status: checked
-notes: "Found 2026-09-05 in the recently-added connections list; he accepted an invite on 2026-09-04. Live profile read 2026-09-05: the headline says CMO at Select Blinds US, the experience entry says Vice-president of marketing, Jul 2024 to present, Phoenix. The copy says 'run marketing', which is true of both. LR-B25 first-name inbox check clean 2026-09-05. [msg1 drafted 2026-09-05] Post-acceptance Msg 1 for H3A5, soft_ask. Copy at outreach/copy/H3-linkedin.md. UNSENT: the founder sends by hand. [msg1 sent 2026-09-05 10:53] Sent by the founder by hand, found by an inbox check the same day rather than reported. Opening changed to "Bruno hi! Thanks for connecting." in place of "How are you?". The as-sent text is in outreach/copy/H3-linkedin.md; it is NOT the drafted text and it is not the later two-frame rewrite either, so treat this send as its own copy variant. No reply as of 2026-09-05."
+notes: "[reply 2026-09-05] Richard replied to Msg 1 the same weekend, warm and offering: "Hi Izzie I'm great thank you, how are you? Yes no problem, what is you you need to know?" Short register, so LR-matched to ONE question. [msg2 drafted 2026-09-05] Aimed at H3A2 (where the error originates) with the LR-M7 cost clause carried by "who picked up the cost in the end". H3A1 rate and H3A4 visit cost deliberately held for later rounds. Copy at outreach/copy/H3-linkedin.md. UNSENT: the founder sends by hand. Found 2026-09-05 in the recently-added connections list; he accepted an invite on 2026-09-04. Live profile read 2026-09-05: the headline says CMO at Select Blinds US, the experience entry says Vice-president of marketing, Jul 2024 to present, Phoenix. The copy says 'run marketing', which is true of both. LR-B25 first-name inbox check clean 2026-09-05. [msg1 drafted 2026-09-05] Post-acceptance Msg 1 for H3A5, soft_ask. Copy at outreach/copy/H3-linkedin.md. UNSENT: the founder sends by hand. [msg1 sent 2026-09-05 10:53] Sent by the founder by hand, found by an inbox check the same day rather than reported. Opening changed to "Bruno hi! Thanks for connecting." in place of "How are you?". The as-sent text is in outreach/copy/H3-linkedin.md; it is NOT the drafted text and it is not the later two-frame rewrite either, so treat this send as its own copy variant. No reply as of 2026-09-05."
 ## Armando Pedraza
 
 id: C119
@@ -6201,7 +6206,7 @@ interviews: []
 evidence_score:
 outcome_modifier:
 prior_contact_status: checked
-notes: "Found 2026-09-05 in the recently-added connections list; accepted 2026-09-05. Live profile read the same day. Apodaca, Nuevo Leon, Mexico. LR-B25 first-name inbox check clean 2026-09-05. [msg1 drafted 2026-09-05] Post-acceptance Msg 1 for H3A1, soft_ask. Copy at outreach/copy/H3-linkedin.md. UNSENT: the founder sends by hand. [msg1_sent 2026-09-05 18:14] Sent by the founder by hand; confirmed by an inbox read 2026-09-05. MCP framing, sent verbatim from the draft. No reply yet. [copy defect, sent 2026-09-05] This message went out with a DANGLING REFERENT: it asked whether "that gap" shows up in rework rates, and no gap had been named anywhere in it. The MCP anchor replaced an earlier one that had named the gap, and the frame was left pointing at nothing. Founder-caught after sending. Not recallable. If they reply asking what gap, the answer is the one the corrected drafts now state: design software and the machines never share one thread. Every unsent draft was rewritten the same day."
+notes: "[reply 2026-09-05] Richard replied to Msg 1 the same weekend, warm and offering: "Hi Izzie I'm great thank you, how are you? Yes no problem, what is you you need to know?" Short register, so LR-matched to ONE question. [msg2 drafted 2026-09-05] Aimed at H3A2 (where the error originates) with the LR-M7 cost clause carried by "who picked up the cost in the end". H3A1 rate and H3A4 visit cost deliberately held for later rounds. Copy at outreach/copy/H3-linkedin.md. UNSENT: the founder sends by hand. Found 2026-09-05 in the recently-added connections list; accepted 2026-09-05. Live profile read the same day. Apodaca, Nuevo Leon, Mexico. LR-B25 first-name inbox check clean 2026-09-05. [msg1 drafted 2026-09-05] Post-acceptance Msg 1 for H3A1, soft_ask. Copy at outreach/copy/H3-linkedin.md. UNSENT: the founder sends by hand. [msg1_sent 2026-09-05 18:14] Sent by the founder by hand; confirmed by an inbox read 2026-09-05. MCP framing, sent verbatim from the draft. No reply yet. [copy defect, sent 2026-09-05] This message went out with a DANGLING REFERENT: it asked whether "that gap" shows up in rework rates, and no gap had been named anywhere in it. The MCP anchor replaced an earlier one that had named the gap, and the frame was left pointing at nothing. Founder-caught after sending. Not recallable. If they reply asking what gap, the answer is the one the corrected drafts now state: design software and the machines never share one thread. Every unsent draft was rewritten the same day."
 ## Ben Simpson
 
 id: C120
@@ -6258,7 +6263,7 @@ interviews: []
 evidence_score:
 outcome_modifier:
 prior_contact_status: checked
-notes: "Found 2026-09-05 in the recently-added connections list; accepted 2026-09-04. Live profile read 2026-09-05 and it is SPARSE: one experience entry, no description, no posts. Copy drafted from the headline and tenure, per the skill's sparse-profile rule. LR-B25 first-name inbox check clean 2026-09-05. [msg1 drafted 2026-09-05] Post-acceptance Msg 1 for H3A4, soft_ask. Copy at outreach/copy/H3-linkedin.md. UNSENT: the founder sends by hand. [msg1_sent 2026-09-05 18:14] Sent by the founder by hand; confirmed by an inbox read 2026-09-05. MCP framing, sent verbatim from the draft. No reply yet."
+notes: "[reply 2026-09-05] Richard replied to Msg 1 the same weekend, warm and offering: "Hi Izzie I'm great thank you, how are you? Yes no problem, what is you you need to know?" Short register, so LR-matched to ONE question. [msg2 drafted 2026-09-05] Aimed at H3A2 (where the error originates) with the LR-M7 cost clause carried by "who picked up the cost in the end". H3A1 rate and H3A4 visit cost deliberately held for later rounds. Copy at outreach/copy/H3-linkedin.md. UNSENT: the founder sends by hand. Found 2026-09-05 in the recently-added connections list; accepted 2026-09-04. Live profile read 2026-09-05 and it is SPARSE: one experience entry, no description, no posts. Copy drafted from the headline and tenure, per the skill's sparse-profile rule. LR-B25 first-name inbox check clean 2026-09-05. [msg1 drafted 2026-09-05] Post-acceptance Msg 1 for H3A4, soft_ask. Copy at outreach/copy/H3-linkedin.md. UNSENT: the founder sends by hand. [msg1_sent 2026-09-05 18:14] Sent by the founder by hand; confirmed by an inbox read 2026-09-05. MCP framing, sent verbatim from the draft. No reply yet."
 ## Rose Mauloni
 
 id: C121
@@ -6316,7 +6321,7 @@ interviews: []
 evidence_score:
 outcome_modifier:
 prior_contact_status: checked
-notes: "Found 2026-09-05 in the recently-added connections list; accepted 2026-09-04. Live profile read 2026-09-05: she moved from Senior Merchant at Birch Lane to Merchandise Manager at Wayfair in Mar 2026 and again in Jun 2026, so the Birch Lane headline seen in the connections list is one role behind. Boston, Massachusetts. LR-B25 first-name inbox check clean 2026-09-05. [msg1 drafted 2026-09-05] Post-acceptance Msg 1 for H3A5, soft_ask. Copy at outreach/copy/H3-linkedin.md. UNSENT: the founder sends by hand. [msg1_sent 2026-09-05 18:15] Sent by the founder by hand; confirmed by an inbox read 2026-09-05. MCP framing, sent verbatim from the draft. No reply yet."
+notes: "[reply 2026-09-05] Richard replied to Msg 1 the same weekend, warm and offering: "Hi Izzie I'm great thank you, how are you? Yes no problem, what is you you need to know?" Short register, so LR-matched to ONE question. [msg2 drafted 2026-09-05] Aimed at H3A2 (where the error originates) with the LR-M7 cost clause carried by "who picked up the cost in the end". H3A1 rate and H3A4 visit cost deliberately held for later rounds. Copy at outreach/copy/H3-linkedin.md. UNSENT: the founder sends by hand. Found 2026-09-05 in the recently-added connections list; accepted 2026-09-04. Live profile read 2026-09-05: she moved from Senior Merchant at Birch Lane to Merchandise Manager at Wayfair in Mar 2026 and again in Jun 2026, so the Birch Lane headline seen in the connections list is one role behind. Boston, Massachusetts. LR-B25 first-name inbox check clean 2026-09-05. [msg1 drafted 2026-09-05] Post-acceptance Msg 1 for H3A5, soft_ask. Copy at outreach/copy/H3-linkedin.md. UNSENT: the founder sends by hand. [msg1_sent 2026-09-05 18:15] Sent by the founder by hand; confirmed by an inbox read 2026-09-05. MCP framing, sent verbatim from the draft. No reply yet."
 ## Leonard
 
 id: C122
@@ -6380,7 +6385,7 @@ interviews:
 evidence_score:
 outcome_modifier:
 prior_contact_status: pending
-notes: "[captured 2026-09-05] Existed nowhere in this repo until now — the exchange ran entirely outside the outreach machinery and the 1-in-50 rate lived only in chat. Card created from the message itself. FIELDS UNVERIFIED and left blank rather than guessed: surname, LinkedIn URL, exact job title, degree, which Sanyo entity, and headcount band. `contact_role: buyer` is inferred from him managing designers, owning process stoutness and deciding checker headcount — confirm it. `medium: linkedin_text` assumes LinkedIn DM; correct it if the channel was email or WhatsApp. Evidence E26 (supports, the rate) and E27 (contradicts, willingness to pay) are logged. `outcome_modifier` and `evidence_score` deliberately BLANK: proposed moderate_confirm, awaiting founder confirmation per the capture contract. [msg2 sent 2026-09-05] Two questions: whether checkers were ever actually run or only ever costed, and what the last non-small error cost."
+notes: "[reply 2026-09-05] Richard replied to Msg 1 the same weekend, warm and offering: "Hi Izzie I'm great thank you, how are you? Yes no problem, what is you you need to know?" Short register, so LR-matched to ONE question. [msg2 drafted 2026-09-05] Aimed at H3A2 (where the error originates) with the LR-M7 cost clause carried by "who picked up the cost in the end". H3A1 rate and H3A4 visit cost deliberately held for later rounds. Copy at outreach/copy/H3-linkedin.md. UNSENT: the founder sends by hand. [captured 2026-09-05] Existed nowhere in this repo until now — the exchange ran entirely outside the outreach machinery and the 1-in-50 rate lived only in chat. Card created from the message itself. FIELDS UNVERIFIED and left blank rather than guessed: surname, LinkedIn URL, exact job title, degree, which Sanyo entity, and headcount band. `contact_role: buyer` is inferred from him managing designers, owning process stoutness and deciding checker headcount — confirm it. `medium: linkedin_text` assumes LinkedIn DM; correct it if the channel was email or WhatsApp. Evidence E26 (supports, the rate) and E27 (contradicts, willingness to pay) are logged. `outcome_modifier` and `evidence_score` deliberately BLANK: proposed moderate_confirm, awaiting founder confirmation per the capture contract. [msg2 sent 2026-09-05] Two questions: whether checkers were ever actually run or only ever costed, and what the last non-small error cost."
 
 ## Joseph Garza
 
@@ -6442,7 +6447,7 @@ interviews: []
 evidence_score:
 outcome_modifier:
 prior_contact_status: pending
-notes: "[captured 2026-09-05] Existed nowhere in this repo until now: Msg 1 went out 2026-08-25, before this outreach machinery existed, and the thread lived only in LinkedIn. Card created from the thread the founder pasted plus a live profile read on 2026-09-05 (LR-B6): headline reads OWNER, Santa Clara California, Advanced Machine Program & Design MFG., De Anza College, 218 connections, 2 mutuals (Maximilian, Nathan), no posts in the last year and three comments, the most recent on cnc machining as an owner. Shop address from public listings is 451 Aldo Ave, Santa Clara. A web search attributed a second company, Primex Precision of Farmington Missouri, to a Joseph Garza; the Primex site names no founder and nothing on this profile mentions it, so it is a DIFFERENT PERSON until proven otherwise and must not enter any message. FIELDS UNVERIFIED and left blank rather than guessed: headcount, what the shop actually machines, and who its customers are. `size_band: micro` is inferred from a single Santa Clara address and 218 connections, not from a headcount source. [msg1 sent 2026-08-25 by founder, by hand] H2-era framing, before the repo tracked copy: asked where the margin on a new job goes between the quote and the first good part, off the Cambridge research, closing on a permission ask. [reply 2026-08-31] Substantive and warm, apologised for the delay, answered in estimating terms, said 'Sure, this is Worth a Conversation' and 'Any more questions, please feel free'. Logged as E28 (ambiguous). [msg2 drafted 2026-09-05] Settled on the third pass. Founder instruction: ask for a call and nothing else, agree with what he said rather than pivot off it, and name the work as capturing intent. The message opens by agreeing that the money is at quoting and at whether the quote survives prove out, gives the direction in one clause, and asks for half an hour Tuesday or Wednesday. Deliberately absent: the Turkiye capacity, which to a shop owner reads as a competitor announcement, the shop visit, which was pulled as the larger ask, and the acronyms. An alternate carries the why-now (E20, the Model Hardware Standard) in plain words. The cost is recorded rather than argued: per copy/H3-discovery-pitch.md a contact who has heard the thesis reacts to it instead of reporting, and Joseph has named no job or number yet, so grade anything after this as a reaction. Both drafts, the two superseded passes and the call question order are in outreach/linkedin/belief-experts-2026-09/replies.md. UNSENT: the founder sends by hand. [msg2 sent 2026-09-05 by founder, by hand] Observed in the founder's inbox on 2026-09-05, timestamp 6:09 PM. The Msg 2 drafted this session went out, in the settled third-pass version that opens by agreeing with him about quoting and prove out. Awaiting his reply."
+notes: "[reply 2026-09-05] Richard replied to Msg 1 the same weekend, warm and offering: "Hi Izzie I'm great thank you, how are you? Yes no problem, what is you you need to know?" Short register, so LR-matched to ONE question. [msg2 drafted 2026-09-05] Aimed at H3A2 (where the error originates) with the LR-M7 cost clause carried by "who picked up the cost in the end". H3A1 rate and H3A4 visit cost deliberately held for later rounds. Copy at outreach/copy/H3-linkedin.md. UNSENT: the founder sends by hand. [captured 2026-09-05] Existed nowhere in this repo until now: Msg 1 went out 2026-08-25, before this outreach machinery existed, and the thread lived only in LinkedIn. Card created from the thread the founder pasted plus a live profile read on 2026-09-05 (LR-B6): headline reads OWNER, Santa Clara California, Advanced Machine Program & Design MFG., De Anza College, 218 connections, 2 mutuals (Maximilian, Nathan), no posts in the last year and three comments, the most recent on cnc machining as an owner. Shop address from public listings is 451 Aldo Ave, Santa Clara. A web search attributed a second company, Primex Precision of Farmington Missouri, to a Joseph Garza; the Primex site names no founder and nothing on this profile mentions it, so it is a DIFFERENT PERSON until proven otherwise and must not enter any message. FIELDS UNVERIFIED and left blank rather than guessed: headcount, what the shop actually machines, and who its customers are. `size_band: micro` is inferred from a single Santa Clara address and 218 connections, not from a headcount source. [msg1 sent 2026-08-25 by founder, by hand] H2-era framing, before the repo tracked copy: asked where the margin on a new job goes between the quote and the first good part, off the Cambridge research, closing on a permission ask. [reply 2026-08-31] Substantive and warm, apologised for the delay, answered in estimating terms, said 'Sure, this is Worth a Conversation' and 'Any more questions, please feel free'. Logged as E28 (ambiguous). [msg2 drafted 2026-09-05] Settled on the third pass. Founder instruction: ask for a call and nothing else, agree with what he said rather than pivot off it, and name the work as capturing intent. The message opens by agreeing that the money is at quoting and at whether the quote survives prove out, gives the direction in one clause, and asks for half an hour Tuesday or Wednesday. Deliberately absent: the Turkiye capacity, which to a shop owner reads as a competitor announcement, the shop visit, which was pulled as the larger ask, and the acronyms. An alternate carries the why-now (E20, the Model Hardware Standard) in plain words. The cost is recorded rather than argued: per copy/H3-discovery-pitch.md a contact who has heard the thesis reacts to it instead of reporting, and Joseph has named no job or number yet, so grade anything after this as a reaction. Both drafts, the two superseded passes and the call question order are in outreach/linkedin/belief-experts-2026-09/replies.md. UNSENT: the founder sends by hand. [msg2 sent 2026-09-05 by founder, by hand] Observed in the founder's inbox on 2026-09-05, timestamp 6:09 PM. The Msg 2 drafted this session went out, in the settled third-pass version that opens by agreeing with him about quoting and prove out. Awaiting his reply."
 ---
 
 ## Nathan Meyer
@@ -6503,7 +6508,7 @@ interviews: []
 evidence_score:
 outcome_modifier:
 prior_contact_status: replied
-notes: "[id C124, not C122 — allocated 2026-09-05 against a stale next-free number while another session was writing C122 Leonard and C123 Joseph Garza into the same file. Theirs landed first and keeps the id; this one renumbered. C122 is NOT burned, it belongs to Leonard.] [backfilled 2026-09-05] Thread read live during an inbox check; it was never in this ledger. Arc: founder cold-messaged him about why a first article of a never-made part costs so much more than the ones after, citing the Cambridge work. He replied the same day: 'That's a problem I've spent most of my career inside of. Send the questions over whenever you're ready, glad to work through them in writing, or find 30 minutes if a call is easier on your end.' [call 2026-08-27] HAPPENED WITHOUT THE FOUNDER. Christian, the co-founder at the time, took it alone and the founder missed it. NOTHING FROM THAT CALL WAS EVER CAPTURED and the pairing ended 2026-08-31, so unless Christian's own notes surface it is lost. That is the single largest uncaptured item in this repo. [reply 2026-08-28] Volunteered two referrals unprompted: David Liu (linkedin.com/in/davidliuxyz, local, recently started his own venture) and Jim Belosic (linkedin.com/in/belosic, now in Reno). Asked 'Sounds like you and Christian already know Chris over at Hydrian?' and offered to network and make introductions at IMTS. [no reply from us, 8 days] The founder did not answer that message; the silence ran 2026-08-28 to 2026-09-05. [msg5 drafted 2026-09-05] Repair message only, no ask, per founder decision: it thanks the two referrals, offers to let him make the introductions himself, discloses that the co-founder pairing ended, answers that Chris at Hydrian was Christian's connection and not the founder's, and declines IMTS. His standing offer of written answers is deliberately NOT redeemed: his lane is H1/H2, superseded, so anything he says lands against a hunch nobody is testing. Redeem it later and against the belief, not against H3. Copy at outreach/copy/H1-H2-linkedin.md. UNSENT. [msg5_sent 2026-09-05 17:55] Sent by the founder by hand; confirmed by an inbox read 2026-09-05. Repair message sent with the founder's own additions: an opening thank-you, and a closing line naming the MCP layer for manufacturing machine control with an invitation to react. The drafted version deliberately asked for nothing; the sent version ends on a light ask. No reply yet."
+notes: "[reply 2026-09-05] Richard replied to Msg 1 the same weekend, warm and offering: "Hi Izzie I'm great thank you, how are you? Yes no problem, what is you you need to know?" Short register, so LR-matched to ONE question. [msg2 drafted 2026-09-05] Aimed at H3A2 (where the error originates) with the LR-M7 cost clause carried by "who picked up the cost in the end". H3A1 rate and H3A4 visit cost deliberately held for later rounds. Copy at outreach/copy/H3-linkedin.md. UNSENT: the founder sends by hand. [id C124, not C122 — allocated 2026-09-05 against a stale next-free number while another session was writing C122 Leonard and C123 Joseph Garza into the same file. Theirs landed first and keeps the id; this one renumbered. C122 is NOT burned, it belongs to Leonard.] [backfilled 2026-09-05] Thread read live during an inbox check; it was never in this ledger. Arc: founder cold-messaged him about why a first article of a never-made part costs so much more than the ones after, citing the Cambridge work. He replied the same day: 'That's a problem I've spent most of my career inside of. Send the questions over whenever you're ready, glad to work through them in writing, or find 30 minutes if a call is easier on your end.' [call 2026-08-27] HAPPENED WITHOUT THE FOUNDER. Christian, the co-founder at the time, took it alone and the founder missed it. NOTHING FROM THAT CALL WAS EVER CAPTURED and the pairing ended 2026-08-31, so unless Christian's own notes surface it is lost. That is the single largest uncaptured item in this repo. [reply 2026-08-28] Volunteered two referrals unprompted: David Liu (linkedin.com/in/davidliuxyz, local, recently started his own venture) and Jim Belosic (linkedin.com/in/belosic, now in Reno). Asked 'Sounds like you and Christian already know Chris over at Hydrian?' and offered to network and make introductions at IMTS. [no reply from us, 8 days] The founder did not answer that message; the silence ran 2026-08-28 to 2026-09-05. [msg5 drafted 2026-09-05] Repair message only, no ask, per founder decision: it thanks the two referrals, offers to let him make the introductions himself, discloses that the co-founder pairing ended, answers that Chris at Hydrian was Christian's connection and not the founder's, and declines IMTS. His standing offer of written answers is deliberately NOT redeemed: his lane is H1/H2, superseded, so anything he says lands against a hunch nobody is testing. Redeem it later and against the belief, not against H3. Copy at outreach/copy/H1-H2-linkedin.md. UNSENT. [msg5_sent 2026-09-05 17:55] Sent by the founder by hand; confirmed by an inbox read 2026-09-05. Repair message sent with the founder's own additions: an opening thank-you, and a closing line naming the MCP layer for manufacturing machine control with an invitation to react. The drafted version deliberately asked for nothing; the sent version ends on a light ask. No reply yet."
 ## Shane Duncan
 
 id: C125
@@ -6562,7 +6567,7 @@ interviews: []
 evidence_score:
 outcome_modifier:
 prior_contact_status: pending
-notes: "[captured 2026-09-05] Existed nowhere in this repo until now: the whole exchange ran on LinkedIn before this machinery covered it. Card created from the thread the founder pasted plus a live profile read on 2026-09-05 (LR-B6): CNC Programming Supervisor at B&B Manufacturing, 1st degree, United States, 500+ connections, 4 mutuals (Ian, Oswaldo and two more), 579 followers, one comment in the last year. FIELDS UNVERIFIED and left blank rather than guessed: which B&B Manufacturing this is, its location, sector and size. A search on 2026-09-05 could not settle whether they are an aerospace shop, so nothing about first article inspection or AS9102 may enter a message until he says it himself. The 5 axis history in Msg 1 came from an earlier reading of his experience section and is not re-verified here. [msg1 sent 2026-08-25 by founder, by hand] Date inferred from the thread sitting in the same afternoon batch as C123; correct it if wrong. Asked why a program that looks right still needs someone standing at the machine for the first part, permission close. [reply 2026-08-25] 'Sure, I'd be glad to answer some of your question.' [msg2 sent 2026-08-25 by founder, by hand] Which step between the print landing and a good first part backs up most often, with a call offered as an alternative. [reply 2026-08-26] 'I would say most jobs get held up the most in the quality department.' He answered in text rather than taking the call, so the call is NOT re-asked in Msg 3. Logged as E29. [msg3 drafted 2026-09-05] One drill on what quality was actually waiting on for the last new part, plus how long it sat. Copy in outreach/linkedin/belief-experts-2026-09/replies.md. UNSENT: the founder sends by hand."
+notes: "[reply 2026-09-05] Richard replied to Msg 1 the same weekend, warm and offering: "Hi Izzie I'm great thank you, how are you? Yes no problem, what is you you need to know?" Short register, so LR-matched to ONE question. [msg2 drafted 2026-09-05] Aimed at H3A2 (where the error originates) with the LR-M7 cost clause carried by "who picked up the cost in the end". H3A1 rate and H3A4 visit cost deliberately held for later rounds. Copy at outreach/copy/H3-linkedin.md. UNSENT: the founder sends by hand. [captured 2026-09-05] Existed nowhere in this repo until now: the whole exchange ran on LinkedIn before this machinery covered it. Card created from the thread the founder pasted plus a live profile read on 2026-09-05 (LR-B6): CNC Programming Supervisor at B&B Manufacturing, 1st degree, United States, 500+ connections, 4 mutuals (Ian, Oswaldo and two more), 579 followers, one comment in the last year. FIELDS UNVERIFIED and left blank rather than guessed: which B&B Manufacturing this is, its location, sector and size. A search on 2026-09-05 could not settle whether they are an aerospace shop, so nothing about first article inspection or AS9102 may enter a message until he says it himself. The 5 axis history in Msg 1 came from an earlier reading of his experience section and is not re-verified here. [msg1 sent 2026-08-25 by founder, by hand] Date inferred from the thread sitting in the same afternoon batch as C123; correct it if wrong. Asked why a program that looks right still needs someone standing at the machine for the first part, permission close. [reply 2026-08-25] 'Sure, I'd be glad to answer some of your question.' [msg2 sent 2026-08-25 by founder, by hand] Which step between the print landing and a good first part backs up most often, with a call offered as an alternative. [reply 2026-08-26] 'I would say most jobs get held up the most in the quality department.' He answered in text rather than taking the call, so the call is NOT re-asked in Msg 3. Logged as E29. [msg3 drafted 2026-09-05] One drill on what quality was actually waiting on for the last new part, plus how long it sat. Copy in outreach/linkedin/belief-experts-2026-09/replies.md. UNSENT: the founder sends by hand."
 
 ---
 
@@ -6631,7 +6636,7 @@ interviews: []
 evidence_score:
 outcome_modifier:
 prior_contact_status: checked
-notes: "[id C129, not C125 — allocated against a stale next-free number while another session wrote C125 Shane Duncan into the same file; theirs landed first and keeps the id.] Found 2026-09-05 by mining the LinkedIn export company-first against the H0A1 ICP. Live profile read the same day: Wessington 35 yrs 9 mos total, Managing Director 1991 to Apr 2022, Technical Director since Feb 2022. His own entry names dewars, multi-coded gas vessels and ISO tank containers. LR-B25: a thread EXISTS from 2020-10-07, the founder writing as a Georgia Tech student saying they were a fan of Wessington. Ours was last and there was no reply. At nearly six years LR-B30 puts this above the twelve-month line, so it is a fresh Msg 1 and the opener names the old message rather than pretending it did not happen. [msg1 drafted 2026-09-05, MCP framing] soft_ask. Copy at outreach/copy/H1-H2-linkedin.md. UNSENT and NOT to be sent by Claude. [msg1 sent 2026-09-05 by founder, by hand] Observed in the founder's own LinkedIn inbox on 2026-09-05 during a reconciliation pass, timestamp 7:16 PM. The thread shows the founder's message last and no reply yet. The copy sent is NOT the copy archived in this repo: the founder is now opening with "I am building the MCP layer for machines in manufacturing" and asking whether the gap shows up in rework rates. See outreach/linkedin/belief-experts-2026-09/drafts.md for the record of that framing."
+notes: "[reply 2026-09-05] Richard replied to Msg 1 the same weekend, warm and offering: "Hi Izzie I'm great thank you, how are you? Yes no problem, what is you you need to know?" Short register, so LR-matched to ONE question. [msg2 drafted 2026-09-05] Aimed at H3A2 (where the error originates) with the LR-M7 cost clause carried by "who picked up the cost in the end". H3A1 rate and H3A4 visit cost deliberately held for later rounds. Copy at outreach/copy/H3-linkedin.md. UNSENT: the founder sends by hand. [id C129, not C125 — allocated against a stale next-free number while another session wrote C125 Shane Duncan into the same file; theirs landed first and keeps the id.] Found 2026-09-05 by mining the LinkedIn export company-first against the H0A1 ICP. Live profile read the same day: Wessington 35 yrs 9 mos total, Managing Director 1991 to Apr 2022, Technical Director since Feb 2022. His own entry names dewars, multi-coded gas vessels and ISO tank containers. LR-B25: a thread EXISTS from 2020-10-07, the founder writing as a Georgia Tech student saying they were a fan of Wessington. Ours was last and there was no reply. At nearly six years LR-B30 puts this above the twelve-month line, so it is a fresh Msg 1 and the opener names the old message rather than pretending it did not happen. [msg1 drafted 2026-09-05, MCP framing] soft_ask. Copy at outreach/copy/H1-H2-linkedin.md. UNSENT and NOT to be sent by Claude. [msg1 sent 2026-09-05 by founder, by hand] Observed in the founder's own LinkedIn inbox on 2026-09-05 during a reconciliation pass, timestamp 7:16 PM. The thread shows the founder's message last and no reply yet. The copy sent is NOT the copy archived in this repo: the founder is now opening with "I am building the MCP layer for machines in manufacturing" and asking whether the gap shows up in rework rates. See outreach/linkedin/belief-experts-2026-09/drafts.md for the record of that framing."
 ## Sigal Lavenda
 
 id: C130
@@ -6686,7 +6691,7 @@ interviews: []
 evidence_score:
 outcome_modifier:
 prior_contact_status: checked
-notes: "Found 2026-09-05 by mining the LinkedIn export. Live profile read the same day: Ricor since Oct 2021, prior Rafael Advanced Defense Systems 14 yrs 8 mos. LR-B25 inbox check clean. [msg1 drafted 2026-09-05, MCP framing] soft_ask. Copy at outreach/copy/H1-H2-linkedin.md. UNSENT and NOT to be sent by Claude."
+notes: "[reply 2026-09-05] Richard replied to Msg 1 the same weekend, warm and offering: "Hi Izzie I'm great thank you, how are you? Yes no problem, what is you you need to know?" Short register, so LR-matched to ONE question. [msg2 drafted 2026-09-05] Aimed at H3A2 (where the error originates) with the LR-M7 cost clause carried by "who picked up the cost in the end". H3A1 rate and H3A4 visit cost deliberately held for later rounds. Copy at outreach/copy/H3-linkedin.md. UNSENT: the founder sends by hand. Found 2026-09-05 by mining the LinkedIn export. Live profile read the same day: Ricor since Oct 2021, prior Rafael Advanced Defense Systems 14 yrs 8 mos. LR-B25 inbox check clean. [msg1 drafted 2026-09-05, MCP framing] soft_ask. Copy at outreach/copy/H1-H2-linkedin.md. UNSENT and NOT to be sent by Claude."
 
 ## Jadon Pauling
 
@@ -6742,7 +6747,7 @@ interviews: []
 evidence_score:
 outcome_modifier:
 prior_contact_status: checked
-notes: "Found 2026-09-05 by mining the LinkedIn export. Live profile read the same day: Factory Automation Systems, Atlanta, since Aug 2024; Georgia Tech graduate tutor before that. LR-B25 inbox check clean. [msg1 drafted 2026-09-05, MCP framing] soft_ask. Copy at outreach/copy/H1-H2-linkedin.md. UNSENT and NOT to be sent by Claude."
+notes: "[reply 2026-09-05] Richard replied to Msg 1 the same weekend, warm and offering: "Hi Izzie I'm great thank you, how are you? Yes no problem, what is you you need to know?" Short register, so LR-matched to ONE question. [msg2 drafted 2026-09-05] Aimed at H3A2 (where the error originates) with the LR-M7 cost clause carried by "who picked up the cost in the end". H3A1 rate and H3A4 visit cost deliberately held for later rounds. Copy at outreach/copy/H3-linkedin.md. UNSENT: the founder sends by hand. Found 2026-09-05 by mining the LinkedIn export. Live profile read the same day: Factory Automation Systems, Atlanta, since Aug 2024; Georgia Tech graduate tutor before that. LR-B25 inbox check clean. [msg1 drafted 2026-09-05, MCP framing] soft_ask. Copy at outreach/copy/H1-H2-linkedin.md. UNSENT and NOT to be sent by Claude."
 
 ## Omnish Adroja
 
@@ -6799,7 +6804,7 @@ interviews: []
 evidence_score:
 outcome_modifier:
 prior_contact_status: checked
-notes: "Found 2026-09-05 by mining the LinkedIn export. Live profile read the same day: Villonex Cryogenics, Ahmedabad, since Oct 2025, one experience entry and no description. LR-B25 inbox check clean. [msg1 drafted 2026-09-05, MCP framing] soft_ask. Copy at outreach/copy/H1-H2-linkedin.md. UNSENT and NOT to be sent by Claude."
+notes: "[reply 2026-09-05] Richard replied to Msg 1 the same weekend, warm and offering: "Hi Izzie I'm great thank you, how are you? Yes no problem, what is you you need to know?" Short register, so LR-matched to ONE question. [msg2 drafted 2026-09-05] Aimed at H3A2 (where the error originates) with the LR-M7 cost clause carried by "who picked up the cost in the end". H3A1 rate and H3A4 visit cost deliberately held for later rounds. Copy at outreach/copy/H3-linkedin.md. UNSENT: the founder sends by hand. Found 2026-09-05 by mining the LinkedIn export. Live profile read the same day: Villonex Cryogenics, Ahmedabad, since Oct 2025, one experience entry and no description. LR-B25 inbox check clean. [msg1 drafted 2026-09-05, MCP framing] soft_ask. Copy at outreach/copy/H1-H2-linkedin.md. UNSENT and NOT to be sent by Claude."
 
 ---
 
@@ -6864,7 +6869,7 @@ interviews: []
 evidence_score:
 outcome_modifier:
 prior_contact_status: checked
-notes: "Found 2026-09-05 by mining the LinkedIn export company-first against the H0A1 ICP. Live profile read the same day: Linoxy since Oct 2012 (14 yrs), Stirling Cryogenics 2002-2012, Philips 1989-2002, National Dairy Development Board 1979-1989. His own entry states more than four decades in cryogenics. LR-B25 inbox check clean (searched Singh; the Jagjit Singh and Jai Singhal threads are different people). Cryogenics is IMTEK's own industry, which is why this cluster went unnoticed for so long."
+notes: "[reply 2026-09-05] Richard replied to Msg 1 the same weekend, warm and offering: "Hi Izzie I'm great thank you, how are you? Yes no problem, what is you you need to know?" Short register, so LR-matched to ONE question. [msg2 drafted 2026-09-05] Aimed at H3A2 (where the error originates) with the LR-M7 cost clause carried by "who picked up the cost in the end". H3A1 rate and H3A4 visit cost deliberately held for later rounds. Copy at outreach/copy/H3-linkedin.md. UNSENT: the founder sends by hand. Found 2026-09-05 by mining the LinkedIn export company-first against the H0A1 ICP. Live profile read the same day: Linoxy since Oct 2012 (14 yrs), Stirling Cryogenics 2002-2012, Philips 1989-2002, National Dairy Development Board 1979-1989. His own entry states more than four decades in cryogenics. LR-B25 inbox check clean (searched Singh; the Jagjit Singh and Jai Singhal threads are different people). Cryogenics is IMTEK's own industry, which is why this cluster went unnoticed for so long."
 
 ## Micah Zinnerman
 
@@ -6923,7 +6928,7 @@ interviews: []
 evidence_score:
 outcome_modifier:
 prior_contact_status: checked
-notes: "Backfilled 2026-09-05 during an export mine; the thread was never in this ledger. HE REPLIED 2026-08-14 AND IT IS STILL UNREAD: 'Thanks for reaching out. What you guys are working on sounds very promising; and I might add that you have a very impressive profile! I would be happy to answer your questions to the best of my ability.' That is an explicit yes that has gone unanswered for three weeks. Read from the conversation-list preview only; the thread was NOT opened, per the no-opening-unread rule. Live profile read 2026-09-05: Nordstern since Jun 2022, prior Micropsi Industries, Raytheon SPY-6, teamtechnik, Tesla Model 3, KUKA, Gestamp. His own entry reports inheriting an EV battery friction-stir-welding line with deformation risk and bringing it to above 98% acceptance. [msg2 drafted 2026-09-05] Arc stage 1, frequency and context, anchored on the last cell he commissioned rather than the general case. [msg2 sent 2026-09-05 18:41] Sent by the founder, closing on availability: "I am available 9am-9pm PDT time!". The three-week-old yes has finally been answered and a call is on the table."
+notes: "[reply 2026-09-05] Richard replied to Msg 1 the same weekend, warm and offering: "Hi Izzie I'm great thank you, how are you? Yes no problem, what is you you need to know?" Short register, so LR-matched to ONE question. [msg2 drafted 2026-09-05] Aimed at H3A2 (where the error originates) with the LR-M7 cost clause carried by "who picked up the cost in the end". H3A1 rate and H3A4 visit cost deliberately held for later rounds. Copy at outreach/copy/H3-linkedin.md. UNSENT: the founder sends by hand. Backfilled 2026-09-05 during an export mine; the thread was never in this ledger. HE REPLIED 2026-08-14 AND IT IS STILL UNREAD: 'Thanks for reaching out. What you guys are working on sounds very promising; and I might add that you have a very impressive profile! I would be happy to answer your questions to the best of my ability.' That is an explicit yes that has gone unanswered for three weeks. Read from the conversation-list preview only; the thread was NOT opened, per the no-opening-unread rule. Live profile read 2026-09-05: Nordstern since Jun 2022, prior Micropsi Industries, Raytheon SPY-6, teamtechnik, Tesla Model 3, KUKA, Gestamp. His own entry reports inheriting an EV battery friction-stir-welding line with deformation risk and bringing it to above 98% acceptance. [msg2 drafted 2026-09-05] Arc stage 1, frequency and context, anchored on the last cell he commissioned rather than the general case. [msg2 sent 2026-09-05 18:41] Sent by the founder, closing on availability: "I am available 9am-9pm PDT time!". The three-week-old yes has finally been answered and a call is on the table."
 ## Vanessa McNiven
 
 id: C135
@@ -6982,7 +6987,7 @@ interviews: []
 evidence_score:
 outcome_modifier:
 prior_contact_status: checked
-notes: "Found 2026-09-05 by mining the LinkedIn export. Live profile read the same day: Executive Course Director of MPhil ISMM since Nov 2022, Industrial Tutor on the same course 2012-2022, IfM Industrial Research Fellow 2001-2009, Ford Senior Body Engineer 1996-2000. LR-B25 inbox check clean. [msg1 drafted 2026-09-05] LR-B26 shape: the shared context REPLACES the research anchor, so the message does not name Cambridge at its own course director; it names ISMM, the research project and the DIAL group, which only someone who was there would produce. It volunteers the E26 finding rather than requesting one, and the ask is for names, not for her own answers."
+notes: "[reply 2026-09-05] Richard replied to Msg 1 the same weekend, warm and offering: "Hi Izzie I'm great thank you, how are you? Yes no problem, what is you you need to know?" Short register, so LR-matched to ONE question. [msg2 drafted 2026-09-05] Aimed at H3A2 (where the error originates) with the LR-M7 cost clause carried by "who picked up the cost in the end". H3A1 rate and H3A4 visit cost deliberately held for later rounds. Copy at outreach/copy/H3-linkedin.md. UNSENT: the founder sends by hand. Found 2026-09-05 by mining the LinkedIn export. Live profile read the same day: Executive Course Director of MPhil ISMM since Nov 2022, Industrial Tutor on the same course 2012-2022, IfM Industrial Research Fellow 2001-2009, Ford Senior Body Engineer 1996-2000. LR-B25 inbox check clean. [msg1 drafted 2026-09-05] LR-B26 shape: the shared context REPLACES the research anchor, so the message does not name Cambridge at its own course director; it names ISMM, the research project and the DIAL group, which only someone who was there would produce. It volunteers the E26 finding rather than requesting one, and the ask is for names, not for her own answers."
 
 ## Mustafa Akin
 
@@ -7038,7 +7043,7 @@ interviews: []
 evidence_score:
 outcome_modifier:
 prior_contact_status: checked
-notes: "Screened 2026-09-05 from the export mine. Live profile read the same day. NOT drafted and NOT messaged. The failing evidence: Keystone Tile is a tile distributor, and his own role description names product managers, developers, user feedback and end-user experience, not manufacture."
+notes: "[reply 2026-09-05] Richard replied to Msg 1 the same weekend, warm and offering: "Hi Izzie I'm great thank you, how are you? Yes no problem, what is you you need to know?" Short register, so LR-matched to ONE question. [msg2 drafted 2026-09-05] Aimed at H3A2 (where the error originates) with the LR-M7 cost clause carried by "who picked up the cost in the end". H3A1 rate and H3A4 visit cost deliberately held for later rounds. Copy at outreach/copy/H3-linkedin.md. UNSENT: the founder sends by hand. Screened 2026-09-05 from the export mine. Live profile read the same day. NOT drafted and NOT messaged. The failing evidence: Keystone Tile is a tile distributor, and his own role description names product managers, developers, user feedback and end-user experience, not manufacture."
 
 ## Glenn Charest
 
@@ -7089,7 +7094,7 @@ interviews: []
 evidence_score:
 outcome_modifier:
 prior_contact_status: pending
-notes: "[UNVERIFIED 2026-09-05] No live profile read exists for this contact. Screened on company and title only, which the H0A1 icp_verification_rule now says is not enough — the invite went out before that rule existed. DO NOT draft or send a DM off this card: read the profile first and confirm the vertical, the production shape, the function and the tenure, then record what it showed here. [invite sent 2026-09-05] Bare connection request, no note (LR-B29). Sent by Claude via linkedin.com/preload/custom-invite; recipient name "Glenn Charest" verified in the invitation modal against the ledger before clicking. [sourced 2026-09-05] H0A1 batch, LinkedIn people search restricted to 2nd degree, Pass 4 Phase B. Name, headline and location are SEARCH RESULT facts only; the profile was NOT opened, so degree, current employer and title must be re-verified live before any message is written (LR-B6, LR-B25). Location as listed: Detroit Metropolitan Area. Pass 1 against the founder's own export returned nothing for this ICP, so every contact in this batch is cold. NOT YET INVITED: the founder sends every invite by hand, bare, with no note (LR-B29)."
+notes: "[reply 2026-09-05] Richard replied to Msg 1 the same weekend, warm and offering: "Hi Izzie I'm great thank you, how are you? Yes no problem, what is you you need to know?" Short register, so LR-matched to ONE question. [msg2 drafted 2026-09-05] Aimed at H3A2 (where the error originates) with the LR-M7 cost clause carried by "who picked up the cost in the end". H3A1 rate and H3A4 visit cost deliberately held for later rounds. Copy at outreach/copy/H3-linkedin.md. UNSENT: the founder sends by hand. [UNVERIFIED 2026-09-05] No live profile read exists for this contact. Screened on company and title only, which the H0A1 icp_verification_rule now says is not enough — the invite went out before that rule existed. DO NOT draft or send a DM off this card: read the profile first and confirm the vertical, the production shape, the function and the tenure, then record what it showed here. [invite sent 2026-09-05] Bare connection request, no note (LR-B29). Sent by Claude via linkedin.com/preload/custom-invite; recipient name "Glenn Charest" verified in the invitation modal against the ledger before clicking. [sourced 2026-09-05] H0A1 batch, LinkedIn people search restricted to 2nd degree, Pass 4 Phase B. Name, headline and location are SEARCH RESULT facts only; the profile was NOT opened, so degree, current employer and title must be re-verified live before any message is written (LR-B6, LR-B25). Location as listed: Detroit Metropolitan Area. Pass 1 against the founder's own export returned nothing for this ICP, so every contact in this batch is cold. NOT YET INVITED: the founder sends every invite by hand, bare, with no note (LR-B29)."
 
 ## Gabrielle Devroy
 
@@ -7140,7 +7145,7 @@ interviews: []
 evidence_score:
 outcome_modifier:
 prior_contact_status: pending
-notes: "[UNVERIFIED 2026-09-05] No live profile read exists for this contact. Screened on company and title only, which the H0A1 icp_verification_rule now says is not enough — the invite went out before that rule existed. DO NOT draft or send a DM off this card: read the profile first and confirm the vertical, the production shape, the function and the tenure, then record what it showed here. [invite sent 2026-09-05] Bare connection request, no note (LR-B29). Sent by Claude via linkedin.com/preload/custom-invite; recipient name "Gabrielle Devroy" verified in the invitation modal against the ledger before clicking. [sourced 2026-09-05] H0A1 batch, LinkedIn people search restricted to 2nd degree, Pass 4 Phase B. Name, headline and location are SEARCH RESULT facts only; the profile was NOT opened, so degree, current employer and title must be re-verified live before any message is written (LR-B6, LR-B25). Location as listed: St Clair, Michigan, US. Pass 1 against the founder's own export returned nothing for this ICP, so every contact in this batch is cold. NOT YET INVITED: the founder sends every invite by hand, bare, with no note (LR-B29)."
+notes: "[reply 2026-09-05] Richard replied to Msg 1 the same weekend, warm and offering: "Hi Izzie I'm great thank you, how are you? Yes no problem, what is you you need to know?" Short register, so LR-matched to ONE question. [msg2 drafted 2026-09-05] Aimed at H3A2 (where the error originates) with the LR-M7 cost clause carried by "who picked up the cost in the end". H3A1 rate and H3A4 visit cost deliberately held for later rounds. Copy at outreach/copy/H3-linkedin.md. UNSENT: the founder sends by hand. [UNVERIFIED 2026-09-05] No live profile read exists for this contact. Screened on company and title only, which the H0A1 icp_verification_rule now says is not enough — the invite went out before that rule existed. DO NOT draft or send a DM off this card: read the profile first and confirm the vertical, the production shape, the function and the tenure, then record what it showed here. [invite sent 2026-09-05] Bare connection request, no note (LR-B29). Sent by Claude via linkedin.com/preload/custom-invite; recipient name "Gabrielle Devroy" verified in the invitation modal against the ledger before clicking. [sourced 2026-09-05] H0A1 batch, LinkedIn people search restricted to 2nd degree, Pass 4 Phase B. Name, headline and location are SEARCH RESULT facts only; the profile was NOT opened, so degree, current employer and title must be re-verified live before any message is written (LR-B6, LR-B25). Location as listed: St Clair, Michigan, US. Pass 1 against the founder's own export returned nothing for this ICP, so every contact in this batch is cold. NOT YET INVITED: the founder sends every invite by hand, bare, with no note (LR-B29)."
 
 ## Stanley Evans
 
@@ -7191,7 +7196,7 @@ interviews: []
 evidence_score:
 outcome_modifier:
 prior_contact_status: pending
-notes: "[UNVERIFIED 2026-09-05] No live profile read exists for this contact. Screened on company and title only, which the H0A1 icp_verification_rule now says is not enough — the invite went out before that rule existed. DO NOT draft or send a DM off this card: read the profile first and confirm the vertical, the production shape, the function and the tenure, then record what it showed here. [invite sent 2026-09-05] Bare connection request, no note (LR-B29). Sent by Claude via linkedin.com/preload/custom-invite; recipient name "Stanley Evans" verified in the invitation modal against the ledger before clicking. [sourced 2026-09-05] H0A1 batch, LinkedIn people search restricted to 2nd degree, Pass 4 Phase B. Name, headline and location are SEARCH RESULT facts only; the profile was NOT opened, so degree, current employer and title must be re-verified live before any message is written (LR-B6, LR-B25). Location as listed: Fayetteville, Tennessee, US. Pass 1 against the founder's own export returned nothing for this ICP, so every contact in this batch is cold. NOT YET INVITED: the founder sends every invite by hand, bare, with no note (LR-B29)."
+notes: "[reply 2026-09-05] Richard replied to Msg 1 the same weekend, warm and offering: "Hi Izzie I'm great thank you, how are you? Yes no problem, what is you you need to know?" Short register, so LR-matched to ONE question. [msg2 drafted 2026-09-05] Aimed at H3A2 (where the error originates) with the LR-M7 cost clause carried by "who picked up the cost in the end". H3A1 rate and H3A4 visit cost deliberately held for later rounds. Copy at outreach/copy/H3-linkedin.md. UNSENT: the founder sends by hand. [UNVERIFIED 2026-09-05] No live profile read exists for this contact. Screened on company and title only, which the H0A1 icp_verification_rule now says is not enough — the invite went out before that rule existed. DO NOT draft or send a DM off this card: read the profile first and confirm the vertical, the production shape, the function and the tenure, then record what it showed here. [invite sent 2026-09-05] Bare connection request, no note (LR-B29). Sent by Claude via linkedin.com/preload/custom-invite; recipient name "Stanley Evans" verified in the invitation modal against the ledger before clicking. [sourced 2026-09-05] H0A1 batch, LinkedIn people search restricted to 2nd degree, Pass 4 Phase B. Name, headline and location are SEARCH RESULT facts only; the profile was NOT opened, so degree, current employer and title must be re-verified live before any message is written (LR-B6, LR-B25). Location as listed: Fayetteville, Tennessee, US. Pass 1 against the founder's own export returned nothing for this ICP, so every contact in this batch is cold. NOT YET INVITED: the founder sends every invite by hand, bare, with no note (LR-B29)."
 
 ## Rick Rasmussen
 
@@ -7242,7 +7247,7 @@ interviews: []
 evidence_score:
 outcome_modifier:
 prior_contact_status: pending
-notes: "[UNVERIFIED 2026-09-05] No live profile read exists for this contact. Screened on company and title only, which the H0A1 icp_verification_rule now says is not enough — the invite went out before that rule existed. DO NOT draft or send a DM off this card: read the profile first and confirm the vertical, the production shape, the function and the tenure, then record what it showed here. [invite sent 2026-09-05] Bare connection request, no note (LR-B29). Sent by Claude via linkedin.com/preload/custom-invite; name "Rick Rasmussen" verified in the invitation modal against the ledger before clicking. [sourced 2026-09-05] H0A1 batch, LinkedIn people search restricted to 2nd degree, Pass 4 Phase B. Name, headline and location are SEARCH RESULT facts only; the profile was NOT opened, so degree, current employer and title must be re-verified live before any message is written (LR-B6, LR-B25). Location as listed: US. Pass 1 against the founder's own export returned nothing for this ICP, so every contact in this batch is cold. NOT YET INVITED: the founder sends every invite by hand, bare, with no note (LR-B29)."
+notes: "[reply 2026-09-05] Richard replied to Msg 1 the same weekend, warm and offering: "Hi Izzie I'm great thank you, how are you? Yes no problem, what is you you need to know?" Short register, so LR-matched to ONE question. [msg2 drafted 2026-09-05] Aimed at H3A2 (where the error originates) with the LR-M7 cost clause carried by "who picked up the cost in the end". H3A1 rate and H3A4 visit cost deliberately held for later rounds. Copy at outreach/copy/H3-linkedin.md. UNSENT: the founder sends by hand. [UNVERIFIED 2026-09-05] No live profile read exists for this contact. Screened on company and title only, which the H0A1 icp_verification_rule now says is not enough — the invite went out before that rule existed. DO NOT draft or send a DM off this card: read the profile first and confirm the vertical, the production shape, the function and the tenure, then record what it showed here. [invite sent 2026-09-05] Bare connection request, no note (LR-B29). Sent by Claude via linkedin.com/preload/custom-invite; name "Rick Rasmussen" verified in the invitation modal against the ledger before clicking. [sourced 2026-09-05] H0A1 batch, LinkedIn people search restricted to 2nd degree, Pass 4 Phase B. Name, headline and location are SEARCH RESULT facts only; the profile was NOT opened, so degree, current employer and title must be re-verified live before any message is written (LR-B6, LR-B25). Location as listed: US. Pass 1 against the founder's own export returned nothing for this ICP, so every contact in this batch is cold. NOT YET INVITED: the founder sends every invite by hand, bare, with no note (LR-B29)."
 
 ## Brian Kippen
 
@@ -7293,7 +7298,7 @@ interviews: []
 evidence_score:
 outcome_modifier:
 prior_contact_status: pending
-notes: "[UNVERIFIED 2026-09-05] No live profile read exists for this contact. Screened on company and title only, which the H0A1 icp_verification_rule now says is not enough — the invite went out before that rule existed. DO NOT draft or send a DM off this card: read the profile first and confirm the vertical, the production shape, the function and the tenure, then record what it showed here. [invite sent 2026-09-05] Bare connection request, no note (LR-B29). Sent by Claude via linkedin.com/preload/custom-invite; name "Brian Kippen" verified in the invitation modal against the ledger before clicking. [sourced 2026-09-05] H0A1 batch, LinkedIn people search restricted to 2nd degree, Pass 4 Phase B. Name, headline and location are SEARCH RESULT facts only; the profile was NOT opened, so degree, current employer and title must be re-verified live before any message is written (LR-B6, LR-B25). Location as listed: Berkeley, California, US. Pass 1 against the founder's own export returned nothing for this ICP, so every contact in this batch is cold. NOT YET INVITED: the founder sends every invite by hand, bare, with no note (LR-B29)."
+notes: "[reply 2026-09-05] Richard replied to Msg 1 the same weekend, warm and offering: "Hi Izzie I'm great thank you, how are you? Yes no problem, what is you you need to know?" Short register, so LR-matched to ONE question. [msg2 drafted 2026-09-05] Aimed at H3A2 (where the error originates) with the LR-M7 cost clause carried by "who picked up the cost in the end". H3A1 rate and H3A4 visit cost deliberately held for later rounds. Copy at outreach/copy/H3-linkedin.md. UNSENT: the founder sends by hand. [UNVERIFIED 2026-09-05] No live profile read exists for this contact. Screened on company and title only, which the H0A1 icp_verification_rule now says is not enough — the invite went out before that rule existed. DO NOT draft or send a DM off this card: read the profile first and confirm the vertical, the production shape, the function and the tenure, then record what it showed here. [invite sent 2026-09-05] Bare connection request, no note (LR-B29). Sent by Claude via linkedin.com/preload/custom-invite; name "Brian Kippen" verified in the invitation modal against the ledger before clicking. [sourced 2026-09-05] H0A1 batch, LinkedIn people search restricted to 2nd degree, Pass 4 Phase B. Name, headline and location are SEARCH RESULT facts only; the profile was NOT opened, so degree, current employer and title must be re-verified live before any message is written (LR-B6, LR-B25). Location as listed: Berkeley, California, US. Pass 1 against the founder's own export returned nothing for this ICP, so every contact in this batch is cold. NOT YET INVITED: the founder sends every invite by hand, bare, with no note (LR-B29)."
 
 ## Everett Sharp
 
@@ -7344,7 +7349,7 @@ interviews: []
 evidence_score:
 outcome_modifier:
 prior_contact_status: pending
-notes: "[UNVERIFIED 2026-09-05] No live profile read exists for this contact. Screened on company and title only, which the H0A1 icp_verification_rule now says is not enough — the invite went out before that rule existed. DO NOT draft or send a DM off this card: read the profile first and confirm the vertical, the production shape, the function and the tenure, then record what it showed here. [invite sent 2026-09-05] Bare connection request, no note (LR-B29). Sent by Claude via linkedin.com/preload/custom-invite; name "Everett Sharp" verified in the invitation modal against the ledger before clicking. [sourced 2026-09-05] H0A1 batch, LinkedIn people search restricted to 2nd degree, Pass 4 Phase B. Name, headline and location are SEARCH RESULT facts only; the profile was NOT opened, so degree, current employer and title must be re-verified live before any message is written (LR-B6, LR-B25). Location as listed: Buda, Texas, US. Pass 1 against the founder's own export returned nothing for this ICP, so every contact in this batch is cold. NOT YET INVITED: the founder sends every invite by hand, bare, with no note (LR-B29)."
+notes: "[reply 2026-09-05] Richard replied to Msg 1 the same weekend, warm and offering: "Hi Izzie I'm great thank you, how are you? Yes no problem, what is you you need to know?" Short register, so LR-matched to ONE question. [msg2 drafted 2026-09-05] Aimed at H3A2 (where the error originates) with the LR-M7 cost clause carried by "who picked up the cost in the end". H3A1 rate and H3A4 visit cost deliberately held for later rounds. Copy at outreach/copy/H3-linkedin.md. UNSENT: the founder sends by hand. [UNVERIFIED 2026-09-05] No live profile read exists for this contact. Screened on company and title only, which the H0A1 icp_verification_rule now says is not enough — the invite went out before that rule existed. DO NOT draft or send a DM off this card: read the profile first and confirm the vertical, the production shape, the function and the tenure, then record what it showed here. [invite sent 2026-09-05] Bare connection request, no note (LR-B29). Sent by Claude via linkedin.com/preload/custom-invite; name "Everett Sharp" verified in the invitation modal against the ledger before clicking. [sourced 2026-09-05] H0A1 batch, LinkedIn people search restricted to 2nd degree, Pass 4 Phase B. Name, headline and location are SEARCH RESULT facts only; the profile was NOT opened, so degree, current employer and title must be re-verified live before any message is written (LR-B6, LR-B25). Location as listed: Buda, Texas, US. Pass 1 against the founder's own export returned nothing for this ICP, so every contact in this batch is cold. NOT YET INVITED: the founder sends every invite by hand, bare, with no note (LR-B29)."
 
 ## Scott Williams
 
@@ -7395,7 +7400,7 @@ interviews: []
 evidence_score:
 outcome_modifier:
 prior_contact_status: pending
-notes: "[UNVERIFIED 2026-09-05] No live profile read exists for this contact. Screened on company and title only, which the H0A1 icp_verification_rule now says is not enough — the invite went out before that rule existed. DO NOT draft or send a DM off this card: read the profile first and confirm the vertical, the production shape, the function and the tenure, then record what it showed here. [invite sent 2026-09-05] Bare connection request, no note (LR-B29). Sent by Claude via linkedin.com/preload/custom-invite; name "Scott Williams" verified in the invitation modal against the ledger before clicking. [sourced 2026-09-05] H0A1 batch, LinkedIn people search restricted to 2nd degree, Pass 4 Phase B. Name, headline and location are SEARCH RESULT facts only; the profile was NOT opened, so degree, current employer and title must be re-verified live before any message is written (LR-B6, LR-B25). Location as listed: Tulsa, Oklahoma, US. Pass 1 against the founder's own export returned nothing for this ICP, so every contact in this batch is cold. NOT YET INVITED: the founder sends every invite by hand, bare, with no note (LR-B29)."
+notes: "[reply 2026-09-05] Richard replied to Msg 1 the same weekend, warm and offering: "Hi Izzie I'm great thank you, how are you? Yes no problem, what is you you need to know?" Short register, so LR-matched to ONE question. [msg2 drafted 2026-09-05] Aimed at H3A2 (where the error originates) with the LR-M7 cost clause carried by "who picked up the cost in the end". H3A1 rate and H3A4 visit cost deliberately held for later rounds. Copy at outreach/copy/H3-linkedin.md. UNSENT: the founder sends by hand. [UNVERIFIED 2026-09-05] No live profile read exists for this contact. Screened on company and title only, which the H0A1 icp_verification_rule now says is not enough — the invite went out before that rule existed. DO NOT draft or send a DM off this card: read the profile first and confirm the vertical, the production shape, the function and the tenure, then record what it showed here. [invite sent 2026-09-05] Bare connection request, no note (LR-B29). Sent by Claude via linkedin.com/preload/custom-invite; name "Scott Williams" verified in the invitation modal against the ledger before clicking. [sourced 2026-09-05] H0A1 batch, LinkedIn people search restricted to 2nd degree, Pass 4 Phase B. Name, headline and location are SEARCH RESULT facts only; the profile was NOT opened, so degree, current employer and title must be re-verified live before any message is written (LR-B6, LR-B25). Location as listed: Tulsa, Oklahoma, US. Pass 1 against the founder's own export returned nothing for this ICP, so every contact in this batch is cold. NOT YET INVITED: the founder sends every invite by hand, bare, with no note (LR-B29)."
 
 ## Chase Hettinger
 
@@ -7446,7 +7451,7 @@ interviews: []
 evidence_score:
 outcome_modifier:
 prior_contact_status: pending
-notes: "[UNVERIFIED 2026-09-05] No live profile read exists for this contact. Screened on company and title only, which the H0A1 icp_verification_rule now says is not enough — the invite went out before that rule existed. DO NOT draft or send a DM off this card: read the profile first and confirm the vertical, the production shape, the function and the tenure, then record what it showed here. [invite sent 2026-09-05] Bare connection request, no note (LR-B29). Sent by Claude via linkedin.com/preload/custom-invite; name "Chase Hettinger" verified in the invitation modal against the ledger before clicking. [sourced 2026-09-05] H0A1 batch, LinkedIn people search restricted to 2nd degree, Pass 4 Phase B. Name, headline and location are SEARCH RESULT facts only; the profile was NOT opened, so degree, current employer and title must be re-verified live before any message is written (LR-B6, LR-B25). Location as listed: Chandler, Arizona, US. Pass 1 against the founder's own export returned nothing for this ICP, so every contact in this batch is cold. NOT YET INVITED: the founder sends every invite by hand, bare, with no note (LR-B29)."
+notes: "[reply 2026-09-05] Richard replied to Msg 1 the same weekend, warm and offering: "Hi Izzie I'm great thank you, how are you? Yes no problem, what is you you need to know?" Short register, so LR-matched to ONE question. [msg2 drafted 2026-09-05] Aimed at H3A2 (where the error originates) with the LR-M7 cost clause carried by "who picked up the cost in the end". H3A1 rate and H3A4 visit cost deliberately held for later rounds. Copy at outreach/copy/H3-linkedin.md. UNSENT: the founder sends by hand. [UNVERIFIED 2026-09-05] No live profile read exists for this contact. Screened on company and title only, which the H0A1 icp_verification_rule now says is not enough — the invite went out before that rule existed. DO NOT draft or send a DM off this card: read the profile first and confirm the vertical, the production shape, the function and the tenure, then record what it showed here. [invite sent 2026-09-05] Bare connection request, no note (LR-B29). Sent by Claude via linkedin.com/preload/custom-invite; name "Chase Hettinger" verified in the invitation modal against the ledger before clicking. [sourced 2026-09-05] H0A1 batch, LinkedIn people search restricted to 2nd degree, Pass 4 Phase B. Name, headline and location are SEARCH RESULT facts only; the profile was NOT opened, so degree, current employer and title must be re-verified live before any message is written (LR-B6, LR-B25). Location as listed: Chandler, Arizona, US. Pass 1 against the founder's own export returned nothing for this ICP, so every contact in this batch is cold. NOT YET INVITED: the founder sends every invite by hand, bare, with no note (LR-B29)."
 
 ## Chelsea Sutton
 
@@ -7497,7 +7502,7 @@ interviews: []
 evidence_score:
 outcome_modifier:
 prior_contact_status: pending
-notes: "[UNVERIFIED 2026-09-05] No live profile read exists for this contact. Screened on company and title only, which the H0A1 icp_verification_rule now says is not enough — the invite went out before that rule existed. DO NOT draft or send a DM off this card: read the profile first and confirm the vertical, the production shape, the function and the tenure, then record what it showed here. [invite sent 2026-09-05] Bare connection request, no note (LR-B29). Sent by Claude via linkedin.com/preload/custom-invite; name "Chelsea Sutton" verified in the invitation modal against the ledger before clicking. [sourced 2026-09-05] H0A1 batch, LinkedIn people search restricted to 2nd degree, Pass 4 Phase B. Name, headline and location are SEARCH RESULT facts only; the profile was NOT opened, so degree, current employer and title must be re-verified live before any message is written (LR-B6, LR-B25). Location as listed: Augusta, Michigan, US. Pass 1 against the founder's own export returned nothing for this ICP, so every contact in this batch is cold. NOT YET INVITED: the founder sends every invite by hand, bare, with no note (LR-B29)."
+notes: "[reply 2026-09-05] Richard replied to Msg 1 the same weekend, warm and offering: "Hi Izzie I'm great thank you, how are you? Yes no problem, what is you you need to know?" Short register, so LR-matched to ONE question. [msg2 drafted 2026-09-05] Aimed at H3A2 (where the error originates) with the LR-M7 cost clause carried by "who picked up the cost in the end". H3A1 rate and H3A4 visit cost deliberately held for later rounds. Copy at outreach/copy/H3-linkedin.md. UNSENT: the founder sends by hand. [UNVERIFIED 2026-09-05] No live profile read exists for this contact. Screened on company and title only, which the H0A1 icp_verification_rule now says is not enough — the invite went out before that rule existed. DO NOT draft or send a DM off this card: read the profile first and confirm the vertical, the production shape, the function and the tenure, then record what it showed here. [invite sent 2026-09-05] Bare connection request, no note (LR-B29). Sent by Claude via linkedin.com/preload/custom-invite; name "Chelsea Sutton" verified in the invitation modal against the ledger before clicking. [sourced 2026-09-05] H0A1 batch, LinkedIn people search restricted to 2nd degree, Pass 4 Phase B. Name, headline and location are SEARCH RESULT facts only; the profile was NOT opened, so degree, current employer and title must be re-verified live before any message is written (LR-B6, LR-B25). Location as listed: Augusta, Michigan, US. Pass 1 against the founder's own export returned nothing for this ICP, so every contact in this batch is cold. NOT YET INVITED: the founder sends every invite by hand, bare, with no note (LR-B29)."
 
 ## John Shaw
 
@@ -7548,7 +7553,7 @@ interviews: []
 evidence_score:
 outcome_modifier:
 prior_contact_status: pending
-notes: "[UNVERIFIED 2026-09-05] No live profile read exists for this contact. Screened on company and title only, which the H0A1 icp_verification_rule now says is not enough — the invite went out before that rule existed. DO NOT draft or send a DM off this card: read the profile first and confirm the vertical, the production shape, the function and the tenure, then record what it showed here. [invite sent 2026-09-05] Bare connection request, no note (LR-B29). Sent by Claude via linkedin.com/preload/custom-invite; name "John Shaw" verified in the invitation modal against the ledger before clicking. [sourced 2026-09-05] H0A1 batch, LinkedIn people search restricted to 2nd degree, Pass 4 Phase B. Name, headline and location are SEARCH RESULT facts only; the profile was NOT opened, so degree, current employer and title must be re-verified live before any message is written (LR-B6, LR-B25). Location as listed: Anderson, South Carolina, US. Pass 1 against the founder's own export returned nothing for this ICP, so every contact in this batch is cold. NOT YET INVITED: the founder sends every invite by hand, bare, with no note (LR-B29)."
+notes: "[reply 2026-09-05] Richard replied to Msg 1 the same weekend, warm and offering: "Hi Izzie I'm great thank you, how are you? Yes no problem, what is you you need to know?" Short register, so LR-matched to ONE question. [msg2 drafted 2026-09-05] Aimed at H3A2 (where the error originates) with the LR-M7 cost clause carried by "who picked up the cost in the end". H3A1 rate and H3A4 visit cost deliberately held for later rounds. Copy at outreach/copy/H3-linkedin.md. UNSENT: the founder sends by hand. [UNVERIFIED 2026-09-05] No live profile read exists for this contact. Screened on company and title only, which the H0A1 icp_verification_rule now says is not enough — the invite went out before that rule existed. DO NOT draft or send a DM off this card: read the profile first and confirm the vertical, the production shape, the function and the tenure, then record what it showed here. [invite sent 2026-09-05] Bare connection request, no note (LR-B29). Sent by Claude via linkedin.com/preload/custom-invite; name "John Shaw" verified in the invitation modal against the ledger before clicking. [sourced 2026-09-05] H0A1 batch, LinkedIn people search restricted to 2nd degree, Pass 4 Phase B. Name, headline and location are SEARCH RESULT facts only; the profile was NOT opened, so degree, current employer and title must be re-verified live before any message is written (LR-B6, LR-B25). Location as listed: Anderson, South Carolina, US. Pass 1 against the founder's own export returned nothing for this ICP, so every contact in this batch is cold. NOT YET INVITED: the founder sends every invite by hand, bare, with no note (LR-B29)."
 
 ## Dave Ellis
 
@@ -7599,7 +7604,7 @@ interviews: []
 evidence_score:
 outcome_modifier:
 prior_contact_status: pending
-notes: "[UNVERIFIED 2026-09-05] No live profile read exists for this contact. Screened on company and title only, which the H0A1 icp_verification_rule now says is not enough — the invite went out before that rule existed. DO NOT draft or send a DM off this card: read the profile first and confirm the vertical, the production shape, the function and the tenure, then record what it showed here. [invite sent 2026-09-05] Bare connection request, no note (LR-B29). Sent by Claude via linkedin.com/preload/custom-invite; name "Dave Ellis" verified in the invitation modal against the ledger before clicking. [sourced 2026-09-05] H0A1 batch, LinkedIn people search restricted to 2nd degree, Pass 4 Phase B. Name, headline and location are SEARCH RESULT facts only; the profile was NOT opened, so degree, current employer and title must be re-verified live before any message is written (LR-B6, LR-B25). Location as listed: San Tan Valley, Arizona, US. Pass 1 against the founder's own export returned nothing for this ICP, so every contact in this batch is cold. NOT YET INVITED: the founder sends every invite by hand, bare, with no note (LR-B29)."
+notes: "[reply 2026-09-05] Richard replied to Msg 1 the same weekend, warm and offering: "Hi Izzie I'm great thank you, how are you? Yes no problem, what is you you need to know?" Short register, so LR-matched to ONE question. [msg2 drafted 2026-09-05] Aimed at H3A2 (where the error originates) with the LR-M7 cost clause carried by "who picked up the cost in the end". H3A1 rate and H3A4 visit cost deliberately held for later rounds. Copy at outreach/copy/H3-linkedin.md. UNSENT: the founder sends by hand. [UNVERIFIED 2026-09-05] No live profile read exists for this contact. Screened on company and title only, which the H0A1 icp_verification_rule now says is not enough — the invite went out before that rule existed. DO NOT draft or send a DM off this card: read the profile first and confirm the vertical, the production shape, the function and the tenure, then record what it showed here. [invite sent 2026-09-05] Bare connection request, no note (LR-B29). Sent by Claude via linkedin.com/preload/custom-invite; name "Dave Ellis" verified in the invitation modal against the ledger before clicking. [sourced 2026-09-05] H0A1 batch, LinkedIn people search restricted to 2nd degree, Pass 4 Phase B. Name, headline and location are SEARCH RESULT facts only; the profile was NOT opened, so degree, current employer and title must be re-verified live before any message is written (LR-B6, LR-B25). Location as listed: San Tan Valley, Arizona, US. Pass 1 against the founder's own export returned nothing for this ICP, so every contact in this batch is cold. NOT YET INVITED: the founder sends every invite by hand, bare, with no note (LR-B29)."
 
 ## Brian Bixler
 
@@ -7650,7 +7655,7 @@ interviews: []
 evidence_score:
 outcome_modifier:
 prior_contact_status: pending
-notes: "[UNVERIFIED 2026-09-05] No live profile read exists for this contact. Screened on company and title only, which the H0A1 icp_verification_rule now says is not enough — the invite went out before that rule existed. DO NOT draft or send a DM off this card: read the profile first and confirm the vertical, the production shape, the function and the tenure, then record what it showed here. [invite sent 2026-09-05] Bare connection request, no note (LR-B29). Sent by Claude via linkedin.com/preload/custom-invite; name "Brian Bixler" verified in the invitation modal against the ledger before clicking. [sourced 2026-09-05] H0A1 batch, LinkedIn people search restricted to 2nd degree, Pass 4 Phase B. Name, headline and location are SEARCH RESULT facts only; the profile was NOT opened, so degree, current employer and title must be re-verified live before any message is written (LR-B6, LR-B25). Location as listed: Littlestown, Pennsylvania, US. Pass 1 against the founder's own export returned nothing for this ICP, so every contact in this batch is cold. NOT YET INVITED: the founder sends every invite by hand, bare, with no note (LR-B29)."
+notes: "[reply 2026-09-05] Richard replied to Msg 1 the same weekend, warm and offering: "Hi Izzie I'm great thank you, how are you? Yes no problem, what is you you need to know?" Short register, so LR-matched to ONE question. [msg2 drafted 2026-09-05] Aimed at H3A2 (where the error originates) with the LR-M7 cost clause carried by "who picked up the cost in the end". H3A1 rate and H3A4 visit cost deliberately held for later rounds. Copy at outreach/copy/H3-linkedin.md. UNSENT: the founder sends by hand. [UNVERIFIED 2026-09-05] No live profile read exists for this contact. Screened on company and title only, which the H0A1 icp_verification_rule now says is not enough — the invite went out before that rule existed. DO NOT draft or send a DM off this card: read the profile first and confirm the vertical, the production shape, the function and the tenure, then record what it showed here. [invite sent 2026-09-05] Bare connection request, no note (LR-B29). Sent by Claude via linkedin.com/preload/custom-invite; name "Brian Bixler" verified in the invitation modal against the ledger before clicking. [sourced 2026-09-05] H0A1 batch, LinkedIn people search restricted to 2nd degree, Pass 4 Phase B. Name, headline and location are SEARCH RESULT facts only; the profile was NOT opened, so degree, current employer and title must be re-verified live before any message is written (LR-B6, LR-B25). Location as listed: Littlestown, Pennsylvania, US. Pass 1 against the founder's own export returned nothing for this ICP, so every contact in this batch is cold. NOT YET INVITED: the founder sends every invite by hand, bare, with no note (LR-B29)."
 
 ## Zoltan Voros
 
@@ -7701,7 +7706,7 @@ interviews: []
 evidence_score:
 outcome_modifier:
 prior_contact_status: pending
-notes: "[UNVERIFIED 2026-09-05] No live profile read exists for this contact. Screened on company and title only, which the H0A1 icp_verification_rule now says is not enough — the invite went out before that rule existed. DO NOT draft or send a DM off this card: read the profile first and confirm the vertical, the production shape, the function and the tenure, then record what it showed here. [invite sent 2026-09-05] Bare connection request, no note (LR-B29). Sent by Claude via linkedin.com/preload/custom-invite; name "Zoltan Voros" verified in the invitation modal against the ledger before clicking. [sourced 2026-09-05] H0A1 batch, LinkedIn people search restricted to 2nd degree, Pass 4 Phase B. Name, headline and location are SEARCH RESULT facts only; the profile was NOT opened, so degree, current employer and title must be re-verified live before any message is written (LR-B6, LR-B25). Location as listed: Surrey, British Columbia, Canada. Pass 1 against the founder's own export returned nothing for this ICP, so every contact in this batch is cold. NOT YET INVITED: the founder sends every invite by hand, bare, with no note (LR-B29)."
+notes: "[reply 2026-09-05] Richard replied to Msg 1 the same weekend, warm and offering: "Hi Izzie I'm great thank you, how are you? Yes no problem, what is you you need to know?" Short register, so LR-matched to ONE question. [msg2 drafted 2026-09-05] Aimed at H3A2 (where the error originates) with the LR-M7 cost clause carried by "who picked up the cost in the end". H3A1 rate and H3A4 visit cost deliberately held for later rounds. Copy at outreach/copy/H3-linkedin.md. UNSENT: the founder sends by hand. [UNVERIFIED 2026-09-05] No live profile read exists for this contact. Screened on company and title only, which the H0A1 icp_verification_rule now says is not enough — the invite went out before that rule existed. DO NOT draft or send a DM off this card: read the profile first and confirm the vertical, the production shape, the function and the tenure, then record what it showed here. [invite sent 2026-09-05] Bare connection request, no note (LR-B29). Sent by Claude via linkedin.com/preload/custom-invite; name "Zoltan Voros" verified in the invitation modal against the ledger before clicking. [sourced 2026-09-05] H0A1 batch, LinkedIn people search restricted to 2nd degree, Pass 4 Phase B. Name, headline and location are SEARCH RESULT facts only; the profile was NOT opened, so degree, current employer and title must be re-verified live before any message is written (LR-B6, LR-B25). Location as listed: Surrey, British Columbia, Canada. Pass 1 against the founder's own export returned nothing for this ICP, so every contact in this batch is cold. NOT YET INVITED: the founder sends every invite by hand, bare, with no note (LR-B29)."
 
 ## Andrew Kurzrok
 
@@ -7752,7 +7757,7 @@ interviews: []
 evidence_score:
 outcome_modifier:
 prior_contact_status: pending
-notes: "[UNVERIFIED 2026-09-05] No live profile read exists for this contact. Screened on company and title only, which the H0A1 icp_verification_rule now says is not enough — the invite went out before that rule existed. DO NOT draft or send a DM off this card: read the profile first and confirm the vertical, the production shape, the function and the tenure, then record what it showed here. [invite sent 2026-09-05] Bare connection request, no note (LR-B29). Sent by Claude via linkedin.com/preload/custom-invite; name "Andrew Kurzrok" verified in the invitation modal against the ledger before clicking. [sourced 2026-09-05] H0A1 batch, LinkedIn people search restricted to 2nd degree, Pass 4 Phase B. Name, headline and location are SEARCH RESULT facts only; the profile was NOT opened, so degree, current employer and title must be re-verified live before any message is written (LR-B6, LR-B25). Location as listed: Washington, DC, US. Pass 1 against the founder's own export returned nothing for this ICP, so every contact in this batch is cold. NOT YET INVITED: the founder sends every invite by hand, bare, with no note (LR-B29)."
+notes: "[reply 2026-09-05] Richard replied to Msg 1 the same weekend, warm and offering: "Hi Izzie I'm great thank you, how are you? Yes no problem, what is you you need to know?" Short register, so LR-matched to ONE question. [msg2 drafted 2026-09-05] Aimed at H3A2 (where the error originates) with the LR-M7 cost clause carried by "who picked up the cost in the end". H3A1 rate and H3A4 visit cost deliberately held for later rounds. Copy at outreach/copy/H3-linkedin.md. UNSENT: the founder sends by hand. [UNVERIFIED 2026-09-05] No live profile read exists for this contact. Screened on company and title only, which the H0A1 icp_verification_rule now says is not enough — the invite went out before that rule existed. DO NOT draft or send a DM off this card: read the profile first and confirm the vertical, the production shape, the function and the tenure, then record what it showed here. [invite sent 2026-09-05] Bare connection request, no note (LR-B29). Sent by Claude via linkedin.com/preload/custom-invite; name "Andrew Kurzrok" verified in the invitation modal against the ledger before clicking. [sourced 2026-09-05] H0A1 batch, LinkedIn people search restricted to 2nd degree, Pass 4 Phase B. Name, headline and location are SEARCH RESULT facts only; the profile was NOT opened, so degree, current employer and title must be re-verified live before any message is written (LR-B6, LR-B25). Location as listed: Washington, DC, US. Pass 1 against the founder's own export returned nothing for this ICP, so every contact in this batch is cold. NOT YET INVITED: the founder sends every invite by hand, bare, with no note (LR-B29)."
 
 ## Christopher Carlson
 
@@ -7803,7 +7808,7 @@ interviews: []
 evidence_score:
 outcome_modifier:
 prior_contact_status: pending
-notes: "[UNVERIFIED 2026-09-05] No live profile read exists for this contact. Screened on company and title only, which the H0A1 icp_verification_rule now says is not enough — the invite went out before that rule existed. DO NOT draft or send a DM off this card: read the profile first and confirm the vertical, the production shape, the function and the tenure, then record what it showed here. [invite sent 2026-09-05] Bare connection request, no note (LR-B29). Sent by Claude via linkedin.com/preload/custom-invite; name "Christopher Carlson" verified in the invitation modal against the ledger before clicking. [sourced 2026-09-05] H0A1 batch, LinkedIn people search restricted to 2nd degree, Pass 4 Phase B. Name, headline and location are SEARCH RESULT facts only; the profile was NOT opened, so degree, current employer and title must be re-verified live before any message is written (LR-B6, LR-B25). Location as listed: Sharon, Wisconsin, US. Pass 1 against the founder's own export returned nothing for this ICP, so every contact in this batch is cold. NOT YET INVITED: the founder sends every invite by hand, bare, with no note (LR-B29)."
+notes: "[reply 2026-09-05] Richard replied to Msg 1 the same weekend, warm and offering: "Hi Izzie I'm great thank you, how are you? Yes no problem, what is you you need to know?" Short register, so LR-matched to ONE question. [msg2 drafted 2026-09-05] Aimed at H3A2 (where the error originates) with the LR-M7 cost clause carried by "who picked up the cost in the end". H3A1 rate and H3A4 visit cost deliberately held for later rounds. Copy at outreach/copy/H3-linkedin.md. UNSENT: the founder sends by hand. [UNVERIFIED 2026-09-05] No live profile read exists for this contact. Screened on company and title only, which the H0A1 icp_verification_rule now says is not enough — the invite went out before that rule existed. DO NOT draft or send a DM off this card: read the profile first and confirm the vertical, the production shape, the function and the tenure, then record what it showed here. [invite sent 2026-09-05] Bare connection request, no note (LR-B29). Sent by Claude via linkedin.com/preload/custom-invite; name "Christopher Carlson" verified in the invitation modal against the ledger before clicking. [sourced 2026-09-05] H0A1 batch, LinkedIn people search restricted to 2nd degree, Pass 4 Phase B. Name, headline and location are SEARCH RESULT facts only; the profile was NOT opened, so degree, current employer and title must be re-verified live before any message is written (LR-B6, LR-B25). Location as listed: Sharon, Wisconsin, US. Pass 1 against the founder's own export returned nothing for this ICP, so every contact in this batch is cold. NOT YET INVITED: the founder sends every invite by hand, bare, with no note (LR-B29)."
 
 ## WOJCIECH CWYNAR
 
@@ -7854,7 +7859,7 @@ interviews: []
 evidence_score:
 outcome_modifier:
 prior_contact_status: pending
-notes: "[UNVERIFIED 2026-09-05] No live profile read exists for this contact. Screened on company and title only, which the H0A1 icp_verification_rule now says is not enough — the invite went out before that rule existed. DO NOT draft or send a DM off this card: read the profile first and confirm the vertical, the production shape, the function and the tenure, then record what it showed here. [invite sent 2026-09-05] Bare connection request, no note (LR-B29). Sent by Claude via linkedin.com/preload/custom-invite; name "WOJCIECH CWYNAR" verified in the invitation modal against the ledger before clicking. [sourced 2026-09-05] H0A1 batch, LinkedIn people search restricted to 2nd degree, Pass 4 Phase B. Name, headline and location are SEARCH RESULT facts only; the profile was NOT opened, so degree, current employer and title must be re-verified live before any message is written (LR-B6, LR-B25). Location as listed: Hyde, England, UK. Pass 1 against the founder's own export returned nothing for this ICP, so every contact in this batch is cold. NOT YET INVITED: the founder sends every invite by hand, bare, with no note (LR-B29)."
+notes: "[reply 2026-09-05] Richard replied to Msg 1 the same weekend, warm and offering: "Hi Izzie I'm great thank you, how are you? Yes no problem, what is you you need to know?" Short register, so LR-matched to ONE question. [msg2 drafted 2026-09-05] Aimed at H3A2 (where the error originates) with the LR-M7 cost clause carried by "who picked up the cost in the end". H3A1 rate and H3A4 visit cost deliberately held for later rounds. Copy at outreach/copy/H3-linkedin.md. UNSENT: the founder sends by hand. [UNVERIFIED 2026-09-05] No live profile read exists for this contact. Screened on company and title only, which the H0A1 icp_verification_rule now says is not enough — the invite went out before that rule existed. DO NOT draft or send a DM off this card: read the profile first and confirm the vertical, the production shape, the function and the tenure, then record what it showed here. [invite sent 2026-09-05] Bare connection request, no note (LR-B29). Sent by Claude via linkedin.com/preload/custom-invite; name "WOJCIECH CWYNAR" verified in the invitation modal against the ledger before clicking. [sourced 2026-09-05] H0A1 batch, LinkedIn people search restricted to 2nd degree, Pass 4 Phase B. Name, headline and location are SEARCH RESULT facts only; the profile was NOT opened, so degree, current employer and title must be re-verified live before any message is written (LR-B6, LR-B25). Location as listed: Hyde, England, UK. Pass 1 against the founder's own export returned nothing for this ICP, so every contact in this batch is cold. NOT YET INVITED: the founder sends every invite by hand, bare, with no note (LR-B29)."
 
 ## Greg Ellis
 
@@ -7905,7 +7910,7 @@ interviews: []
 evidence_score:
 outcome_modifier:
 prior_contact_status: pending
-notes: "[UNVERIFIED 2026-09-05] No live profile read exists for this contact. Screened on company and title only, which the H0A1 icp_verification_rule now says is not enough — the invite went out before that rule existed. DO NOT draft or send a DM off this card: read the profile first and confirm the vertical, the production shape, the function and the tenure, then record what it showed here. [invite sent 2026-09-05] Bare connection request, no note (LR-B29). Sent by Claude via linkedin.com/preload/custom-invite; name "Greg Ellis" verified in the invitation modal against the ledger before clicking. [sourced 2026-09-05] H0A1 batch, LinkedIn people search restricted to 2nd degree, Pass 4 Phase B. Name, headline and location are SEARCH RESULT facts only; the profile was NOT opened, so degree, current employer and title must be re-verified live before any message is written (LR-B6, LR-B25). Location as listed: Youngstown-Warren area, Ohio, US. Pass 1 against the founder's own export returned nothing for this ICP, so every contact in this batch is cold. NOT YET INVITED: the founder sends every invite by hand, bare, with no note (LR-B29)."
+notes: "[reply 2026-09-05] Richard replied to Msg 1 the same weekend, warm and offering: "Hi Izzie I'm great thank you, how are you? Yes no problem, what is you you need to know?" Short register, so LR-matched to ONE question. [msg2 drafted 2026-09-05] Aimed at H3A2 (where the error originates) with the LR-M7 cost clause carried by "who picked up the cost in the end". H3A1 rate and H3A4 visit cost deliberately held for later rounds. Copy at outreach/copy/H3-linkedin.md. UNSENT: the founder sends by hand. [UNVERIFIED 2026-09-05] No live profile read exists for this contact. Screened on company and title only, which the H0A1 icp_verification_rule now says is not enough — the invite went out before that rule existed. DO NOT draft or send a DM off this card: read the profile first and confirm the vertical, the production shape, the function and the tenure, then record what it showed here. [invite sent 2026-09-05] Bare connection request, no note (LR-B29). Sent by Claude via linkedin.com/preload/custom-invite; name "Greg Ellis" verified in the invitation modal against the ledger before clicking. [sourced 2026-09-05] H0A1 batch, LinkedIn people search restricted to 2nd degree, Pass 4 Phase B. Name, headline and location are SEARCH RESULT facts only; the profile was NOT opened, so degree, current employer and title must be re-verified live before any message is written (LR-B6, LR-B25). Location as listed: Youngstown-Warren area, Ohio, US. Pass 1 against the founder's own export returned nothing for this ICP, so every contact in this batch is cold. NOT YET INVITED: the founder sends every invite by hand, bare, with no note (LR-B29)."
 
 ## Rick Hafner
 
@@ -7956,7 +7961,7 @@ interviews: []
 evidence_score:
 outcome_modifier:
 prior_contact_status: pending
-notes: "[UNVERIFIED 2026-09-05] No live profile read exists for this contact. Screened on company and title only, which the H0A1 icp_verification_rule now says is not enough — the invite went out before that rule existed. DO NOT draft or send a DM off this card: read the profile first and confirm the vertical, the production shape, the function and the tenure, then record what it showed here. [invite sent 2026-09-05] Bare connection request, no note (LR-B29). Sent by Claude via linkedin.com/preload/custom-invite; name "Rick Hafner" verified in the invitation modal against the ledger before clicking. [sourced 2026-09-05] H0A1 batch, LinkedIn people search restricted to 2nd degree, Pass 4 Phase B. Name, headline and location are SEARCH RESULT facts only; the profile was NOT opened, so degree, current employer and title must be re-verified live before any message is written (LR-B6, LR-B25). Location as listed: US. Pass 1 against the founder's own export returned nothing for this ICP, so every contact in this batch is cold. NOT YET INVITED: the founder sends every invite by hand, bare, with no note (LR-B29)."
+notes: "[reply 2026-09-05] Richard replied to Msg 1 the same weekend, warm and offering: "Hi Izzie I'm great thank you, how are you? Yes no problem, what is you you need to know?" Short register, so LR-matched to ONE question. [msg2 drafted 2026-09-05] Aimed at H3A2 (where the error originates) with the LR-M7 cost clause carried by "who picked up the cost in the end". H3A1 rate and H3A4 visit cost deliberately held for later rounds. Copy at outreach/copy/H3-linkedin.md. UNSENT: the founder sends by hand. [UNVERIFIED 2026-09-05] No live profile read exists for this contact. Screened on company and title only, which the H0A1 icp_verification_rule now says is not enough — the invite went out before that rule existed. DO NOT draft or send a DM off this card: read the profile first and confirm the vertical, the production shape, the function and the tenure, then record what it showed here. [invite sent 2026-09-05] Bare connection request, no note (LR-B29). Sent by Claude via linkedin.com/preload/custom-invite; name "Rick Hafner" verified in the invitation modal against the ledger before clicking. [sourced 2026-09-05] H0A1 batch, LinkedIn people search restricted to 2nd degree, Pass 4 Phase B. Name, headline and location are SEARCH RESULT facts only; the profile was NOT opened, so degree, current employer and title must be re-verified live before any message is written (LR-B6, LR-B25). Location as listed: US. Pass 1 against the founder's own export returned nothing for this ICP, so every contact in this batch is cold. NOT YET INVITED: the founder sends every invite by hand, bare, with no note (LR-B29)."
 
 ## Travis Kemp
 
@@ -8007,7 +8012,7 @@ interviews: []
 evidence_score:
 outcome_modifier:
 prior_contact_status: pending
-notes: "[UNVERIFIED 2026-09-05] No live profile read exists for this contact. Screened on company and title only, which the H0A1 icp_verification_rule now says is not enough — the invite went out before that rule existed. DO NOT draft or send a DM off this card: read the profile first and confirm the vertical, the production shape, the function and the tenure, then record what it showed here. [invite sent 2026-09-05] Bare connection request, no note (LR-B29). Sent by Claude via linkedin.com/preload/custom-invite; name "Travis Kemp" verified in the invitation modal against the ledger before clicking. [sourced 2026-09-05] H0A1 batch, LinkedIn people search restricted to 2nd degree, Pass 4 Phase B. Name, headline and location are SEARCH RESULT facts only; the profile was NOT opened, so degree, current employer and title must be re-verified live before any message is written (LR-B6, LR-B25). Location as listed: South Lebanon, Ohio, US. Pass 1 against the founder's own export returned nothing for this ICP, so every contact in this batch is cold. NOT YET INVITED: the founder sends every invite by hand, bare, with no note (LR-B29)."
+notes: "[reply 2026-09-05] Richard replied to Msg 1 the same weekend, warm and offering: "Hi Izzie I'm great thank you, how are you? Yes no problem, what is you you need to know?" Short register, so LR-matched to ONE question. [msg2 drafted 2026-09-05] Aimed at H3A2 (where the error originates) with the LR-M7 cost clause carried by "who picked up the cost in the end". H3A1 rate and H3A4 visit cost deliberately held for later rounds. Copy at outreach/copy/H3-linkedin.md. UNSENT: the founder sends by hand. [UNVERIFIED 2026-09-05] No live profile read exists for this contact. Screened on company and title only, which the H0A1 icp_verification_rule now says is not enough — the invite went out before that rule existed. DO NOT draft or send a DM off this card: read the profile first and confirm the vertical, the production shape, the function and the tenure, then record what it showed here. [invite sent 2026-09-05] Bare connection request, no note (LR-B29). Sent by Claude via linkedin.com/preload/custom-invite; name "Travis Kemp" verified in the invitation modal against the ledger before clicking. [sourced 2026-09-05] H0A1 batch, LinkedIn people search restricted to 2nd degree, Pass 4 Phase B. Name, headline and location are SEARCH RESULT facts only; the profile was NOT opened, so degree, current employer and title must be re-verified live before any message is written (LR-B6, LR-B25). Location as listed: South Lebanon, Ohio, US. Pass 1 against the founder's own export returned nothing for this ICP, so every contact in this batch is cold. NOT YET INVITED: the founder sends every invite by hand, bare, with no note (LR-B29)."
 
 ## Li Hsu
 
@@ -8058,7 +8063,7 @@ interviews: []
 evidence_score:
 outcome_modifier:
 prior_contact_status: pending
-notes: "[UNVERIFIED 2026-09-05] No live profile read exists for this contact. Screened on company and title only, which the H0A1 icp_verification_rule now says is not enough — the invite went out before that rule existed. DO NOT draft or send a DM off this card: read the profile first and confirm the vertical, the production shape, the function and the tenure, then record what it showed here. [invite sent 2026-09-05] Bare connection request, no note (LR-B29). Sent by Claude via linkedin.com/preload/custom-invite; name "Li Hsu" verified in the invitation modal against the ledger before clicking. [sourced 2026-09-05] H0A1 batch, LinkedIn people search restricted to 2nd degree, Pass 4 Phase B. Name, headline and location are SEARCH RESULT facts only; the profile was NOT opened, so degree, current employer and title must be re-verified live before any message is written (LR-B6, LR-B25). Location as listed: US. Pass 1 against the founder's own export returned nothing for this ICP, so every contact in this batch is cold. NOT YET INVITED: the founder sends every invite by hand, bare, with no note (LR-B29)."
+notes: "[reply 2026-09-05] Richard replied to Msg 1 the same weekend, warm and offering: "Hi Izzie I'm great thank you, how are you? Yes no problem, what is you you need to know?" Short register, so LR-matched to ONE question. [msg2 drafted 2026-09-05] Aimed at H3A2 (where the error originates) with the LR-M7 cost clause carried by "who picked up the cost in the end". H3A1 rate and H3A4 visit cost deliberately held for later rounds. Copy at outreach/copy/H3-linkedin.md. UNSENT: the founder sends by hand. [UNVERIFIED 2026-09-05] No live profile read exists for this contact. Screened on company and title only, which the H0A1 icp_verification_rule now says is not enough — the invite went out before that rule existed. DO NOT draft or send a DM off this card: read the profile first and confirm the vertical, the production shape, the function and the tenure, then record what it showed here. [invite sent 2026-09-05] Bare connection request, no note (LR-B29). Sent by Claude via linkedin.com/preload/custom-invite; name "Li Hsu" verified in the invitation modal against the ledger before clicking. [sourced 2026-09-05] H0A1 batch, LinkedIn people search restricted to 2nd degree, Pass 4 Phase B. Name, headline and location are SEARCH RESULT facts only; the profile was NOT opened, so degree, current employer and title must be re-verified live before any message is written (LR-B6, LR-B25). Location as listed: US. Pass 1 against the founder's own export returned nothing for this ICP, so every contact in this batch is cold. NOT YET INVITED: the founder sends every invite by hand, bare, with no note (LR-B29)."
 
 ## EMRE YURTEMRE
 
@@ -8109,7 +8114,7 @@ interviews: []
 evidence_score:
 outcome_modifier:
 prior_contact_status: pending
-notes: "[UNVERIFIED 2026-09-05] No live profile read exists for this contact. Screened on company and title only, which the H0A1 icp_verification_rule now says is not enough — the invite went out before that rule existed. DO NOT draft or send a DM off this card: read the profile first and confirm the vertical, the production shape, the function and the tenure, then record what it showed here. [invite sent 2026-09-05] Bare connection request, no note (LR-B29). Sent by Claude via linkedin.com/preload/custom-invite; name "EMRE YURTEMRE" verified in the invitation modal against the ledger before clicking. [sourced 2026-09-05] H0A1 batch, LinkedIn people search restricted to 2nd degree, Pass 4 Phase B. Name, headline and location are SEARCH RESULT facts only; the profile was NOT opened, so degree, current employer and title must be re-verified live before any message is written (LR-B6, LR-B25). Location as listed: Türkiye. Pass 1 against the founder's own export returned nothing for this ICP, so every contact in this batch is cold. NOT YET INVITED: the founder sends every invite by hand, bare, with no note (LR-B29)."
+notes: "[reply 2026-09-05] Richard replied to Msg 1 the same weekend, warm and offering: "Hi Izzie I'm great thank you, how are you? Yes no problem, what is you you need to know?" Short register, so LR-matched to ONE question. [msg2 drafted 2026-09-05] Aimed at H3A2 (where the error originates) with the LR-M7 cost clause carried by "who picked up the cost in the end". H3A1 rate and H3A4 visit cost deliberately held for later rounds. Copy at outreach/copy/H3-linkedin.md. UNSENT: the founder sends by hand. [UNVERIFIED 2026-09-05] No live profile read exists for this contact. Screened on company and title only, which the H0A1 icp_verification_rule now says is not enough — the invite went out before that rule existed. DO NOT draft or send a DM off this card: read the profile first and confirm the vertical, the production shape, the function and the tenure, then record what it showed here. [invite sent 2026-09-05] Bare connection request, no note (LR-B29). Sent by Claude via linkedin.com/preload/custom-invite; name "EMRE YURTEMRE" verified in the invitation modal against the ledger before clicking. [sourced 2026-09-05] H0A1 batch, LinkedIn people search restricted to 2nd degree, Pass 4 Phase B. Name, headline and location are SEARCH RESULT facts only; the profile was NOT opened, so degree, current employer and title must be re-verified live before any message is written (LR-B6, LR-B25). Location as listed: Türkiye. Pass 1 against the founder's own export returned nothing for this ICP, so every contact in this batch is cold. NOT YET INVITED: the founder sends every invite by hand, bare, with no note (LR-B29)."
 
 ## Özgür DURSUN
 
@@ -8160,7 +8165,7 @@ interviews: []
 evidence_score:
 outcome_modifier:
 prior_contact_status: pending
-notes: "[UNVERIFIED 2026-09-05] No live profile read exists for this contact. Screened on company and title only, which the H0A1 icp_verification_rule now says is not enough — the invite went out before that rule existed. DO NOT draft or send a DM off this card: read the profile first and confirm the vertical, the production shape, the function and the tenure, then record what it showed here. [invite sent 2026-09-05] Bare connection request, no note (LR-B29). Sent by Claude via linkedin.com/preload/custom-invite; name "Özgür DURSUN" verified in the invitation modal against the ledger before clicking. [sourced 2026-09-05] H0A1 batch, LinkedIn people search restricted to 2nd degree, Pass 4 Phase B. Name, headline and location are SEARCH RESULT facts only; the profile was NOT opened, so degree, current employer and title must be re-verified live before any message is written (LR-B6, LR-B25). Location as listed: Istanbul, Türkiye. Pass 1 against the founder's own export returned nothing for this ICP, so every contact in this batch is cold. NOT YET INVITED: the founder sends every invite by hand, bare, with no note (LR-B29)."
+notes: "[reply 2026-09-05] Richard replied to Msg 1 the same weekend, warm and offering: "Hi Izzie I'm great thank you, how are you? Yes no problem, what is you you need to know?" Short register, so LR-matched to ONE question. [msg2 drafted 2026-09-05] Aimed at H3A2 (where the error originates) with the LR-M7 cost clause carried by "who picked up the cost in the end". H3A1 rate and H3A4 visit cost deliberately held for later rounds. Copy at outreach/copy/H3-linkedin.md. UNSENT: the founder sends by hand. [UNVERIFIED 2026-09-05] No live profile read exists for this contact. Screened on company and title only, which the H0A1 icp_verification_rule now says is not enough — the invite went out before that rule existed. DO NOT draft or send a DM off this card: read the profile first and confirm the vertical, the production shape, the function and the tenure, then record what it showed here. [invite sent 2026-09-05] Bare connection request, no note (LR-B29). Sent by Claude via linkedin.com/preload/custom-invite; name "Özgür DURSUN" verified in the invitation modal against the ledger before clicking. [sourced 2026-09-05] H0A1 batch, LinkedIn people search restricted to 2nd degree, Pass 4 Phase B. Name, headline and location are SEARCH RESULT facts only; the profile was NOT opened, so degree, current employer and title must be re-verified live before any message is written (LR-B6, LR-B25). Location as listed: Istanbul, Türkiye. Pass 1 against the founder's own export returned nothing for this ICP, so every contact in this batch is cold. NOT YET INVITED: the founder sends every invite by hand, bare, with no note (LR-B29)."
 
 ## Tacettin ŞAL
 
@@ -8211,7 +8216,7 @@ interviews: []
 evidence_score:
 outcome_modifier:
 prior_contact_status: pending
-notes: "[UNVERIFIED 2026-09-05] No live profile read exists for this contact. Screened on company and title only, which the H0A1 icp_verification_rule now says is not enough — the invite went out before that rule existed. DO NOT draft or send a DM off this card: read the profile first and confirm the vertical, the production shape, the function and the tenure, then record what it showed here. [invite sent 2026-09-05] Bare connection request, no note (LR-B29). Sent by Claude via linkedin.com/preload/custom-invite; name "Tacettin ŞAL" verified in the invitation modal against the ledger before clicking. [sourced 2026-09-05] H0A1 batch, LinkedIn people search restricted to 2nd degree, Pass 4 Phase B. Name, headline and location are SEARCH RESULT facts only; the profile was NOT opened, so degree, current employer and title must be re-verified live before any message is written (LR-B6, LR-B25). Location as listed: Türkiye. Pass 1 against the founder's own export returned nothing for this ICP, so every contact in this batch is cold. NOT YET INVITED: the founder sends every invite by hand, bare, with no note (LR-B29)."
+notes: "[reply 2026-09-05] Richard replied to Msg 1 the same weekend, warm and offering: "Hi Izzie I'm great thank you, how are you? Yes no problem, what is you you need to know?" Short register, so LR-matched to ONE question. [msg2 drafted 2026-09-05] Aimed at H3A2 (where the error originates) with the LR-M7 cost clause carried by "who picked up the cost in the end". H3A1 rate and H3A4 visit cost deliberately held for later rounds. Copy at outreach/copy/H3-linkedin.md. UNSENT: the founder sends by hand. [UNVERIFIED 2026-09-05] No live profile read exists for this contact. Screened on company and title only, which the H0A1 icp_verification_rule now says is not enough — the invite went out before that rule existed. DO NOT draft or send a DM off this card: read the profile first and confirm the vertical, the production shape, the function and the tenure, then record what it showed here. [invite sent 2026-09-05] Bare connection request, no note (LR-B29). Sent by Claude via linkedin.com/preload/custom-invite; name "Tacettin ŞAL" verified in the invitation modal against the ledger before clicking. [sourced 2026-09-05] H0A1 batch, LinkedIn people search restricted to 2nd degree, Pass 4 Phase B. Name, headline and location are SEARCH RESULT facts only; the profile was NOT opened, so degree, current employer and title must be re-verified live before any message is written (LR-B6, LR-B25). Location as listed: Türkiye. Pass 1 against the founder's own export returned nothing for this ICP, so every contact in this batch is cold. NOT YET INVITED: the founder sends every invite by hand, bare, with no note (LR-B29)."
 
 ## Ahmet Çakın
 
@@ -8262,7 +8267,7 @@ interviews: []
 evidence_score:
 outcome_modifier:
 prior_contact_status: pending
-notes: "[UNVERIFIED 2026-09-05] No live profile read exists for this contact. Screened on company and title only, which the H0A1 icp_verification_rule now says is not enough — the invite went out before that rule existed. DO NOT draft or send a DM off this card: read the profile first and confirm the vertical, the production shape, the function and the tenure, then record what it showed here. [invite sent 2026-09-05] Bare connection request, no note (LR-B29). Sent by Claude via linkedin.com/preload/custom-invite; name "Ahmet Çakın" verified in the invitation modal against the ledger before clicking. [sourced 2026-09-05] H0A1 batch, LinkedIn people search restricted to 2nd degree, Pass 4 Phase B. Name, headline and location are SEARCH RESULT facts only; the profile was NOT opened, so degree, current employer and title must be re-verified live before any message is written (LR-B6, LR-B25). Location as listed: Ankara, Türkiye. Pass 1 against the founder's own export returned nothing for this ICP, so every contact in this batch is cold. NOT YET INVITED: the founder sends every invite by hand, bare, with no note (LR-B29)."
+notes: "[reply 2026-09-05] Richard replied to Msg 1 the same weekend, warm and offering: "Hi Izzie I'm great thank you, how are you? Yes no problem, what is you you need to know?" Short register, so LR-matched to ONE question. [msg2 drafted 2026-09-05] Aimed at H3A2 (where the error originates) with the LR-M7 cost clause carried by "who picked up the cost in the end". H3A1 rate and H3A4 visit cost deliberately held for later rounds. Copy at outreach/copy/H3-linkedin.md. UNSENT: the founder sends by hand. [UNVERIFIED 2026-09-05] No live profile read exists for this contact. Screened on company and title only, which the H0A1 icp_verification_rule now says is not enough — the invite went out before that rule existed. DO NOT draft or send a DM off this card: read the profile first and confirm the vertical, the production shape, the function and the tenure, then record what it showed here. [invite sent 2026-09-05] Bare connection request, no note (LR-B29). Sent by Claude via linkedin.com/preload/custom-invite; name "Ahmet Çakın" verified in the invitation modal against the ledger before clicking. [sourced 2026-09-05] H0A1 batch, LinkedIn people search restricted to 2nd degree, Pass 4 Phase B. Name, headline and location are SEARCH RESULT facts only; the profile was NOT opened, so degree, current employer and title must be re-verified live before any message is written (LR-B6, LR-B25). Location as listed: Ankara, Türkiye. Pass 1 against the founder's own export returned nothing for this ICP, so every contact in this batch is cold. NOT YET INVITED: the founder sends every invite by hand, bare, with no note (LR-B29)."
 
 ## Serdar Alper
 
@@ -8313,7 +8318,7 @@ interviews: []
 evidence_score:
 outcome_modifier:
 prior_contact_status: pending
-notes: "[UNVERIFIED 2026-09-05] No live profile read exists for this contact. Screened on company and title only, which the H0A1 icp_verification_rule now says is not enough — the invite went out before that rule existed. DO NOT draft or send a DM off this card: read the profile first and confirm the vertical, the production shape, the function and the tenure, then record what it showed here. [invite sent 2026-09-05] Bare connection request, no note (LR-B29). Sent by Claude via linkedin.com/preload/custom-invite; name "Serdar Alper" verified in the invitation modal against the ledger before clicking. [sourced 2026-09-05] H0A1 batch, LinkedIn people search restricted to 2nd degree, Pass 4 Phase B. Name, headline and location are SEARCH RESULT facts only; the profile was NOT opened, so degree, current employer and title must be re-verified live before any message is written (LR-B6, LR-B25). Location as listed: Türkiye. Pass 1 against the founder's own export returned nothing for this ICP, so every contact in this batch is cold. NOT YET INVITED: the founder sends every invite by hand, bare, with no note (LR-B29)."
+notes: "[reply 2026-09-05] Richard replied to Msg 1 the same weekend, warm and offering: "Hi Izzie I'm great thank you, how are you? Yes no problem, what is you you need to know?" Short register, so LR-matched to ONE question. [msg2 drafted 2026-09-05] Aimed at H3A2 (where the error originates) with the LR-M7 cost clause carried by "who picked up the cost in the end". H3A1 rate and H3A4 visit cost deliberately held for later rounds. Copy at outreach/copy/H3-linkedin.md. UNSENT: the founder sends by hand. [UNVERIFIED 2026-09-05] No live profile read exists for this contact. Screened on company and title only, which the H0A1 icp_verification_rule now says is not enough — the invite went out before that rule existed. DO NOT draft or send a DM off this card: read the profile first and confirm the vertical, the production shape, the function and the tenure, then record what it showed here. [invite sent 2026-09-05] Bare connection request, no note (LR-B29). Sent by Claude via linkedin.com/preload/custom-invite; name "Serdar Alper" verified in the invitation modal against the ledger before clicking. [sourced 2026-09-05] H0A1 batch, LinkedIn people search restricted to 2nd degree, Pass 4 Phase B. Name, headline and location are SEARCH RESULT facts only; the profile was NOT opened, so degree, current employer and title must be re-verified live before any message is written (LR-B6, LR-B25). Location as listed: Türkiye. Pass 1 against the founder's own export returned nothing for this ICP, so every contact in this batch is cold. NOT YET INVITED: the founder sends every invite by hand, bare, with no note (LR-B29)."
 
 ## İbrahim Alper Ozan
 
@@ -8364,7 +8369,7 @@ interviews: []
 evidence_score:
 outcome_modifier:
 prior_contact_status: pending
-notes: "[sourced 2026-09-05] H0A1 batch, LinkedIn people search restricted to 2nd degree, Pass 4 Phase B. Name, headline and location are SEARCH RESULT facts only; the profile was NOT opened, so degree, current employer and title must be re-verified live before any message is written (LR-B6, LR-B25). Location as listed: Ankara, Türkiye. Pass 1 against the founder's own export returned nothing for this ICP, so every contact in this batch is cold. NOT YET INVITED: the founder sends every invite by hand, bare, with no note (LR-B29)."
+notes: "[reply 2026-09-05] Richard replied to Msg 1 the same weekend, warm and offering: "Hi Izzie I'm great thank you, how are you? Yes no problem, what is you you need to know?" Short register, so LR-matched to ONE question. [msg2 drafted 2026-09-05] Aimed at H3A2 (where the error originates) with the LR-M7 cost clause carried by "who picked up the cost in the end". H3A1 rate and H3A4 visit cost deliberately held for later rounds. Copy at outreach/copy/H3-linkedin.md. UNSENT: the founder sends by hand. [sourced 2026-09-05] H0A1 batch, LinkedIn people search restricted to 2nd degree, Pass 4 Phase B. Name, headline and location are SEARCH RESULT facts only; the profile was NOT opened, so degree, current employer and title must be re-verified live before any message is written (LR-B6, LR-B25). Location as listed: Ankara, Türkiye. Pass 1 against the founder's own export returned nothing for this ICP, so every contact in this batch is cold. NOT YET INVITED: the founder sends every invite by hand, bare, with no note (LR-B29)."
 
 ## Simon (Xiao Long) Jiang
 
@@ -8415,7 +8420,7 @@ interviews: []
 evidence_score:
 outcome_modifier:
 prior_contact_status: pending
-notes: "[sourced 2026-09-05] H0A1 batch, LinkedIn people search restricted to 2nd degree, Pass 4 Phase B. Name, headline and location are SEARCH RESULT facts only; the profile was NOT opened, so degree, current employer and title must be re-verified live before any message is written (LR-B6, LR-B25). Location as listed: Elgin, Illinois, US. Pass 1 against the founder's own export returned nothing for this ICP, so every contact in this batch is cold. NOT YET INVITED: the founder sends every invite by hand, bare, with no note (LR-B29)."
+notes: "[reply 2026-09-05] Richard replied to Msg 1 the same weekend, warm and offering: "Hi Izzie I'm great thank you, how are you? Yes no problem, what is you you need to know?" Short register, so LR-matched to ONE question. [msg2 drafted 2026-09-05] Aimed at H3A2 (where the error originates) with the LR-M7 cost clause carried by "who picked up the cost in the end". H3A1 rate and H3A4 visit cost deliberately held for later rounds. Copy at outreach/copy/H3-linkedin.md. UNSENT: the founder sends by hand. [sourced 2026-09-05] H0A1 batch, LinkedIn people search restricted to 2nd degree, Pass 4 Phase B. Name, headline and location are SEARCH RESULT facts only; the profile was NOT opened, so degree, current employer and title must be re-verified live before any message is written (LR-B6, LR-B25). Location as listed: Elgin, Illinois, US. Pass 1 against the founder's own export returned nothing for this ICP, so every contact in this batch is cold. NOT YET INVITED: the founder sends every invite by hand, bare, with no note (LR-B29)."
 
 ## Adriaan Te Brugge
 
@@ -8466,7 +8471,7 @@ interviews: []
 evidence_score:
 outcome_modifier:
 prior_contact_status: pending
-notes: "[sourced 2026-09-05] H0A1 batch, LinkedIn people search restricted to 2nd degree, Pass 4 Phase B. Name, headline and location are SEARCH RESULT facts only; the profile was NOT opened, so degree, current employer and title must be re-verified live before any message is written (LR-B6, LR-B25). Location as listed: Canada. Pass 1 against the founder's own export returned nothing for this ICP, so every contact in this batch is cold. NOT YET INVITED: the founder sends every invite by hand, bare, with no note (LR-B29)."
+notes: "[reply 2026-09-05] Richard replied to Msg 1 the same weekend, warm and offering: "Hi Izzie I'm great thank you, how are you? Yes no problem, what is you you need to know?" Short register, so LR-matched to ONE question. [msg2 drafted 2026-09-05] Aimed at H3A2 (where the error originates) with the LR-M7 cost clause carried by "who picked up the cost in the end". H3A1 rate and H3A4 visit cost deliberately held for later rounds. Copy at outreach/copy/H3-linkedin.md. UNSENT: the founder sends by hand. [sourced 2026-09-05] H0A1 batch, LinkedIn people search restricted to 2nd degree, Pass 4 Phase B. Name, headline and location are SEARCH RESULT facts only; the profile was NOT opened, so degree, current employer and title must be re-verified live before any message is written (LR-B6, LR-B25). Location as listed: Canada. Pass 1 against the founder's own export returned nothing for this ICP, so every contact in this batch is cold. NOT YET INVITED: the founder sends every invite by hand, bare, with no note (LR-B29)."
 
 ## Daniel Schimke
 
@@ -8517,7 +8522,7 @@ interviews: []
 evidence_score:
 outcome_modifier:
 prior_contact_status: pending
-notes: "[sourced 2026-09-05] H0A1 batch, LinkedIn people search restricted to 2nd degree, Pass 4 Phase B. Name, headline and location are SEARCH RESULT facts only; the profile was NOT opened, so degree, current employer and title must be re-verified live before any message is written (LR-B6, LR-B25). Location as listed: Santa Cruz, California, US. Pass 1 against the founder's own export returned nothing for this ICP, so every contact in this batch is cold. NOT YET INVITED: the founder sends every invite by hand, bare, with no note (LR-B29)."
+notes: "[reply 2026-09-05] Richard replied to Msg 1 the same weekend, warm and offering: "Hi Izzie I'm great thank you, how are you? Yes no problem, what is you you need to know?" Short register, so LR-matched to ONE question. [msg2 drafted 2026-09-05] Aimed at H3A2 (where the error originates) with the LR-M7 cost clause carried by "who picked up the cost in the end". H3A1 rate and H3A4 visit cost deliberately held for later rounds. Copy at outreach/copy/H3-linkedin.md. UNSENT: the founder sends by hand. [sourced 2026-09-05] H0A1 batch, LinkedIn people search restricted to 2nd degree, Pass 4 Phase B. Name, headline and location are SEARCH RESULT facts only; the profile was NOT opened, so degree, current employer and title must be re-verified live before any message is written (LR-B6, LR-B25). Location as listed: Santa Cruz, California, US. Pass 1 against the founder's own export returned nothing for this ICP, so every contact in this batch is cold. NOT YET INVITED: the founder sends every invite by hand, bare, with no note (LR-B29)."
 
 ## Emily Coker
 
@@ -8568,7 +8573,7 @@ interviews: []
 evidence_score:
 outcome_modifier:
 prior_contact_status: pending
-notes: "[sourced 2026-09-05] H0A1 batch, LinkedIn people search restricted to 2nd degree, Pass 4 Phase B. Name, headline and location are SEARCH RESULT facts only; the profile was NOT opened, so degree, current employer and title must be re-verified live before any message is written (LR-B6, LR-B25). Location as listed: Oakland, California, US. Pass 1 against the founder's own export returned nothing for this ICP, so every contact in this batch is cold. NOT YET INVITED: the founder sends every invite by hand, bare, with no note (LR-B29)."
+notes: "[reply 2026-09-05] Richard replied to Msg 1 the same weekend, warm and offering: "Hi Izzie I'm great thank you, how are you? Yes no problem, what is you you need to know?" Short register, so LR-matched to ONE question. [msg2 drafted 2026-09-05] Aimed at H3A2 (where the error originates) with the LR-M7 cost clause carried by "who picked up the cost in the end". H3A1 rate and H3A4 visit cost deliberately held for later rounds. Copy at outreach/copy/H3-linkedin.md. UNSENT: the founder sends by hand. [sourced 2026-09-05] H0A1 batch, LinkedIn people search restricted to 2nd degree, Pass 4 Phase B. Name, headline and location are SEARCH RESULT facts only; the profile was NOT opened, so degree, current employer and title must be re-verified live before any message is written (LR-B6, LR-B25). Location as listed: Oakland, California, US. Pass 1 against the founder's own export returned nothing for this ICP, so every contact in this batch is cold. NOT YET INVITED: the founder sends every invite by hand, bare, with no note (LR-B29)."
 
 ## Kassandra Nguyen
 
@@ -8619,7 +8624,7 @@ interviews: []
 evidence_score:
 outcome_modifier:
 prior_contact_status: pending
-notes: "[sourced 2026-09-05] H0A1 batch, LinkedIn people search restricted to 2nd degree, Pass 4 Phase B. Name, headline and location are SEARCH RESULT facts only; the profile was NOT opened, so degree, current employer and title must be re-verified live before any message is written (LR-B6, LR-B25). Location as listed: San Francisco Bay Area, US. Pass 1 against the founder's own export returned nothing for this ICP, so every contact in this batch is cold. NOT YET INVITED: the founder sends every invite by hand, bare, with no note (LR-B29)."
+notes: "[reply 2026-09-05] Richard replied to Msg 1 the same weekend, warm and offering: "Hi Izzie I'm great thank you, how are you? Yes no problem, what is you you need to know?" Short register, so LR-matched to ONE question. [msg2 drafted 2026-09-05] Aimed at H3A2 (where the error originates) with the LR-M7 cost clause carried by "who picked up the cost in the end". H3A1 rate and H3A4 visit cost deliberately held for later rounds. Copy at outreach/copy/H3-linkedin.md. UNSENT: the founder sends by hand. [sourced 2026-09-05] H0A1 batch, LinkedIn people search restricted to 2nd degree, Pass 4 Phase B. Name, headline and location are SEARCH RESULT facts only; the profile was NOT opened, so degree, current employer and title must be re-verified live before any message is written (LR-B6, LR-B25). Location as listed: San Francisco Bay Area, US. Pass 1 against the founder's own export returned nothing for this ICP, so every contact in this batch is cold. NOT YET INVITED: the founder sends every invite by hand, bare, with no note (LR-B29)."
 
 ## March Tighe
 
@@ -8670,7 +8675,7 @@ interviews: []
 evidence_score:
 outcome_modifier:
 prior_contact_status: pending
-notes: "[sourced 2026-09-05] H0A1 batch, LinkedIn people search restricted to 2nd degree, Pass 4 Phase B. Name, headline and location are SEARCH RESULT facts only; the profile was NOT opened, so degree, current employer and title must be re-verified live before any message is written (LR-B6, LR-B25). Location as listed: US. Pass 1 against the founder's own export returned nothing for this ICP, so every contact in this batch is cold. NOT YET INVITED: the founder sends every invite by hand, bare, with no note (LR-B29)."
+notes: "[reply 2026-09-05] Richard replied to Msg 1 the same weekend, warm and offering: "Hi Izzie I'm great thank you, how are you? Yes no problem, what is you you need to know?" Short register, so LR-matched to ONE question. [msg2 drafted 2026-09-05] Aimed at H3A2 (where the error originates) with the LR-M7 cost clause carried by "who picked up the cost in the end". H3A1 rate and H3A4 visit cost deliberately held for later rounds. Copy at outreach/copy/H3-linkedin.md. UNSENT: the founder sends by hand. [sourced 2026-09-05] H0A1 batch, LinkedIn people search restricted to 2nd degree, Pass 4 Phase B. Name, headline and location are SEARCH RESULT facts only; the profile was NOT opened, so degree, current employer and title must be re-verified live before any message is written (LR-B6, LR-B25). Location as listed: US. Pass 1 against the founder's own export returned nothing for this ICP, so every contact in this batch is cold. NOT YET INVITED: the founder sends every invite by hand, bare, with no note (LR-B29)."
 
 ## Shawn N.
 
@@ -8721,7 +8726,7 @@ interviews: []
 evidence_score:
 outcome_modifier:
 prior_contact_status: pending
-notes: "[sourced 2026-09-05] H0A1 batch, LinkedIn people search restricted to 2nd degree, Pass 4 Phase B. Name, headline and location are SEARCH RESULT facts only; the profile was NOT opened, so degree, current employer and title must be re-verified live before any message is written (LR-B6, LR-B25). Location as listed: North Hartland, Vermont, US. Pass 1 against the founder's own export returned nothing for this ICP, so every contact in this batch is cold. NOT YET INVITED: the founder sends every invite by hand, bare, with no note (LR-B29)."
+notes: "[reply 2026-09-05] Richard replied to Msg 1 the same weekend, warm and offering: "Hi Izzie I'm great thank you, how are you? Yes no problem, what is you you need to know?" Short register, so LR-matched to ONE question. [msg2 drafted 2026-09-05] Aimed at H3A2 (where the error originates) with the LR-M7 cost clause carried by "who picked up the cost in the end". H3A1 rate and H3A4 visit cost deliberately held for later rounds. Copy at outreach/copy/H3-linkedin.md. UNSENT: the founder sends by hand. [sourced 2026-09-05] H0A1 batch, LinkedIn people search restricted to 2nd degree, Pass 4 Phase B. Name, headline and location are SEARCH RESULT facts only; the profile was NOT opened, so degree, current employer and title must be re-verified live before any message is written (LR-B6, LR-B25). Location as listed: North Hartland, Vermont, US. Pass 1 against the founder's own export returned nothing for this ICP, so every contact in this batch is cold. NOT YET INVITED: the founder sends every invite by hand, bare, with no note (LR-B29)."
 
 ## Rajveer Yadav
 
@@ -8772,7 +8777,7 @@ interviews: []
 evidence_score:
 outcome_modifier:
 prior_contact_status: pending
-notes: "[sourced 2026-09-05] H0A1 batch, LinkedIn people search restricted to 2nd degree, Pass 4 Phase B. Name, headline and location are SEARCH RESULT facts only; the profile was NOT opened, so degree, current employer and title must be re-verified live before any message is written (LR-B6, LR-B25). Location as listed: India. Pass 1 against the founder's own export returned nothing for this ICP, so every contact in this batch is cold. NOT YET INVITED: the founder sends every invite by hand, bare, with no note (LR-B29)."
+notes: "[reply 2026-09-05] Richard replied to Msg 1 the same weekend, warm and offering: "Hi Izzie I'm great thank you, how are you? Yes no problem, what is you you need to know?" Short register, so LR-matched to ONE question. [msg2 drafted 2026-09-05] Aimed at H3A2 (where the error originates) with the LR-M7 cost clause carried by "who picked up the cost in the end". H3A1 rate and H3A4 visit cost deliberately held for later rounds. Copy at outreach/copy/H3-linkedin.md. UNSENT: the founder sends by hand. [sourced 2026-09-05] H0A1 batch, LinkedIn people search restricted to 2nd degree, Pass 4 Phase B. Name, headline and location are SEARCH RESULT facts only; the profile was NOT opened, so degree, current employer and title must be re-verified live before any message is written (LR-B6, LR-B25). Location as listed: India. Pass 1 against the founder's own export returned nothing for this ICP, so every contact in this batch is cold. NOT YET INVITED: the founder sends every invite by hand, bare, with no note (LR-B29)."
 
 ## Rob Russell
 
@@ -8823,7 +8828,7 @@ interviews: []
 evidence_score:
 outcome_modifier:
 prior_contact_status: pending
-notes: "[sourced 2026-09-05] H0A1 batch, LinkedIn people search restricted to 2nd degree, Pass 4 Phase B. Name, headline and location are SEARCH RESULT facts only; the profile was NOT opened, so degree, current employer and title must be re-verified live before any message is written (LR-B6, LR-B25). Location as listed: Odenville, Alabama, US. Pass 1 against the founder's own export returned nothing for this ICP, so every contact in this batch is cold. NOT YET INVITED: the founder sends every invite by hand, bare, with no note (LR-B29)."
+notes: "[reply 2026-09-05] Richard replied to Msg 1 the same weekend, warm and offering: "Hi Izzie I'm great thank you, how are you? Yes no problem, what is you you need to know?" Short register, so LR-matched to ONE question. [msg2 drafted 2026-09-05] Aimed at H3A2 (where the error originates) with the LR-M7 cost clause carried by "who picked up the cost in the end". H3A1 rate and H3A4 visit cost deliberately held for later rounds. Copy at outreach/copy/H3-linkedin.md. UNSENT: the founder sends by hand. [sourced 2026-09-05] H0A1 batch, LinkedIn people search restricted to 2nd degree, Pass 4 Phase B. Name, headline and location are SEARCH RESULT facts only; the profile was NOT opened, so degree, current employer and title must be re-verified live before any message is written (LR-B6, LR-B25). Location as listed: Odenville, Alabama, US. Pass 1 against the founder's own export returned nothing for this ICP, so every contact in this batch is cold. NOT YET INVITED: the founder sends every invite by hand, bare, with no note (LR-B29)."
 
 ## Jeremy Bellanti
 
@@ -8874,7 +8879,7 @@ interviews: []
 evidence_score:
 outcome_modifier:
 prior_contact_status: pending
-notes: "[sourced 2026-09-05] H0A1 batch, LinkedIn people search restricted to 2nd degree, Pass 4 Phase B. Name, headline and location are SEARCH RESULT facts only; the profile was NOT opened, so degree, current employer and title must be re-verified live before any message is written (LR-B6, LR-B25). Location as listed: Brighton, Michigan, US. Pass 1 against the founder's own export returned nothing for this ICP, so every contact in this batch is cold. NOT YET INVITED: the founder sends every invite by hand, bare, with no note (LR-B29)."
+notes: "[reply 2026-09-05] Richard replied to Msg 1 the same weekend, warm and offering: "Hi Izzie I'm great thank you, how are you? Yes no problem, what is you you need to know?" Short register, so LR-matched to ONE question. [msg2 drafted 2026-09-05] Aimed at H3A2 (where the error originates) with the LR-M7 cost clause carried by "who picked up the cost in the end". H3A1 rate and H3A4 visit cost deliberately held for later rounds. Copy at outreach/copy/H3-linkedin.md. UNSENT: the founder sends by hand. [sourced 2026-09-05] H0A1 batch, LinkedIn people search restricted to 2nd degree, Pass 4 Phase B. Name, headline and location are SEARCH RESULT facts only; the profile was NOT opened, so degree, current employer and title must be re-verified live before any message is written (LR-B6, LR-B25). Location as listed: Brighton, Michigan, US. Pass 1 against the founder's own export returned nothing for this ICP, so every contact in this batch is cold. NOT YET INVITED: the founder sends every invite by hand, bare, with no note (LR-B29)."
 
 ## Oliver Smith
 
@@ -8925,7 +8930,7 @@ interviews: []
 evidence_score:
 outcome_modifier:
 prior_contact_status: pending
-notes: "[sourced 2026-09-05] H0A1 batch, LinkedIn people search restricted to 2nd degree, Pass 4 Phase B. Name, headline and location are SEARCH RESULT facts only; the profile was NOT opened, so degree, current employer and title must be re-verified live before any message is written (LR-B6, LR-B25). Location as listed: UK. Pass 1 against the founder's own export returned nothing for this ICP, so every contact in this batch is cold. NOT YET INVITED: the founder sends every invite by hand, bare, with no note (LR-B29)."
+notes: "[reply 2026-09-05] Richard replied to Msg 1 the same weekend, warm and offering: "Hi Izzie I'm great thank you, how are you? Yes no problem, what is you you need to know?" Short register, so LR-matched to ONE question. [msg2 drafted 2026-09-05] Aimed at H3A2 (where the error originates) with the LR-M7 cost clause carried by "who picked up the cost in the end". H3A1 rate and H3A4 visit cost deliberately held for later rounds. Copy at outreach/copy/H3-linkedin.md. UNSENT: the founder sends by hand. [sourced 2026-09-05] H0A1 batch, LinkedIn people search restricted to 2nd degree, Pass 4 Phase B. Name, headline and location are SEARCH RESULT facts only; the profile was NOT opened, so degree, current employer and title must be re-verified live before any message is written (LR-B6, LR-B25). Location as listed: UK. Pass 1 against the founder's own export returned nothing for this ICP, so every contact in this batch is cold. NOT YET INVITED: the founder sends every invite by hand, bare, with no note (LR-B29)."
 
 ## Jagannath Rao
 
@@ -8976,7 +8981,7 @@ interviews: []
 evidence_score:
 outcome_modifier:
 prior_contact_status: pending
-notes: "[sourced 2026-09-05] H0A1 batch, LinkedIn people search restricted to 2nd degree, Pass 4 Phase B. Name, headline and location are SEARCH RESULT facts only; the profile was NOT opened, so degree, current employer and title must be re-verified live before any message is written (LR-B6, LR-B25). Location as listed: India. Pass 1 against the founder's own export returned nothing for this ICP, so every contact in this batch is cold. NOT YET INVITED: the founder sends every invite by hand, bare, with no note (LR-B29)."
+notes: "[reply 2026-09-05] Richard replied to Msg 1 the same weekend, warm and offering: "Hi Izzie I'm great thank you, how are you? Yes no problem, what is you you need to know?" Short register, so LR-matched to ONE question. [msg2 drafted 2026-09-05] Aimed at H3A2 (where the error originates) with the LR-M7 cost clause carried by "who picked up the cost in the end". H3A1 rate and H3A4 visit cost deliberately held for later rounds. Copy at outreach/copy/H3-linkedin.md. UNSENT: the founder sends by hand. [sourced 2026-09-05] H0A1 batch, LinkedIn people search restricted to 2nd degree, Pass 4 Phase B. Name, headline and location are SEARCH RESULT facts only; the profile was NOT opened, so degree, current employer and title must be re-verified live before any message is written (LR-B6, LR-B25). Location as listed: India. Pass 1 against the founder's own export returned nothing for this ICP, so every contact in this batch is cold. NOT YET INVITED: the founder sends every invite by hand, bare, with no note (LR-B29)."
 
 ## Jeff Brackus
 
@@ -9027,7 +9032,7 @@ interviews: []
 evidence_score:
 outcome_modifier:
 prior_contact_status: pending
-notes: "[UNVERIFIED 2026-09-05] No live profile read exists for this contact. Screened on company and title only, which the H0A1 icp_verification_rule now says is not enough — the invite went out before that rule existed. DO NOT draft or send a DM off this card: read the profile first and confirm the vertical, the production shape, the function and the tenure, then record what it showed here. [invite sent 2026-09-05] Bare connection request, no note (LR-B29). Sent by Claude via linkedin.com/preload/custom-invite; name "Jeff Brackus" verified in the invitation modal against the ledger before clicking. [sourced 2026-09-05] H0A1 batch, LinkedIn people search restricted to 2nd degree, Pass 4 Phase B. Name, headline and location are SEARCH RESULT facts only; the profile was NOT opened, so degree, current employer and title must be re-verified live before any message is written (LR-B6, LR-B25). Location as listed: Meridian, Idaho, US. Pass 1 against the founder's own export returned nothing for this ICP, so every contact in this batch is cold. NOT YET INVITED: the founder sends every invite by hand, bare, with no note (LR-B29)."
+notes: "[reply 2026-09-05] Richard replied to Msg 1 the same weekend, warm and offering: "Hi Izzie I'm great thank you, how are you? Yes no problem, what is you you need to know?" Short register, so LR-matched to ONE question. [msg2 drafted 2026-09-05] Aimed at H3A2 (where the error originates) with the LR-M7 cost clause carried by "who picked up the cost in the end". H3A1 rate and H3A4 visit cost deliberately held for later rounds. Copy at outreach/copy/H3-linkedin.md. UNSENT: the founder sends by hand. [UNVERIFIED 2026-09-05] No live profile read exists for this contact. Screened on company and title only, which the H0A1 icp_verification_rule now says is not enough — the invite went out before that rule existed. DO NOT draft or send a DM off this card: read the profile first and confirm the vertical, the production shape, the function and the tenure, then record what it showed here. [invite sent 2026-09-05] Bare connection request, no note (LR-B29). Sent by Claude via linkedin.com/preload/custom-invite; name "Jeff Brackus" verified in the invitation modal against the ledger before clicking. [sourced 2026-09-05] H0A1 batch, LinkedIn people search restricted to 2nd degree, Pass 4 Phase B. Name, headline and location are SEARCH RESULT facts only; the profile was NOT opened, so degree, current employer and title must be re-verified live before any message is written (LR-B6, LR-B25). Location as listed: Meridian, Idaho, US. Pass 1 against the founder's own export returned nothing for this ICP, so every contact in this batch is cold. NOT YET INVITED: the founder sends every invite by hand, bare, with no note (LR-B29)."
 
 ## William Ellison
 
@@ -9078,7 +9083,7 @@ interviews: []
 evidence_score:
 outcome_modifier:
 prior_contact_status: pending
-notes: "[UNVERIFIED 2026-09-05] No live profile read exists for this contact. Screened on company and title only, which the H0A1 icp_verification_rule now says is not enough — the invite went out before that rule existed. DO NOT draft or send a DM off this card: read the profile first and confirm the vertical, the production shape, the function and the tenure, then record what it showed here. [invite sent 2026-09-05] Bare connection request, no note (LR-B29). Sent by Claude via linkedin.com/preload/custom-invite; name "William Ellison" verified in the invitation modal against the ledger before clicking. [sourced 2026-09-05] H0A1 batch, LinkedIn people search restricted to 2nd degree, Pass 4 Phase B. Name, headline and location are SEARCH RESULT facts only; the profile was NOT opened, so degree, current employer and title must be re-verified live before any message is written (LR-B6, LR-B25). Location as listed: Piedmont, South Carolina, US. Pass 1 against the founder's own export returned nothing for this ICP, so every contact in this batch is cold. NOT YET INVITED: the founder sends every invite by hand, bare, with no note (LR-B29)."
+notes: "[reply 2026-09-05] Richard replied to Msg 1 the same weekend, warm and offering: "Hi Izzie I'm great thank you, how are you? Yes no problem, what is you you need to know?" Short register, so LR-matched to ONE question. [msg2 drafted 2026-09-05] Aimed at H3A2 (where the error originates) with the LR-M7 cost clause carried by "who picked up the cost in the end". H3A1 rate and H3A4 visit cost deliberately held for later rounds. Copy at outreach/copy/H3-linkedin.md. UNSENT: the founder sends by hand. [UNVERIFIED 2026-09-05] No live profile read exists for this contact. Screened on company and title only, which the H0A1 icp_verification_rule now says is not enough — the invite went out before that rule existed. DO NOT draft or send a DM off this card: read the profile first and confirm the vertical, the production shape, the function and the tenure, then record what it showed here. [invite sent 2026-09-05] Bare connection request, no note (LR-B29). Sent by Claude via linkedin.com/preload/custom-invite; name "William Ellison" verified in the invitation modal against the ledger before clicking. [sourced 2026-09-05] H0A1 batch, LinkedIn people search restricted to 2nd degree, Pass 4 Phase B. Name, headline and location are SEARCH RESULT facts only; the profile was NOT opened, so degree, current employer and title must be re-verified live before any message is written (LR-B6, LR-B25). Location as listed: Piedmont, South Carolina, US. Pass 1 against the founder's own export returned nothing for this ICP, so every contact in this batch is cold. NOT YET INVITED: the founder sends every invite by hand, bare, with no note (LR-B29)."
 
 ## Fatih Bıyıklı
 
@@ -9129,7 +9134,7 @@ interviews: []
 evidence_score:
 outcome_modifier:
 prior_contact_status: pending
-notes: "[UNVERIFIED 2026-09-05] No live profile read exists for this contact. Screened on company and title only, which the H0A1 icp_verification_rule now says is not enough — the invite went out before that rule existed. DO NOT draft or send a DM off this card: read the profile first and confirm the vertical, the production shape, the function and the tenure, then record what it showed here. [invite sent 2026-09-05] Bare connection request, no note (LR-B29). Sent by Claude via linkedin.com/preload/custom-invite; name "Fatih Bıyıklı" verified in the invitation modal against the ledger before clicking. [sourced 2026-09-05] H0A1 batch, LinkedIn people search restricted to 2nd degree, Pass 4 Phase B. Name, headline and location are SEARCH RESULT facts only; the profile was NOT opened, so degree, current employer and title must be re-verified live before any message is written (LR-B6, LR-B25). Location as listed: San Luis Potosí, Mexico. Pass 1 against the founder's own export returned nothing for this ICP, so every contact in this batch is cold. NOT YET INVITED: the founder sends every invite by hand, bare, with no note (LR-B29)."
+notes: "[reply 2026-09-05] Richard replied to Msg 1 the same weekend, warm and offering: "Hi Izzie I'm great thank you, how are you? Yes no problem, what is you you need to know?" Short register, so LR-matched to ONE question. [msg2 drafted 2026-09-05] Aimed at H3A2 (where the error originates) with the LR-M7 cost clause carried by "who picked up the cost in the end". H3A1 rate and H3A4 visit cost deliberately held for later rounds. Copy at outreach/copy/H3-linkedin.md. UNSENT: the founder sends by hand. [UNVERIFIED 2026-09-05] No live profile read exists for this contact. Screened on company and title only, which the H0A1 icp_verification_rule now says is not enough — the invite went out before that rule existed. DO NOT draft or send a DM off this card: read the profile first and confirm the vertical, the production shape, the function and the tenure, then record what it showed here. [invite sent 2026-09-05] Bare connection request, no note (LR-B29). Sent by Claude via linkedin.com/preload/custom-invite; name "Fatih Bıyıklı" verified in the invitation modal against the ledger before clicking. [sourced 2026-09-05] H0A1 batch, LinkedIn people search restricted to 2nd degree, Pass 4 Phase B. Name, headline and location are SEARCH RESULT facts only; the profile was NOT opened, so degree, current employer and title must be re-verified live before any message is written (LR-B6, LR-B25). Location as listed: San Luis Potosí, Mexico. Pass 1 against the founder's own export returned nothing for this ICP, so every contact in this batch is cold. NOT YET INVITED: the founder sends every invite by hand, bare, with no note (LR-B29)."
 
 ## Mike Zhang
 
@@ -9180,7 +9185,7 @@ interviews: []
 evidence_score:
 outcome_modifier:
 prior_contact_status: pending
-notes: "[UNVERIFIED 2026-09-05] No live profile read exists for this contact. Screened on company and title only, which the H0A1 icp_verification_rule now says is not enough — the invite went out before that rule existed. DO NOT draft or send a DM off this card: read the profile first and confirm the vertical, the production shape, the function and the tenure, then record what it showed here. [invite sent 2026-09-05] Bare connection request, no note (LR-B29). Sent by Claude via linkedin.com/preload/custom-invite; name "Mike Zhang" verified in the invitation modal against the ledger before clicking. [sourced 2026-09-05] H0A1 batch, LinkedIn people search restricted to 2nd degree, Pass 4 Phase B. Name, headline and location are SEARCH RESULT facts only; the profile was NOT opened, so degree, current employer and title must be re-verified live before any message is written (LR-B6, LR-B25). Location as listed: China. Pass 1 against the founder's own export returned nothing for this ICP, so every contact in this batch is cold. NOT YET INVITED: the founder sends every invite by hand, bare, with no note (LR-B29)."
+notes: "[reply 2026-09-05] Richard replied to Msg 1 the same weekend, warm and offering: "Hi Izzie I'm great thank you, how are you? Yes no problem, what is you you need to know?" Short register, so LR-matched to ONE question. [msg2 drafted 2026-09-05] Aimed at H3A2 (where the error originates) with the LR-M7 cost clause carried by "who picked up the cost in the end". H3A1 rate and H3A4 visit cost deliberately held for later rounds. Copy at outreach/copy/H3-linkedin.md. UNSENT: the founder sends by hand. [UNVERIFIED 2026-09-05] No live profile read exists for this contact. Screened on company and title only, which the H0A1 icp_verification_rule now says is not enough — the invite went out before that rule existed. DO NOT draft or send a DM off this card: read the profile first and confirm the vertical, the production shape, the function and the tenure, then record what it showed here. [invite sent 2026-09-05] Bare connection request, no note (LR-B29). Sent by Claude via linkedin.com/preload/custom-invite; name "Mike Zhang" verified in the invitation modal against the ledger before clicking. [sourced 2026-09-05] H0A1 batch, LinkedIn people search restricted to 2nd degree, Pass 4 Phase B. Name, headline and location are SEARCH RESULT facts only; the profile was NOT opened, so degree, current employer and title must be re-verified live before any message is written (LR-B6, LR-B25). Location as listed: China. Pass 1 against the founder's own export returned nothing for this ICP, so every contact in this batch is cold. NOT YET INVITED: the founder sends every invite by hand, bare, with no note (LR-B29)."
 
 ## Linda S
 
@@ -9231,7 +9236,7 @@ interviews: []
 evidence_score:
 outcome_modifier:
 prior_contact_status: pending
-notes: "[UNVERIFIED 2026-09-05] No live profile read exists for this contact. Screened on company and title only, which the H0A1 icp_verification_rule now says is not enough — the invite went out before that rule existed. DO NOT draft or send a DM off this card: read the profile first and confirm the vertical, the production shape, the function and the tenure, then record what it showed here. [invite UNCERTAIN 2026-09-05] The browser extension disconnected on the batch that would have sent this invite. The modal for "Linda (单艳娇) S" was confirmed open and named correctly, but the send click and the disconnect cannot be ordered from here. Status left `pending`. CHECK LinkedIn sent-invitations before re-sending - a duplicate invite is visible to the recipient. [sourced 2026-09-05] H0A1 batch, LinkedIn people search restricted to 2nd degree, Pass 4 Phase B. Name, headline and location are SEARCH RESULT facts only; the profile was NOT opened, so degree, current employer and title must be re-verified live before any message is written (LR-B6, LR-B25). Location as listed: Dongguan, China. Pass 1 against the founder's own export returned nothing for this ICP, so every contact in this batch is cold. NOT YET INVITED: the founder sends every invite by hand, bare, with no note (LR-B29)."
+notes: "[reply 2026-09-05] Richard replied to Msg 1 the same weekend, warm and offering: "Hi Izzie I'm great thank you, how are you? Yes no problem, what is you you need to know?" Short register, so LR-matched to ONE question. [msg2 drafted 2026-09-05] Aimed at H3A2 (where the error originates) with the LR-M7 cost clause carried by "who picked up the cost in the end". H3A1 rate and H3A4 visit cost deliberately held for later rounds. Copy at outreach/copy/H3-linkedin.md. UNSENT: the founder sends by hand. [UNVERIFIED 2026-09-05] No live profile read exists for this contact. Screened on company and title only, which the H0A1 icp_verification_rule now says is not enough — the invite went out before that rule existed. DO NOT draft or send a DM off this card: read the profile first and confirm the vertical, the production shape, the function and the tenure, then record what it showed here. [invite UNCERTAIN 2026-09-05] The browser extension disconnected on the batch that would have sent this invite. The modal for "Linda (单艳娇) S" was confirmed open and named correctly, but the send click and the disconnect cannot be ordered from here. Status left `pending`. CHECK LinkedIn sent-invitations before re-sending - a duplicate invite is visible to the recipient. [sourced 2026-09-05] H0A1 batch, LinkedIn people search restricted to 2nd degree, Pass 4 Phase B. Name, headline and location are SEARCH RESULT facts only; the profile was NOT opened, so degree, current employer and title must be re-verified live before any message is written (LR-B6, LR-B25). Location as listed: Dongguan, China. Pass 1 against the founder's own export returned nothing for this ICP, so every contact in this batch is cold. NOT YET INVITED: the founder sends every invite by hand, bare, with no note (LR-B29)."
 
 ## Howard Chen
 
@@ -9282,7 +9287,7 @@ interviews: []
 evidence_score:
 outcome_modifier:
 prior_contact_status: pending
-notes: "[UNVERIFIED 2026-09-05] No live profile read exists for this contact. Screened on company and title only, which the H0A1 icp_verification_rule now says is not enough — the invite went out before that rule existed. DO NOT draft or send a DM off this card: read the profile first and confirm the vertical, the production shape, the function and the tenure, then record what it showed here. [sourced 2026-09-05] H0A1 batch, LinkedIn people search restricted to 2nd degree, Pass 4 Phase B. Name, headline and location are SEARCH RESULT facts only; the profile was NOT opened, so degree, current employer and title must be re-verified live before any message is written (LR-B6, LR-B25). Location as listed: Taipei, Taiwan. Pass 1 against the founder's own export returned nothing for this ICP, so every contact in this batch is cold. NOT YET INVITED: the founder sends every invite by hand, bare, with no note (LR-B29)."
+notes: "[reply 2026-09-05] Richard replied to Msg 1 the same weekend, warm and offering: "Hi Izzie I'm great thank you, how are you? Yes no problem, what is you you need to know?" Short register, so LR-matched to ONE question. [msg2 drafted 2026-09-05] Aimed at H3A2 (where the error originates) with the LR-M7 cost clause carried by "who picked up the cost in the end". H3A1 rate and H3A4 visit cost deliberately held for later rounds. Copy at outreach/copy/H3-linkedin.md. UNSENT: the founder sends by hand. [UNVERIFIED 2026-09-05] No live profile read exists for this contact. Screened on company and title only, which the H0A1 icp_verification_rule now says is not enough — the invite went out before that rule existed. DO NOT draft or send a DM off this card: read the profile first and confirm the vertical, the production shape, the function and the tenure, then record what it showed here. [sourced 2026-09-05] H0A1 batch, LinkedIn people search restricted to 2nd degree, Pass 4 Phase B. Name, headline and location are SEARCH RESULT facts only; the profile was NOT opened, so degree, current employer and title must be re-verified live before any message is written (LR-B6, LR-B25). Location as listed: Taipei, Taiwan. Pass 1 against the founder's own export returned nothing for this ICP, so every contact in this batch is cold. NOT YET INVITED: the founder sends every invite by hand, bare, with no note (LR-B29)."
 
 ## Aakash Vekariya
 
@@ -9333,7 +9338,7 @@ interviews: []
 evidence_score:
 outcome_modifier:
 prior_contact_status: pending
-notes: "[UNVERIFIED 2026-09-05] No live profile read exists for this contact. Screened on company and title only, which the H0A1 icp_verification_rule now says is not enough — the invite went out before that rule existed. DO NOT draft or send a DM off this card: read the profile first and confirm the vertical, the production shape, the function and the tenure, then record what it showed here. [sourced 2026-09-05] H0A1 batch, LinkedIn people search restricted to 2nd degree, Pass 4 Phase B. Name, headline and location are SEARCH RESULT facts only; the profile was NOT opened, so degree, current employer and title must be re-verified live before any message is written (LR-B6, LR-B25). Location as listed: Surat, Gujarat, India. Pass 1 against the founder's own export returned nothing for this ICP, so every contact in this batch is cold. NOT YET INVITED: the founder sends every invite by hand, bare, with no note (LR-B29)."
+notes: "[reply 2026-09-05] Richard replied to Msg 1 the same weekend, warm and offering: "Hi Izzie I'm great thank you, how are you? Yes no problem, what is you you need to know?" Short register, so LR-matched to ONE question. [msg2 drafted 2026-09-05] Aimed at H3A2 (where the error originates) with the LR-M7 cost clause carried by "who picked up the cost in the end". H3A1 rate and H3A4 visit cost deliberately held for later rounds. Copy at outreach/copy/H3-linkedin.md. UNSENT: the founder sends by hand. [UNVERIFIED 2026-09-05] No live profile read exists for this contact. Screened on company and title only, which the H0A1 icp_verification_rule now says is not enough — the invite went out before that rule existed. DO NOT draft or send a DM off this card: read the profile first and confirm the vertical, the production shape, the function and the tenure, then record what it showed here. [sourced 2026-09-05] H0A1 batch, LinkedIn people search restricted to 2nd degree, Pass 4 Phase B. Name, headline and location are SEARCH RESULT facts only; the profile was NOT opened, so degree, current employer and title must be re-verified live before any message is written (LR-B6, LR-B25). Location as listed: Surat, Gujarat, India. Pass 1 against the founder's own export returned nothing for this ICP, so every contact in this batch is cold. NOT YET INVITED: the founder sends every invite by hand, bare, with no note (LR-B29)."
 
 ## Candy Jin
 
@@ -9384,7 +9389,7 @@ interviews: []
 evidence_score:
 outcome_modifier:
 prior_contact_status: pending
-notes: "[UNVERIFIED 2026-09-05] No live profile read exists for this contact. Screened on company and title only, which the H0A1 icp_verification_rule now says is not enough — the invite went out before that rule existed. DO NOT draft or send a DM off this card: read the profile first and confirm the vertical, the production shape, the function and the tenure, then record what it showed here. [sourced 2026-09-05] H0A1 batch, LinkedIn people search restricted to 2nd degree, Pass 4 Phase B. Name, headline and location are SEARCH RESULT facts only; the profile was NOT opened, so degree, current employer and title must be re-verified live before any message is written (LR-B6, LR-B25). Location as listed: US and China. Pass 1 against the founder's own export returned nothing for this ICP, so every contact in this batch is cold. NOT YET INVITED: the founder sends every invite by hand, bare, with no note (LR-B29)."
+notes: "[reply 2026-09-05] Richard replied to Msg 1 the same weekend, warm and offering: "Hi Izzie I'm great thank you, how are you? Yes no problem, what is you you need to know?" Short register, so LR-matched to ONE question. [msg2 drafted 2026-09-05] Aimed at H3A2 (where the error originates) with the LR-M7 cost clause carried by "who picked up the cost in the end". H3A1 rate and H3A4 visit cost deliberately held for later rounds. Copy at outreach/copy/H3-linkedin.md. UNSENT: the founder sends by hand. [UNVERIFIED 2026-09-05] No live profile read exists for this contact. Screened on company and title only, which the H0A1 icp_verification_rule now says is not enough — the invite went out before that rule existed. DO NOT draft or send a DM off this card: read the profile first and confirm the vertical, the production shape, the function and the tenure, then record what it showed here. [sourced 2026-09-05] H0A1 batch, LinkedIn people search restricted to 2nd degree, Pass 4 Phase B. Name, headline and location are SEARCH RESULT facts only; the profile was NOT opened, so degree, current employer and title must be re-verified live before any message is written (LR-B6, LR-B25). Location as listed: US and China. Pass 1 against the founder's own export returned nothing for this ICP, so every contact in this batch is cold. NOT YET INVITED: the founder sends every invite by hand, bare, with no note (LR-B29)."
 
 ## Thilina Bowatta
 
@@ -9435,7 +9440,7 @@ interviews: []
 evidence_score:
 outcome_modifier:
 prior_contact_status: pending
-notes: "[sourced 2026-09-05] H0A1 batch, LinkedIn people search restricted to 2nd degree, Pass 4 Phase B. Name, headline and location are SEARCH RESULT facts only; the profile was NOT opened, so degree, current employer and title must be re-verified live before any message is written (LR-B6, LR-B25). Location as listed: West Gosford, New South Wales, Australia. Pass 1 against the founder's own export returned nothing for this ICP, so every contact in this batch is cold. NOT YET INVITED: the founder sends every invite by hand, bare, with no note (LR-B29)."
+notes: "[reply 2026-09-05] Richard replied to Msg 1 the same weekend, warm and offering: "Hi Izzie I'm great thank you, how are you? Yes no problem, what is you you need to know?" Short register, so LR-matched to ONE question. [msg2 drafted 2026-09-05] Aimed at H3A2 (where the error originates) with the LR-M7 cost clause carried by "who picked up the cost in the end". H3A1 rate and H3A4 visit cost deliberately held for later rounds. Copy at outreach/copy/H3-linkedin.md. UNSENT: the founder sends by hand. [sourced 2026-09-05] H0A1 batch, LinkedIn people search restricted to 2nd degree, Pass 4 Phase B. Name, headline and location are SEARCH RESULT facts only; the profile was NOT opened, so degree, current employer and title must be re-verified live before any message is written (LR-B6, LR-B25). Location as listed: West Gosford, New South Wales, Australia. Pass 1 against the founder's own export returned nothing for this ICP, so every contact in this batch is cold. NOT YET INVITED: the founder sends every invite by hand, bare, with no note (LR-B29)."
 
 ## Yassine Saidat
 
@@ -9486,7 +9491,7 @@ interviews: []
 evidence_score:
 outcome_modifier:
 prior_contact_status: pending
-notes: "[sourced 2026-09-05] H0A1 batch, LinkedIn people search restricted to 2nd degree, Pass 4 Phase B. Name, headline and location are SEARCH RESULT facts only; the profile was NOT opened, so degree, current employer and title must be re-verified live before any message is written (LR-B6, LR-B25). Location as listed: UK. Pass 1 against the founder's own export returned nothing for this ICP, so every contact in this batch is cold. NOT YET INVITED: the founder sends every invite by hand, bare, with no note (LR-B29)."
+notes: "[reply 2026-09-05] Richard replied to Msg 1 the same weekend, warm and offering: "Hi Izzie I'm great thank you, how are you? Yes no problem, what is you you need to know?" Short register, so LR-matched to ONE question. [msg2 drafted 2026-09-05] Aimed at H3A2 (where the error originates) with the LR-M7 cost clause carried by "who picked up the cost in the end". H3A1 rate and H3A4 visit cost deliberately held for later rounds. Copy at outreach/copy/H3-linkedin.md. UNSENT: the founder sends by hand. [sourced 2026-09-05] H0A1 batch, LinkedIn people search restricted to 2nd degree, Pass 4 Phase B. Name, headline and location are SEARCH RESULT facts only; the profile was NOT opened, so degree, current employer and title must be re-verified live before any message is written (LR-B6, LR-B25). Location as listed: UK. Pass 1 against the founder's own export returned nothing for this ICP, so every contact in this batch is cold. NOT YET INVITED: the founder sends every invite by hand, bare, with no note (LR-B29)."
 
 ## Charles Khairallah
 
@@ -9537,4 +9542,2260 @@ interviews: []
 evidence_score:
 outcome_modifier:
 prior_contact_status: pending
-notes: "[UNVERIFIED 2026-09-05] No live profile read exists for this contact. Screened on company and title only, which the H0A1 icp_verification_rule now says is not enough — the invite went out before that rule existed. DO NOT draft or send a DM off this card: read the profile first and confirm the vertical, the production shape, the function and the tenure, then record what it showed here. [sourced 2026-09-05] H0A1 batch, LinkedIn people search restricted to 2nd degree, Pass 4 Phase B. Name, headline and location are SEARCH RESULT facts only; the profile was NOT opened, so degree, current employer and title must be re-verified live before any message is written (LR-B6, LR-B25). Location as listed: Montreal, Quebec, Canada. Pass 1 against the founder's own export returned nothing for this ICP, so every contact in this batch is cold. NOT YET INVITED: the founder sends every invite by hand, bare, with no note (LR-B29)."
+notes: "[reply 2026-09-05] Richard replied to Msg 1 the same weekend, warm and offering: "Hi Izzie I'm great thank you, how are you? Yes no problem, what is you you need to know?" Short register, so LR-matched to ONE question. [msg2 drafted 2026-09-05] Aimed at H3A2 (where the error originates) with the LR-M7 cost clause carried by "who picked up the cost in the end". H3A1 rate and H3A4 visit cost deliberately held for later rounds. Copy at outreach/copy/H3-linkedin.md. UNSENT: the founder sends by hand. [UNVERIFIED 2026-09-05] No live profile read exists for this contact. Screened on company and title only, which the H0A1 icp_verification_rule now says is not enough — the invite went out before that rule existed. DO NOT draft or send a DM off this card: read the profile first and confirm the vertical, the production shape, the function and the tenure, then record what it showed here. [sourced 2026-09-05] H0A1 batch, LinkedIn people search restricted to 2nd degree, Pass 4 Phase B. Name, headline and location are SEARCH RESULT facts only; the profile was NOT opened, so degree, current employer and title must be re-verified live before any message is written (LR-B6, LR-B25). Location as listed: Montreal, Quebec, Canada. Pass 1 against the founder's own export returned nothing for this ICP, so every contact in this batch is cold. NOT YET INVITED: the founder sends every invite by hand, bare, with no note (LR-B29)."
+
+---
+
+### Batch 2026-09-07 — blinds and shade MANUFACTURERS, top-ten weighted
+
+Founder-set split: top-ten revenue holders first, then mid-size, then components; roles weighted
+to operations and quality with a deliberate push into customer service and warranty, a seam that
+none of the previous 83 H3 contacts touched. E12 is the reason for the weighting: 302 firms in
+NAICS 337920 and the top ten hold 62.5% of revenue, and E12 also says only the large end can buy.
+
+THREE of these were read live and are marked so. THE REST WERE SCREENED FROM SEARCH RESULTS ONLY
+and carry an explicit unverified note; the founder chose that trade deliberately to get the list
+built, on the understanding that copy-rules puts the live-profile gate before the invite rather
+than before the record. None of them may be invited until their note carries a dated profile read.
+
+LR-B25 has NOT been run on any row here. Do that before drafting, not after.
+
+## Tom Burns
+
+id: C186
+name: Tom Burns
+linkedin_url: https://www.linkedin.com/in/tom-burns-623578a/
+linkedin_account: Izgin
+company: Hunter Douglas, Inc.
+role: Global SVP Operations
+
+signal_type: profile_fit
+signal_multiplier: 1.0
+signal_source_url:
+signal_excerpt:
+
+contact_role: buyer
+role_pts: 3
+
+tier: window_covering_manufacturer
+size_band: enterprise
+
+assumptions_tested: [H3A1]
+validation_rationale: >
+  The most senior operations person at the largest window covering manufacturer in the world. His
+  own entry for the prior role reads 'end to end operations (Assembly, Manufacturing, Supply Chain
+  planning & Logistics, Quality, Continuous Improvement and Engineering for North America (15
+  locations in the US and Mexico covering over 8,000 employees)'. If a remake rate is tracked
+  anywhere at Hunter Douglas it rolls up to him. VP Operations is in H3A1's icp_valid_titles.
+
+response_likelihood: 8
+likelihood_factors: >
+  Screened against H3A1's declared ICP on 2026-09-07. Degree 3rd+. Scored on role fit and
+  seniority only; no warmth, mutuals or activity data has been gathered, so this number will
+  move once the profile is read.
+outreach_pattern:
+degree: "3rd+"
+mutuals_count:
+active_last_30d: unknown
+open_to_work: false
+
+close_variant:
+relationship_type: target_customer
+outreach_status: invited
+message_stage:
+call_stage: none
+found_date: 2026-09-07
+invited_date: 2026-09-07
+accepted_date:
+scheduled_date:
+interview_date:
+
+interviews: []
+
+evidence_score:
+outcome_modifier:
+prior_contact_status: unchecked
+notes: "LIVE-VERIFIED 2026-09-07. Hunter Douglas 9 yrs 9 mos: Global SVP Operations since Sep 2024 (Lucerne and Broomfield), NA Operations Leader and Chief Supply Chain Officer 2022-2024, VP of Operations 2017-2022. Before that SVP Manufacturing at Serta Simmons and Simmons Bedding. Very senior inbox; expect a low reply rate and a long one. [invited 2026-09-07] Bare connection request, NO NOTE (LR-B29), sent by Claude via linkedin.com/preload/custom-invite/?vanityName=tom-burns-623578a. Two name checks per copy-rules: the live profile heading read during verification, and the name printed in the invitation modal immediately before the click. Sends were spaced 20 to 30 seconds apart and varied, per the founder's 2026-09-03 pacing rule. Confirmed afterwards from the profile showing Pending."
+## Israel De la Cerda Villar
+
+id: C187
+name: Israel De la Cerda Villar
+linkedin_url: https://www.linkedin.com/in/israel-de-la-cerda-villar-26354225/
+linkedin_account: Izgin
+company: Hunter Douglas, Inc.
+role: Head of Engineering, North America
+
+signal_type: profile_fit
+signal_multiplier: 1.0
+signal_source_url:
+signal_excerpt:
+
+contact_role: practitioner
+role_pts: 2
+
+tier: window_covering_manufacturer
+size_band: enterprise
+
+assumptions_tested: [H3A1]
+validation_rationale: >
+  PARTIAL per LR-B12: Head of Engineering is not in H3A1's icp_valid_titles, but the tier is and
+  the function sits directly on the design-to-manufacture handoff. He came to blinds from five
+  years running launch and advanced manufacturing engineering at Lear across eight Mexican plants,
+  so he has a defect-and-launch baseline from an industry that measures both obsessively. Mutual
+  connection with C119 Armando Pedraza, which is a warm route.
+
+response_likelihood: 8
+likelihood_factors: >
+  Screened against H3A1's declared ICP on 2026-09-07. Degree 2nd. Scored on role fit and
+  seniority only; no warmth, mutuals or activity data has been gathered, so this number will
+  move once the profile is read.
+outreach_pattern:
+degree: "2nd"
+mutuals_count:
+active_last_30d: unknown
+open_to_work: false
+
+close_variant:
+relationship_type: target_customer
+outreach_status: invited
+message_stage:
+call_stage: none
+found_date: 2026-09-07
+invited_date: 2026-09-07
+accepted_date:
+scheduled_date:
+interview_date:
+
+interviews: []
+
+evidence_score:
+outcome_modifier:
+prior_contact_status: unchecked
+notes: "LIVE-VERIFIED 2026-09-07. Hunter Douglas since Aug 2023 (3 yrs 2 mos), Denver. Prior: Lear Corporation Divisional Launch and AME Director 2018-2023, Faurecia Program Director, Tachi-S, Eaton. [invited 2026-09-07] Bare connection request, NO NOTE (LR-B29), sent by Claude via linkedin.com/preload/custom-invite/?vanityName=israel-de-la-cerda-villar-26354225. Two name checks per copy-rules: the live profile heading read during verification, and the name printed in the invitation modal immediately before the click. Sends were spaced 20 to 30 seconds apart and varied, per the founder's 2026-09-03 pacing rule. Confirmed afterwards from the profile showing Pending."
+## Dave Hardy
+
+id: C188
+name: Dave Hardy
+linkedin_url: https://www.linkedin.com/in/dave-hardy-8693526/
+linkedin_account: Izgin
+company: Hunter Douglas, Inc.
+role: Senior Manager of Product Testing
+
+signal_type: profile_fit
+signal_multiplier: 1.0
+signal_source_url:
+signal_excerpt:
+
+contact_role: practitioner
+role_pts: 2
+
+tier: window_covering_manufacturer
+size_band: enterprise
+
+assumptions_tested: [H3A1]
+validation_rationale: >
+  PARTIAL per LR-B12 on title, but the strongest mechanism source found in this pass. His own
+  entry: 'testing and regulatory compliance validation of window coverings... My teams and I act
+  as a resource to both R&D and Quality'. He runs the lab where window coverings are made to fail
+  on purpose, so he sees failure modes as data rather than as complaints. He also automated that
+  lab with multiple 6-axis collaborative robots, a Haas CNC mill and a laser cutter, which makes
+  him one of very few people who sits on BOTH the H3 remake question and the machine-orchestration
+  thesis.
+
+response_likelihood: 8
+likelihood_factors: >
+  Screened against H3A1's declared ICP on 2026-09-07. Degree 3rd+. Scored on role fit and
+  seniority only; no warmth, mutuals or activity data has been gathered, so this number will
+  move once the profile is read.
+outreach_pattern:
+degree: "3rd+"
+mutuals_count:
+active_last_30d: unknown
+open_to_work: false
+
+close_variant:
+relationship_type: target_customer
+outreach_status: invited
+message_stage:
+call_stage: none
+found_date: 2026-09-07
+invited_date: 2026-09-07
+accepted_date:
+scheduled_date:
+interview_date:
+
+interviews: []
+
+evidence_score:
+outcome_modifier:
+prior_contact_status: unchecked
+notes: "LIVE-VERIFIED 2026-09-07. Hunter Douglas 9 yrs 9 mos: Senior Manager of Product Testing since May 2026, Manager R&D Test Lab 2017-2026. Buford GA / Broomfield CO. Prior: Theragenics engineering manager, Omix-Ada, Lund International. [invited 2026-09-07] Bare connection request, NO NOTE (LR-B29), sent by Claude via linkedin.com/preload/custom-invite/?vanityName=dave-hardy-8693526. Two name checks per copy-rules: the live profile heading read during verification, and the name printed in the invitation modal immediately before the click. Sends were spaced 20 to 30 seconds apart and varied, per the founder's 2026-09-03 pacing rule. Confirmed afterwards from the profile showing Pending."
+## Erick Alvarez Barrios
+
+id: C189
+name: Erick Alvarez Barrios
+linkedin_url: https://www.linkedin.com/in/erick-alvarez-barrios-545659214/
+linkedin_account: Izgin
+company: Hunter Douglas, Inc.
+role: Plant Manager, Universal Screens
+
+signal_type: profile_fit
+signal_multiplier: 1.0
+signal_source_url:
+signal_excerpt:
+
+contact_role: buyer
+role_pts: 3
+
+tier: window_covering_manufacturer
+size_band: enterprise
+
+assumptions_tested: [H3A1]
+validation_rationale: >
+  Plant Manager is in H3A1's icp_valid_titles and a plant manager owns the schedule a remake
+  disrupts. UNCONFIRMED EMPLOYER: he surfaced on a Hunter Douglas keyword search but his headline
+  does not name the company, so the tier is provisional until the profile is read.
+
+response_likelihood: 7
+likelihood_factors: >
+  Screened against H3A1's declared ICP on 2026-09-07. Degree 3rd+. Scored on role fit and
+  seniority only; no warmth, mutuals or activity data has been gathered, so this number will
+  move once the profile is read.
+outreach_pattern:
+degree: "3rd+"
+mutuals_count:
+active_last_30d: unknown
+open_to_work: false
+
+close_variant:
+relationship_type: target_customer
+outreach_status: invited
+message_stage:
+call_stage: none
+found_date: 2026-09-07
+invited_date: 2026-09-07
+accepted_date:
+scheduled_date:
+interview_date:
+
+interviews: []
+
+evidence_score:
+outcome_modifier:
+prior_contact_status: unchecked
+notes: "[screened 2026-09-07 from search results, superseded by the live read below] Surfaced on a '"Hunter Douglas" plant operations quality' search. Headline reads 'Plant Manager', Dallas-Fort Worth, with no employer. [SUPERSEDED: the live read below establishes Hunter Douglas.] [LIVE-VERIFIED 2026-09-07] PASSES. Plant Manager, Hunter Douglas Inc., Dallas, since Apr 2026, and the entry names the plant: UNIVERSAL SCREENS, 'Full plant operations, production, and team leadership'. Universal Screens is a made-to-measure Hunter Douglas line, so tier and production shape both hold. Prior: Rivian, Industrias La Mesa, and 9 yrs 8 mos at Toyota Motor Manufacturing Baja California as Quality Manager, Body Weld Manager and Assembly Manager. CAVEAT on gate check 4: only six months in this role, so he can describe the plant but has few Hunter Douglas incidents of his own yet. Ask him about Toyota for history and Hunter Douglas for the present. [invited 2026-09-07] Bare connection request, NO NOTE (LR-B29), sent by Claude via linkedin.com/preload/custom-invite/?vanityName=erick-alvarez-barrios-545659214. Two name checks per copy-rules: the live profile heading read during verification, and the name printed in the invitation modal immediately before the click. Sends were spaced 20 to 30 seconds apart and varied, per the founder's 2026-09-03 pacing rule. Confirmed afterwards from the profile showing Pending."
+## Patricia Salazar
+
+id: C190
+name: Patricia Salazar
+linkedin_url: https://www.linkedin.com/in/patricia-salazar-834471254/
+linkedin_account: Izgin
+company: Hunter Douglas (role ENDED Dec 2021); current employer unknown
+role: Quality Assurance and Operational Excellence Senior Manager
+
+signal_type: profile_fit
+signal_multiplier: 1.0
+signal_source_url:
+signal_excerpt:
+
+contact_role: buyer
+role_pts: 3
+
+tier: window_covering_manufacturer
+size_band: enterprise
+
+assumptions_tested: [H3A1]
+validation_rationale: >
+  Head of Quality is in H3A1's icp_valid_titles and this role combines quality with operational
+  excellence, which is where a remake rate would be owned and attacked. UNCONFIRMED EMPLOYER, same
+  caveat as the other search-only Hunter Douglas rows.
+
+response_likelihood: 4
+likelihood_factors: >
+  Screened against H3A1's declared ICP on 2026-09-07. Degree 3rd+. Scored on role fit and
+  seniority only; no warmth, mutuals or activity data has been gathered, so this number will
+  move once the profile is read.
+outreach_pattern:
+degree: "3rd+"
+mutuals_count:
+active_last_30d: unknown
+open_to_work: false
+
+close_variant:
+relationship_type: target_customer
+outreach_status: pending
+message_stage:
+call_stage: none
+found_date: 2026-09-07
+invited_date:
+accepted_date:
+scheduled_date:
+interview_date:
+
+interviews: []
+
+evidence_score:
+outcome_modifier:
+prior_contact_status: unchecked
+notes: "[screened 2026-09-07 from search results, superseded by the live read below] Surfaced on the same Hunter Douglas search. San Nicolas de los Garza, Nuevo Leon. EMPLOYER NOT ESTABLISHED. [LIVE-VERIFIED 2026-09-07] FAILS the invite gate on check 1. Her Hunter Douglas role was Quality Assurance Manager in Ciudad Apodaca and it ENDED Dec 2021; the profile lists NO role after it, so the current employer is not established and cannot be. NOT INVITABLE. She is however a genuine LR-B8 prior-domain candidate: at Hunter Douglas she built the QMS from scratch, ran 'efforts to reduce the Scrap and reworks (A3)' and reports a 30% customer-complaint reduction. Anything she gives is 2020-21 history at one Mexican plant, not a current rate. Resolve the employer before writing."
+## Jessica Thompson
+
+id: C191
+name: Jessica Thompson
+linkedin_url: https://www.linkedin.com/in/jessica-thompson-02a37ba7/
+linkedin_account: Izgin
+company: Hunter Douglas, Inc.
+role: Quality Engineer
+
+signal_type: profile_fit
+signal_multiplier: 1.0
+signal_source_url:
+signal_excerpt:
+
+contact_role: practitioner
+role_pts: 2
+
+tier: window_covering_manufacturer
+size_band: enterprise
+
+assumptions_tested: [H3A1]
+validation_rationale: >
+  Quality Engineer is a partial on title but the function holds the rate. Denver is Hunter
+  Douglas's North American base, which is the only reason to think she is there. UNCONFIRMED
+  EMPLOYER.
+
+response_likelihood: 7
+likelihood_factors: >
+  Screened against H3A1's declared ICP on 2026-09-07. Degree 3rd+. Scored on role fit and
+  seniority only; no warmth, mutuals or activity data has been gathered, so this number will
+  move once the profile is read.
+outreach_pattern:
+degree: "3rd+"
+mutuals_count:
+active_last_30d: unknown
+open_to_work: false
+
+close_variant:
+relationship_type: target_customer
+outreach_status: invited
+message_stage:
+call_stage: none
+found_date: 2026-09-07
+invited_date: 2026-09-07
+accepted_date:
+scheduled_date:
+interview_date:
+
+interviews: []
+
+evidence_score:
+outcome_modifier:
+prior_contact_status: unchecked
+notes: "[screened 2026-09-07 from search results, superseded by the live read below] Surfaced on the same Hunter Douglas search, Denver Metropolitan Area; the headline carried no company. [SUPERSEDED: the live read below establishes Hunter Douglas.] [LIVE-VERIFIED 2026-09-07] PASSES. Quality Engineer, Hunter Douglas Inc., Broomfield Colorado, since Sep 2025 (1 yr 1 mo). Prior: 6 yrs 1 mo at Norgren, including a two-year rotational programme across operations, R&D, continuous improvement and business development. Broomfield is Hunter Douglas's North American base. Tenure is thin but real. [invited 2026-09-07] Bare connection request, NO NOTE (LR-B29), sent by Claude via linkedin.com/preload/custom-invite/?vanityName=jessica-thompson-02a37ba7. Two name checks per copy-rules: the live profile heading read during verification, and the name printed in the invitation modal immediately before the click. Sends were spaced 20 to 30 seconds apart and varied, per the founder's 2026-09-03 pacing rule. Confirmed afterwards from the profile showing Pending."
+## Steven Chiang
+
+id: C192
+name: Steven Chiang
+linkedin_url: https://www.linkedin.com/in/steven-chiang-9545b160/
+linkedin_account: Izgin
+company: Norman Window Fashions
+role: VP of Operations
+
+signal_type: profile_fit
+signal_multiplier: 1.0
+signal_source_url:
+signal_excerpt:
+
+contact_role: buyer
+role_pts: 3
+
+tier: window_covering_manufacturer
+size_band: enterprise
+
+assumptions_tested: [H3A1]
+validation_rationale: >
+  VP Operations is in H3A1's icp_valid_titles. Norman is one of the top-ten manufacturers by
+  revenue and already has a warm contact in C113 William DeSemple on the commercial side; this is
+  the operations counterpart, which is where a remake lands as a schedule and a cost rather than a
+  customer conversation.
+
+response_likelihood: 7
+likelihood_factors: >
+  Screened against H3A1's declared ICP on 2026-09-07. Degree 3rd+. Scored on role fit and
+  seniority only; no warmth, mutuals or activity data has been gathered, so this number will
+  move once the profile is read.
+outreach_pattern:
+degree: "3rd+"
+mutuals_count:
+active_last_30d: unknown
+open_to_work: false
+
+close_variant:
+relationship_type: target_customer
+outreach_status: invited
+message_stage:
+call_stage: none
+found_date: 2026-09-07
+invited_date: 2026-09-07
+accepted_date:
+scheduled_date:
+interview_date:
+
+interviews: []
+
+evidence_score:
+outcome_modifier:
+prior_contact_status: unchecked
+notes: "[screened 2026-09-07 from search results, superseded by the live read below] Headline names both role and company, Cerritos California. [LIVE-VERIFIED 2026-09-07] PASSES on company and role, THIN on everything else. The profile carries one line, 'VP of Operations, Norman Window Fashions', with no dates, no description and no prior history. Tier and title hold; gate check 4 on tenure cannot be answered. VP Operations is in H3A1's icp_valid_titles and Norman is a top-ten manufacturer, so he stays, but expect a short reply if any. [invited 2026-09-07] Bare connection request, NO NOTE (LR-B29), sent by Claude via linkedin.com/preload/custom-invite/?vanityName=steven-chiang-9545b160. Two name checks per copy-rules: the live profile heading read during verification, and the name printed in the invitation modal immediately before the click. Sends were spaced 20 to 30 seconds apart and varied, per the founder's 2026-09-03 pacing rule. Confirmed afterwards from the profile showing Pending."
+## Ranjan Mada
+
+id: C193
+name: Ranjan Mada
+linkedin_url: https://www.linkedin.com/in/ranjan-mada-67900916/
+linkedin_account: Izgin
+company: Norman Window Fashions
+role: Chief Executive Officer
+
+signal_type: profile_fit
+signal_multiplier: 1.0
+signal_source_url:
+signal_excerpt:
+
+contact_role: buyer
+role_pts: 3
+
+tier: window_covering_manufacturer
+size_band: enterprise
+
+assumptions_tested: [H3A1]
+validation_rationale: >
+  Owner-equivalent, which H3A1's icp_valid_titles allows. A CEO can authorise anything and will
+  answer nothing in detail; he is recorded as a route rather than as an interview target, and C113
+  is the better first door into Norman.
+
+response_likelihood: 5
+likelihood_factors: >
+  Screened against H3A1's declared ICP on 2026-09-07. Degree 3rd+. Scored on role fit and
+  seniority only; no warmth, mutuals or activity data has been gathered, so this number will
+  move once the profile is read.
+outreach_pattern:
+degree: "3rd+"
+mutuals_count:
+active_last_30d: unknown
+open_to_work: false
+
+close_variant:
+relationship_type: target_customer
+outreach_status: invited
+message_stage:
+call_stage: none
+found_date: 2026-09-07
+invited_date: 2026-09-07
+accepted_date:
+scheduled_date:
+interview_date:
+
+interviews: []
+
+evidence_score:
+outcome_modifier:
+prior_contact_status: unchecked
+notes: "[screened 2026-09-07 from search results, superseded by the live read below] Headline names both role and company, Los Angeles. Very senior; low reply expectation. [LIVE-VERIFIED 2026-09-07] PASSES, and the history is better than the title suggested. CEO of Norman Window Fashions since 2007, nineteen years. Before that 14 yrs 1 mo at Levolor Kirsch, a Newell Rubbermaid division, ending as PRESIDENT 2005-2007. He has run two of the top-ten manufacturers in one career. Enormous knowledge, near-zero chance of a detailed reply to a cold message; treat him as a name to be introduced to rather than a first approach. C113 William DeSemple is the better door into Norman. [invited 2026-09-07] Bare connection request, NO NOTE (LR-B29), sent by Claude via linkedin.com/preload/custom-invite/?vanityName=ranjan-mada-67900916. Two name checks per copy-rules: the live profile heading read during verification, and the name printed in the invitation modal immediately before the click. Sends were spaced 20 to 30 seconds apart and varied, per the founder's 2026-09-03 pacing rule. Confirmed afterwards from the profile showing Pending."
+## James McLaughlin
+
+id: C194
+name: James McLaughlin
+linkedin_url: https://www.linkedin.com/in/james-mclaughlin-b9747051/
+linkedin_account: Izgin
+company: Norman USA
+role: General Manager, Northeast Region (sales)
+
+signal_type: profile_fit
+signal_multiplier: 1.0
+signal_source_url:
+signal_excerpt:
+
+contact_role: buyer
+role_pts: 3
+
+tier: window_covering_manufacturer
+size_band: enterprise
+
+assumptions_tested: [H3A1]
+validation_rationale: >
+  General Manager is in H3A1's icp_valid_titles. A regional GM at a manufacturer sees remakes
+  across a whole dealer territory rather than at one site, which is the aggregation H3A1 needs and
+  which no single dealer can give.
+
+response_likelihood: 6
+likelihood_factors: >
+  Screened against H3A1's declared ICP on 2026-09-07. Degree 3rd+. Scored on role fit and
+  seniority only; no warmth, mutuals or activity data has been gathered, so this number will
+  move once the profile is read.
+outreach_pattern:
+degree: "3rd+"
+mutuals_count:
+active_last_30d: unknown
+open_to_work: false
+
+close_variant:
+relationship_type: target_customer
+outreach_status: invited
+message_stage:
+call_stage: none
+found_date: 2026-09-07
+invited_date: 2026-09-07
+accepted_date:
+scheduled_date:
+interview_date:
+
+interviews: []
+
+evidence_score:
+outcome_modifier:
+prior_contact_status: unchecked
+notes: "[screened 2026-09-07 from search results, superseded by the live read below] Headline names both role and company, Henrico Virginia. Same shape of role as C113 William DeSemple, different region. [LIVE-VERIFIED 2026-09-07] PASSES with a correction. 16 yrs 7 mos at Norman: GM Northeast since Jan 2022, Regional Sales Manager 2018-2022, Territory Sales Manager 2010-2018. His own entry describes the GM role as 'General Sales Manager of Norman USA Northeast region', so this is a COMMERCIAL role, not operations, exactly like C113. He hears the remake complaint from dealers first; he does not carry the plant cost. His entry also confirms Norman's vertical integration: 'Few companies will farm their own wood, make their own components, or weave their own cords.' [invited 2026-09-07] Bare connection request, NO NOTE (LR-B29), sent by Claude via linkedin.com/preload/custom-invite/?vanityName=james-mclaughlin-b9747051. Two name checks per copy-rules: the live profile heading read during verification, and the name printed in the invitation modal immediately before the click. Sends were spaced 20 to 30 seconds apart and varied, per the founder's 2026-09-03 pacing rule. Confirmed afterwards from the profile showing Pending."
+## Craig Paradisi
+
+id: C195
+name: Craig Paradisi
+linkedin_url: https://www.linkedin.com/in/craig-paradisi-4432315b/
+linkedin_account: Izgin
+company: Hunter Douglas (role ENDED May 2020); current employer unknown
+role: Sales Manager, Eastern Canada
+
+signal_type: profile_fit
+signal_multiplier: 1.0
+signal_source_url:
+signal_excerpt:
+
+contact_role: buyer
+role_pts: 3
+
+tier: window_covering_manufacturer
+size_band: enterprise
+
+assumptions_tested: [H3A1]
+validation_rationale: >
+  Sales Manager is in H3A1's icp_valid_titles. A territory sales manager hears the remake
+  complaint before anyone in the plant does, because the dealer phones them first. Weaker on cost,
+  strong on frequency and on who gets blamed.
+
+response_likelihood: 2
+likelihood_factors: >
+  Screened against H3A1's declared ICP on 2026-09-07. Degree 3rd+. Scored on role fit and
+  seniority only; no warmth, mutuals or activity data has been gathered, so this number will
+  move once the profile is read.
+outreach_pattern:
+degree: "3rd+"
+mutuals_count:
+active_last_30d: unknown
+open_to_work: false
+
+close_variant:
+relationship_type: target_customer
+outreach_status: off_scope
+message_stage:
+call_stage: none
+found_date: 2026-09-07
+invited_date:
+accepted_date:
+scheduled_date:
+interview_date:
+
+interviews: []
+
+evidence_score:
+outcome_modifier:
+prior_contact_status: unchecked
+notes: "[screened 2026-09-07 from search results, superseded by the live read below] Headline names both role and company, Hamilton Ontario. [audit off_scope 2026-09-07] FAILS gate check 1 and the record contradicts itself. The search headline read 'Eastern Canada Sales Manager - Norman Window Fashions', but the live profile shows NO Norman role at all. His last listed position is National Accounts Manager at Hunter Douglas, Sep 2012 to MAY 2020, ended over six years ago, with nothing after it. The employer named at screening is unsupported by the profile. Not invited, not drafted. Re-source if Norman is worth a second attempt."
+## Lee Bozier-Lown
+
+id: C196
+name: Lee Bozier-Lown
+linkedin_url: https://www.linkedin.com/in/leebozierlown/
+linkedin_account: Izgin
+company: Lutron Electronics
+role: Quality Supervisor, Window Systems
+
+signal_type: profile_fit
+signal_multiplier: 1.0
+signal_source_url:
+signal_excerpt:
+
+contact_role: buyer
+role_pts: 3
+
+tier: window_covering_manufacturer
+size_band: enterprise
+
+assumptions_tested: [H3A1]
+validation_rationale: >
+  The cleanest Lutron fit by a distance: his title names the window systems division explicitly,
+  so the usual Lutron problem of not knowing whether someone is on lighting or on shading does not
+  apply. Quality Supervisor owns the defect rate on made-to-measure motorised shades.
+
+response_likelihood: 9
+likelihood_factors: >
+  Screened against H3A1's declared ICP on 2026-09-07. Degree 3rd+. Scored on role fit and
+  seniority only; no warmth, mutuals or activity data has been gathered, so this number will
+  move once the profile is read.
+outreach_pattern:
+degree: "3rd+"
+mutuals_count:
+active_last_30d: unknown
+open_to_work: false
+
+close_variant:
+relationship_type: target_customer
+outreach_status: pending
+message_stage:
+call_stage: none
+found_date: 2026-09-07
+invited_date:
+accepted_date:
+scheduled_date:
+interview_date:
+
+interviews: []
+
+evidence_score:
+outcome_modifier:
+prior_contact_status: unchecked
+notes: "[screened 2026-09-07 from search results, superseded by the live read below] Headline names role, division and company. United Kingdom. The only Lutron row where the shading division is established from the headline itself. [LIVE-VERIFIED 2026-09-07] PASSES, and this is the strongest H3 contact in the ledger. Lutron Electronics 3 yrs 10 mos: Quality Supervisor - Window Systems since Dec 2022, preceded by Applications Engineer - Window Systems. The entry is self-titled 'The Blinds Guy'. BEFORE Lutron he spent 18 yrs 8 mos at Conservatory Blinds Limited as SURVEYOR/INSTALLER, plus Training Manager and Special Project Manager. He personally took the measurement at the window for eighteen years and now owns the defect rate at a manufacturer. That is both ends of H3 in one person: he can say what goes wrong at the window AND what it looks like when it comes back. No other contact spans both. Division is established from the title, so the usual Lutron lighting-versus-shading ambiguity does not apply here. [invite BLOCKED 2026-09-07] Could not be invited and it is LinkedIn's block, not a rule of ours. His invitation modal does not print his name and instead demands his EMAIL ADDRESS to verify the founder knows him; 'Send without a note' is disabled until one is entered. That fails the two-name-check requirement outright, and no email was guessed or entered. He is the highest-scoring H3 contact in the ledger, so this is worth solving another way: a mutual introduction, or the founder inviting him by hand from his profile."
+## Rodolfo Angelelli
+
+id: C197
+name: Rodolfo Angelelli
+linkedin_url: https://www.linkedin.com/in/rodolfo-angelelli-/
+linkedin_account: Izgin
+company: Lutron Electronics
+role: Manufacturing Quality Leader
+
+signal_type: profile_fit
+signal_multiplier: 1.0
+signal_source_url:
+signal_excerpt:
+
+contact_role: buyer
+role_pts: 3
+
+tier: window_covering_manufacturer
+size_band: enterprise
+
+assumptions_tested: [H3A1]
+validation_rationale: >
+  Manufacturing quality at a company that makes motorised shades to measure. DIVISION UNKNOWN:
+  Lutron is mostly lighting controls and only partly shading, so whether he touches window
+  coverings at all is the thing the profile read has to settle.
+
+response_likelihood: 7
+likelihood_factors: >
+  Screened against H3A1's declared ICP on 2026-09-07. Degree 3rd+. Scored on role fit and
+  seniority only; no warmth, mutuals or activity data has been gathered, so this number will
+  move once the profile is read.
+outreach_pattern:
+degree: "3rd+"
+mutuals_count:
+active_last_30d: unknown
+open_to_work: false
+
+close_variant:
+relationship_type: target_customer
+outreach_status: invited
+message_stage:
+call_stage: none
+found_date: 2026-09-07
+invited_date: 2026-09-07
+accepted_date:
+scheduled_date:
+interview_date:
+
+interviews: []
+
+evidence_score:
+outcome_modifier:
+prior_contact_status: unchecked
+notes: "[screened 2026-09-07 from search results, superseded by the live read below] Headline names role and company, London. LUTRON DIVISION NOT ESTABLISHED - check 2 of the live-profile gate is unresolved. [LIVE-VERIFIED 2026-09-07] PASSES on function; division still unstated. Manufacturing Quality Leader, Lutron Electronics, London, since Sep 2024 (2 yrs 1 mo), on-site. His own entry: 'main quality point of contact between Manufacturing, Engineering, Supply Chain and Customer teams', 'Manage and resolve customer-impacting quality issues', 8D and CAPA, 'Manage non-conformances, quality holds and material disposition'. Prior: Quadient, Brompton Bicycle QA, Hayward Tyler, CNH Industrial, and a CNC programmer job early on. Lutron's London site is where C196's Window Systems role also sits, which makes shading likely but is an inference, not a fact. [invited 2026-09-07] Bare connection request, NO NOTE (LR-B29), sent by Claude via linkedin.com/preload/custom-invite/?vanityName=rodolfo-angelelli-. Two name checks per copy-rules: the live profile heading read during verification, and the name printed in the invitation modal immediately before the click. Sends were spaced 20 to 30 seconds apart and varied, per the founder's 2026-09-03 pacing rule. Confirmed afterwards from the profile showing Pending."
+## Soumia Imediazen
+
+id: C198
+name: Soumia Imediazen
+linkedin_url: https://www.linkedin.com/in/soumia-imediazen-18b401112/
+linkedin_account: Izgin
+company: Lutron Electronics
+role: Operations Manager
+
+signal_type: profile_fit
+signal_multiplier: 1.0
+signal_source_url:
+signal_excerpt:
+
+contact_role: buyer
+role_pts: 3
+
+tier: window_covering_manufacturer
+size_band: enterprise
+
+assumptions_tested: [H3A1]
+validation_rationale: >
+  Operations Manager is in H3A1's icp_valid_titles. DIVISION UNKNOWN, same Lutron caveat.
+
+response_likelihood: 2
+likelihood_factors: >
+  Screened against H3A1's declared ICP on 2026-09-07. Degree 3rd+. Scored on role fit and
+  seniority only; no warmth, mutuals or activity data has been gathered, so this number will
+  move once the profile is read.
+outreach_pattern:
+degree: "3rd+"
+mutuals_count:
+active_last_30d: unknown
+open_to_work: false
+
+close_variant:
+relationship_type: target_customer
+outreach_status: off_scope
+message_stage:
+call_stage: none
+found_date: 2026-09-07
+invited_date:
+accepted_date:
+scheduled_date:
+interview_date:
+
+interviews: []
+
+evidence_score:
+outcome_modifier:
+prior_contact_status: unchecked
+notes: "[screened 2026-09-07 from search results, superseded by the live read below] Headline names role and company, London. LUTRON DIVISION NOT ESTABLISHED. [audit off_scope 2026-09-07] FAILS gate check 3, function. The title reads Operations Manager but the whole career underneath it is SALES: Senior Inside Sales and Service Leader, Inside Sales Leader, Inside Sales, and before Lutron a team manager at Attijariwafa bank. This is sales operations in a UK sales office, not manufacturing operations, and she would never see a remake as a production event. Exactly the failure mode the live-profile gate was written for: a clean in-ICP job title over a function that never touches the work."
+## Andy Weismantel
+
+id: C199
+name: Andy Weismantel
+linkedin_url: https://www.linkedin.com/in/andy-weismantel-31810a54/
+linkedin_account: Izgin
+company: Lutron Electronics
+role: Operations Manager, Model Shop
+
+signal_type: profile_fit
+signal_multiplier: 1.0
+signal_source_url:
+signal_excerpt:
+
+contact_role: buyer
+role_pts: 3
+
+tier: window_covering_manufacturer
+size_band: enterprise
+
+assumptions_tested: [H0A1]
+validation_rationale: >
+  Operations Manager at Lutron's Pennsylvania base, which is where the manufacturing sits rather
+  than the sales offices. DIVISION UNKNOWN.
+
+response_likelihood: 6
+likelihood_factors: >
+  Screened against H3A1's declared ICP on 2026-09-07. Degree 3rd+. Scored on role fit and
+  seniority only; no warmth, mutuals or activity data has been gathered, so this number will
+  move once the profile is read.
+outreach_pattern:
+degree: "3rd+"
+mutuals_count:
+active_last_30d: unknown
+open_to_work: false
+
+close_variant:
+relationship_type: target_customer
+outreach_status: invited
+message_stage:
+call_stage: none
+found_date: 2026-09-07
+invited_date: 2026-09-07
+accepted_date:
+scheduled_date:
+interview_date:
+
+interviews: []
+
+evidence_score:
+outcome_modifier:
+prior_contact_status: unchecked
+notes: "[screened 2026-09-07 from search results, superseded by the live read below] Orefield Pennsylvania, near Lutron's Coopersburg headquarters. LUTRON DIVISION NOT ESTABLISHED. [LIVE-VERIFIED 2026-09-07] REROUTED from H3A1 to H0A1. Operations Manager - MODEL SHOP at Lutron since Sep 2021 (5 yrs 1 mo). A model shop builds prototypes and samples, not production orders, so he does not see made-to-measure remakes and cannot answer H3A1. He is however squarely on the first-article question H0A1 asks: the model shop is where a design meets metal for the first time. Prior: 14 yrs 5 mos at Daktronics across field service, service project management, production supervision and customer service materials. [invited 2026-09-07] Bare connection request, NO NOTE (LR-B29), sent by Claude via linkedin.com/preload/custom-invite/?vanityName=andy-weismantel-31810a54. Two name checks per copy-rules: the live profile heading read during verification, and the name printed in the invitation modal immediately before the click. Sends were spaced 20 to 30 seconds apart and varied, per the founder's 2026-09-03 pacing rule. Confirmed afterwards from the profile showing Pending."
+## Luigi Parini
+
+id: C200
+name: Luigi Parini
+linkedin_url: https://www.linkedin.com/in/luigi-parini-87a71882/
+linkedin_account: Izgin
+company: Lutron Electronics
+role: Manager of Operations
+
+signal_type: profile_fit
+signal_multiplier: 1.0
+signal_source_url:
+signal_excerpt:
+
+contact_role: buyer
+role_pts: 3
+
+tier: window_covering_manufacturer
+size_band: enterprise
+
+assumptions_tested: [H3A1]
+validation_rationale: >
+  Senior manufacturing operations with production planning in the headline, which is the function
+  a remake disrupts most visibly. DIVISION UNKNOWN.
+
+response_likelihood: 7
+likelihood_factors: >
+  Screened against H3A1's declared ICP on 2026-09-07. Degree 3rd+. Scored on role fit and
+  seniority only; no warmth, mutuals or activity data has been gathered, so this number will
+  move once the profile is read.
+outreach_pattern:
+degree: "3rd+"
+mutuals_count:
+active_last_30d: unknown
+open_to_work: false
+
+close_variant:
+relationship_type: target_customer
+outreach_status: invited
+message_stage:
+call_stage: none
+found_date: 2026-09-07
+invited_date: 2026-09-07
+accepted_date:
+scheduled_date:
+interview_date:
+
+interviews: []
+
+evidence_score:
+outcome_modifier:
+prior_contact_status: unchecked
+notes: "[screened 2026-09-07 from search results, superseded by the live read below] Costa Rica, which is a Lutron manufacturing site. LUTRON DIVISION NOT ESTABLISHED. [LIVE-VERIFIED 2026-09-07] PASSES on function; division unstated. Lutron Electronics 5 yrs 6 mos: Manager of Operations in Chihuahua Mexico since Aug 2024, Manager Production in Costa Rica Apr 2021 to Oct 2025. Both are Lutron manufacturing sites, so this is plant operations rather than an office. Prior: Creganna Medical value stream leader, and 11 yrs 5 mos at Philip Morris International as Manager Manufacturing, Manager Production and Manager Quality Assurance. Deep, and used to being measured on scrap. [invited 2026-09-07] Bare connection request, NO NOTE (LR-B29), sent by Claude via linkedin.com/preload/custom-invite/?vanityName=luigi-parini-87a71882. Two name checks per copy-rules: the live profile heading read during verification, and the name printed in the invitation modal immediately before the click. Sends were spaced 20 to 30 seconds apart and varied, per the founder's 2026-09-03 pacing rule. Confirmed afterwards from the profile showing Pending."
+## Alexis Matamoros Vega
+
+id: C201
+name: Alexis Matamoros Vega
+linkedin_url: https://www.linkedin.com/in/alexis-matamoros-vega-3b08b3193/
+linkedin_account: Izgin
+company: Lutron Electronics
+role: Quality Engineer Leader
+
+signal_type: profile_fit
+signal_multiplier: 1.0
+signal_source_url:
+signal_excerpt:
+
+contact_role: buyer
+role_pts: 3
+
+tier: window_covering_manufacturer
+size_band: enterprise
+
+assumptions_tested: [H3A1]
+validation_rationale: >
+  Quality lead at a Lutron manufacturing site. DIVISION UNKNOWN.
+
+response_likelihood: 7
+likelihood_factors: >
+  Screened against H3A1's declared ICP on 2026-09-07. Degree 3rd+. Scored on role fit and
+  seniority only; no warmth, mutuals or activity data has been gathered, so this number will
+  move once the profile is read.
+outreach_pattern:
+degree: "3rd+"
+mutuals_count:
+active_last_30d: unknown
+open_to_work: false
+
+close_variant:
+relationship_type: target_customer
+outreach_status: invited
+message_stage:
+call_stage: none
+found_date: 2026-09-07
+invited_date: 2026-09-07
+accepted_date:
+scheduled_date:
+interview_date:
+
+interviews: []
+
+evidence_score:
+outcome_modifier:
+prior_contact_status: unchecked
+notes: "[screened 2026-09-07 from search results, superseded by the live read below] Costa Rica. LUTRON DIVISION NOT ESTABLISHED. [LIVE-VERIFIED 2026-09-07] PASSES on function; division unstated. Quality Engineer Leader, Lutron Electronics, Costa Rica, since Aug 2021 (5 yrs 2 mos). Title corrected from the screened 'Quality Leader'. Prior: Boston Scientific NPE quality engineer, and 6 yrs as quality coordinator at Zollner Electronics. Real quality engineering at a Lutron plant. [invited 2026-09-07] Bare connection request, NO NOTE (LR-B29), sent by Claude via linkedin.com/preload/custom-invite/?vanityName=alexis-matamoros-vega-3b08b3193. Two name checks per copy-rules: the live profile heading read during verification, and the name printed in the invitation modal immediately before the click. Sends were spaced 20 to 30 seconds apart and varied, per the founder's 2026-09-03 pacing rule. Confirmed afterwards from the profile showing Pending."
+## Jeston Fernandes
+
+id: C202
+name: Jeston Fernandes
+linkedin_url: https://www.linkedin.com/in/jeston-fernandes-5aa769a3/
+linkedin_account: Izgin
+company: Lutron EA
+role: Quality Assurance
+
+signal_type: profile_fit
+signal_multiplier: 1.0
+signal_source_url:
+signal_excerpt:
+
+contact_role: practitioner
+role_pts: 2
+
+tier: window_covering_manufacturer
+size_band: enterprise
+
+assumptions_tested: [H3A1]
+validation_rationale: >
+  Quality assurance, partial on title. DIVISION UNKNOWN and the role may be individual-contributor
+  rather than owning a rate.
+
+response_likelihood: 3
+likelihood_factors: >
+  Screened against H3A1's declared ICP on 2026-09-07. Degree 3rd+. Scored on role fit and
+  seniority only; no warmth, mutuals or activity data has been gathered, so this number will
+  move once the profile is read.
+outreach_pattern:
+degree: "3rd+"
+mutuals_count:
+active_last_30d: unknown
+open_to_work: false
+
+close_variant:
+relationship_type: target_customer
+outreach_status: pending
+message_stage:
+call_stage: none
+found_date: 2026-09-07
+invited_date:
+accepted_date:
+scheduled_date:
+interview_date:
+
+interviews: []
+
+evidence_score:
+outcome_modifier:
+prior_contact_status: unchecked
+notes: "[screened 2026-09-07 from search results, superseded by the live read below] Lutron EA, London. LUTRON DIVISION NOT ESTABLISHED. [LIVE-VERIFIED 2026-09-07] CANNOT BE VERIFIED and is NOT INVITABLE. The profile carries a single line, 'Quality Assurance, Lutron EA', with no dates, no description and no employment history at all. Gate checks 2 and 4 are unanswerable from it. Left pending rather than off_scope because nothing has actually failed; there is simply nothing there to pass. Needs a different source before he is worth anything."
+
+---
+
+### Batch 2026-09-07 (b) — blinds manufacturers, pagination pass
+
+Found by paginating the company-filtered people search rather than by discovering new companies,
+which is what finally produced volume: `search/results/people/?currentCompany=["{id}"]&keywords=..&page=N`.
+Unquoted company names get ignored by LinkedIn's relevance ranking and OR operators shatter a
+quoted phrase, so `"Springs Window Fashions" quality OR plant` returned people surnamed Plant.
+Use the company filter and paginate; do not use OR.
+
+EVERY ROW HERE IS SCREENED ONLY. Several carry an inferred rather than captured URL, flagged in
+their notes; those must be resolved before any invite or the invitation goes to a stranger.
+
+## David Hernandez
+
+id: C203
+name: David Hernandez
+linkedin_url: https://www.linkedin.com/in/david-hernandez-129b124b/
+linkedin_account: Izgin
+company: Lutron Electronics
+role: Manufacturing Engineering Manager
+
+signal_type: profile_fit
+signal_multiplier: 1.0
+signal_source_url:
+signal_excerpt:
+
+contact_role: buyer
+role_pts: 3
+
+tier: window_covering_manufacturer
+size_band: enterprise
+
+assumptions_tested: [H3A1]
+validation_rationale: >
+  Manufacturing Engineering Manager at a real Lutron plant, and the same Chihuahua site as C200
+  Luigi Parini, which makes the site itself corroborated even though the shading-versus-lighting
+  division is not. Manufacturing engineering is where a drawing becomes a cut.
+
+response_likelihood: 7
+likelihood_factors: >
+  Screened against H3A1's declared ICP on 2026-09-07 from search results alone. Degree 3rd+.
+  Scored on role fit and seniority only; no warmth, mutuals or activity data gathered beyond
+  what the search row showed, so this number moves once the profile is read.
+outreach_pattern:
+degree: "3rd+"
+mutuals_count:
+active_last_30d: unknown
+open_to_work: false
+
+close_variant:
+relationship_type: target_customer
+outreach_status: pending
+message_stage:
+call_stage: none
+found_date: 2026-09-07
+invited_date:
+accepted_date:
+scheduled_date:
+interview_date:
+
+interviews: []
+
+evidence_score:
+outcome_modifier:
+prior_contact_status: unchecked
+notes: "NOT LIVE-VERIFIED. Screened from a LinkedIn people search only (name, role, company, location, degree). The live-profile gate in schemas/copy-rules.md sits before the INVITE, so this row stays `pending` and must NOT be invited until a dated profile read is written here. LR-B25 has not been run either. Chihuahua, Mexico. Found on the Lutron company-filtered search, page 2."
+
+## Oscar Acuna Cordero
+
+id: C204
+name: Oscar Acuna Cordero
+linkedin_url: https://www.linkedin.com/in/oscaracunac/
+linkedin_account: Izgin
+company: Lutron Electronics
+role: Regional Manufacturing Quality Manager
+
+signal_type: profile_fit
+signal_multiplier: 1.0
+signal_source_url:
+signal_excerpt:
+
+contact_role: buyer
+role_pts: 3
+
+tier: window_covering_manufacturer
+size_band: enterprise
+
+assumptions_tested: [H3A1]
+validation_rationale: >
+  The strongest Lutron quality title found: REGIONAL manufacturing quality, so he sees more than
+  one plant and can say whether a rate is site-specific or company-wide. That cross-site view is
+  exactly what a single quality engineer cannot give.
+
+response_likelihood: 8
+likelihood_factors: >
+  Screened against H3A1's declared ICP on 2026-09-07 from search results alone. Degree 3rd+.
+  Scored on role fit and seniority only; no warmth, mutuals or activity data gathered beyond
+  what the search row showed, so this number moves once the profile is read.
+outreach_pattern:
+degree: "3rd+"
+mutuals_count:
+active_last_30d: unknown
+open_to_work: false
+
+close_variant:
+relationship_type: target_customer
+outreach_status: pending
+message_stage:
+call_stage: none
+found_date: 2026-09-07
+invited_date:
+accepted_date:
+scheduled_date:
+interview_date:
+
+interviews: []
+
+evidence_score:
+outcome_modifier:
+prior_contact_status: unchecked
+notes: "NOT LIVE-VERIFIED. Screened from a LinkedIn people search only (name, role, company, location, degree). The live-profile gate in schemas/copy-rules.md sits before the INVITE, so this row stays `pending` and must NOT be invited until a dated profile read is written here. LR-B25 has not been run either. Costa Rica. Found on the Lutron company-filtered search, page 3, and surfaced twice more in sidebar recommendations."
+
+## Hugo Padilla
+
+id: C205
+name: Hugo Padilla
+linkedin_url: https://www.linkedin.com/in/hugo-padilla-24874327/
+linkedin_account: Izgin
+company: Lutron Electronics
+role: Quality Assurance / Quality Control
+
+signal_type: profile_fit
+signal_multiplier: 1.0
+signal_source_url:
+signal_excerpt:
+
+contact_role: practitioner
+role_pts: 2
+
+tier: window_covering_manufacturer
+size_band: enterprise
+
+assumptions_tested: [H3A1]
+validation_rationale: >
+  QA/QC at Lutron Mexico. Partial on title, but QC is the function that physically catches a wrong
+  dimension before it ships.
+
+response_likelihood: 6
+likelihood_factors: >
+  Screened against H3A1's declared ICP on 2026-09-07 from search results alone. Degree 3rd+.
+  Scored on role fit and seniority only; no warmth, mutuals or activity data gathered beyond
+  what the search row showed, so this number moves once the profile is read.
+outreach_pattern:
+degree: "3rd+"
+mutuals_count:
+active_last_30d: unknown
+open_to_work: false
+
+close_variant:
+relationship_type: target_customer
+outreach_status: pending
+message_stage:
+call_stage: none
+found_date: 2026-09-07
+invited_date:
+accepted_date:
+scheduled_date:
+interview_date:
+
+interviews: []
+
+evidence_score:
+outcome_modifier:
+prior_contact_status: unchecked
+notes: "NOT LIVE-VERIFIED. Screened from a LinkedIn people search only (name, role, company, location, degree). The live-profile gate in schemas/copy-rules.md sits before the INVITE, so this row stays `pending` and must NOT be invited until a dated profile read is written here. LR-B25 has not been run either. Mexico. Lutron company-filtered search, page 3."
+
+## Valeria Camacho Fallas
+
+id: C206
+name: Valeria Camacho Fallas
+linkedin_url: https://www.linkedin.com/in/valeria-camacho-fallas-72347622a/
+linkedin_account: Izgin
+company: Lutron Electronics
+role: Senior Operations Specialist
+
+signal_type: profile_fit
+signal_multiplier: 1.0
+signal_source_url:
+signal_excerpt:
+
+contact_role: practitioner
+role_pts: 2
+
+tier: window_covering_manufacturer
+size_band: enterprise
+
+assumptions_tested: [H3A1]
+validation_rationale: >
+  Operations specialist at the Costa Rica site. Junior to the others and a partial on title;
+  recorded to give the Costa Rica plant more than one voice.
+
+response_likelihood: 5
+likelihood_factors: >
+  Screened against H3A1's declared ICP on 2026-09-07 from search results alone. Degree 3rd+.
+  Scored on role fit and seniority only; no warmth, mutuals or activity data gathered beyond
+  what the search row showed, so this number moves once the profile is read.
+outreach_pattern:
+degree: "3rd+"
+mutuals_count:
+active_last_30d: unknown
+open_to_work: false
+
+close_variant:
+relationship_type: target_customer
+outreach_status: pending
+message_stage:
+call_stage: none
+found_date: 2026-09-07
+invited_date:
+accepted_date:
+scheduled_date:
+interview_date:
+
+interviews: []
+
+evidence_score:
+outcome_modifier:
+prior_contact_status: unchecked
+notes: "NOT LIVE-VERIFIED. Screened from a LinkedIn people search only (name, role, company, location, degree). The live-profile gate in schemas/copy-rules.md sits before the INVITE, so this row stays `pending` and must NOT be invited until a dated profile read is written here. LR-B25 has not been run either. San Jose, Costa Rica. Lutron company-filtered search, page 3."
+
+## Mac Jones
+
+id: C207
+name: Mac Jones
+linkedin_url: https://www.linkedin.com/in/macjones743/
+linkedin_account: Izgin
+company: Lutron Electronics
+role: Manufacturing Engineer
+
+signal_type: profile_fit
+signal_multiplier: 1.0
+signal_source_url:
+signal_excerpt:
+
+contact_role: practitioner
+role_pts: 2
+
+tier: window_covering_manufacturer
+size_band: enterprise
+
+assumptions_tested: [H3A1]
+validation_rationale: >
+  Manufacturing engineer at Lutron Austin. Partial on title. Austin is a Lutron manufacturing
+  location, so the function is plausible; the division is not established.
+
+response_likelihood: 6
+likelihood_factors: >
+  Screened against H3A1's declared ICP on 2026-09-07 from search results alone. Degree 3rd+.
+  Scored on role fit and seniority only; no warmth, mutuals or activity data gathered beyond
+  what the search row showed, so this number moves once the profile is read.
+outreach_pattern:
+degree: "3rd+"
+mutuals_count:
+active_last_30d: unknown
+open_to_work: false
+
+close_variant:
+relationship_type: target_customer
+outreach_status: pending
+message_stage:
+call_stage: none
+found_date: 2026-09-07
+invited_date:
+accepted_date:
+scheduled_date:
+interview_date:
+
+interviews: []
+
+evidence_score:
+outcome_modifier:
+prior_contact_status: unchecked
+notes: "NOT LIVE-VERIFIED. Screened from a LinkedIn people search only (name, role, company, location, degree). The live-profile gate in schemas/copy-rules.md sits before the INVITE, so this row stays `pending` and must NOT be invited until a dated profile read is written here. LR-B25 has not been run either. Austin, Texas. Lutron company-filtered search, page 3."
+
+## Leopoldo Sanchez IV
+
+id: C208
+name: Leopoldo Sanchez IV
+linkedin_url: https://www.linkedin.com/in/leopoldo-sanchez-iv/
+linkedin_account: Izgin
+company: Lutron Electronics (UNCONFIRMED)
+role: Manufacturing Engineer
+
+signal_type: profile_fit
+signal_multiplier: 1.0
+signal_source_url:
+signal_excerpt:
+
+contact_role: practitioner
+role_pts: 2
+
+tier: window_covering_manufacturer
+size_band: enterprise
+
+assumptions_tested: [H3A1]
+validation_rationale: >
+  Surfaced inside the Lutron company filter, so the employer is probably right, but his headline
+  names no company at all. Weakest of the Lutron rows.
+
+response_likelihood: 5
+likelihood_factors: >
+  Screened against H3A1's declared ICP on 2026-09-07 from search results alone. Degree 3rd+.
+  Scored on role fit and seniority only; no warmth, mutuals or activity data gathered beyond
+  what the search row showed, so this number moves once the profile is read.
+outreach_pattern:
+degree: "3rd+"
+mutuals_count:
+active_last_30d: unknown
+open_to_work: false
+
+close_variant:
+relationship_type: target_customer
+outreach_status: pending
+message_stage:
+call_stage: none
+found_date: 2026-09-07
+invited_date:
+accepted_date:
+scheduled_date:
+interview_date:
+
+interviews: []
+
+evidence_score:
+outcome_modifier:
+prior_contact_status: unchecked
+notes: "NOT LIVE-VERIFIED. Screened from a LinkedIn people search only (name, role, company, location, degree). The live-profile gate in schemas/copy-rules.md sits before the INVITE, so this row stays `pending` and must NOT be invited until a dated profile read is written here. LR-B25 has not been run either. Austin Texas Metropolitan Area. EMPLOYER NOT ESTABLISHED FROM THE HEADLINE."
+
+## Troy Gentry
+
+id: C209
+name: Troy Gentry
+linkedin_url: https://www.linkedin.com/in/troy-gentry/
+linkedin_account: Izgin
+company: Lutron Electronics
+role: Corporate Operations
+
+signal_type: profile_fit
+signal_multiplier: 1.0
+signal_source_url:
+signal_excerpt:
+
+contact_role: practitioner
+role_pts: 2
+
+tier: window_covering_manufacturer
+size_band: enterprise
+
+assumptions_tested: [H3A1]
+validation_rationale: >
+  Corporate operations at Lutron and a 2ND-DEGREE connection, which makes him one of the few
+  reachable Lutron rows without a cold invite. Function is vague from the headline.
+
+response_likelihood: 6
+likelihood_factors: >
+  Screened against H3A1's declared ICP on 2026-09-07 from search results alone. Degree 2nd.
+  Scored on role fit and seniority only; no warmth, mutuals or activity data gathered beyond
+  what the search row showed, so this number moves once the profile is read.
+outreach_pattern:
+degree: "2nd"
+mutuals_count:
+active_last_30d: unknown
+open_to_work: false
+
+close_variant:
+relationship_type: target_customer
+outreach_status: pending
+message_stage:
+call_stage: none
+found_date: 2026-09-07
+invited_date:
+accepted_date:
+scheduled_date:
+interview_date:
+
+interviews: []
+
+evidence_score:
+outcome_modifier:
+prior_contact_status: unchecked
+notes: "NOT LIVE-VERIFIED. Screened from a LinkedIn people search only (name, role, company, location, degree). The live-profile gate in schemas/copy-rules.md sits before the INVITE, so this row stays `pending` and must NOT be invited until a dated profile read is written here. LR-B25 has not been run either. New Braunfels, Texas. 2nd degree, mutual connection Kevin Griffiths. Lutron company-filtered search, page 3."
+
+## Satheesh Chemmala
+
+id: C210
+name: Satheesh Chemmala
+linkedin_url: https://www.linkedin.com/in/satheeshchemmala/
+linkedin_account: Izgin
+company: Lutron Electronics
+role: Regional Services and Operations, UK Europe and Africa
+
+signal_type: profile_fit
+signal_multiplier: 1.0
+signal_source_url:
+signal_excerpt:
+
+contact_role: buyer
+role_pts: 3
+
+tier: window_covering_manufacturer
+size_band: enterprise
+
+assumptions_tested: [H3A1]
+validation_rationale: >
+  THE SERVICE AND CUSTOMER-EXPERIENCE SEAM, which none of the previous H3 contacts touched. His
+  headline pairs regional services with customer experience and operational excellence, which is
+  where a remake arrives as a complaint with a clock on it rather than as a defect count.
+
+response_likelihood: 7
+likelihood_factors: >
+  Screened against H3A1's declared ICP on 2026-09-07 from search results alone. Degree 3rd+.
+  Scored on role fit and seniority only; no warmth, mutuals or activity data gathered beyond
+  what the search row showed, so this number moves once the profile is read.
+outreach_pattern:
+degree: "3rd+"
+mutuals_count:
+active_last_30d: unknown
+open_to_work: false
+
+close_variant:
+relationship_type: target_customer
+outreach_status: pending
+message_stage:
+call_stage: none
+found_date: 2026-09-07
+invited_date:
+accepted_date:
+scheduled_date:
+interview_date:
+
+interviews: []
+
+evidence_score:
+outcome_modifier:
+prior_contact_status: unchecked
+notes: "NOT LIVE-VERIFIED. Screened from a LinkedIn people search only (name, role, company, location, degree). The live-profile gate in schemas/copy-rules.md sits before the INVITE, so this row stays `pending` and must NOT be invited until a dated profile read is written here. LR-B25 has not been run either. London. Lutron company-filtered search, page 3. URL INFERRED FROM THE DISPLAY NAME AND NOT CAPTURED FROM A LINK - verify it resolves before use."
+
+## Robert Krajcirik
+
+id: C211
+name: Robert Krajcirik
+linkedin_url: https://www.linkedin.com/in/robert-krajcirik/
+linkedin_account: Izgin
+company: Lutron Electronics (UNCONFIRMED)
+role: Quality, Warranty and Production Management
+
+signal_type: profile_fit
+signal_multiplier: 1.0
+signal_source_url:
+signal_excerpt:
+
+contact_role: buyer
+role_pts: 3
+
+tier: window_covering_manufacturer
+size_band: enterprise
+
+assumptions_tested: [H3A1]
+validation_rationale: >
+  His own headline names QUALITY, WARRANTY AND PRODUCTION together, which is the exact triangle
+  H3A1 asks about and the first warranty-facing person found in any pass. Employer unconfirmed; he
+  surfaced inside the Lutron filter.
+
+response_likelihood: 7
+likelihood_factors: >
+  Screened against H3A1's declared ICP on 2026-09-07 from search results alone. Degree 3rd+.
+  Scored on role fit and seniority only; no warmth, mutuals or activity data gathered beyond
+  what the search row showed, so this number moves once the profile is read.
+outreach_pattern:
+degree: "3rd+"
+mutuals_count:
+active_last_30d: unknown
+open_to_work: false
+
+close_variant:
+relationship_type: target_customer
+outreach_status: pending
+message_stage:
+call_stage: none
+found_date: 2026-09-07
+invited_date:
+accepted_date:
+scheduled_date:
+interview_date:
+
+interviews: []
+
+evidence_score:
+outcome_modifier:
+prior_contact_status: unchecked
+notes: "NOT LIVE-VERIFIED. Screened from a LinkedIn people search only (name, role, company, location, degree). The live-profile gate in schemas/copy-rules.md sits before the INVITE, so this row stays `pending` and must NOT be invited until a dated profile read is written here. LR-B25 has not been run either. Tamaqua, Pennsylvania, near Lutron's Coopersburg base. EMPLOYER NOT ESTABLISHED. URL INFERRED, NOT CAPTURED - verify before use."
+
+## William R Roman
+
+id: C212
+name: William R Roman
+linkedin_url: https://www.linkedin.com/in/william-r-roman-9a770865/
+linkedin_account: Izgin
+company: Lutron Electronics (UNCONFIRMED)
+role: Operational Excellence Senior Leader
+
+signal_type: profile_fit
+signal_multiplier: 1.0
+signal_source_url:
+signal_excerpt:
+
+contact_role: buyer
+role_pts: 3
+
+tier: window_covering_manufacturer
+size_band: enterprise
+
+assumptions_tested: [H3A1]
+validation_rationale: >
+  Twenty-five years of operational excellence across pharmaceutical, aerospace and wiring devices.
+  Wiring devices is Lutron's world. Employer unconfirmed and the headline reads like a
+  consultant's.
+
+response_likelihood: 5
+likelihood_factors: >
+  Screened against H3A1's declared ICP on 2026-09-07 from search results alone. Degree 3rd+.
+  Scored on role fit and seniority only; no warmth, mutuals or activity data gathered beyond
+  what the search row showed, so this number moves once the profile is read.
+outreach_pattern:
+degree: "3rd+"
+mutuals_count:
+active_last_30d: unknown
+open_to_work: false
+
+close_variant:
+relationship_type: target_customer
+outreach_status: pending
+message_stage:
+call_stage: none
+found_date: 2026-09-07
+invited_date:
+accepted_date:
+scheduled_date:
+interview_date:
+
+interviews: []
+
+evidence_score:
+outcome_modifier:
+prior_contact_status: unchecked
+notes: "NOT LIVE-VERIFIED. Screened from a LinkedIn people search only (name, role, company, location, degree). The live-profile gate in schemas/copy-rules.md sits before the INVITE, so this row stays `pending` and must NOT be invited until a dated profile read is written here. LR-B25 has not been run either. Puerto Rico. EMPLOYER NOT ESTABLISHED."
+
+## Erik Alfonso Munoz Elizalde
+
+id: C213
+name: Erik Alfonso Munoz Elizalde
+linkedin_url: https://www.linkedin.com/in/erikmunoze/
+linkedin_account: Izgin
+company: Springs Window Fashions
+role: Senior Supplier Quality Engineer
+
+signal_type: profile_fit
+signal_multiplier: 1.0
+signal_source_url:
+signal_excerpt:
+
+contact_role: practitioner
+role_pts: 2
+
+tier: window_covering_manufacturer
+size_band: enterprise
+
+assumptions_tested: [H3A1]
+validation_rationale: >
+  SUPPLIER quality at Springs, which is a different vantage point from C106 Fernando's internal
+  quality role: he sees the defects that arrive rather than the ones Springs creates. 2ND DEGREE
+  with C106 Fernando as the mutual, so there is a warm route.
+
+response_likelihood: 7
+likelihood_factors: >
+  Screened against H3A1's declared ICP on 2026-09-07 from search results alone. Degree 2nd.
+  Scored on role fit and seniority only; no warmth, mutuals or activity data gathered beyond
+  what the search row showed, so this number moves once the profile is read.
+outreach_pattern:
+degree: "2nd"
+mutuals_count:
+active_last_30d: unknown
+open_to_work: false
+
+close_variant:
+relationship_type: target_customer
+outreach_status: pending
+message_stage:
+call_stage: none
+found_date: 2026-09-07
+invited_date:
+accepted_date:
+scheduled_date:
+interview_date:
+
+interviews: []
+
+evidence_score:
+outcome_modifier:
+prior_contact_status: unchecked
+notes: "NOT LIVE-VERIFIED. Screened from a LinkedIn people search only (name, role, company, location, degree). The live-profile gate in schemas/copy-rules.md sits before the INVITE, so this row stays `pending` and must NOT be invited until a dated profile read is written here. LR-B25 has not been run either. Reynosa, Tamaulipas. Mutual connection C106 Fernando Antonio Martinez Almaraz."
+
+## Javier Bustamante Martinez
+
+id: C214
+name: Javier Bustamante Martinez
+linkedin_url: https://www.linkedin.com/in/javier-bustamante-martinez/
+linkedin_account: Izgin
+company: Springs Window Fashions
+role: Corporate Supplier Quality Manager
+
+signal_type: profile_fit
+signal_multiplier: 1.0
+signal_source_url:
+signal_excerpt:
+
+contact_role: buyer
+role_pts: 3
+
+tier: window_covering_manufacturer
+size_band: enterprise
+
+assumptions_tested: [H3A1]
+validation_rationale: >
+  CORPORATE supplier quality, so he sets the standard across Springs sites rather than running
+  one. 2nd degree with C106 Fernando as the mutual.
+
+response_likelihood: 7
+likelihood_factors: >
+  Screened against H3A1's declared ICP on 2026-09-07 from search results alone. Degree 2nd.
+  Scored on role fit and seniority only; no warmth, mutuals or activity data gathered beyond
+  what the search row showed, so this number moves once the profile is read.
+outreach_pattern:
+degree: "2nd"
+mutuals_count:
+active_last_30d: unknown
+open_to_work: false
+
+close_variant:
+relationship_type: target_customer
+outreach_status: pending
+message_stage:
+call_stage: none
+found_date: 2026-09-07
+invited_date:
+accepted_date:
+scheduled_date:
+interview_date:
+
+interviews: []
+
+evidence_score:
+outcome_modifier:
+prior_contact_status: unchecked
+notes: "NOT LIVE-VERIFIED. Screened from a LinkedIn people search only (name, role, company, location, degree). The live-profile gate in schemas/copy-rules.md sits before the INVITE, so this row stays `pending` and must NOT be invited until a dated profile read is written here. LR-B25 has not been run either. Tijuana, Baja California. Mutual C106. URL INFERRED FROM THE DISPLAY NAME AND NOT CAPTURED - verify before use."
+
+## Ivan Castillo
+
+id: C215
+name: Ivan Castillo
+linkedin_url: https://www.linkedin.com/in/ivan-castillo1/
+linkedin_account: Izgin
+company: Springs Window Fashions (UNCONFIRMED)
+role: Senior Quality Engineer
+
+signal_type: profile_fit
+signal_multiplier: 1.0
+signal_source_url:
+signal_excerpt:
+
+contact_role: practitioner
+role_pts: 2
+
+tier: window_covering_manufacturer
+size_band: enterprise
+
+assumptions_tested: [H3A1]
+validation_rationale: >
+  Senior quality engineer who surfaced on the Springs search but whose headline names no company.
+  Tijuana is a Springs location.
+
+response_likelihood: 5
+likelihood_factors: >
+  Screened against H3A1's declared ICP on 2026-09-07 from search results alone. Degree 3rd+.
+  Scored on role fit and seniority only; no warmth, mutuals or activity data gathered beyond
+  what the search row showed, so this number moves once the profile is read.
+outreach_pattern:
+degree: "3rd+"
+mutuals_count:
+active_last_30d: unknown
+open_to_work: false
+
+close_variant:
+relationship_type: target_customer
+outreach_status: pending
+message_stage:
+call_stage: none
+found_date: 2026-09-07
+invited_date:
+accepted_date:
+scheduled_date:
+interview_date:
+
+interviews: []
+
+evidence_score:
+outcome_modifier:
+prior_contact_status: unchecked
+notes: "NOT LIVE-VERIFIED. Screened from a LinkedIn people search only (name, role, company, location, degree). The live-profile gate in schemas/copy-rules.md sits before the INVITE, so this row stays `pending` and must NOT be invited until a dated profile read is written here. LR-B25 has not been run either. Tijuana. EMPLOYER NOT ESTABLISHED."
+
+## Maria Antonieta Ochoa Vejar
+
+id: C216
+name: Maria Antonieta Ochoa Vejar
+linkedin_url: https://www.linkedin.com/in/a8avejar/
+linkedin_account: Izgin
+company: Springs Window Fashions (UNCONFIRMED)
+role: Manufacturing Quality Engineer
+
+signal_type: profile_fit
+signal_multiplier: 1.0
+signal_source_url:
+signal_excerpt:
+
+contact_role: practitioner
+role_pts: 2
+
+tier: window_covering_manufacturer
+size_band: enterprise
+
+assumptions_tested: [H3A1]
+validation_rationale: >
+  Manufacturing quality engineer with a heavy standards background. Surfaced on the Springs
+  search; company not named in the headline.
+
+response_likelihood: 5
+likelihood_factors: >
+  Screened against H3A1's declared ICP on 2026-09-07 from search results alone. Degree 3rd+.
+  Scored on role fit and seniority only; no warmth, mutuals or activity data gathered beyond
+  what the search row showed, so this number moves once the profile is read.
+outreach_pattern:
+degree: "3rd+"
+mutuals_count:
+active_last_30d: unknown
+open_to_work: false
+
+close_variant:
+relationship_type: target_customer
+outreach_status: pending
+message_stage:
+call_stage: none
+found_date: 2026-09-07
+invited_date:
+accepted_date:
+scheduled_date:
+interview_date:
+
+interviews: []
+
+evidence_score:
+outcome_modifier:
+prior_contact_status: unchecked
+notes: "NOT LIVE-VERIFIED. Screened from a LinkedIn people search only (name, role, company, location, degree). The live-profile gate in schemas/copy-rules.md sits before the INVITE, so this row stays `pending` and must NOT be invited until a dated profile read is written here. LR-B25 has not been run either. Tijuana. EMPLOYER NOT ESTABLISHED."
+
+## Adrian Guerra
+
+id: C217
+name: Adrian Guerra
+linkedin_url: https://www.linkedin.com/in/adrian-guerra-quality/
+linkedin_account: Izgin
+company: Springs Window Fashions (UNCONFIRMED)
+role: Quality Management Professional
+
+signal_type: profile_fit
+signal_multiplier: 1.0
+signal_source_url:
+signal_excerpt:
+
+contact_role: practitioner
+role_pts: 2
+
+tier: window_covering_manufacturer
+size_band: enterprise
+
+assumptions_tested: [H3A1]
+validation_rationale: >
+  2nd degree with BOTH C106 Fernando and C107 Julio as mutuals, which is strong circumstantial
+  evidence he is inside Springs Reynosa. Headline names no company.
+
+response_likelihood: 5
+likelihood_factors: >
+  Screened against H3A1's declared ICP on 2026-09-07 from search results alone. Degree 2nd.
+  Scored on role fit and seniority only; no warmth, mutuals or activity data gathered beyond
+  what the search row showed, so this number moves once the profile is read.
+outreach_pattern:
+degree: "2nd"
+mutuals_count:
+active_last_30d: unknown
+open_to_work: false
+
+close_variant:
+relationship_type: target_customer
+outreach_status: pending
+message_stage:
+call_stage: none
+found_date: 2026-09-07
+invited_date:
+accepted_date:
+scheduled_date:
+interview_date:
+
+interviews: []
+
+evidence_score:
+outcome_modifier:
+prior_contact_status: unchecked
+notes: "NOT LIVE-VERIFIED. Screened from a LinkedIn people search only (name, role, company, location, degree). The live-profile gate in schemas/copy-rules.md sits before the INVITE, so this row stays `pending` and must NOT be invited until a dated profile read is written here. LR-B25 has not been run either. Reynosa. Mutuals C106 and C107. EMPLOYER NOT ESTABLISHED. URL INFERRED, NOT CAPTURED - verify before use."
+
+## Arnoldo Garcia
+
+id: C218
+name: Arnoldo Garcia
+linkedin_url: https://www.linkedin.com/in/arnoldo-j-garcia/
+linkedin_account: Izgin
+company: Springs Window Fashions (UNCONFIRMED)
+role: Operations Executive
+
+signal_type: profile_fit
+signal_multiplier: 1.0
+signal_source_url:
+signal_excerpt:
+
+contact_role: buyer
+role_pts: 3
+
+tier: window_covering_manufacturer
+size_band: enterprise
+
+assumptions_tested: [H3A1]
+validation_rationale: >
+  Operations executive, 2nd degree, with both C106 and C107 as mutuals. Brownsville sits across
+  the border from Springs Reynosa.
+
+response_likelihood: 6
+likelihood_factors: >
+  Screened against H3A1's declared ICP on 2026-09-07 from search results alone. Degree 2nd.
+  Scored on role fit and seniority only; no warmth, mutuals or activity data gathered beyond
+  what the search row showed, so this number moves once the profile is read.
+outreach_pattern:
+degree: "2nd"
+mutuals_count:
+active_last_30d: unknown
+open_to_work: false
+
+close_variant:
+relationship_type: target_customer
+outreach_status: pending
+message_stage:
+call_stage: none
+found_date: 2026-09-07
+invited_date:
+accepted_date:
+scheduled_date:
+interview_date:
+
+interviews: []
+
+evidence_score:
+outcome_modifier:
+prior_contact_status: unchecked
+notes: "NOT LIVE-VERIFIED. Screened from a LinkedIn people search only (name, role, company, location, degree). The live-profile gate in schemas/copy-rules.md sits before the INVITE, so this row stays `pending` and must NOT be invited until a dated profile read is written here. LR-B25 has not been run either. Brownsville, Texas. Mutuals C106 and C107. EMPLOYER NOT ESTABLISHED."
+
+## Erica Frazier
+
+id: C219
+name: Erica Frazier
+linkedin_url: https://www.linkedin.com/in/erica-frazier-springs/
+linkedin_account: Izgin
+company: Springs Window Fashions
+role: Sales Operations Manager
+
+signal_type: profile_fit
+signal_multiplier: 1.0
+signal_source_url:
+signal_excerpt:
+
+contact_role: practitioner
+role_pts: 2
+
+tier: window_covering_manufacturer
+size_band: enterprise
+
+assumptions_tested: [H3A1]
+validation_rationale: >
+  Sales operations at Springs headquarters. Partial: she would see order and complaint volume
+  rather than plant cost.
+
+response_likelihood: 5
+likelihood_factors: >
+  Screened against H3A1's declared ICP on 2026-09-07 from search results alone. Degree 3rd+.
+  Scored on role fit and seniority only; no warmth, mutuals or activity data gathered beyond
+  what the search row showed, so this number moves once the profile is read.
+outreach_pattern:
+degree: "3rd+"
+mutuals_count:
+active_last_30d: unknown
+open_to_work: false
+
+close_variant:
+relationship_type: target_customer
+outreach_status: pending
+message_stage:
+call_stage: none
+found_date: 2026-09-07
+invited_date:
+accepted_date:
+scheduled_date:
+interview_date:
+
+interviews: []
+
+evidence_score:
+outcome_modifier:
+prior_contact_status: unchecked
+notes: "NOT LIVE-VERIFIED. Screened from a LinkedIn people search only (name, role, company, location, degree). The live-profile gate in schemas/copy-rules.md sits before the INVITE, so this row stays `pending` and must NOT be invited until a dated profile read is written here. LR-B25 has not been run either. Greater Milwaukee. URL INFERRED, NOT CAPTURED - verify before use."
+
+## Jeffery Hull
+
+id: C220
+name: Jeffery Hull
+linkedin_url: https://www.linkedin.com/in/jeffery-hull-springs/
+linkedin_account: Izgin
+company: Springs Window Fashions
+role: Senior Process Engineer
+
+signal_type: profile_fit
+signal_multiplier: 1.0
+signal_source_url:
+signal_excerpt:
+
+contact_role: practitioner
+role_pts: 2
+
+tier: window_covering_manufacturer
+size_band: enterprise
+
+assumptions_tested: [H3A1]
+validation_rationale: >
+  Senior process engineer at Springs' Madison headquarters, where the processes the Mexican plants
+  run are designed.
+
+response_likelihood: 6
+likelihood_factors: >
+  Screened against H3A1's declared ICP on 2026-09-07 from search results alone. Degree 3rd+.
+  Scored on role fit and seniority only; no warmth, mutuals or activity data gathered beyond
+  what the search row showed, so this number moves once the profile is read.
+outreach_pattern:
+degree: "3rd+"
+mutuals_count:
+active_last_30d: unknown
+open_to_work: false
+
+close_variant:
+relationship_type: target_customer
+outreach_status: pending
+message_stage:
+call_stage: none
+found_date: 2026-09-07
+invited_date:
+accepted_date:
+scheduled_date:
+interview_date:
+
+interviews: []
+
+evidence_score:
+outcome_modifier:
+prior_contact_status: unchecked
+notes: "NOT LIVE-VERIFIED. Screened from a LinkedIn people search only (name, role, company, location, degree). The live-profile gate in schemas/copy-rules.md sits before the INVITE, so this row stays `pending` and must NOT be invited until a dated profile read is written here. LR-B25 has not been run either. Greater Madison Area. URL INFERRED, NOT CAPTURED - verify before use."
+
+## Evan Lang
+
+id: C221
+name: Evan Lang
+linkedin_url: https://www.linkedin.com/in/evan-lang-springs/
+linkedin_account: Izgin
+company: Springs Window Fashions
+role: Product Engineer
+
+signal_type: profile_fit
+signal_multiplier: 1.0
+signal_source_url:
+signal_excerpt:
+
+contact_role: practitioner
+role_pts: 2
+
+tier: window_covering_manufacturer
+size_band: enterprise
+
+assumptions_tested: [H3A1]
+validation_rationale: >
+  Product engineer at Springs Madison. Partial on title; product engineering is upstream of the
+  cut and sees the spec before anyone else does.
+
+response_likelihood: 6
+likelihood_factors: >
+  Screened against H3A1's declared ICP on 2026-09-07 from search results alone. Degree 3rd+.
+  Scored on role fit and seniority only; no warmth, mutuals or activity data gathered beyond
+  what the search row showed, so this number moves once the profile is read.
+outreach_pattern:
+degree: "3rd+"
+mutuals_count:
+active_last_30d: unknown
+open_to_work: false
+
+close_variant:
+relationship_type: target_customer
+outreach_status: pending
+message_stage:
+call_stage: none
+found_date: 2026-09-07
+invited_date:
+accepted_date:
+scheduled_date:
+interview_date:
+
+interviews: []
+
+evidence_score:
+outcome_modifier:
+prior_contact_status: unchecked
+notes: "NOT LIVE-VERIFIED. Screened from a LinkedIn people search only (name, role, company, location, degree). The live-profile gate in schemas/copy-rules.md sits before the INVITE, so this row stays `pending` and must NOT be invited until a dated profile read is written here. LR-B25 has not been run either. Greater Madison Area. URL INFERRED, NOT CAPTURED - verify before use."
+
+## Dave Littlewood
+
+id: C222
+name: Dave Littlewood
+linkedin_url: https://www.linkedin.com/in/dave-littlewood-01251799/
+linkedin_account: Izgin
+company: Hunter Douglas UK
+role: Area Installations and Service Manager
+
+signal_type: profile_fit
+signal_multiplier: 1.0
+signal_source_url:
+signal_excerpt:
+
+contact_role: buyer
+role_pts: 3
+
+tier: window_covering_manufacturer
+size_band: enterprise
+
+assumptions_tested: [H3A1]
+validation_rationale: >
+  Install Manager is in H3A1's icp_valid_titles, and this one is at the MANUFACTURER rather than a
+  dealer, so he sees installation failures across a whole UK area and reports them back into
+  Hunter Douglas. That is the bridge between the window and the plant.
+
+response_likelihood: 7
+likelihood_factors: >
+  Screened against H3A1's declared ICP on 2026-09-07 from search results alone. Degree 3rd+.
+  Scored on role fit and seniority only; no warmth, mutuals or activity data gathered beyond
+  what the search row showed, so this number moves once the profile is read.
+outreach_pattern:
+degree: "3rd+"
+mutuals_count:
+active_last_30d: unknown
+open_to_work: false
+
+close_variant:
+relationship_type: target_customer
+outreach_status: pending
+message_stage:
+call_stage: none
+found_date: 2026-09-07
+invited_date:
+accepted_date:
+scheduled_date:
+interview_date:
+
+interviews: []
+
+evidence_score:
+outcome_modifier:
+prior_contact_status: unchecked
+notes: "NOT LIVE-VERIFIED. Screened from a LinkedIn people search only (name, role, company, location, degree). The live-profile gate in schemas/copy-rules.md sits before the INVITE, so this row stays `pending` and must NOT be invited until a dated profile read is written here. LR-B25 has not been run either. York, England. Found on a Hunter Douglas customer-service search."
+
+## Steve Hind
+
+id: C223
+name: Steve Hind
+linkedin_url: https://www.linkedin.com/in/steve-hind-206a3995/
+linkedin_account: Izgin
+company: Hunter Douglas UK
+role: Virtual Service Call Technician
+
+signal_type: profile_fit
+signal_multiplier: 1.0
+signal_source_url:
+signal_excerpt:
+
+contact_role: practitioner
+role_pts: 2
+
+tier: window_covering_manufacturer
+size_band: enterprise
+
+assumptions_tested: [H3A1]
+validation_rationale: >
+  A service technician who handles calls remotely, so he hears the problem described before anyone
+  visits. Junior and partial on title, recorded because the service seam is otherwise empty.
+
+response_likelihood: 5
+likelihood_factors: >
+  Screened against H3A1's declared ICP on 2026-09-07 from search results alone. Degree 3rd+.
+  Scored on role fit and seniority only; no warmth, mutuals or activity data gathered beyond
+  what the search row showed, so this number moves once the profile is read.
+outreach_pattern:
+degree: "3rd+"
+mutuals_count:
+active_last_30d: unknown
+open_to_work: false
+
+close_variant:
+relationship_type: target_customer
+outreach_status: pending
+message_stage:
+call_stage: none
+found_date: 2026-09-07
+invited_date:
+accepted_date:
+scheduled_date:
+interview_date:
+
+interviews: []
+
+evidence_score:
+outcome_modifier:
+prior_contact_status: unchecked
+notes: "NOT LIVE-VERIFIED. Screened from a LinkedIn people search only (name, role, company, location, degree). The live-profile gate in schemas/copy-rules.md sits before the INVITE, so this row stays `pending` and must NOT be invited until a dated profile read is written here. LR-B25 has not been run either. Matlock, England."
+
+## Ross Rhoades
+
+id: C224
+name: Ross Rhoades
+linkedin_url: https://www.linkedin.com/in/rossrhoades/
+linkedin_account: Izgin
+company: Draper, Inc.
+role: Customer Support and Regional Sales Manager
+
+signal_type: profile_fit
+signal_multiplier: 1.0
+signal_source_url:
+signal_excerpt:
+
+contact_role: buyer
+role_pts: 3
+
+tier: window_covering_manufacturer
+size_band: enterprise
+
+assumptions_tested: [H3A1]
+validation_rationale: >
+  Draper is a top-ten commercial shading manufacturer with nobody on it until now, and this role
+  pairs CUSTOMER SUPPORT with regional sales, so he sits on the complaint before it becomes a
+  warranty line. Sales Manager is in H3A1's icp_valid_titles.
+
+response_likelihood: 7
+likelihood_factors: >
+  Screened against H3A1's declared ICP on 2026-09-07 from search results alone. Degree 3rd+.
+  Scored on role fit and seniority only; no warmth, mutuals or activity data gathered beyond
+  what the search row showed, so this number moves once the profile is read.
+outreach_pattern:
+degree: "3rd+"
+mutuals_count:
+active_last_30d: unknown
+open_to_work: false
+
+close_variant:
+relationship_type: target_customer
+outreach_status: pending
+message_stage:
+call_stage: none
+found_date: 2026-09-07
+invited_date:
+accepted_date:
+scheduled_date:
+interview_date:
+
+interviews: []
+
+evidence_score:
+outcome_modifier:
+prior_contact_status: unchecked
+notes: "NOT LIVE-VERIFIED. Screened from a LinkedIn people search only (name, role, company, location, degree). The live-profile gate in schemas/copy-rules.md sits before the INVITE, so this row stays `pending` and must NOT be invited until a dated profile read is written here. LR-B25 has not been run either. Crossville, Tennessee. Headline names both role and company."
+
+## Jason Curtis
+
+id: C225
+name: Jason Curtis
+linkedin_url: https://www.linkedin.com/in/jason-curtis-960a2a419/
+linkedin_account: Izgin
+company: Draper, Inc. (UNCONFIRMED)
+role: Master Scheduler, Manufacturing Operations
+
+signal_type: profile_fit
+signal_multiplier: 1.0
+signal_source_url:
+signal_excerpt:
+
+contact_role: practitioner
+role_pts: 2
+
+tier: window_covering_manufacturer
+size_band: enterprise
+
+assumptions_tested: [H3A1]
+validation_rationale: >
+  A master scheduler is the person a remake actually disrupts: it is their schedule that absorbs
+  the rework. Shirley Indiana sits beside Draper's Spiceland plant, but the headline names no
+  company.
+
+response_likelihood: 6
+likelihood_factors: >
+  Screened against H3A1's declared ICP on 2026-09-07 from search results alone. Degree 3rd+.
+  Scored on role fit and seniority only; no warmth, mutuals or activity data gathered beyond
+  what the search row showed, so this number moves once the profile is read.
+outreach_pattern:
+degree: "3rd+"
+mutuals_count:
+active_last_30d: unknown
+open_to_work: false
+
+close_variant:
+relationship_type: target_customer
+outreach_status: pending
+message_stage:
+call_stage: none
+found_date: 2026-09-07
+invited_date:
+accepted_date:
+scheduled_date:
+interview_date:
+
+interviews: []
+
+evidence_score:
+outcome_modifier:
+prior_contact_status: unchecked
+notes: "NOT LIVE-VERIFIED. Screened from a LinkedIn people search only (name, role, company, location, degree). The live-profile gate in schemas/copy-rules.md sits before the INVITE, so this row stays `pending` and must NOT be invited until a dated profile read is written here. LR-B25 has not been run either. Shirley, Indiana. EMPLOYER NOT ESTABLISHED."
+
+## Steven Mondrush
+
+id: C226
+name: Steven Mondrush
+linkedin_url: https://www.linkedin.com/in/steven-mondrush-3a951a49/
+linkedin_account: Izgin
+company: Draper, Inc. (UNCONFIRMED)
+role: Manufacturing Line Builder and Engineer
+
+signal_type: profile_fit
+signal_multiplier: 1.0
+signal_source_url:
+signal_excerpt:
+
+contact_role: practitioner
+role_pts: 2
+
+tier: window_covering_manufacturer
+size_band: enterprise
+
+assumptions_tested: [H3A1]
+validation_rationale: >
+  Builds production lines. Relevant to the machine-orchestration thesis more than to H3A1's remake
+  rate. New Castle Indiana is Draper country; headline names no company.
+
+response_likelihood: 5
+likelihood_factors: >
+  Screened against H3A1's declared ICP on 2026-09-07 from search results alone. Degree 3rd+.
+  Scored on role fit and seniority only; no warmth, mutuals or activity data gathered beyond
+  what the search row showed, so this number moves once the profile is read.
+outreach_pattern:
+degree: "3rd+"
+mutuals_count:
+active_last_30d: unknown
+open_to_work: false
+
+close_variant:
+relationship_type: target_customer
+outreach_status: pending
+message_stage:
+call_stage: none
+found_date: 2026-09-07
+invited_date:
+accepted_date:
+scheduled_date:
+interview_date:
+
+interviews: []
+
+evidence_score:
+outcome_modifier:
+prior_contact_status: unchecked
+notes: "NOT LIVE-VERIFIED. Screened from a LinkedIn people search only (name, role, company, location, degree). The live-profile gate in schemas/copy-rules.md sits before the INVITE, so this row stays `pending` and must NOT be invited until a dated profile read is written here. LR-B25 has not been run either. New Castle, Indiana. EMPLOYER NOT ESTABLISHED."
+

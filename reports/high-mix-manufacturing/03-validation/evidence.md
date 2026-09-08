@@ -1,7 +1,7 @@
 ---
 purpose: The evidence ledger for this idea — every graded claim, linked to the assumption it moves and the direction it moves it.
 idea: high-mix-manufacturing
-last_updated: 2026-09-05
+last_updated: 2026-09-07
 ---
 
 # Evidence ledger — high-mix-manufacturing
@@ -1074,4 +1074,124 @@ entries:
       waiting on and roughly how long it sat. The answer separates reading A from reading B, and
       until it does this entry cannot move any node.
 
+
+  - id: E30
+    date: 2026-09-07
+    hunch: H3
+    assumption_linked: H3A5
+    verdict: contradicts
+    confidence: 4
+    source_type: founder_interview
+    source: >-
+      Richard Jones (C43), Installations Manager, Specialist Blinds (London/Essex, UK).
+      LinkedIn reply 2026-09-07 13:21, answering whether blinds ever arrive not fitting the
+      customer's measurements. Volunteered BEFORE the founder disclosed what she is building
+      at 13:23-13:24, so this half of the thread is uncontaminated.
+    claim: >-
+      "We don't rely on customers measurements, we Survey ourselves. Reason being customers
+      don't always know to look out for obstructions or understand how some blinds need to
+      operate or fit. Different blinds require more space for example. This catches customers
+      out." The question presupposed a customer-supplied number; he rejected the premise and
+      named what the survey is actually for.
+    why_it_matters: >-
+      The first source in this ledger that says what the home visit DOES, and it is not
+      measurement verification. Three things he names - obstructions, how a given blind has to
+      operate, and per-product clearance - are product knowledge applied to an opening, not
+      dimensions read off it. H3's mechanism clause says "nothing can verify a measurement
+      except a person standing at the window". A tool that returns a perfect, verified
+      dimension does not know a handle is in the way, that a vertical needs stack space, or
+      that this recess will not let the blind operate. On his account the visit survives that
+      tool intact, and the online-share cap survives with it. Directly against H3A5, which
+      asks whether measurement is the BINDING constraint on selling online.
+    limits: >-
+      n=1, one market (UK), one company that surveys as standing policy. He is describing why
+      his employer does not accept customer numbers, which is not the same as saying no seller
+      could. He was never asked to RANK measurement against fabric, colour and installation,
+      which is what H3A5's next_action actually requires, so this narrows the mechanism without
+      completing the ranking. He also has an interest here: surveying is his department.
+    next: >-
+      Ask him the same-or-different fork (LR-M5): whether the list of things that catch
+      customers out is the same list at every window or a different one every time. Same means
+      the survey encodes a rule set; different means it is irreducibly a person's judgement,
+      and the hunch has to say which it is betting against. Then ask the H3A5 ranking of two
+      more sellers who run both channels, without naming measurement first.
+
+  - id: E31
+    date: 2026-09-07
+    hunch: H3
+    assumption_linked: H3A1
+    verdict: contradicts
+    confidence: 2
+    source_type: founder_interview
+    source: >-
+      Richard Jones (C43), Installations Manager, Specialist Blinds. LinkedIn reply
+      2026-09-07 13:29, immediately after the founder disclosed at 13:24 that she is
+      "looking into the re-work rates right now and if it contributes to margin".
+    claim: >-
+      "We manufacture our own blinds and the process we use works very well, our remedial
+      rate is very very low." No figure, no period, no denominator. "Remedial" is his own
+      word for it.
+    why_it_matters: >-
+      The first practitioner answer on the remake rate and it is a denial. H3A1 has no
+      supporting entry either, so the rate this hunch was built to price against remains
+      unmeasured after the first person asked about it said there is not much of one. His
+      firm also manufactures and installs under one roof, which removes the handoff H3 is
+      about - that makes it a boundary case for the hunch rather than a counterexample to it,
+      and worth saying so explicitly.
+    limits: >-
+      Graded 2, not 4, for three reasons and any one of them would be enough. It is
+      unquantified - "very very low" is a posture, not a rate. It arrived AFTER the founder
+      named rework and margin as what she was looking for, so he knew which answer was
+      interesting before he gave it. And training is his job function (profile: "Recruitment,
+      Training, Managing/driving the business needs. Maintaining KPI's"), so a low remedial
+      rate is his own performance number. Do not let this entry stand as the category's rate;
+      it is one vertically integrated UK firm's self-report under a revealed hypothesis.
+    next: >-
+      Do not re-ask the rate on this thread - he has committed to a position and will defend
+      it. If a number is ever wanted from him it comes as variance around his own claim
+      (LR-M6), on a call, framed as what the low ones have in common. The rate has to come
+      from sellers who do NOT own their factory.
+
+  - id: E32
+    date: 2026-09-07
+    hunch: belief
+    assumption_linked: H3A5
+    verdict: contradicts
+    confidence: 3
+    source_type: founder_interview
+    source: >-
+      Richard Jones (C43), Installations Manager, Specialist Blinds. LinkedIn reply
+      2026-09-07 13:29, same message as E31.
+    claim: >-
+      Asked nothing about solutions, he named one and dosed it: "heavily investing in
+      training our field team + the factory technicians makes a huge difference... other
+      companies within the uk give 1 months training, we allow a minimum of 6 months. It
+      costs more in the short term but pays off in the long term." Plus a second mechanism:
+      "we also expose them to working in the factory so they understand the bigger picture."
+    why_it_matters: >-
+      This is the counter-query answer - who tried and SUCCEEDED - arriving unprompted, and
+      it is the most consequential thing in the thread. The belief says machines do not
+      register manufacturing intent and that interoperability is the fix. He says the intent
+      gap is real and that his firm closed it by putting the field team physically inside the
+      factory until they carry the intent in their heads. That is the same problem solved by
+      people rather than by a digital thread, at a stated price of five extra months of
+      salary per technician - which is the first cost number anyone has put on the incumbent
+      alternative. It also tells us what the software would have to beat: not nothing, and
+      not a spreadsheet, but a six-month apprenticeship that his employer believes pays for
+      itself.
+    limits: >-
+      Same contamination as E31 - it follows the reveal, and it is a training manager
+      describing the value of training. "Huge difference" is uncounted. He gives no evidence
+      that the 1-month firms actually have worse outcomes, only that they train less. And a
+      six-month ramp is itself an argument the other way: it is a large, recurring, per-head
+      cost that only works if you retain people, which is why it may be exactly the thing a
+      shop with turnover cannot copy. Graded 3 rather than 2 because the dosage is specific
+      and checkable against the UK trade, unlike the rate claim.
+    next: >-
+      Drill the cause, do not accept it (LR-M4). Ask what specifically a technician can do at
+      month six that they could not at month one - the answer is a list of failure modes, and
+      that list is either the same at every window (a rule set, therefore encodable) or
+      different every time (judgement, therefore not). Separately, check the six-month figure
+      against UK window-covering trade training norms before treating it as the industry
+      baseline.
 ```

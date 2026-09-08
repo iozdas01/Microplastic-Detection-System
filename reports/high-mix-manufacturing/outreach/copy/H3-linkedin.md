@@ -422,3 +422,144 @@ I am working on the MCP layer for machines in manufacturing, following my intero
 **Planned arc.** Msg 2 asks her to rank why window converts differently from the boxed categories she runs beside it. Ask for the rank order before naming measurement. If fabric or colour leads, that counts fully against H3A5 and she is the cleanest source that could say so.
 
 ---
+
+---
+
+## C43 — Richard Jones · Msg 2 [H3A2, opening toward H3A1/H3A4]
+
+Drafted 2026-09-05. He replied to Msg 1 the same weekend: *"Hi Izzie I'm great thank you, how
+are you? Yes no problem, what is you you need to know?"* — warm, offered, and **short**.
+
+**UNSENT — the founder sends by hand.**
+
+> I'm good thanks Richard, appreciate you saying yes.
+>
+> One thing really: when a blind turns up on site and doesn't fit, can you talk me through the
+> last time that happened? What was out, and who picked up the cost in the end — you, the
+> surveyor, or the factory?
+
+### Why this shape
+
+| Rule | How it applies |
+|---|---|
+| Match reply length (founder rule, 2026-08-10) | He wrote two short lines, so this asks ONE question. A list to a short correspondent gets one answer or none. |
+| Mom Test / H3 discovery pitch | "The last time that happened", not "does it happen". A topic question returns a process description, which is fiction; a specific event returns a story, which is data. |
+| **LR-M7 — pain-first** | "Who picked up the cost in the end" is the required cost/absorption clause. Without it this is workflow-mapping: it would tell us how the work happens and nothing about whether it hurts. |
+| LR-M3 — graveyard substitution | No hypothetical, no "would you use", no verdict sought. |
+| LR-M8 — match the close | He OFFERED ("yes no problem"), so the close asks no permission and sets no deadline. |
+| Competence gate (founder rule, 2026-08-09) | He is the person who discovers the misfit standing at the window. In competence: what was wrong, who ate it, what happened next. OUT of competence and deliberately not asked: the manufacturer's tracked remake rate, and anything about company margin. |
+
+### What it is actually aimed at
+
+**H3A2** — whether the error originates at measurement capture or in the office afterwards.
+That split is the thing the public recon could not get at, and an installer is the only role
+that sees which end it came from. The three named options (you / the surveyor / the factory)
+make it a choice rather than an essay, and none of them is signalled as the expected answer.
+
+### Held back on purpose
+
+- **The rate.** H3A1's number — "out of the last hundred, roughly how many" — goes LAST and as
+  a range, per the H3 discovery pitch. Asked now, in the same breath as the story, it returns a
+  rounded company figure instead of what he personally saw.
+- **The visit cost.** His card is scoped to H3A4 and he carries that cost personally as a
+  self-employed installer as well as for Specialist Blinds. That is the round after the story.
+
+### Msg 2 and Msg 3 — SENT 2026-09-07 by the founder, NOT the drafted text
+
+Read from the live thread 2026-09-07. Recorded here because the drafted Msg 2 above was not
+what went out, and because what did go out changes how everything after it is graded.
+
+**Msg 2, 13:16 (as sent):**
+
+```
+I'm good thank you Richard, I appreciate you saying yes!
+One thing really: do you ever get blinds and they don't fit the customers measurements?
+```
+
+Against the draft, three things came out: the "last time that happened" anchor, the LR-M7
+cost clause ("who picked up the cost in the end"), and the open shape. What replaced them was
+a yes/no question carrying a presupposition, that the customer supplies the measurement. He
+rejected the presupposition, which is the one good thing the rewrite produced.
+
+**Msg 3, 13:23 and 13:24 (as sent, two messages):**
+
+```
+Yes - I have been talking to a lot of installation specialists and they have to charge 225 usd for a consult or they give up the sale if the person is too far out of radius to service
+
+But they also mentioned, even though they go out and take measurements sometimes the blinds are not coming out correctly from the factory
+```
+
+```
+I am working on interoperability for manufacturing, I have spent 15 years in manufacturing lines since I was 13 years old as a technician, and am very frustrated by the problem that the machines don't register the manufacturing intent and for made-to-order furniture manufacturing am looking into the re-work rates right now and if it contributes to margin
+```
+
+**What this cost.** E8's $225 and the refused-distant-jobs finding were handed to him before
+he had given his own, so his H3A4 answer can never be independent now. The second clause told
+him what other installers had said about factory error, which is the answer being sought. The
+13:24 message is a full thesis disclosure with the target metric named out loud, which is the
+advisor-conversion trigger the LR-M rules exist to prevent. And "very frustrated by" tells him
+the founder has a stake in which way the answer goes.
+
+His 13:29 reply is the predicted shape: a defence of his own operation ("our remedial rate is
+very very low", no number) and a solution offered back ("training"). He stopped reporting and
+started advising, inside one message.
+
+**The line to hold.** Everything on this thread before 13:23 is clean evidence (E30).
+Everything after it is graded down (E31 at 2, E32 at 3). That line is in the ledger and it
+should stay visible, because E32 is a genuinely important finding and it would be easy to
+either over-trust it or throw it away.
+
+---
+
+## C43 — Richard Jones · Msg 4 [drilling E32, aimed at H3A5 / proposed H4]
+
+Drafted 2026-09-07. Arc stage: back to mechanism, not magnitude. He has closed the rework
+topic with a defended position, so the magnitude question is unavailable on this thread and
+asking it again would only harden him.
+
+**UNSENT — the founder sends by hand.**
+
+> Richard, that's the bit I didn't have: obstructions, and how much room a blind needs to actually operate, rather than the number itself.
+>
+> The six months versus one is what I'm curious about now. Thinking of the last installer you signed off as ready, what could they see at a window at month six that they would have walked straight past at month one?
+
+351 chars.
+
+### Why this shape
+
+| Rule | How it applies |
+|---|---|
+| **LR-M4 — drill the volunteered cause** | "Training" is the compressed cause. This goes one level below it and asks what the training actually installs. The answer is a list of failure modes, which is the part with the money in it. |
+| **LR-M6 — their number as the yardstick** | He volunteered six-versus-one. The question is asked around HIS figure, so it is recall rather than a fresh estimate produced to be helpful. |
+| **LR-M7 — pain-first** | Carried by the "already tried" limb: training is the incumbent fix, and this asks what it buys. Not a workflow map. |
+| **LR-M2 — thank the fact, not the analysis** | The opener names the obstruction and clearance detail, which is a fact he reported. It does NOT praise the training argument, which is his framing. Praising the framing is what would seat him permanently as an adviser. |
+| **LR-M8 — match the close** | He has answered three times unhedged and offered at the start. No permission ask, no deadline, no call ask. |
+| Competence gate (2026-08-09) | His profile leads with "Recruitment, Training, Managing/driving the business needs". What a technician can do at month six is the centre of his competence, not the edge of it. |
+| Match reply length (2026-08-10) | ONE question. He has just been sent a wall of text; a second list would get one answer or none. |
+
+### What it is aimed at
+
+**H3A5** and the proposed **H4**. If the month-six list is obstruction, clearance and product
+operation, that is E30 confirmed by a second route and H3's measurement mechanism is in
+serious trouble. If the list is "he measures faster and makes fewer arithmetic slips", H3
+survives and H4 should be rejected.
+
+### Held back on purpose
+
+- **The same-or-different fork (LR-M5).** It is the productisability test and it is the next
+  question, but it needs his list to exist first. Msg 5.
+- **The remedial rate.** Do not re-ask it on this thread in any form. If a number is ever
+  wanted from him it comes on a call, as variance around his own claim.
+- **Any correction of the $225 or the factory-error assertion.** Both are out there now.
+  Re-raising them re-opens the leading frame.
+
+---
+
+
+### Standing warning on this thread
+
+Msg 1 went out carrying the **superseded** Cambridge anchor — it described the MPhil as research
+into measurement mismatches in factory orders. The real work was the CAD-CAM interoperability
+gap. It cannot be recalled. **Do not repeat or build on that framing**; if he asks what the
+Cambridge work was, answer with the interoperability version, which is what the profile
+supports.

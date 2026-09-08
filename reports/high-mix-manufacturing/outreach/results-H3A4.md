@@ -4,11 +4,11 @@
 -->
 # Outreach results — H3A4 · high-mix-manufacturing
 
-_Generated 2026-09-06. Numbers are the funnel over contacts tagged H3A4._
+_Generated 2026-09-08. Numbers are the funnel over contacts tagged H3A4._
 
 | channel | targeted | contacted | replied | qualified replied | reply rate |
 |---|---|---|---|---|---|
-| LinkedIn | 6 | 6 | 2 | 2 | 33.3% |
+| LinkedIn | 6 | 6 | 3 | 3 | 50.0% |
 | phone | 0 | 0 | 0 | 0 | — |
 
 _Channels are counted separately._
@@ -19,7 +19,7 @@ _Channels are counted separately._
 |---|---|---|---|
 | C115 | Dan Williams | replied | asked_by_founder |
 | C42 | Andrii Bondar | replied | asked_by_founder |
+| C43 | Richard Jones | replied | none |
 | C113 | William DeSemple | msg1_sent | none |
 | C120 | Ben Simpson | msg1_sent | none |
-| C43 | Richard Jones | msg1_sent | none |
 | C52 | Chris Chase | msg1_sent | none |

@@ -4,7 +4,7 @@
 -->
 # Outreach results — H3A5 · high-mix-manufacturing
 
-_Generated 2026-09-06. Numbers are the funnel over contacts tagged H3A5._
+_Generated 2026-09-08. Numbers are the funnel over contacts tagged H3A5._
 
 | channel | targeted | contacted | replied | qualified replied | reply rate |
 |---|---|---|---|---|---|

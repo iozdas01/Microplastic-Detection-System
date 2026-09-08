@@ -4,11 +4,11 @@
 -->
 # Outreach results — H0A1 · high-mix-manufacturing
 
-_Generated 2026-09-06. Numbers are the funnel over contacts tagged H0A1._
+_Generated 2026-09-08. Numbers are the funnel over contacts tagged H0A1._
 
 | channel | targeted | contacted | replied | qualified replied | reply rate |
 |---|---|---|---|---|---|
-| LinkedIn | 67 | 7 | 2 | 2 | 28.6% |
+| LinkedIn | 68 | 7 | 2 | 2 | 28.6% |
 | phone | 0 | 0 | 0 | 0 | — |
 
 _Channels are counted separately._
@@ -72,6 +72,7 @@ _Channels are counted separately._
 | C176 | William Ellison | invited | none |
 | C177 | Fatih Bıyıklı | invited | none |
 | C178 | Mike Zhang | invited | none |
+| C199 | Andy Weismantel | invited | none |
 | C6 | Akshaya Satish | replied | none |
 | C13 | ADESH KUMAR | held | none |
 | C12 | Blossom Tariro Kafumbata | off_scope | none |
