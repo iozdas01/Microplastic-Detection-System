@@ -1,0 +1,26 @@
+# What each page in this folder is, and whether it still holds.
+#
+# The control room's Pages tab is generated from this file. Titles are NOT listed here —
+# they are read from each page's own <title>, so they cannot drift. This file authors only
+# the two things a page does not state about itself: what it is for in one line, and whether
+# it has been superseded by a later one.
+#
+# Adding a page: drop the .html in this folder and add a row. A page with no row still
+# renders, flagged as unlisted — visible rather than silently missing.
+#
+# status: current | superseded | generated
+#   current    — hand-authored, still the live version
+#   superseded — kept for reference, a later page replaced it. Say which in `note`.
+#   generated  — rebuilt by a script under scripts/; never hand-edit it
+
+version: 1
+
+pages:
+  - file: startup-map.html
+    status: current
+    group: reference
+    note: >-
+      Manufacturing startup scene, arranged by how much of the outcome each company takes
+      liability for. Carried over as a static reference snapshot from the previous idea
+      (2026-09-09); its source ledger and generator are not in this repo, so it does not
+      rebuild. Read it as a map of who sells into custom manufacturing, not as evidence here.

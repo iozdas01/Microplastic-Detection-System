@@ -76,7 +76,7 @@ Write everything you find (even partial hits) so ranking decisions remain explai
 
 ### Step 0 — Optional lookup in `companies.md` (targeting fields)
 
-If `reports/{slug}/outreach/companies.md` exists, locate the block for the
+If `reports/outreach/companies.md` exists, locate the block for the
 contact's employer. Match by:
 
 1. Exact company name (case-insensitive, legal-suffix stripped: "Ltd", "A/S", "Inc", "PLC", "GmbH")

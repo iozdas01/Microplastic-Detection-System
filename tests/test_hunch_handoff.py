@@ -48,13 +48,12 @@ class FounderHunchHandoffTests(unittest.TestCase):
         """
         skill = read_skill("startup-belief-intake")
 
-        self.assertIn("input-context/{slug}/belief.md", skill)
-        self.assertIn("reports/{slug}/01-ideation/hunch-lineage.md", skill)
+        self.assertIn("input-context/belief.md", skill)
+        self.assertIn("reports/01-ideation/hunch-lineage.md", skill)
         self.assertIn("active_hunch: none", skill)
 
-        # Initialization steps that were silently missing and left every new idea's
-        # brief reading `lifecycle: unknown`.
-        self.assertIn("reports/lifecycle.yaml", skill)
+        # Initialization steps that were silently missing and left a new idea's brief
+        # stale against its sources.
         self.assertIn("scripts/build_brief.py", skill)
 
         # The drill-down and the research grounding are what replaced the funnel.

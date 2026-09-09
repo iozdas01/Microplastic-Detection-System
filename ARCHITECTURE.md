@@ -70,14 +70,14 @@ current hunch, propose a child with a different mechanism, propose a sibling for
 segment, or retire it. Every replacement needs founder confirmation. Format: `schemas/hunch.md`.
 
 ### 2. Assumption graph
-One per idea, structured as a DAG rather than a flat list: some assumptions gate others, and
+One graph, structured as a DAG rather than a flat list: some assumptions gate others, and
 if a parent fails its children dissolve instead of needing their own test. Always test root
 nodes first — do not validate autonomy assumptions before confirming a pain exists.
 
 Every node carries the cheapest test that would settle it, an explicit disconfirmation, and a
 stop rule, so "inconclusive" is a decidable state rather than drift.
 
-Three assumptions are mandatory for any idea: **why now** (what changed in the last 12–36
+Three assumptions are mandatory: **why now** (what changed in the last 12–36
 months — timing failures are the most common death for companies with correct market theses),
 **is the pain real and expensive**, and **does this team have a path to this market**.
 
@@ -159,64 +159,42 @@ Fields: `schemas/thesis.md`.
 > **Cold by default.** Skip at session start; read before creating a file type you have not
 > created before, or when deciding where a new artifact lives.
 
-Three tiers: **root config + docs** (no global "current state" file), **reusable libraries**
-(content that lives across ideas), and **per-idea outputs under `reports/{slug}/`**.
+Three tiers: **root config + docs** (no hand-written "current state" file), **reusable
+libraries** (the framework — it must survive the next pivot untouched), and **the idea's
+outputs under `reports/`**. One company, one idea, so there is no idea folder: `reports/`
+IS the idea. The repo was multi-idea until 2026-09-09, one folder per idea; that layer was
+removed because with one idea it only added a path segment to every command and a place for
+a second idea's state to leak in.
 
 ```
   ARCHITECTURE.md  CLAUDE.md  README.md  api-registry.yaml  founder.md
 
   /schemas/               one file per artifact type + vocabularies.yaml + copy-rules.md
-  /input-context/{slug}/  belief.md (the pipeline seed) + dated raw snapshots
+  /input-context/         belief.md (the pipeline seed) + dated raw snapshots
   /methods/               index.md (generated), shotgun-routing.yaml, and the card folders:
                           ideation/ (the pool) · validation/ · mutation/ · intake/ ·
                           practices/ · unused/
-  /founders/              durable per-founder record; founder.md indexes both
+  /founders/              durable per-founder record; founder.md indexes them
   /private/               GITIGNORED first-party dumps holding other people's data —
                           linkedin-export/ is read by scripts/data/linkedin_export.py.
                           Never commit, never quote a connection or message into an artifact
-  /signals/gaps-log.md    cross-idea pre-idea observations; feeds the loop, not produced by it
-  /memory/MEMORY.md       shared founder preferences + cross-idea process decisions only
+  /signals/               gaps-log.md and idea-parking.md — pre-idea observations and parked
+                          ideas; they feed the loop and are not produced by it
+  /memory/MEMORY.md       shared founder preferences + process decisions only
   /scripts/               idea.py (the one loader) · build_brief.py · build_control_room.py
                           · build_methods_index.py · validate_repo.py · validate_skill_catalog.py
                           · audit_target_list.py · data/ (one module per source) · hooks/
-  /content/x/             cross-idea publishing queue + voice profile (never per-idea state)
+  /content/x/             publishing queue + voice profile (never idea findings)
+  /cad/                   parametric hardware models for the idea's own apparatus
   /tests/  /infra/        unit tests; optional self-hosted services
   /.claude/skills/        canonical skill definitions   /.agents/skills/  Codex bridges
 ```
 
-### Market-evidence collectors — `scripts/research/`
-
-A second data-access tree beside `scripts/data/`, and a different job: `scripts/data/` is the
-framework's shared query library (Reddit, HN, news, LinkedIn export), while
-`scripts/research/` holds the collectors and models that measure a market from public
-statistics — Census, BLS, Google Trends, UN Comtrade — plus the generators that render them
-as HTML.
-
-**The code sits at root; everything it produces is per-idea and lives in
-`reports/{slug}/research/`.** That split is the whole reason this tree exists separately:
-the collectors outlive any single idea (the Census and BLS plumbing is generic, even where
-the series IDs are not), but a measurement of one market is a fact about one idea and belongs
-with that idea's other artifacts, under the same `reports/{slug}/` rule as everything else.
-
-It was briefly kept as a self-contained `research/` tree with its own `scripts/`, `data/` and
-`reports/` inside it. That gave the repo two directories named `reports` meaning different
-things, and the justification for it — "a measurement pipeline is not a per-idea artifact" —
-did not survive contact with the contents: `build_cabinet_tam.py` is not a general tool, and
-its outputs are exactly the kind of per-idea state the core rule exists to place. One
-`scripts/`, one `reports/`, one `data/`.
-
-Paths are anchored once, in `scripts/research/common.py` (`ROOT`, `RESEARCH`, `RAW`, `PROC`,
-`MANIFEST`); no collector or generator computes its own.
-
-**What crosses into the pipeline is graded ledger entries citing these files — never a number
-quoted straight out of one.** A figure this tree measured enters `evidence.md` as
-`our_observation`, which caps it at confidence 2 no matter how precise it looks.
-
-Per idea, under `reports/{slug}/`:
+Under `reports/`:
 
 ```
   BRIEF.md              GENERATED session entry point — read first, never edit
-  control-room.html        GENERATED
+  control-room.html     GENERATED
   /01-ideation/         hunch-lineage.md (LIVING) · {date}-shotgun.md · methods/{run-id}/ ·
                         recon/{run-id}/
   /02-assumptions/      graph.md (LIVING) · {date}-extraction.md
@@ -224,27 +202,29 @@ Per idea, under `reports/{slug}/`:
   /04-mutation/         offerings.md (LIVING) · thesis-v{N}.md · {date}-mutation.md
   /outreach/            contacts.md, companies.md, research-map.md (LIVING) ·
                         results-{A_ID}.md (GENERATED) · copy/ · email/{campaign}/
-  /pages/               every other openable report for this idea + pages.yaml
-  /research/            what the collectors measured: REPORT.md, data/, archive/
+  /pages/               every other openable report + pages.yaml
 ```
+
+**Desk measurements enter as graded ledger entries citing their source files — never as a
+number quoted straight out of a script.** A figure the founder measured enters `evidence.md`
+as `our_observation`, which caps it at confidence 2 no matter how precise it looks.
 
 `pages/` exists because an idea accumulates readable deliverables — plans, evidence pages,
 a call-notes template — and eight HTML files in a folder do not say which of them still
 holds. **`control-room.html` stays the one page you open**; its Pages tab is generated from
 `pages/pages.yaml` and links the rest, tagged `current`, `generated` or `superseded`. That
-keeps the one-dashboard-per-idea rule while letting superseded work stay reachable: a plan
+keeps the one-dashboard rule while letting superseded work stay reachable: a plan
 that was replaced still records what was believed and why it changed.
 
 Titles on that tab are read from each page's own `<title>` rather than listed in the
 manifest, so the two cannot drift. `pages.yaml` authors only what a page does not state
 about itself — its one-line purpose and whether it has been superseded.
 
-`reports/lifecycle.yaml` is the one authored slug → `active`/`dormant`/`superseded-by` index.
-It deliberately records no findings and no hunch ID: the hunch has exactly one author
-(`hunch-lineage.md` frontmatter), which makes a lifecycle-vs-lineage contradiction
-unrepresentable rather than merely fixed.
+The hunch has exactly one author: `hunch-lineage.md` frontmatter. No index, README or
+brief restates which hunch is active; the brief reads it from there, which makes a
+summary-vs-lineage contradiction unrepresentable rather than merely fixed.
 
-**The core rule:** every per-idea output goes into `reports/{slug}/`. Reusable libraries live
+**The core rule:** every output about the idea goes into `reports/`. Reusable libraries live
 at root. `outreach/` sits outside the numbered stages because it is a relationship layer
 spanning validation cycles — a contact found testing A1 may surface A5 later.
 
@@ -266,9 +246,10 @@ Nothing is registered in the generator — a new artifact appears the moment it 
 
 ### Naming discipline
 
-- The idea slug is one lowercase-hyphenated string, identical in `input-context/` and `reports/`.
+- The idea's display name is declared once, as `idea:` in `input-context/belief.md`; every
+  generated page titles from it, and the repo folder name is the fallback before a belief exists.
 - Dated files use ISO `YYYY-MM-DD`.
-- Files in `input-context/{slug}/` get descriptive names — subagents identify raw material by filename alone.
+- Files in `input-context/` get descriptive names — subagents identify raw material by filename alone.
 - Every living artifact opens with `purpose:`.
 
 ### Artifact schemas
@@ -310,9 +291,7 @@ Each looks like a removal candidate until you know why it is there.
   only is the expected state, not a failure. Do not delete it without replacing the Reddit half.
   Operating instructions: `infra/firecrawl/README.md`.
 - **The `gap:` protocol's one-line reply** — the method depends on capture being frictionless.
-- **Worktree sparse-checkout** — enforces no-cross-idea-bleed at the filesystem layer rather
-  than by instruction.
-- **The living-vs-dated split** and the `reports/{slug}/` rule.
+- **The living-vs-dated split** and the `reports/` rule.
 - **`tier_side` as the only market vocabulary anything routes on.** Tier *names* are declared
   per idea in each assumption's `icp_valid_tiers`; the four sides (demand, supply, competitor,
   expert) are the only part global code may branch on. The predecessor repo instead declared a
@@ -383,8 +362,7 @@ outreach-targets → outreach-draft → outreach-check → outreach-reply
 - `startup-belief-intake` runs before anything else. It drills down on one founder-held
   belief — what it claims, where it stops, what falsifies it — grounds it in real examples
   through definitional research, and runs SISP Detection. It writes
-  `input-context/{slug}/belief.md`, an EMPTY `hunch-lineage.md`, the `lifecycle.yaml` entry
-  and the first brief. **It never writes a hunch.** Intake methods are never
+  `input-context/belief.md`, an EMPTY `hunch-lineage.md` and the first brief. **It never writes a hunch.** Intake methods are never
   shotgun-dispatched.
 - `startup-ideate-shotgun` runs in explore mode on a belief with no hunch, or reads the exact
   belief/H1 pair plus any explicit evidence delta in the two test modes.
@@ -415,10 +393,10 @@ outreach-targets → outreach-draft → outreach-check → outreach-reply
   drafts one post at a time → applies the disclosure ladder → queues to `content/x/queue.md`
   with a grounding table. It never posts. Voice comes from `content/x/voice.md`.
 
-`content/x/` is the only output tree outside `reports/{slug}/`, and deliberately so: a
-publishing queue is cross-idea by nature, and splitting it across idea folders would make
-"what have I not posted yet" unanswerable. It holds no findings — every entry carries a
-`source:` pointer back into `reports/{slug}/` instead of restating what it found.
+`content/x/` is the only output tree outside `reports/`, and deliberately so: a publishing
+queue outlives any one hunch, and "what have I not posted yet" must stay answerable across a
+pivot. It holds no findings — every entry carries a `source:` pointer back into `reports/`
+instead of restating what it found.
 
 ### Data-access layer (not skills — importable + CLI-callable)
 
@@ -439,12 +417,11 @@ nine files.
 
 | Generated | Built by | From |
 |---|---|---|
-| `reports/{slug}/BRIEF.md` | `build_brief.py` | every living artifact + `lifecycle.yaml` |
-| `reports/{slug}/control-room.html` | `build_control_room.py` | the same, plus copy archives |
-| `reports/{slug}/outreach/results-{A_ID}.md` | `build_control_room.py` | `contacts.md` |
+| `reports/BRIEF.md` | `build_brief.py` | every living artifact |
+| `reports/control-room.html` | `build_control_room.py` | the same, plus copy archives |
+| `reports/outreach/results-{A_ID}.md` | `build_control_room.py` | `contacts.md` |
 | `methods/index.md` | `build_methods_index.py` | card frontmatter × `shotgun-routing.yaml` |
 
-`--all` on the brief and dashboard generators is lifecycle-gated to `active` ideas; pass a
-slug explicitly to rebuild a dormant one.
+Both idea generators take no arguments — there is one idea to build.
 
 Skills get written when the workflow makes them obvious. Not before.

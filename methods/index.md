@@ -86,7 +86,7 @@ Methods the founder executes **in the world**, not at a desk: real traffic, a re
 | Method | Category | Why it is not a shotgun lens | File |
 |---|---|---|---|
 | Background Noticing Process | signal-detection | needs the world: continuous capture, monthly review → `signals/gaps-log.md` | [background-noticing-process.md](practices/background-noticing-process.md) |
-| Daily Truth Log | founder-process | needs the founder at the end of a real working day; nothing to run in a shotgun → `reports/{slug}/progress-log.md` | [daily-truth-log.md](practices/daily-truth-log.md) |
+| Daily Truth Log | founder-process | needs the founder at the end of a real working day; nothing to run in a shotgun → `reports/progress-log.md` | [daily-truth-log.md](practices/daily-truth-log.md) |
 | Letter of Intent B2B Validation | customer-validation | needs the world: 10–15 prior interviews, then 3–5 signatures | [letter-of-intent-b2b.md](practices/letter-of-intent-b2b.md) |
 | Mom Test Interview Script | customer-validation | needs the world: a real buyer on a real call | [mom-test-interview-script.md](practices/mom-test-interview-script.md) |
 | Paper-Mining Emails | customer-validation | — | [paper-mining-emails.md](practices/paper-mining-emails.md) |

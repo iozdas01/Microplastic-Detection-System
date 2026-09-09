@@ -7,7 +7,7 @@ and of what Claude may click.** A skill body that contradicts a rule here is wro
 Rule IDs (`LR-B*` draft, `LR-M*` reply) are cited across `contacts.md` notes and the
 per-idea copy archives, so they never get renumbered. The dated evidence behind each rule —
 which contact, which founder edit, which reply — lives in the per-idea journal at
-`reports/{slug}/outreach/copy-rules-log.md`; this file carries only the rule that survived.
+`reports/outreach/copy-rules-log.md`; this file carries only the rule that survived.
 
 ---
 
@@ -171,7 +171,7 @@ permission ask, stop:
 > Would you be open to some questions by any chance for our research?
 
 **Sent specimens live with the idea that produced them**, in
-`reports/{slug}/outreach/copy/{A_ID}-linkedin.md`, never here: a specimen is evidence about one
+`reports/outreach/copy/{A_ID}-linkedin.md`, never here: a specimen is evidence about one
 market and one contact, and a rule page that accumulates them turns into that idea's archive.
 Read the shape here; read real sent copy there.
 
@@ -409,7 +409,7 @@ describing their own work, which is the best possible source for an LR-B1 clause
 cannot be wrong.
 
 **LR-B7 — ICP fit before generating any clause.** Read `icp_segment`, `icp_valid_tiers`,
-`icp_valid_titles` and `icp_out_of_scope` from `reports/{slug}/02-assumptions/graph.md`
+`icp_valid_titles` and `icp_out_of_scope` from `reports/02-assumptions/graph.md`
 (the single ICP author) and apply them to the live profile. Never carry a fixed industry
 token list from another idea. Fails the ICP or hits an out-of-scope rule → SKIP, and set
 `outreach_status: off_scope` with the specific failing evidence in notes.

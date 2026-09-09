@@ -1,8 +1,8 @@
 # Shared memory — versioned in git
 
-One terse line per durable preference or cross-idea process decision. Delete
-stale lines on sight — git history preserves them. Never per-idea findings;
-those live in `reports/{slug}/`.
+One terse line per durable founder preference or process decision. Delete
+stale lines on sight — git history preserves them. Never findings about the
+idea; those live in `reports/`.
 
 - Memory entries stay one-line terse; prune aggressively — context bloat is worse than lost nuance (2026-08-06).
 - Workflow is quick-iteration, many-pivots: external strategy docs are decomposed into pipeline artifacts on arrival, never kept as living monolith context; don't demand a full pipeline pass per pivot (2026-08-06).
@@ -23,4 +23,3 @@ those live in `reports/{slug}/`.
 - Claude may SEND a LinkedIn message only when the founder approved its exact logged text in chat, per-message, verbatim, with thread-name verification; approvals lapse on edit (copy-rules amendment, founder decision 2026-08-25).
 - Re-contact decays with time, bought back only by position: silence under 3 months is a decision and seniority does not override it; a contact who REPLIED is a continuation, not a re-contact (LR-B30, founder rule, 2026-09-02).
 - A contact list can pass every ICP check and still sample only the bottom of its market: band contacts by company size against that idea's own measured ladder BEFORE sending, and keep the band on the contact so per-band reply rates are comparable (2026-09-03).
-- The founder's 1st-degree LinkedIn network holds no manufacturing: of 1739 connections, 16 mention "machin", 1 "cnc", 0 "precision" or "fabricat" — it is consultants, EF founders and ML engineers. Export passes (0/1) return nothing for any shop-floor ICP, so go straight to the browser passes and do not re-litigate it (measured 2026-09-05).

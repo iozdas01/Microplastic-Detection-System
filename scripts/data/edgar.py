@@ -28,8 +28,7 @@ from scripts.data._common import (
 
 
 def query_edgar_fulltext(keywords: list[str],
-                         form_types: tuple[str, ...] = ("10-K", "10-Q", "8-K"),
-                         slug: str | None = None) -> list[dict]:
+                         form_types: tuple[str, ...] = ("10-K", "10-Q", "8-K")) -> list[dict]:
     if not is_enabled("edgar_fulltext") or not keywords:
         return []
 
@@ -64,7 +63,7 @@ def query_edgar_fulltext(keywords: list[str],
                 "source_url": f"https://www.sec.gov/Archives/edgar/data/{cik}/{accession}",
             })
         time.sleep(0.3)
-    log_manifest(slug, {"phase": "api_call", "api": "edgar_fulltext",
+    log_manifest({"phase": "api_call", "api": "edgar_fulltext",
                         "keywords": keywords, "result_count": len(filings)})
     return filings
 
@@ -75,12 +74,10 @@ def main() -> None:
                     help="Comma-separated exact-phrase keywords")
     ap.add_argument("--forms", default="10-K,10-Q,8-K",
                     help="Comma-separated SEC form types to search")
-    ap.add_argument("--slug", default="")
     args = ap.parse_args()
     keywords = [k.strip() for k in args.keywords.split(",") if k.strip()]
     forms = tuple(f.strip() for f in args.forms.split(",") if f.strip())
-    emit_json(query_edgar_fulltext(keywords, form_types=forms,
-                                   slug=args.slug or None))
+    emit_json(query_edgar_fulltext(keywords, form_types=forms))
 
 
 if __name__ == "__main__":

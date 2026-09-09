@@ -1,6 +1,6 @@
 # Schema: Interview Synthesis
 
-One file per assumption validation cycle: `reports/{slug}/03-validation/{A_ID}-{date}/interviews/synthesis.md`
+One file per assumption validation cycle: `reports/03-validation/{A_ID}-{date}/interviews/synthesis.md`
 
 Written by `startup:interview-synthesis` — either fired by the cron monitor when
 cumulative score ≥ 10 or manually invoked. This is a LIVING file — the skill overwrites
@@ -111,7 +111,7 @@ Next assumption to test: **A3a — Technical FMF** (child of A2, next in lexicog
 - **Recommended lineage action:** retain
 
 For `new_vertical`, `mutate_thesis`, or `kill`, set `Required: yes` and link the
-packet at `reports/{slug}/01-ideation/reentry/{A_ID}-{date}.md`. The lineage
+packet at `reports/01-ideation/reentry/{A_ID}-{date}.md`. The lineage
 action is respectively `sibling`, `child`, or `retire`.
 
 ## Prior versions

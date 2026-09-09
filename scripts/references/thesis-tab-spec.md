@@ -10,21 +10,15 @@ skill index that every session loads. A specification is not a skill, and it bel
 to the code it specifies.
 
 The page is a pure projection of the markdown sources, so anything wrong on it is wrong in
-a source file. Never hand-write `reports/{slug}/control-room.html`: doing so silently destroys
+a source file. Never hand-write `reports/control-room.html`: doing so silently destroys
 the Contacts, Pain Patterns, Offerings and Company Intel tabs, and the founder usually does
 not notice until the next outreach session.
 
 ---
 
-Reads the current report files for a startup idea and produces a polished, self-contained HTML dashboard at `reports/{slug}/control-room.html`.
+Reads the current report files for a startup idea and produces a polished, self-contained HTML dashboard at `reports/control-room.html`.
 
 This is a living artifact — it is always overwritten when called. Every time the ideation or assumptions work advances, the dashboard should reflect the current state.
-
----
-
-## Step 1 — Resolve the idea slug
-
-The slug comes from the skill arguments (e.g., `example-idea`). If not provided, ask the user. The slug must match the folder name under `reports/`.
 
 ---
 
@@ -33,15 +27,15 @@ The slug comes from the skill arguments (e.g., `example-idea`). If not provided,
 Check for these files and note which are present:
 
 ```
-reports/{slug}/01-ideation/           ← find the most recent *-shotgun.md here
-reports/{slug}/01-ideation/hunch-lineage.md
-input-context/{slug}/belief.md
-reports/{slug}/02-assumptions/graph.md
+reports/01-ideation/           ← find the most recent *-shotgun.md here
+reports/01-ideation/hunch-lineage.md
+input-context/belief.md
+reports/02-assumptions/graph.md
 ```
 
 To find the most recent shotgun file:
 ```bash
-ls -t reports/{slug}/01-ideation/*-shotgun.md 2>/dev/null | head -1
+ls -t reports/01-ideation/*-shotgun.md 2>/dev/null | head -1
 ```
 
 **What's available drives what the dashboard shows:**
@@ -56,7 +50,7 @@ ls -t reports/{slug}/01-ideation/*-shotgun.md 2>/dev/null | head -1
 
 Read every available file above in full. Do not summarise or compress — the dashboard builder needs the complete content.
 
-Also check for the per-method files under `reports/{slug}/01-ideation/methods/` — you don't need to read them all, but note how many exist (for the "Methods run: N" counter in the hero).
+Also check for the per-method files under `reports/01-ideation/methods/` — you don't need to read them all, but note how many exist (for the "Methods run: N" counter in the hero).
 
 ---
 
@@ -66,7 +60,7 @@ Construct a detailed dashboard-building prompt. It must include:
 
 1. **The raw content** from the shotgun report and graph.md, embedded verbatim
 2. **The design requirements** (see Design System section below)
-3. **The exact output path**: `reports/{slug}/control-room.html`
+3. **The exact output path**: `reports/control-room.html`
 4. **What to render** based on which files exist
 
 Embed the actual data in the prompt — do not pass only file paths, because a delegated builder may not have enough context to interpret the schemas correctly.
@@ -94,10 +88,10 @@ Wait for it to complete and verify that it wrote the file. If no `ui-builder` ag
 
 After the dashboard is written:
 ```bash
-open reports/{slug}/control-room.html
+open reports/control-room.html
 ```
 
-Confirm to the user: "Dashboard written to `reports/{slug}/control-room.html` and opened in your browser."
+Confirm to the user: "Dashboard written to `reports/control-room.html` and opened in your browser."
 
 ---
 
@@ -124,7 +118,7 @@ Fixed top nav, `backdrop-filter: blur(24px)`, links to each available section (B
 
 ### Hero section
 - Full-viewport height, blobs + dot grid in background, content at bottom
-- Title: idea slug formatted as readable title, font-size `clamp(3rem,9vw,8rem)`, weight 800
+- Title: the idea name (`idea:` in `input-context/belief.md`), font-size `clamp(3rem,9vw,8rem)`, weight 800
 - IQS score ring: SVG arc drawn via `stroke-dasharray/dashoffset` CSS transition on load — draw to `(score/10) * 283` pixels (283 = circumference of r=45 circle). If no IQS score in the shotgun, omit the ring.
 - Methods counter: animate count from 0 to N using JS `requestAnimationFrame` with quartic ease-out
 - Stable belief in a prominent italic callout below the hero
@@ -194,7 +188,7 @@ verdict on the same current hunch.
 When constructing the prompt, structure the embedded data clearly. For the ideation report, extract and label:
 
 ```
-IDEA: {slug formatted as title}
+IDEA: {idea name}
 DATE: {date from shotgun filename}
 METHODS RUN: {count}
 IQS SCORE: {extract if present; otherwise omit}
@@ -287,4 +281,4 @@ The two skills that should call this at their final step:
 
 **startup-idea-to-assumptions** — add at end of Step 7 (after printing the session-end status block):
 
-When called automatically from these skills, the slug is already known — no need to ask.
+When called automatically from these skills, nothing needs resolving — there is one idea.

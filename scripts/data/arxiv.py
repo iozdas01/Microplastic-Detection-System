@@ -1,7 +1,7 @@
 """arXiv paper scan for the research map — no key required.
 
 Reproduces the batch-1 source selection recorded in
-`reports/{slug}/outreach/research-map.md`: arXiv cs.RO, published on or after a
+`reports/outreach/research-map.md`: arXiv cs.RO, published on or after a
 cutoff date, ranked on a brownfield-axis keyword score.
 
 Batch 1 persisted only its counts, so batch 2 could not resume from it. This module
@@ -9,8 +9,8 @@ writes the full ranked shortlist to disk so every later batch can.
 
 CLI:
     python -m scripts.data.arxiv --since 2026-01-01 [--max 400] \
-        [--shortlist reports/{slug}/outreach/research-map-shortlist.csv] \
-        [--exclude-map reports/{slug}/outreach/research-map.md]
+        [--shortlist reports/outreach/research-map-shortlist.csv] \
+        [--exclude-map reports/outreach/research-map.md]
 
 Emits JSON `{scanned, on_axis, papers: [...], errors: [...]}` on stdout and, when
 --shortlist is given, writes the ranked on-axis rows as CSV.

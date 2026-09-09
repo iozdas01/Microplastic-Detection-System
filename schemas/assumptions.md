@@ -4,7 +4,7 @@ One file per idea. Structured as a DAG — parent assumptions gate their childre
 Test root nodes before children. Never validate technical assumptions before confirming pain.
 
 ```yaml
-idea: example-idea                # the idea slug — links back to input-context/<slug>/belief.md
+idea: Example idea                # the idea name — links back to input-context/belief.md
 hunch_id: H1                      # founder-confirmed active hunch(es) this DAG decomposes.
                                   # A list when two hunches run in parallel (vocab:hunch_status).
 belief_file: input-context/example-idea/belief.md
@@ -36,7 +36,7 @@ assumptions:
     test_cost:                    # 1–5  (use the proxy cost if you're testing via a proxy)
     parent_assumptions: []        # IDs — if these fail, this assumption dissolves
     child_assumptions: []         # IDs — don't test these until this is confirmed
-    evidence_for: []              # brief refs — full entries in /reports/{slug}/03-validation/evidence.md
+    evidence_for: []              # brief refs — full entries in /reports/03-validation/evidence.md
     evidence_against: []
     status:                       # untested / testing / weakly_supported / confirmed / contested / killed
     next_action: ""               # cheapest concrete test (or proxy) to get a verdict

@@ -24,7 +24,7 @@ from scripts.data._common import (
 )
 
 
-def query_companies_house(company_name: str, slug: str | None = None) -> dict:
+def query_companies_house(company_name: str) -> dict:
     if not is_enabled("companies_house") or not company_name:
         return {}
     key = os.environ["COMPANIES_HOUSE_API_KEY"]
@@ -59,7 +59,7 @@ def query_companies_house(company_name: str, slug: str | None = None) -> dict:
         "source": "Companies House",
         "source_url": f"https://find-and-update.company-information.service.gov.uk/company/{company_number}",
     }
-    log_manifest(slug, {"phase": "api_call", "api": "companies_house",
+    log_manifest({"phase": "api_call", "api": "companies_house",
                         "input": company_name, "result": bool(company_number)})
     return result
 
@@ -67,9 +67,8 @@ def query_companies_house(company_name: str, slug: str | None = None) -> dict:
 def main() -> None:
     ap = argparse.ArgumentParser(description="Companies House company lookup")
     ap.add_argument("--name", required=True)
-    ap.add_argument("--slug", default="")
     args = ap.parse_args()
-    emit_json(query_companies_house(args.name, slug=args.slug or None))
+    emit_json(query_companies_house(args.name))
 
 
 if __name__ == "__main__":

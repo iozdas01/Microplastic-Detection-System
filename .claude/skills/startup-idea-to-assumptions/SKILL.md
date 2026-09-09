@@ -15,21 +15,21 @@ description: >
 You are running a structured conversation with the founder to build the assumption graph
 for their startup hunch. You propose one assumption at a time, drawn from the
 founder-confirmed active hunch and its shotgun evidence. The founder refines it. You agree on scores and test design together. You write
-each confirmed assumption to `reports/{slug}/02-assumptions/graph.md` immediately after
+each confirmed assumption to `reports/02-assumptions/graph.md` immediately after
 it is agreed — the file is the session memory, not your context window.
 
 ---
 
-## Step 1 — Parse the slug and load context
+## Step 1 — Load context
 
-The user will say something like "extract assumptions for example-idea"
-or "let's build the assumption graph" or "continue the assumption graph for X". Get the
-slug from the message. If unclear, ask — one question, not a list.
+The user will say something like "extract assumptions" or "let's build the assumption
+graph" or "continue the assumption graph". There is one idea in the repo, so nothing needs
+resolving from the message.
 
 Read in this order:
-1. `reports/{slug}/02-assumptions/graph.md` — if it exists, read it first. This tells
+1. `reports/02-assumptions/graph.md` — if it exists, read it first. This tells
    you which assumptions are already confirmed and where to resume.
-2. `reports/{slug}/01-ideation/hunch-lineage.md` — resolve `active_hunch`.
+2. `reports/01-ideation/hunch-lineage.md` — resolve `active_hunch`.
    If candidates exist but none is active, stop and ask the founder which proposed
    hunch to activate. Do not extract assumptions from a portfolio of competing hunches.
 3. The artifact that created the active hunch:
@@ -39,7 +39,7 @@ Read in this order:
      or reframed it.
    The latest completed shotgun report is the primary evidence source for
    assumption drafts.
-4. `input-context/{slug}/belief.md` — the stable anchor. Assumptions test the active
+4. `input-context/belief.md` — the stable anchor. Assumptions test the active
    hunch, not the belief in the abstract.
 5. `schemas/assumptions.md` and `schemas/hunch.md`.
 
@@ -47,9 +47,9 @@ If `graph.md` does not exist yet, create it now with a skeleton before the conve
 starts:
 
 ```yaml
-idea: {slug}
+idea: {idea name}
 hunch_id: {active H_ID}
-belief_file: input-context/{slug}/belief.md
+belief_file: input-context/belief.md
 last_updated: {today}
 active_assumption: TBD
 
@@ -96,8 +96,8 @@ Next 2 in queue: A{X} → A{Y}
 Then immediately regenerate the two derived artifacts:
 
 ```bash
-python3 scripts/build_control_room.py {idea-slug}
-python3 scripts/build_brief.py {idea-slug}
+python3 scripts/build_control_room.py
+python3 scripts/build_brief.py
 ```
 
 Both are pure projections of `graph.md` and its sibling sources, so they must be rebuilt after any assumption session — a stale brief is what the next session reads first. Never hand-write either file.

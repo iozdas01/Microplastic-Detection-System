@@ -1,6 +1,6 @@
 # Schema: Contact Card
 
-One row per contact in `reports/{slug}/outreach/contacts.md`. Contacts are scoped per idea
+One row per contact in `reports/outreach/contacts.md`. Contacts are scoped per idea
 but a single contact can be linked to multiple assumptions over time — relationships
 compound.
 

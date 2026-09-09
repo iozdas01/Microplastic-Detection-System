@@ -25,9 +25,9 @@ Failure mode this guards against: library-default keywords in one market's vocab
 
 One invocation queries every relevant enabled API, then writes to three files at once:
 
-1. `reports/{slug}/outreach/companies.md` — company registry: tiers, pain scores and the
+1. `reports/outreach/companies.md` — company registry: tiers, pain scores and the
    per-company signal blocks that drive both targeting and message personalisation
-2. `reports/{slug}/03-validation/evidence.md` — claim-level entries for the validation ledger
+2. `reports/03-validation/evidence.md` — claim-level entries for the validation ledger
    (drives assumption confidence updates)
 
 The same TED / EDGAR / GDELT / SBIR call feeds all three destinations — pay once, write everywhere. This replaces the retired `/startup-validate-assumption` (whose logic is absorbed here) and supplies the evidence that `startup-outreach-targets` uses for discovery and contact enrichment. `startup-outreach-draft` then verifies each message claim against the contact's live profile before drafting. Nothing is hardcoded to any industry — routing is driven by the assumption's `category` field and `icp_valid_tiers`.
@@ -49,9 +49,9 @@ Every field in every output is backed by a source URL. If an API returns nothing
 
 ## Load before starting
 
-1. **The active assumption** — `reports/{slug}/02-assumptions/graph.md`, node `id: A{X}`. Read fields: `assumption`, `category`, `icp_segment`, `icp_valid_tiers`, `icp_out_of_scope`, `disconfirmation`. If any of the first four are missing, STOP and ask the founder to declare them before running the skill.
+1. **The active assumption** — `reports/02-assumptions/graph.md`, node `id: A{X}`. Read fields: `assumption`, `category`, `icp_segment`, `icp_valid_tiers`, `icp_out_of_scope`, `disconfirmation`. If any of the first four are missing, STOP and ask the founder to declare them before running the skill.
 2. **API registry** — `api-registry.yaml` at repo root. Only APIs with `enabled: true` will be called. Some APIs need credentials (Adzuna, Companies House, Exa) — the library skips them cleanly if env vars are missing.
-3. **Existing `companies.md`** — `reports/{slug}/outreach/companies.md` if it exists. Companies
+3. **Existing `companies.md`** — `reports/outreach/companies.md` if it exists. Companies
    already enriched within the last 30 days for THIS assumption are skipped (cache); new
    companies are appended, and existing rows are updated in place when their `pain_score` changes.
 
@@ -59,7 +59,7 @@ If input 1 is missing, stop and ask. Everything else is optional — the skill c
 
 ## The four phases
 
-The skill runs four sequential phases. Each phase is idempotent — rerunning it should produce the same output modulo new data appearing at the sources. Each phase writes to a manifest file at `reports/{slug}/outreach/.intel-manifest.jsonl` so a rerun knows what was already done.
+The skill runs four sequential phases. Each phase is idempotent — rerunning it should produce the same output modulo new data appearing at the sources. Each phase writes to a manifest file at `reports/outreach/.intel-manifest.jsonl` so a rerun knows what was already done.
 
 | Phase | What it produces |
 |---|---|
@@ -67,7 +67,7 @@ The skill runs four sequential phases. Each phase is idempotent — rerunning it
 | 1. Discovery + tier assignment | Draft `companies.md` (new companies staged with tier + rationale) |
 | 2. Company enrichment | `companies.md` (targeting fields) populated with per-assumption signal blocks |
 | 3. Pain scoring + registry finalization | `pain_score` + `top_signal_for_copy` on every company; summary table + dashboard regen |
-| 4. Evidence ledger write | Claim-level entries in `reports/{slug}/03-validation/evidence.md` |
+| 4. Evidence ledger write | Claim-level entries in `reports/03-validation/evidence.md` |
 
 Under normal use, all phases run in one invocation. Phases can be run independently via the CLI (see Invocation examples). See `scripts/intel_lib.py` (bundled with this skill) for the phase orchestrators.
 
@@ -95,7 +95,6 @@ The skill is designed to be rerun freely. Rerun semantics:
 - **Same assumption, same day, no data changed** → no-op. Cache hits everywhere. Manifest logs a `no_change` run.
 - **Same assumption, 30+ days later** → refetches enrichment for every company. Contract history and news get refreshed; static fields (LEI, parent, fleet baseline) are updated only if changed.
 - **New assumption on same idea (different A_ID)** → for each existing company, appends a new `assumptions.A{X}` block. Universal identity fields are reused from the cache — no re-fetch of GLEIF etc.
-- **New idea (different slug)** → creates fresh files under `reports/{new-slug}/outreach/`. No cross-idea data leaks.
 
 The `--refresh` flag zeroes the manifest for the target assumption and forces a full re-enrichment. Use sparingly — it's expensive.
 

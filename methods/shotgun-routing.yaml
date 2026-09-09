@@ -29,8 +29,8 @@ run_modes:
 
 run_subject:
   source:
-    belief: input-context/{slug}/belief.md
-    current_hunch: reports/{slug}/01-ideation/hunch-lineage.md#active_hunch
+    belief: input-context/belief.md
+    current_hunch: reports/01-ideation/hunch-lineage.md#active_hunch
   rules:
     - Determine the run mode from run_modes before selecting anything.
     - If the belief is missing, route to startup-belief-intake in every mode.
@@ -95,7 +95,7 @@ explore_pool:
         Every component that IS filled cites the cluster or source that supports it.
         A candidate with no citable segment and no citable problem is not a candidate.
       writes:
-        file: reports/{slug}/01-ideation/hunch-lineage.md
+        file: reports/01-ideation/hunch-lineage.md
         status: proposed
       forbids:
         - Setting active_hunch. Only the founder promotes a proposal to active.

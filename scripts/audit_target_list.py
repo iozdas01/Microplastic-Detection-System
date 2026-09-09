@@ -2,7 +2,7 @@
 """Audit contacts.md against the ICP declared on each assumption in graph.md.
 
 Usage:
-    python3 scripts/audit_target_list.py <slug>
+    python3 scripts/audit_target_list.py
 """
 from __future__ import annotations
 
@@ -90,12 +90,13 @@ def parse_contacts_md(contacts_path: Path):
     return contacts
 
 
-def audit(slug: str):
-    graph_path = REPO / "reports" / slug / "02-assumptions" / "graph.md"
-    contacts_path = REPO / "reports" / slug / "outreach" / "contacts.md"
+def audit():
+    graph_path = REPO / "reports" / "02-assumptions" / "graph.md"
+    contacts_path = REPO / "reports" / "outreach" / "contacts.md"
 
     if not graph_path.exists() or not contacts_path.exists():
-        print(f"[error] missing graph.md or contacts.md for {slug}", file=sys.stderr)
+        print("[error] missing reports/02-assumptions/graph.md or reports/outreach/contacts.md",
+              file=sys.stderr)
         return [], [], [], []
 
     graph_text = graph_path.read_text()
@@ -181,10 +182,10 @@ def audit(slug: str):
     return hard_fails, tier_soft_fails, rationale_soft_fails, missing_icp
 
 
-def write_report(slug, hard, tier_soft, rationale_soft, missing_icp) -> Path:
-    report_path = REPO / "reports" / slug / "outreach" / f"target-list-audit-{date.today().isoformat()}.md"
+def write_report(hard, tier_soft, rationale_soft, missing_icp) -> Path:
+    report_path = REPO / "reports" / "outreach" / f"target-list-audit-{date.today().isoformat()}.md"
     lines = [
-        f"# Target list audit — {slug} — {date.today().isoformat()}",
+        f"# Target list audit — {date.today().isoformat()}",
         "",
         f"Hard fails: {len(hard)} · Tier soft fails: {len(tier_soft)} · "
         f"Rationale soft fails: {len(rationale_soft)} · Assumptions missing ICP: {len(missing_icp)}",
@@ -222,19 +223,17 @@ def write_report(slug, hard, tier_soft, rationale_soft, missing_icp) -> Path:
 
 
 def main():
-    parser = argparse.ArgumentParser()
-    parser.add_argument("slug")
-    args = parser.parse_args()
+    argparse.ArgumentParser(description=__doc__.splitlines()[0]).parse_args()
 
-    hard, tier_soft, rationale_soft, missing_icp = audit(args.slug)
+    hard, tier_soft, rationale_soft, missing_icp = audit()
 
-    print(f"=== Target list audit — {args.slug} ===")
+    print("=== Target list audit ===")
     print(f"Hard fails (off-scope):        {len(hard)}")
     print(f"Tier soft fails (tier=other):  {len(tier_soft)}")
     print(f"Missing/vague rationale:       {len(rationale_soft)}")
     print(f"Assumptions missing ICP:       {len(missing_icp)}")
 
-    report = write_report(args.slug, hard, tier_soft, rationale_soft, missing_icp)
+    report = write_report(hard, tier_soft, rationale_soft, missing_icp)
     print(f"\nReport: {report}")
 
 

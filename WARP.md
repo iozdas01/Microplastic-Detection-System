@@ -10,8 +10,8 @@ the contract here would create a second author that drifts. Instead:
    for, the single-authorship rules, the `main`-branch + pull-rebase push discipline, and the
    `gap:` capture protocol. This is the behavior contract; it applies to any agent, Warp included.
 2. `ARCHITECTURE.md` — how it is built: the loop, the five modules, the folder layout, the schemas.
-3. `reports/{slug}/BRIEF.md` for the idea named in the request — the generated, freshest digest.
-   Load it first, then load only the one full artifact the task needs (pointers at the brief's end).
+3. `reports/BRIEF.md` — the generated, freshest digest of the idea. Load it first, then load
+   only the one full artifact the task needs (pointers at the brief's end).
 
 **Warp-specific setup notes**
 

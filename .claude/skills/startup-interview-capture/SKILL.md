@@ -1,6 +1,6 @@
 ---
 name: startup-interview-capture
-description: Parses raw customer-interview notes for a founder into structured evidence — extracts Mom Test signals (unprompted mentions, past behaviour, specific costs, things they've tried), flags false positives, proposes an outcome_modifier classification (strong_confirm / moderate_confirm / weak / contradiction) with reasoning, drafts evidence-ledger entries, and updates the contact card in outreach/contacts.md. Use this skill whenever the user finishes a customer interview and wants to log it — triggers on "capture interview notes", "process interview notes", "structure my interview", "log this interview", "add interview to evidence", "categorize this interview", "score this interview", "parse the interview I just did", or when the user pastes raw notes and asks what to do with them. Also use it any time a raw interview notes file exists under `reports/{slug}/03-validation/{A_ID}-{date}/interviews/` with only content above the `---` divider — the file is waiting to be captured.
+description: Parses raw customer-interview notes for a founder into structured evidence — extracts Mom Test signals (unprompted mentions, past behaviour, specific costs, things they've tried), flags false positives, proposes an outcome_modifier classification (strong_confirm / moderate_confirm / weak / contradiction) with reasoning, drafts evidence-ledger entries, and updates the contact card in outreach/contacts.md. Use this skill whenever the user finishes a customer interview and wants to log it — triggers on "capture interview notes", "process interview notes", "structure my interview", "log this interview", "add interview to evidence", "categorize this interview", "score this interview", "parse the interview I just did", or when the user pastes raw notes and asks what to do with them. Also use it any time a raw interview notes file exists under `reports/03-validation/{A_ID}-{date}/interviews/` with only content above the `---` divider — the file is waiting to be captured.
 ---
 
 # Startup Interview Capture
@@ -14,7 +14,7 @@ Never modify the raw notes above the `---` divider. The founder wrote those in t
 ## What triggers this skill
 
 The founder just finished a customer interview and either:
-- Has a notes file at `reports/{slug}/03-validation/{A_ID}-{date}/interviews/{contact-slug}-{date}-notes.md` waiting to be processed
+- Has a notes file at `reports/03-validation/{A_ID}-{date}/interviews/{contact-slug}-{date}-notes.md` waiting to be processed
 - Pastes raw notes into the chat and asks what to do with them (in this case, ask them for the file path and confirm the schema before starting)
 - Explicitly asks you to capture, log, structure, parse, or categorize an interview
 
@@ -25,11 +25,11 @@ If no file exists yet, create one following the schema in `schemas/interview.md`
 Before parsing, load these:
 
 1. **The interview notes file** — top half is raw notes, frontmatter has `contact_id`, `assumption_id`, `interview_date`, `interview_stage`
-2. **The contact card** — find the block with matching `id: {contact_id}` in `reports/{slug}/outreach/contacts.md`. Read `contact_role`, `signal_type`, `role_pts`, `signal_multiplier`, current `evidence_score`
-3. **The assumption** — find node with matching `id: {assumption_id}` in `reports/{slug}/02-assumptions/graph.md`. Read `assumption`, `category`, `disconfirmation`
-4. **Existing evidence ledger** — `reports/{slug}/03-validation/evidence.md` (or the older path if `03-validation/` doesn't exist yet). Find the highest existing entry `id` so you can number the next one `E{N+1}`
+2. **The contact card** — find the block with matching `id: {contact_id}` in `reports/outreach/contacts.md`. Read `contact_role`, `signal_type`, `role_pts`, `signal_multiplier`, current `evidence_score`
+3. **The assumption** — find node with matching `id: {assumption_id}` in `reports/02-assumptions/graph.md`. Read `assumption`, `category`, `disconfirmation`
+4. **Existing evidence ledger** — `reports/03-validation/evidence.md` (or the older path if `03-validation/` doesn't exist yet). Find the highest existing entry `id` so you can number the next one `E{N+1}`
 
-If the slug isn't obvious from the file path, ask. If the contact card isn't found, ask before proceeding — a missing contact means the outreach layer is broken and capture would create orphaned evidence.
+If the contact card isn't found, ask before proceeding — a missing contact means the outreach layer is broken and capture would create orphaned evidence.
 
 ## The parsing pass — what to look for
 

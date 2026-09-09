@@ -40,12 +40,12 @@ the relationship makes that call, every time, with the message in front of them.
    carries `cambridge_match: +1` and `georgia_tech_match: +1`.
    Per `founder.md`, write from whichever founder holds the genuine affinity, and never
    reference one founder's affiliation in a message sent as the other.
-3. `reports/{slug}/02-assumptions/graph.md` — the active assumption, its `icp_segment`,
+3. `reports/02-assumptions/graph.md` — the active assumption, its `icp_segment`,
    `icp_valid_tiers`, `icp_valid_titles`, `icp_out_of_scope`, and domain vocabulary.
-4. `reports/{slug}/outreach/contacts.md` — existing contacts, for dedup and history.
-5. `reports/{slug}/outreach/copy/{A_ID}-linkedin.md` — prior messages to this person and
+4. `reports/outreach/contacts.md` — existing contacts, for dedup and history.
+5. `reports/outreach/copy/{A_ID}-linkedin.md` — prior messages to this person and
    the frame already established with them.
-6. `reports/{slug}/outreach/blast-templates.md` — OPTIONAL. Per-idea locked templates if
+6. `reports/outreach/blast-templates.md` — OPTIONAL. Per-idea locked templates if
    they exist. Absent is fine; draft from the rules and the assumption directly.
 
 If `graph.md` is missing, stop and say so. Everything downstream depends on knowing which
@@ -56,14 +56,14 @@ That is a first run, not an error.
 
 ## Identify the idea and assumption
 
-Get the idea slug from the founder's message or the working context. Read `graph.md`
+Read `graph.md`
 frontmatter for `active_assumption` — that is the assumption the message serves unless the
 founder names a different one.
 
 State both back in one line before drafting, so a wrong idea gets caught before ten
 messages are written against it:
 
-> Drafting for `{slug}` · assumption `{A_ID}` · ICP: {one-line icp_segment summary}
+> Drafting for assumption `{A_ID}` · ICP: {one-line icp_segment summary}
 
 ## Modes
 
@@ -132,7 +132,7 @@ actually said. This skill owns first contact and the follow-up to a silent accep
 - **Redirected to `/login`** → session expired. Pause and ask the founder to log in.
 - **URL contains `/checkpoint/challenge`, or a captcha iframe is present** → stop the run
   immediately, capture the exact text, alert the founder, and append the verified signal to
-  the LR-B10 journal at `reports/{slug}/outreach/copy-rules-log.md`. Do not navigate further.
+  the LR-B10 journal at `reports/outreach/copy-rules-log.md`. Do not navigate further.
 - **Contact already has a `[msg{N} sent]` note for this stage** → do not redraft silently.
   Show the founder what was already sent and ask whether they want the next message instead.
 

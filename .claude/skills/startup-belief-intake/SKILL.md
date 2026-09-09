@@ -2,9 +2,9 @@
 name: startup-belief-intake
 description: >-
   Drills down on one founder-held belief until it is sharp enough to build on, grounds it in
-  real examples found by research, and writes `input-context/{slug}/belief.md`. Also
-  initializes the idea — folders, an empty `hunch-lineage.md`, the `reports/lifecycle.yaml`
-  entry, and the first `BRIEF.md`. Runs a long interrogation, not a form: what the belief
+  real examples found by research, and writes `input-context/belief.md`. Also
+  initializes the idea — an empty `hunch-lineage.md` and the first `BRIEF.md`. Runs a
+  long interrogation, not a form: what the belief
   claims, where it stops, who it excludes, what would falsify it, and whether it is a belief
   at all rather than a hunch wearing one's coat. Includes SISP Detection to separate the
   problem from any favoured solution. Use for "start a new idea", "I have a belief I want to
@@ -16,7 +16,7 @@ description: >-
 
 # startup-belief-intake
 
-Produce one object: `input-context/{slug}/belief.md`, drilled down and research-grounded.
+Produce one object: `input-context/belief.md`, drilled down and research-grounded.
 
 **This skill does not write hunches.** Not H1, not a candidate, not a "working hypothesis" in
 a comment. If the founder offers one, record it in the SISP section as a starting point and
@@ -150,17 +150,16 @@ and never updates.
 
 Template: `references/interview-guide.md` → Step 8.
 
-1. Agree a slug — lowercase-hyphenated, naming the **field**, never the solution.
+1. Agree the idea's name — it names the **field**, never the solution — and record it as
+   `idea:` in the belief frontmatter; the brief and control room title from it.
 2. Write `belief.md` as soon as the statement is agreed, before boundaries and threats are
    finished — the file is the session memory, so an interrupted conversation resumes from the
    missing section instead of re-interviewing. Set `last_confirmed` only once the founder
    confirms the whole file.
-3. Create `reports/{slug}/01-ideation/hunch-lineage.md`, frontmatter only, `active_hunch:
-   none`. **No H-entries.** The shotgun fills it.
-4. Register the slug in `reports/lifecycle.yaml` (`lifecycle: active` + one-line note).
-   Skipping this is why a new idea's brief reads `lifecycle: unknown`.
-5. `python3 scripts/build_brief.py {slug}`.
-6. Append every observation about something missing, broken or harder than it should be
+3. Create `reports/01-ideation/hunch-lineage.md` if absent, frontmatter only,
+   `active_hunch: none`. **No H-entries.** The shotgun fills it.
+4. `python3 scripts/build_brief.py`.
+5. Append every observation about something missing, broken or harder than it should be
    to `signals/gaps-log.md`, which specifies its own format. Observations only.
 
 ---
@@ -168,12 +167,12 @@ Template: `references/interview-guide.md` → Step 8.
 ## Step 8 — Hand off
 
 ```
-Belief: input-context/{slug}/belief.md — "{one-line quote}"
-Lineage: reports/{slug}/01-ideation/hunch-lineage.md — active_hunch: none
-Registered: reports/lifecycle.yaml · Brief: reports/{slug}/BRIEF.md
+Belief: input-context/belief.md — "{one-line quote}"
+Lineage: reports/01-ideation/hunch-lineage.md — active_hunch: none
+Brief: reports/BRIEF.md
 Gaps logged: {N}
 
-Next: /startup-ideate-shotgun {slug}   → explore mode: proposes candidate hunches
+Next: /startup-ideate-shotgun   → explore mode: proposes candidate hunches
 ```
 
 ---
@@ -196,5 +195,5 @@ Next: /startup-ideate-shotgun {slug}   → explore mode: proposes candidate hunc
 - **Asking what the founder's profile already answers.** Wastes intake's one advantage.
 - **Letting the belief creep.** They refine it while talking, which is fine — the file records
   the confirmed version, not the most recent sentence.
-- **Finishing without Step 7 items 3-6.** The ones that get skipped, leaving the next session
-  with a brief that reads `lifecycle: unknown`.
+- **Finishing without Step 7 items 3-5.** The ones that get skipped, leaving the next session
+  with a stale brief.

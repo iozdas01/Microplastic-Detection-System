@@ -22,7 +22,7 @@ vocabularies:
   # ─── belief and hunch lineage ──────────────────────────────────────────────
 
   hunch_status:
-    used_in: [reports/*/01-ideation/hunch-lineage.md]
+    used_in: [reports/01-ideation/hunch-lineage.md]
     schema: schemas/hunch.md
     values:
       proposed:             "Formulated but not founder-confirmed. Cannot be the run subject of a shotgun."
@@ -33,7 +33,7 @@ vocabularies:
       folded_into_offering: "Turned out to be a value proposition, not a claim about the world — relocated to 04-mutation/offerings.md. Not a rejection. Requires `folded_into:` naming the offering ID."
 
   hunch_validation_status:
-    used_in: [reports/*/01-ideation/hunch-lineage.md]
+    used_in: [reports/01-ideation/hunch-lineage.md]
     schema: schemas/hunch.md
     values:
       untested:     "No evidence gathered against this hunch yet."
@@ -67,7 +67,7 @@ vocabularies:
   # ─── assumption graph ──────────────────────────────────────────────────────
 
   assumption_status:
-    used_in: [reports/*/02-assumptions/graph.md]
+    used_in: [reports/02-assumptions/graph.md]
     schema: schemas/assumptions.md
     values:
       untested:          "No evidence gathered."
@@ -83,7 +83,7 @@ vocabularies:
       killed:            "Falsified. Children dissolve with it."
 
   assumption_category:
-    used_in: [reports/*/02-assumptions/graph.md]
+    used_in: [reports/02-assumptions/graph.md]
     schema: schemas/assumptions.md
     note: >-
       `willingness_to_pay` and `defensibility` are deliberately separate from the
@@ -95,35 +95,34 @@ vocabularies:
              distribution, competition, defensibility, founder-market-fit]
 
   lens:
-    used_in: [reports/*/02-assumptions/graph.md]
+    used_in: [reports/02-assumptions/graph.md]
     schema: schemas/assumptions.md
     note: "DVF three-lens sweep."
     values: [desirability, viability, feasibility]
 
   validation_track:
-    used_in: [reports/*/02-assumptions/graph.md]
+    used_in: [reports/02-assumptions/graph.md]
     schema: schemas/assumptions.md
     values:
       customer_adoption:     "Will they use and pay for it."
       strategic_partnership: "Will they co-develop, co-invest, or co-distribute."
       investor_thesis:       "Will financial/VC investors fund this bet."
-      # Added 2026-09-02 for high-mix-manufacturing H1. Every prior idea in this repo was
-      # demand-only, so the three tracks above all ask "will someone buy". H1 is the first
-      # with a two-sided problem: it must secure a physical input stream before it has
-      # anything to sell, and the input holders are not customers. Splitting supply out
-      # matters because a supply assumption failing kills the idea in a different way from
-      # a demand assumption failing — you cannot fix it with better positioning.
+      # Added 2026-09-02. The three tracks above all ask "will someone buy". A two-sided
+      # problem must also secure a physical input stream before it has anything to sell,
+      # and the input holders are not customers. Splitting supply out matters because a
+      # supply assumption failing kills the idea in a different way from a demand
+      # assumption failing — you cannot fix it with better positioning.
       supply:                "Will the people who hold the physical input hand it over, and on what terms."
       operations:            "Can we actually run the process at the cost and cycle time the model assumes."
 
   quadrant:
-    used_in: [reports/*/02-assumptions/graph.md]
+    used_in: [reports/02-assumptions/graph.md]
     schema: schemas/assumptions.md
     note: "importance × uncertainty 2×2. uncertainty_score is populated only for leap_of_faith."
     values: [leap_of_faith, known_important, uncertain_minor, ignore]
 
   importance:
-    used_in: [reports/*/02-assumptions/graph.md]
+    used_in: [reports/02-assumptions/graph.md]
     schema: schemas/assumptions.md
     values: {low: {rank: 1}, medium: {rank: 2}, high: {rank: 3}}
 
@@ -140,7 +139,7 @@ vocabularies:
   # used to exist here; they drifted, so they were consolidated to this one.
 
   evidence_source_type:
-    used_in: [reports/*/03-validation/evidence.md]
+    used_in: [reports/03-validation/evidence.md]
     schema: schemas/evidence.md
     values: [article, post_mortem, founder_interview, procurement, job_post, forum,
              market_report, expert_call, our_observation, customer_interview,
@@ -155,7 +154,7 @@ vocabularies:
 
 
   evidence_confidence:
-    used_in: [reports/*/03-validation/evidence.md]
+    used_in: [reports/03-validation/evidence.md]
     schema: schemas/evidence.md
     note: >-
       Per-ENTRY strength, 1–5 — the ONE hand-assigned evidence grade. Assumption-
@@ -169,14 +168,14 @@ vocabularies:
       5: {means: "Money moved, or budget repeatedly allocated. Founder post-mortem naming root cause."}
 
   verdict:
-    used_in: [reports/*/03-validation/evidence.md]
+    used_in: [reports/03-validation/evidence.md]
     schema: schemas/evidence.md
     values: [supports, contradicts, ambiguous]
 
   # ─── customer development ──────────────────────────────────────────────────
 
   signal_type:
-    used_in: [reports/*/outreach/contacts.md]
+    used_in: [reports/outreach/contacts.md]
     schema: schemas/contact.md
     note: "How the contact was found. `weight` is the multiplier in the interview score formula."
     values:
@@ -200,7 +199,7 @@ vocabularies:
           the enthusiasm of someone who shares our blind spot.
 
   contact_role:
-    used_in: [reports/*/outreach/contacts.md]
+    used_in: [reports/outreach/contacts.md]
     schema: schemas/contact.md
     note: "What they can validate. `pts` is the base term in the interview score formula."
     values:
@@ -211,7 +210,7 @@ vocabularies:
       peer:         {pts: 1, means: "Peer founder or ecosystem contact. Relationship value only — never customer, buyer, or pain evidence (declared 2026-08-11 for C205; matches the counting_rules treatment of peer-founder replies)."}
 
   relationship_type:
-    used_in: [reports/*/outreach/contacts.md]
+    used_in: [reports/outreach/contacts.md]
     schema: schemas/contact.md
     note: >
       Optional. Set it only when a contact must NOT be read as customer demand.
@@ -236,7 +235,7 @@ vocabularies:
         overstated the buyer count in the tier analysis."}
 
   outreach_channel:
-    used_in: [reports/*/outreach/contacts.md]
+    used_in: [reports/outreach/contacts.md]
     schema: schemas/contact.md
     values:
       linkedin: "Reached through LinkedIn. The DEFAULT when `channel:` is absent, so existing cards need no backfill."
@@ -245,18 +244,18 @@ vocabularies:
       in_person: "Met or visited on site."
 
   tier_side:
-    used_in: [reports/*/02-assumptions/graph.md, reports/*/outreach/companies.md]
+    used_in: [reports/02-assumptions/graph.md, reports/outreach/companies.md]
     schema: schemas/assumptions.md
     note: "Structural side of a tier. Tier NAMES are per-idea and declared in graph.md; only the side vocabulary is global."
     values: [demand, supply, competitor, expert]
 
   degree:
-    used_in: [reports/*/outreach/contacts.md]
+    used_in: [reports/outreach/contacts.md]
     schema: schemas/contact.md
     values: ["1st", "2nd", "3rd+", inmail_only]
 
   outcome_modifier:
-    used_in: [reports/*/outreach/contacts.md, reports/*/03-validation/*/interviews/*.md]
+    used_in: [reports/outreach/contacts.md, reports/03-validation/*/interviews/*.md]
     schema: schemas/interview.md
     note: "The one manual classification per interview. Proposed by startup-interview-capture, confirmed by the founder."
     values:
@@ -266,12 +265,12 @@ vocabularies:
       contradiction:    {score: -1.0, means: "Reports the opposite, or that the pain is already solved."}
 
   interview_stage:
-    used_in: [reports/*/03-validation/*/interviews/*.md]
+    used_in: [reports/03-validation/*/interviews/*.md]
     schema: schemas/interview.md
     values: [problem_discovery, solution_validation]
 
   medium:
-    used_in: [reports/*/03-validation/*/interviews/*.md]
+    used_in: [reports/03-validation/*/interviews/*.md]
     schema: schemas/interview.md
     # whatsapp_text added 2026-08-25: async text-chat testimony captured as an interview
     # (first case: C23 pre-call WhatsApp exchange). New vocabulary, not a typo.
@@ -282,7 +281,7 @@ vocabularies:
     values: [linkedin_video, zoom, phone, in_person, whatsapp_text, linkedin_text]
 
   synthesis_outcome:
-    used_in: [reports/*/03-validation/*/interviews/synthesis.md]
+    used_in: [reports/03-validation/*/interviews/synthesis.md]
     schema: schemas/synthesis.md
     values:
       next_assumption: "Confirmed and consistent across roles → surface the next child. Retains the hunch."
@@ -291,19 +290,11 @@ vocabularies:
       kill:            "Score ≤ 0, or a root node died → retire the hunch or the affected branch."
 
   synthesis_trigger:
-    used_in: [reports/*/03-validation/*/interviews/synthesis.md]
+    used_in: [reports/03-validation/*/interviews/synthesis.md]
     schema: schemas/synthesis.md
     values: [cron_threshold_hit, manual, early_kill_flag]
 
   # ─── idea lifecycle ────────────────────────────────────────────────────────
-
-  idea_lifecycle:
-    used_in: [reports/*/BRIEF.md]
-    note: "Generated into BRIEF.md frontmatter; never hand-authored. `superseded-by` carries a slug."
-    values:
-      active:        "Under current work."
-      dormant:       "Untouched, may be revived. Residual artifacts retain value."
-      superseded-by: "Evolved into another idea lineage; carries the successor slug."
 
   # ─── method library ────────────────────────────────────────────────────────
 

@@ -119,12 +119,6 @@ def _vocab():
     return out
 
 
-def _slugs():
-    if not REPORTS.is_dir():
-        return []
-    return sorted(p.name for p in REPORTS.iterdir() if p.is_dir())
-
-
 def _frontmatter_span(text: str):
     """Character range of the leading YAML frontmatter, or (0, 0)."""
     if not text.startswith("---"):
@@ -143,13 +137,12 @@ def check_brief_fresh(errors):
     except Exception as e:
         errors.append(("brief-fresh", "cannot import build_brief: %s" % e, ""))
         return
-    for slug in _slugs():
-        if is_stale(slug):
-            errors.append((
-                "brief-fresh",
-                "reports/%s/BRIEF.md is missing or stale against its sources" % slug,
-                "python3 scripts/build_brief.py %s" % slug,
-            ))
+    if REPORTS.is_dir() and is_stale():
+        errors.append((
+            "brief-fresh",
+            "reports/BRIEF.md is missing or stale against its sources",
+            "python3 scripts/build_brief.py",
+        ))
 
 
 def check_state_prose(errors):
@@ -190,34 +183,33 @@ def check_vocab(errors):
                 "fix the value, or declare it in schemas/vocabularies.yaml with what it means",
             ))
 
-    for slug in _slugs():
-        for rel, fields in GOVERNED.items():
-            path = REPORTS / slug / rel
-            if not path.exists():
+    for rel, fields in GOVERNED.items():
+        path = REPORTS / rel
+        if not path.exists():
+            continue
+        text = path.read_text(encoding="utf-8", errors="replace")
+        for field, vname in fields.items():
+            allowed = vocab.get(vname)
+            if not allowed:
+                errors.append((
+                    "vocab",
+                    "vocabulary %r referenced by %s is not declared" % (vname, field),
+                    "declare it in schemas/vocabularies.yaml",
+                ))
                 continue
-            text = path.read_text(encoding="utf-8", errors="replace")
-            for field, vname in fields.items():
-                allowed = vocab.get(vname)
-                if not allowed:
-                    errors.append((
-                        "vocab",
-                        "vocabulary %r referenced by %s is not declared" % (vname, field),
-                        "declare it in schemas/vocabularies.yaml",
-                    ))
+            pattern = re.compile(r"^\s*%s:\s*([A-Za-z0-9_+\-]+)\s*$" % re.escape(field), re.M)
+            for m in pattern.finditer(text):
+                value = m.group(1)
+                if value in allowed:
                     continue
-                pattern = re.compile(r"^\s*%s:\s*([A-Za-z0-9_+\-]+)\s*$" % re.escape(field), re.M)
-                for m in pattern.finditer(text):
-                    value = m.group(1)
-                    if value in allowed:
-                        continue
-                    line = text.count("\n", 0, m.start()) + 1
-                    errors.append((
-                        "vocab",
-                        "%s:%d — %s: %r not in vocab:%s (%s)"
-                        % (path.relative_to(ROOT), line, field, value, vname,
-                           ", ".join(sorted(allowed))),
-                        "fix the value, or declare it in schemas/vocabularies.yaml with what it means",
-                    ))
+                line = text.count("\n", 0, m.start()) + 1
+                errors.append((
+                    "vocab",
+                    "%s:%d — %s: %r not in vocab:%s (%s)"
+                    % (path.relative_to(ROOT), line, field, value, vname,
+                       ", ".join(sorted(allowed))),
+                    "fix the value, or declare it in schemas/vocabularies.yaml with what it means",
+                ))
 
 
 def check_skill_descriptions(errors):
@@ -389,6 +381,9 @@ def check_doc_paths_exist(errors):
     artifact the intake skill does not write.
     """
     PATH_RE = re.compile(r"`([A-Za-z0-9_./-]+/[A-Za-z0-9_./-]*)`")
+    # Files the docs must name before the pipeline has written them: the docs say
+    # where the belief goes, and a fresh repo has no belief until intake runs.
+    WRITTEN_LATER = {"input-context/belief.md"}
     for doc in ("ARCHITECTURE.md", "CLAUDE.md", "README.md"):
         path = ROOT / doc
         if not path.is_file():
@@ -397,6 +392,8 @@ def check_doc_paths_exist(errors):
             if "{" in raw or "*" in raw or raw.startswith(("http", "~")):
                 continue
             rel = raw.lstrip("/")
+            if rel in WRITTEN_LATER:
+                continue
             # Only repo-root-relative paths are checkable. A path whose first
             # segment is not a real top-level entry is relative to something else
             # (an idea folder, a profile URL) and is skipped rather than guessed at.
@@ -507,132 +504,108 @@ def check_ledger_ids(errors):
                   still resolved, so nothing anywhere failed — the text just stopped
                   being true. A deleted id fails loudly; a reused one does not.
     """
-    for slug in _slugs():
-        # 1. no duplicate ids inside one ledger
-        for rel, pattern in LEDGERS.items():
-            path = REPORTS / slug / rel
-            if not path.exists():
-                continue
-            ids = pattern.findall(path.read_text(encoding="utf-8", errors="replace"))
-            seen, dupes = set(), []
-            for i in ids:
-                (dupes.append(i) if i in seen else seen.add(i))
-            for i in sorted(set(dupes)):
-                errors.append((
-                    "ledger-ids",
-                    "%s declares id %s more than once" % (path.relative_to(ROOT), i),
-                    "two sessions allocated it against the same base; renumber the side "
-                    "that has NOT reached main, and never reuse a retired id",
-                ))
-
-        # 2. structured citations resolve
-        ev_path = REPORTS / slug / "03-validation/evidence.md"
-        if not ev_path.exists():
+    # 1. no duplicate ids inside one ledger
+    for rel, pattern in LEDGERS.items():
+        path = REPORTS / rel
+        if not path.exists():
             continue
-        known = set(LEDGERS["03-validation/evidence.md"].findall(
-            ev_path.read_text(encoding="utf-8", errors="replace")))
-
-        cited = {}  # id -> "file:line"
-        graph = REPORTS / slug / "02-assumptions/graph.md"
-        if graph.exists():
-            inside = False
-            for n, line in enumerate(graph.read_text(
-                    encoding="utf-8", errors="replace").splitlines(), 1):
-                if CITE_BLOCK.match(line):
-                    inside = True
-                    continue
-                if inside and CITE_END.match(line):
-                    inside = False
-                if inside:
-                    for eid in re.findall(r"\bE\d+\b", line):
-                        cited.setdefault(eid, "%s:%d" % (graph.relative_to(ROOT), n))
-
-        offerings = REPORTS / slug / "04-mutation/offerings.md"
-        if offerings.exists():
-            text = offerings.read_text(encoding="utf-8", errors="replace")
-            for m in OFFERING_CITE.finditer(text):
-                n = text.count("\n", 0, m.start()) + 1
-                for eid in re.findall(r"\bE\d+\b", m.group(1)):
-                    cited.setdefault(eid, "%s:%d" % (offerings.relative_to(ROOT), n))
-
-        for eid, where in sorted(cited.items()):
-            if eid not in known:
-                errors.append((
-                    "ledger-ids",
-                    "%s cites %s, which is not in %s"
-                    % (where, eid, ev_path.relative_to(ROOT)),
-                    "the entry was deleted or renumbered — re-point the citation at what "
-                    "actually supports the claim, or drop it",
-                ))
-
-        # 3. a published id must not be reassigned to a different entry
-        rel = "reports/%s/03-validation/evidence.md" % slug
-        head = _head_blob(rel)
-        if head is None:
-            continue
-        current = ev_path.read_text(encoding="utf-8", errors="replace")
-
-        # Mid-merge the id->date test is the WRONG test, because rule 2 ("main wins
-        # every ID contest") requires the losing side to renumber — which changes the
-        # date at an id by design. Checking stability there would fail every correctly
-        # resolved merge, and a gate that fires on the prescribed resolution just
-        # teaches people to bypass it. What still must hold is CONSERVATION: every
-        # entry either parent had must survive somewhere under some id. That is what
-        # actually catches the E48 failure (a claim silently replaced) and it also
-        # catches the merge-specific one (a claim dropped inside a text conflict).
-        if _merging():
-            other = _blob("MERGE_HEAD", rel)
-            here = _entry_identities(current)
-            for side, blob in (("HEAD", head), ("MERGE_HEAD", other)):
-                if blob is None:
-                    continue
-                for ident, eid in sorted(_entry_identities(blob).items()):
-                    if ident not in here:
-                        errors.append((
-                            "ledger-ids",
-                            "merge drops the %s entry %s (%s — %s)"
-                            % (side, eid, ident[0], ident[1][:60]),
-                            "merge ledgers at ENTRY granularity, not as text: every entry "
-                            "from both parents must survive, renumbered if main won its id",
-                        ))
-            continue
-
-        was, now = _entry_dates(head), _entry_dates(current)
-        for eid, old in sorted(was.items()):
-            new = now.get(eid)
-            if new and new != old:
-                errors.append((
-                    "ledger-ids",
-                    "%s changed date %s -> %s: an id already committed is being reused "
-                    "for a different entry" % (eid, old, new),
-                    "give the new entry the next free id and leave %s burned; if this is "
-                    "a genuine date correction, confirm nothing still cites %s for the "
-                    "old claim" % (eid, eid),
-                ))
-
-
-def check_lifecycle_slugs(errors):
-    """12. lifecycle-slugs — every slug in lifecycle.yaml has a reports/ folder.
-
-    lifecycle.yaml is the one authored index of which ideas exist. When an idea's
-    folder is deleted and its entry is not, the generators iterate a slug with no
-    data and the index quietly describes something that is gone.
-    """
-    lifecycle = ROOT / "reports" / "lifecycle.yaml"
-    if not lifecycle.is_file():
-        return
-    try:
-        data = yaml.safe_load(lifecycle.read_text(encoding="utf-8")) or {}
-    except yaml.YAMLError as e:
-        errors.append(("lifecycle-slugs", "lifecycle.yaml does not parse: %s" % e, ""))
-        return
-    for slug in (data.get("ideas") or {}):
-        if not (ROOT / "reports" / slug).is_dir():
+        ids = pattern.findall(path.read_text(encoding="utf-8", errors="replace"))
+        seen, dupes = set(), []
+        for i in ids:
+            (dupes.append(i) if i in seen else seen.add(i))
+        for i in sorted(set(dupes)):
             errors.append((
-                "lifecycle-slugs",
-                "lifecycle.yaml lists '%s' but reports/%s/ does not exist" % (slug, slug),
-                "drop the entry, or restore the folder — the index and the tree must agree",
+                "ledger-ids",
+                "%s declares id %s more than once" % (path.relative_to(ROOT), i),
+                "two sessions allocated it against the same base; renumber the side "
+                "that has NOT reached main, and never reuse a retired id",
             ))
+
+    # 2. structured citations resolve
+    ev_path = REPORTS / "03-validation/evidence.md"
+    if not ev_path.exists():
+        return
+    known = set(LEDGERS["03-validation/evidence.md"].findall(
+        ev_path.read_text(encoding="utf-8", errors="replace")))
+
+    cited = {}  # id -> "file:line"
+    graph = REPORTS / "02-assumptions/graph.md"
+    if graph.exists():
+        inside = False
+        for n, line in enumerate(graph.read_text(
+                encoding="utf-8", errors="replace").splitlines(), 1):
+            if CITE_BLOCK.match(line):
+                inside = True
+                continue
+            if inside and CITE_END.match(line):
+                inside = False
+            if inside:
+                for eid in re.findall(r"\bE\d+\b", line):
+                    cited.setdefault(eid, "%s:%d" % (graph.relative_to(ROOT), n))
+
+    offerings = REPORTS / "04-mutation/offerings.md"
+    if offerings.exists():
+        text = offerings.read_text(encoding="utf-8", errors="replace")
+        for m in OFFERING_CITE.finditer(text):
+            n = text.count("\n", 0, m.start()) + 1
+            for eid in re.findall(r"\bE\d+\b", m.group(1)):
+                cited.setdefault(eid, "%s:%d" % (offerings.relative_to(ROOT), n))
+
+    for eid, where in sorted(cited.items()):
+        if eid not in known:
+            errors.append((
+                "ledger-ids",
+                "%s cites %s, which is not in %s"
+                % (where, eid, ev_path.relative_to(ROOT)),
+                "the entry was deleted or renumbered — re-point the citation at what "
+                "actually supports the claim, or drop it",
+            ))
+
+    # 3. a published id must not be reassigned to a different entry
+    rel = "reports/03-validation/evidence.md"
+    head = _head_blob(rel)
+    if head is None:
+        return
+    current = ev_path.read_text(encoding="utf-8", errors="replace")
+
+    # Mid-merge the id->date test is the WRONG test, because rule 2 ("main wins
+    # every ID contest") requires the losing side to renumber — which changes the
+    # date at an id by design. Checking stability there would fail every correctly
+    # resolved merge, and a gate that fires on the prescribed resolution just
+    # teaches people to bypass it. What still must hold is CONSERVATION: every
+    # entry either parent had must survive somewhere under some id. That is what
+    # actually catches the E48 failure (a claim silently replaced) and it also
+    # catches the merge-specific one (a claim dropped inside a text conflict).
+    if _merging():
+        other = _blob("MERGE_HEAD", rel)
+        here = _entry_identities(current)
+        for side, blob in (("HEAD", head), ("MERGE_HEAD", other)):
+            if blob is None:
+                continue
+            for ident, eid in sorted(_entry_identities(blob).items()):
+                if ident not in here:
+                    errors.append((
+                        "ledger-ids",
+                        "merge drops the %s entry %s (%s — %s)"
+                        % (side, eid, ident[0], ident[1][:60]),
+                        "merge ledgers at ENTRY granularity, not as text: every entry "
+                        "from both parents must survive, renumbered if main won its id",
+                    ))
+        return
+
+    was, now = _entry_dates(head), _entry_dates(current)
+    for eid, old in sorted(was.items()):
+        new = now.get(eid)
+        if new and new != old:
+            errors.append((
+                "ledger-ids",
+                "%s changed date %s -> %s: an id already committed is being reused "
+                "for a different entry" % (eid, old, new),
+                "give the new entry the next free id and leave %s burned; if this is "
+                "a genuine date correction, confirm nothing still cites %s for the "
+                "old claim" % (eid, eid),
+            ))
+
 
 
 def check_purpose_declared(errors):
@@ -649,19 +622,18 @@ def check_purpose_declared(errors):
     its filename already says what it is.
     """
     generated = re.compile(r"^(BRIEF|results-.*)\.md$")
-    for slug_dir in sorted(p for p in REPORTS.glob("*") if p.is_dir()):
-        for path in sorted(slug_dir.rglob("*.md")):
-            rel = path.relative_to(ROOT)
-            if DATED_PART.search(str(rel)) or generated.match(path.name):
-                continue
-            head = path.read_text(encoding="utf-8", errors="replace")[:4000]
-            if not re.search(r"^purpose:", head, re.M):
-                errors.append((
-                    "purpose",
-                    "%s is a living artifact with no `purpose:` line" % rel,
-                    "add `purpose: <the one fact this file owns>` to its frontmatter — "
-                    "the brief's inventory is generated from it",
-                ))
+    for path in sorted(REPORTS.rglob("*.md")):
+        rel = path.relative_to(ROOT)
+        if DATED_PART.search(str(rel)) or generated.match(path.name):
+            continue
+        head = path.read_text(encoding="utf-8", errors="replace")[:4000]
+        if not re.search(r"^purpose:", head, re.M):
+            errors.append((
+                "purpose",
+                "%s is a living artifact with no `purpose:` line" % rel,
+                "add `purpose: <the one fact this file owns>` to its frontmatter — "
+                "the brief's inventory is generated from it",
+            ))
 
 
 def check_status_vs_evidence(errors):
@@ -674,9 +646,8 @@ def check_status_vs_evidence(errors):
     trouble. Status is a founder decision and is never auto-flipped; this check just
     refuses to let the two drift silently.
     """
-    for graph in ROOT.glob("reports/*/02-assumptions/graph.md"):
-        slug = graph.parents[1].name
-        ledger = ROOT / "reports" / slug / "03-validation" / "evidence.md"
+    for graph in ROOT.glob("reports/02-assumptions/graph.md"):
+        ledger = REPORTS / "03-validation" / "evidence.md"
         if not ledger.exists():
             continue
         linked = {}
@@ -717,7 +688,6 @@ CHECKS = [
     ("derived-fields", check_no_hand_derived),
     ("routing-paths", check_routing_resolves),
     ("doc-paths", check_doc_paths_exist),
-    ("lifecycle-slugs", check_lifecycle_slugs),
     ("purpose", check_purpose_declared),
     ("status-evidence", check_status_vs_evidence),
 ]
@@ -730,7 +700,7 @@ def main() -> int:
         fn(errors)
 
     if not errors:
-        print("Repo valid: %d checks, %d ideas." % (len(CHECKS), len(_slugs())))
+        print("Repo valid: %d checks." % len(CHECKS))
         return 0
 
     by_check = {}

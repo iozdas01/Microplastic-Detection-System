@@ -26,8 +26,7 @@ from scripts.data._common import (
 )
 
 
-def query_exa(query: str, months_back: int = 6, num_results: int = 5,
-              slug: str | None = None) -> list[dict]:
+def query_exa(query: str, months_back: int = 6, num_results: int = 5) -> list[dict]:
     if not is_enabled("exa_ai") or not query:
         return []
 
@@ -55,7 +54,7 @@ def query_exa(query: str, months_back: int = 6, num_results: int = 5,
             "domain": urllib.parse.urlparse(res.get("url", "")).netloc.lower(),
             "source": "Exa",
         })
-    log_manifest(slug, {"phase": "api_call", "api": "exa_ai", "query": query,
+    log_manifest({"phase": "api_call", "api": "exa_ai", "query": query,
                         "result_count": len(results)})
     return results
 
@@ -65,10 +64,9 @@ def main() -> None:
     ap.add_argument("--query", required=True)
     ap.add_argument("--months", type=int, default=6)
     ap.add_argument("--results", type=int, default=5)
-    ap.add_argument("--slug", default="")
     args = ap.parse_args()
     emit_json(query_exa(args.query, months_back=args.months,
-                        num_results=args.results, slug=args.slug or None))
+                        num_results=args.results))
 
 
 if __name__ == "__main__":

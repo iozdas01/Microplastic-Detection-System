@@ -121,8 +121,8 @@ If yes → a phase folder. If no, ask what the missing input is:
 The practical consequence: **nothing in `/intake/`, `/practices/`, or `/unused/` is ever dispatched as a shotgun lens**, and none of those cards appear in `methods/shotgun-routing.yaml` except under `excluded_folders`. This is the reason the folders exist. A subagent handed one of these cannot say "I cannot run this"; it writes a fluent, well-structured, entirely invented result — conversion rates from a landing page never built, an LOI from a company never contacted, a founder history nobody was asked about — and that output reaches synthesis indistinguishable from evidence. Separating them by folder makes the mistake structurally hard instead of relying on a prompt to prevent it.
 
 Intake and phase folders form a pipeline rather than a choice: intake methods
-run once, write `input-context/{slug}/belief.md`, and initialize
-`reports/{slug}/01-ideation/hunch-lineage.md` with founder-confirmed H1. The
+run once, write `input-context/belief.md`, and initialize
+`reports/01-ideation/hunch-lineage.md` with founder-confirmed H1. The
 shotgun reads both and gives the same belief/hunch pair to every selected
 method. Re-deriving founder fit or the founder's path from solution to problem
 per run is both redundant and a case where a research lens confabulates. This

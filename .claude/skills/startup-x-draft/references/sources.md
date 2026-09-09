@@ -50,7 +50,7 @@ was small, the post is small. A small true post beats a large inflated one.
 
 ---
 
-## 2. Repo artifacts — `reports/{slug}/`
+## 2. Repo artifacts — `reports/`
 
 Start with `BRIEF.md` (generated, ~90 lines, current). Go deeper only for the specific
 angle in play.

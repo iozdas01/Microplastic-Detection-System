@@ -100,7 +100,7 @@ An IC can confirm or contradict the **mechanism**; only the senior tier can spea
 assumption's disconfirmation test actually needs.
 
 **WRONG ASSUMPTION** — the profile is a real, valuable contact but for a different assumption
-than the one being drafted for. Check `reports/{slug}/outreach/email/contact-routing.md →
+than the one being drafted for. Check `reports/outreach/email/contact-routing.md →
 Segment competence` before drafting: a contact may only be asked about assumptions their role
 gives them first-hand knowledge of. Researchers testify to what data their own work needed;
 they cannot testify to deployment labour, site access or integration economics. Integrators and
@@ -266,7 +266,7 @@ Write the log when the draft is settled. Do not wait for the founder to send —
 draft with its verification intact is worth keeping, and the founder may send hours later
 from their phone.
 
-**`reports/{slug}/outreach/contacts.md`** — one block per contact per `schemas/contact.md`.
+**`reports/outreach/contacts.md`** — one block per contact per `schemas/contact.md`.
 New contact: create the block. Existing: update in place, never duplicate, and append the
 new assumption id to `assumptions_tested` if it differs. Deduplicate on `linkedin_url`.
 
@@ -280,7 +280,7 @@ afterwards. Before finalising a batch, check which tier × close cells are thin 
 batch's weakest-fit contact in the empty one, so the comparison stays interpretable without
 spending a strong contact on it.
 
-**`reports/{slug}/outreach/copy/{A_ID}-linkedin.md`** — the message, its traceability table,
+**`reports/outreach/copy/{A_ID}-linkedin.md`** — the message, its traceability table,
 the rule-compliance list, and the planned arc for the next two or three messages. Append,
 never overwrite; the archive is how a later session knows what this person has already been
 told.
@@ -296,7 +296,7 @@ quoting what the contact said back, use a possessive label (`**Their last reply:
 Then regenerate the tracker:
 
 ```bash
-python3 scripts/build_control_room.py {slug}
+python3 scripts/build_control_room.py
 ```
 
 It is a pure projection of `contacts.md`, so it is always safe to overwrite.

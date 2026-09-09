@@ -4,7 +4,7 @@ description: >-
   Talks with the founder about what to post on X (Twitter), then drafts it in their voice.
   Mines recent session transcripts for what they actually said, offers concrete candidate
   topics, then drafts one post at a time and revises until they'd send it. Also pulls from
-  an idea's `reports/{slug}/` artifacts, outreach reality, or a pasted thought; drafts
+  an idea's `reports/` artifacts, outreach reality, or a pasted thought; drafts
   replies to posts the founder pastes in; and captions factory photos and videos staged in
   `content/x/media/`. Applies a disclosure ladder to private material, records grounding
   for checkable claims, and queues approved drafts in `content/x/queue.md`. It never
@@ -133,7 +133,7 @@ Two more entry points. Same conversation, same disclosure ladder, same queue.
 **Replying to someone's post.** The founder pastes the post — text, link, or screenshot.
 Reply craft has its own section in `references/craft.md`: shorter, one beat, add something
 or don't send. Before drafting, check the author against the active idea's
-`reports/{slug}/contacts.md` — a public reply to someone mid-outreach is an outreach move,
+`reports/contacts.md` — a public reply to someone mid-outreach is an outreach move,
 and the founder decides it as one. Queue with `reply_to:` set to the post's URL.
 
 **Captioning factory photos and videos.** The founder stages files in `content/x/media/`.
@@ -172,7 +172,7 @@ a correction rather than an example. Ask for the live URL on the entry.
 - **Never pull material from an idea the founder didn't name.** Cross-idea bleed is worse in
   public than in analysis.
 - **Never write per-idea findings into `content/x/`.** Entries carry a `source:` pointer; the
-  finding stays in `reports/{slug}/`.
+  finding stays in `reports/`.
 - **Never hand-maintain a count or status summary in `queue.md`** — it drifts from the rows
   beneath it.
 - **Don't inflate.** If the thought was modest, the post is modest. A small true post

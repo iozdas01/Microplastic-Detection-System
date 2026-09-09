@@ -88,7 +88,6 @@ def normalize_for_adzuna(company: str) -> str:
 def query_adzuna(keywords: list[str], country: str,
                  company: str | None = None,
                  results_per_page: int = 50,
-                 slug: str | None = None,
                  company_country_hint: str | None = None) -> list[dict]:
     """Search Adzuna jobs. If `company` is set, scoped to that employer.
 
@@ -107,7 +106,7 @@ def query_adzuna(keywords: list[str], country: str,
     produced false negative evidence rather than an error.
     """
     if not is_enabled("adzuna"):
-        log_manifest(slug, {"phase": "api_call", "api": "adzuna",
+        log_manifest({"phase": "api_call", "api": "adzuna",
                             "decision": "skip", "reason": "not_enabled"})
         return []
     if not keywords:
@@ -117,7 +116,7 @@ def query_adzuna(keywords: list[str], country: str,
     if company_country_hint:
         hint = company_country_hint.lower()
         if hint and hint not in ADZUNA_SUPPORTED_COUNTRIES:
-            log_manifest(slug, {"phase": "api_call", "api": "adzuna",
+            log_manifest({"phase": "api_call", "api": "adzuna",
                                 "company": company, "decision": "skip",
                                 "reason": "adzuna_country_unsupported",
                                 "country": hint})
@@ -143,7 +142,7 @@ def query_adzuna(keywords: list[str], country: str,
         r = http_get(endpoint, params=params, timeout=30)
         if r is None or r.status_code != 200:
             http_failures += 1
-            log_manifest(slug, {"phase": "api_call", "api": "adzuna",
+            log_manifest({"phase": "api_call", "api": "adzuna",
                                 "company": company, "keyword": keyword,
                                 "http_status": r.status_code if r else None,
                                 "result_count": 0})
@@ -176,14 +175,14 @@ def query_adzuna(keywords: list[str], country: str,
             "source_url": url,
         })
 
-    log_manifest(slug, {"phase": "api_call", "api": "adzuna",
+    log_manifest({"phase": "api_call", "api": "adzuna",
                         "params": {"country": country, "company": company,
                                    "keywords": keywords,
                                    "calls": len(keywords),
                                    "http_failures": http_failures},
                         "result_count": len(postings)})
     if company and not postings:
-        log_manifest(slug, {"phase": "api_call", "api": "adzuna",
+        log_manifest({"phase": "api_call", "api": "adzuna",
                             "reason": "no_adzuna_match", "tried": company})
     return postings
 
@@ -197,7 +196,6 @@ def main() -> None:
     ap.add_argument("--company", default="",
                     help="Optional employer scope (substring match)")
     ap.add_argument("--per-page", type=int, default=50)
-    ap.add_argument("--slug", default="")
     ap.add_argument("--company-country-hint", default="")
     args = ap.parse_args()
 
@@ -206,7 +204,6 @@ def main() -> None:
         keywords, country=args.country,
         company=args.company or None,
         results_per_page=args.per_page,
-        slug=args.slug or None,
         company_country_hint=args.company_country_hint or None,
     ))
 

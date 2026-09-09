@@ -15,8 +15,8 @@ CLI:
     python -m scripts.data.linkedin_export connections \\
         --title "Head of Estates" --title "Reliability Engineer" \\
         --domain-noun chiller --domain-noun HVAC \\
-        --exclude recruiter --exclude robotics --slug your-idea-slug
-    python -m scripts.data.linkedin_export history --slug your-idea-slug
+        --exclude recruiter --exclude robotics
+    python -m scripts.data.linkedin_export history
 
 Python API:
     from scripts.data.linkedin_export import parse_connections, build_history
@@ -548,7 +548,6 @@ def parse_connections(
     with_history: bool = True,
     limit: int | None = None,
     include_rejected: bool = False,
-    slug: str | None = None,
 ) -> dict[str, Any]:
     """Parse the export and return ICP-filtered 1st-degree contacts as JSON-ready dict."""
     path, files = find_export(export_path)
@@ -610,7 +609,7 @@ def parse_connections(
     if include_rejected:
         payload["rejected"] = rejected
 
-    log_manifest(slug, {
+    log_manifest({
         "source": "linkedin_export",
         "mode": "connections",
         "total_connections": len(connections),
@@ -622,7 +621,6 @@ def parse_connections(
 
 def parse_history(
     export_path: Path | str | None = None,
-    slug: str | None = None,
     owner: str | None = None,
 ) -> dict[str, Any]:
     """Return every person the founder has messaged or invited, with suggested status."""
@@ -643,7 +641,7 @@ def parse_history(
         },
         "people": records,
     }
-    log_manifest(slug, {
+    log_manifest({
         "source": "linkedin_export",
         "mode": "history",
         "people": len(records),
@@ -705,12 +703,10 @@ def main() -> None:
                         help="Also emit non-matching connections, for filter tuning")
     p_conn.add_argument("--no-history", action="store_true",
                         help="Skip the message-history join")
-    p_conn.add_argument("--slug", default=None, help="Idea slug, for manifest logging")
 
     p_hist = sub.add_parser("history", help="Everyone already messaged or invited")
     p_hist.add_argument("--owner", default=None,
                         help="Your own name as it appears in messages.csv (auto-detected)")
-    p_hist.add_argument("--slug", default=None, help="Idea slug, for manifest logging")
 
     args = parser.parse_args()
 
@@ -726,11 +722,10 @@ def main() -> None:
                 with_history=not args.no_history,
                 limit=args.limit,
                 include_rejected=args.include_rejected,
-                slug=args.slug,
             ))
         elif args.mode == "history":
             emit_json(parse_history(
-                export_path=args.export, slug=args.slug, owner=args.owner))
+                export_path=args.export, owner=args.owner))
     except FileNotFoundError as e:
         print(f"[error] {e}", file=sys.stderr)
         raise SystemExit(2)

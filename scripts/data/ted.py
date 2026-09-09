@@ -5,7 +5,7 @@ CLI:
 
 Python API:
     from scripts.data.ted import query_ted
-    contracts = query_ted(["HVAC maintenance"], months_back=24, slug="my-idea")
+    contracts = query_ted(["HVAC maintenance"], months_back=24)
 
 Registry gate: ``ted_eu``.
 """
@@ -44,11 +44,10 @@ def _pick_multilingual(field: Any) -> str:
     return str(field)
 
 
-def query_ted(keywords: list[str], months_back: int = 24,
-              slug: str | None = None) -> list[dict]:
+def query_ted(keywords: list[str], months_back: int = 24) -> list[dict]:
     """Search TED EU notices by title keywords over the last N months."""
     if not is_enabled("ted_eu"):
-        log_manifest(slug, {"phase": "api_call", "api": "ted_eu",
+        log_manifest({"phase": "api_call", "api": "ted_eu",
                             "decision": "skip", "reason": "not_enabled"})
         return []
 
@@ -72,7 +71,7 @@ def query_ted(keywords: list[str], months_back: int = 24,
         try:
             r = requests.post(endpoint, json=payload, headers=DEFAULT_HEADERS, timeout=60)
         except requests.RequestException as e:
-            log_manifest(slug, {"phase": "api_call", "api": "ted_eu",
+            log_manifest({"phase": "api_call", "api": "ted_eu",
                                 "error": str(e)})
             break
         if r is None or r.status_code != 200:
@@ -81,7 +80,7 @@ def query_ted(keywords: list[str], months_back: int = 24,
                 body = r.text[:300] if r is not None else ""
             except Exception:
                 pass
-            log_manifest(slug, {"phase": "api_call", "api": "ted_eu",
+            log_manifest({"phase": "api_call", "api": "ted_eu",
                                 "http_status": r.status_code if r else None,
                                 "body_excerpt": body})
             break
@@ -108,7 +107,7 @@ def query_ted(keywords: list[str], months_back: int = 24,
         if len(notices) < payload["limit"]:
             break
 
-    log_manifest(slug, {"phase": "api_call", "api": "ted_eu",
+    log_manifest({"phase": "api_call", "api": "ted_eu",
                         "params": {"keywords": keywords, "months_back": months_back},
                         "result_count": len(contracts)})
     return contracts
@@ -119,12 +118,10 @@ def main() -> None:
     ap.add_argument("--keywords", required=True,
                     help="Comma-separated title-search keywords")
     ap.add_argument("--months", type=int, default=24)
-    ap.add_argument("--slug", default="")
     args = ap.parse_args()
 
     keywords = [k.strip() for k in args.keywords.split(",") if k.strip()]
-    emit_json(query_ted(keywords, months_back=args.months,
-                        slug=args.slug or None))
+    emit_json(query_ted(keywords, months_back=args.months))
 
 
 if __name__ == "__main__":

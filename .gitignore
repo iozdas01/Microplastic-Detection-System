@@ -40,18 +40,9 @@ scrapers/outputs/
 # content. Parsed locally by scripts/data/linkedin_export.py. Never commit.
 private/
 
-# Per-idea machine caches — visited-URL sets, run manifests, API response caches.
+# Outreach machine caches — visited-URL sets, run manifests, API response caches.
 # Regenerated on demand by the outreach skills; never review-worthy.
-reports/*/outreach/.*
-
-# Bulk source downloads — re-fetched on demand by the collectors in scripts/research/ and
-# too large to track. The tidy extracts in data/processed/ and the JSON payloads in
-# data/raw/ are the provenance record that matters.
-reports/high-mix-manufacturing/research/data/raw/census-cbp/*.zip
-reports/high-mix-manufacturing/research/data/raw/census-cbp/*.txt
-reports/high-mix-manufacturing/research/data/raw/bls-cex/cx.series
-reports/high-mix-manufacturing/research/data/raw/census-mrts/*.xlsx
-reports/high-mix-manufacturing/research/data/raw/_probe/
+reports/outreach/.*
 
 # VibeCAD (nested upstream clone + installer, not part of this repo)
 vibecad/

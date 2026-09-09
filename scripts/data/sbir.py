@@ -23,8 +23,7 @@ from scripts.data._common import (
 )
 
 
-def query_sbir(keywords: list[str], years_back: int = 3,
-               slug: str | None = None) -> list[dict]:
+def query_sbir(keywords: list[str], years_back: int = 3) -> list[dict]:
     if not is_enabled("sbir") or not keywords:
         return []
 
@@ -52,7 +51,7 @@ def query_sbir(keywords: list[str], years_back: int = 3,
                 "source_url": a.get("award_link") or "https://www.sbir.gov/",
             })
         time.sleep(0.5)
-    log_manifest(slug, {"phase": "api_call", "api": "sbir",
+    log_manifest({"phase": "api_call", "api": "sbir",
                         "keywords": keywords, "result_count": len(awards)})
     return awards
 
@@ -62,10 +61,9 @@ def main() -> None:
     ap.add_argument("--keywords", required=True,
                     help="Comma-separated keywords (one call per keyword)")
     ap.add_argument("--years", type=int, default=3)
-    ap.add_argument("--slug", default="")
     args = ap.parse_args()
     keywords = [k.strip() for k in args.keywords.split(",") if k.strip()]
-    emit_json(query_sbir(keywords, years_back=args.years, slug=args.slug or None))
+    emit_json(query_sbir(keywords, years_back=args.years))
 
 
 if __name__ == "__main__":

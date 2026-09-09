@@ -22,8 +22,7 @@ from scripts.data._common import (
 )
 
 
-def query_cordis(keywords: list[str], years_back: int = 3,
-                 slug: str | None = None) -> list[dict]:
+def query_cordis(keywords: list[str], years_back: int = 3) -> list[dict]:
     if not is_enabled("cordis") or not keywords:
         return []
 
@@ -52,7 +51,7 @@ def query_cordis(keywords: list[str], years_back: int = 3,
                 "source": "CORDIS",
                 "source_url": p.get("url") or f"https://cordis.europa.eu/project/id/{p.get('id', '')}",
             })
-    log_manifest(slug, {"phase": "api_call", "api": "cordis",
+    log_manifest({"phase": "api_call", "api": "cordis",
                         "keywords": keywords, "result_count": len(projects)})
     return projects
 
@@ -62,10 +61,9 @@ def main() -> None:
     ap.add_argument("--keywords", required=True,
                     help="Comma-separated keywords (ORed in a single call)")
     ap.add_argument("--years", type=int, default=3)
-    ap.add_argument("--slug", default="")
     args = ap.parse_args()
     keywords = [k.strip() for k in args.keywords.split(",") if k.strip()]
-    emit_json(query_cordis(keywords, years_back=args.years, slug=args.slug or None))
+    emit_json(query_cordis(keywords, years_back=args.years))
 
 
 if __name__ == "__main__":

@@ -1,34 +1,33 @@
 #!/usr/bin/env python3
-"""Regenerate an idea's single unified dashboard.
+"""Regenerate the idea's single unified dashboard.
 
-ONE HTML per idea, five tabs, in pipeline order:
+ONE HTML, five tabs, in pipeline order:
 
     Hunches  →  Pain Patterns  →  Offerings  →  Email  →  Contacts
     believe     what repeats     what we'd     sent /   who we asked
                                  sell          replied
 
 Reads:
-    input-context/{slug}/belief.md                  the durable belief
-    reports/{slug}/01-ideation/hunch-lineage.md     hunch tree + active hunch
-    reports/{slug}/02-assumptions/graph.md          assumptions, status, icp_valid_tiers
-    reports/{slug}/03-validation/evidence.md        pain patterns + entries
-    reports/{slug}/04-mutation/offerings.md         offerings derived from patterns
-    reports/{slug}/outreach/contacts.md             contacts
-    reports/{slug}/outreach/email/*/email-log.csv   email delivery and reply state
+    input-context/belief.md                  the durable belief
+    reports/01-ideation/hunch-lineage.md     hunch tree + active hunch
+    reports/02-assumptions/graph.md          assumptions, status, icp_valid_tiers
+    reports/03-validation/evidence.md        pain patterns + entries
+    reports/04-mutation/offerings.md         offerings derived from patterns
+    reports/outreach/contacts.md             contacts
+    reports/outreach/email/*/email-log.csv   email delivery and reply state
 
 Writes:
-    reports/{slug}/control-room.html                the artifact
-    reports/{slug}/outreach/results-{A_ID}.md       per-assumption outreach results
+    reports/control-room.html                the artifact
+    reports/outreach/results-{A_ID}.md       per-assumption outreach results
 
 Overwrite is always safe — the HTML is a pure projection of the markdown. Nothing
 is authored here, so anything wrong on the page is wrong in a source file.
 
 Usage:
-    python3 scripts/build_control_room.py <slug>
-    python3 scripts/build_control_room.py --all     # every `active` idea
+    python3 scripts/build_control_room.py
 
 Idea-agnostic by construction: the only market vocabulary it routes on is
-`tier_side` (vocab:tier_side), resolved from each idea's own `icp_valid_tiers`.
+`tier_side` (vocab:tier_side), resolved from the idea's own `icp_valid_tiers`.
 No tab hardcodes a vertical.
 """
 
@@ -51,11 +50,13 @@ from pathlib import Path
 # disagreed about the same contacts.
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
 from scripts.idea import (  # noqa: E402
+    BELIEF,
     CONTACTED_STATUSES,
     DEFAULT_CHANNEL,
     _channel,
     compute_conversion_stats,
     derive_assumption_evidence,
+    idea_name,
 )
 
 try:
@@ -243,7 +244,7 @@ def _parse_campaign_drafts(path: Path) -> dict[str, dict]:
     return out
 
 
-def parse_email_campaign(slug: str) -> list[dict]:
+def parse_email_campaign() -> list[dict]:
     """Project durable email campaign files into dashboard-ready records.
 
     Driven by `targets.csv`, which the campaigns declare as their state — their own logs say
@@ -251,7 +252,7 @@ def parse_email_campaign(slug: str) -> list[dict]:
     off `*/email-log.csv`, a file no campaign in this repo has ever written, so the tab
     rendered empty however many targets existed.
     """
-    root = REPORTS / slug / "outreach" / "email"
+    root = REPORTS / "outreach" / "email"
     records: list[dict] = []
     if not root.exists():
         return records
@@ -436,7 +437,7 @@ STATUS_COLORS = {
 }
 
 
-def _load_copy_by_contact(slug: str) -> dict[str, dict]:
+def _load_copy_by_contact() -> dict[str, dict]:
     """
     Parse every outreach copy file into { contact_id → { msg1, msg2, msg3, header, lang } }.
 
@@ -446,7 +447,7 @@ def _load_copy_by_contact(slug: str) -> dict[str, dict]:
 
     Skips [REMOVED ...] blocks. Handles ~ prefix in char counts.
     """
-    copy_dir = REPORTS / slug / "outreach" / "copy"
+    copy_dir = REPORTS / "outreach" / "copy"
     if not copy_dir.exists():
         return {}
     # Glob widened 2026-08-10: was "*-linkedin.md", which silently skipped
@@ -695,7 +696,6 @@ def build_invite_log(contacts: list[dict]) -> tuple[str, str]:
 
 
 def render(
-    slug: str,
     frontmatter: dict,
     contacts: list[dict],
     copy_by_id: dict[str, dict] | None = None,
@@ -722,7 +722,7 @@ def render(
     startups_tab_html = render_startups_tab(companies_fm, companies_list, contacts)
     startups_count = sum(1 for c in companies_list if _map_side(c) == "startup")
 
-    email_campaign = parse_email_campaign(slug)
+    email_campaign = parse_email_campaign()
     email_tab_html = render_email_tab(email_campaign)
     email_campaign_json = json.dumps(email_campaign, indent=2, ensure_ascii=False)
     email_count = len(email_campaign)
@@ -747,8 +747,8 @@ def render(
     offerings_tab_html = render_offerings_tab(
         offerings, scored_patterns, thesis.get("offerings_fm") or {})
     offerings_count = len(offerings)
-    pages_tab_html = render_pages_tab(slug)
-    pages_count = len(list((REPO / "reports" / slug / "pages").glob("*.html")))
+    pages_tab_html = render_pages_tab()
+    pages_count = len(list((REPORTS / "pages").glob("*.html")))
     # scalar or list — see build_brief.py, an idea may run one hunch per entry point
     _ah = (thesis.get("lineage_fm") or {}).get("active_hunch")
     _ah_list = [str(h).strip() for h in (_ah if isinstance(_ah, list) else [_ah]) if h]
@@ -838,7 +838,7 @@ def render(
     # YAML coerces bare ISO dates to datetime.date, so frontmatter values are
     # str()-ed before escaping — escape() on a date hits date.replace() instead.
     idea_title = escape(
-        str(frontmatter.get("campaign_name") or frontmatter.get("idea") or slug)
+        str(frontmatter.get("campaign_name") or frontmatter.get("idea") or idea_name())
     )
     last_updated = escape(str(frontmatter.get("last_updated") or "—"))
     total = stats["total"]
@@ -876,8 +876,8 @@ def render(
 
     return f"""<!doctype html>
 <!-- GENERATED by scripts/build_control_room.py — DO NOT EDIT.
-     Every value here is derived from reports/{slug}/. Fix the source file, then:
-       python3 scripts/build_control_room.py {slug}
+     Every value here is derived from reports/. Fix the source file, then:
+       python3 scripts/build_control_room.py
      A hand-edit is overwritten on the next run and drifts from its source until then. -->
 <html lang="en">
 <head>
@@ -3544,7 +3544,7 @@ def render_companies_tab(companies: list[dict], fm: dict, contacts: list[dict] |
     if not companies:
         return ('<div class="co-empty"><p>No <code>outreach/companies.md</code> yet.</p>'
                 '<p>Run <code>/startup-outreach-intel</code>, or log companies by hand '
-                'into <code>reports/{slug}/outreach/companies.md</code>.</p></div>')
+                'into <code>reports/outreach/companies.md</code>.</p></div>')
 
     def sort_key(c):
         side = str(c.get("tier_side") or "")
@@ -5300,15 +5300,15 @@ def _page_title(path: Path) -> str:
     return unescape(re.sub(r"\s+", " ", m.group(1)).strip()) if m else path.stem
 
 
-def render_pages_tab(slug: str) -> str:
-    """Every openable page in reports/{slug}/pages/, grouped and labelled.
+def render_pages_tab() -> str:
+    """Every openable page in reports/pages/, grouped and labelled.
 
     The control room is the one page you open for an idea; this tab is what makes that
     true of the reports too, rather than leaving eight HTML files in a folder with names
     that do not say which of them still holds. Titles come from each file, notes and
     status from pages/pages.yaml — see that file for why the split is that way.
     """
-    pages_dir = REPO / "reports" / slug / "pages"
+    pages_dir = REPORTS / "pages"
     if not pages_dir.is_dir():
         return ('<div class="empty-state" role="status"><p>No <code>pages/</code> folder '
                 'for this idea yet.</p></div>')
@@ -5523,7 +5523,7 @@ THESIS_CSS = """
 # ─── main ────────────────────────────────────────────────────────────────────
 
 
-def write_results_files(slug: str, contacts: list[dict]) -> None:
+def write_results_files(contacts: list[dict]) -> None:
     """Generate outreach/results-{A_ID}.md — a stats projection of contacts.md.
 
     These files used to be hand-written and drifted from the contacts they
@@ -5555,9 +5555,9 @@ def write_results_files(slug: str, contacts: list[dict]) -> None:
         lines = [
             "<!-- GENERATED by scripts/build_control_room.py — DO NOT EDIT.",
             "     Every value is derived from outreach/contacts.md; fix that file and",
-            f"     rerun: python3 scripts/build_control_room.py {slug}",
+            "     rerun: python3 scripts/build_control_room.py",
             "-->",
-            f"# Outreach results — {aid} · {slug}",
+            f"# Outreach results — {aid} · {idea_name()}",
             "",
             f"_Generated {now}. Numbers are the funnel over contacts tagged {aid}._",
             "",
@@ -5583,47 +5583,47 @@ def write_results_files(slug: str, contacts: list[dict]) -> None:
                 f"| {c.get('id', '')} | {c.get('name', '')} | {c.get('outreach_status') or 'pending'} "
                 f"| {c.get('call_stage', '') or '—'} |")
         lines.append("")
-        (REPORTS / slug / "outreach" / f"results-{aid}.md").write_text(
+        (REPORTS / "outreach" / f"results-{aid}.md").write_text(
             "\n".join(lines), encoding="utf-8")
 
 
-def build_for_slug(slug: str) -> Path | None:
+def build() -> Path | None:
     """
-    Build the single dashboard HTML for `slug`.
+    Build the single dashboard HTML.
 
-    ONE file per idea. Do NOT add per-assumption outputs
+    ONE file. Do NOT add per-assumption outputs
     (`outreach_tracker-A2.html` etc.) — the in-page Assumption filter is how you
     view a slice, and that fragmentation was explicitly rejected by the founders.
     """
-    contacts_path = REPORTS / slug / "outreach" / "contacts.md"
+    contacts_path = REPORTS / "outreach" / "contacts.md"
 
     contacts: list[dict] = []
     frontmatter: dict = {}
     if contacts_path.exists():
         frontmatter, contacts = parse_contacts_md(contacts_path)
     else:
-        print(f"[info] {slug} — no contacts.md yet (Contacts tab will be empty)", file=sys.stderr)
+        print("[info] no contacts.md yet (Contacts tab will be empty)", file=sys.stderr)
 
     # NO server-side per-assumption filter. Assumption filtering lives in the
     # in-page dropdown (`fltAssumption`) — one HTML per idea, always.
 
     # Load copy from ALL assumptions' copy files so the tracker's assumption
     # filter can flip between them without regenerating.
-    copy_by_id = _load_copy_by_contact(slug)
+    copy_by_id = _load_copy_by_contact()
 
     # Pain patterns live in the evidence ledger, one stage up from outreach —
     # they are cross-contact findings, not outreach mechanics.
-    ev_path = REPORTS / slug / "03-validation" / "evidence.md"
+    ev_path = REPORTS / "03-validation" / "evidence.md"
     patterns, evidence_entries = parse_evidence_md(ev_path)
     if ev_path.exists() and not _HAS_YAML:
-        print(f"[warn] {slug} — evidence.md present but PyYAML not installed; "
+        print("[warn] evidence.md present but PyYAML not installed; "
               f"Pain Patterns tab will show empty state.", file=sys.stderr)
 
     # Thesis layer — belief, hunch lineage, assumption graph, derived offerings.
     lineage_fm, hunches = parse_lineage_md(
-        REPORTS / slug / "01-ideation" / "hunch-lineage.md")
+        REPORTS / "01-ideation" / "hunch-lineage.md")
     graph_fm, assumptions = parse_graph_md(
-        REPORTS / slug / "02-assumptions" / "graph.md")
+        REPORTS / "02-assumptions" / "graph.md")
     # Wire the ledger onto the nodes. Without this every assumption card rendered
     # `none` for evidence while the ledger held entries pointing straight at it — the
     # cards read "untested / none" for H3A1-H3A3 on 2026-09-03 with six linked entries
@@ -5632,45 +5632,45 @@ def build_for_slug(slug: str) -> Path | None:
     # (CLAUDE.md) — never read `evidence_for:`/`evidence_against:` off the node.
     derive_assumption_evidence(assumptions, evidence_entries)
     offerings_fm, offerings = parse_offerings_md(
-        REPORTS / slug / "04-mutation" / "offerings.md")
-    belief_path = REPO / "input-context" / slug / "belief.md"
+        REPORTS / "04-mutation" / "offerings.md")
+    belief_path = BELIEF
     belief = _extract_belief(belief_path)
     belief_sections = _extract_belief_sections(belief_path)
 
     # Dated run artifacts + research, linked relative to control-room.html.
     # Scanned, never registered: a new artifact appears the moment it exists.
     artifacts: list[tuple[str, str]] = []
-    ideation = REPORTS / slug / "01-ideation"
+    ideation = REPORTS / "01-ideation"
     if ideation.is_dir():
         for f in sorted(ideation.glob("*-shotgun.md")):
             artifacts.append((f"01-ideation/{f.name}", f.stem.replace("-", " ")))
         for f in sorted(ideation.glob("recon/*/*.md")):
-            rel = f.relative_to(REPORTS / slug)
+            rel = f.relative_to(REPORTS)
             artifacts.append((str(rel), f.stem.replace("-", " ")))
 
     # Company registry — the outreach-side landscape. One author: companies.md.
-    companies_path = REPORTS / slug / "outreach" / "companies.md"
+    companies_path = REPORTS / "outreach" / "companies.md"
     companies = parse_companies_md(companies_path)
     if companies_path.exists() and not _HAS_YAML:
-        print(f"[warn] {slug} — companies.md present but PyYAML not installed; "
+        print("[warn] companies.md present but PyYAML not installed; "
               f"Companies tab will show empty state.", file=sys.stderr)
     thesis = {"lineage_fm": lineage_fm, "hunches": hunches, "graph_fm": graph_fm,
               "assumptions": assumptions, "offerings": offerings,
               "offerings_fm": offerings_fm, "belief": belief,
               "belief_sections": belief_sections, "artifacts": artifacts}
 
-    html = render(slug, frontmatter, contacts, copy_by_id=copy_by_id,
+    html = render(frontmatter, contacts, copy_by_id=copy_by_id,
                   patterns=patterns, evidence_entries=evidence_entries,
                   thesis=thesis, companies=companies)
 
     # ONE file per idea. The outreach_tracker.html redirect stub that used to be
     # written here was removed on 2026-08-07 once the skills naming that path were
     # updated — a redirect nobody follows is just a second path to keep working.
-    out = REPORTS / slug / "control-room.html"
+    out = REPORTS / "control-room.html"
     _check_emitted_js(html)
     out.write_text(html, encoding="utf-8")
-    write_results_files(slug, contacts)
-    print(f"[ok] {slug}: wrote {out} ({len(contacts)} contacts, "
+    write_results_files(contacts)
+    print(f"[ok] wrote {out} ({len(contacts)} contacts, "
           f"{len(offerings)} offerings, {len(hunches)} hunches, "
           f"{len(companies[1])} companies)")
     return out
@@ -5706,9 +5706,7 @@ def _check_emitted_js(html: str) -> None:
 
 def main() -> None:
     parser = argparse.ArgumentParser(description=__doc__.splitlines()[0])
-    parser.add_argument("slug", nargs="?", help="idea slug (e.g. automation-of-labour-at-height)")
-    parser.add_argument("--all", action="store_true", help="rebuild every idea's dashboard")
-    args = parser.parse_args()
+    parser.parse_args()
 
     # Refuse to build without PyYAML. Without it parse_graph_md / parse_offerings_md /
     # the evidence loader all return empty, and the script cheerfully overwrites a good
@@ -5720,20 +5718,12 @@ def main() -> None:
             "[fatal] PyYAML is not available to this interpreter, so the assumption graph, "
             "offerings and evidence ledger cannot be parsed.\n"
             "        Refusing to overwrite the dashboard with a page missing those tabs.\n"
-            "        Use the repo venv:  .venv/bin/python3 scripts/build_control_room.py "
-            f"{args.slug or '--all'}\n"
+            "        Use the repo venv:  .venv/bin/python3 scripts/build_control_room.py\n"
             "        (or install it:     .venv/bin/python3 -m pip install -r requirements.txt)",
             file=sys.stderr)
         raise SystemExit(1)
 
-    if args.all:
-        for outreach_dir in REPORTS.glob("*/outreach"):
-            build_for_slug(outreach_dir.parent.name)
-        return
-
-    if not args.slug:
-        parser.error("provide a slug or use --all")
-    build_for_slug(args.slug)
+    build()
 
 
 if __name__ == "__main__":

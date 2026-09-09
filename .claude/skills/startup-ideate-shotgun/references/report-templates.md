@@ -32,7 +32,7 @@ analogy, segment, or product pattern suggests another opportunity, label it
 must independently evidence the problem under the SISP guard.
 
 The agent writes the full output to
-`reports/{slug}/01-ideation/methods/{run-id}/{method-slug}.md` and returns only
+`reports/01-ideation/methods/{run-id}/{method-slug}.md` and returns only
 the path confirmation.
 
 ### 6. Synthesize with controlled lineage
@@ -67,10 +67,10 @@ The synthesis must:
 
 ### 7. Write the report
 
-Write `reports/{slug}/01-ideation/{run-id}-shotgun.md`:
+Write `reports/01-ideation/{run-id}-shotgun.md`:
 
 ```markdown
-# Belief Shotgun — {slug}
+# Belief Shotgun — {idea}
 Date:
 Mode:
 
@@ -165,12 +165,11 @@ and reason for change. Never delete retired hunches.
 
 ### 11. Refresh the dashboard
 
-After the founder decision and any confirmed lineage update, run both generators
-for the slug:
+After the founder decision and any confirmed lineage update, run both generators:
 
 ```bash
-python3 scripts/build_control_room.py {slug}
-python3 scripts/build_brief.py {slug}
+python3 scripts/build_control_room.py
+python3 scripts/build_brief.py
 ```
 
 The dashboard shows the stable belief, hunch under test, method findings,
@@ -186,11 +185,11 @@ Create `context-manifest.json` with an immutable `run_subject`:
 
 ```json
 {
-  "idea_slug": "...",
+  "idea": "...",
   "mode": "initial_test | reframe",
-  "belief_file": "input-context/{slug}/belief.md",
+  "belief_file": "input-context/belief.md",
   "belief_verbatim": "...",
-  "hunch_lineage_file": "reports/{slug}/01-ideation/hunch-lineage.md",
+  "hunch_lineage_file": "reports/01-ideation/hunch-lineage.md",
   "hunch_id": "H1",
   "hunch_statement": "...",
   "components": {
@@ -350,10 +349,10 @@ Phase mechanics, output templates and the failure catalogue live in `references/
 
 ## Run artifacts
 
-Write every per-idea artifact below `reports/{slug}/`:
+Write every per-idea artifact below `reports/`:
 
 ```
-reports/{slug}/01-ideation/
+reports/01-ideation/
   {run-id}-shotgun.md
   hunch-lineage.md
   methods/{run-id}/{method-slug}.md

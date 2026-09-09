@@ -32,9 +32,8 @@ import argparse
 from scripts.data._common import emit_json, log_manifest
 
 
-def query_uk_contracts(keywords: list[str], months_back: int = 24,
-                       slug: str | None = None) -> list[dict]:
-    log_manifest(slug, {"phase": "api_call", "api": "uk_contracts_finder",
+def query_uk_contracts(keywords: list[str], months_back: int = 24) -> list[dict]:
+    log_manifest({"phase": "api_call", "api": "uk_contracts_finder",
                         "decision": "skip",
                         "reason": "endpoint_ignores_keyword_param",
                         "note": "Use TED EU + Adzuna instead."})
@@ -45,11 +44,9 @@ def main() -> None:
     ap = argparse.ArgumentParser(description="UK Contracts Finder (disabled)")
     ap.add_argument("--keywords", required=True)
     ap.add_argument("--months", type=int, default=24)
-    ap.add_argument("--slug", default="")
     args = ap.parse_args()
     keywords = [k.strip() for k in args.keywords.split(",") if k.strip()]
-    emit_json(query_uk_contracts(keywords, months_back=args.months,
-                                 slug=args.slug or None))
+    emit_json(query_uk_contracts(keywords, months_back=args.months))
 
 
 if __name__ == "__main__":

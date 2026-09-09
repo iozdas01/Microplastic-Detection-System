@@ -18,7 +18,7 @@ research, not outreach. Mine the address in the same pass that writes the row.
 
 ## Prerequisites
 
-- `reports/{slug}/outreach/research-map.md` — created on first run if absent
+- `reports/outreach/research-map.md` — created on first run if absent
 - **The axes are per-idea and the map declares them.** `axes:` in the map's own frontmatter
   is the one author of what this idea classifies papers on and which values each axis accepts
   (see `references/batch-format.md`). Nothing about a vertical is declared globally: an axis
@@ -35,8 +35,8 @@ research, not outreach. Mine the address in the same pass that writes the row.
 
 ```bash
 python -m scripts.data.arxiv --since {YYYY-MM-DD} --max 400 \
-  --shortlist reports/{slug}/outreach/research-map-shortlist.csv \
-  --exclude-map reports/{slug}/outreach/research-map.md
+  --shortlist reports/outreach/research-map-shortlist.csv \
+  --exclude-map reports/outreach/research-map.md
 ```
 
 `--exclude-map` drops papers already classified, so batches resume instead of re-reading.

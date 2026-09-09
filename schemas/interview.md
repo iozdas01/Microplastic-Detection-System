@@ -1,6 +1,6 @@
 # Schema: Interview Note
 
-One file per interview: `reports/{slug}/03-validation/{A_ID}-{date}/interviews/{contact-slug}-{YYYY-MM-DD}-notes.md`
+One file per interview: `reports/03-validation/{A_ID}-{date}/interviews/{contact-slug}-{YYYY-MM-DD}-notes.md`
 
 An interview note has two halves separated by `---`:
 
@@ -97,7 +97,7 @@ Pains the contact raised that map to no assumption in the current graph. Appende
 
 - 2026-07-15 — reconciles contractor invoices against work orders by hand, ~2 days/month
   type: interview-residue
-  source: C7 (Operations Manager) · reports/{slug}/03-validation/A2-2026-07-15/interviews/sarah-chen-2026-07-15-notes.md
+  source: C7 (Operations Manager) · reports/03-validation/A2-2026-07-15/interviews/sarah-chen-2026-07-15-notes.md
   unprompted: yes
   status: open
 

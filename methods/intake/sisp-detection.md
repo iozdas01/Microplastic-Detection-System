@@ -35,7 +35,7 @@ Ask one question at a time and preserve the founder's answers in their words:
    - `possible` — the solution came first, but an independent problem can be stated;
    - `probable` — the founder cannot state a problem except as the absence of the proposed solution;
    - `unresolved` — there is not enough information.
-7. Write the solution-free problem, founder-reported observations, and the exact uncertainty the shotgun must test into `input-context/{slug}/belief.md`. Founder-reported observations are context, not independent external evidence.
+7. Write the solution-free problem, founder-reported observations, and the exact uncertainty the shotgun must test into `input-context/belief.md`. Founder-reported observations are context, not independent external evidence.
 
 Do not resolve the SISP status with desk reasoning during intake. The shotgun tests whether the problem appears in public behavior and community language without depending on the proposed solution's vocabulary.
 

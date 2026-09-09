@@ -1,7 +1,7 @@
 ---
 name: Daily Truth Log
 category: founder-process
-excluded_because: "needs the founder at the end of a real working day; nothing to run in a shotgun → `reports/{slug}/progress-log.md`"
+excluded_because: "needs the founder at the end of a real working day; nothing to run in a shotgun → `reports/progress-log.md`"
 runs_as: /startup-daily-log
 applicable_at: [ideation, validation, mutation]
 assumption_categories_it_helps: [pain, buyer, market]
@@ -33,7 +33,7 @@ apart costs weeks, and the predecessor repo lost several to exactly that.
 
 ## Process
 
-At the end of the working day, append five lines to `reports/{slug}/progress-log.md`. Never
+At the end of the working day, append five lines to `reports/progress-log.md`. Never
 edit yesterday's entry; the point is the sequence.
 
 1. **Truth** — the one question you are trying to answer, as a question. If it is the same as
@@ -51,12 +51,12 @@ edit yesterday's entry; the point is the sequence.
 and did evidence cause it?* Three words is enough.
 
 **A good Truth line names a quantity or a behaviour**, not a topic. "How often does a
-made-to-measure blind arrive at the wrong size, and who pays?" is a truth. "Understanding the
-blinds market" is a topic, and a topic can absorb infinite work without ever resolving.
+made-to-order part arrive wrong, and who pays?" is a truth. "Understanding the
+market" is a topic, and a topic can absorb infinite work without ever resolving.
 
 ## Where it lives
 
-`reports/{slug}/progress-log.md` — per-idea, append-only. Per-idea state never goes to a
+`reports/progress-log.md` — per-idea, append-only. Per-idea state never goes to a
 root-level file or to memory. Two ideas run two logs, and that is correct: the truth being
 sought is a property of the idea, not of the founder.
 

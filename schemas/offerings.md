@@ -1,4 +1,4 @@
-# Offering format — `reports/{slug}/04-mutation/offerings.md`
+# Offering format — `reports/04-mutation/offerings.md`
 
 **LIVING artifact.** One per idea. Updates in place; never dated, never versioned — a
 retired offering changes its `status`, it does not get a new file.

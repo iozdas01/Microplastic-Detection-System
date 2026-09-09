@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Generate reports/{slug}/BRIEF.md — the canonical session entry point for one idea.
+"""Generate reports/BRIEF.md — the canonical session entry point for the idea.
 
 WHY THIS EXISTS
 ---------------
@@ -15,31 +15,27 @@ time, so it cannot disagree with them.
 
 WHAT IT IS NOT
 --------------
-Not a global "current state" file (banned by CLAUDE.md). It is per-idea, lives inside
-`reports/{slug}/`, and is generated. It holds no fact that is not derived from an
-authored source, so it can never become an independent source of truth.
+Not a hand-written "current state" file (banned by CLAUDE.md). It lives inside
+`reports/` and is generated. It holds no fact that is not derived from an authored
+source, so it can never become an independent source of truth. Nothing here records
+which hunch is active: the hunch has exactly one author (`hunch-lineage.md`
+frontmatter), which is what makes a STATUS-vs-lineage contradiction structurally
+unrepresentable rather than merely fixed.
 
-The ONE authored input is `reports/lifecycle.yaml` — a slug → active/dormant/superseded
-index. That file deliberately does NOT record which hunch is active: the hunch has
-exactly one author (`hunch-lineage.md` frontmatter), which is what makes the
-STATUS.md-vs-lineage contradiction structurally unrepresentable rather than merely fixed.
-
-Reads (all optional — an idea missing a stage renders that section as "none yet"):
-    reports/lifecycle.yaml                          lifecycle + one-line note
-    input-context/{slug}/belief.md                  the durable belief
-    reports/{slug}/01-ideation/hunch-lineage.md     hunch tree + active hunch
-    reports/{slug}/02-assumptions/graph.md          assumptions + status
-    reports/{slug}/03-validation/evidence.md        evidence ledger
-    reports/{slug}/04-mutation/offerings.md         candidate offerings
-    reports/{slug}/outreach/contacts.md             contacts
+Reads (all optional — a stage not reached yet renders as "none yet"):
+    input-context/belief.md                  the durable belief
+    reports/01-ideation/hunch-lineage.md     hunch tree + active hunch
+    reports/02-assumptions/graph.md          assumptions + status
+    reports/03-validation/evidence.md        evidence ledger
+    reports/04-mutation/offerings.md         candidate offerings
+    reports/outreach/contacts.md             contacts
 
 Writes:
-    reports/{slug}/BRIEF.md
+    reports/BRIEF.md
 
 Usage:
-    python3 scripts/build_brief.py <slug>
-    python3 scripts/build_brief.py --all
-    python3 scripts/build_brief.py --check     # exit 1 if any BRIEF is stale
+    python3 scripts/build_brief.py
+    python3 scripts/build_brief.py --check     # exit 1 if BRIEF.md is stale
 
 Overwrite is always safe. Anything wrong on this page is wrong in a source file.
 """
@@ -56,6 +52,7 @@ from pathlib import Path
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
 
 from scripts.idea import (  # noqa: E402 — one parsing authority, see scripts/idea.py
+    BELIEF,
     _HAS_YAML,
     DATED_PART,
     compute_conversion_stats,
@@ -63,7 +60,7 @@ from scripts.idea import (  # noqa: E402 — one parsing authority, see scripts/
     derive_assumption_evidence,
     evidence_label,
     extract_belief as _extract_belief,
-    load_lifecycle as _load_lifecycle,
+    idea_name,
     parse_contacts_md,
     parse_evidence_md,
     parse_graph_md,
@@ -73,7 +70,6 @@ from scripts.idea import (  # noqa: E402 — one parsing authority, see scripts/
 
 REPO = Path(__file__).resolve().parent.parent
 REPORTS = REPO / "reports"
-LIFECYCLE = REPORTS / "lifecycle.yaml"
 
 MAX_ASSUMPTIONS = 3
 MAX_EVIDENCE = 4
@@ -334,18 +330,24 @@ def rank_assumptions(assumptions):
 # ─── rendering ───────────────────────────────────────────────────────────────
 
 
-def build_for_slug(slug: str) -> Path:
-    idea = REPORTS / slug
-    src = {
-        "belief": REPO / "input-context" / slug / "belief.md",
-        "lineage": idea / "01-ideation" / "hunch-lineage.md",
-        "graph": idea / "02-assumptions" / "graph.md",
-        "evidence": idea / "03-validation" / "evidence.md",
-        "offerings": idea / "04-mutation" / "offerings.md",
-        "contacts": idea / "outreach" / "contacts.md",
+def _sources() -> dict[str, Path]:
+    """The six authored files the brief is derived from. One definition, used by
+    both the builder and the staleness check so they cannot disagree."""
+    return {
+        "belief": BELIEF,
+        "lineage": REPORTS / "01-ideation" / "hunch-lineage.md",
+        "graph": REPORTS / "02-assumptions" / "graph.md",
+        "evidence": REPORTS / "03-validation" / "evidence.md",
+        "offerings": REPORTS / "04-mutation" / "offerings.md",
+        "contacts": REPORTS / "outreach" / "contacts.md",
     }
 
-    lifecycle = _load_lifecycle().get(slug, {}) or {}
+
+def build() -> Path:
+    idea = REPORTS
+    title = idea_name()
+    src = _sources()
+
     lfm, hunches = _safe(parse_lineage_md, src["lineage"], ({}, []))
     gfm, assumptions = _safe(parse_graph_md, src["graph"], ({}, []))
     _patterns, entries = _safe(parse_evidence_md, src["evidence"], ([], []))
@@ -365,12 +367,11 @@ def build_for_slug(slug: str) -> Path:
     L = []
     L.append("<!-- GENERATED by scripts/build_brief.py — DO NOT EDIT.")
     L.append("     Every value below is derived. Fix the source file, then rerun:")
-    L.append("       python3 scripts/build_brief.py %s" % slug)
+    L.append("       python3 scripts/build_brief.py")
     L.append("-->")
     L.append("---")
-    L.append("slug: %s" % slug)
+    L.append("idea: %s" % title)
     L.append("generated: %s" % datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%MZ"))
-    L.append("lifecycle: %s" % (lifecycle.get("lifecycle") or "unknown"))
     L.append("active_hunch: %s" % (active_hunch or "none"))
     L.append("active_assumption: %s" % (active_assumption or "none"))
     L.append("sources:")
@@ -378,22 +379,12 @@ def build_for_slug(slug: str) -> Path:
         L.append("  %s: %s" % (name, _digest(path)))
     L.append("---")
     L.append("")
-    L.append("# %s — session brief" % slug)
+    L.append("# %s — session brief" % title)
     L.append("")
     L.append(
         "_Generated digest. Load this first; load a full source file only for the task "
         "that needs it (pointers at the end)._"
     )
-    L.append("")
-
-    # ── lifecycle ──
-    note = lifecycle.get("note")
-    status_line = "**Lifecycle:** `%s`" % (lifecycle.get("lifecycle") or "unknown")
-    if lifecycle.get("superseded_by"):
-        status_line += " → superseded by `%s`" % lifecycle["superseded_by"]
-    if note:
-        status_line += " — %s" % _one_line(note, 240)
-    L.append(status_line)
     L.append("")
 
     # ── belief ──
@@ -440,7 +431,7 @@ def build_for_slug(slug: str) -> Path:
             L.append("Lineage: " + " · ".join(
                 "%s %s" % (h.get("id"), h.get("status") or "?") for h in others))
     else:
-        L.append("_No hunch lineage yet._")
+        L.append("_No hunch yet — run `/startup-ideate-shotgun` in explore mode once a belief exists._")
     L.append("")
 
     # ── assumptions ──
@@ -569,16 +560,16 @@ def build_for_slug(slug: str) -> Path:
         if src[key].exists():
             L.append("| %s | `%s` |" % (label, src[key].relative_to(REPO)))
     L.append("")
-    L.append("Dashboard: `python3 scripts/build_control_room.py %s`" % slug)
+    L.append("Dashboard: `python3 scripts/build_control_room.py`")
 
     out = idea / "BRIEF.md"
     out.write_text("\n".join(L) + "\n", encoding="utf-8")
     return out
 
 
-def is_stale(slug: str) -> bool:
+def is_stale() -> bool:
     """True when BRIEF.md is missing or its recorded source hashes no longer match."""
-    brief = REPORTS / slug / "BRIEF.md"
+    brief = REPORTS / "BRIEF.md"
     if not brief.exists():
         return True
     recorded = {}
@@ -593,56 +584,29 @@ def is_stale(slug: str) -> bool:
             recorded[parts[0]] = parts[1]
     if not recorded:
         return True
-    idea = REPORTS / slug
-    live = {
-        "belief": _digest(REPO / "input-context" / slug / "belief.md"),
-        "lineage": _digest(idea / "01-ideation" / "hunch-lineage.md"),
-        "graph": _digest(idea / "02-assumptions" / "graph.md"),
-        "evidence": _digest(idea / "03-validation" / "evidence.md"),
-        "offerings": _digest(idea / "04-mutation" / "offerings.md"),
-        "contacts": _digest(idea / "outreach" / "contacts.md"),
-    }
+    live = {k: _digest(v) for k, v in _sources().items()}
     return any(live[k] != v for k, v in recorded.items() if k in live)
-
-
-def all_slugs():
-    return sorted(p.name for p in REPORTS.iterdir() if p.is_dir())
 
 
 def main() -> None:
     ap = argparse.ArgumentParser(description=__doc__.split("\n")[0])
-    ap.add_argument("slug", nargs="?", help="idea slug under reports/")
-    ap.add_argument("--all", action="store_true", help="rebuild every idea")
     ap.add_argument("--check", action="store_true",
-                    help="exit 1 if any BRIEF.md is stale; write nothing")
+                    help="exit 1 if BRIEF.md is stale; write nothing")
     args = ap.parse_args()
 
     if not _HAS_YAML:
         sys.exit("PyYAML is required: pip3 install -r requirements.txt")
 
     if args.check:
-        stale = [s for s in all_slugs() if is_stale(s)]
-        for s in stale:
-            print("[stale] reports/%s/BRIEF.md — run: python3 scripts/build_brief.py %s" % (s, s))
-        if stale:
+        if is_stale():
+            print("[stale] reports/BRIEF.md — run: python3 scripts/build_brief.py")
             sys.exit(1)
-        print("All BRIEF.md files current (%d ideas)." % len(all_slugs()))
+        print("BRIEF.md current.")
         return
 
-    if args.all:
-        # Lifecycle-gated: --all rebuilds ACTIVE ideas only (a dormant idea's brief
-        # only churns its generated: timestamp). Pass the slug to force one.
-        lifecycle = _load_lifecycle()
-        slugs = [s for s in all_slugs()
-                 if (lifecycle.get(s) or {}).get("lifecycle", "active") == "active"]
-    else:
-        slugs = [args.slug] if args.slug else []
-    if not slugs:
-        ap.error("give a slug, or --all, or --check")
-    for slug in slugs:
-        if not (REPORTS / slug).is_dir():
-            sys.exit("no such idea: reports/%s" % slug)
-        print("[ok] wrote %s" % build_for_slug(slug).relative_to(REPO))
+    if not REPORTS.is_dir():
+        sys.exit("no reports/ folder — run scripts/setup.sh")
+    print("[ok] wrote %s" % build().relative_to(REPO))
 
 
 if __name__ == "__main__":

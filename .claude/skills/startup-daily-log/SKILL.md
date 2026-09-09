@@ -40,7 +40,7 @@ That asymmetry is the whole value: four minutes of thinking instead of twenty of
 ### 1 — Identify the idea and read the tail
 
 Take the active idea from the founder's prompt; ask if genuinely unclear, never infer it.
-Read the **last five entries** of `reports/{slug}/progress-log.md` — you need the Truth history
+Read the **last five entries** of `reports/progress-log.md` — you need the Truth history
 to run step 4, and five is enough to see a stall forming.
 
 If the log does not exist, create it with the header from an existing idea's log, the
@@ -53,7 +53,7 @@ Reconstruct the day from evidence rather than memory:
 ```bash
 git log --since=midnight --oneline --stat
 git status --short
-find reports/{slug} input-context/{slug} -newermt "today" -type f
+find reports input-context -newermt "today" -type f
 ```
 
 Then read what changed, not just the filenames. What counts as a move: a conversation held, a
@@ -74,7 +74,7 @@ Truth and Next are the strongest prompts available — show them.
 Push back exactly twice, and only on these two failure modes, because everything else is
 theirs to decide:
 
-- **A Truth that is a topic, not a question.** "Understanding the blinds market" can absorb
+- **A Truth that is a topic, not a question.** "Understanding the market" can absorb
   infinite work and never resolve. A real Truth names a quantity or a behaviour and could be
   answered. Offer a rewrite rather than a lecture.
 - **A Learned that asserts more than the day supports.** Desk research that confirmed a prior
@@ -118,7 +118,7 @@ and did evidence cause it?* Three words is enough.
 - **Never let the entry grow.** Five fields, a few lines each. The instinct to make it a proper
   status report is the thing that kills it. If the founder writes long, keep it; if the model
   writes long, cut it.
-- **Per-idea state stays in `reports/{slug}/`.** Two ideas keep two logs. The truth being
+- **Per-idea state stays in `reports/`.** Two ideas keep two logs. The truth being
   sought is a property of the idea, not of the founder.
 - **The log never changes a hunch or an assumption.** If the diff shows drift, say so and stop.
   Activating or retiring a hunch needs the founder's explicit word and belongs to the lineage.

@@ -86,10 +86,10 @@ Also update the frontmatter `totals.done` counter (increment by 1) and `last_upd
 After the contact card is updated, run:
 
 ```bash
-python3 scripts/build_control_room.py {slug}
+python3 scripts/build_control_room.py
 ```
 
-This refreshes `reports/{slug}/control-room.html`, where the outreach dashboard
+This refreshes `reports/control-room.html`, where the outreach dashboard
 lives. Never leave the session with contacts.md ahead of the control room.
 
 ### 4. Append evidence entries to evidence.md

@@ -5,7 +5,7 @@ The synthesis.md template, graph/evidence write formats, the shotgun re-entry pa
 ## Writing synthesis.md
 
 Follow `schemas/synthesis.md` exactly. The file lives at
-`reports/{slug}/03-validation/{A_ID}-{date}/interviews/synthesis.md`.
+`reports/03-validation/{A_ID}-{date}/interviews/synthesis.md`.
 
 Structure:
 
@@ -125,20 +125,20 @@ Confidence for synthesis-level entries: use the AVERAGE outcome_modifier as a pr
 
 For `new_vertical`, `mutate_thesis`, or `kill`, write:
 
-`reports/{slug}/01-ideation/reentry/{A_ID}-{date}.md`
+`reports/01-ideation/reentry/{A_ID}-{date}.md`
 
 ```yaml
 ---
-idea_slug: {slug}
-belief_file: input-context/{slug}/belief.md
+idea: {idea name}
+belief_file: input-context/belief.md
 current_hunch: H{N} | unknown
 trigger_outcome: new_vertical | mutate_thesis | kill
 assumption_id: A{X}
-synthesis_path: reports/{slug}/03-validation/{cycle}/interviews/synthesis.md
+synthesis_path: reports/03-validation/{cycle}/interviews/synthesis.md
 recommended_lineage_action: sibling | child | retire
 evidence_delta:
   - E{N}
-  - reports/{slug}/03-validation/{cycle}/interviews/{file}.md
+  - reports/03-validation/{cycle}/interviews/{file}.md
 ---
 
 # Ideation Shotgun Re-entry
@@ -167,7 +167,7 @@ After writing synthesis.md and updating graph.md, produce a founder-facing summa
 skill was invoked by the cron monitor, this summary is what gets pushed as a notification:
 
 ```
-SYNTHESIS FIRED · {slug} · A{X}
+SYNTHESIS FIRED · {idea} · A{X}
 Outcome: {outcome}
 Score: {N}/10 across {M} interviews
 TL;DR: <2 lines>
@@ -176,5 +176,5 @@ Next action:
   {outcome-specific — either continue with the next assumption, or run
    /startup-ideate-shotgun in reframe mode using the re-entry packet}
 
-Full synthesis: reports/{slug}/03-validation/{A_ID}-{date}/interviews/synthesis.md
+Full synthesis: reports/03-validation/{A_ID}-{date}/interviews/synthesis.md
 ```

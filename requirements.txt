@@ -3,8 +3,4 @@ requests>=2.32,<3
 PyYAML>=6,<7
 praw>=7.8,<8
 pytest>=8,<9
-
-# research/ — the furniture market-evidence pipeline
 python-dotenv>=1.0
-pandas>=2.2
-google-ads>=25.0

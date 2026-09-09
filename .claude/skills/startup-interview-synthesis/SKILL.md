@@ -23,32 +23,32 @@ the recommendation (with or without a strong "outcome" verdict).
 
 ## Inputs you need
 
-1. **The assumption** — from `reports/{slug}/02-assumptions/graph.md`, find node
+1. **The assumption** — from `reports/02-assumptions/graph.md`, find node
    `id: {A_ID}`. Read `assumption`, `category`, `parent_assumptions`, `child_assumptions`,
    `disconfirmation`, `stop_rule`. This tells you the DAG position — crucial for the
    outcome decision.
 
 2. **All interview notes for this cycle** — glob
-   `reports/{slug}/03-validation/{A_ID}-*/interviews/*.md`. Read every file. Skip files
+   `reports/03-validation/{A_ID}-*/interviews/*.md`. Read every file. Skip files
    that only have raw notes above the `---` divider (uncaptured — those don't contribute
    to score yet). Read structured capture sections from all captured files.
 
-3. **Contact cards** — read `reports/{slug}/outreach/contacts.md`. For every contact block
+3. **Contact cards** — read `reports/outreach/contacts.md`. For every contact block
    where `{A_ID}` is in `assumptions_tested` AND `outreach_status == done`, pull:
    - `name`, `contact_role`, `role_pts`, `signal_type`, `signal_multiplier`
    - `outcome_modifier` (this is the founder-confirmed classification)
    - `evidence_score` (contact's contribution to this and any other assumptions)
 
-4. **Existing evidence ledger** — `reports/{slug}/03-validation/evidence.md`. Filter to
+4. **Existing evidence ledger** — `reports/03-validation/evidence.md`. Filter to
    entries with `assumption_linked: {A_ID}`. This is your pre-existing base — synthesis
    incorporates it into the decision but doesn't double-count.
 
 5. **Previous synthesis, if any** — check if
-   `reports/{slug}/03-validation/{A_ID}-{date}/interviews/synthesis.md` exists. If it does,
+   `reports/03-validation/{A_ID}-{date}/interviews/synthesis.md` exists. If it does,
    this is a re-run. Read it to know what you concluded last time and what's changed.
 
-6. **Belief and hunch lineage** — read `input-context/{slug}/belief.md` and
-   `reports/{slug}/01-ideation/hunch-lineage.md` when present. Resolve the active
+6. **Belief and hunch lineage** — read `input-context/belief.md` and
+   `reports/01-ideation/hunch-lineage.md` when present. Resolve the active
    hunch so an outcome can distinguish “this assumption failed,” “this hunch
    failed,” and “the underlying belief is at risk.”
 

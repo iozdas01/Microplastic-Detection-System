@@ -109,7 +109,7 @@ agents and a synthesis have written it up. It also puts conditional lenses where
 they belong: the founder opts one in here, by name, or the run stays at four.
 
 ```text
-SCOUT — {slug} · {mode}
+SCOUT — {idea} · {mode}
 Belief: {one-line verbatim}
 Hunch under test: {H_ID} — {canonical statement}
 Packet: {N} records across {source types, communities, and organizations}

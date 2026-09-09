@@ -19,7 +19,7 @@ You need four things. Ask for any that weren't provided:
 
 If any are missing, ask. Don't generate the guide until you have all four.
 
-**Optional fifth input — `job_statement`.** If the idea's ideation shotgun produced a job statement for this segment (`methods/ideation/jtbd-substitute-map.md`, run as the `job_and_substitute` lens), pull it from the shotgun report and use it. Don't block on it — but check before generating, because it makes the core questions substantially sharper. Look in the latest `reports/{slug}/01-ideation/{date}-shotgun.md` or the lens output under `01-ideation/methods/`.
+**Optional fifth input — `job_statement`.** If the idea's ideation shotgun produced a job statement for this segment (`methods/ideation/jtbd-substitute-map.md`, run as the `job_and_substitute` lens), pull it from the shotgun report and use it. Don't block on it — but check before generating, because it makes the core questions substantially sharper. Look in the latest `reports/01-ideation/{date}-shotgun.md` or the lens output under `01-ideation/methods/`.
 
 ## The core principle behind every question
 

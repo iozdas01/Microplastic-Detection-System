@@ -58,13 +58,14 @@ MAX_SKILL_LINES = 200
 CONTRACT_PATTERNS = [
     ("per-idea date",
      re.compile(r"\b20\d{2}-[01]\d-[0-3]\d\b"),
-     "dated state belongs in reports/{slug}/, not in a shared definition"),
+     "dated state belongs in reports/, not in a shared definition"),
     ("contact id",
      re.compile(r"(?<![A-Za-z0-9])C\d{1,3}\s+[A-Z][a-z]+"),
      "use {contact_id} {Name} placeholders"),
-    ("idea slug",
-     re.compile(r"reports/(?!\{slug\})[a-z][a-z0-9-]{4,}/"),
-     "use reports/{slug}/"),
+    ("idea folder",
+     re.compile(r"reports/(?!(01-ideation|02-assumptions|03-validation|04-mutation|outreach|pages)/)"
+                r"[a-z][a-z0-9-]{4,}/"),
+     "reports/ holds the one idea directly — never name an idea folder under it"),
     ("external absolute path",
      re.compile(r"[`\s]~/(?!\.claude)[A-Za-z]"),
      "paths outside the repo belong in machine-local memory"),

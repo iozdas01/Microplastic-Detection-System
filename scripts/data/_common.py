@@ -270,16 +270,14 @@ def is_enabled(api_key: str) -> bool:
     return True
 
 
-def manifest_path(slug: str) -> Path:
-    return REPO_ROOT / "reports" / slug / "outreach" / ".intel-manifest.jsonl"
+def manifest_path() -> Path:
+    return REPO_ROOT / "reports" / "outreach" / ".intel-manifest.jsonl"
 
 
-def log_manifest(slug: str | None, entry: dict[str, Any]) -> None:
+def log_manifest(entry: dict[str, Any]) -> None:
     """Append a JSONL entry to the intel manifest. Never raises."""
-    if not slug:
-        return
     try:
-        path = manifest_path(slug)
+        path = manifest_path()
         path.parent.mkdir(parents=True, exist_ok=True)
         entry = {"ts": datetime.now(timezone.utc).isoformat(), **entry}
         with open(path, "a", encoding="utf-8") as f:

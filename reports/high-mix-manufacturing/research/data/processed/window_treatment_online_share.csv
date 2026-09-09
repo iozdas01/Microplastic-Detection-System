@@ -1,4 +1,0 @@
-year,product_code,product_line,line_total_usd_k,channel_separable,online_and_mail_order_usd_k,online_share_of_line,visit_channels_usd_k,visit_share_of_line,all_retail_ecommerce_share,ratio_to_all_retail
-2017,5000625000,"Retail sales of window treatments, including rods, poles, and fixtures",11803558.0,True,3764692.0,0.3189,2847578.0,0.2412,0.0881,3.62
-2022,5000625000,"Retail sales of window treatments, including rods, poles, and fixtures",9634125.0,False,,,,,0.1438,
-2012,20280,"Curtains, draperies, blinds, slipcovers, bed & table coverings",31726790.0,True,4162419.0,0.1312,1640131.0,0.0517,0.054,2.43

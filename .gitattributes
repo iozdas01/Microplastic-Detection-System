@@ -1,6 +1,6 @@
 # Generated artifacts — never 3-way merged.
 #
-# `dashboard.html` conflicted on three consecutive merges with main, and the
+# The dashboard conflicted on three consecutive merges with main, and the
 # resolution was identical every time: throw both sides away and rerun the
 # generator. A conflict in a projection is not a decision — there is nothing in
 # either side that the sources do not already contain.
@@ -12,5 +12,6 @@
 # These stay committed rather than ignored: the dashboard is the founder-facing
 # artifact and is opened from a fresh clone without running Python.
 
-reports/*/dashboard.html   merge=keep-ours linguist-generated=true
-reports/*/BRIEF.md         merge=keep-ours linguist-generated=true
+reports/control-room.html  merge=keep-ours linguist-generated=true
+reports/BRIEF.md           merge=keep-ours linguist-generated=true
+reports/outreach/results-*.md  merge=keep-ours linguist-generated=true

@@ -1,9 +1,8 @@
 # Schema: Belief and Hunch Lineage
 
-One living lineage file per idea:
-`reports/{slug}/01-ideation/hunch-lineage.md`. Founder onboarding creates this
-file alongside `belief.md` and initializes H1. The shotgun never starts
-without a current hunch.
+One living lineage file: `reports/01-ideation/hunch-lineage.md`. Founder onboarding
+creates it alongside `belief.md`, empty. The shotgun proposes the first hunch in explore
+mode; it never tests without a current hunch.
 
 The belief is the durable founder-owned anchor. A hunch is a falsifiable
 interpretation of that belief for one segment, problem, and mechanism. Evidence
@@ -11,11 +10,11 @@ normally changes hunches before it changes the belief.
 
 ## Stable belief
 
-Store the canonical belief verbatim in `input-context/{slug}/belief.md`:
+Store the canonical belief verbatim in `input-context/belief.md`:
 
 ```yaml
 ---
-idea_slug: example
+idea: Example idea            # the display name — every generated page titles from it
 created: YYYY-MM-DD
 last_confirmed: YYYY-MM-DD
 ---
@@ -69,8 +68,7 @@ hunch they want researched, onboarding records H1 as `active` and
 
 ```yaml
 ---
-idea_slug: example
-belief_file: input-context/example/belief.md
+belief_file: input-context/belief.md
 active_hunch: H2
 next_hunch_id: H4
 last_updated: YYYY-MM-DD

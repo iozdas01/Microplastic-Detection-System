@@ -12,17 +12,16 @@ Each message in a multi-turn conversation is a data collection exercise — not 
 
 1. `references/config.md` (this skill) — check `calendly_url`. If still `PLACEHOLDER`, flag it: "⚠️ Calendly URL not set — warm-path drafts will be shown but not sent."
 2. `schemas/copy-rules.md` — the shared copy contract (draft + reply).
-3. `reports/{slug}/outreach/contacts.md` — contact list + full notes history.
-4. `reports/{slug}/outreach/results-{A_ID}.md` — reply classifications from `startup-outreach-check`.
-5. `reports/{slug}/outreach/companies.md` — optional per-company hooks (contracts, fleet, {operational-loss signal}, hiring). If absent, use the contact's live LinkedIn profile and public company research.
-6. `reports/{slug}/02-assumptions/graph.md` — active assumption text and domain vocabulary.
-7. `reports/{slug}/03-validation/evidence.md` — evidence ledger to append into.
+3. `reports/outreach/contacts.md` — contact list + full notes history.
+4. `reports/outreach/results-{A_ID}.md` — reply classifications from `startup-outreach-check`.
+5. `reports/outreach/companies.md` — optional per-company hooks (contracts, fleet, {operational-loss signal}, hiring). If absent, use the contact's live LinkedIn profile and public company research.
+6. `reports/02-assumptions/graph.md` — active assumption text and domain vocabulary.
+7. `reports/03-validation/evidence.md` — evidence ledger to append into.
 
 If contacts.md or graph.md is missing, STOP and tell the founder.
 
 ## Inputs — ask if not provided
 
-- **Idea slug** — prompt: "Which idea? (e.g. `example-idea`)"
 - **Assumption ID** — prompt: "Which assumption? (e.g. `A2`)"
 - **Contact** — optional; if the founder names a specific contact, go straight to that person.
 
@@ -44,7 +43,7 @@ If no contacts qualify, report it and stop without opening LinkedIn.
 
 ## Step 3 — Extract evidence from their last reply
 
-Before drafting anything, read their most recent reply verbatim from `contacts.md` notes. Pull out every data point that informs the active assumption — frequency signals, cost signals, market observations, vocabulary they used. Log to `reports/{slug}/03-validation/evidence.md`:
+Before drafting anything, read their most recent reply verbatim from `contacts.md` notes. Pull out every data point that informs the active assumption — frequency signals, cost signals, market observations, vocabulary they used. Log to `reports/03-validation/evidence.md`:
 
 ```yaml
 - id: E{next_id}
@@ -71,7 +70,7 @@ One entry per distinct data point. If their reply has three things worth logging
 ## Step 3b — Lineage drift check (runs after every evidence write)
 
 After appending evidence entries, reread the ACTIVE hunch's statement and components in
-`reports/{slug}/01-ideation/hunch-lineage.md`. Check three triggers:
+`reports/01-ideation/hunch-lineage.md`. Check three triggers:
 
 1. **Contradiction:** two or more evidence entries (across the campaign, not just this
    session) carry `verdict: contradicts` against the same component (segment, problem,

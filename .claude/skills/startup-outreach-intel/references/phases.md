@@ -218,7 +218,7 @@ The resolved tier always comes from the assumption's `icp_valid_tiers`. If the r
 
 ### Step 1.5 — Stage companies to `companies.md`
 
-For each surviving canonical entity, write or update a row in `reports/{slug}/outreach/companies.md`:
+For each surviving canonical entity, write or update a row in `reports/outreach/companies.md`:
 
 - `company`, `linkedin_slug` (if inferable — otherwise empty for the targets skill to fill later), `tier`, `lei`, `parent_entity`, `also_known_as: [...]`
 - `pain_score: null` (filled in Phase 3)
@@ -379,7 +379,7 @@ This gives the founder an at-a-glance view of what the run found without having 
 If `contacts.md` exists, regenerate the founder's contact dashboard so the two stay in sync:
 
 ```bash
-python3 scripts/build_control_room.py {slug}
+python3 scripts/build_control_room.py
 ```
 
 The tracker renders `contacts.md` only. `companies.md` are read directly as markdown — they are the intel deliverable, not an input to the HTML. Write them well enough to be read as-is.
@@ -390,7 +390,7 @@ The script is idempotent and safe to run repeatedly. If `contacts.md` doesn't ex
 
 ## Phase 4 — Write to the evidence ledger
 
-**Goal:** turn the raw API responses already in memory (from Phases 1-2) into claim-level entries in `reports/{slug}/03-validation/evidence.md` — the single source of truth for what we know about the active assumption, across API + interview evidence.
+**Goal:** turn the raw API responses already in memory (from Phases 1-2) into claim-level entries in `reports/03-validation/evidence.md` — the single source of truth for what we know about the active assumption, across API + interview evidence.
 
 This phase absorbs what used to be `/startup-validate-assumption`. Same APIs, same input, one pass — no double-hitting rate limits.
 

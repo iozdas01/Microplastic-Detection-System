@@ -13,7 +13,7 @@ Loaded per stage by `startup-outreach-targets`. The SKILL.md carries the decisio
 **Why first:** `contacts.md` only knows about people *this repo* invited. The founder has years of LinkedIn history before that — people already messaged, already replied, already gone quiet. Writing to someone the founder messaged eight months ago as if they were cold is the worst failure mode in outreach, and it's entirely avoidable from a local file.
 
 ```bash
-.venv/bin/python -m scripts.data.linkedin_export history --slug {slug}
+.venv/bin/python -m scripts.data.linkedin_export history
 ```
 
 Returns every person the founder has ever messaged or invited, with `outbound_count`, `inbound_count`, `last_message`, and a `suggested_outreach_status`.
@@ -41,7 +41,7 @@ Returns every person the founder has ever messaged or invited, with `outbound_co
 **Derive the filter arguments from `graph.md`, not from a hardcoded list.** Use the "Dynamic title-ranking" section below to extract domain vocabulary from the assumption and score each `icp_valid_titles` entry into Tier A / B / C. Then pass them in:
 
 ```bash
-.venv/bin/python -m scripts.data.linkedin_export connections --slug {slug} \
+.venv/bin/python -m scripts.data.linkedin_export connections \
   --title "<Tier A title>" --title "<Tier B title>" \
   --domain-noun <noun> --domain-noun <noun> \
   --exclude recruiter --exclude <adjacent-industry noun>
@@ -110,7 +110,7 @@ If they pass both checks, add to `contacts.md` with `signal_type: post_engagemen
 
 Search LinkedIn Groups: `linkedin.com/search/results/groups/?keywords=<domain_term>`. Use the domain noun-phrases from graph.md (same vocabulary as Pass 2). For every group with > 200 members that is clearly domain-relevant, log it to `groups.md` (name, URL, member count). Then present the list to the founder: "Found N relevant groups — [list]. Want me to request to join all?" Proceed once confirmed. Joining is a visible action on the account profile — batch the requests and confirm once rather than auto-clicking.
 
-Log every requested group (name, URL, member count) to `reports/{slug}/outreach/groups.md` so membership status can be tracked across sessions. Membership approval may take hours — continue to Pass 4 for this session and return to Pass 3b next session for any newly approved groups.
+Log every requested group (name, URL, member count) to `reports/outreach/groups.md` so membership status can be tracked across sessions. Membership approval may take hours — continue to Pass 4 for this session and return to Pass 3b next session for any newly approved groups.
 
 **Step 2 — Browse group members.**
 
@@ -321,12 +321,12 @@ Beyond title keywords, LinkedIn's URL filters can pre-filter to the domain:
 ### 1. URL cache — never re-visit an already-known URL
 
 Every LinkedIn profile / post URL the skill has ever seen is written to
-`reports/{slug}/outreach/.visited_urls.json`. Before opening any URL:
+`reports/outreach/.visited_urls.json`. Before opening any URL:
 
 ```python
 import json
 from pathlib import Path
-cache_path = Path(f"reports/{slug}/outreach/.visited_urls.json")
+cache_path = Path(f"reports/outreach/.visited_urls.json")
 visited = json.loads(cache_path.read_text()) if cache_path.exists() else {}
 # key = url, value = {"first_seen": iso_date, "last_action": "enriched"|"added"|"skipped", "notes": ""}
 ```
@@ -382,7 +382,7 @@ If a batch produces more contacts than LinkedIn's daily 100-profile cap allows, 
 
 Same keywords fish out the same contacts. Every batch should rotate 3 of 6 keywords to surface new candidates.
 
-Track in `reports/{slug}/outreach/keywords_used.md` — the ledger is per-idea state and
+Track in `reports/outreach/keywords_used.md` — the ledger is per-idea state and
 never lives in this definition:
 
 ```markdown
@@ -496,14 +496,14 @@ blocks every subsequent browser call and the pass dies until the founder dismiss
 
 ## Inputs you need
 
-1. **The target assumption** — from `reports/{slug}/02-assumptions/graph.md`, find node `id: {A_ID}`. Read `assumption`, `category`, `disconfirmation`, and any ICP hints in `next_action`
-2. **Existing contacts.md** — `reports/{slug}/outreach/contacts.md`. Load for deduplication and to find the next available `C{N}` id
-3. **`companies.md` (optional)** — `reports/{slug}/outreach/companies.md`. If
+1. **The target assumption** — from `reports/02-assumptions/graph.md`, find node `id: {A_ID}`. Read `assumption`, `category`, `disconfirmation`, and any ICP hints in `next_action`
+2. **Existing contacts.md** — `reports/outreach/contacts.md`. Load for deduplication and to find the next available `C{N}` id
+3. **`companies.md` (optional)** — `reports/outreach/companies.md`. If
    present, read `tier`, `linkedin_slug`, `pain_score`, and `also_known_as` to
    prioritize company-scoped searches. If absent, do not invent company-level
    signals; use profile-level ICP evidence instead.
 4. **`companies.md` (targeting fields) (optional)** —
-   `reports/{slug}/outreach/companies.md`. If present, use its contracts,
+   `reports/outreach/companies.md`. If present, use its contracts,
    news, hiring, {operational-loss signal}, and fleet signals as prioritization context. If
    absent, live LinkedIn profile evidence remains sufficient for outreach.
 5. **Signal keywords** — technical noun-phrases the target segment would use to describe the pain in a LinkedIn post. NOT conversational sentences. Derive them per-assumption from `graph.md` (`assumption` text + `disconfirmation`) — never hardcode to any single industry. See `.claude/skills/startup-outreach-intel/references/keyword-derivation.md` if in doubt.
@@ -599,7 +599,7 @@ A founder may keep a separate outreach system outside this repo for a different 
 - Has locked message templates and a marketing-director voice
 - Runs the "5-by-5" outreach loop
 
-Our system is separate — different idea slugs, different thesis, different contacts.md format. But the browsing patterns and safety rules are identical. When in doubt about how to drive the browser, look at that project's CLAUDE.md — it's the reference implementation.
+Our system is separate — a different idea, different thesis, different contacts.md format. But the browsing patterns and safety rules are identical. When in doubt about how to drive the browser, look at that project's CLAUDE.md — it's the reference implementation.
 
 ## Common failure modes to avoid
 
@@ -632,10 +632,10 @@ The founder should be able to filter the tracker by degree AND see the degree at
 **Every time you add or update rows in `contacts.md`, run:**
 
 ```bash
-python3 scripts/build_control_room.py {slug}
+python3 scripts/build_control_room.py
 ```
 
-This regenerates `reports/{slug}/dashboard.html` — the founder's live
+This regenerates `reports/dashboard.html` — the founder's live
 dashboard showing counts by tier / status / role, a filterable contact table, and
 LinkedIn links. It's a pure projection of contacts.md; overwrite is safe.
 
@@ -673,7 +673,7 @@ Every pass, table, cap and failure catalogue lives in `references/search-passes.
 5. **Run Pass 3** (profile verify Pass 2's candidates) — only add those passing all three checks
 6. **Check total** — if under 50, run Pass 3b (groups), then Pass 4 (2nd-degree by title × company)
 7. **Enrich every candidate** — visit each profile to extract open_to_work, mutuals, active_last_30d, current company/title. Rescore. Pass 1 contacts need this too: the export's `position` is as of the export date, not today.
-8. **Regenerate the tracker + run the audit** — `python3 scripts/build_control_room.py {slug}` and `python3 scripts/audit_target_list.py {slug}`.
+8. **Regenerate the tracker + run the audit** — `python3 scripts/build_control_room.py` and `python3 scripts/audit_target_list.py`.
 9. **Present the top by score to the founder** for review.
 
 **Rate limits:** LinkedIn tolerates ~100 profile views per day with normal browsing patterns. Split enrichment across sessions if needed. Never burst — 2-4 second delay between profile visits.

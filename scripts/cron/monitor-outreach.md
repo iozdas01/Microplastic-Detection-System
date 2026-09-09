@@ -1,7 +1,7 @@
 # Outreach Monitor Cron — Configuration & Activation
 
-This file is the source-of-truth for the cron monitor that watches every idea's
-`outreach/contacts.md`, computes cumulative evidence score per assumption, and fires
+This file is the source-of-truth for the cron monitor that watches
+`reports/outreach/contacts.md`, computes cumulative evidence score per assumption, and fires
 `startup:interview-synthesis` when the threshold is crossed.
 
 Two ways to run it — pick one based on how persistent you need it.
@@ -40,8 +40,8 @@ CronCreate(
 ## Option B — Persistent monitor (cloud routine)
 
 Uses the `/schedule` skill (cloud agent / routine). Runs anywhere, anytime, without
-Claude Code being open. Best for when you have multiple ideas in-flight and want the
-monitor running continuously in the background.
+Claude Code being open. Best for when you want the monitor running continuously in the
+background.
 
 **How to activate** (paste to Claude in any session):
 
@@ -63,23 +63,22 @@ That will trigger the `/schedule` skill to create a cloud routine.
 ```
 Run the outreach synthesis monitor for the Startup Assumption Lab.
 
-Working directory: /Users/izgin.ozdas/Documents/Personal/Startup Ideation
+Working directory: the repo root.
 
 Steps:
 
-1. Discover all active idea slugs by listing directories under `reports/` (each dir is one
-   idea slug). Skip any dir that doesn't have `outreach/contacts.md` inside it.
+1. If `reports/outreach/contacts.md` does not exist, stop: nothing to monitor yet.
 
-2. For each idea slug:
-   a. Read `reports/{slug}/outreach/contacts.md`
-   b. Read `reports/{slug}/02-assumptions/graph.md` for assumption metadata
+2. Load the idea:
+   a. Read `reports/outreach/contacts.md`
+   b. Read `reports/02-assumptions/graph.md` for assumption metadata
    c. Group contacts by their `assumptions_tested` field. A contact tested for A2 and A5
       contributes to both totals independently.
    d. For each assumption_id, sum `evidence_score` across contacts where
       `outreach_status == done` (only completed interviews count)
    e. Also count the number of completed interviews per assumption
 
-3. For each (slug, assumption_id) pair, evaluate:
+3. For each assumption_id, evaluate:
    - **Threshold fire**: cumulative_score >= 10 AND
      no `synthesis.md` exists for this validation cycle yet
      (or the existing synthesis has `trigger: manual` and score has grown by 2+ since)
@@ -98,16 +97,12 @@ Steps:
 Outreach monitor — {date}
 ─────────────────────────────────
 
-Idea: {slug-1}
   A2  score 11.5  interviews 5   → SYNTHESIS FIRED (threshold met)
   A3a score 3.0   interviews 2   → below threshold, keep going
   A5  score -2.5  interviews 4   → EARLY-KILL FLAG raised (likely_dead)
+  A1  score 1.0   interviews 3   → STALLED (no update in 7 days)
 
-Idea: {slug-2}
-  A1  score 8.5   interviews 3   → below threshold
-  A2  score 1.0   interviews 3   → STALLED (no update in 7 days)
-
-No action needed on 2 other assumptions across 1 other idea.
+No action needed on 2 other assumptions.
 ```
 
 5. Push a notification to the founder via any available channel (Claude Code push
@@ -115,7 +110,7 @@ No action needed on 2 other assumptions across 1 other idea.
    `reports/_monitor-log/{YYYY-MM-DD}.md`)
 
 If any step errors (missing file, malformed YAML), log the error and continue with the
-next assumption. Do not halt the whole monitor run because one slug is broken.
+next assumption. Do not halt the whole monitor run because one assumption is broken.
 
 Be conservative with firing synthesis — it's a substantial operation. Better to skip a
 borderline case (score 9.8) and let it fire tomorrow than to fire twice on the same cycle.

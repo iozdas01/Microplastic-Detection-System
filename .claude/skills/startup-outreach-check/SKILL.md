@@ -10,9 +10,9 @@ Scan the LinkedIn inbox for replies from contacts in your target list. The brows
 
 ## Prerequisites
 
-- `reports/{slug}/outreach/contacts.md` must exist with at least one contact at `outreach_status: accepted`
+- `reports/outreach/contacts.md` must exist with at least one contact at `outreach_status: accepted`
 - If no contacts are `accepted` yet, the invites haven't been accepted — nothing to check. Tell the founder.
-- `reports/{slug}/outreach/results-{A_ID}.md` may or may not exist — if it does, read it for `last_checked` date; otherwise this is the first check run.
+- `reports/outreach/results-{A_ID}.md` may or may not exist — if it does, read it for `last_checked` date; otherwise this is the first check run.
 
 ## Setup
 
@@ -123,7 +123,7 @@ Update the file `last_updated` frontmatter field.
 
 ### Step 6 — Write results-{A_ID}.md
 
-Write to `reports/{slug}/outreach/results-{A_ID}.md`. If the file already exists, update in place.
+Write to `reports/outreach/results-{A_ID}.md`. If the file already exists, update in place.
 
 ```markdown
 # Outreach Results: A{X}
@@ -158,7 +158,7 @@ after 14 days. At that point, flag to founder: the angle isn't working.
 ## Reference files
 
 - `schemas/contact.md` — contact card format + status lifecycle
-- `reports/{slug}/outreach/blast-sessions/*.md` — confirmed Msg 1 session records
+- `reports/outreach/blast-sessions/*.md` — confirmed Msg 1 session records
 
 ## Mechanics
 

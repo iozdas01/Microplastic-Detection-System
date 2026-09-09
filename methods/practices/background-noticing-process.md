@@ -55,6 +55,6 @@ This is the pre-loop method — the one that generates the idea seed that enters
 Its execution path is `signals/gaps-log.md`, in two halves:
 
 - **Capture** (founder, ambient, continuous) — a message starting with `gap:` in any session in this repo appends a one-line entry. No evaluation, no follow-up questions; see the Gap Capture rule in `CLAUDE.md`. Friction is what kills this method, so the capture path is deliberately four seconds long.
-- **Review** (agent, batched, roughly monthly) — cluster the accumulated log by underlying absence, not surface topic. A cluster with independent sightings graduates into the loop through `/startup-belief-intake`, which writes the new idea's `input-context/{slug}/belief.md`. This half *is* a genuine research task; it is simply offset in time rather than run inline.
+- **Review** (agent, batched, roughly monthly) — cluster the accumulated log by underlying absence, not surface topic. A cluster with independent sightings graduates into the loop through `/startup-belief-intake`, which writes the new idea's `input-context/belief.md`. This half *is* a genuine research task; it is simply offset in time rather than run inline.
 
 `startup-interview-capture` also feeds the log: pains a contact raises that map to no assumption in the current graph are harvested as `type: interview-residue`. Those are the strongest entries in the file — unprompted, specific, and from someone living in the domain full-time rather than one founder noticing from one vantage point.

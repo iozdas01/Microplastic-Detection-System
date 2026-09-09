@@ -28,7 +28,7 @@ This skill is that diff, plus the drafting that follows it.
 
 **One pitch file per idea**, holding every audience variant plus the version log. Find it
 through the brief's `What already exists for this idea` inventory — a pitch author usually
-already exists under `reports/{slug}/outreach/copy/`, sometimes hunch-scoped from when it was
+already exists under `reports/outreach/copy/`, sometimes hunch-scoped from when it was
 written. Keep using whichever file the inventory names; a second pitch file is the drift this
 skill exists to prevent. Only if none exists, create `outreach/copy/pitch.md`.
 

@@ -8,45 +8,45 @@ schemas, the data layer.
 
 ## Before Every Session
 
-**Every idea starts fresh.** There is no repo-wide "current state" file, on purpose:
-per-idea state lives only in `reports/{slug}/`, and a global one causes cross-idea bleed.
-If a `CURRENT.md` ever appears at the root, delete it without reading it.
+**One company, one idea.** This repo holds exactly one idea: its state lives in `reports/`
+and its raw inputs in `input-context/`, with no idea folder in between. There is no
+hand-written "current state" file, on purpose: `reports/BRIEF.md` is generated and is the
+only summary. If a `CURRENT.md` ever appears at the root, delete it without reading it.
 
-1. Identify the active idea from the user's prompt. If unclear, ask — never infer it.
-2. Read `ARCHITECTURE.md`. Sections marked **cold by default** (Folder Structure, the
+1. Read `ARCHITECTURE.md`. Sections marked **cold by default** (Folder Structure, the
    firecrawl notes) are skipped at session start and read when their trigger applies.
-3. Read `memory/MEMORY.md` — terse founder preferences and cross-idea process decisions
-   only. Machine-local session memory holds per-founder personal habits. Neither carries
-   per-idea findings.
-4. **Read `reports/{slug}/BRIEF.md` first.** It is generated from that idea's own files, so
-   it is both the cheapest and the freshest statement of the hunch, the ranked assumptions
-   and the outreach position. Then load only the one full artifact the task needs — the
-   brief's closing table says which. Never pre-load another idea's reports.
+2. Read `memory/MEMORY.md` — terse founder preferences and process decisions only.
+   Machine-local session memory holds per-founder personal habits. Neither carries
+   findings about the idea.
+3. **Read `reports/BRIEF.md` first.** It is generated from the idea's own files, so it is
+   both the cheapest and the freshest statement of the belief, the hunch, the ranked
+   assumptions and the outreach position. Then load only the one full artifact the task
+   needs — the brief's closing table says which.
 
-   Stale brief? `python3 scripts/build_brief.py {slug}`. Never hand-edit a generated file.
+   Stale brief? `python3 scripts/build_brief.py`. Never hand-edit a generated file.
 
    **Before creating ANY new artifact, read the brief's `What already exists for this idea`
    inventory.** It lists every file in the folder with the purpose that file declares about
    itself, so "does something already cover this?" is answerable without a search. If a file
    covers the fact, add to it. Writing a second author for an existing fact is the failure
    the inventory exists to prevent, and it has happened.
-5. Read `input-context/{slug}/` for the raw material staged for that idea.
+4. Read `input-context/` for the raw material staged for the idea.
 
 ---
 
 ## End of Every Session
 
-1. **Per-idea state goes inside `reports/{slug}/` only.** Living artifacts (`hunch-lineage.md`,
+1. **Idea state goes inside `reports/` only.** Living artifacts (`hunch-lineage.md`,
    `graph.md`, `evidence.md`, `contacts.md`, `companies.md`, `offerings.md`) update in place;
    dated artifacts are appended, never overwritten. The founder-owned belief is the one
-   exception — it is an input at `input-context/{slug}/belief.md`. Nothing about an idea goes
-   into a root-level file, into memory, or into another idea's folder.
-2. **`memory/MEMORY.md`: one terse line per genuinely new founder preference or cross-idea
-   process decision** — never findings about the idea being analysed. Delete stale lines in
-   the same edit; git preserves them. If in doubt, don't write it.
+   exception — it is an input at `input-context/belief.md`. Nothing about the idea goes
+   into a root-level file or into memory.
+2. **`memory/MEMORY.md`: one terse line per genuinely new founder preference or process
+   decision** — never findings about the idea. Delete stale lines in the same edit; git
+   preserves them. If in doubt, don't write it.
 3. **Regenerate what is generated.** After writing to a living artifact:
-   `python3 scripts/build_brief.py {slug}`, plus
-   `python3 scripts/build_control_room.py {slug}` when outreach or thesis data changed.
+   `python3 scripts/build_brief.py`, plus
+   `python3 scripts/build_control_room.py` when outreach or thesis data changed.
    This is the one author for that instruction — skills do not each restate it.
 
 ---
@@ -142,7 +142,7 @@ durable belief, mutable hypotheses, evidence and week-lifetime detail, and rots 
 Durable parts → `belief.md`; hypotheses and kill conditions → `hunch-lineage.md`/`graph.md`;
 evidence → `evidence.md`; versioned synthesis → `04-mutation/thesis-v{N}.md`; operational
 to-dos → nowhere, they are tasks. The original stays as a dated, immutable snapshot in
-`input-context/{slug}/` only when its raw form has reference value.
+`input-context/` only when its raw form has reference value.
 
 Two standing rules:
 
@@ -182,10 +182,10 @@ Only the answers that are **not** a skill need writing down:
 | Request | Do this instead |
 |---|---|
 | Brainstorming / designing architecture | Work inline against `ARCHITECTURE.md`, and say you did |
-| Rebuilding an idea's control room | `python3 scripts/build_control_room.py {slug}` |
+| Rebuilding the control room | `python3 scripts/build_control_room.py` |
 | Browsing hunches → assumptions → evidence | The **Hunches** tab of that same `control-room.html` |
-| Opening any other report for an idea | The **Pages** tab of `control-room.html`, which lists everything in `reports/{slug}/pages/` with its status. Never build a second dashboard — one idea has exactly one generated control room |
-| Refreshing an idea's session brief | `python3 scripts/build_brief.py {slug}` |
+| Opening any other report | The **Pages** tab of `control-room.html`, which lists everything in `reports/pages/` with its status. Never build a second dashboard — there is exactly one generated control room |
+| Refreshing the session brief | `python3 scripts/build_brief.py` |
 | Rebuilding the methods index | `python3 scripts/build_methods_index.py` |
 | Shared Reddit/HN problem reconnaissance | `scripts.data.community_recon` directly — or `/startup-ideate-shotgun` for the full workflow |
 | Mining news / procurement / hiring / grants for one assumption | The relevant `scripts/data/*` CLI — or `/startup-outreach-intel` |
@@ -211,8 +211,8 @@ update the SKILL.md in the same session. Skills should get smarter every time a 
 the workflow makes them obvious, not upfront.
 
 **The contract.** Every `SKILL.md`: **≤200 lines** (trigger, decision procedure, guardrails,
-handoff — mechanics go to `references/`), **zero per-idea state** (no dated ledgers, no contact
-IDs, no idea slugs), **zero founder names** (write "the founder"; per-founder facts live in
+handoff — mechanics go to `references/`), **zero idea state** (no dated ledgers, no contact
+IDs, no idea or company names — the framework must survive the next pivot), **zero founder names** (write "the founder"; per-founder facts live in
 `founders/*.md`), **zero absolute paths outside the repo**, and a **`description:` true on its
 own** — it is the only part read before routing.
 
@@ -224,13 +224,3 @@ the eval burns budget for zero signal. Evals are for organic skills only (reason
 matching directories, resolving `.agents/skills/` bridges, and the whole contract above.
 
 ---
-
-## Idea-Scoped Worktrees
-
-For long isolated work on one idea: `scripts/new-idea-worktree.sh <idea-slug>`. The worktree
-lands at `.claude/worktrees/<slug>/` on a new branch, with non-cone sparse-checkout hiding
-every other idea's `input-context/` and `reports/` folders — the same cross-idea-bleed
-prevention as the no-global-state rule, one layer down. Tracking and history are unchanged;
-`git add`/`commit`/`push`/merge all work normally.
-
-Never `rm -rf` a running worktree — it may be mid-task. Use `git worktree remove`.

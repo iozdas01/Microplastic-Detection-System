@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""One loader for per-idea artifacts — the single parsing authority.
+"""One loader for the idea's artifacts — the single parsing authority.
 
 Every consumer of an idea's files (`build_control_room.py`, `build_brief.py`,
 `validate_repo.py`, `audit_target_list.py`) imports from here, so there is exactly
@@ -35,7 +35,8 @@ except ImportError:
 
 REPO = Path(__file__).resolve().parent.parent
 REPORTS = REPO / "reports"
-LIFECYCLE = REPORTS / "lifecycle.yaml"
+INPUT_CONTEXT = REPO / "input-context"
+BELIEF = INPUT_CONTEXT / "belief.md"
 
 # A path segment carrying a date — `2026-08-06/`, `A5-2026-08-06/`,
 # `audit-2026-08-09.md`. Dated artifacts are immutable snapshots: the brief
@@ -60,15 +61,23 @@ def parse_frontmatter(text: str) -> tuple[dict, str]:
     return (fm if isinstance(fm, dict) else {}), body.lstrip("\n")
 
 
-def load_lifecycle() -> dict:
-    """reports/lifecycle.yaml — the one authored slug → lifecycle index."""
-    if not LIFECYCLE.exists() or not _HAS_YAML:
-        return {}
-    try:
-        data = yaml.safe_load(LIFECYCLE.read_text(encoding="utf-8")) or {}
-    except yaml.YAMLError:
-        return {}
-    return data.get("ideas") or {}
+def idea_name() -> str:
+    """The idea's display name — `idea:` in belief.md frontmatter, else the repo folder.
+
+    One idea per repo, so there is no slug: the folder IS the idea. The name is read
+    from the belief file because that is the one founder-authored file that exists
+    before anything else, and the repo folder name is the fallback for a repo with no
+    belief yet.
+    """
+    if BELIEF.exists():
+        fm, _ = parse_frontmatter(BELIEF.read_text(encoding="utf-8"))
+        name = str(fm.get("idea") or "").strip()
+        if name:
+            return name
+    return REPO.name
+
+
+IDEA_NAME = None  # resolved lazily; import `idea_name()` for the live value
 
 
 # ─── record files (## Heading + key: value) ──────────────────────────────────
@@ -574,8 +583,7 @@ def evidence_label(a: dict) -> str:
 
 @dataclass
 class Idea:
-    slug: str
-    lifecycle: dict = field(default_factory=dict)
+    name: str
     belief: str = ""
     lineage_fm: dict = field(default_factory=dict)
     hunches: list = field(default_factory=list)
@@ -591,12 +599,12 @@ class Idea:
 
     @property
     def idea_dir(self) -> Path:
-        return REPORTS / self.slug
+        return REPORTS
 
 
-def load_idea(slug: str) -> Idea:
-    """Load every parsed artifact for one idea. Missing files load as empty."""
-    idea_dir = REPORTS / slug
+def load_idea() -> Idea:
+    """Load every parsed artifact for the idea. Missing files load as empty."""
+    idea_dir = REPORTS
     lineage_fm, hunches = parse_lineage_md(idea_dir / "01-ideation" / "hunch-lineage.md")
     graph_fm, assumptions = parse_graph_md(idea_dir / "02-assumptions" / "graph.md")
     patterns, evidence = parse_evidence_md(idea_dir / "03-validation" / "evidence.md")
@@ -605,9 +613,8 @@ def load_idea(slug: str) -> Idea:
     companies = parse_space_map(idea_dir / "outreach" / "companies.md")
     derive_assumption_evidence(assumptions, evidence)
     return Idea(
-        slug=slug,
-        lifecycle=load_lifecycle().get(slug) or {},
-        belief=extract_belief(REPO / "input-context" / slug / "belief.md"),
+        name=idea_name(),
+        belief=extract_belief(BELIEF),
         lineage_fm=lineage_fm, hunches=hunches,
         graph_fm=graph_fm, assumptions=assumptions,
         patterns=patterns, evidence=evidence,

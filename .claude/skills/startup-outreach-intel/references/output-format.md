@@ -6,7 +6,7 @@ If you're editing this file, keep it in lockstep with the downstream skills' Rea
 
 ---
 
-## `reports/{slug}/outreach/companies.md`
+## `reports/outreach/companies.md`
 
 The company registry. Consumed by `startup-outreach-targets` to decide which companies to search LinkedIn against.
 
@@ -14,7 +14,7 @@ The company registry. Consumed by `startup-outreach-targets` to decide which com
 
 ```yaml
 ---
-idea: {slug}
+idea: {idea name}
 last_updated: 2026-07-08
 last_intel_run:
   assumption: A2
@@ -81,7 +81,7 @@ last_intel_run: 2026-07-08
 
 ---
 
-## `reports/{slug}/outreach/companies.md`
+## `reports/outreach/companies.md`
 
 The rich per-company intelligence file. Read by `startup-outreach-targets` during enrichment to prioritize companies and add auditable `profile_fit_signals` to contacts. Those cached signals remain discovery context only; `startup-outreach-draft` reopens the live profile before drafting.
 
@@ -89,7 +89,7 @@ The rich per-company intelligence file. Read by `startup-outreach-targets` durin
 
 ```yaml
 ---
-idea: {slug}
+idea: {idea name}
 last_updated: 2026-07-08
 schema_version: 1
 ---
@@ -222,13 +222,13 @@ assumptions:
 
 ---
 
-## `reports/{slug}/outreach/.competitors-detected.md`
+## `reports/outreach/.competitors-detected.md`
 
 Companies flagged by SBIR / CORDIS / EDGAR as building in this space but whose tier is not in `icp_valid_tiers`. Separate from the outreach registry — the founder reviews and decides whether to interview any of them.
 
 ```yaml
 ---
-idea: {slug}
+idea: {idea name}
 last_updated: 2026-07-08
 assumptions_scanned: [A2]
 ---
@@ -260,7 +260,7 @@ source_url: https://cordis.europa.eu/project/id/...
 
 ---
 
-## `reports/{slug}/outreach/.intel-manifest.jsonl`
+## `reports/outreach/.intel-manifest.jsonl`
 
 Append-only JSONL log of every action the skill took. Used for reruns to identify cache hits and to give the founder an audit trail.
 

@@ -85,7 +85,6 @@ def _name_variants(company: str, parent_entity: str | None = None) -> list[str]:
 
 
 def query_news(company: str, keywords: list[str], months_back: int = 6,
-               slug: str | None = None,
                parent_entity: str | None = None) -> list[dict]:
     """Company-scoped GDELT REST news search. Throttled, allowlist-filtered.
 
@@ -95,7 +94,7 @@ def query_news(company: str, keywords: list[str], months_back: int = 6,
     if not is_enabled("gdelt_rest"):
         return []
     if _GDELT_STATUS["dead"]:
-        log_manifest(slug, {"phase": "api_call", "api": "gdelt_rest",
+        log_manifest({"phase": "api_call", "api": "gdelt_rest",
                             "company": company, "decision": "skip",
                             "reason": "circuit_breaker_open"})
         return []
@@ -122,7 +121,7 @@ def query_news(company: str, keywords: list[str], months_back: int = 6,
             _GDELT_STATUS["consecutive_failures"] += 1
             if _GDELT_STATUS["consecutive_failures"] >= 5:
                 _GDELT_STATUS["dead"] = True
-                log_manifest(slug, {"phase": "circuit_breaker",
+                log_manifest({"phase": "circuit_breaker",
                                     "api": "gdelt_rest", "state": "OPEN",
                                     "reason": "5_consecutive_network_failures"})
                 return []
@@ -163,7 +162,7 @@ def query_news(company: str, keywords: list[str], months_back: int = 6,
         if len(filtered) >= 5:
             break
 
-    log_manifest(slug, {"phase": "api_call", "api": "gdelt_rest",
+    log_manifest({"phase": "api_call", "api": "gdelt_rest",
                         "company": company, "tried_variants": tried,
                         "result_count": len(filtered)})
     return filtered
@@ -355,7 +354,6 @@ def main() -> None:
                         help="Comma-separated keywords ANDed with company")
     p_news.add_argument("--months", type=int, default=6)
     p_news.add_argument("--parent-entity", default="")
-    p_news.add_argument("--slug", default="")
 
     p_tl = sub.add_parser("timeline", help="BigQuery category aggregates")
     p_tl.add_argument("--themes", required=True,
@@ -374,7 +372,6 @@ def main() -> None:
             company=args.company,
             keywords=keywords,
             months_back=args.months,
-            slug=args.slug or None,
             parent_entity=args.parent_entity or None,
         ))
     elif args.mode == "timeline":

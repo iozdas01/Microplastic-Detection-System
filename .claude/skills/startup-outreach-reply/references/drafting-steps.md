@@ -15,7 +15,7 @@ Steps 5-8 and 11-13 of `startup-outreach-reply`: domain research, question pool,
    - Msg 3 (magnitude): What are the known cost ranges? What does an overrun typically look like in their phase?
    - Msg 4 (scale): What is the scale of their market segment? Any fleet-size or job-volume benchmarks?
 
-**Sources:** the domain's trade press, standards bodies and research institutes, OEM service reports, the company's targeting fields in `reports/{slug}/outreach/companies.md`, and their own LinkedIn activity.
+**Sources:** the domain's trade press, standards bodies and research institutes, OEM service reports, the company's targeting fields in `reports/outreach/companies.md`, and their own LinkedIn activity.
 
 **Minimum bar:** the question should sound like it comes from someone who has done real homework on their specific workflow phase, not someone who googled "{domain} maintenance."
 
@@ -59,7 +59,7 @@ Pick a number, or say "draft with #N."
     integration economics, because they have never done it. An integrator or plant operator is
     the mirror image. A question outside the set returns a plausible opinion that gets filed as
     evidence, which is the most expensive failure in the ledger — it is wrong AND it is durable.
-    The per-idea table is `reports/{slug}/outreach/email/contact-routing.md → Segment
+    The per-idea table is `reports/outreach/email/contact-routing.md → Segment
     competence`; if the contact's counterparty type is not in it, add the row before drafting.
 
 Rules 8 and 9 both defend against **advisor conversion**: a practitioner who starts evaluating

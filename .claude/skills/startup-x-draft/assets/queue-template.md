@@ -4,7 +4,7 @@ Drafts for the account named in `voice.md`. Nothing here has been posted — the
 by hand, every time.
 
 **This is a publishing pipeline, not idea state.** It is cross-idea by nature, which is why
-it lives here and not under `reports/{slug}/`. Per-idea findings stay in their idea's
+it lives here and not under `reports/`. Per-idea findings stay in their idea's
 folder; each entry below carries a `source:` pointer back to the artifact it came from
 instead of restating it.
 

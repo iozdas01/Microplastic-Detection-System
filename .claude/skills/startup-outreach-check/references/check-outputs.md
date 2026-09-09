@@ -72,7 +72,7 @@ Do not call a winner below 5 replies **within a tier**. Reply-rate differences o
 ### Step 7 — Regenerate the tracker
 
 ```bash
-python3 scripts/build_control_room.py {slug}
+python3 scripts/build_control_room.py
 ```
 
 ### Step 8 — Handoff
@@ -92,7 +92,7 @@ Inbox check complete for A{X}.
   ⚠️  Cluster "{signal_type}/{degree}" has 0/{N} replies after 14 days — consider
   regenerating the angle before the next blast.
 
-Results written to: reports/{slug}/outreach/results-{A_ID}.md
+Results written to: reports/outreach/results-{A_ID}.md
 Tracker regenerated.
 
 Next steps:

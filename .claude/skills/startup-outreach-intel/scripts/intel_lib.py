@@ -12,11 +12,11 @@ Usage as library:
     from intel_lib import query_ted, resolve_gleif, score_company
 
 Usage as CLI:
-    python3 intel_lib.py run     --slug <slug> --assumption A2
-    python3 intel_lib.py discover --slug <slug> --assumption A2
-    python3 intel_lib.py enrich  --slug <slug> --assumption A2
-    python3 intel_lib.py score   --slug <slug> --assumption A2
-    python3 intel_lib.py status  --slug <slug> --assumption A2
+    python3 intel_lib.py run     --assumption A2
+    python3 intel_lib.py discover --assumption A2
+    python3 intel_lib.py enrich  --assumption A2
+    python3 intel_lib.py score   --assumption A2
+    python3 intel_lib.py status  --assumption A2
 
     Flags:
         --refresh   Ignore cache; force re-fetch of every company/assumption block.
@@ -73,6 +73,7 @@ from scripts.data._common import (  # noqa: E402
     normalize_name,
     to_gbp,
 )
+from scripts.idea import idea_name  # noqa: E402
 from scripts.data.adzuna import (  # noqa: E402
     ADZUNA_SUPPORTED_COUNTRIES,
     normalize_for_adzuna,
@@ -124,8 +125,7 @@ class CanonicalCompany:
         }
 
 
-def dedup_and_resolve(raw_names: list[tuple[str, str, str]],
-                      slug: str | None = None) -> dict[str, CanonicalCompany]:
+def dedup_and_resolve(raw_names: list[tuple[str, str, str]]) -> dict[str, CanonicalCompany]:
     """
     Input: list of (name, source_api, role_in_source, source_url) tuples from
     every discovery API. This shape ties each name back to how it was found so
@@ -148,7 +148,7 @@ def dedup_and_resolve(raw_names: list[tuple[str, str, str]],
         aliases = list({o[0] for o in occurrences if o[0] != display})
 
         # GLEIF resolve
-        gleif = resolve_gleif(display, slug=slug) if is_enabled("gleif") else {}
+        gleif = resolve_gleif(display) if is_enabled("gleif") else {}
         canonical_name = gleif.get("name") or display
         canon_key_final = normalize_name(canonical_name)
 
@@ -190,8 +190,7 @@ def dedup_and_resolve(raw_names: list[tuple[str, str, str]],
                     canonicals.pop(name, None)
                     break
 
-    if slug:
-        log_manifest(slug, {"phase": "dedup", "input_names": len(raw_names),
+    log_manifest({"phase": "dedup", "input_names": len(raw_names),
                             "canonical_companies": len(canonicals)})
     return canonicals
 
@@ -256,7 +255,7 @@ def normalize_icp_tiers(icp_valid) -> tuple[list[str], dict[str, str]]:
 DOMAIN_ADAPTERS: dict[str, str] = {}
 
 
-def enabled_domain_sources(assumption: dict, slug: str | None = None) -> set[str]:
+def enabled_domain_sources(assumption: dict) -> set[str]:
     """
     Domain-specific data sources the idea has opted into (default: none).
 
@@ -268,7 +267,7 @@ def enabled_domain_sources(assumption: dict, slug: str | None = None) -> set[str
     declared = set(assumption.get("domain_data_sources", []) or [])
     unregistered = declared - set(DOMAIN_ADAPTERS)
     if unregistered:
-        log_manifest(slug, {"phase": "domain_source_unregistered",
+        log_manifest({"phase": "domain_source_unregistered",
                             "declared": sorted(unregistered),
                             "reason": "named in domain_data_sources but no adapter "
                                       "is registered in DOMAIN_ADAPTERS"})
@@ -414,18 +413,18 @@ def score_company(assumption_block: dict,
 # ---------------------------------------------------------------------------
 
 
-def _paths(slug: str) -> tuple[Path, Path, Path]:
-    base = REPO_ROOT / "reports" / slug / "outreach"
+def _paths() -> tuple[Path, Path, Path]:
+    base = REPO_ROOT / "reports" / "outreach"
     return (base / "companies.md",
             base / "company-intel.md",
             base / ".competitors-detected.md")
 
 
-def _assumption_path(slug: str) -> Path:
-    return REPO_ROOT / "reports" / slug / "02-assumptions" / "graph.md"
+def _assumption_path() -> Path:
+    return REPO_ROOT / "reports" / "02-assumptions" / "graph.md"
 
 
-def read_assumption(slug: str, assumption_id: str) -> dict:
+def read_assumption(assumption_id: str) -> dict:
     """
     Extract a specific assumption block from graph.md. Supports two schemas:
       1. Flat YAML doc (current standard) — whole file parses as YAML with
@@ -433,7 +432,7 @@ def read_assumption(slug: str, assumption_id: str) -> dict:
       2. Markdown-sectioned (legacy) — `## A{X}` heading with a ```yaml fenced
          block underneath.
     """
-    p = _assumption_path(slug)
+    p = _assumption_path()
     if not p.exists():
         raise FileNotFoundError(f"graph.md not found at {p}")
 
@@ -469,9 +468,9 @@ def read_assumption(slug: str, assumption_id: str) -> dict:
     return data
 
 
-def read_intel_md(slug: str) -> dict[str, dict]:
+def read_intel_md() -> dict[str, dict]:
     """Parse company-intel.md into a dict {canonical_name: block}."""
-    _, intel_path, _ = _paths(slug)
+    _, intel_path, _ = _paths()
     if not intel_path.exists():
         return {}
 
@@ -516,19 +515,19 @@ def _derive_keywords(assumption: dict) -> list[str]:
     return unique[:6]
 
 
-def phase_discover(slug: str, assumption_id: str, keywords: list[str] | None = None,
+def phase_discover(assumption_id: str, keywords: list[str] | None = None,
                    skip: set[str] | None = None) -> dict[str, CanonicalCompany]:
     """Phase 1 — API discovery + tier assignment. Writes draft rows to companies.md."""
-    assumption = read_assumption(slug, assumption_id)
+    assumption = read_assumption(assumption_id)
     icp_valid = assumption.get("icp_valid_tiers", []) or []
     icp_names, _icp_side = normalize_icp_tiers(icp_valid)
-    enabled_domain_sources(assumption, slug)   # gate: warns on unregistered opt-ins
+    enabled_domain_sources(assumption)   # gate: warns on unregistered opt-ins
     category = assumption.get("category", "")
     if not keywords:
         keywords = _derive_keywords(assumption)
 
     skip = skip or set()
-    log_manifest(slug, {"phase": "start", "assumption": assumption_id,
+    log_manifest({"phase": "start", "assumption": assumption_id,
                         "keywords": keywords, "icp_valid_tiers": icp_valid})
 
     raw: list[tuple[str, str, str, str]] = []
@@ -546,42 +545,42 @@ def phase_discover(slug: str, assumption_id: str, keywords: list[str] | None = N
     phase1_ukcf: list[dict] = []
 
     if "ted_eu" not in skip:
-        phase1_ted = query_ted(keywords, months_back=24, slug=slug)
+        phase1_ted = query_ted(keywords, months_back=24)
         for c in phase1_ted:
             add(c["contracting_authority"], "ted_eu", "contracting_authority", c["source_url"])
             add(c["supplier"], "ted_eu", "supplier", c["source_url"])
 
     if "uk_contracts_finder" not in skip:
-        phase1_ukcf = query_uk_contracts(keywords, months_back=24, slug=slug)
+        phase1_ukcf = query_uk_contracts(keywords, months_back=24)
         for c in phase1_ukcf:
             add(c["contracting_authority"], "uk_contracts_finder", "contracting_authority", c["source_url"])
             add(c["supplier"], "uk_contracts_finder", "supplier", c["source_url"])
 
     # Adzuna in Phase 1 is skipped by default — used for per-company enrichment
     # in Phase 2 instead. See SKILL.md.
-    log_manifest(slug, {"phase": "api_decision", "api": "adzuna",
+    log_manifest({"phase": "api_decision", "api": "adzuna",
                         "decision": "defer_to_enrichment",
                         "reason": "budget_conservation__personalization_priority"})
 
     if category in {"timing", "technical", "competitive"}:
         if "sbir" not in skip:
-            for a in query_sbir(keywords, years_back=3, slug=slug):
-                _append_competitor(slug, a, assumption_id)
+            for a in query_sbir(keywords, years_back=3):
+                _append_competitor(a, assumption_id)
         if "cordis" not in skip:
-            for a in query_cordis(keywords, years_back=3, slug=slug):
-                _append_competitor(slug, a, assumption_id)
+            for a in query_cordis(keywords, years_back=3):
+                _append_competitor(a, assumption_id)
 
     if "edgar_fulltext" not in skip and category in {"pain", "market", "buyer"}:
-        for f in query_edgar_fulltext(keywords, slug=slug):
+        for f in query_edgar_fulltext(keywords):
             cleaned, _cik = clean_edgar_name(f["filer"])
             add(cleaned, "edgar_fulltext", "filer", f["source_url"])
 
     if filtered_out:
-        log_manifest(slug, {"phase": "name_filter",
+        log_manifest({"phase": "name_filter",
                             "dropped_count": len(filtered_out),
                             "sample": filtered_out[:20]})
 
-    canonicals = dedup_and_resolve(raw, slug=slug)
+    canonicals = dedup_and_resolve(raw)
 
     # Second-pass name filter — GLEIF sometimes maps a short brand ("Aviva")
     # to a random subsidiary ("Aviva Investors Multi-Asset Plus Fund").
@@ -592,7 +591,7 @@ def phase_discover(slug: str, assumption_id: str, keywords: list[str] | None = N
             post_gleif_drops.append(cc.display_name)
             del canonicals[key]
     if post_gleif_drops:
-        log_manifest(slug, {"phase": "post_gleif_name_filter",
+        log_manifest({"phase": "post_gleif_name_filter",
                             "dropped_count": len(post_gleif_drops),
                             "sample": post_gleif_drops[:20]})
 
@@ -611,7 +610,7 @@ def phase_discover(slug: str, assumption_id: str, keywords: list[str] | None = N
             tier = "other"
 
         if tier == "other" and "other" not in icp_names:
-            log_manifest(slug, {"phase": "tier_drop", "company": cc.display_name,
+            log_manifest({"phase": "tier_drop", "company": cc.display_name,
                                 "reason": "off_scope"})
             continue
         cc.tier = tier            # type: ignore[attr-defined]
@@ -619,28 +618,28 @@ def phase_discover(slug: str, assumption_id: str, keywords: list[str] | None = N
         filtered[key] = cc
 
     if tier_downgrades:
-        log_manifest(slug, {"phase": "tier_second_signal_rule",
+        log_manifest({"phase": "tier_second_signal_rule",
                             "downgraded_count": len(tier_downgrades),
                             "sample": tier_downgrades[:15]})
 
-    _write_companies_md(slug, assumption_id, filtered)
+    _write_companies_md(assumption_id, filtered)
 
-    _write_phase1_cache(slug, assumption_id,
+    _write_phase1_cache(assumption_id,
                         ted_hits=phase1_ted, ukcf_hits=phase1_ukcf)
 
-    log_manifest(slug, {"phase": "discover_end", "assumption": assumption_id,
+    log_manifest({"phase": "discover_end", "assumption": assumption_id,
                         "companies_discovered": len(filtered)})
     return filtered
 
 
-def _phase1_cache_path(slug: str, assumption_id: str) -> Path:
-    return REPO_ROOT / "reports" / slug / "outreach" / f".phase1-contracts-{assumption_id}.json"
+def _phase1_cache_path(assumption_id: str) -> Path:
+    return REPO_ROOT / "reports" / "outreach" / f".phase1-contracts-{assumption_id}.json"
 
 
-def _write_phase1_cache(slug: str, assumption_id: str,
+def _write_phase1_cache(assumption_id: str,
                         ted_hits: list[dict], ukcf_hits: list[dict]) -> None:
     """Persist Phase 1's raw procurement hits so Phase 2 can reuse them."""
-    path = _phase1_cache_path(slug, assumption_id)
+    path = _phase1_cache_path(assumption_id)
     path.parent.mkdir(parents=True, exist_ok=True)
     payload = {"ted_eu": ted_hits, "uk_contracts_finder": ukcf_hits,
                "run_date": datetime.now().strftime("%Y-%m-%d")}
@@ -648,9 +647,9 @@ def _write_phase1_cache(slug: str, assumption_id: str,
         json.dump(payload, f, ensure_ascii=False)
 
 
-def _read_phase1_cache(slug: str, assumption_id: str) -> dict:
+def _read_phase1_cache(assumption_id: str) -> dict:
     """Load Phase 1 procurement hits; returns empty payload if cache missing."""
-    path = _phase1_cache_path(slug, assumption_id)
+    path = _phase1_cache_path(assumption_id)
     if not path.exists():
         return {"ted_eu": [], "uk_contracts_finder": [], "run_date": ""}
     try:
@@ -695,8 +694,8 @@ def _phase1_contracts_for_company(canon_key: str, phase1: dict) -> list[dict]:
     return out
 
 
-def _append_competitor(slug: str, entry: dict, assumption_id: str) -> None:
-    _, _, comp_path = _paths(slug)
+def _append_competitor(entry: dict, assumption_id: str) -> None:
+    _, _, comp_path = _paths()
     comp_path.parent.mkdir(parents=True, exist_ok=True)
     block = (f"\n## {entry.get('recipient', 'Unknown')}\n\n"
              f"detected_role: grant_recipient\n"
@@ -711,7 +710,7 @@ def _append_competitor(slug: str, entry: dict, assumption_id: str) -> None:
         f.write(block)
 
 
-def phase_enrich(slug: str, assumption_id: str, refresh: bool = False,
+def phase_enrich(assumption_id: str, refresh: bool = False,
                  skip: set[str] | None = None,
                  keywords: list[str] | None = None) -> None:
     """
@@ -720,35 +719,35 @@ def phase_enrich(slug: str, assumption_id: str, refresh: bool = False,
     News (GDELT) and hiring (Adzuna, tier-gated) are per-company.
     Cache-aware — 30-day TTL per (company, assumption).
     """
-    assumption = read_assumption(slug, assumption_id)
+    assumption = read_assumption(assumption_id)
     if not keywords:
         keywords = _derive_keywords(assumption)
     skip = skip or set()
     _icp_names, side_of = normalize_icp_tiers(assumption.get("icp_valid_tiers", []))
-    enabled_domain_sources(assumption, slug)   # gate: warns on unregistered opt-ins
+    enabled_domain_sources(assumption)   # gate: warns on unregistered opt-ins
 
-    existing_intel = read_intel_md(slug)
-    companies_data = _read_companies_md(slug)
-    phase1 = _read_phase1_cache(slug, assumption_id)
+    existing_intel = read_intel_md()
+    companies_data = _read_companies_md()
+    phase1 = _read_phase1_cache(assumption_id)
 
     for canon_key, row in companies_data.items():
         name = row["company"]
         tier = row.get("tier", "other") or "other"
 
         if tier == "other":
-            log_manifest(slug, {"phase": "enrich_skipped",
+            log_manifest({"phase": "enrich_skipped",
                                 "company": name, "reason": "tier_other"})
             continue
         if is_name_out_of_scope(name):
-            log_manifest(slug, {"phase": "enrich_skipped",
+            log_manifest({"phase": "enrich_skipped",
                                 "company": name, "reason": "non_operator_pattern"})
             continue
         if "(CIK" in name or ")  (" in name:
-            log_manifest(slug, {"phase": "enrich_skipped",
+            log_manifest({"phase": "enrich_skipped",
                                 "company": name, "reason": "unclean_edgar_metadata"})
             continue
         if re.match(r"^[A-Z][a-z]+\s+[A-Z][a-z]+$", name.strip()):
-            log_manifest(slug, {"phase": "enrich_skipped",
+            log_manifest({"phase": "enrich_skipped",
                                 "company": name, "reason": "personal_name"})
             continue
 
@@ -758,7 +757,7 @@ def phase_enrich(slug: str, assumption_id: str, refresh: bool = False,
         if not refresh and assumption_id in assumptions_block:
             run_date = assumptions_block[assumption_id].get("run_date")
             if run_date and _days_ago(run_date) < 30:
-                log_manifest(slug, {"phase": "enrich_cache_hit",
+                log_manifest({"phase": "enrich_cache_hit",
                                     "company": name, "assumption": assumption_id})
                 continue
 
@@ -769,7 +768,7 @@ def phase_enrich(slug: str, assumption_id: str, refresh: bool = False,
         block["contracts"] = _phase1_contracts_for_company(canon_key, phase1)
 
         if "gdelt_rest" not in skip:
-            block["news"] = query_gdelt(name, keywords, months_back=6, slug=slug)
+            block["news"] = query_gdelt(name, keywords, months_back=6)
 
         # Hiring signal applies to any in-market tier (demand or supply side).
         if "adzuna" not in skip and side_of.get(tier) in {DEMAND, SUPPLY}:
@@ -786,15 +785,15 @@ def phase_enrich(slug: str, assumption_id: str, refresh: bool = False,
             if adzuna_country:
                 all_postings = query_adzuna(
                     keywords, company=name, country=adzuna_country,
-                    company_country_hint=company_country_iso, slug=slug,
+                    company_country_hint=company_country_iso,
                 )
             else:
-                log_manifest(slug, {"phase": "adzuna_country_fanout",
+                log_manifest({"phase": "adzuna_country_fanout",
                                     "company": name,
                                     "reason": "unknown_company_country",
                                     "trying_countries": ["us", "gb", "de"]})
                 for cc in ["us", "gb", "de"]:
-                    hits = query_adzuna(keywords, company=name, country=cc, slug=slug)
+                    hits = query_adzuna(keywords, company=name, country=cc)
                     if hits:
                         all_postings.extend(hits)
                         break
@@ -813,7 +812,7 @@ def phase_enrich(slug: str, assumption_id: str, refresh: bool = False,
                     "fetched_date": datetime.now().strftime("%Y-%m-%d"),
                 }
             elif all_postings:
-                log_manifest(slug, {"phase": "hiring_no_keyword_match",
+                log_manifest({"phase": "hiring_no_keyword_match",
                                     "company": name,
                                     "total_postings": len(all_postings),
                                     "kept_after_keyword_filter": 0})
@@ -835,15 +834,15 @@ def phase_enrich(slug: str, assumption_id: str, refresh: bool = False,
         current_intel["assumptions"] = assumptions_block
         existing_intel[canon_key] = {"display_name": name, "block": current_intel}
 
-        log_manifest(slug, {"phase": "enrich_company", "company": name,
+        log_manifest({"phase": "enrich_company", "company": name,
                             "assumption": assumption_id,
                             "contracts": len(block["contracts"]),
                             "news": len(block["news"]),
                             "hiring": bool(block.get("hiring")),
                             "pain_score": final_score})
 
-    _write_intel_md(slug, existing_intel, assumption_id)
-    _update_companies_pain_scores(slug, assumption_id, existing_intel)
+    _write_intel_md(existing_intel, assumption_id)
+    _update_companies_pain_scores(assumption_id, existing_intel)
 
 
 def _days_ago(iso_date: str) -> int:
@@ -876,9 +875,9 @@ def _top_signal(block: dict) -> str:
 # ---------------------------------------------------------------------------
 
 
-def _read_companies_md(slug: str) -> dict[str, dict]:
+def _read_companies_md() -> dict[str, dict]:
     """Parse companies.md into {canonical_name: row}. Preserves existing pain_score."""
-    companies_path, _, _ = _paths(slug)
+    companies_path, _, _ = _paths()
     if not companies_path.exists():
         return {}
     text = companies_path.read_text(encoding="utf-8")
@@ -897,12 +896,12 @@ def _read_companies_md(slug: str) -> dict[str, dict]:
     return out
 
 
-def _write_companies_md(slug: str, assumption_id: str,
+def _write_companies_md(assumption_id: str,
                         canonicals: dict[str, CanonicalCompany]) -> None:
-    companies_path, _, _ = _paths(slug)
+    companies_path, _, _ = _paths()
     companies_path.parent.mkdir(parents=True, exist_ok=True)
 
-    existing = _read_companies_md(slug)
+    existing = _read_companies_md()
     next_id = 1 + max([int(re.sub(r"\D", "", r.get("id", "0") or "0") or 0)
                         for r in existing.values()], default=0)
 
@@ -939,7 +938,7 @@ def _write_companies_md(slug: str, assumption_id: str,
             }
             next_id += 1
 
-    _dump_companies_md(slug, existing, assumption_id)
+    _dump_companies_md(existing, assumption_id)
 
 
 def _rationale_line(cc: CanonicalCompany) -> str:
@@ -955,8 +954,8 @@ def _rationale_line(cc: CanonicalCompany) -> str:
     return "- " + "; ".join(parts) + "."
 
 
-def _dump_companies_md(slug: str, rows: dict[str, dict], assumption_id: str) -> None:
-    companies_path, _, _ = _paths(slug)
+def _dump_companies_md(rows: dict[str, dict], assumption_id: str) -> None:
+    companies_path, _, _ = _paths()
     # Rank by pain first; tier is only a deterministic tie-break, sorted by name
     # (no hardcoded tier order — tier names are idea-defined).
     ordered = sorted(rows.values(), key=lambda r: (
@@ -969,7 +968,7 @@ def _dump_companies_md(slug: str, rows: dict[str, dict], assumption_id: str) -> 
         by_tier[r.get("tier", "other")] = by_tier.get(r.get("tier", "other"), 0) + 1
 
     frontmatter = {
-        "idea": slug,
+        "idea": idea_name(),
         "last_updated": datetime.now().strftime("%Y-%m-%d"),
         "last_intel_run": {
             "assumption": assumption_id,
@@ -991,8 +990,8 @@ def _dump_companies_md(slug: str, rows: dict[str, dict], assumption_id: str) -> 
     companies_path.write_text("\n".join(lines), encoding="utf-8")
 
 
-def _write_intel_md(slug: str, intel: dict[str, dict], assumption_id: str) -> None:
-    _, intel_path, _ = _paths(slug)
+def _write_intel_md(intel: dict[str, dict], assumption_id: str) -> None:
+    _, intel_path, _ = _paths()
     intel_path.parent.mkdir(parents=True, exist_ok=True)
 
     ordered_names = sorted(intel.keys(),
@@ -1002,7 +1001,7 @@ def _write_intel_md(slug: str, intel: dict[str, dict], assumption_id: str) -> No
                                             .get("pain_score", 0)))
 
     frontmatter = {
-        "idea": slug,
+        "idea": idea_name(),
         "last_updated": datetime.now().strftime("%Y-%m-%d"),
         "schema_version": 1,
     }
@@ -1028,16 +1027,16 @@ def _write_intel_md(slug: str, intel: dict[str, dict], assumption_id: str) -> No
     intel_path.write_text("\n".join(lines), encoding="utf-8")
 
 
-def _update_companies_pain_scores(slug: str, assumption_id: str,
+def _update_companies_pain_scores(assumption_id: str,
                                    intel: dict[str, dict]) -> None:
-    rows = _read_companies_md(slug)
+    rows = _read_companies_md()
     for k, entry in intel.items():
         if k not in rows:
             continue
         block = entry["block"].get("assumptions", {}).get(assumption_id, {})
         rows[k]["pain_score"] = block.get("pain_score")
         rows[k]["pain_components"] = block.get("pain_components", {})
-    _dump_companies_md(slug, rows, assumption_id)
+    _dump_companies_md(rows, assumption_id)
 
 
 # ---------------------------------------------------------------------------
@@ -1052,7 +1051,6 @@ def _cli() -> None:
 
     for cmd in ("run", "discover", "enrich", "score", "status"):
         sp = sub.add_parser(cmd)
-        sp.add_argument("--slug", required=True)
         sp.add_argument("--assumption", required=True)
         sp.add_argument("--refresh", action="store_true")
         sp.add_argument("--skip", default="",
@@ -1066,13 +1064,13 @@ def _cli() -> None:
                 or None)
 
     if args.cmd in {"discover", "run"}:
-        phase_discover(args.slug, args.assumption, keywords=keywords, skip=skip_set)
+        phase_discover(args.assumption, keywords=keywords, skip=skip_set)
     if args.cmd in {"enrich", "run"}:
-        phase_enrich(args.slug, args.assumption, refresh=args.refresh,
+        phase_enrich(args.assumption, refresh=args.refresh,
                      skip=skip_set, keywords=keywords)
     if args.cmd == "score":
-        intel = read_intel_md(args.slug)
-        _update_companies_pain_scores(args.slug, args.assumption, intel)
+        intel = read_intel_md()
+        _update_companies_pain_scores(args.assumption, intel)
         print(f"Rescored {len(intel)} companies for {args.assumption}")
 
     # Auto-regenerate outreach_tracker.html.
@@ -1082,7 +1080,7 @@ def _cli() -> None:
             tracker_script = REPO_ROOT / "scripts" / "build_control_room.py"
             if tracker_script.exists():
                 result = subprocess.run(
-                    [sys.executable, str(tracker_script), args.slug],
+                    [sys.executable, str(tracker_script)],
                     capture_output=True, text=True, timeout=60,
                 )
                 if result.returncode == 0:
@@ -1096,9 +1094,9 @@ def _cli() -> None:
             print(f"[dashboard] regen error: {e}", file=sys.stderr)
 
     if args.cmd == "status":
-        manifest = manifest_path(args.slug)
+        manifest = manifest_path()
         if not manifest.exists():
-            print(f"No manifest yet for {args.slug}")
+            print("No manifest yet")
             return
         with open(manifest) as f:
             lines = f.readlines()

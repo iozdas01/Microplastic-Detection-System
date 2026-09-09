@@ -36,8 +36,7 @@ def _score(record: dict, input_name: str) -> float:
     return overlap / max(len(n2.split()), 1) * 0.85
 
 
-def resolve_gleif(company_name: str, country_hint: str | None = None,
-                  slug: str | None = None) -> dict:
+def resolve_gleif(company_name: str, country_hint: str | None = None) -> dict:
     """Return `{lei, name, country, parent_lei, parent_name, match_score, ...}`.
 
     Returns empty dict on no match or low confidence (score < 0.4).
@@ -58,7 +57,7 @@ def resolve_gleif(company_name: str, country_hint: str | None = None,
 
     records = data.get("data") or []
     if not records:
-        log_manifest(slug, {"phase": "gleif_resolve", "input": company_name,
+        log_manifest({"phase": "gleif_resolve", "input": company_name,
                             "output_lei": None, "reason": "no_match"})
         return {}
 
@@ -67,7 +66,7 @@ def resolve_gleif(company_name: str, country_hint: str | None = None,
     best_score = _score(best, company_name)
 
     if best_score < 0.4:
-        log_manifest(slug, {"phase": "gleif_resolve", "input": company_name,
+        log_manifest({"phase": "gleif_resolve", "input": company_name,
                             "output_lei": None,
                             "reason": f"low_confidence({best_score:.2f})"})
         return {}
@@ -104,7 +103,7 @@ def resolve_gleif(company_name: str, country_hint: str | None = None,
         "source": "GLEIF",
         "source_url": f"https://api.gleif.org/api/v1/lei-records/{lei}",
     }
-    log_manifest(slug, {"phase": "gleif_resolve", "input": company_name,
+    log_manifest({"phase": "gleif_resolve", "input": company_name,
                         "output_lei": lei, "confidence": result["match_score"]})
     return result
 
@@ -113,11 +112,9 @@ def main() -> None:
     ap = argparse.ArgumentParser(description="GLEIF LEI resolver")
     ap.add_argument("--name", required=True)
     ap.add_argument("--country-hint", default="")
-    ap.add_argument("--slug", default="")
     args = ap.parse_args()
     emit_json(resolve_gleif(args.name,
-                            country_hint=args.country_hint or None,
-                            slug=args.slug or None))
+                            country_hint=args.country_hint or None))
 
 
 if __name__ == "__main__":

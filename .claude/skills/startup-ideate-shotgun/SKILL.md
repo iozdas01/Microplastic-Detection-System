@@ -75,10 +75,10 @@ was meant to serve; retire or supersede it first, with founder confirmation.
 
 Require in every mode:
 
-1. `input-context/{slug}/belief.md`, including `## Belief boundaries` — in explore
+1. `input-context/belief.md`, including `## Belief boundaries` — in explore
    mode the in-scope list is what the recon search frame is derived from, so an empty
    boundaries section stops the run;
-2. `reports/{slug}/01-ideation/hunch-lineage.md`.
+2. `reports/01-ideation/hunch-lineage.md`.
 
 Require in the test modes additionally:
 
@@ -104,7 +104,7 @@ purpose is to produce candidates for one.
 
 ## Run artifacts
 
-Every per-idea artifact goes below `reports/{slug}/`. Tree, run-id scheme and the
+Every per-idea artifact goes below `reports/`. Tree, run-id scheme and the
 explore-mode variants: `references/report-templates.md` → Run artifacts.
 
 ## Interview-loop routing

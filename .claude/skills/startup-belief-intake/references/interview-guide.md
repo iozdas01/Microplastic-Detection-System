@@ -41,16 +41,16 @@ The question bank for Step 3, and the exact file scaffolding written in Step 7. 
 
 ## Step 7 — Write the belief and initialize the idea
 
-Create `input-context/{slug}/` once the founder confirms a slug. Propose one — lowercase-hyphenated,
-descriptive of the *field*, not the solution (name the market, never the product) —
-and let them correct it. The slug is used identically across `input-context/`, `ideas/`, and
-`reports/`, so getting it wrong is expensive later.
+Agree the idea's name once the founder confirms the belief. Propose one — descriptive of
+the *field*, not the solution (name the market, never the product) — and let them correct
+it. It is recorded once, as `idea:` in the belief frontmatter, and every generated page
+titles from it.
 
 Write `belief.md` per the "Stable belief" spec in `schemas/hunch.md`:
 
 ```markdown
 ---
-idea_slug: {slug}
+idea: {idea name}
 created: {YYYY-MM-DD}
 last_confirmed: {YYYY-MM-DD}
 ---
@@ -110,12 +110,12 @@ section. A drift-check proposal from another skill (see `startup-outreach-reply`
 that reaches belief level routes HERE — this skill is the only place a belief version can
 be confirmed.
 
-Then create `reports/{slug}/01-ideation/hunch-lineage.md` — **frontmatter only**:
+Then create `reports/01-ideation/hunch-lineage.md` — **frontmatter only**:
 
 ```markdown
 ---
-idea_slug: {slug}
-belief_file: input-context/{slug}/belief.md
+idea: {idea name}
+belief_file: input-context/belief.md
 active_hunch: none
 next_hunch_id: H1
 last_updated: {YYYY-MM-DD}
@@ -123,7 +123,7 @@ last_updated: {YYYY-MM-DD}
 
 # Hunch Lineage
 
-_No hunch yet. Run `/startup-ideate-shotgun {slug}` in explore mode: it proposes
+_No hunch yet. Run `/startup-ideate-shotgun` in explore mode: it proposes
 candidates from a real corpus, and the founder promotes one to `active`._
 ```
 
@@ -266,8 +266,8 @@ This is the filter that decides. Ask them separately:
   pivot.
 
 The candidate that survives becomes the belief. If two survive, that is a real finding — say
-so, and let the founder choose which lineage to start; the other stays available as a separate slug
-later. Don't merge them into one broader belief to avoid the choice. A belief broad enough to
+so, and let the founder choose which lineage to start; the other is parked in
+`signals/idea-parking.md` for later. Don't merge them into one broader belief to avoid the choice. A belief broad enough to
 contain two obsessions is too broad to anchor anything.
 
 If **nothing** survives — "good idea, but I could take it or leave it" — say that plainly.

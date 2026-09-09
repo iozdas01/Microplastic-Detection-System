@@ -71,7 +71,7 @@ next pass can finish it rather than re-doing it.
 
 ## Post-write audit — MANDATORY
 
-After every batch write to `contacts.md`, run `python3 scripts/audit_target_list.py {slug}`. This audits the tracker against every assumption's declared ICP and flags:
+After every batch write to `contacts.md`, run `python3 scripts/audit_target_list.py`. This audits the tracker against every assumption's declared ICP and flags:
 - Off-scope contacts (hard fail — must mark `off_scope` with rationale note; see rules below)
 - `tier: other` contacts (soft fail — needs manual classification)
 - Missing/vague `validation_rationale` (soft fail — needs filling)
@@ -111,7 +111,7 @@ notes: "1st-degree connection — existing network warm path"    ← no audit ra
 
 ### When a contact moves to `off_scope`, exclude them from outreach
 
-`startup-outreach-draft` only accepts contacts whose `outreach_status` is `pending`, so the status change plus the required audit note is the canonical exclusion mechanism. If a legacy draft for the contact still exists under `reports/{slug}/outreach/copy/{A_ID}-linkedin.md`, remove that stale section during the same operation so an archived artifact cannot be mistaken for an approved send. This skill does not create new message drafts.
+`startup-outreach-draft` only accepts contacts whose `outreach_status` is `pending`, so the status change plus the required audit note is the canonical exclusion mechanism. If a legacy draft for the contact still exists under `reports/outreach/copy/{A_ID}-linkedin.md`, remove that stale section during the same operation so an archived artifact cannot be mistaken for an approved send. This skill does not create new message drafts.
 
 ## Auto-progression between passes
 
