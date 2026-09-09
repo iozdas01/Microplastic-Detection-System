@@ -1,20 +1,27 @@
 ---
-team: one
+team: two
 founders:
+  - name: Sandra Zalas
+    profile: founders/sandra-zalas.md
+    status: confirmed
+    role: CEO
   - name: Izgin Ozdas
     profile: founders/izgin-ozdas.md
     status: confirmed
+    role: ""            # not yet recorded — Izgin sets this
 ---
 
 # Founders
 
-This project has **one founder**. A cofounder pairing ran 2026-08-23 to 2026-08-31 and
-ended; the venture is solo from 2026-08-31. Every skill or script that reads
-`founder.md` must load every profile listed above:
+This project has **two founders** (from 2026-09-09). Sandra Zalas is CEO of Baltic
+Jungle Lab, the company this repo tests; her profile was drafted from her public LinkedIn
+and awaits her confirmation. Izgin's role and title in the company are not recorded yet.
+Every skill or script that reads `founder.md` must load every profile listed above:
 
-| Founder | Status | Profile |
-|---|---|---|
-| Izgin Ozdas | confirmed | [founders/izgin-ozdas.md](founders/izgin-ozdas.md) |
+| Founder | Role | Status | Profile |
+|---|---|---|---|
+| Sandra Zalas | CEO | confirmed (profile unverified by her) | [founders/sandra-zalas.md](founders/sandra-zalas.md) |
+| Izgin Ozdas | — | confirmed | [founders/izgin-ozdas.md](founders/izgin-ozdas.md) |
 
 Each profile is the durable, cross-idea record of that founder's experience,
 access, and founder-market-fit inputs. Use the records as context, not proof:
