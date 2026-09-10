@@ -635,6 +635,27 @@ body::before {
   color:var(--text-dimmer);margin-bottom:7px;}
 .hx-belief blockquote {margin:0 0 8px;font-size:15px;line-height:1.5;max-width:74ch;}
 .hx-belief p {margin:0;font-size:11.5px;color:var(--text-dim);max-width:74ch;}
+/* belief → hunch → assumptions tree */
+.hx-tree {margin:14px 0 18px;padding:15px 17px;border:1px solid var(--border);border-radius:var(--r-md);background:var(--surface);}
+.hx-tree > b {display:block;font-size:9.5px;text-transform:uppercase;letter-spacing:.12em;color:var(--text-dimmer);margin-bottom:10px;}
+.hx-troot,.hx-tkids {list-style:none;margin:0;padding:0;}
+.hx-tkids {margin-left:14px;padding-left:16px;border-left:1px solid var(--border);}
+.hx-tnode {position:relative;margin:6px 0;}
+.hx-tkids > .hx-tnode::before {content:"";position:absolute;left:-16px;top:12px;width:12px;height:1px;background:var(--border);}
+.hx-trow {display:flex;flex-wrap:wrap;align-items:baseline;gap:6px 8px;padding:6px 9px;border-radius:var(--r-sm);}
+.hx-tactive > .hx-trow {background:var(--surface-2);outline:1px solid var(--accent);}
+.hx-tid {font-family:var(--mono,ui-monospace,Menlo,monospace);font-size:10.5px;font-weight:700;color:var(--accent);white-space:nowrap;}
+.hx-tbelief > .hx-trow .hx-tid,.hx-thunch > .hx-trow .hx-tid {font-size:11.5px;}
+.hx-ttext {font-size:12px;line-height:1.45;color:var(--text);max-width:78ch;}
+.hx-thunch > .hx-trow .hx-ttext {font-weight:600;}
+.hx-tref .hx-ttext {color:var(--text-dimmer);font-style:italic;}
+.hx-tchip {font-size:9px;text-transform:uppercase;letter-spacing:.06em;border:1px solid var(--border-subtle);border-radius:999px;padding:1px 6px;color:var(--text-dim);white-space:nowrap;}
+.hx-tchip.q-leap_of_faith {border-color:#e05d44;color:#e05d44;}
+.hx-tchip.q-known_important {border-color:var(--accent);color:var(--accent);}
+.hx-tscore {font-family:var(--mono,ui-monospace,Menlo,monospace);text-transform:none;letter-spacing:0;}
+.hx-tstart {background:var(--accent);color:#fff;border-color:var(--accent);}
+.hx-tlegend {margin:10px 0 0;font-size:10.5px;color:var(--text-dimmer);}
+
 
 /* belief section pills + panels */
 .hx-bnav {display:flex;flex-wrap:wrap;gap:6px;margin-top:10px;}
@@ -1058,6 +1079,26 @@ body::before {
 .smap-bar-val {color:var(--text-dimmer);font-variant-numeric:tabular-nums;text-align:right;}
 .smap-bar.is-undisclosed .smap-bar-track {background:repeating-linear-gradient(
   90deg,var(--surface-2) 0 5px,transparent 5px 10px);}
+.startup-view-switch {display:flex;gap:4px;width:max-content;max-width:100%;padding:4px;margin:0 0 14px;
+  border:1px solid var(--border);border-radius:var(--r-md);background:var(--surface-2);}
+.startup-view-switch button {border:0;border-radius:var(--r-sm);padding:8px 12px;background:transparent;
+  color:var(--text-dim);font:inherit;font-size:11px;font-weight:650;cursor:pointer;white-space:nowrap;}
+.startup-view-switch button:hover {color:var(--text);}
+.startup-view-switch button.active {background:var(--surface-3);color:var(--accent);}
+.startup-view-switch button:focus-visible {outline:2px solid var(--accent);outline-offset:2px;}
+.startup-context {display:grid;grid-template-columns:minmax(0,1.15fr) minmax(280px,.85fr);gap:16px;
+  padding:16px 18px;margin-bottom:12px;border:1px solid var(--border);border-left:3px solid var(--accent);
+  border-radius:var(--r-md);background:var(--surface-2);}
+.startup-context h2 {margin:0 0 6px;font-size:18px;letter-spacing:-.02em;}
+.startup-context p {margin:0;color:var(--text-dim);font-size:11.5px;line-height:1.6;max-width:72ch;}
+.startup-relevance {display:grid;gap:6px;align-content:start;}
+.startup-relevance div {display:grid;grid-template-columns:90px 1fr;gap:8px;font-size:10.5px;line-height:1.45;}
+.startup-relevance b {color:var(--text);}.startup-relevance span {color:var(--text-dim);}
+.startup-frame-wrap {overflow:hidden;border:1px solid var(--border);border-radius:var(--r-lg);background:var(--surface);}
+.startup-frame {display:block;width:100%;height:min(1050px,78vh);min-height:680px;border:0;background:var(--surface);}
+.startup-source-note {display:flex;justify-content:space-between;gap:12px;align-items:center;padding:8px 12px;
+  border-top:1px solid var(--border);color:var(--text-dimmer);font-size:9.5px;}
+.startup-source-note a {color:var(--accent);}
 .cmap-legend span {display:inline-flex;align-items:center;gap:5px;}.cmap-dot {display:inline-block;width:8px;height:8px;border-radius:50%;}.cmap-ring {display:inline-block;width:11px;height:11px;border:1px dashed var(--text);border-radius:50%;}.cmap-hollow {display:inline-block;width:9px;height:9px;border:1.4px dashed var(--text-dimmer);border-radius:50%;}
 .cmap-matrix-head {margin-top:7px;}.cmap-matrix-head h3 {font-size:12px;margin:0 0 3px;}.cmap-matrix-head p {font-size:10.5px;color:var(--text-dimmer);margin:0 0 9px;}
 .cmap-matrix {overflow-x:auto;border:1px solid var(--border);border-radius:var(--r-md);}
@@ -1068,6 +1109,8 @@ body::before {
   .co-row {grid-template-columns:minmax(0,1fr);}
   .co-side {align-items:flex-start;text-align:left;}
   .cmap {padding:14px 10px;}.cmap-controls,.cmap-lenses,.cmap-controls label {width:100%;}.cmap-lenses button {flex:1;}.cmap-controls select {width:100%;max-width:none;}.cmap-stage svg {min-height:330px;}.cmap-axis {font-size:7px;}.cmap-readout {grid-template-columns:1fr;margin-inline:2px;}.cmap-axis-key {display:grid;gap:5px;}
+  .startup-context {grid-template-columns:1fr;}.startup-view-switch {width:100%;overflow:auto;}.startup-view-switch button {flex:1;}
+  .startup-frame {height:75vh;min-height:560px;}
 }
 
 .pg-grid {display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:14px;margin-top:16px;}
@@ -1431,18 +1474,18 @@ body::before {
 <!-- ── page header ── -->
 <header class="page-header">
   <h1>Strategy control room — <span class="idea-name">industrial-process-data-infrastructure</span></h1>
-  <p class="subtitle">0 contacts &middot; last updated — &middot; generated 2026-09-10T03:35:46+00:00</p>
+  <p class="subtitle">0 contacts &middot; last updated — &middot; generated 2026-09-10T03:51:12+00:00</p>
 </header>
 
 <!-- ── tab nav ── -->
 <nav class="tab-nav">
   <button data-tab="tasks" onclick="switchTab('tasks')">To do <span class="count" id="taskTabCount">0</span></button>
-  <button data-tab="thesis" onclick="switchTab('thesis')">Hunches <span class="count">H1</span></button>
+  <button data-tab="thesis" onclick="switchTab('thesis')">Vision <span class="count">H1</span></button>
   <button data-tab="patterns" onclick="switchTab('patterns')">Pain Patterns <span class="count">0</span></button>
   <button data-tab="offerings" onclick="switchTab('offerings')">Offerings <span class="count">0</span></button>
   <button data-tab="pages" onclick="switchTab('pages')">Pages <span class="count">1</span></button>
   <button data-tab="companies" onclick="switchTab('companies')">Companies <span class="count">12</span></button>
-  <button data-tab="startups" onclick="switchTab('startups')">Startups <span class="count">12</span></button>
+  <button data-tab="startups" onclick="switchTab('startups')">Startups <span class="count">35</span></button>
   <button data-tab="email" onclick="switchTab('email')">Research &amp; papers <span class="count">0</span></button>
   <button class="active" data-tab="contacts" onclick="switchTab('contacts')">Contacts <span class="count">0</span></button>
 </nav>
@@ -1470,8 +1513,8 @@ body::before {
 <div class="tab-panel" data-tab="thesis">
 <div class="hx-root">
 <section class="hx-belief"><b>The durable belief</b><blockquote>The bottleneck to running production lines with models isn&#x27;t the models, it&#x27;s that real-time process data arrives as numbers with no identity or meaning attached, and nobody is building the infrastructure that identifies and interprets it.</blockquote><div class="hx-bnav"><button class="hx-bpill" data-bsec="bsec0" onclick="hxBsec('bsec0')">Where it stops — boundaries &amp; precedent</button><button class="hx-bpill" data-bsec="bsec1" onclick="hxBsec('bsec1')">In the founder&#x27;s words</button><button class="hx-bpill" data-bsec="bsec2" onclick="hxBsec('bsec2')">Starting point &amp; what must be tested independently</button><button class="hx-bpill" data-bsec="bsec3" onclick="hxBsec('bsec3')">What would kill the belief</button></div><div class="hx-bpanel" id="bsec0" hidden><p>Drawn 2026-09-09 by the precedent check, with the founder confirming each line.</p><ul><li>In scope: physical production processes where real-time data is, or can be, collected but arrives without identity (what was measured) or meaning (what it implies for the line), so a person still closes the loop — the CNC → CMM → manual re-adjust case, and the inline particle sensor that reports size and count but not what the particle is.</li><li>Out of scope, because it already exists and the belief does not claim otherwise:<ul><li><strong>Real-time measurement itself.</strong> Mettler Toledo&#x27;s <a href="https://www.mt.com/us/en/home/products/L1_AutochemProducts/particle-size-analyzers/particletrack-fbrm/particletrack-g600.html">ParticleTrack G600</a></li></ul> is a probe inserted into vessels or pipelines that tracks particle count and size in real time at full process concentration (0.5-1000 µm); Malvern Panalytical&#x27;s <a href="https://www.malvernpanalytical.com/en/products/product-range/insitec-range/insitec-wet">Insitec Wet</a> does online laser-diffraction sizing on wet process streams (0.1-2500 µm). Both are sold to manufacturers today. The founder&#x27;s first draft said this infrastructure &quot;doesn&#x27;t exist yet&quot;; it does, and the belief was narrowed rather than defended.<ul><li><strong>Machine-health sensing.</strong> Augury&#x27;s <a href="https://www.augury.com/machine-health-solutions/cr/halo/">Halo R4000</a></li></ul> puts vibration, temperature and magnetic sensors with edge AI on the machine. It measures the machine, not the product or the process stream, and is not what the belief is about.<ul><li><strong>Plant data historians.</strong> OSIsoft PI and its kind collect and store real-time tags from</li></ul> instruments the plant already has. They are the &quot;tag 0047&quot; the belief says has no meaning.<ul><li><strong>Fleet and site telematics</strong> (Samsara). Raised and struck in-session: not manufacturing.</li></ul></li><li>Deliberately NOT a boundary: the industry. Microplastics in water pipes and microfibers in textile manufacturing are where the founder intends to start, and they enter as candidates for the shotgun, not as a filter on what it may propose. The belief has to hold for the CNC/CMM loop as well as the pipe, or it is a product claim rather than a belief.</li><li>Precedent noted, for the shotgun rather than settled here: no commercial inline product identifies microplastics in a flow. What exists in 2026 is research — a <a href="https://www.nature.com/articles/s41378-026-01413-y">microwave resonant sensor for seawater</a>, an <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC13259111/">electrokinetic focusing concept for pipe flow</a>, a <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC13431368/">multispectral laser-diode concept</a> — and a <a href="https://link.springer.com/article/10.1007/s41101-026-00496-y">2026 review</a> calling standardized real-time detection &quot;limited&quot;. That supports the *identification* half of the belief for one property in one medium; it says nothing yet about *interpretation*.</li></ul></div><div class="hx-bpanel" id="bsec1" hidden><p>Session of 2026-09-09, verbatim:</p><p>&gt; &quot;You should have this real-time data. If you connect this to the software you build, the &gt; interoperability software you build, then the mathematics models and so on are going to make &gt; better decisions because they are going to count everything. In a very fragmented &gt; unstructured environment we are going to put structure in.&quot;</p><p>&gt; &quot;The problem layer that I&#x27;m obsessed with, which is the adjustment, starts from the &gt; collection. Before you can adjust you first have to collect.&quot;</p><p>&gt; &quot;We believe that this manual re-entry or this manual decision layer that is inside of the &gt; processes is hindering progress.&quot;</p><p>&gt; &quot;If you&#x27;re talking about an OPC-UA protocol or a Modbus protocol, that can be mapped into one &gt; layer but there&#x27;s no meaning there. It says tag 003, it says tag 0047 but what does tag 0047 &gt; mean? That&#x27;s when you need to go into the operator&#x27;s knowledge.&quot;</p><p>&gt; &quot;If there was going to be any type of agentic implementation or any type of agents that are &gt; orchestrating these machines by themselves, then there has to be a need for this data &gt; collection.&quot;</p><p>The founder&#x27;s worked example of the milder case: a CNC machine cuts the part, a CMM measures it, a person reads the measurement and re-adjusts the machine — &quot;it all has to be manual&quot;. The extreme case, in the founder&#x27;s words: &quot;within microplastics if there&#x27;s no way to collect the data initially, then you can&#x27;t act on it.&quot;</p><p>The company-level statement (&quot;no one is building this infra, <strong>we are</strong>&quot;) is recorded here and kept out of the one-liner, which is a claim about the world.</p><p><strong>Two links, and they do not rest on the same evidence:</strong></p><p>1. <strong>Collection is missing.</strong> In physical processes the real-time data that would let a model adjust the line is either not collected at all, or collected without meaning (tags, not properties). First-hand: IMTEK CNC/CMM loop (2022-2024) and the Cambridge interoperability measurement carry over from v3. 2. <strong>Nobody is building the collection layer.</strong> This is the contrarian half and the checkable one. It arrived as an assertion in this session; no named search or named competitor set is behind it yet. Step 4 (definitional research) owes this link its examples.</p></div><div class="hx-bpanel" id="bsec2" hidden><ul><li>Starting solution, technology, or analogy: the ladder the founder pasted to open the session, verbatim (part of it forwarded from a chat with Sandra, 2026-09-09 07:45-07:46):<ul><li>VISION — &quot;Build the observability layer for physical industrial processes.&quot;</li></ul><ul><li>MISSION — &quot;Make industrial processes measurable, understandable and optimizable in real time.&quot;</li></ul><ul><li>CORE TECHNOLOGY THESIS — &quot;Physical process observability stack.&quot;</li></ul><ul><li>CURRENT CORE TECHNOLOGY / WEDGE — &quot;Real-time particle intelligence in complex industrial liquids.&quot;</li></ul><ul><li>FIRST PRODUCT — &quot;Microfiber Process Monitor for textile manufacturing.&quot;</li></ul><ul><li>DATA LAYER — &quot;Proprietary process datasets and cross-factory benchmarks.&quot;</li></ul><ul><li>PLATFORM EVOLUTION — &quot;sensing + existing machine data + interoperability + models + recommendations.&quot;</li></ul><ul><li>Also stated mid-session: &quot;we are solving the problem of benchmarking and detection of</li></ul> microplastics inside of water pipes&quot; and &quot;that&#x27;s why we&#x27;re starting with microplastics.&quot;</li><li>Origin: solution_or_analogy_first</li><li>Problem stated without the solution: &quot;Before you can adjust you first have to collect.&quot; Expanded, in the founder&#x27;s words: the adjustment loop on a production line is closed by a person reading a measurement and re-entering it, and in some processes there is no measurement to read at all.</li><li>Founder-reported observations (context, not independent evidence):<ul><li>CNC → CMM → manual re-adjust loop, seen first-hand at IMTEK Cryogenics.</li></ul><ul><li>OPC-UA / Modbus tags carrying no meaning without the operator, from the same environment</li></ul> and the Cambridge MPhil work.<ul><li>Anthropic&#x27;s hardware standard (the founder calls it &quot;AHS&quot;; recorded in the archived ledger</li></ul> as the Model Hardware Standard, previewed 2026-08-27) as the reference architecture for a semantic layer between machine signal and actuator — a public announcement, not an observation of a factory.<ul><li>Microplastics in water pipes: &quot;there is no data to be able to adjust for them because</li></ul> there is no way to collect that data.&quot; Asserted; no site, operator or measurement named yet.</li><li>SISP status: <strong>probable</strong><ul><li>The solution ladder (observability stack → particle sensor → microfiber monitor) arrived</li></ul> fully formed and before the belief was stated; the belief was produced by compression on request (&quot;u need to package everything I sent to you and find the contrarian belief&quot;).<ul><li>The wedge (microplastics, water pipes, textile microfibers) was fixed before any belief-level</li></ul> boundary was drawn, and the founder&#x27;s own reason for it is that it is the case where collection is zero — a property of the solution&#x27;s difficulty, not of a buyer&#x27;s pain.<ul><li>A CAD-viewer folder for a &quot;membrane fouling cell&quot; instrument (<code>cad/</code>) was committed to this</li></ul> repo on 2026-09-08, before intake. The instrument predates the belief.<ul><li><code>probable</code> records how the founder arrived. It is not a verdict.</li></ul></li><li>What the shotgun must test independently:<ul><li>Whether &quot;nobody is building it&quot; survives a named search for the *identification and</li></ul> interpretation* layer specifically — measurement vendors were found in-session; who, if anyone, sells the step after the number, and what they call it.<ul><li>Whether the missing-collection pain is described by operators in their own words, without</li></ul> the vocabulary of AI, agents or observability.<ul><li>Whether microplastics / water pipes / textile microfibers is the right first case against</li></ul> other physical processes where collection is zero. It enters as one candidate, not the answer.</li></ul></div><div class="hx-bpanel" id="bsec3" hidden><p>Asked 2026-09-09. The founder did not name a disconfirmer: *&quot;there are already partnerships so I am unsure!&quot;*, then closed the session — *&quot;we will iterate on the belief as needed&quot;*. Recorded as-is rather than filled in. The two shapes offered in the session, which the founder neither accepted nor rejected, stand as the working threats until the founder replaces them:</p><ul><li><strong>Someone is building it.</strong> A measurement vendor (Mettler Toledo, Malvern Panalytical, Emerson, Endress+Hauser) or a partnership between one of them and a software company ships a product that tells the operator *what* was measured and *what to change*, and plants buy it. This kills the &quot;nobody is building it&quot; half. The founder&#x27;s own &quot;there are already partnerships&quot; belongs here and is unnamed — naming them is the first job of the shotgun&#x27;s recon, and it may move this from threat to fact.</li><li><strong>The loop is not the bottleneck.</strong> Plants already have a person interpreting the numbers fast enough that the line never waits on it, and would say so unprompted. This kills the bottleneck half and leaves identification as a nice-to-have.</li></ul><p>A belief nothing could falsify absorbs any evidence and never updates; this one has two named threats but the founder has not yet owned either.</p></div><script>function hxBsec(id){var el=document.getElementById(id); var wasHidden=el.hidden;document.querySelectorAll(".hx-bpanel").forEach(function(p){p.hidden=true;});document.querySelectorAll(".hx-bpill").forEach(function(b){b.classList.remove("active");});if(wasHidden){el.hidden=false;document.querySelector('[data-bsec="'+id+'"]').classList.add("active");}}</script></section>
-<div class="hx-topstats"><span><b>1</b> active hunch</span><span><b>0</b> assumptions</span><span><b>0</b> evidence entries</span><span class="hx-tallies"><span class="hx-tally hx-tally-none">0 entries</span></span></div>
-<p class="hx-warn"><b>No active assumption.</b> Run <code>/startup-idea-to-assumptions</code>.</p>
+<section class="hx-tree"><b>The tree — belief, hunch, what must be true</b><ul class="hx-troot"><li class="hx-tnode hx-tbelief"><div class="hx-trow"><span class="hx-tid">Belief</span><span class="hx-ttext">the durable claim above</span></div><ul class="hx-tkids"><li class="hx-tnode" data-depth="2"><div class="hx-trow"><span class="hx-tid">H0A1</span><span class="hx-ttext">People running a production line can name a recent case where a measured number sat waiting for a person to interpret it before anything was adjusted, and can say what the wait cost.</span><span class="hx-tchip q-leap_of_faith">leap of faith</span><span class="hx-tchip">untested</span><span class="hx-tchip hx-tscore">k5 · u3 · c1</span><span class="hx-tchip hx-trank">#2</span></div></li><li class="hx-tnode hx-thunch"><div class="hx-trow"><span class="hx-tid">H1</span><span class="hx-ttext">In the fashion industry there are no sensors to detect microplastics, so a textile manufacturer cannot see or act on the microfibers their process releases; a real-time sensor with a feedback loop is the first product, and the first sensor feedback loop is the beachhead.</span><span class="hx-tchip">active</span></div><ul class="hx-tkids"><li class="hx-tnode hx-tactive" data-depth="2"><div class="hx-trow"><span class="hx-tid">H1A2</span><span class="hx-ttext">Textile wet-processing mills are already being asked for a microfiber number by a brand, an auditor or a regulator, cannot produce one without an external lab, and that costs them orders, fees or time.</span><span class="hx-tchip q-leap_of_faith">leap of faith</span><span class="hx-tchip">untested</span><span class="hx-tchip hx-tscore">k5 · u4 · c1</span><span class="hx-tchip hx-trank">#1</span><span class="hx-tchip hx-tstart">start here</span></div><ul class="hx-tkids"><li class="hx-tnode" data-depth="3"><div class="hx-trow"><span class="hx-tid">H1A3</span><span class="hx-ttext">The mill, not the brand and not the wastewater operator, holds both the obligation to produce the microfiber number and the budget to pay for producing it.</span><span class="hx-tchip q-leap_of_faith">leap of faith</span><span class="hx-tchip">untested</span><span class="hx-tchip hx-tscore">k4 · u4 · c1</span><span class="hx-tchip hx-trank">#5</span></div><ul class="hx-tkids"><li class="hx-tnode" data-depth="4"><div class="hx-trow"><span class="hx-tid">H1A6</span><span class="hx-ttext">A mill will commit money to a pilot before the sensor is proven, at a level that makes a hardware unit economic.</span><span class="hx-tchip q-leap_of_faith">leap of faith</span><span class="hx-tchip">untested</span><span class="hx-tchip hx-tscore">k4 · u5 · c2</span><span class="hx-tchip hx-trank">#4</span></div></li></ul></li><li class="hx-tnode" data-depth="3"><div class="hx-trow"><span class="hx-tid">H1A4</span><span class="hx-ttext">A real-time reading would change something the mill does during the run — dose, temperature, cycle, filtration — so an inline number is worth more to them than a lab report after the fact.</span><span class="hx-tchip q-leap_of_faith">leap of faith</span><span class="hx-tchip">untested</span><span class="hx-tchip hx-tscore">k4 · u4 · c2</span><span class="hx-tchip hx-trank">#6</span></div></li><li class="hx-tnode hx-tref"><span class="hx-tid">H1A6</span><span class="hx-ttext">also under this node — shown above</span></li><li class="hx-tnode" data-depth="3"><div class="hx-trow"><span class="hx-tid">H1A7</span><span class="hx-ttext">Enough wet-processing sites supply EU-bound brands to matter, and they cluster in geographies the founders can reach.</span><span class="hx-tchip q-known_important">known important</span><span class="hx-tchip">untested</span><span class="hx-tchip hx-tscore">k3 · u2 · c1</span></div></li><li class="hx-tnode" data-depth="3"><div class="hx-trow"><span class="hx-tid">H1A8</span><span class="hx-ttext">Brands or The Microfibre Consortium will introduce us to their mills, because the number is theirs to report.</span><span class="hx-tchip q-uncertain_minor">uncertain minor</span><span class="hx-tchip">untested</span><span class="hx-tchip hx-tscore">k3 · u4 · c2</span></div></li><li class="hx-tnode" data-depth="3"><div class="hx-trow"><span class="hx-tid">H1A9</span><span class="hx-ttext">A mill will let an instrument into its process water and act on a number it did not generate itself.</span><span class="hx-tchip q-uncertain_minor">uncertain minor</span><span class="hx-tchip">untested</span><span class="hx-tchip hx-tscore">k3 · u3 · c2</span></div></li></ul></li><li class="hx-tnode" data-depth="2"><div class="hx-trow"><span class="hx-tid">H1A5</span><span class="hx-ttext">Nothing good enough exists: mills consider lab sampling and effluent filtration insufficient for the question being asked of them, and no inline microfiber sensor is in use at any of them.</span><span class="hx-tchip q-leap_of_faith">leap of faith</span><span class="hx-tchip">untested</span><span class="hx-tchip hx-tscore">k4 · u3 · c1</span><span class="hx-tchip hx-trank">#3</span></div></li><li class="hx-tnode" data-depth="2"><div class="hx-trow"><span class="hx-tid">H1A1</span><span class="hx-ttext">A standard test method for microfibers from textiles (ISO 4484, 2023) and incoming EU ecodesign requirements for textiles (delegated acts 2026, digital product passport 2027) have turned microfiber release into a number a brand can be asked for, and that demand reaches the manufacturer within 24 months.</span><span class="hx-tchip q-known_important">known important</span><span class="hx-tchip">untested</span><span class="hx-tchip hx-tscore">k4 · u2 · c1</span></div><ul class="hx-tkids"><li class="hx-tnode hx-tref"><span class="hx-tid">H1A7</span><span class="hx-ttext">also under this node — shown above</span></li></ul></li></ul></li></ul></li></ul><p class="hx-tlegend">k = kill power · u = uncertainty · c = test cost, each 1–5. # is the declared ranking. Children wait on their parents. Authored in <code>02-assumptions/graph.md</code> and <code>01-ideation/hunch-lineage.md</code>.</p></section>
+<div class="hx-topstats"><span><b>1</b> active hunch</span><span><b>10</b> assumptions</span><span><b>0</b> evidence entries</span><span class="hx-tallies"><span class="hx-tally hx-tally-none">0 entries</span></span></div>
 <div class="hx-grid">
 <section class="hx-hunch" id="hx-H1">
   <header class="hx-hhead">
@@ -1479,14 +1522,217 @@ body::before {
       <span class="hx-chip hx-chip-active">active</span></div>
     <p class="hx-hstmt">In the fashion industry there are no sensors to detect microplastics, so a textile manufacturer cannot see or act on the microfibers their process releases; a real-time sensor with a feedback loop is the first product, and the first sensor feedback loop is the beachhead.</p>
     <details class="hx-comp"><summary>Why this hunch exists</summary><div class="hx-comp-body"><p class="hx-reason">Founder-originated in the same session as belief v4, confirmed verbatim (&quot;yes H1 is good in that sense I agree&quot;). The founders already held the product (a microfiber process monitor), the wedge (fashion / textile manufacturing) and the beachhead (the first sensor feedback loop); this records that position as the first falsifiable interpretation of the belief so it can be tested rather than assumed. No buyer conversation is behind it yet.</p></div></details><details class="hx-comp"><summary>Components (8)</summary><div class="hx-comp-body"><dl class="hx-kv"><dt>Segment</dt><dd>textile / fashion manufacturing. Which step of the process (dyeing, washing, finishing, effluent) and which size of manufacturer are unknown.</dd><dt>Problem</dt><dd>microfibers released by the process cannot be seen in real time, so nothing can be adjusted against them. Whether a manufacturer experiences this as a problem today is untested — it may be felt only once regulation or a brand demands the number.</dd><dt>Mechanism</dt><dd>the belief&#x27;s identification-and-interpretation gap in its extreme form — collection is zero, so identification and interpretation cannot even begin. Inline particle sensors exist (Mettler Toledo ParticleTrack, Malvern Insitec Wet, see belief.md) but count and size particles without saying what they are; no commercial inline product identifies microplastics in a flow, only 2026 research concepts.</dd><dt>Why now</dt><dd>UNVERIFIED. Candidate: microfiber and microplastic regulation and brand disclosure requirements arriving in the EU and elsewhere. Not yet named or dated.</dd><dt>Existing workaround</dt><dd>lab test methods on samples (e.g. The Microfibre Consortium&#x27;s test method), not inline and not real time. Unverified which manufacturers use them and why.</dd><dt>Plausible buyer</dt><dd>unknown. Candidates are the manufacturer, the brand buying from them, or the effluent-treatment operator; who holds the budget and the obligation is the first thing the calls must find.</dd><dt>Cheapest next test</dt><dd>ask people who run textile wet-processing what they measure in their process water today, what they are asked to report about microfibers, by whom, and what they did the last time that question came up.</dd><dt>Hunch disconfirmation</dt><dd>if textile manufacturers cannot name anyone asking them for a microfiber number, or already have a measurement they consider good enough, the pain is not there and this hunch dies without touching the belief. It also dies if an inline microfiber sensor is already sold and used.</dd></dl></div></details>
-    <div class="hx-hstats"><span><b>0</b> assumptions</span>
+    <div class="hx-hstats"><span><b>9</b> assumptions</span>
       <span><b>0</b> evidence</span>
       <span class="hx-tallies"><span class="hx-tally hx-tally-none">0 entries</span></span></div>
   </header>
   
-  <div class="hx-alist"></div>
+  <div class="hx-alist"><details class="hx-a hx-a-active" id="hx-a-H1A2">
+  <summary>
+    <span class="hx-ahead"><span class="hx-aid">H1A2</span>
+      <span class="hx-rank">#1</span>
+      <span class="hx-chip hx-chip-active">testing now</span>
+      <span class="hx-chip">untested</span>
+      <span class="hx-chip">none</span>
+      <span class="hx-chip hx-chip-lof">leap of faith</span></span>
+    <span class="hx-aclaim">Textile wet-processing mills are already being asked for a microfiber number by a brand, an auditor or a regulator, cannot produce one without an external lab, and that costs them orders, fees or time.</span>
+    <span class="hx-afoot"><span class="hx-meter hx-meter-none">no evidence yet</span><span class="hx-tallies"><span class="hx-tally hx-tally-none">0 entries</span></span>
+      <span class="hx-scores"><span class="th-score"><span class="th-score-lbl">kill</span><span class="th-dots"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i></span></span><span class="th-score"><span class="th-score-lbl">uncert</span><span class="th-dots"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="off"></i></span></span><span class="th-score"><span class="th-score-lbl">cost</span><span class="th-dots"><i class="on"></i><i class="off"></i><i class="off"></i><i class="off"></i><i class="off"></i></span></span></span></span>
+  </summary>
+  <div class="hx-adetail">
+    <div class="hx-lin"><div class="hx-linrow"><span class="hx-linlbl">Carries</span><span class="hx-linchips"><button type="button" class="hx-linchip" data-goto="H1A3">H1A3<i>untested</i></button><button type="button" class="hx-linchip" data-goto="H1A4">H1A4<i>untested</i></button><button type="button" class="hx-linchip" data-goto="H1A6">H1A6<i>untested</i></button><button type="button" class="hx-linchip" data-goto="H1A7">H1A7<i>untested</i></button><button type="button" class="hx-linchip" data-goto="H1A8">H1A8<i>untested</i></button><button type="button" class="hx-linchip" data-goto="H1A9">H1A9<i>untested</i></button></span><span class="hx-linhint">falls with this one</span></div></div>
+    <p class="hx-tstate hx-tstate-untested"><b>Not tested yet.</b> Nothing in the ledger points here.</p>
+    <dl class="hx-ameta"><dt>If false</dt><dd>The root. If no one is asking the mill for the number, there is no pain, no buyer and no reason for a sensor; every node beneath dissolves. Drawn from H1&#x27;s problem clause (&quot;cannot see or act on the microfibers their process releases&quot;) and its own note that the pain may only be felt once a brand or regulator demands the number.</dd><dt>Disconfirmation</dt><dd>If fewer than four of ten can name anyone asking them for a microfiber number in the last year, or name one and report it cost nothing material, the pain is not there.</dd><dt>Stop rule</dt><dd>Ten conversations or one week, whichever first.</dd><dt>Next action</dt><dd>Ten conversations with people who run wet processing at textile mills. One question first: &quot;the last time someone asked you for a microfiber figure — who was it, what did you do, and what did it cost you?&quot;</dd></dl>
+    
+    <h4 class="hx-evh">Evidence &middot; 0</h4>
+    <div class="hx-evlist"><p class="hx-empty">No ledger entry points at this assumption yet. Its <b>next action</b> above is how that changes.</p></div>
+  </div>
+</details><details class="hx-a" id="hx-a-H1A5">
+  <summary>
+    <span class="hx-ahead"><span class="hx-aid">H1A5</span>
+      <span class="hx-rank">#3</span>
+      
+      <span class="hx-chip">untested</span>
+      <span class="hx-chip">none</span>
+      <span class="hx-chip hx-chip-lof">leap of faith</span></span>
+    <span class="hx-aclaim">Nothing good enough exists: mills consider lab sampling and effluent filtration insufficient for the question being asked of them, and no inline microfiber sensor is in use at any of them.</span>
+    <span class="hx-afoot"><span class="hx-meter hx-meter-none">no evidence yet</span><span class="hx-tallies"><span class="hx-tally hx-tally-none">0 entries</span></span>
+      <span class="hx-scores"><span class="th-score"><span class="th-score-lbl">kill</span><span class="th-dots"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="off"></i></span></span><span class="th-score"><span class="th-score-lbl">uncert</span><span class="th-dots"><i class="on"></i><i class="on"></i><i class="on"></i><i class="off"></i><i class="off"></i></span></span><span class="th-score"><span class="th-score-lbl">cost</span><span class="th-dots"><i class="on"></i><i class="off"></i><i class="off"></i><i class="off"></i><i class="off"></i></span></span></span></span>
+  </summary>
+  <div class="hx-adetail">
+    <div class="hx-lin"><span class="hx-linnone">Standalone — no parent or child declared in the graph. It can be tested in any order.</span></div>
+    <p class="hx-tstate hx-tstate-untested"><b>Not tested yet.</b> Nothing in the ledger points here.</p>
+    <dl class="hx-ameta"><dt>If false</dt><dd>The desk check found inline particle counters (Mettler Toledo ParticleTrack, Malvern Insitec Wet) and lab methods (ISO 4484, TMC); it found no inline microfiber identifier. Whether a mill regards what exists as enough is the half only a mill can answer.</dd><dt>Disconfirmation</dt><dd>If any vendor sells an inline microfiber identifier that a mill in the pool uses, or if seven of ten mills say lab sampling answers the question adequately, this dies.</dd><dt>Stop rule</dt><dd>One afternoon of desk work plus the same ten conversations; one week.</dd><dt>Next action</dt><dd>Agent: one pass over instrumentation vendors and TMC signatories for any inline microfiber product or pilot. Founder, in the H1A2 calls: &quot;what do you use today to answer that question, and is it enough?&quot;</dd></dl>
+    
+    <h4 class="hx-evh">Evidence &middot; 0</h4>
+    <div class="hx-evlist"><p class="hx-empty">No ledger entry points at this assumption yet. Its <b>next action</b> above is how that changes.</p></div>
+  </div>
+</details><details class="hx-a" id="hx-a-H1A6">
+  <summary>
+    <span class="hx-ahead"><span class="hx-aid">H1A6</span>
+      <span class="hx-rank">#4</span>
+      
+      <span class="hx-chip">untested</span>
+      <span class="hx-chip">none</span>
+      <span class="hx-chip hx-chip-lof">leap of faith</span></span>
+    <span class="hx-aclaim">A mill will commit money to a pilot before the sensor is proven, at a level that makes a hardware unit economic.</span>
+    <span class="hx-afoot"><span class="hx-meter hx-meter-none">no evidence yet</span><span class="hx-tallies"><span class="hx-tally hx-tally-none">0 entries</span></span>
+      <span class="hx-scores"><span class="th-score"><span class="th-score-lbl">kill</span><span class="th-dots"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="off"></i></span></span><span class="th-score"><span class="th-score-lbl">uncert</span><span class="th-dots"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i></span></span><span class="th-score"><span class="th-score-lbl">cost</span><span class="th-dots"><i class="on"></i><i class="on"></i><i class="off"></i><i class="off"></i><i class="off"></i></span></span></span></span>
+  </summary>
+  <div class="hx-adetail">
+    <div class="hx-lin"><div class="hx-linrow"><span class="hx-linlbl">Rests on</span><span class="hx-linchips"><button type="button" class="hx-linchip" data-goto="H1A2">H1A2<i>untested</i></button><button type="button" class="hx-linchip" data-goto="H1A3">H1A3<i>untested</i></button></span><span class="hx-linhint">must hold first</span></div></div>
+    <p class="hx-tstate hx-tstate-untested"><b>Not tested yet.</b> Nothing in the ledger points here.</p>
+    <dl class="hx-ameta"><dt>If false</dt><dd>Pain that nobody will pay to remove is not a business. The pilot is the proxy for the sale. Drawn from H1&#x27;s unknown buyer and the belief&#x27;s own counterweight: who signs the first cheque and why.</dd><dt>Disconfirmation</dt><dd>If none of three mills that confirmed the pain will sign a paid pilot at any price, willingness to pay is absent at the mill.</dd><dt>Stop rule</dt><dd>Three pilot asks or two weeks after H1A2 is confirmed; one week of asking.</dd><dt>Next action</dt><dd>Once three mills have confirmed H1A2, put a paid pilot in front of each with a number on it and ask for a signature or a written no.</dd></dl>
+    
+    <h4 class="hx-evh">Evidence &middot; 0</h4>
+    <div class="hx-evlist"><p class="hx-empty">No ledger entry points at this assumption yet. Its <b>next action</b> above is how that changes.</p></div>
+  </div>
+</details><details class="hx-a" id="hx-a-H1A3">
+  <summary>
+    <span class="hx-ahead"><span class="hx-aid">H1A3</span>
+      <span class="hx-rank">#5</span>
+      
+      <span class="hx-chip">untested</span>
+      <span class="hx-chip">none</span>
+      <span class="hx-chip hx-chip-lof">leap of faith</span></span>
+    <span class="hx-aclaim">The mill, not the brand and not the wastewater operator, holds both the obligation to produce the microfiber number and the budget to pay for producing it.</span>
+    <span class="hx-afoot"><span class="hx-meter hx-meter-none">no evidence yet</span><span class="hx-tallies"><span class="hx-tally hx-tally-none">0 entries</span></span>
+      <span class="hx-scores"><span class="th-score"><span class="th-score-lbl">kill</span><span class="th-dots"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="off"></i></span></span><span class="th-score"><span class="th-score-lbl">uncert</span><span class="th-dots"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="off"></i></span></span><span class="th-score"><span class="th-score-lbl">cost</span><span class="th-dots"><i class="on"></i><i class="off"></i><i class="off"></i><i class="off"></i><i class="off"></i></span></span></span></span>
+  </summary>
+  <div class="hx-adetail">
+    <div class="hx-lin"><div class="hx-linrow"><span class="hx-linlbl">Rests on</span><span class="hx-linchips"><button type="button" class="hx-linchip" data-goto="H1A2">H1A2<i>untested</i></button></span><span class="hx-linhint">must hold first</span></div><div class="hx-linrow"><span class="hx-linlbl">Carries</span><span class="hx-linchips"><button type="button" class="hx-linchip" data-goto="H1A6">H1A6<i>untested</i></button></span><span class="hx-linhint">falls with this one</span></div></div>
+    <p class="hx-tstate hx-tstate-untested"><b>Not tested yet.</b> Nothing in the ledger points here.</p>
+    <dl class="hx-ameta"><dt>If false</dt><dd>H1 sells to the manufacturer. If the brand pays for the lab and owns the result, the buyer is the brand and the product is a reporting tool, not a process monitor. Drawn from H1&#x27;s &quot;plausible buyer: unknown&quot; line.</dd><dt>Disconfirmation</dt><dd>If in six or more of ten cases the brand paid and kept the result, the mill is not the buyer.</dd><dt>Stop rule</dt><dd>Settled by the H1A2 conversations plus three brand calls; one week.</dd><dt>Next action</dt><dd>In the same H1A2 calls: &quot;who paid for the last test, and whose problem was the result?&quot; Then one call to a brand sustainability lead asking the mirror question.</dd></dl>
+    
+    <h4 class="hx-evh">Evidence &middot; 0</h4>
+    <div class="hx-evlist"><p class="hx-empty">No ledger entry points at this assumption yet. Its <b>next action</b> above is how that changes.</p></div>
+  </div>
+</details><details class="hx-a" id="hx-a-H1A4">
+  <summary>
+    <span class="hx-ahead"><span class="hx-aid">H1A4</span>
+      <span class="hx-rank">#6</span>
+      
+      <span class="hx-chip">untested</span>
+      <span class="hx-chip">none</span>
+      <span class="hx-chip hx-chip-lof">leap of faith</span></span>
+    <span class="hx-aclaim">A real-time reading would change something the mill does during the run — dose, temperature, cycle, filtration — so an inline number is worth more to them than a lab report after the fact.</span>
+    <span class="hx-afoot"><span class="hx-meter hx-meter-none">no evidence yet</span><span class="hx-tallies"><span class="hx-tally hx-tally-none">0 entries</span></span>
+      <span class="hx-scores"><span class="th-score"><span class="th-score-lbl">kill</span><span class="th-dots"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="off"></i></span></span><span class="th-score"><span class="th-score-lbl">uncert</span><span class="th-dots"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="off"></i></span></span><span class="th-score"><span class="th-score-lbl">cost</span><span class="th-dots"><i class="on"></i><i class="on"></i><i class="off"></i><i class="off"></i><i class="off"></i></span></span></span></span>
+  </summary>
+  <div class="hx-adetail">
+    <div class="hx-lin"><div class="hx-linrow"><span class="hx-linlbl">Rests on</span><span class="hx-linchips"><button type="button" class="hx-linchip" data-goto="H1A2">H1A2<i>untested</i></button></span><span class="hx-linhint">must hold first</span></div></div>
+    <p class="hx-tstate hx-tstate-untested"><b>Not tested yet.</b> Nothing in the ledger points here.</p>
+    <dl class="hx-ameta"><dt>If false</dt><dd>This is the &quot;feedback loop&quot; in H1 and the belief&#x27;s interpretation clause in one node. If no adjustment exists, detection alone is the product and it competes with a lab sample, not with nothing. Drawn from H1&#x27;s mechanism and the belief&#x27;s &quot;adjust&quot; language.</dd><dt>Disconfirmation</dt><dd>If fewer than three of ten name a specific mid-run adjustment they would make, the loop has nothing to close and H1 is a detection product.</dd><dt>Stop rule</dt><dd>Same ten conversations; one week.</dd><dt>Next action</dt><dd>Ask each H1A2 contact: &quot;if you had that number live during the run, what would you change?&quot; A named adjustment counts; &quot;we&#x27;d know&quot; does not.</dd></dl>
+    
+    <h4 class="hx-evh">Evidence &middot; 0</h4>
+    <div class="hx-evlist"><p class="hx-empty">No ledger entry points at this assumption yet. Its <b>next action</b> above is how that changes.</p></div>
+  </div>
+</details><details class="hx-a" id="hx-a-H1A1">
+  <summary>
+    <span class="hx-ahead"><span class="hx-aid">H1A1</span>
+      
+      
+      <span class="hx-chip">untested</span>
+      <span class="hx-chip">none</span>
+      </span>
+    <span class="hx-aclaim">A standard test method for microfibers from textiles (ISO 4484, 2023) and incoming EU ecodesign requirements for textiles (delegated acts 2026, digital product passport 2027) have turned microfiber release into a number a brand can be asked for, and that demand reaches the manufacturer within 24 months.</span>
+    <span class="hx-afoot"><span class="hx-meter hx-meter-none">no evidence yet</span><span class="hx-tallies"><span class="hx-tally hx-tally-none">0 entries</span></span>
+      <span class="hx-scores"><span class="th-score"><span class="th-score-lbl">kill</span><span class="th-dots"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="off"></i></span></span><span class="th-score"><span class="th-score-lbl">uncert</span><span class="th-dots"><i class="on"></i><i class="on"></i><i class="off"></i><i class="off"></i><i class="off"></i></span></span><span class="th-score"><span class="th-score-lbl">cost</span><span class="th-dots"><i class="on"></i><i class="off"></i><i class="off"></i><i class="off"></i><i class="off"></i></span></span></span></span>
+  </summary>
+  <div class="hx-adetail">
+    <div class="hx-lin"><div class="hx-linrow"><span class="hx-linlbl">Carries</span><span class="hx-linchips"><button type="button" class="hx-linchip" data-goto="H1A7">H1A7<i>untested</i></button></span><span class="hx-linhint">falls with this one</span></div></div>
+    <p class="hx-tstate hx-tstate-untested"><b>Not tested yet.</b> Nothing in the ledger points here.</p>
+    <dl class="hx-ameta"><dt>If false</dt><dd>If nothing has changed, a mill has no new reason to want the number and H1 is early rather than wrong. Drawn from the 2026-09-09 desk check: ISO 4484-1/2/3 (2023), part 4 in draft (2026), ESPR textiles delegated acts due 2026, DPP July 2027. Open question the founder has not answered: whether the pull is product rules on the brand or effluent rules on the mill — the desk check found only the former.</dd><dt>Disconfirmation</dt><dd>If the delegated acts do not name microfiber release, and no effluent rule binds the mill on it, there is no regulatory pull before 2028 and the why-now rests on brand voluntarism alone.</dd><dt>Stop rule</dt><dd>One afternoon of desk research or one week, whichever first.</dd><dt>Next action</dt><dd>One afternoon: date the ESPR textile delegated acts and say which party they bind and whether microfiber release is in them; check whether any effluent rule (EU Urban Wastewater Directive recast, national textile BAT) names microfibers at the mill.</dd></dl>
+    
+    <h4 class="hx-evh">Evidence &middot; 0</h4>
+    <div class="hx-evlist"><p class="hx-empty">No ledger entry points at this assumption yet. Its <b>next action</b> above is how that changes.</p></div>
+  </div>
+</details><details class="hx-a" id="hx-a-H1A7">
+  <summary>
+    <span class="hx-ahead"><span class="hx-aid">H1A7</span>
+      
+      
+      <span class="hx-chip">untested</span>
+      <span class="hx-chip">none</span>
+      </span>
+    <span class="hx-aclaim">Enough wet-processing sites supply EU-bound brands to matter, and they cluster in geographies the founders can reach.</span>
+    <span class="hx-afoot"><span class="hx-meter hx-meter-none">no evidence yet</span><span class="hx-tallies"><span class="hx-tally hx-tally-none">0 entries</span></span>
+      <span class="hx-scores"><span class="th-score"><span class="th-score-lbl">kill</span><span class="th-dots"><i class="on"></i><i class="on"></i><i class="on"></i><i class="off"></i><i class="off"></i></span></span><span class="th-score"><span class="th-score-lbl">uncert</span><span class="th-dots"><i class="on"></i><i class="on"></i><i class="off"></i><i class="off"></i><i class="off"></i></span></span><span class="th-score"><span class="th-score-lbl">cost</span><span class="th-dots"><i class="on"></i><i class="off"></i><i class="off"></i><i class="off"></i><i class="off"></i></span></span></span></span>
+  </summary>
+  <div class="hx-adetail">
+    <div class="hx-lin"><div class="hx-linrow"><span class="hx-linlbl">Rests on</span><span class="hx-linchips"><button type="button" class="hx-linchip" data-goto="H1A1">H1A1<i>untested</i></button><button type="button" class="hx-linchip" data-goto="H1A2">H1A2<i>untested</i></button></span><span class="hx-linhint">must hold first</span></div></div>
+    <p class="hx-tstate hx-tstate-untested"><b>Not tested yet.</b> Nothing in the ledger points here.</p>
+    <dl class="hx-ameta"><dt>If false</dt><dd>A wedge of forty mills is a consultancy. Sizing decides whether textile is the beachhead or just the first experiment. Drawn from H1&#x27;s unknown segment size.</dd><dt>Disconfirmation</dt><dd>If fewer than 500 reachable sites carry EU brand exposure, the wedge cannot carry a hardware company and textile is an experiment, not a beachhead.</dd><dt>Stop rule</dt><dd>Two afternoons of desk work; one week.</dd><dt>Next action</dt><dd>Count wet-processing establishments by country from trade and industry statistics, then cut to those supplying EU brands (TMC signatory supplier lists, brand supplier disclosures).</dd></dl>
+    
+    <h4 class="hx-evh">Evidence &middot; 0</h4>
+    <div class="hx-evlist"><p class="hx-empty">No ledger entry points at this assumption yet. Its <b>next action</b> above is how that changes.</p></div>
+  </div>
+</details><details class="hx-a" id="hx-a-H1A8">
+  <summary>
+    <span class="hx-ahead"><span class="hx-aid">H1A8</span>
+      
+      
+      <span class="hx-chip">untested</span>
+      <span class="hx-chip">none</span>
+      </span>
+    <span class="hx-aclaim">Brands or The Microfibre Consortium will introduce us to their mills, because the number is theirs to report.</span>
+    <span class="hx-afoot"><span class="hx-meter hx-meter-none">no evidence yet</span><span class="hx-tallies"><span class="hx-tally hx-tally-none">0 entries</span></span>
+      <span class="hx-scores"><span class="th-score"><span class="th-score-lbl">kill</span><span class="th-dots"><i class="on"></i><i class="on"></i><i class="on"></i><i class="off"></i><i class="off"></i></span></span><span class="th-score"><span class="th-score-lbl">uncert</span><span class="th-dots"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="off"></i></span></span><span class="th-score"><span class="th-score-lbl">cost</span><span class="th-dots"><i class="on"></i><i class="on"></i><i class="off"></i><i class="off"></i><i class="off"></i></span></span></span></span>
+  </summary>
+  <div class="hx-adetail">
+    <div class="hx-lin"><div class="hx-linrow"><span class="hx-linlbl">Rests on</span><span class="hx-linchips"><button type="button" class="hx-linchip" data-goto="H1A2">H1A2<i>untested</i></button></span><span class="hx-linhint">must hold first</span></div></div>
+    <p class="hx-tstate hx-tstate-untested"><b>Not tested yet.</b> Nothing in the ledger points here.</p>
+    <dl class="hx-ameta"><dt>If false</dt><dd>Mills are hard to reach cold; if the brand routes the intro, the channel is the brand. If not, distribution is one mill at a time.</dd><dt>Disconfirmation</dt><dd>If none of three brands will name a supplier to introduce, the brand is not a channel.</dd><dt>Stop rule</dt><dd>Three brand conversations or one week.</dd><dt>Next action</dt><dd>Three brand sustainability leads: &quot;would you send this to your suppliers, and which ones?&quot; A named supplier is a yes.</dd></dl>
+    
+    <h4 class="hx-evh">Evidence &middot; 0</h4>
+    <div class="hx-evlist"><p class="hx-empty">No ledger entry points at this assumption yet. Its <b>next action</b> above is how that changes.</p></div>
+  </div>
+</details><details class="hx-a" id="hx-a-H1A9">
+  <summary>
+    <span class="hx-ahead"><span class="hx-aid">H1A9</span>
+      
+      
+      <span class="hx-chip">untested</span>
+      <span class="hx-chip">none</span>
+      </span>
+    <span class="hx-aclaim">A mill will let an instrument into its process water and act on a number it did not generate itself.</span>
+    <span class="hx-afoot"><span class="hx-meter hx-meter-none">no evidence yet</span><span class="hx-tallies"><span class="hx-tally hx-tally-none">0 entries</span></span>
+      <span class="hx-scores"><span class="th-score"><span class="th-score-lbl">kill</span><span class="th-dots"><i class="on"></i><i class="on"></i><i class="on"></i><i class="off"></i><i class="off"></i></span></span><span class="th-score"><span class="th-score-lbl">uncert</span><span class="th-dots"><i class="on"></i><i class="on"></i><i class="on"></i><i class="off"></i><i class="off"></i></span></span><span class="th-score"><span class="th-score-lbl">cost</span><span class="th-dots"><i class="on"></i><i class="on"></i><i class="off"></i><i class="off"></i><i class="off"></i></span></span></span></span>
+  </summary>
+  <div class="hx-adetail">
+    <div class="hx-lin"><div class="hx-linrow"><span class="hx-linlbl">Rests on</span><span class="hx-linchips"><button type="button" class="hx-linchip" data-goto="H1A2">H1A2<i>untested</i></button></span><span class="hx-linhint">must hold first</span></div></div>
+    <p class="hx-tstate hx-tstate-untested"><b>Not tested yet.</b> Nothing in the ledger points here.</p>
+    <dl class="hx-ameta"><dt>If false</dt><dd>Access to the line and trust in the reading are what turn a sensor into a feedback loop. If mills refuse either, the product is a lab in a box.</dd><dt>Disconfirmation</dt><dd>If mills describe past instruments as installed and ignored, or refuse access on principle, the loop cannot close on site.</dd><dt>Stop rule</dt><dd>Same ten conversations; one week.</dd><dt>Next action</dt><dd>In the H1A2 calls: &quot;who else has put an instrument in your line, what did it take to get it in, and did you change anything because of what it said?&quot;</dd></dl>
+    
+    <h4 class="hx-evh">Evidence &middot; 0</h4>
+    <div class="hx-evlist"><p class="hx-empty">No ledger entry points at this assumption yet. Its <b>next action</b> above is how that changes.</p></div>
+  </div>
+</details></div>
 </section>
 </div>
+<section class="hx-hunch hx-shared"><header class="hx-hhead"><div class="hx-htitle"><span class="hx-hid">Shared &amp; unattached</span></div></header><div class="hx-alist">
+<details class="hx-a" id="hx-a-H0A1">
+  <summary>
+    <span class="hx-ahead"><span class="hx-aid">H0A1</span>
+      <span class="hx-rank">#2</span>
+      
+      <span class="hx-chip">untested</span>
+      <span class="hx-chip">none</span>
+      <span class="hx-chip hx-chip-lof">leap of faith</span></span>
+    <span class="hx-aclaim">People running a production line can name a recent case where a measured number sat waiting for a person to interpret it before anything was adjusted, and can say what the wait cost.</span>
+    <span class="hx-afoot"><span class="hx-meter hx-meter-none">no evidence yet</span><span class="hx-tallies"><span class="hx-tally hx-tally-none">0 entries</span></span>
+      <span class="hx-scores"><span class="th-score"><span class="th-score-lbl">kill</span><span class="th-dots"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i></span></span><span class="th-score"><span class="th-score-lbl">uncert</span><span class="th-dots"><i class="on"></i><i class="on"></i><i class="on"></i><i class="off"></i><i class="off"></i></span></span><span class="th-score"><span class="th-score-lbl">cost</span><span class="th-dots"><i class="on"></i><i class="off"></i><i class="off"></i><i class="off"></i><i class="off"></i></span></span></span></span>
+  </summary>
+  <div class="hx-adetail">
+    <div class="hx-lin"><span class="hx-linnone">Standalone — no parent or child declared in the graph. It can be tested in any order.</span></div>
+    <p class="hx-tstate hx-tstate-untested"><b>Not tested yet.</b> Nothing in the ledger points here.</p>
+    <dl class="hx-ameta"><dt>If false</dt><dd>BELIEF-LEVEL. This is belief v4&#x27;s &quot;numbers with no identity or meaning attached&quot; turned into something an operator can answer. If nobody can name the case, the belief has no pain under it, whichever hunch is active.</dd><dt>Disconfirmation</dt><dd>If four of five cannot name such a case, or name one and say the wait cost nothing material, the interpretation gap is not felt by the people who carry it.</dd><dt>Stop rule</dt><dd>Five conversations or one week, whichever first.</dd><dt>Next action</dt><dd>Ask five people who run any high-mix production line, before any mention of sensors or software: &quot;the last time a reading came off the line and someone had to decide what to do with it — what was it, who decided, and how long did the line wait?&quot;</dd></dl>
+    
+    <h4 class="hx-evh">Evidence &middot; 0</h4>
+    <div class="hx-evlist"><p class="hx-empty">No ledger entry points at this assumption yet. Its <b>next action</b> above is how that changes.</p></div>
+  </div>
+</details>
+</div></section>
 </div>
 </div><!-- /tab-panel thesis -->
 
@@ -1501,7 +1747,30 @@ body::before {
 </div><!-- /tab-panel pages -->
 
 <div class="tab-panel" data-tab="startups">
-<section class="cmap" aria-labelledby="smap-title"><div class="cmap-head"><div><div class="co-eyebrow">Vendor scene</div><h2 id="smap-title">Who sells into this, and what they sell</h2><p>The supply side. Position is <strong>Contaminant detected</strong> against <strong>Measurement mode</strong>. Dot area is capital raised. <strong>Colour is What they sell</strong>. Every value reads a declared field in <code>companies.md</code>; the axes themselves are declared in its frontmatter.</p></div></div><div class="smap-claim"><b>What the map currently says</b><p><em>12</em> companies mapped. By What they sell: <em>0</em> consulting, <em>12</em> testing service, <em>0</em> instrument, <em>0</em> compliance data, <em>0</em> monitoring service. No company here covers <em>microfibres</em>, <em>nanoplastics</em>, <em>heavy metals</em>, <em>oil / hydrocarbons</em>, <em>pathogens</em>, <em>nutrients</em>, <em>micropollutants</em>, <em>TSS / turbidity</em>, <em>general parameters</em>, <em>multi-parameter</em> on Contaminant detected. Nobody sits at <em>portable / field</em>, <em>at-line</em>, <em>online continuous</em>, <em>data platform only</em> on Measurement mode.</p></div><div class="cmap-kpis"><span><strong>12</strong>mapped</span><span><strong>12</strong>Contaminant detected mapped</span><span><strong>12</strong>Measurement mode mapped</span><span><strong>0/12</strong>funding disclosed</span><span><strong>none</strong>capital in the space</span></div><div class="cmap-axis-key"><span><b>X</b>Contaminant detected</span><span><b>Y</b>Measurement mode</span><span><b>Dot area</b>total capital raised</span><span><b>Colour</b>What they sell</span></div><div class="cmap-stage"><svg viewBox="0 0 1100 518" role="img" aria-labelledby="smap-svg-title smap-svg-desc"><title id="smap-svg-title">Vendor scene map</title><desc id="smap-svg-desc">Vendors positioned by Contaminant detected and Measurement mode, sized by capital raised and coloured by What they sell.</desc><line class="cmap-gridline" x1="156.0" y1="40" x2="156.0" y2="486"/><text class="cmap-axis" x="384.0" y="507" text-anchor="middle">MICROPLASTICS</text><line class="cmap-gridline" x1="612.0" y1="40" x2="612.0" y2="486"/><text class="cmap-axis" x="840.0" y="507" text-anchor="middle">PFAS</text><line class="cmap-gridline" x1="156" y1="486.0" x2="1068" y2="486.0"/><text class="cmap-axis" x="145" y="266.0" text-anchor="end">LAB SAMPLE</text><line class="cmap-edge" x1="156" y1="40" x2="156" y2="486"/><line class="cmap-edge" x1="156" y1="486" x2="1068" y2="486"/><g class="cmap-point band-2 cmap-nohead" data-su="CO3" tabindex="0" role="button"><title>ALS Global (incl. former WESSLING, now ALS Germany) — public, not disclosed — What they sell: testing service</title><circle class="cmap-core" cx="322.0" cy="217.0" r="6.5"/></g><text class="cmap-point-label" x="322.0" y="204.5" text-anchor="middle">ALS Global (incl. former WESSLING, now ALS Germany)</text><g class="cmap-point band-2 cmap-nohead" data-su="CO6" tabindex="0" role="button"><title>Brooks Applied Labs (an IEH company) — incumbent subsidiary, not disclosed — What they sell: testing service</title><circle class="cmap-core" cx="384.0" cy="217.0" r="6.5"/></g><text class="cmap-point-label" x="384.0" y="193.5" text-anchor="middle">Brooks Applied Labs (an IEH company)</text><g class="cmap-point band-2 cmap-nohead" data-su="CO1" tabindex="0" role="button"><title>Eurofins Scientific — public, not disclosed — What they sell: testing service</title><circle class="cmap-core" cx="446.0" cy="217.0" r="6.5"/></g><text class="cmap-point-label" x="446.0" y="204.5" text-anchor="middle">Eurofins Scientific</text><g class="cmap-point band-2 cmap-nohead" data-su="CO4" tabindex="0" role="button"><title>Intertek — public, not disclosed — What they sell: testing service</title><circle class="cmap-core" cx="322.0" cy="263.0" r="6.5"/></g><text class="cmap-point-label" x="322.0" y="282.5" text-anchor="middle">Intertek</text><g class="cmap-point band-2 cmap-nohead" data-su="CO8" tabindex="0" role="button"><title>McCampbell Analytical — private, established, not disclosed — What they sell: testing service</title><circle class="cmap-core" cx="384.0" cy="263.0" r="6.5"/></g><text class="cmap-point-label" x="384.0" y="293.5" text-anchor="middle">McCampbell Analytical</text><g class="cmap-point band-2 cmap-nohead" data-su="CO5" tabindex="0" role="button"><title>Measurlabs (Measur Oy) — seed, not disclosed — What they sell: testing service</title><circle class="cmap-core" cx="446.0" cy="263.0" r="6.5"/></g><text class="cmap-point-label" x="446.0" y="282.5" text-anchor="middle">Measurlabs (Measur Oy)</text><g class="cmap-point band-2 cmap-nohead" data-su="CO2" tabindex="0" role="button"><title>SGS (SGS Institut Fresenius) — public, not disclosed — What they sell: testing service</title><circle class="cmap-core" cx="322.0" cy="309.0" r="6.5"/></g><text class="cmap-point-label" x="322.0" y="296.5" text-anchor="middle">SGS (SGS Institut Fresenius)</text><g class="cmap-point band-2 cmap-nohead" data-su="CO7" tabindex="0" role="button"><title>SimpleLab (Tap Score) — not mapped, not disclosed — What they sell: testing service</title><circle class="cmap-core" cx="384.0" cy="309.0" r="6.5"/></g><text class="cmap-point-label" x="384.0" y="285.5" text-anchor="middle">SimpleLab (Tap Score)</text><g class="cmap-point band-2 cmap-nohead" data-su="CO12" tabindex="0" role="button"><title>Bureau Veritas (BV Laboratories, North America) — public, not disclosed — What they sell: testing service</title><circle class="cmap-core" cx="809.0" cy="240.0" r="6.5"/></g><text class="cmap-point-label" x="809.0" y="227.5" text-anchor="middle">Bureau Veritas (BV Laboratories, North America)</text><g class="cmap-point band-2 cmap-nohead" data-su="CO10" tabindex="0" role="button"><title>Element Materials Technology — private, established, not disclosed — What they sell: testing service</title><circle class="cmap-core" cx="871.0" cy="240.0" r="6.5"/></g><text class="cmap-point-label" x="871.0" y="216.5" text-anchor="middle">Element Materials Technology</text><g class="cmap-point band-2 cmap-nohead" data-su="CO11" tabindex="0" role="button"><title>Onterris (formerly Montrose Environmental Group / Enthalpy Analytical) — public, not disclosed — What they sell: testing service</title><circle class="cmap-core" cx="809.0" cy="286.0" r="6.5"/></g><text class="cmap-point-label" x="809.0" y="305.5" text-anchor="middle">Onterris (formerly Montrose Environmental Group / Enthalpy Analytical)</text><g class="cmap-point band-2 cmap-nohead" data-su="CO9" tabindex="0" role="button"><title>Pace Analytical — private, established, not disclosed — What they sell: testing service</title><circle class="cmap-core" cx="871.0" cy="286.0" r="6.5"/></g><text class="cmap-point-label" x="871.0" y="316.5" text-anchor="middle">Pace Analytical</text></svg></div><div class="cmap-legend"><span><i class="cmap-dot band-0"></i>not mapped</span><span><i class="cmap-dot band-1"></i>consulting</span><span><i class="cmap-dot band-2"></i>testing service</span><span><i class="cmap-dot band-3"></i>instrument</span><span><i class="cmap-dot band-4"></i>compliance data</span><span><i class="cmap-dot band-5"></i>monitoring service</span><span><i class="cmap-hollow"></i>funding not disclosed</span></div>
+
+<div class="startup-landscapes" id="startup-landscapes">
+  <div class="startup-view-switch" role="tablist" aria-label="Startup landscape">
+    <button class="active" type="button" role="tab" aria-selected="true" data-startup-view="manufacturing">Manufacturing landscape <span class="count">23</span></button>
+    <button type="button" role="tab" aria-selected="false" data-startup-view="wedge">Active wedge vendors <span class="count">12</span></button>
+  </div>
+  <div data-startup-panel="manufacturing">
+    <div class="startup-context">
+      <div>
+        <h2>Manufacturing precedents around the belief</h2>
+        <p>These companies still matter because the belief is industry-agnostic: it claims the missing layer is identity and meaning around physical process data. The map's original axes &mdash; job covered, vertical integration and liability &mdash; came from the retired HMLV prove-out hunch. Keep them as a structural lens, not as validation of today's microfiber hunch.</p>
+      </div>
+      <div class="startup-relevance">
+        <div><b>H1 direct</b><span>Smartex: inline sensing, interpretation and machine action in textile production.</span></div>
+        <div><b>Belief direct</b><span>Harmoni and VulcanForms: machine telemetry and closed-loop process control.</span></div>
+        <div><b>Boundary</b><span>CAM, quoting, marketplaces and owned factories show adjacent layers; they do not prove the identification gap.</span></div>
+      </div>
+    </div>
+    <div class="startup-frame-wrap">
+      <iframe class="startup-frame" data-startup-frame title="Manufacturing startup landscape" loading="lazy"></iframe>
+      <div class="startup-source-note"><span>Carried from the prior manufacturing lineage; 23 manufacturing companies and cross-industry analogues, with window-covering-only software removed.</span><a data-startup-source target="_blank" rel="noopener">Open full map</a></div>
+    </div>
+  </div>
+  <div data-startup-panel="wedge" hidden><section class="cmap" aria-labelledby="smap-title"><div class="cmap-head"><div><div class="co-eyebrow">Vendor scene</div><h2 id="smap-title">Who sells into this, and what they sell</h2><p>The supply side. Position is <strong>Contaminant detected</strong> against <strong>Measurement mode</strong>. Dot area is capital raised. <strong>Colour is What they sell</strong>. Every value reads a declared field in <code>companies.md</code>; the axes themselves are declared in its frontmatter.</p></div></div><div class="smap-claim"><b>What the map currently says</b><p><em>12</em> companies mapped. By What they sell: <em>0</em> consulting, <em>12</em> testing service, <em>0</em> instrument, <em>0</em> compliance data, <em>0</em> monitoring service. No company here covers <em>microfibres</em>, <em>nanoplastics</em>, <em>heavy metals</em>, <em>oil / hydrocarbons</em>, <em>pathogens</em>, <em>nutrients</em>, <em>micropollutants</em>, <em>TSS / turbidity</em>, <em>general parameters</em>, <em>multi-parameter</em> on Contaminant detected. Nobody sits at <em>portable / field</em>, <em>at-line</em>, <em>online continuous</em>, <em>data platform only</em> on Measurement mode.</p></div><div class="cmap-kpis"><span><strong>12</strong>mapped</span><span><strong>12</strong>Contaminant detected mapped</span><span><strong>12</strong>Measurement mode mapped</span><span><strong>0/12</strong>funding disclosed</span><span><strong>none</strong>capital in the space</span></div><div class="cmap-axis-key"><span><b>X</b>Contaminant detected</span><span><b>Y</b>Measurement mode</span><span><b>Dot area</b>total capital raised</span><span><b>Colour</b>What they sell</span></div><div class="cmap-stage"><svg viewBox="0 0 1100 518" role="img" aria-labelledby="smap-svg-title smap-svg-desc"><title id="smap-svg-title">Vendor scene map</title><desc id="smap-svg-desc">Vendors positioned by Contaminant detected and Measurement mode, sized by capital raised and coloured by What they sell.</desc><line class="cmap-gridline" x1="156.0" y1="40" x2="156.0" y2="486"/><text class="cmap-axis" x="384.0" y="507" text-anchor="middle">MICROPLASTICS</text><line class="cmap-gridline" x1="612.0" y1="40" x2="612.0" y2="486"/><text class="cmap-axis" x="840.0" y="507" text-anchor="middle">PFAS</text><line class="cmap-gridline" x1="156" y1="486.0" x2="1068" y2="486.0"/><text class="cmap-axis" x="145" y="266.0" text-anchor="end">LAB SAMPLE</text><line class="cmap-edge" x1="156" y1="40" x2="156" y2="486"/><line class="cmap-edge" x1="156" y1="486" x2="1068" y2="486"/><g class="cmap-point band-2 cmap-nohead" data-su="CO3" tabindex="0" role="button"><title>ALS Global (incl. former WESSLING, now ALS Germany) — public, not disclosed — What they sell: testing service</title><circle class="cmap-core" cx="322.0" cy="217.0" r="6.5"/></g><text class="cmap-point-label" x="322.0" y="204.5" text-anchor="middle">ALS Global (incl. former WESSLING, now ALS Germany)</text><g class="cmap-point band-2 cmap-nohead" data-su="CO6" tabindex="0" role="button"><title>Brooks Applied Labs (an IEH company) — incumbent subsidiary, not disclosed — What they sell: testing service</title><circle class="cmap-core" cx="384.0" cy="217.0" r="6.5"/></g><text class="cmap-point-label" x="384.0" y="193.5" text-anchor="middle">Brooks Applied Labs (an IEH company)</text><g class="cmap-point band-2 cmap-nohead" data-su="CO1" tabindex="0" role="button"><title>Eurofins Scientific — public, not disclosed — What they sell: testing service</title><circle class="cmap-core" cx="446.0" cy="217.0" r="6.5"/></g><text class="cmap-point-label" x="446.0" y="204.5" text-anchor="middle">Eurofins Scientific</text><g class="cmap-point band-2 cmap-nohead" data-su="CO4" tabindex="0" role="button"><title>Intertek — public, not disclosed — What they sell: testing service</title><circle class="cmap-core" cx="322.0" cy="263.0" r="6.5"/></g><text class="cmap-point-label" x="322.0" y="282.5" text-anchor="middle">Intertek</text><g class="cmap-point band-2 cmap-nohead" data-su="CO8" tabindex="0" role="button"><title>McCampbell Analytical — private, established, not disclosed — What they sell: testing service</title><circle class="cmap-core" cx="384.0" cy="263.0" r="6.5"/></g><text class="cmap-point-label" x="384.0" y="293.5" text-anchor="middle">McCampbell Analytical</text><g class="cmap-point band-2 cmap-nohead" data-su="CO5" tabindex="0" role="button"><title>Measurlabs (Measur Oy) — seed, not disclosed — What they sell: testing service</title><circle class="cmap-core" cx="446.0" cy="263.0" r="6.5"/></g><text class="cmap-point-label" x="446.0" y="282.5" text-anchor="middle">Measurlabs (Measur Oy)</text><g class="cmap-point band-2 cmap-nohead" data-su="CO2" tabindex="0" role="button"><title>SGS (SGS Institut Fresenius) — public, not disclosed — What they sell: testing service</title><circle class="cmap-core" cx="322.0" cy="309.0" r="6.5"/></g><text class="cmap-point-label" x="322.0" y="296.5" text-anchor="middle">SGS (SGS Institut Fresenius)</text><g class="cmap-point band-2 cmap-nohead" data-su="CO7" tabindex="0" role="button"><title>SimpleLab (Tap Score) — not mapped, not disclosed — What they sell: testing service</title><circle class="cmap-core" cx="384.0" cy="309.0" r="6.5"/></g><text class="cmap-point-label" x="384.0" y="285.5" text-anchor="middle">SimpleLab (Tap Score)</text><g class="cmap-point band-2 cmap-nohead" data-su="CO12" tabindex="0" role="button"><title>Bureau Veritas (BV Laboratories, North America) — public, not disclosed — What they sell: testing service</title><circle class="cmap-core" cx="809.0" cy="240.0" r="6.5"/></g><text class="cmap-point-label" x="809.0" y="227.5" text-anchor="middle">Bureau Veritas (BV Laboratories, North America)</text><g class="cmap-point band-2 cmap-nohead" data-su="CO10" tabindex="0" role="button"><title>Element Materials Technology — private, established, not disclosed — What they sell: testing service</title><circle class="cmap-core" cx="871.0" cy="240.0" r="6.5"/></g><text class="cmap-point-label" x="871.0" y="216.5" text-anchor="middle">Element Materials Technology</text><g class="cmap-point band-2 cmap-nohead" data-su="CO11" tabindex="0" role="button"><title>Onterris (formerly Montrose Environmental Group / Enthalpy Analytical) — public, not disclosed — What they sell: testing service</title><circle class="cmap-core" cx="809.0" cy="286.0" r="6.5"/></g><text class="cmap-point-label" x="809.0" y="305.5" text-anchor="middle">Onterris (formerly Montrose Environmental Group / Enthalpy Analytical)</text><g class="cmap-point band-2 cmap-nohead" data-su="CO9" tabindex="0" role="button"><title>Pace Analytical — private, established, not disclosed — What they sell: testing service</title><circle class="cmap-core" cx="871.0" cy="286.0" r="6.5"/></g><text class="cmap-point-label" x="871.0" y="316.5" text-anchor="middle">Pace Analytical</text></svg></div><div class="cmap-legend"><span><i class="cmap-dot band-0"></i>not mapped</span><span><i class="cmap-dot band-1"></i>consulting</span><span><i class="cmap-dot band-2"></i>testing service</span><span><i class="cmap-dot band-3"></i>instrument</span><span><i class="cmap-dot band-4"></i>compliance data</span><span><i class="cmap-dot band-5"></i>monitoring service</span><span><i class="cmap-hollow"></i>funding not disclosed</span></div>
 <section class="smap-inspect" id="startup-inspector" aria-label="Inspect one startup">
   <div class="smap-inspect-bar">
     <div class="smap-step">
@@ -1626,7 +1895,28 @@ body::before {
 </p><div class="smap-meta"><span><b>stage</b> public</span><span><b>raised</b> not disclosed</span><span><b>Contaminant detected</b> microplastics</span><span><b>Measurement mode</b> lab sample</span><span><b>Sells to</b> industrial end user</span><span><b>country</b> CH</span></div><p class="smap-why"><b>Why it matters here</b>SGS positions microplastics as a niche &quot;special analytics&quot; line sold mainly to bottled-water, beverage and consumer-product brands, i.e. product-quality/reputation buyers rather than effluent compliance buyers, which says the industrial-effluent microplastics market is not yet where the big TIC firms see demand.
 </p></article><article class="smap-card" id="su-simplelab-tap-score"><div class="smap-card-top"><div><h4>SimpleLab (Tap Score)</h4><div class="smap-card-sub">CO7 &middot; Lab testing — residential drinking water, bottled water, small water systems &middot; <a class="co-src" href="https://mytapscore.com/products/microplastics-water-test" target="_blank" rel="noopener">site</a></div></div><span class="smap-liab band-2">testing service</span></div><p class="smap-work">Sells a mail-in &quot;Microplastics Drinking Water Test Kit&quot; at USD 598 that reports presence/absence of particles between 1 and 10 µm and quantification down to 10 µm across six size bins (&lt;10, 10-50, 50-100, 100-500, 500-1000, 1000-5000 µm), 12 business days lab turnaround plus 3-5 days reporting; polymer ID is sold separately as an &quot;Advanced Microplastics&quot; test. Restricted to tap or bottled water (&quot;cannot be used to analyze marine or surface water&quot;). Routes samples through &quot;a nationwide network of 250+ certified, independent laboratories&quot;. Method (optical/polarised microscopy plus Raman) appears only in search snippets, not on the opened product page: UNVERIFIED. Funding figure is an aggregator number.
 </p><div class="smap-meta"><span><b>stage</b> not mapped</span><span><b>raised</b> not disclosed</span><span><b>Contaminant detected</b> microplastics</span><span><b>Measurement mode</b> lab sample</span><span><b>Sells to</b> industrial end user</span><span><b>country</b> US</span></div><p class="smap-why"><b>Why it matters here</b>A consumer/prosumer broker charging USD 598 for a single 1 µm-sensitive count with no polymer ID sets the retail price point for microplastics in water and shows willingness to pay exists at the household level, but only for clean drinking water, not effluent.
-</p></article></div></section>
+</p></article></div></section></div>
+</div>
+<script>
+(() => {
+  const root = document.getElementById('startup-landscapes');
+  if (!root || root.dataset.ready) return;
+  root.dataset.ready = 'true';
+  const path = location.protocol === 'file:' ? 'pages/startup-map.html' : '/reports/pages/startup-map.html';
+  root.querySelector('[data-startup-frame]').src = path;
+  root.querySelector('[data-startup-source]').href = path;
+  root.querySelectorAll('[data-startup-view]').forEach(button => button.addEventListener('click', () => {
+    root.querySelectorAll('[data-startup-view]').forEach(candidate => {
+      const active = candidate === button;
+      candidate.classList.toggle('active', active);
+      candidate.setAttribute('aria-selected', String(active));
+    });
+    root.querySelectorAll('[data-startup-panel]').forEach(panel => {
+      panel.hidden = panel.dataset.startupPanel !== button.dataset.startupView;
+    });
+  }));
+})();
+</script>
 </div><!-- /tab-panel startups -->
 
 <div class="tab-panel active" data-tab="contacts">
@@ -2141,7 +2431,7 @@ body::before {
 
 </div><!-- .page -->
 
-<div class="page-timestamp" aria-hidden="true">gen 2026-09-10T03:35:46+00:00</div>
+<div class="page-timestamp" aria-hidden="true">gen 2026-09-10T03:51:12+00:00</div>
 
 <!-- ── copy modal ── -->
 <div id="copyModal" class="modal-backdrop" role="dialog" aria-modal="true" aria-label="Outreach copy" onclick="modalBackdropClick(event)">
@@ -3049,9 +3339,9 @@ function switchTab(name) {
 }
 window.addEventListener('hashchange', () => {
   const t = (location.hash || '#contacts').slice(1).split('?')[0];
-  if (['tasks','contacts','companies','email','patterns','thesis','offerings'].includes(t)) switchTab(t);
+  if (['tasks','contacts','companies','startups','pages','email','patterns','thesis','offerings'].includes(t)) switchTab(t);
 });
-['tasks','companies','email','patterns','thesis','offerings'].forEach(n => {
+['tasks','companies','startups','pages','email','patterns','thesis','offerings'].forEach(n => {
   if (location.hash.startsWith('#' + n)) switchTab(n);
 });
 

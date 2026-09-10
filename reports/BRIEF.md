@@ -4,13 +4,13 @@
 -->
 ---
 idea: industrial-process-data-infrastructure
-generated: 2026-09-10T03:35Z
+generated: 2026-09-10T03:51Z
 active_hunch: H1
-active_assumption: none
+active_assumption: H1A2
 sources:
   belief: 6093ca2c2aa3
   lineage: cc8180212a4d
-  graph: absent
+  graph: 2377d9604ed1
   evidence: absent
   offerings: absent
   contacts: absent
@@ -32,9 +32,15 @@ _Founder-owned. Changes only with explicit confirmation._ → `input-context/bel
 
 In the fashion industry there are no sensors to detect microplastics, so a textile manufacturer cannot see or act on the microfibers their process releases; a real-time sensor with a feedback loop is the first product, and the first sensor feedback loop is the beachhead.
 
-## Assumptions — top 0 of 0 by the declared ranking
+## Assumptions — top 3 of 10 by the declared ranking
 
-_No assumption graph yet — run `/startup-idea-to-assumptions`._
+| # | ID | claim | status | evidence | next action |
+|---|---|---|---|---|---|
+| 1 | **H1A2** ← | Textile wet-processing mills are already being asked for a microfiber number by a brand, an auditor or a regu… | `untested` | `none` | Ten conversations with people who run wet processing at textile mills. One question first… |
+| 2 | **H0A1** | People running a production line can name a recent case where a measured number sat waiting for a person to i… | `untested` | `none` | Ask five people who run any high-mix production line, before any mention of sensors or so… |
+| 3 | **H1A5** | Nothing good enough exists: mills consider lab sampling and effluent filtration insufficient for the question… | `untested` | `none` | Agent: one pass over instrumentation vendors and TMC signatories for any inline microfibe… |
+
+_← = `active_assumption`. Ranking: leap-of-faith gate → DAG roots first → kill_power → uncertainty → cheapest test (`schemas/assumptions.md`)._
 
 ## Evidence
 
@@ -54,6 +60,7 @@ _Generated from the folder. Check here before creating a new artifact — if a f
 | `input-context/` | 1 more staged input file |
 | `reports/control-room.html` | generated — rebuild it, never edit it |
 | `reports/01-ideation/hunch-lineage.md` | The hunch lineage — every hunch ever held under the belief, its status, and which one is active. |
+| `reports/02-assumptions/graph.md` | The assumption DAG for this idea — what must be true, ranked, each with the cheapest test that would settle it. Holds the active hunch's nodes plus a… |
 | `reports/outreach/companies.md` | The company registry — one entry per organisation on the demand or supply side of contaminant detection in industrial water, what it actually does, a… |
 | `reports/outreach/research-map.md` | The research map — one row per paper or group on contaminant detection in water, classified by what its method actually did, so the crowded and empty… |
 | `reports/pages/pages.yaml` | What each page in this folder is, and whether it still holds. |
@@ -65,5 +72,6 @@ _Generated from the folder. Check here before creating a new artifact — if a f
 |---|---|
 | belief / intake | `input-context/belief.md` |
 | hunch work | `reports/01-ideation/hunch-lineage.md` |
+| assumption work | `reports/02-assumptions/graph.md` |
 
 Dashboard: `python3 scripts/build_control_room.py`
