@@ -1331,6 +1331,7 @@ body::before {{
 .task-card-detail {{margin-top:6px;color:var(--text-dim);font-size:11px;line-height:1.45;}}
 .task-card-meta {{display:flex;align-items:center;gap:6px;margin-top:10px;color:var(--text-dimmer);font-size:9.5px;text-transform:uppercase;letter-spacing:.05em;}}
 .task-card-tag {{border:1px solid var(--border-subtle);border-radius:999px;padding:2px 6px;}}
+.task-card-owner {{border-color:var(--accent);color:var(--accent);}}
 .task-card-actions {{display:flex;align-items:center;gap:5px;margin-top:9px;padding-top:8px;border-top:1px solid var(--border-subtle);}}
 .task-card-action {{padding:4px 7px;color:var(--text-dim);}}
 .task-card-action.danger:hover {{color:#e05d44;border-color:#e05d44;}}
@@ -2373,6 +2374,7 @@ document.querySelectorAll(".tab").forEach(function(btn) {{
       '<div class="task-card-top"><div class="task-card-title">' + esc(task.title) + '</div></div>' +
       (task.detail ? '<div class="task-card-detail">' + esc(task.detail) + '</div>' : '') +
       '<div class="task-card-meta"><span class="task-card-tag">' + (task.system ? 'from ledger' : esc(task.priority || "normal")) + '</span>' +
+      (!task.system && task.owner ? '<span class="task-card-tag task-card-owner">' + esc(task.owner) + '</span>' : '') +
       (!task.system && task.updated_at ? '<span>' + new Date(task.updated_at).toLocaleDateString() + '</span>' : '') + '</div>' +
       (controls ? '<div class="task-card-actions">' + controls + '</div>' : '') + '</article>';
   }}

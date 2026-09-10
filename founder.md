@@ -5,10 +5,15 @@ founders:
     profile: founders/sandra-zalas.md
     status: confirmed
     role: CEO
+    # How this founder's terminal identifies itself: `git config user.name` / `user.email`
+    # in her clone. Fill in from her machine; until then the board script matches on the
+    # first name in user.name.
+    git_identities: []
   - name: Izgin Ozdas
     profile: founders/izgin-ozdas.md
     status: confirmed
     role: ""            # not yet recorded — Izgin sets this
+    git_identities: ["Izgin Ozdas", "0izzyozzy0@gmail.com"]
 ---
 
 # Founders
@@ -34,6 +39,11 @@ existing profile, add them to the frontmatter list and the table above, and set
 founders and need no change — they degrade correctly to one.
 
 ## Rules for consumers
+
+- **Which founder is typing:** every session runs in one founder's own clone, so the
+  founder is whoever `git config user.name` / `user.email` names, matched against
+  `git_identities` above (fallback: first name in `user.name`). `scripts/add_task.py` and
+  the `todo:` rule in `CLAUDE.md` use this; never assume a default founder.
 
 - **Affiliation scoring (outreach):** a contact earns `affiliation_boost` if
   they match ANY founder's `affiliations` / `affiliation_scoring` entries.

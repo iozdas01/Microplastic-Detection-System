@@ -171,6 +171,31 @@ Reply is literally: `Logged (gaps-log · N entries).`
 
 ---
 
+## To-do Capture — `todo:` in any session
+
+**When the founder's message starts with `todo:`, or says to log / add something as a to-do
+or put it on the board, log it on the shared kanban board and reply with one line. Nothing
+else.** No follow-up questions, no evaluation. The board has one author, `data/kanban.json`
+on `main`, and it is written only through git from each founder's own clone — never through
+a hosted API (founder decision 2026-09-09).
+
+1. **Whose to-do.** If the message names a founder ("for Sandra", "Izgin should…"), it is
+   theirs. Otherwise it belongs to the founder typing — the one this clone's git identity
+   names (`founder.md` → `git_identities`; the script resolves it). Never guess a default
+   founder; if the clone matches nobody, ask which founder in one line and stop.
+2. **Log it.** `.venv/bin/python scripts/add_task.py --title "<their words>"`, adding
+   `--owner <first name>` only when the to-do is the other founder's, `--detail` for anything
+   that did not fit the title, `--priority high` only if they said so. The script pulls,
+   appends the task in the board's own format, commits and pushes, so the other founder's
+   board shows it on its next read.
+3. **Reply** with the script's one line, literally: `Board: added "<title>" for <Founder>
+   (backlog · N open).`
+
+Moving, editing and deleting cards happens on the board itself or by editing
+`data/kanban.json` and pushing; a session does neither unless asked.
+
+---
+
 ## Routing
 
 **Route from the skill descriptions already in your context** — every `description:` is

@@ -4,12 +4,12 @@
 -->
 ---
 idea: industrial-process-data-infrastructure
-generated: 2026-09-10T03:27Z
-active_hunch: none
+generated: 2026-09-10T03:35Z
+active_hunch: H1
 active_assumption: none
 sources:
   belief: 6093ca2c2aa3
-  lineage: cd3340ffbfcc
+  lineage: cc8180212a4d
   graph: absent
   evidence: absent
   offerings: absent
@@ -28,7 +28,9 @@ _Founder-owned. Changes only with explicit confirmation._ → `input-context/bel
 
 ## Hunch
 
-_No hunch yet — run `/startup-ideate-shotgun` in explore mode once a belief exists._
+**H1 — active** · `untested`
+
+In the fashion industry there are no sensors to detect microplastics, so a textile manufacturer cannot see or act on the microfibers their process releases; a real-time sensor with a feedback loop is the first product, and the first sensor feedback loop is the beachhead.
 
 ## Assumptions — top 0 of 0 by the declared ranking
 
