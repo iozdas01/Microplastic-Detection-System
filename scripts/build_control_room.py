@@ -4936,26 +4936,50 @@ HUNCH_CSS = """
   color:var(--text-dimmer);margin-bottom:7px;}
 .hx-belief blockquote {margin:0 0 8px;font-size:15px;line-height:1.5;max-width:74ch;}
 .hx-belief p {margin:0;font-size:11.5px;color:var(--text-dim);max-width:74ch;}
-/* belief → hunch → assumptions tree */
-.hx-tree {margin:14px 0 18px;padding:15px 17px;border:1px solid var(--border);border-radius:var(--r-md);background:var(--surface);}
-.hx-tree > b {display:block;font-size:9.5px;text-transform:uppercase;letter-spacing:.12em;color:var(--text-dimmer);margin-bottom:10px;}
-.hx-troot,.hx-tkids {list-style:none;margin:0;padding:0;}
-.hx-tkids {margin-left:14px;padding-left:16px;border-left:1px solid var(--border);}
-.hx-tnode {position:relative;margin:6px 0;}
-.hx-tkids > .hx-tnode::before {content:"";position:absolute;left:-16px;top:12px;width:12px;height:1px;background:var(--border);}
-.hx-trow {display:flex;flex-wrap:wrap;align-items:baseline;gap:6px 8px;padding:6px 9px;border-radius:var(--r-sm);}
-.hx-tactive > .hx-trow {background:var(--surface-2);outline:1px solid var(--accent);}
-.hx-tid {font-family:var(--mono,ui-monospace,Menlo,monospace);font-size:10.5px;font-weight:700;color:var(--accent);white-space:nowrap;}
-.hx-tbelief > .hx-trow .hx-tid,.hx-thunch > .hx-trow .hx-tid {font-size:11.5px;}
-.hx-ttext {font-size:12px;line-height:1.45;color:var(--text);max-width:78ch;}
-.hx-thunch > .hx-trow .hx-ttext {font-weight:600;}
-.hx-tref .hx-ttext {color:var(--text-dimmer);font-style:italic;}
-.hx-tchip {font-size:9px;text-transform:uppercase;letter-spacing:.06em;border:1px solid var(--border-subtle);border-radius:999px;padding:1px 6px;color:var(--text-dim);white-space:nowrap;}
-.hx-tchip.q-leap_of_faith {border-color:#e05d44;color:#e05d44;}
-.hx-tchip.q-known_important {border-color:var(--accent);color:var(--accent);}
-.hx-tscore {font-family:var(--mono,ui-monospace,Menlo,monospace);text-transform:none;letter-spacing:0;}
-.hx-tstart {background:var(--accent);color:#fff;border-color:var(--accent);}
-.hx-tlegend {margin:10px 0 0;font-size:10.5px;color:var(--text-dimmer);}
+/* belief → hunch → assumptions tree table */
+.hx-tree {margin:14px 0 18px;}
+.hxt-scroll {overflow-x:auto;border:1px solid var(--border);border-radius:var(--r-md);background:var(--surface);}
+.hxt {display:grid;grid-template-columns:minmax(420px,1fr) 128px 88px 78px 78px 78px 52px;min-width:900px;
+  font-variant-numeric:tabular-nums;}
+.hxt-row {display:contents;}
+.hxt-c {padding:9px 12px;border-bottom:1px solid var(--border-subtle);display:flex;align-items:center;min-height:38px;font-size:11.5px;color:var(--text-dim);}
+.hxt-row:last-child .hxt-c {border-bottom:0;}
+.hxt-head .hxt-c {position:sticky;top:0;background:var(--surface-2);color:var(--text-dimmer);font-size:9.5px;
+  text-transform:uppercase;letter-spacing:.1em;font-weight:600;min-height:32px;border-bottom:1px solid var(--border);}
+.hxt-name {padding-left:calc(12px + var(--d) * 26px);position:relative;gap:10px;align-items:flex-start;}
+.hxt-guide {position:absolute;left:0;top:0;bottom:0;width:calc(12px + var(--d) * 26px);pointer-events:none;
+  background:repeating-linear-gradient(90deg,transparent 0 25px,var(--border) 25px 26px) 12px 0 / calc(var(--d) * 26px) 100% no-repeat;}
+.hxt-row[style="--d:0"] .hxt-guide {background:none;}
+.hxt-id {font-family:var(--mono,ui-monospace,Menlo,monospace);font-size:10.5px;font-weight:700;color:var(--accent);
+  min-width:44px;padding-top:2px;white-space:nowrap;}
+.hxt-text {line-height:1.45;color:var(--text);max-width:68ch;}
+.hxt-belief .hxt-c {background:var(--surface-2);}
+.hxt-belief .hxt-id {font-size:11.5px;color:var(--text);}
+.hxt-belief .hxt-text {color:var(--text-dim);}
+.hxt-h .hxt-text {font-weight:600;}
+.hxt-h .hxt-id {font-size:11.5px;}
+.hxt-h .hxt-status {color:var(--accent);text-transform:uppercase;font-size:9.5px;letter-spacing:.08em;font-weight:600;}
+.is-ref .hxt-text {color:var(--text-dimmer);font-style:italic;}
+.is-ref .hxt-id {color:var(--text-dimmer);font-weight:500;}
+.is-start .hxt-c {background:color-mix(in srgb,var(--accent) 7%,transparent);}
+.is-start .hxt-name::before {content:"";position:absolute;left:0;top:0;bottom:0;width:3px;background:var(--accent);}
+.is-start .hxt-rank {color:var(--accent);font-weight:700;}
+.hxt-status {text-transform:capitalize;}
+.hxt-rank {font-family:var(--mono,ui-monospace,Menlo,monospace);justify-content:flex-end;color:var(--text-dimmer);}
+.hxt-q {display:inline-flex;align-items:center;gap:6px;white-space:nowrap;font-size:10.5px;}
+.hxt-q i {width:8px;height:8px;border-radius:50%;background:var(--text-dimmer);flex:none;}
+.hxt-q.q-leap_of_faith {color:var(--text);} .hxt-q.q-leap_of_faith i {background:#e05d44;}
+.hxt-q.q-known_important i {background:var(--accent);}
+.hxt-q.q-uncertain_minor i {background:var(--text-dimmer);}
+.hxt-q.q-ignore i {background:var(--border);}
+.hxt-scale {display:inline-flex;align-items:center;gap:2px;}
+.hxt-scale i {width:8px;height:10px;border-radius:2px;background:var(--border);}
+.hxt-scale i.on {background:var(--text-dim);}
+.is-start .hxt-scale i.on {background:var(--accent);}
+.hxt-scale b {font-family:var(--mono,ui-monospace,Menlo,monospace);font-size:10px;font-weight:600;color:var(--text-dimmer);margin-left:5px;}
+.hxt-none {color:var(--text-dimmer);}
+.hxt-legend {margin:10px 2px 0;font-size:10.5px;line-height:1.55;color:var(--text-dimmer);max-width:90ch;}
+.hxt-legend b {color:var(--text-dim);font-weight:600;}
 
 
 /* belief section pills + panels */
@@ -5490,78 +5514,96 @@ def _hx_hunch(h: dict, assumptions: list[dict], evidence: list[dict],
 
 def _hx_tree(live: list[dict], assumptions: list[dict], active_a: str,
              ranks: dict, by_id: dict) -> str:
-    """Belief → hunch → assumptions as one indented tree, parents above children.
+    """Belief → hunch → assumptions as a tree table.
 
     A projection of graph.md's parent/child edges and hunch-lineage.md's active set —
-    nothing here is authored. Belief-level nodes (hunch: belief) hang straight off the
-    belief; each live hunch hangs off it too, with that hunch's root assumptions beneath
-    and their children nested under them. A node reachable from two parents renders under
-    the first and is marked as also-under the others, so the tree stays a tree.
+    nothing here is authored. One grid, so quadrant, status and the three scores line up
+    in columns down the page; depth lives only in the first column as indent guides.
+    Belief-level nodes hang straight off the belief; each live hunch hangs off it too,
+    with that hunch's root assumptions beneath and their children nested under them. A
+    node reachable from two parents renders under the first and is cross-referenced
+    under the others, so the tree stays a tree.
     """
-    def node_html(a: dict, depth: int, seen: set) -> str:
+    QLABEL = {"leap_of_faith": "Leap of faith", "known_important": "Known, important",
+              "uncertain_minor": "Uncertain, minor", "ignore": "Ignore"}
+
+    def scale(v) -> str:
+        try:
+            n = max(0, min(5, int(v)))
+        except (TypeError, ValueError):
+            return '<span class="hxt-scale hxt-none" aria-label="not scored">–</span>'
+        cells = "".join(f'<i class="{"on" if i < n else ""}"></i>' for i in range(5))
+        return f'<span class="hxt-scale" aria-label="{n} of 5">{cells}<b>{n}</b></span>'
+
+    def row(depth: int, cls: str, idtxt: str, text: str, q: str = "", st: str = "",
+            k=None, u=None, c=None, rank=None, start: bool = False, ref: bool = False) -> str:
+        qkey = q or ""
+        qcell = (f'<span class="hxt-q q-{escape(qkey)}"><i></i>{escape(QLABEL.get(qkey, qkey))}</span>'
+                 if qkey else "")
+        return (f'<div class="hxt-row {cls}{" is-start" if start else ""}{" is-ref" if ref else ""}" '
+                f'style="--d:{depth}">'
+                f'<div class="hxt-c hxt-name"><span class="hxt-guide"></span>'
+                f'<span class="hxt-id">{escape(idtxt)}</span><span class="hxt-text">{escape(text)}</span></div>'
+                f'<div class="hxt-c">{qcell}</div>'
+                f'<div class="hxt-c hxt-status">{escape(st)}</div>'
+                f'<div class="hxt-c">{scale(k) if not ref and k is not None else ""}</div>'
+                f'<div class="hxt-c">{scale(u) if not ref and u is not None else ""}</div>'
+                f'<div class="hxt-c">{scale(c) if not ref and c is not None else ""}</div>'
+                f'<div class="hxt-c hxt-rank">{("#%d" % rank) if rank else ""}</div>'
+                '</div>')
+
+    def node_rows(a: dict, depth: int, seen: set) -> list[str]:
         aid = str(a.get("id") or "")
-        q = str(a.get("quadrant") or "")
-        st = str(a.get("status") or "untested")
-        rank = ranks.get(aid)
-        start = aid == active_a
-        text = " ".join(str(a.get("assumption") or "").split())
-        scores = (f'k{a.get("kill_power", "·")} · u{a.get("uncertainty_score", "·")} · '
-                  f'c{a.get("test_cost", "·")}')
-        chips = (f'<span class="hx-tchip q-{escape(q)}">{escape(q.replace("_", " "))}</span>'
-                 f'<span class="hx-tchip">{escape(st)}</span>'
-                 f'<span class="hx-tchip hx-tscore">{escape(scores)}</span>'
-                 + (f'<span class="hx-tchip hx-trank">#{rank}</span>' if rank else "")
-                 + ('<span class="hx-tchip hx-tstart">start here</span>' if start else ""))
-        kids = []
+        rows = [row(depth, "hxt-a", aid, " ".join(str(a.get("assumption") or "").split()),
+                    str(a.get("quadrant") or ""), str(a.get("status") or "untested"),
+                    a.get("kill_power"), a.get("uncertainty_score"), a.get("test_cost"),
+                    ranks.get(aid), aid == active_a)]
         for cid in (a.get("child_assumptions") or []):
             cid = str(cid)
             if cid in seen:
-                kids.append(f'<li class="hx-tnode hx-tref"><span class="hx-tid">{escape(cid)}</span>'
-                            f'<span class="hx-ttext">also under this node — shown above</span></li>')
+                rows.append(row(depth + 1, "hxt-a", cid, "also depends on this node — listed above", ref=True))
                 continue
             c = by_id.get(cid)
             if c is None:
-                kids.append(f'<li class="hx-tnode hx-tref"><span class="hx-tid">{escape(cid)}</span>'
-                            f'<span class="hx-ttext">not in graph.md</span></li>')
+                rows.append(row(depth + 1, "hxt-a", cid, "referenced but not in graph.md", ref=True))
                 continue
             seen.add(cid)
-            kids.append(node_html(c, depth + 1, seen))
-        return (f'<li class="hx-tnode{" hx-tactive" if start else ""}" data-depth="{depth}">'
-                f'<div class="hx-trow"><span class="hx-tid">{escape(aid)}</span>'
-                f'<span class="hx-ttext">{escape(text)}</span>{chips}</div>'
-                + (f'<ul class="hx-tkids">{"".join(kids)}</ul>' if kids else "") + '</li>')
+            rows.extend(node_rows(c, depth + 1, seen))
+        return rows
 
-    def roots_for(hid: str, seen: set) -> str:
+    def roots_for(hid: str, depth: int, seen: set) -> list[str]:
         roots = [a for a in assumptions
                  if str(a.get("hunch") or "") == hid and not (a.get("parent_assumptions") or [])]
         roots.sort(key=lambda a: ranks.get(str(a.get("id")), 999))
-        items = []
+        rows = []
         for a in roots:
             seen.add(str(a.get("id")))
-            items.append(node_html(a, 2, seen))
-        return "".join(items)
+            rows.extend(node_rows(a, depth, seen))
+        return rows
 
     seen: set = set()
-    out = ['<section class="hx-tree"><b>The tree — belief, hunch, what must be true</b>'
-           '<ul class="hx-troot"><li class="hx-tnode hx-tbelief"><div class="hx-trow">'
-           '<span class="hx-tid">Belief</span><span class="hx-ttext">the durable claim above</span></div>'
-           '<ul class="hx-tkids">']
-    belief_nodes = roots_for("belief", seen)
-    if belief_nodes:
-        out.append(belief_nodes)
+    head = ('<div class="hxt-row hxt-head">'
+            '<div class="hxt-c">Belief, hunch, and what must be true</div>'
+            '<div class="hxt-c">Quadrant</div><div class="hxt-c">Status</div>'
+            '<div class="hxt-c" title="If false, how much dies: 5 = the whole idea">Kill</div>'
+            '<div class="hxt-c" title="How little we know: 5 = a guess">Unknown</div>'
+            '<div class="hxt-c" title="What a verdict costs: 1 = an afternoon">Cost</div>'
+            '<div class="hxt-c" title="Declared test order">Order</div></div>')
+    rows = [row(0, "hxt-belief", "Belief", "the durable claim above")]
+    rows += roots_for("belief", 1, seen)
     for h in live:
         hid = str(h.get("id") or "")
-        stmt = " ".join(str(h.get("statement") or "").split())
-        out.append(f'<li class="hx-tnode hx-thunch"><div class="hx-trow"><span class="hx-tid">{escape(hid)}</span>'
-                   f'<span class="hx-ttext">{escape(stmt)}</span>'
-                   f'<span class="hx-tchip">{escape(str(h.get("status") or ""))}</span></div>'
-                   f'<ul class="hx-tkids">{roots_for(hid, seen) or "<li class=\"hx-tnode hx-tref\"><span class=\"hx-ttext\">no assumptions yet</span></li>"}</ul></li>')
-    out.append('</ul></li></ul>'
-               '<p class="hx-tlegend">k = kill power · u = uncertainty · c = test cost, each 1–5. '
-               '# is the declared ranking. Children wait on their parents. Authored in '
-               '<code>02-assumptions/graph.md</code> and <code>01-ideation/hunch-lineage.md</code>.</p>'
-               '</section>')
-    return "".join(out)
+        rows.append(row(1, "hxt-h", hid, " ".join(str(h.get("statement") or "").split()),
+                        st=str(h.get("status") or "")))
+        kids = roots_for(hid, 2, seen)
+        rows += kids or [row(2, "hxt-a", "", "no assumptions yet — run /startup-idea-to-assumptions", ref=True)]
+    legend = ('<p class="hxt-legend">Each scale is 1–5. <b>Kill</b>: how much dies if the claim is false. '
+              '<b>Unknown</b>: how little is known today. <b>Cost</b>: what a verdict costs to get. '
+              '<b>Order</b> is the declared ranking; the marked row is where testing starts. '
+              'Children wait on their parents. Authored in <code>02-assumptions/graph.md</code> '
+              'and <code>01-ideation/hunch-lineage.md</code>.</p>')
+    return ('<section class="hx-tree"><div class="hxt-scroll"><div class="hxt">'
+            + head + "".join(rows) + '</div></div>' + legend + '</section>')
 
 
 def render_thesis_tab(lineage_fm: dict, hunches: list[dict],
