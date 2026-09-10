@@ -4939,20 +4939,30 @@ HUNCH_CSS = """
 /* belief → hunch → assumptions tree table */
 .hx-tree {margin:14px 0 18px;}
 .hxt-scroll {overflow-x:auto;border:1px solid var(--border);border-radius:var(--r-md);background:var(--surface);}
-.hxt {display:grid;grid-template-columns:minmax(420px,1fr) 128px 88px 78px 78px 78px 52px;min-width:900px;
+.hxt {display:grid;grid-template-columns:minmax(440px,1fr) 128px 88px 78px 84px 78px 64px;min-width:940px;
   font-variant-numeric:tabular-nums;}
 .hxt-row {display:contents;}
-.hxt-c {padding:9px 12px;border-bottom:1px solid var(--border-subtle);display:flex;align-items:center;min-height:38px;font-size:11.5px;color:var(--text-dim);}
-.hxt-row:last-child .hxt-c {border-bottom:0;}
-.hxt-head .hxt-c {position:sticky;top:0;background:var(--surface-2);color:var(--text-dimmer);font-size:9.5px;
+.hxt-row.is-hidden > .hxt-c,.hxt-row[hidden] > .hxt-c {display:none;}
+.hxt-c {padding:0 12px;border-bottom:1px solid var(--border-subtle);display:flex;align-items:center;min-height:40px;font-size:11.5px;color:var(--text-dim);}
+.hxt-head .hxt-c {position:sticky;top:0;z-index:1;background:var(--surface-2);color:var(--text-dimmer);font-size:9.5px;
   text-transform:uppercase;letter-spacing:.1em;font-weight:600;min-height:32px;border-bottom:1px solid var(--border);}
-.hxt-name {padding-left:calc(12px + var(--d) * 26px);position:relative;gap:10px;align-items:flex-start;}
+.hxt-name {padding-left:calc(12px + var(--d) * 26px);position:relative;gap:8px;min-width:0;}
 .hxt-guide {position:absolute;left:0;top:0;bottom:0;width:calc(12px + var(--d) * 26px);pointer-events:none;
   background:repeating-linear-gradient(90deg,transparent 0 25px,var(--border) 25px 26px) 12px 0 / calc(var(--d) * 26px) 100% no-repeat;}
-.hxt-row[style="--d:0"] .hxt-guide {background:none;}
+.hxt-chev {flex:none;width:16px;height:16px;border:0;padding:0;background:none;cursor:pointer;position:relative;color:var(--text-dimmer);}
+.hxt-chev::before {content:"";position:absolute;left:5px;top:4px;width:6px;height:6px;border-right:1.5px solid currentColor;border-bottom:1.5px solid currentColor;transform:rotate(45deg);transition:transform .15s;}
+.is-collapsed > .hxt-name .hxt-chev::before {transform:rotate(-45deg);}
+.hxt-chev:hover {color:var(--text);}
+.hxt-chev:focus-visible {outline:2px solid var(--accent);outline-offset:2px;border-radius:3px;}
+.hxt-leaf {cursor:default;}
+.hxt-leaf::before {display:none;}
 .hxt-id {font-family:var(--mono,ui-monospace,Menlo,monospace);font-size:10.5px;font-weight:700;color:var(--accent);
-  min-width:44px;padding-top:2px;white-space:nowrap;}
-.hxt-text {line-height:1.45;color:var(--text);max-width:68ch;}
+  min-width:44px;white-space:nowrap;}
+.hxt-text {flex:1;min-width:0;border:0;background:none;padding:0;margin:0;text-align:left;font:inherit;font-size:11.5px;line-height:1.4;
+  color:var(--text);cursor:pointer;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
+.hxt-text:disabled {cursor:default;}
+.hxt-text:focus-visible {outline:2px solid var(--accent);outline-offset:2px;border-radius:3px;}
+.is-open > .hxt-name .hxt-text {white-space:normal;padding:10px 0;}
 .hxt-belief .hxt-c {background:var(--surface-2);}
 .hxt-belief .hxt-id {font-size:11.5px;color:var(--text);}
 .hxt-belief .hxt-text {color:var(--text-dim);}
@@ -4977,8 +4987,14 @@ HUNCH_CSS = """
 .hxt-scale i.on {background:var(--text-dim);}
 .is-start .hxt-scale i.on {background:var(--accent);}
 .hxt-scale b {font-family:var(--mono,ui-monospace,Menlo,monospace);font-size:10px;font-weight:600;color:var(--text-dimmer);margin-left:5px;}
-.hxt-none {color:var(--text-dimmer);}
-.hxt-legend {margin:10px 2px 0;font-size:10.5px;line-height:1.55;color:var(--text-dimmer);max-width:90ch;}
+/* opened row detail */
+.hxt-detail > .hxt-dcell {grid-column:1 / -1;position:relative;align-items:stretch;padding:0 12px 0 calc(12px + var(--d) * 26px);background:color-mix(in srgb,var(--surface-2) 60%,transparent);}
+.hxt-dbody {padding:12px 14px 14px 68px;max-width:80ch;display:grid;gap:8px;}
+.hxt-dclaim {margin:0;font-size:12.5px;line-height:1.5;color:var(--text);}
+.hxt-dfield {display:grid;grid-template-columns:96px 1fr;gap:10px;font-size:11.5px;line-height:1.5;color:var(--text-dim);}
+.hxt-dfield b {font-size:9.5px;text-transform:uppercase;letter-spacing:.1em;color:var(--text-dimmer);padding-top:3px;font-weight:600;}
+.hxt-dmeta {margin:2px 0 0;font-size:10px;text-transform:uppercase;letter-spacing:.08em;color:var(--text-dimmer);}
+.hxt-legend {margin:10px 2px 0;font-size:10.5px;line-height:1.55;color:var(--text-dimmer);max-width:92ch;}
 .hxt-legend b {color:var(--text-dim);font-weight:600;}
 
 
@@ -5514,71 +5530,109 @@ def _hx_hunch(h: dict, assumptions: list[dict], evidence: list[dict],
 
 def _hx_tree(live: list[dict], assumptions: list[dict], active_a: str,
              ranks: dict, by_id: dict) -> str:
-    """Belief → hunch → assumptions as a tree table.
+    """Belief → hunch → assumptions as a collapsible tree table.
 
     A projection of graph.md's parent/child edges and hunch-lineage.md's active set —
-    nothing here is authored. One grid, so quadrant, status and the three scores line up
-    in columns down the page; depth lives only in the first column as indent guides.
-    Belief-level nodes hang straight off the belief; each live hunch hangs off it too,
-    with that hunch's root assumptions beneath and their children nested under them. A
-    node reachable from two parents renders under the first and is cross-referenced
-    under the others, so the tree stays a tree.
+    nothing here is authored. One grid so quadrant, status and the three scores line up;
+    depth lives in the first column as indent guides. Each row is one line at rest and
+    opens on click to the full claim, why it matters, the next test, the kill condition
+    and the stop rule. Rows with children carry a chevron that folds the subtree; the
+    page opens with the hunch's top-level assumptions visible and everything deeper
+    folded. A node reachable from two parents renders under the first and is
+    cross-referenced under the others, so the tree stays a tree.
     """
     QLABEL = {"leap_of_faith": "Leap of faith", "known_important": "Known, important",
               "uncertain_minor": "Uncertain, minor", "ignore": "Ignore"}
+    counter = [0]
 
     def scale(v) -> str:
         try:
             n = max(0, min(5, int(v)))
         except (TypeError, ValueError):
-            return '<span class="hxt-scale hxt-none" aria-label="not scored">–</span>'
+            return ""
         cells = "".join(f'<i class="{"on" if i < n else ""}"></i>' for i in range(5))
         return f'<span class="hxt-scale" aria-label="{n} of 5">{cells}<b>{n}</b></span>'
 
-    def row(depth: int, cls: str, idtxt: str, text: str, q: str = "", st: str = "",
-            k=None, u=None, c=None, rank=None, start: bool = False, ref: bool = False) -> str:
+    def fold(s) -> str:
+        return " ".join(str(s or "").split())
+
+    def row(depth: int, cls: str, idtxt: str, text: str, parent: str, q: str = "", st: str = "",
+            k=None, u=None, c=None, rank=None, start: bool = False, ref: bool = False,
+            has_kids: bool = False, collapsed: bool = False, detail: str = "") -> str:
+        counter[0] += 1
+        nid = f"n{counter[0]}"
         qkey = q or ""
         qcell = (f'<span class="hxt-q q-{escape(qkey)}"><i></i>{escape(QLABEL.get(qkey, qkey))}</span>'
                  if qkey else "")
-        return (f'<div class="hxt-row {cls}{" is-start" if start else ""}{" is-ref" if ref else ""}" '
-                f'style="--d:{depth}">'
-                f'<div class="hxt-c hxt-name"><span class="hxt-guide"></span>'
-                f'<span class="hxt-id">{escape(idtxt)}</span><span class="hxt-text">{escape(text)}</span></div>'
+        chev = (f'<button class="hxt-chev" type="button" aria-label="Fold" data-fold="{nid}"></button>'
+                if has_kids else '<span class="hxt-chev hxt-leaf"></span>')
+        main = (f'<div class="hxt-row {cls}{" is-start" if start else ""}{" is-ref" if ref else ""}'
+                f'{" is-collapsed" if collapsed else ""}" style="--d:{depth}" '
+                f'data-node="{nid}" data-parent="{parent}" data-depth="{depth}">'
+                f'<div class="hxt-c hxt-name"><span class="hxt-guide"></span>{chev}'
+                f'<span class="hxt-id">{escape(idtxt)}</span>'
+                f'<button class="hxt-text" type="button" data-open="{nid}"{" disabled" if not detail else ""}>'
+                f'{escape(text)}</button></div>'
                 f'<div class="hxt-c">{qcell}</div>'
                 f'<div class="hxt-c hxt-status">{escape(st)}</div>'
-                f'<div class="hxt-c">{scale(k) if not ref and k is not None else ""}</div>'
-                f'<div class="hxt-c">{scale(u) if not ref and u is not None else ""}</div>'
-                f'<div class="hxt-c">{scale(c) if not ref and c is not None else ""}</div>'
+                f'<div class="hxt-c">{scale(k) if not ref else ""}</div>'
+                f'<div class="hxt-c">{scale(u) if not ref else ""}</div>'
+                f'<div class="hxt-c">{scale(c) if not ref else ""}</div>'
                 f'<div class="hxt-c hxt-rank">{("#%d" % rank) if rank else ""}</div>'
                 '</div>')
+        if detail:
+            main += (f'<div class="hxt-row hxt-detail" style="--d:{depth}" data-detail="{nid}" '
+                     f'data-parent="{parent}" hidden><div class="hxt-c hxt-dcell">'
+                     f'<span class="hxt-guide"></span><div class="hxt-dbody">{detail}</div></div></div>')
+        return main, nid
 
-    def node_rows(a: dict, depth: int, seen: set) -> list[str]:
+    def detail_for(a: dict) -> str:
+        parts = [f'<p class="hxt-dclaim">{escape(fold(a.get("assumption")))}</p>']
+        for key, label in (("why_it_matters", "Why it matters"), ("next_action", "Next test"),
+                           ("disconfirmation", "Dead if"), ("stop_rule", "Stop after")):
+            v = fold(a.get(key))
+            if v:
+                parts.append(f'<div class="hxt-dfield"><b>{label}</b><span>{escape(v)}</span></div>')
+        meta = []
+        if a.get("test_method"):
+            meta.append(f'{escape(str(a["test_method"]))} runs it')
+        if a.get("category"):
+            meta.append(escape(str(a["category"])))
+        if a.get("lens"):
+            meta.append(escape(str(a["lens"])))
+        if meta:
+            parts.append(f'<p class="hxt-dmeta">{" · ".join(meta)}</p>')
+        return "".join(parts)
+
+    def node_rows(a: dict, depth: int, parent: str, seen: set, collapsed: bool) -> list[str]:
         aid = str(a.get("id") or "")
-        rows = [row(depth, "hxt-a", aid, " ".join(str(a.get("assumption") or "").split()),
-                    str(a.get("quadrant") or ""), str(a.get("status") or "untested"),
-                    a.get("kill_power"), a.get("uncertainty_score"), a.get("test_cost"),
-                    ranks.get(aid), aid == active_a)]
-        for cid in (a.get("child_assumptions") or []):
-            cid = str(cid)
+        kids = [str(x) for x in (a.get("child_assumptions") or [])]
+        html, nid = row(depth, "hxt-a", aid, fold(a.get("assumption")), parent,
+                        str(a.get("quadrant") or ""), str(a.get("status") or "untested"),
+                        a.get("kill_power"), a.get("uncertainty_score"), a.get("test_cost"),
+                        ranks.get(aid), aid == active_a, has_kids=bool(kids), collapsed=collapsed,
+                        detail=detail_for(a))
+        rows = [html]
+        for cid in kids:
             if cid in seen:
-                rows.append(row(depth + 1, "hxt-a", cid, "also depends on this node — listed above", ref=True))
+                rows.append(row(depth + 1, "hxt-a", cid, "also depends on this node — listed above", nid, ref=True)[0])
                 continue
             c = by_id.get(cid)
             if c is None:
-                rows.append(row(depth + 1, "hxt-a", cid, "referenced but not in graph.md", ref=True))
+                rows.append(row(depth + 1, "hxt-a", cid, "referenced but not in graph.md", nid, ref=True)[0])
                 continue
             seen.add(cid)
-            rows.extend(node_rows(c, depth + 1, seen))
+            rows.extend(node_rows(c, depth + 1, nid, seen, collapsed=True))
         return rows
 
-    def roots_for(hid: str, depth: int, seen: set) -> list[str]:
+    def roots_for(hid: str, depth: int, parent: str, seen: set) -> list[str]:
         roots = [a for a in assumptions
                  if str(a.get("hunch") or "") == hid and not (a.get("parent_assumptions") or [])]
         roots.sort(key=lambda a: ranks.get(str(a.get("id")), 999))
         rows = []
         for a in roots:
             seen.add(str(a.get("id")))
-            rows.extend(node_rows(a, depth, seen))
+            rows.extend(node_rows(a, depth, parent, seen, collapsed=True))
         return rows
 
     seen: set = set()
@@ -5589,21 +5643,34 @@ def _hx_tree(live: list[dict], assumptions: list[dict], active_a: str,
             '<div class="hxt-c" title="How little we know: 5 = a guess">Unknown</div>'
             '<div class="hxt-c" title="What a verdict costs: 1 = an afternoon">Cost</div>'
             '<div class="hxt-c" title="Declared test order">Order</div></div>')
-    rows = [row(0, "hxt-belief", "Belief", "the durable claim above")]
-    rows += roots_for("belief", 1, seen)
+    belief_html, belief_id = row(0, "hxt-belief", "Belief", "the durable claim above", "", has_kids=True)
+    rows = [belief_html]
+    rows += roots_for("belief", 1, belief_id, seen)
     for h in live:
         hid = str(h.get("id") or "")
-        rows.append(row(1, "hxt-h", hid, " ".join(str(h.get("statement") or "").split()),
-                        st=str(h.get("status") or "")))
-        kids = roots_for(hid, 2, seen)
-        rows += kids or [row(2, "hxt-a", "", "no assumptions yet — run /startup-idea-to-assumptions", ref=True)]
-    legend = ('<p class="hxt-legend">Each scale is 1–5. <b>Kill</b>: how much dies if the claim is false. '
-              '<b>Unknown</b>: how little is known today. <b>Cost</b>: what a verdict costs to get. '
-              '<b>Order</b> is the declared ranking; the marked row is where testing starts. '
-              'Children wait on their parents. Authored in <code>02-assumptions/graph.md</code> '
-              'and <code>01-ideation/hunch-lineage.md</code>.</p>')
+        hdetail = f'<p class="hxt-dclaim">{escape(fold(h.get("statement")))}</p>'
+        html, hnid = row(1, "hxt-h", hid, fold(h.get("statement")), belief_id,
+                         st=str(h.get("status") or ""), has_kids=True, detail=hdetail)
+        rows.append(html)
+        kids = roots_for(hid, 2, hnid, seen)
+        rows += kids or [row(2, "hxt-a", "", "no assumptions yet — run /startup-idea-to-assumptions", hnid, ref=True)[0]]
+    legend = ('<p class="hxt-legend">Click a row for the full claim, its next test and what would kill it; '
+              'the chevron folds a branch. Scales are 1–5: <b>Kill</b> how much dies if the claim is false, '
+              '<b>Unknown</b> how little is known today, <b>Cost</b> what a verdict costs. <b>Order</b> is the '
+              'declared ranking; the marked row is where testing starts. Children wait on their parents. '
+              'Authored in <code>02-assumptions/graph.md</code> and <code>01-ideation/hunch-lineage.md</code>.</p>')
+    js = ('<script>(function(){var root=document.querySelector(".hxt");if(!root)return;'
+          'function apply(){var hidden={};root.querySelectorAll(".hxt-row[data-node]").forEach(function(r){'
+          'var p=r.getAttribute("data-parent");var h=!!(p&&(hidden[p]||root.querySelector("[data-node="+JSON.stringify(p)+"]").classList.contains("is-collapsed")));'
+          'hidden[r.getAttribute("data-node")]=h;r.classList.toggle("is-hidden",h);'
+          'var d=root.querySelector("[data-detail="+JSON.stringify(r.getAttribute("data-node"))+"]");'
+          'if(d){d.hidden=h||!r.classList.contains("is-open");}});}'
+          'root.addEventListener("click",function(e){var f=e.target.closest("[data-fold]");'
+          'if(f){root.querySelector("[data-node="+JSON.stringify(f.getAttribute("data-fold"))+"]").classList.toggle("is-collapsed");apply();return;}'
+          'var o=e.target.closest("[data-open]");if(o&&!o.disabled){root.querySelector("[data-node="+JSON.stringify(o.getAttribute("data-open"))+"]").classList.toggle("is-open");apply();}});'
+          'apply();})();</script>')
     return ('<section class="hx-tree"><div class="hxt-scroll"><div class="hxt">'
-            + head + "".join(rows) + '</div></div>' + legend + '</section>')
+            + head + "".join(rows) + '</div></div>' + legend + js + '</section>')
 
 
 def render_thesis_tab(lineage_fm: dict, hunches: list[dict],
@@ -5703,22 +5770,9 @@ def render_thesis_tab(lineage_fm: dict, hunches: list[dict],
     # any reference that no longer resolves.
     by_id = {str(a.get("id")): a for a in assumptions if a.get("id")}
 
-    out.append('<div class="hx-grid">')
-    for h in live:
-        out.append(_hx_hunch(h, assumptions, evidence, ranks, active_a, scale, by_id))
-    out.append('</div>')
-
-    # Assumptions serving more than one hunch, or orphaned by a retired one.
-    shared = sorted((a for a in assumptions if str(a.get("hunch") or "") not in live_ids),
-                    key=lambda a: ranks.get(str(a.get("id")), 999))
-    if shared:
-        out.append('<section class="hx-hunch hx-shared"><header class="hx-hhead">'
-                   '<div class="hx-htitle"><span class="hx-hid">Shared &amp; unattached</span></div>'
-                   '</header><div class="hx-alist">')
-        for a in shared:
-            out.append(_hx_assumption(a, evidence, ranks.get(str(a.get("id"))),
-                                      str(a.get("id")) == active_a, scale, by_id))
-        out.append('</div></section>')
+    # The tree above is the one view of hunch → assumptions. The per-assumption cards
+    # (_hx_hunch / _hx_assumption) that used to render here duplicated it; the founder
+    # asked for one view on 2026-09-09, so they are no longer emitted.
 
     past = [h for h in hunches if str(h.get("status") or "").strip() != "active"]
     if past:
