@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-09-10T18:43:30.758Z",
+  "updated_at": "2026-09-10T18:43:35.075Z",
   "tasks": [
     {
       "id": "T-MTV0XT85-EZLO",
@@ -51,9 +51,29 @@
       "owner": "sandra",
       "created_at": "2026-09-10T18:43:30.758Z",
       "updated_at": "2026-09-10T18:43:30.758Z"
+    },
+    {
+      "id": "T-MTVVLDSZ-I7CD",
+      "title": "Prep follow-up email to our design partners",
+      "detail": "https://matter.industries/",
+      "priority": "normal",
+      "status": "backlog",
+      "owner": "sandra",
+      "created_at": "2026-09-10T18:43:35.075Z",
+      "updated_at": "2026-09-10T18:43:35.075Z"
     }
   ],
   "activity": [
+    {
+      "id": "1789065815075-6kggi4",
+      "at": "2026-09-10T18:43:35.075Z",
+      "type": "created",
+      "task_id": "T-MTVVLDSZ-I7CD",
+      "title": "Prep follow-up email to our design partners",
+      "from": null,
+      "to": "backlog",
+      "owner": "sandra"
+    },
     {
       "id": "1789065810759-3t48rb",
       "at": "2026-09-10T18:43:30.758Z",
