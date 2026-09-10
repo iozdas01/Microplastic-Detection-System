@@ -4966,7 +4966,7 @@ HUNCH_CSS = """
 .hxt-belief .hxt-c {background:var(--surface-2);}
 .hxt-belief .hxt-id {font-size:11.5px;color:var(--text);}
 .hxt-belief .hxt-text {color:var(--text-dim);}
-.hxt-h .hxt-text {font-weight:600;}
+.hxt-h .hxt-text {font-weight:600;white-space:normal;padding:8px 0;}
 .hxt-h .hxt-id {font-size:11.5px;}
 .hxt-h .hxt-status {color:var(--accent);text-transform:uppercase;font-size:9.5px;letter-spacing:.08em;font-weight:600;}
 .is-ref .hxt-text {color:var(--text-dimmer);font-style:italic;}
@@ -5588,20 +5588,9 @@ def _hx_tree(live: list[dict], assumptions: list[dict], active_a: str,
 
     def detail_for(a: dict) -> str:
         parts = [f'<p class="hxt-dclaim">{escape(fold(a.get("assumption")))}</p>']
-        for key, label in (("why_it_matters", "Why it matters"), ("next_action", "Next test"),
-                           ("disconfirmation", "Dead if"), ("stop_rule", "Stop after")):
-            v = fold(a.get(key))
-            if v:
-                parts.append(f'<div class="hxt-dfield"><b>{label}</b><span>{escape(v)}</span></div>')
-        meta = []
-        if a.get("test_method"):
-            meta.append(f'{escape(str(a["test_method"]))} runs it')
-        if a.get("category"):
-            meta.append(escape(str(a["category"])))
-        if a.get("lens"):
-            meta.append(escape(str(a["lens"])))
-        if meta:
-            parts.append(f'<p class="hxt-dmeta">{" · ".join(meta)}</p>')
+        v = fold(a.get("next_action"))
+        if v:
+            parts.append(f'<div class="hxt-dfield"><b>Test</b><span>{escape(v)}</span></div>')
         return "".join(parts)
 
     def node_rows(a: dict, depth: int, parent: str, seen: set, collapsed: bool) -> list[str]:
@@ -5648,9 +5637,8 @@ def _hx_tree(live: list[dict], assumptions: list[dict], active_a: str,
     rows += roots_for("belief", 1, belief_id, seen)
     for h in live:
         hid = str(h.get("id") or "")
-        hdetail = f'<p class="hxt-dclaim">{escape(fold(h.get("statement")))}</p>'
         html, hnid = row(1, "hxt-h", hid, fold(h.get("statement")), belief_id,
-                         st=str(h.get("status") or ""), has_kids=True, detail=hdetail)
+                         st=str(h.get("status") or ""), has_kids=True)
         rows.append(html)
         kids = roots_for(hid, 2, hnid, seen)
         rows += kids or [row(2, "hxt-a", "", "no assumptions yet — run /startup-idea-to-assumptions", hnid, ref=True)[0]]

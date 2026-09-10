@@ -4,13 +4,13 @@
 -->
 ---
 idea: industrial-process-data-infrastructure
-generated: 2026-09-10T03:51Z
+generated: 2026-09-10T04:03Z
 active_hunch: H1
 active_assumption: H1A2
 sources:
   belief: 6093ca2c2aa3
   lineage: cc8180212a4d
-  graph: 2377d9604ed1
+  graph: 8849eebfd00a
   evidence: absent
   offerings: absent
   contacts: absent
@@ -37,7 +37,7 @@ In the fashion industry there are no sensors to detect microplastics, so a texti
 | # | ID | claim | status | evidence | next action |
 |---|---|---|---|---|---|
 | 1 | **H1A2** ← | Textile wet-processing mills are already being asked for a microfiber number by a brand, an auditor or a regu… | `untested` | `none` | Ten conversations with people who run wet processing at textile mills. One question first… |
-| 2 | **H0A1** | People running a production line can name a recent case where a measured number sat waiting for a person to i… | `untested` | `none` | Ask five people who run any high-mix production line, before any mention of sensors or so… |
+| 2 | **H1A10** | People running a production line can name a recent case where a measured number sat waiting for a person to i… | `untested` | `none` | Ask five people who run any high-mix production line, before any mention of sensors or so… |
 | 3 | **H1A5** | Nothing good enough exists: mills consider lab sampling and effluent filtration insufficient for the question… | `untested` | `none` | Agent: one pass over instrumentation vendors and TMC signatories for any inline microfibe… |
 
 _← = `active_assumption`. Ranking: leap-of-faith gate → DAG roots first → kill_power → uncertainty → cheapest test (`schemas/assumptions.md`)._

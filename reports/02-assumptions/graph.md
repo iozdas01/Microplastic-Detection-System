@@ -25,7 +25,9 @@ shotgun's initial-test run will add or contradict them.
 #
 # Read in order: H1A2 (are mills being asked for the number, and does it cost them) is
 # the root; H1A3, H1A4 and H1A6 sit under it. H1A1 and H1A5 are independent roots.
-# H1A7-H1A9 wait on H1A2. H0A1 is belief-level and survives a hunch change.
+# H1A7-H1A9 wait on H1A2. H1A10 is the belief's own pain claim asked of any line;
+# it was first written as belief-level H0A1 and re-homed under H1 the same day at
+# the founder's call (every node under the hunch). The id H0A1 is burned.
 # Drafted 2026-09-09 without a shotgun run; each node says what it was drawn from.
 
 # Active hunch H1 (confirmed 2026-09-09)
@@ -36,48 +38,6 @@ shotgun's initial-test run will add or contradict them.
 
 
 assumptions:
-
-  - id: H0A1
-    assumption: >-
-      People running a production line can name a recent case where a measured number sat
-      waiting for a person to interpret it before anything was adjusted, and can say what
-      the wait cost.
-    hunch: belief
-    category: pain
-    lens: desirability
-    validation_track: customer_adoption
-    test_method: founder
-    why_it_matters: >-
-      BELIEF-LEVEL. This is belief v4's "numbers with no identity or meaning attached" turned
-      into something an operator can answer. If nobody can name the case, the belief has no
-      pain under it, whichever hunch is active.
-    importance: high
-    quadrant: leap_of_faith
-    uncertainty_score: 3
-    kill_power: 5
-    test_cost: 1
-    parent_assumptions: []
-    child_assumptions: []
-    evidence_for: []
-    evidence_against: []
-    status: untested
-    next_action: >-
-      Ask five people who run any high-mix production line, before any mention of sensors
-      or software: "the last time a reading came off the line and someone had to decide
-      what to do with it — what was it, who decided, and how long did the line wait?"
-    disconfirmation: >-
-      If four of five cannot name such a case, or name one and say the wait cost nothing
-      material, the interpretation gap is not felt by the people who carry it.
-    stop_rule: "Five conversations or one week, whichever first."
-    icp_segment: "People who run or supervise a production line where readings are taken during the run."
-    icp_valid_tiers:
-      - {name: textile_mill, side: demand}
-      - {name: consortium_expert, side: expert}
-    domain_data_sources: []
-    icp_valid_titles: [Production Manager, Plant Manager, Process Engineer, Quality Manager,
-                       Operations Manager, Shift Supervisor, Head of Production]
-    icp_out_of_scope: ["software or instrumentation vendors (supply side, not the pain)",
-                       "consultants describing other people's lines"]
 
   - id: H1A1
     assumption: >-
@@ -427,3 +387,45 @@ assumptions:
     domain_data_sources: []
     icp_valid_titles: [Plant Manager, Maintenance Manager, Process Engineer, Dyehouse Manager, Technical Director]
     icp_out_of_scope: ["head-office roles with no site authority"]
+
+  - id: H1A10
+    assumption: >-
+      People running a production line can name a recent case where a measured number sat
+      waiting for a person to interpret it before anything was adjusted, and can say what
+      the wait cost.
+    hunch: H1
+    category: pain
+    lens: desirability
+    validation_track: customer_adoption
+    test_method: founder
+    why_it_matters: >-
+      This is belief v4's "numbers with no identity or meaning attached" turned
+      into something an operator can answer. If nobody can name the case, the belief has no
+      pain under it, and neither does H1.
+    importance: high
+    quadrant: leap_of_faith
+    uncertainty_score: 3
+    kill_power: 5
+    test_cost: 1
+    parent_assumptions: []
+    child_assumptions: []
+    evidence_for: []
+    evidence_against: []
+    status: untested
+    next_action: >-
+      Ask five people who run any high-mix production line, before any mention of sensors
+      or software: "the last time a reading came off the line and someone had to decide
+      what to do with it — what was it, who decided, and how long did the line wait?"
+    disconfirmation: >-
+      If four of five cannot name such a case, or name one and say the wait cost nothing
+      material, the interpretation gap is not felt by the people who carry it.
+    stop_rule: "Five conversations or one week, whichever first."
+    icp_segment: "People who run or supervise a production line where readings are taken during the run."
+    icp_valid_tiers:
+      - {name: textile_mill, side: demand}
+      - {name: consortium_expert, side: expert}
+    domain_data_sources: []
+    icp_valid_titles: [Production Manager, Plant Manager, Process Engineer, Quality Manager,
+                       Operations Manager, Shift Supervisor, Head of Production]
+    icp_out_of_scope: ["software or instrumentation vendors (supply side, not the pain)",
+                       "consultants describing other people's lines"]
