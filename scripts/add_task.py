@@ -153,7 +153,12 @@ def main() -> int:
     board["updated_at"] = ts
     BOARD.write_text(json.dumps(board, indent=2) + "\n", encoding="utf-8")
 
-    git("add", str(BOARD.relative_to(ROOT)))
+    # The control room embeds a snapshot of the board for when it is opened as a plain
+    # file (no server to fetch data/kanban.json from), so it has to be rebuilt with the
+    # task or the file view shows a stale board.
+    subprocess.run([sys.executable, str(ROOT / "scripts" / "build_control_room.py")],
+                   cwd=ROOT, check=True, capture_output=True)
+    git("add", str(BOARD.relative_to(ROOT)), "reports/control-room.html")
     git("commit", "--quiet", "-m", f"board: add {title} ({known[owner]})"[:120])
     if not a.no_push:
         git("push", "--quiet")
