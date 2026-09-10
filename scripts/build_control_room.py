@@ -2635,23 +2635,23 @@ COMPANIES_CSS = """
 .cmap-readout [data-map-people] {display:flex;flex-direction:column;gap:3px;color:var(--text-dimmer);font-size:9.5px;max-height:88px;overflow:auto;}
 .cmap-readout [data-map-people] b {color:var(--text-dim);font-size:9px;text-transform:uppercase;letter-spacing:.07em;}.cmap-readout [data-map-people] strong {font-size:9.5px;}
 .cmap-legend {display:flex;flex-wrap:wrap;gap:7px 15px;margin:0 10px 18px;color:var(--text-dimmer);font-size:9.5px;}
-/* Startup scene. Colour is liability_taken on every surface of this tab —
-   the belief lives on that axis, so the palette has to answer it at a glance.
-   liab-0 unmapped / 1 none / 2 warranty / 3 rework credit / 4 part guarantee /
-   5 owns the outcome. Ramped slate -> amber -> emerald: carrying nothing reads
-   cold, carrying the outcome reads warm. */
-.cmap-point.liab-0 .cmap-core,.cmap-dot.liab-0 {fill:#64748b;background:#64748b;}
-.cmap-point.liab-1 .cmap-core,.cmap-dot.liab-1 {fill:#94a3b8;background:#94a3b8;}
-.cmap-point.liab-2 .cmap-core,.cmap-dot.liab-2 {fill:#a78bfa;background:#a78bfa;}
-.cmap-point.liab-3 .cmap-core,.cmap-dot.liab-3 {fill:#38bdf8;background:#38bdf8;}
-.cmap-point.liab-4 .cmap-core,.cmap-dot.liab-4 {fill:#f59e0b;background:#f59e0b;}
-.cmap-point.liab-5 .cmap-core,.cmap-dot.liab-5 {fill:#10b981;background:#10b981;}
-.cmap-readout [data-map-state].liab-0 {color:var(--text-dimmer)}
-.cmap-readout [data-map-state].liab-1 {color:#94a3b8}
-.cmap-readout [data-map-state].liab-2 {color:#a78bfa}
-.cmap-readout [data-map-state].liab-3 {color:#38bdf8}
-.cmap-readout [data-map-state].liab-4 {color:#d97706}
-.cmap-readout [data-map-state].liab-5 {color:#10b981}
+/* Vendor scene. Colour is whichever field the registry declares as the map's
+   `colour` axis, on every surface of this tab. band-0 is unmapped; band-1..5
+   follow the declared value order. Ramped slate -> amber -> emerald: the first
+   declared value reads cold, the last reads warm, so declare them in the order
+   that matters. */
+.cmap-point.band-0 .cmap-core,.cmap-dot.band-0 {fill:#64748b;background:#64748b;}
+.cmap-point.band-1 .cmap-core,.cmap-dot.band-1 {fill:#94a3b8;background:#94a3b8;}
+.cmap-point.band-2 .cmap-core,.cmap-dot.band-2 {fill:#a78bfa;background:#a78bfa;}
+.cmap-point.band-3 .cmap-core,.cmap-dot.band-3 {fill:#38bdf8;background:#38bdf8;}
+.cmap-point.band-4 .cmap-core,.cmap-dot.band-4 {fill:#f59e0b;background:#f59e0b;}
+.cmap-point.band-5 .cmap-core,.cmap-dot.band-5 {fill:#10b981;background:#10b981;}
+.cmap-readout [data-map-state].band-0 {color:var(--text-dimmer)}
+.cmap-readout [data-map-state].band-1 {color:#94a3b8}
+.cmap-readout [data-map-state].band-2 {color:#a78bfa}
+.cmap-readout [data-map-state].band-3 {color:#38bdf8}
+.cmap-readout [data-map-state].band-4 {color:#d97706}
+.cmap-readout [data-map-state].band-5 {color:#10b981}
 .smap-claim {border:1px solid var(--border);border-left:3px solid var(--accent);border-radius:var(--r-md);
   background:var(--surface-2);padding:13px 16px;margin:0 0 16px;}
 .smap-claim b {display:block;font-size:9px;font-weight:800;letter-spacing:.08em;text-transform:uppercase;
@@ -2667,12 +2667,12 @@ COMPANIES_CSS = """
 .smap-card-sub {color:var(--text-dimmer);font-size:9.5px;margin-top:2px;}
 .smap-liab {font-size:8.5px;font-weight:800;letter-spacing:.06em;text-transform:uppercase;
   border-radius:999px;padding:3px 8px;white-space:nowrap;flex-shrink:0;}
-.smap-liab.liab-0 {color:#64748b;border:1px solid rgba(100,116,139,.45);}
-.smap-liab.liab-1 {color:#94a3b8;border:1px solid rgba(148,163,184,.45);}
-.smap-liab.liab-2 {color:#a78bfa;border:1px solid rgba(167,139,250,.45);}
-.smap-liab.liab-3 {color:#38bdf8;border:1px solid rgba(56,189,248,.45);}
-.smap-liab.liab-4 {color:#d97706;border:1px solid rgba(245,158,11,.5);}
-.smap-liab.liab-5 {color:#10b981;border:1px solid rgba(16,185,129,.5);}
+.smap-liab.band-0 {color:#64748b;border:1px solid rgba(100,116,139,.45);}
+.smap-liab.band-1 {color:#94a3b8;border:1px solid rgba(148,163,184,.45);}
+.smap-liab.band-2 {color:#a78bfa;border:1px solid rgba(167,139,250,.45);}
+.smap-liab.band-3 {color:#38bdf8;border:1px solid rgba(56,189,248,.45);}
+.smap-liab.band-4 {color:#d97706;border:1px solid rgba(245,158,11,.5);}
+.smap-liab.band-5 {color:#10b981;border:1px solid rgba(16,185,129,.5);}
 .smap-work {margin:0;font-size:11.5px;line-height:1.6;color:var(--text-dim);}
 .smap-meta {display:flex;flex-wrap:wrap;gap:5px;}
 .smap-meta span {font-size:9px;color:var(--text-dimmer);background:var(--surface-2);
@@ -2877,66 +2877,25 @@ def _contact_access(contacts: list[dict]) -> tuple[int, str]:
 # Every coordinate below reads a DECLARED field on the company entry. Nothing is
 # inferred from prose and nothing is jittered: a company not yet mapped on an
 # axis renders in that axis's explicit "unmapped" lane, never at the low end of a
-# real scale. Axis vocabularies are per-idea and declared in the frontmatter of
-# `outreach/companies.md` (`map_vocabularies:`) — never here, never in schemas/.
-
-_MAP_AXES_FALLBACK = {
-    "chain_position": ["oem", "tier1", "tier2", "tier3"],
-    "proveout_exposure": ["none", "low", "medium", "high"],
-    "integration": ["software_only", "software_plus_service", "equipment",
-                    "operates_machines", "owns_factory"],
-    "job_covered": ["quoting", "cam_programming", "program_verification",
-                    "setup_workholding", "machine_execution", "inspection_qa",
-                    "scheduling_ops"],
-    "sells_to": ["shop", "oem_buyer", "machine_builder", "none_yet"],
-    "liability_taken": ["none", "warranty", "rework_credit", "part_guarantee",
-                        "owns_outcome"],
-    "touches_proveout": ["none", "adjacent", "direct"],
-    "stage": ["pre_seed", "seed", "series_a", "series_b", "series_c",
-              "series_d_plus", "public", "incumbent_subsidiary"],
-}
-
-_MAP_AXIS_LABEL = {
-    "chain_position": {"oem": "OEM", "tier1": "Tier 1", "tier2": "Tier 2",
-                       "tier3": "Tier 3"},
-    "proveout_exposure": {"none": "none stated", "low": "low", "medium": "medium",
-                          "high": "high"},
-    "integration": {"software_only": "software only",
-                    "software_plus_service": "software + service",
-                    "equipment": "equipment", "operates_machines": "operates machines",
-                    "owns_factory": "owns factory"},
-    "job_covered": {"quoting": "quoting", "cam_programming": "CAM programming",
-                    "program_verification": "program verification",
-                    "setup_workholding": "setup / workholding",
-                    "machine_execution": "machine execution",
-                    "inspection_qa": "inspection / QA",
-                    "scheduling_ops": "scheduling / ops"},
-    "sells_to": {"shop": "sells to the shop", "oem_buyer": "sells to the OEM buyer",
-                 "machine_builder": "sells to machine builders",
-                 "none_yet": "no customers yet"},
-    "liability_taken": {"none": "carries none",
-                        "warranty": "software warranty",
-                        "rework_credit": "rework credit",
-                        "part_guarantee": "guarantees the part",
-                        "owns_outcome": "owns the outcome"},
-    "touches_proveout": {"none": "does not touch prove-out",
-                         "adjacent": "adjacent to prove-out",
-                         "direct": "in the prove-out job"},
-    "stage": {"pre_seed": "pre-seed", "seed": "seed", "series_a": "Series A",
-              "series_b": "Series B", "series_c": "Series C",
-              "series_d_plus": "Series D+", "public": "public",
-              "incumbent_subsidiary": "incumbent subsidiary"},
-}
-
-# Revenue per employee. The band, not the number, is what gets plotted: for a
-# private machine shop the underlying figure is usually an estimate, and a
-# continuous axis would render that estimate as a measurement.
-_RPE_BANDS = [
-    (120_000, "under $120k / head"),
-    (200_000, "$120k–200k / head"),
-    (300_000, "$200k–300k / head"),
-    (float("inf"), "over $300k / head"),
-]
+# real scale.
+#
+# WHICH fields are the axes is itself declared, in the frontmatter of
+# `outreach/companies.md`:
+#
+#   map_axes:
+#     client:  {x: <field>, y: <field>, z: <field, optional>}
+#     startup: {x: <field>, y: <field>, colour: <field>, sells_to: <field, optional>}
+#   map_vocabularies:  {<field>: [ordered values]}        # a lane per value
+#   map_axis_labels:   {<field>: "Axis title"}            # optional
+#   map_value_labels:  {<field>: {<value>: "label"}}      # optional
+#
+# This generator therefore holds no market vocabulary at all. It used to: the axes
+# of the previous idea (supply-chain position, prove-out exposure, liability taken)
+# were hard-coded here with their labels and a claim panel written for that belief,
+# and every later idea would have had to be described in a machining vocabulary.
+# ARCHITECTURE.md says `tier_side` is the only market vocabulary global code may
+# route on; this block now honours that. A registry that declares no axes renders
+# an empty state naming what to declare.
 
 _UNMAPPED = "not mapped"
 
@@ -2945,21 +2904,54 @@ _UNMAPPED = "not mapped"
 # point: absence has to be as legible as a value, and it must not be clipped.
 _GUTTER = 0.16
 
+# Refreshed from the frontmatter on every build by _map_vocab(). Module-level so
+# _labelled() keeps its two-argument shape at every call site.
+_AXIS_LABELS: dict = {}
+_AXIS_TITLES: dict = {}
+
+
+def _map_axes(fm: dict) -> dict:
+    """The declared axis fields per map side. Missing entries stay empty strings."""
+    out = {"client": {"x": "", "y": "", "z": ""},
+           "startup": {"x": "", "y": "", "colour": "", "sells_to": "sells_to",
+                       "stage": "stage"}}
+    declared = fm.get("map_axes") if isinstance(fm, dict) else None
+    if isinstance(declared, dict):
+        for side in out:
+            spec = declared.get(side)
+            if isinstance(spec, dict):
+                for k, v in spec.items():
+                    out[side][str(k)] = str(v or "")
+    return out
+
 
 def _map_vocab(fm: dict) -> dict:
-    """Declared axis vocabularies, falling back to the shape this renderer expects.
+    """Declared axis vocabularies, plus the labels the renderer will use.
 
     A value present on an entry but absent from the declared list is NOT silently
     placed: it lands in the unmapped lane and is counted in the coverage KPI, so a
     typo shows up as missing data rather than as a new position on the map.
     """
+    global _AXIS_LABELS, _AXIS_TITLES
+    vocab: dict = {}
     declared = fm.get("map_vocabularies") if isinstance(fm, dict) else None
-    vocab = dict(_MAP_AXES_FALLBACK)
     if isinstance(declared, dict):
         for axis, values in declared.items():
             if isinstance(values, list) and values:
-                vocab[axis] = [str(v) for v in values]
+                vocab[str(axis)] = [str(v) for v in values]
+    labels = fm.get("map_value_labels") if isinstance(fm, dict) else None
+    _AXIS_LABELS = {
+        str(axis): {str(k): str(v) for k, v in vals.items()}
+        for axis, vals in (labels or {}).items() if isinstance(vals, dict)
+    } if isinstance(labels, dict) else {}
+    titles = fm.get("map_axis_labels") if isinstance(fm, dict) else None
+    _AXIS_TITLES = ({str(k): str(v) for k, v in titles.items()}
+                    if isinstance(titles, dict) else {})
     return vocab
+
+
+def _axis_title(axis: str) -> str:
+    return _AXIS_TITLES.get(axis) or str(axis or "").replace("_", " ")
 
 
 def _axis_slot(value, ordered: list[str]) -> tuple[int, str, float]:
@@ -2977,7 +2969,16 @@ def _axis_slot(value, ordered: list[str]) -> tuple[int, str, float]:
 
 
 def _labelled(axis: str, value: str) -> str:
-    return _MAP_AXIS_LABEL.get(axis, {}).get(value, value)
+    raw = str(value or "")
+    return _AXIS_LABELS.get(axis, {}).get(raw) or raw.replace("_", " ")
+
+
+def _slot(c: dict, axis: str, vocab: dict) -> tuple[int, str, float]:
+    """(code, human label, coordinate) for one entry on one declared axis."""
+    if not axis:
+        return 0, _UNMAPPED, 0.0
+    code, raw, at = _axis_slot(c.get(axis), vocab.get(axis, []))
+    return code, (_labelled(axis, raw) if code else _UNMAPPED), at
 
 
 def _company_headcount(c: dict) -> tuple[int | None, str]:
@@ -2986,32 +2987,10 @@ def _company_headcount(c: dict) -> tuple[int | None, str]:
     if isinstance(raw, (int, float)) and raw > 0:
         return int(raw), str(c.get("headcount_source") or "unstated")
     if isinstance(raw, str):
-        nums = [int(n.replace(",", "")) for n in re.findall(r"\d[\d,]*", raw)]
-        if nums:
-            return max(nums), str(c.get("headcount_source") or "unstated")
+        digits = re.sub(r"[^0-9]", "", raw.split("-")[0])
+        if digits:
+            return int(digits), str(c.get("headcount_source") or "unstated")
     return None, ""
-
-
-def _revenue_per_head(c: dict) -> tuple[int, str, float, str]:
-    """Revenue per employee, banded. The Z axis of the client map.
-
-    Both inputs must be declared. Revenue alone or headcount alone yields nothing:
-    a half-known ratio is a guess wearing a number's clothes.
-    """
-    head, _ = _company_headcount(c)
-    rev = c.get("revenue_usd")
-    if isinstance(rev, str):
-        nums = [int(n.replace(",", "")) for n in re.findall(r"\d[\d,]*", rev)]
-        rev = max(nums) if nums else None
-    source = str(c.get("revenue_source") or "unknown")
-    if not head or not isinstance(rev, (int, float)) or rev <= 0:
-        return 0, _UNMAPPED, -0.12, source
-    rpe = rev / head
-    for i, (ceiling, label) in enumerate(_RPE_BANDS):
-        if rpe < ceiling:
-            span = max(len(_RPE_BANDS) - 1, 1)
-            return i + 1, f"{label} ({source})", _GUTTER + (i / span) * (1 - _GUTTER), source
-    return 0, _UNMAPPED, 0.0, source
 
 
 def _raised(c: dict) -> tuple[int | None, str, str]:
@@ -3036,34 +3015,32 @@ def _raised(c: dict) -> tuple[int | None, str, str]:
     return usd, f"{label} ({source})", source
 
 
-def _startup_fields(c: dict, vocab: dict) -> dict:
+def _startup_fields(c: dict, vocab: dict, axes: dict) -> dict:
     """The startup map's own columns, all read from declared fields.
 
-    `liability_taken` is the belief's axis and therefore the colour: the claim
-    under test is that the prove-out job is served only by companies carrying no
-    first-run risk, so an unfilled field must read as unknown rather than as none.
+    The colour axis is whichever field the registry declared as `colour`: it is
+    the one question a glance at the map has to answer, so an unfilled field must
+    read as unknown rather than as the first value.
     """
-    liab_code, liab_raw, _ = _axis_slot(c.get("liability_taken"), vocab["liability_taken"])
-    prov_code, prov_raw, _ = _axis_slot(c.get("touches_proveout"), vocab["touches_proveout"])
-    stage_code, stage_raw, _ = _axis_slot(c.get("stage"), vocab["stage"])
+    colour_axis = axes.get("colour") or ""
+    col_code, col_label, _ = _slot(c, colour_axis, vocab)
+    stage_code, stage_label, _ = _slot(c, axes.get("stage") or "stage", vocab)
     usd, raised_label, funding_source = _raised(c)
     return {
-        "liabCode": liab_code,
-        "liabLabel": _labelled("liability_taken", liab_raw) if liab_code else _UNMAPPED,
-        "proveoutCode": prov_code,
-        "proveoutLabel": _labelled("touches_proveout", prov_raw) if prov_code else _UNMAPPED,
+        "colourCode": col_code,
+        "colourLabel": col_label,
         "stageCode": stage_code,
-        "stageLabel": _labelled("stage", stage_raw) if stage_code else _UNMAPPED,
+        "stageLabel": stage_label,
         "raised": usd,
         "raisedLabel": raised_label,
         "fundingSource": funding_source,
         "founded": str(c.get("founded") or ""),
         "fundingNotes": str(c.get("funding_notes") or ""),
-        "liabNotes": str(c.get("liability_notes") or ""),
-        "relevance": _co_suffix(c, "_relevance") or "",
+        "colourNotes": str(c.get(f"{colour_axis}_notes") or "") if colour_axis else "",
+        "relevance": str(c.get("why_it_matters") or _co_suffix(c, "_relevance") or ""),
         "conflict": str(c.get("identity_conflict") or ""),
         "sourceUrl": str(c.get("source_url") or ""),
-        "sources": str(c.get("sources") or ""),
+        "sources": str(c.get("sources") or c.get("sources_note") or ""),
         "entryStatus": str(c.get("status") or ""),
         "services": [str(s) for s in (c.get("services") or []) if s],
         "headcountNote": str(c.get("headcount_note") or ""),
@@ -3086,6 +3063,7 @@ def _map_side(c: dict) -> str:
 def _company_map_entities(fm: dict, companies: list[dict],
                           contacts: list[dict]) -> list[dict]:
     vocab = _map_vocab(fm)
+    axes = _map_axes(fm)
     records = [dict(c) for c in companies]
     aliases: dict[str, int] = {}
     for i, c in enumerate(records):
@@ -3127,48 +3105,34 @@ def _company_map_entities(fm: dict, companies: list[dict],
         side = _map_side(c)
         if side == "none":
             continue
+        spec = axes[side]
         barrier, access_label = _contact_access(people)
         head, head_source = _company_headcount(c)
         name = str(c.get("_heading") or c.get("company") or c.get("canonical_name") or "?")
         missing: list[str] = []
 
+        x_code, x_label, x = _slot(c, spec.get("x", ""), vocab)
+        y_code, y_label, y = _slot(c, spec.get("y", ""), vocab)
+        if spec.get("x") and not x_code:
+            missing.append(_axis_title(spec["x"]))
+        if spec.get("y") and not y_code:
+            missing.append(_axis_title(spec["y"]))
         startup: dict = {}
+        sells_label = ""
         if side == "client":
-            x_code, _x_raw, x = _axis_slot(c.get("chain_position"), vocab["chain_position"])
-            x_label = (_labelled("chain_position", str(c.get("chain_position") or ""))
-                       if x_code else _UNMAPPED)
-            y_code, _y_raw, y = _axis_slot(c.get("proveout_exposure"), vocab["proveout_exposure"])
-            y_label = (_labelled("proveout_exposure", str(c.get("proveout_exposure") or ""))
-                       if y_code else _UNMAPPED)
-            z_code, z_label, z, _rev_source = _revenue_per_head(c)
+            z_code, z_label, z = _slot(c, spec.get("z", ""), vocab)
+            if spec.get("z") and not z_code:
+                missing.append(_axis_title(spec["z"]))
             colour = f"pen-{barrier}"
-            if not x_code:
-                missing.append("chain position")
-            if not y_code:
-                missing.append("prove-out exposure")
-            if not z_code:
-                missing.append("revenue per head")
         else:
-            x_code, _x_raw, x = _axis_slot(c.get("job_covered"), vocab["job_covered"])
-            x_label = (_labelled("job_covered", str(c.get("job_covered") or ""))
-                       if x_code else _UNMAPPED)
-            y_code, _y_raw, y = _axis_slot(c.get("integration"), vocab["integration"])
-            y_label = (_labelled("integration", str(c.get("integration") or ""))
-                       if y_code else _UNMAPPED)
-            sells_code, _s_raw, _s = _axis_slot(c.get("sells_to"), vocab["sells_to"])
             z_code, z_label, z = 0, "", 0.0
-            startup = _startup_fields(c, vocab)
-            # Colour is liability, not customer: the belief lives on that axis, so
-            # it is the one thing a glance at the map has to answer.
-            colour = f"liab-{startup['liabCode']}"
-            if not x_code:
-                missing.append("job covered")
-            if not y_code:
-                missing.append("integration")
-            if not sells_code:
-                missing.append("who they sell to")
-            if not startup["liabCode"]:
-                missing.append("liability taken")
+            sells_code, sells_label, _ = _slot(c, spec.get("sells_to", ""), vocab)
+            startup = _startup_fields(c, vocab, spec)
+            colour = f"band-{startup['colourCode']}"
+            if spec.get("sells_to") and not sells_code:
+                missing.append(_axis_title(spec["sells_to"]))
+            if spec.get("colour") and not startup["colourCode"]:
+                missing.append(_axis_title(spec["colour"]))
             if not startup["stageCode"]:
                 missing.append("stage")
         if head is None:
@@ -3181,12 +3145,12 @@ def _company_map_entities(fm: dict, companies: list[dict],
             "z": z, "zCode": z_code, "zLabel": z_label,
             "colour": colour, "barrier": barrier, "accessLabel": access_label,
             "headcount": head, "headcountSource": head_source,
-            "sellsTo": _labelled("sells_to", str(c.get("sells_to") or "")) if side == "startup" else "",
+            "sellsTo": sells_label if side == "startup" and sells_label != _UNMAPPED else "",
             "country": str(c.get("country") or ""),
-            "sector": str(c.get("sector") or ""),
+            "sector": str(c.get("sector") or c.get("industry") or ""),
             "tier": str(c.get("tier") or ""),
             "missing": missing,
-            "description": str(c.get("makes_or_does") or c.get("hmlv_relevance") or ""),
+            "description": str(c.get("makes_or_does") or _co_suffix(c, "_relevance") or ""),
             "contactOnly": c.get("mapping_source") == "contact_only",
             **(startup if side == "startup" else {}),
             "contacts": [{
@@ -3200,17 +3164,35 @@ def _company_map_entities(fm: dict, companies: list[dict],
     return out
 
 
+def _axes_missing_note(side: str, spec: dict, needed: tuple) -> str:
+    absent = [k for k in needed if not spec.get(k)]
+    if not absent:
+        return ""
+    return ('<div class="co-empty"><p>The <b>%s</b> map has no axes declared.</p>'
+            '<p>Add <code>map_axes.%s</code> with <code>%s</code> to the frontmatter of '
+            '<code>outreach/companies.md</code>, list each field&rsquo;s values under '
+            '<code>map_vocabularies</code>, and the map forms as companies go in.</p></div>'
+            % (escape(side), escape(side), escape(", ".join(absent))))
+
+
 def render_company_space_map(fm: dict, companies: list[dict],
                              contacts: list[dict]) -> str:
+    spec = _map_axes(fm)["client"]
+    note = _axes_missing_note("client", spec, ("x", "y"))
+    if note:
+        return note
     entities = _company_map_entities(fm, companies, contacts)
     data_json = json.dumps(entities, ensure_ascii=True).replace("</", "<\\/")
+    meta = {"x": _axis_title(spec["x"]), "y": _axis_title(spec["y"]),
+            "z": _axis_title(spec["z"]) if spec.get("z") else ""}
+    meta_json = json.dumps(meta, ensure_ascii=True).replace("</", "<\\/")
     template = r'''
 <section class="cmap" id="company-space-map" aria-labelledby="cmap-title">
   <div class="cmap-head">
     <div>
       <div class="co-eyebrow">Client space map</div>
       <h2 id="cmap-title">Where the demand side sits</h2>
-      <p>Clients by supply-chain position and prove-out exposure, with revenue per employee as depth and colour carrying how far into the company we have actually got. Every position reads a declared field &mdash; unmapped companies stand in their own lane rather than being guessed onto the scale. The supply side moved to its own <strong>Startups</strong> tab on 2026-08-27: two populations that share no axis do not belong behind one toggle.</p>
+      <p>Clients on the two axes the registry declares, with an optional third as depth and colour carrying how far into the company we have actually got. Every position reads a declared field &mdash; unmapped companies stand in their own lane rather than being guessed onto the scale. The supply side has its own <strong>Startups</strong> tab: two populations that share no axis do not belong behind one toggle.</p>
     </div>
     <div class="cmap-controls">
       <div class="cmap-lenses" role="group" aria-label="Dimensions" data-map-dimgroup>
@@ -3226,7 +3208,7 @@ def render_company_space_map(fm: dict, companies: list[dict],
   <div class="cmap-stage">
     <svg viewBox="0 0 1100 620" role="img" aria-labelledby="cmap-svg-title cmap-svg-desc">
       <title id="cmap-svg-title">Company space map</title>
-      <desc id="cmap-svg-desc">Clients positioned by supply-chain position, prove-out exposure and revenue per employee.</desc>
+      <desc id="cmap-svg-desc">Clients positioned on the registry's declared axes.</desc>
       <g data-map-layer="grid"></g><g data-map-layer="points"></g><g data-map-layer="labels"></g>
     </svg>
   </div>
@@ -3243,7 +3225,9 @@ def render_company_space_map(fm: dict, companies: list[dict],
   const root = document.getElementById('company-space-map');
   if (!root || root.dataset.ready) return;
   root.dataset.ready = 'true';
-  const all = __DATA__;
+  const all = __DATA__.filter(c => c.map === 'client');
+  const meta = __META__;
+  const hasZ = !!meta.z;
   const ns = 'http://www.w3.org/2000/svg';
   const svg = root.querySelector('svg');
   const grid = root.querySelector('[data-map-layer="grid"]');
@@ -3254,22 +3238,12 @@ def render_company_space_map(fm: dict, companies: list[dict],
   const rotwrap = root.querySelector('[data-map-rotwrap]');
   const dimGroup = root.querySelector('[data-map-dimgroup]');
   const matrix = root.querySelector('[data-map-matrix]');
-  // 2D is the default view. The client map carries four facts without depth
-  // (two axes, dot size, colour); 3D lifts revenue per head out of colour-free
-  // space, and collapsing back never loses penetration, which lives in colour.
-  const lens = 'client';  // startups render in their own tab, not behind a toggle
   let dim = '2d', selected = null;
   let yaw = Number(rotation.value) * Math.PI / 180, dragging = false, lastX = 0;
   const GUTTER = 0.16;  // matches _GUTTER in the generator
-  const meta = {
-    client: {x:'Supply-chain position', y:'Prove-out exposure', z:'Revenue per employee'},
-    startup:{x:'Job covered', y:'Vertical integration: licence to owned factory', z:''}
-  };
   const penLegend='<span><i class="cmap-dot pen-1"></i>interview completed</span><span><i class="cmap-dot pen-2"></i>active conversation</span><span><i class="cmap-dot pen-3"></i>connected person</span><span><i class="cmap-dot pen-4"></i>outreach path</span><span><i class="cmap-dot pen-5"></i>no mapped person</span><span><i class="cmap-ring"></i>contact-only, registry enrichment pending</span><span><i class="cmap-hollow"></i>headcount unknown</span>';
-  const sellsLegend='<span><i class="cmap-dot sells-1"></i>sells to the shop</span><span><i class="cmap-dot sells-2"></i>sells to the OEM buyer</span><span><i class="cmap-dot sells-3"></i>sells to machine builders</span><span><i class="cmap-dot sells-4"></i>no customers yet</span><span><i class="cmap-dot sells-0"></i>not mapped</span><span><i class="cmap-hollow"></i>headcount unknown</span>';
   function node(tag, attrs={}) { const n=document.createElementNS(ns,tag); Object.entries(attrs).forEach(([k,v])=>n.setAttribute(k,String(v))); return n; }
-  function current() { return all.filter(c=>c.map===lens); }
-  function is3d() { return dim==='3d' && lens==='client'; }
+  function is3d() { return dim==='3d' && hasZ; }
   function project(x,y,z) {
     if (!is3d()) return {x:130+x*840,y:540-y*450,depth:0,scale:1};
     const px=(x-.5)*2, py=(y-.5)*2, pz=z*1.76;
@@ -3287,9 +3261,9 @@ def render_company_space_map(fm: dict, companies: list[dict],
       const corners=[[0,0,0],[1,0,0],[1,1,0],[0,1,0],[0,0,1],[1,0,1],[1,1,1],[0,1,1]];
       [[0,1],[1,2],[2,3],[3,0],[4,5],[5,6],[6,7],[7,4],[0,4],[1,5],[2,6],[3,7]].forEach(e=>line(corners[e[0]],corners[e[1]]));
       [.25,.5,.75].forEach(n=>{line([n,0,0],[n,1,0],'cmap-gridline');line([0,n,0],[1,n,0],'cmap-gridline');line([0,0,n],[1,0,n],'cmap-gridline');});
-      textAt(project(.5,-.08,0),meta[lens].x.toUpperCase(),'cmap-axis');
-      textAt(project(-.12,.5,0),meta[lens].y.toUpperCase(),'cmap-axis');
-      textAt(project(0,0,1.10),meta[lens].z.toUpperCase(),'cmap-axis','start',-4,-3);
+      textAt(project(.5,-.08,0),meta.x.toUpperCase(),'cmap-axis');
+      textAt(project(-.12,.5,0),meta.y.toUpperCase(),'cmap-axis');
+      textAt(project(0,0,1.10),meta.z.toUpperCase(),'cmap-axis','start',-4,-3);
       return;
     }
     line([0,0,0],[1,0,0],'cmap-gridline'); line([0,0,0],[0,1,0],'cmap-gridline');
@@ -3297,13 +3271,13 @@ def render_company_space_map(fm: dict, companies: list[dict],
     line([GUTTER,0,0],[GUTTER,1,0],'cmap-fence'); line([0,GUTTER,0],[1,GUTTER,0],'cmap-fence');
     lanesFor('x').forEach(l=>textAt(project(l.at,-.05,0),l.label.toUpperCase(),'cmap-axis'));
     lanesFor('y').forEach(l=>textAt(project(-.012,l.at,0),l.label.toUpperCase(),'cmap-axis','end',-6,3));
-    textAt(project(.5,-.13,0),meta[lens].x.toUpperCase(),'cmap-axis-title');
+    textAt(project(.5,-.13,0),meta.x.toUpperCase(),'cmap-axis-title');
   }
   // Lanes come from the data, so an axis grows when the registry declares a new
   // value — the map forms as companies go in, rather than against a fixed enum.
   function lanesFor(axis) {
     const seen=new Map();
-    current().forEach(c=>{const at=axis==='x'?c.x:c.y, label=axis==='x'?c.xLabel:c.yLabel; if(!seen.has(label)) seen.set(label,at);});
+    all.forEach(c=>{const at=axis==='x'?c.x:c.y, label=axis==='x'?c.xLabel:c.yLabel; if(!seen.has(label)) seen.set(label,at);});
     return [...seen].map(([label,at])=>({label,at})).sort((a,b)=>a.at-b.at);
   }
   function esc(v){return String(v||'').replace(/[&<>"']/g,ch=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[ch]));}
@@ -3312,8 +3286,6 @@ def render_company_space_map(fm: dict, companies: list[dict],
     return base+(c.missing.length?(base?' | ':'')+'Missing: '+c.missing.join(', '):'');
   }
   function show(c) {
-    // An empty lens must CLEAR the stage. Returning early here left the previous
-    // lens's dots and readout on screen, which read as "these are startups".
     if (!c) {
       selected=null; select.value='';
       root.querySelector('[data-map-name]').textContent='Nothing on this map yet';
@@ -3327,13 +3299,14 @@ def render_company_space_map(fm: dict, companies: list[dict],
     selected=c; select.value=c.name;
     root.querySelector('[data-map-name]').textContent=c.name;
     const state=root.querySelector('[data-map-state]');
-    state.textContent=lens==='client'?c.accessLabel:(c.sellsTo||'not mapped');
+    state.textContent=c.accessLabel;
     state.className=c.colour;
     root.querySelector('[data-map-detail]').textContent=detail(c);
     const head=c.headcount?esc(c.headcount)+' people'+(c.headcountSource?' ('+esc(c.headcountSource)+')':''):'headcount unknown';
-    root.querySelector('[data-map-facts]').innerHTML=lens==='client'
-      ?'<span><b>Chain</b>'+esc(c.xLabel)+'</span><span><b>Prove-out exposure</b>'+esc(c.yLabel)+'</span><span><b>Revenue / head</b>'+esc(c.zLabel)+'</span><span><b>Size</b>'+head+'</span><span><b>Penetration</b>'+esc(c.accessLabel)+'</span>'
-      :'<span><b>Job covered</b>'+esc(c.xLabel)+'</span><span><b>Integration</b>'+esc(c.yLabel)+'</span><span><b>Sells to</b>'+esc(c.sellsTo||'not mapped')+'</span><span><b>Size</b>'+head+'</span>';
+    root.querySelector('[data-map-facts]').innerHTML=
+      '<span><b>'+esc(meta.x)+'</b>'+esc(c.xLabel)+'</span><span><b>'+esc(meta.y)+'</b>'+esc(c.yLabel)+'</span>'
+      +(hasZ?'<span><b>'+esc(meta.z)+'</b>'+esc(c.zLabel)+'</span>':'')
+      +'<span><b>Size</b>'+head+'</span><span><b>Penetration</b>'+esc(c.accessLabel)+'</span>';
     root.querySelector('[data-map-output]').innerHTML='<b>What they make or do</b><span>'+esc(c.description||'Not mapped yet.')+'</span>';
     const people=root.querySelector('[data-map-people]');
     people.innerHTML=c.contacts.length?'<b>People mapped</b>'+c.contacts.map(p=>'<span><strong>'+esc(p.name)+'</strong>'+esc(p.role?' | '+p.role:'')+' | '+esc(p.status)+(p.interviewed?' | interviewed':'')+'</span>').join(''):'<b>No people mapped</b><span>No contact card matches this company yet.</span>';
@@ -3341,8 +3314,7 @@ def render_company_space_map(fm: dict, companies: list[dict],
   }
   // Categorical axes put many companies in one cell, so each cell is packed as a
   // deterministic grid ordered by name. This is a LAYOUT within a cell, not a
-  // coordinate: every dot in a cell shares the same declared position, and the
-  // packing is stable across rebuilds so a dot does not wander between renders.
+  // coordinate: every dot in a cell shares the same declared position.
   function packCells(rows) {
     const cells=new Map();
     rows.forEach(c=>{const k=c.xLabel+'|'+c.yLabel+'|'+c.zLabel; if(!cells.has(k))cells.set(k,[]); cells.get(k).push(c);});
@@ -3356,7 +3328,7 @@ def render_company_space_map(fm: dict, companies: list[dict],
   }
   function draw() {
     drawGrid(); points.replaceChildren();
-    const rows=current().slice().sort((a,b)=>project(a.x,a.y,a.z).depth-project(b.x,b.y,b.z).depth);
+    const rows=all.slice().sort((a,b)=>project(a.x,a.y,a.z).depth-project(b.x,b.y,b.z).depth);
     const pack=packCells(rows);
     rows.forEach(c=>{
       const proj=project(c.x,c.y,c.z), off=pack.get(c)||{dx:0,dy:0};
@@ -3365,43 +3337,42 @@ def render_company_space_map(fm: dict, companies: list[dict],
       if(c.contactOnly) g.appendChild(node('circle',{cx:p.x,cy:p.y,r:radius(c,p.scale)+5,class:'cmap-contact-ring'}));
       g.appendChild(node('circle',{cx:p.x,cy:p.y,r:radius(c,p.scale),class:'cmap-core'}));
       g.addEventListener('click',()=>show(c)); points.appendChild(g);
-      if(selected===c||(lens==='client'&&c.barrier<=2)){const t=node('text',{x:p.x+radius(c,p.scale)+4,y:p.y-7,class:'cmap-point-label'+(selected===c?' active':'')});t.textContent=c.name;labels.appendChild(t);}
+      if(selected===c||c.barrier<=2){const t=node('text',{x:p.x+radius(c,p.scale)+4,y:p.y-7,class:'cmap-point-label'+(selected===c?' active':'')});t.textContent=c.name;labels.appendChild(t);}
     });
   }
   function renderMatrix(){
-    const rows=current();
-    const laneOf=c=>c.xLabel, colOf=c=>lens==='client'?c.accessLabel:c.yLabel;
+    const rows=all;
+    const laneOf=c=>c.xLabel, colOf=c=>c.yLabel;
     const lanes=[...new Set(rows.slice().sort((a,b)=>a.x-b.x).map(laneOf))];
-    const cols=[...new Set(rows.slice().sort((a,b)=>lens==='client'?a.barrier-b.barrier:a.y-b.y).map(colOf))];
-    let h='<table><thead><tr><th>'+esc(meta[lens].x)+'</th>'+cols.map(n=>'<th>'+esc(n)+'</th>').join('')+'</tr></thead><tbody>';
+    const cols=[...new Set(rows.slice().sort((a,b)=>a.y-b.y).map(colOf))];
+    let h='<table><thead><tr><th>'+esc(meta.x)+' \\ '+esc(meta.y)+'</th>'+cols.map(n=>'<th>'+esc(n)+'</th>').join('')+'</tr></thead><tbody>';
     lanes.forEach(l=>{h+='<tr><th>'+esc(l)+'</th>';cols.forEach(n=>{const cells=rows.filter(c=>laneOf(c)===l&&colOf(c)===n);h+='<td>'+cells.map(c=>'<button type="button" data-matrix-company="'+esc(c.name)+'">'+esc(c.name)+(c.contacts.length?' <b>'+c.contacts.length+'</b>':'')+'</button>').join('')+'</td>';});h+='</tr>';});
     matrix.innerHTML=h+'</tbody></table>';
     matrix.querySelectorAll('[data-matrix-company]').forEach(b=>b.addEventListener('click',()=>show(rows.find(c=>c.name===b.dataset.matrixCompany))));
   }
   function refresh(){
-    const rows=current();
+    const rows=all;
     selected=rows.find(c=>c===selected)||rows.slice().sort((a,b)=>a.barrier-b.barrier||b.contacts.length-a.contacts.length)[0];
     select.innerHTML=rows.slice().sort((a,b)=>a.name.localeCompare(b.name)).map(c=>'<option>'+esc(c.name)+'</option>').join('');
     const mapped=k=>rows.filter(c=>c[k]>0).length;
-    root.querySelector('[data-map-kpis]').innerHTML=lens==='client'
-      ?'<span><strong>'+rows.length+'</strong> clients</span><span><strong>'+mapped('xCode')+'</strong> chain position mapped</span><span><strong>'+mapped('yCode')+'</strong> exposure mapped</span><span><strong>'+mapped('zCode')+'</strong> revenue / head mapped</span><span><strong>'+rows.filter(c=>c.headcount).length+'</strong> headcount known</span><span><strong>'+rows.filter(c=>c.barrier<=2).length+'</strong> talked with</span>'
-      :'<span><strong>'+rows.length+'</strong> startups</span><span><strong>'+mapped('xCode')+'</strong> job mapped</span><span><strong>'+mapped('yCode')+'</strong> integration mapped</span><span><strong>'+rows.filter(c=>c.sellsTo).length+'</strong> customer mapped</span>';
-    const key=['<span><b>X</b>'+meta[lens].x+'</span>','<span><b>Y</b>'+meta[lens].y+'</span>'];
-    if(is3d()) key.push('<span><b>Z</b>'+meta[lens].z+'</span>');
+    root.querySelector('[data-map-kpis]').innerHTML=
+      '<span><strong>'+rows.length+'</strong> clients</span><span><strong>'+mapped('xCode')+'</strong> '+esc(meta.x)+' mapped</span><span><strong>'+mapped('yCode')+'</strong> '+esc(meta.y)+' mapped</span>'
+      +(hasZ?'<span><strong>'+mapped('zCode')+'</strong> '+esc(meta.z)+' mapped</span>':'')
+      +'<span><strong>'+rows.filter(c=>c.headcount).length+'</strong> headcount known</span><span><strong>'+rows.filter(c=>c.barrier<=2).length+'</strong> talked with</span>';
+    const key=['<span><b>X</b>'+esc(meta.x)+'</span>','<span><b>Y</b>'+esc(meta.y)+'</span>'];
+    if(is3d()) key.push('<span><b>Z</b>'+esc(meta.z)+'</span>');
     key.push('<span><b>Dot area</b>headcount</span>');
-    key.push('<span><b>Colour</b>'+(lens==='client'?'penetration &mdash; kept when 3D collapses to 2D':'who they sell to')+'</span>');
+    key.push('<span><b>Colour</b>penetration &mdash; kept when 3D collapses to 2D</span>');
     root.querySelector('[data-map-axis-key]').innerHTML=key.join('');
-    root.querySelector('[data-map-legend]').innerHTML=lens==='client'?penLegend:sellsLegend;
-    root.querySelector('[data-map-matrix-title]').textContent=lens==='client'?'Client penetration matrix':'Startup integration matrix';
-    root.querySelector('[data-map-matrix-note]').textContent=lens==='client'
-      ?'Every client appears once. Penetration records whether we have spoken; it is not a claim about buying intent.'
-      :'Every startup appears once, grouped by the job it covers and how far it integrates.';
-    dimGroup.style.display=lens==='client'?'':'none';
+    root.querySelector('[data-map-legend]').innerHTML=penLegend;
+    root.querySelector('[data-map-matrix-title]').textContent=meta.x+' by '+meta.y;
+    root.querySelector('[data-map-matrix-note]').textContent='Every client appears once. The number after a name is how many people we have mapped there; it is not a claim about buying intent.';
+    dimGroup.style.display=hasZ?'':'none';
     rotwrap.style.display=is3d()?'':'none';
     renderMatrix(); show(selected);
   }
   root.querySelectorAll('[data-map-dim]').forEach(b=>b.addEventListener('click',()=>{dim=b.dataset.mapDim;root.querySelectorAll('[data-map-dim]').forEach(x=>{const on=x===b;x.classList.toggle('active',on);x.setAttribute('aria-pressed',String(on));});refresh();}));
-  select.addEventListener('change',()=>show(current().find(c=>c.name===select.value)));
+  select.addEventListener('change',()=>show(all.find(c=>c.name===select.value)));
   rotation.addEventListener('input',()=>{yaw=Number(rotation.value)*Math.PI/180;draw();});
   svg.addEventListener('pointerdown',e=>{if(!is3d())return;dragging=true;lastX=e.clientX;svg.setPointerCapture(e.pointerId);svg.classList.add('dragging');});
   svg.addEventListener('pointermove',e=>{if(!dragging)return;yaw+=(e.clientX-lastX)*.009;lastX=e.clientX;rotation.value=String(Math.max(-105,Math.min(-20,yaw*180/Math.PI)));draw();});
@@ -3409,7 +3380,7 @@ def render_company_space_map(fm: dict, companies: list[dict],
   refresh();
 })();
 </script>'''
-    return template.replace("__DATA__", data_json)
+    return template.replace("__DATA__", data_json).replace("__META__", meta_json)
 
 
 def _slug_id(name: str) -> str:
@@ -3424,7 +3395,7 @@ def _usd_short(usd: int) -> str:
     return f"${usd / 1_000_000:.0f}M"
 
 
-def _startup_inspector(data_json: str) -> str:
+def _startup_inspector(data_json: str, meta_json: str) -> str:
     """One-company-at-a-time panel for the startup map.
 
     Driven by the dots, the matrix chips and its own prev/next. The stepper is
@@ -3449,6 +3420,7 @@ def _startup_inspector(data_json: str) -> str:
   if (!root || root.dataset.ready) return;
   root.dataset.ready = 'true';
   const all = __DATA__;
+  const meta = __META__;
   if (!all.length) return;
   const body = root.querySelector('[data-su-body]');
   const pick = root.querySelector('[data-su-pick]');
@@ -3474,13 +3446,13 @@ def _startup_inspector(data_json: str) -> str:
       ? ' · <a class="co-src" href="' + esc(c.url) + '" target="_blank" rel="noopener">site</a>'
       : '';
     const services = c.services.length
-      ? '<p class="smap-sub">Services they sell</p><ul class="smap-services">' +
+      ? '<p class="smap-sub">What they sell</p><ul class="smap-services">' +
         c.services.map(s => '<li>' + esc(s) + '</li>').join('') + '</ul>'
-      : '<p class="smap-sub">Services they sell</p><p class="smap-work">Not recorded yet.</p>';
+      : '';
     body.innerHTML =
       '<div class="smap-inspect-head"><div><h4>' + esc(c.name) + '</h4>' +
       '<div class="smap-card-sub">' + esc(c.sector) + site + '</div></div>' +
-      '<span class="smap-liab liab-' + c.liabCode + '">' + esc(c.liab) + '</span></div>' +
+      '<span class="smap-liab band-' + c.colourCode + '">' + esc(c.colour) + '</span></div>' +
       '<p class="smap-work">' + esc(c.desc || 'Not recorded.') + '</p>' +
       '<dl class="smap-facts">' +
         fact('stage', c.stage) +
@@ -3488,15 +3460,14 @@ def _startup_inspector(data_json: str) -> str:
         fact('headcount', c.headcount ? num(c.headcount) : '', c.headSource) +
         fact('founded', c.founded) +
         fact('country', c.country) +
-        fact('job covered', c.job) +
-        fact('integration', c.integration) +
-        fact('sells to', c.sells) +
-        fact('prove-out', c.proveout) +
-        fact('liability', c.liab) +
+        fact(meta.x, c.x) +
+        fact(meta.y, c.y) +
+        (meta.sells ? fact(meta.sells, c.sells) : '') +
+        fact(meta.colour, c.colour) +
       '</dl>' + services +
       block('Unresolved identity', c.conflict, 'is-conflict') +
       block('Why it matters here', c.relevance) +
-      block('Liability', c.liabNotes) +
+      block(meta.colour, c.colourNotes) +
       block('Funding', c.fundingNotes) +
       block('Headcount', c.headNote) +
       (c.missing.length
@@ -3533,7 +3504,7 @@ def _startup_inspector(data_json: str) -> str:
   render();
 })();
 </script>'''
-    return template.replace("__DATA__", data_json)
+    return template.replace("__DATA__", data_json).replace("__META__", meta_json)
 
 
 def render_startups_tab(fm: dict, companies: list[dict],
@@ -3541,81 +3512,84 @@ def render_startups_tab(fm: dict, companies: list[dict],
     """The supply side on its own page.
 
     Split out of the company space map on 2026-08-27. The two populations share
-    no axis — a client is placed by where it sits in a supply chain, a startup by
-    which job it automates — so one toggle over one coordinate system made each
-    map read as a broken version of the other.
+    no axis — a client is placed by where it sits in its process, a vendor by
+    what it sells — so one toggle over one coordinate system made each map read
+    as a broken version of the other.
 
     Everything here is server-rendered from declared fields, with no JS: the
     matrix cells and the dots are anchors to the cards below, and each dot
     carries a native <title>. A map of fifteen companies does not need a runtime.
     """
+    spec = _map_axes(fm)["startup"]
+    note = _axes_missing_note("startup", spec, ("x", "y", "colour"))
+    if note:
+        return note
+    vocab = _map_vocab(fm)
     entities = [e for e in _company_map_entities(fm, companies, contacts or [])
                 if e["map"] == "startup"]
     if not entities:
         return ('<div class="co-empty"><p>No entry in <code>outreach/companies.md</code> '
                 'carries <code>map: startup</code>.</p><p>Add supply-side companies with '
-                '<code>job_covered</code>, <code>integration</code> and '
-                '<code>liability_taken</code> declared, and they appear here.</p></div>')
+                f'<code>{escape(spec["x"])}</code>, <code>{escape(spec["y"])}</code> and '
+                f'<code>{escape(spec["colour"])}</code> declared, and they appear here.</p></div>')
 
-    vocab = _map_vocab(fm)
     esc = escape
-    rows = sorted(entities, key=lambda e: (-(e.get("liabCode") or 0), e["name"].lower()))
+    xt, yt, ct = _axis_title(spec["x"]), _axis_title(spec["y"]), _axis_title(spec["colour"])
+    st = _axis_title(spec["sells_to"]) if spec.get("sells_to") else ""
+    rows = sorted(entities, key=lambda e: (-(e.get("colourCode") or 0), e["name"].lower()))
 
     # ── the claim panel, computed rather than asserted ────────────────────────
-    software = [e for e in rows if e["yLabel"] == "software only"]
-    carries = [e for e in software if (e.get("liabCode") or 0) > 1]
-    owns = [e for e in rows if (e.get("liabCode") or 0) == 5]
-    owns_factory = [e for e in owns if e["yLabel"] == "owns factory"]
-    in_job = [e for e in rows if e.get("proveoutCode") == 3]
-    in_job_factory = [e for e in in_job if e["yLabel"] == "owns factory"]
-    # An empty job lane is a finding, not an omission: it names the work no
-    # startup on this map has taken on.
-    empty_lanes = [_labelled("job_covered", j) for j in vocab["job_covered"]
-                   if not any(e["xLabel"] == _labelled("job_covered", j) for e in rows)]
-    by_factory = ("all " + str(len(owns_factory)) + " of them by owning the factory"
-                  if owns and len(owns_factory) == len(owns)
-                  else str(len(owns_factory)) + " by owning the factory")
-
+    # Counts per colour band and the lanes nobody occupies. An empty lane is a
+    # finding, not an omission: it names the cell no vendor on this map fills.
+    colour_vals = vocab.get(spec["colour"], [])
+    by_colour = [(_labelled(spec["colour"], v),
+                  sum(1 for e in rows if e.get("colourLabel") == _labelled(spec["colour"], v)))
+                 for v in colour_vals]
+    empty_x = [_labelled(spec["x"], v) for v in vocab.get(spec["x"], [])
+               if not any(e["xLabel"] == _labelled(spec["x"], v) for e in rows)]
+    empty_y = [_labelled(spec["y"], v) for v in vocab.get(spec["y"], [])
+               if not any(e["yLabel"] == _labelled(spec["y"], v) for e in rows)]
+    unmapped_colour = sum(1 for e in rows if not e.get("colourCode"))
     claim = (
         "<b>What the map currently says</b><p>"
-        f"<em>{len(software)}</em> of these companies sell software only, and "
-        f"<em>{len(carries)}</em> of those carry any liability for the part. "
-        f"<em>{len(owns)}</em> own the outcome &mdash; {by_factory}. "
-        f"<em>{len(in_job)}</em> sit directly in the prove-out job, and "
-        f"<em>{len(in_job_factory)}</em> of those own their own factory. Today the way to "
-        "carry the liability is to buy the machines."
-        + (f" No startup here covers <em>{'</em>, <em>'.join(empty_lanes)}</em> at all."
-           if empty_lanes else "")
+        f"<em>{len(rows)}</em> companies mapped. By {esc(ct)}: "
+        + ", ".join(f"<em>{n}</em> {esc(lab)}" for lab, n in by_colour)
+        + (f", <em>{unmapped_colour}</em> not yet graded" if unmapped_colour else "")
+        + "."
+        + (f" No company here covers <em>{'</em>, <em>'.join(esc(v) for v in empty_x)}</em> "
+           f"on {esc(xt)}." if empty_x else "")
+        + (f" Nobody sits at <em>{'</em>, <em>'.join(esc(v) for v in empty_y)}</em> "
+           f"on {esc(yt)}." if empty_y else "")
         + "</p>")
 
     # ── KPI strip ────────────────────────────────────────────────────────────
     funded = [e for e in rows if e.get("raised")]
     total_raised = sum(e["raised"] for e in funded)
-    kpis = "".join(f"<span><strong>{v}</strong>{k}</span>" for k, v in [
+    kpis = "".join(f"<span><strong>{v}</strong>{esc(str(k))}</span>" for k, v in [
         ("mapped", len(rows)),
-        ("in the prove-out job", len(in_job)),
-        ("carry liability", len([e for e in rows if (e.get("liabCode") or 0) > 1])),
+        (f"{xt} mapped", sum(1 for e in rows if e["xCode"])),
+        (f"{yt} mapped", sum(1 for e in rows if e["yCode"])),
         ("funding disclosed", f"{len(funded)}/{len(rows)}"),
         ("capital in the space", _usd_short(total_raised)),
     ])
 
-    # ── scatter: job covered x integration, colour = liability, size = raised ─
-    jlabels = [_labelled("job_covered", j) for j in vocab["job_covered"]
-               if any(e["xLabel"] == _labelled("job_covered", j) for e in rows)]
-    ilabels = [_labelled("integration", i) for i in vocab["integration"]
-               if any(e["yLabel"] == _labelled("integration", i) for e in rows)]
+    # ── scatter: x by y, colour = colour axis, size = raised ─────────────────
+    xlabels = [_labelled(spec["x"], v) for v in vocab.get(spec["x"], [])
+               if any(e["xLabel"] == _labelled(spec["x"], v) for e in rows)]
+    ylabels = [_labelled(spec["y"], v) for v in vocab.get(spec["y"], [])
+               if any(e["yLabel"] == _labelled(spec["y"], v) for e in rows)]
     unmapped = [e for e in rows if not e["xCode"] or not e["yCode"]]
 
     L, R, TOP, BOT = 156, 1068, 40, 486
-    cw = (R - L) / max(len(jlabels), 1)
-    rh = (BOT - TOP) / max(len(ilabels), 1)
+    cw = (R - L) / max(len(xlabels), 1)
+    rh = (BOT - TOP) / max(len(ylabels), 1)
     svg: list[str] = []
-    for n, lab in enumerate(jlabels):
+    for n, lab in enumerate(xlabels):
         svg.append(f'<line class="cmap-gridline" x1="{L + cw * n:.1f}" y1="{TOP}" '
                    f'x2="{L + cw * n:.1f}" y2="{BOT}"/>')
         svg.append(f'<text class="cmap-axis" x="{L + cw * (n + .5):.1f}" y="{BOT + 21}" '
                    f'text-anchor="middle">{esc(lab.upper())}</text>')
-    for n, lab in enumerate(ilabels):
+    for n, lab in enumerate(ylabels):
         svg.append(f'<line class="cmap-gridline" x1="{L}" y1="{BOT - rh * n:.1f}" '
                    f'x2="{R}" y2="{BOT - rh * n:.1f}"/>')
         svg.append(f'<text class="cmap-axis" x="{L - 11}" y="{BOT - rh * (n + .5) + 3:.1f}" '
@@ -3624,9 +3598,9 @@ def render_startups_tab(fm: dict, companies: list[dict],
     svg.append(f'<line class="cmap-edge" x1="{L}" y1="{BOT}" x2="{R}" y2="{BOT}"/>')
 
     biggest = max((e["raised"] for e in funded), default=1)
-    for jn, jl in enumerate(jlabels):
-        for inn, il in enumerate(ilabels):
-            cell = sorted((e for e in rows if e["xLabel"] == jl and e["yLabel"] == il),
+    for xn, xl in enumerate(xlabels):
+        for yn, yl in enumerate(ylabels):
+            cell = sorted((e for e in rows if e["xLabel"] == xl and e["yLabel"] == yl),
                           key=lambda e: e["name"].lower())
             cols = max(1, math.ceil(math.sqrt(len(cell))))
             nrows = math.ceil(len(cell) / cols) if cell else 1
@@ -3634,23 +3608,20 @@ def render_startups_tab(fm: dict, companies: list[dict],
                 # Dot AREA tracks capital raised, so a $2B company reads as ~26x
                 # the ink of a $3M one rather than 700x. Undisclosed draws hollow.
                 r = 6 + 15 * math.sqrt(e["raised"] / biggest) if e.get("raised") else 6.5
-                cx = L + cw * (jn + .5) + ((k % cols) - (cols - 1) / 2) * 62
-                cy = BOT - rh * (inn + .5) + (k // cols - (nrows - 1) / 2) * 46
+                cx = L + cw * (xn + .5) + ((k % cols) - (cols - 1) / 2) * 62
+                cy = BOT - rh * (yn + .5) + (k // cols - (nrows - 1) / 2) * 46
                 hollow = "" if e.get("raised") else " cmap-nohead"
                 tip = (f'{e["name"]} — {e.get("stageLabel", "")}, '
-                       f'{e.get("raisedLabel", "")} — {e.get("liabLabel", "")} — '
-                       f'{e.get("proveoutLabel", "")}')
+                       f'{e.get("raisedLabel", "")} — {ct}: {e.get("colourLabel", "")}')
                 svg.append(
-                    f'<g class="cmap-point liab-{e.get("liabCode") or 0}{hollow}" '
+                    f'<g class="cmap-point band-{e.get("colourCode") or 0}{hollow}" '
                     f'data-su="{esc(e["id"])}" tabindex="0" role="button">'
                     f'<title>{esc(tip)}</title>'
                     f'<circle class="cmap-core" cx="{cx:.1f}" cy="{cy:.1f}" r="{r:.1f}"/>'
                     f'</g>')
-                # Categorical axes put several companies in one cell, so labels
-                # have to be pushed apart in two directions. Keying the
-                # above/below flip to the ROW (not the sequence) is what stops a
-                # lower row's label colliding with the row above it; the column
-                # parity nudge then separates neighbours within a row.
+                # Keying the above/below flip to the ROW is what stops a lower
+                # row's label colliding with the row above it; the column parity
+                # nudge then separates neighbours within a row.
                 row_i, col_i = k // cols, k % cols
                 out = 11 if col_i % 2 else 0
                 ly = (cy - r - 6 - out if row_i % 2 == 0
@@ -3659,10 +3630,10 @@ def render_startups_tab(fm: dict, companies: list[dict],
                            f'y="{ly:.1f}" text-anchor="middle">'
                            f'{esc(e["name"])}</text>')
 
-    legend = ('<span><i class="cmap-dot liab-0"></i>not mapped</span>' + "".join(
-        f'<span><i class="cmap-dot liab-{n}"></i>'
-        f'{esc(_labelled("liability_taken", v))}</span>'
-        for n, v in enumerate(vocab["liability_taken"], start=1)) +
+    legend = ('<span><i class="cmap-dot band-0"></i>not mapped</span>' + "".join(
+        f'<span><i class="cmap-dot band-{n}"></i>'
+        f'{esc(_labelled(spec["colour"], v))}</span>'
+        for n, v in enumerate(colour_vals, start=1)) +
         '<span><i class="cmap-hollow"></i>funding not disclosed</span>')
 
     unmapped_note = ""
@@ -3674,22 +3645,22 @@ def render_startups_tab(fm: dict, companies: list[dict],
             + " &mdash; not plotted, because a declared axis is missing. Missing data stands "
               "outside the map rather than being guessed onto it.</p>")
 
-    # ── liability x integration matrix: the belief's own view ────────────────
-    liab_vals = ["", *vocab["liability_taken"]]
+    # ── colour x Y matrix ────────────────────────────────────────────────────
+    colour_all = ["", *colour_vals]
     head = "".join(
-        f"<th>{esc(_labelled('liability_taken', v) if v else 'not mapped')}</th>"
-        for v in liab_vals)
+        f"<th>{esc(_labelled(spec['colour'], v) if v else 'not mapped')}</th>"
+        for v in colour_all)
     body = ""
-    for il in reversed(ilabels):
-        body += f"<tr><th>{esc(il)}</th>"
-        for v in liab_vals:
-            vl = _labelled("liability_taken", v) if v else _UNMAPPED
-            cells = [e for e in rows if e["yLabel"] == il and e.get("liabLabel") == vl]
+    for yl in reversed(ylabels):
+        body += f"<tr><th>{esc(yl)}</th>"
+        for v in colour_all:
+            vl = _labelled(spec["colour"], v) if v else _UNMAPPED
+            cells = [e for e in rows if e["yLabel"] == yl and e.get("colourLabel") == vl]
             body += "<td>" + "".join(
                 f'<a href="#" data-su="{esc(e["id"])}">{esc(e["name"])}</a>'
                 for e in cells) + "</td>"
         body += "</tr>"
-    matrix = (f'<div class="cmap-matrix smap-matrix"><table><thead><tr><th>Integration</th>'
+    matrix = (f'<div class="cmap-matrix smap-matrix"><table><thead><tr><th>{esc(yt)}</th>'
               f'{head}</tr></thead><tbody>{body}</tbody></table></div>')
 
     # ── capital bars ─────────────────────────────────────────────────────────
@@ -3697,7 +3668,7 @@ def render_startups_tab(fm: dict, companies: list[dict],
     for e in sorted(rows, key=lambda e: -(e.get("raised") or 0)):
         if e.get("raised"):
             pct = math.sqrt(e["raised"] / biggest) * 100
-            fill = (f'<div class="smap-bar-fill cmap-dot liab-{e.get("liabCode") or 0}" '
+            fill = (f'<div class="smap-bar-fill cmap-dot band-{e.get("colourCode") or 0}" '
                     f'style="width:{pct:.1f}%"></div>')
             cls = "smap-bar"
         else:
@@ -3707,8 +3678,6 @@ def render_startups_tab(fm: dict, companies: list[dict],
                  f'<div class="smap-bar-val">{esc(e.get("raisedLabel", ""))}</div></div>')
 
     # ── inspector payload: one company at a time, clicked or stepped ─────────
-    # "Go one by one" is the actual workflow, so the panel takes prev/next as
-    # well as a picker, and every dot and matrix chip above drives it.
     payload = [{
         "id": e["id"], "name": e["name"], "sector": e.get("sector") or "",
         "country": e.get("country") or "", "url": e.get("sourceUrl") or "",
@@ -3716,28 +3685,31 @@ def render_startups_tab(fm: dict, companies: list[dict],
         "stage": e.get("stageLabel") or "", "raised": e.get("raisedLabel") or "",
         "headcount": e.get("headcount"), "headSource": e.get("headcountSource") or "",
         "headNote": e.get("headcountNote") or "", "founded": e.get("founded") or "",
-        "job": e["xLabel"], "integration": e["yLabel"], "sells": e.get("sellsTo") or "",
-        "liab": e.get("liabLabel") or "", "liabCode": e.get("liabCode") or 0,
-        "proveout": e.get("proveoutLabel") or "", "relevance": e.get("relevance") or "",
-        "liabNotes": e.get("liabNotes") or "", "fundingNotes": e.get("fundingNotes") or "",
+        "x": e["xLabel"], "y": e["yLabel"], "sells": e.get("sellsTo") or "",
+        "colour": e.get("colourLabel") or "", "colourCode": e.get("colourCode") or 0,
+        "relevance": e.get("relevance") or "",
+        "colourNotes": e.get("colourNotes") or "", "fundingNotes": e.get("fundingNotes") or "",
         "conflict": e.get("conflict") or "", "sources": e.get("sources") or "",
         "missing": e.get("missing") or [],
     } for e in rows]
-    inspector = _startup_inspector(json.dumps(payload, ensure_ascii=True))
+    meta_json = json.dumps({"x": xt, "y": yt, "colour": ct, "sells": st},
+                           ensure_ascii=True).replace("</", "<\\/")
+    inspector = _startup_inspector(
+        json.dumps(payload, ensure_ascii=True).replace("</", "<\\/"), meta_json)
 
     # ── the cards: what each one is actually working on ──────────────────────
     cards = ""
     for e in rows:
-        meta = "".join(f"<span><b>{k}</b> {esc(v)}</span>" for k, v in [
+        meta = "".join(f"<span><b>{esc(k)}</b> {esc(v)}</span>" for k, v in [
             ("stage", e.get("stageLabel", "")),
             ("raised", e.get("raisedLabel", "")),
-            ("job", e["xLabel"]),
-            ("integration", e["yLabel"]),
-            ("prove-out", e.get("proveoutLabel", "")),
+            (xt, e["xLabel"]),
+            (yt, e["yLabel"]),
+            (st, e.get("sellsTo", "")),
             ("headcount", f'{e["headcount"]:,}' if e.get("headcount") else ""),
             ("founded", e.get("founded") or ""),
             ("country", e.get("country") or ""),
-        ] if v)
+        ] if k and v)
         svc = ""
         if e.get("services"):
             svc = ('<ul class="smap-services">' + "".join(
@@ -3748,8 +3720,8 @@ def render_startups_tab(fm: dict, companies: list[dict],
                     f'{esc(e["conflict"])}</p>')
         if e.get("relevance"):
             why += f'<p class="smap-why"><b>Why it matters here</b>{esc(e["relevance"])}</p>'
-        if e.get("liabNotes"):
-            why += f'<p class="smap-why"><b>Liability</b>{esc(e["liabNotes"])}</p>'
+        if e.get("colourNotes"):
+            why += f'<p class="smap-why"><b>{esc(ct)}</b>{esc(e["colourNotes"])}</p>'
         if e.get("fundingNotes"):
             why += f'<p class="smap-why"><b>Funding</b>{esc(e["fundingNotes"])}</p>'
         link = (f' &middot; <a class="co-src" href="{esc(e["sourceUrl"])}" target="_blank" '
@@ -3760,41 +3732,37 @@ def render_startups_tab(fm: dict, companies: list[dict],
             f'<div class="smap-card-top"><div><h4>{esc(e["name"])}</h4>'
             f'<div class="smap-card-sub">{esc(e["id"])} &middot; '
             f'{esc(e.get("sector") or "")}{link}</div></div>'
-            f'<span class="smap-liab liab-{e.get("liabCode") or 0}">'
-            f'{esc(e.get("liabLabel", ""))}</span></div>'
+            f'<span class="smap-liab band-{e.get("colourCode") or 0}">'
+            f'{esc(e.get("colourLabel", ""))}</span></div>'
             f'<p class="smap-work">{esc(e.get("description") or "Not recorded.")}</p>'
             f'{svc}<div class="smap-meta">{meta}</div>{why}</article>')
 
     return (
         '<section class="cmap" aria-labelledby="smap-title">'
         '<div class="cmap-head"><div>'
-        '<div class="co-eyebrow">Startup scene</div>'
-        '<h2 id="smap-title">Who is working on this, and what they carry</h2>'
-        '<p>The supply side: companies selling into, or automating around, the same jobs '
-        'the demand-side registry buys. Position is the job they cover against how far they '
-        'vertically integrate. Dot area is capital raised. <strong>Colour is the liability '
-        'they take on the part</strong>. Every value reads a declared field in '
-        '<code>companies.md</code>.</p>'
+        '<div class="co-eyebrow">Vendor scene</div>'
+        '<h2 id="smap-title">Who sells into this, and what they sell</h2>'
+        f'<p>The supply side. Position is <strong>{esc(xt)}</strong> against '
+        f'<strong>{esc(yt)}</strong>. Dot area is capital raised. <strong>Colour is '
+        f'{esc(ct)}</strong>. Every value reads a declared field in '
+        '<code>companies.md</code>; the axes themselves are declared in its frontmatter.</p>'
         '</div></div>'
         f'<div class="smap-claim">{claim}</div>'
         f'<div class="cmap-kpis">{kpis}</div>'
-        '<div class="cmap-axis-key"><span><b>X</b>job covered</span>'
-        '<span><b>Y</b>vertical integration: licence to owned factory</span>'
+        f'<div class="cmap-axis-key"><span><b>X</b>{esc(xt)}</span>'
+        f'<span><b>Y</b>{esc(yt)}</span>'
         '<span><b>Dot area</b>total capital raised</span>'
-        '<span><b>Colour</b>liability taken on the part</span></div>'
+        f'<span><b>Colour</b>{esc(ct)}</span></div>'
         '<div class="cmap-stage"><svg viewBox="0 0 1100 518" role="img" '
         'aria-labelledby="smap-svg-title smap-svg-desc">'
-        '<title id="smap-svg-title">Startup scene map</title>'
-        '<desc id="smap-svg-desc">Startups positioned by the manufacturing job they cover '
-        'and how far they vertically integrate, sized by capital raised and coloured by the '
-        'liability they take on the finished part.</desc>'
+        '<title id="smap-svg-title">Vendor scene map</title>'
+        f'<desc id="smap-svg-desc">Vendors positioned by {esc(xt)} and {esc(yt)}, sized by '
+        f'capital raised and coloured by {esc(ct)}.</desc>'
         f'{"".join(svg)}</svg></div>'
         f'<div class="cmap-legend">{legend}</div>{unmapped_note}'
         f'{inspector}'
-        '<div class="cmap-matrix-head smap-spaced"><h3>Liability by integration depth</h3>'
-        '<p>The belief&rsquo;s own view. Read along the <em>software only</em> row: while it '
-        'stays entirely under <em>carries none</em>, nobody is selling a tool into this work '
-        'while owning what happens on the first run.</p></div>'
+        f'<div class="cmap-matrix-head smap-spaced"><h3>{esc(ct)} by {esc(yt)}</h3>'
+        '<p>Read along a row: an empty cell is a combination nobody on this map sells.</p></div>'
         f'{matrix}'
         '<div class="cmap-matrix-head smap-spaced"><h3>Capital in the space</h3>'
         '<p>Bar length is the square root of total raised, so it stays comparable with dot '
@@ -3802,7 +3770,7 @@ def render_startups_tab(fm: dict, companies: list[dict],
         'missing, not zero.</p></div>'
         f'<div class="smap-bars">{bars}</div>'
         '<div class="cmap-matrix-head smap-spaced"><h3>What each one is working on</h3>'
-        '<p>Ordered by liability carried, heaviest first.</p></div>'
+        f'<p>Ordered by {esc(ct)}, last declared value first.</p></div>'
         f'<div class="smap-grid">{cards}</div>'
         '</section>')
 

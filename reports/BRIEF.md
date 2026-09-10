@@ -4,7 +4,7 @@
 -->
 ---
 idea: industrial-process-data-infrastructure
-generated: 2026-09-10T01:22Z
+generated: 2026-09-10T03:27Z
 active_hunch: none
 active_assumption: none
 sources:
@@ -52,6 +52,8 @@ _Generated from the folder. Check here before creating a new artifact — if a f
 | `input-context/` | 1 more staged input file |
 | `reports/control-room.html` | generated — rebuild it, never edit it |
 | `reports/01-ideation/hunch-lineage.md` | The hunch lineage — every hunch ever held under the belief, its status, and which one is active. |
+| `reports/outreach/companies.md` | The company registry — one entry per organisation on the demand or supply side of contaminant detection in industrial water, what it actually does, a… |
+| `reports/outreach/research-map.md` | The research map — one row per paper or group on contaminant detection in water, classified by what its method actually did, so the crowded and empty… |
 | `reports/pages/pages.yaml` | What each page in this folder is, and whether it still holds. |
 | `reports/pages/startup-map.html` | generated — rebuild it, never edit it |
 
