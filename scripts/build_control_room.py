@@ -718,14 +718,8 @@ def render(
     companies_tab_html = render_companies_tab(companies_list, companies_fm, contacts)
     companies_count = len(companies_list)
 
-    # Two supply-side lenses belong here. The current registry maps vendors around the
-    # active wedge; the carried manufacturing landscape tests the broader belief and keeps
-    # its old axes visibly labelled as historical rather than silently treating them as H1.
-    wedge_startups_html = render_startups_tab(companies_fm, companies_list, contacts)
-    wedge_startups_count = sum(1 for c in companies_list if _map_side(c) == "startup")
-    startups_tab_html, manufacturing_startups_count = render_startup_landscapes(
-        wedge_startups_html, wedge_startups_count)
-    startups_count = wedge_startups_count + manufacturing_startups_count
+    startups_tab_html = render_startups_tab(companies_fm, companies_list, contacts)
+    startups_count = sum(1 for c in companies_list if _map_side(c) == "startup")
 
     email_campaign = parse_email_campaign()
     email_tab_html = render_email_tab(email_campaign)
@@ -2745,26 +2739,6 @@ COMPANIES_CSS = """
 .smap-bar-val {color:var(--text-dimmer);font-variant-numeric:tabular-nums;text-align:right;}
 .smap-bar.is-undisclosed .smap-bar-track {background:repeating-linear-gradient(
   90deg,var(--surface-2) 0 5px,transparent 5px 10px);}
-.startup-view-switch {display:flex;gap:4px;width:max-content;max-width:100%;padding:4px;margin:0 0 14px;
-  border:1px solid var(--border);border-radius:var(--r-md);background:var(--surface-2);}
-.startup-view-switch button {border:0;border-radius:var(--r-sm);padding:8px 12px;background:transparent;
-  color:var(--text-dim);font:inherit;font-size:11px;font-weight:650;cursor:pointer;white-space:nowrap;}
-.startup-view-switch button:hover {color:var(--text);}
-.startup-view-switch button.active {background:var(--surface-3);color:var(--accent);}
-.startup-view-switch button:focus-visible {outline:2px solid var(--accent);outline-offset:2px;}
-.startup-context {display:grid;grid-template-columns:minmax(0,1.15fr) minmax(280px,.85fr);gap:16px;
-  padding:16px 18px;margin-bottom:12px;border:1px solid var(--border);border-left:3px solid var(--accent);
-  border-radius:var(--r-md);background:var(--surface-2);}
-.startup-context h2 {margin:0 0 6px;font-size:18px;letter-spacing:-.02em;}
-.startup-context p {margin:0;color:var(--text-dim);font-size:11.5px;line-height:1.6;max-width:72ch;}
-.startup-relevance {display:grid;gap:6px;align-content:start;}
-.startup-relevance div {display:grid;grid-template-columns:90px 1fr;gap:8px;font-size:10.5px;line-height:1.45;}
-.startup-relevance b {color:var(--text);}.startup-relevance span {color:var(--text-dim);}
-.startup-frame-wrap {overflow:hidden;border:1px solid var(--border);border-radius:var(--r-lg);background:var(--surface);}
-.startup-frame {display:block;width:100%;height:min(1050px,78vh);min-height:680px;border:0;background:var(--surface);}
-.startup-source-note {display:flex;justify-content:space-between;gap:12px;align-items:center;padding:8px 12px;
-  border-top:1px solid var(--border);color:var(--text-dimmer);font-size:9.5px;}
-.startup-source-note a {color:var(--accent);}
 .cmap-legend span {display:inline-flex;align-items:center;gap:5px;}.cmap-dot {display:inline-block;width:8px;height:8px;border-radius:50%;}.cmap-ring {display:inline-block;width:11px;height:11px;border:1px dashed var(--text);border-radius:50%;}.cmap-hollow {display:inline-block;width:9px;height:9px;border:1.4px dashed var(--text-dimmer);border-radius:50%;}
 .cmap-matrix-head {margin-top:7px;}.cmap-matrix-head h3 {font-size:12px;margin:0 0 3px;}.cmap-matrix-head p {font-size:10.5px;color:var(--text-dimmer);margin:0 0 9px;}
 .cmap-matrix {overflow-x:auto;border:1px solid var(--border);border-radius:var(--r-md);}
@@ -2775,8 +2749,6 @@ COMPANIES_CSS = """
   .co-row {grid-template-columns:minmax(0,1fr);}
   .co-side {align-items:flex-start;text-align:left;}
   .cmap {padding:14px 10px;}.cmap-controls,.cmap-lenses,.cmap-controls label {width:100%;}.cmap-lenses button {flex:1;}.cmap-controls select {width:100%;max-width:none;}.cmap-stage svg {min-height:330px;}.cmap-axis {font-size:7px;}.cmap-readout {grid-template-columns:1fr;margin-inline:2px;}.cmap-axis-key {display:grid;gap:5px;}
-  .startup-context {grid-template-columns:1fr;}.startup-view-switch {width:100%;overflow:auto;}.startup-view-switch button {flex:1;}
-  .startup-frame {height:75vh;min-height:560px;}
 }
 """
 
@@ -3802,72 +3774,6 @@ def render_startups_tab(fm: dict, companies: list[dict],
         f'<p>Ordered by {esc(ct)}, last declared value first.</p></div>'
         f'<div class="smap-grid">{cards}</div>'
         '</section>')
-
-
-def render_startup_landscapes(wedge_html: str, wedge_count: int) -> tuple[str, int]:
-    """Place the carried manufacturing scene beside the active-wedge vendor map.
-
-    The carried page is intentionally isolated in an iframe. It owns a complete visual
-    system and interactive card overlay; inlining its CSS and duplicated element IDs into
-    the control room would make both dashboards brittle. Its old liability axis is useful
-    context for the belief, but is not silently reclassified as evidence for the active H1.
-    """
-    reference = REPORTS / "pages" / "startup-map.html"
-    if not reference.exists():
-        return wedge_html, 0
-    try:
-        source = reference.read_text(encoding="utf-8", errors="replace")
-    except OSError:
-        source = ""
-    match = re.search(r"(\d+)\s+startups", source, re.I)
-    manufacturing_count = int(match.group(1)) if match else 0
-    count_label = str(manufacturing_count) if manufacturing_count else "map"
-
-    return f'''
-<div class="startup-landscapes" id="startup-landscapes">
-  <div class="startup-view-switch" role="tablist" aria-label="Startup landscape">
-    <button class="active" type="button" role="tab" aria-selected="true" data-startup-view="manufacturing">Manufacturing landscape <span class="count">{count_label}</span></button>
-    <button type="button" role="tab" aria-selected="false" data-startup-view="wedge">Active wedge vendors <span class="count">{wedge_count}</span></button>
-  </div>
-  <div data-startup-panel="manufacturing">
-    <div class="startup-context">
-      <div>
-        <h2>Manufacturing precedents around the belief</h2>
-        <p>These companies still matter because the belief is industry-agnostic: it claims the missing layer is identity and meaning around physical process data. The map's original axes &mdash; job covered, vertical integration and liability &mdash; came from the retired HMLV prove-out hunch. Keep them as a structural lens, not as validation of today's microfiber hunch.</p>
-      </div>
-      <div class="startup-relevance">
-        <div><b>H1 direct</b><span>Smartex: inline sensing, interpretation and machine action in textile production.</span></div>
-        <div><b>Belief direct</b><span>Harmoni and VulcanForms: machine telemetry and closed-loop process control.</span></div>
-        <div><b>Boundary</b><span>CAM, quoting, marketplaces and owned factories show adjacent layers; they do not prove the identification gap.</span></div>
-      </div>
-    </div>
-    <div class="startup-frame-wrap">
-      <iframe class="startup-frame" data-startup-frame title="Manufacturing startup landscape" loading="lazy"></iframe>
-      <div class="startup-source-note"><span>Carried from the prior manufacturing lineage; 23 manufacturing companies and cross-industry analogues, with window-covering-only software removed.</span><a data-startup-source target="_blank" rel="noopener">Open full map</a></div>
-    </div>
-  </div>
-  <div data-startup-panel="wedge" hidden>{wedge_html}</div>
-</div>
-<script>
-(() => {{
-  const root = document.getElementById('startup-landscapes');
-  if (!root || root.dataset.ready) return;
-  root.dataset.ready = 'true';
-  const path = location.protocol === 'file:' ? 'pages/startup-map.html' : '/reports/pages/startup-map.html';
-  root.querySelector('[data-startup-frame]').src = path;
-  root.querySelector('[data-startup-source]').href = path;
-  root.querySelectorAll('[data-startup-view]').forEach(button => button.addEventListener('click', () => {{
-    root.querySelectorAll('[data-startup-view]').forEach(candidate => {{
-      const active = candidate === button;
-      candidate.classList.toggle('active', active);
-      candidate.setAttribute('aria-selected', String(active));
-    }});
-    root.querySelectorAll('[data-startup-panel]').forEach(panel => {{
-      panel.hidden = panel.dataset.startupPanel !== button.dataset.startupView;
-    }});
-  }}));
-}})();
-</script>''', manufacturing_count
 
 
 def render_companies_tab(companies: list[dict], fm: dict, contacts: list[dict] | None = None) -> str:
