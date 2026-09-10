@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-09-10T04:25:29.418Z",
+  "updated_at": "2026-09-10T04:25:32.004Z",
   "tasks": [
     {
       "id": "T-MTV0XT85-EZLO",
@@ -21,9 +21,29 @@
       "owner": "izgin",
       "created_at": "2026-09-10T04:25:29.418Z",
       "updated_at": "2026-09-10T04:25:29.418Z"
+    },
+    {
+      "id": "T-MTV0XX7O-EDJV",
+      "title": "Send Cyfract (cyfract.de) a structured follow-up email about the meeting",
+      "detail": "What the next steps will be, how we can build this tech for them, and the data they have. Structured, not a thank-you note.",
+      "priority": "normal",
+      "status": "backlog",
+      "owner": "izgin",
+      "created_at": "2026-09-10T04:25:32.004Z",
+      "updated_at": "2026-09-10T04:25:32.004Z"
     }
   ],
   "activity": [
+    {
+      "id": "1789014332004-13jd1t",
+      "at": "2026-09-10T04:25:32.004Z",
+      "type": "created",
+      "task_id": "T-MTV0XX7O-EDJV",
+      "title": "Send Cyfract (cyfract.de) a structured follow-up email about the meeting",
+      "from": null,
+      "to": "backlog",
+      "owner": "izgin"
+    },
     {
       "id": "1789014329418-pcpjqu",
       "at": "2026-09-10T04:25:29.418Z",
