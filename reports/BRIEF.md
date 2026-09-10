@@ -3,12 +3,12 @@
        python3 scripts/build_brief.py
 -->
 ---
-idea: Microplastic Detection System
-generated: 2026-09-09T22:54Z
+idea: industrial-process-data-infrastructure
+generated: 2026-09-10T01:22Z
 active_hunch: none
 active_assumption: none
 sources:
-  belief: absent
+  belief: 6093ca2c2aa3
   lineage: cd3340ffbfcc
   graph: absent
   evidence: absent
@@ -16,13 +16,15 @@ sources:
   contacts: absent
 ---
 
-# Microplastic Detection System — session brief
+# industrial-process-data-infrastructure — session brief
 
 _Generated digest. Load this first; load a full source file only for the task that needs it (pointers at the end)._
 
 ## Belief
 
-_No `belief.md` — run `/startup-belief-intake` before any shotgun._
+> The bottleneck to running production lines with models isn't the models, it's that real-time process data arrives as numbers with no identity or meaning attached, and nobody is building the infrastructure that identifies and interprets it.
+
+_Founder-owned. Changes only with explicit confirmation._ → `input-context/belief.md`
 
 ## Hunch
 
@@ -46,7 +48,8 @@ _Generated from the folder. Check here before creating a new artifact — if a f
 
 | Artifact | What it holds |
 |---|---|
-| `input-context/` | 1 staged input file |
+| `input-context/belief.md` | The founder-owned durable belief this idea rests on, plus its boundaries and SISP check. |
+| `input-context/` | 1 more staged input file |
 | `reports/control-room.html` | generated — rebuild it, never edit it |
 | `reports/01-ideation/hunch-lineage.md` | The hunch lineage — every hunch ever held under the belief, its status, and which one is active. |
 | `reports/pages/pages.yaml` | What each page in this folder is, and whether it still holds. |
@@ -56,6 +59,7 @@ _Generated from the folder. Check here before creating a new artifact — if a f
 
 | Task | File |
 |---|---|
+| belief / intake | `input-context/belief.md` |
 | hunch work | `reports/01-ideation/hunch-lineage.md` |
 
 Dashboard: `python3 scripts/build_control_room.py`

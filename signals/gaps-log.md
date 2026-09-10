@@ -56,6 +56,18 @@ recurs years later is itself a signal.
   unprompted: yes
   status: open
 
+- 2026-09-09 — Inline particle sensors (Mettler Toledo ParticleTrack, Malvern Insitec Wet) report particle size and count in real time in a process liquid but not what the particle is; no commercial inline product identifies microplastics in a flow, only 2026 research papers.
+  type: founder-ambient
+  source: belief intake, definitional research
+  unprompted: n/a
+  status: open
+
+- 2026-09-09 — Founder says "there are already partnerships" doing identification/interpretation of process data but could not name them in-session.
+  type: founder-ambient
+  source: belief intake, threat question
+  unprompted: n/a
+  status: open
+
 ---
 
 ## Review history

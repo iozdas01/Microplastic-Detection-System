@@ -65,6 +65,27 @@ Regenerate after any change to a living artifact:
 .venv/bin/python scripts/build_control_room.py
 ```
 
+## Kanban board and Vercel
+
+The **To do** tab is a four-stage Kanban board. Outreach cards are still derived from the
+ledger and cannot be edited there. Manual cards live in `data/kanban.json`; every create,
+edit, move, or delete made on the hosted board updates that file through `api/tasks.js`,
+adds an activity entry, and creates a GitHub commit.
+
+Import this repository into Vercel with `main` as the production branch. `vercel.json`
+serves `reports/control-room.html` at `/`; Vercel's Git integration then publishes pushes to
+`main` as production deployments and other branches as previews.
+
+Configure these project environment variables in both Production and Preview:
+
+- `GITHUB_TOKEN` — a fine-grained token limited to this repository with **Contents: Read and write**.
+- `BOARD_WRITE_KEY` — a long random phrase used to authorize browser writes.
+- `GITHUB_OWNER`, `GITHUB_REPO`, `GITHUB_BRANCH` — optional overrides; defaults are already
+  set for `iozdas01/Microplastic-Detection-System` on `main`.
+
+Do not put either secret in this repository. Opening the generated HTML directly remains a
+read-only view; edits are available only through the hosted API.
+
 ## Carried over
 
 `reports/pages/startup-map.html` is a static snapshot of the manufacturing startup scene
