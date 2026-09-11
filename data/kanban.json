@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-09-10T18:43:35.075Z",
+  "updated_at": "2026-09-11T19:39:20.477Z",
   "tasks": [
     {
       "id": "T-MTV0XT85-EZLO",
@@ -61,9 +61,49 @@
       "owner": "sandra",
       "created_at": "2026-09-10T18:43:35.075Z",
       "updated_at": "2026-09-10T18:43:35.075Z"
+    },
+    {
+      "id": "T-MTXD0XS4-72SS",
+      "title": "Deck for Fashion for Good",
+      "detail": "",
+      "priority": "normal",
+      "status": "backlog",
+      "owner": "sandra",
+      "created_at": "2026-09-11T19:39:20.452Z",
+      "updated_at": "2026-09-11T19:39:20.452Z"
+    },
+    {
+      "id": "T-MTXD0XSG-Z9V3",
+      "title": "CAD design for Fashion for Good",
+      "detail": "",
+      "priority": "normal",
+      "status": "backlog",
+      "owner": "izgin",
+      "created_at": "2026-09-11T19:39:20.464Z",
+      "updated_at": "2026-09-11T19:39:20.464Z"
     }
   ],
   "activity": [
+    {
+      "id": "1789155560464-zg4dfz",
+      "at": "2026-09-11T19:39:20.464Z",
+      "type": "created",
+      "task_id": "T-MTXD0XSG-Z9V3",
+      "title": "CAD design for Fashion for Good",
+      "from": null,
+      "to": "backlog",
+      "owner": "izgin"
+    },
+    {
+      "id": "1789155560452-s3jklb",
+      "at": "2026-09-11T19:39:20.452Z",
+      "type": "created",
+      "task_id": "T-MTXD0XS4-72SS",
+      "title": "Deck for Fashion for Good",
+      "from": null,
+      "to": "backlog",
+      "owner": "sandra"
+    },
     {
       "id": "1789065815075-6kggi4",
       "at": "2026-09-10T18:43:35.075Z",
