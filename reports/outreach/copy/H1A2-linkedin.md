@@ -14,7 +14,7 @@ MPhil research on manufacturing data prepared for publication with the Cambridge
 Group). All drafts are in English (LR-B31, founder rule 2026-09-14: the co-founder joins the
 threads). Turkish-only profiles are flagged in the contact's notes, not written to in Turkish.
 
-Msg 1 A/B (LR-B32): C48 and C55 carry build_disclosure, C40 and C6 research_only, one of each per tier.
+Msg 1 shape: LR-B33, the founder's settled copy (build sentence, grounded clause, learn line, permission ask). The LR-B32 A/B was retired the same day before any send.
 
 Planned arc for every contact here: Msg 1 permission ask (this file) → Msg 2 one specific
 past event ("the last time someone asked you for a figure on your process water, who was it
@@ -77,30 +77,30 @@ Rule check: 440 chars, violations none. Inbox (LR-B25): first-name/company searc
 
 ## C40 — Erdogan Sekerci
 
-### Msg 1 — REDRAFTED 2026-09-14 (A/B)
+### Msg 1 — SETTLED 2026-09-14 (LR-B33)
 
-**Primary (508 chars, English, close_variant soft_ask, copy_variant research_only, segment: brand):**
+**Primary (365 chars, English, close_variant soft_ask, copy_variant build_short, segment: brand):**
 
 > Erdogan hi! Thanks for connecting.
 >
-> How are you? My co-founder and I are currently researching why the same supplier requirement lands on a different desk at every mill, after my Cambridge paper on manufacturing data, and specifically how a brand's requirement reaches a mill and who inside answers it. You run supplier compliance for SHEIN in Türkiye after seven years on social sustainability KPIs across H&M's European production market. Would you be open to some questions by any chance for our research?
+> My co-founder and I are building a microplastic detection system for textile wet processing. You run supplier compliance for SHEIN in Türkiye after seven years on social sustainability KPIs across H&M's European production market, we would love to learn from your experience. Would you be open to some questions for our research?
 
 | Claim in message | Live-snapshot source (2026-09-14, details/experience) |
 |---|---|
 | "run supplier compliance for SHEIN in Türkiye" | Experience → 'Associate Director, Social Compliance / SHEIN / Sep 2024 - Present / Istanbul' |
 | "seven years ... H&M's European production market" | Experience → 'H&M Group / 7 yrs 1 mo' and 'Following social sustainability KPIs in Europe Production Market' |
 
-Rule check: 508 chars, violations none. Inbox (LR-B25): first-name/company search on Izgin's account, no thread. Status at draft time: accepted 2026-09-14.
+Rule check: 365 chars, violations none. Inbox (LR-B25): first-name/company search on Izgin's account, no thread. Status at draft time: accepted 2026-09-14.
 
 ## C48 — Ayesha Navaid Anwar
 
-### Msg 1 — REDRAFTED 2026-09-14 (A/B)
+### Msg 1 — SETTLED 2026-09-14 (LR-B33)
 
-**Primary (503 chars, English, close_variant soft_ask, copy_variant build_disclosure, segment: brand):**
+**Primary (348 chars, English, close_variant soft_ask, copy_variant build_short, segment: brand):**
 
 > Ayesha hi! Thanks for connecting.
 >
-> My co-founder and I are building a microplastic detection system for textile wet processing. I am researching which supplier environmental numbers a brand can get from its mills and which it ends up estimating, specifically what you can and cannot get a mill to measure for you. You work with Marc O'Polo's suppliers on their wastewater and chemical performance through Higg FEM and ZDHC assessments. Would you be open to some questions by any chance for our research?
+> My co-founder and I are building a microplastic detection system for textile wet processing. You work with Marc O'Polo's suppliers on their wastewater and chemical performance through Higg FEM and ZDHC assessments, we would love to learn from your experience. Would you be open to some questions for our research?
 
 | Claim in message | Live-snapshot source (2026-09-14, details/experience) |
 |---|---|
@@ -108,24 +108,24 @@ Rule check: 508 chars, violations none. Inbox (LR-B25): first-name/company searc
 | "wastewater and chemical performance" | Experience → 'continuous improvement of climate, chemical, and wastewater performance across the supply chain' |
 | "Higg FEM and ZDHC assessments" | Experience → 'on-site assessments aligned with Higg FEM and ZDHC Roadmap to Zero standards' |
 
-Rule check: 503 chars, violations none. Inbox (LR-B25): first-name/company search on Izgin's account, no thread. Status at draft time: accepted 2026-09-14.
+Rule check: 348 chars, violations none. Inbox (LR-B25): first-name/company search on Izgin's account, no thread. Status at draft time: accepted 2026-09-14.
 
 ## C6 — Halil Kutluğ Kabahasanoğlu
 
-### Msg 1 — REDRAFTED 2026-09-14 (A/B)
+### Msg 1 — SETTLED 2026-09-14 (LR-B33)
 
-**Primary (506 chars, English, close_variant soft_ask, copy_variant research_only, segment: wet-processing mill):**
+**Primary (351 chars, English, close_variant soft_ask, copy_variant build_short, segment: wet-processing mill):**
 
 > Halil hi! Thanks for connecting.
 >
-> How are you? My co-founder and I are currently researching why some dye-houses can put a number on what leaves in their process water and others cannot, after my Cambridge paper on manufacturing data, and specifically what a laundry is asked to measure in its water and by whom. You run the laundry and garment dye plant at CRS Denim in Port Said after two decades of laundries at Cross Jeans and Eroğlu. Would you be open to some questions by any chance for our research?
+> My co-founder and I are building a microplastic detection system for textile wet processing. You run the laundry and garment dye plant at CRS Denim in Port Said after two decades of laundries at Cross Jeans and Eroğlu, we would love to learn from your experience. Would you be open to some questions for our research?
 
 | Claim in message | Live-snapshot source (2026-09-14, details/experience) |
 |---|---|
 | "run the laundry and garment dye plant at CRS Denim in Port Said" | Experience → 'Laundry @ Garment Dye Manager / Oct 2025 - Present / Port Said' |
 | "two decades running laundries at Cross Jeans and Eroğlu" | Experience → 'Laundry & Garment Dye Manager / Cross Jeans / May 2005 - Jun 2013' and 'Eroğlu Giyim / Jul 2013 - Dec 2015' and 'Cross Jeans 2018-22' |
 
-Rule check: 506 chars, violations none. Inbox (LR-B25): first-name/company search on Izgin's account, no thread. Status at draft time: accepted 2026-09-14.
+Rule check: 351 chars, violations none. Inbox (LR-B25): first-name/company search on Izgin's account, no thread. Status at draft time: accepted 2026-09-14.
 
 ## C5 — [REMOVED 2026-09-14 — profile not in English, LR-B31a] Mustafa Salih
 
@@ -145,20 +145,20 @@ Rule check: 407 chars, violations none. Inbox (LR-B25): first-name/company searc
 
 ## C55 — Gulfam S.
 
-### Msg 1 — REDRAFTED 2026-09-14 (A/B)
+### Msg 1 — SETTLED 2026-09-14 (LR-B33)
 
-**Primary (483 chars, English, close_variant soft_ask, copy_variant build_disclosure, segment: wet-processing mill):**
+**Primary (323 chars, English, close_variant soft_ask, copy_variant build_short, segment: wet-processing mill):**
 
 > Gulfam hi! Thanks for connecting.
 >
-> My co-founder and I are building a microplastic detection system for textile wet processing. I am researching why some dye-houses can put a number on what leaves in their process water and others cannot, specifically what a washing plant is asked to measure in its water and by whom. You run washing and R&D at Lucky Textile Mills after running laundries at Siddiqsons and Soorty. Would you be open to some questions by any chance for our research?
+> My co-founder and I are building a microplastic detection system for textile wet processing. You run washing and R&D at Lucky Textile Mills after running laundries at Siddiqsons and Soorty, we would love to learn from your experience. Would you be open to some questions for our research?
 
 | Claim in message | Live-snapshot source (2026-09-14, details/experience) |
 |---|---|
 | "run washing and R&D at Lucky Textile Mills" | Experience → 'Washing General Manager / Lucky Textile Mills / Mar 2018 - Present' and 'General Manager Research Development / LUCKY TEXTILE MILLS' |
 | "running laundries at Siddiqsons and Soorty" | Experience → 'General Manager / Siddiqsons Group / 2014-18' and 'Laundry Manager / Soorty Enterprises / 2007-12' |
 
-Rule check: 483 chars, violations none. Inbox (LR-B25): first-name/company search on Izgin's account, no thread. Status at draft time: accepted 2026-09-14.
+Rule check: 323 chars, violations none. Inbox (LR-B25): first-name/company search on Izgin's account, no thread. Status at draft time: accepted 2026-09-14.
 
 ## C37 — [REMOVED 2026-09-14 — profile not in English, LR-B31a] Erdal Gülcan
 

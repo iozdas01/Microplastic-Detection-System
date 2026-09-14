@@ -410,4 +410,4 @@ maps:
     early_kill: "score trending negative after 3+ completed interviews"
 
 # Msg 1 A/B arm on the contact card (schemas/contact.md → copy_variant); LR-B32.
-copy_variant: [build_disclosure, research_only]
+copy_variant: [build_disclosure, research_only, build_short]

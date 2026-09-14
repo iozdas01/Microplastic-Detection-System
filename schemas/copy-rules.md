@@ -209,7 +209,7 @@ founder in `founder.md`, she joins every thread (LR-B31), and the founder's own 
 "Me and my co-founder are currently researching". Use "My co-founder and I"; never a name the
 recipient cannot check.
 
-**LR-B32 — Msg 1 runs an A/B test on disclosure (founder decision, 2026-09-14).** Two arms,
+**LR-B32 — RETIRED 2026-09-14 by LR-B33 before any message was sent; kept so the `copy_variant` values it introduced stay defined.** Msg 1 A/B test on disclosure (founder decision, 2026-09-14). Two arms,
 recorded on the contact as `copy_variant` at draft time and alternated within every batch,
 evenly inside each tier:
 
@@ -225,6 +225,22 @@ evenly inside each tier:
 Both arms open "{First name} hi! Thanks for connecting." for an accepted connection. Report
 reply rates per arm in `results-{A_ID}.md`; below five replies per arm say the comparison is
 not yet interpretable, the same threshold as LR-B15.
+
+**LR-B33 — The settled Msg 1 shape (founder's own copy, 2026-09-14). Supersedes the LR-B18
+template and retires the LR-B32 A/B test before it ran.** Four beats and nothing else:
+
+> {First name} hi! Thanks for connecting.
+>
+> My co-founder and I are building a microplastic detection system for textile wet
+> processing. {One grounded clause about them, per LR-B1 and LR-B16}, we would love to
+> learn from your experience. Would you be open to some questions for our research?
+
+No research frame, no credential anchor: the build sentence is the anchor and must survive a
+click on the sender's profile (LR-B14). "We would love to learn from your experience" is the
+founder's phrase and is exempt from the LR-B24 blacklist entry for "I'd love to". The
+grounded clause is still drawn from the contact's own role text and still never their title.
+Record `copy_variant: build_short` so replies to this shape can be compared with any later
+shape.
 
 Why the permission ask rather than the question, given it carries no payload: the ask is
 small enough to answer in one word, and a yes converts a cold contact into an open thread
