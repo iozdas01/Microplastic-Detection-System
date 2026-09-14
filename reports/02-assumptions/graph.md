@@ -4,7 +4,7 @@ idea: industrial-process-data-infrastructure
 hunch_id: H1
 belief_level_prefix: H0
 belief_file: input-context/belief.md
-last_updated: 2026-09-13
+last_updated: 2026-09-14
 active_assumption: H1A2
 ---
 
@@ -104,7 +104,9 @@ assumptions:
     next_action: >-
       Ten conversations with people who run wet processing at textile mills. One question
       first: "the last time someone asked you for a microfiber figure — who was it, what did
-      you do, and what did it cost you?"
+      you do, and what did it cost you?" The same calls carry H1A3 and H1A6 (who paid for
+      the answer; would they sign a paid pilot), because the founders chose one budget-holder
+      ICP for all three (2026-09-14).
     disconfirmation: >-
       If fewer than four of ten can name anyone asking them for a microfiber number in the
       last year, or name one and report it cost nothing material, the pain is not there.
@@ -118,15 +120,19 @@ assumptions:
       - {name: lab_testing_provider, side: supply}
       - {name: consortium_expert, side: expert}
     domain_data_sources: []
-    icp_valid_titles: [Plant Manager, Production Manager, Dyehouse Manager, Head of Wet Processing,
-                       Quality Manager, Compliance Manager, Sustainability Manager, Technical Director,
-                       Environmental Manager, Owner, General Manager,
-                       Process Engineer, Process Manager, Systems Engineer]
-    # Process Engineer / Process Manager / Systems Engineer added 2026-09-13 at the founder's
-    # instruction; valid only inside a wet-processing manufacturer (tier textile_mill).
+    # Founder decision 2026-09-14: H1A2 and H1A6 use the SAME people, and every one of
+    # those conversations also carries the willingness-to-pay questions (H1A3, H1A6). The
+    # title list is therefore budget holders only; practitioners who can describe the
+    # process but cannot sign for spend are held, not interviewed. The quality, compliance,
+    # sustainability and engineer titles added 2026-09-09 and 2026-09-13 are withdrawn.
+    icp_valid_titles: [Owner, General Manager, Managing Director, Plant Manager, Factory Manager,
+                       Production Director, Technical Director, CFO, Dyehouse Manager,
+                       Head of Wet Processing,
+                       "brand side: Head or Director of Sustainability, Sourcing or Supplier Compliance"]
     icp_out_of_scope: ["garment assembly only (no wet processing)",
                        "sensor or instrumentation vendors",
-                       "retailers with no manufacturing"]
+                       "retailers with no manufacturing",
+                       "anyone who cannot sign for spend at a mill, or set supplier requirements at a brand"]
 
   - id: H1A3
     assumption: >-
@@ -284,7 +290,9 @@ assumptions:
     icp_valid_tiers:
       - {name: textile_mill, side: demand}
     domain_data_sources: []
-    icp_valid_titles: [Owner, General Manager, Plant Manager, Managing Director, CFO, Technical Director]
+    icp_valid_titles: [Owner, General Manager, Managing Director, Plant Manager, Factory Manager,
+                       Production Director, Technical Director, CFO, Dyehouse Manager,
+                       Head of Wet Processing]
     icp_out_of_scope: ["anyone who cannot sign for spend"]
 
   - id: H1A7

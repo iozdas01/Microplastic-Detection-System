@@ -16,10 +16,12 @@ threads). Turkish-only profiles are flagged in the contact's notes, not written 
 
 Planned arc for every contact here: Msg 1 permission ask (this file) → Msg 2 one specific
 past event ("the last time someone asked you for a figure on your process water, who was it
-and what did you do") → Msg 3 what took the longest / whose scope it fell on. No money
-question before Msg 4 (LR-B11).
+and what did you do") → Msg 3 what took the longest / whose scope it fell on → the call.
+Every contact here is a budget holder (founder decision 2026-09-14), so the call itself
+carries H1A3 and H1A6: who paid for the last answer, and whether they would sign a paid
+pilot at a stated number. No money question in Msg 1 or 2 (LR-B11).
 
-## C59 — Faizan Pasha
+## C59 — [REMOVED 2026-09-14 — title outside the budget-holder ICP] Faizan Pasha
 
 ### Msg 1 — DRAFTED 2026-09-14
 
@@ -36,7 +38,7 @@ question before Msg 4 (LR-B11).
 
 Rule check: 469 chars, violations none. Inbox (LR-B25): first-name/company search on Izgin's account, no thread. Status at draft time: accepted 2026-09-14.
 
-## C30 — Önder Ertürk
+## C30 — [REMOVED 2026-09-14 — title outside the budget-holder ICP] Önder Ertürk
 
 ### Msg 1 — DRAFTED 2026-09-14
 

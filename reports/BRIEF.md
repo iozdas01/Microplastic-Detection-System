@@ -4,16 +4,16 @@
 -->
 ---
 idea: industrial-process-data-infrastructure
-generated: 2026-09-14T19:05Z
+generated: 2026-09-14T19:12Z
 active_hunch: H1
 active_assumption: H1A2
 sources:
   belief: 6093ca2c2aa3
   lineage: cc8180212a4d
-  graph: cbf4d35b37df
+  graph: e61659408316
   evidence: absent
   offerings: absent
-  contacts: a7f72b8610a5
+  contacts: c756d74804a1
 ---
 
 # industrial-process-data-infrastructure — session brief
@@ -52,7 +52,7 @@ _No evidence ledger yet._
 
 Reply rate None% of contacted · reply→call None%
 
-By assumption: H1A2 0/0 replied
+By assumption: H1A2 0/0 replied · H1A3 0/0 replied · H1A6 0/0 replied
 
 ## What already exists for this idea
 
@@ -69,8 +69,8 @@ _Generated from the folder. Check here before creating a new artifact — if a f
 | `reports/outreach/contacts.md` | The contact ledger — one card per person targeted, invited or interviewed for this idea, with the live-profile read that qualified them and the state… |
 | `reports/outreach/process-map.md` | The process map — one entry per stage of textile manufacturing from raw fibre to finished T-shirt, whether the stage touches water, how much fibre it… |
 | `reports/outreach/research-map.md` | The research map — one row per paper or group on contaminant detection in water, classified by what its method actually did, so the crowded and empty… |
-| `reports/outreach/results-H1A2.md` | Outreach results — H1A2 · industrial-process-data-infrastructure |
-| `reports/outreach/target-list-audit-2026-09-13.md` | Target list audit — 2026-09-13 |
+| `reports/outreach/results-*.md` | 3 generated files — rebuild them, never edit |
+| `reports/outreach/target-list-audit-*.md` | 2 dated snapshots — latest 2026-09-14 · Target list audit — 2026-09-14 |
 | `reports/outreach/technology-map.md` | The technology map — one entry per way of detecting microplastics or microfibres in water (what it physically measures, how small it goes, how far fr… |
 | `reports/outreach/copy/H1A2-linkedin.md` | The LinkedIn copy archive for H1A2 — every message drafted or sent to a contact for this assumption, with the live-snapshot line behind each claim an… |
 | `reports/pages/pages.yaml` | What each page in this folder is, and whether it still holds. |
