@@ -65,6 +65,8 @@ LED_W = 45.0                    # along Y; two of them stack in Y
 LED_T = 3.5
 LED_COUNT = 2
 LED_GAP = 0.5                   # between the two slabs
+LED_LEAD_L = 8.0                # [GUESS] room at the +X end for the LED body and its two leads
+POCKET_CLEAR = 1.0              # slack on every side of the slabs
 DIFFUSER_T = 0.0                # none: the 1621 diffuses itself
 POLARISER_T = 0.3               # linear polarising film, each sheet
 TINT_T = 0.1                    # [GUESS] full-wave "tint" sheet (cellophane) beside polariser 1
@@ -77,12 +79,13 @@ CABLE_H = 4.0
 # --------------------------------------------------------------------------
 # Light box: sized by the two LED slabs plus a wall. The tray rides on its top.
 BOX_WALL = 3.0
-POCKET_L = LED_L + 1.0                                   # X
-POCKET_W = LED_COUNT * LED_W + (LED_COUNT - 1) * LED_GAP + 1.0   # Y
+POCKET_L = LED_L + 2 * POCKET_CLEAR + LED_LEAD_L         # X; lit area centred, lead room at +X
+POCKET_CX = LED_LEAD_L / 2.0                             # pocket centre, so the lit area sits on the axis
+POCKET_W = LED_COUNT * LED_W + (LED_COUNT - 1) * LED_GAP + 2 * POCKET_CLEAR   # Y
 POCKET_DEPTH = LED_T + 1.0
 RAIL_H = 4.0                    # tray rails on the box top, along Y (tray slides in from -Y)
 RAIL_W = 4.0
-BOX_X = POCKET_L + 2 * BOX_WALL + 2 * RAIL_W             # rails sit outside the pocket
+BOX_X = POCKET_L + 2 * BOX_WALL + 2 * RAIL_W             # rails sit outside the pocket; box centred on the axis, pocket offset inside it
 BOX_Y = POCKET_W + 2 * BOX_WALL + RAIL_W                 # rear stop at +Y
 BOX_H = 12.0                    # LED slab is 3.5 mm; the rest is housing
 POLARISER_W = POCKET_L          # films cut to the pocket length, lie in the film recess

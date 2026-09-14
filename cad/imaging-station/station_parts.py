@@ -41,12 +41,12 @@ def base_plate():
     top = P.PLATE_T + P.BOX_H
 
     # LED pocket, from the top
-    body -= box(P.POCKET_L, P.POCKET_W, P.POCKET_DEPTH + 1.0, 0, 0, top - P.POCKET_DEPTH)
+    body -= box(P.POCKET_L, P.POCKET_W, P.POCKET_DEPTH + 1.0, P.POCKET_CX, 0, top - P.POCKET_DEPTH)
     # film recess above the pocket, between the rails, open to the front so a sheet slides in
     inner_x = P.BOX_X - 2 * P.RAIL_W - 0.4
     body -= box(inner_x, P.BOX_Y + 2.0, P.FILM_RECESS + 1.0, 0, -1.0, top - P.FILM_RECESS)
     # lead slot through the +X wall at pocket-floor level
-    body -= box(P.BOX_X, P.CABLE_W, P.CABLE_H, P.BOX_X / 2.0, 0, top - P.POCKET_DEPTH)
+    body -= box(P.BOX_X, P.CABLE_W * 2, P.CABLE_H, P.BOX_X / 2.0, 0, top - P.POCKET_DEPTH)   # both slabs' leads
     # tray rails along Y at the ±X edges, and the rear stop at +Y
     for sx in (-1, +1):
         body += box(P.RAIL_W, P.BOX_Y, P.RAIL_H, sx * (P.BOX_X / 2.0 - P.RAIL_W / 2.0), 0, top)
