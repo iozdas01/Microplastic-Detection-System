@@ -1757,7 +1757,9 @@ body::before {{
     </select>
     <select id="fltCopy" class="filter-select" aria-label="Filter by copy status">
       <option value="">All (copy or not)</option>
-      <option value="ready">✍ Copy ready to send</option>
+      <option value="unsent">✍ Drafted, not yet sent</option>
+      <option value="sent">✓ Sent</option>
+      <option value="ready">Any copy on file</option>
       <option value="missing">— No copy yet</option>
     </select>
     <select id="sortBy" class="filter-select" aria-label="Sort contacts">
@@ -2114,6 +2116,9 @@ function apply() {{
     if (sigv && c.signal_type !== sigv) return false;
     if (av && (c.assumptions_tested || []).indexOf(av) === -1) return false;
     var hasCopy = !!(COPY_BY_ID && COPY_BY_ID[c.id]);
+    var sentAny = /\\[msg\\d+ sent\\]/i.test(c.notes || "");
+    if (cv === "unsent" && !(hasCopy && !sentAny)) return false;
+    if (cv === "sent" && !sentAny) return false;
     if (cv === "ready" && !hasCopy) return false;
     if (cv === "missing" && hasCopy) return false;
     if (qv) {{

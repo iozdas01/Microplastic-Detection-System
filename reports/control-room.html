@@ -1577,7 +1577,7 @@ body::before {
 <!-- ── page header ── -->
 <header class="page-header">
   <h1>Strategy control room — <span class="idea-name">industrial-process-data-infrastructure</span></h1>
-  <p class="subtitle">60 contacts &middot; last updated 2026-09-14 &middot; generated 2026-09-14T19:00:02+00:00</p>
+  <p class="subtitle">60 contacts &middot; last updated 2026-09-14 &middot; generated 2026-09-14T19:02:14+00:00</p>
 </header>
 
 <!-- ── tab nav ── -->
@@ -1894,7 +1894,9 @@ body::before {
     </select>
     <select id="fltCopy" class="filter-select" aria-label="Filter by copy status">
       <option value="">All (copy or not)</option>
-      <option value="ready">✍ Copy ready to send</option>
+      <option value="unsent">✍ Drafted, not yet sent</option>
+      <option value="sent">✓ Sent</option>
+      <option value="ready">Any copy on file</option>
       <option value="missing">— No copy yet</option>
     </select>
     <select id="sortBy" class="filter-select" aria-label="Sort contacts">
@@ -2565,7 +2567,7 @@ body::before {
 
 </div><!-- .page -->
 
-<div class="page-timestamp" aria-hidden="true">gen 2026-09-14T19:00:02+00:00</div>
+<div class="page-timestamp" aria-hidden="true">gen 2026-09-14T19:02:14+00:00</div>
 
 <!-- ── copy modal ── -->
 <div id="copyModal" class="modal-backdrop" role="dialog" aria-modal="true" aria-label="Outreach copy" onclick="modalBackdropClick(event)">
@@ -5055,6 +5057,9 @@ function apply() {
     if (sigv && c.signal_type !== sigv) return false;
     if (av && (c.assumptions_tested || []).indexOf(av) === -1) return false;
     var hasCopy = !!(COPY_BY_ID && COPY_BY_ID[c.id]);
+    var sentAny = /\[msg\d+ sent\]/i.test(c.notes || "");
+    if (cv === "unsent" && !(hasCopy && !sentAny)) return false;
+    if (cv === "sent" && !sentAny) return false;
     if (cv === "ready" && !hasCopy) return false;
     if (cv === "missing" && hasCopy) return false;
     if (qv) {
