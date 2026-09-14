@@ -1336,13 +1336,26 @@ body::before {{
 .kanban-count {{margin-left:auto;min-width:20px;text-align:center;color:var(--text-dimmer);font-size:10px;font-weight:750;}}
 .kanban-cards {{display:grid;gap:8px;padding:8px;}}
 .kanban-empty {{padding:28px 16px;text-align:center;color:var(--text-dimmer);font-size:11px;line-height:1.5;}}
-.task-card {{border:1px solid var(--border);border-radius:var(--r-md);padding:11px;background:var(--surface);box-shadow:0 4px 12px rgba(0,0,0,.06);cursor:grab;}}
+.task-card {{border:1px solid var(--border);border-radius:var(--r-md);padding:8px 10px;background:var(--surface);box-shadow:0 2px 6px rgba(0,0,0,.05);cursor:pointer;}}
+.task-card:hover {{border-color:var(--accent);}}
+/* Compact by default: title and owner only. Click the card to reveal detail, dates and actions. */
+.task-card:not(.expanded) .task-card-detail,.task-card:not(.expanded) .task-card-meta,.task-card:not(.expanded) .task-card-actions {{display:none;}}
+.task-card-owner-mini {{flex:none;align-self:flex-start;border:1px solid var(--accent);color:var(--accent);border-radius:999px;padding:1px 6px;font-size:9px;text-transform:uppercase;letter-spacing:.05em;}}
+.task-card-caret {{flex:none;color:var(--text-dimmer);font-size:10px;transition:transform .15s;margin-top:2px;}}
+.task-card.expanded .task-card-caret {{transform:rotate(90deg);}}
+/* Done: one tiny line each; still expandable */
+.kanban-column[data-status="done"] {{min-height:120px;}}
+.kanban-column[data-status="done"] .kanban-cards {{gap:3px;padding:6px;}}
+.kanban-column[data-status="done"] .task-card {{padding:4px 8px;box-shadow:none;background:transparent;border-color:var(--border-subtle);}}
+.kanban-column[data-status="done"] .task-card:not(.expanded) .task-card-title {{font-size:10.5px;font-weight:500;color:var(--text-dimmer);white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}}
+.kanban-column[data-status="done"] .task-card:not(.expanded) .task-card-owner-mini {{display:none;}}
+.kanban-column[data-status="done"] .task-card:not(.expanded) .task-card-caret {{display:none;}}
 .task-card[data-priority="high"] {{border-left:3px solid #e05d44;}}
 .task-card[data-priority="low"] {{opacity:.78;}}
 .task-card.system {{cursor:default;border-style:dashed;box-shadow:none;}}
 .task-card.dragging {{opacity:.45;}}
 .task-card-top {{display:flex;gap:8px;align-items:flex-start;}}
-.task-card-title {{flex:1;font-size:12.5px;font-weight:680;line-height:1.35;}}
+.task-card-title {{flex:1;font-size:12px;font-weight:650;line-height:1.35;}}
 .task-card-detail {{margin-top:6px;color:var(--text-dim);font-size:11px;line-height:1.45;}}
 .task-card-meta {{display:flex;align-items:center;gap:6px;margin-top:10px;color:var(--text-dimmer);font-size:9.5px;text-transform:uppercase;letter-spacing:.05em;}}
 .task-card-tag {{border:1px solid var(--border-subtle);border-radius:999px;padding:2px 6px;}}
@@ -2371,6 +2384,7 @@ document.querySelectorAll(".tab").forEach(function(btn) {{
     detail:invitesQueued + " targets waiting · " + awaiting + " invites awaiting acceptance",
     status:"backlog",priority:"low",system:true,action:"queue"}});
 
+  var expanded = {{}};
   function taskCard(task) {{
     var controls = "";
     if (task.system) {{
@@ -2384,9 +2398,11 @@ document.querySelectorAll(".tab").forEach(function(btn) {{
       controls += '<span class="task-card-spacer"></span><button class="task-card-action" data-edit="' + esc(task.id) + '">Edit</button>' +
         '<button class="task-card-action danger" data-delete="' + esc(task.id) + '">Delete</button>';
     }}
-    return '<article class="task-card' + (task.system ? ' system' : '') + '" data-id="' + esc(task.id) +
-      '" data-priority="' + esc(task.priority || "normal") + '" draggable="' + (!task.system) + '">' +
-      '<div class="task-card-top"><div class="task-card-title">' + esc(task.title) + '</div></div>' +
+    return '<article class="task-card' + (task.system ? ' system' : '') + (expanded[task.id] ? ' expanded' : '') + '" data-id="' + esc(task.id) +
+      '" data-priority="' + esc(task.priority || "normal") + '" draggable="' + (!task.system) + '" title="Click to show details">' +
+      '<div class="task-card-top"><div class="task-card-title">' + esc(task.title) + '</div>' +
+      (!task.system && task.owner ? '<span class="task-card-owner-mini">' + esc(task.owner) + '</span>' : '') +
+      '<span class="task-card-caret" aria-hidden="true">&#9656;</span></div>' +
       (task.detail ? '<div class="task-card-detail">' + esc(task.detail) + '</div>' : '') +
       '<div class="task-card-meta"><span class="task-card-tag">' + (task.system ? 'from ledger' : esc(task.priority || "normal")) + '</span>' +
       (!task.system && task.owner ? '<span class="task-card-tag task-card-owner">' + esc(task.owner) + '</span>' : '') +
@@ -2470,7 +2486,14 @@ document.querySelectorAll(".tab").forEach(function(btn) {{
 
   boardEl.addEventListener("click",async function(event) {{
     var target = event.target.closest("button");
-    if (!target) return;
+    if (!target) {{
+      if (event.target.closest("a")) return;
+      var card = event.target.closest(".task-card");
+      if (!card) return;
+      expanded[card.dataset.id] = !expanded[card.dataset.id];
+      card.classList.toggle("expanded", !!expanded[card.dataset.id]);
+      return;
+    }}
     if (target.dataset.openCopy) return openCopyModal(target.dataset.openCopy);
     if (target.dataset.approve) {{
       var contact = CONTACTS.find(function(c) {{ return c.id === target.dataset.approve; }});
