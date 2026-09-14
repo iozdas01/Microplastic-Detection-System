@@ -264,6 +264,14 @@ the first message. Do not copy it into cold copy.
 
 ## Register and banned forms
 
+**LR-B31 — All outreach copy is in English, whatever language the contact's profile is in
+(founder rule, 2026-09-14).** The co-founder joins the threads, so a Turkish, Portuguese or
+Italian message would exclude her from the conversation it opens. Do not match the
+contact's language for Msg 1. A contact whose profile shows no English is flagged in
+`notes:` as a reply-rate risk, not written to in another language. LR-6 still governs
+register inside English (formal for seniors); the Russian `)` exception under LR-B23 is
+about an existing thread's punctuation, not about choosing a language.
+
 **LR-B24 — No cliché or stock cold-outreach phrases.** Reject any draft containing a
 blacklisted stock phrase before it reaches the founder, case-insensitive, the same mechanism
 as the em-dash and cert-token checks. Add newly caught phrases as they turn up. This closes

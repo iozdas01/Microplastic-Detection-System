@@ -11,8 +11,8 @@ Rules applied on every draft: LR-B1, B2, B3, B6, B11, B13, B14, B16, B17, B18, B
 B25, B27, B28; rejection list run by script (no em-dashes, no cliché phrases, no raw title,
 no cert tokens). Sender anchor: the founder's own `credibility_hook` ("Cambridge paper", the
 MPhil research on manufacturing data prepared for publication with the Cambridge DIAL
-Group). Turkish drafts carry the same anchor in Turkish; the formal register is locked by
-the honorific (LR-6).
+Group). All drafts are in English (LR-B31, founder rule 2026-09-14: the co-founder joins the
+threads). Turkish-only profiles are flagged in the contact's notes, not written to in Turkish.
 
 Planned arc for every contact here: Msg 1 permission ask (this file) → Msg 2 one specific
 past event ("the last time someone asked you for a figure on your process water, who was it
@@ -40,11 +40,11 @@ Rule check: 469 chars, violations none. Inbox (LR-B25): first-name/company searc
 
 ### Msg 1 — DRAFTED 2026-09-14
 
-**Primary (457 chars, Turkish, close_variant soft_ask, segment: wet-processing mill):**
+**Primary (453 chars, English, close_variant soft_ask, segment: wet-processing mill):**
 
-> Önder Bey merhaba, nasılsınız?
+> Önder hi! How are you?
 >
-> Bazı boyahaneler proses suyuyla çıkanı sayıya dökebilirken bazılarının neden dökemediğini araştırıyorum, Cambridge'de üretim verisi üzerine yazdığım makalenin ardından, özellikle de bir denim fabrikasının suyunda neyi ölçmesinin istendiğini ve bunu kimin istediğini. Sharabati'de Inditex, LCW ve H&M denetimlerini ve çevre denetimlerini siz hazırlıyor ve takip ediyorsunuz. Araştırmamız için birkaç soruya açık olur muydunuz?
+> I am currently researching why some dye-houses can put a number on what leaves in their process water and others cannot, after my Cambridge paper on manufacturing data, and specifically what a denim mill is asked to measure in its water and by whom. You prepare and follow the Inditex, LCW and H&M customer audits and the environmental inspections at Sharabati. Would you be open to some questions by any chance for our research?
 
 | Claim in message | Live-snapshot source (2026-09-14, details/experience) |
 |---|---|
@@ -52,24 +52,24 @@ Rule check: 469 chars, violations none. Inbox (LR-B25): first-name/company searc
 | "Inditex, LCW ve H&M müşteri denetimlerini ... hazırlıyor ve takip ediyorsunuz" | Experience → 'Preparation for Customer Audits and follow-up of audits (Indıtex, LCW, H&M, Bestseller ..etc)' |
 | "çevre denetimlerini" | Experience → 'Environmental Legislation and follow-up of environmental inspections' |
 
-Rule check: 457 chars, violations none. Inbox (LR-B25): first-name/company search on Izgin's account, no thread. Status at draft time: accepted 2026-09-14.
+Rule check: 453 chars, violations none. Inbox (LR-B25): first-name/company search on Izgin's account, no thread. Status at draft time: accepted 2026-09-14.
 
 ## C38 — Murat Gülay
 
 ### Msg 1 — DRAFTED 2026-09-14
 
-**Primary (449 chars, Turkish, close_variant soft_ask, segment: wet-processing mill):**
+**Primary (440 chars, English, close_variant soft_ask, segment: wet-processing mill):**
 
-> Murat Bey merhaba, nasılsınız?
+> Murat hi! How are you?
 >
-> Bazı boyahaneler proses suyuyla çıkanı sayıya dökebilirken bazılarının neden dökemediğini araştırıyorum, Cambridge'de üretim verisi üzerine yazdığım makalenin ardından, özellikle de bir kumaş işletmesinin suyunda neyi ölçmesinin istendiğini ve bunu kimin istediğini. RB Karesi'de 200 kişilik ekibinizle örgü, dokuma, boyama ve baskı süreçlerini siz denetliyorsunuz. Araştırmamız için birkaç soruya açık olur muydunuz?
+> I am currently researching why some dye-houses can put a number on what leaves in their process water and others cannot, after my Cambridge paper on manufacturing data, and specifically what a fabric mill is asked to measure in its water and by whom. You oversee the knitting, weaving, dyeing and printing processes at RB Karesi with a team of 200. Would you be open to some questions by any chance for our research?
 
 | Claim in message | Live-snapshot source (2026-09-14, details/experience) |
 |---|---|
 | "RB Karesi'de 200 kişilik ekibinizle" | Experience → 'rb karesi tekstil ... 200 kişilik bir ekip ile birlikte' |
 | "örgü, dokuma, boyama ve baskı süreçlerini siz denetliyorsunuz" | Experience → 'örgü, dokuma,boyama ve baskı süreçlerini denetleyerek' |
 
-Rule check: 449 chars, violations none. Inbox (LR-B25): first-name/company search on Izgin's account, no thread. Status at draft time: accepted 2026-09-14.
+Rule check: 440 chars, violations none. Inbox (LR-B25): first-name/company search on Izgin's account, no thread. Status at draft time: accepted 2026-09-14.
 
 ## C40 — Erdogan Sekerci
 
@@ -127,17 +127,17 @@ Rule check: 464 chars, violations none. Inbox (LR-B25): first-name/company searc
 
 ### Msg 1 — DRAFTED 2026-09-14
 
-**Primary (410 chars, Turkish, close_variant soft_ask, segment: wet-processing mill):**
+**Primary (407 chars, English, close_variant soft_ask, segment: wet-processing mill):**
 
-> Mustafa Bey merhaba, nasılsınız?
+> Mustafa hi! How are you?
 >
-> Bazı boyahaneler proses suyuyla çıkanı sayıya dökebilirken bazılarının neden dökemediğini araştırıyorum, Cambridge'de üretim verisi üzerine yazdığım makalenin ardından, özellikle de bir boyahanenin suyunda neyi ölçmesinin istendiğini ve bunu kimin istediğini. Yalçın Boya Tekstil'de on bir yıldır üretimi siz yönetiyorsunuz. Araştırmamız için birkaç soruya açık olur muydunuz?
+> I am currently researching why some dye-houses can put a number on what leaves in their process water and others cannot, after my Cambridge paper on manufacturing data, and specifically what a dye-house is asked to measure in its water and by whom. You have run production at Yalçın Boya Tekstil for eleven years. Would you be open to some questions by any chance for our research?
 
 | Claim in message | Live-snapshot source (2026-09-14, details/experience) |
 |---|---|
 | "Yalçın Boya Tekstil'de on bir yıldır üretimi siz yönetiyorsunuz" | Experience → 'Üretim Müdürü / Yalçın Boya Tekstil San. ve Tic. Ltd. Şti. / Aug 2015 - Present · 11 yrs 2 mos' |
 
-Rule check: 410 chars, violations none. Inbox (LR-B25): first-name/company search on Izgin's account, no thread. Status at draft time: accepted 2026-09-14.
+Rule check: 407 chars, violations none. Inbox (LR-B25): first-name/company search on Izgin's account, no thread. Status at draft time: accepted 2026-09-14.
 
 ## C55 — Gulfam S.
 
@@ -160,11 +160,11 @@ Rule check: 442 chars, violations none. Inbox (LR-B25): first-name/company searc
 
 ### Msg 1 — DRAFTED 2026-09-14
 
-**Primary (474 chars, Turkish, close_variant soft_ask, segment: wet-processing mill):**
+**Primary (483 chars, English, close_variant soft_ask, segment: wet-processing mill):**
 
-> Erdal Bey merhaba, nasılsınız?
+> Erdal hi! How are you?
 >
-> Bazı boyahaneler proses suyuyla çıkanı sayıya dökebilirken bazılarının neden dökemediğini araştırıyorum, Cambridge'de üretim verisi üzerine yazdığım makalenin ardından, özellikle de bir boyahanenin suyunda neyi ölçmesinin istendiğini ve bunu kimin istediğini. Işıksoy Tekstil'de kalite kontrolü siz yürütüyorsunuz, öncesinde Ar-Ge merkezini, Sönmez Filament'te ise boyahaneyi yönetmişsiniz. Araştırmamız için birkaç soruya açık olur muydunuz?
+> I am currently researching why some dye-houses can put a number on what leaves in their process water and others cannot, after my Cambridge paper on manufacturing data, and specifically what a dye-house is asked to measure in its water and by whom. You run quality control at Işıksoy Tekstil after heading its R&D centre and, before that, the dyehouse and quality control at Sönmez Filament. Would you be open to some questions by any chance for our research?
 
 | Claim in message | Live-snapshot source (2026-09-14, details/experience) |
 |---|---|
@@ -172,7 +172,7 @@ Rule check: 442 chars, violations none. Inbox (LR-B25): first-name/company searc
 | "öncesinde Ar-Ge merkezini" | Experience → 'Ar-Ge Merkezi Müdürü / Dec 2017 - Nov 2019' |
 | "Sönmez Filament'te boyahane ile kalite kontrolü" | Experience → 'Boyahane&Kalite Kontrol Şefi / Sönmez Filament A.Ş. / 2005-08' |
 
-Rule check: 474 chars, violations none. Inbox (LR-B25): first-name/company search on Izgin's account, no thread. Status at draft time: accepted 2026-09-14.
+Rule check: 483 chars, violations none. Inbox (LR-B25): first-name/company search on Izgin's account, no thread. Status at draft time: accepted 2026-09-14.
 
 ## C57 — Nuno Macieira
 

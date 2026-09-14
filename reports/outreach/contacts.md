@@ -164,7 +164,7 @@ active_last_30d: unknown
 open_to_work: false
 outreach_status: accepted
 found_date: 2026-09-13
-notes: "[profile read 2026-09-13] details/experience: Üretim Müdürü Yalçın Boya Tekstil Aug 2015-present (11 yrs); earlier planning/ERP roles in electronics. Company name says dyeing textile; confirm the plant does its own wet processing on the first call. Passes. [invited 2026-09-13] bare invite via custom-invite modal, name confirmed Mustafa SALİH, sent by Claude at founder's instruction. [accepted 2026-09-14] connection accepted (seen in Connections list, recently added). [msg1 drafted 2026-09-14] Msg 1 permission ask drafted from a fresh details/experience snapshot; inbox searched, no prior thread. Copy in copy/H1A2-linkedin.md."
+notes: "[profile read 2026-09-13] details/experience: Üretim Müdürü Yalçın Boya Tekstil Aug 2015-present (11 yrs); earlier planning/ERP roles in electronics. Company name says dyeing textile; confirm the plant does its own wet processing on the first call. Passes. [invited 2026-09-13] bare invite via custom-invite modal, name confirmed Mustafa SALİH, sent by Claude at founder's instruction. [accepted 2026-09-14] connection accepted (seen in Connections list, recently added). [msg1 drafted 2026-09-14] Msg 1 permission ask drafted from a fresh details/experience snapshot; inbox searched, no prior thread. Copy in copy/H1A2-linkedin.md. [language 2026-09-14] Profile text Turkish only, no languages listed; English reply ability unknown. Written to in English per LR-B31."
 
 ## Halil Kutluğ Kabahasanoğlu
 
@@ -1124,7 +1124,7 @@ active_last_30d: unknown
 open_to_work: false
 outreach_status: accepted
 found_date: 2026-09-13
-notes: "[profile read 2026-09-13] details/experience: Işıksoy Tekstil since Sep 2009: QC supervisor Nov 2019-present, R&D centre manager 2017-19, QC chief 2009-17; dyehouse & QC chief Sönmez Filament 2005-08. Passes. [invited 2026-09-13] bare invite via custom-invite modal, name confirmed Erdal GÜLCAN, sent by Claude at founder's instruction. [accepted 2026-09-14] connection accepted (seen in Connections list, recently added). [msg1 drafted 2026-09-14] Msg 1 permission ask drafted from a fresh details/experience snapshot; inbox searched, no prior thread. Copy in copy/H1A2-linkedin.md."
+notes: "[profile read 2026-09-13] details/experience: Işıksoy Tekstil since Sep 2009: QC supervisor Nov 2019-present, R&D centre manager 2017-19, QC chief 2009-17; dyehouse & QC chief Sönmez Filament 2005-08. Passes. [invited 2026-09-13] bare invite via custom-invite modal, name confirmed Erdal GÜLCAN, sent by Claude at founder's instruction. [accepted 2026-09-14] connection accepted (seen in Connections list, recently added). [msg1 drafted 2026-09-14] Msg 1 permission ask drafted from a fresh details/experience snapshot; inbox searched, no prior thread. Copy in copy/H1A2-linkedin.md. [language 2026-09-14] Profile text Turkish only, no languages listed; English reply ability unknown. Written to in English per LR-B31."
 
 ## Murat Gülay
 
@@ -1154,7 +1154,7 @@ active_last_30d: unknown
 open_to_work: false
 outreach_status: accepted
 found_date: 2026-09-13
-notes: "[profile read 2026-09-13] details/experience: Üretim ve Kalite Müdürü RB Karesi Tekstil Jul 2017-present (9 yrs); own words: audits knitting, weaving, dyeing and printing processes, 200-person production and quality team. Passes. [invited 2026-09-13] bare invite via custom-invite modal, name confirmed Murat Gülay, sent by Claude at founder's instruction. [accepted 2026-09-14] connection accepted (seen in Connections list, recently added). [msg1 drafted 2026-09-14] Msg 1 permission ask drafted from a fresh details/experience snapshot; inbox searched, no prior thread. Copy in copy/H1A2-linkedin.md."
+notes: "[profile read 2026-09-13] details/experience: Üretim ve Kalite Müdürü RB Karesi Tekstil Jul 2017-present (9 yrs); own words: audits knitting, weaving, dyeing and printing processes, 200-person production and quality team. Passes. [invited 2026-09-13] bare invite via custom-invite modal, name confirmed Murat Gülay, sent by Claude at founder's instruction. [accepted 2026-09-14] connection accepted (seen in Connections list, recently added). [msg1 drafted 2026-09-14] Msg 1 permission ask drafted from a fresh details/experience snapshot; inbox searched, no prior thread. Copy in copy/H1A2-linkedin.md. [language 2026-09-14] Profile text Turkish only, no languages listed; English reply ability unknown. Written to in English per LR-B31."
 
 ## Göksel Arcan
 
