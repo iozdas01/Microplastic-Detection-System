@@ -143,7 +143,13 @@ vocabularies:
     schema: schemas/evidence.md
     values: [article, post_mortem, founder_interview, procurement, job_post, forum,
              market_report, expert_call, our_observation, customer_interview,
-             pilot_data, commercial_data, company_statement, regulatory_document]
+             pilot_data, commercial_data, company_statement, regulatory_document,
+             industry_standard]
+    # industry_standard (added 2026-09-14) — a supplier requirement published by a brand
+    # or an industry body and enforced through purchasing contracts and audits rather than
+    # law: ZDHC Wastewater Guidelines, Inditex Green to Wear, Higg FEM. Like
+    # regulatory_document it states what is REQUIRED of a supplier, not what the supplier
+    # feels; grade the obligation, never infer pain. First use: E3, E4.
     # regulatory_document (added 2026-09-14) — a regulator's or legislature's own
     # published instrument: statute, board resolution, policy handbook, programme
     # timeline slide from the agency running the programme. Primary and binding,
@@ -396,6 +402,7 @@ maps:
     pilot_data:         5
     commercial_data:    5
     regulatory_document: 4
+    industry_standard:   4
 
 
   founder_label_to_entry_confidence:

@@ -114,9 +114,13 @@ assumptions:
     test_cost: 1
     parent_assumptions: []
     child_assumptions: [H1A3, H1A4, H1A6, H1A7, H1A8, H1A9]
-    evidence_for: []
+    evidence_for: [E4]
     evidence_against: []
-    status: untested
+    # E3 is ambiguous: ZDHC asks mills to monitor TSS, not a microfibre count.
+    status: weakly_supported
+    # weakly_supported set 2026-09-14 on two industry-standard documents (E3, E4): brands do
+    # ask wet-process mills about fibre release, but as 'control' and TSS, not a number. Zero
+    # conversations yet; the founder may revise this call.
     next_action: >-
       Ten conversations with people who run wet processing at textile mills. One question
       first: "the last time someone asked you for a microfiber figure — who was it, what did

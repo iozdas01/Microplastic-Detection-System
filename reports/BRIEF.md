@@ -4,16 +4,16 @@
 -->
 ---
 idea: industrial-process-data-infrastructure
-generated: 2026-09-14T21:20Z
+generated: 2026-09-14T22:56Z
 active_hunch: H1, H3, H5
 active_assumption: H1A2
 sources:
   belief: 6093ca2c2aa3
   lineage: acb22ff76116
-  graph: 73d7103da029
-  evidence: ef6dfaf432de
+  graph: 2e388c457f54
+  evidence: 61ff8f30c6d6
   offerings: absent
-  contacts: e796b45f3a27
+  contacts: 6355d63ad533
 ---
 
 # industrial-process-data-infrastructure — session brief
@@ -48,7 +48,7 @@ Lineage: H2 superseded · H4 proposed
 
 | # | ID | claim | status | evidence | next action |
 |---|---|---|---|---|---|
-| 1 | **H1A2** ← | Textile wet-processing mills are already being asked for a microfiber number by a brand, an auditor or a regu… | `untested` | `none` | Ten conversations with people who run wet processing at textile mills. One question first… |
+| 1 | **H1A2** ← | Textile wet-processing mills are already being asked for a microfiber number by a brand, an auditor or a regu… | `weakly_supported` | `4/5 · 2E (1+/0-)` | Ten conversations with people who run wet processing at textile mills. One question first… |
 | 2 | **H1A10** | People running a production line can name a recent case where a measured number sat waiting for a person to i… | `untested` | `none` | Ask five people who run any high-mix production line, before any mention of sensors or so… |
 | 3 | **H5A1** | Something dated in the last three years has made membrane life a question a membrane maker must now answer wi… | `untested` | `none` | One afternoon: read what DuPont Water Solutions, Hydranautics and Toray Membrane USA publ… |
 
@@ -56,20 +56,22 @@ _← = `active_assumption`. Ranking: leap-of-faith gate → DAG roots first → 
 
 ## Evidence
 
-**2 entries** · 2 supports / 0 contradicts / 0 ambiguous · latest 2026-09-14
+**4 entries** · 3 supports / 0 contradicts / 1 ambiguous · latest 2026-09-14
 
-For **H1A2**: 0 entries.
+For **H1A2**: 2 entries.
 
 - `E1` 2026-09-14 → **H3A1** (supports) — The Board's programme timeline shows 'Fall 2023 – Fall 2025: Phase I Monitoring' and 'Fall 2026 – Fall 2028: Phase II Monitoring'; sampling by ASTM D…
 - `E2` 2026-09-14 → **H3A1** (supports) — Monitoring runs through 'monitoring orders'; results are reported to DDW and 'positive detections in CCRs' (the utility's annual Consumer Confidence…
+- `E3` 2026-09-14 → **H1A2** (ambiguous) — The guideline that H&M, Inditex and most brands make mills test against does address fibre fragmentation, but the only requirement is on TSS: 'Monito…
+- `E4` 2026-09-14 → **H1A2** (supports) — A wet-processing mill is rated 'B' rather than best-in-class 'A' if 'Fibers and microfibers are released into the environment without any internal co…
 
 ## Outreach
 
-**76 targeted** · 0 contacted · 0 replied · 0 call-progressed · 0 scheduled
+**77 targeted** · 0 contacted · 0 replied · 0 call-progressed · 0 scheduled
 
 Reply rate None% of contacted · reply→call None%
 
-By assumption: H1A2 0/0 replied · H1A3 0/0 replied · H1A6 0/0 replied
+By assumption: H1A2 0/0 replied · H1A3 0/0 replied · H1A6 0/0 replied · H2 0/0 replied
 
 ## What already exists for this idea
 
@@ -87,10 +89,11 @@ _Generated from the folder. Check here before creating a new artifact — if a f
 | `reports/outreach/contacts.md` | The contact ledger — one card per person targeted, invited or interviewed for this idea, with the live-profile read that qualified them and the state… |
 | `reports/outreach/process-map.md` | The process map — one entry per stage of textile manufacturing from raw fibre to finished T-shirt, whether the stage touches water, how much fibre it… |
 | `reports/outreach/research-map.md` | The research map — one row per paper or group on contaminant detection in water, classified by what its method actually did, so the crowded and empty… |
-| `reports/outreach/results-*.md` | 3 generated files — rebuild them, never edit |
+| `reports/outreach/results-*.md` | 4 generated files — rebuild them, never edit |
 | `reports/outreach/target-list-audit-*.md` | 2 dated snapshots — latest 2026-09-14 · Target list audit — 2026-09-14 |
 | `reports/outreach/technology-map.md` | The technology map — one entry per way of detecting microplastics or microfibres in water (what it physically measures, how small it goes, how far fr… |
 | `reports/outreach/copy/H1A2-linkedin.md` | The LinkedIn copy archive for H1A2 — every message drafted or sent to a contact for this assumption, with the live-snapshot line behind each claim an… |
+| `reports/outreach/copy/H2-linkedin.md` | The staged LinkedIn copy archive for the superseded-but-revivable H2 reverse-osmosis desalination hunch. |
 | `reports/pages/pages.yaml` | What each page in this folder is, and whether it still holds. |
 | `reports/pages/startup-map.html` | generated — rebuild it, never edit it |
 

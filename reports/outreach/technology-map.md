@@ -1693,7 +1693,7 @@ first_added: 2026-09-10
 id: T47
 kind: standard
 body: European Commission (ECHA)
-status: in force 2023-10-17, staged bans to 2035; industrial-site use derogated with annual reporting to ECHA from 2026/2027
+status: in force 2023-10-17, staged bans to 2035; industrial-site use derogated with annual reporting to ECHA from 2026/2027; amended by Regulation (EU) 2026/1168 (medicinal and PPORD derogations clarified from 2023-10-17; solid-matrix derogation narrowed from 2028-06-22)
 prescribes: intentionally added microplastics only; particles at or below 5 mm, fibre-like at or below 15 mm with length-to-diameter over 3; enforcement floor 0.1 µm (0.3 µm fibres)
 size_classes: 0.1 µm-5 mm; fibres 0.3 µm-15 mm
 unit: n/a (restriction)
@@ -1719,7 +1719,7 @@ first_added: 2026-09-10
 id: T49
 kind: standard
 body: European Parliament and Council
-status: in force 2024; textiles named as a first-working-plan priority; delegated act for textiles pending
+status: in force 2024; textiles in the 2025-2030 working plan; textile delegated act expected end-2027 with a Digital Product Passport for textiles around 2028; the expected information requirement covers possible release of non-biodegradable microplastics (JRC preparatory studies published; not yet law)
 prescribes: "'release of nano- and microplastics' is listed as an ecodesign performance parameter; the test method is not yet fixed"
 size_classes: not yet defined
 unit: not yet defined
@@ -1732,11 +1732,11 @@ first_added: 2026-09-10
 id: T50
 kind: standard
 body: The Microfibre Consortium with ZDHC
-status: feasibility study published September 2024; report behind a form; the ZDHC Wastewater Guidelines themselves carry no microfibre parameter that could be verified
-prescribes: use the total suspended solids the mill already measures as a proxy for microfibre concentration in effluent
+status: ZDHC Wastewater Guidelines V2.2 (Sept 2024) Part C 'Microfibres/fibre fragmentation' is in force as a supplier requirement; TMC/ZDHC feasibility study Sept 2024; Phase 2 (15 facilities, TSS-as-proxy validation) launched April 2026
+prescribes: Part C requires suppliers to monitor TSS to at least the Foundational level and file a root-cause analysis and corrective action plan on the ZDHC Gateway if exceeded; recommends, but does not require, a one-off microfibre release profile by Dynamic Image Analysis, after which TSS is the monitoring parameter; states limits are likely to be revised downwards. Progressive and Aspirational TSS levels are claimed to cut microfibre release by ~70% and ~94%.
 size_classes: none
 unit: mg/L TSS
-textile_effluent_relevance: The textile industry's current answer to "measure fibres in your effluent" is a TSS probe the mill already owns; a new instrument has to show what TSS misses.
+textile_effluent_relevance: Corrected 2026-09-14 (earlier line said the guidelines carried no microfibre parameter; Part C exists, read from the PDF). The industry's rulebook already names fibre fragmentation and answers it with the TSS probe the mill owns plus an optional lab DIA profile; an inline instrument competes with that pairing and must show what TSS misses, which is polymer identity and per-batch timing. Evidence ledger E3.
 url: https://www.microfibreconsortium.com/manufacturing
 first_added: 2026-09-10
 
@@ -1745,13 +1745,52 @@ first_added: 2026-09-10
 id: T51
 kind: standard
 body: California Legislature
-status: vetoed by the Governor 2023-10-08
+status: vetoed by the Governor 2023-10-08; as of 2026-09 New York S5605/A4716 (filters on all washing machines sold; Assembly bill in Consumer Protection committee 2026-03-18) and S10638, Oregon SB 405 and Illinois HB 1370 (2030 mandate) are pending, none enacted
 prescribes: would have required a filter of 100 µm or finer on new washing machines from 2029
 size_classes: 100 µm
 unit: n/a
-textile_effluent_relevance: Shows the US consumer-side rule is not in place; other US state and federal microfibre bills were not verifiable this session.
+textile_effluent_relevance: No US consumer-side filter rule is in force; three state bills are pending (2026-09-14 check). None touches a mill.
 url: https://leginfo.legislature.ca.gov/faces/billStatusClient.xhtml?bill_id=202320240AB1628
 first_added: 2026-09-10
+
+## Inditex Green to Wear 3.2 (July 2026) — supplier standard for wet-process mills
+
+id: T53
+kind: standard
+body: Inditex (brand; supplier sustainability standard)
+status: version 3.2 dated July 2026 (PDF created 2026-06-19), in force for Inditex wet-process suppliers
+prescribes: Grades dyeing, printing, finishing, washing and tannery facilities A to D. A mill drops from A to B if "Fibers and microfibers are released into the environment without any internal control." Wastewater must be tested to the ZDHC Wastewater Guidelines twice a year with results on the ZDHC Gateway; direct discharge must meet the ZDHC Progressive level; process water needs at least biological or physico-chemical treatment plus high-rate filtration before discharge to natural media.
+size_classes: none
+unit: none; "internal control" of fibre release, not a measured value
+textile_effluent_relevance: The clearest brand-side ask on mills found so far: the largest fashion buyer now grades its wet-processing suppliers on fibre release. It asks for control, not a number, and nothing says what evidence satisfies the auditor. Evidence ledger E4; the interview question is what a mill shows as control and what a B rating costs.
+url: https://www.inditex.com/itxcomweb/api/media/9af42004-8584-4681-917f-eca403026167/GTW%202.1%20English%202023.pdf
+first_added: 2026-09-14
+
+## UK — Microplastic Filters (Washing Machines) Bill [HL] 2026-27
+
+id: T54
+kind: standard
+body: UK Parliament, House of Lords private member's bill (Lord Randall of Uxbridge)
+status: HL Bill 21 of 2026-27; second reading scheduled 2026-09-11; private member's bill with no government sponsorship, low odds of passage; an earlier Commons version (2021-22) lapsed
+prescribes: Would oblige the Secretary of State to require microfibre filters on new washing machines in England by 2030 and to promote awareness of microfibre pollution.
+size_classes: none
+unit: none
+textile_effluent_relevance: Consumer end only; no UK instrument touches mill effluent for microfibres. The Environment Agency regulates UK dyehouses' discharges under permits with TSS and chemical limits, not fibre counts.
+url: https://lordslibrary.parliament.uk/research-briefings/lln-2026-0046/
+first_added: 2026-09-14
+
+## EU Regulation 2025/2365 — preventing plastic pellet losses
+
+id: T55
+kind: standard
+body: European Parliament and Council
+status: in force; published OJ 2025-11-26; first provisions applicable 2025-12-16; operator notifications and the prevention hierarchy apply from 2027-12-17
+prescribes: Operators handling over 5 tonnes of pellets a year, cleaning installations and carriers must prevent, contain and clean up pellet losses and notify installations to authorities.
+size_classes: pellets (pre-production plastic granules)
+unit: none
+textile_effluent_relevance: Not textiles: pellets, not fibres. Listed only so the "EU microplastics regulation" umbrella is read correctly; it creates no obligation on a mill or a brand.
+url: https://eur-lex.europa.eu/eli/reg/2025/2365/oj/eng
+first_added: 2026-09-14
 
 ## California DTSC — microplastics on the Safer Consumer Products Candidate Chemicals List
 
