@@ -703,6 +703,8 @@ def render(
     evidence_entries: list[dict] | None = None,
     thesis: dict | None = None,
     companies: tuple[dict, list[dict]] | None = None,
+    technology: tuple[dict, list[dict]] | None = None,
+    process: tuple[dict, list[dict]] | None = None,
 ) -> str:
     thesis = thesis or {}
     copy_by_id = copy_by_id or {}
@@ -712,7 +714,7 @@ def render(
     invite_log_html, invite_log_css = build_invite_log(contacts)
     tier_css_block = (tier_css_block + invite_log_css + EMAIL_CSS + TAB_CSS
                       + PATTERNS_CSS + THESIS_CSS + HUNCH_CSS + COMPANIES_CSS
-                      + PAGES_CSS)
+                      + PAGES_CSS + TECH_CSS + RESEARCH_CSS + PMW_CSS)
 
     companies_fm, companies_list = companies or ({}, [])
     companies_tab_html = render_companies_tab(companies_list, companies_fm, contacts)
@@ -721,8 +723,22 @@ def render(
     startups_tab_html = render_startups_tab(companies_fm, companies_list, contacts)
     startups_count = sum(1 for c in companies_list if _map_side(c) == "startup")
 
+    # Research tab: pages inside one tab — the technology map, the process map, and
+    # the researcher-email workspace once a campaign exists (founder decision,
+    # 2026-09-11: papers come later).
+    tech_fm, tech_list = technology or ({}, [])
+    tech_count = sum(1 for t in tech_list if str(t.get('kind') or 'technology') != 'standard')
+    proc_fm, proc_list = process or ({}, [])
     email_campaign = parse_email_campaign()
-    email_tab_html = render_email_tab(email_campaign)
+    research_views = [
+        ('technology', 'Technology map', tech_count, render_technology_tab(tech_fm, tech_list)),
+        ('process', 'Process map', len(proc_list), render_process_tab(proc_fm, proc_list)),
+    ]
+    if email_campaign:
+        research_views.append(('papers', 'Papers & researchers', len(email_campaign),
+                               render_email_tab(email_campaign)))
+    research_count = len(research_views)
+    email_tab_html = render_research_tab(research_views)
     email_campaign_json = json.dumps(email_campaign, indent=2, ensure_ascii=False)
     email_count = len(email_campaign)
     email_script = _render_email_script()
@@ -1558,7 +1574,7 @@ body::before {{
   <button data-tab="pages" onclick="switchTab('pages')">Pages <span class="count">{pages_count}</span></button>
   <button data-tab="companies" onclick="switchTab('companies')">Companies <span class="count">{companies_count}</span></button>
   <button data-tab="startups" onclick="switchTab('startups')">Startups <span class="count">{startups_count}</span></button>
-  <button data-tab="email" onclick="switchTab('email')">Research &amp; papers <span class="count">{email_count}</span></button>
+  <button data-tab="research" onclick="switchTab('research')">Research <span class="count">{research_count}</span></button>
   <button class="active" data-tab="contacts" onclick="switchTab('contacts')">Contacts <span class="count">{total}</span></button>
 </nav>
 
@@ -1754,9 +1770,9 @@ body::before {{
 {companies_tab_html}
 </div><!-- /tab-panel companies -->
 
-<div class="tab-panel" data-tab="email">
+<div class="tab-panel" data-tab="research">
 {email_tab_html}
-</div><!-- /tab-panel email -->
+</div><!-- /tab-panel research -->
 
 <div class="tab-panel" data-tab="patterns">
 {patterns_tab_html}
@@ -3776,6 +3792,1012 @@ def render_startups_tab(fm: dict, companies: list[dict],
         '</section>')
 
 
+TECH_CSS = """
+/* ── technology map (Research tab) ── */
+.tmap-notes {margin:14px 0 4px;padding:12px 14px;border:1px solid var(--border);border-radius:var(--r-md);background:var(--surface-2);}
+.tmap-notes h3 {font-size:12px;margin:0 0 6px;}
+.tmap-notes ol {margin:0;padding-left:18px;font-size:11px;line-height:1.6;color:var(--text-dim);}
+.tmap-notes li {margin:0 0 4px;}
+.tmap-size-key {display:inline-flex;align-items:center;gap:6px;}
+.tmap-size-key i {display:inline-block;border-radius:50%;background:var(--text-dimmer);}
+.tmap-table {overflow-x:auto;border:1px solid var(--border);border-radius:var(--r-md);}
+.tmap-table table {width:100%;min-width:900px;border-collapse:collapse;background:var(--surface);font-size:10.5px;}
+.tmap-table th {padding:8px 9px;color:var(--text-dimmer);font-size:9px;text-transform:uppercase;letter-spacing:.06em;text-align:left;border-bottom:1px solid var(--border);white-space:nowrap;}
+.tmap-table td {padding:7px 9px;border-bottom:1px solid var(--border-subtle);vertical-align:top;color:var(--text-dim);}
+.tmap-table td:first-child {color:var(--text);font-weight:650;}
+.tmap-table td:first-child a {color:inherit;text-decoration:none;}
+.tmap-table td:first-child a:hover {color:var(--accent);}
+.tmap-table tr:last-child td {border-bottom:0;}
+.tmap-table .is-yes {color:var(--text);font-weight:700;}
+.tmap-table .is-no {color:var(--text-dimmer);}
+.tmap-family {margin:22px 0 8px;padding-top:12px;border-top:1px solid var(--border);}
+.tmap-family h3 {font-size:13px;margin:0 0 3px;}
+.tmap-family p {font-size:10.5px;color:var(--text-dimmer);margin:0;}
+.tmap-vendors {margin:8px 0 0;padding-left:16px;font-size:10.5px;line-height:1.55;color:var(--text-dim);}
+.tmap-vendors a {color:var(--accent);}
+.tmap-limits {margin:8px 0 0;padding-left:16px;font-size:10.5px;line-height:1.55;color:var(--text-dim);}
+.tmap-std td:nth-child(3) {white-space:nowrap;}
+"""
+
+
+def _tech_axes(fm: dict) -> dict:
+    out = {"x": "", "y": "", "colour": "", "size": "", "family": "family"}
+    declared = fm.get("map_axes") if isinstance(fm, dict) else None
+    if isinstance(declared, dict):
+        for k, v in declared.items():
+            out[str(k)] = str(v or "")
+    return out
+
+
+def _tech_inspector(data_json: str, meta_json: str) -> str:
+    """One-technology-at-a-time panel for the technology map. Own ids and data
+    attribute (`data-tm`) so it never collides with the startup inspector, which
+    binds every `[data-su]` on the page."""
+    template = r'''
+<section class="smap-inspect" id="tech-inspector" aria-label="Inspect one technology">
+  <div class="smap-inspect-bar">
+    <div class="smap-step">
+      <button type="button" data-tm-prev aria-label="Previous technology">&#9664; Prev</button>
+      <button type="button" data-tm-next aria-label="Next technology">Next &#9654;</button>
+      <select data-tm-pick aria-label="Choose a technology to inspect"></select>
+    </div>
+    <div class="smap-step-count" data-tm-count aria-live="polite"></div>
+  </div>
+  <div class="smap-inspect-body" data-tm-body></div>
+</section>
+<script>
+(() => {
+  const root = document.getElementById('tech-inspector');
+  if (!root || root.dataset.ready) return;
+  root.dataset.ready = 'true';
+  const all = __DATA__;
+  const meta = __META__;
+  if (!all.length) return;
+  const body = root.querySelector('[data-tm-body]');
+  const pick = root.querySelector('[data-tm-pick]');
+  const count = root.querySelector('[data-tm-count]');
+  let i = 0;
+  const esc = v => String(v == null ? '' : v).replace(/[&<>"']/g,
+    ch => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[ch]));
+  const fact = (label, value) => '<div><dt>' + esc(label) + '</dt><dd' +
+    (value ? '>' : ' class="is-blank">') + esc(value || 'not recorded') + '</dd></div>';
+  const block = (label, text) => text
+    ? '<p class="smap-why"><b>' + esc(label) + '</b>' + esc(text) + '</p>' : '';
+  const list = (label, items, cls) => (items && items.length)
+    ? '<p class="smap-sub">' + esc(label) + '</p><ul class="' + cls + '">' +
+      items.map(s => '<li>' + s + '</li>').join('') + '</ul>' : '';
+  function render() {
+    const c = all[i];
+    pick.value = c.id;
+    count.textContent = (i + 1) + ' of ' + all.length + ' · ' + c.id;
+    const vendors = (c.vendors || []).map(v => {
+      const name = v.url ? '<a class="co-src" href="' + esc(v.url) + '" target="_blank" rel="noopener">' + esc(v.name) + '</a>' : esc(v.name);
+      return name + (v.instrument ? ' — ' + esc(v.instrument) : '') + (v.price ? ' · ' + esc(v.price) : '');
+    });
+    const sources = (c.sources || []).map(s => '<a class="co-src" href="' + esc(s) + '" target="_blank" rel="noopener">' + esc(s.replace(/^https?:\/\//, '').slice(0, 70)) + '</a>');
+    body.innerHTML =
+      '<div class="smap-inspect-head"><div><h4>' + esc(c.name) + '</h4>' +
+      '<div class="smap-card-sub">' + esc(c.family) + ' · ' + esc(c.principle) + '</div></div>' +
+      '<span class="smap-liab band-' + c.colourCode + '">' + esc(c.colour) + '</span></div>' +
+      '<p class="smap-work">' + esc(c.plain || 'Not recorded.') + '</p>' +
+      '<dl class="smap-facts">' +
+        fact('tells you', c.outputs) +
+        fact('smallest particle', c.sizeMin) +
+        fact('largest particle', c.sizeMax) +
+        fact(meta.y, c.y) +
+        fact(meta.x, c.x) +
+        fact(meta.colour, c.colour) +
+        fact('time per sample', c.time) +
+        fact('sample prep', c.prep) +
+        fact('shown to work in', c.matrices) +
+      '</dl>' +
+      list('Who sells it', vendors, 'tmap-vendors') +
+      list('Limits', (c.limits || []).map(esc), 'tmap-limits') +
+      block('On textile fibres', c.fibre) +
+      block('For a mill’s effluent', c.textile) +
+      (sources.length ? '<p class="smap-srcline"><b>Sources</b> ' + sources.join(' · ') + '</p>' : '');
+    document.querySelectorAll('.cmap-point[data-tm]').forEach(g =>
+      g.classList.toggle('is-active', g.dataset.tm === c.id));
+  }
+  function goto(id, scroll) {
+    const n = all.findIndex(c => c.id === id);
+    if (n < 0) return;
+    i = n; render();
+    if (scroll) root.scrollIntoView({behavior: 'smooth', block: 'nearest'});
+  }
+  pick.innerHTML = all.map(c =>
+    '<option value="' + esc(c.id) + '">' + esc(c.name) + '</option>').join('');
+  pick.addEventListener('change', () => goto(pick.value, false));
+  root.querySelector('[data-tm-prev]').addEventListener('click', () => {
+    i = (i - 1 + all.length) % all.length; render();
+  });
+  root.querySelector('[data-tm-next]').addEventListener('click', () => {
+    i = (i + 1) % all.length; render();
+  });
+  document.querySelectorAll('[data-tm]').forEach(el => {
+    if (el.closest('#tech-inspector')) return;
+    const act = ev => { ev.preventDefault(); goto(el.dataset.tm, true); };
+    el.addEventListener('click', act);
+    el.addEventListener('keydown', ev => {
+      if (ev.key === 'Enter' || ev.key === ' ') act(ev);
+    });
+  });
+  render();
+})();
+</script>'''
+    return template.replace("__DATA__", data_json).replace("__META__", meta_json)
+
+
+def _tech_size_label(e: dict) -> str:
+    lo, hi = e.get("size_min_um"), e.get("size_max_um")
+    if lo in (None, "") and hi in (None, ""):
+        return ""
+    lo_s = f"{lo} µm" if lo not in (None, "") else "?"
+    hi_s = f"{hi} µm" if hi not in (None, "") else "?"
+    return f"{lo_s} – {hi_s}"
+
+
+def _tech_entities(fm: dict, entries: list[dict]) -> tuple[list[dict], list[dict]]:
+    """Technologies and standards, each with its declared-axis codes resolved.
+    A value not declared in the map's vocabulary lands in the unmapped lane."""
+    vocab = _map_vocab(fm)
+    axes = _tech_axes(fm)
+    techs, stds = [], []
+    for raw in entries:
+        e = dict(raw)
+        e["name"] = str(e.get("_heading") or e.get("name") or e.get("id"))
+        if str(e.get("kind") or "technology") == "standard":
+            stds.append(e)
+            continue
+        e["xCode"], e["xLabel"], _ = _slot(e, axes["x"], vocab)
+        e["yCode"], e["yLabel"], _ = _slot(e, axes["y"], vocab)
+        e["colourCode"], e["colourLabel"], _ = _slot(e, axes["colour"], vocab)
+        e["sizeCode"], e["sizeLabel"], _ = _slot(e, axes["size"], vocab)
+        e["familyLabel"] = _labelled(axes["family"], str(e.get(axes["family"]) or "")) \
+            if e.get(axes["family"]) else _UNMAPPED
+        techs.append(e)
+    return techs, stds
+
+
+def render_technology_tab(fm: dict, entries: list[dict]) -> str:
+    """The detection-technology scene: every way of measuring the target in water,
+    placed by how far from the process it has actually run against what it says
+    about the particle. Colour is maturity, dot area is how small it can see.
+    Every value reads a declared field in `technology-map.md`."""
+    if not entries:
+        return ('<div class="co-empty"><p>No <code>outreach/technology-map.md</code> yet.</p>'
+                '<p>Add one <code>## Name</code> block per detection technology with the '
+                'axes its frontmatter declares, and the map appears here.</p></div>')
+    axes = _tech_axes(fm)
+    if not (axes["x"] and axes["y"] and axes["colour"]):
+        return ('<div class="co-empty"><p>The technology map has no axes declared.</p>'
+                '<p>Declare <code>map_axes: {x, y, colour, size}</code> in '
+                '<code>technology-map.md</code> frontmatter.</p></div>')
+    techs, stds = _tech_entities(fm, entries)
+    vocab = _map_vocab(fm)
+    esc = escape
+    xt, yt, ct = _axis_title(axes["x"]), _axis_title(axes["y"]), _axis_title(axes["colour"])
+    st_ = _axis_title(axes["size"]) if axes["size"] else ""
+    rows = sorted(techs, key=lambda e: (-(e.get("colourCode") or 0), -(e.get("xCode") or 0),
+                                        e["name"].lower()))
+    xvals = vocab.get(axes["x"], [])
+    yvals = vocab.get(axes["y"], [])
+    cvals = vocab.get(axes["colour"], [])
+    svals = vocab.get(axes["size"], []) if axes["size"] else []
+
+    # ── the claim, computed rather than asserted ─────────────────────────────
+    by_colour = [(_labelled(axes["colour"], v),
+                  sum(1 for e in rows if e.get("colourLabel") == _labelled(axes["colour"], v)))
+                 for v in cvals]
+    empty_cells = []
+    for xv in xvals:
+        for yv in yvals:
+            xl, yl = _labelled(axes["x"], xv), _labelled(axes["y"], yv)
+            if not any(e["xLabel"] == xl and e["yLabel"] == yl for e in rows):
+                empty_cells.append(f"{esc(xl)} × {esc(yl)}")
+    top_x, top_y = (_labelled(axes["x"], xvals[-1]) if xvals else ""), \
+                   (_labelled(axes["y"], yvals[-1]) if yvals else "")
+    corner = [e for e in rows if e["xLabel"] == top_x and e["yLabel"] == top_y]
+    corner_note = (
+        f"<em>{len(corner)}</em> of them sit at <em>{esc(top_x)}</em> and <em>{esc(top_y)}</em>"
+        + (": " + ", ".join(f"<em>{esc(e['name'])}</em>" for e in corner) if corner else "")
+        + "." if xvals and yvals else "")
+    claim = (
+        "<b>What the map currently says</b><p>"
+        f"<em>{len(rows)}</em> technologies mapped. By {esc(ct)}: "
+        + ", ".join(f"<em>{n}</em> {esc(lab)}" for lab, n in by_colour) + ". "
+        + corner_note
+        + (f" Empty cells: {', '.join(f'<em>{c}</em>' for c in empty_cells)}."
+           if empty_cells else "")
+        + "</p>")
+
+    # ── KPI strip ────────────────────────────────────────────────────────────
+    inline = [e for e in rows if xvals and e["xLabel"] == _labelled(axes["x"], xvals[-1])]
+    named = [e for e in rows if yvals and e["yLabel"] == _labelled(axes["y"], yvals[-1])]
+    finest = [e for e in rows if isinstance(e.get("size_min_um"), (int, float))]
+    finest_val = min((float(e["size_min_um"]) for e in finest), default=None)
+    kpis = "".join(f"<span><strong>{v}</strong>{esc(str(k))}</span>" for k, v in [
+        ("mapped", len(rows)),
+        (f"{_labelled(axes['x'], xvals[-1]) if xvals else xt}", len(inline)),
+        (f"{_labelled(axes['y'], yvals[-1]) if yvals else yt}", len(named)),
+        ("finest size floor on the map",
+         (f"{finest_val:g} µm" if finest_val is not None else "n/a")),
+        ("standards & rules listed", len(stds)),
+    ])
+
+    # ── scatter: x by y, colour = maturity, area = size reach ────────────────
+    xlabels = [_labelled(axes["x"], v) for v in xvals]
+    ylabels = [_labelled(axes["y"], v) for v in yvals]
+    L, R, TOP, BOT = 156, 1068, 40, 486
+    cw = (R - L) / max(len(xlabels), 1)
+    rh = (BOT - TOP) / max(len(ylabels), 1)
+    svg: list[str] = []
+    for n, lab in enumerate(xlabels):
+        svg.append(f'<line class="cmap-gridline" x1="{L + cw * n:.1f}" y1="{TOP}" '
+                   f'x2="{L + cw * n:.1f}" y2="{BOT}"/>')
+        svg.append(f'<text class="cmap-axis" x="{L + cw * (n + .5):.1f}" y="{BOT + 21}" '
+                   f'text-anchor="middle">{esc(lab.upper())}</text>')
+    for n, lab in enumerate(ylabels):
+        svg.append(f'<line class="cmap-gridline" x1="{L}" y1="{BOT - rh * n:.1f}" '
+                   f'x2="{R}" y2="{BOT - rh * n:.1f}"/>')
+        svg.append(f'<text class="cmap-axis" x="{L - 11}" y="{BOT - rh * (n + .5) + 3:.1f}" '
+                   f'text-anchor="end">{esc(lab.upper())}</text>')
+    svg.append(f'<line class="cmap-edge" x1="{L}" y1="{TOP}" x2="{L}" y2="{BOT}"/>')
+    svg.append(f'<line class="cmap-edge" x1="{L}" y1="{BOT}" x2="{R}" y2="{BOT}"/>')
+    nsize = max(len(svals), 1)
+    for xn, xl in enumerate(xlabels):
+        for yn, yl in enumerate(ylabels):
+            cell = sorted((e for e in rows if e["xLabel"] == xl and e["yLabel"] == yl),
+                          key=lambda e: e["name"].lower())
+            cols = max(1, math.ceil(math.sqrt(len(cell))))
+            nrows = math.ceil(len(cell) / cols) if cell else 1
+            for k, e in enumerate(cell):
+                # Dot AREA tracks size reach: the finest size class draws largest,
+                # so "sees smaller" reads as "more". Unknown size draws hollow.
+                code = e.get("sizeCode") or 0
+                r = 6 + 12 * math.sqrt(code / nsize) if code else 6.5
+                cx = L + cw * (xn + .5) + ((k % cols) - (cols - 1) / 2) * 70
+                cy = BOT - rh * (yn + .5) + (k // cols - (nrows - 1) / 2) * 48
+                hollow = "" if code else " cmap-nohead"
+                tip = (f'{e["name"]} — {e.get("colourLabel", "")} — '
+                       f'{_tech_size_label(e) or "size not recorded"}')
+                svg.append(
+                    f'<g class="cmap-point band-{e.get("colourCode") or 0}{hollow}" '
+                    f'data-tm="{esc(e["id"])}" tabindex="0" role="button">'
+                    f'<title>{esc(tip)}</title>'
+                    f'<circle class="cmap-core" cx="{cx:.1f}" cy="{cy:.1f}" r="{r:.1f}"/>'
+                    f'</g>')
+                row_i, col_i = k // cols, k % cols
+                out = 11 if col_i % 2 else 0
+                ly = (cy - r - 6 - out if row_i % 2 == 0 else cy + r + 13 + out)
+                svg.append(f'<text class="cmap-point-label" x="{cx:.1f}" y="{ly:.1f}" '
+                           f'text-anchor="middle">{esc(e.get("short") or e["name"])}</text>')
+
+    legend = ('<span><i class="cmap-dot band-0"></i>not mapped</span>' + "".join(
+        f'<span><i class="cmap-dot band-{n}"></i>{esc(_labelled(axes["colour"], v))}</span>'
+        for n, v in enumerate(cvals, start=1)))
+    if svals:
+        legend += "".join(
+            f'<span class="tmap-size-key"><i style="width:{6 + 12 * math.sqrt((n) / nsize):.0f}px;'
+            f'height:{6 + 12 * math.sqrt((n) / nsize):.0f}px"></i>'
+            f'{esc(_labelled(axes["size"], v))}</span>'
+            for n, v in enumerate(svals, start=1))
+        legend += '<span><i class="cmap-hollow"></i>size floor not recorded</span>'
+    unmapped = [e for e in rows if not e["xCode"] or not e["yCode"]]
+    unmapped_note = ""
+    if unmapped:
+        unmapped_note = (
+            '<p class="smap-note"><strong>Off the scale:</strong> ' + ", ".join(
+                f'<a href="#" data-tm="{esc(e["id"])}">{esc(e["name"])}</a>' for e in unmapped)
+            + " &mdash; not plotted, because a declared axis is missing.</p>")
+
+    # ── reading notes, declared in the map's frontmatter ─────────────────────
+    notes = fm.get("reading_notes") if isinstance(fm, dict) else None
+    notes_html = ""
+    if isinstance(notes, list) and notes:
+        notes_html = ('<div class="tmap-notes"><h3>Before reading the map</h3><ol>'
+                      + "".join(f"<li>{esc(str(n))}</li>" for n in notes) + "</ol></div>")
+
+    # ── inspector payload ────────────────────────────────────────────────────
+    def _vendors(e):
+        out = []
+        for v in (e.get("vendors") or []):
+            if isinstance(v, dict):
+                out.append({"name": str(v.get("name") or ""), "instrument": str(v.get("instrument") or ""),
+                            "url": str(v.get("url") or ""), "price": str(v.get("price") or "")})
+            elif v:
+                out.append({"name": str(v), "instrument": "", "url": "", "price": ""})
+        return out
+
+    def _as_list(v):
+        if isinstance(v, list):
+            return [str(x) for x in v if x not in (None, "")]
+        return [str(v)] if v not in (None, "") else []
+
+    payload = [{
+        "id": e["id"], "name": e["name"], "family": e.get("familyLabel", ""),
+        "principle": str(e.get("principle") or ""), "plain": str(e.get("plain_language") or ""),
+        "outputs": ", ".join(_as_list(e.get("outputs"))).replace("_", " "),
+        "sizeMin": (f'{e["size_min_um"]} µm' if e.get("size_min_um") not in (None, "") else ""),
+        "sizeMax": (f'{e["size_max_um"]} µm' if e.get("size_max_um") not in (None, "") else ""),
+        "x": e["xLabel"], "y": e["yLabel"], "colour": e.get("colourLabel") or "",
+        "colourCode": e.get("colourCode") or 0,
+        "time": str(e.get("time_per_sample") or ""), "prep": str(e.get("sample_prep") or ""),
+        "matrices": ", ".join(_as_list(e.get("matrices_demonstrated"))).replace("_", " "),
+        "vendors": _vendors(e), "limits": _as_list(e.get("limitations")),
+        "fibre": str(e.get("fibre_performance") or ""),
+        "textile": str(e.get("textile_effluent_relevance") or ""),
+        "sources": _as_list(e.get("sources")),
+    } for e in rows]
+    meta_json = json.dumps({"x": xt, "y": yt, "colour": ct}, ensure_ascii=True).replace("</", "<\\/")
+    inspector = _tech_inspector(
+        json.dumps(payload, ensure_ascii=True).replace("</", "<\\/"), meta_json)
+
+    # ── comparison table: one row per technology ─────────────────────────────
+    out_cols = ["count", "size", "shape", "polymer_class", "polymer_identity", "mass"]
+    head = "".join(f"<th>{esc(c.replace('_', ' '))}</th>" for c in out_cols)
+    trs = ""
+    for e in sorted(rows, key=lambda e: (e.get("familyLabel", ""), e["name"].lower())):
+        outs = set(_as_list(e.get("outputs")))
+        cells = "".join(f'<td class="{"is-yes" if c in outs else "is-no"}">'
+                        f'{"●" if c in outs else "·"}</td>' for c in out_cols)
+        trs += (f'<tr><td><a href="#" data-tm="{esc(e["id"])}">{esc(e["name"])}</a></td>'
+                f'<td>{esc(e.get("familyLabel", ""))}</td>{cells}'
+                f'<td>{esc(_tech_size_label(e))}</td><td>{esc(e["xLabel"])}</td>'
+                f'<td>{esc(e.get("colourLabel") or "")}</td>'
+                f'<td>{esc(str(e.get("time_per_sample") or ""))}</td></tr>')
+    table = (f'<div class="tmap-table"><table><thead><tr><th>Technology</th><th>Family</th>'
+             f'{head}<th>Size window</th><th>{esc(xt)}</th><th>{esc(ct)}</th>'
+             f'<th>Time per sample</th></tr></thead><tbody>{trs}</tbody></table></div>')
+
+    # ── standards and rules: what a buyer is told to measure ─────────────────
+    std_html = ""
+    if stds:
+        srows = ""
+        for s in sorted(stds, key=lambda s: (str(s.get("body") or ""), s["name"].lower())):
+            link = (f'<a class="co-src" href="{esc(str(s["url"]))}" target="_blank" '
+                    f'rel="noopener">source</a>') if s.get("url") else ""
+            srows += (f'<tr><td>{esc(s["name"])}</td><td>{esc(str(s.get("body") or ""))}</td>'
+                      f'<td>{esc(str(s.get("status") or ""))}</td>'
+                      f'<td>{esc(str(s.get("prescribes") or ""))}</td>'
+                      f'<td>{esc(str(s.get("size_classes") or ""))}</td>'
+                      f'<td>{esc(str(s.get("unit") or ""))}</td>'
+                      f'<td>{esc(str(s.get("textile_effluent_relevance") or ""))} {link}</td></tr>')
+        std_html = (
+            '<div class="cmap-matrix-head smap-spaced"><h3>What the rulebooks ask for</h3>'
+            '<p>Standards and regulations that prescribe how the target is measured, with the '
+            'size classes and units they demand. A product that cannot report in these terms '
+            'does not answer the question the buyer is being asked.</p></div>'
+            f'<div class="tmap-table tmap-std"><table><thead><tr><th>Standard / rule</th><th>Body</th>'
+            '<th>Status</th><th>Prescribes</th><th>Size classes</th><th>Unit</th><th>Why it matters here</th>'
+            f'</tr></thead><tbody>{srows}</tbody></table></div>')
+
+    # ── cards, grouped by family ─────────────────────────────────────────────
+    family_vals = vocab.get(axes["family"], [])
+    fam_desc = fm.get("map_family_notes") if isinstance(fm, dict) else None
+    fam_desc = fam_desc if isinstance(fam_desc, dict) else {}
+    cards = ""
+    order = [_labelled(axes["family"], v) for v in family_vals]
+    seen = {e.get("familyLabel") for e in rows}
+    order += sorted(f for f in seen if f not in order)
+    for fam in order:
+        group = [e for e in rows if e.get("familyLabel") == fam]
+        if not group:
+            continue
+        fam_key = next((v for v in family_vals if _labelled(axes["family"], v) == fam), "")
+        cards += (f'<div class="tmap-family"><h3>{esc(fam)}</h3>'
+                  f'<p>{esc(str(fam_desc.get(fam_key) or ""))}</p></div><div class="smap-grid">')
+        for e in group:
+            meta = "".join(f"<span><b>{esc(k)}</b> {esc(v)}</span>" for k, v in [
+                ("size", _tech_size_label(e)),
+                (yt, e["yLabel"]),
+                (xt, e["xLabel"]),
+                ("time", str(e.get("time_per_sample") or "")),
+            ] if v)
+            vendors = _vendors(e)
+            vhtml = ""
+            if vendors:
+                vhtml = '<p class="smap-sub">Who sells it</p><ul class="tmap-vendors">' + "".join(
+                    ("<li>" + (f'<a href="{esc(v["url"])}" target="_blank" rel="noopener">{esc(v["name"])}</a>'
+                               if v["url"] else esc(v["name"]))
+                     + (f' — {esc(v["instrument"])}' if v["instrument"] else "")
+                     + (f' · {esc(v["price"])}' if v["price"] else "") + "</li>")
+                    for v in vendors) + "</ul>"
+            limits = _as_list(e.get("limitations"))
+            lhtml = ('<p class="smap-sub">Limits</p><ul class="tmap-limits">'
+                     + "".join(f"<li>{esc(l)}</li>" for l in limits) + "</ul>") if limits else ""
+            why = ""
+            if e.get("fibre_performance"):
+                why += f'<p class="smap-why"><b>On textile fibres</b>{esc(str(e["fibre_performance"]))}</p>'
+            if e.get("textile_effluent_relevance"):
+                why += f'<p class="smap-why"><b>For a mill&rsquo;s effluent</b>{esc(str(e["textile_effluent_relevance"]))}</p>'
+            srcs = _as_list(e.get("sources"))
+            shtml = ('<p class="smap-srcline"><b>Sources</b> ' + " · ".join(
+                f'<a class="co-src" href="{esc(s)}" target="_blank" rel="noopener">'
+                f'{esc(s.replace("https://", "").replace("http://", "")[:60])}</a>' for s in srcs)
+                + "</p>") if srcs else ""
+            cards += (
+                f'<article class="smap-card" id="tm-{esc(e["id"]).lower()}">'
+                f'<div class="smap-card-top"><div><h4>{esc(e["name"])}</h4>'
+                f'<div class="smap-card-sub">{esc(e["id"])} &middot; {esc(str(e.get("principle") or ""))}</div></div>'
+                f'<span class="smap-liab band-{e.get("colourCode") or 0}">{esc(e.get("colourLabel") or "")}</span></div>'
+                f'<p class="smap-work">{esc(str(e.get("plain_language") or "Not recorded."))}</p>'
+                f'<div class="smap-meta">{meta}</div>'
+                + (f'<p class="smap-why"><b>Sample prep</b>{esc(str(e["sample_prep"]))}</p>' if e.get("sample_prep") else "")
+                + f'{vhtml}{lhtml}{why}{shtml}</article>')
+        cards += "</div>"
+
+    return (
+        '<section class="cmap" aria-labelledby="tmap-title">'
+        '<div class="cmap-head"><div>'
+        '<div class="co-eyebrow">Technology scene</div>'
+        '<h2 id="tmap-title">How the target gets detected in water, and how close to the pipe each way has got</h2>'
+        f'<p>Every way of measuring it, placed by <strong>{esc(xt)}</strong> against '
+        f'<strong>{esc(yt)}</strong>. <strong>Colour is {esc(ct)}</strong>; dot area is how small a '
+        'particle it can see. Every value reads a declared field in <code>technology-map.md</code>; '
+        'the axes are declared in its frontmatter.</p>'
+        '</div></div>'
+        f'<div class="smap-claim">{claim}</div>'
+        f'<div class="cmap-kpis">{kpis}</div>'
+        f'<div class="cmap-axis-key"><span><b>X</b>{esc(xt)}</span><span><b>Y</b>{esc(yt)}</span>'
+        f'<span><b>Dot area</b>{esc(st_ or "size reach")}</span><span><b>Colour</b>{esc(ct)}</span></div>'
+        '<div class="cmap-stage"><svg viewBox="0 0 1100 518" role="img" '
+        'aria-labelledby="tmap-svg-title tmap-svg-desc">'
+        '<title id="tmap-svg-title">Technology scene map</title>'
+        f'<desc id="tmap-svg-desc">Detection technologies positioned by {esc(xt)} and {esc(yt)}, '
+        f'coloured by {esc(ct)} and sized by how small a particle they resolve.</desc>'
+        f'{"".join(svg)}</svg></div>'
+        f'<div class="cmap-legend">{legend}</div>{unmapped_note}'
+        f'{notes_html}'
+        f'{inspector}'
+        '<div class="cmap-matrix-head smap-spaced"><h3>Side by side</h3>'
+        '<p>What each technology can say about a particle, how small it goes, and how long one '
+        'sample takes. Click a name to inspect it.</p></div>'
+        f'{table}'
+        f'{std_html}'
+        '<div class="cmap-matrix-head smap-spaced"><h3>Every technology, by family</h3>'
+        '<p>Plain-language first, then the numbers and who sells it.</p></div>'
+        f'{cards}'
+        '</section>')
+
+
+RESEARCH_CSS = """
+/* ── research tab: pages inside the tab ── */
+.rsw {display:flex;gap:4px;width:max-content;max-width:100%;padding:4px;margin:0 0 14px;border:1px solid var(--border);border-radius:var(--r-md);background:var(--surface-2);}
+.rsw button {border:0;border-radius:var(--r-sm);padding:8px 12px;background:transparent;color:var(--text-dim);font:inherit;font-size:11px;font-weight:650;cursor:pointer;white-space:nowrap;}
+.rsw button:hover {color:var(--text);}
+.rsw button.active {background:var(--surface-3);color:var(--accent);}
+.rsw button:focus-visible {outline:2px solid var(--accent);outline-offset:2px;}
+.rsw .count {margin-left:5px;}
+/* ── process map ── */
+.pmap-phase {margin:14px 0 0;padding:12px 14px;border:1px solid var(--border);border-radius:var(--r-md);background:var(--surface);}
+.pmap-phase-head {display:flex;align-items:baseline;gap:10px;margin:0 0 8px;}
+.pmap-phase-head h3 {font-size:12px;margin:0;letter-spacing:.01em;}
+.pmap-phase-head p {font-size:10.5px;color:var(--text-dimmer);margin:0;}
+.pmap-lane {display:flex;align-items:center;gap:6px;flex-wrap:wrap;margin:4px 0;}
+.pmap-lane-label {min-width:64px;font-size:8.5px;font-weight:800;letter-spacing:.07em;text-transform:uppercase;color:var(--text-dimmer);}
+.pmap-chip {display:inline-flex;flex-direction:column;gap:2px;min-width:118px;max-width:190px;padding:7px 10px 7px 12px;border:1px solid var(--border);border-left:4px solid var(--border);border-radius:var(--r-sm);background:var(--surface-2);cursor:pointer;text-align:left;font:inherit;color:var(--text);}
+.pmap-chip:hover,.pmap-chip:focus-visible {border-color:var(--accent);outline:0;}
+.pmap-chip.is-active {border-color:var(--accent);box-shadow:0 0 0 2px rgba(250,204,21,.18);}
+.pmap-chip b {font-size:11px;line-height:1.25;}
+.pmap-chip small {font-size:9px;color:var(--text-dimmer);}
+.pmap-chip.band-1 {border-left-color:#94a3b8;}.pmap-chip.band-2 {border-left-color:#38bdf8;}
+.pmap-chip.band-3 {border-left-color:#f59e0b;}.pmap-chip.band-4 {border-left-color:#f43f5e;}
+.pmap-chip.band-0 {border-left-color:#64748b;}
+.pmap-chip.is-wet b::after {content:" \\1F4A7";font-size:9px;}
+.pmap-arrow {color:var(--text-dimmer);font-size:12px;}
+.pmap-legend {display:flex;flex-wrap:wrap;gap:8px 18px;margin:10px 0 0;font-size:9.5px;color:var(--text-dimmer);}
+.pmap-legend i {display:inline-block;width:10px;height:10px;border-radius:2px;margin-right:5px;vertical-align:-1px;}
+.pmap-table td:nth-child(4),.pmap-table td:nth-child(5) {white-space:nowrap;}
+.pmap-chem {margin:8px 0 0;padding-left:16px;font-size:10.5px;line-height:1.55;color:var(--text-dim);}
+"""
+
+_PM_RELEASE_BAND = {"none": 1, "low": 2, "medium": 3, "high": 4}
+
+
+def _pm_vocab_list(fm: dict, axis: str) -> list[str]:
+    v = fm.get("map_vocabularies") if isinstance(fm, dict) else None
+    vals = (v or {}).get(axis) if isinstance(v, dict) else None
+    return [str(x) for x in vals] if isinstance(vals, list) else []
+
+
+def _pm_label(fm: dict, axis: str, value) -> str:
+    labels = fm.get("map_value_labels") if isinstance(fm, dict) else None
+    raw = str(value or "")
+    if isinstance(labels, dict) and isinstance(labels.get(axis), dict):
+        return str(labels[axis].get(raw) or raw.replace("_", " "))
+    return raw.replace("_", " ")
+
+
+def _process_inspector(data_json: str) -> str:
+    template = r'''
+<section class="smap-inspect" id="process-inspector" aria-label="Inspect one stage">
+  <div class="smap-inspect-bar">
+    <div class="smap-step">
+      <button type="button" data-pm-prev aria-label="Previous stage">&#9664; Prev</button>
+      <button type="button" data-pm-next aria-label="Next stage">Next &#9654;</button>
+      <select data-pm-pick aria-label="Choose a stage to inspect"></select>
+    </div>
+    <div class="smap-step-count" data-pm-count aria-live="polite"></div>
+  </div>
+  <div class="smap-inspect-body" data-pm-body></div>
+</section>
+<script>
+(() => {
+  const root = document.getElementById('process-inspector');
+  if (!root || root.dataset.ready) return;
+  root.dataset.ready = 'true';
+  const all = __DATA__;
+  if (!all.length) return;
+  const body = root.querySelector('[data-pm-body]');
+  const pick = root.querySelector('[data-pm-pick]');
+  const count = root.querySelector('[data-pm-count]');
+  let i = 0;
+  const esc = v => String(v == null ? '' : v).replace(/[&<>"']/g,
+    ch => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[ch]));
+  const fact = (label, value) => '<div><dt>' + esc(label) + '</dt><dd' +
+    (value ? '>' : ' class="is-blank">') + esc(value || 'not recorded') + '</dd></div>';
+  const block = (label, text) => text
+    ? '<p class="smap-why"><b>' + esc(label) + '</b>' + esc(text) + '</p>' : '';
+  const list = (label, items, cls) => (items && items.length)
+    ? '<p class="smap-sub">' + esc(label) + '</p><ul class="' + cls + '">' +
+      items.map(s => '<li>' + s + '</li>').join('') + '</ul>' : '';
+  function render() {
+    const c = all[i];
+    pick.value = c.id;
+    count.textContent = (i + 1) + ' of ' + all.length + ' · ' + c.id;
+    const vendors = (c.vendors || []).map(v => v.url
+      ? '<a class="co-src" href="' + esc(v.url) + '" target="_blank" rel="noopener">' + esc(v.name) + '</a>' : esc(v.name));
+    const sources = (c.sources || []).map(s => '<a class="co-src" href="' + esc(s) + '" target="_blank" rel="noopener">' + esc(s.replace(/^https?:\/\//, '').slice(0, 70)) + '</a>');
+    body.innerHTML =
+      '<div class="smap-inspect-head"><div><h4>' + esc(c.order) + '. ' + esc(c.name) + '</h4>' +
+      '<div class="smap-card-sub">' + esc(c.phase) + (c.lane ? ' · ' + esc(c.lane) + ' lane' : '') + '</div></div>' +
+      '<span class="smap-liab band-' + c.band + '">' + esc(c.release) + ' fibre release</span></div>' +
+      '<p class="smap-work">' + esc(c.what || 'Not recorded.') + '</p>' +
+      '<dl class="smap-facts">' +
+        fact('wet or dry', c.wet) +
+        fact('water, L per kg fabric', c.water) +
+        fact('fibre release to water', c.release) +
+        fact('measured today', c.measured) +
+        fact('fibre measured today', c.fibreMeasured) +
+        fact('where the water goes', c.drain) +
+      '</dl>' +
+      list('Machines', (c.machines || []).map(esc), 'pmap-chem') +
+      list('Typical makers', vendors, 'tmap-vendors') +
+      list('Chemicals in the bath', (c.chemicals || []).map(esc), 'pmap-chem') +
+      block('Water figures', c.waterNote) +
+      block('Why fibres come off here', c.mechanism) +
+      block('Evidence', c.evidence) +
+      block('A sensor here', c.sensor) +
+      (sources.length ? '<p class="smap-srcline"><b>Sources</b> ' + sources.join(' · ') + '</p>' : '');
+    document.querySelectorAll('.pmap-chip[data-pm], .pmw-node[data-pm]').forEach(g =>
+      g.classList.toggle('is-active', g.dataset.pm === c.id));
+  }
+  function goto(id, scroll) {
+    const n = all.findIndex(c => c.id === id);
+    if (n < 0) return;
+    i = n; render();
+    if (scroll) root.scrollIntoView({behavior: 'smooth', block: 'nearest'});
+  }
+  pick.innerHTML = all.map(c =>
+    '<option value="' + esc(c.id) + '">' + esc(c.order) + '. ' + esc(c.name) + '</option>').join('');
+  pick.addEventListener('change', () => goto(pick.value, false));
+  root.querySelector('[data-pm-prev]').addEventListener('click', () => {
+    i = (i - 1 + all.length) % all.length; render();
+  });
+  root.querySelector('[data-pm-next]').addEventListener('click', () => {
+    i = (i + 1) % all.length; render();
+  });
+  document.querySelectorAll('[data-pm]').forEach(el => {
+    if (el.closest('#process-inspector')) return;
+    const act = ev => { ev.preventDefault(); goto(el.dataset.pm, true); };
+    el.addEventListener('click', act);
+    el.addEventListener('keydown', ev => {
+      if (ev.key === 'Enter' || ev.key === ' ') act(ev);
+    });
+  });
+  render();
+})();
+</script>'''
+    return template.replace("__DATA__", data_json)
+
+
+_PM_BAND_COLOUR = {0: "#64748b", 1: "#94a3b8", 2: "#38bdf8", 3: "#f59e0b", 4: "#f43f5e"}
+
+
+def _process_water_svg(rows: list[dict], fm: dict) -> str:
+    """Where the water goes and where the fibre comes from, as one drawing.
+
+    Product flow left to right (cotton and polyester lanes merge at the first shared
+    stage); fresh water drops into every wet stage from the line at the top; each wet
+    stage drains down to the collector line, and the collector runs into the effluent
+    stages at the right. The drain stroke is coloured and thickened by how much fibre
+    that stage sheds into water; a diamond above a stage marks fibre being CREATED
+    there, which is mostly dry mechanical work, so the eye can see that creation and
+    release happen in different places.
+    """
+    esc = escape
+    product = sorted((e for e in rows if str(e.get("lane") or "shared") != "effluent"),
+                     key=lambda e: e["_order"])
+    eff = sorted((e for e in rows if str(e.get("lane")) == "effluent"), key=lambda e: e["_order"])
+    shared = [e for e in product if str(e.get("lane") or "shared") == "shared"]
+    COLW, X0 = 108, 120
+    Y = {"cotton": 74, "polyester": 158, "shared": 116, "effluent": 250}
+    Y_FRESH, Y_DRAIN = 22, 250
+    NW, NH = 90, 34
+    col_of: dict[str, int] = {}
+    for i, e in enumerate(product):
+        col_of[e["id"]] = i
+    for i, e in enumerate(eff):
+        col_of[e["id"]] = len(product) + i
+    ncols = len(product) + len(eff)
+    W = X0 + ncols * COLW + 150
+    H = 300
+    if ncols == 0:
+        return ""
+
+    def cx(e):
+        return X0 + col_of[e["id"]] * COLW + NW / 2
+
+    def cy(e):
+        return Y.get(str(e.get("lane") or "shared"), Y["shared"])
+
+    out: list[str] = []
+    out.append(f'<text class="pmw-lane" x="12" y="{Y_FRESH + 4}">fresh water in</text>')
+    out.append(f'<text class="pmw-lane" x="12" y="{Y["cotton"] + 4}">cotton</text>')
+    out.append(f'<text class="pmw-lane" x="12" y="{Y["shared"] + 4}">fabric</text>')
+    out.append(f'<text class="pmw-lane" x="12" y="{Y["polyester"] + 4}">polyester</text>')
+    out.append(f'<text class="pmw-lane" x="12" y="{Y_DRAIN + 4}">drains</text>')
+    # fresh-water line and drain collector span the wet product stages
+    wet_product = [e for e in product if e["_is_wet"]]
+    if wet_product:
+        x1 = min(cx(e) for e in wet_product) - 30
+        x2 = max(cx(e) for e in wet_product) + 30
+        out.append(f'<line class="pmw-fresh" x1="{x1:.0f}" y1="{Y_FRESH}" x2="{x2:.0f}" y2="{Y_FRESH}"/>')
+        x2 = (cx(eff[-1]) + NW / 2 + 40) if eff else (max(cx(e) for e in wet_product) + 60)
+        out.append(f'<line class="pmw-drain-line" x1="{x1:.0f}" y1="{Y_DRAIN}" x2="{x2:.0f}" y2="{Y_DRAIN}"/>')
+        out.append(f'<text class="pmw-note" x="{x2 + 6:.0f}" y="{Y_DRAIN + 4}">&rarr; sewer or river</text>')
+
+    def arrow(a, b, cls="pmw-flow"):
+        return (f'<line class="{cls}" x1="{cx(a) + NW / 2:.0f}" y1="{cy(a):.0f}" '
+                f'x2="{cx(b) - NW / 2:.0f}" y2="{cy(b):.0f}" marker-end="url(#pmw-arrow)"/>')
+
+    # the shared line runs straight; a lane-only stage is a branch: in from the shared stage
+    # before it (or the previous stage of its own lane), out to the shared stage after it
+    for a, b in zip(shared, shared[1:]):
+        out.append(arrow(a, b))
+    for a, b in zip(eff, eff[1:]):
+        out.append(arrow(a, b))
+    for lane in ("cotton", "polyester"):
+        lane_stages = [e for e in product if str(e.get("lane")) == lane]
+        for e in lane_stages:
+            prev_lane = [x for x in lane_stages if x["_order"] < e["_order"]]
+            prev_shared = [x for x in shared if x["_order"] < e["_order"]]
+            next_shared = [x for x in shared if x["_order"] > e["_order"]]
+            # in: the nearer of (previous lane stage, previous shared stage)
+            cands = [x for x in (prev_lane[-1:] + prev_shared[-1:])]
+            if cands:
+                src = max(cands, key=lambda x: x["_order"])
+                out.append(arrow(src, e))
+            # out: to the next shared stage, unless the next lane stage comes first
+            next_lane = [x for x in lane_stages if x["_order"] > e["_order"]]
+            if next_shared and not (next_lane and next_lane[0]["_order"] < next_shared[0]["_order"]):
+                out.append(arrow(e, next_shared[0]))
+    if shared and eff:
+        pass  # drains, not the product, reach the effluent stages
+
+    # water in / out per wet stage, fibre-created marker per stage
+    for e in rows:
+        x, y = cx(e), cy(e)
+        band = e["_band"]
+        if e["_is_wet"] and str(e.get("lane")) != "effluent":
+            out.append(f'<line class="pmw-fresh" x1="{x:.0f}" y1="{Y_FRESH}" x2="{x:.0f}" y2="{y - NH / 2:.0f}" marker-end="url(#pmw-drop)"/>')
+            width = {0: 1.5, 1: 1.5, 2: 2.5, 3: 4, 4: 6}[band]
+            out.append(f'<line class="pmw-out" stroke="{_PM_BAND_COLOUR[band]}" stroke-width="{width}" '
+                       f'x1="{x:.0f}" y1="{y + NH / 2:.0f}" x2="{x:.0f}" y2="{Y_DRAIN - 3}"/>')
+            if e["_water"]:
+                out.append(f'<text class="pmw-note" x="{x + 5:.0f}" y="{(y + NH / 2 + Y_DRAIN) / 2 + 3:.0f}">{e["_water"]:g} L/kg</text>')
+        created = str(e.get("fibre_created") or "")
+        cb = _PM_RELEASE_BAND.get(created, 0)
+        if cb >= 2:
+            fill = _PM_BAND_COLOUR[cb] if cb >= 3 else "none"
+            out.append(f'<path class="pmw-made" d="M{x:.0f},{y - NH / 2 - 14} l6,6 l-6,6 l-6,-6 z" fill="{fill}" stroke="{_PM_BAND_COLOUR[cb]}">'
+                       f'<title>fibre created here ({esc(created)}): {esc(str(e.get("release_mechanism") or ""))}</title></path>')
+    # nodes on top
+    for e in rows:
+        x, y = cx(e), cy(e)
+        cls = "pmw-node" + (" is-eff" if str(e.get("lane")) == "effluent" else "")
+        label = str(e.get("short") or e["name"])
+        tip = f'{e["name"]} — {e["_wet"] or "dry"} — fibre to water: {e["_release"]}'
+        out.append(f'<g class="{cls}" data-pm="{esc(e["id"])}" tabindex="0" role="button"><title>{esc(tip)}</title>'
+                   f'<rect x="{x - NW / 2:.0f}" y="{y - NH / 2:.0f}" width="{NW}" height="{NH}" rx="6"/>'
+                   f'<text x="{x:.0f}" y="{y + 4:.0f}" text-anchor="middle">{esc(label[:18])}</text></g>')
+    defs = ('<defs><marker id="pmw-arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">'
+            '<path d="M0,0 L10,5 L0,10 z" fill="var(--text-dimmer)"/></marker>'
+            '<marker id="pmw-drop" viewBox="0 0 10 10" refX="5" refY="9" markerWidth="6" markerHeight="6" orient="auto">'
+            '<path d="M5,0 L10,10 L0,10 z" fill="#38bdf8"/></marker></defs>')
+    legend = ('<div class="pmap-legend"><span><i style="background:#38bdf8;width:18px;height:2px"></i>fresh water in</span>'
+              '<span>drain out, coloured by fibre shed to water:</span>'
+              + "".join(f'<span><i style="background:{_PM_BAND_COLOUR[n]};width:18px;height:{[2,2,3,5,7][n]}px"></i>{lab}</span>'
+                        for n, lab in ((1, "none"), (2, "low"), (3, "medium"), (4, "high")))
+              + '<span><i style="background:#f59e0b;transform:rotate(45deg);width:8px;height:8px"></i>fibre created here (dry mechanical work)</span></div>')
+    return (f'<div class="pmw-wrap"><svg class="pmw" width="{W}" height="{H}" viewBox="0 0 {W} {H}" role="img" '
+            'aria-label="Water path and fibre origin across the process">'
+            f'{defs}{"".join(out)}</svg></div>{legend}')
+
+
+PMW_CSS = """
+.pmw-wrap {overflow-x:auto;margin:12px 0 0;border:1px solid var(--border);border-radius:var(--r-md);background:var(--surface);}
+.pmw {display:block;font-family:inherit;}
+.pmw-lane {fill:var(--text-dimmer);font-size:8.5px;font-weight:800;letter-spacing:.07em;text-transform:uppercase;}
+.pmw-note {fill:var(--text-dimmer);font-size:9px;}
+.pmw-flow {stroke:var(--text-dimmer);stroke-width:1.2;}
+.pmw-fresh {stroke:#38bdf8;stroke-width:1.5;opacity:.85;}
+.pmw-drain-line {stroke:#64748b;stroke-width:3;opacity:.6;}
+.pmw-out {opacity:.9;}
+.pmw-made {cursor:help;}
+.pmw-node rect {fill:var(--surface-2);stroke:var(--border);stroke-width:1;}
+.pmw-node.is-eff rect {stroke-dasharray:3 3;}
+.pmw-node text {fill:var(--text);font-size:10px;font-weight:650;pointer-events:none;}
+.pmw-node {cursor:pointer;}
+.pmw-node:hover rect,.pmw-node:focus-visible rect,.pmw-node.is-active rect {stroke:var(--accent);stroke-width:1.6;}
+"""
+
+
+def render_process_tab(fm: dict, entries: list[dict]) -> str:
+    """The manufacturing process, raw material to finished product, one stage per
+    entry. Chips are coloured by how much fibre the stage sheds into water; a drop
+    marks a wet stage. Every value reads a declared field in `process-map.md`."""
+    if not entries:
+        return ('<div class="co-empty"><p>No <code>outreach/process-map.md</code> yet.</p>'
+                '<p>Add one <code>## Stage</code> block per process step with the fields its '
+                'frontmatter declares, and the map appears here.</p></div>')
+    esc = escape
+    phases = _pm_vocab_list(fm, "phase")
+    lanes = _pm_vocab_list(fm, "lane")
+    releases = _pm_vocab_list(fm, "fibre_release")
+    phase_notes = fm.get("map_phase_notes") if isinstance(fm, dict) else None
+    phase_notes = phase_notes if isinstance(phase_notes, dict) else {}
+
+    def _as_list(v):
+        if isinstance(v, list):
+            return [str(x) for x in v if x not in (None, "")]
+        return [str(v)] if v not in (None, "") else []
+
+    def _num(v):
+        try:
+            return float(str(v).split("-")[0].replace(",", ""))
+        except (TypeError, ValueError):
+            return None
+
+    rows = []
+    for raw in entries:
+        e = dict(raw)
+        e["name"] = str(e.get("_heading") or e.get("name") or e.get("id"))
+        try:
+            e["_order"] = float(e.get("order") or 0)
+        except (TypeError, ValueError):
+            e["_order"] = 0.0
+        rel = str(e.get("fibre_release") or "")
+        e["_band"] = _PM_RELEASE_BAND.get(rel, 0)
+        e["_release"] = _pm_label(fm, "fibre_release", rel) if rel in releases else _UNMAPPED
+        ph = str(e.get("phase") or "")
+        e["_phase"] = _pm_label(fm, "phase", ph) if ph in phases else _UNMAPPED
+        ln = str(e.get("lane") or "")
+        e["_lane"] = _pm_label(fm, "lane", ln) if ln in lanes else ""
+        wd = str(e.get("wet_or_dry") or "")
+        e["_wet"] = _pm_label(fm, "wet_or_dry", wd) if wd else ""
+        e["_is_wet"] = wd in ("wet", "rinse_only")
+        e["_water"] = _num(e.get("water_l_per_kg"))
+        rows.append(e)
+    rows.sort(key=lambda e: (e["_order"], e["name"].lower()))
+
+    # ── the claim, computed ──────────────────────────────────────────────────
+    wet = [e for e in rows if e["_is_wet"]]
+    high = [e for e in rows if e["_band"] == 4]
+    water_total = sum(e["_water"] for e in wet if e["_water"] is not None)
+    measured = [e for e in rows if str(e.get("fibre_measured_today") or "").lower() in ("true", "yes")]
+    claim = (
+        "<b>What the map currently says</b><p>"
+        f"<em>{len(rows)}</em> stages from raw material to finished product; <em>{len(wet)}</em> of "
+        f"them touch water. Fibre release is <em>high</em> at "
+        + (", ".join(f"<em>{esc(e['name'])}</em>" for e in high) if high else "<em>no stage yet graded</em>")
+        + f". <em>{len(measured)}</em> stage{'s' if len(measured) != 1 else ''} measure{'s' if len(measured) == 1 else ''} anything "
+          "fibre-related today"
+        + (f"; the wet stages with a declared figure add up to about <em>{water_total:,.0f}</em> L of water "
+           "per kg of fabric." if water_total else ".")
+        + "</p>")
+    kpis = "".join(f"<span><strong>{v}</strong>{esc(str(k))}</span>" for k, v in [
+        ("stages", len(rows)),
+        ("wet stages", len(wet)),
+        ("high fibre release", len(high)),
+        ("L water per kg, declared stages", f"{water_total:,.0f}" if water_total else "n/a"),
+        ("stages measuring fibres today", len(measured)),
+    ])
+
+    # ── the flow: phase bands, lanes inside, chips in order ──────────────────
+    def chip(e):
+        meta = e["_wet"] + (f" · {e['_water']:g} L/kg" if e["_water"] else "")
+        return (f'<button type="button" class="pmap-chip band-{e["_band"]}{" is-wet" if e["_is_wet"] else ""}" '
+                f'data-pm="{esc(e["id"])}"><b>{esc(e.get("short") or e["name"])}</b>'
+                f'<small>{esc(meta)}</small></button>')
+
+    flow = ""
+    phase_order = [p for p in phases] + sorted({str(e.get("phase") or "") for e in rows} - set(phases))
+    for ph in phase_order:
+        group = [e for e in rows if str(e.get("phase") or "") == ph]
+        if not group:
+            continue
+        label = _pm_label(fm, "phase", ph) if ph else _UNMAPPED
+        lanes_here = []
+        for ln in lanes + [""]:
+            g = [e for e in group if str(e.get("lane") or "") == ln]
+            if g:
+                lanes_here.append((ln, g))
+        lanes_html = ""
+        for ln, g in lanes_here:
+            chips = '<span class="pmap-arrow">&rarr;</span>'.join(chip(e) for e in g)
+            lane_label = (f'<span class="pmap-lane-label">{esc(_pm_label(fm, "lane", ln))}</span>'
+                          if len(lanes_here) > 1 or ln not in ("", "shared") else "")
+            lanes_html += f'<div class="pmap-lane">{lane_label}{chips}</div>'
+        flow += (f'<div class="pmap-phase"><div class="pmap-phase-head"><h3>{esc(label)}</h3>'
+                 f'<p>{esc(str(phase_notes.get(ph) or ""))}</p></div>{lanes_html}</div>')
+
+    legend = ('<div class="pmap-legend"><span><b>Left edge:</b> fibre release to water</span>' + "".join(
+        f'<span><i style="background:{c}"></i>{esc(_pm_label(fm, "fibre_release", v))}</span>'
+        for v, c in zip(["none", "low", "medium", "high"], ["#94a3b8", "#38bdf8", "#f59e0b", "#f43f5e"])
+        if v in releases) + '<span><i style="background:#64748b"></i>not graded</span>'
+        '<span>&#x1F4A7; wet stage</span></div>')
+
+    # ── inspector payload ────────────────────────────────────────────────────
+    def _vendors(e):
+        out = []
+        for v in (e.get("vendors") or []):
+            if isinstance(v, dict):
+                out.append({"name": str(v.get("name") or ""), "url": str(v.get("url") or "")})
+            elif v:
+                out.append({"name": str(v), "url": ""})
+        return out
+
+    payload = [{
+        "id": e["id"], "order": (int(e["_order"]) if e["_order"] == int(e["_order"]) else e["_order"]),
+        "name": e["name"], "phase": e["_phase"], "lane": e["_lane"],
+        "what": str(e.get("what_happens") or ""), "wet": e["_wet"],
+        "water": str(e.get("water_l_per_kg") or ""), "waterNote": str(e.get("water_note") or ""),
+        "release": e["_release"], "band": e["_band"],
+        "measured": str(e.get("measured_today") or ""),
+        "fibreMeasured": ("yes" if e in measured else "no"),
+        "drain": str(e.get("drain") or ""), "machines": _as_list(e.get("machines")),
+        "vendors": _vendors(e), "chemicals": _as_list(e.get("chemicals")),
+        "mechanism": str(e.get("release_mechanism") or ""),
+        "evidence": str(e.get("release_evidence") or ""),
+        "sensor": str(e.get("sensor_note") or ""), "sources": _as_list(e.get("sources")),
+    } for e in rows]
+    inspector = _process_inspector(json.dumps(payload, ensure_ascii=True).replace("</", "<\\/"))
+    water_svg = _process_water_svg(rows, fm)
+
+    # ── the table ────────────────────────────────────────────────────────────
+    trs = "".join(
+        f'<tr><td><a href="#" data-pm="{esc(e["id"])}">{esc(str(int(e["_order"]) if e["_order"] == int(e["_order"]) else e["_order"]))}. {esc(e["name"])}</a></td>'
+        f'<td>{esc(e["_phase"])}</td><td>{esc(e["_wet"])}</td>'
+        f'<td>{esc(str(e.get("water_l_per_kg") or ""))}</td>'
+        f'<td><span class="smap-liab band-{e["_band"]}">{esc(e["_release"])}</span></td>'
+        f'<td>{esc(str(e.get("release_mechanism") or ""))}</td>'
+        f'<td>{esc(str(e.get("measured_today") or ""))}</td>'
+        f'<td>{esc(str(e.get("drain") or ""))}</td></tr>' for e in rows)
+    table = ('<div class="tmap-table pmap-table"><table><thead><tr><th>Stage</th><th>Phase</th>'
+             '<th>Wet / dry</th><th>Water L/kg</th><th>Fibre release</th><th>Why</th>'
+             f'<th>Measured today</th><th>Water goes to</th></tr></thead><tbody>{trs}</tbody></table></div>')
+
+    # ── cards by phase ───────────────────────────────────────────────────────
+    cards = ""
+    for ph in phase_order:
+        group = [e for e in rows if str(e.get("phase") or "") == ph]
+        if not group:
+            continue
+        cards += (f'<div class="tmap-family"><h3>{esc(_pm_label(fm, "phase", ph) if ph else _UNMAPPED)}</h3>'
+                  f'<p>{esc(str(phase_notes.get(ph) or ""))}</p></div><div class="smap-grid">')
+        for e in group:
+            meta = "".join(f"<span><b>{esc(k)}</b> {esc(v)}</span>" for k, v in [
+                ("wet / dry", e["_wet"]), ("water", (str(e.get("water_l_per_kg")) + " L/kg") if e.get("water_l_per_kg") not in (None, "") else ""),
+                ("lane", e["_lane"]), ("drain", str(e.get("drain") or "")),
+            ] if v)
+            chem = _as_list(e.get("chemicals"))
+            chem_html = ('<p class="smap-sub">Chemicals in the bath</p><ul class="pmap-chem">'
+                         + "".join(f"<li>{esc(c)}</li>" for c in chem) + "</ul>") if chem else ""
+            mach = _as_list(e.get("machines"))
+            mach_html = ('<p class="smap-sub">Machines</p><ul class="pmap-chem">'
+                         + "".join(f"<li>{esc(c)}</li>" for c in mach) + "</ul>") if mach else ""
+            why = ""
+            for lab, key in (("Water figures", "water_note"), ("Why fibres come off here", "release_mechanism"), ("Evidence", "release_evidence"),
+                             ("Measured today", "measured_today"), ("A sensor here", "sensor_note")):
+                if e.get(key):
+                    why += f'<p class="smap-why"><b>{lab}</b>{esc(str(e[key]))}</p>'
+            srcs = _as_list(e.get("sources"))
+            shtml = ('<p class="smap-srcline"><b>Sources</b> ' + " · ".join(
+                f'<a class="co-src" href="{esc(s)}" target="_blank" rel="noopener">'
+                f'{esc(s.replace("https://", "").replace("http://", "")[:60])}</a>' for s in srcs) + "</p>") if srcs else ""
+            cards += (
+                f'<article class="smap-card" id="pm-{esc(e["id"]).lower()}">'
+                f'<div class="smap-card-top"><div><h4>{esc(str(int(e["_order"]) if e["_order"] == int(e["_order"]) else e["_order"]))}. {esc(e["name"])}</h4>'
+                f'<div class="smap-card-sub">{esc(e["id"])} &middot; {esc(e["_phase"])}</div></div>'
+                f'<span class="smap-liab band-{e["_band"]}">{esc(e["_release"])}</span></div>'
+                f'<p class="smap-work">{esc(str(e.get("what_happens") or "Not recorded."))}</p>'
+                f'<div class="smap-meta">{meta}</div>{mach_html}{chem_html}{why}{shtml}</article>')
+        cards += "</div>"
+
+    title = str(fm.get("title") or "Process map") if isinstance(fm, dict) else "Process map"
+    return (
+        '<section class="cmap" aria-labelledby="pmap-title">'
+        '<div class="cmap-head"><div>'
+        '<div class="co-eyebrow">Process scene</div>'
+        f'<h2 id="pmap-title">{esc(title)}</h2>'
+        '<p>Every stage from raw material to finished product, in order. The left edge of each '
+        'chip is how much fibre the stage sheds into water; a drop marks a stage that touches '
+        'water at all. Click a chip. Every value reads a declared field in '
+        '<code>process-map.md</code>.</p>'
+        '</div></div>'
+        f'<div class="smap-claim">{claim}</div>'
+        f'<div class="cmap-kpis">{kpis}</div>'
+        '<div class="cmap-matrix-head smap-spaced"><h3>Where the water goes, and where the fibre comes from</h3>'
+        '<p>Fabric moves left to right. Blue drops are fresh water entering a stage; the line down from a '
+        'stage is its drain, coloured and thickened by how much fibre it carries; every drain meets the '
+        'collector and runs into effluent treatment. A diamond above a stage means fibre is created there.</p></div>'
+        f'{water_svg}'
+        '<div class="cmap-matrix-head smap-spaced"><h3>The stages, by phase</h3>'
+        '<p>Click a chip to inspect it.</p></div>'
+        f'{flow}{legend}'
+        f'{inspector}'
+        '<div class="cmap-matrix-head smap-spaced"><h3>Stage by stage</h3>'
+        '<p>Water, fibre release, why, and what the mill measures there today.</p></div>'
+        f'{table}'
+        '<div class="cmap-matrix-head smap-spaced"><h3>Every stage, by phase</h3>'
+        '<p>What happens, the machines, the chemicals, and where the water goes.</p></div>'
+        f'{cards}'
+        '</section>')
+
+
+def render_research_tab(views: list[tuple[str, str, int | str, str]]) -> str:
+    """Pages inside the Research tab. Each view is (key, label, count, html);
+    the first is shown by default and the choice is remembered per session."""
+    if not views:
+        return '<div class="co-empty"><p>Nothing in the Research tab yet.</p></div>'
+    esc = escape
+    buttons = "".join(
+        f'<button type="button" role="tab"{" class=\"active\"" if i == 0 else ""} '
+        f'aria-selected="{"true" if i == 0 else "false"}" data-research-view="{esc(k)}">'
+        f'{esc(label)}<span class="count">{esc(str(n))}</span></button>'
+        for i, (k, label, n, _) in enumerate(views))
+    panels = "".join(
+        f'<div data-research-panel="{esc(k)}"{"" if i == 0 else " hidden"}>{html}</div>'
+        for i, (k, _, _, html) in enumerate(views))
+    return f'''<div id="research-pages">
+<div class="rsw" role="tablist" aria-label="Research pages">{buttons}</div>
+{panels}
+</div>
+<script>
+(() => {{
+  const root = document.getElementById('research-pages');
+  if (!root || root.dataset.ready) return;
+  root.dataset.ready = 'true';
+  const show = key => {{
+    root.querySelectorAll('[data-research-view]').forEach(b => {{
+      const on = b.dataset.researchView === key;
+      b.classList.toggle('active', on); b.setAttribute('aria-selected', String(on));
+    }});
+    root.querySelectorAll('[data-research-panel]').forEach(p => {{ p.hidden = p.dataset.researchPanel !== key; }});
+    try {{ sessionStorage.setItem('research-view', key); }} catch (e) {{}}
+  }};
+  root.querySelectorAll('[data-research-view]').forEach(b => b.addEventListener('click', () => show(b.dataset.researchView)));
+  let start = null;
+  try {{ start = sessionStorage.getItem('research-view'); }} catch (e) {{}}
+  const fromHash = (location.hash.split('/')[1] || '');
+  if (fromHash && root.querySelector('[data-research-view="' + fromHash + '"]')) start = fromHash;
+  if (start && root.querySelector('[data-research-view="' + start + '"]')) show(start);
+}})();
+</script>'''
+
+
 def render_companies_tab(companies: list[dict], fm: dict, contacts: list[dict] | None = None) -> str:
     if not companies:
         return ('<div class="co-empty"><p>No <code>outreach/companies.md</code> yet.</p>'
@@ -4218,9 +5240,9 @@ function switchTab(name) {
 }
 window.addEventListener('hashchange', () => {
   const t = (location.hash || '#contacts').slice(1).split('?')[0];
-  if (['tasks','contacts','companies','startups','pages','email','patterns','thesis','offerings'].includes(t)) switchTab(t);
+  if (['tasks','contacts','companies','startups','pages','research','patterns','thesis','offerings'].includes(t)) switchTab(t);
 });
-['tasks','companies','startups','pages','email','patterns','thesis','offerings'].forEach(n => {
+['tasks','companies','startups','pages','research','patterns','thesis','offerings'].forEach(n => {
   if (location.hash.startsWith('#' + n)) switchTab(n);
 });
 
@@ -6075,6 +7097,9 @@ def build() -> Path | None:
     if companies_path.exists() and not _HAS_YAML:
         print("[warn] companies.md present but PyYAML not installed; "
               f"Companies tab will show empty state.", file=sys.stderr)
+    # Detection-technology map — the Research tab. One author: technology-map.md.
+    technology = parse_companies_md(REPORTS / "outreach" / "technology-map.md")
+    process = parse_companies_md(REPORTS / "outreach" / "process-map.md")
     thesis = {"lineage_fm": lineage_fm, "hunches": hunches, "graph_fm": graph_fm,
               "assumptions": assumptions, "offerings": offerings,
               "offerings_fm": offerings_fm, "belief": belief,
@@ -6082,7 +7107,8 @@ def build() -> Path | None:
 
     html = render(frontmatter, contacts, copy_by_id=copy_by_id,
                   patterns=patterns, evidence_entries=evidence_entries,
-                  thesis=thesis, companies=companies)
+                  thesis=thesis, companies=companies, technology=technology,
+                  process=process)
 
     # ONE file per idea. The outreach_tracker.html redirect stub that used to be
     # written here was removed on 2026-08-07 once the skills naming that path were
