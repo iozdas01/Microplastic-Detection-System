@@ -4,13 +4,13 @@
 -->
 ---
 idea: industrial-process-data-infrastructure
-generated: 2026-09-14T21:19Z
-active_hunch: H1, H3
+generated: 2026-09-14T21:20Z
+active_hunch: H1, H3, H5
 active_assumption: H1A2
 sources:
   belief: 6093ca2c2aa3
-  lineage: c1a0a4e21c0f
-  graph: 26e840562a22
+  lineage: acb22ff76116
+  graph: 73d7103da029
   evidence: ef6dfaf432de
   offerings: absent
   contacts: e796b45f3a27
@@ -28,7 +28,7 @@ _Founder-owned. Changes only with explicit confirmation._ → `input-context/bel
 
 ## Hunch
 
-_2 hunches active in parallel — one per entry point into the same transaction. They share a root assumption; evidence on one door does not transfer to the other._
+_3 hunches active in parallel — one per entry point into the same transaction. They share a root assumption; evidence on one door does not transfer to the other._
 
 **H1 — active** · `untested`
 
@@ -38,15 +38,19 @@ In the fashion industry there are no sensors to detect microplastics, so a texti
 
 Large California community water systems must report microplastics in source water (Phase 1, 2023-2025) and treated water (Phase 2, from autumn 2026), and the only way to produce the number is a periodic lab analysis, so utilities carry a compliance obligation with no way to see the number move between samples or act…
 
-Lineage: H2 superseded · H4 proposed · H5 proposed
+**H5 — active** · `untested`
 
-## Assumptions — top 3 of 12 by the declared ranking
+Membrane manufacturers lose warranty claims and reputation to fouling they did not cause, and have no inline way to show a plant which foulant reached the membrane, so their R&D groups would pay for inline particle characterisation as a warranty and diagnostic tool.
+
+Lineage: H2 superseded · H4 proposed
+
+## Assumptions — top 3 of 14 by the declared ranking
 
 | # | ID | claim | status | evidence | next action |
 |---|---|---|---|---|---|
 | 1 | **H1A2** ← | Textile wet-processing mills are already being asked for a microfiber number by a brand, an auditor or a regu… | `untested` | `none` | Ten conversations with people who run wet processing at textile mills. One question first… |
 | 2 | **H1A10** | People running a production line can name a recent case where a measured number sat waiting for a person to i… | `untested` | `none` | Ask five people who run any high-mix production line, before any mention of sensors or so… |
-| 3 | **H1A5** | Nothing good enough exists: mills consider lab sampling and effluent filtration insufficient for the question… | `untested` | `none` | Agent: one pass over instrumentation vendors and TMC signatories for any inline microfibe… |
+| 3 | **H5A1** | Something dated in the last three years has made membrane life a question a membrane maker must now answer wi… | `untested` | `none` | One afternoon: read what DuPont Water Solutions, Hydranautics and Toray Membrane USA publ… |
 
 _← = `active_assumption`. Ranking: leap-of-faith gate → DAG roots first → kill_power → uncertainty → cheapest test (`schemas/assumptions.md`)._
 

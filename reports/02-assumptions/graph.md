@@ -1,7 +1,7 @@
 ---
 purpose: The assumption DAG for this idea — what must be true, ranked, each with the cheapest test that would settle it. Holds the active hunch's nodes plus any belief-level (H0) node that outlives whichever hunch is current.
 idea: industrial-process-data-infrastructure
-hunch_id: [H1, H3]
+hunch_id: [H1, H3, H5]
 belief_level_prefix: H0
 belief_file: input-context/belief.md
 last_updated: 2026-09-14
@@ -24,6 +24,7 @@ shotgun's initial-test run will add or contradict them.
 #   consortium_expert     expert  — TMC, standards bodies, academics on microfibers
 #   water_utility         demand  — community water system (drinking water) that owns a monitoring result (added 2026-09-14 for H3)
 #   regulator             expert  — state board or agency staff who set or run the monitoring (added 2026-09-14 for H3)
+#   membrane_manufacturer demand  — RO/UF membrane maker whose technical-service or R&D group bears fouling and membrane-life questions (added 2026-09-14 for H5)
 #
 # Read in order: H1A2 (are mills being asked for the number, and does it cost them) is
 # the root; H1A3, H1A4 and H1A6 sit under it. H1A1 and H1A5 are independent roots.
@@ -38,6 +39,12 @@ shotgun's initial-test run will add or contradict them.
 # (Phase 1, 2023-2025) and treated water (Phase 2, from autumn 2026), and the only way to
 # produce the number is a periodic lab analysis, so utilities carry a compliance obligation
 # with no way to see the number move between samples or act on it.
+
+# Active hunch H5 (activated 2026-09-14, third live hunch; drafted without a shotgun from
+# the H5 lineage entry and the founder's own question)
+# Membrane manufacturers lose warranty claims and reputation to fouling they did not cause,
+# and have no inline way to show a plant which foulant reached the membrane, so their R&D
+# groups would pay for inline particle characterisation as a warranty and diagnostic tool.
 
 # Active hunch H1 (confirmed 2026-09-09)
 # In the fashion industry there are no sensors to detect microplastics, so a textile
@@ -536,3 +543,92 @@ assumptions:
                        "wastewater or sanitation districts (H4, not H3)",
                        "instrument, sensor or lab vendors (supply side, not the pain)",
                        "consultants describing other people's systems"]
+
+  - id: H5A1
+    assumption: >-
+      Something dated in the last three years has made membrane life a question a membrane
+      maker must now answer with field data rather than a projection: candidates are
+      performance-guarantee contracts on large desalination and reuse plants, the makers'
+      own monitoring software (DuPont WAVE, Hydranautics IMSDesign, Toray tools) creating a
+      data channel with no foulant identity in it, and chemical-free pre-treatment entrants
+      changing what reaches the membrane. None is verified.
+    hunch: H5
+    category: timing
+    lens: feasibility
+    validation_track: customer_adoption
+    test_method: agent
+    why_it_matters: >-
+      If membrane life has been settled by projection software and warranty terms for a
+      decade with no new pressure, H5 is early rather than wrong. Drawn from the H5 lineage
+      entry (why now: unknown) and the 2026-09-14 search that found no public sign of the
+      three named makers seeking inline characterisation.
+    importance: high
+    quadrant: leap_of_faith
+    uncertainty_score: 5
+    kill_power: 4
+    test_cost: 1
+    parent_assumptions: []
+    child_assumptions: [H5A2]
+    evidence_for: []
+    evidence_against: []
+    status: untested
+    next_action: >-
+      One afternoon: read what DuPont Water Solutions, Hydranautics and Toray Membrane USA
+      publish on warranties, performance guarantees, autopsy services and monitoring
+      software; date any change since 2023 and say what it obliges the maker to know.
+    disconfirmation: >-
+      If no maker's public terms, software or service changed since 2023 in a way that needs
+      field foulant data, the why-now rests on the founders' inference alone.
+    stop_rule: "One afternoon of desk research or one week, whichever first."
+
+  - id: H5A2
+    assumption: >-
+      A membrane maker's technical-service or R&D group cannot predict or explain how long
+      its membranes last at a given plant, pays for that gap in autopsies, replacements,
+      credits or lost deals when membranes foul early, and would use a feedback loop from
+      the plant's inlet to close it.
+    hunch: H5
+    category: pain
+    lens: desirability
+    validation_track: customer_adoption
+    test_method: founder
+    why_it_matters: >-
+      The root for H5 and the founder's own open question (2026-09-14: "maybe they need the
+      feedback loop to determine how long their membranes last — we don't know this"). If
+      membrane life is predicted well enough by projection software and early fouling is
+      the plant's problem not the maker's, there is no buyer on the supply side.
+    importance: high
+    quadrant: leap_of_faith
+    uncertainty_score: 5
+    kill_power: 5
+    test_cost: 1
+    parent_assumptions: [H5A1]
+    child_assumptions: []
+    evidence_for: []
+    evidence_against: []
+    status: untested
+    next_action: >-
+      Three to five conversations with technical-service or application engineers at RO/UF
+      membrane makers. One question first: "the last time a customer's membranes fouled
+      earlier than projected — how did you find out what caused it, what did it cost your
+      side, and what data from the plant would have changed that?"
+    disconfirmation: >-
+      If three of five say early fouling is the plant's problem and costs the maker nothing
+      beyond an autopsy they already charge for, the pain is not on the supply side.
+    stop_rule: "Five conversations or two weeks, whichever first."
+    icp_segment: >-
+      RO and UF membrane manufacturers, and the people inside them who answer when a
+      customer's membranes foul early: technical service, application engineering, product
+      management for RO/UF elements, and R&D on fouling and membrane life.
+    icp_valid_tiers:
+      - {name: membrane_manufacturer, side: demand}
+      - {name: consortium_expert, side: expert}
+    domain_data_sources: []
+    icp_valid_titles: [Technical Service Manager, Field Technical Service Engineer, Technical Service Engineer,
+                       Application Development Manager, Application Engineer, Product Manager RO, Product Manager UF,
+                       Global Technology Leader, R&D Manager, R&D Director, Membrane Autopsy Lead,
+                       Director of Technology, Business Development Manager Desalination]
+    icp_out_of_scope: ["membrane distributors and system integrators with no element manufacturing",
+                       "sales roles with no technical-service duty",
+                       "plant operators (H2/H3, not H5)",
+                       "instrument or sensor vendors"]

@@ -1,7 +1,7 @@
 ---
 purpose: The hunch lineage — every hunch ever held under the belief, its status, and which one is active.
 belief_file: input-context/belief.md
-active_hunch: [H1, H3]
+active_hunch: [H1, H3, H5]
 next_hunch_id: H6
 last_updated: 2026-09-14
 ---
@@ -268,8 +268,9 @@ their share, so both sides need a number they cannot currently produce inline.
 
 ## H5
 
-status: proposed
+status: active
 validation_status: untested
+activated_on: 2026-09-14
 parent_hunch: null
 created: 2026-09-14
 created_by: founder
@@ -280,6 +281,10 @@ change_reason: >-
   inline anti-fouling and particle-characterisation technologies to protect high-value
   RO/UF membranes." Premise checked the same day: no public statement, partnership or open
   call from any of the three was found. "Actively seeking" is unverified [H].
+  Activated 2026-09-14 by founder decision as a third live hunch alongside H1 and H3, from
+  the co-founder's list (DuPont Water Solutions, Hydranautics, Toray Membrane USA) and the
+  founder's own question: "maybe they need the feedback loop to determine how long their
+  membranes last — we don't know this". That question is the pain node, not a premise.
 evidence_delta: []
 
 ### Statement
