@@ -54,7 +54,7 @@ Rule check: 469 chars, violations none. Inbox (LR-B25): first-name/company searc
 
 Rule check: 453 chars, violations none. Inbox (LR-B25): first-name/company search on Izgin's account, no thread. Status at draft time: accepted 2026-09-14.
 
-## C38 — Murat Gülay
+## C38 — [REMOVED 2026-09-14 — profile not in English, LR-B31a] Murat Gülay
 
 ### Msg 1 — DRAFTED 2026-09-14
 
@@ -123,7 +123,7 @@ Rule check: 462 chars, violations none. Inbox (LR-B25): first-name/company searc
 
 Rule check: 464 chars, violations none. Inbox (LR-B25): first-name/company search on Izgin's account, no thread. Status at draft time: accepted 2026-09-14.
 
-## C5 — Mustafa Salih
+## C5 — [REMOVED 2026-09-14 — profile not in English, LR-B31a] Mustafa Salih
 
 ### Msg 1 — DRAFTED 2026-09-14
 
@@ -156,7 +156,7 @@ Rule check: 407 chars, violations none. Inbox (LR-B25): first-name/company searc
 
 Rule check: 442 chars, violations none. Inbox (LR-B25): first-name/company search on Izgin's account, no thread. Status at draft time: accepted 2026-09-14.
 
-## C37 — Erdal Gülcan
+## C37 — [REMOVED 2026-09-14 — profile not in English, LR-B31a] Erdal Gülcan
 
 ### Msg 1 — DRAFTED 2026-09-14
 
@@ -174,7 +174,7 @@ Rule check: 442 chars, violations none. Inbox (LR-B25): first-name/company searc
 
 Rule check: 483 chars, violations none. Inbox (LR-B25): first-name/company search on Izgin's account, no thread. Status at draft time: accepted 2026-09-14.
 
-## C57 — Nuno Macieira
+## C57 — [REMOVED 2026-09-14 — profile not in English, LR-B31a] Nuno Macieira
 
 ### Msg 1 — DRAFTED 2026-09-14
 

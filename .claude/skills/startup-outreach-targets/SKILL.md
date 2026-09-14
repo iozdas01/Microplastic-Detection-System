@@ -64,6 +64,7 @@ What the profile must establish, in this order — stop at the first failure:
 4. **Tenure is long enough to have a history.** Someone weeks into a role can describe a
    process but has no incidents of their own, and incidents are the evidence.
 5. **They are not a competitor or a peer founder** wearing an operator's title.
+6. **The profile is written in English** (headline and role descriptions, or English listed under Languages). A profile in another language fails: the contact cannot read the message and the co-founder cannot join the thread (founder rule, `copy-rules.md` LR-B31a).
 
 Record what the visit revealed in `notes:` with the date, whether the contact passes or fails.
 An unverified contact stays `pending` and is never invited; write down what is missing so the

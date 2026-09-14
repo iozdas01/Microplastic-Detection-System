@@ -272,6 +272,14 @@ contact's language for Msg 1. A contact whose profile shows no English is flagge
 register inside English (formal for seniors); the Russian `)` exception under LR-B23 is
 about an existing thread's punctuation, not about choosing a language.
 
+**LR-B31a — Do not invite a profile that is not written in English (founder rule,
+2026-09-14, after a Portuguese-only laundry technician accepted and could not be written
+to).** The live-profile gate in `startup-outreach-targets` checks the profile's language
+before the invite: headline and role descriptions in English, or an English entry in the
+Languages section, or the contact passes. Otherwise the contact is `off_scope` with the
+language named in `notes:`. An accepted non-English profile already in the ledger gets no
+Msg 1: set `outreach_status: held`, cite this rule, and pull any draft from the archive.
+
 **LR-B24 — No cliché or stock cold-outreach phrases.** Reject any draft containing a
 blacklisted stock phrase before it reaches the founder, case-insensitive, the same mechanism
 as the em-dash and cert-token checks. Add newly caught phrases as they turn up. This closes

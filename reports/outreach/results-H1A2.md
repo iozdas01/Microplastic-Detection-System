@@ -61,15 +61,15 @@ _Channels are counted separately._
 | C60 | Aman Ullah | invited | — |
 | C7 | Murat Terlemez | invited | — |
 | C30 | Önder Ertürk | accepted | — |
-| C37 | Erdal Gülcan | accepted | — |
-| C38 | Murat Gülay | accepted | — |
 | C40 | Erdogan Sekerci | accepted | — |
 | C48 | Ayesha Navaid Anwar | accepted | — |
-| C5 | Mustafa Salih | accepted | — |
 | C55 | Gulfam S. | accepted | — |
-| C57 | Nuno Macieira | accepted | — |
 | C59 | Faizan Pasha | accepted | — |
 | C6 | Halil Kutluğ Kabahasanoğlu | accepted | — |
+| C37 | Erdal Gülcan | held | — |
+| C38 | Murat Gülay | held | — |
+| C5 | Mustafa Salih | held | — |
+| C57 | Nuno Macieira | held | — |
 | C13 | Sedat Çinici | off_scope | — |
 | C26 | Büşra Suiçmez | off_scope | — |
 | C27 | Nastassia Ramazankhani | off_scope | — |
