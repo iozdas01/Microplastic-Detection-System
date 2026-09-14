@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-09-14T17:27:28.000Z",
+  "updated_at": "2026-09-14T17:30:36.581Z",
   "tasks": [
     {
       "id": "T-MTV0XT85-EZLO",
@@ -81,9 +81,29 @@
       "owner": "izgin",
       "created_at": "2026-09-11T19:39:20.464Z",
       "updated_at": "2026-09-11T19:39:20.464Z"
+    },
+    {
+      "id": "T-MU1IQY05-NX9R",
+      "title": "Pitch deck for Norrsken Evolve",
+      "detail": "https://www.norrskenevolve.vc/",
+      "priority": "normal",
+      "status": "backlog",
+      "owner": "izgin",
+      "created_at": "2026-09-14T17:30:36.581Z",
+      "updated_at": "2026-09-14T17:30:36.581Z"
     }
   ],
   "activity": [
+    {
+      "id": "1789407036581-xhk28o",
+      "at": "2026-09-14T17:30:36.581Z",
+      "type": "created",
+      "task_id": "T-MU1IQY05-NX9R",
+      "title": "Pitch deck for Norrsken Evolve",
+      "from": null,
+      "to": "backlog",
+      "owner": "izgin"
+    },
     {
       "id": "1789406848695-r57umy",
       "at": "2026-09-14T17:27:28.000Z",
