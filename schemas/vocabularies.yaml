@@ -143,7 +143,13 @@ vocabularies:
     schema: schemas/evidence.md
     values: [article, post_mortem, founder_interview, procurement, job_post, forum,
              market_report, expert_call, our_observation, customer_interview,
-             pilot_data, commercial_data, company_statement]
+             pilot_data, commercial_data, company_statement, regulatory_document]
+    # regulatory_document (added 2026-09-14) — a regulator's or legislature's own
+    # published instrument: statute, board resolution, policy handbook, programme
+    # timeline slide from the agency running the programme. Primary and binding,
+    # unlike `article` (third party) or `company_statement` (self-interested), but
+    # it states what is REQUIRED, not what anyone does or feels — grade the
+    # obligation, never infer pain from it. First use: E1, SB 1422 Phase II timeline.
     # company_statement (added 2026-08-12) — a company's own public claim about
     # itself: marketing post, launch announcement, product page, careers blurb.
     # Distinct from `article`, which is a third party reporting on them, and that
@@ -389,6 +395,7 @@ maps:
     post_mortem:        5
     pilot_data:         5
     commercial_data:    5
+    regulatory_document: 4
 
 
   founder_label_to_entry_confidence:

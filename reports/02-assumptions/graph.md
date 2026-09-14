@@ -1,7 +1,7 @@
 ---
 purpose: The assumption DAG for this idea — what must be true, ranked, each with the cheapest test that would settle it. Holds the active hunch's nodes plus any belief-level (H0) node that outlives whichever hunch is current.
 idea: industrial-process-data-infrastructure
-hunch_id: H1
+hunch_id: [H1, H3]
 belief_level_prefix: H0
 belief_file: input-context/belief.md
 last_updated: 2026-09-14
@@ -22,6 +22,8 @@ shotgun's initial-test run will add or contradict them.
 #   lab_testing_provider  supply  — runs ISO 4484 / TMC methods on samples
 #   sensor_vendor         competitor — inline particle / process instrumentation vendor
 #   consortium_expert     expert  — TMC, standards bodies, academics on microfibers
+#   water_utility         demand  — community water system (drinking water) that owns a monitoring result (added 2026-09-14 for H3)
+#   regulator             expert  — state board or agency staff who set or run the monitoring (added 2026-09-14 for H3)
 #
 # Read in order: H1A2 (are mills being asked for the number, and does it cost them) is
 # the root; H1A3, H1A4 and H1A6 sit under it. H1A1 and H1A5 are independent roots.
@@ -29,6 +31,13 @@ shotgun's initial-test run will add or contradict them.
 # it was first written as belief-level H0A1 and re-homed under H1 the same day at
 # the founder's call (every node under the hunch). The id H0A1 is burned.
 # Drafted 2026-09-09 without a shotgun run; each node says what it was drawn from.
+
+# Active hunch H3 (activated 2026-09-14, in parallel with H1; drafted without a shotgun
+# from the H3 lineage entry and the 2026-09-14 desk check of SB 1422)
+# Large California community water systems must report microplastics in source water
+# (Phase 1, 2023-2025) and treated water (Phase 2, from autumn 2026), and the only way to
+# produce the number is a periodic lab analysis, so utilities carry a compliance obligation
+# with no way to see the number move between samples or act on it.
 
 # Active hunch H1 (confirmed 2026-09-09)
 # In the fashion industry there are no sensors to detect microplastics, so a textile
@@ -440,3 +449,90 @@ assumptions:
                        Operations Manager, Shift Supervisor, Head of Production]
     icp_out_of_scope: ["software or instrumentation vendors (supply side, not the pain)",
                        "consultants describing other people's lines"]
+
+  - id: H3A1
+    assumption: >-
+      California's SB 1422 monitoring programme proceeds to Phase 2 (treated water at the
+      state's largest systems, from autumn 2026), so a named set of utilities must produce a
+      microplastics number for the water they deliver, on a schedule, within 12 months.
+    hunch: H3
+    category: timing
+    lens: feasibility
+    validation_track: customer_adoption
+    test_method: agent
+    why_it_matters: >-
+      If Phase 2 stalls after the Board's evaluation, the obligation stays on source water
+      only and H3 is early rather than wrong. Drawn from the 2026-09-14 desk check: SB 1422
+      (2018), the Board's 2022 policy handbook, Phase 1 autumn 2023-2025 on source water,
+      Phase 2 "if it occurs" from autumn 2026 on treated water.
+    importance: high
+    quadrant: known_important
+    uncertainty_score: 2
+    kill_power: 4
+    test_cost: 1
+    parent_assumptions: []
+    child_assumptions: [H3A2]
+    evidence_for: [E1, E2]
+    evidence_against: []
+    status: weakly_supported
+    next_action: >-
+      Remaining desk work after E1/E2: the list of systems receiving Phase II monitoring
+      orders, the sampling frequency, and whether any order has been issued yet. The
+      disclosure duty (positive detections in the CCR) is settled by E2.
+    disconfirmation: >-
+      If no Phase 2 decision exists by the end of 2026, or Phase 2 binds fewer than ten
+      systems, or a result carries no duty beyond filing it, the timing pull is weak.
+    stop_rule: "One afternoon of desk research or one week, whichever first."
+
+  - id: H3A2
+    assumption: >-
+      The people who own the microplastics result at a California system in the SB 1422
+      programme experienced Phase 1 monitoring as a cost or a decision (budget, sampling
+      logistics, a board or public question, a treatment question), not as a lab line item,
+      and can name what they did with the last result.
+    hunch: H3
+    category: pain
+    lens: desirability
+    validation_track: customer_adoption
+    test_method: founder
+    why_it_matters: >-
+      The root for H3. If the number is filed and forgotten, there is no pain, no buyer and
+      no reason to see it move between samples; every node beneath dissolves. Drawn from
+      H3's problem clause ("a compliance obligation with no way to see the number move
+      between samples or act on it") and its own note that utilities may see it as a line
+      item. Co-founder's priority-one list (2026-09-14): MWD, SFPUC, LADWP and similar.
+    importance: high
+    quadrant: leap_of_faith
+    uncertainty_score: 4
+    kill_power: 5
+    test_cost: 1
+    parent_assumptions: [H3A1]
+    child_assumptions: []
+    evidence_for: []
+    evidence_against: []
+    status: untested
+    next_action: >-
+      Five conversations with the water-quality or compliance lead at Phase 1 systems. One
+      question first: "the last microplastics result that came back from the lab — what did
+      you do with it, who asked you about it, and what did it cost you beyond the lab fee?"
+    disconfirmation: >-
+      If four of five describe it as a lab line item with no decision, no question from
+      anyone, and no cost beyond the fee, the pain is not there.
+    stop_rule: "Five conversations or two weeks, whichever first."
+    icp_segment: >-
+      California community water systems in the SB 1422 monitoring programme (Phase 1 source
+      water; Phase 2 treated water), and the person inside each who owns the monitoring
+      result and answers for it.
+    icp_valid_tiers:
+      - {name: water_utility, side: demand}
+      - {name: regulator, side: expert}
+      - {name: lab_testing_provider, side: supply}
+    domain_data_sources: []
+    icp_valid_titles: [Director of Water Quality, Water Quality Manager, Chief Water Quality Officer,
+                       Water Quality Superintendent, Laboratory Director, Compliance Manager,
+                       Director of Operations, Assistant General Manager, General Manager,
+                       "regulator side: State Water Board Division of Drinking Water staff on the microplastics programme"]
+    icp_out_of_scope: ["water systems outside California or not selected for SB 1422 monitoring",
+                       "wastewater or sanitation districts (H4, not H3)",
+                       "instrument, sensor or lab vendors (supply side, not the pain)",
+                       "consultants describing other people's systems"]

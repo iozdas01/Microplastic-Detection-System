@@ -4,14 +4,14 @@
 -->
 ---
 idea: industrial-process-data-infrastructure
-generated: 2026-09-14T21:08Z
-active_hunch: H1, H2
+generated: 2026-09-14T21:16Z
+active_hunch: H1, H3
 active_assumption: H1A2
 sources:
   belief: 6093ca2c2aa3
-  lineage: 800cae8b1a81
-  graph: e61659408316
-  evidence: absent
+  lineage: c1a0a4e21c0f
+  graph: 26e840562a22
+  evidence: ef6dfaf432de
   offerings: absent
   contacts: e796b45f3a27
 ---
@@ -34,13 +34,13 @@ _2 hunches active in parallel — one per entry point into the same transaction.
 
 In the fashion industry there are no sensors to detect microplastics, so a textile manufacturer cannot see or act on the microfibers their process releases; a real-time sensor with a feedback loop is the first product, and the first sensor feedback loop is the beachhead.
 
-**H2 — active** · `untested`
+**H3 — active** · `untested`
 
-Reverse-osmosis desalination operators gate pre-treatment with a manual silt index and clean membranes on a lagging pressure-drop trigger, and neither tells them which foulant or which upstream stage is responsible, so cleaning chemistry and pre-treatment tuning are chosen by rule of thumb and the only identification…
+Large California community water systems must report microplastics in source water (Phase 1, 2023-2025) and treated water (Phase 2, from autumn 2026), and the only way to produce the number is a periodic lab analysis, so utilities carry a compliance obligation with no way to see the number move between samples or act…
 
-Lineage: H3 proposed · H4 proposed · H5 proposed
+Lineage: H2 superseded · H4 proposed · H5 proposed
 
-## Assumptions — top 3 of 10 by the declared ranking
+## Assumptions — top 3 of 12 by the declared ranking
 
 | # | ID | claim | status | evidence | next action |
 |---|---|---|---|---|---|
@@ -52,7 +52,12 @@ _← = `active_assumption`. Ranking: leap-of-faith gate → DAG roots first → 
 
 ## Evidence
 
-_No evidence ledger yet._
+**2 entries** · 2 supports / 0 contradicts / 0 ambiguous · latest 2026-09-14
+
+For **H1A2**: 0 entries.
+
+- `E1` 2026-09-14 → **H3A1** (supports) — The Board's programme timeline shows 'Fall 2023 – Fall 2025: Phase I Monitoring' and 'Fall 2026 – Fall 2028: Phase II Monitoring'; sampling by ASTM D…
+- `E2` 2026-09-14 → **H3A1** (supports) — Monitoring runs through 'monitoring orders'; results are reported to DDW and 'positive detections in CCRs' (the utility's annual Consumer Confidence…
 
 ## Outreach
 
@@ -73,6 +78,7 @@ _Generated from the folder. Check here before creating a new artifact — if a f
 | `reports/control-room.html` | generated — rebuild it, never edit it |
 | `reports/01-ideation/hunch-lineage.md` | The hunch lineage — every hunch ever held under the belief, its status, and which one is active. |
 | `reports/02-assumptions/graph.md` | The assumption DAG for this idea — what must be true, ranked, each with the cheapest test that would settle it. Holds the active hunch's nodes plus a… |
+| `reports/03-validation/evidence.md` | The evidence ledger — every graded claim that moves an assumption, each linked to the node it updates and the direction it moves it. |
 | `reports/outreach/companies.md` | The company registry — one entry per organisation on the demand or supply side of contaminant detection in industrial water, what it actually does, a… |
 | `reports/outreach/contacts.md` | The contact ledger — one card per person targeted, invited or interviewed for this idea, with the live-profile read that qualified them and the state… |
 | `reports/outreach/process-map.md` | The process map — one entry per stage of textile manufacturing from raw fibre to finished T-shirt, whether the stage touches water, how much fibre it… |
@@ -91,6 +97,7 @@ _Generated from the folder. Check here before creating a new artifact — if a f
 | belief / intake | `input-context/belief.md` |
 | hunch work | `reports/01-ideation/hunch-lineage.md` |
 | assumption work | `reports/02-assumptions/graph.md` |
+| evidence review | `reports/03-validation/evidence.md` |
 | outreach | `reports/outreach/contacts.md` |
 
 Dashboard: `python3 scripts/build_control_room.py`

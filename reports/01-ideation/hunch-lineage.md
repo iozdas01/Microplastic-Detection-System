@@ -1,7 +1,7 @@
 ---
 purpose: The hunch lineage — every hunch ever held under the belief, its status, and which one is active.
 belief_file: input-context/belief.md
-active_hunch: [H1, H2]
+active_hunch: [H1, H3]
 next_hunch_id: H6
 last_updated: 2026-09-14
 ---
@@ -82,9 +82,10 @@ with a feedback loop is the first product, and the first sensor feedback loop is
 
 ## H2
 
-status: active
+status: superseded
 validation_status: untested
 activated_on: 2026-09-14
+superseded_on: 2026-09-14
 parent_hunch: null
 created: 2026-09-14
 created_by: founder
@@ -97,7 +98,10 @@ change_reason: >-
   operator. Statement drafted by Claude from standard SWRO practice and accepted by the
   founder for logging; no operator conversation is behind it yet. Activated 2026-09-14 by
   founder decision ("let's go with this hunch right now") to run in parallel with H1, whose
-  outreach is live; H1 is not retired.
+  outreach is live; H1 is not retired. Superseded the same day, un-falsified: the co-founder's
+  California target list belonged to H3, and the founders chose H3 as the second live hunch
+  so that list could drive outreach. H2 stays revivable; its California sites are Carlsbad,
+  Santa Barbara, South Coast and OCWD's potable-reuse RO plant, with CyFract as a site.
 evidence_delta: []
 
 ### Statement
@@ -149,8 +153,9 @@ weeks later.
 
 ## H3
 
-status: proposed
+status: active
 validation_status: untested
+activated_on: 2026-09-14
 parent_hunch: null
 created: 2026-09-14
 created_by: founder
@@ -162,6 +167,9 @@ change_reason: >-
   (SB 1422; State Water Board policy handbook 2022) but it is a monitoring programme using
   lab methods, not a treatment limit, and Phase 2 on treated water starts autumn 2026 only
   if the Board proceeds. "Strictly bound" is the founder's reading, not a source's.
+  Activated 2026-09-14 by founder decision, in parallel with H1 and in place of H2, because
+  the co-founder's priority-one outreach list (MWD, SFPUC, LADWP) is this hunch's segment
+  and its why-now is the one already verified.
 evidence_delta: []
 
 ### Statement
