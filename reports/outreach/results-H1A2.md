@@ -8,7 +8,7 @@ _Generated 2026-09-14. Numbers are the funnel over contacts tagged H1A2._
 
 | channel | targeted | contacted | replied | qualified replied | reply rate |
 |---|---|---|---|---|---|
-| LinkedIn | 60 | 0 | 0 | 0 | — |
+| LinkedIn | 61 | 0 | 0 | 0 | — |
 | phone | 0 | 0 | 0 | 0 | — |
 
 _Channels are counted separately._
@@ -19,37 +19,37 @@ _Channels are counted separately._
 |---|---|---|---|
 | C12 | Ted Ellington | pending | — |
 | C25 | Shridhar H T | pending | — |
+| C61 | Yasin Yücedağ | pending | — |
 | C14 | Yalçın Çelik | invited | — |
-| C15 | Yasin Taştekin | invited | — |
 | C16 | Mehmet Adıyaman | invited | — |
-| C18 | Ahmet Kaleli | invited | — |
-| C19 | Yunus Öz | invited | — |
-| C2 | Ali Kemal Kul | invited | — |
 | C22 | Erkan Ekici | invited | — |
 | C24 | B. Hande Tezer | invited | — |
-| C3 | Veysel Özgür | invited | — |
 | C31 | Okan Çakıcı | invited | — |
 | C36 | Murat İ. | invited | — |
 | C41 | Didem Civancik-Uslu | invited | — |
 | C43 | Chris Chen | invited | — |
-| C44 | Ronit Basu | invited | — |
 | C46 | Andrea Martinetti | invited | — |
 | C54 | Moshiur Rahman | invited | — |
 | C56 | Engr. Abdul Aziz | invited | — |
-| C7 | Murat Terlemez | invited | — |
+| C18 | Ahmet Kaleli | accepted | — |
 | C40 | Erdogan Sekerci | accepted | — |
+| C44 | Ronit Basu | accepted | — |
 | C48 | Ayesha Navaid Anwar | accepted | — |
 | C55 | Gulfam S. | accepted | — |
 | C6 | Halil Kutluğ Kabahasanoğlu | accepted | — |
 | C1 | Caner Gökçek | held | — |
 | C10 | Bekir Boyacı | held | — |
 | C11 | Öner Gündüz | held | — |
+| C15 | Yasin Taştekin | held | — |
 | C17 | Ersen Ş. | held | — |
+| C19 | Yunus Öz | held | — |
+| C2 | Ali Kemal Kul | held | — |
 | C20 | Hüseyin Çınar | held | — |
 | C21 | Yasemin Mecit Akdaş | held | — |
 | C23 | Rafet Çelebi | held | — |
 | C28 | Rohit K. | held | — |
 | C29 | Calvin Huelsman | held | — |
+| C3 | Veysel Özgür | held | — |
 | C30 | Önder Ertürk | held | — |
 | C32 | İrem Terzi | held | — |
 | C33 | Sercan Yaz | held | — |
@@ -70,6 +70,7 @@ _Channels are counted separately._
 | C58 | Paulo Lopes | held | — |
 | C59 | Faizan Pasha | held | — |
 | C60 | Aman Ullah | held | — |
+| C7 | Murat Terlemez | held | — |
 | C13 | Sedat Çinici | off_scope | — |
 | C26 | Büşra Suiçmez | off_scope | — |
 | C27 | Nastassia Ramazankhani | off_scope | — |

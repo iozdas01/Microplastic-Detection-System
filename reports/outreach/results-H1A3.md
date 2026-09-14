@@ -8,7 +8,7 @@ _Generated 2026-09-14. Numbers are the funnel over contacts tagged H1A3._
 
 | channel | targeted | contacted | replied | qualified replied | reply rate |
 |---|---|---|---|---|---|
-| LinkedIn | 22 | 0 | 0 | 0 | — |
+| LinkedIn | 23 | 0 | 0 | 0 | — |
 | phone | 0 | 0 | 0 | 0 | — |
 
 _Channels are counted separately._
@@ -17,25 +17,26 @@ _Channels are counted separately._
 
 | id | name | status | call stage |
 |---|---|---|---|
+| C61 | Yasin Yücedağ | pending | — |
 | C14 | Yalçın Çelik | invited | — |
-| C15 | Yasin Taştekin | invited | — |
 | C16 | Mehmet Adıyaman | invited | — |
-| C18 | Ahmet Kaleli | invited | — |
-| C19 | Yunus Öz | invited | — |
-| C2 | Ali Kemal Kul | invited | — |
 | C22 | Erkan Ekici | invited | — |
 | C24 | B. Hande Tezer | invited | — |
-| C3 | Veysel Özgür | invited | — |
 | C31 | Okan Çakıcı | invited | — |
 | C36 | Murat İ. | invited | — |
 | C41 | Didem Civancik-Uslu | invited | — |
 | C43 | Chris Chen | invited | — |
-| C44 | Ronit Basu | invited | — |
 | C46 | Andrea Martinetti | invited | — |
 | C54 | Moshiur Rahman | invited | — |
 | C56 | Engr. Abdul Aziz | invited | — |
-| C7 | Murat Terlemez | invited | — |
+| C18 | Ahmet Kaleli | accepted | — |
 | C40 | Erdogan Sekerci | accepted | — |
+| C44 | Ronit Basu | accepted | — |
 | C48 | Ayesha Navaid Anwar | accepted | — |
 | C55 | Gulfam S. | accepted | — |
 | C6 | Halil Kutluğ Kabahasanoğlu | accepted | — |
+| C15 | Yasin Taştekin | held | — |
+| C19 | Yunus Öz | held | — |
+| C2 | Ali Kemal Kul | held | — |
+| C3 | Veysel Özgür | held | — |
+| C7 | Murat Terlemez | held | — |

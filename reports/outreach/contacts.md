@@ -3,9 +3,9 @@ purpose: The contact ledger — one card per person targeted, invited or intervi
 idea: industrial-process-data-infrastructure
 last_updated: 2026-09-14
 totals:
-  targeted: 60
+  targeted: 61
   invited: 51
-  accepted: 4
+  accepted: 6
   scheduled: 0
   done: 0
   no_reply: 0
@@ -72,9 +72,9 @@ degree: 2nd
 mutuals_count: 
 active_last_30d: unknown
 open_to_work: false
-outreach_status: invited
+outreach_status: held
 found_date: 2026-09-13
-notes: "[profile read 2026-09-13] details/experience: Fabrika Müdürü Mahmutoğlu Tekstil Feb 2025-present; Fabrika Müdürü Pantone Boya Tekstil (Çorlu dyehouse) Jul 2024-Jan 2025; project manager Örkum Tekstil 2023-24; İşletme Müdürü Akdem Tekstil, Bursa, 2003-2023 (20 yrs). Passes. [invited 2026-09-13] bare invite, modal name confirmed Ali Kemal KUL, sent by Claude at founder's instruction. [language 2026-09-14] Profile text is Turkish; invite already out. Per LR-B31a: if they accept, no Msg 1 unless the founder releases them by name."
+notes: "[profile read 2026-09-13] details/experience: Fabrika Müdürü Mahmutoğlu Tekstil Feb 2025-present; Fabrika Müdürü Pantone Boya Tekstil (Çorlu dyehouse) Jul 2024-Jan 2025; project manager Örkum Tekstil 2023-24; İşletme Müdürü Akdem Tekstil, Bursa, 2003-2023 (20 yrs). Passes. [invited 2026-09-13] bare invite, modal name confirmed Ali Kemal KUL, sent by Claude at founder's instruction. [language 2026-09-14] Profile text is Turkish; invite already out. Per LR-B31a: if they accept, no Msg 1 unless the founder releases them by name. [accepted 2026-09-14] 1st degree now. [held 2026-09-14] Budget holder, but profile not in English (LR-B31a): no Msg 1 unless the founder releases by name."
 
 ## Veysel Özgür
 
@@ -102,9 +102,9 @@ degree: 2nd
 mutuals_count: 
 active_last_30d: unknown
 open_to_work: false
-outreach_status: invited
+outreach_status: held
 found_date: 2026-09-13
-notes: "[profile read 2026-09-13] details/experience: İşletme Müdürü Denbassan Baskı Boya Sep 2017-present (9 yrs); İşletme Şefi Bez Tekstil 2014-17; textile engineer Anteks 2010-14. Passes. [invited 2026-09-13] bare invite, modal name confirmed Veysel Özgür, sent by Claude at founder's instruction. [language 2026-09-14] Profile text is Turkish; invite already out. Per LR-B31a: if they accept, no Msg 1 unless the founder releases them by name."
+notes: "[profile read 2026-09-13] details/experience: İşletme Müdürü Denbassan Baskı Boya Sep 2017-present (9 yrs); İşletme Şefi Bez Tekstil 2014-17; textile engineer Anteks 2010-14. Passes. [invited 2026-09-13] bare invite, modal name confirmed Veysel Özgür, sent by Claude at founder's instruction. [language 2026-09-14] Profile text is Turkish; invite already out. Per LR-B31a: if they accept, no Msg 1 unless the founder releases them by name. [accepted 2026-09-14] 1st degree now. [held 2026-09-14] Budget holder, but profile not in English (LR-B31a): no Msg 1 unless the founder releases by name."
 
 ## Rabia Akkurt
 
@@ -134,7 +134,7 @@ active_last_30d: unknown
 open_to_work: false
 outreach_status: held
 found_date: 2026-09-13
-notes: "[profile read 2026-09-13] details/experience: Boyahane Şefi HMK Tekstil Sep 2022-present (4 yrs); production lead Sinateks/Boykim 2021-23; chemical engineer. Passes. [invited 2026-09-13] bare invite via custom-invite modal, name confirmed Rabia AKKURT, sent by Claude at founder's instruction. [language 2026-09-14] Profile text is Turkish; invite already out. Per LR-B31a: if they accept, no Msg 1 unless the founder releases them by name. [held 2026-09-14] Title outside the budget-holder ICP the founders set for H1A2/H1A3/H1A6 on 2026-09-14 (cannot sign for spend). Not interviewed unless the founder releases them by name; no Msg 1."
+notes: "[profile read 2026-09-13] details/experience: Boyahane Şefi HMK Tekstil Sep 2022-present (4 yrs); production lead Sinateks/Boykim 2021-23; chemical engineer. Passes. [invited 2026-09-13] bare invite via custom-invite modal, name confirmed Rabia AKKURT, sent by Claude at founder's instruction. [language 2026-09-14] Profile text is Turkish; invite already out. Per LR-B31a: if they accept, no Msg 1 unless the founder releases them by name. [held 2026-09-14] Title outside the budget-holder ICP the founders set for H1A2/H1A3/H1A6 on 2026-09-14 (cannot sign for spend). Not interviewed unless the founder releases them by name; no Msg 1. [accepted 2026-09-14] 1st degree now; stays held (practitioner)."
 
 ## Mustafa Salih
 
@@ -194,7 +194,7 @@ active_last_30d: unknown
 open_to_work: false
 outreach_status: accepted
 found_date: 2026-09-13
-notes: "[profile read 2026-09-13] details/experience: Laundry & Garment Dye Manager CRS Denim Egypt Oct 2025-present, R&D Manager there since Jul 2022; R&D Manager Cross Jeans 2018-22; production manager Taypa 2016-18; laundry & garment dye manager Eroğlu Giyim 2013-15 and Cross Jeans 2005-13. Passes. [invited 2026-09-13] bare invite via custom-invite modal, name confirmed Halil Kutluğ Kabahasanoğlu, sent by Claude at founder's instruction. [accepted 2026-09-14] connection accepted (seen in Connections list, recently added). [msg1 drafted 2026-09-14] Msg 1 permission ask drafted from a fresh details/experience snapshot; inbox searched, no prior thread. Copy in copy/H1A2-linkedin.md. [msg1 redrafted 2026-09-14] A/B arm research_only per LR-B32; opener 'Thanks for connecting', co-founder named per LR-B27 amendment. [msg1 redrafted 2026-09-14] Settled LR-B33 shape (build sentence, grounded clause, learn line, permission ask); A/B retired."
+notes: "[profile read 2026-09-13] details/experience: Laundry & Garment Dye Manager CRS Denim Egypt Oct 2025-present, R&D Manager there since Jul 2022; R&D Manager Cross Jeans 2018-22; production manager Taypa 2016-18; laundry & garment dye manager Eroğlu Giyim 2013-15 and Cross Jeans 2005-13. Passes. [invited 2026-09-13] bare invite via custom-invite modal, name confirmed Halil Kutluğ Kabahasanoğlu, sent by Claude at founder's instruction. [accepted 2026-09-14] connection accepted (seen in Connections list, recently added). [msg1 drafted 2026-09-14] Msg 1 permission ask drafted from a fresh details/experience snapshot; inbox searched, no prior thread. Copy in copy/H1A2-linkedin.md. [msg1 redrafted 2026-09-14] A/B arm research_only per LR-B32; opener 'Thanks for connecting', co-founder named per LR-B27 amendment. [msg1 redrafted 2026-09-14] Settled LR-B33 shape (build sentence, grounded clause, learn line, permission ask); A/B retired. [msg1 sent 2026-09-14] LR-B33 shape, sent by the founder by hand (group thread with Sandra, 12:45); seen in the inbox search."
 
 ## Murat Terlemez
 
@@ -222,9 +222,9 @@ degree: 2nd
 mutuals_count: 
 active_last_30d: unknown
 open_to_work: false
-outreach_status: invited
+outreach_status: held
 found_date: 2026-09-13
-notes: "[profile read 2026-09-13] details/experience: Ev Tekstili Genel Müdürü, Yeşim Group, 1993-present. Yeşim runs its own dyeing and finishing. Passes; seniority may lower reply rate. [invited 2026-09-13] bare invite via custom-invite modal, name confirmed Murat TERLEMEZ, sent by Claude at founder's instruction. [language 2026-09-14] Profile text is Turkish; invite already out. Per LR-B31a: if they accept, no Msg 1 unless the founder releases them by name."
+notes: "[profile read 2026-09-13] details/experience: Ev Tekstili Genel Müdürü, Yeşim Group, 1993-present. Yeşim runs its own dyeing and finishing. Passes; seniority may lower reply rate. [invited 2026-09-13] bare invite via custom-invite modal, name confirmed Murat TERLEMEZ, sent by Claude at founder's instruction. [language 2026-09-14] Profile text is Turkish; invite already out. Per LR-B31a: if they accept, no Msg 1 unless the founder releases them by name. [accepted 2026-09-14] 1st degree now. [held 2026-09-14] Budget holder, but profile not in English (LR-B31a): no Msg 1 unless the founder releases by name."
 
 ## Burç Çetin Tezgel
 
@@ -314,7 +314,7 @@ active_last_30d: unknown
 open_to_work: false
 outreach_status: held
 found_date: 2026-09-13
-notes: "[profile read 2026-09-13] details/experience: R&D Center Manager Sun Tekstil Oct 2014-present (12 yrs); automotive seating production/R&D 2008-13. Passes. [invited 2026-09-13] bare invite via custom-invite modal, name confirmed Bekir Boyacı, sent by Claude at founder's instruction. [held 2026-09-14] Title outside the budget-holder ICP the founders set for H1A2/H1A3/H1A6 on 2026-09-14 (cannot sign for spend). Not interviewed unless the founder releases them by name; no Msg 1."
+notes: "[profile read 2026-09-13] details/experience: R&D Center Manager Sun Tekstil Oct 2014-present (12 yrs); automotive seating production/R&D 2008-13. Passes. [invited 2026-09-13] bare invite via custom-invite modal, name confirmed Bekir Boyacı, sent by Claude at founder's instruction. [held 2026-09-14] Title outside the budget-holder ICP the founders set for H1A2/H1A3/H1A6 on 2026-09-14 (cannot sign for spend). Not interviewed unless the founder releases them by name; no Msg 1. [accepted 2026-09-14] 1st degree now; stays held (practitioner)."
 
 ## Öner Gündüz
 
@@ -462,9 +462,9 @@ degree: 2nd
 mutuals_count: 
 active_last_30d: unknown
 open_to_work: false
-outreach_status: invited
+outreach_status: held
 found_date: 2026-09-13
-notes: "[profile read 2026-09-13] details/experience: Yıkama üretim müdürü Baykan Denim Dec 2021-present; deputy washing manager 2016-22; production planning 2014-17; 12 yrs at Baykan. Passes. [invited 2026-09-13] bare invite via custom-invite modal, name confirmed Yasin TAŞTEKİN, sent by Claude at founder's instruction. [language 2026-09-14] Profile text is Turkish; invite already out. Per LR-B31a: if they accept, no Msg 1 unless the founder releases them by name."
+notes: "[profile read 2026-09-13] details/experience: Yıkama üretim müdürü Baykan Denim Dec 2021-present; deputy washing manager 2016-22; production planning 2014-17; 12 yrs at Baykan. Passes. [invited 2026-09-13] bare invite via custom-invite modal, name confirmed Yasin TAŞTEKİN, sent by Claude at founder's instruction. [language 2026-09-14] Profile text is Turkish; invite already out. Per LR-B31a: if they accept, no Msg 1 unless the founder releases them by name. [accepted 2026-09-14] 1st degree now. [held 2026-09-14] Budget holder, but profile not in English (LR-B31a): no Msg 1 unless the founder releases by name."
 
 ## Mehmet Adıyaman
 
@@ -524,7 +524,7 @@ active_last_30d: unknown
 open_to_work: false
 outreach_status: held
 found_date: 2026-09-13
-notes: "[profile read 2026-09-13] details/experience: senior product-development unit manager Denimvillage/Suglobal Mar 2024-present; R&D Manager Vişne Tekstil 2020-24. Surname not shown on LinkedIn. Passes. [invited 2026-09-13] bare invite via custom-invite modal, name confirmed Ersen Ş., sent by Claude at founder's instruction. [language 2026-09-14] Profile text is Turkish; invite already out. Per LR-B31a: if they accept, no Msg 1 unless the founder releases them by name. [held 2026-09-14] Title outside the budget-holder ICP the founders set for H1A2/H1A3/H1A6 on 2026-09-14 (cannot sign for spend). Not interviewed unless the founder releases them by name; no Msg 1."
+notes: "[profile read 2026-09-13] details/experience: senior product-development unit manager Denimvillage/Suglobal Mar 2024-present; R&D Manager Vişne Tekstil 2020-24. Surname not shown on LinkedIn. Passes. [invited 2026-09-13] bare invite via custom-invite modal, name confirmed Ersen Ş., sent by Claude at founder's instruction. [language 2026-09-14] Profile text is Turkish; invite already out. Per LR-B31a: if they accept, no Msg 1 unless the founder releases them by name. [held 2026-09-14] Title outside the budget-holder ICP the founders set for H1A2/H1A3/H1A6 on 2026-09-14 (cannot sign for spend). Not interviewed unless the founder releases them by name; no Msg 1. [accepted 2026-09-14] 1st degree now; stays held (practitioner)."
 
 ## Ahmet Kaleli
 
@@ -552,9 +552,9 @@ degree: 2nd
 mutuals_count: 
 active_last_30d: unknown
 open_to_work: false
-outreach_status: invited
+outreach_status: accepted
 found_date: 2026-09-13
-notes: "[profile read 2026-09-13] details/experience: Dyeing Manager Biryuza Group May 2025-present (Tashkent); Denim Washing Manager Çalık Alexandria 2020-23; denim wash and dyeing production manager Aknaz washing factory 2012-20. Passes; geography open per founder rule. [invited 2026-09-13] bare invite via custom-invite modal, name confirmed Ahmet Kaleli, sent by Claude at founder's instruction."
+notes: "[profile read 2026-09-13] details/experience: Dyeing Manager Biryuza Group May 2025-present (Tashkent); Denim Washing Manager Çalık Alexandria 2020-23; denim wash and dyeing production manager Aknaz washing factory 2012-20. Passes; geography open per founder rule. [invited 2026-09-13] bare invite via custom-invite modal, name confirmed Ahmet Kaleli, sent by Claude at founder's instruction. [accepted 2026-09-14] 1st degree, Message button live. Profile shows 'Open to work'. [msg1 drafted 2026-09-14] LR-B33 shape from a fresh details/experience snapshot; inbox searched by surname, no thread."
 
 ## Yunus Öz
 
@@ -582,9 +582,9 @@ degree: 2nd
 mutuals_count: 
 active_last_30d: unknown
 open_to_work: false
-outreach_status: invited
+outreach_status: held
 found_date: 2026-09-13
-notes: "[profile read 2026-09-13] details/experience: Realteks Denim since Mar 2019: production director Jul 2021-present, dye-finishing plant manager 2019-present, production group manager 2019-present; Kimtex 2010-19 (deputy dyehouse manager, plant chief); Rayon Tekstil dyehouse 2008-10. Passes. [invited 2026-09-13] bare invite via custom-invite modal, name confirmed Yunus ÖZ, sent by Claude at founder's instruction. [language 2026-09-14] Profile text is Turkish; invite already out. Per LR-B31a: if they accept, no Msg 1 unless the founder releases them by name."
+notes: "[profile read 2026-09-13] details/experience: Realteks Denim since Mar 2019: production director Jul 2021-present, dye-finishing plant manager 2019-present, production group manager 2019-present; Kimtex 2010-19 (deputy dyehouse manager, plant chief); Rayon Tekstil dyehouse 2008-10. Passes. [invited 2026-09-13] bare invite via custom-invite modal, name confirmed Yunus ÖZ, sent by Claude at founder's instruction. [language 2026-09-14] Profile text is Turkish; invite already out. Per LR-B31a: if they accept, no Msg 1 unless the founder releases them by name. [accepted 2026-09-14] 1st degree now. [held 2026-09-14] Budget holder, but profile not in English (LR-B31a): no Msg 1 unless the founder releases by name."
 
 ## Hüseyin Çınar
 
@@ -704,7 +704,7 @@ active_last_30d: unknown
 open_to_work: false
 outreach_status: held
 found_date: 2026-09-13
-notes: "[profile read 2026-09-13] details/experience: Kumaş boyama Apre Şefi, Teksel Tekstil A.Ş. (single entry, no dates shown). Thin profile; the vanity slug itself carries the title. Passes on function and company; tenure unknown. [invited 2026-09-13] bare invite via custom-invite modal, name confirmed Rafet Çelebi, sent by Claude at founder's instruction. [language 2026-09-14] Profile text is Turkish; invite already out. Per LR-B31a: if they accept, no Msg 1 unless the founder releases them by name. [held 2026-09-14] Title outside the budget-holder ICP the founders set for H1A2/H1A3/H1A6 on 2026-09-14 (cannot sign for spend). Not interviewed unless the founder releases them by name; no Msg 1."
+notes: "[profile read 2026-09-13] details/experience: Kumaş boyama Apre Şefi, Teksel Tekstil A.Ş. (single entry, no dates shown). Thin profile; the vanity slug itself carries the title. Passes on function and company; tenure unknown. [invited 2026-09-13] bare invite via custom-invite modal, name confirmed Rafet Çelebi, sent by Claude at founder's instruction. [language 2026-09-14] Profile text is Turkish; invite already out. Per LR-B31a: if they accept, no Msg 1 unless the founder releases them by name. [held 2026-09-14] Title outside the budget-holder ICP the founders set for H1A2/H1A3/H1A6 on 2026-09-14 (cannot sign for spend). Not interviewed unless the founder releases them by name; no Msg 1. [accepted 2026-09-14] 1st degree now; stays held (practitioner)."
 
 ## B. Hande Tezer
 
@@ -1214,7 +1214,7 @@ active_last_30d: unknown
 open_to_work: false
 outreach_status: accepted
 found_date: 2026-09-13
-notes: "[profile read 2026-09-13] details/experience: Associate Director Social Compliance, SHEIN, Sep 2024-present, Istanbul; H&M Group 2017-24, Sustainability Social Development Specialist 2021-24 (industrial relations programme, Turkey national monitoring committee). Passes (tier brand); his lens is social compliance, so ask only about the request channel, not the chemistry. [invited 2026-09-13] bare invite via custom-invite modal, name confirmed Erdogan Sekerci, sent by Claude at founder's instruction. [accepted 2026-09-14] connection accepted (seen in Connections list, recently added). [msg1 drafted 2026-09-14] Msg 1 permission ask drafted from a fresh details/experience snapshot; inbox searched, no prior thread. Copy in copy/H1A2-linkedin.md. [msg1 redrafted 2026-09-14] A/B arm research_only per LR-B32; opener 'Thanks for connecting', co-founder named per LR-B27 amendment. [msg1 redrafted 2026-09-14] Settled LR-B33 shape (build sentence, grounded clause, learn line, permission ask); A/B retired."
+notes: "[profile read 2026-09-13] details/experience: Associate Director Social Compliance, SHEIN, Sep 2024-present, Istanbul; H&M Group 2017-24, Sustainability Social Development Specialist 2021-24 (industrial relations programme, Turkey national monitoring committee). Passes (tier brand); his lens is social compliance, so ask only about the request channel, not the chemistry. [invited 2026-09-13] bare invite via custom-invite modal, name confirmed Erdogan Sekerci, sent by Claude at founder's instruction. [accepted 2026-09-14] connection accepted (seen in Connections list, recently added). [msg1 drafted 2026-09-14] Msg 1 permission ask drafted from a fresh details/experience snapshot; inbox searched, no prior thread. Copy in copy/H1A2-linkedin.md. [msg1 redrafted 2026-09-14] A/B arm research_only per LR-B32; opener 'Thanks for connecting', co-founder named per LR-B27 amendment. [msg1 redrafted 2026-09-14] Settled LR-B33 shape (build sentence, grounded clause, learn line, permission ask); A/B retired. [msg1 sent 2026-09-14] LR-B33 shape, sent by the founder by hand (1:1 thread, 12:43); seen in the inbox search."
 
 ## Didem Civancik-Uslu
 
@@ -1332,9 +1332,9 @@ degree: 3rd+
 mutuals_count: 
 active_last_30d: unknown
 open_to_work: false
-outreach_status: invited
+outreach_status: accepted
 found_date: 2026-09-13
-notes: "[profile read 2026-09-13] details/experience: Levi Strauss since 2016: Manager Sustainability Program Implementation Feb 2026-present, Manager Sustainability Program Acceleration 2021-26, EHS Manager South Asia 2019-21, EHS Asst Manager 2016-19. Passes (tier brand). 3rd degree. [invited 2026-09-13] bare invite via custom-invite modal, name confirmed RONIT BASU, sent by Claude at founder's instruction."
+notes: "[profile read 2026-09-13] details/experience: Levi Strauss since 2016: Manager Sustainability Program Implementation Feb 2026-present, Manager Sustainability Program Acceleration 2021-26, EHS Manager South Asia 2019-21, EHS Asst Manager 2016-19. Passes (tier brand). 3rd degree. [invited 2026-09-13] bare invite via custom-invite modal, name confirmed RONIT BASU, sent by Claude at founder's instruction. [accepted 2026-09-14] 1st degree, Message button live. [msg1 drafted 2026-09-14] LR-B33 shape from a fresh details/experience snapshot; inbox searched by surname, no thread."
 
 ## Nicholas Filippone
 
@@ -1454,7 +1454,7 @@ active_last_30d: unknown
 open_to_work: false
 outreach_status: accepted
 found_date: 2026-09-13
-notes: "[profile read 2026-09-13] details/experience: Marc O'Polo since 2022, Manager Chemical and Environmental Management Oct 2024-present; role text: supplier wastewater and chemical performance, onboarding, compliance monitoring, on-site assessments aligned with Higg FEM and the ZDHC Roadmap. Passes (tier brand). 3rd degree. [invited 2026-09-13] bare invite via custom-invite modal, name confirmed Ayesha Navaid Anwar, sent by Claude at founder's instruction. [accepted 2026-09-14] connection accepted (seen in Connections list, recently added). [msg1 drafted 2026-09-14] Msg 1 permission ask drafted from a fresh details/experience snapshot; inbox searched, no prior thread. Copy in copy/H1A2-linkedin.md. [msg1 redrafted 2026-09-14] A/B arm build_disclosure per LR-B32; opener 'Thanks for connecting', co-founder named per LR-B27 amendment. [msg1 redrafted 2026-09-14] Settled LR-B33 shape (build sentence, grounded clause, learn line, permission ask); A/B retired."
+notes: "[profile read 2026-09-13] details/experience: Marc O'Polo since 2022, Manager Chemical and Environmental Management Oct 2024-present; role text: supplier wastewater and chemical performance, onboarding, compliance monitoring, on-site assessments aligned with Higg FEM and the ZDHC Roadmap. Passes (tier brand). 3rd degree. [invited 2026-09-13] bare invite via custom-invite modal, name confirmed Ayesha Navaid Anwar, sent by Claude at founder's instruction. [accepted 2026-09-14] connection accepted (seen in Connections list, recently added). [msg1 drafted 2026-09-14] Msg 1 permission ask drafted from a fresh details/experience snapshot; inbox searched, no prior thread. Copy in copy/H1A2-linkedin.md. [msg1 redrafted 2026-09-14] A/B arm build_disclosure per LR-B32; opener 'Thanks for connecting', co-founder named per LR-B27 amendment. [msg1 redrafted 2026-09-14] Settled LR-B33 shape (build sentence, grounded clause, learn line, permission ask); A/B retired. [msg1 sent 2026-09-14] LR-B33 shape, sent by the founder by hand (group thread with Sandra, 12:19); seen in the inbox search."
 
 ## Luciano Bragança
 
@@ -1664,7 +1664,7 @@ active_last_30d: unknown
 open_to_work: false
 outreach_status: accepted
 found_date: 2026-09-13
-notes: "[profile read 2026-09-13] details/experience: Washing GM and GM R&D Lucky Textile Mills Mar 2018-present; GM Siddiqsons Group 2014-18; GM Jamuna Group Dhaka 2012-14; laundry manager Soorty before. Passes. 3rd degree. [invited 2026-09-13] bare invite via custom-invite modal, name confirmed Gulfam S., sent by Claude at founder's instruction. [accepted 2026-09-14] connection accepted (seen in Connections list, recently added). [msg1 drafted 2026-09-14] Msg 1 permission ask drafted from a fresh details/experience snapshot; inbox searched, no prior thread. Copy in copy/H1A2-linkedin.md. [msg1 redrafted 2026-09-14] A/B arm build_disclosure per LR-B32; opener 'Thanks for connecting', co-founder named per LR-B27 amendment. [msg1 redrafted 2026-09-14] Settled LR-B33 shape (build sentence, grounded clause, learn line, permission ask); A/B retired."
+notes: "[profile read 2026-09-13] details/experience: Washing GM and GM R&D Lucky Textile Mills Mar 2018-present; GM Siddiqsons Group 2014-18; GM Jamuna Group Dhaka 2012-14; laundry manager Soorty before. Passes. 3rd degree. [invited 2026-09-13] bare invite via custom-invite modal, name confirmed Gulfam S., sent by Claude at founder's instruction. [accepted 2026-09-14] connection accepted (seen in Connections list, recently added). [msg1 drafted 2026-09-14] Msg 1 permission ask drafted from a fresh details/experience snapshot; inbox searched, no prior thread. Copy in copy/H1A2-linkedin.md. [msg1 redrafted 2026-09-14] A/B arm build_disclosure per LR-B32; opener 'Thanks for connecting', co-founder named per LR-B27 amendment. [msg1 redrafted 2026-09-14] Settled LR-B33 shape (build sentence, grounded clause, learn line, permission ask); A/B retired. [msg1 sent 2026-09-14] LR-B33 shape, sent by the founder by hand (group thread with Sandra, 12:28); seen in the inbox search."
 
 ## Engr. Abdul Aziz
 
@@ -1815,3 +1815,33 @@ open_to_work: false
 outreach_status: held
 found_date: 2026-09-13
 notes: "[profile read 2026-09-13] details/experience: Laundry Manager Interloop Limited Dec 2023-present, Faisalabad; Manager Wet Processing & R&D Cambridge Garments 2021-23 (garment dyeing, denim and knit troubleshooting, erected a full laundry unit, boiler, RO plant). Passes. 3rd degree. [invited 2026-09-13] bare invite via custom-invite modal, name confirmed Aman Ullah, sent by Claude at founder's instruction. [held 2026-09-14] Title outside the budget-holder ICP the founders set for H1A2/H1A3/H1A6 on 2026-09-14 (cannot sign for spend). Not interviewed unless the founder releases them by name; no Msg 1."
+
+## Yasin Yücedağ
+
+id: C61
+name: "Yasin Yücedağ"
+linkedin_url: https://www.linkedin.com/in/yasin-yucedag-a07b711a7/
+linkedin_account: Izgin
+company: "Loreta TMY Textile (Istanbul; Loreta Collection womenswear)"
+role: "General Manager; board member per headline"
+signal_type: profile_fit
+signal_multiplier: 1.0
+signal_source_url: "https://www.linkedin.com/search/results/people/?keywords=textile&network=%5B%22F%22%5D"
+signal_excerpt: ""
+contact_role: buyer
+role_pts: 3
+tier: textile_mill
+size_band:
+assumptions_tested: [H1A2, H1A3, H1A6]
+validation_rationale: >
+  General manager of an Istanbul textile and apparel company and already a 1st-degree connection, so a DM needs no invite; can answer who asks a manufacturer for a fibre number and who pays, IF the company runs any wet processing.
+response_likelihood: 6
+likelihood_factors: "1st degree (+3) · GM, budget holder (+1) · wet processing unconfirmed (-1)"
+channel: linkedin
+degree: 1st
+mutuals_count:
+active_last_30d: unknown
+open_to_work: false
+outreach_status: pending
+found_date: 2026-09-14
+notes: "[profile read 2026-09-14] details/experience: General Manager, Loreta TMY Textile, May 2022-present; Sales Marketing Coordinator, Loreta Collection, 2016-22. Loreta is a womenswear label; whether TMY Textile dyes, washes or finishes in-house is not shown, and garment assembly only is out of scope. Held pending a company check before any DM; inbox searched, no thread."

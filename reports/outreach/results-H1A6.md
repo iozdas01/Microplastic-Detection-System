@@ -8,7 +8,7 @@ _Generated 2026-09-14. Numbers are the funnel over contacts tagged H1A6._
 
 | channel | targeted | contacted | replied | qualified replied | reply rate |
 |---|---|---|---|---|---|
-| LinkedIn | 15 | 0 | 0 | 0 | — |
+| LinkedIn | 16 | 0 | 0 | 0 | — |
 | phone | 0 | 0 | 0 | 0 | — |
 
 _Channels are counted separately._
@@ -17,18 +17,19 @@ _Channels are counted separately._
 
 | id | name | status | call stage |
 |---|---|---|---|
+| C61 | Yasin Yücedağ | pending | — |
 | C14 | Yalçın Çelik | invited | — |
-| C15 | Yasin Taştekin | invited | — |
 | C16 | Mehmet Adıyaman | invited | — |
-| C18 | Ahmet Kaleli | invited | — |
-| C19 | Yunus Öz | invited | — |
-| C2 | Ali Kemal Kul | invited | — |
 | C22 | Erkan Ekici | invited | — |
-| C3 | Veysel Özgür | invited | — |
 | C36 | Murat İ. | invited | — |
 | C46 | Andrea Martinetti | invited | — |
 | C54 | Moshiur Rahman | invited | — |
 | C56 | Engr. Abdul Aziz | invited | — |
-| C7 | Murat Terlemez | invited | — |
+| C18 | Ahmet Kaleli | accepted | — |
 | C55 | Gulfam S. | accepted | — |
 | C6 | Halil Kutluğ Kabahasanoğlu | accepted | — |
+| C15 | Yasin Taştekin | held | — |
+| C19 | Yunus Öz | held | — |
+| C2 | Ali Kemal Kul | held | — |
+| C3 | Veysel Özgür | held | — |
+| C7 | Murat Terlemez | held | — |

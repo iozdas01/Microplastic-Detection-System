@@ -194,3 +194,37 @@ Rule check: 483 chars, violations none. Inbox (LR-B25): first-name/company searc
 | "twenty years developing samples at Pizarro" | Experience → 'Pizarro S.A. / 21 yrs 10 mos / Amostras Desenvolvimentos / Encarregado responsável secção Amostras' |
 
 Rule check: 432 chars, violations none. Inbox (LR-B25): first-name/company search on Izgin's account, no thread. Status at draft time: accepted 2026-09-14.
+
+## C18 — Ahmet Kaleli
+
+### Msg 1 — DRAFTED 2026-09-14 (LR-B33)
+
+**Primary (334 chars, English, close_variant soft_ask, copy_variant build_short, segment: wet-processing mill):**
+
+> Ahmet hi! Thanks for connecting.
+>
+> My co-founder and I are building a microplastic detection system for textile wet processing. You run dyeing at Biryuza Group in Tashkent after years running denim washing at Çalık Alexandria and Aknaz, we would love to learn from your experience. Would you be open to some questions for our research?
+
+| Claim in message | Live-snapshot source ({today}, details/experience) |
+|---|---|
+| "run dyeing at Biryuza Group in Tashkent" | Experience → 'Dyeing Manager / biryuza group / May 2025 - Present / Özbekistan taskent' |
+| "running denim washing at Çalık Alexandria and Aknaz" | Experience → 'Denim Washing Manager / Calik Alexandria / 2020-23' and 'Denim wash and dyeing production manager / Aknaz textile washing factory / 2012-20' |
+
+Rule check: 334 chars, violations none. Inbox (LR-B25): surname search on Izgin's account, no thread. Status at draft time: accepted 2026-09-14.
+
+## C44 — Ronit Basu
+
+### Msg 1 — DRAFTED 2026-09-14 (LR-B33)
+
+**Primary (346 chars, English, close_variant soft_ask, copy_variant build_short, segment: brand):**
+
+> Ronit hi! Thanks for connecting.
+>
+> My co-founder and I are building a microplastic detection system for textile wet processing. You implement Levi's sustainability programmes across its South Asian suppliers after years as its regional EHS manager, we would love to learn from your experience. Would you be open to some questions for our research?
+
+| Claim in message | Live-snapshot source ({today}, details/experience) |
+|---|---|
+| "implement Levi's sustainability programmes" | Experience → 'Manager- Sustainability Program Implementation / Levi Strauss & Co. / Feb 2026 - Present' |
+| "years as its regional EHS manager" | Experience → 'EHS Manager- South Asia / Mar 2019 - Aug 2021' and 'EHS Asst Manager; South Asia / 2016-19' |
+
+Rule check: 346 chars, violations none. Inbox (LR-B25): surname search on Izgin's account, no thread. Status at draft time: accepted 2026-09-14.
