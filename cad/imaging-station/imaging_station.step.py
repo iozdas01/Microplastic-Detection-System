@@ -1,8 +1,8 @@
 """Phone imaging station — the whole rig.
 
 Five printed bodies (base plate with the light box on it, four posts, tray, cradle) plus
-envelopes for everything bought: phone, clip-on lens, LED panel, diffuser, two polariser
-films, membrane and cover glass. The base plate is the fixed root; everything stacks up
+envelopes for everything bought: phone, clip-on lens, two LED slabs, two polariser films,
+the tint sheet, membrane and cover glass. The base plate is the fixed root; everything stacks up
 from it via face-to-face mates whose offsets come from station_params. The wet cell is a
 separate entry (wet_cell.step.py) because it swaps with the tray rather than adding to it.
 """
@@ -40,14 +40,18 @@ def gen_step():
     box_top = P.PLATE_T + P.BOX_H                       # local to the base plate
     pocket_floor = box_top - P.POCKET_DEPTH
 
-    # --- light stack in the box --------------------------------------------
-    seat(asm.add(C.led_panel(), "led_panel"), "led", base, Z(pocket_floor))
-    seat(asm.add(C.diffuser(), "diffuser"), "diffuser", base, Z(pocket_floor + P.LED_T))
-    seat(asm.add(C.polariser(), "polariser", "lower"), "polariser_lower", base, Z(box_top))
+    # --- light stack in the box ----------------------------------------------
+    for i in range(P.LED_COUNT):
+        y = (i - (P.LED_COUNT - 1) / 2.0) * (P.LED_W + P.LED_GAP)
+        seat(asm.add(C.led_panel(), "led_panel", f"slab_{i + 1}"), f"led_{i + 1}", base,
+             Location((0, y, pocket_floor)))
+    recess = box_top - P.FILM_RECESS
+    seat(asm.add(C.polariser(), "polariser", "lower"), "polariser_lower", base, Z(recess))
+    seat(asm.add(C.tint_plate(), "tint_plate"), "tint_plate", base, Z(recess + P.POLARISER_T))
 
     # --- tray on the box top, over the polariser ----------------------------
     tray = asm.add(C.tray(), "tray")
-    seat(tray, "tray", base, Z(box_top + P.POLARISER_T))
+    seat(tray, "tray", base, Z(box_top))
     seat(asm.add(C.membrane(), "membrane"), "membrane", tray, Z(P.TRAY_FLOOR))
     seat(asm.add(C.cover_glass(), "cover_glass"), "glass", tray, Z(P.TRAY_FLOOR + P.MEMBRANE_T))
 

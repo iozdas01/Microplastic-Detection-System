@@ -32,10 +32,13 @@ def gen_step():
     pocket_floor = box_top - P.POCKET_DEPTH
     e = EXPLODE
 
-    place(add(C.led_panel(), "led_panel"), 0, 0, pocket_floor + 1 * e)
-    place(add(C.diffuser(), "diffuser"), 0, 0, pocket_floor + P.LED_T + 2 * e)
-    place(add(C.polariser(), "polariser", "lower"), 0, 0, box_top + 3 * e)
-    tray_z = box_top + P.POLARISER_T + 4 * e
+    for i in range(P.LED_COUNT):
+        y = (i - (P.LED_COUNT - 1) / 2.0) * (P.LED_W + P.LED_GAP)
+        place(add(C.led_panel(), "led_panel", f"slab_{i + 1}"), 0, y, pocket_floor + 1 * e)
+    recess = box_top - P.FILM_RECESS
+    place(add(C.polariser(), "polariser", "lower"), 0, 0, recess + 2 * e)
+    place(add(C.tint_plate(), "tint_plate"), 0, 0, recess + P.POLARISER_T + 3 * e)
+    tray_z = box_top + 4 * e
     place(add(C.tray(), "tray"), 0, 0, tray_z)
     place(add(C.membrane(), "membrane"), 0, 0, tray_z + P.TRAY_FLOOR + 1 * e)
     place(add(C.cover_glass(), "cover_glass"), 0, 0, tray_z + P.TRAY_FLOOR + 2 * e)

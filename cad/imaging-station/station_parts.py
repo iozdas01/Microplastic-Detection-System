@@ -33,21 +33,24 @@ def _break_corners(solid, r: float = 3.0):
 # ------------------------------------------------------------ printed parts
 
 def base_plate():
-    """Base plate with the light box printed on it: LED + diffuser pocket open to the top,
-    tray rails on the box top along Y, cable slot out the +X wall, four post sockets."""
+    """Base plate with the light box printed on it: pocket for two LED slabs open to the top,
+    a shallow recess above it for polariser 1 and the tint sheet, tray rails along Y with a
+    rear stop, lead slot out the +X wall, four post screw holes."""
     body = box(P.PLATE_L, P.PLATE_W, P.PLATE_T, P.PLATE_CX, P.PLATE_CY)
-    body += box(P.BOX_W, P.BOX_W, P.BOX_H, 0, 0, P.PLATE_T)
+    body += box(P.BOX_X, P.BOX_Y, P.BOX_H, 0, 0, P.PLATE_T)
     top = P.PLATE_T + P.BOX_H
 
-    # LED + diffuser pocket, from the top
-    body -= box(P.POCKET_W, P.POCKET_W, P.POCKET_DEPTH + 1.0, 0, 0, top - P.POCKET_DEPTH)
-    # cable slot through the +X wall at pocket-floor level
-    body -= box(P.BOX_W, P.CABLE_W, P.CABLE_H, P.BOX_W / 2.0, 0, top - P.POCKET_DEPTH)
-    # tray rails along Y on the box top, at the ±X edges
+    # LED pocket, from the top
+    body -= box(P.POCKET_L, P.POCKET_W, P.POCKET_DEPTH + 1.0, 0, 0, top - P.POCKET_DEPTH)
+    # film recess above the pocket, between the rails, open to the front so a sheet slides in
+    inner_x = P.BOX_X - 2 * P.RAIL_W - 0.4
+    body -= box(inner_x, P.BOX_Y + 2.0, P.FILM_RECESS + 1.0, 0, -1.0, top - P.FILM_RECESS)
+    # lead slot through the +X wall at pocket-floor level
+    body -= box(P.BOX_X, P.CABLE_W, P.CABLE_H, P.BOX_X / 2.0, 0, top - P.POCKET_DEPTH)
+    # tray rails along Y at the ±X edges, and the rear stop at +Y
     for sx in (-1, +1):
-        body += box(P.RAIL_W, P.BOX_W, P.RAIL_H, sx * (P.BOX_W / 2.0 - P.RAIL_W / 2.0), 0, top)
-    # rear stop so the tray always lands on the same spot (+Y end)
-    body += box(P.BOX_W - 2 * P.RAIL_W, P.RAIL_W, P.RAIL_H, 0, P.BOX_W / 2.0 - P.RAIL_W / 2.0, top)
+        body += box(P.RAIL_W, P.BOX_Y, P.RAIL_H, sx * (P.BOX_X / 2.0 - P.RAIL_W / 2.0), 0, top)
+    body += box(P.BOX_X - 2 * P.RAIL_W, P.RAIL_W, P.RAIL_H, 0, P.BOX_Y / 2.0 - P.RAIL_W / 2.0, top)
 
     # post screw holes through the plate (M3 clearance)
     for x, y in P.POST_XY:
@@ -170,20 +173,20 @@ def clip_lens():
 
 
 def led_panel():
-    body = box(P.LED_W, P.LED_W, P.LED_T)
+    body = box(P.LED_L, P.LED_W, P.LED_T)
     body.label = "led_panel"
     return body
 
 
-def diffuser():
-    body = box(P.LED_W, P.LED_W, P.DIFFUSER_T)
-    body.label = "diffuser"
+def polariser():
+    body = box(P.POLARISER_W, P.POCKET_W, P.POLARISER_T)
+    body.label = "polariser"
     return body
 
 
-def polariser():
-    body = box(P.POLARISER_W, P.POLARISER_W, P.POLARISER_T)
-    body.label = "polariser"
+def tint_plate():
+    body = box(P.POLARISER_W, P.POCKET_W, max(P.TINT_T, 0.05))
+    body.label = "tint_plate"
     return body
 
 
