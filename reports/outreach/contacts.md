@@ -3,7 +3,7 @@ purpose: The contact ledger — one card per person targeted, invited or intervi
 idea: industrial-process-data-infrastructure
 last_updated: 2026-09-14
 totals:
-  targeted: 76
+  targeted: 77
   invited: 66
   accepted: 21
   scheduled: 0
@@ -2295,3 +2295,47 @@ open_to_work: false
 outreach_status: invited
 found_date: 2026-09-14
 notes: "[profile read 2026-09-14] details/experience: Managing Director Barrie Knitwear Jul 2025-present, Hawick; European Business Director INVISTA 2022-25; Coats 1996-2022 incl. Manufacturing Director Business Operations 2021-22. English profile. Passes. [invited 2026-09-14] bare invite via custom-invite modal, name confirmed Jonathan Whitehead, sent by Claude at founder's instruction."
+
+## Claus Mertes
+
+id: C77
+name: "Claus Mertes"
+linkedin_url: https://www.linkedin.com/in/claus-mertes/
+linkedin_account: Izgin
+company: "DME (Deutsche MeerwasserEntsalzung) GmbH / Desalination Institute DME"
+role: "Managing Director; founder of DESALFACTS and the Desalination Academy"
+signal_type: profile_fit
+signal_multiplier: 1.0
+signal_source_url: "https://www.linkedin.com/in/claus-mertes/"
+signal_excerpt: "Founded and built DESALFACTS, an independent knowledge platform for desalination and water technologies."
+contact_role: expert
+role_pts: 2
+tier: other
+size_band:
+assumptions_tested: [H2]
+validation_rationale: >
+  Desalination-sector expert with direct industrial-scale RO membrane test experience and a
+  long-running technology knowledge platform. Can identify recurring operator patterns and
+  route introductions, but cannot validate a plant operator's own CIP budget or buying decision.
+response_likelihood: 5
+likelihood_factors: "active desalination publisher (+2) · senior institute leader (+1) · no verified connection degree or mutual path (-1)"
+channel: linkedin
+degree: unknown
+mutuals_count:
+active_last_30d: true
+open_to_work: false
+close_variant: soft_ask
+copy_variant: research_only
+relationship_type: expert
+outreach_status: pending
+message_stage:
+call_stage: none
+found_date: 2026-09-14
+invited_date:
+accepted_date:
+scheduled_date:
+interview_date:
+interviews: []
+evidence_score:
+outcome_modifier:
+notes: "[public profile read 2026-09-14] LinkedIn's public index shows current desalination activity plus DESALFACTS (2014-present), CDT classification work (2012-present), and the Desalination Academy (2003-present). DME's official legal notice names Claus R. Mertes as Managing Director. WaterWorld records DME's industrial-scale 2014 RO membrane test under continuous plant conditions in Egypt. Public profile contains English project descriptions, but the logged-in live profile, connection degree and inbox could not be checked because no browser session was available. [H2 staging 2026-09-14] H2 is superseded-but-revivable and has no formal assumption node or declared ICP in graph.md; this expert lead is staged at hunch level and must not count as operator evidence. Bare invite first. Post-acceptance Msg 1 is archived in copy/H2-linkedin.md."
