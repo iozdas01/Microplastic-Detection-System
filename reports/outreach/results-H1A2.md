@@ -19,7 +19,6 @@ _Channels are counted separately._
 |---|---|---|---|
 | C12 | Ted Ellington | pending | — |
 | C25 | Shridhar H T | pending | — |
-| C61 | Yasin Yücedağ | pending | — |
 | C14 | Yalçın Çelik | invited | — |
 | C16 | Mehmet Adıyaman | invited | — |
 | C22 | Erkan Ekici | invited | — |
@@ -76,5 +75,6 @@ _Channels are counted separately._
 | C27 | Nastassia Ramazankhani | off_scope | — |
 | C34 | Süleyman Argün | off_scope | — |
 | C39 | Göksel Arcan | off_scope | — |
+| C61 | Yasin Yücedağ | off_scope | — |
 | C8 | Burç Çetin Tezgel | off_scope | — |
 | C9 | Emre Uyanık | off_scope | — |

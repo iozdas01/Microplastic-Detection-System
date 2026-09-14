@@ -17,7 +17,6 @@ _Channels are counted separately._
 
 | id | name | status | call stage |
 |---|---|---|---|
-| C61 | Yasin Yücedağ | pending | — |
 | C14 | Yalçın Çelik | invited | — |
 | C16 | Mehmet Adıyaman | invited | — |
 | C22 | Erkan Ekici | invited | — |
@@ -40,3 +39,4 @@ _Channels are counted separately._
 | C2 | Ali Kemal Kul | held | — |
 | C3 | Veysel Özgür | held | — |
 | C7 | Murat Terlemez | held | — |
+| C61 | Yasin Yücedağ | off_scope | — |

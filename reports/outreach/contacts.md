@@ -1842,6 +1842,6 @@ degree: 1st
 mutuals_count:
 active_last_30d: unknown
 open_to_work: false
-outreach_status: pending
+outreach_status: off_scope
 found_date: 2026-09-14
-notes: "[profile read 2026-09-14] details/experience: General Manager, Loreta TMY Textile, May 2022-present; Sales Marketing Coordinator, Loreta Collection, 2016-22. Loreta is a womenswear label; whether TMY Textile dyes, washes or finishes in-house is not shown, and garment assembly only is out of scope. Held pending a company check before any DM; inbox searched, no thread."
+notes: "[profile read 2026-09-14] details/experience: General Manager, Loreta TMY Textile, May 2022-present; Sales Marketing Coordinator, Loreta Collection, 2016-22. Loreta is a womenswear label; whether TMY Textile dyes, washes or finishes in-house is not shown, and garment assembly only is out of scope. Held pending a company check before any DM; inbox searched, no thread. [audit off_scope 2026-09-14] Company check: TMY Tekstil Deri ve İnşaat (Bayrampaşa, Istanbul; site loreta.com.tr) is the Loreta womenswear brand, coats and jackets sewn in a 10,000 m² factory from bought-in French and Italian fabric, exporting to Russia and Central Asia. No dyeing, washing or finishing on site: garment assembly only, fails icp_out_of_scope for H1A2. No DM. Sources: dnb.com and manuzone.com company profiles, loreta.com.tr."
