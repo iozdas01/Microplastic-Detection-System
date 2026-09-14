@@ -41,10 +41,10 @@ Printed (FDM, PLA or PETG, 0.2 mm layers; the tray floor down on the bed):
 
 | file | what | notes |
 |---|---|---|
-| `base_plate.step` / `stl/base_plate.stl` | base plate with the light box on it | LED + diffuser pocket open to the top, cable slot on +X, tray rails, four post screw holes |
-| `post.step` / `stl/post.stl` | square post, print four | 60 mm; M3 pilot holes both ends |
-| `tray.step` / `stl/tray.stl` | sample tray | 50 mm glass seat over a 47 mm membrane; ticks every 5 mm; crosshair on the axis; grip tab |
-| `cradle.step` / `stl/cradle.stl` | phone cradle | 213 × 129 mm: fits a 220 mm bed, just; pocket for the phone, opening under the camera plateau, ribs underneath |
+| `base_plate.step` / `stl/base_plate.stl` | base plate with the light box on it | 224 × 136 mm; pocket for two 1621 slabs with lead room, film recess above it, lead slot on +X, tray rails and rear stop, four post screw holes |
+| `post.step` / `stl/post.stl` | square post, print four | 49.5 mm; M3 pilot holes both ends |
+| `tray.step` / `stl/tray.stl` | sample tray | 92.6 × 101.5 mm; round 50 mm glass seat over a 47 mm membrane; ticks every 5 mm; crosshair on the axis; grip tab |
+| `cradle.step` / `stl/cradle.stl` | phone cradle | 224 × 136 mm, fits the P1S's 256 mm bed; pocket for the phone, opening under the camera plateau, ribs underneath |
 | `wet_cell.step` / `stl/wet_cell.stl` | wet mount | two 25 mm cover glasses 1 mm apart; drops into the tray rails; print in resin or seal the seats |
 
 `imaging_station.step` is the whole rig assembled, with envelopes for the bought parts.
