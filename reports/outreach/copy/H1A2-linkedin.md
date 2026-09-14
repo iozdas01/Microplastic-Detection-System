@@ -40,11 +40,11 @@ Rule check: 469 chars, violations none. Inbox (LR-B25): first-name/company searc
 
 ### Msg 1 — DRAFTED 2026-09-14
 
-**Primary (458 chars, Turkish, close_variant soft_ask, segment: wet-processing mill):**
+**Primary (457 chars, Turkish, close_variant soft_ask, segment: wet-processing mill):**
 
 > Önder Bey merhaba, nasılsınız?
 >
-> Bazı boyahaneler proses suyuyla çıkanı sayıya dökebilirken bazılarının neden dökemediğini araştırıyorum, Cambridge'de üretim verisi üzerine yazdığım makalenin ardından, özellikle de bir denim fabrikasından suyunda neyi ölçmesinin istendiğini ve bunu kimin istediğini. Sharabati'de Inditex, LCW ve H&M denetimlerini ve çevre denetimlerini siz hazırlıyor ve takip ediyorsunuz. Araştırmamız için birkaç soruya açık olur muydunuz?
+> Bazı boyahaneler proses suyuyla çıkanı sayıya dökebilirken bazılarının neden dökemediğini araştırıyorum, Cambridge'de üretim verisi üzerine yazdığım makalenin ardından, özellikle de bir denim fabrikasının suyunda neyi ölçmesinin istendiğini ve bunu kimin istediğini. Sharabati'de Inditex, LCW ve H&M denetimlerini ve çevre denetimlerini siz hazırlıyor ve takip ediyorsunuz. Araştırmamız için birkaç soruya açık olur muydunuz?
 
 | Claim in message | Live-snapshot source (2026-09-14, details/experience) |
 |---|---|
@@ -52,24 +52,24 @@ Rule check: 469 chars, violations none. Inbox (LR-B25): first-name/company searc
 | "Inditex, LCW ve H&M müşteri denetimlerini ... hazırlıyor ve takip ediyorsunuz" | Experience → 'Preparation for Customer Audits and follow-up of audits (Indıtex, LCW, H&M, Bestseller ..etc)' |
 | "çevre denetimlerini" | Experience → 'Environmental Legislation and follow-up of environmental inspections' |
 
-Rule check: 458 chars, violations none. Inbox (LR-B25): first-name/company search on Izgin's account, no thread. Status at draft time: accepted 2026-09-14.
+Rule check: 457 chars, violations none. Inbox (LR-B25): first-name/company search on Izgin's account, no thread. Status at draft time: accepted 2026-09-14.
 
 ## C38 — Murat Gülay
 
 ### Msg 1 — DRAFTED 2026-09-14
 
-**Primary (450 chars, Turkish, close_variant soft_ask, segment: wet-processing mill):**
+**Primary (449 chars, Turkish, close_variant soft_ask, segment: wet-processing mill):**
 
 > Murat Bey merhaba, nasılsınız?
 >
-> Bazı boyahaneler proses suyuyla çıkanı sayıya dökebilirken bazılarının neden dökemediğini araştırıyorum, Cambridge'de üretim verisi üzerine yazdığım makalenin ardından, özellikle de bir kumaş işletmesinden suyunda neyi ölçmesinin istendiğini ve bunu kimin istediğini. RB Karesi'de 200 kişilik ekibinizle örgü, dokuma, boyama ve baskı süreçlerini siz denetliyorsunuz. Araştırmamız için birkaç soruya açık olur muydunuz?
+> Bazı boyahaneler proses suyuyla çıkanı sayıya dökebilirken bazılarının neden dökemediğini araştırıyorum, Cambridge'de üretim verisi üzerine yazdığım makalenin ardından, özellikle de bir kumaş işletmesinin suyunda neyi ölçmesinin istendiğini ve bunu kimin istediğini. RB Karesi'de 200 kişilik ekibinizle örgü, dokuma, boyama ve baskı süreçlerini siz denetliyorsunuz. Araştırmamız için birkaç soruya açık olur muydunuz?
 
 | Claim in message | Live-snapshot source (2026-09-14, details/experience) |
 |---|---|
 | "RB Karesi'de 200 kişilik ekibinizle" | Experience → 'rb karesi tekstil ... 200 kişilik bir ekip ile birlikte' |
 | "örgü, dokuma, boyama ve baskı süreçlerini siz denetliyorsunuz" | Experience → 'örgü, dokuma,boyama ve baskı süreçlerini denetleyerek' |
 
-Rule check: 450 chars, violations none. Inbox (LR-B25): first-name/company search on Izgin's account, no thread. Status at draft time: accepted 2026-09-14.
+Rule check: 449 chars, violations none. Inbox (LR-B25): first-name/company search on Izgin's account, no thread. Status at draft time: accepted 2026-09-14.
 
 ## C40 — Erdogan Sekerci
 
@@ -131,7 +131,7 @@ Rule check: 464 chars, violations none. Inbox (LR-B25): first-name/company searc
 
 > Mustafa Bey merhaba, nasılsınız?
 >
-> Bazı boyahaneler proses suyuyla çıkanı sayıya dökebilirken bazılarının neden dökemediğini araştırıyorum, Cambridge'de üretim verisi üzerine yazdığım makalenin ardından, özellikle de bir boyahaneden suyunda neyi ölçmesinin istendiğini ve bunu kimin istediğini. Yalçın Boya Tekstil'de on bir yıldır üretimi siz yönetiyorsunuz. Araştırmamız için birkaç soruya açık olur muydunuz?
+> Bazı boyahaneler proses suyuyla çıkanı sayıya dökebilirken bazılarının neden dökemediğini araştırıyorum, Cambridge'de üretim verisi üzerine yazdığım makalenin ardından, özellikle de bir boyahanenin suyunda neyi ölçmesinin istendiğini ve bunu kimin istediğini. Yalçın Boya Tekstil'de on bir yıldır üretimi siz yönetiyorsunuz. Araştırmamız için birkaç soruya açık olur muydunuz?
 
 | Claim in message | Live-snapshot source (2026-09-14, details/experience) |
 |---|---|
@@ -164,7 +164,7 @@ Rule check: 442 chars, violations none. Inbox (LR-B25): first-name/company searc
 
 > Erdal Bey merhaba, nasılsınız?
 >
-> Bazı boyahaneler proses suyuyla çıkanı sayıya dökebilirken bazılarının neden dökemediğini araştırıyorum, Cambridge'de üretim verisi üzerine yazdığım makalenin ardından, özellikle de bir boyahaneden suyunda neyi ölçmesinin istendiğini ve bunu kimin istediğini. Işıksoy Tekstil'de kalite kontrolü siz yürütüyorsunuz, öncesinde Ar-Ge merkezini, Sönmez Filament'te ise boyahaneyi yönetmişsiniz. Araştırmamız için birkaç soruya açık olur muydunuz?
+> Bazı boyahaneler proses suyuyla çıkanı sayıya dökebilirken bazılarının neden dökemediğini araştırıyorum, Cambridge'de üretim verisi üzerine yazdığım makalenin ardından, özellikle de bir boyahanenin suyunda neyi ölçmesinin istendiğini ve bunu kimin istediğini. Işıksoy Tekstil'de kalite kontrolü siz yürütüyorsunuz, öncesinde Ar-Ge merkezini, Sönmez Filament'te ise boyahaneyi yönetmişsiniz. Araştırmamız için birkaç soruya açık olur muydunuz?
 
 | Claim in message | Live-snapshot source (2026-09-14, details/experience) |
 |---|---|
