@@ -10,17 +10,30 @@ Everything derives from `station_params.py`. Change the clip-on lens's focal len
 and the working distance, the post length and the field-of-view checks all follow. Every
 number tagged `[GUESS]` in that file is an assumption to replace with the measured part.
 
-## What the optics decide
+## The optics, and how to recompute them
 
-With the 10× clip-on (f ≈ 25 mm) on the phone's main camera, at 48 MP:
+Inputs: phone focal length f = 6.9 mm, f-number N = 1.78, pixel p = 1.22 µm (48 MP),
+sensor 9.8 × 7.3 mm, clip-on focal length f₂ (25 mm for a "10×"), wavelength λ = 0.55 µm.
+All of these are in `station_params.py`; the derived values below are computed there.
 
-| field of view | per pixel | resolves | depth of field | a 25 µm fibre |
-|---|---|---|---|---|
-| 35.5 × 26.4 mm | 4.4 µm | 4.3 µm | 92 µm | 5.7 px |
+| Quantity | Formula | With f₂ = 25 mm |
+|---|---|---|
+| Working distance | f₂ (phone at infinity, object at the clip-on's focal plane) | 25 mm |
+| Magnification m | f / f₂ | 0.276 |
+| Field of view | sensor / m | 35.5 × 26.4 mm |
+| Object size per pixel | p / m | 4.4 µm |
+| Phone aperture D | f / N | 3.9 mm |
+| Numerical aperture NA | D / (2 f₂) | 0.078 |
+| Smallest resolvable detail | 0.61 λ / NA | 4.3 µm |
+| Depth of field | λ / NA² | 0.09 mm |
+| Fine focus from the phone's autofocus | f₂² / nearest focus distance | 625 / 200 ≈ 3 mm |
+| Retardation of a fibre (crossed polarisers) | Δn × thickness | polyester 0.17 × 20 µm = 3.4 µm; cotton 0.045 × 15 µm = 0.7 µm |
+| Exposure time | N² × 12.5 / (L × ISO) | one 1621 slab, L ≈ 200 cd/m², ISO 100: ≈ 1/500 s |
 
-So one frame covers most of the membrane's exposed area, a fibre is countable and
-measurable in length, and the sample has to be flat to a tenth of a millimetre — which
-is why the cover glass presses the membrane and the tray floor prints on the bed.
+So one frame covers most of the membrane's exposed area, a 25 µm fibre is about 6 pixels
+wide, and the sample has to be flat to a tenth of a millimetre — which is why the cover
+glass presses the membrane and the tray floor prints on the bed. Change f₂ and the first
+eight rows move together; that is the one parameter that matters.
 
 ## Parts
 
@@ -36,8 +49,9 @@ Printed (FDM, PLA or PETG, 0.2 mm layers; the tray floor down on the bed):
 
 `imaging_station.step` is the whole rig assembled, with envelopes for the bought parts.
 
-Bought: 10× clip-on macro lens; 50 × 50 mm white LED panel (USB); opal diffuser; two
-60 × 60 mm linear polarising films; 50 mm round cover glass (1 mm); 25 mm round cover
+Bought: 10× clip-on macro lens; two Adafruit 1621 white LED backlights (45 × 86 mm,
+~3 V 20 mA each, 100 Ω in series from USB); two 96 × 92 mm linear polarising films; one
+full-wave tint sheet (cellophane works); 50 mm round cover glass (1 mm); 25 mm round cover
 glass ×2; 47 mm PCTE membranes; 8 × M3 × 10 screws.
 
 ## Rebuild
