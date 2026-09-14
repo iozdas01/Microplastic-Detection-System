@@ -3,8 +3,8 @@ purpose: The contact ledger — one card per person targeted, invited or intervi
 idea: industrial-process-data-infrastructure
 last_updated: 2026-09-14
 totals:
-  targeted: 61
-  invited: 51
+  targeted: 76
+  invited: 66
   accepted: 11
   scheduled: 0
   done: 0
@@ -1845,3 +1845,453 @@ open_to_work: false
 outreach_status: off_scope
 found_date: 2026-09-14
 notes: "[profile read 2026-09-14] details/experience: General Manager, Loreta TMY Textile, May 2022-present; Sales Marketing Coordinator, Loreta Collection, 2016-22. Loreta is a womenswear label; whether TMY Textile dyes, washes or finishes in-house is not shown, and garment assembly only is out of scope. Held pending a company check before any DM; inbox searched, no thread. [audit off_scope 2026-09-14] Company check: TMY Tekstil Deri ve İnşaat (Bayrampaşa, Istanbul; site loreta.com.tr) is the Loreta womenswear brand, coats and jackets sewn in a 10,000 m² factory from bought-in French and Italian fabric, exporting to Russia and Central Asia. No dyeing, washing or finishing on site: garment assembly only, fails icp_out_of_scope for H1A2. No DM. Sources: dnb.com and manuzone.com company profiles, loreta.com.tr."
+
+## Eray Karaduman
+
+id: C62
+name: "Eray Karaduman"
+linkedin_url: https://www.linkedin.com/in/eray-karaduman-4653181a/
+linkedin_account: Izgin
+company: "Çalık Denim (denim mill, Malatya; HQ Istanbul)"
+role: "General Manager; ex Kordsa North America General Manager"
+signal_type: profile_fit
+signal_multiplier: 1.0
+signal_source_url: ""
+signal_excerpt: ""
+contact_role: buyer
+role_pts: 3
+tier: textile_mill
+size_band:
+assumptions_tested: [H1A2, H1A3, H1A6]
+validation_rationale: >
+  Runs Çalık Denim, one of the most brand-audited denim mills; owns the budget and the obligation any brand microfibre request would land on, and can say whether one has.
+response_likelihood: 5
+likelihood_factors: "2nd degree (+2) · GM of a top-tier brand-facing denim mill (+2) · very senior, 9 months in role (-2)"
+channel: linkedin
+degree: 2nd
+mutuals_count: 
+active_last_30d: unknown
+open_to_work: false
+outreach_status: invited
+found_date: 2026-09-14
+notes: "[profile read 2026-09-14] details/experience: Çalık Denim General Manager Jan 2026-present; Kordsa 2020-26 incl. North America GM 2024-26. English profile. Passes the budget-holder ICP. [invited 2026-09-14] bare invite via custom-invite modal, name confirmed Eray Karaduman, sent by Claude at founder's instruction."
+
+## Gareth Jones
+
+id: C63
+name: "Gareth Jones"
+linkedin_url: https://www.linkedin.com/in/gareth-jones-432b01107/
+linkedin_account: Izgin
+company: "West Yorkshire Spinners (yarn spinner and dyer, Keighley); ex Bulmer and Lumb Group (wool dyers and finishers)"
+role: "Production Director"
+signal_type: profile_fit
+signal_multiplier: 1.0
+signal_source_url: ""
+signal_excerpt: ""
+contact_role: buyer
+role_pts: 3
+tier: textile_mill
+size_band:
+assumptions_tested: [H1A2, H1A3, H1A6]
+validation_rationale: >
+  Directs production at a UK yarn spinner that dyes in-house, after ten years at a wool dyer and finisher whose profile text names dyestuff and watercourse compliance; a UK budget holder for the process this idea measures.
+response_likelihood: 5
+likelihood_factors: "3rd degree (+0) · UK, English, production director at a dyeing yarn maker (+2)"
+channel: linkedin
+degree: 3rd+
+mutuals_count: 
+active_last_30d: unknown
+open_to_work: false
+outreach_status: invited
+found_date: 2026-09-14
+notes: "[profile read 2026-09-14] details/experience: Production Director West Yorkshire Spinners Aug 2020-present; Senior Sales Manager Bulmer and Lumb Group 2010-20 (role text cites Industrial Emissions Directive compliance, dyestuffs, watercourse). English profile. Passes. [invited 2026-09-14] bare invite via custom-invite modal, name confirmed Gareth Jones, sent by Claude at founder's instruction."
+
+## Marlon Suazo
+
+id: C64
+name: "Marlon Suazo"
+linkedin_url: https://www.linkedin.com/in/marlon-suazo-63118870/
+linkedin_account: Izgin
+company: "Gildan (Honduras) — garment dyeing and textile plant"
+role: "Plant Manager, Garment Dyeing & Textile; 16 yrs"
+signal_type: profile_fit
+signal_multiplier: 1.0
+signal_source_url: ""
+signal_excerpt: ""
+contact_role: buyer
+role_pts: 3
+tier: textile_mill
+size_band:
+assumptions_tested: [H1A2, H1A3, H1A6]
+validation_rationale: >
+  Runs a garment dyeing plant for Gildan, a brand that owns its manufacturing; the plant budget and any corporate or customer request for a fibre number both sit with him.
+response_likelihood: 5
+likelihood_factors: "3rd degree (+0) · plant manager at a vertically integrated brand-manufacturer (+2)"
+channel: linkedin
+degree: 3rd+
+mutuals_count: 
+active_last_30d: unknown
+open_to_work: false
+outreach_status: invited
+found_date: 2026-09-14
+notes: "[profile read 2026-09-14] details/experience: Plant Manager at Garment Dyeing & Textile, Gildan, Mar 2010-present (16 yrs), Honduras. English profile (single entry). Passes. [invited 2026-09-14] bare invite via custom-invite modal, name confirmed Marlon Suazo, sent by Claude at founder's instruction."
+
+## Khalid Yousuf
+
+id: C65
+name: "Khalid Yousuf"
+linkedin_url: https://www.linkedin.com/in/khalid-yousuf-0823b4133/
+linkedin_account: Izgin
+company: "Quality Dyeing (dyeing company; location not shown)"
+role: "General Manager"
+signal_type: profile_fit
+signal_multiplier: 1.0
+signal_source_url: ""
+signal_excerpt: ""
+contact_role: buyer
+role_pts: 3
+tier: textile_mill
+size_band:
+assumptions_tested: [H1A2, H1A3, H1A6]
+validation_rationale: >
+  General manager of a dyeing company, so a budget holder for the process; profile too thin to say more.
+response_likelihood: 3
+likelihood_factors: "3rd degree (+0) · GM of a dyeing company (+2) · one-line profile, no dates (-2)"
+channel: linkedin
+degree: 3rd+
+mutuals_count: 
+active_last_30d: unknown
+open_to_work: false
+outreach_status: invited
+found_date: 2026-09-14
+notes: "[profile read 2026-09-14] details/experience: 'General Manager / quality dyeing', single entry, no dates or location. English. Passes on title and line of business; weak on verification, confirm the company on the first reply. [invited 2026-09-14] bare invite via custom-invite modal, name confirmed Khalid Yousuf, sent by Claude at founder's instruction."
+
+## Amir Mustafa
+
+id: C66
+name: "Amir Mustafa"
+linkedin_url: https://www.linkedin.com/in/amir-mustafa-032216224/
+linkedin_account: Izgin
+company: "Sams Clothing (denim garment maker, Karachi)"
+role: "Denim Washing Plant Head; 17 yrs running washing plants (TF Apparels)"
+signal_type: profile_fit
+signal_multiplier: 1.0
+signal_source_url: ""
+signal_excerpt: ""
+contact_role: buyer
+role_pts: 3
+tier: textile_mill
+size_band:
+assumptions_tested: [H1A2, H1A3, H1A6]
+validation_rationale: >
+  Heads the denim washing plant at a Karachi garment maker after 17 years running washing at TF Apparels; owns the wash plant's budget and answers its customers' requests.
+response_likelihood: 6
+likelihood_factors: "2nd degree (+2) · plant head with a long wash career (+2)"
+channel: linkedin
+degree: 2nd
+mutuals_count: 
+active_last_30d: unknown
+open_to_work: false
+outreach_status: invited
+found_date: 2026-09-14
+notes: "[profile read 2026-09-14] details/experience: Denim Washing Plant Head, Sams Clothing, Jan 2025-present; Washing Manager 2023-present; Washing Plant Manager TF Apparels 2009-present (overlapping entries as listed). English profile. Passes. [invited 2026-09-14] bare invite via custom-invite modal, name confirmed Amir Mustafa, sent by Claude at founder's instruction."
+
+## Uğur Bahadır
+
+id: C67
+name: "Uğur Bahadır"
+linkedin_url: https://www.linkedin.com/in/u%C4%9Fur-bahad%C4%B1r-442a92b8/
+linkedin_account: Izgin
+company: "Cross Jeans, Tokat plant (denim garments and laundry)"
+role: "Deputy Factory Manager; ex Laundry Manager (Tokat, Taypa, Eurotay)"
+signal_type: profile_fit
+signal_multiplier: 1.0
+signal_source_url: ""
+signal_excerpt: ""
+contact_role: buyer
+role_pts: 3
+tier: textile_mill
+size_band:
+assumptions_tested: [H1A2, H1A3, H1A6]
+validation_rationale: >
+  Runs the Tokat plant day to day for Cross Jeans after managing its laundry and two others; plant-level authority over the wash process and its spend.
+response_likelihood: 6
+likelihood_factors: "2nd degree (+2) · plant deputy who came up through the laundry (+2)"
+channel: linkedin
+degree: 2nd
+mutuals_count: 
+active_last_30d: unknown
+open_to_work: false
+outreach_status: invited
+found_date: 2026-09-14
+notes: "[profile read 2026-09-14] details/experience: Cross Jeans since Feb 2023: Deputy Factory Manager Tokat Oct 2025-present, Laundry Manager Tokat 2023-25; Laundry Manager Taypa 2021-23; Eurotay (Serbia) production and laundry 2019-21. English profile. Passes. [invited 2026-09-14] bare invite via custom-invite modal, name confirmed Uğur Bahadır, sent by Claude at founder's instruction."
+
+## Mariusz Stochaj
+
+id: C68
+name: "Mariusz Stochaj"
+linkedin_url: https://www.linkedin.com/in/mariusz-stochaj-frsa-62608b8/
+linkedin_account: Izgin
+company: "Continental Clothing UK (brand with its own Indian manufacturing)"
+role: "Head of Product and Sustainability; sustainable sourcing"
+signal_type: profile_fit
+signal_multiplier: 1.0
+signal_source_url: ""
+signal_excerpt: ""
+contact_role: buyer
+role_pts: 3
+tier: brand
+size_band:
+assumptions_tested: [H1A2, H1A3]
+validation_rationale: >
+  Heads product and sustainable sourcing at a brand that manufactures its own garments; sets what its factory has to measure and knows what it costs the brand.
+response_likelihood: 5
+likelihood_factors: "3rd degree (+0) · 19 yrs heading product and sustainable sourcing at a brand that owns its factory (+2)"
+channel: linkedin
+degree: 3rd+
+mutuals_count: 
+active_last_30d: unknown
+open_to_work: false
+outreach_status: invited
+found_date: 2026-09-14
+notes: "[profile read 2026-09-14] details/experience: Head of Product and Sustainability, Continental Clothing UK, Jan 2007-present; role text: product development, sustainable sourcing, CSR. English profile. Passes (tier brand). [invited 2026-09-14] bare invite via custom-invite modal, name confirmed Mariusz Stochaj, sent by Claude at founder's instruction."
+
+## Anna Hyam
+
+id: C69
+name: "Anna Hyam"
+linkedin_url: https://www.linkedin.com/in/anna-hyam/
+linkedin_account: Izgin
+company: "Gymshark (brand, UK)"
+role: "Sourcing Director; ex Primark and ASOS sourcing"
+signal_type: profile_fit
+signal_multiplier: 1.0
+signal_source_url: ""
+signal_excerpt: ""
+contact_role: buyer
+role_pts: 3
+tier: brand
+size_band:
+assumptions_tested: [H1A2, H1A3]
+validation_rationale: >
+  Directs sourcing for Gymshark after Primark and ASOS; decides what its mills and laundries must supply and knows whether a fibre figure is ever asked for.
+response_likelihood: 4
+likelihood_factors: "3rd degree (+0) · director who sets supplier requirements at a large sportswear brand (+2) · senior, lower reply odds (-1)"
+channel: linkedin
+degree: 3rd+
+mutuals_count: 
+active_last_30d: unknown
+open_to_work: false
+outreach_status: invited
+found_date: 2026-09-14
+notes: "[profile read 2026-09-14] details/experience: Gymshark since Feb 2021, Sourcing Director Jul 2025-present, Head of Sourcing 2023-25; Sourcing Manager Primark 2020-21; ASOS sourcing 2018-20. English profile. Passes (tier brand). [invited 2026-09-14] bare invite via custom-invite modal, name confirmed Anna Hyam, sent by Claude at founder's instruction."
+
+## Marta Kelsall
+
+id: C70
+name: "Marta Kelsall"
+linkedin_url: https://www.linkedin.com/in/marta-kelsall-9039a757/
+linkedin_account: Izgin
+company: "Canada Goose (brand; Paris); ex Burberry (16 yrs)"
+role: "Sourcing Director; ex Director Sourcing Childrenswear, Burberry"
+signal_type: profile_fit
+signal_multiplier: 1.0
+signal_source_url: ""
+signal_excerpt: ""
+contact_role: buyer
+role_pts: 3
+tier: brand
+size_band:
+assumptions_tested: [H1A2, H1A3]
+validation_rationale: >
+  Sourcing director at Canada Goose after sixteen years at Burberry defining vendor selection; knows exactly which environmental numbers a luxury brand demands from a mill and who pays for them.
+response_likelihood: 5
+likelihood_factors: "2nd degree (+2) · luxury sourcing director, vendor selection is her role text (+1) · senior (-1)"
+channel: linkedin
+degree: 2nd
+mutuals_count: 
+active_last_30d: unknown
+open_to_work: false
+outreach_status: invited
+found_date: 2026-09-14
+notes: "[profile read 2026-09-14] details/experience: Sourcing Director Canada Goose Oct 2025-present, Paris; Burberry 2009-26 incl. Director Sourcing Childrenswear 2022-26 (role text: strategic sourcing approaches, vendor selection, capacity planning). English profile. Passes (tier brand). [invited 2026-09-14] bare invite via custom-invite modal, name confirmed Marta Kelsall, sent by Claude at founder's instruction."
+
+## Katie Coates
+
+id: C71
+name: "Katie Coates"
+linkedin_url: https://www.linkedin.com/in/katie-coates290579/
+linkedin_account: Izgin
+company: "Joules (brand, UK); ex ASOS"
+role: "Director of Buying and Sourcing; ex Interim Director of Responsible Sourcing and ESG, ASOS"
+signal_type: profile_fit
+signal_multiplier: 1.0
+signal_source_url: ""
+signal_excerpt: ""
+contact_role: buyer
+role_pts: 3
+tier: brand
+size_band:
+assumptions_tested: [H1A2, H1A3]
+validation_rationale: >
+  Directs buying and sourcing at Joules after running ASOS's responsible sourcing and ESG; has set supplier environmental requirements at a large online brand and buys from mills today.
+response_likelihood: 5
+likelihood_factors: "3rd degree (+0) · ran responsible sourcing and ESG at ASOS (+2)"
+channel: linkedin
+degree: 3rd+
+mutuals_count: 
+active_last_30d: unknown
+open_to_work: false
+outreach_status: invited
+found_date: 2026-09-14
+notes: "[profile read 2026-09-14] details/experience: Director of buying and sourcing, Joules, Jan 2026-present; ASOS 2021-25: interim director responsible sourcing and ESG 2023-25, head of sourcing 2021-23. English profile. Passes (tier brand). [invited 2026-09-14] bare invite via custom-invite modal, name confirmed KATIE COATES, sent by Claude at founder's instruction."
+
+## Mark Mawson
+
+id: C72
+name: "Mark Mawson"
+linkedin_url: https://www.linkedin.com/in/mark-mawson-4736318b/
+linkedin_account: Izgin
+company: "Calder Dyeing Ltd. (commission dyer, Dewsbury); Calder Textiles"
+role: "Managing Director; Production Director Calder Textiles for 26 yrs"
+signal_type: profile_fit
+signal_multiplier: 1.0
+signal_source_url: ""
+signal_excerpt: ""
+contact_role: buyer
+role_pts: 3
+tier: textile_mill
+size_band:
+assumptions_tested: [H1A2, H1A3, H1A6]
+validation_rationale: >
+  Runs a Yorkshire commission dyehouse and has directed production at its parent for 26 years; owns the budget and hears every customer request the dyehouse gets.
+response_likelihood: 5
+likelihood_factors: "3rd degree (+0) · MD of a UK dyehouse with a 26-year production history (+2)"
+channel: linkedin
+degree: 3rd+
+mutuals_count: 
+active_last_30d: unknown
+open_to_work: false
+outreach_status: invited
+found_date: 2026-09-14
+notes: "[profile read 2026-09-14] details/experience: Managing Director Calder Dyeing Ltd. Aug 2026-present, Dewsbury; Production Director Calder Textiles Feb 2000-present. English profile. Passes. [invited 2026-09-14] bare invite via custom-invite modal, name confirmed Mark Mawson, sent by Claude at founder's instruction."
+
+## Mike Collins
+
+id: C73
+name: "Mike Collins"
+linkedin_url: https://www.linkedin.com/in/mike-collins-83170a22/
+linkedin_account: Izgin
+company: "Pincroft Dyeing & Printing (commission dyer, printer and finisher, Lancashire)"
+role: "Managing Director; 7 yrs"
+signal_type: profile_fit
+signal_multiplier: 1.0
+signal_source_url: ""
+signal_excerpt: ""
+contact_role: buyer
+role_pts: 3
+tier: textile_mill
+size_band:
+assumptions_tested: [H1A2, H1A3, H1A6]
+validation_rationale: >
+  Runs a large UK commission dyeing and printing works serving apparel and workwear brands; owns the budget and receives every customer compliance request on the water.
+response_likelihood: 5
+likelihood_factors: "2nd degree (+2) · MD of one of the UK's largest commission dye and print works (+2) · senior (-1)"
+channel: linkedin
+degree: 2nd
+mutuals_count: 
+active_last_30d: unknown
+open_to_work: false
+outreach_status: invited
+found_date: 2026-09-14
+notes: "[profile read 2026-09-14] details/experience: Managing Director Pincroft Dyeing & Printing Oct 2019-present; VP Operational Excellence Huhtamaki 2017-19; MD Pulse Flexible Packaging 2014-17. English profile. Passes. [invited 2026-09-14] bare invite via custom-invite modal, name confirmed Mike Collins, sent by Claude at founder's instruction."
+
+## Muhammad Omer Ahmed
+
+id: C74
+name: "Muhammad Omer Ahmed"
+linkedin_url: https://www.linkedin.com/in/muhammad-omer-ahmed-exporter-of-knits-garments-831598196/
+linkedin_account: Izgin
+company: "Anwar Textile Mills (knit garments exporter, Karachi)"
+role: "Managing Director"
+signal_type: profile_fit
+signal_multiplier: 1.0
+signal_source_url: ""
+signal_excerpt: ""
+contact_role: buyer
+role_pts: 3
+tier: textile_mill
+size_band:
+assumptions_tested: [H1A2, H1A3, H1A6]
+validation_rationale: >
+  Owner-level MD of a Karachi knit garment exporter; if the mill dyes or washes in-house he is the person who pays for any customer-demanded measurement.
+response_likelihood: 4
+likelihood_factors: "3rd degree (+0) · MD and owner-partner (+2) · wet processing at the mill unconfirmed (-1)"
+channel: linkedin
+degree: 3rd+
+mutuals_count: 
+active_last_30d: unknown
+open_to_work: false
+outreach_status: invited
+found_date: 2026-09-14
+notes: "[profile read 2026-09-14] details/experience: Managing Director Anwar Textile Mills Jul 2022-present; business partner Anchor Casual Clothing 2014-present; DM Industries 2014-22. English profile. Passes on title; confirm in-house dyeing on the first reply. [invited 2026-09-14] bare invite via custom-invite modal, name confirmed Muhammad Omer Ahmed, sent by Claude at founder's instruction."
+
+## Satish Kejriwal
+
+id: C75
+name: "Satish Kejriwal"
+linkedin_url: https://www.linkedin.com/in/satish-kejriwal-619163225/
+linkedin_account: Izgin
+company: "Vishal Textile Mills (Kolkata)"
+role: "Chief Executive Officer and Managing Director, 32 yrs"
+signal_type: profile_fit
+signal_multiplier: 1.0
+signal_source_url: ""
+signal_excerpt: ""
+contact_role: buyer
+role_pts: 3
+tier: textile_mill
+size_band:
+assumptions_tested: [H1A2, H1A3, H1A6]
+validation_rationale: >
+  Has run a Kolkata textile mill for 32 years; the ultimate budget holder, if the mill processes fabric rather than only weaving or trading.
+response_likelihood: 3
+likelihood_factors: "3rd degree (+0) · owner-CEO (+2) · very senior, older profile (-2)"
+channel: linkedin
+degree: 3rd+
+mutuals_count: 
+active_last_30d: unknown
+open_to_work: false
+outreach_status: invited
+found_date: 2026-09-14
+notes: "[profile read 2026-09-14] details/experience: CEO and Managing Director Vishal Textile Mills since 1994; Director Mindecor 2023-present. English profile. Passes on title; confirm processing on the first reply. [invited 2026-09-14] bare invite via custom-invite modal, name confirmed Satish Kejriwal, sent by Claude at founder's instruction."
+
+## Jonathan Whitehead
+
+id: C76
+name: "Jonathan Whitehead"
+linkedin_url: https://www.linkedin.com/in/jonathan-whitehead-09b42710/
+linkedin_account: Izgin
+company: "Barrie Knitwear (cashmere knitter and finisher, Hawick; Chanel-owned)"
+role: "Managing Director; ex INVISTA European Business Director; 25 yrs at Coats incl. Manufacturing Director"
+signal_type: profile_fit
+signal_multiplier: 1.0
+signal_source_url: ""
+signal_excerpt: ""
+contact_role: buyer
+role_pts: 3
+tier: textile_mill
+size_band:
+assumptions_tested: [H1A2, H1A3, H1A6]
+validation_rationale: >
+  Runs a Scottish cashmere knitwear plant whose finishing washes and mills the garments, after 25 years in Coats manufacturing; a UK budget holder inside a luxury brand's own supply chain.
+response_likelihood: 5
+likelihood_factors: "3rd degree (+0) · MD of a luxury knitwear plant with a manufacturing-director career (+2)"
+channel: linkedin
+degree: 3rd+
+mutuals_count: 
+active_last_30d: unknown
+open_to_work: false
+outreach_status: invited
+found_date: 2026-09-14
+notes: "[profile read 2026-09-14] details/experience: Managing Director Barrie Knitwear Jul 2025-present, Hawick; European Business Director INVISTA 2022-25; Coats 1996-2022 incl. Manufacturing Director Business Operations 2021-22. English profile. Passes. [invited 2026-09-14] bare invite via custom-invite modal, name confirmed Jonathan Whitehead, sent by Claude at founder's instruction."

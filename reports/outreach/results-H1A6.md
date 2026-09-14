@@ -8,7 +8,7 @@ _Generated 2026-09-14. Numbers are the funnel over contacts tagged H1A6._
 
 | channel | targeted | contacted | replied | qualified replied | reply rate |
 |---|---|---|---|---|---|
-| LinkedIn | 16 | 0 | 0 | 0 | — |
+| LinkedIn | 27 | 0 | 0 | 0 | — |
 | phone | 0 | 0 | 0 | 0 | — |
 
 _Channels are counted separately._
@@ -24,6 +24,17 @@ _Channels are counted separately._
 | C46 | Andrea Martinetti | invited | — |
 | C54 | Moshiur Rahman | invited | — |
 | C56 | Engr. Abdul Aziz | invited | — |
+| C62 | Eray Karaduman | invited | — |
+| C63 | Gareth Jones | invited | — |
+| C64 | Marlon Suazo | invited | — |
+| C65 | Khalid Yousuf | invited | — |
+| C66 | Amir Mustafa | invited | — |
+| C67 | Uğur Bahadır | invited | — |
+| C72 | Mark Mawson | invited | — |
+| C73 | Mike Collins | invited | — |
+| C74 | Muhammad Omer Ahmed | invited | — |
+| C75 | Satish Kejriwal | invited | — |
+| C76 | Jonathan Whitehead | invited | — |
 | C15 | Yasin Taştekin | accepted | — |
 | C18 | Ahmet Kaleli | accepted | — |
 | C19 | Yunus Öz | accepted | — |
