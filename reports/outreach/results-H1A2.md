@@ -37,16 +37,12 @@ _Channels are counted separately._
 | C28 | Rohit K. | invited | — |
 | C29 | Calvin Huelsman | invited | — |
 | C3 | Veysel Özgür | invited | — |
-| C30 | Önder Ertürk | invited | — |
 | C31 | Okan Çakıcı | invited | — |
 | C32 | İrem Terzi | invited | — |
 | C33 | Sercan Yaz | invited | — |
 | C35 | Hüseyin Özdilek Körmen | invited | — |
 | C36 | Murat İ. | invited | — |
-| C37 | Erdal Gülcan | invited | — |
-| C38 | Murat Gülay | invited | — |
 | C4 | Rabia Akkurt | invited | — |
-| C40 | Erdogan Sekerci | invited | — |
 | C41 | Didem Civancik-Uslu | invited | — |
 | C42 | Tuğba Erdem Yakut | invited | — |
 | C43 | Chris Chen | invited | — |
@@ -54,22 +50,26 @@ _Channels are counted separately._
 | C45 | Nicholas Filippone | invited | — |
 | C46 | Andrea Martinetti | invited | — |
 | C47 | Margarida Marques | invited | — |
-| C48 | Ayesha Navaid Anwar | invited | — |
 | C49 | Luciano Bragança | invited | — |
-| C5 | Mustafa Salih | invited | — |
 | C50 | Paola Polinelli | invited | — |
 | C51 | Emanuele Arrigoni | invited | — |
 | C52 | Giacomo Speroni | invited | — |
 | C53 | Mauro Franz | invited | — |
 | C54 | Moshiur Rahman | invited | — |
-| C55 | Gulfam S. | invited | — |
 | C56 | Engr. Abdul Aziz | invited | — |
-| C57 | Nuno Macieira | invited | — |
 | C58 | Paulo Lopes | invited | — |
-| C59 | Faizan Pasha | invited | — |
-| C6 | Halil Kutluğ Kabahasanoğlu | invited | — |
 | C60 | Aman Ullah | invited | — |
 | C7 | Murat Terlemez | invited | — |
+| C30 | Önder Ertürk | accepted | — |
+| C37 | Erdal Gülcan | accepted | — |
+| C38 | Murat Gülay | accepted | — |
+| C40 | Erdogan Sekerci | accepted | — |
+| C48 | Ayesha Navaid Anwar | accepted | — |
+| C5 | Mustafa Salih | accepted | — |
+| C55 | Gulfam S. | accepted | — |
+| C57 | Nuno Macieira | accepted | — |
+| C59 | Faizan Pasha | accepted | — |
+| C6 | Halil Kutluğ Kabahasanoğlu | accepted | — |
 | C13 | Sedat Çinici | off_scope | — |
 | C26 | Büşra Suiçmez | off_scope | — |
 | C27 | Nastassia Ramazankhani | off_scope | — |

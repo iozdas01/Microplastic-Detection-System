@@ -1,11 +1,11 @@
 ---
 purpose: The contact ledger — one card per person targeted, invited or interviewed for this idea, with the live-profile read that qualified them and the state of the outreach to them.
 idea: industrial-process-data-infrastructure
-last_updated: 2026-09-13
+last_updated: 2026-09-14
 totals:
   targeted: 60
   invited: 51
-  accepted: 0
+  accepted: 10
   scheduled: 0
   done: 0
   no_reply: 0
@@ -162,9 +162,9 @@ degree: 2nd
 mutuals_count: 1
 active_last_30d: unknown
 open_to_work: false
-outreach_status: invited
+outreach_status: accepted
 found_date: 2026-09-13
-notes: "[profile read 2026-09-13] details/experience: Üretim Müdürü Yalçın Boya Tekstil Aug 2015-present (11 yrs); earlier planning/ERP roles in electronics. Company name says dyeing textile; confirm the plant does its own wet processing on the first call. Passes. [invited 2026-09-13] bare invite via custom-invite modal, name confirmed Mustafa SALİH, sent by Claude at founder's instruction."
+notes: "[profile read 2026-09-13] details/experience: Üretim Müdürü Yalçın Boya Tekstil Aug 2015-present (11 yrs); earlier planning/ERP roles in electronics. Company name says dyeing textile; confirm the plant does its own wet processing on the first call. Passes. [invited 2026-09-13] bare invite via custom-invite modal, name confirmed Mustafa SALİH, sent by Claude at founder's instruction. [accepted 2026-09-14] connection accepted (seen in Connections list, recently added). [msg1 drafted 2026-09-14] Msg 1 permission ask drafted from a fresh details/experience snapshot; inbox searched, no prior thread. Copy in copy/H1A2-linkedin.md."
 
 ## Halil Kutluğ Kabahasanoğlu
 
@@ -192,9 +192,9 @@ degree: 2nd
 mutuals_count: 
 active_last_30d: unknown
 open_to_work: false
-outreach_status: invited
+outreach_status: accepted
 found_date: 2026-09-13
-notes: "[profile read 2026-09-13] details/experience: Laundry & Garment Dye Manager CRS Denim Egypt Oct 2025-present, R&D Manager there since Jul 2022; R&D Manager Cross Jeans 2018-22; production manager Taypa 2016-18; laundry & garment dye manager Eroğlu Giyim 2013-15 and Cross Jeans 2005-13. Passes. [invited 2026-09-13] bare invite via custom-invite modal, name confirmed Halil Kutluğ Kabahasanoğlu, sent by Claude at founder's instruction."
+notes: "[profile read 2026-09-13] details/experience: Laundry & Garment Dye Manager CRS Denim Egypt Oct 2025-present, R&D Manager there since Jul 2022; R&D Manager Cross Jeans 2018-22; production manager Taypa 2016-18; laundry & garment dye manager Eroğlu Giyim 2013-15 and Cross Jeans 2005-13. Passes. [invited 2026-09-13] bare invite via custom-invite modal, name confirmed Halil Kutluğ Kabahasanoğlu, sent by Claude at founder's instruction. [accepted 2026-09-14] connection accepted (seen in Connections list, recently added). [msg1 drafted 2026-09-14] Msg 1 permission ask drafted from a fresh details/experience snapshot; inbox searched, no prior thread. Copy in copy/H1A2-linkedin.md."
 
 ## Murat Terlemez
 
@@ -912,9 +912,9 @@ degree: 2nd
 mutuals_count: 
 active_last_30d: unknown
 open_to_work: false
-outreach_status: invited
+outreach_status: accepted
 found_date: 2026-09-13
-notes: "[profile read 2026-09-13] details/experience: Sharabati since 2021, QA & Sustainability Manager May 2024-present; role text: ISO 14001/50001 systems, customer audit preparation for Inditex, LCW, H&M, Bestseller, environmental legislation, Higg FEM. Passes. [invited 2026-09-13] bare invite via custom-invite modal, name confirmed ÖNDER ERTÜRK, sent by Claude at founder's instruction."
+notes: "[profile read 2026-09-13] details/experience: Sharabati since 2021, QA & Sustainability Manager May 2024-present; role text: ISO 14001/50001 systems, customer audit preparation for Inditex, LCW, H&M, Bestseller, environmental legislation, Higg FEM. Passes. [invited 2026-09-13] bare invite via custom-invite modal, name confirmed ÖNDER ERTÜRK, sent by Claude at founder's instruction. [accepted 2026-09-14] connection accepted (seen in Connections list, recently added). [msg1 drafted 2026-09-14] Msg 1 permission ask drafted from a fresh details/experience snapshot; inbox searched, no prior thread. Copy in copy/H1A2-linkedin.md."
 
 ## Okan Çakıcı
 
@@ -1122,9 +1122,9 @@ degree: 2nd
 mutuals_count: 
 active_last_30d: unknown
 open_to_work: false
-outreach_status: invited
+outreach_status: accepted
 found_date: 2026-09-13
-notes: "[profile read 2026-09-13] details/experience: Işıksoy Tekstil since Sep 2009: QC supervisor Nov 2019-present, R&D centre manager 2017-19, QC chief 2009-17; dyehouse & QC chief Sönmez Filament 2005-08. Passes. [invited 2026-09-13] bare invite via custom-invite modal, name confirmed Erdal GÜLCAN, sent by Claude at founder's instruction."
+notes: "[profile read 2026-09-13] details/experience: Işıksoy Tekstil since Sep 2009: QC supervisor Nov 2019-present, R&D centre manager 2017-19, QC chief 2009-17; dyehouse & QC chief Sönmez Filament 2005-08. Passes. [invited 2026-09-13] bare invite via custom-invite modal, name confirmed Erdal GÜLCAN, sent by Claude at founder's instruction. [accepted 2026-09-14] connection accepted (seen in Connections list, recently added). [msg1 drafted 2026-09-14] Msg 1 permission ask drafted from a fresh details/experience snapshot; inbox searched, no prior thread. Copy in copy/H1A2-linkedin.md."
 
 ## Murat Gülay
 
@@ -1152,9 +1152,9 @@ degree: 2nd
 mutuals_count: 
 active_last_30d: unknown
 open_to_work: false
-outreach_status: invited
+outreach_status: accepted
 found_date: 2026-09-13
-notes: "[profile read 2026-09-13] details/experience: Üretim ve Kalite Müdürü RB Karesi Tekstil Jul 2017-present (9 yrs); own words: audits knitting, weaving, dyeing and printing processes, 200-person production and quality team. Passes. [invited 2026-09-13] bare invite via custom-invite modal, name confirmed Murat Gülay, sent by Claude at founder's instruction."
+notes: "[profile read 2026-09-13] details/experience: Üretim ve Kalite Müdürü RB Karesi Tekstil Jul 2017-present (9 yrs); own words: audits knitting, weaving, dyeing and printing processes, 200-person production and quality team. Passes. [invited 2026-09-13] bare invite via custom-invite modal, name confirmed Murat Gülay, sent by Claude at founder's instruction. [accepted 2026-09-14] connection accepted (seen in Connections list, recently added). [msg1 drafted 2026-09-14] Msg 1 permission ask drafted from a fresh details/experience snapshot; inbox searched, no prior thread. Copy in copy/H1A2-linkedin.md."
 
 ## Göksel Arcan
 
@@ -1212,9 +1212,9 @@ degree: 2nd
 mutuals_count: 
 active_last_30d: unknown
 open_to_work: false
-outreach_status: invited
+outreach_status: accepted
 found_date: 2026-09-13
-notes: "[profile read 2026-09-13] details/experience: Associate Director Social Compliance, SHEIN, Sep 2024-present, Istanbul; H&M Group 2017-24, Sustainability Social Development Specialist 2021-24 (industrial relations programme, Turkey national monitoring committee). Passes (tier brand); his lens is social compliance, so ask only about the request channel, not the chemistry. [invited 2026-09-13] bare invite via custom-invite modal, name confirmed Erdogan Sekerci, sent by Claude at founder's instruction."
+notes: "[profile read 2026-09-13] details/experience: Associate Director Social Compliance, SHEIN, Sep 2024-present, Istanbul; H&M Group 2017-24, Sustainability Social Development Specialist 2021-24 (industrial relations programme, Turkey national monitoring committee). Passes (tier brand); his lens is social compliance, so ask only about the request channel, not the chemistry. [invited 2026-09-13] bare invite via custom-invite modal, name confirmed Erdogan Sekerci, sent by Claude at founder's instruction. [accepted 2026-09-14] connection accepted (seen in Connections list, recently added). [msg1 drafted 2026-09-14] Msg 1 permission ask drafted from a fresh details/experience snapshot; inbox searched, no prior thread. Copy in copy/H1A2-linkedin.md."
 
 ## Didem Civancik-Uslu
 
@@ -1452,9 +1452,9 @@ degree: 3rd+
 mutuals_count: 
 active_last_30d: unknown
 open_to_work: false
-outreach_status: invited
+outreach_status: accepted
 found_date: 2026-09-13
-notes: "[profile read 2026-09-13] details/experience: Marc O'Polo since 2022, Manager Chemical and Environmental Management Oct 2024-present; role text: supplier wastewater and chemical performance, onboarding, compliance monitoring, on-site assessments aligned with Higg FEM and the ZDHC Roadmap. Passes (tier brand). 3rd degree. [invited 2026-09-13] bare invite via custom-invite modal, name confirmed Ayesha Navaid Anwar, sent by Claude at founder's instruction."
+notes: "[profile read 2026-09-13] details/experience: Marc O'Polo since 2022, Manager Chemical and Environmental Management Oct 2024-present; role text: supplier wastewater and chemical performance, onboarding, compliance monitoring, on-site assessments aligned with Higg FEM and the ZDHC Roadmap. Passes (tier brand). 3rd degree. [invited 2026-09-13] bare invite via custom-invite modal, name confirmed Ayesha Navaid Anwar, sent by Claude at founder's instruction. [accepted 2026-09-14] connection accepted (seen in Connections list, recently added). [msg1 drafted 2026-09-14] Msg 1 permission ask drafted from a fresh details/experience snapshot; inbox searched, no prior thread. Copy in copy/H1A2-linkedin.md."
 
 ## Luciano Bragança
 
@@ -1662,9 +1662,9 @@ degree: 3rd+
 mutuals_count: 
 active_last_30d: unknown
 open_to_work: false
-outreach_status: invited
+outreach_status: accepted
 found_date: 2026-09-13
-notes: "[profile read 2026-09-13] details/experience: Washing GM and GM R&D Lucky Textile Mills Mar 2018-present; GM Siddiqsons Group 2014-18; GM Jamuna Group Dhaka 2012-14; laundry manager Soorty before. Passes. 3rd degree. [invited 2026-09-13] bare invite via custom-invite modal, name confirmed Gulfam S., sent by Claude at founder's instruction."
+notes: "[profile read 2026-09-13] details/experience: Washing GM and GM R&D Lucky Textile Mills Mar 2018-present; GM Siddiqsons Group 2014-18; GM Jamuna Group Dhaka 2012-14; laundry manager Soorty before. Passes. 3rd degree. [invited 2026-09-13] bare invite via custom-invite modal, name confirmed Gulfam S., sent by Claude at founder's instruction. [accepted 2026-09-14] connection accepted (seen in Connections list, recently added). [msg1 drafted 2026-09-14] Msg 1 permission ask drafted from a fresh details/experience snapshot; inbox searched, no prior thread. Copy in copy/H1A2-linkedin.md."
 
 ## Engr. Abdul Aziz
 
@@ -1722,9 +1722,9 @@ degree: 3rd+
 mutuals_count: 
 active_last_30d: unknown
 open_to_work: false
-outreach_status: invited
+outreach_status: accepted
 found_date: 2026-09-13
-notes: "[profile read 2026-09-13] details/experience: Técnico Tinturaria / dye specialist at Lavfafe (Lavandaria Tinturaria) Jun 2023-present; Pizarro S.A. 2001-23, head of samples development section. Passes. 3rd degree. [invited 2026-09-13] bare invite via custom-invite modal, name confirmed Nuno Macieira, sent by Claude at founder's instruction."
+notes: "[profile read 2026-09-13] details/experience: Técnico Tinturaria / dye specialist at Lavfafe (Lavandaria Tinturaria) Jun 2023-present; Pizarro S.A. 2001-23, head of samples development section. Passes. 3rd degree. [invited 2026-09-13] bare invite via custom-invite modal, name confirmed Nuno Macieira, sent by Claude at founder's instruction. [accepted 2026-09-14] connection accepted (seen in Connections list, recently added). [msg1 drafted 2026-09-14] Msg 1 permission ask drafted from a fresh details/experience snapshot; inbox searched, no prior thread. Copy in copy/H1A2-linkedin.md."
 
 ## Paulo Lopes
 
@@ -1782,9 +1782,9 @@ degree: 3rd+
 mutuals_count: 
 active_last_30d: unknown
 open_to_work: false
-outreach_status: invited
+outreach_status: accepted
 found_date: 2026-09-13
-notes: "[profile read 2026-09-13] details/experience: Manager Denim Washing & Shade Grading, Artistic Milliners, Jan 2025-present; Deputy Manager Laundry Soorty Enterprises 2024-25 (enzyme, stone, acid, bleach, ozone washes). Passes. 3rd degree. [invited 2026-09-13] bare invite via custom-invite modal, name confirmed Faizan Pasha, sent by Claude at founder's instruction."
+notes: "[profile read 2026-09-13] details/experience: Manager Denim Washing & Shade Grading, Artistic Milliners, Jan 2025-present; Deputy Manager Laundry Soorty Enterprises 2024-25 (enzyme, stone, acid, bleach, ozone washes). Passes. 3rd degree. [invited 2026-09-13] bare invite via custom-invite modal, name confirmed Faizan Pasha, sent by Claude at founder's instruction. [accepted 2026-09-14] connection accepted (seen in Connections list, recently added). [msg1 drafted 2026-09-14] Msg 1 permission ask drafted from a fresh details/experience snapshot; inbox searched, no prior thread. Copy in copy/H1A2-linkedin.md."
 
 ## Aman Ullah
 

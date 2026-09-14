@@ -4,7 +4,7 @@
 -->
 ---
 idea: industrial-process-data-infrastructure
-generated: 2026-09-14T02:56Z
+generated: 2026-09-14T18:56Z
 active_hunch: H1
 active_assumption: H1A2
 sources:
@@ -13,7 +13,7 @@ sources:
   graph: cbf4d35b37df
   evidence: absent
   offerings: absent
-  contacts: 9fddf894de87
+  contacts: f1f19dd3b14f
 ---
 
 # industrial-process-data-infrastructure — session brief
@@ -72,6 +72,7 @@ _Generated from the folder. Check here before creating a new artifact — if a f
 | `reports/outreach/results-H1A2.md` | Outreach results — H1A2 · industrial-process-data-infrastructure |
 | `reports/outreach/target-list-audit-2026-09-13.md` | Target list audit — 2026-09-13 |
 | `reports/outreach/technology-map.md` | The technology map — one entry per way of detecting microplastics or microfibres in water (what it physically measures, how small it goes, how far fr… |
+| `reports/outreach/copy/H1A2-linkedin.md` | The LinkedIn copy archive for H1A2 — every message drafted or sent to a contact for this assumption, with the live-snapshot line behind each claim an… |
 | `reports/pages/pages.yaml` | What each page in this folder is, and whether it still holds. |
 | `reports/pages/startup-map.html` | generated — rebuild it, never edit it |
 
