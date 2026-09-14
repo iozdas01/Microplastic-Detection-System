@@ -1,7 +1,7 @@
 ---
 purpose: The hunch lineage — every hunch ever held under the belief, its status, and which one is active.
 belief_file: input-context/belief.md
-active_hunch: H1
+active_hunch: [H1, H2]
 next_hunch_id: H6
 last_updated: 2026-09-14
 ---
@@ -82,8 +82,9 @@ with a feedback loop is the first product, and the first sensor feedback loop is
 
 ## H2
 
-status: proposed
+status: active
 validation_status: untested
+activated_on: 2026-09-14
 parent_hunch: null
 created: 2026-09-14
 created_by: founder
@@ -94,7 +95,9 @@ change_reason: >-
   seawater desalination pre-treatment as the primary market; the founders are in talks with
   CyFract as a first site, but CyFract cannot pay, so the buyer under this hunch is the plant
   operator. Statement drafted by Claude from standard SWRO practice and accepted by the
-  founder for logging; no operator conversation is behind it yet.
+  founder for logging; no operator conversation is behind it yet. Activated 2026-09-14 by
+  founder decision ("let's go with this hunch right now") to run in parallel with H1, whose
+  outreach is live; H1 is not retired.
 evidence_delta: []
 
 ### Statement

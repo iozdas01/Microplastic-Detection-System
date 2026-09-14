@@ -4,12 +4,12 @@
 -->
 ---
 idea: industrial-process-data-infrastructure
-generated: 2026-09-14T21:00Z
-active_hunch: H1
+generated: 2026-09-14T21:08Z
+active_hunch: H1, H2
 active_assumption: H1A2
 sources:
   belief: 6093ca2c2aa3
-  lineage: 6987cc55d6b9
+  lineage: 800cae8b1a81
   graph: e61659408316
   evidence: absent
   offerings: absent
@@ -28,11 +28,17 @@ _Founder-owned. Changes only with explicit confirmation._ → `input-context/bel
 
 ## Hunch
 
+_2 hunches active in parallel — one per entry point into the same transaction. They share a root assumption; evidence on one door does not transfer to the other._
+
 **H1 — active** · `untested`
 
 In the fashion industry there are no sensors to detect microplastics, so a textile manufacturer cannot see or act on the microfibers their process releases; a real-time sensor with a feedback loop is the first product, and the first sensor feedback loop is the beachhead.
 
-Lineage: H2 proposed · H3 proposed · H4 proposed · H5 proposed
+**H2 — active** · `untested`
+
+Reverse-osmosis desalination operators gate pre-treatment with a manual silt index and clean membranes on a lagging pressure-drop trigger, and neither tells them which foulant or which upstream stage is responsible, so cleaning chemistry and pre-treatment tuning are chosen by rule of thumb and the only identification…
+
+Lineage: H3 proposed · H4 proposed · H5 proposed
 
 ## Assumptions — top 3 of 10 by the declared ranking
 
