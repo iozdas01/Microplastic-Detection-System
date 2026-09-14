@@ -4,16 +4,16 @@
 -->
 ---
 idea: industrial-process-data-infrastructure
-generated: 2026-09-10T04:03Z
+generated: 2026-09-14T02:56Z
 active_hunch: H1
 active_assumption: H1A2
 sources:
   belief: 6093ca2c2aa3
   lineage: cc8180212a4d
-  graph: 8849eebfd00a
+  graph: cbf4d35b37df
   evidence: absent
   offerings: absent
-  contacts: absent
+  contacts: 9fddf894de87
 ---
 
 # industrial-process-data-infrastructure — session brief
@@ -48,7 +48,11 @@ _No evidence ledger yet._
 
 ## Outreach
 
-_No contacts yet._
+**60 targeted** · 0 contacted · 0 replied · 0 call-progressed · 0 scheduled
+
+Reply rate None% of contacted · reply→call None%
+
+By assumption: H1A2 0/0 replied
 
 ## What already exists for this idea
 
@@ -62,7 +66,12 @@ _Generated from the folder. Check here before creating a new artifact — if a f
 | `reports/01-ideation/hunch-lineage.md` | The hunch lineage — every hunch ever held under the belief, its status, and which one is active. |
 | `reports/02-assumptions/graph.md` | The assumption DAG for this idea — what must be true, ranked, each with the cheapest test that would settle it. Holds the active hunch's nodes plus a… |
 | `reports/outreach/companies.md` | The company registry — one entry per organisation on the demand or supply side of contaminant detection in industrial water, what it actually does, a… |
+| `reports/outreach/contacts.md` | The contact ledger — one card per person targeted, invited or interviewed for this idea, with the live-profile read that qualified them and the state… |
+| `reports/outreach/process-map.md` | The process map — one entry per stage of textile manufacturing from raw fibre to finished T-shirt, whether the stage touches water, how much fibre it… |
 | `reports/outreach/research-map.md` | The research map — one row per paper or group on contaminant detection in water, classified by what its method actually did, so the crowded and empty… |
+| `reports/outreach/results-H1A2.md` | Outreach results — H1A2 · industrial-process-data-infrastructure |
+| `reports/outreach/target-list-audit-2026-09-13.md` | Target list audit — 2026-09-13 |
+| `reports/outreach/technology-map.md` | The technology map — one entry per way of detecting microplastics or microfibres in water (what it physically measures, how small it goes, how far fr… |
 | `reports/pages/pages.yaml` | What each page in this folder is, and whether it still holds. |
 | `reports/pages/startup-map.html` | generated — rebuild it, never edit it |
 
@@ -73,5 +82,6 @@ _Generated from the folder. Check here before creating a new artifact — if a f
 | belief / intake | `input-context/belief.md` |
 | hunch work | `reports/01-ideation/hunch-lineage.md` |
 | assumption work | `reports/02-assumptions/graph.md` |
+| outreach | `reports/outreach/contacts.md` |
 
 Dashboard: `python3 scripts/build_control_room.py`

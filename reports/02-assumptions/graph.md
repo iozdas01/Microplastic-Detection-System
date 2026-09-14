@@ -4,7 +4,7 @@ idea: industrial-process-data-infrastructure
 hunch_id: H1
 belief_level_prefix: H0
 belief_file: input-context/belief.md
-last_updated: 2026-09-09
+last_updated: 2026-09-13
 active_assumption: H1A2
 ---
 
@@ -120,7 +120,10 @@ assumptions:
     domain_data_sources: []
     icp_valid_titles: [Plant Manager, Production Manager, Dyehouse Manager, Head of Wet Processing,
                        Quality Manager, Compliance Manager, Sustainability Manager, Technical Director,
-                       Environmental Manager, Owner, General Manager]
+                       Environmental Manager, Owner, General Manager,
+                       Process Engineer, Process Manager, Systems Engineer]
+    # Process Engineer / Process Manager / Systems Engineer added 2026-09-13 at the founder's
+    # instruction; valid only inside a wet-processing manufacturer (tier textile_mill).
     icp_out_of_scope: ["garment assembly only (no wet processing)",
                        "sensor or instrumentation vendors",
                        "retailers with no manufacturing"]
