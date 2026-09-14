@@ -19,17 +19,36 @@ _Channels are counted separately._
 |---|---|---|---|
 | C12 | Ted Ellington | pending | — |
 | C25 | Shridhar H T | pending | — |
+| C1 | Caner Gökçek | invited | — |
+| C11 | Öner Gündüz | invited | — |
 | C14 | Yalçın Çelik | invited | — |
 | C16 | Mehmet Adıyaman | invited | — |
+| C20 | Hüseyin Çınar | invited | — |
+| C21 | Yasemin Mecit Akdaş | invited | — |
 | C22 | Erkan Ekici | invited | — |
 | C24 | B. Hande Tezer | invited | — |
+| C28 | Rohit K. | invited | — |
+| C29 | Calvin Huelsman | invited | — |
 | C31 | Okan Çakıcı | invited | — |
+| C32 | İrem Terzi | invited | — |
+| C33 | Sercan Yaz | invited | — |
+| C35 | Hüseyin Özdilek Körmen | invited | — |
 | C36 | Murat İ. | invited | — |
 | C41 | Didem Civancik-Uslu | invited | — |
+| C42 | Tuğba Erdem Yakut | invited | — |
 | C43 | Chris Chen | invited | — |
+| C45 | Nicholas Filippone | invited | — |
 | C46 | Andrea Martinetti | invited | — |
+| C47 | Margarida Marques | invited | — |
+| C49 | Luciano Bragança | invited | — |
+| C50 | Paola Polinelli | invited | — |
+| C51 | Emanuele Arrigoni | invited | — |
+| C52 | Giacomo Speroni | invited | — |
+| C53 | Mauro Franz | invited | — |
 | C54 | Moshiur Rahman | invited | — |
 | C56 | Engr. Abdul Aziz | invited | — |
+| C58 | Paulo Lopes | invited | — |
+| C60 | Aman Ullah | invited | — |
 | C62 | Eray Karaduman | invited | — |
 | C63 | Gareth Jones | invited | — |
 | C64 | Marlon Suazo | invited | — |
@@ -45,46 +64,27 @@ _Channels are counted separately._
 | C74 | Muhammad Omer Ahmed | invited | — |
 | C75 | Satish Kejriwal | invited | — |
 | C76 | Jonathan Whitehead | invited | — |
+| C10 | Bekir Boyacı | accepted | — |
 | C15 | Yasin Taştekin | accepted | — |
+| C17 | Ersen Ş. | accepted | — |
 | C18 | Ahmet Kaleli | accepted | — |
 | C19 | Yunus Öz | accepted | — |
 | C2 | Ali Kemal Kul | accepted | — |
+| C23 | Rafet Çelebi | accepted | — |
 | C3 | Veysel Özgür | accepted | — |
+| C30 | Önder Ertürk | accepted | — |
+| C37 | Erdal Gülcan | accepted | — |
+| C38 | Murat Gülay | accepted | — |
+| C4 | Rabia Akkurt | accepted | — |
 | C40 | Erdogan Sekerci | accepted | — |
 | C44 | Ronit Basu | accepted | — |
 | C48 | Ayesha Navaid Anwar | accepted | — |
+| C5 | Mustafa Salih | accepted | — |
 | C55 | Gulfam S. | accepted | — |
+| C57 | Nuno Macieira | accepted | — |
+| C59 | Faizan Pasha | accepted | — |
 | C6 | Halil Kutluğ Kabahasanoğlu | accepted | — |
 | C7 | Murat Terlemez | accepted | — |
-| C1 | Caner Gökçek | held | — |
-| C10 | Bekir Boyacı | held | — |
-| C11 | Öner Gündüz | held | — |
-| C17 | Ersen Ş. | held | — |
-| C20 | Hüseyin Çınar | held | — |
-| C21 | Yasemin Mecit Akdaş | held | — |
-| C23 | Rafet Çelebi | held | — |
-| C28 | Rohit K. | held | — |
-| C29 | Calvin Huelsman | held | — |
-| C30 | Önder Ertürk | held | — |
-| C32 | İrem Terzi | held | — |
-| C33 | Sercan Yaz | held | — |
-| C35 | Hüseyin Özdilek Körmen | held | — |
-| C37 | Erdal Gülcan | held | — |
-| C38 | Murat Gülay | held | — |
-| C4 | Rabia Akkurt | held | — |
-| C42 | Tuğba Erdem Yakut | held | — |
-| C45 | Nicholas Filippone | held | — |
-| C47 | Margarida Marques | held | — |
-| C49 | Luciano Bragança | held | — |
-| C5 | Mustafa Salih | held | — |
-| C50 | Paola Polinelli | held | — |
-| C51 | Emanuele Arrigoni | held | — |
-| C52 | Giacomo Speroni | held | — |
-| C53 | Mauro Franz | held | — |
-| C57 | Nuno Macieira | held | — |
-| C58 | Paulo Lopes | held | — |
-| C59 | Faizan Pasha | held | — |
-| C60 | Aman Ullah | held | — |
 | C13 | Sedat Çinici | off_scope | — |
 | C26 | Büşra Suiçmez | off_scope | — |
 | C27 | Nastassia Ramazankhani | off_scope | — |

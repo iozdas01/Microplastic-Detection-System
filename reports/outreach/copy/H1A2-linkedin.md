@@ -23,7 +23,7 @@ Every contact here is a budget holder (founder decision 2026-09-14), so the call
 carries H1A3 and H1A6: who paid for the last answer, and whether they would sign a paid
 pilot at a stated number. No money question in Msg 1 or 2 (LR-B11).
 
-## C59 — [REMOVED 2026-09-14 — title outside the budget-holder ICP] Faizan Pasha
+## C59 — [SUPERSEDED 2026-09-14] Faizan Pasha (earlier draft)
 
 ### Msg 1 — DRAFTED 2026-09-14
 
@@ -40,7 +40,7 @@ pilot at a stated number. No money question in Msg 1 or 2 (LR-B11).
 
 Rule check: 469 chars, violations none. Inbox (LR-B25): first-name/company search on Izgin's account, no thread. Status at draft time: accepted 2026-09-14.
 
-## C30 — [REMOVED 2026-09-14 — title outside the budget-holder ICP] Önder Ertürk
+## C30 — [SUPERSEDED 2026-09-14] Önder Ertürk (earlier draft)
 
 ### Msg 1 — DRAFTED 2026-09-14
 
@@ -58,7 +58,7 @@ Rule check: 469 chars, violations none. Inbox (LR-B25): first-name/company searc
 
 Rule check: 453 chars, violations none. Inbox (LR-B25): first-name/company search on Izgin's account, no thread. Status at draft time: accepted 2026-09-14.
 
-## C38 — [REMOVED 2026-09-14 — profile not in English, LR-B31a] Murat Gülay
+## C38 — [SUPERSEDED 2026-09-14] Murat Gülay (earlier draft)
 
 ### Msg 1 — DRAFTED 2026-09-14
 
@@ -127,7 +127,7 @@ Rule check: 348 chars, violations none. Inbox (LR-B25): first-name/company searc
 
 Rule check: 351 chars, violations none. Inbox (LR-B25): first-name/company search on Izgin's account, no thread. Status at draft time: accepted 2026-09-14.
 
-## C5 — [REMOVED 2026-09-14 — profile not in English, LR-B31a] Mustafa Salih
+## C5 — [SUPERSEDED 2026-09-14] Mustafa Salih (earlier draft)
 
 ### Msg 1 — DRAFTED 2026-09-14
 
@@ -160,7 +160,7 @@ Rule check: 407 chars, violations none. Inbox (LR-B25): first-name/company searc
 
 Rule check: 323 chars, violations none. Inbox (LR-B25): first-name/company search on Izgin's account, no thread. Status at draft time: accepted 2026-09-14.
 
-## C37 — [REMOVED 2026-09-14 — profile not in English, LR-B31a] Erdal Gülcan
+## C37 — [SUPERSEDED 2026-09-14] Erdal Gülcan (earlier draft)
 
 ### Msg 1 — DRAFTED 2026-09-14
 
@@ -178,7 +178,7 @@ Rule check: 323 chars, violations none. Inbox (LR-B25): first-name/company searc
 
 Rule check: 483 chars, violations none. Inbox (LR-B25): first-name/company search on Izgin's account, no thread. Status at draft time: accepted 2026-09-14.
 
-## C57 — [REMOVED 2026-09-14 — profile not in English, LR-B31a] Nuno Macieira
+## C57 — [SUPERSEDED 2026-09-14] Nuno Macieira (earlier draft)
 
 ### Msg 1 — DRAFTED 2026-09-14
 
@@ -312,3 +312,170 @@ Rule check: 287 chars, violations none. Status at draft time: accepted 2026-09-1
 | "a decade on its wash floor" | Experience → 'Baykan Denim / 12 yrs 2 mos', 'Yıkama Müdür Yardımcısı / 2016-22' |
 
 Rule check: 302 chars, violations none. Status at draft time: accepted 2026-09-14.
+
+## C59 — Faizan Pasha
+
+### Msg 1 — DRAFTED 2026-09-14 (LR-B33; founder released)
+
+**Primary (356 chars, English, close_variant soft_ask, copy_variant build_short, segment: wet-processing mill):**
+
+> Faizan hi! Thanks for connecting.
+>
+> My co-founder and I are building a microplastic detection system for textile wet processing. You run denim washing and shade grading at Artistic Milliners and at Soorty monitored wash results against client specifications, we would love to learn from your experience. Would you be open to some questions for our research?
+
+| Claim in message | Live-snapshot source ({today}, details/experience) |
+|---|---|
+| "run denim washing and shade grading at Artistic Milliners" | Experience → 'Manager Denim Washing & Shade Grading / Artistic Milliners / Jan 2025 - Present' |
+| "at Soorty monitored wash results against client specifications" | Experience → Soorty: 'Monitor wash results and ensure they meet client specifications' |
+
+Rule check: 356 chars, violations none. Status at draft time: accepted (released 2026-09-14).
+
+## C30 — Önder Ertürk
+
+### Msg 1 — DRAFTED 2026-09-14 (LR-B33; founder released)
+
+**Primary (337 chars, English, close_variant soft_ask, copy_variant build_short, segment: wet-processing mill):**
+
+> Önder hi! Thanks for connecting.
+>
+> My co-founder and I are building a microplastic detection system for textile wet processing. You prepare and follow the Inditex, LCW and H&M customer audits and the environmental inspections at Sharabati, we would love to learn from your experience. Would you be open to some questions for our research?
+
+| Claim in message | Live-snapshot source ({today}, details/experience) |
+|---|---|
+| "prepare and follow the Inditex, LCW and H&M customer audits" | Experience → 'Preparation for Customer Audits and follow-up of audits (Indıtex, LCW, H&M, Bestseller ..etc)' |
+| "environmental inspections at Sharabati" | Experience → 'Environmental Legislation and follow-up of environmental inspections' / Sharabati |
+
+Rule check: 337 chars, violations none. Status at draft time: accepted (released 2026-09-14).
+
+## C38 — Murat Gülay
+
+### Msg 1 — DRAFTED 2026-09-14 (LR-B33; founder released)
+
+**Primary (323 chars, English, close_variant soft_ask, copy_variant build_short, segment: wet-processing mill):**
+
+> Murat hi! Thanks for connecting.
+>
+> My co-founder and I are building a microplastic detection system for textile wet processing. You oversee the knitting, weaving, dyeing and printing processes at RB Karesi with a team of 200, we would love to learn from your experience. Would you be open to some questions for our research?
+
+| Claim in message | Live-snapshot source ({today}, details/experience) |
+|---|---|
+| "oversee the knitting, weaving, dyeing and printing processes at RB Karesi" | Experience → 'örgü, dokuma,boyama ve baskı süreçlerini denetleyerek' / rb karesi tekstil |
+| "team of 200" | Experience → '200 kişilik bir ekip ile birlikte' |
+
+Rule check: 323 chars, violations none. Status at draft time: accepted (released 2026-09-14).
+
+## C5 — Mustafa Salih
+
+### Msg 1 — DRAFTED 2026-09-14 (LR-B33; founder released)
+
+**Primary (292 chars, English, close_variant soft_ask, copy_variant build_short, segment: wet-processing mill):**
+
+> Mustafa hi! Thanks for connecting.
+>
+> My co-founder and I are building a microplastic detection system for textile wet processing. You have run production at Yalçın Boya Tekstil for eleven years, we would love to learn from your experience. Would you be open to some questions for our research?
+
+| Claim in message | Live-snapshot source ({today}, details/experience) |
+|---|---|
+| "run production at Yalçın Boya Tekstil for eleven years" | Experience → 'Üretim Müdürü / Yalçın Boya Tekstil / Aug 2015 - Present · 11 yrs' |
+
+Rule check: 292 chars, violations none. Status at draft time: accepted (released 2026-09-14).
+
+## C37 — Erdal Gülcan
+
+### Msg 1 — DRAFTED 2026-09-14 (LR-B33; founder released)
+
+**Primary (368 chars, English, close_variant soft_ask, copy_variant build_short, segment: wet-processing mill):**
+
+> Erdal hi! Thanks for connecting.
+>
+> My co-founder and I are building a microplastic detection system for textile wet processing. You run quality control at Işıksoy Tekstil after heading its R&D centre and, before that, the dyehouse and quality control at Sönmez Filament, we would love to learn from your experience. Would you be open to some questions for our research?
+
+| Claim in message | Live-snapshot source ({today}, details/experience) |
+|---|---|
+| "run quality control at Işıksoy Tekstil" | Experience → 'Quality Control Supervisor / IŞIKSOY TEKSTİL / Nov 2019 - Present' |
+| "heading its R&D centre" | Experience → 'Ar-Ge Merkezi Müdürü / 2017-19' |
+| "dyehouse and quality control at Sönmez Filament" | Experience → 'Boyahane&Kalite Kontrol Şefi / Sönmez Filament / 2005-08' |
+
+Rule check: 368 chars, violations none. Status at draft time: accepted (released 2026-09-14).
+
+## C57 — Nuno Macieira
+
+### Msg 1 — DRAFTED 2026-09-14 (LR-B33; founder released)
+
+**Primary (319 chars, English, close_variant soft_ask, copy_variant build_short, segment: wet-processing mill):**
+
+> Nuno hi! Thanks for connecting.
+>
+> My co-founder and I are building a microplastic detection system for textile wet processing. You run the dyeing side at Lavfafe's laundry after twenty years developing samples at Pizarro, we would love to learn from your experience. Would you be open to some questions for our research?
+
+| Claim in message | Live-snapshot source ({today}, details/experience) |
+|---|---|
+| "run the dyeing side at Lavfafe's laundry" | Experience → 'Técnico Tinturaria / Lavandaria Tinturaria' and 'Dey Specialist / Lavfafe / Jun 2023 - Present' |
+| "twenty years developing samples at Pizarro" | Experience → 'Pizarro S.A. / 21 yrs 10 mos / Amostras Desenvolvimentos' |
+
+Rule check: 319 chars, violations none. Status at draft time: accepted (released 2026-09-14).
+
+## C10 — Bekir Boyacı
+
+### Msg 1 — DRAFTED 2026-09-14 (LR-B33; founder released)
+
+**Primary (286 chars, English, close_variant soft_ask, copy_variant build_short, segment: wet-processing mill):**
+
+> Bekir hi! Thanks for connecting.
+>
+> My co-founder and I are building a microplastic detection system for textile wet processing. You have run the R&D centre at Sun Tekstil for twelve years, we would love to learn from your experience. Would you be open to some questions for our research?
+
+| Claim in message | Live-snapshot source ({today}, details/experience) |
+|---|---|
+| "run the R&D centre at Sun Tekstil for twelve years" | Experience → 'R&D Center Manager / Sun Tekstil / Oct 2014 - Present · 12 yrs' |
+
+Rule check: 286 chars, violations none. Status at draft time: accepted (released 2026-09-14).
+
+## C4 — Rabia Akkurt
+
+### Msg 1 — DRAFTED 2026-09-14 (LR-B33; founder released)
+
+**Primary (277 chars, English, close_variant soft_ask, copy_variant build_short, segment: wet-processing mill):**
+
+> Rabia hi! Thanks for connecting.
+>
+> My co-founder and I are building a microplastic detection system for textile wet processing. You run the dyehouse floor at HMK Tekstil in Bursa, we would love to learn from your experience. Would you be open to some questions for our research?
+
+| Claim in message | Live-snapshot source ({today}, details/experience) |
+|---|---|
+| "run the dyehouse floor at HMK Tekstil in Bursa" | Experience → 'BOYAHANE ŞEFİ / HMK Tekstil / Sep 2022 - Present / Bursa' |
+
+Rule check: 277 chars, violations none. Status at draft time: accepted (released 2026-09-14).
+
+## C17 — Ersen Ş.
+
+### Msg 1 — DRAFTED 2026-09-14 (LR-B33; founder released)
+
+**Primary (322 chars, English, close_variant soft_ask, copy_variant build_short, segment: wet-processing mill):**
+
+> Ersen hi! Thanks for connecting.
+>
+> My co-founder and I are building a microplastic detection system for textile wet processing. You lead wash product development at Denimvillage after four years running R&D at Vişne Tekstil, we would love to learn from your experience. Would you be open to some questions for our research?
+
+| Claim in message | Live-snapshot source ({today}, details/experience) |
+|---|---|
+| "lead wash product development at Denimvillage" | Experience → 'Kıdemli Ürge Birim Yöneticisi / Denimvillage / Suglobal / Mar 2024 - Present'; headline 'Denim Washing - Ürge' |
+| "four years running R&D at Vişne Tekstil" | Experience → 'R&D Manager / Vişne Tekstil / Oct 2020 - Mar 2024' |
+
+Rule check: 322 chars, violations none. Status at draft time: accepted (released 2026-09-14).
+
+## C23 — Rafet Çelebi
+
+### Msg 1 — DRAFTED 2026-09-14 (LR-B33; founder released)
+
+**Primary (280 chars, English, close_variant soft_ask, copy_variant build_short, segment: wet-processing mill):**
+
+> Rafet hi! Thanks for connecting.
+>
+> My co-founder and I are building a microplastic detection system for textile wet processing. You run fabric dyeing and finishing at Teksel Tekstil, we would love to learn from your experience. Would you be open to some questions for our research?
+
+| Claim in message | Live-snapshot source ({today}, details/experience) |
+|---|---|
+| "run fabric dyeing and finishing at Teksel Tekstil" | Experience → 'Kumas boyama Apre Şefi / Teksel Tekstil A.Ş.' |
+
+Rule check: 280 chars, violations none. Status at draft time: accepted (released 2026-09-14).
