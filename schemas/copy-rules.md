@@ -203,6 +203,29 @@ on the same research; the message is still from one person.
 Applies to every message from either account. `linkedin_account` already decides whose anchor is
 used (LR-B23); this rule decides the voice, and the voice is always singular.
 
+**LR-B27 AMENDED 2026-09-14 (founder's own copy): "my co-founder and I" is allowed.** The
+2026-08-10 objection was to an unidentified second person. The co-founder is now a named
+founder in `founder.md`, she joins every thread (LR-B31), and the founder's own draft opened
+"Me and my co-founder are currently researching". Use "My co-founder and I"; never a name the
+recipient cannot check.
+
+**LR-B32 — Msg 1 runs an A/B test on disclosure (founder decision, 2026-09-14).** Two arms,
+recorded on the contact as `copy_variant` at draft time and alternated within every batch,
+evenly inside each tier:
+
+- `build_disclosure`: the message opens with what is being built, in one plain sentence
+  ("My co-founder and I are building a microplastic detection system for textile wet
+  processing."), then the research frame, the grounded clause and the permission ask. The
+  build sentence IS the anchor in this arm, so the Cambridge clause is dropped to stay under
+  the cap (LR-B17: compress the anchor, never the frame). The claim must survive a profile
+  click (LR-B14): the sending founder's headline must read as a founder building in this
+  space.
+- `research_only`: the existing LR-B18 shape, with the sender's credential anchor.
+
+Both arms open "{First name} hi! Thanks for connecting." for an accepted connection. Report
+reply rates per arm in `results-{A_ID}.md`; below five replies per arm say the comparison is
+not yet interpretable, the same threshold as LR-B15.
+
 Why the permission ask rather than the question, given it carries no payload: the ask is
 small enough to answer in one word, and a yes converts a cold contact into an open thread
 where the real question arrives as a reply rather than as an ambush. The campaign's measured

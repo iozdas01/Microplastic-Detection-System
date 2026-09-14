@@ -194,7 +194,7 @@ active_last_30d: unknown
 open_to_work: false
 outreach_status: accepted
 found_date: 2026-09-13
-notes: "[profile read 2026-09-13] details/experience: Laundry & Garment Dye Manager CRS Denim Egypt Oct 2025-present, R&D Manager there since Jul 2022; R&D Manager Cross Jeans 2018-22; production manager Taypa 2016-18; laundry & garment dye manager Eroğlu Giyim 2013-15 and Cross Jeans 2005-13. Passes. [invited 2026-09-13] bare invite via custom-invite modal, name confirmed Halil Kutluğ Kabahasanoğlu, sent by Claude at founder's instruction. [accepted 2026-09-14] connection accepted (seen in Connections list, recently added). [msg1 drafted 2026-09-14] Msg 1 permission ask drafted from a fresh details/experience snapshot; inbox searched, no prior thread. Copy in copy/H1A2-linkedin.md."
+notes: "[profile read 2026-09-13] details/experience: Laundry & Garment Dye Manager CRS Denim Egypt Oct 2025-present, R&D Manager there since Jul 2022; R&D Manager Cross Jeans 2018-22; production manager Taypa 2016-18; laundry & garment dye manager Eroğlu Giyim 2013-15 and Cross Jeans 2005-13. Passes. [invited 2026-09-13] bare invite via custom-invite modal, name confirmed Halil Kutluğ Kabahasanoğlu, sent by Claude at founder's instruction. [accepted 2026-09-14] connection accepted (seen in Connections list, recently added). [msg1 drafted 2026-09-14] Msg 1 permission ask drafted from a fresh details/experience snapshot; inbox searched, no prior thread. Copy in copy/H1A2-linkedin.md. [msg1 redrafted 2026-09-14] A/B arm research_only per LR-B32; opener 'Thanks for connecting', co-founder named per LR-B27 amendment."
 
 ## Murat Terlemez
 
@@ -1214,7 +1214,7 @@ active_last_30d: unknown
 open_to_work: false
 outreach_status: accepted
 found_date: 2026-09-13
-notes: "[profile read 2026-09-13] details/experience: Associate Director Social Compliance, SHEIN, Sep 2024-present, Istanbul; H&M Group 2017-24, Sustainability Social Development Specialist 2021-24 (industrial relations programme, Turkey national monitoring committee). Passes (tier brand); his lens is social compliance, so ask only about the request channel, not the chemistry. [invited 2026-09-13] bare invite via custom-invite modal, name confirmed Erdogan Sekerci, sent by Claude at founder's instruction. [accepted 2026-09-14] connection accepted (seen in Connections list, recently added). [msg1 drafted 2026-09-14] Msg 1 permission ask drafted from a fresh details/experience snapshot; inbox searched, no prior thread. Copy in copy/H1A2-linkedin.md."
+notes: "[profile read 2026-09-13] details/experience: Associate Director Social Compliance, SHEIN, Sep 2024-present, Istanbul; H&M Group 2017-24, Sustainability Social Development Specialist 2021-24 (industrial relations programme, Turkey national monitoring committee). Passes (tier brand); his lens is social compliance, so ask only about the request channel, not the chemistry. [invited 2026-09-13] bare invite via custom-invite modal, name confirmed Erdogan Sekerci, sent by Claude at founder's instruction. [accepted 2026-09-14] connection accepted (seen in Connections list, recently added). [msg1 drafted 2026-09-14] Msg 1 permission ask drafted from a fresh details/experience snapshot; inbox searched, no prior thread. Copy in copy/H1A2-linkedin.md. [msg1 redrafted 2026-09-14] A/B arm research_only per LR-B32; opener 'Thanks for connecting', co-founder named per LR-B27 amendment."
 
 ## Didem Civancik-Uslu
 
@@ -1454,7 +1454,7 @@ active_last_30d: unknown
 open_to_work: false
 outreach_status: accepted
 found_date: 2026-09-13
-notes: "[profile read 2026-09-13] details/experience: Marc O'Polo since 2022, Manager Chemical and Environmental Management Oct 2024-present; role text: supplier wastewater and chemical performance, onboarding, compliance monitoring, on-site assessments aligned with Higg FEM and the ZDHC Roadmap. Passes (tier brand). 3rd degree. [invited 2026-09-13] bare invite via custom-invite modal, name confirmed Ayesha Navaid Anwar, sent by Claude at founder's instruction. [accepted 2026-09-14] connection accepted (seen in Connections list, recently added). [msg1 drafted 2026-09-14] Msg 1 permission ask drafted from a fresh details/experience snapshot; inbox searched, no prior thread. Copy in copy/H1A2-linkedin.md."
+notes: "[profile read 2026-09-13] details/experience: Marc O'Polo since 2022, Manager Chemical and Environmental Management Oct 2024-present; role text: supplier wastewater and chemical performance, onboarding, compliance monitoring, on-site assessments aligned with Higg FEM and the ZDHC Roadmap. Passes (tier brand). 3rd degree. [invited 2026-09-13] bare invite via custom-invite modal, name confirmed Ayesha Navaid Anwar, sent by Claude at founder's instruction. [accepted 2026-09-14] connection accepted (seen in Connections list, recently added). [msg1 drafted 2026-09-14] Msg 1 permission ask drafted from a fresh details/experience snapshot; inbox searched, no prior thread. Copy in copy/H1A2-linkedin.md. [msg1 redrafted 2026-09-14] A/B arm build_disclosure per LR-B32; opener 'Thanks for connecting', co-founder named per LR-B27 amendment."
 
 ## Luciano Bragança
 
@@ -1664,7 +1664,7 @@ active_last_30d: unknown
 open_to_work: false
 outreach_status: accepted
 found_date: 2026-09-13
-notes: "[profile read 2026-09-13] details/experience: Washing GM and GM R&D Lucky Textile Mills Mar 2018-present; GM Siddiqsons Group 2014-18; GM Jamuna Group Dhaka 2012-14; laundry manager Soorty before. Passes. 3rd degree. [invited 2026-09-13] bare invite via custom-invite modal, name confirmed Gulfam S., sent by Claude at founder's instruction. [accepted 2026-09-14] connection accepted (seen in Connections list, recently added). [msg1 drafted 2026-09-14] Msg 1 permission ask drafted from a fresh details/experience snapshot; inbox searched, no prior thread. Copy in copy/H1A2-linkedin.md."
+notes: "[profile read 2026-09-13] details/experience: Washing GM and GM R&D Lucky Textile Mills Mar 2018-present; GM Siddiqsons Group 2014-18; GM Jamuna Group Dhaka 2012-14; laundry manager Soorty before. Passes. 3rd degree. [invited 2026-09-13] bare invite via custom-invite modal, name confirmed Gulfam S., sent by Claude at founder's instruction. [accepted 2026-09-14] connection accepted (seen in Connections list, recently added). [msg1 drafted 2026-09-14] Msg 1 permission ask drafted from a fresh details/experience snapshot; inbox searched, no prior thread. Copy in copy/H1A2-linkedin.md. [msg1 redrafted 2026-09-14] A/B arm build_disclosure per LR-B32; opener 'Thanks for connecting', co-founder named per LR-B27 amendment."
 
 ## Engr. Abdul Aziz
 

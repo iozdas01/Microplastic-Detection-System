@@ -125,6 +125,13 @@ close_variant:                        # direct_question | soft_ask  — set at D
                                       # to senior contacts and direct_question only to ICs, the two variables
                                       # are confounded and neither reply rate means anything on its own.
 
+copy_variant:                         # build_disclosure | research_only — the Msg 1 A/B arm, set at
+                                      # DRAFT time (founder decision 2026-09-14). build_disclosure opens
+                                      # by saying what the founders are building; research_only carries
+                                      # the research frame alone. Alternate within a batch and keep the
+                                      # split even inside each tier, or the comparison is confounded.
+                                      # startup-outreach-check buckets reply rates on this field too.
+
 relationship_type:                    # optional routing/classification label, e.g.
                                       # operator_buyer | data_supplier_practitioner |
                                       # peer_founder_target | peer_founder_competitor |
