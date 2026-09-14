@@ -2,7 +2,7 @@
 purpose: The technology map — one entry per way of detecting microplastics or microfibres in water (what it physically measures, how small it goes, how far from the process it has actually run, who sells it) plus one entry per standard or rule that prescribes how the number must be reported.
 idea: Microplastic Detection System
 schema_version: 1
-last_updated: 2026-09-13
+last_updated: 2026-09-14
 # ─── Map axes (proposed 2026-09-10, awaiting founder confirmation) ───────────────
 # The question this map answers is "how could anyone measure this, and how close to a
 # running pipe has each way actually got?" Every value records what has been DEMONSTRATED
@@ -1752,6 +1752,24 @@ unit: n/a
 textile_effluent_relevance: Shows the US consumer-side rule is not in place; other US state and federal microfibre bills were not verifiable this session.
 url: https://leginfo.legislature.ca.gov/faces/billStatusClient.xhtml?bill_id=202320240AB1628
 first_added: 2026-09-10
+
+## California DTSC — microplastics on the Safer Consumer Products Candidate Chemicals List
+
+id: T52
+kind: standard
+body: California Department of Toxic Substances Control (Safer Consumer Products programme)
+status: final rule 2026-06-18 (regulation R-2023-05R); effective 2026-10-01; no Priority Product named yet
+prescribes: Lists "microplastics", defined as solid polymeric materials under 5 mm in their longest dimension whether manufactured at that size or created by fragmentation, as a Candidate Chemical. Listing alone imposes no duty on any product maker; it lets DTSC propose product-chemical pairs as Priority Products through separate rulemaking (45-day notice, peer review), after which makers must notify DTSC within 60 days and run an Alternatives Analysis leading to reformulation, disclosure, restriction or redesign. The 2024-2026 Priority Product Work Plan names "textiles and apparel (including synthetic fabrics and performance wear)" among the categories under preliminary research. One automatic knock-on exists today: AB 1200 requires cookware makers to disclose any Candidate Chemical in handles or food-contact surfaces, so cookware disclosures are due from 2026-10-01.
+size_classes: under 5 mm, no lower bound stated
+unit: none; no measurement method specified
+textile_effluent_relevance: Not a regulation on anyone yet, and it regulates consumer products sold in California, not mills or their water. If DTSC later names synthetic apparel a Priority Product, the regulated entity is the brand or manufacturer selling in California, and the obligation is an Alternatives Analysis on the garment, not a measurement of mill effluent. It is a "why now" signal for brands, not a mill obligation; earliest plausible product designation is a multi-year rulemaking.
+url: https://www.bdlaw.com/publications/california-lists-microplastics-under-safer-consumer-products-program/
+sources:
+  - https://ceqanet.lci.ca.gov/2026061032
+  - https://www.crowell.com/en/insights/client-alerts/warning-californias-listing-of-microplastics-as-a-candidate-chemical-may-result-in-unexpected-and-imminent-compliance-obligations-under-ab-1200-california-safer-food-packaging-and-cookware-act
+  - https://www.hklaw.com/en/insights/publications/2025/07/californias-microplastics-proposal-impacts-on-the-consumer-products
+  - https://dtsc.ca.gov/wp-content/uploads/sites/31/2024/10/2024-2026-Priority-Product-Work-Plan.pdf
+first_added: 2026-09-14
 
 ## Textile-mill effluent measured so far
 
