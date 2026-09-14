@@ -5,7 +5,7 @@ last_updated: 2026-09-14
 totals:
   targeted: 61
   invited: 51
-  accepted: 6
+  accepted: 11
   scheduled: 0
   done: 0
   no_reply: 0
@@ -72,9 +72,9 @@ degree: 2nd
 mutuals_count: 
 active_last_30d: unknown
 open_to_work: false
-outreach_status: held
+outreach_status: accepted
 found_date: 2026-09-13
-notes: "[profile read 2026-09-13] details/experience: Fabrika Müdürü Mahmutoğlu Tekstil Feb 2025-present; Fabrika Müdürü Pantone Boya Tekstil (Çorlu dyehouse) Jul 2024-Jan 2025; project manager Örkum Tekstil 2023-24; İşletme Müdürü Akdem Tekstil, Bursa, 2003-2023 (20 yrs). Passes. [invited 2026-09-13] bare invite, modal name confirmed Ali Kemal KUL, sent by Claude at founder's instruction. [language 2026-09-14] Profile text is Turkish; invite already out. Per LR-B31a: if they accept, no Msg 1 unless the founder releases them by name. [accepted 2026-09-14] 1st degree now. [held 2026-09-14] Budget holder, but profile not in English (LR-B31a): no Msg 1 unless the founder releases by name."
+notes: "[profile read 2026-09-13] details/experience: Fabrika Müdürü Mahmutoğlu Tekstil Feb 2025-present; Fabrika Müdürü Pantone Boya Tekstil (Çorlu dyehouse) Jul 2024-Jan 2025; project manager Örkum Tekstil 2023-24; İşletme Müdürü Akdem Tekstil, Bursa, 2003-2023 (20 yrs). Passes. [invited 2026-09-13] bare invite, modal name confirmed Ali Kemal KUL, sent by Claude at founder's instruction. [language 2026-09-14] Profile text is Turkish; invite already out. Per LR-B31a: if they accept, no Msg 1 unless the founder releases them by name. [accepted 2026-09-14] 1st degree now. [held 2026-09-14] Budget holder, but profile not in English (LR-B31a): no Msg 1 unless the founder releases by name. [released 2026-09-14] Founder released this non-English-profile budget holder by name (LR-B31a exception). [msg1 drafted 2026-09-14] LR-B33 shape, English, from a fresh details/experience snapshot."
 
 ## Veysel Özgür
 
@@ -102,9 +102,9 @@ degree: 2nd
 mutuals_count: 
 active_last_30d: unknown
 open_to_work: false
-outreach_status: held
+outreach_status: accepted
 found_date: 2026-09-13
-notes: "[profile read 2026-09-13] details/experience: İşletme Müdürü Denbassan Baskı Boya Sep 2017-present (9 yrs); İşletme Şefi Bez Tekstil 2014-17; textile engineer Anteks 2010-14. Passes. [invited 2026-09-13] bare invite, modal name confirmed Veysel Özgür, sent by Claude at founder's instruction. [language 2026-09-14] Profile text is Turkish; invite already out. Per LR-B31a: if they accept, no Msg 1 unless the founder releases them by name. [accepted 2026-09-14] 1st degree now. [held 2026-09-14] Budget holder, but profile not in English (LR-B31a): no Msg 1 unless the founder releases by name."
+notes: "[profile read 2026-09-13] details/experience: İşletme Müdürü Denbassan Baskı Boya Sep 2017-present (9 yrs); İşletme Şefi Bez Tekstil 2014-17; textile engineer Anteks 2010-14. Passes. [invited 2026-09-13] bare invite, modal name confirmed Veysel Özgür, sent by Claude at founder's instruction. [language 2026-09-14] Profile text is Turkish; invite already out. Per LR-B31a: if they accept, no Msg 1 unless the founder releases them by name. [accepted 2026-09-14] 1st degree now. [held 2026-09-14] Budget holder, but profile not in English (LR-B31a): no Msg 1 unless the founder releases by name. [released 2026-09-14] Founder released this non-English-profile budget holder by name (LR-B31a exception). [msg1 drafted 2026-09-14] LR-B33 shape, English, from a fresh details/experience snapshot."
 
 ## Rabia Akkurt
 
@@ -222,9 +222,9 @@ degree: 2nd
 mutuals_count: 
 active_last_30d: unknown
 open_to_work: false
-outreach_status: held
+outreach_status: accepted
 found_date: 2026-09-13
-notes: "[profile read 2026-09-13] details/experience: Ev Tekstili Genel Müdürü, Yeşim Group, 1993-present. Yeşim runs its own dyeing and finishing. Passes; seniority may lower reply rate. [invited 2026-09-13] bare invite via custom-invite modal, name confirmed Murat TERLEMEZ, sent by Claude at founder's instruction. [language 2026-09-14] Profile text is Turkish; invite already out. Per LR-B31a: if they accept, no Msg 1 unless the founder releases them by name. [accepted 2026-09-14] 1st degree now. [held 2026-09-14] Budget holder, but profile not in English (LR-B31a): no Msg 1 unless the founder releases by name."
+notes: "[profile read 2026-09-13] details/experience: Ev Tekstili Genel Müdürü, Yeşim Group, 1993-present. Yeşim runs its own dyeing and finishing. Passes; seniority may lower reply rate. [invited 2026-09-13] bare invite via custom-invite modal, name confirmed Murat TERLEMEZ, sent by Claude at founder's instruction. [language 2026-09-14] Profile text is Turkish; invite already out. Per LR-B31a: if they accept, no Msg 1 unless the founder releases them by name. [accepted 2026-09-14] 1st degree now. [held 2026-09-14] Budget holder, but profile not in English (LR-B31a): no Msg 1 unless the founder releases by name. [released 2026-09-14] Founder released this non-English-profile budget holder by name (LR-B31a exception). Profile lists English. [msg1 drafted 2026-09-14] LR-B33 shape, English, from a fresh details/experience snapshot."
 
 ## Burç Çetin Tezgel
 
@@ -462,9 +462,9 @@ degree: 2nd
 mutuals_count: 
 active_last_30d: unknown
 open_to_work: false
-outreach_status: held
+outreach_status: accepted
 found_date: 2026-09-13
-notes: "[profile read 2026-09-13] details/experience: Yıkama üretim müdürü Baykan Denim Dec 2021-present; deputy washing manager 2016-22; production planning 2014-17; 12 yrs at Baykan. Passes. [invited 2026-09-13] bare invite via custom-invite modal, name confirmed Yasin TAŞTEKİN, sent by Claude at founder's instruction. [language 2026-09-14] Profile text is Turkish; invite already out. Per LR-B31a: if they accept, no Msg 1 unless the founder releases them by name. [accepted 2026-09-14] 1st degree now. [held 2026-09-14] Budget holder, but profile not in English (LR-B31a): no Msg 1 unless the founder releases by name."
+notes: "[profile read 2026-09-13] details/experience: Yıkama üretim müdürü Baykan Denim Dec 2021-present; deputy washing manager 2016-22; production planning 2014-17; 12 yrs at Baykan. Passes. [invited 2026-09-13] bare invite via custom-invite modal, name confirmed Yasin TAŞTEKİN, sent by Claude at founder's instruction. [language 2026-09-14] Profile text is Turkish; invite already out. Per LR-B31a: if they accept, no Msg 1 unless the founder releases them by name. [accepted 2026-09-14] 1st degree now. [held 2026-09-14] Budget holder, but profile not in English (LR-B31a): no Msg 1 unless the founder releases by name. [released 2026-09-14] Founder released this non-English-profile budget holder by name (LR-B31a exception). [msg1 drafted 2026-09-14] LR-B33 shape, English, from a fresh details/experience snapshot."
 
 ## Mehmet Adıyaman
 
@@ -582,9 +582,9 @@ degree: 2nd
 mutuals_count: 
 active_last_30d: unknown
 open_to_work: false
-outreach_status: held
+outreach_status: accepted
 found_date: 2026-09-13
-notes: "[profile read 2026-09-13] details/experience: Realteks Denim since Mar 2019: production director Jul 2021-present, dye-finishing plant manager 2019-present, production group manager 2019-present; Kimtex 2010-19 (deputy dyehouse manager, plant chief); Rayon Tekstil dyehouse 2008-10. Passes. [invited 2026-09-13] bare invite via custom-invite modal, name confirmed Yunus ÖZ, sent by Claude at founder's instruction. [language 2026-09-14] Profile text is Turkish; invite already out. Per LR-B31a: if they accept, no Msg 1 unless the founder releases them by name. [accepted 2026-09-14] 1st degree now. [held 2026-09-14] Budget holder, but profile not in English (LR-B31a): no Msg 1 unless the founder releases by name."
+notes: "[profile read 2026-09-13] details/experience: Realteks Denim since Mar 2019: production director Jul 2021-present, dye-finishing plant manager 2019-present, production group manager 2019-present; Kimtex 2010-19 (deputy dyehouse manager, plant chief); Rayon Tekstil dyehouse 2008-10. Passes. [invited 2026-09-13] bare invite via custom-invite modal, name confirmed Yunus ÖZ, sent by Claude at founder's instruction. [language 2026-09-14] Profile text is Turkish; invite already out. Per LR-B31a: if they accept, no Msg 1 unless the founder releases them by name. [accepted 2026-09-14] 1st degree now. [held 2026-09-14] Budget holder, but profile not in English (LR-B31a): no Msg 1 unless the founder releases by name. [released 2026-09-14] Founder released this non-English-profile budget holder by name (LR-B31a exception). [msg1 drafted 2026-09-14] LR-B33 shape, English, from a fresh details/experience snapshot."
 
 ## Hüseyin Çınar
 

@@ -228,3 +228,87 @@ Rule check: 334 chars, violations none. Inbox (LR-B25): surname search on Izgin'
 | "years as its regional EHS manager" | Experience → 'EHS Manager- South Asia / Mar 2019 - Aug 2021' and 'EHS Asst Manager; South Asia / 2016-19' |
 
 Rule check: 346 chars, violations none. Inbox (LR-B25): surname search on Izgin's account, no thread. Status at draft time: accepted 2026-09-14.
+
+## C2 — Ali Kemal Kul
+
+### Msg 1 — DRAFTED 2026-09-14 (LR-B33; founder-released non-English profile)
+
+**Primary (341 chars, English, close_variant soft_ask, copy_variant build_short, segment: wet-processing mill):**
+
+> Ali Kemal hi! Thanks for connecting.
+>
+> My co-founder and I are building a microplastic detection system for textile wet processing. You run the Mahmutoğlu Tekstil plant in İnegöl after twenty years running Akdem Tekstil's and a Çorlu dyehouse, we would love to learn from your experience. Would you be open to some questions for our research?
+
+| Claim in message | Live-snapshot source ({today}, details/experience) |
+|---|---|
+| "run the Mahmutoğlu Tekstil plant in İnegöl" | Experience → 'Fabrika Müdürü / MAHMUTOĞLU TEKSTİL / Feb 2025 - Present / İnegöl' |
+| "twenty years running Akdem Tekstil's" | Experience → 'işletme Müdürü / Akdem Tekstil / Dec 2003 - Oct 2023 · 19 yrs 11 mos' (snapshot 2026-09-13) |
+| "a Çorlu dyehouse" | Experience → 'Fabrika Müdürü / Pantone Boya Tekstil / Jul 2024 - Jan 2025 / Çorlu' |
+
+Rule check: 341 chars, violations none. Status at draft time: accepted 2026-09-14.
+
+## C3 — Veysel Özgür
+
+### Msg 1 — DRAFTED 2026-09-14 (LR-B33; founder-released non-English profile)
+
+**Primary (302 chars, English, close_variant soft_ask, copy_variant build_short, segment: wet-processing mill):**
+
+> Veysel hi! Thanks for connecting.
+>
+> My co-founder and I are building a microplastic detection system for textile wet processing. You have run the Denbassan printing and dyeing plant in Denizli since 2017, we would love to learn from your experience. Would you be open to some questions for our research?
+
+| Claim in message | Live-snapshot source ({today}, details/experience) |
+|---|---|
+| "run the Denbassan printing and dyeing plant in Denizli since 2017" | Experience → 'İşletme Müdürü / Denbassan Baskı Boya San. Ltd.Sti. / Sep 2017 - Present / Denizli' |
+
+Rule check: 302 chars, violations none. Status at draft time: accepted 2026-09-14.
+
+## C19 — Yunus Öz
+
+### Msg 1 — DRAFTED 2026-09-14 (LR-B33; founder-released non-English profile)
+
+**Primary (298 chars, English, close_variant soft_ask, copy_variant build_short, segment: wet-processing mill):**
+
+> Yunus hi! Thanks for connecting.
+>
+> My co-founder and I are building a microplastic detection system for textile wet processing. You direct production and run the dye-finishing plant at Realteks Denim, we would love to learn from your experience. Would you be open to some questions for our research?
+
+| Claim in message | Live-snapshot source ({today}, details/experience) |
+|---|---|
+| "direct production" | Experience → 'Üretim Direktörü / Realteks Denim / Jul 2021 - Present' |
+| "run the dye-finishing plant at Realteks Denim" | Experience → 'Boya apre işletme müdürü / Mar 2019 - Present' |
+
+Rule check: 298 chars, violations none. Status at draft time: accepted 2026-09-14.
+
+## C7 — Murat Terlemez
+
+### Msg 1 — DRAFTED 2026-09-14 (LR-B33; founder-released non-English profile)
+
+**Primary (287 chars, English, close_variant soft_ask, copy_variant build_short, segment: wet-processing mill):**
+
+> Murat hi! Thanks for connecting.
+>
+> My co-founder and I are building a microplastic detection system for textile wet processing. You have led Yeşim Group's home textiles business since 1993, we would love to learn from your experience. Would you be open to some questions for our research?
+
+| Claim in message | Live-snapshot source ({today}, details/experience) |
+|---|---|
+| "led Yeşim Group's home textiles business since 1993" | Experience → 'Ev Tekstili Genel Müdürü / Yeşim Group / 1993 – Present' |
+
+Rule check: 287 chars, violations none. Status at draft time: accepted 2026-09-14.
+
+## C15 — Yasin Taştekin
+
+### Msg 1 — DRAFTED 2026-09-14 (LR-B33; founder-released non-English profile)
+
+**Primary (302 chars, English, close_variant soft_ask, copy_variant build_short, segment: wet-processing mill):**
+
+> Yasin hi! Thanks for connecting.
+>
+> My co-founder and I are building a microplastic detection system for textile wet processing. You run washing production at Baykan Denim after a decade on its wash floor, we would love to learn from your experience. Would you be open to some questions for our research?
+
+| Claim in message | Live-snapshot source ({today}, details/experience) |
+|---|---|
+| "run washing production at Baykan Denim" | Experience → 'Yikama üretim müdürü / Baykan Denim / Dec 2021 - Present' |
+| "a decade on its wash floor" | Experience → 'Baykan Denim / 12 yrs 2 mos', 'Yıkama Müdür Yardımcısı / 2016-22' |
+
+Rule check: 302 chars, violations none. Status at draft time: accepted 2026-09-14.

@@ -24,12 +24,12 @@ _Channels are counted separately._
 | C46 | Andrea Martinetti | invited | — |
 | C54 | Moshiur Rahman | invited | — |
 | C56 | Engr. Abdul Aziz | invited | — |
+| C15 | Yasin Taştekin | accepted | — |
 | C18 | Ahmet Kaleli | accepted | — |
+| C19 | Yunus Öz | accepted | — |
+| C2 | Ali Kemal Kul | accepted | — |
+| C3 | Veysel Özgür | accepted | — |
 | C55 | Gulfam S. | accepted | — |
 | C6 | Halil Kutluğ Kabahasanoğlu | accepted | — |
-| C15 | Yasin Taştekin | held | — |
-| C19 | Yunus Öz | held | — |
-| C2 | Ali Kemal Kul | held | — |
-| C3 | Veysel Özgür | held | — |
-| C7 | Murat Terlemez | held | — |
+| C7 | Murat Terlemez | accepted | — |
 | C61 | Yasin Yücedağ | off_scope | — |

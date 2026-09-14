@@ -30,25 +30,26 @@ _Channels are counted separately._
 | C46 | Andrea Martinetti | invited | — |
 | C54 | Moshiur Rahman | invited | — |
 | C56 | Engr. Abdul Aziz | invited | — |
+| C15 | Yasin Taştekin | accepted | — |
 | C18 | Ahmet Kaleli | accepted | — |
+| C19 | Yunus Öz | accepted | — |
+| C2 | Ali Kemal Kul | accepted | — |
+| C3 | Veysel Özgür | accepted | — |
 | C40 | Erdogan Sekerci | accepted | — |
 | C44 | Ronit Basu | accepted | — |
 | C48 | Ayesha Navaid Anwar | accepted | — |
 | C55 | Gulfam S. | accepted | — |
 | C6 | Halil Kutluğ Kabahasanoğlu | accepted | — |
+| C7 | Murat Terlemez | accepted | — |
 | C1 | Caner Gökçek | held | — |
 | C10 | Bekir Boyacı | held | — |
 | C11 | Öner Gündüz | held | — |
-| C15 | Yasin Taştekin | held | — |
 | C17 | Ersen Ş. | held | — |
-| C19 | Yunus Öz | held | — |
-| C2 | Ali Kemal Kul | held | — |
 | C20 | Hüseyin Çınar | held | — |
 | C21 | Yasemin Mecit Akdaş | held | — |
 | C23 | Rafet Çelebi | held | — |
 | C28 | Rohit K. | held | — |
 | C29 | Calvin Huelsman | held | — |
-| C3 | Veysel Özgür | held | — |
 | C30 | Önder Ertürk | held | — |
 | C32 | İrem Terzi | held | — |
 | C33 | Sercan Yaz | held | — |
@@ -69,7 +70,6 @@ _Channels are counted separately._
 | C58 | Paulo Lopes | held | — |
 | C59 | Faizan Pasha | held | — |
 | C60 | Aman Ullah | held | — |
-| C7 | Murat Terlemez | held | — |
 | C13 | Sedat Çinici | off_scope | — |
 | C26 | Büşra Suiçmez | off_scope | — |
 | C27 | Nastassia Ramazankhani | off_scope | — |
