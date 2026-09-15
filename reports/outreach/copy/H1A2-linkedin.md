@@ -161,7 +161,9 @@ Rule check: 407 chars, violations none. Inbox (LR-B25): first-name/company searc
 Rule check: 323 chars, violations none. Inbox (LR-B25): first-name/company search on Izgin's account, no thread. Status at draft time: accepted 2026-09-14.
 
 
-### Msg 2 — DRAFTED 2026-09-15 (frequency stage, awaiting founder approval)
+#### Superseded 2026-09-15 by the redraft below (founder widened the scope)
+
+Earlier Msg 2 draft, DRAFTED 2026-09-15 (frequency stage, awaiting founder approval)
 
 His reply (2026-09-14 23:19, group thread with Izgin and Sandra): "Yes, I'd be happy to share my experience and insights from textile wet processing, particularly in garment washing, dyeing, R&D, and sustainability-related practices. ... Please feel free to send me your questions."
 
@@ -183,6 +185,31 @@ His reply (2026-09-14 23:19, group thread with Izgin and Sandra): "Yes, I'd be h
 Held for Msg 3 and the call (LR-B11, no money question in Msg 2): what the last outside lab test cost and who paid it (H1A3); what a failed wash-water test or rejected lot cost the mill; whether he would put money into a pilot (H1A6, call only).
 
 Rule check: 351 chars, violations none. No product reveal beyond Msg 1, no call ask, no money question.
+
+### Msg 2 — REDRAFTED 2026-09-15 (frequency stage, whole wet process, awaiting founder approval)
+
+Founder steer 2026-09-15: ask about pain across every component measured in wet processing (chemicals, water, shade), not microfibres alone, because the longer-range idea is sensors across the process feeding one optimisation layer. The optimisation layer is not mentioned (no product reveal).
+
+**Primary (394 chars, English, close: open invitation left unspent per LR-M8):**
+
+> Gulfam hi! Thank you, that's very kind.
+>
+> A few questions from the washing side:
+> 1. Across a wash or dye cycle, which readings on chemicals, water or shade do you still check by hand or send to a lab?
+> 2. Which of those caused your last rewash or failed lot, and what went wrong?
+> 3. Have you tried inline meters or auto-dosing on any of it? What stuck and what didn't?
+>
+> Short answers are perfect.
+
+| Question | Captures | Tests |
+|---|---|---|
+| Which readings are still manual or sent to a lab | The map of wet-process measurements that are not yet inline, in his words | Where sensors could sit at all |
+| Which caused the last rewash or failed lot | The one measurement gap that already cost the mill (LR-M7 pain) | Which component hurts most |
+| Inline meters or auto-dosing tried, what stuck | The graveyard of earlier sensor and dosing attempts (LR-M3) | Whether mills already bought and dropped inline measurement, and why |
+
+Held for Msg 3 and the call (LR-B11): what the last rewash or failed lot cost and who absorbed it; what the last outside lab or wastewater test cost and who paid (H1A3); the last time a brand or auditor asked for a microfibre or wastewater figure (H1A2); whether he would fund a pilot (H1A6, call only).
+
+Rule check: 394 chars, violations none. No product reveal beyond Msg 1, no call ask, no money question.
 
 ## C37 — [SUPERSEDED 2026-09-14] Erdal Gülcan (earlier draft)
 
