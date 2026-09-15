@@ -841,19 +841,21 @@ Rule check: 326 chars, violations none. Inbox (LR-B25): conversation list 2026-0
 
 ## C212 — Marcus Hartmann
 
-### Msg 1 — HELD 2026-09-15 (founder: send later, once there is a value proposition; not in the send batch)
+### Msg 1 — REDRAFTED 2026-09-15 (founder's pilot-ask shape, brand sponsor; supersedes the LR-B33 draft of 2026-09-15; founder sends by hand)
 
-**Primary (357 chars, English):**
+**Primary (343 chars, English):**
 
 > Marcus hi! Thanks for connecting.
 >
-> My co-founder and I are building a microplastic detection system for textile wet processing. You took over sustainability operations at H&M Group this summer after leading public affairs and sustainability for North Europe, we would love to learn from your experience. Would you be open to some questions for our research?
+> My co-founder and I are building real-time microfibre monitoring for textile wet processing. It shows a brand which of its mills release fibres, at which process step and how much, so supplier action rests on measured data instead of questionnaires. Would it make sense to explore this with one H&M supplier?
 
-| Claim in message | Profile read on the card |
+| Claim in message | Source |
 |---|---|
-| "You took over sustainability operations at H&M Group this summer after leading public affairs and sustainability for North Europe" | Head of Sustainability Operations H&M Group Jun 2026-present; Head of Public Affairs & Sustainability North Europe 2022-26 |
+| "real-time microfibre monitoring for textile wet processing" | founder's own product statement (LR-B14: matches the sender's profile) |
+| "which of its mills release fibres, at which process step and how much" | value claim, no profile fact; the reply to "show me" must say prototype stage |
+| "instead of questionnaires" | brand sustainability operations run supplier self-assessments; no claim about H&M's specific tools |
 
-Rule check: 357 chars, violations none. Inbox (LR-B25): conversation list 2026-09-15 shows no thread.
+Rule check: 343 chars, no em-dash, no cliché, no raw title. Pilot ask, not the research ask; copy_variant build_pilot. Inbox (LR-B25): conversation list 2026-09-15 shows no thread.
 
 ## C214 — Nick Farrar
 
