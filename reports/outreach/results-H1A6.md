@@ -8,7 +8,7 @@ _Generated 2026-09-15. Numbers are the funnel over contacts tagged H1A6._
 
 | channel | targeted | contacted | replied | qualified replied | reply rate |
 |---|---|---|---|---|---|
-| LinkedIn | 60 | 0 | 0 | 0 | — |
+| LinkedIn | 75 | 0 | 0 | 0 | — |
 | phone | 0 | 0 | 0 | 0 | — |
 
 _Channels are counted separately._
@@ -18,22 +18,26 @@ _Channels are counted separately._
 | id | name | status | call stage |
 |---|---|---|---|
 | C155 | Ali İlker Gün | pending | — |
+| C219 | Allen Tate | pending | — |
+| C220 | Glen Cox | pending | — |
+| C224 | Gary Lane | pending | — |
+| C225 | Corey Bishop | pending | — |
+| C231 | Christian Rojo | pending | — |
+| C232 | Kassie Cartee | pending | — |
+| C233 | Bilal Ahmed | pending | — |
 | C143 | Nabeel Aman | invited | — |
 | C144 | H. Abdullah Mahmood | invited | — |
 | C145 | Ashwani Sharma | invited | — |
 | C146 | Ihtsham Rasheed | invited | — |
-| C147 | Mehmet Çetin | invited | — |
 | C148 | Murat Yürür | invited | — |
 | C149 | Ahmet Çağrı Dalkır | invited | — |
 | C150 | Moniruzzaman | invited | — |
 | C151 | Kamran Ali | invited | — |
 | C152 | Tariq Nadeem Siddiqui | invited | — |
-| C153 | Md. Sakhawat Hossain | invited | — |
 | C154 | Mahasin Zaman | invited | — |
 | C156 | Engr. Mamun-ur-Rashid | invited | — |
 | C157 | Saif Khan | invited | — |
 | C158 | Ikram Bashir | invited | — |
-| C16 | Mehmet Adıyaman | invited | — |
 | C161 | Akhtar Qureshi | invited | — |
 | C162 | Abdul Rasheed | invited | — |
 | C163 | Khursheed Ahmed | invited | — |
@@ -46,7 +50,12 @@ _Channels are counted separately._
 | C172 | Mohd. Joynal Abedin | invited | — |
 | C173 | M. S. Arefin | invited | — |
 | C174 | Omar Ali | invited | — |
+| C216 | Ricardo Martins da Silva | invited | — |
+| C217 | Randy Henderson | invited | — |
+| C218 | Tim Shirley | invited | — |
 | C22 | Erkan Ekici | invited | — |
+| C229 | Jonathan Brook | invited | — |
+| C230 | Esref Tuncer | invited | — |
 | C54 | Moshiur Rahman | invited | — |
 | C56 | Engr. Abdul Aziz | invited | — |
 | C62 | Eray Karaduman | invited | — |
@@ -60,6 +69,9 @@ _Channels are counted separately._
 | C74 | Muhammad Omer Ahmed | invited | — |
 | C75 | Satish Kejriwal | invited | — |
 | C76 | Jonathan Whitehead | invited | — |
+| C147 | Mehmet Çetin | accepted | — |
+| C153 | Md. Sakhawat Hossain | accepted | — |
+| C16 | Mehmet Adıyaman | accepted | — |
 | C18 | Ahmet Kaleli | accepted | — |
 | C55 | Gulfam S. | accepted | — |
 | C6 | Halil Kutluğ Kabahasanoğlu | accepted | — |
@@ -73,6 +85,9 @@ _Channels are counted separately._
 | C175 | Suresh Kumar G | off_scope | — |
 | C19 | Yunus Öz | off_scope | — |
 | C2 | Ali Kemal Kul | off_scope | — |
+| C221 | Mário Jorge Silva | off_scope | — |
+| C223 | Pedro Magalhães | off_scope | — |
+| C234 | Harshad Patel | off_scope | — |
 | C3 | Veysel Özgür | off_scope | — |
 | C36 | Murat İ. | off_scope | — |
 | C46 | Andrea Martinetti | off_scope | — |

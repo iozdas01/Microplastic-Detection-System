@@ -8,7 +8,7 @@ _Generated 2026-09-15. Numbers are the funnel over contacts tagged H1A2._
 
 | channel | targeted | contacted | replied | qualified replied | reply rate |
 |---|---|---|---|---|---|
-| LinkedIn | 109 | 2 | 2 | 2 | 100.0% |
+| LinkedIn | 131 | 2 | 2 | 2 | 100.0% |
 | phone | 0 | 0 | 0 | 0 | — |
 
 _Channels are counted separately._
@@ -19,24 +19,29 @@ _Channels are counted separately._
 |---|---|---|---|
 | C12 | Ted Ellington | pending | — |
 | C155 | Ali İlker Gün | pending | — |
+| C215 | Johanna J. | pending | — |
+| C219 | Allen Tate | pending | — |
+| C220 | Glen Cox | pending | — |
+| C224 | Gary Lane | pending | — |
+| C225 | Corey Bishop | pending | — |
+| C231 | Christian Rojo | pending | — |
+| C232 | Kassie Cartee | pending | — |
+| C233 | Bilal Ahmed | pending | — |
 | C25 | Shridhar H T | pending | — |
 | C11 | Öner Gündüz | invited | — |
 | C143 | Nabeel Aman | invited | — |
 | C144 | H. Abdullah Mahmood | invited | — |
 | C145 | Ashwani Sharma | invited | — |
 | C146 | Ihtsham Rasheed | invited | — |
-| C147 | Mehmet Çetin | invited | — |
 | C148 | Murat Yürür | invited | — |
 | C149 | Ahmet Çağrı Dalkır | invited | — |
 | C150 | Moniruzzaman | invited | — |
 | C151 | Kamran Ali | invited | — |
 | C152 | Tariq Nadeem Siddiqui | invited | — |
-| C153 | Md. Sakhawat Hossain | invited | — |
 | C154 | Mahasin Zaman | invited | — |
 | C156 | Engr. Mamun-ur-Rashid | invited | — |
 | C157 | Saif Khan | invited | — |
 | C158 | Ikram Bashir | invited | — |
-| C16 | Mehmet Adıyaman | invited | — |
 | C161 | Akhtar Qureshi | invited | — |
 | C162 | Abdul Rasheed | invited | — |
 | C163 | Khursheed Ahmed | invited | — |
@@ -51,7 +56,18 @@ _Channels are counted separately._
 | C174 | Omar Ali | invited | — |
 | C20 | Hüseyin Çınar | invited | — |
 | C21 | Yasemin Mecit Akdaş | invited | — |
+| C212 | Marcus Hartmann | invited | — |
+| C213 | Katharine Beacham | invited | — |
+| C214 | Nick Farrar | invited | — |
+| C216 | Ricardo Martins da Silva | invited | — |
+| C217 | Randy Henderson | invited | — |
+| C218 | Tim Shirley | invited | — |
 | C22 | Erkan Ekici | invited | — |
+| C226 | Felicity Tapsell | invited | — |
+| C227 | Duncan Crook | invited | — |
+| C228 | Roz Adams | invited | — |
+| C229 | Jonathan Brook | invited | — |
+| C230 | Esref Tuncer | invited | — |
 | C24 | B. Hande Tezer | invited | — |
 | C28 | Rohit K. | invited | — |
 | C29 | Calvin Huelsman | invited | — |
@@ -79,6 +95,9 @@ _Channels are counted separately._
 | C75 | Satish Kejriwal | invited | — |
 | C76 | Jonathan Whitehead | invited | — |
 | C10 | Bekir Boyacı | accepted | — |
+| C147 | Mehmet Çetin | accepted | — |
+| C153 | Md. Sakhawat Hossain | accepted | — |
+| C16 | Mehmet Adıyaman | accepted | — |
 | C18 | Ahmet Kaleli | accepted | — |
 | C30 | Önder Ertürk | accepted | — |
 | C40 | Erdogan Sekerci | accepted | — |
@@ -103,7 +122,10 @@ _Channels are counted separately._
 | C175 | Suresh Kumar G | off_scope | — |
 | C19 | Yunus Öz | off_scope | — |
 | C2 | Ali Kemal Kul | off_scope | — |
+| C221 | Mário Jorge Silva | off_scope | — |
+| C223 | Pedro Magalhães | off_scope | — |
 | C23 | Rafet Çelebi | off_scope | — |
+| C234 | Harshad Patel | off_scope | — |
 | C26 | Büşra Suiçmez | off_scope | — |
 | C27 | Nastassia Ramazankhani | off_scope | — |
 | C3 | Veysel Özgür | off_scope | — |

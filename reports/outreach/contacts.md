@@ -3,8 +3,8 @@ purpose: The contact ledger — one card per person targeted, invited or intervi
 idea: industrial-process-data-infrastructure
 last_updated: 2026-09-14
 totals:
-  targeted: 206
-  invited: 171
+  targeted: 229
+  invited: 182
   accepted: 14
   scheduled: 0
   done: 5
@@ -6490,3 +6490,696 @@ open_to_work: false
 outreach_status: off_scope
 found_date: 2026-09-14
 notes: "[audit off_scope 2026-09-15] Profile visit: Head of Specification BRITA Group Sep 2023-present, previously Key Account Specification Manager BRITA Vivreau 2021-23; skills key account management; open to business development roles. Sales function, fails icp_valid_titles for H1A5. Not invited. Brita's public staff lists showed no R&D or product owners."
+
+## Marcus Hartmann
+
+id: C212
+name: "Marcus Hartmann"
+linkedin_url: https://www.linkedin.com/in/hartmannmarcus/
+linkedin_account: Izgin
+company: "H&M Group (brand; Stockholm)"
+role: "Head of Sustainability Operations; ex Head of Public Affairs & Sustainability, Region North Europe"
+signal_type: profile_fit
+signal_multiplier: 1.0
+signal_source_url: ""
+signal_excerpt: ""
+contact_role: buyer
+role_pts: 3
+tier: brand
+size_band:
+assumptions_tested: [H1A2, H1A3]
+validation_rationale: >
+  Runs sustainability operations for H&M Group, the brand whose ZDHC and supplier programmes most of this batch's mills report into; can say what H&M asks its wet-processing suppliers to measure and who pays.
+response_likelihood: 4
+likelihood_factors: "2nd degree (+2) · group-level sustainability operations head (+1) · very senior, 4 months in role (-2)"
+channel: linkedin
+degree: 2nd
+mutuals_count:
+active_last_30d: unknown
+open_to_work: false
+outreach_status: invited
+found_date: 2026-09-14
+notes: "[profile read 2026-09-15] details/experience: Head of Sustainability Operations, H&M Group, Jun 2026-present; Head of Public Affairs & Sustainability North Europe 2022-26; Mondelez corporate affairs before. English profile. Passes (tier brand). [invited 2026-09-14] bare invite via custom-invite modal, name confirmed Marcus Hartmann, sent by Claude at founder's instruction (English profile checked first)."
+
+## Katharine Beacham
+
+id: C213
+name: "Katharine Beacham"
+linkedin_url: https://www.linkedin.com/in/katharine-beacham-928ba73/
+linkedin_account: Izgin
+company: "Marks and Spencer (brand; London)"
+role: "Head of Raw Material, Packaging and Sustainability; 14 yrs at M&S from fabric technologist"
+signal_type: profile_fit
+signal_multiplier: 1.0
+signal_source_url: ""
+signal_excerpt: ""
+contact_role: buyer
+role_pts: 3
+tier: brand
+size_band:
+assumptions_tested: [H1A2, H1A3]
+validation_rationale: >
+  Heads raw materials and sustainability at M&S after twelve years as a fabric technologist there; sets what M&S mills must prove on materials and understands wet processing first-hand.
+response_likelihood: 5
+likelihood_factors: "2nd degree (+2) · fabric technologist turned head of materials, technical enough for the process question (+2) · senior (-1)"
+channel: linkedin
+degree: 2nd
+mutuals_count:
+active_last_30d: unknown
+open_to_work: false
+outreach_status: invited
+found_date: 2026-09-14
+notes: "[profile read 2026-09-15] details/experience: M&S since 2012: Head of Raw Material, Packaging and Sustainability May 2024-present, Head of Materials and Sustainability 2021-24, Technical Lead 2017-21, Fabric Technologist 2012-24; Thomas Pink technical manager before. English profile. Passes (tier brand). [invited 2026-09-14] bare invite via custom-invite modal, name confirmed Katharine Beacham, sent by Claude at founder's instruction (English profile checked first)."
+
+## Nick Farrar
+
+id: C214
+name: "Nick Farrar"
+linkedin_url: https://www.linkedin.com/in/nick-farrar-0828795/
+linkedin_account: Izgin
+company: "Primark (brand; Reading)"
+role: "Global Head of Environmental Sustainability; team covers water stewardship, sustainable chemicals management, environmental compliance"
+signal_type: profile_fit
+signal_multiplier: 1.0
+signal_source_url: ""
+signal_excerpt: ""
+contact_role: buyer
+role_pts: 3
+tier: brand
+size_band:
+assumptions_tested: [H1A2, H1A3]
+validation_rationale: >
+  Leads Primark's global environmental sustainability team, whose remit explicitly includes water stewardship and chemicals management across suppliers; the person who decides whether Primark ever asks a mill for a microfibre number. Hande Tezer (C24) reports into this function.
+response_likelihood: 4
+likelihood_factors: "2nd degree (+2) · water stewardship and chemicals in his own role text (+2) · very senior (-2)"
+channel: linkedin
+degree: 2nd
+mutuals_count:
+active_last_30d: unknown
+open_to_work: false
+outreach_status: invited
+found_date: 2026-09-14
+notes: "[profile read 2026-09-15] details/experience: Global Head of Environmental Sustainability, Primark, Dec 2020-present; role text lists carbon, biodiversity, circularity, sustainable chemicals management, water stewardship, responsible materials, environmental compliance and reporting (CSRD, CSDDD, EUDR). English profile. Passes (tier brand). [invited 2026-09-14] bare invite via custom-invite modal, name confirmed Nick Farrar, sent by Claude at founder's instruction (English profile checked first)."
+
+## Johanna J.
+
+id: C215
+name: "Johanna J."
+linkedin_url: https://www.linkedin.com/in/johanna-wilson-/
+linkedin_account: Izgin
+company: "Tesco (F&F clothing and home; brand); ex Primark ethical trade and environmental sustainability"
+role: "Head of Technical Raw Materials and Sustainability"
+signal_type: profile_fit
+signal_multiplier: 1.0
+signal_source_url: ""
+signal_excerpt: ""
+contact_role: buyer
+role_pts: 3
+tier: brand
+size_band:
+assumptions_tested: [H1A2, H1A3]
+validation_rationale: >
+  Heads raw materials and sustainability for Tesco's clothing after running Primark's ethical trade and environmental sustainability support and Tesco's responsible sourcing audits; knows what two large brands actually ask suppliers to measure.
+response_likelihood: 5
+likelihood_factors: "3rd degree (+0) · two brands' supplier sustainability functions, incl. audit standards (+2)"
+channel: linkedin
+degree: 3rd+
+mutuals_count:
+active_last_30d: unknown
+open_to_work: false
+outreach_status: pending
+found_date: 2026-09-14
+notes: "[profile read 2026-09-15] details/experience: Head of Technical Raw Materials and Sustainability, Tesco, Aug 2025-present; Head of Central Support, Ethical Trade Environmental Sustainability, Primark 2023-25; Tesco sustainability programme manager and responsible sourcing standards and audit manager before. Surname hidden on profile. English profile. Passes (tier brand). [invite blocked 2026-09-15] LinkedIn asks for her email address to connect (member privacy setting), so no bare invite is possible; needs a mutual introduction or an email route. Stays pending, not invited."
+
+## Ricardo Martins da Silva
+
+id: C216
+name: "Ricardo Martins da Silva"
+linkedin_url: https://www.linkedin.com/in/ricardojomsilva/
+linkedin_account: Izgin
+company: "Tintex Textiles (Vila Nova de Cerveira, Portugal)"
+role: "CEO; President of the Board, ATP (Portuguese Textile and Clothing Association)"
+signal_type: profile_fit
+signal_multiplier: 1.0
+signal_source_url: "https://www.linkedin.com/company/tintex-textiles/people/"
+signal_excerpt: ""
+contact_role: buyer
+role_pts: 3
+tier: textile_mill
+size_band:
+assumptions_tested: [H1A2, H1A3, H1A6]
+validation_rationale: >
+  CEO of Tintex, a Portuguese dyeing, finishing and coating mill supplying European brands, and chair of the national textile association; signs for spend and hears what brands ask European mills to report.
+response_likelihood: 6
+likelihood_factors: "2nd degree (+2) · CEO and industry-body chair (+1)"
+channel: linkedin
+degree: 2nd
+mutuals_count:
+active_last_30d: unknown
+open_to_work: false
+outreach_status: invited
+found_date: 2026-09-14
+notes: "[profile read 2026-09-15] details/experience: CEO Tintex Textiles 2020-present, Head of Operations 2017-20, Head of Coating & Technical Textiles 2015-17; President of the Board ATP Sep 2025-present, board member 2022-25. English. Passes. [invited 2026-09-14] bare invite via custom-invite modal, modal name confirmed Ricardo Martins da Silva, sent by Claude at founder's instruction."
+
+
+## Randy Henderson
+
+id: C217
+name: "Randy Henderson"
+linkedin_url: https://www.linkedin.com/in/randy-henderson-a706a345/
+linkedin_account: Izgin
+company: "Mount Vernon Mills (Trion, Georgia)"
+role: "Denim Plant Manager"
+signal_type: profile_fit
+signal_multiplier: 1.0
+signal_source_url: "https://www.linkedin.com/search/results/people/?keywords=plant%20manager%20Mount%20Vernon%20Mills"
+signal_excerpt: ""
+contact_role: buyer
+role_pts: 3
+tier: textile_mill
+size_band:
+assumptions_tested: [H1A2, H1A3, H1A6]
+validation_rationale: >
+  Runs the denim plant at Mount Vernon Mills in Trion, the largest US denim maker, after eleven years as its denim finishing manager; owns the plant where denim is dyed and finished.
+response_likelihood: 4
+likelihood_factors: "3rd degree (0) · plant manager, finishing background (+1)"
+channel: linkedin
+degree: 3rd+
+mutuals_count:
+active_last_30d: unknown
+open_to_work: false
+outreach_status: invited
+found_date: 2026-09-14
+notes: "[profile read 2026-09-15] details/experience: Denim Plant Manager Mount Vernon Mills Mar 2018-present (Trion GA); Denim Finishing Manager 2007-18; 19 yrs 9 mos at the company. English. Passes. [invited 2026-09-14] bare invite via custom-invite modal, modal name confirmed Randy Henderson, sent by Claude at founder's instruction."
+
+
+## Tim Shirley
+
+id: C218
+name: "Tim Shirley"
+linkedin_url: https://www.linkedin.com/in/tim-shirley-15999825/
+linkedin_account: Izgin
+company: "Mount Vernon Mills (McCormick, South Carolina)"
+role: "Plant Manager"
+signal_type: profile_fit
+signal_multiplier: 1.0
+signal_source_url: "https://www.linkedin.com/search/results/people/?keywords=plant%20manager%20Mount%20Vernon%20Mills"
+signal_excerpt: ""
+contact_role: buyer
+role_pts: 3
+tier: textile_mill
+size_band:
+assumptions_tested: [H1A2, H1A3, H1A6]
+validation_rationale: >
+  Plant manager at Mount Vernon Mills' McCormick plant for twenty-six years; signs for spend at a US fabric mill with piece-dyeing and finishing across the group.
+response_likelihood: 4
+likelihood_factors: "3rd degree (0) · 26 yrs as plant manager (+1)"
+channel: linkedin
+degree: 3rd+
+mutuals_count:
+active_last_30d: unknown
+open_to_work: false
+outreach_status: invited
+found_date: 2026-09-14
+notes: "[profile read 2026-09-15] details/experience: Plant Manager Mount Vernon Mills Jan 2000-present (McCormick SC); Plant Manager Honea Path Mfg 1987-99. English. Passes; whether the McCormick site itself dyes is not stated. [invited 2026-09-14] bare invite via custom-invite modal, modal name confirmed Tim Shirley, sent by Claude at founder's instruction."
+
+
+## Allen Tate
+
+id: C219
+name: "Allen Tate"
+linkedin_url: https://www.linkedin.com/in/allen-tate-a4058580/
+linkedin_account: Izgin
+company: "Elevate Textiles (Burlington, North Carolina)"
+role: "Plant Manager"
+signal_type: profile_fit
+signal_multiplier: 1.0
+signal_source_url: "https://www.linkedin.com/search/results/people/?keywords=dye%20house%20plant%20manager%20North%20Carolina%20textile"
+signal_excerpt: ""
+contact_role: buyer
+role_pts: 3
+tier: textile_mill
+size_band:
+assumptions_tested: [H1A2, H1A3, H1A6]
+validation_rationale: >
+  Plant manager at Elevate Textiles in Burlington after twelve years as dye house manager at Elastic Fabrics of America; runs a US dyeing and finishing plant and owns its budget.
+response_likelihood: 4
+likelihood_factors: "3rd degree (0) · plant manager, ex dye house manager (+1)"
+channel: linkedin
+degree: 3rd+
+mutuals_count:
+active_last_30d: unknown
+open_to_work: false
+outreach_status: pending
+found_date: 2026-09-14
+notes: "[profile read 2026-09-15] details/experience: Plant Manager Elevate Textiles Jan 2021-present (Burlington NC); Plant Superintendent 2018-21; Dye House Manager Elastic Fabrics of America 2006-18. English. Passes."
+
+## Glen Cox
+
+id: C220
+name: "Glen Cox"
+linkedin_url: https://www.linkedin.com/in/glen-cox-340267161/
+linkedin_account: Izgin
+company: "Shawmut LLC (Burlington, North Carolina)"
+role: "Dye House Manager"
+signal_type: profile_fit
+signal_multiplier: 1.0
+signal_source_url: "https://www.linkedin.com/search/results/people/?keywords=dye%20house%20plant%20manager%20North%20Carolina%20textile"
+signal_excerpt: ""
+contact_role: buyer
+role_pts: 3
+tier: textile_mill
+size_band:
+assumptions_tested: [H1A2, H1A3, H1A6]
+validation_rationale: >
+  Runs the dye house at Shawmut in Burlington, including cost, waste and quality; the dyehouse owner a buyer's effluent or fibre question reaches.
+response_likelihood: 4
+likelihood_factors: "3rd degree (0) · dye house manager (+1)"
+channel: linkedin
+degree: 3rd+
+mutuals_count:
+active_last_30d: unknown
+open_to_work: false
+outreach_status: pending
+found_date: 2026-09-14
+notes: "[profile read 2026-09-15] details/experience: Dye House Manager Shawmut LLC 2019-present (Burlington NC): production team, continuous improvement, cost and waste reduction, quality. English. Passes."
+
+## Mário Jorge Silva
+
+id: C221
+name: "Mário Jorge Silva"
+linkedin_url: https://www.linkedin.com/in/mario-jorge-silva-97229533/
+linkedin_account: Izgin
+company: "Tintex"
+role: "Owner"
+signal_type: profile_fit
+signal_multiplier: 1.0
+signal_source_url: "https://www.linkedin.com/company/tintex-textiles/people/"
+signal_excerpt: ""
+contact_role: buyer
+role_pts: 3
+tier: textile_mill
+size_band:
+assumptions_tested: [H1A2, H1A3, H1A6]
+validation_rationale: >
+  Owner of Tintex; profile is in Portuguese and undated.
+response_likelihood: 2
+likelihood_factors: "3rd degree (0)"
+channel: linkedin
+degree: 3rd+
+mutuals_count:
+active_last_30d: unknown
+open_to_work: false
+outreach_status: off_scope
+found_date: 2026-09-14
+notes: "[audit off_scope 2026-09-15] Profile visit: 'Proprietário(a), tintex', no dates, no English. Fails LR-B31a (profile not in English). Not invited; the CEO Ricardo Martins da Silva is the route in."
+
+## Nicolas Carlési
+
+id: C222
+name: "Nicolas Carlési"
+linkedin_url: https://www.linkedin.com/in/nicolascarlesi/
+linkedin_account: Izgin
+company: "IADYS (Aubagne, France)"
+role: "President and Founder"
+signal_type: profile_fit
+signal_multiplier: 1.0
+signal_source_url: "https://www.linkedin.com/company/iadys/people/"
+signal_excerpt: ""
+contact_role: buyer
+role_pts: 3
+tier: filtration_vendor
+size_band:
+assumptions_tested: [H1A5]
+validation_rationale: >
+  Founder of IADYS, maker of water-surface waste-collection robots; profile is in French only.
+response_likelihood: 2
+likelihood_factors: "2nd degree"
+channel: linkedin
+degree: 2nd
+mutuals_count:
+active_last_30d: unknown
+open_to_work: false
+outreach_status: off_scope
+found_date: 2026-09-14
+notes: "[audit off_scope 2026-09-15] Profile visit: 'Président et fondateur IADYS' 2016-present; R&D engineer Scalian 2013-16. Titles and text in French only. Fails LR-B31a. Not invited unless the founder releases him."
+
+## Pedro Magalhães
+
+id: C223
+name: "Pedro Magalhães"
+linkedin_url: https://www.linkedin.com/in/pedro-magalh%C3%A3es-573b2358/
+linkedin_account: Izgin
+company: "Tintex Textiles"
+role: "Head of Innovation"
+signal_type: profile_fit
+signal_multiplier: 1.0
+signal_source_url: "https://www.linkedin.com/company/tintex-textiles/people/"
+signal_excerpt: ""
+contact_role: practitioner
+role_pts: 2
+tier: textile_mill
+size_band:
+assumptions_tested: [H1A2, H1A3, H1A6]
+validation_rationale: >
+  Leads innovation across fibres, dyeing, finishing and coatings at Tintex; not a budget-holder title.
+response_likelihood: 4
+likelihood_factors: "2nd degree"
+channel: linkedin
+degree: 2nd
+mutuals_count:
+active_last_30d: unknown
+open_to_work: false
+outreach_status: off_scope
+found_date: 2026-09-14
+notes: "[audit off_scope 2026-09-15] Profile visit: Head of Innovation Tintex Jan 2018-present, innovation strategy across fibres, dyeing, finishing, coatings. English. Fails icp_valid_titles for H1A2 (budget holders only). Not invited; worth releasing by name if the founder wants an innovation contact at Tintex."
+
+## Gary Lane
+
+id: C224
+name: "Gary Lane"
+linkedin_url: https://www.linkedin.com/in/gary-lane-20202649/
+linkedin_account: Izgin
+company: "Mount Vernon Mills"
+role: "Plant Manager"
+signal_type: profile_fit
+signal_multiplier: 1.0
+signal_source_url: "https://www.linkedin.com/search/results/people/?keywords=plant%20manager%20Mount%20Vernon%20Mills"
+signal_excerpt: ""
+contact_role: buyer
+role_pts: 3
+tier: textile_mill
+size_band:
+assumptions_tested: [H1A2, H1A3, H1A6]
+validation_rationale: >
+  Plant manager at Mount Vernon Mills; profile shows no dates.
+response_likelihood: 3
+likelihood_factors: "3rd degree (0)"
+channel: linkedin
+degree: 3rd+
+mutuals_count:
+active_last_30d: unknown
+open_to_work: false
+outreach_status: pending
+found_date: 2026-09-14
+notes: "[profile read 2026-09-15] details/experience: Plant Manager, Mount Vernon Mills (no dates). English. HELD from invite: tenure not established (live-profile gate check 4)."
+
+## Corey Bishop
+
+id: C225
+name: "Corey Bishop"
+linkedin_url: https://www.linkedin.com/in/corey-bishop-6973bb98/
+linkedin_account: Izgin
+company: "Inman Mills (Inman, South Carolina)"
+role: "Vice President of Manufacturing"
+signal_type: profile_fit
+signal_multiplier: 1.0
+signal_source_url: "https://www.linkedin.com/search/results/people/?keywords=Hamrick%20Mills%20plant%20manager%20finishing"
+signal_excerpt: ""
+contact_role: buyer
+role_pts: 3
+tier: textile_mill
+size_band:
+assumptions_tested: [H1A2, H1A3, H1A6]
+validation_rationale: >
+  VP of manufacturing across Inman Mills' sites; whether Inman dyes or finishes in-house is not established.
+response_likelihood: 3
+likelihood_factors: "3rd degree (0)"
+channel: linkedin
+degree: 3rd+
+mutuals_count:
+active_last_30d: unknown
+open_to_work: false
+outreach_status: pending
+found_date: 2026-09-14
+notes: "[profile read 2026-09-15] details/experience: Vice President of Manufacturing Inman Mills Dec 2024-present (multiple sites). English. HELD from invite: Inman Mills is known as a weaving mill; wet processing not confirmed (company check needed)."
+
+## Felicity Tapsell
+
+id: C226
+name: "Felicity Tapsell"
+linkedin_url: https://www.linkedin.com/in/felicity-tapsell-40542513/
+linkedin_account: Izgin
+company: "BESTSELLER (brand; Copenhagen)"
+role: "Head of Responsible Sourcing, Global Supply Chain; 21 yrs at Bestseller"
+signal_type: profile_fit
+signal_multiplier: 1.0
+signal_source_url: ""
+signal_excerpt: ""
+contact_role: buyer
+role_pts: 3
+tier: brand
+size_band:
+assumptions_tested: [H1A2, H1A3]
+validation_rationale: >
+  Leads Bestseller's global responsible-sourcing strategy and the management systems its suppliers must follow; Bestseller is one of the brands whose audits Turkish mills in this batch name, so she can say what is asked of them and who pays.
+response_likelihood: 5
+likelihood_factors: "2nd degree (+2) · leads the group function that sets supplier management systems (+2) · senior (-1)"
+channel: linkedin
+degree: 2nd
+mutuals_count:
+active_last_30d: unknown
+open_to_work: false
+outreach_status: invited
+found_date: 2026-09-14
+notes: "[profile read 2026-09-15] details/experience: Head of Responsible Sourcing, Global Supply Chain, BESTSELLER, Dec 2019-present (21 yrs at the group); role text: develops and delivers the group responsible sourcing strategy, management systems for suppliers. English profile. Passes (tier brand). [invited 2026-09-14] bare invite via custom-invite modal, name confirmed Felicity Tapsell, sent by Claude at founder's instruction (English profile checked first)."
+
+## Duncan Crook
+
+id: C227
+name: "Duncan Crook"
+linkedin_url: https://www.linkedin.com/in/duncan-crook-9750a190/
+linkedin_account: Izgin
+company: "Matalan (brand; Liverpool)"
+role: "Head of Sourcing; also led Technical, Fabric and QC teams Nov 2025 to Apr 2026"
+signal_type: profile_fit
+signal_multiplier: 1.0
+signal_source_url: ""
+signal_excerpt: ""
+contact_role: buyer
+role_pts: 3
+tier: brand
+size_band:
+assumptions_tested: [H1A2, H1A3]
+validation_rationale: >
+  Heads sourcing at Matalan and has run its fabric and QC teams; decides which mills supply a large UK value retailer and what they must prove.
+response_likelihood: 5
+likelihood_factors: "3rd degree (+0) · owns sourcing and, recently, fabric and QC (+2)"
+channel: linkedin
+degree: 3rd+
+mutuals_count:
+active_last_30d: unknown
+open_to_work: false
+outreach_status: invited
+found_date: 2026-09-14
+notes: "[profile read 2026-09-15] details/experience: Head of Sourcing, Matalan, Mar 2024-present (20 yrs at Matalan); role text: led Technical, Fabric and QC teams Nov 2025-Apr 2026, team across product purchasing and ethical. English profile. Passes (tier brand). [invited 2026-09-14] bare invite via custom-invite modal, name confirmed Duncan Crook, sent by Claude at founder's instruction (English profile checked first)."
+
+## Roz Adams
+
+id: C228
+name: "Roz Adams"
+linkedin_url: https://www.linkedin.com/in/roz-adams-620a701a/
+linkedin_account: Izgin
+company: "Whistles (brand; London)"
+role: "Head of Technical and Sourcing; ex Head of Product and Compliance"
+signal_type: profile_fit
+signal_multiplier: 1.0
+signal_source_url: ""
+signal_excerpt: ""
+contact_role: buyer
+role_pts: 3
+tier: brand
+size_band:
+assumptions_tested: [H1A2, H1A3]
+validation_rationale: >
+  Runs technical, sourcing and formerly compliance at Whistles; sets fabric and compliance requirements for its mills directly.
+response_likelihood: 5
+likelihood_factors: "3rd degree (+0) · technical and compliance head at a mid-size brand, likely hands-on with mills (+2)"
+channel: linkedin
+degree: 3rd+
+mutuals_count:
+active_last_30d: unknown
+open_to_work: false
+outreach_status: invited
+found_date: 2026-09-14
+notes: "[profile read 2026-09-15] details/experience: Whistles since 2012: Head of Technical and Sourcing Oct 2024-present, Head of Technical 2018-24, Head of Product and Compliance 2012-18. English profile. Passes (tier brand). [invited 2026-09-14] bare invite via custom-invite modal, name confirmed Roz Adams, sent by Claude at founder's instruction (English profile checked first)."
+
+## Jonathan Brook
+
+id: C229
+name: "Jonathan Brook"
+linkedin_url: https://www.linkedin.com/in/jonathan-brook-4bb52b40/
+linkedin_account: Izgin
+company: "Huddersfield Dyeing Company Limited (commission dyer, West Yorkshire)"
+role: "Managing Director; 19 yrs"
+signal_type: profile_fit
+signal_multiplier: 1.0
+signal_source_url: ""
+signal_excerpt: ""
+contact_role: buyer
+role_pts: 3
+tier: textile_mill
+size_band:
+assumptions_tested: [H1A2, H1A3, H1A6]
+validation_rationale: >
+  Runs a Huddersfield commission dyehouse serving the worsted cloth mills that supply tailoring brands; owns the budget and hears every customer request on the process water.
+response_likelihood: 5
+likelihood_factors: "3rd degree (+0) · owner-level MD of a UK dyehouse (+2)"
+channel: linkedin
+degree: 3rd+
+mutuals_count:
+active_last_30d: unknown
+open_to_work: false
+outreach_status: invited
+found_date: 2026-09-14
+notes: "[profile read 2026-09-15] details/experience: Managing Director, Huddersfield Dyeing Company Limited, May 2007-present. English profile. Passes. [invited 2026-09-14] bare invite via custom-invite modal, name confirmed Jonathan Brook, sent by Claude at founder's instruction (English profile checked first)."
+
+## Esref Tuncer
+
+id: C230
+name: "Esref Tuncer"
+linkedin_url: https://www.linkedin.com/in/esref-tuncer-000a5642/
+linkedin_account: Izgin
+company: "ISKO (denim mill, Bursa)"
+role: "Plant Manager; 31 yrs at ISKO / Sanko"
+signal_type: profile_fit
+signal_multiplier: 1.0
+signal_source_url: ""
+signal_excerpt: ""
+contact_role: buyer
+role_pts: 3
+tier: textile_mill
+size_band:
+assumptions_tested: [H1A2, H1A3, H1A6]
+validation_rationale: >
+  Runs an ISKO plant after three decades at Sanko; the plant-level budget holder at the mill whose lab chief (Hüseyin Çınar) is already in this batch.
+response_likelihood: 5
+likelihood_factors: "3rd degree (+0) · plant manager of one of the most brand-audited denim mills (+2)"
+channel: linkedin
+degree: 3rd+
+mutuals_count:
+active_last_30d: unknown
+open_to_work: false
+outreach_status: invited
+found_date: 2026-09-14
+notes: "[profile read 2026-09-15] details/experience: Plant Manager, ISKO, Mar 2018-present, Bursa; Müdür, Denim, Sanko Holding 1994-2018. Headline and current role in English. Passes. [invited 2026-09-14] bare invite via custom-invite modal, name confirmed Esref TUNCER, sent by Claude at founder's instruction (English profile checked first)."
+
+## Christian Rojo
+
+id: C231
+name: "Christian Rojo"
+linkedin_url: https://www.linkedin.com/in/christian-rojo-896633123/
+linkedin_account: Izgin
+company: "Milliken & Company (Pendleton, South Carolina)"
+role: "Dye House Production Manager"
+signal_type: profile_fit
+signal_multiplier: 1.0
+signal_source_url: "https://www.linkedin.com/search/results/people/?keywords=Milliken%20dye%20house%20plant%20manager%20textile"
+signal_excerpt: ""
+contact_role: buyer
+role_pts: 3
+tier: textile_mill
+size_band:
+assumptions_tested: [H1A2, H1A3, H1A6]
+validation_rationale: >
+  Manages dye house production at Milliken's Pendleton plant for eight years; runs the wet process where microfibres are released at one of the largest US textile makers.
+response_likelihood: 4
+likelihood_factors: "3rd degree (0) · runs a dye house (+1)"
+channel: linkedin
+degree: 3rd+
+mutuals_count:
+active_last_30d: unknown
+open_to_work: false
+outreach_status: pending
+found_date: 2026-09-14
+notes: "[profile read 2026-09-15] details/experience: Production Manager Milliken & Company Jun 2018-present (Pendleton SC); headline Dye House Production Manager. English. Passes."
+
+## Kassie Cartee
+
+id: C232
+name: "Kassie Cartee"
+linkedin_url: https://www.linkedin.com/in/kassie-cartee-084b4451/
+linkedin_account: Izgin
+company: "Milliken & Company (Gaffney, South Carolina)"
+role: "Plant Manager"
+signal_type: profile_fit
+signal_multiplier: 1.0
+signal_source_url: "https://www.linkedin.com/search/results/people/?keywords=Milliken%20dye%20house%20plant%20manager%20textile"
+signal_excerpt: ""
+contact_role: buyer
+role_pts: 3
+tier: textile_mill
+size_band:
+assumptions_tested: [H1A2, H1A3, H1A6]
+validation_rationale: >
+  Plant manager at Milliken's Gaffney plant after running its Magnolia plant in Blacksburg; owns a US textile plant budget.
+response_likelihood: 4
+likelihood_factors: "3rd degree (0) · plant manager, 15 yrs at Milliken (+1)"
+channel: linkedin
+degree: 3rd+
+mutuals_count:
+active_last_30d: unknown
+open_to_work: false
+outreach_status: pending
+found_date: 2026-09-14
+notes: "[profile read 2026-09-15] details/experience: Plant Manager Milliken Gaffney SC Sep 2022-present; Plant Manager Blacksburg SC 2018-22; Process Improvement Leader Magnolia Plant 2016-18; 15 yrs 5 mos at Milliken. English. Passes; which Gaffney products are dyed on site is not stated."
+
+## Bilal Ahmed
+
+id: C233
+name: "Bilal Ahmed"
+linkedin_url: https://www.linkedin.com/in/bilal-ahmed-0701b2146/
+linkedin_account: Izgin
+company: "Artistic Denim Mills Ltd (Karachi)"
+role: "Head of Dyeing"
+signal_type: profile_fit
+signal_multiplier: 1.0
+signal_source_url: "https://www.linkedin.com/search/results/people/?keywords=Cone%20Denim%20plant%20manager"
+signal_excerpt: ""
+contact_role: buyer
+role_pts: 3
+tier: textile_mill
+size_band:
+assumptions_tested: [H1A2, H1A3, H1A6]
+validation_rationale: >
+  Heads dyeing at Artistic Denim Mills after operations and technical management at Gul Ahmed Textile Mills; owns the denim dyehouse at a major brand-facing mill.
+response_likelihood: 4
+likelihood_factors: "3rd degree (0) · heads dyehouse (+1)"
+channel: linkedin
+degree: 3rd+
+mutuals_count:
+active_last_30d: unknown
+open_to_work: false
+outreach_status: pending
+found_date: 2026-09-14
+notes: "[profile read 2026-09-15] details/experience: Head of Dyeing Artistic Denim Mills Nov 2023-present (Karachi); Gul Ahmed Textile Mills senior manager operations 2023 and manager technical 2020-22. English. Passes."
+
+## Harshad Patel
+
+id: C234
+name: "Harshad Patel"
+linkedin_url: https://www.linkedin.com/in/harshad-patel-93113221/
+linkedin_account: Izgin
+company: "(last listed: Ashima Dyecot, until 2018)"
+role: "General Manager (ended 2018)"
+signal_type: profile_fit
+signal_multiplier: 1.0
+signal_source_url: "https://www.linkedin.com/search/results/people/?keywords=Cone%20Denim%20plant%20manager"
+signal_excerpt: ""
+contact_role: expert
+role_pts: 2
+tier: textile_mill
+size_band:
+assumptions_tested: [H1A2, H1A3, H1A6]
+validation_rationale: >
+  Ran pre-treatment, dyeing and finishing at Ashima Dyecot for 22 years, but that role ended in 2018 and no current role is shown.
+response_likelihood: 2
+likelihood_factors: "3rd degree (0)"
+channel: linkedin
+degree: 3rd+
+mutuals_count:
+active_last_30d: unknown
+open_to_work: false
+outreach_status: off_scope
+found_date: 2026-09-14
+notes: "[audit off_scope 2026-09-15] Profile visit: General Manager Ashima Dyecot 1997-2018 (ended); no current employer listed. Fails the live-profile gate on current function. Not invited."

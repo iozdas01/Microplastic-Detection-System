@@ -8,7 +8,7 @@ _Generated 2026-09-15. Numbers are the funnel over contacts tagged H1A5._
 
 | channel | targeted | contacted | replied | qualified replied | reply rate |
 |---|---|---|---|---|---|
-| LinkedIn | 32 | 2 | 2 | 2 | 100.0% |
+| LinkedIn | 33 | 2 | 2 | 2 | 100.0% |
 | phone | 0 | 0 | 0 | 0 | — |
 
 _Channels are counted separately._
@@ -52,3 +52,4 @@ _Channels are counted separately._
 | C201 | Adrian Scholl | off_scope | — |
 | C204 | Bob Brooks | off_scope | — |
 | C211 | Andy Johnston | off_scope | — |
+| C222 | Nicolas Carlési | off_scope | — |
