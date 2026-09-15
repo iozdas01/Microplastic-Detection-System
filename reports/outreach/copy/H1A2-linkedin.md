@@ -731,9 +731,9 @@ Rule check: 302 chars, violations none. Inbox (LR-B25): conversation list 2026-0
 
 ### Msg 1 — DRAFTED 2026-09-15 (LR-B33, accepted 2026-09-15)
 
-**Primary (300 chars, English):**
+**Primary (296 chars, English):**
 
-> Muhammad hi! Thanks for connecting.
+> Omer hi! Thanks for connecting.
 >
 > My co-founder and I are building a microplastic detection system for textile wet processing. You lead Anwar Textile Mills and its knit garment exports from Karachi, we would love to learn from your experience. Would you be open to some questions for our research?
 
@@ -741,7 +741,7 @@ Rule check: 302 chars, violations none. Inbox (LR-B25): conversation list 2026-0
 |---|---|
 | "You lead Anwar Textile Mills and its knit garment exports from Karachi" | Managing Director Anwar Textile Mills Jul 2022-present (knit garments exporter) |
 
-Rule check: 300 chars, violations none. Inbox (LR-B25): conversation list 2026-09-15 shows no thread.
+Rule check: 296 chars (greeting uses Omer, the name he goes by, 2026-09-15), violations none. Inbox (LR-B25): conversation list 2026-09-15 shows no thread.
 
 ## C143 — Nabeel Aman
 
