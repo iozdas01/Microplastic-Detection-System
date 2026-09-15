@@ -841,7 +841,7 @@ Rule check: 326 chars, violations none. Inbox (LR-B25): conversation list 2026-0
 
 ## C212 — Marcus Hartmann
 
-### Msg 1 — DRAFTED 2026-09-15 (LR-B33, accepted 2026-09-15)
+### Msg 1 — HELD 2026-09-15 (founder: send later, once there is a value proposition; not in the send batch)
 
 **Primary (357 chars, English):**
 

@@ -6519,9 +6519,9 @@ degree: 2nd
 mutuals_count:
 active_last_30d: unknown
 open_to_work: false
-outreach_status: accepted
+outreach_status: held
 found_date: 2026-09-14
-notes: "[profile read 2026-09-15] details/experience: Head of Sustainability Operations, H&M Group, Jun 2026-present; Head of Public Affairs & Sustainability North Europe 2022-26; Mondelez corporate affairs before. English profile. Passes (tier brand). [invited 2026-09-14] bare invite via custom-invite modal, name confirmed Marcus Hartmann, sent by Claude at founder's instruction (English profile checked first). [accepted 2026-09-15] seen in the Connections list 2026-09-15 (connected 2026-09-15). [msg1 drafted 2026-09-15] LR-B33 shape from the recorded profile read; inbox list 2026-09-15 shows no thread (LR-B25). Copy in copy/H1A2-linkedin.md. Awaiting founder approval."
+notes: "[profile read 2026-09-15] details/experience: Head of Sustainability Operations, H&M Group, Jun 2026-present; Head of Public Affairs & Sustainability North Europe 2022-26; Mondelez corporate affairs before. English profile. Passes (tier brand). [invited 2026-09-14] bare invite via custom-invite modal, name confirmed Marcus Hartmann, sent by Claude at founder's instruction (English profile checked first). [accepted 2026-09-15] seen in the Connections list 2026-09-15 (connected 2026-09-15). [msg1 drafted 2026-09-15] LR-B33 shape from the recorded profile read; inbox list 2026-09-15 shows no thread (LR-B25). Copy in copy/H1A2-linkedin.md. Awaiting founder approval. [held 2026-09-15] Founder: keep him on the line for later messages once the value proposition is clearer. Connected 2026-09-15; the Msg 1 draft is kept but taken out of the send batch. Release by name to send."
 
 ## Katharine Beacham
 

@@ -113,7 +113,6 @@ _Channels are counted separately._
 | C157 | Saif Khan | accepted | — |
 | C16 | Mehmet Adıyaman | accepted | — |
 | C18 | Ahmet Kaleli | accepted | — |
-| C212 | Marcus Hartmann | accepted | — |
 | C214 | Nick Farrar | accepted | — |
 | C216 | Ricardo Martins da Silva | accepted | — |
 | C230 | Esref Tuncer | accepted | — |
@@ -134,6 +133,7 @@ _Channels are counted separately._
 | C59 | Faizan Pasha | replied | — |
 | C178 | Martin (surname not recorded) | done | completed |
 | C179 | Sharif (surname not recorded) | done | completed |
+| C212 | Marcus Hartmann | held | — |
 | C1 | Caner Gökçek | off_scope | — |
 | C13 | Sedat Çinici | off_scope | — |
 | C14 | Yalçın Çelik | off_scope | — |
