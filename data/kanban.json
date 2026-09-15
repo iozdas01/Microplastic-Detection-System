@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-09-15T00:50:26.496Z",
+  "updated_at": "2026-09-15T02:49:55.743Z",
   "tasks": [
     {
       "id": "T-MTV0XT85-EZLO",
@@ -111,9 +111,29 @@
       "owner": "sandra",
       "created_at": "2026-09-15T00:50:26.496Z",
       "updated_at": "2026-09-15T00:50:26.496Z"
+    },
+    {
+      "id": "T-MU22Q8F4-NE2T",
+      "title": "Send Msg 1 to every accepted LinkedIn contact (drafts in control room, unsent filter)",
+      "detail": "Claude checks acceptances and drafts each morning; tell it which went out so the ledger flips them to sent.",
+      "priority": "high",
+      "status": "backlog",
+      "owner": "izgin",
+      "created_at": "2026-09-15T02:49:55.743Z",
+      "updated_at": "2026-09-15T02:49:55.743Z"
     }
   ],
   "activity": [
+    {
+      "id": "1789440595744-yxnre6",
+      "at": "2026-09-15T02:49:55.743Z",
+      "type": "created",
+      "task_id": "T-MU22Q8F4-NE2T",
+      "title": "Send Msg 1 to every accepted LinkedIn contact (drafts in control room, unsent filter)",
+      "from": null,
+      "to": "backlog",
+      "owner": "izgin"
+    },
     {
       "id": "1789433426496-3gv2ih",
       "at": "2026-09-15T00:50:26.496Z",
