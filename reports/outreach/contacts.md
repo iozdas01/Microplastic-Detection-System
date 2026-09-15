@@ -3,8 +3,8 @@ purpose: The contact ledger — one card per person targeted, invited or intervi
 idea: industrial-process-data-infrastructure
 last_updated: 2026-09-14
 totals:
-  targeted: 229
-  invited: 182
+  targeted: 234
+  invited: 186
   accepted: 14
   scheduled: 0
   done: 5
@@ -6730,9 +6730,10 @@ degree: 3rd+
 mutuals_count:
 active_last_30d: unknown
 open_to_work: false
-outreach_status: pending
+outreach_status: invited
 found_date: 2026-09-14
-notes: "[profile read 2026-09-15] details/experience: Plant Manager Elevate Textiles Jan 2021-present (Burlington NC); Plant Superintendent 2018-21; Dye House Manager Elastic Fabrics of America 2006-18. English. Passes."
+notes: "[profile read 2026-09-15] details/experience: Plant Manager Elevate Textiles Jan 2021-present (Burlington NC); Plant Superintendent 2018-21; Dye House Manager Elastic Fabrics of America 2006-18. English. Passes. [invited 2026-09-14] bare invite via custom-invite modal, modal name confirmed Allen Tate, sent by Claude at founder's instruction."
+
 
 ## Glen Cox
 
@@ -6760,9 +6761,10 @@ degree: 3rd+
 mutuals_count:
 active_last_30d: unknown
 open_to_work: false
-outreach_status: pending
+outreach_status: invited
 found_date: 2026-09-14
-notes: "[profile read 2026-09-15] details/experience: Dye House Manager Shawmut LLC 2019-present (Burlington NC): production team, continuous improvement, cost and waste reduction, quality. English. Passes."
+notes: "[profile read 2026-09-15] details/experience: Dye House Manager Shawmut LLC 2019-present (Burlington NC): production team, continuous improvement, cost and waste reduction, quality. English. Passes. [invited 2026-09-14] bare invite via custom-invite modal, modal name confirmed Glen Cox, sent by Claude at founder's instruction."
+
 
 ## Mário Jorge Silva
 
@@ -7183,3 +7185,153 @@ open_to_work: false
 outreach_status: off_scope
 found_date: 2026-09-14
 notes: "[audit off_scope 2026-09-15] Profile visit: General Manager Ashima Dyecot 1997-2018 (ended); no current employer listed. Fails the live-profile gate on current function. Not invited."
+
+## Sivantha Samarasinghe
+
+id: C235
+name: "Sivantha Samarasinghe"
+linkedin_url: https://www.linkedin.com/in/sivantha-samarasinghe-0b779468/
+linkedin_account: Izgin
+company: "American & Efird (Sri Lanka)"
+role: "General Manager Operations"
+signal_type: profile_fit
+signal_multiplier: 1.0
+signal_source_url: "https://www.linkedin.com/search/results/people/?keywords=American%20%26%20Efird%20dye%20house%20manager"
+signal_excerpt: ""
+contact_role: buyer
+role_pts: 3
+tier: textile_mill
+size_band:
+assumptions_tested: [H1A2, H1A3, H1A6]
+validation_rationale: >
+  Runs operations at American & Efird's Sri Lankan thread plant, including the dye house, lab and EHS, after fourteen years with the company; signs for the dyehouse and hears brand requirements.
+response_likelihood: 4
+likelihood_factors: "3rd degree (0) · GM over dye house and EHS (+1)"
+channel: linkedin
+degree: 3rd+
+mutuals_count:
+active_last_30d: unknown
+open_to_work: false
+outreach_status: pending
+found_date: 2026-09-14
+notes: "[profile read 2026-09-15] details/experience: General Manager Operations American & Efird Jan 2025-present (Sri Lanka), 14 yrs 5 mos at A&E: end-to-end operations across dye house, lab, winding, EHS. English. Passes."
+
+## Ligia Elena Taveras Hiciano
+
+id: C236
+name: "Ligia Elena Taveras Hiciano"
+linkedin_url: https://www.linkedin.com/in/ligia-elena-taveras-hiciano-304b2b167/
+linkedin_account: Izgin
+company: "American & Efird / Elevate Textiles (Dominican Republic)"
+role: "Dye House Manager; Process Manager"
+signal_type: profile_fit
+signal_multiplier: 1.0
+signal_source_url: "https://www.linkedin.com/search/results/people/?keywords=American%20%26%20Efird%20dye%20house%20manager"
+signal_excerpt: ""
+contact_role: buyer
+role_pts: 3
+tier: textile_mill
+size_band:
+assumptions_tested: [H1A2, H1A3, H1A6]
+validation_rationale: >
+  Manages the dye house for American & Efird in the Dominican Republic and is process manager within Elevate Textiles; owns the dyeing process and its effluent.
+response_likelihood: 4
+likelihood_factors: "3rd degree (0) · dye house manager (+1)"
+channel: linkedin
+degree: 3rd+
+mutuals_count:
+active_last_30d: unknown
+open_to_work: false
+outreach_status: pending
+found_date: 2026-09-14
+notes: "[profile read 2026-09-15] details/experience: Dye house Manager American & Efird Jan 2019-present; Process Manager Elevate Textiles Jan 2022-present, Quality Engineer 2019-22 (Dominican Republic). Titles in English (skills partly Spanish). Passes."
+
+## Anup Gupta
+
+id: C237
+name: "Anup Gupta"
+linkedin_url: https://www.linkedin.com/in/anup-gupta-0343932a0/
+linkedin_account: Izgin
+company: "American & Efird (Bangladesh) Ltd"
+role: "General Manager (dye house)"
+signal_type: profile_fit
+signal_multiplier: 1.0
+signal_source_url: "https://www.linkedin.com/search/results/people/?keywords=American%20%26%20Efird%20dye%20house%20manager"
+signal_excerpt: ""
+contact_role: buyer
+role_pts: 3
+tier: textile_mill
+size_band:
+assumptions_tested: [H1A2, H1A3, H1A6]
+validation_rationale: >
+  General manager of the dye house at American & Efird Bangladesh; profile shows no dates.
+response_likelihood: 3
+likelihood_factors: "3rd degree (0)"
+channel: linkedin
+degree: 3rd+
+mutuals_count:
+active_last_30d: unknown
+open_to_work: false
+outreach_status: pending
+found_date: 2026-09-14
+notes: "[profile read 2026-09-15] details/experience: General Manager, American & Efird (Bangladesh) Ltd (no dates); headline GM Dye House. English. HELD from invite: tenure not established (live-profile gate check 4)."
+
+## Guy Morgan
+
+id: C238
+name: "Guy Morgan"
+linkedin_url: https://www.linkedin.com/in/guy-morgan-145ab71/
+linkedin_account: Izgin
+company: "CHANEL (brand; Paris); Fashion Pact operations co-chair; visiting business fellow, Cambridge Engineering"
+role: "Sustainability Director, Fashion"
+signal_type: profile_fit
+signal_multiplier: 1.0
+signal_source_url: ""
+signal_excerpt: ""
+contact_role: buyer
+role_pts: 3
+tier: brand
+size_band:
+assumptions_tested: [H1A2, H1A3]
+validation_rationale: >
+  Directs sustainability for Chanel's fashion division and co-chairs the Fashion Pact's operations committee; sets what a luxury house asks its mills for and sits where industry-wide supplier requirements are shaped.
+response_likelihood: 5
+likelihood_factors: "2nd degree (+2) · shares the sender's Cambridge Engineering affiliation, LR-B26 opener available (+2) · very senior (-2)"
+channel: linkedin
+degree: 2nd
+mutuals_count:
+active_last_30d: unknown
+open_to_work: false
+outreach_status: invited
+found_date: 2026-09-14
+notes: "[profile read 2026-09-15] details/experience: Sustainability Director, Fashion, CHANEL, May 2020-present (10 yrs at Chanel); Board Member Paris Good Fashion and Co-chair Operations Committee Fashion Pact since 2024; Visiting Business Fellow, Department of Engineering, University of Cambridge, since 2024. English profile. Passes (tier brand). Cambridge Engineering overlap with the sender is real and verifiable on both profiles. [invited 2026-09-14] bare invite via custom-invite modal, name confirmed Guy Morgan, sent by Claude at founder's instruction (English profile checked first)."
+
+## Magnus D.
+
+id: C239
+name: "Magnus D."
+linkedin_url: https://www.linkedin.com/in/magnusdo/
+linkedin_account: Izgin
+company: "ABOUT YOU (online fashion retailer and brand; Hamburg)"
+role: "Director Sustainability; ex Head of Corporate Sustainability"
+signal_type: profile_fit
+signal_multiplier: 1.0
+signal_source_url: ""
+signal_excerpt: ""
+contact_role: buyer
+role_pts: 3
+tier: brand
+size_band:
+assumptions_tested: [H1A2, H1A3]
+validation_rationale: >
+  Directs sustainability at ABOUT YOU, with supplier science-based-target coverage in his own results; knows what the retailer's private-label mills are asked to report.
+response_likelihood: 5
+likelihood_factors: "2nd degree (+2) · quantified supplier programme in own role text (+1) · surname hidden (-1)"
+channel: linkedin
+degree: 2nd
+mutuals_count:
+active_last_30d: unknown
+open_to_work: false
+outreach_status: invited
+found_date: 2026-09-14
+notes: "[profile read 2026-09-15] details/experience: ABOUT YOU since 2017: Director Sustainability Oct 2025-present, Head of Corporate Sustainability 2022-25; role text: 80% scope 1 and 2 cut, 71% of partners with SBTs, co-founded Fashion Leap for Climate. English profile. Passes (tier brand). [invited 2026-09-14] bare invite via custom-invite modal, name confirmed Magnus D., sent by Claude at founder's instruction (English profile checked first)."

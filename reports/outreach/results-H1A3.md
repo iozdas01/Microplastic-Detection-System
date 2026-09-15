@@ -8,7 +8,7 @@ _Generated 2026-09-15. Numbers are the funnel over contacts tagged H1A3._
 
 | channel | targeted | contacted | replied | qualified replied | reply rate |
 |---|---|---|---|---|---|
-| LinkedIn | 93 | 0 | 0 | 0 | — |
+| LinkedIn | 98 | 0 | 0 | 0 | — |
 | phone | 0 | 0 | 0 | 0 | — |
 
 _Channels are counted separately._
@@ -19,13 +19,14 @@ _Channels are counted separately._
 |---|---|---|---|
 | C155 | Ali İlker Gün | pending | — |
 | C215 | Johanna J. | pending | — |
-| C219 | Allen Tate | pending | — |
-| C220 | Glen Cox | pending | — |
 | C224 | Gary Lane | pending | — |
 | C225 | Corey Bishop | pending | — |
 | C231 | Christian Rojo | pending | — |
 | C232 | Kassie Cartee | pending | — |
 | C233 | Bilal Ahmed | pending | — |
+| C235 | Sivantha Samarasinghe | pending | — |
+| C236 | Ligia Elena Taveras Hiciano | pending | — |
+| C237 | Anup Gupta | pending | — |
 | C143 | Nabeel Aman | invited | — |
 | C144 | H. Abdullah Mahmood | invited | — |
 | C145 | Ashwani Sharma | invited | — |
@@ -57,12 +58,16 @@ _Channels are counted separately._
 | C216 | Ricardo Martins da Silva | invited | — |
 | C217 | Randy Henderson | invited | — |
 | C218 | Tim Shirley | invited | — |
+| C219 | Allen Tate | invited | — |
 | C22 | Erkan Ekici | invited | — |
+| C220 | Glen Cox | invited | — |
 | C226 | Felicity Tapsell | invited | — |
 | C227 | Duncan Crook | invited | — |
 | C228 | Roz Adams | invited | — |
 | C229 | Jonathan Brook | invited | — |
 | C230 | Esref Tuncer | invited | — |
+| C238 | Guy Morgan | invited | — |
+| C239 | Magnus D. | invited | — |
 | C24 | B. Hande Tezer | invited | — |
 | C31 | Okan Çakıcı | invited | — |
 | C41 | Didem Civancik-Uslu | invited | — |
