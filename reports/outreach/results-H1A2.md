@@ -8,7 +8,7 @@ _Generated 2026-09-15. Numbers are the funnel over contacts tagged H1A2._
 
 | channel | targeted | contacted | replied | qualified replied | reply rate |
 |---|---|---|---|---|---|
-| LinkedIn | 109 | 1 | 1 | 1 | 100.0% |
+| LinkedIn | 109 | 2 | 2 | 2 | 100.0% |
 | phone | 0 | 0 | 0 | 0 | — |
 
 _Channels are counted separately._
@@ -18,31 +18,9 @@ _Channels are counted separately._
 | id | name | status | call stage |
 |---|---|---|---|
 | C12 | Ted Ellington | pending | — |
-| C150 | Moniruzzaman | pending | — |
-| C151 | Kamran Ali | pending | — |
-| C152 | Tariq Nadeem Siddiqui | pending | — |
-| C153 | Md. Sakhawat Hossain | pending | — |
-| C154 | Mahasin Zaman | pending | — |
 | C155 | Ali İlker Gün | pending | — |
-| C156 | Engr. Mamun-ur-Rashid | pending | — |
-| C157 | Saif Khan | pending | — |
-| C158 | Ikram Bashir | pending | — |
-| C161 | Akhtar Qureshi | pending | — |
-| C162 | Abdul Rasheed | pending | — |
-| C163 | Khursheed Ahmed | pending | — |
-| C166 | Md. Al-amin Howlader | pending | — |
-| C167 | Mezbahul Islam | pending | — |
-| C168 | Abdul Akher | pending | — |
-| C169 | Sanjib Paul | pending | — |
-| C170 | Farah Wadie | pending | — |
-| C171 | Md Mashiur Rahman | pending | — |
-| C172 | Mohd. Joynal Abedin | pending | — |
-| C173 | M. S. Arefin | pending | — |
-| C174 | Omar Ali | pending | — |
 | C25 | Shridhar H T | pending | — |
-| C1 | Caner Gökçek | invited | — |
 | C11 | Öner Gündüz | invited | — |
-| C14 | Yalçın Çelik | invited | — |
 | C143 | Nabeel Aman | invited | — |
 | C144 | H. Abdullah Mahmood | invited | — |
 | C145 | Ashwani Sharma | invited | — |
@@ -50,7 +28,27 @@ _Channels are counted separately._
 | C147 | Mehmet Çetin | invited | — |
 | C148 | Murat Yürür | invited | — |
 | C149 | Ahmet Çağrı Dalkır | invited | — |
+| C150 | Moniruzzaman | invited | — |
+| C151 | Kamran Ali | invited | — |
+| C152 | Tariq Nadeem Siddiqui | invited | — |
+| C153 | Md. Sakhawat Hossain | invited | — |
+| C154 | Mahasin Zaman | invited | — |
+| C156 | Engr. Mamun-ur-Rashid | invited | — |
+| C157 | Saif Khan | invited | — |
+| C158 | Ikram Bashir | invited | — |
 | C16 | Mehmet Adıyaman | invited | — |
+| C161 | Akhtar Qureshi | invited | — |
+| C162 | Abdul Rasheed | invited | — |
+| C163 | Khursheed Ahmed | invited | — |
+| C166 | Md. Al-amin Howlader | invited | — |
+| C167 | Mezbahul Islam | invited | — |
+| C168 | Abdul Akher | invited | — |
+| C169 | Sanjib Paul | invited | — |
+| C170 | Farah Wadie | invited | — |
+| C171 | Md Mashiur Rahman | invited | — |
+| C172 | Mohd. Joynal Abedin | invited | — |
+| C173 | M. S. Arefin | invited | — |
+| C174 | Omar Ali | invited | — |
 | C20 | Hüseyin Çınar | invited | — |
 | C21 | Yasemin Mecit Akdaş | invited | — |
 | C22 | Erkan Ekici | invited | — |
@@ -59,15 +57,9 @@ _Channels are counted separately._
 | C29 | Calvin Huelsman | invited | — |
 | C31 | Okan Çakıcı | invited | — |
 | C33 | Sercan Yaz | invited | — |
-| C36 | Murat İ. | invited | — |
 | C41 | Didem Civancik-Uslu | invited | — |
 | C42 | Tuğba Erdem Yakut | invited | — |
 | C43 | Chris Chen | invited | — |
-| C46 | Andrea Martinetti | invited | — |
-| C47 | Margarida Marques | invited | — |
-| C49 | Luciano Bragança | invited | — |
-| C50 | Paola Polinelli | invited | — |
-| C51 | Emanuele Arrigoni | invited | — |
 | C54 | Moshiur Rahman | invited | — |
 | C56 | Engr. Abdul Aziz | invited | — |
 | C60 | Aman Ullah | invited | — |
@@ -87,43 +79,51 @@ _Channels are counted separately._
 | C75 | Satish Kejriwal | invited | — |
 | C76 | Jonathan Whitehead | invited | — |
 | C10 | Bekir Boyacı | accepted | — |
-| C15 | Yasin Taştekin | accepted | — |
-| C17 | Ersen Ş. | accepted | — |
 | C18 | Ahmet Kaleli | accepted | — |
-| C19 | Yunus Öz | accepted | — |
-| C2 | Ali Kemal Kul | accepted | — |
-| C23 | Rafet Çelebi | accepted | — |
-| C3 | Veysel Özgür | accepted | — |
 | C30 | Önder Ertürk | accepted | — |
-| C32 | İrem Terzi | accepted | — |
-| C35 | Hüseyin Özdilek Körmen | accepted | — |
-| C37 | Erdal Gülcan | accepted | — |
-| C38 | Murat Gülay | accepted | — |
-| C4 | Rabia Akkurt | accepted | — |
 | C40 | Erdogan Sekerci | accepted | — |
 | C44 | Ronit Basu | accepted | — |
-| C45 | Nicholas Filippone | accepted | — |
 | C48 | Ayesha Navaid Anwar | accepted | — |
-| C5 | Mustafa Salih | accepted | — |
-| C52 | Giacomo Speroni | accepted | — |
-| C53 | Mauro Franz | accepted | — |
 | C55 | Gulfam S. | accepted | — |
-| C59 | Faizan Pasha | accepted | — |
 | C6 | Halil Kutluğ Kabahasanoğlu | accepted | — |
 | C7 | Murat Terlemez | accepted | — |
 | C58 | Paulo Lopes | replied | — |
+| C59 | Faizan Pasha | replied | — |
 | C178 | Martin (surname not recorded) | done | completed |
 | C179 | Sharif (surname not recorded) | done | completed |
+| C1 | Caner Gökçek | off_scope | — |
 | C13 | Sedat Çinici | off_scope | — |
+| C14 | Yalçın Çelik | off_scope | — |
+| C15 | Yasin Taştekin | off_scope | — |
 | C159 | Syed Uzair Ahmed Gilani | off_scope | — |
 | C160 | M. Irfan Haider | off_scope | — |
 | C164 | Zainul Abideen | off_scope | — |
 | C165 | Behzad K. | off_scope | — |
+| C17 | Ersen Ş. | off_scope | — |
 | C175 | Suresh Kumar G | off_scope | — |
+| C19 | Yunus Öz | off_scope | — |
+| C2 | Ali Kemal Kul | off_scope | — |
+| C23 | Rafet Çelebi | off_scope | — |
 | C26 | Büşra Suiçmez | off_scope | — |
 | C27 | Nastassia Ramazankhani | off_scope | — |
+| C3 | Veysel Özgür | off_scope | — |
+| C32 | İrem Terzi | off_scope | — |
 | C34 | Süleyman Argün | off_scope | — |
+| C35 | Hüseyin Özdilek Körmen | off_scope | — |
+| C36 | Murat İ. | off_scope | — |
+| C37 | Erdal Gülcan | off_scope | — |
+| C38 | Murat Gülay | off_scope | — |
 | C39 | Göksel Arcan | off_scope | — |
+| C4 | Rabia Akkurt | off_scope | — |
+| C45 | Nicholas Filippone | off_scope | — |
+| C46 | Andrea Martinetti | off_scope | — |
+| C47 | Margarida Marques | off_scope | — |
+| C49 | Luciano Bragança | off_scope | — |
+| C5 | Mustafa Salih | off_scope | — |
+| C50 | Paola Polinelli | off_scope | — |
+| C51 | Emanuele Arrigoni | off_scope | — |
+| C52 | Giacomo Speroni | off_scope | — |
+| C53 | Mauro Franz | off_scope | — |
 | C57 | Nuno Macieira | off_scope | — |
 | C61 | Yasin Yücedağ | off_scope | — |
 | C8 | Burç Çetin Tezgel | off_scope | — |

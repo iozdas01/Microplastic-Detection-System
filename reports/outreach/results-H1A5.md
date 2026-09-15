@@ -8,7 +8,7 @@ _Generated 2026-09-15. Numbers are the funnel over contacts tagged H1A5._
 
 | channel | targeted | contacted | replied | qualified replied | reply rate |
 |---|---|---|---|---|---|
-| LinkedIn | 18 | 2 | 2 | 2 | 100.0% |
+| LinkedIn | 32 | 2 | 2 | 2 | 100.0% |
 | phone | 0 | 0 | 0 | 0 | — |
 
 _Channels are counted separately._
@@ -32,9 +32,23 @@ _Channels are counted separately._
 | C192 | Anshu Malika G. | invited | — |
 | C193 | Mohamed Taha | invited | — |
 | C194 | Achala Herath | invited | — |
+| C197 | Richard Liang | invited | — |
+| C198 | Peter Brackmann | invited | — |
+| C200 | Sebastian Porkert | invited | — |
+| C202 | James Bergman | invited | — |
+| C203 | Chris Freeman | invited | — |
+| C205 | Rebecca Tallon | invited | — |
+| C206 | Gusphyl Justin | invited | — |
+| C207 | William Lipps | invited | — |
+| C208 | Jean-Luc Madier | invited | — |
+| C210 | Dominik Elsaesser | invited | — |
 | C176 | Paul (surname not recorded) | done | completed |
 | C177 | Mark (surname not recorded) | done | completed |
 | C178 | Martin (surname not recorded) | done | completed |
 | C179 | Sharif (surname not recorded) | done | completed |
 | C180 | Varija Subasingha | done | completed |
 | C195 | Katrin Schuhen | off_scope | — |
+| C199 | Kyle Wilms | off_scope | — |
+| C201 | Adrian Scholl | off_scope | — |
+| C204 | Bob Brooks | off_scope | — |
+| C211 | Andy Johnston | off_scope | — |

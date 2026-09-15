@@ -17,28 +17,7 @@ _Channels are counted separately._
 
 | id | name | status | call stage |
 |---|---|---|---|
-| C150 | Moniruzzaman | pending | — |
-| C151 | Kamran Ali | pending | — |
-| C152 | Tariq Nadeem Siddiqui | pending | — |
-| C153 | Md. Sakhawat Hossain | pending | — |
-| C154 | Mahasin Zaman | pending | — |
 | C155 | Ali İlker Gün | pending | — |
-| C156 | Engr. Mamun-ur-Rashid | pending | — |
-| C157 | Saif Khan | pending | — |
-| C158 | Ikram Bashir | pending | — |
-| C161 | Akhtar Qureshi | pending | — |
-| C162 | Abdul Rasheed | pending | — |
-| C163 | Khursheed Ahmed | pending | — |
-| C166 | Md. Al-amin Howlader | pending | — |
-| C167 | Mezbahul Islam | pending | — |
-| C168 | Abdul Akher | pending | — |
-| C169 | Sanjib Paul | pending | — |
-| C170 | Farah Wadie | pending | — |
-| C171 | Md Mashiur Rahman | pending | — |
-| C172 | Mohd. Joynal Abedin | pending | — |
-| C173 | M. S. Arefin | pending | — |
-| C174 | Omar Ali | pending | — |
-| C14 | Yalçın Çelik | invited | — |
 | C143 | Nabeel Aman | invited | — |
 | C144 | H. Abdullah Mahmood | invited | — |
 | C145 | Ashwani Sharma | invited | — |
@@ -46,10 +25,28 @@ _Channels are counted separately._
 | C147 | Mehmet Çetin | invited | — |
 | C148 | Murat Yürür | invited | — |
 | C149 | Ahmet Çağrı Dalkır | invited | — |
+| C150 | Moniruzzaman | invited | — |
+| C151 | Kamran Ali | invited | — |
+| C152 | Tariq Nadeem Siddiqui | invited | — |
+| C153 | Md. Sakhawat Hossain | invited | — |
+| C154 | Mahasin Zaman | invited | — |
+| C156 | Engr. Mamun-ur-Rashid | invited | — |
+| C157 | Saif Khan | invited | — |
+| C158 | Ikram Bashir | invited | — |
 | C16 | Mehmet Adıyaman | invited | — |
+| C161 | Akhtar Qureshi | invited | — |
+| C162 | Abdul Rasheed | invited | — |
+| C163 | Khursheed Ahmed | invited | — |
+| C166 | Md. Al-amin Howlader | invited | — |
+| C167 | Mezbahul Islam | invited | — |
+| C168 | Abdul Akher | invited | — |
+| C169 | Sanjib Paul | invited | — |
+| C170 | Farah Wadie | invited | — |
+| C171 | Md Mashiur Rahman | invited | — |
+| C172 | Mohd. Joynal Abedin | invited | — |
+| C173 | M. S. Arefin | invited | — |
+| C174 | Omar Ali | invited | — |
 | C22 | Erkan Ekici | invited | — |
-| C36 | Murat İ. | invited | — |
-| C46 | Andrea Martinetti | invited | — |
 | C54 | Moshiur Rahman | invited | — |
 | C56 | Engr. Abdul Aziz | invited | — |
 | C62 | Eray Karaduman | invited | — |
@@ -63,17 +60,20 @@ _Channels are counted separately._
 | C74 | Muhammad Omer Ahmed | invited | — |
 | C75 | Satish Kejriwal | invited | — |
 | C76 | Jonathan Whitehead | invited | — |
-| C15 | Yasin Taştekin | accepted | — |
 | C18 | Ahmet Kaleli | accepted | — |
-| C19 | Yunus Öz | accepted | — |
-| C2 | Ali Kemal Kul | accepted | — |
-| C3 | Veysel Özgür | accepted | — |
 | C55 | Gulfam S. | accepted | — |
 | C6 | Halil Kutluğ Kabahasanoğlu | accepted | — |
 | C7 | Murat Terlemez | accepted | — |
+| C14 | Yalçın Çelik | off_scope | — |
+| C15 | Yasin Taştekin | off_scope | — |
 | C159 | Syed Uzair Ahmed Gilani | off_scope | — |
 | C160 | M. Irfan Haider | off_scope | — |
 | C164 | Zainul Abideen | off_scope | — |
 | C165 | Behzad K. | off_scope | — |
 | C175 | Suresh Kumar G | off_scope | — |
+| C19 | Yunus Öz | off_scope | — |
+| C2 | Ali Kemal Kul | off_scope | — |
+| C3 | Veysel Özgür | off_scope | — |
+| C36 | Murat İ. | off_scope | — |
+| C46 | Andrea Martinetti | off_scope | — |
 | C61 | Yasin Yücedağ | off_scope | — |

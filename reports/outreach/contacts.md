@@ -3,8 +3,8 @@ purpose: The contact ledger — one card per person targeted, invited or intervi
 idea: industrial-process-data-infrastructure
 last_updated: 2026-09-14
 totals:
-  targeted: 191
-  invited: 140
+  targeted: 206
+  invited: 171
   accepted: 11
   scheduled: 0
   done: 5
@@ -4587,9 +4587,10 @@ degree: 3rd+
 mutuals_count:
 active_last_30d: unknown
 open_to_work: false
-outreach_status: pending
+outreach_status: invited
 found_date: 2026-09-14
-notes: "[profile read 2026-09-14] details/experience: Assistant General Manager Pacific Knit Division Feb 2025-present (Chattogram): leads full dyeing department operations, planning, RFT, dosing and dispensing automation. English. Passes."
+notes: "[profile read 2026-09-14] details/experience: Assistant General Manager Pacific Knit Division Feb 2025-present (Chattogram): leads full dyeing department operations, planning, RFT, dosing and dispensing automation. English. Passes. [invited 2026-09-14] bare invite via custom-invite modal, modal name confirmed Moniruzzaman, sent by Claude at founder's instruction."
+
 
 ## Kamran Ali
 
@@ -4617,9 +4618,10 @@ degree: 2nd
 mutuals_count:
 active_last_30d: unknown
 open_to_work: false
-outreach_status: pending
+outreach_status: invited
 found_date: 2026-09-14
-notes: "[profile read 2026-09-14] details/experience: Deputy General Manager (Washing) Artistic Milliners Jun 2019-present (Karachi); Manager Artistic Denim Mills 2012-19; Pelikan Knitwear, DSI Group, Habib Knit before. English. Passes."
+notes: "[profile read 2026-09-14] details/experience: Deputy General Manager (Washing) Artistic Milliners Jun 2019-present (Karachi); Manager Artistic Denim Mills 2012-19; Pelikan Knitwear, DSI Group, Habib Knit before. English. Passes. [invited 2026-09-14] bare invite via custom-invite modal, modal name confirmed Kamran Ali, sent by Claude at founder's instruction."
+
 
 ## Tariq Nadeem Siddiqui
 
@@ -4647,9 +4649,10 @@ degree: 3rd+
 mutuals_count:
 active_last_30d: unknown
 open_to_work: false
-outreach_status: pending
+outreach_status: invited
 found_date: 2026-09-14
-notes: "[profile read 2026-09-14] details/experience: General Manager Grace Knitwear Mar 2007-present (Karachi); Director Operations Quality Dyeing & Finishing 2003-05 (built and equipped an open-width knit finishing unit). English. Passes; whether Grace Knitwear dyes in-house not stated, his background is wet processing."
+notes: "[profile read 2026-09-14] details/experience: General Manager Grace Knitwear Mar 2007-present (Karachi); Director Operations Quality Dyeing & Finishing 2003-05 (built and equipped an open-width knit finishing unit). English. Passes; whether Grace Knitwear dyes in-house not stated, his background is wet processing. [invited 2026-09-14] bare invite via custom-invite modal, modal name confirmed Tariq Nadeem Siddiqui, sent by Claude at founder's instruction."
+
 
 ## Md. Sakhawat Hossain
 
@@ -4677,9 +4680,10 @@ degree: 3rd+
 mutuals_count:
 active_last_30d: unknown
 open_to_work: false
-outreach_status: pending
+outreach_status: invited
 found_date: 2026-09-14
-notes: "[profile read 2026-09-14] details/experience: Executive Director Eurotex Knitwear Dec 2023-present: planning, inventory of yarn, fabric, dyes and chemicals, knitting technology, lab-dip and pre-bulk analysis. English. Passes."
+notes: "[profile read 2026-09-14] details/experience: Executive Director Eurotex Knitwear Dec 2023-present: planning, inventory of yarn, fabric, dyes and chemicals, knitting technology, lab-dip and pre-bulk analysis. English. Passes. [invited 2026-09-14] bare invite via custom-invite modal, modal name confirmed Md. Sakhawat Hossain, sent by Claude at founder's instruction."
+
 
 ## Mahasin Zaman
 
@@ -4707,9 +4711,10 @@ degree: 2nd
 mutuals_count:
 active_last_30d: unknown
 open_to_work: false
-outreach_status: pending
+outreach_status: invited
 found_date: 2026-09-14
-notes: "[profile read 2026-09-14] details/experience: General Manager Denim washing & dyeing, Jeans Manufacturing Co. Jan 2025-present (Dhaka); General Manager / wash unit head Ananta Group 2023-25. English. Passes."
+notes: "[profile read 2026-09-14] details/experience: General Manager Denim washing & dyeing, Jeans Manufacturing Co. Jan 2025-present (Dhaka); General Manager / wash unit head Ananta Group 2023-25. English. Passes. [invited 2026-09-14] bare invite via custom-invite modal, modal name confirmed Mahasin Zaman, sent by Claude at founder's instruction."
+
 
 ## Ali İlker Gün
 
@@ -4767,9 +4772,10 @@ degree: 3rd+
 mutuals_count:
 active_last_30d: unknown
 open_to_work: false
-outreach_status: pending
+outreach_status: invited
 found_date: 2026-09-14
-notes: "[profile read 2026-09-14] details/experience: Deputy General Manager (Washing) Dekko ISHO Group Apr 2025-present (Gazipur): production rates, planning against shipments, dry and wet process issues, development projects. English. Passes."
+notes: "[profile read 2026-09-14] details/experience: Deputy General Manager (Washing) Dekko ISHO Group Apr 2025-present (Gazipur): production rates, planning against shipments, dry and wet process issues, development projects. English. Passes. [invited 2026-09-14] bare invite via custom-invite modal, modal name confirmed Engr. Mamun-ur-Rashid, sent by Claude at founder's instruction."
+
 
 ## Saif Khan
 
@@ -4797,9 +4803,10 @@ degree: 3rd+
 mutuals_count:
 active_last_30d: unknown
 open_to_work: false
-outreach_status: pending
+outreach_status: invited
 found_date: 2026-09-14
-notes: "[profile read 2026-09-14] details/experience: General Manager Soorty Enterprises Aug 2020-present, Laundry Manager 2017-20 (Karachi); Artistic Milliners DGM 2015-17 and laundry manager 2013-15; Rajby before. English. Passes."
+notes: "[profile read 2026-09-14] details/experience: General Manager Soorty Enterprises Aug 2020-present, Laundry Manager 2017-20 (Karachi); Artistic Milliners DGM 2015-17 and laundry manager 2013-15; Rajby before. English. Passes. [invited 2026-09-14] bare invite via custom-invite modal, modal name confirmed Saif Khan, sent by Claude at founder's instruction."
+
 
 ## Ikram Bashir
 
@@ -4827,9 +4834,10 @@ degree: 3rd+
 mutuals_count:
 active_last_30d: unknown
 open_to_work: false
-outreach_status: pending
+outreach_status: invited
 found_date: 2026-09-14
-notes: "[profile read 2026-09-14] details/experience: General Manager Chaman Processing Industries Jul 2018-present (Punjab); General Manager Shah Niaz Dyeing Industries 2006-18. English. Passes."
+notes: "[profile read 2026-09-14] details/experience: General Manager Chaman Processing Industries Jul 2018-present (Punjab); General Manager Shah Niaz Dyeing Industries 2006-18. English. Passes. [invited 2026-09-14] bare invite via custom-invite modal, modal name confirmed Ikram Bashir, sent by Claude at founder's instruction."
+
 
 ## Syed Uzair Ahmed Gilani
 
@@ -4917,9 +4925,10 @@ degree: 3rd+
 mutuals_count:
 active_last_30d: unknown
 open_to_work: false
-outreach_status: pending
+outreach_status: invited
 found_date: 2026-09-14
-notes: "[profile read 2026-09-14] details/experience: General Manager Sapphire Textile Mills (spinning, weaving, yarn dyeing, processing and stitching), listed from 1979 to present (Lahore); General Manager Nooriabad Textile Mills 2016-20. English. Passes; exact function inside Sapphire not stated."
+notes: "[profile read 2026-09-14] details/experience: General Manager Sapphire Textile Mills (spinning, weaving, yarn dyeing, processing and stitching), listed from 1979 to present (Lahore); General Manager Nooriabad Textile Mills 2016-20. English. Passes; exact function inside Sapphire not stated. [invited 2026-09-14] bare invite via custom-invite modal, modal name confirmed Akhtar Qureshi, sent by Claude at founder's instruction."
+
 
 ## Abdul Rasheed
 
@@ -4947,9 +4956,10 @@ degree: 3rd+
 mutuals_count:
 active_last_30d: unknown
 open_to_work: false
-outreach_status: pending
+outreach_status: invited
 found_date: 2026-09-14
-notes: "[profile read 2026-09-14] details/experience: Senior Manager Dyeing and Processing, Ebrahim Textile Mills May 2012-present (Landhi). English. Passes."
+notes: "[profile read 2026-09-14] details/experience: Senior Manager Dyeing and Processing, Ebrahim Textile Mills May 2012-present (Landhi). English. Passes. [invited 2026-09-14] bare invite via custom-invite modal, modal name confirmed Abdul Rasheed, sent by Claude at founder's instruction."
+
 
 ## Khursheed Ahmed
 
@@ -4977,9 +4987,10 @@ degree: 3rd+
 mutuals_count:
 active_last_30d: unknown
 open_to_work: false
-outreach_status: pending
+outreach_status: invited
 found_date: 2026-09-14
-notes: "[profile read 2026-09-14] details/experience: General Manager Processing, Evaluation Textile Nov 2020-present; GM Processing Al Azeem Interlining and Textile 2019-20 (Karachi); Manager Dyeing and Finishing Reliance Textiles before. English. Passes; employer name as listed, not independently checked."
+notes: "[profile read 2026-09-14] details/experience: General Manager Processing, Evaluation Textile Nov 2020-present; GM Processing Al Azeem Interlining and Textile 2019-20 (Karachi); Manager Dyeing and Finishing Reliance Textiles before. English. Passes; employer name as listed, not independently checked. [invited 2026-09-14] bare invite via custom-invite modal, modal name confirmed Khursheed Ahmed, sent by Claude at founder's instruction."
+
 
 ## Zainul Abideen
 
@@ -5067,9 +5078,10 @@ degree: 2nd
 mutuals_count:
 active_last_30d: unknown
 open_to_work: false
-outreach_status: pending
+outreach_status: invited
 found_date: 2026-09-14
-notes: "[profile read 2026-09-14] details/experience: General Manager Valmont Group Dec 2019-present (Gazipur): production, R&D and quality, factory cost analysis, sustainable process methodology, wash-recipe cost analysis. English. Passes."
+notes: "[profile read 2026-09-14] details/experience: General Manager Valmont Group Dec 2019-present (Gazipur): production, R&D and quality, factory cost analysis, sustainable process methodology, wash-recipe cost analysis. English. Passes. [invited 2026-09-14] bare invite via custom-invite modal, modal name confirmed Md. Al-amin Howlader, sent by Claude at founder's instruction."
+
 
 ## Mezbahul Islam
 
@@ -5097,9 +5109,10 @@ degree: 2nd
 mutuals_count:
 active_last_30d: unknown
 open_to_work: false
-outreach_status: pending
+outreach_status: invited
 found_date: 2026-09-14
-notes: "[profile read 2026-09-14] details/experience: General Manager Euro Washing Ltd Aug 2021-present (Dhaka); Bitopi Group, Tarasima Apparels acting manager 2017-21. English. Passes."
+notes: "[profile read 2026-09-14] details/experience: General Manager Euro Washing Ltd Aug 2021-present (Dhaka); Bitopi Group, Tarasima Apparels acting manager 2017-21. English. Passes. [invited 2026-09-14] bare invite via custom-invite modal, modal name confirmed Mezbahul Islam, sent by Claude at founder's instruction."
+
 
 ## Abdul Akher
 
@@ -5127,9 +5140,10 @@ degree: 2nd
 mutuals_count:
 active_last_30d: unknown
 open_to_work: false
-outreach_status: pending
+outreach_status: invited
 found_date: 2026-09-14
-notes: "[profile read 2026-09-14] details/experience: General Manager Next Washing Ltd (Hameem Group) Feb 2026-present; Head of Operations Babylon Washing Sep 2024-present: complete washing operations, wet and dry processing, planning, quality. English. Passes."
+notes: "[profile read 2026-09-14] details/experience: General Manager Next Washing Ltd (Hameem Group) Feb 2026-present; Head of Operations Babylon Washing Sep 2024-present: complete washing operations, wet and dry processing, planning, quality. English. Passes. [invited 2026-09-14] bare invite via custom-invite modal, modal name confirmed Abdul Akher, sent by Claude at founder's instruction."
+
 
 ## Sanjib Paul
 
@@ -5157,9 +5171,10 @@ degree: 3rd+
 mutuals_count:
 active_last_30d: unknown
 open_to_work: false
-outreach_status: pending
+outreach_status: invited
 found_date: 2026-09-14
-notes: "[profile read 2026-09-14] details/experience: General Manager (Washing) Epic Group Sep 2021-present (Savar); Washing Plant Head Dekko ISHO 2019-21; DGM Washing DIRD Group 2015-19. English. Passes."
+notes: "[profile read 2026-09-14] details/experience: General Manager (Washing) Epic Group Sep 2021-present (Savar); Washing Plant Head Dekko ISHO 2019-21; DGM Washing DIRD Group 2015-19. English. Passes. [invited 2026-09-14] bare invite via custom-invite modal, modal name confirmed Sanjib Paul, sent by Claude at founder's instruction."
+
 
 ## Farah Wadie
 
@@ -5187,9 +5202,10 @@ degree: 3rd+
 mutuals_count:
 active_last_30d: unknown
 open_to_work: false
-outreach_status: pending
+outreach_status: invited
 found_date: 2026-09-14
-notes: "[profile read 2026-09-14] details/experience: General Manager of Dyeing and Finishing and consultant, NEW-TEX Jan 2023-present; dyehouse GM Heliopolis 2021-23, Pharaoh Carpets 2020-21, Sasa Tex before; consultant MardiniTex 2021-23. English. Passes."
+notes: "[profile read 2026-09-14] details/experience: General Manager of Dyeing and Finishing and consultant, NEW-TEX Jan 2023-present; dyehouse GM Heliopolis 2021-23, Pharaoh Carpets 2020-21, Sasa Tex before; consultant MardiniTex 2021-23. English. Passes. [invited 2026-09-14] bare invite via custom-invite modal, modal name confirmed Farah Wadie, sent by Claude at founder's instruction."
+
 
 ## Md Mashiur Rahman
 
@@ -5217,9 +5233,10 @@ degree: 3rd+
 mutuals_count:
 active_last_30d: unknown
 open_to_work: false
-outreach_status: pending
+outreach_status: invited
 found_date: 2026-09-14
-notes: "[profile read 2026-09-14] details/experience: AGM (Washing & Dyeing) Bengal Group of Industries Sep 2018-present (Dhaka); Manager Denim Washing R&D Dekko Group 2016-18; Asst Manager Washing R&D Pacific Jeans 2010-16. English. Passes."
+notes: "[profile read 2026-09-14] details/experience: AGM (Washing & Dyeing) Bengal Group of Industries Sep 2018-present (Dhaka); Manager Denim Washing R&D Dekko Group 2016-18; Asst Manager Washing R&D Pacific Jeans 2010-16. English. Passes. [invited 2026-09-14] bare invite via custom-invite modal, modal name confirmed Md Mashiur Rahman, sent by Claude at founder's instruction."
+
 
 ## Mohd. Joynal Abedin
 
@@ -5247,9 +5264,10 @@ degree: 3rd+
 mutuals_count:
 active_last_30d: unknown
 open_to_work: false
-outreach_status: pending
+outreach_status: invited
 found_date: 2026-09-14
-notes: "[profile read 2026-09-14] details/experience: General Manager Keya Knit Composite Jan 2020-present; GM Marketing & Merchandising The Delta Composite Knitting (Europe buyers incl. Monoprix) 2017-present. English. Passes; his GM remit may be commercial rather than dyehouse."
+notes: "[profile read 2026-09-14] details/experience: General Manager Keya Knit Composite Jan 2020-present; GM Marketing & Merchandising The Delta Composite Knitting (Europe buyers incl. Monoprix) 2017-present. English. Passes; his GM remit may be commercial rather than dyehouse. [invited 2026-09-14] bare invite via custom-invite modal, modal name confirmed Mohd. Joynal Abedin, sent by Claude at founder's instruction."
+
 
 ## M. S. Arefin
 
@@ -5277,9 +5295,10 @@ degree: 3rd+
 mutuals_count:
 active_last_30d: unknown
 open_to_work: false
-outreach_status: pending
+outreach_status: invited
 found_date: 2026-09-14
-notes: "[profile read 2026-09-14] details/experience: General Manager Arien Knit Composite Jul 2021-present (Gazipur); Head of Fabrics Dyeing Mosharaf Group 2019-21. English. Passes."
+notes: "[profile read 2026-09-14] details/experience: General Manager Arien Knit Composite Jul 2021-present (Gazipur); Head of Fabrics Dyeing Mosharaf Group 2019-21. English. Passes. [invited 2026-09-14] bare invite via custom-invite modal, modal name confirmed M. S. Arefin, sent by Claude at founder's instruction."
+
 
 ## Omar Ali
 
@@ -5307,9 +5326,10 @@ degree: 3rd+
 mutuals_count:
 active_last_30d: unknown
 open_to_work: false
-outreach_status: pending
+outreach_status: invited
 found_date: 2026-09-14
-notes: "[profile read 2026-09-14] details/experience: AGM (Dyeing Finishing) Alliance Knit Composite Jul 2023-present (Ashulia): daily dyeing and finishing production, quality to buyer standard, 100 t stenter and 60 t compactor output. English. Passes."
+notes: "[profile read 2026-09-14] details/experience: AGM (Dyeing Finishing) Alliance Knit Composite Jul 2023-present (Ashulia): daily dyeing and finishing production, quality to buyer standard, 100 t stenter and 60 t compactor output. English. Passes. [invited 2026-09-14] bare invite via custom-invite modal, modal name confirmed Omar Ali, sent by Claude at founder's instruction."
+
 
 ## Suresh Kumar G
 
@@ -6010,3 +6030,463 @@ open_to_work: false
 outreach_status: pending
 found_date: 2026-09-14
 notes: "[profile read 2026-09-15] details/experience: Owner, Environmental Enhancements (no dates listed). English. HELD from invite: tenure not established on the profile (live-profile gate check 4); invite once a date or company source confirms he still runs it."
+
+## Richard Liang
+
+id: C197
+name: "Richard Liang"
+linkedin_url: https://www.linkedin.com/in/richard-liang-393aa76/
+linkedin_account: Izgin
+company: "Clearly Filtered (Rancho Santa Margarita, California)"
+role: "Director of Product"
+signal_type: profile_fit
+signal_multiplier: 1.0
+signal_source_url: "https://www.linkedin.com/company/clearly-filtered-inc/people/"
+signal_excerpt: ""
+contact_role: buyer
+role_pts: 3
+tier: filtration_vendor
+size_band:
+assumptions_tested: [H1A5]
+validation_rationale: >
+  Owns product strategy and roadmap at Clearly Filtered, a US filter brand sold on NSF/ANSI 401 microplastic reduction; decides how capture claims are tested and what evidence the product carries.
+response_likelihood: 4
+likelihood_factors: "3rd degree (0) · product owner (+1)"
+channel: linkedin
+degree: 3rd+
+mutuals_count:
+active_last_30d: unknown
+open_to_work: false
+outreach_status: invited
+found_date: 2026-09-14
+notes: "[profile read 2026-09-15] details/experience: Director of Product Clearly Filtered May 2025-present (California): product strategy, roadmap and lifecycle across the hardware portfolio; supply-chain diversification. English. Passes (H1A5 filtration_vendor, Western water-filtration push, founder instruction 2026-09-15). [invited 2026-09-14] bare invite via custom-invite modal, modal name confirmed Richard Liang, sent by Claude at founder's instruction."
+
+
+## Peter Brackmann
+
+id: C198
+name: "Peter Brackmann"
+linkedin_url: https://www.linkedin.com/in/peter-brackmann/
+linkedin_account: Izgin
+company: "MicroBubbles GmbH (Bad Lippspringe, Germany)"
+role: "Project Lead"
+signal_type: profile_fit
+signal_multiplier: 1.0
+signal_source_url: "https://www.linkedin.com/company/microbubbles-gmbh/people/"
+signal_excerpt: ""
+contact_role: practitioner
+role_pts: 2
+tier: filtration_vendor
+size_band:
+assumptions_tested: [H1A5]
+validation_rationale: >
+  Leads projects at MicroBubbles, which removes microplastics from water by in-situ micro-flotation for wastewater plants; knows how removal is verified on site.
+response_likelihood: 4
+likelihood_factors: "3rd degree (0) · runs removal projects (+1)"
+channel: linkedin
+degree: 3rd+
+mutuals_count:
+active_last_30d: unknown
+open_to_work: false
+outreach_status: invited
+found_date: 2026-09-14
+notes: "[profile read 2026-09-15] details/experience: Project Lead MicroBubbles GmbH Jan 2022-present; headline Technical Project Manager, wastewater treatment and flotation; project manager Turner & Townsend 2019-21. Titles in English. Passes. [invited 2026-09-14] bare invite via custom-invite modal, modal name confirmed Peter Brackmann, sent by Claude at founder's instruction."
+
+
+## Kyle Wilms
+
+id: C199
+name: "Kyle Wilms"
+linkedin_url: https://www.linkedin.com/in/kylewilms/
+linkedin_account: Izgin
+company: "AquaTru / AirDoctor"
+role: "Social Media Manager"
+signal_type: profile_fit
+signal_multiplier: 1.0
+signal_source_url: "https://www.linkedin.com/company/aquatru/people/"
+signal_excerpt: ""
+contact_role: practitioner
+role_pts: 2
+tier: filtration_vendor
+size_band:
+assumptions_tested: [H1A5]
+validation_rationale: >
+  Social media role at AquaTru; the founder title belongs to his own studio.
+response_likelihood: 2
+likelihood_factors: "3rd degree (0)"
+channel: linkedin
+degree: 3rd+
+mutuals_count:
+active_last_30d: unknown
+open_to_work: false
+outreach_status: off_scope
+found_date: 2026-09-14
+notes: "[audit off_scope 2026-09-15] Profile visit: Social Media Manager AquaTru and AirDoctor Jan 2022-present; 'Founder' refers to Affinity Studios. Marketing role, fails icp_valid_titles for H1A5. Not invited."
+
+## Sebastian Porkert
+
+id: C200
+name: "Sebastian Porkert"
+linkedin_url: https://www.linkedin.com/in/dr-ing-sebastian-porkert-009034a0/
+linkedin_account: Izgin
+company: "ECOFARIO GmbH (Munich)"
+role: "Managing Director and Founder"
+signal_type: profile_fit
+signal_multiplier: 1.0
+signal_source_url: "https://www.linkedin.com/company/ecofario/people/"
+signal_excerpt: ""
+contact_role: buyer
+role_pts: 3
+tier: filtration_vendor
+size_band:
+assumptions_tested: [H1A5]
+validation_rationale: >
+  Founded ECOFARIO, which builds hydrocyclone-based microplastic filtration plants for municipal and industrial wastewater treatment; has to prove removal to plant operators and knows what measurement they accept.
+response_likelihood: 4
+likelihood_factors: "3rd degree (0) · founder, hydrocyclone filtration like CyFract (+1)"
+channel: linkedin
+degree: 3rd+
+mutuals_count:
+active_last_30d: unknown
+open_to_work: false
+outreach_status: invited
+found_date: 2026-09-14
+notes: "[profile read 2026-09-15] details/experience: Geschäftsführer / Gründer ECOFARIO Jul 2014-present (Munich): hydrocyclone microplastic filtration plants for municipal and industrial wastewater. Role description in German; headline in English and Languages lists English at full professional proficiency, which passes LR-B31a. Passes. [invited 2026-09-14] bare invite via custom-invite modal, modal name confirmed Sebastian Porkert, sent by Claude at founder's instruction."
+
+
+## Adrian Scholl
+
+id: C201
+name: "Adrian Scholl"
+linkedin_url: https://www.linkedin.com/in/adrian-scholl-799a20bb/
+linkedin_account: Izgin
+company: "ECOFARIO GmbH (Munich)"
+role: "Co-Founder and CFO"
+signal_type: profile_fit
+signal_multiplier: 1.0
+signal_source_url: "https://www.linkedin.com/company/ecofario/people/"
+signal_excerpt: ""
+contact_role: buyer
+role_pts: 3
+tier: filtration_vendor
+size_band:
+assumptions_tested: [H1A5]
+validation_rationale: >
+  Co-founder and CFO of ECOFARIO; profile has no English beyond the title.
+response_likelihood: 2
+likelihood_factors: "3rd degree (0)"
+channel: linkedin
+degree: 3rd+
+mutuals_count:
+active_last_30d: unknown
+open_to_work: false
+outreach_status: off_scope
+found_date: 2026-09-14
+notes: "[audit off_scope 2026-09-15] Profile visit: Co-Founder / CFO ECOFARIO Jul 2014-present; headline Geschäftsführer / CFO, role description in German, no Languages section. Fails LR-B31a (profile not in English). Not invited; his co-founder Sebastian Porkert is the route in."
+
+## James Bergman
+
+id: C202
+name: "James Bergman"
+linkedin_url: https://www.linkedin.com/in/jamesbergman630/
+linkedin_account: Izgin
+company: "Culligan International (Culligan Retail North America; owns ZeroWater)"
+role: "Director, Engineering and Product Development, Culligan Retail North America"
+signal_type: profile_fit
+signal_multiplier: 1.0
+signal_source_url: "https://www.linkedin.com/search/results/people/?keywords=Culligan%20R%26D%20director%20filtration%20technology"
+signal_excerpt: ""
+contact_role: buyer
+role_pts: 3
+tier: filtration_vendor
+size_band:
+assumptions_tested: [H1A5]
+validation_rationale: >
+  Runs engineering and product development for Culligan's North American retail filters after eight years as a global R&D director at Newell Brands; decides how microplastic-reduction claims are engineered and verified.
+response_likelihood: 3
+likelihood_factors: "3rd degree (0) · new in role at a large group (0)"
+channel: linkedin
+degree: 3rd+
+mutuals_count:
+active_last_30d: unknown
+open_to_work: false
+outreach_status: invited
+found_date: 2026-09-14
+notes: "[profile read 2026-09-15] details/experience: Director, Engineering & Product Development, Culligan Retail North America May 2026-present; Global Director of Engineering, R&D at Newell Brands (Coleman, Contigo, Rubbermaid) 2017-26; 20 yrs at Newell. English. Passes. [invited 2026-09-14] bare invite via custom-invite modal, modal name confirmed James Bergman, sent by Claude at founder's instruction."
+
+
+## Chris Freeman
+
+id: C203
+name: "Chris Freeman"
+linkedin_url: https://www.linkedin.com/in/chrisfreeman1/
+linkedin_account: Izgin
+company: "Culligan International"
+role: "Vice President, Commercial Drinking Water Product Category"
+signal_type: profile_fit
+signal_multiplier: 1.0
+signal_source_url: "https://www.linkedin.com/search/results/people/?keywords=Culligan%20R%26D%20director%20filtration%20technology"
+signal_excerpt: ""
+contact_role: buyer
+role_pts: 3
+tier: filtration_vendor
+size_band:
+assumptions_tested: [H1A5]
+validation_rationale: >
+  Leads Culligan's global commercial drinking-water product portfolio after fifteen years at the company; owns the product vision where microplastic reduction would be specified and proven.
+response_likelihood: 3
+likelihood_factors: "3rd degree (0) · VP, large group (0)"
+channel: linkedin
+degree: 3rd+
+mutuals_count:
+active_last_30d: unknown
+open_to_work: false
+outreach_status: invited
+found_date: 2026-09-14
+notes: "[profile read 2026-09-15] details/experience: Vice President Commercial Drinking Water Product Category, Culligan International Jan 2024-present (London, remote), 15 yrs 4 mos at Culligan: global product vision, innovation and strategy. English. Passes. [invited 2026-09-14] bare invite via custom-invite modal, modal name confirmed Chris Freeman, sent by Claude at founder's instruction."
+
+
+## Bob Brooks
+
+id: C204
+name: "Bob Brooks"
+linkedin_url: https://www.linkedin.com/in/bobbrookslinked/
+linkedin_account: Izgin
+company: "(last listed: Culligan International, until Feb 2026)"
+role: "Senior R&D and Manufacturing Integration Leader (ended)"
+signal_type: profile_fit
+signal_multiplier: 1.0
+signal_source_url: "https://www.linkedin.com/search/results/people/?keywords=Culligan%20R%26D%20director%20filtration%20technology"
+signal_excerpt: ""
+contact_role: expert
+role_pts: 2
+tier: filtration_vendor
+size_band:
+assumptions_tested: [H1A5]
+validation_rationale: >
+  Culligan R&D role ended February 2026; no current role shown.
+response_likelihood: 2
+likelihood_factors: "3rd degree (0)"
+channel: linkedin
+degree: 3rd+
+mutuals_count:
+active_last_30d: unknown
+open_to_work: false
+outreach_status: off_scope
+found_date: 2026-09-14
+notes: "[audit off_scope 2026-09-15] Profile visit: Senior R&D & Manufacturing Integration Leader Culligan 2021-Feb 2026 (ended); no current employer listed. Fails the live-profile gate on current function. Not invited."
+
+## Rebecca Tallon
+
+id: C205
+name: "Rebecca Tallon"
+linkedin_url: https://www.linkedin.com/in/rebecca-tallon-83b7672/
+linkedin_account: Izgin
+company: "A. O. Smith Corporation (water treatment; owns Aquasana)"
+role: "Engineering Director, Water Treatment Technology"
+signal_type: profile_fit
+signal_multiplier: 1.0
+signal_source_url: "https://www.linkedin.com/search/results/people/?keywords=A.%20O.%20Smith%20water%20treatment%20R%26D%20director%20filtration"
+signal_excerpt: ""
+contact_role: buyer
+role_pts: 3
+tier: filtration_vendor
+size_band:
+assumptions_tested: [H1A5]
+validation_rationale: >
+  Directs water-treatment technology engineering at A. O. Smith, parent of the NSF/ANSI 401-certified Aquasana filters, after thirteen years of R&D engineering at Pentair Filtration; owns how filter performance, including microplastic reduction, is engineered and tested.
+response_likelihood: 3
+likelihood_factors: "3rd degree (0) · director at a large group (0)"
+channel: linkedin
+degree: 3rd+
+mutuals_count:
+active_last_30d: unknown
+open_to_work: false
+outreach_status: invited
+found_date: 2026-09-14
+notes: "[profile read 2026-09-15] details/experience: Engineering Director - Water Treatment Technology, A. O. Smith Oct 2017-present; Engineering Manager A.O. Smith 2016-17; R&D Engineering Manager Pentair Filtration & Process 2003-16. English. Passes. [invited 2026-09-14] bare invite via custom-invite modal, modal name confirmed Rebecca Tallon, sent by Claude at founder's instruction."
+
+
+## Gusphyl Justin
+
+id: C206
+name: "Gusphyl Justin"
+linkedin_url: https://www.linkedin.com/in/gusphyl-justin-90a23313/
+linkedin_account: Izgin
+company: "A. O. Smith Corporation (water treatment)"
+role: "Senior Staff Engineer, Water Treatment (previously Staff Engineer, Sensors)"
+signal_type: profile_fit
+signal_multiplier: 1.0
+signal_source_url: "https://www.linkedin.com/search/results/people/?keywords=A.%20O.%20Smith%20water%20treatment%20R%26D%20director%20filtration"
+signal_excerpt: ""
+contact_role: practitioner
+role_pts: 2
+tier: filtration_vendor
+size_band:
+assumptions_tested: [H1A5]
+validation_rationale: >
+  Senior staff engineer for water treatment at A. O. Smith after six and a half years as its staff engineer for sensors; the rare person inside a filter maker who has worked on both the filter and the measurement.
+response_likelihood: 4
+likelihood_factors: "3rd degree (0) · sensors plus filtration background (+1)"
+channel: linkedin
+degree: 3rd+
+mutuals_count:
+active_last_30d: unknown
+open_to_work: false
+outreach_status: invited
+found_date: 2026-09-14
+notes: "[profile read 2026-09-15] details/experience: Senior Staff Engineer - Water Treatment, A. O. Smith Mar 2022-present (technology roadmapping); Staff Engineer - Sensors 2015-22; 11 yrs at A. O. Smith. English. Passes. [invited 2026-09-14] bare invite via custom-invite modal, modal name confirmed Gusphyl Justin, sent by Claude at founder's instruction."
+
+
+## William Lipps
+
+id: C207
+name: "William Lipps"
+linkedin_url: https://www.linkedin.com/in/williamlipps/
+linkedin_account: Izgin
+company: "Shimadzu Scientific Instruments (Columbia, Maryland)"
+role: "General Manager, Government and Regulatory Business Development"
+signal_type: profile_fit
+signal_multiplier: 1.0
+signal_source_url: "https://www.linkedin.com/search/results/people/?keywords=Xylem%20microplastics%20treatment%20technology"
+signal_excerpt: ""
+contact_role: expert
+role_pts: 2
+tier: sensor_vendor
+size_band:
+assumptions_tested: [H1A5]
+validation_rationale: >
+  Opens government and regulatory markets for Shimadzu's analytical instruments and follows testing trends that become standards; knows where microplastics testing regulation is heading and what instrument makers plan. Competitor side: listen more than disclose.
+response_likelihood: 3
+likelihood_factors: "3rd degree (0) · standards-facing (0)"
+channel: linkedin
+degree: 3rd+
+mutuals_count:
+active_last_30d: unknown
+open_to_work: false
+outreach_status: invited
+found_date: 2026-09-14
+notes: "[profile read 2026-09-15] details/experience: General Manager - Government & Regulatory Business Development, Shimadzu Scientific Instruments Oct 2019-present: evaluates industry and analytical testing trends that may become the basis for new instruments and methods. English. Passes as H1A5 sensor_vendor (competitor tier). Caution: analytical-instrument vendor, disclose little. [invited 2026-09-14] bare invite via custom-invite modal, modal name confirmed William Lipps, sent by Claude at founder's instruction."
+
+
+## Jean-Luc Madier
+
+id: C208
+name: "Jean-Luc Madier"
+linkedin_url: https://www.linkedin.com/in/jean-luc-madier/
+linkedin_account: Izgin
+company: "LifeStraw (Lausanne)"
+role: "Director of Engineering (previously Head of R&D, Vestergaard Frandsen / LifeStraw)"
+signal_type: profile_fit
+signal_multiplier: 1.0
+signal_source_url: "https://www.linkedin.com/search/results/people/?keywords=LifeStraw%20product%20development%20filtration%20engineering"
+signal_excerpt: ""
+contact_role: buyer
+role_pts: 3
+tier: filtration_vendor
+size_band:
+assumptions_tested: [H1A5]
+validation_rationale: >
+  Directs engineering at LifeStraw after ten years heading R&D for LifeStraw water filtration products; owns how filter performance claims, including particle and microplastic reduction, are tested and proven.
+response_likelihood: 4
+likelihood_factors: "3rd degree (0) · owns filter R&D (+1)"
+channel: linkedin
+degree: 3rd+
+mutuals_count:
+active_last_30d: unknown
+open_to_work: false
+outreach_status: invited
+found_date: 2026-09-14
+notes: "[profile read 2026-09-15] details/experience: Director of Engineering LifeStraw Feb 2021-present (Lausanne); Head of Research and Development Vestergaard Frandsen 2012-22, responsible for R&D of LifeStraw water filtration products. English. Passes. [invited 2026-09-14] bare invite via custom-invite modal, modal name confirmed Jean-Luc Madier, sent by Claude at founder's instruction."
+
+
+## Joris de Grooth
+
+id: C209
+name: "Joris de Grooth"
+linkedin_url: https://www.linkedin.com/in/jorisdegrooth/
+linkedin_account: Izgin
+company: "NX Filtration (Hengelo, Netherlands)"
+role: "Director of Technology (previously R&D Director)"
+signal_type: profile_fit
+signal_multiplier: 1.0
+signal_source_url: "https://www.linkedin.com/search/results/people/?keywords=Pentair%20residential%20water%20filtration%20R%26D%20director"
+signal_excerpt: ""
+contact_role: buyer
+role_pts: 3
+tier: membrane_manufacturer
+size_band:
+assumptions_tested: [H5A2]
+validation_rationale: >
+  Directs technology at NX Filtration, a Dutch maker of hollow-fibre nanofiltration membranes sold for micropollutant removal, after ten years in its R&D; the R&D owner who would judge whether field foulant data changes membrane design or warranty.
+response_likelihood: 5
+likelihood_factors: "2nd degree (+2) · membrane R&D owner (0)"
+channel: linkedin
+degree: 2nd
+mutuals_count:
+active_last_30d: unknown
+open_to_work: false
+outreach_status: invited
+found_date: 2026-09-14
+notes: "[profile read 2026-09-15] details/experience: Director of Technology NX Filtration Jan 2026-present (Hengelo); R&D Director 2021-26; Research Manager 2016-21 (polymeric membrane innovations). English. Passes (H5A2 membrane_manufacturer). [invited 2026-09-14] bare invite via custom-invite modal, modal name confirmed Joris de Grooth, sent by Claude at founder's instruction."
+
+
+## Dominik Elsaesser
+
+id: C210
+name: "Dominik Elsaesser"
+linkedin_url: https://www.linkedin.com/in/dominik-elsaesser-75b9a9/
+linkedin_account: Izgin
+company: "ChemREADY (Minneapolis); board Swirltex Inc.; advisor Aqua Membranes"
+role: "Chief Executive Officer"
+signal_type: profile_fit
+signal_multiplier: 1.0
+signal_source_url: "https://www.linkedin.com/search/results/people/?keywords=Pentair%20residential%20water%20filtration%20R%26D%20director"
+signal_excerpt: ""
+contact_role: expert
+role_pts: 2
+tier: filtration_vendor
+size_band:
+assumptions_tested: [H1A5]
+validation_rationale: >
+  CEO of a water-treatment chemicals company who sits on the board of Swirltex and the technical advisory board of Aqua Membranes, two membrane-filtration companies; sees how filtration vendors prove performance to industrial buyers.
+response_likelihood: 5
+likelihood_factors: "2nd degree (+2) · board seats at two filtration companies (0)"
+channel: linkedin
+degree: 2nd
+mutuals_count:
+active_last_30d: unknown
+open_to_work: false
+outreach_status: invited
+found_date: 2026-09-14
+notes: "[profile read 2026-09-15] details/experience: CEO ChemREADY Feb 2025-present (Minneapolis); board member Swirltex Inc. 2023-present; technical advisory board Aqua Membranes 2023-present; executive partner Plexus Capital 2024-25. English. Passes as an expert on the filtration-vendor side; not an investor contact (LR-B20) since he is an operating CEO. [invited 2026-09-14] bare invite via custom-invite modal, modal name confirmed Dominik Elsaesser, sent by Claude at founder's instruction."
+
+## Andy Johnston
+
+id: C211
+name: "Andy Johnston"
+linkedin_url: https://www.linkedin.com/in/andy-johnston-6151b68b/
+linkedin_account: Izgin
+company: "BRITA Group (UK)"
+role: "Head of Specification (key-account sales)"
+signal_type: profile_fit
+signal_multiplier: 1.0
+signal_source_url: "https://www.linkedin.com/company/brita-se/people/?keywords=R%26D"
+signal_excerpt: ""
+contact_role: practitioner
+role_pts: 2
+tier: filtration_vendor
+size_band:
+assumptions_tested: [H1A5]
+validation_rationale: >
+  Specification and key-account sales role at Brita UK, not R&D or product; says he is seeking a business-development move.
+response_likelihood: 2
+likelihood_factors: "3rd degree (0)"
+channel: linkedin
+degree: 3rd+
+mutuals_count:
+active_last_30d: unknown
+open_to_work: false
+outreach_status: off_scope
+found_date: 2026-09-14
+notes: "[audit off_scope 2026-09-15] Profile visit: Head of Specification BRITA Group Sep 2023-present, previously Key Account Specification Manager BRITA Vivreau 2021-23; skills key account management; open to business development roles. Sales function, fails icp_valid_titles for H1A5. Not invited. Brita's public staff lists showed no R&D or product owners."

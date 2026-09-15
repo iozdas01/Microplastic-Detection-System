@@ -8,7 +8,7 @@ _Generated 2026-09-15. Numbers are the funnel over contacts tagged H5A2._
 
 | channel | targeted | contacted | replied | qualified replied | reply rate |
 |---|---|---|---|---|---|
-| LinkedIn | 36 | 0 | 0 | 0 | — |
+| LinkedIn | 37 | 0 | 0 | 0 | — |
 | phone | 0 | 0 | 0 | 0 | — |
 
 _Channels are counted separately._
@@ -38,6 +38,7 @@ _Channels are counted separately._
 | C137 | Christoph Thiemig | invited | — |
 | C141 | Raul Cirerol | invited | — |
 | C142 | Manikandan V | invited | — |
+| C209 | Joris de Grooth | invited | — |
 | C88 | Javier Suárez | invited | — |
 | C89 | Sonia Vila Cremer | invited | — |
 | C90 | Denise Haukkala | invited | — |
