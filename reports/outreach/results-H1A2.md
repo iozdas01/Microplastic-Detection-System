@@ -8,7 +8,7 @@ _Generated 2026-09-15. Numbers are the funnel over contacts tagged H1A2._
 
 | channel | targeted | contacted | replied | qualified replied | reply rate |
 |---|---|---|---|---|---|
-| LinkedIn | 76 | 0 | 0 | 0 | — |
+| LinkedIn | 109 | 1 | 1 | 1 | 100.0% |
 | phone | 0 | 0 | 0 | 0 | — |
 
 _Channels are counted separately._
@@ -18,10 +18,38 @@ _Channels are counted separately._
 | id | name | status | call stage |
 |---|---|---|---|
 | C12 | Ted Ellington | pending | — |
+| C150 | Moniruzzaman | pending | — |
+| C151 | Kamran Ali | pending | — |
+| C152 | Tariq Nadeem Siddiqui | pending | — |
+| C153 | Md. Sakhawat Hossain | pending | — |
+| C154 | Mahasin Zaman | pending | — |
+| C155 | Ali İlker Gün | pending | — |
+| C156 | Engr. Mamun-ur-Rashid | pending | — |
+| C157 | Saif Khan | pending | — |
+| C158 | Ikram Bashir | pending | — |
+| C161 | Akhtar Qureshi | pending | — |
+| C162 | Abdul Rasheed | pending | — |
+| C163 | Khursheed Ahmed | pending | — |
+| C166 | Md. Al-amin Howlader | pending | — |
+| C167 | Mezbahul Islam | pending | — |
+| C168 | Abdul Akher | pending | — |
+| C169 | Sanjib Paul | pending | — |
+| C170 | Farah Wadie | pending | — |
+| C171 | Md Mashiur Rahman | pending | — |
+| C172 | Mohd. Joynal Abedin | pending | — |
+| C173 | M. S. Arefin | pending | — |
+| C174 | Omar Ali | pending | — |
 | C25 | Shridhar H T | pending | — |
 | C1 | Caner Gökçek | invited | — |
 | C11 | Öner Gündüz | invited | — |
 | C14 | Yalçın Çelik | invited | — |
+| C143 | Nabeel Aman | invited | — |
+| C144 | H. Abdullah Mahmood | invited | — |
+| C145 | Ashwani Sharma | invited | — |
+| C146 | Ihtsham Rasheed | invited | — |
+| C147 | Mehmet Çetin | invited | — |
+| C148 | Murat Yürür | invited | — |
+| C149 | Ahmet Çağrı Dalkır | invited | — |
 | C16 | Mehmet Adıyaman | invited | — |
 | C20 | Hüseyin Çınar | invited | — |
 | C21 | Yasemin Mecit Akdaş | invited | — |
@@ -47,7 +75,6 @@ _Channels are counted separately._
 | C53 | Mauro Franz | invited | — |
 | C54 | Moshiur Rahman | invited | — |
 | C56 | Engr. Abdul Aziz | invited | — |
-| C58 | Paulo Lopes | invited | — |
 | C60 | Aman Ullah | invited | — |
 | C62 | Eray Karaduman | invited | — |
 | C63 | Gareth Jones | invited | — |
@@ -85,7 +112,13 @@ _Channels are counted separately._
 | C59 | Faizan Pasha | accepted | — |
 | C6 | Halil Kutluğ Kabahasanoğlu | accepted | — |
 | C7 | Murat Terlemez | accepted | — |
+| C58 | Paulo Lopes | replied | — |
 | C13 | Sedat Çinici | off_scope | — |
+| C159 | Syed Uzair Ahmed Gilani | off_scope | — |
+| C160 | M. Irfan Haider | off_scope | — |
+| C164 | Zainul Abideen | off_scope | — |
+| C165 | Behzad K. | off_scope | — |
+| C175 | Suresh Kumar G | off_scope | — |
 | C26 | Büşra Suiçmez | off_scope | — |
 | C27 | Nastassia Ramazankhani | off_scope | — |
 | C34 | Süleyman Argün | off_scope | — |

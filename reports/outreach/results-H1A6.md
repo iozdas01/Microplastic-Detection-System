@@ -8,7 +8,7 @@ _Generated 2026-09-15. Numbers are the funnel over contacts tagged H1A6._
 
 | channel | targeted | contacted | replied | qualified replied | reply rate |
 |---|---|---|---|---|---|
-| LinkedIn | 27 | 0 | 0 | 0 | — |
+| LinkedIn | 60 | 0 | 0 | 0 | — |
 | phone | 0 | 0 | 0 | 0 | — |
 
 _Channels are counted separately._
@@ -17,7 +17,35 @@ _Channels are counted separately._
 
 | id | name | status | call stage |
 |---|---|---|---|
+| C150 | Moniruzzaman | pending | — |
+| C151 | Kamran Ali | pending | — |
+| C152 | Tariq Nadeem Siddiqui | pending | — |
+| C153 | Md. Sakhawat Hossain | pending | — |
+| C154 | Mahasin Zaman | pending | — |
+| C155 | Ali İlker Gün | pending | — |
+| C156 | Engr. Mamun-ur-Rashid | pending | — |
+| C157 | Saif Khan | pending | — |
+| C158 | Ikram Bashir | pending | — |
+| C161 | Akhtar Qureshi | pending | — |
+| C162 | Abdul Rasheed | pending | — |
+| C163 | Khursheed Ahmed | pending | — |
+| C166 | Md. Al-amin Howlader | pending | — |
+| C167 | Mezbahul Islam | pending | — |
+| C168 | Abdul Akher | pending | — |
+| C169 | Sanjib Paul | pending | — |
+| C170 | Farah Wadie | pending | — |
+| C171 | Md Mashiur Rahman | pending | — |
+| C172 | Mohd. Joynal Abedin | pending | — |
+| C173 | M. S. Arefin | pending | — |
+| C174 | Omar Ali | pending | — |
 | C14 | Yalçın Çelik | invited | — |
+| C143 | Nabeel Aman | invited | — |
+| C144 | H. Abdullah Mahmood | invited | — |
+| C145 | Ashwani Sharma | invited | — |
+| C146 | Ihtsham Rasheed | invited | — |
+| C147 | Mehmet Çetin | invited | — |
+| C148 | Murat Yürür | invited | — |
+| C149 | Ahmet Çağrı Dalkır | invited | — |
 | C16 | Mehmet Adıyaman | invited | — |
 | C22 | Erkan Ekici | invited | — |
 | C36 | Murat İ. | invited | — |
@@ -43,4 +71,9 @@ _Channels are counted separately._
 | C55 | Gulfam S. | accepted | — |
 | C6 | Halil Kutluğ Kabahasanoğlu | accepted | — |
 | C7 | Murat Terlemez | accepted | — |
+| C159 | Syed Uzair Ahmed Gilani | off_scope | — |
+| C160 | M. Irfan Haider | off_scope | — |
+| C164 | Zainul Abideen | off_scope | — |
+| C165 | Behzad K. | off_scope | — |
+| C175 | Suresh Kumar G | off_scope | — |
 | C61 | Yasin Yücedağ | off_scope | — |

@@ -3,8 +3,8 @@ purpose: The contact ledger — one card per person targeted, invited or intervi
 idea: industrial-process-data-infrastructure
 last_updated: 2026-09-14
 totals:
-  targeted: 142
-  invited: 119
+  targeted: 175
+  invited: 126
   accepted: 22
   scheduled: 0
   done: 0
@@ -884,7 +884,8 @@ active_last_30d: unknown
 open_to_work: false
 outreach_status: invited
 found_date: 2026-09-13
-notes: "[profile read 2026-09-13] details/experience: Elevate Textiles since May 2024, Sustainability Manager Jun 2025-present; role text: energy, water, waste reduction strategy, ESG reporting frameworks, GRS/RCS/C2C certifications. Passes. [invited 2026-09-13] bare invite via custom-invite modal, name confirmed Calvin Huelsman, sent by Claude at founder's instruction. [held 2026-09-14] Title outside the budget-holder ICP the founders set for H1A2/H1A3/H1A6 on 2026-09-14 (cannot sign for spend). Not interviewed unless the founder releases them by name; no Msg 1. [released 2026-09-14] Founder instruction: message everyone who accepts, regardless of title or profile language. Practitioner answers count for the mechanism half of H1A2 only (LR-B12), not for H1A3/H1A6."
+notes: "[profile read 2026-09-13] details/experience: Elevate Textiles since May 2024, Sustainability Manager Jun 2025-present; role text: energy, water, waste reduction strategy, ESG reporting frameworks, GRS/RCS/C2C certifications. Passes. [invited 2026-09-13] bare invite via custom-invite modal, name confirmed Calvin Huelsman, sent by Claude at founder's instruction. [held 2026-09-14] Title outside the budget-holder ICP the founders set for H1A2/H1A3/H1A6 on 2026-09-14 (cannot sign for spend). Not interviewed unless the founder releases them by name; no Msg 1. [released 2026-09-14] Founder instruction: message everyone who accepts, regardless of title or profile language. Practitioner answers count for the mechanism half of H1A2 only (LR-B12), not for H1A3/H1A6. [msg1 sent 2026-09-14] seen in the inbox at 1:21 PM, group thread with the co-founder, sent by the founder by hand."
+
 
 ## Önder Ertürk
 
@@ -1304,7 +1305,8 @@ active_last_30d: unknown
 open_to_work: false
 outreach_status: invited
 found_date: 2026-09-13
-notes: "[profile read 2026-09-13] details/experience: Supply Chain Environmental Impact Field Manager, Patagonia, Feb 2025-present, Taipei; role text: executes the Supply Chain Environmental Impact Compliance Program at Asia supplier facilities, schedules and conducts environmental audits, manages CAPs. Passes (tier brand). 3rd degree: 2nd-degree pool for brand environmental roles was exhausted this session. [invited 2026-09-13] bare invite via custom-invite modal, name confirmed Chris Chen, sent by Claude at founder's instruction."
+notes: "[profile read 2026-09-13] details/experience: Supply Chain Environmental Impact Field Manager, Patagonia, Feb 2025-present, Taipei; role text: executes the Supply Chain Environmental Impact Compliance Program at Asia supplier facilities, schedules and conducts environmental audits, manages CAPs. Passes (tier brand). 3rd degree: 2nd-degree pool for brand environmental roles was exhausted this session. [invited 2026-09-13] bare invite via custom-invite modal, name confirmed Chris Chen, sent by Claude at founder's instruction. [msg1 sent 2026-09-14] seen in the inbox at 12:57, 1:1 thread, sent by the founder by hand."
+
 
 ## Ronit Basu
 
@@ -1752,9 +1754,10 @@ degree: 3rd+
 mutuals_count: 
 active_last_30d: unknown
 open_to_work: false
-outreach_status: invited
+outreach_status: replied
 found_date: 2026-09-13
-notes: "[profile read 2026-09-13] details/experience: Responsável de Tinturaria Playvest/Nextil Sports Jan 2026-present; Responsável de Tinturaria Barbotex 2025 (order management, QC, troubleshooting); career break late 2024; industrial sewing before. Passes. 3rd degree. [invited 2026-09-13] bare invite via custom-invite modal, name confirmed Paulo Lopes, sent by Claude at founder's instruction. [language 2026-09-14] Profile text is Portuguese; invite already out. Per LR-B31a: if they accept, no Msg 1 unless the founder releases them by name. [held 2026-09-14] Title outside the budget-holder ICP the founders set for H1A2/H1A3/H1A6 on 2026-09-14 (cannot sign for spend). Not interviewed unless the founder releases them by name; no Msg 1. [released 2026-09-14] Founder instruction: message everyone who accepts, regardless of title or profile language. Practitioner answers count for the mechanism half of H1A2 only (LR-B12), not for H1A3/H1A6."
+notes: "[profile read 2026-09-13] details/experience: Responsável de Tinturaria Playvest/Nextil Sports Jan 2026-present; Responsável de Tinturaria Barbotex 2025 (order management, QC, troubleshooting); career break late 2024; industrial sewing before. Passes. 3rd degree. [invited 2026-09-13] bare invite via custom-invite modal, name confirmed Paulo Lopes, sent by Claude at founder's instruction. [language 2026-09-14] Profile text is Portuguese; invite already out. Per LR-B31a: if they accept, no Msg 1 unless the founder releases them by name. [held 2026-09-14] Title outside the budget-holder ICP the founders set for H1A2/H1A3/H1A6 on 2026-09-14 (cannot sign for spend). Not interviewed unless the founder releases them by name; no Msg 1. [released 2026-09-14] Founder instruction: message everyone who accepts, regardless of title or profile language. Practitioner answers count for the mechanism half of H1A2 only (LR-B12), not for H1A3/H1A6. [msg1 sent 2026-09-14] group thread with the co-founder, sent by the founder by hand. [replied 2026-09-14] 1:28 PM, a greeting only so far; route to startup-outreach-reply."
+
 
 ## Faizan Pasha
 
@@ -4341,3 +4344,999 @@ outreach_status: invited
 found_date: 2026-09-14
 notes: "[profile read 2026-09-14] details/experience: Group Leader Regional Technical Support Hydranautics May 2018-present (Chennai); 23+ yrs in water: membrane system design, pre/post-sales support, pilot studies, team management. English. Passes. Sixth Hydranautics card: added in place of Roman Boda, whose invite is blocked behind an email check. [invited 2026-09-14] bare invite via custom-invite modal, modal name confirmed Manikandan V, sent by Claude at founder's instruction; Pending confirmed."
 
+## Nabeel Aman
+
+id: C143
+name: "Nabeel Aman"
+linkedin_url: https://www.linkedin.com/in/nabeel-aman-81279814a/
+linkedin_account: Izgin
+company: "Azgard Nine Ltd (Lahore); AGI Denim (Karachi)"
+role: "General Manager Laundry; General Manager Washing"
+signal_type: profile_fit
+signal_multiplier: 1.0
+signal_source_url: "https://www.linkedin.com/search/results/people/?keywords=washing%20general%20manager%20denim"
+signal_excerpt: ""
+contact_role: buyer
+role_pts: 3
+tier: textile_mill
+size_band:
+assumptions_tested: [H1A2, H1A3, H1A6]
+validation_rationale: >
+  Runs denim washing as general manager at AGI Denim and now laundry at Azgard Nine, two large Pakistani denim makers supplying global brands; owns the wash-plant budget a brand's microfiber request would land on.
+response_likelihood: 5
+likelihood_factors: "2nd degree (+2) · washing GM at two denim mills (+0)"
+channel: linkedin
+degree: 2nd
+mutuals_count:
+active_last_30d: unknown
+open_to_work: false
+outreach_status: invited
+found_date: 2026-09-14
+notes: "[profile read 2026-09-14] details/experience: General Manager Laundry Azgard Nine Apr 2026-present (Lahore); General Manager Washing AGI Denim Mar 2024-present, DGM Washing 2023-24 (Karachi); AGM GWP Azgard Nine 2021-23. English. Passes. [invited 2026-09-14] bare invite via custom-invite modal, modal name confirmed Nabeel Aman, sent by Claude at founder's instruction."
+
+
+## H. Abdullah Mahmood
+
+id: C144
+name: "H. Abdullah Mahmood"
+linkedin_url: https://www.linkedin.com/in/h-abdullah-mahmood-65a91822/
+linkedin_account: Izgin
+company: "Marfa Textiles (Lahore)"
+role: "General Manager Washing"
+signal_type: profile_fit
+signal_multiplier: 1.0
+signal_source_url: "https://www.linkedin.com/search/results/people/?keywords=washing%20general%20manager%20denim"
+signal_excerpt: ""
+contact_role: buyer
+role_pts: 3
+tier: textile_mill
+size_band:
+assumptions_tested: [H1A2, H1A3, H1A6]
+validation_rationale: >
+  General manager of washing at Marfa Textiles after two years in the same role at Artistic Milliners and twenty at US Apparel's denim laundry; owns the wash floor where microfibers are released.
+response_likelihood: 5
+likelihood_factors: "2nd degree (+2) · 23 yrs denim laundry (+0)"
+channel: linkedin
+degree: 2nd
+mutuals_count:
+active_last_30d: unknown
+open_to_work: false
+outreach_status: invited
+found_date: 2026-09-14
+notes: "[profile read 2026-09-14] details/experience: General Manager Washing Marfa Textiles Sep 2025-present (Lahore); GM Washing Artistic Milliners 2023-25 (Karachi); DGM Washing US Apparel 2003-23. English. Passes. [invited 2026-09-14] bare invite via custom-invite modal, modal name confirmed H. Abdullah Mahmood, sent by Claude at founder's instruction."
+
+
+## Ashwani Sharma
+
+id: C145
+name: "Ashwani Sharma"
+linkedin_url: https://www.linkedin.com/in/ashwani-sharma-74a8941a5/
+linkedin_account: Izgin
+company: "MR Dyeing & Finishing Mills (Ludhiana)"
+role: "Dyeing Manager / Plant Head"
+signal_type: profile_fit
+signal_multiplier: 1.0
+signal_source_url: "https://www.linkedin.com/search/results/people/?keywords=plant%20manager%20textile%20dyeing%20finishing"
+signal_excerpt: ""
+contact_role: buyer
+role_pts: 3
+tier: textile_mill
+size_band:
+assumptions_tested: [H1A2, H1A3, H1A6]
+validation_rationale: >
+  Heads a 25-ton-a-day knit dyeing plant in Ludhiana running polyester and lycra blends, with a 46-person team; the budget owner for anything a buyer asks the dyehouse to measure.
+response_likelihood: 4
+likelihood_factors: "3rd+ degree (0) · plant head (+1)"
+channel: linkedin
+degree: 3rd+
+mutuals_count:
+active_last_30d: unknown
+open_to_work: false
+outreach_status: invited
+found_date: 2026-09-14
+notes: "[profile read 2026-09-14] details/experience: Dyeing Manager / Plant Head MR Dyeing & Finishing Mills Oct 2022-present (Ludhiana): complete dyeing plant, 25 t/day, 46 staff, polyester-lycra and PC blends on soft-flow machines. English. Passes. [invited 2026-09-14] bare invite via custom-invite modal, modal name confirmed Ashwani Sharma, sent by Claude at founder's instruction."
+
+
+## Ihtsham Rasheed
+
+id: C146
+name: "Ihtsham Rasheed"
+linkedin_url: https://www.linkedin.com/in/ihtsham-rasheed-9b6a9088/
+linkedin_account: Izgin
+company: "Nishat Mills Ltd (Lahore)"
+role: "Senior Manager Dyeing"
+signal_type: profile_fit
+signal_multiplier: 1.0
+signal_source_url: "https://www.linkedin.com/search/results/people/?keywords=plant%20manager%20textile%20dyeing%20finishing"
+signal_excerpt: ""
+contact_role: buyer
+role_pts: 3
+tier: textile_mill
+size_band:
+assumptions_tested: [H1A2, H1A3, H1A6]
+validation_rationale: >
+  Senior dyeing manager at Nishat Mills, one of Pakistan's largest vertical textile groups, after three years as a mill general manager; runs the dyehouse and has held the budget.
+response_likelihood: 4
+likelihood_factors: "3rd+ degree (0) · ex mill GM (+1)"
+channel: linkedin
+degree: 3rd+
+mutuals_count:
+active_last_30d: unknown
+open_to_work: false
+outreach_status: invited
+found_date: 2026-09-14
+notes: "[profile read 2026-09-14] details/experience: Senior Manager Dyeing Nishat Mills Dec 2023-present (Lahore); General Manager Bismillah Textiles 2020-23; Processing Manager Arshad Group 2019-20; Manager Dyeing Kamal Limited 2013-19. English. Passes. [invited 2026-09-14] bare invite via custom-invite modal, modal name confirmed Ihtsham Rasheed, sent by Claude at founder's instruction."
+
+
+## Mehmet Çetin
+
+id: C147
+name: "Mehmet Çetin"
+linkedin_url: https://www.linkedin.com/in/mehmet-%C3%A7etin-495b60153/
+linkedin_account: Izgin
+company: "Sarteks Örme (Türkiye)"
+role: "Factory Manager"
+signal_type: profile_fit
+signal_multiplier: 1.0
+signal_source_url: "https://www.linkedin.com/search/results/people/?keywords=plant%20manager%20textile%20dyeing%20finishing"
+signal_excerpt: ""
+contact_role: buyer
+role_pts: 3
+tier: textile_mill
+size_band:
+assumptions_tested: [H1A2, H1A3, H1A6]
+validation_rationale: >
+  Factory manager at a Turkish knit dyeing and finishing mill, having previously run a 40-ton-a-day HT dyeing and finishing facility end to end; owns the dyehouse budget.
+response_likelihood: 5
+likelihood_factors: "2nd degree (+2) · runs dyeing and finishing (+0)"
+channel: linkedin
+degree: 2nd
+mutuals_count:
+active_last_30d: unknown
+open_to_work: false
+outreach_status: invited
+found_date: 2026-09-14
+notes: "[profile read 2026-09-14] details/experience: Factory Manager Sarteks Örme Sep 2026-present; Factory Manager of a textile dyeing and finishing facility with 40 t/day HT dyeing capacity (dyeing, finishing, lab, planning, quality, maintenance). Role descriptions in English. Passes; new in current post but a prior factory-manager role carries the history. [invited 2026-09-14] bare invite via custom-invite modal, modal name confirmed Mehmet Çetin, sent by Claude at founder's instruction."
+
+
+## Murat Yürür
+
+id: C148
+name: "Murat Yürür"
+linkedin_url: https://www.linkedin.com/in/murat-y%C3%BCr%C3%BCr-233419256/
+linkedin_account: Izgin
+company: "Artistic Garment Industries (AGI Denim), Karachi"
+role: "Senior General Manager, Technical Washing"
+signal_type: profile_fit
+signal_multiplier: 1.0
+signal_source_url: "https://www.linkedin.com/search/results/people/?keywords=washing%20general%20manager%20denim"
+signal_excerpt: ""
+contact_role: buyer
+role_pts: 3
+tier: textile_mill
+size_band:
+assumptions_tested: [H1A2, H1A3, H1A6]
+validation_rationale: >
+  Senior technical GM for washing at AGI Denim after nearly four years as GM of R&D at Azgard Nine; decides wash processes and chemistry at a large brand-facing denim maker.
+response_likelihood: 5
+likelihood_factors: "2nd degree (+2) · senior washing GM (+0)"
+channel: linkedin
+degree: 2nd
+mutuals_count:
+active_last_30d: unknown
+open_to_work: false
+outreach_status: invited
+found_date: 2026-09-14
+notes: "[profile read 2026-09-14] details/experience: Senior General Manager Technical Washing AGI Denim Sep 2026-present (Karachi); General Manager R&D, P&D and Transition Cell Azgard Nine 2023-26; R&D Washing GM Stylers International before. Role titles in English (skills partly Turkish). Passes. [invited 2026-09-14] bare invite via custom-invite modal, modal name confirmed Murat Yürür, sent by Claude at founder's instruction."
+
+
+## Ahmet Çağrı Dalkır
+
+id: C149
+name: "Ahmet Çağrı Dalkır"
+linkedin_url: https://www.linkedin.com/in/ahmet-cagri-dalkir-6090894/
+linkedin_account: Izgin
+company: "Atlas Denim Tekstil (Adana)"
+role: "General Manager"
+signal_type: profile_fit
+signal_multiplier: 1.0
+signal_source_url: "https://www.linkedin.com/search/results/people/?keywords=washing%20general%20manager%20denim"
+signal_excerpt: ""
+contact_role: buyer
+role_pts: 3
+tier: textile_mill
+size_band:
+assumptions_tested: [H1A2, H1A3, H1A6]
+validation_rationale: >
+  General manager of Atlas Denim in Adana since 2019 after running denim dyeing and weaving plants in Egypt for Eroğlu and United Denim; signs for spend at a denim mill.
+response_likelihood: 5
+likelihood_factors: "2nd degree (+2) · mill GM (+0)"
+channel: linkedin
+degree: 2nd
+mutuals_count:
+active_last_30d: unknown
+open_to_work: false
+outreach_status: invited
+found_date: 2026-09-14
+notes: "[profile read 2026-09-14] details/experience: General Manager Atlas Denim Tekstil Sep 2019-present (Adana), Factory Manager 2017-19; Factory Director United Denim 2014-17 (Port Said); DNM Spinning, Weaving and Dyeing (Eroğlu Group) 2011-14. Role titles in English. Passes. [invited 2026-09-14] bare invite via custom-invite modal, modal name confirmed Ahmet Çağrı Dalkır, sent by Claude at founder's instruction."
+
+
+## Moniruzzaman
+
+id: C150
+name: "Moniruzzaman"
+linkedin_url: https://www.linkedin.com/in/moniruzzaman-5070b5166/
+linkedin_account: Izgin
+company: "Pacific Knit Division (Chattogram)"
+role: "Assistant General Manager, head of dyeing department"
+signal_type: profile_fit
+signal_multiplier: 1.0
+signal_source_url: "https://www.linkedin.com/search/results/people/?keywords=general%20manager%20dyeing%20knit%20processing"
+signal_excerpt: ""
+contact_role: buyer
+role_pts: 3
+tier: textile_mill
+size_band:
+assumptions_tested: [H1A2, H1A3, H1A6]
+validation_rationale: >
+  Leads the full knit dyeing department at Pacific Knit in Chattogram, including dosing automation and dyehouse planning; the dyehouse budget owner.
+response_likelihood: 4
+likelihood_factors: "3rd+ degree (0) · heads dyehouse (+1)"
+channel: linkedin
+degree: 3rd+
+mutuals_count:
+active_last_30d: unknown
+open_to_work: false
+outreach_status: pending
+found_date: 2026-09-14
+notes: "[profile read 2026-09-14] details/experience: Assistant General Manager Pacific Knit Division Feb 2025-present (Chattogram): leads full dyeing department operations, planning, RFT, dosing and dispensing automation. English. Passes."
+
+## Kamran Ali
+
+id: C151
+name: "Kamran Ali"
+linkedin_url: https://www.linkedin.com/in/kamran-ali-7651397b/
+linkedin_account: Izgin
+company: "Artistic Milliners Pvt. Ltd (Karachi)"
+role: "Deputy General Manager (Washing)"
+signal_type: profile_fit
+signal_multiplier: 1.0
+signal_source_url: "https://www.linkedin.com/search/results/people/?keywords=general%20manager%20dyeing%20knit%20processing"
+signal_excerpt: ""
+contact_role: buyer
+role_pts: 3
+tier: textile_mill
+size_band:
+assumptions_tested: [H1A2, H1A3, H1A6]
+validation_rationale: >
+  Deputy GM of washing at Artistic Milliners for seven years after six at Artistic Denim Mills; runs the wash plant of a major brand-facing denim group.
+response_likelihood: 5
+likelihood_factors: "2nd degree (+2) · long wash tenure (+0)"
+channel: linkedin
+degree: 2nd
+mutuals_count:
+active_last_30d: unknown
+open_to_work: false
+outreach_status: pending
+found_date: 2026-09-14
+notes: "[profile read 2026-09-14] details/experience: Deputy General Manager (Washing) Artistic Milliners Jun 2019-present (Karachi); Manager Artistic Denim Mills 2012-19; Pelikan Knitwear, DSI Group, Habib Knit before. English. Passes."
+
+## Tariq Nadeem Siddiqui
+
+id: C152
+name: "Tariq Nadeem Siddiqui"
+linkedin_url: https://www.linkedin.com/in/tariq-nadeem-siddiqui-3254b414/
+linkedin_account: Izgin
+company: "Grace Knitwear (Karachi)"
+role: "General Manager"
+signal_type: profile_fit
+signal_multiplier: 1.0
+signal_source_url: "https://www.linkedin.com/search/results/people/?keywords=general%20manager%20dyeing%20knit%20processing"
+signal_excerpt: ""
+contact_role: buyer
+role_pts: 3
+tier: textile_mill
+size_band:
+assumptions_tested: [H1A2, H1A3, H1A6]
+validation_rationale: >
+  General manager of Grace Knitwear for nineteen years after building and running an open-width knit dyeing and finishing unit as its director of operations; signs for spend.
+response_likelihood: 4
+likelihood_factors: "3rd+ degree (0) · GM with dye-finishing background (+1)"
+channel: linkedin
+degree: 3rd+
+mutuals_count:
+active_last_30d: unknown
+open_to_work: false
+outreach_status: pending
+found_date: 2026-09-14
+notes: "[profile read 2026-09-14] details/experience: General Manager Grace Knitwear Mar 2007-present (Karachi); Director Operations Quality Dyeing & Finishing 2003-05 (built and equipped an open-width knit finishing unit). English. Passes; whether Grace Knitwear dyes in-house not stated, his background is wet processing."
+
+## Md. Sakhawat Hossain
+
+id: C153
+name: "Md. Sakhawat Hossain"
+linkedin_url: https://www.linkedin.com/in/md-sakhawat-hossain-11825b42a/
+linkedin_account: Izgin
+company: "Eurotex Knitwear Ltd (Narayanganj)"
+role: "Executive Director"
+signal_type: profile_fit
+signal_multiplier: 1.0
+signal_source_url: "https://www.linkedin.com/search/results/people/?keywords=general%20manager%20dyeing%20knit%20processing"
+signal_excerpt: ""
+contact_role: buyer
+role_pts: 3
+tier: textile_mill
+size_band:
+assumptions_tested: [H1A2, H1A3, H1A6]
+validation_rationale: >
+  Executive director at Eurotex Knitwear with dyes and chemicals inventory, lab-dip analysis and knitting technology in his remit; the budget holder at a Bangladeshi knit exporter.
+response_likelihood: 4
+likelihood_factors: "3rd+ degree (0) · executive director (+1)"
+channel: linkedin
+degree: 3rd+
+mutuals_count:
+active_last_30d: unknown
+open_to_work: false
+outreach_status: pending
+found_date: 2026-09-14
+notes: "[profile read 2026-09-14] details/experience: Executive Director Eurotex Knitwear Dec 2023-present: planning, inventory of yarn, fabric, dyes and chemicals, knitting technology, lab-dip and pre-bulk analysis. English. Passes."
+
+## Mahasin Zaman
+
+id: C154
+name: "Mahasin Zaman"
+linkedin_url: https://www.linkedin.com/in/mahasin-zaman-0b74bb59/
+linkedin_account: Izgin
+company: "Jeans Manufacturing Co., Ltd (Dhaka)"
+role: "General Manager, Denim Washing & Dyeing"
+signal_type: profile_fit
+signal_multiplier: 1.0
+signal_source_url: "https://www.linkedin.com/search/results/people/?keywords=general%20manager%20dyeing%20knit%20processing"
+signal_excerpt: ""
+contact_role: buyer
+role_pts: 3
+tier: textile_mill
+size_band:
+assumptions_tested: [H1A2, H1A3, H1A6]
+validation_rationale: >
+  General manager of denim washing and dyeing at a Dhaka jeans maker after heading Ananta Group's wash unit; owns the wash and garment-dye floor.
+response_likelihood: 5
+likelihood_factors: "2nd degree (+2) · washing GM (+0)"
+channel: linkedin
+degree: 2nd
+mutuals_count:
+active_last_30d: unknown
+open_to_work: false
+outreach_status: pending
+found_date: 2026-09-14
+notes: "[profile read 2026-09-14] details/experience: General Manager Denim washing & dyeing, Jeans Manufacturing Co. Jan 2025-present (Dhaka); General Manager / wash unit head Ananta Group 2023-25. English. Passes."
+
+## Ali İlker Gün
+
+id: C155
+name: "Ali İlker Gün"
+linkedin_url: https://www.linkedin.com/in/ali-ilker-g%C3%BCn-6b73b179/
+linkedin_account: Izgin
+company: "Tekssan Teknik Tekstil A.Ş. (Bursa)"
+role: "Plant Manager"
+signal_type: profile_fit
+signal_multiplier: 1.0
+signal_source_url: "https://www.linkedin.com/search/results/people/?keywords=plant%20manager%20textile%20dyeing%20finishing"
+signal_excerpt: ""
+contact_role: buyer
+role_pts: 3
+tier: textile_mill
+size_band:
+assumptions_tested: [H1A2, H1A3, H1A6]
+validation_rationale: >
+  Plant manager at a Bursa technical-textile maker after running a dyeing-printing-finishing plant and sixteen years as a dyeing and finishing manager; strong background, current plant's wet processing unconfirmed.
+response_likelihood: 4
+likelihood_factors: "3rd+ degree (0)"
+channel: linkedin
+degree: 3rd+
+mutuals_count:
+active_last_30d: unknown
+open_to_work: false
+outreach_status: pending
+found_date: 2026-09-14
+notes: "[profile read 2026-09-14] details/experience: Plant Manager Tekssan Teknik Tekstil Apr 2025-present (Bursa); Plant Manager Nurel Grup Dyeing-Printing-Finishing 2022-25; Dyeing & Finishing Manager Savcan Textile 2006-22. Bilingual titles, English present. HELD from invite: whether Tekssan runs wet processing is not established (company check needed first)."
+
+## Engr. Mamun-ur-Rashid
+
+id: C156
+name: "Engr. Mamun-ur-Rashid"
+linkedin_url: https://www.linkedin.com/in/engr-mamun-ur-rashid-993478172/
+linkedin_account: Izgin
+company: "Dekko ISHO Group (Gazipur)"
+role: "Deputy General Manager (Washing)"
+signal_type: profile_fit
+signal_multiplier: 1.0
+signal_source_url: "https://www.linkedin.com/search/results/people/?keywords=deputy%20general%20manager%20washing%20denim"
+signal_excerpt: ""
+contact_role: buyer
+role_pts: 3
+tier: textile_mill
+size_band:
+assumptions_tested: [H1A2, H1A3, H1A6]
+validation_rationale: >
+  Deputy GM of washing at Dekko ISHO in Gazipur, running dry and wet processes against shipment plans; the wash-floor budget owner at a Bangladeshi garment exporter.
+response_likelihood: 4
+likelihood_factors: "3rd+ degree (0) · runs wash floor (+1)"
+channel: linkedin
+degree: 3rd+
+mutuals_count:
+active_last_30d: unknown
+open_to_work: false
+outreach_status: pending
+found_date: 2026-09-14
+notes: "[profile read 2026-09-14] details/experience: Deputy General Manager (Washing) Dekko ISHO Group Apr 2025-present (Gazipur): production rates, planning against shipments, dry and wet process issues, development projects. English. Passes."
+
+## Saif Khan
+
+id: C157
+name: "Saif Khan"
+linkedin_url: https://www.linkedin.com/in/saif-khan-979ba236/
+linkedin_account: Izgin
+company: "Soorty Enterprises Pvt. Ltd. (Karachi)"
+role: "General Manager (laundry)"
+signal_type: profile_fit
+signal_multiplier: 1.0
+signal_source_url: "https://www.linkedin.com/search/results/people/?keywords=deputy%20general%20manager%20washing%20denim"
+signal_excerpt: ""
+contact_role: buyer
+role_pts: 3
+tier: textile_mill
+size_band:
+assumptions_tested: [H1A2, H1A3, H1A6]
+validation_rationale: >
+  General manager at Soorty, one of Pakistan's largest denim mills, after three years as its laundry manager and four at Artistic Milliners; owns the laundry where microfibers leave the process.
+response_likelihood: 4
+likelihood_factors: "3rd+ degree (0) · GM at a major denim mill (+1)"
+channel: linkedin
+degree: 3rd+
+mutuals_count:
+active_last_30d: unknown
+open_to_work: false
+outreach_status: pending
+found_date: 2026-09-14
+notes: "[profile read 2026-09-14] details/experience: General Manager Soorty Enterprises Aug 2020-present, Laundry Manager 2017-20 (Karachi); Artistic Milliners DGM 2015-17 and laundry manager 2013-15; Rajby before. English. Passes."
+
+## Ikram Bashir
+
+id: C158
+name: "Ikram Bashir"
+linkedin_url: https://www.linkedin.com/in/ikram-bashir-3b694b123/
+linkedin_account: Izgin
+company: "Chaman Processing Industries Pvt Ltd (Punjab)"
+role: "General Manager"
+signal_type: profile_fit
+signal_multiplier: 1.0
+signal_source_url: "https://www.linkedin.com/search/results/people/?keywords=general%20manager%20processing%20dyeing%20Faisalabad"
+signal_excerpt: ""
+contact_role: buyer
+role_pts: 3
+tier: textile_mill
+size_band:
+assumptions_tested: [H1A2, H1A3, H1A6]
+validation_rationale: >
+  General manager of a Punjab textile processing unit since 2018 after twelve years as GM of Shah Niaz Dyeing Industries; signs for spend at a dyeing and processing business.
+response_likelihood: 4
+likelihood_factors: "3rd+ degree (0) · processing GM (+1)"
+channel: linkedin
+degree: 3rd+
+mutuals_count:
+active_last_30d: unknown
+open_to_work: false
+outreach_status: pending
+found_date: 2026-09-14
+notes: "[profile read 2026-09-14] details/experience: General Manager Chaman Processing Industries Jul 2018-present (Punjab); General Manager Shah Niaz Dyeing Industries 2006-18. English. Passes."
+
+## Syed Uzair Ahmed Gilani
+
+id: C159
+name: "Syed Uzair Ahmed Gilani"
+linkedin_url: https://www.linkedin.com/in/syed-uzair-ahmed-gilani-146678286/
+linkedin_account: Izgin
+company: "(employer listed as Confidential)"
+role: "Dyeing and Finishing Manager"
+signal_type: profile_fit
+signal_multiplier: 1.0
+signal_source_url: "https://www.linkedin.com/search/results/people/?keywords=general%20manager%20processing%20dyeing%20Faisalabad"
+signal_excerpt: ""
+contact_role: buyer
+role_pts: 3
+tier: textile_mill
+size_band:
+assumptions_tested: [H1A2, H1A3, H1A6]
+validation_rationale: >
+  Dyeing and finishing manager in Faisalabad, but the employer is hidden.
+response_likelihood: 3
+likelihood_factors: "3rd+ degree (0)"
+channel: linkedin
+degree: 3rd+
+mutuals_count:
+active_last_30d: unknown
+open_to_work: false
+outreach_status: off_scope
+found_date: 2026-09-14
+notes: "[audit off_scope 2026-09-14] Profile visit: Dyeing and Finishing Manager, employer 'Confidential', Jul 2015-present (Faisalabad). Company not established, so the live-profile gate fails on check 1. Not invited."
+
+## M. Irfan Haider
+
+id: C160
+name: "M. Irfan Haider"
+linkedin_url: https://www.linkedin.com/in/m-irfan-haider-504290364/
+linkedin_account: Izgin
+company: "Magna Textile Industries"
+role: "Textile Specialist (GM Magna Processing 2023-25)"
+signal_type: profile_fit
+signal_multiplier: 1.0
+signal_source_url: "https://www.linkedin.com/search/results/people/?keywords=general%20manager%20processing%20dyeing%20Faisalabad"
+signal_excerpt: ""
+contact_role: practitioner
+role_pts: 2
+tier: textile_mill
+size_band:
+assumptions_tested: [H1A2, H1A3, H1A6]
+validation_rationale: >
+  Former processing GM, now a textile specialist with no budget title.
+response_likelihood: 3
+likelihood_factors: "3rd+ degree (0)"
+channel: linkedin
+degree: 3rd+
+mutuals_count:
+active_last_30d: unknown
+open_to_work: false
+outreach_status: off_scope
+found_date: 2026-09-14
+notes: "[audit off_scope 2026-09-14] Profile visit: Textile Specialist Magna Textile Industries (current, undated); General Manager Magna Processing Industries 2023-Jul 2025 (ended). Current role is outside the budget-holder titles; fails icp_valid_titles for H1A2. Not invited."
+
+## Akhtar Qureshi
+
+id: C161
+name: "Akhtar Qureshi"
+linkedin_url: https://www.linkedin.com/in/akhtar-qureshi-063bb099/
+linkedin_account: Izgin
+company: "Sapphire Textile Mills Limited (spinning, weaving, yarn dyeing, processing and stitching)"
+role: "General Manager"
+signal_type: profile_fit
+signal_multiplier: 1.0
+signal_source_url: "https://www.linkedin.com/search/results/people/?keywords=general%20manager%20processing%20dyeing%20Faisalabad"
+signal_excerpt: ""
+contact_role: buyer
+role_pts: 3
+tier: textile_mill
+size_band:
+assumptions_tested: [H1A2, H1A3, H1A6]
+validation_rationale: >
+  General manager at Sapphire Textile Mills, a vertical Pakistani group with yarn dyeing and fabric processing that supplies global brands; a long-tenured budget holder.
+response_likelihood: 3
+likelihood_factors: "3rd+ degree (0) · very senior (0)"
+channel: linkedin
+degree: 3rd+
+mutuals_count:
+active_last_30d: unknown
+open_to_work: false
+outreach_status: pending
+found_date: 2026-09-14
+notes: "[profile read 2026-09-14] details/experience: General Manager Sapphire Textile Mills (spinning, weaving, yarn dyeing, processing and stitching), listed from 1979 to present (Lahore); General Manager Nooriabad Textile Mills 2016-20. English. Passes; exact function inside Sapphire not stated."
+
+## Abdul Rasheed
+
+id: C162
+name: "Abdul Rasheed"
+linkedin_url: https://www.linkedin.com/in/abdul-rasheed-002761b1/
+linkedin_account: Izgin
+company: "Ebrahim Textile Mills (Landhi, Karachi)"
+role: "Senior Manager, Dyeing and Processing"
+signal_type: profile_fit
+signal_multiplier: 1.0
+signal_source_url: "https://www.linkedin.com/search/results/people/?keywords=general%20manager%20processing%20dyeing%20Faisalabad"
+signal_excerpt: ""
+contact_role: buyer
+role_pts: 3
+tier: textile_mill
+size_band:
+assumptions_tested: [H1A2, H1A3, H1A6]
+validation_rationale: >
+  Has run dyeing and processing at Ebrahim Textile Mills for fourteen years; the dyehouse owner a buyer's effluent or fibre question reaches.
+response_likelihood: 4
+likelihood_factors: "3rd+ degree (0) · 14 yrs running the dyehouse (+1)"
+channel: linkedin
+degree: 3rd+
+mutuals_count:
+active_last_30d: unknown
+open_to_work: false
+outreach_status: pending
+found_date: 2026-09-14
+notes: "[profile read 2026-09-14] details/experience: Senior Manager Dyeing and Processing, Ebrahim Textile Mills May 2012-present (Landhi). English. Passes."
+
+## Khursheed Ahmed
+
+id: C163
+name: "Khursheed Ahmed"
+linkedin_url: https://www.linkedin.com/in/khursheed-ahmed-031541214/
+linkedin_account: Izgin
+company: "Evaluation Textile (Karachi)"
+role: "General Manager Processing"
+signal_type: profile_fit
+signal_multiplier: 1.0
+signal_source_url: "https://www.linkedin.com/search/results/people/?keywords=general%20manager%20processing%20dyeing%20Faisalabad"
+signal_excerpt: ""
+contact_role: buyer
+role_pts: 3
+tier: textile_mill
+size_band:
+assumptions_tested: [H1A2, H1A3, H1A6]
+validation_rationale: >
+  General manager of processing at a Karachi textile company since 2020 after the same role at Al Azeem Interlining and dyeing and finishing management at Reliance Textiles; owns the wet-processing floor.
+response_likelihood: 4
+likelihood_factors: "3rd+ degree (0) · processing GM (+1)"
+channel: linkedin
+degree: 3rd+
+mutuals_count:
+active_last_30d: unknown
+open_to_work: false
+outreach_status: pending
+found_date: 2026-09-14
+notes: "[profile read 2026-09-14] details/experience: General Manager Processing, Evaluation Textile Nov 2020-present; GM Processing Al Azeem Interlining and Textile 2019-20 (Karachi); Manager Dyeing and Finishing Reliance Textiles before. English. Passes; employer name as listed, not independently checked."
+
+## Zainul Abideen
+
+id: C164
+name: "Zainul Abideen"
+linkedin_url: https://www.linkedin.com/in/zainul-abideen-ab9281158/
+linkedin_account: Izgin
+company: "Artistic Garment Industries (AGI Denim)"
+role: "Deputy General Manager, manufacturing excellence"
+signal_type: profile_fit
+signal_multiplier: 1.0
+signal_source_url: "https://www.linkedin.com/search/results/people/?keywords=deputy%20general%20manager%20washing%20denim"
+signal_excerpt: ""
+contact_role: practitioner
+role_pts: 2
+tier: textile_mill
+size_band:
+assumptions_tested: [H1A2, H1A3, H1A6]
+validation_rationale: >
+  Industrial engineering and process improvement role, not wet processing.
+response_likelihood: 3
+likelihood_factors: "3rd+ degree (0)"
+channel: linkedin
+degree: 3rd+
+mutuals_count:
+active_last_30d: unknown
+open_to_work: false
+outreach_status: off_scope
+found_date: 2026-09-14
+notes: "[audit off_scope 2026-09-14] Profile visit: DGM AGI Denim Jan 2026-present, manufacturing excellence; industrial engineering and process improvement at Mahmood Group and MG Apparel before. Function does not touch washing or dyeing; fails the live-profile gate on function for H1A2. Not invited."
+
+## Behzad K.
+
+id: C165
+name: "Behzad K."
+linkedin_url: https://www.linkedin.com/in/behzad-k-a8093938/
+linkedin_account: Izgin
+company: "Artistic Denim Mills Ltd (Karachi)"
+role: "Deputy General Manager, quality (cutting to packing)"
+signal_type: profile_fit
+signal_multiplier: 1.0
+signal_source_url: "https://www.linkedin.com/search/results/people/?keywords=deputy%20general%20manager%20washing%20denim"
+signal_excerpt: ""
+contact_role: practitioner
+role_pts: 2
+tier: textile_mill
+size_band:
+assumptions_tested: [H1A2, H1A3, H1A6]
+validation_rationale: >
+  Garment QA/QC from cutting to packing, not wet processing.
+response_likelihood: 3
+likelihood_factors: "3rd+ degree (0)"
+channel: linkedin
+degree: 3rd+
+mutuals_count:
+active_last_30d: unknown
+open_to_work: false
+outreach_status: off_scope
+found_date: 2026-09-14
+notes: "[audit off_scope 2026-09-14] Profile visit: DGM Artistic Denim Mills Jun 2026-present, leading QA/QC from cutting to packing. Garment quality, not washing or dyeing; fails the live-profile gate on function for H1A2. Not invited."
+
+## Md. Al-amin Howlader
+
+id: C166
+name: "Md. Al-amin Howlader"
+linkedin_url: https://www.linkedin.com/in/md-al-amin-howlader-662ba0104/
+linkedin_account: Izgin
+company: "Valmont Group (Gazipur)"
+role: "General Manager (washing)"
+signal_type: profile_fit
+signal_multiplier: 1.0
+signal_source_url: "https://www.linkedin.com/search/results/people/?keywords=general%20manager%20washing%20Bangladesh%20denim"
+signal_excerpt: ""
+contact_role: buyer
+role_pts: 3
+tier: textile_mill
+size_band:
+assumptions_tested: [H1A2, H1A3, H1A6]
+validation_rationale: >
+  General manager of Valmont's wash plant since 2019, responsible for production, R&D, quality, factory cost and the cost of each wash recipe; owns the budget and the process.
+response_likelihood: 5
+likelihood_factors: "2nd degree (+2) · costs wash recipes himself (+0)"
+channel: linkedin
+degree: 2nd
+mutuals_count:
+active_last_30d: unknown
+open_to_work: false
+outreach_status: pending
+found_date: 2026-09-14
+notes: "[profile read 2026-09-14] details/experience: General Manager Valmont Group Dec 2019-present (Gazipur): production, R&D and quality, factory cost analysis, sustainable process methodology, wash-recipe cost analysis. English. Passes."
+
+## Mezbahul Islam
+
+id: C167
+name: "Mezbahul Islam"
+linkedin_url: https://www.linkedin.com/in/mezbahul-islam-06b91ba4/
+linkedin_account: Izgin
+company: "Euro Washing Ltd (Dhaka)"
+role: "General Manager"
+signal_type: profile_fit
+signal_multiplier: 1.0
+signal_source_url: "https://www.linkedin.com/search/results/people/?keywords=general%20manager%20washing%20Bangladesh%20denim"
+signal_excerpt: ""
+contact_role: buyer
+role_pts: 3
+tier: textile_mill
+size_band:
+assumptions_tested: [H1A2, H1A3, H1A6]
+validation_rationale: >
+  General manager of Euro Washing, a Dhaka garment-wash plant, since 2021; signs for spend where microfibers are shed.
+response_likelihood: 5
+likelihood_factors: "2nd degree (+2) · wash plant GM (+0)"
+channel: linkedin
+degree: 2nd
+mutuals_count:
+active_last_30d: unknown
+open_to_work: false
+outreach_status: pending
+found_date: 2026-09-14
+notes: "[profile read 2026-09-14] details/experience: General Manager Euro Washing Ltd Aug 2021-present (Dhaka); Bitopi Group, Tarasima Apparels acting manager 2017-21. English. Passes."
+
+## Abdul Akher
+
+id: C168
+name: "Abdul Akher"
+linkedin_url: https://www.linkedin.com/in/abdul-akher-b5710b81/
+linkedin_account: Izgin
+company: "Next Washing Ltd (Hameem Group, Ashulia)"
+role: "General Manager; Head of Operations, Babylon Washing"
+signal_type: profile_fit
+signal_multiplier: 1.0
+signal_source_url: "https://www.linkedin.com/search/results/people/?keywords=general%20manager%20washing%20Bangladesh%20denim"
+signal_excerpt: ""
+contact_role: buyer
+role_pts: 3
+tier: textile_mill
+size_band:
+assumptions_tested: [H1A2, H1A3, H1A6]
+validation_rationale: >
+  General manager of Hameem Group's Next Washing plant and head of operations at Babylon Washing, overseeing wet and dry processing; budget owner at two wash plants.
+response_likelihood: 5
+likelihood_factors: "2nd degree (+2) · wet and dry processing owner (+0)"
+channel: linkedin
+degree: 2nd
+mutuals_count:
+active_last_30d: unknown
+open_to_work: false
+outreach_status: pending
+found_date: 2026-09-14
+notes: "[profile read 2026-09-14] details/experience: General Manager Next Washing Ltd (Hameem Group) Feb 2026-present; Head of Operations Babylon Washing Sep 2024-present: complete washing operations, wet and dry processing, planning, quality. English. Passes."
+
+## Sanjib Paul
+
+id: C169
+name: "Sanjib Paul"
+linkedin_url: https://www.linkedin.com/in/sanjib-paul-68b06971/
+linkedin_account: Izgin
+company: "Epic Group (Savar, Dhaka)"
+role: "General Manager (Washing)"
+signal_type: profile_fit
+signal_multiplier: 1.0
+signal_source_url: "https://www.linkedin.com/search/results/people/?keywords=general%20manager%20washing%20Bangladesh%20denim"
+signal_excerpt: ""
+contact_role: buyer
+role_pts: 3
+tier: textile_mill
+size_band:
+assumptions_tested: [H1A2, H1A3, H1A6]
+validation_rationale: >
+  General manager of washing at Epic Group since 2021 after heading Dekko ISHO's wash plant; runs the wash floor at a large brand-facing apparel group.
+response_likelihood: 4
+likelihood_factors: "3rd+ degree (0) · wash GM (+1)"
+channel: linkedin
+degree: 3rd+
+mutuals_count:
+active_last_30d: unknown
+open_to_work: false
+outreach_status: pending
+found_date: 2026-09-14
+notes: "[profile read 2026-09-14] details/experience: General Manager (Washing) Epic Group Sep 2021-present (Savar); Washing Plant Head Dekko ISHO 2019-21; DGM Washing DIRD Group 2015-19. English. Passes."
+
+## Farah Wadie
+
+id: C170
+name: "Farah Wadie"
+linkedin_url: https://www.linkedin.com/in/farah-wadie-28b619182/
+linkedin_account: Izgin
+company: "NEW-TEX (10th of Ramadan, Egypt)"
+role: "General Manager of Dyeing and Finishing"
+signal_type: profile_fit
+signal_multiplier: 1.0
+signal_source_url: "https://www.linkedin.com/search/results/people/?keywords=dyeing%20general%20manager%20Egypt%20textile"
+signal_excerpt: ""
+contact_role: buyer
+role_pts: 3
+tier: textile_mill
+size_band:
+assumptions_tested: [H1A2, H1A3, H1A6]
+validation_rationale: >
+  General manager of dyeing and finishing at NEW-TEX in Egypt after running dyehouses at Heliopolis, Pharaoh Carpets and Sasa Tex; owns the dyehouse budget.
+response_likelihood: 4
+likelihood_factors: "3rd+ degree (0) · serial dyehouse GM (+1)"
+channel: linkedin
+degree: 3rd+
+mutuals_count:
+active_last_30d: unknown
+open_to_work: false
+outreach_status: pending
+found_date: 2026-09-14
+notes: "[profile read 2026-09-14] details/experience: General Manager of Dyeing and Finishing and consultant, NEW-TEX Jan 2023-present; dyehouse GM Heliopolis 2021-23, Pharaoh Carpets 2020-21, Sasa Tex before; consultant MardiniTex 2021-23. English. Passes."
+
+## Md Mashiur Rahman
+
+id: C171
+name: "Md Mashiur Rahman"
+linkedin_url: https://www.linkedin.com/in/md-mashiur-rahman-b0aa586a/
+linkedin_account: Izgin
+company: "Bengal Group of Industries (Designer Washing & Dyeing), Dhaka"
+role: "Assistant General Manager (Washing & Dyeing)"
+signal_type: profile_fit
+signal_multiplier: 1.0
+signal_source_url: "https://www.linkedin.com/search/results/people/?keywords=general%20manager%20washing%20Bangladesh%20denim"
+signal_excerpt: ""
+contact_role: buyer
+role_pts: 3
+tier: textile_mill
+size_band:
+assumptions_tested: [H1A2, H1A3, H1A6]
+validation_rationale: >
+  Runs washing and garment dyeing at Bengal Group's Designer Washing & Dyeing unit for eight years after denim washing R&D at Dekko and Pacific Jeans; owns the wash-and-dye floor.
+response_likelihood: 4
+likelihood_factors: "3rd+ degree (0) · wash and dye owner (+1)"
+channel: linkedin
+degree: 3rd+
+mutuals_count:
+active_last_30d: unknown
+open_to_work: false
+outreach_status: pending
+found_date: 2026-09-14
+notes: "[profile read 2026-09-14] details/experience: AGM (Washing & Dyeing) Bengal Group of Industries Sep 2018-present (Dhaka); Manager Denim Washing R&D Dekko Group 2016-18; Asst Manager Washing R&D Pacific Jeans 2010-16. English. Passes."
+
+## Mohd. Joynal Abedin
+
+id: C172
+name: "Mohd. Joynal Abedin"
+linkedin_url: https://www.linkedin.com/in/mohd-joynal-abedin-b87a0667/
+linkedin_account: Izgin
+company: "Keya Knit Composite Ltd (Dhaka)"
+role: "General Manager"
+signal_type: profile_fit
+signal_multiplier: 1.0
+signal_source_url: "https://www.linkedin.com/search/results/people/?keywords=general%20manager%20dyeing%20knit%20composite%20Bangladesh"
+signal_excerpt: ""
+contact_role: buyer
+role_pts: 3
+tier: textile_mill
+size_band:
+assumptions_tested: [H1A2, H1A3, H1A6]
+validation_rationale: >
+  General manager of Keya Knit Composite, a vertical knit mill with in-house dyeing, with a background selling to European brands; hears the brand's request and signs for spend.
+response_likelihood: 4
+likelihood_factors: "3rd+ degree (0) · GM with brand-facing background (+1)"
+channel: linkedin
+degree: 3rd+
+mutuals_count:
+active_last_30d: unknown
+open_to_work: false
+outreach_status: pending
+found_date: 2026-09-14
+notes: "[profile read 2026-09-14] details/experience: General Manager Keya Knit Composite Jan 2020-present; GM Marketing & Merchandising The Delta Composite Knitting (Europe buyers incl. Monoprix) 2017-present. English. Passes; his GM remit may be commercial rather than dyehouse."
+
+## M. S. Arefin
+
+id: C173
+name: "M. S. Arefin"
+linkedin_url: https://www.linkedin.com/in/m-s-arefin-05b106146/
+linkedin_account: Izgin
+company: "Arien Knit Composite Ltd (Gazipur)"
+role: "General Manager"
+signal_type: profile_fit
+signal_multiplier: 1.0
+signal_source_url: "https://www.linkedin.com/search/results/people/?keywords=general%20manager%20dyeing%20knit%20composite%20Bangladesh"
+signal_excerpt: ""
+contact_role: buyer
+role_pts: 3
+tier: textile_mill
+size_band:
+assumptions_tested: [H1A2, H1A3, H1A6]
+validation_rationale: >
+  General manager of Arien Knit Composite since 2021 after heading fabric dyeing at Mosharaf Group; runs a knit composite with its own dyehouse and signs for spend.
+response_likelihood: 4
+likelihood_factors: "3rd+ degree (0) · GM, ex head of dyeing (+1)"
+channel: linkedin
+degree: 3rd+
+mutuals_count:
+active_last_30d: unknown
+open_to_work: false
+outreach_status: pending
+found_date: 2026-09-14
+notes: "[profile read 2026-09-14] details/experience: General Manager Arien Knit Composite Jul 2021-present (Gazipur); Head of Fabrics Dyeing Mosharaf Group 2019-21. English. Passes."
+
+## Omar Ali
+
+id: C174
+name: "Omar Ali"
+linkedin_url: https://www.linkedin.com/in/omar-ali-447158282/
+linkedin_account: Izgin
+company: "Alliance Knit Composite Limited (Ashulia)"
+role: "Assistant General Manager (Dyeing Finishing)"
+signal_type: profile_fit
+signal_multiplier: 1.0
+signal_source_url: "https://www.linkedin.com/search/results/people/?keywords=general%20manager%20dyeing%20knit%20composite%20Bangladesh"
+signal_excerpt: ""
+contact_role: buyer
+role_pts: 3
+tier: textile_mill
+size_band:
+assumptions_tested: [H1A2, H1A3, H1A6]
+validation_rationale: >
+  Runs dyeing and finishing at Alliance Knit Composite against buyer standards, including a 100-ton stenter line; the dyehouse head a buyer's fibre request would reach.
+response_likelihood: 4
+likelihood_factors: "3rd+ degree (0) · heads dye-finishing (+1)"
+channel: linkedin
+degree: 3rd+
+mutuals_count:
+active_last_30d: unknown
+open_to_work: false
+outreach_status: pending
+found_date: 2026-09-14
+notes: "[profile read 2026-09-14] details/experience: AGM (Dyeing Finishing) Alliance Knit Composite Jul 2023-present (Ashulia): daily dyeing and finishing production, quality to buyer standard, 100 t stenter and 60 t compactor output. English. Passes."
+
+## Suresh Kumar G
+
+id: C175
+name: "Suresh Kumar G"
+linkedin_url: https://www.linkedin.com/in/suresh-kumar-g-b8707771/
+linkedin_account: Izgin
+company: "(last listed: Indocount, until 2014)"
+role: "Quality assurance (GM Indocount 2012-14)"
+signal_type: profile_fit
+signal_multiplier: 1.0
+signal_source_url: "https://www.linkedin.com/search/results/people/?keywords=dyeing%20general%20manager%20Egypt%20textile"
+signal_excerpt: ""
+contact_role: practitioner
+role_pts: 2
+tier: textile_mill
+size_band:
+assumptions_tested: [H1A2, H1A3, H1A6]
+validation_rationale: >
+  GM title ended in 2014; later roles are quality assurance in made-ups.
+response_likelihood: 3
+likelihood_factors: "3rd+ degree (0)"
+channel: linkedin
+degree: 3rd+
+mutuals_count:
+active_last_30d: unknown
+open_to_work: false
+outreach_status: off_scope
+found_date: 2026-09-14
+notes: "[audit off_scope 2026-09-14] Profile visit: General Manager Indocount 2012-Jan 2014 (made-up QA and QSHE); QA roles at JVS Export and Dewhirst before. No current wet-processing budget role shown; fails the live-profile gate on current function. Not invited."
