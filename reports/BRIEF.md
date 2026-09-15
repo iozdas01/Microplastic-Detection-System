@@ -4,7 +4,7 @@
 -->
 ---
 idea: industrial-process-data-infrastructure
-generated: 2026-09-15T00:28Z
+generated: 2026-09-15T00:43Z
 active_hunch: H1, H3, H5
 active_assumption: H1A2
 sources:
@@ -13,7 +13,7 @@ sources:
   graph: 2e388c457f54
   evidence: 61ff8f30c6d6
   offerings: absent
-  contacts: 3e89540eaf4a
+  contacts: af142c433a1b
 ---
 
 # industrial-process-data-infrastructure — session brief
@@ -95,6 +95,7 @@ _Generated from the folder. Check here before creating a new artifact — if a f
 | `reports/outreach/copy/H1A2-linkedin.md` | The LinkedIn copy archive for H1A2 — every message drafted or sent to a contact for this assumption, with the live-snapshot line behind each claim an… |
 | `reports/outreach/copy/H2-linkedin.md` | The staged LinkedIn copy archive for the superseded-but-revivable H2 reverse-osmosis desalination hunch. |
 | `reports/outreach/copy/H3A2-linkedin.md` | The LinkedIn copy archive for H3A2 — every message drafted or sent to a California water-utility contact for this assumption, with the live-snapshot… |
+| `reports/outreach/copy/pitch.md` | The pitch for this idea — every audience variant as a claim-traced deck or script, the one-slide block, and the version log of how the story changed… |
 | `reports/pages/pages.yaml` | What each page in this folder is, and whether it still holds. |
 | `reports/pages/startup-map.html` | generated — rebuild it, never edit it |
 

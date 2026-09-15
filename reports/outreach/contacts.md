@@ -4,7 +4,7 @@ idea: industrial-process-data-infrastructure
 last_updated: 2026-09-14
 totals:
   targeted: 142
-  invited: 93
+  invited: 119
   accepted: 22
   scheduled: 0
   done: 0
@@ -3352,9 +3352,10 @@ degree: 3rd+
 mutuals_count:
 active_last_30d: unknown
 open_to_work: false
-outreach_status: pending
+outreach_status: invited
 found_date: 2026-09-14
-notes: "[profile read 2026-09-14] details/experience: Director Applications Engineering & Technical Services, Toray Membrane USA May 2022-present (Poway CA); manager of the same 2018-22; manager applications engineering 2006-18; Toray Membrane America 2002-06. English. Passes."
+notes: "[profile read 2026-09-14] details/experience: Director Applications Engineering & Technical Services, Toray Membrane USA May 2022-present (Poway CA); manager of the same 2018-22; manager applications engineering 2006-18; Toray Membrane America 2002-06. English. Passes. [invited 2026-09-14] bare invite via custom-invite modal, modal name confirmed Peter Metcalfe, sent by Claude at founder's instruction; Pending confirmed."
+
 
 ## Edna Banerjee
 
@@ -3382,9 +3383,10 @@ degree: 3rd+
 mutuals_count:
 active_last_30d: unknown
 open_to_work: false
-outreach_status: pending
+outreach_status: invited
 found_date: 2026-09-14
-notes: "[profile read 2026-09-14] details/experience: Global MBR Technology Manager CERAFILTEC Feb 2024-present, project manager since 2022 (Saarbrücken); Technical Service Project Manager MANN+HUMMEL Water & Fluid Solutions (MICRODYN-NADIR) 2017-22: MBR/UF process design, after-sales technical customer support. English. Passes."
+notes: "[profile read 2026-09-14] details/experience: Global MBR Technology Manager CERAFILTEC Feb 2024-present, project manager since 2022 (Saarbrücken); Technical Service Project Manager MANN+HUMMEL Water & Fluid Solutions (MICRODYN-NADIR) 2017-22: MBR/UF process design, after-sales technical customer support. English. Passes. [invited 2026-09-14] bare invite via custom-invite modal, modal name confirmed Edna Banerjee, sent by Claude at founder's instruction; Pending confirmed."
+
 
 ## Mithilesh Tripathi
 
@@ -3412,9 +3414,10 @@ degree: 3rd+
 mutuals_count:
 active_last_30d: unknown
 open_to_work: false
-outreach_status: pending
+outreach_status: invited
 found_date: 2026-09-14
-notes: "[profile read 2026-09-14] details/experience: Membrane selection and technical solutions India, MANN+HUMMEL Feb 2023-present (Lucknow): membrane range selection and guidance for MF/UF liquid treatment customers. English. Passes."
+notes: "[profile read 2026-09-14] details/experience: Membrane selection and technical solutions India, MANN+HUMMEL Feb 2023-present (Lucknow): membrane range selection and guidance for MF/UF liquid treatment customers. English. Passes. [invited 2026-09-14] bare invite via custom-invite modal, modal name confirmed Mithilesh Tripathi, sent by Claude at founder's instruction; Pending confirmed."
+
 
 ## Dominik Schreier
 
@@ -3442,9 +3445,10 @@ degree: 3rd+
 mutuals_count:
 active_last_30d: unknown
 open_to_work: false
-outreach_status: pending
+outreach_status: invited
 found_date: 2026-09-14
-notes: "[profile read 2026-09-14] details/experience: Director Global Engineering MANN+HUMMEL Jun 2024-present (Wiesbaden); Senior Manager Engineering EMEA 2023-24; Manager Engineering Europe 2021-23; Engineering Manager MBR 2018-21; 11 yrs at the company. English headline. Passes."
+notes: "[profile read 2026-09-14] details/experience: Director Global Engineering MANN+HUMMEL Jun 2024-present (Wiesbaden); Senior Manager Engineering EMEA 2023-24; Manager Engineering Europe 2021-23; Engineering Manager MBR 2018-21; 11 yrs at the company. English headline. Passes. [invited 2026-09-14] bare invite via custom-invite modal, modal name confirmed Dominik Schreier, sent by Claude at founder's instruction; Pending confirmed."
+
 
 ## Marcelo Bueno Prado
 
@@ -3502,9 +3506,10 @@ degree: 3rd+
 mutuals_count:
 active_last_30d: unknown
 open_to_work: false
-outreach_status: pending
+outreach_status: invited
 found_date: 2026-09-14
-notes: "[profile read 2026-09-14] details/experience: Water Quality Supervisor San Jose Water Jan 2025-present; Water Quality Scientist 2023-25; Water Quality Compliance Officer Passaic Valley Water Commission 2022-23; lab roles there 2014-22. English. Passes. SB 1422 selection not verified."
+notes: "[profile read 2026-09-14] details/experience: Water Quality Supervisor San Jose Water Jan 2025-present; Water Quality Scientist 2023-25; Water Quality Compliance Officer Passaic Valley Water Commission 2022-23; lab roles there 2014-22. English. Passes. SB 1422 selection not verified. [invited 2026-09-14] bare invite via custom-invite modal, modal name confirmed Stephanie Vogel, sent by Claude at founder's instruction; Pending confirmed."
+
 
 ## Joe Mouawad
 
@@ -3532,9 +3537,10 @@ degree: 3rd+
 mutuals_count:
 active_last_30d: unknown
 open_to_work: false
-outreach_status: pending
+outreach_status: invited
 found_date: 2026-09-14
-notes: "[profile read 2026-09-14] details/experience: General Manager EMWD May 2021-present; AGM Planning, Engineering & Construction 2016-21; Senior Director of Engineering 2006-16; 20 yrs at EMWD. English. Passes. SB 1422 selection not verified."
+notes: "[profile read 2026-09-14] details/experience: General Manager EMWD May 2021-present; AGM Planning, Engineering & Construction 2016-21; Senior Director of Engineering 2006-16; 20 yrs at EMWD. English. Passes. SB 1422 selection not verified. [invited 2026-09-14] bare invite via custom-invite modal, modal name confirmed Joe Mouawad, sent by Claude at founder's instruction; Pending confirmed."
+
 
 ## Angela O'Brien
 
@@ -3562,9 +3568,10 @@ degree: 3rd+
 mutuals_count:
 active_last_30d: unknown
 open_to_work: false
-outreach_status: pending
+outreach_status: invited
 found_date: 2026-09-14
-notes: "[profile read 2026-09-14] details/experience: Water Quality Manager Zone 7 Water Agency Feb 2025-present (acting 2023-25); Water Quality Engineer 2001-25; environmental engineer Alameda County Water District 1998-2001; sanitary engineer California Division of Drinking Water 1996-98. English. Passes. SB 1422 selection not verified."
+notes: "[profile read 2026-09-14] details/experience: Water Quality Manager Zone 7 Water Agency Feb 2025-present (acting 2023-25); Water Quality Engineer 2001-25; environmental engineer Alameda County Water District 1998-2001; sanitary engineer California Division of Drinking Water 1996-98. English. Passes. SB 1422 selection not verified. [invited 2026-09-14] bare invite via custom-invite modal, modal name confirmed Angela O'Brien, sent by Claude at founder's instruction; Pending confirmed."
+
 
 ## Lucy Croy
 
@@ -3622,9 +3629,10 @@ degree: 3rd+
 mutuals_count:
 active_last_30d: unknown
 open_to_work: false
-outreach_status: pending
+outreach_status: invited
 found_date: 2026-09-14
-notes: "[profile read 2026-09-14] details/experience: Group Manager Product Development Hydranautics May 2025-present; Process Engineering Manager 2023-present; Nitto Denko since 2019; Sumitomo Electric 2015-19; Samsung R&D Japan 2012-15. English headline. Passes."
+notes: "[profile read 2026-09-14] details/experience: Group Manager Product Development Hydranautics May 2025-present; Process Engineering Manager 2023-present; Nitto Denko since 2019; Sumitomo Electric 2015-19; Samsung R&D Japan 2012-15. English headline. Passes. [invited 2026-09-14] bare invite via custom-invite modal, modal name confirmed Nagahisa Sato, sent by Claude at founder's instruction; Pending confirmed."
+
 
 ## Mohamed Zaki
 
@@ -3652,9 +3660,10 @@ degree: 3rd+
 mutuals_count:
 active_last_30d: unknown
 open_to_work: false
-outreach_status: pending
+outreach_status: invited
 found_date: 2026-09-14
-notes: "[profile read 2026-09-14] details/experience: Technical Services General Manager Middle East & Egypt, NanoH2O (LG) Mar 2024-present; Technical Service Engineer 2017-present; projects engineer Veolia Water 2011-17. English. Passes."
+notes: "[profile read 2026-09-14] details/experience: Technical Services General Manager Middle East & Egypt, NanoH2O (LG) Mar 2024-present; Technical Service Engineer 2017-present; projects engineer Veolia Water 2011-17. English. Passes. [invited 2026-09-14] bare invite via custom-invite modal, modal name confirmed Mohamed Zaki, sent by Claude at founder's instruction; Pending confirmed."
+
 
 ## Michael Baez
 
@@ -3682,9 +3691,10 @@ degree: 3rd+
 mutuals_count:
 active_last_30d: unknown
 open_to_work: false
-outreach_status: pending
+outreach_status: invited
 found_date: 2026-09-14
-notes: "[profile read 2026-09-14] details/experience: Technical Service Engineer NanoH2O Jan 2024-present (Tampa); QA laboratory technician Refresco 2022-24. English. Passes."
+notes: "[profile read 2026-09-14] details/experience: Technical Service Engineer NanoH2O Jan 2024-present (Tampa); QA laboratory technician Refresco 2022-24. English. Passes. [invited 2026-09-14] bare invite via custom-invite modal, modal name confirmed Michael Baez, sent by Claude at founder's instruction; Pending confirmed."
+
 
 ## Damon Shreeves
 
@@ -3712,9 +3722,10 @@ degree: 3rd+
 mutuals_count:
 active_last_30d: unknown
 open_to_work: false
-outreach_status: pending
+outreach_status: invited
 found_date: 2026-09-14
-notes: "[profile read 2026-09-14] details/experience: ZeeWeed Products Specialist Veolia Water Tech Jul 2025-present; Domain Specialist UF/MBR Veolia WTS Sep 2022-present; ZeeWeed Products Specialist SUEZ WTS 2019-22 (Andover UK). English. Passes."
+notes: "[profile read 2026-09-14] details/experience: ZeeWeed Products Specialist Veolia Water Tech Jul 2025-present; Domain Specialist UF/MBR Veolia WTS Sep 2022-present; ZeeWeed Products Specialist SUEZ WTS 2019-22 (Andover UK). English. Passes. [invited 2026-09-14] bare invite via custom-invite modal, modal name confirmed Damon Shreeves, sent by Claude at founder's instruction; Pending confirmed."
+
 
 ## Bailey Schantz
 
@@ -3772,9 +3783,10 @@ degree: 3rd+
 mutuals_count:
 active_last_30d: unknown
 open_to_work: false
-outreach_status: pending
+outreach_status: invited
 found_date: 2026-09-14
-notes: "[profile read 2026-09-14] details/experience: Senior Specialist, California State Water Resources Control Board Feb 2024-present (San Diego); District Engineer Mojave District 2023-24; Water Resource Control Engineer Imperial District 2023; AQUAlity Engineering before. English. Passes as regulator-side expert. Identity match: the Feb 2025 DDW workshop deck (E1/E2) names Hélène Baribeau, PhD, PE, SWRCB-DDW with a 619 (San Diego) number; profile location San Diego."
+notes: "[profile read 2026-09-14] details/experience: Senior Specialist, California State Water Resources Control Board Feb 2024-present (San Diego); District Engineer Mojave District 2023-24; Water Resource Control Engineer Imperial District 2023; AQUAlity Engineering before. English. Passes as regulator-side expert. Identity match: the Feb 2025 DDW workshop deck (E1/E2) names Hélène Baribeau, PhD, PE, SWRCB-DDW with a 619 (San Diego) number; profile location San Diego. [invited 2026-09-14] bare invite via custom-invite modal, modal name confirmed Hélène Baribeau, sent by Claude at founder's instruction; Pending confirmed."
+
 
 ## Ryan Bye
 
@@ -3802,9 +3814,10 @@ degree: 3rd+
 mutuals_count:
 active_last_30d: unknown
 open_to_work: false
-outreach_status: pending
+outreach_status: invited
 found_date: 2026-09-14
-notes: "[profile read 2026-09-14] details/experience: Water Quality Regulatory & Compliance Manager SCV Water Aug 2026-present (manages WQ and regulatory compliance across distribution, groundwater treatment, disinfection, potable/recycled; reporting and submittals to the SWRCB); 8 yrs 9 mos at SCV Water. English. Passes. SB 1422 selection not verified."
+notes: "[profile read 2026-09-14] details/experience: Water Quality Regulatory & Compliance Manager SCV Water Aug 2026-present (manages WQ and regulatory compliance across distribution, groundwater treatment, disinfection, potable/recycled; reporting and submittals to the SWRCB); 8 yrs 9 mos at SCV Water. English. Passes. SB 1422 selection not verified. [invited 2026-09-14] bare invite via custom-invite modal, modal name confirmed Ryan Bye, sent by Claude at founder's instruction; Pending confirmed."
+
 
 ## Clement Do
 
@@ -3832,9 +3845,10 @@ degree: 3rd+
 mutuals_count:
 active_last_30d: unknown
 open_to_work: false
-outreach_status: pending
+outreach_status: invited
 found_date: 2026-09-14
-notes: "[profile read 2026-09-14] details/experience: Water Quality Laboratory Supervisor SCV Water Oct 2025-present; City of Santa Monica WQ supervisor 2025, lead water chemist 2022-25, water chemist 2019-22; Palmdale Water District lab analyst 2016-19. English. Passes."
+notes: "[profile read 2026-09-14] details/experience: Water Quality Laboratory Supervisor SCV Water Oct 2025-present; City of Santa Monica WQ supervisor 2025, lead water chemist 2022-25, water chemist 2019-22; Palmdale Water District lab analyst 2016-19. English. Passes. [invited 2026-09-14] bare invite via custom-invite modal, modal name confirmed Clement Do, sent by Claude at founder's instruction; Pending confirmed."
+
 
 ## Isabel Ramos
 
@@ -3892,9 +3906,10 @@ degree: 3rd+
 mutuals_count:
 active_last_30d: unknown
 open_to_work: false
-outreach_status: pending
+outreach_status: invited
 found_date: 2026-09-14
-notes: "[profile read 2026-09-14] details/experience: Global Technical Support Manager Water & Wastewater (X-Flow), Pentair Apr 2025-present (Enschede); Manager Sales Support 2022-25; Sales Support Engineer 2013-22; 13 yrs at Pentair. English. Passes."
+notes: "[profile read 2026-09-14] details/experience: Global Technical Support Manager Water & Wastewater (X-Flow), Pentair Apr 2025-present (Enschede); Manager Sales Support 2022-25; Sales Support Engineer 2013-22; 13 yrs at Pentair. English. Passes. [invited 2026-09-14] bare invite via custom-invite modal, modal name confirmed Karthi Pitchaikani, sent by Claude at founder's instruction; Pending confirmed."
+
 
 ## Saad Fadel
 
@@ -3922,9 +3937,10 @@ degree: 3rd+
 mutuals_count:
 active_last_30d: unknown
 open_to_work: false
-outreach_status: pending
+outreach_status: invited
 found_date: 2026-09-14
-notes: "[profile read 2026-09-14] details/experience: Quality Assurance & Technical Service Manager TOYOBO MC Middle East Industries Apr 2019-present (Saudi Arabia): product QA, ISO 9001 audits, technical services and support for RO desalination plants. English. Passes."
+notes: "[profile read 2026-09-14] details/experience: Quality Assurance & Technical Service Manager TOYOBO MC Middle East Industries Apr 2019-present (Saudi Arabia): product QA, ISO 9001 audits, technical services and support for RO desalination plants. English. Passes. [invited 2026-09-14] bare invite via custom-invite modal, modal name confirmed Saad Fadel, sent by Claude at founder's instruction; Pending confirmed."
+
 
 ## Ahmad Radwan
 
@@ -3952,9 +3968,10 @@ degree: 2nd
 mutuals_count:
 active_last_30d: unknown
 open_to_work: false
-outreach_status: pending
+outreach_status: invited
 found_date: 2026-09-14
-notes: "[profile read 2026-09-14] details/experience: Technical Business Development General Manager TOYOBO MC Corporation Aug 2023-present (Riyadh): regional go-to-market across KSA, UAE, Oman, Kuwait; distributor training and joint customer calls; vendor qualification of CTA hollow-fibre membranes in 8 countries. English. Passes (title in list: BD manager desalination)."
+notes: "[profile read 2026-09-14] details/experience: Technical Business Development General Manager TOYOBO MC Corporation Aug 2023-present (Riyadh): regional go-to-market across KSA, UAE, Oman, Kuwait; distributor training and joint customer calls; vendor qualification of CTA hollow-fibre membranes in 8 countries. English. Passes (title in list: BD manager desalination). [invited 2026-09-14] bare invite via custom-invite modal, modal name confirmed Ahmad Radwan, sent by Claude at founder's instruction; Pending confirmed."
+
 
 ## Atsuo Kumano
 
@@ -3982,9 +3999,10 @@ degree: 3rd+
 mutuals_count:
 active_last_30d: unknown
 open_to_work: false
-outreach_status: pending
+outreach_status: invited
 found_date: 2026-09-14
-notes: "[profile read 2026-09-14] details/experience: Senior Technical Advisor Toyobo MC Corporation Jul 2024-present (Osaka); Senior Technical Adviser Toyobo Co. 2020-24; earlier General Manager of the Membrane R&D Center. Profile carries English entries alongside Japanese; passes the LR-B31a English check on the English role titles."
+notes: "[profile read 2026-09-14] details/experience: Senior Technical Advisor Toyobo MC Corporation Jul 2024-present (Osaka); Senior Technical Adviser Toyobo Co. 2020-24; earlier General Manager of the Membrane R&D Center. Profile carries English entries alongside Japanese; passes the LR-B31a English check on the English role titles. [invited 2026-09-14] bare invite via custom-invite modal, modal name confirmed Atsuo Kumano, sent by Claude at founder's instruction; Pending confirmed."
+
 
 ## Ryoichi Takada
 
@@ -4042,9 +4060,10 @@ degree: 3rd+
 mutuals_count:
 active_last_30d: unknown
 open_to_work: false
-outreach_status: pending
+outreach_status: invited
 found_date: 2026-09-14
-notes: "[profile read 2026-09-14] details/experience: Water Quality Manager IRWD Mar 2023-present (lab analyses, QA/QC, regulatory requirements and reporting, water quality projects, staff); 4 yrs at IRWD. English. Passes. SB 1422 selection not verified."
+notes: "[profile read 2026-09-14] details/experience: Water Quality Manager IRWD Mar 2023-present (lab analyses, QA/QC, regulatory requirements and reporting, water quality projects, staff); 4 yrs at IRWD. English. Passes. SB 1422 selection not verified. [invited 2026-09-14] bare invite via custom-invite modal, modal name confirmed Scott G., sent by Claude at founder's instruction; Pending confirmed."
+
 
 ## Jim Barrett
 
@@ -4072,9 +4091,10 @@ degree: 3rd+
 mutuals_count:
 active_last_30d: unknown
 open_to_work: false
-outreach_status: pending
+outreach_status: invited
 found_date: 2026-09-14
-notes: "[profile read 2026-09-14] details/experience: General Manager CVWD Mar 2013-present; AGM 2010-13; board member MWD and SDCWA 2006-10; SAME fellow. English. Passes. SB 1422 selection not verified."
+notes: "[profile read 2026-09-14] details/experience: General Manager CVWD Mar 2013-present; AGM 2010-13; board member MWD and SDCWA 2006-10; SAME fellow. English. Passes. SB 1422 selection not verified. [invited 2026-09-14] bare invite via custom-invite modal, modal name confirmed Jim Barrett, sent by Claude at founder's instruction; Pending confirmed."
+
 
 ## Craig Miller
 
@@ -4102,9 +4122,10 @@ degree: 3rd+
 mutuals_count:
 active_last_30d: unknown
 open_to_work: false
-outreach_status: pending
+outreach_status: invited
 found_date: 2026-09-14
-notes: "[profile read 2026-09-14] details/experience: General Manager Western MWD Dec 2017-present (deputy GM since 2013); AGM Inland Empire Utilities Agency 2011-13; Executive Director Orange County Water District 1992-2011. English. Passes. SB 1422 selection not verified."
+notes: "[profile read 2026-09-14] details/experience: General Manager Western MWD Dec 2017-present (deputy GM since 2013); AGM Inland Empire Utilities Agency 2011-13; Executive Director Orange County Water District 1992-2011. English. Passes. SB 1422 selection not verified. [invited 2026-09-14] bare invite via custom-invite modal, modal name confirmed Craig Miller, sent by Claude at founder's instruction; Pending confirmed."
+
 
 ## Don Walter
 
@@ -4132,9 +4153,10 @@ degree: 3rd+
 mutuals_count:
 active_last_30d: unknown
 open_to_work: false
-outreach_status: pending
+outreach_status: invited
 found_date: 2026-09-14
-notes: "[profile read 2026-09-14] details/experience: North American Product Manager - Membrane Systems, Veolia Water Tech Jan 2026-present; Product & Engineering Director Jul 2024-present; Global Product Line Director Engineered Systems and Components, Veolia WTS 2022-24; SUEZ WTS 5 yrs before (Minneapolis). English. Passes."
+notes: "[profile read 2026-09-14] details/experience: North American Product Manager - Membrane Systems, Veolia Water Tech Jan 2026-present; Product & Engineering Director Jul 2024-present; Global Product Line Director Engineered Systems and Components, Veolia WTS 2022-24; SUEZ WTS 5 yrs before (Minneapolis). English. Passes. [invited 2026-09-14] bare invite via custom-invite modal, modal name confirmed Don Walter, sent by Claude at founder's instruction; Pending confirmed."
+
 
 ## Christoph Thiemig
 
@@ -4162,9 +4184,10 @@ degree: 3rd+
 mutuals_count:
 active_last_30d: unknown
 open_to_work: false
-outreach_status: pending
+outreach_status: invited
 found_date: 2026-09-14
-notes: "[profile read 2026-09-14] details/experience: Global ZeeWeed Wastewater Applications Lead, Veolia WTS Sep 2022-present (Aachen, remote): process-related product management and BD for ZeeWeed 500 MBR; same role at SUEZ WTS from Apr 2019. English. Passes."
+notes: "[profile read 2026-09-14] details/experience: Global ZeeWeed Wastewater Applications Lead, Veolia WTS Sep 2022-present (Aachen, remote): process-related product management and BD for ZeeWeed 500 MBR; same role at SUEZ WTS from Apr 2019. English. Passes. [invited 2026-09-14] bare invite via custom-invite modal, modal name confirmed Christoph Thiemig, sent by Claude at founder's instruction; Pending confirmed."
+
 
 ## Charan Rajan
 
@@ -4252,9 +4275,10 @@ degree: 3rd+
 mutuals_count:
 active_last_30d: unknown
 open_to_work: false
-outreach_status: pending
+outreach_status: invited
 found_date: 2026-09-14
-notes: "[profile read 2026-09-14] details/experience: Laboratory Services Manager San Francisco Water Department Jan 2018-present (Millbrae); Supervising Chemist SFPUC Feb 2010-present; Operations Manager TestAmerica 1995-2009. English. Passes."
+notes: "[profile read 2026-09-14] details/experience: Laboratory Services Manager San Francisco Water Department Jan 2018-present (Millbrae); Supervising Chemist SFPUC Feb 2010-present; Operations Manager TestAmerica 1995-2009. English. Passes. [invited 2026-09-14] bare invite via custom-invite modal, modal name confirmed Megan Tran, sent by Claude at founder's instruction; Pending confirmed."
+
 
 ## Raul Cirerol
 
@@ -4282,9 +4306,10 @@ degree: 3rd+
 mutuals_count:
 active_last_30d: unknown
 open_to_work: false
-outreach_status: pending
+outreach_status: invited
 found_date: 2026-09-14
-notes: "[profile read 2026-09-14] details/experience: Technical Support Engineer Toray Membrane USA Jul 2012-present (Poway): technical service, pilot systems, start-up and commissioning of RO/NF/MF/UF/MBR systems, customer training; process engineer Koch Industries from 1990. English. Passes."
+notes: "[profile read 2026-09-14] details/experience: Technical Support Engineer Toray Membrane USA Jul 2012-present (Poway): technical service, pilot systems, start-up and commissioning of RO/NF/MF/UF/MBR systems, customer training; process engineer Koch Industries from 1990. English. Passes. [invited 2026-09-14] bare invite via custom-invite modal, modal name confirmed Raul Cirerol, sent by Claude at founder's instruction; Pending confirmed."
+
 
 ## Manikandan V
 
@@ -4312,6 +4337,7 @@ degree: 3rd+
 mutuals_count:
 active_last_30d: unknown
 open_to_work: false
-outreach_status: pending
+outreach_status: invited
 found_date: 2026-09-14
-notes: "[profile read 2026-09-14] details/experience: Group Leader Regional Technical Support Hydranautics May 2018-present (Chennai); 23+ yrs in water: membrane system design, pre/post-sales support, pilot studies, team management. English. Passes. Sixth Hydranautics card: added in place of Roman Boda, whose invite is blocked behind an email check."
+notes: "[profile read 2026-09-14] details/experience: Group Leader Regional Technical Support Hydranautics May 2018-present (Chennai); 23+ yrs in water: membrane system design, pre/post-sales support, pilot studies, team management. English. Passes. Sixth Hydranautics card: added in place of Roman Boda, whose invite is blocked behind an email check. [invited 2026-09-14] bare invite via custom-invite modal, modal name confirmed Manikandan V, sent by Claude at founder's instruction; Pending confirmed."
+

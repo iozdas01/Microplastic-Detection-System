@@ -17,27 +17,27 @@ _Channels are counted separately._
 
 | id | name | status | call stage |
 |---|---|---|---|
-| C110 | Peter Metcalfe | pending | — |
-| C111 | Edna Banerjee | pending | — |
-| C112 | Mithilesh Tripathi | pending | — |
-| C113 | Dominik Schreier | pending | — |
-| C119 | Nagahisa Sato | pending | — |
-| C120 | Mohamed Zaki | pending | — |
-| C121 | Michael Baez | pending | — |
-| C122 | Damon Shreeves | pending | — |
-| C128 | Karthi Pitchaikani | pending | — |
-| C129 | Saad Fadel | pending | — |
-| C130 | Ahmad Radwan | pending | — |
-| C131 | Atsuo Kumano | pending | — |
-| C136 | Don Walter | pending | — |
-| C137 | Christoph Thiemig | pending | — |
-| C141 | Raul Cirerol | pending | — |
-| C142 | Manikandan V | pending | — |
 | C96 | Roman Boda | pending | — |
 | C101 | Guillem Gilabert-Oriol | invited | — |
 | C102 | Ezzat Sabry | invited | — |
 | C103 | Péter Groszmann | invited | — |
 | C104 | Raúl Santos | invited | — |
+| C110 | Peter Metcalfe | invited | — |
+| C111 | Edna Banerjee | invited | — |
+| C112 | Mithilesh Tripathi | invited | — |
+| C113 | Dominik Schreier | invited | — |
+| C119 | Nagahisa Sato | invited | — |
+| C120 | Mohamed Zaki | invited | — |
+| C121 | Michael Baez | invited | — |
+| C122 | Damon Shreeves | invited | — |
+| C128 | Karthi Pitchaikani | invited | — |
+| C129 | Saad Fadel | invited | — |
+| C130 | Ahmad Radwan | invited | — |
+| C131 | Atsuo Kumano | invited | — |
+| C136 | Don Walter | invited | — |
+| C137 | Christoph Thiemig | invited | — |
+| C141 | Raul Cirerol | invited | — |
+| C142 | Manikandan V | invited | — |
 | C88 | Javier Suárez | invited | — |
 | C89 | Sonia Vila Cremer | invited | — |
 | C90 | Denise Haukkala | invited | — |

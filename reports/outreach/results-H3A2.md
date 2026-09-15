@@ -17,20 +17,20 @@ _Channels are counted separately._
 
 | id | name | status | call stage |
 |---|---|---|---|
-| C115 | Stephanie Vogel | pending | — |
-| C116 | Joe Mouawad | pending | — |
-| C117 | Angela O'Brien | pending | — |
-| C124 | Hélène Baribeau | pending | — |
-| C125 | Ryan Bye | pending | — |
-| C126 | Clement Do | pending | — |
-| C133 | Scott G. | pending | — |
-| C134 | Jim Barrett | pending | — |
-| C135 | Craig Miller | pending | — |
-| C140 | Megan Tran | pending | — |
 | C100 | Doug Campbell | invited | — |
 | C106 | David W. Pedersen | invited | — |
 | C107 | Yu Melanie Madsen | invited | — |
 | C108 | Kevin Caldwell | invited | — |
+| C115 | Stephanie Vogel | invited | — |
+| C116 | Joe Mouawad | invited | — |
+| C117 | Angela O'Brien | invited | — |
+| C124 | Hélène Baribeau | invited | — |
+| C125 | Ryan Bye | invited | — |
+| C126 | Clement Do | invited | — |
+| C133 | Scott G. | invited | — |
+| C134 | Jim Barrett | invited | — |
+| C135 | Craig Miller | invited | — |
+| C140 | Megan Tran | invited | — |
 | C78 | Theresa Slifko | invited | — |
 | C79 | Monica Tirtadidjaja | invited | — |
 | C80 | Joyce Lehman | invited | — |
