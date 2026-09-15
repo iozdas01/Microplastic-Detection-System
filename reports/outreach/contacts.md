@@ -7,7 +7,7 @@ totals:
   invited: 126
   accepted: 22
   scheduled: 0
-  done: 0
+  done: 5
   no_reply: 0
 ---
 
@@ -5340,3 +5340,180 @@ open_to_work: false
 outreach_status: off_scope
 found_date: 2026-09-14
 notes: "[audit off_scope 2026-09-14] Profile visit: General Manager Indocount 2012-Jan 2014 (made-up QA and QSHE); QA roles at JVS Export and Dewhirst before. No current wet-processing budget role shown; fails the live-profile gate on current function. Not invited."
+
+## Paul (Matter)
+
+id: C176
+name: "Paul (surname not recorded)"
+linkedin_url: ""
+linkedin_account: Sandra
+company: "Matter (Bristol; microfibre filtration: Gulp domestic, Regen industrial)"
+role: "Industrial filtration lead (about 1 yr 4 mo at Matter; career in water screening and treatment)"
+signal_type: profile_fit
+signal_multiplier: 1.0
+signal_source_url: ""
+signal_excerpt: "Can we use your system to get live microfibre analysis on the performance of our filter?"
+contact_role: practitioner
+role_pts: 2
+tier: filtration_vendor
+size_band:
+assumptions_tested: [H1A5, H1A9]
+validation_rationale: >
+  Runs Matter's industrial pilots in textile mills; relies on lab TSS/COD for filter performance and sees first-hand what mills can and cannot measure in their effluent.
+response_likelihood: 9
+likelihood_factors: "inbound: found Sandra on LinkedIn and asked for the call (+4) · NDA in place (+1) · follow-up invited (+1)"
+channel: linkedin
+degree: unknown
+mutuals_count:
+active_last_30d: unknown
+open_to_work: false
+relationship_type: data_supplier_practitioner
+outreach_status: done
+call_stage: completed
+found_date: 2026-09-04
+interview_date: 2026-09-04
+interviews: ["03-validation/H1A5-2026-09-04/interviews/matter-2026-09-04-notes.md"]
+evidence_score:
+outcome_modifier:
+notes: "[captured 2026-09-14] Call 2026-09-04 with Jeffrey Chang and Sandra Zalas, under NDA (raw at private/matter-call/, gitignored). Matter is a partner in conversation, not a paying client; no LOI on the call. Offered a contracted pilot site now-Feb 2027 on receipt of slides and an integration plan. outcome_modifier PROPOSED strong_confirm, awaiting founder confirmation; evidence_score set when confirmed."
+
+## Mark (Matter)
+
+id: C177
+name: "Mark (surname not recorded)"
+linkedin_url: ""
+linkedin_account: Sandra
+company: "Matter (Bristol; microfibre filtration)"
+role: "Engineer (ex-Dyson)"
+signal_type: profile_fit
+signal_multiplier: 1.0
+signal_source_url: ""
+signal_excerpt: "all of the suspended fibers could just be shooting through because they're very low weight"
+contact_role: practitioner
+role_pts: 2
+tier: filtration_vendor
+size_band:
+assumptions_tested: [H1A5]
+validation_rationale: >
+  Deployed and withdrew an online TSS probe at site trials; can testify to why TSS misses fibres in textile effluent.
+response_likelihood: 8
+likelihood_factors: "joint call with C176 (+4) · NDA in place (+1)"
+channel: linkedin
+degree: unknown
+mutuals_count:
+active_last_30d: unknown
+open_to_work: false
+relationship_type: data_supplier_practitioner
+outreach_status: done
+call_stage: completed
+found_date: 2026-09-04
+interview_date: 2026-09-04
+interviews: ["03-validation/H1A5-2026-09-04/interviews/matter-2026-09-04-notes.md"]
+evidence_score:
+outcome_modifier:
+notes: "[captured 2026-09-14] Joint call with C176; the interview is scored on C176 only, so it is not counted twice."
+
+## Martin (H&M Group)
+
+id: C178
+name: "Martin (surname not recorded)"
+linkedin_url: ""
+linkedin_account: Sandra
+company: "H&M Group"
+role: "Innovation: new materials and processes, projects with startups toward 2030 goals"
+signal_type: profile_fit
+signal_multiplier: 1.0
+signal_source_url: ""
+signal_excerpt: "we don't have anyone else working on these kind of sensors"
+contact_role: influencer
+role_pts: 1
+tier: brand
+size_band:
+assumptions_tested: [H1A2, H1A5, H1A8]
+validation_rationale: >
+  Runs H&M's early-stage innovation projects and hands proven ones to the water team; can say whether a brand would open its supply chain to a trial.
+response_likelihood: 7
+likelihood_factors: "call already held (+3) · asked for a one-page brief back (+1)"
+channel: email
+degree: unknown
+mutuals_count:
+active_last_30d: unknown
+open_to_work: false
+outreach_status: done
+call_stage: completed
+found_date: 2026-09-14
+interview_date: 2026-09-14
+interviews: ["03-validation/H1A2-2026-09-14/interviews/hm-group-2026-09-14-notes.md"]
+evidence_score:
+outcome_modifier: weak
+notes: "[captured 2026-09-14] Call run by Baltic Jungle Lab (Sandra Zalas, Igor Veredyn) before this repo; call date not recorded, and interview_date is the capture date. Channel not recorded (email is a placeholder so the LinkedIn funnel is not inflated). Joint call with C179; scored on C179 only. H&M is a design partner in conversation, not a paying client."
+
+## Sharif (H&M Group)
+
+id: C179
+name: "Sharif (surname not recorded)"
+linkedin_url: ""
+linkedin_account: Sandra
+company: "H&M Group"
+role: "Water lead for the group, based in Dhaka"
+signal_type: profile_fit
+signal_multiplier: 1.0
+signal_source_url: ""
+signal_excerpt: "30 mg per liter is the kind of a limit which you cannot cross"
+contact_role: practitioner
+role_pts: 2
+tier: brand
+size_band:
+assumptions_tested: [H1A2, H1A5, H1A8]
+validation_rationale: >
+  Owns water across H&M's supply chain in Bangladesh; sets and enforces the supplier TSS limit, so knows exactly what mills are asked for today.
+response_likelihood: 7
+likelihood_factors: "call already held (+3) · regulation-gated interest (-1)"
+channel: email
+degree: unknown
+mutuals_count:
+active_last_30d: unknown
+open_to_work: false
+outreach_status: done
+call_stage: completed
+found_date: 2026-09-14
+interview_date: 2026-09-14
+interviews: ["03-validation/H1A2-2026-09-14/interviews/hm-group-2026-09-14-notes.md"]
+evidence_score: 1.5
+outcome_modifier: weak
+notes: "[captured 2026-09-14] Score (2 x 1.0) - 0.5 = 1.5, founder confirmed weak. Call date not recorded; channel placeholder as C178."
+
+## Varija Subasingha
+
+id: C180
+name: "Varija Subasingha"
+linkedin_url: ""
+linkedin_account: Sandra
+company: "adidas"
+role: "Point person for microfibres (regulatory, technical, innovation); polymer chemist, 14 years in apparel"
+signal_type: profile_fit
+signal_multiplier: 1.0
+signal_source_url: ""
+signal_excerpt: "this is the first time I've come across such a device"
+contact_role: practitioner
+role_pts: 2
+tier: brand
+size_band:
+assumptions_tested: [H1A1, H1A5, H1A8]
+validation_rationale: >
+  Runs microfibre work for adidas and leads brand-level discussions at The Microfibre Consortium; has run the lab methods herself, so can judge what data a brand's technical team would trust.
+response_likelihood: 8
+likelihood_factors: "call already held (+3) · offered introductions on a working prototype (+2)"
+channel: email
+degree: unknown
+mutuals_count:
+active_last_30d: unknown
+open_to_work: false
+outreach_status: done
+call_stage: completed
+found_date: 2026-09-14
+interview_date: 2026-09-14
+interviews: ["03-validation/H1A5-2026-09-14/interviews/varija-subasingha-2026-09-14-notes.md"]
+evidence_score: 2
+outcome_modifier: moderate_confirm
+notes: "[captured 2026-09-14] Score (2 x 1.0) + 0 = 2, founder confirmed moderate_confirm. Call run by Baltic Jungle Lab before this repo; call date not recorded; channel placeholder. adidas is a design partner in conversation, not a paying client. Offered introductions to brand partners and Fashion for Good once a working prototype exists."

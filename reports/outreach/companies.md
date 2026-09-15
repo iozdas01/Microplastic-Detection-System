@@ -467,3 +467,102 @@ why_it_matters: >
 source_url: https://www.bvna.com/pfas-testing
 first_added: 2026-09-09
 source_date: 2026-09-09
+
+## Matter
+
+id: CO13
+map: none
+tier_side: supply
+tier: filtration_vendor
+canonical_name: Matter (matter.industries)
+country: GB
+founded: 2019
+stage: series_a
+total_raised_usd: 10000000
+funding_source: press
+headcount: 
+sector: Microfibre filtration — domestic washing machines (Gulp, BSH OEM) and textile-mill effluent (Regen)
+target: microfibres
+targets_all: [microfibres, tss_turbidity]
+measurement_mode: 
+technology: 
+size_floor_um: 
+commercial_offer: 
+sells_to: industrial_end_user
+sells_to_all: [industrial_end_user, brand]
+industries_served: [textile manufacturing, domestic laundry appliances]
+water_streams: [effluent]
+makes_or_does: >
+  Bristol company making microfibre filters. Gulp is a domestic retrofit; an OEM filter ships in Bosch and Siemens machines through BSH; Regen is a self-cleaning industrial filter installed at textile mills. Series A of $10M in Aug 2023 (S2G Ventures, SOUNDWaves); an Inter IKEA-led round in Nov 2025, amount undisclosed. Plans "four full-scale Regen® treatment systems" in 2026 and "over 400 factories by 2030" (WTIN, 2025-11-14). Earthshot Prize 2025 finalist with a 15,000-tonne microfibre capture ambition by 2030. Co-created the Microfiber Assessment Program with Paradise Textiles, which "enables manufacturers to quantify the effectiveness of microfiber filtration, benchmark performance across sites" (Just Style, 2025). No industrial capture percentage or verification protocol is published.
+why_it_matters: >
+  The clearest buyer for the measurement: a filter vendor that has to prove, site by site, what it removes, and that currently relies on lab TSS. Relationship (2026-09-14): partner in conversation under NDA since the 2026-09-04 call (E5, E6; contacts C176, C177). Matter invited Lattice to co-pilot on a contracted mill site; there is no LOI and no payment. Lattice is pre-revenue and pre-funding, and the lab kit for this work (purchase list dated 2026-09-10, $2,122 baseline) is planned for after investment, not bought. Call contents are confidential; see private/matter-call/.
+source_url: https://www.wtin.com/article/2025/november/17-11-25/matter-receives-funding-from-inter-ikea-group/
+sources_note: "also read: https://techcrunch.com/2023/08/09/matter-filters-out-microplastics-one-washer-at-at-time-and-raises-10m-to-go-industrial ; https://www.just-style.com/featured-company/2025-alpine-group-matter-industries/ ; https://earthshotprize.org/winners-finalists/matter/"
+first_added: 2026-09-14
+source_date: 2026-09-14
+
+## ZAITRUS
+
+id: CO14
+map: startup
+tier_side: competitor
+tier: sensor_vendor
+canonical_name: ZAITRUS GmbH
+country: DE
+founded: 2024
+stage: pre_seed
+total_raised_usd: 
+funding_source: self_stated
+headcount: 17
+sector: Inline microplastic monitoring — wastewater, beverages, process water
+target: microplastics
+targets_all: [microplastics]
+measurement_mode: online_continuous
+technology: impedance
+size_floor_um: 
+commercial_offer: monitoring_service
+sells_to: utility
+sells_to_all: [utility, industrial_end_user]
+industries_served: [municipal wastewater, food and beverage, process water]
+water_streams: [effluent, product_water, process]
+makes_or_does: >
+  Bayreuth start-up (University of Bayreuth, SPRIND-backed) using "MLEIS – Machine Learning Enhanced Impedance Spectroscopy" in a flow cell. It "distinguishes particles by size, material, and other parameters", separating plastic from metal, glass, biological particles and gas bubbles. No polymer type is claimed. A 2024 river prototype below the Bayreuth sewage plant worked "reliably, but the sampling process remains complex". "The process is currently in the pilot phase"; monitoring-as-a-service is expected from the turn of 2026/27 (IFAT, 2026-04-08). Self-stated: no equity investment taken yet.
+why_it_matters: >
+  The closest competitor in deployment model: inline, real-time, sold as a service, government-backed, about 18 months ahead. It targets sewage and food, not textile fibres. Moving into textiles would be a sales decision, but its impedance method has not shown fibre-level synthetic-vs-natural identification in dyed, conductive effluent (E16).
+source_url: https://www.zaitrus.de/en/technologie/
+sources_note: "also read: https://ifat.de/en/trade-fair/press/press-releases/detail/around-50-startups-will-present-new-solutions-at-ifat-munich.html ; https://www.sfb-mikroplastik.uni-bayreuth.de/en/news/2024/2024-10-16_Zaitrus_Coop/index.html"
+first_added: 2026-09-14
+source_date: 2026-09-14
+
+## Wasser 3.0 (abcr eco Wasser 3.0 detect)
+
+id: CO15
+map: startup
+tier_side: competitor
+tier: sensor_vendor
+canonical_name: Wasser 3.0 gGmbH with abcr GmbH
+country: DE
+founded: 
+stage: 
+total_raised_usd: 
+funding_source: unknown
+headcount: 
+sector: Microplastic detection by fluorescent staining — municipal and industrial water
+target: microplastics
+targets_all: [microplastics]
+measurement_mode: at_line
+technology: fluorescence
+size_floor_um: 10
+commercial_offer: instrument_sale
+sells_to: utility
+sells_to_all: [utility, industrial_end_user]
+industries_served: [municipal wastewater, industrial water, textiles (one unnamed case)]
+water_streams: [effluent]
+makes_or_does: >
+  A fluorescent marker stains synthetic particles, which "glow under the fluorescence microscope", and "Software counts them", down to about 10 µm in "Under 15 minutes per sample". There is no polymer identity ("Universal polymer affinity"). The Particle Sampling Unit captures 100 L to 1 m³. It claims a textile company "achieving a 90% reduction in microplastic emissions" through hourly monitoring, with no data published (blog, 2025-07-30).
+why_it_matters: >
+  The only vendor naming a textile-wastewater monitoring case. It is a sample-by-sample stain method, not a continuous sensor. Dyes and surfactants produce false fluorescence in textile effluent, which is the reason the optical technology brief rules stains out.
+source_url: https://wasserdreinull.de/en/blog/microplastics-analytics-reality-check/
+sources_note: "also read: https://abcr.com/de_en/wasserdreinull-detect"
+first_added: 2026-09-14
+source_date: 2026-09-14

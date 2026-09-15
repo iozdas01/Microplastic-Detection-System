@@ -79,9 +79,10 @@ assumptions:
     test_cost: 1
     parent_assumptions: []
     child_assumptions: [H1A7]
-    evidence_for: []
-    evidence_against: []
-    status: untested
+    evidence_for: [E14]
+    evidence_against: [E11, E12]
+    status: contested
+    # contested set 2026-09-14: E14 (TMC/ZDHC intend effluent limits, undated) vs E11 (adidas lead: no claims 5-10y, regulation consumer-phase) and E12 (ESRS drops textile microfibre from FY2027).
     next_action: >-
       One afternoon: date the ESPR textile delegated acts and say which party they bind and
       whether microfiber release is in them; check whether any effluent rule (EU Urban
@@ -255,9 +256,10 @@ assumptions:
     test_cost: 1
     parent_assumptions: []
     child_assumptions: []
-    evidence_for: []
+    evidence_for: [E5, E8, E10, E15, E16]
     evidence_against: []
-    status: untested
+    status: weakly_supported
+    # weakly_supported set 2026-09-14 on three calls (Matter E5, H&M E8, adidas E10) and desk E15/E16. E13 is ambiguous: TMC/ZDHC Phase 2 may validate TSS as good enough.
     next_action: >-
       Agent: one pass over instrumentation vendors and TMC signatories for any inline
       microfiber product or pilot. Founder, in the H1A2 calls: "what do you use today to
@@ -271,6 +273,7 @@ assumptions:
       - {name: textile_mill, side: demand}
       - {name: sensor_vendor, side: competitor}
       - {name: lab_testing_provider, side: supply}
+      - {name: filtration_vendor, side: supply}
     domain_data_sources: []
     icp_valid_titles: [Quality Manager, Environmental Manager, Plant Manager, Technical Director,
                        Product Manager, Application Engineer]
@@ -365,9 +368,10 @@ assumptions:
     test_cost: 2
     parent_assumptions: [H1A2]
     child_assumptions: []
-    evidence_for: []
+    evidence_for: [E9]
     evidence_against: []
-    status: untested
+    status: weakly_supported
+    # weakly_supported set 2026-09-14: adidas and H&M both offered a route to mills, each conditional on a working prototype (E9).
     next_action: >-
       Three brand sustainability leads: "would you send this to your suppliers, and which
       ones?" A named supplier is a yes.
@@ -402,9 +406,10 @@ assumptions:
     test_cost: 2
     parent_assumptions: [H1A2]
     child_assumptions: []
-    evidence_for: []
+    evidence_for: [E6]
     evidence_against: []
-    status: untested
+    status: weakly_supported
+    # weakly_supported set 2026-09-14: Matter offered a contracted pilot site (E6); access comes from the filter vendor, not yet from a mill.
     next_action: >-
       In the H1A2 calls: "who else has put an instrument in your line, what did it take to
       get it in, and did you change anything because of what it said?"
@@ -415,6 +420,7 @@ assumptions:
     icp_segment: "Mill staff who decide what goes into the process line and who act on readings."
     icp_valid_tiers:
       - {name: textile_mill, side: demand}
+      - {name: filtration_vendor, side: supply}
     domain_data_sources: []
     icp_valid_titles: [Plant Manager, Maintenance Manager, Process Engineer, Dyehouse Manager, Technical Director]
     icp_out_of_scope: ["head-office roles with no site authority"]

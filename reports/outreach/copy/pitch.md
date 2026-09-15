@@ -7,233 +7,358 @@ variants: [investor]
 
 # Pitch
 
-## Investor deck — seven slides
+## Investor deck v2 — slide-by-slide build brief
 
-Drafted 2026-09-14 for an investor audience (the EF Investment Committee at the end of The
-Bridge is the nearest one; the ask is not yet decided). Slide order is the founder's: Title,
-Problem, Solution, Why now, Team, Traction, Why the future. Every bullet carries its source tag;
-the claim table under the deck resolves each tag. `[OPEN]` marks a founder decision the deck
-cannot make.
+Seven slides in the founders' order, plus two optional appendix slides. For each slide: what it
+has to do, the exact copy that goes on it, the visual, what to say out loud, and where every
+claim comes from. `[OPEN]` is a founder decision the brief cannot make; resolve these before the
+deck leaves the team.
 
-### 1 · Title
+Source tags: `E{n}` ledger entry · `call:adidas` = E9–E11 and `call:hm` = E7–E9 (Baltic Jungle Lab
+brand calls, captured 2026-09-14) · Matter call = E5–E6 (NDA) · `web` a public source, URL given ·
+`edge` founder file or repo artefact · `ASSUMPTION` a number we chose, labelled on the slide.
 
-- **{Company name}** `[OPEN]`: nothing in the repo records the company name for this idea.
-  Baltic Jungle Lab is the co-founder's existing company; whether the deck is BJL's, and
-  what Izgin's role in it is, is not recorded (`founders/sandra-zalas.md` flags it).
-- One-liner, three candidates, strongest first:
-  1. *"Real-time microfibre monitoring for textile mills: the number and the polymer, per
-     batch, at the drain."* The wedge, stated as a product. `belief` (ladder: first product)
-  2. *"Every microplastic number today comes from a lab, weeks late. We put it in the pipe."*
-     Mechanism-first. `C3`, `C5`
-  3. *"Real-time particle intelligence for industrial water."* The founders' own wedge line,
-     and the vaguest of the three. `belief`
-- Subline: founder names, date, "Pre-seed".
+### Design system
 
-### 2 · Problem
+Taken from the Lattice title reference (black ground, false-colour micrograph, dithered data).
 
-Headline: **Mills are now graded on microfibre release, and the only instrument they own
-cannot see a fibre.**
+- **Ground:** pure black `#000000` on every slide. No white slides.
+- **Palette:**
+  - Violet `#8A4FC7` (primary image tone; the fibre)
+  - Cyan `#3CC8D8` (the detection highlight; use sparingly, one element per slide)
+  - Cream `#E9E4D6` (dithered pixel blocks, secondary text)
+  - White `#FFFFFF` (headlines and body)
+- **Type:**
+  - Headlines: heavy grotesk (Helvetica Neue Bold, Inter Black or Neue Haas Display Bold), tight tracking, set large (title 160pt+, slide headlines 44–56pt).
+  - Body: the same family at Regular, 18–22pt, white.
+  - Numbers: Bold, cyan or white.
+  - Sources: 9–10pt cream at 60% opacity, bottom-left.
+- **Motifs, and what they mean.** Use them with that meaning, not as decoration.
+  - **False-colour micrograph** (violet fibres, spiky texture): the physical world, the fibre itself.
+  - **Thin white outline squares:** a detection box. Wherever the deck says "we see it", draw one around the thing being seen.
+  - **Dithered cream pixel blocks dissolving off the image:** the physical becoming data. Heavier dithering on the Solution and Why-the-future slides.
+  - **Cyan inset tile:** the one thing on the slide identified correctly. Use it for the number or image that carries the slide.
+- **Layout rule:** at most one headline, one number and three short lines per slide, and every slide readable in 10 seconds. The detail lives in the speaker notes, not on the slide.
+- **Imagery:** use real micrographs of polyester and cotton fibres, ideally from the imaging rig (`cad/imaging-station`) or an SEM library with its licence recorded. No stock "ocean plastic" photos: they signal consumer awareness, and the deck is about industrial measurement.
 
-- The largest fashion buyer grades its dyeing, printing, finishing and washing mills on it:
-  Inditex Green to Wear 3.2 (July 2026) drops a mill from A to B if "fibers and microfibers
-  are released into the environment without any internal control." `C1 ← E4`
-- The industry rulebook answers with a proxy. ZDHC Wastewater Guidelines Part C require a TSS
-  figure, which every mill already logs, and only *recommend* a one-off lab fibre profile.
-  `C2 ← E3`
-- TSS is a weight. It cannot tell a polyester fibre from a cotton one or from dye sludge, and
-  in textile effluent most counted fibres can be cellulosic. `C4 ← map`
-- Every published measurement of a mill's own effluent is a lab grab sample. None of them is
-  continuous or at-line, and two labs on the same water differing tenfold is normal.
-  `C3 ← map`, `C5 ← map`
-- Wet processing is where release happens: up to 25× more microfibre than home laundering,
-  and dyeing alone is about 95% of wet-process emissions (Wang et al. 2023, global model;
-  6.4 kt in 2020). `C6 ← map`
+---
 
-Say out loud: whether a mill *feels* this as a cost today is untested. We know what they are
-being asked for, but we have not yet heard a mill describe what answering it costs them.
-`C1`, `E4 next_question`
+### Slide 1 · Title
 
-### 3 · Solution
+**Job:** name and promise in one look.
 
-Headline: **A monitor that sits at the dyehouse drain and reports fibres by count, size and
-synthetic-vs-natural, batch by batch.**
+**On slide**
+- `Lattice` (huge, left third, white)
+- Tagline: `Sensing the impossible.`
+- Subline (small, cream): `Observability for physical industrial processes`
+- Footer (tiny): `Sandra Zalas · Izgin Ozdas · Pre-seed · {month} 2026`
 
-- **What it measures:** fibres imaged under crossed polarisers. Polyester is about four times
-  more birefringent than cotton (retardation 3.4 µm vs 0.7 µm at typical diameters), so they
-  separate optically without a spectrometer. `C8 ← edge (cad/imaging-station)`
-- **What it adds over TSS:** polymer class and per-batch timing, which a TSS number cannot
-  carry. That is the gap the rulebook's own proxy leaves. `C9 ← map T50`
-- **What it adds over existing inline instruments:** particle probes (Mettler ParticleTrack,
-  Malvern Insitec) have counted and sized particles in pipes for twenty years, but none of
-  them says what a particle is. We found no commercial product that identifies microplastics
-  in a flow. `C7 ← belief boundaries, map`
-- **The loop:** a number tied to the machine and recipe that produced it, so the mill can
-  change the process and show the auditor that something changed. `lineage H1`
-- **Built today:** a phone-based imaging rig that produces labelled fibre images to train
-  the counter (CAD complete, 4.4 µm per pixel). **Not built yet:** the inline sensor.
-  `C10 ← edge`
+**Visual:** the reference image as is. The violet micrograph fills the right two-thirds, one cyan
+inset tile, and outline squares on two fibres so they read as detected.
 
-Say out loud: no performance figure exists yet. The rig's first experiments (known polyester
-and cotton counts, then a real sample) have not been run. `C10`
+**Say out loud:** "Every microfibre number in textile manufacturing today arrives weeks after
+the batch it describes. We measure it while the batch is still in the machine."
 
-### 4 · Why now
+**Sources:** `belief` (vision/mission ladder, `input-context/belief.md`).
 
-Headline: **In 2026 the number stopped being optional on three fronts, and none of them has
-an instrument.**
+**Open:**
+- `[OPEN]` whether "Lattice" is the registered name, and its relation to Baltic Jungle Lab.
 
-- **Brands:** Inditex writes fibre release into supplier grading from July 2026. `C1 ← E4`
-- **Rulebook:** ZDHC says its TSS limits "are likely to be revised downwards", and the
-  TMC/ZDHC Phase 2 study (15 facilities, launched April 2026) is testing whether TSS works as
-  a fibre proxy at all. `C2 ← E3`, `C11 ← map T50`
-- **Regulators:**
-  - California drinking water: Phase II treated-water monitoring is on the State Water
-    Board's own timeline for autumn 2026 to autumn 2028, with lab Raman/FTIR as the method
-    and positive results printed in the utility's public Consumer Confidence Report.
-    `C12 ← E1, E2`
-  - EU Urban Wastewater Treatment Directive (in force 2025): every plant above 10,000
-    population-equivalents monitors microplastics at inlet and outlet, with the method due by
-    July 2027. `C13 ← lineage H4, map T46`
-  - California DTSC lists microplastics as a Candidate Chemical from 2026-10-01; textiles
-    and apparel are under preliminary research for a Priority Product. `C14 ← map T52`
+---
 
-Say out loud: none of these is a discharge limit on a mill. They are grading and monitoring
-duties, and every one is met today by a lab sample. `C13`, `C14`
+### Slide 2 · Problem
 
-### 5 · Team
+**Job:** make the investor feel that nobody can currently prove how much fibre a fabric, a batch or a filter releases.
 
-- **Izgin Ozdas.** Ran CNC-line robot automation and ERP rollout at IMTEK Cryogenics
-  (2022–24), the manual measure-and-readjust loop this company automates. Cambridge MPhil
-  (IfM) on manufacturing-data interoperability: an LLM annotator scoring 100% F1 on DXF and
-  74% on STEP metadata. SPIE 2025 paper. Georgia Tech BS ME. Designed the imaging rig.
-  `C15 ← edge`
-- **Sandra Zalas.** Founder and CEO of Baltic Jungle Lab, microfibre monitoring for textile
-  factories since 2025. Won the PFR School of Pioneers; semi-finalist in the H&M Foundation
-  Global Change Award. Fashion-side access and the problem narrative. `C16 ← edge, unconfirmed`
-- `[OPEN]` Whether BJL's CTO is on this slide. `founders/sandra-zalas.md` says not to list
-  him until the team structure is confirmed.
+**On slide**
+- Headline: `Nobody can prove how much fibre a factory lets go.`
+- Three lines:
+  1. `A lab result takes ~4 weeks and €390 a sample. The batch is long gone.`
+  2. `Suppliers dispute the number: "You are crazy, it doesn't shed."`
+  3. `A filter sold at 90% capture measured 68%.`
+- Big number (cyan tile): `25×`, with the label `more microfibre from wet processing than from home laundry`.
 
-### 6 · Traction
+**Visual:** split frame. On the left, a filter paper under a microscope, labelled "lab: 4 weeks". On the right, the dye
+machine outlet, labelled "now: nothing". A single outline square sits empty over the outlet.
 
-Headline: **Three buyer segments mapped and 142 people targeted; the first conversations
-start now.**
+**Say out loud:**
+- Today the industry manages fibre with a proxy. H&M's supplier limit is TSS at 30 mg/L, and its own water lead says "we do not necessarily control microfiber."
+- The one brand chemist who ran the analysis herself says a single FTIR sample takes a day.
+- Filters get sold on capture rates that independent tests do not reproduce.
 
-- 142 decision-makers qualified from live profile reads across three segments: textile
-  wet-processing mills, California water utilities, and RO/UF membrane makers. 98 connection
-  requests sent, 22 accepted. `C17 ← contacts.md totals`
-- The technical landscape is mapped: 34 detection methods plus the 21 standards that
-  prescribe how the number must be reported, each graded on how close to a running pipe it
-  has actually got. `C18 ← map`
-- `[OPEN]` Pilot scoping with an SF research lab, from the co-founder's public post. It is
-  unconfirmed and the lab is unnamed, so it stays off the slide until she confirms.
-  `C19 ← UNSOURCED`
+**Sources**
+- €390 per wastewater sample plus a €97 order fee, results 4 weeks after receipt: Measurlabs, accessed 2026-09-14 — https://measurlabs.com/products/microplastics-in-water-and-wastewater-micro-raman/ (the range across US/EU labs is 5 business days to 6 weeks, €190–950).
+- "You are crazy because it doesn't shed" and "one sample, it takes one day": `call:adidas`.
+- 30 mg/L TSS limit, "we do not necessarily control microfiber": `call:hm`.
+- 90% claimed vs 68% measured (Politecnico di Torino, Aug 2025), and the maker's reply "Results obtained with the more precise method will be significantly lower" — https://blog.planetcare.org/independent-study-confirms-planetcare-as-the-best-washing-machine-microfiber-filter/
+- 25×, and dyeing at about 95% of wet-process emissions: Wang et al. 2023, *Environ. Sci. Technol.*, doi:10.1021/acs.est.3c06210. This is a single-factory model; say so if asked.
+- TSS as the rulebook proxy: `E3`.
 
-Say out loud: zero customer conversations so far. This is the slide that can change most
-before the committee. Ten conversations with wet-processing leads, the test graph.md already
-names for H1A2, would replace the headline.
+**Do not use**
+- "8 hours to 14 days" (from the v1 one-pager). No lab publishes a turnaround in hours.
 
-### 7 · Why the future
+---
 
-Headline: **The sensor is the wedge. The company is the layer that tells a production line
-what its data means.**
+### Slide 3 · Solution
 
-- The belief: models will not run production lines until real-time process data arrives
-  with identity and meaning attached, and nobody is building that layer. `belief`
-- The instrument sees the same gap from three sides: mills graded on release (H1),
-  utilities reporting a lab number (H3), and membrane makers settling fouling claims without
-  knowing the foulant (H5). One instrument, three budgets to test. `lineage`
-- The platform path: sensing, then existing machine data, then interoperability, then models,
-  then recommendations. Every installed monitor adds to a cross-factory benchmark nobody else
-  holds. `belief ladder`
-- `[OPEN]` The ask: money, an introduction, or judgement on one question. This has to be
-  decided before the meeting.
+**Job:** show the thing, and show that the loop closes.
 
-Say out loud: we have not sized the market. No scale arithmetic exists yet, and we would
-rather say that than show a top-down number. `C20 ← UNSOURCED`
+**On slide**
+- Headline: `Every discharge, measured before the next one starts.`
+- Three lines:
+  1. `An at-line module on the dye machine's discharge line captures fibres on a membrane and images them under polarised light.`
+  2. `Counts and sizes every fibre, and splits synthetic from natural by polarisation: per stage, per batch, per kg of fabric.`
+  3. `Feeds the number back to the process, and measures before and after the treatment plant to prove filtration works.`
 
-### Claim table — investor deck
+**Visual:** the block diagram from the optical technology brief, redrawn on black.
+- Discharge line → isokinetic bypass (50–200 mL/min) → degas, cool, prefilter.
+- Capture-and-image cell: 10 µm membrane, 530 nm LED, crossed polarisers, global-shutter camera. This is the cyan tile.
+- Classifier → fibres/kg per step → dashboard.
+- Membrane tape advances between measurements.
+- Synthetic fibres glow violet in the crossed field; natural fibres stay dark.
 
-| # | Claim | Source | Grade / note |
-|---|---|---|---|
-| C1 | Inditex GTW 3.2 drops a mill A→B for uncontrolled fibre release | `E4` | 4 · asks for "control", not a number |
-| C2 | ZDHC Part C requires TSS only; fibre profile recommended; limits likely revised down | `E3` | 4 · ambiguous for H1A2 |
-| C3 | Every published mill-effluent measurement is a lab grab sample | `map` technology-map "Textile-mill effluent measured so far" | desk batch, 2026-09-10 |
-| C4 | TSS cannot separate synthetic from cellulosic; many effluent fibres are cellulosic | `map` reading notes, T50 | not a ledger entry |
-| C5 | Inter-lab spread of 10× on the same water; fibres ID'd 76% (IR) / 30% (Raman) in CA trial | `map` reading notes | not a ledger entry |
-| C6 | Wet processing up to 25× home laundering; dyeing ~95%; 6.4 kt (2020) | `map` Wang et al. 2023, ES&T | denominator: global wet-process microfibre emissions, modelled |
-| C7 | Inline counters exist; none identifies microplastics in flow | `belief` boundaries + `map` T31 et al. | founder-confirmed precedent check |
-| C8 | Crossed-polariser birefringence separates polyester from cotton | `edge` cad/imaging-station README | physics, not yet measured on the rig |
-| C9 | TSS misses polymer identity and per-batch timing | `map` T50 note | inference |
-| C10 | Imaging rig designed; inline sensor not built; experiments not run | `edge` cad/imaging-station README | — |
-| C11 | TMC/ZDHC Phase 2, 15 facilities, April 2026 | `map` T50 | not a ledger entry |
-| C12 | CA Phase II autumn 2026–28; CCR public disclosure | `E1`, `E2` | 4 · plan, no order issued yet |
-| C13 | UWWTD Art. 21 monitoring ≥10k p.e., method by July 2027 | `lineage` H4, `map` T46 | monitoring, no limit |
-| C14 | DTSC Candidate Chemical from 2026-10-01; textiles under preliminary research | `map` T52 | no duty yet |
-| C15 | Izgin's background | `edge` founders/izgin-ozdas.md | patent ID unverified, not used |
-| C16 | Sandra's background | `edge` founders/sandra-zalas.md | **unconfirmed by her** |
-| C17 | 142 targeted / 98 invited / 22 accepted / 0 conversations | contacts.md `totals` | counts change daily; re-read before pitching |
-| C18 | Technology map scope | `map` technology-map.md | — |
-| C19 | SF research-lab pilot scoping | **UNSOURCED** | public post only |
-| C20 | Market size | **UNSOURCED** | none computed |
+**Say out loud**
+- We automate the lab reference method (filtration → microscopy → polarised light). It is not new physics.
+- A fibre is long and, if synthetic, birefringent:
+  - Shape rejects bubbles and dye aggregates.
+  - Polarisation brightens synthetics whatever the dye colour.
+  - Optics do not care about the conductivity, salt or heat that break electrical sensors.
+- What we claim:
+  - Counting from about 5–10 µm width.
+  - Synthetic vs natural from about 20–30 µm at first.
+  - Polymer identity stays with periodic lab µFTIR/Raman, through a retention-sample port.
+- The main risk is contrast in dyed water. A "Stage 0" contrast experiment (known polyester and cotton fibres in dyed, salted, surfactant water) settles it in days on a minimal budget. That known-concentration spike test is exactly what adidas's microfibre lead told us to run first.
 
-## Drift check — 2026-09-14
+**Sources**
+- Optical technology brief (Detection and counting of microfibers in wastewater from wet textile processes, 2026-09-07; kept at `private/tech/`).
+- Output priority (size distribution first, material second): `E10`.
+- Before/after-ETP placement and no flow stoppage: `E8`.
+- Imaging rig for training data: `edge` `cad/imaging-station/README.md`.
 
-First draft, so there is no older pitch to drift from. Checked against the whole ledger (E1–E4)
-and the three active hunches.
+**Be honest:** nothing is built beyond the imaging-rig design. Stage 0 has not run, and the
+lab kit for it is planned for after investment. Never state an accuracy on the slide.
 
-**Forward: the deck is ahead of the evidence.**
+---
 
-- **Market size (C20).** Nothing in the repo. Options: build bottom-up arithmetic (number of
-  ZDHC-audited wet-processing sites × a price) as a ledger entry, or keep the volunteered
-  hole. Do not use a top-down "microplastics testing market" figure; its denominator would be
-  lab services, not this product.
-- **Price and buyer.** H1's plausible buyer is "unknown" in the lineage, and no price exists.
-  The deck avoids both. An investor will ask "who pays", and the honest answer today is "the
-  mill, for the Inditex audit — untested."
-- **Device performance (C8, C10).** Physics only. The deck states "designed to", never "does".
-- **Sandra's claims (C16, C19).** Her file says to ask her before citing anything. Needs her
-  sign-off before the deck leaves the repo.
-- **Map-sourced claims (C3–C6, C9, C11, C13, C14).** These are sourced with URLs but are not
-  graded ledger entries. If any of them becomes load-bearing in Q&A (C4 and C6 most likely),
-  log it in `evidence.md` against H1A2 or H1A5 so it gets a grade.
+### Slide 4 · Why now
 
-**Backward: the evidence is ahead of the hunch wording.**
+**Job:** three dated forces that make 2026–27 the window.
 
-- **H1's statement says "there are no sensors to detect microplastics."** The technology map
-  contradicts the literal wording: inline counters exist. The deck uses the sharper claim
-  that survives, "no inline sensor says what the particle is" (C7). Rewording H1 is a founder
-  decision, and this pitch does not make it.
-- **E3 cuts against "a mill cannot produce the number".** The number the rulebook asks for is
-  TSS, which mills already have. The deck turns this into the argument (the proxy is weak,
-  and the industry is testing it in Phase 2) rather than hiding it. If Phase 2 validates TSS
-  as a good-enough proxy, slide 2 loses its centre.
+**On slide**
+- Headline: `The number stopped being optional.`
+- Three columns:
+  - **Claims** · `27 Sept 2026` · `EU bans unsubstantiated green claims (Dir. 2024/825).`
+  - **Industry** · `April 2026` · `adidas, lululemon, Primark and Tesco fund a 15-mill test of whether TSS can stand in for fibre counts.`
+  - **Tech** · `<$1,000` · `open flow imagers reach 2.8 µm/px; classifiers separate synthetic from natural fibre at up to 98%.`
+- Second footer line: `TMC and ZDHC intend maximum allowable limits for fibre fragments in discharged effluent (Fashion for Good / TMC, 2025).` (`E14`)
+- Footer line: `Also: Inditex grades mills on fibre release (July 2026) · EU wastewater plants must monitor microplastics, method due July 2027 · EU textile ecodesign act Q4 2027.`
 
-**Open founder decisions:** company name (slide 1); the lead door (the deck leads with textiles
-because that is where E3/E4 sit and where the first product was aimed, with H3/H5 as
-expansion); the CTO on slide 5; Sandra's sign-off; the ask.
+**Visual:** a timeline strip on black (2026 → 2028) with cyan dots on the dated events. The
+micrograph appears only as a thin band along the bottom edge.
+
+**Say out loud:**
+- The industry is testing, this year, whether its cheap proxy is good enough.
+- Either the proxy fails and direct counting becomes the standard, or it passes and mills need per-batch data to stay under it.
+- Both roads need a number per batch that nobody can currently produce.
+
+**Sources**
+- Directive (EU) 2024/825, applies 27 Sept 2026 — https://eur-lex.europa.eu/eli/dir/2024/825/oj/eng
+- TMC and ZDHC Phase 2, 15 facilities, April 2026 — https://www.roadmaptozero.com/post/the-microfibre-consortium-and-zdhc-advance-joint-research-to-strengthen-wastewater-monitoring-of-fibre-fragmentation
+- Inditex GTW 3.2: `E4`.
+- UWWTD 2024/3019 Art. 21, method due 2 July 2027: technology-map T46.
+- ESPR textiles act planned Q4 2027, with microplastic release "including manufacturing" as a parameter: technology-map T49 plus JRC prep study — https://susproc.jrc.ec.europa.eu/product-bureau/sites/default/files/2025-12/Textile-Prep-Study_3rd-Milestone_20251212.pdf
+- PlanktoScope, under $1k in parts, 2.8 µm/px — https://prakashlab.stanford.edu/projects/planktoscope
+- 96.7–98.6% synthetic vs natural classification — https://arxiv.org/abs/2601.15769
+- $10 phone microscope with YOLOv5, 98% — https://pubs.rsc.org/ra/article/15/14/10473/867916/
+
+**Do not say**
+- "Greenwashing is dead." The broad Green Claims Directive is stalled.
+- "Regulation is forcing mills." None of these duties is a discharge limit on a mill.
+
+**Volunteer if asked:**
+- The revised EU reporting standards (3 July 2026) drop textile microfibre disclosure from FY2027.
+- Adidas's lead expects no brand microplastic claims for 5–10 years.
+
+---
+
+### Slide 5 · Team
+
+**Job:** why these people can build a sensor and sell it into a dyehouse.
+
+**On slide**
+- Founder tiles, photo plus one line each:
+  - `Sandra Zalas — CEO.` `Founder, Baltic Jungle Lab. PFR School of Pioneers winner. Ran the brand discovery calls.`
+  - `Izgin Ozdas — CTO.` `Ran CNC-line automation at IMTEK. Cambridge MPhil in manufacturing interoperability.`
+  - `Jeffrey Chang — Founding engineer, ML.` `Imperial. Physics-informed neural networks at NVIDIA; computer vision.`
+  - `Irfan Ali — Textile data and machine optimisation.`
+- Advisors row, smaller:
+  - `Manu Prakash — Stanford Bioengineering, MacArthur Fellow 2016. Foldscope, PlanktoScope. The Stanford lab we are building with.`
+  - `Dr Sam Brooks — Cambridge IfM, Distributed Information & Automation Lab. Connected factories.`
+  - `Daniel Theobald — Co-founder Vecna, Vecna Robotics, MassRobotics. MIT. 60+ US patents.`
+
+**Visual:** square photo tiles, each inside a thin white outline square (the detection-box
+motif); the advisors row in cream.
+
+**Say out loud:**
+- Hardware and factory automation, the textile side, and ML.
+- Manu Prakash's lab builds the cheapest quantitative imagers in the world, and we are working with it on the optics.
+
+**Sources**
+- Founder files: `founders/izgin-ozdas.md`, `founders/sandra-zalas.md`.
+- Jeffrey's background: self-described on the Matter call, 2026-09-04.
+- Prakash as the Stanford collaborator: founder confirmation, 2026-09-14. It was also referenced on the Matter call ("working with the professor at Stanford").
+- Advisor bios verified 2026-09-14: PlanktoScope images plankton; Theobald has 61 granted US patents.
+
+**Open**
+- `[OPEN]` Igor Veredyn introduced himself on the H&M call as "the technical co-founder". Is he on this slide?
+- `[OPEN]` Irfan Ali's one-liner, in his own words.
+- `[OPEN]` Has each advisor agreed to be named?
+- `[OPEN]` Sandra's lines to be confirmed by her.
+
+---
+
+### Slide 6 · Traction
+
+**Job:** show that the people who would buy this have looked at it and leaned in. Pre-revenue
+and pre-funding, stated plainly.
+
+**On slide**
+- Headline: `Design partners are asking for the number.`
+- Three partner cards:
+  1. **Matter** (industrial microfibre filtration; Earthshot Prize finalist). `In conversations under NDA. Invited us to co-pilot on a contracted textile-mill site.` `[CHECK NDA: agree this wording with Matter before external use]`
+  2. **adidas.** `"This is the first time I've come across such a device."` — microfibre lead. `Introductions to brand partners and Fashion for Good once the prototype works.`
+  3. **H&M Group.** `"No one is… monitoring."` — innovation and water team. `Open to arranging a supplier-site visit.`
+- Bottom strip (small):
+  - `CyFract: first-site talks` `[OPEN: status]`
+  - `Fashion for Good` `[OPEN: add once the call is logged]`
+  - `142 decision-makers targeted across mills, utilities and membrane makers`
+  - `Pre-revenue · pre-funding`
+
+**Visual:** three black cards, partner logos only with permission, with quote text in cream. One
+cyan outline around the adidas quote.
+
+**Say out loud**
+- None of these pays us yet, and we say so.
+- **Matter** has to prove, site by site, what its filters remove, and today it waits on the lab. We are the measurement.
+- **adidas and H&M** both told us the same two things: the industry manages fibre with a TSS proxy, and nobody measures fibres in the plant.
+- **Next milestones:** the Stage 0 contrast test, then the Matter co-pilot.
+
+**Sources**
+- Matter: `E5`, `E6` (call 2026-09-04, NDA; capture at `reports/03-validation/H1A5-2026-09-04/`); company entry CO13.
+- adidas: `E9`, `E10`.
+- H&M: `E7`, `E8`, `E9`.
+- CyFract first-site talks: `lineage` H2 change_reason (CyFract is a site, not a payer).
+- 142 targeted: `reports/outreach/contacts.md` totals.
+
+**Do not claim**
+- A signed LOI or any pilot, until the ledger holds one.
+- "25+ discovery calls / 2 design partnerships", until those calls are logged.
+- Matter's call contents or numbers (NDA).
+
+---
+
+### Slide 7 · Why the future
+
+**Job:** the beachhead is countable; the company is bigger.
+
+**On slide**
+- Headline: `Every dye machine first. Every industrial liquid next.`
+- Market, bottom-up, three stacked numbers:
+  - `~3,000` `dyeing machines shipped a year`
+  - `50–150k` `in service`
+  - `$0.4–2.3B` `hardware + $60–450M/yr software`
+- Expansion arrow: `Dye outlets → treatment-plant performance → filter makers → municipal wastewater (EU monitoring duty) → any industrial liquid`
+- Closing line: `Lattice: the observability layer for physical processes.`
+
+**Visual:** the heaviest dithering in the deck. The violet micrograph fully dissolves into
+cream pixel blocks that resolve into a grid, the "lattice".
+
+**Say out loud**
+- The beachhead is a place to learn, not the destination.
+- Every installed module adds to a cross-factory shedding benchmark that no lab, brand or regulator holds.
+- That dataset, and the loop back to the machine, is the platform: sensing, then the machine data we already read, then models that tell the line what to change.
+
+**Sources**
+- ITMF overflow and air-jet dyeing machine shipments: 2,389 (2022), about 2,837 (2023), 3,128 (2024), about 3,802 (2025) — https://www.textileworld.com/textile-world/2026/07/itmf-global-textile-machinery-shipments-shrunk-in-2025-except-for-spinning/
+- `ASSUMPTION` 15–20 year machine life, plus local makers ITMF misses → 50–150k.
+- `ASSUMPTION` $8–15k hardware and $100–250 per machine per month software. No public comparable price exists; label both on the slide as assumptions.
+- EU wastewater monitoring: technology-map T46. Vision: `belief`.
+
+**Open**
+- `[OPEN]` the ask: the amount, and what it buys (a prototype validated against known concentrations, then the first plant pilot).
+- `[OPEN]` the "silica microballoon" sketch from the handwritten notes. What is it, and does it belong here?
+
+---
+
+### Appendix A · Competition (optional; use if asked "who else")
+
+**On slide:** a 2×2.
+- **x-axis:** lab sample → inline.
+- **y-axis:** counts only → says what the particle is.
+- **Quadrants:**
+  - Top-left: Agilent LDIR, HORIBA, Purency, Hohenstein (lab; identify).
+  - Bottom-right: Mettler FBRM, Malvern, TSS probes, Process Imaging ViPA (inline; count only).
+  - Top-right, alone: Lattice, with ZAITRUS just below it (inline; plastic/metal/biological, sewage and food, pilots).
+  - Wasser 3.0 near the centre (stain-and-microscope samples, markets "hourly monitoring" in textiles).
+
+**Say out loud:** "The inline instruments can't say what a particle is; the ones that can are lab-only.
+The nearest to us is ZAITRUS, which targets sewage and food and does not claim fibre identity."
+
+**Sources:** competitor research 2026-09-14
+- https://www.zaitrus.de/en/technologie/
+- https://wasserdreinull.de/en/blog/microplastic-analysis-analytics/
+- technology-map T24–T31
+
+### Appendix B · Risks (optional; volunteering beats being caught)
+
+1. The TMC/ZDHC study shows TSS is a good-enough proxy. Then mills use probes they already own, and we sell per-batch resolution rather than the only number.
+2. Dye colour and background noise defeat optical detection in untreated effluent, the first technical risk Adidas's chemist raised. Mitigation: a bypass line with dilution, and training on known concentrations.
+3. Dye-machine controller makers (Setex, Sedo) accept sensor inputs, but no public route lets a third party write back into the dye programme.
+4. Brands wait for regulation (H&M), and microplastic claims are 5–10 years out (Adidas). The first buyer is the mill under an Inditex-type grade, or a filter maker proving performance.
+
+---
+
+## Drift check — 2026-09-14 (v2)
+
+**Changed from v1:**
+- The company is named (Lattice).
+- The problem widens from "brand grading" to "nobody can prove the number", which covers fabric, batch and filter.
+- Traction now rests on two brand calls and Matter.
+
+**Forward (deck ahead of evidence)**
+- Both brand calls are not yet in `evidence.md`. The capture needs:
+  - the call dates;
+  - contact cards for three people;
+  - confirmed outcomes (proposed: H&M weak for H1A2, Adidas moderate_confirm).
+- The Matter LOI status, "25+ calls" and the GCA year are unsourced.
+- The market prices are ASSUMPTION and labelled as such.
+- Web facts on slides 2, 4 and 7 (Measurlabs, PlanetCare, 2024/825, TMC Phase 2, ITMF, arXiv, RSC) are sourced but not graded ledger entries. Log the ones that carry a slide.
+
+**Backward (evidence ahead of the hunch)**
+- H&M says its supplier ask is a TSS limit, not a fibre count. That cuts against H1A2's "being asked for a microfibre number", as E3 did.
+- The Adidas call supports a different pain: the brand cannot get per-fabric shedding data, and suppliers dispute lab numbers. That may be a new or reframed assumption. It is a founder decision, not made here.
 
 ## One-slide version
 
 ```yaml
 slide:
   one_liner:
-    text: "Real-time microfibre monitoring for textile mills: the number and the polymer, per batch, at the drain."
-    cite: belief
+    text: "Lattice measures microfibre release at the dye-machine outlet in seconds, per batch, instead of a lab result four weeks later."
+    cite: "call:adidas; web (Measurlabs)"
   problem:
-    - {text: "Inditex now grades wet-process mills on microfibre release (GTW 3.2, July 2026).", cite: E4}
-    - {text: "The industry rulebook answers with TSS, a weight that cannot tell polyester from cotton.", cite: E3}
-    - {text: "Every published mill-effluent measurement is a lab grab sample.", cite: map}
+    - {text: "A lab microplastic result takes ~4 weeks and €390 a sample.", cite: web}
+    - {text: "The industry manages fibre with a TSS proxy (H&M: 30 mg/L) that cannot see fibres.", cite: "E3; call:hm"}
+    - {text: "Filter capture claims do not survive independent tests (90% claimed, 68% measured).", cite: web}
   solution:
-    - {text: "Polarised-light imaging at the drain: count, size, synthetic vs natural, per batch.", cite: edge}
-    - {text: "Inline counters exist; none says what the particle is.", cite: belief}
+    - {text: "In-water imaging module: size distribution first, synthetic vs natural next, tagged to batch and machine.", cite: "call:adidas; edge"}
   team:
-    - {text: "Izgin Ozdas: CNC-line automation at IMTEK; Cambridge MPhil in manufacturing-data interoperability.", cite: edge}
-    - {text: "Sandra Zalas: founder of Baltic Jungle Lab; PFR School of Pioneers winner.", cite: "edge (unconfirmed)"}
+    - {text: "Sandra Zalas (CEO), Izgin Ozdas (CTO); advisors Manu Prakash, Dr Sam Brooks, Daniel Theobald.", cite: "edge (partly unconfirmed)"}
   market:
-    - {text: "Not yet sized.", cite: UNSOURCED}
+    - {text: "~3,000 dyeing machines shipped a year; 50–150k in service; $0.4–2.3B hardware at assumed prices.", cite: "web (ITMF) + ASSUMPTION"}
   open_questions:
-    - "Does a mill experience the Inditex grade as a cost?"
-    - "Who pays: mill, brand, or effluent operator?"
-    - "Does TSS survive TMC/ZDHC Phase 2 as a proxy?"
+    - "Does TSS survive the 15-mill TMC/ZDHC study as a proxy?"
+    - "Who pays first: the graded mill, the filter maker, or the brand?"
+    - "Does the optical module hold up in coloured, untreated effluent?"
 ```
 
 No slide renderer exists in `scripts/` yet, so this block is not rendered to a page.
@@ -245,4 +370,42 @@ Forced by: founder request (deck structure: Title, Problem, Solution, Why now, T
 Why the future); E1–E4.
 Cut: "no sensors to detect microplastics" (H1 wording) narrowed to "no inline sensor
 identifies them", because the technology map shows inline counters exist.
-Added: C1–C20 as above; market size and pilot deliberately left UNSOURCED and marked.
+Added: C1–C20; market size and pilot deliberately left UNSOURCED and marked.
+
+### 2026-09-14 · investor · v2, slide-by-slide build brief with design system
+Forced by:
+- The founder's handwritten outline, the draft one-pager, and the Lattice title design.
+- The Adidas and H&M call transcripts.
+- Five research passes (advisors, filtration, dye-machine market, why-now, competitors).
+
+Cut:
+- "8 hours to 14 days" lab turnaround: no lab publishes hours; replaced by Measurlabs, ~4 weeks and €390.
+- "Greenwashing is dead": the broad Green Claims Directive is stalled; replaced by Dir. 2024/825, 27 Sept 2026.
+- "Ships" as a use case: IMO does not regulate microplastics in greywater, and ballast rules count organisms.
+- "67 patents" (Theobald) → 60+.
+- PlanktoScope "particles in water" → plankton.
+- "25+ discovery calls / 2 design partnerships": only two transcripts on file.
+
+Added:
+- Design system.
+- The problem broadened to fabric, batch and filter.
+- The 15-mill TMC/ZDHC study as the lead why-now.
+- Matter's benchmarking programme as the reason for the LOI.
+- Bottom-up dyeing-machine market, with prices labelled as assumptions.
+- A competition 2×2 and a risks appendix.
+
+### 2026-09-14 · investor · v3, calls logged, partners named, solution per tech brief
+Forced by:
+- Evidence E5–E16: the Matter call (NDA), the adidas and H&M calls, and the desk facts.
+- The optical technology brief.
+- Founder decisions: name adidas and H&M; Matter is in conversations under NDA; "clients/partners/design partners" mean the same thing; pre-revenue and pre-funding; Prakash is the Stanford collaborator.
+
+Cut:
+- "Matter LOI in discussion": no LOI on the 2026-09-04 call; replaced by the pilot invitation, pending NDA wording.
+- The camera-in-water MVP description: replaced by the at-line polarised-membrane architecture.
+
+Added:
+- Named partner cards.
+- The Stage 0 contrast test as the next milestone.
+- TMC/ZDHC effluent-limit intent (E14).
+- CyFract and Fashion for Good as open items.

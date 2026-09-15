@@ -4,16 +4,16 @@
 -->
 ---
 idea: industrial-process-data-infrastructure
-generated: 2026-09-15T01:14Z
+generated: 2026-09-15T02:57Z
 active_hunch: H1, H3, H5
 active_assumption: H1A2
 sources:
   belief: 6093ca2c2aa3
   lineage: acb22ff76116
-  graph: 2e388c457f54
-  evidence: 61ff8f30c6d6
+  graph: dc26afa254e8
+  evidence: 2b7513b3f76d
   offerings: absent
-  contacts: 51d0aa6ed8b4
+  contacts: 43f0810338f3
 ---
 
 # industrial-process-data-infrastructure — session brief
@@ -48,7 +48,7 @@ Lineage: H2 superseded · H4 proposed
 
 | # | ID | claim | status | evidence | next action |
 |---|---|---|---|---|---|
-| 1 | **H1A2** ← | Textile wet-processing mills are already being asked for a microfiber number by a brand, an auditor or a regu… | `weakly_supported` | `4/5 · 2E (1+/0-)` | Ten conversations with people who run wet processing at textile mills. One question first… |
+| 1 | **H1A2** ← | Textile wet-processing mills are already being asked for a microfiber number by a brand, an auditor or a regu… | `weakly_supported` | `4/5 · 3E (1+/0-)` | Ten conversations with people who run wet processing at textile mills. One question first… |
 | 2 | **H1A10** | People running a production line can name a recent case where a measured number sat waiting for a person to i… | `untested` | `none` | Ask five people who run any high-mix production line, before any mention of sensors or so… |
 | 3 | **H5A1** | Something dated in the last three years has made membrane life a question a membrane maker must now answer wi… | `untested` | `none` | One afternoon: read what DuPont Water Solutions, Hydranautics and Toray Membrane USA publ… |
 
@@ -56,9 +56,9 @@ _← = `active_assumption`. Ranking: leap-of-faith gate → DAG roots first → 
 
 ## Evidence
 
-**4 entries** · 3 supports / 0 contradicts / 1 ambiguous · latest 2026-09-14
+**16 entries** · 11 supports / 2 contradicts / 3 ambiguous · latest 2026-09-14
 
-For **H1A2**: 2 entries.
+For **H1A2**: 3 entries.
 
 - `E1` 2026-09-14 → **H3A1** (supports) — The Board's programme timeline shows 'Fall 2023 – Fall 2025: Phase I Monitoring' and 'Fall 2026 – Fall 2028: Phase II Monitoring'; sampling by ASTM D…
 - `E2` 2026-09-14 → **H3A1** (supports) — Monitoring runs through 'monitoring orders'; results are reported to DDW and 'positive detections in CCRs' (the utility's annual Consumer Confidence…
@@ -67,11 +67,11 @@ For **H1A2**: 2 entries.
 
 ## Outreach
 
-**175 targeted** · 1 contacted · 1 replied · 0 call-progressed · 0 scheduled
+**177 targeted** · 3 contacted · 3 replied · 2 call-progressed · 2 scheduled
 
-Reply rate 100.0% of contacted · reply→call 0.0%
+Reply rate 100.0% of contacted · reply→call 66.7%
 
-By assumption: H1A2 1/1 replied · H1A3 0/0 replied · H1A6 0/0 replied · H2 0/0 replied · H3A2 0/0 replied · H5A2 0/0 replied
+By assumption: H1A2 1/1 replied · H1A3 0/0 replied · H1A5 2/2 replied · H1A6 0/0 replied · H1A9 1/1 replied · H2 0/0 replied · H3A2 0/0 replied · H5A2 0/0 replied
 
 ## What already exists for this idea
 
@@ -85,6 +85,9 @@ _Generated from the folder. Check here before creating a new artifact — if a f
 | `reports/01-ideation/hunch-lineage.md` | The hunch lineage — every hunch ever held under the belief, its status, and which one is active. |
 | `reports/02-assumptions/graph.md` | The assumption DAG for this idea — what must be true, ranked, each with the cheapest test that would settle it. Holds the active hunch's nodes plus a… |
 | `reports/03-validation/evidence.md` | The evidence ledger — every graded claim that moves an assumption, each linked to the node it updates and the direction it moves it. |
+| `reports/03-validation/H1A2-2026-09-14/interviews/hm-group-2026-09-14-notes.md` | Interview: H&M Group (Martin, Sharif) · H1A2 · call date not recorded |
+| `reports/03-validation/H1A5-2026-09-04/interviews/matter-2026-09-04-notes.md` | Interview: Matter (Paul, Mark) · H1A5 · 2026-09-04 |
+| `reports/03-validation/H1A5-2026-09-14/interviews/varija-subasingha-2026-09-14-notes.md` | Interview: Varija Subasingha (adidas) · H1A5 · call date not recorded |
 | `reports/outreach/companies.md` | The company registry — one entry per organisation on the demand or supply side of contaminant detection in industrial water, what it actually does, a… |
 | `reports/outreach/contacts.md` | The contact ledger — one card per person targeted, invited or interviewed for this idea, with the live-profile read that qualified them and the state… |
 | `reports/outreach/process-map.md` | The process map — one entry per stage of textile manufacturing from raw fibre to finished T-shirt, whether the stage touches water, how much fibre it… |
