@@ -2116,7 +2116,7 @@ function apply() {{
     if (sigv && c.signal_type !== sigv) return false;
     if (av && (c.assumptions_tested || []).indexOf(av) === -1) return false;
     var hasCopy = !!(COPY_BY_ID && COPY_BY_ID[c.id]);
-    var sentAny = /\\[msg\\d+ sent\\]/i.test(c.notes || "");
+    var sentAny = /\\[msg\\d+ sent[^\\]]*\\]/i.test(c.notes || "");
     if (cv === "unsent" && !(hasCopy && !sentAny)) return false;
     if (cv === "sent" && !sentAny) return false;
     if (cv === "ready" && !hasCopy) return false;
@@ -2233,7 +2233,7 @@ document.querySelectorAll(".tab").forEach(function(btn) {{
 (function() {{
   var panel = document.getElementById("taskPanelLegacy");
   if (!panel) return;
-  function sentMarker(c) {{ return /\\[msg\\d+ sent\\]/i.test(c.notes || ""); }}
+  function sentMarker(c) {{ return /\\[msg\\d+ sent[^\\]]*\\]/i.test(c.notes || ""); }}
   function hasCopy(c) {{ return !!(COPY_BY_ID && COPY_BY_ID[c.id]); }}
 
   var sendMsg1 = [], draftNeeded = [], replyNeeded = [], gated = [], invitesQueued = 0, awaiting = 0;
@@ -2255,7 +2255,7 @@ document.querySelectorAll(".tab").forEach(function(btn) {{
       // testing === "linkedin" dropped every card that relied on it (C122, 2026-09-05).
       // A reply the founder has already answered (msg2+ sent marker) is their turn, not ours.
       var ch = c.channel || "linkedin";
-      if (ch === "linkedin" && !/\\[msg[2-9] sent\\b/i.test(c.notes || "")) replyNeeded.push(c);
+      if (ch === "linkedin" && !/\\[msg[2-9] sent[^\\]]*\\]/i.test(c.notes || "")) replyNeeded.push(c);
     }} else if (s === "pending") {{
       // A 1st-degree contact needs no invite, so a drafted message to one is a SEND, not a
       // queue entry. Without this the whole 1st-degree batch was invisible on this page.
@@ -2355,7 +2355,7 @@ document.querySelectorAll(".tab").forEach(function(btn) {{
     if (el) el.dataset.state = state;
     if (label) label.textContent = text;
   }}
-  function sentMarker(c) {{ return /\\[msg\\d+ sent\\]/i.test(c.notes || ""); }}
+  function sentMarker(c) {{ return /\\[msg\\d+ sent[^\\]]*\\]/i.test(c.notes || ""); }}
   function hasCopy(c) {{ return !!(COPY_BY_ID && COPY_BY_ID[c.id]); }}
   function b30(c) {{
     var notes = c.notes || "";
@@ -2376,7 +2376,7 @@ document.querySelectorAll(".tab").forEach(function(btn) {{
       else derived.push(systemTask(c,"Draft Msg 1","next","normal","draft"));
     }} else if (s === "replied") {{
       var channel = c.channel || "linkedin";
-      if (channel === "linkedin" && !/\\[msg[2-9] sent\\b/i.test(c.notes || ""))
+      if (channel === "linkedin" && !/\\[msg[2-9] sent[^\\]]*\\]/i.test(c.notes || ""))
         derived.push(systemTask(c,"Reply waiting","next","high","reply"));
     }} else if (s === "pending") {{
       if (b30(c)) derived.push(systemTask(c,"Held by LR-B30","backlog","low","held"));
