@@ -126,6 +126,8 @@ def audit():
         r"Profile text is (Turkish|Italian|Portuguese)|profile not in English|"
         r"does not read English|no English", re.IGNORECASE)
     for c in contacts:
+        if (c.get("outreach_status") or "") in {"replied", "scheduled", "done"}:
+            continue  # an open conversation is never cut by the audit; the founder decides
         if NON_ENGLISH.search(c.get("notes") or ""):
             hard_fails.append({
                 "contact": c, "aid": (c["assumptions_tested"] or ["-"])[0],

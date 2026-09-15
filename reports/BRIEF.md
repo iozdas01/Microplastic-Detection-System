@@ -4,7 +4,7 @@
 -->
 ---
 idea: industrial-process-data-infrastructure
-generated: 2026-09-15T04:32Z
+generated: 2026-09-15T04:33Z
 active_hunch: H1, H3, H5
 active_assumption: H1A2
 sources:
@@ -13,7 +13,7 @@ sources:
   graph: dc26afa254e8
   evidence: 2b7513b3f76d
   offerings: absent
-  contacts: 16f1832d4eb9
+  contacts: ca7706d8d3e4
 ---
 
 # industrial-process-data-infrastructure — session brief
