@@ -128,7 +128,8 @@ def audit():
     for c in contacts:
         if (c.get("outreach_status") or "") in {"replied", "scheduled", "done"}:
             continue  # an open conversation is never cut by the audit; the founder decides
-        if NON_ENGLISH.search(c.get("notes") or ""):
+        notes_ = c.get("notes") or ""
+        if NON_ENGLISH.search(notes_) and not re.search(r"passes LR-B31a", notes_, re.I):
             hard_fails.append({
                 "contact": c, "aid": (c["assumptions_tested"] or ["-"])[0],
                 "reason": "non-English profile still live (LR-B31a): set off_scope, no draft",

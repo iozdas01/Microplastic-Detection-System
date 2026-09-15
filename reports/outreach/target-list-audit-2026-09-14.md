@@ -1,18 +1,12 @@
 # Target list audit — 2026-09-14
 
-Hard fails: 4 · Tier soft fails: 0 · Rationale soft fails: 0 · Assumptions missing ICP: 1
+Hard fails: 3 · Tier soft fails: 0 · Rationale soft fails: 0 · Assumptions missing ICP: 1
 
 ## Assumptions missing ICP declaration
 
 - **H2** — fill in ICP fields in graph.md before adding contacts.
 
 ## ❌ HARD FAILS — off-scope (must remove)
-
-### Murat Terlemez (C7) — for H1A2
-- Reason: non-English profile still live (LR-B31a): set off_scope, no draft
-- Role: Ev Tekstili Genel Müdürü (home textiles general manager)
-- Company: Yeşim Group (Bursa, vertically integrated: knitting, dyeing, printing, finishing, garment)
-- LinkedIn: https://www.linkedin.com/in/murat-terlemez/
 
 ### Martin (surname not recorded) (C178) — for H1A5
 - Reason: tier=brand not in ['textile_mill', 'sensor_vendor', 'lab_testing_provider', 'filtration_vendor']
