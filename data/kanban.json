@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-09-15T18:50:56.605Z",
+  "updated_at": "2026-09-15T23:22:30.479Z",
   "tasks": [
     {
       "id": "T-MTV0XT85-EZLO",
@@ -105,7 +105,7 @@
     {
       "id": "T-MU1YGKLC-E1XN",
       "title": "Reach out to washing-machine water-filtration startups",
-      "detail": "Startups building filtration for washing machines / water systems — contact them as well.",
+      "detail": "Startups building filtration for washing machines / water systems \u2014 contact them as well.",
       "priority": "normal",
       "status": "backlog",
       "owner": "sandra",
@@ -131,9 +131,29 @@
       "owner": "izgin",
       "created_at": "2026-09-15T18:50:56.605Z",
       "updated_at": "2026-09-15T18:52:41.000Z"
+    },
+    {
+      "id": "T-MU3ARC9C-R840",
+      "title": "Contact Higg FEM 4.0 people",
+      "detail": "We need to find out more about what this platform is",
+      "priority": "normal",
+      "status": "backlog",
+      "owner": "izgin",
+      "created_at": "2026-09-15T23:22:30.479Z",
+      "updated_at": "2026-09-15T23:22:30.479Z"
     }
   ],
   "activity": [
+    {
+      "id": "1789514550480-4zir02",
+      "at": "2026-09-15T23:22:30.479Z",
+      "type": "created",
+      "task_id": "T-MU3ARC9C-R840",
+      "title": "Contact Higg FEM 4.0 people",
+      "from": null,
+      "to": "backlog",
+      "owner": "izgin"
+    },
     {
       "id": "1789498256606-bgpzzu",
       "at": "2026-09-15T18:50:56.605Z",
