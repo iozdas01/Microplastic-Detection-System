@@ -17,8 +17,6 @@ _Channels are counted separately._
 
 | id | name | status | call stage |
 |---|---|---|---|
-| C103 | Péter Groszmann | pending | — |
-| C104 | Raúl Santos | pending | — |
 | C110 | Peter Metcalfe | pending | — |
 | C111 | Edna Banerjee | pending | — |
 | C112 | Mithilesh Tripathi | pending | — |
@@ -38,6 +36,8 @@ _Channels are counted separately._
 | C96 | Roman Boda | pending | — |
 | C101 | Guillem Gilabert-Oriol | invited | — |
 | C102 | Ezzat Sabry | invited | — |
+| C103 | Péter Groszmann | invited | — |
+| C104 | Raúl Santos | invited | — |
 | C88 | Javier Suárez | invited | — |
 | C89 | Sonia Vila Cremer | invited | — |
 | C90 | Denise Haukkala | invited | — |

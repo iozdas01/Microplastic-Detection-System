@@ -4,7 +4,7 @@ idea: industrial-process-data-infrastructure
 last_updated: 2026-09-14
 totals:
   targeted: 142
-  invited: 85
+  invited: 93
   accepted: 22
   scheduled: 0
   done: 0
@@ -2605,6 +2605,8 @@ validation_rationale: >
   COO of LADWP's water system, 2,400 staff and a $1.5B operating budget; signs for any monitoring spend and oversaw treatment operations as director of water operations.
 response_likelihood: 3
 likelihood_factors: "3rd+ degree (0) · executive (0)"
+close_variant: soft_ask
+copy_variant: build_short
 channel: linkedin
 degree: 3rd+
 mutuals_count:
@@ -2612,7 +2614,7 @@ active_last_30d: unknown
 open_to_work: false
 outreach_status: accepted
 found_date: 2026-09-14
-notes: "[profile read 2026-09-14] details/experience: COO and Sr AGM Water System LADWP Aug 2021-present; Deputy Sr AGM and Director of Water Operations 2017-21 (treatment, LA Aqueduct); 33 yrs at LADWP. English. Passes. [invited 2026-09-14] bare invite via custom-invite modal, modal name confirmed Anselmo Collins, sent by Claude at founder's instruction; Pending confirmed. [accepted 2026-09-14] shows 1st degree in LinkedIn search the same day."
+notes: "[profile read 2026-09-14] details/experience: COO and Sr AGM Water System LADWP Aug 2021-present; Deputy Sr AGM and Director of Water Operations 2017-21 (treatment, LA Aqueduct); 33 yrs at LADWP. English. Passes. [invited 2026-09-14] bare invite via custom-invite modal, modal name confirmed Anselmo Collins, sent by Claude at founder's instruction; Pending confirmed. [accepted 2026-09-14] shows 1st degree in LinkedIn search the same day. [msg1 drafted 2026-09-14] LR-B33 shape with the drinking-water build sentence (LR-B28); inbox searched by first name and surname, no thread. Copy in copy/H3A2-linkedin.md. Awaiting founder send."
 
 
 ## Tom Maichaimongkol
@@ -2980,9 +2982,10 @@ degree: 3rd+
 mutuals_count:
 active_last_30d: unknown
 open_to_work: false
-outreach_status: pending
+outreach_status: invited
 found_date: 2026-09-14
-notes: "[profile read 2026-09-14] details/experience: Water Quality Manager Valley Water Sep 2024-present; senior engineer 2016-24; Water Quality Unit treatment-plant process support and regulatory compliance 2013-14; environmental engineer Alameda County Water District 2002-10. English. Passes. SB 1422 Phase 1 selection of Valley Water not verified; qualifies on size and surface-water supply."
+notes: "[profile read 2026-09-14] details/experience: Water Quality Manager Valley Water Sep 2024-present; senior engineer 2016-24; Water Quality Unit treatment-plant process support and regulatory compliance 2013-14; environmental engineer Alameda County Water District 2002-10. English. Passes. SB 1422 Phase 1 selection of Valley Water not verified; qualifies on size and surface-water supply. [invited 2026-09-14] bare invite via custom-invite modal, modal name confirmed Luisa Sangines-Uriarte, sent by Claude at founder's instruction; Pending confirmed."
+
 
 ## Surjit Saini
 
@@ -3010,9 +3013,10 @@ degree: 3rd+
 mutuals_count:
 active_last_30d: unknown
 open_to_work: false
-outreach_status: pending
+outreach_status: invited
 found_date: 2026-09-14
-notes: "[profile read 2026-09-14] details/experience: Laboratory Manager Santa Clara Valley Water District Mar 2019-present; Quality Assurance Officer 2014-19. English. Passes. SB 1422 selection not verified."
+notes: "[profile read 2026-09-14] details/experience: Laboratory Manager Santa Clara Valley Water District Mar 2019-present; Quality Assurance Officer 2014-19. English. Passes. SB 1422 selection not verified. [invited 2026-09-14] bare invite via custom-invite modal, modal name confirmed Surjit Saini, sent by Claude at founder's instruction; Pending confirmed."
+
 
 ## Doug Campbell
 
@@ -3040,9 +3044,10 @@ degree: 3rd+
 mutuals_count:
 active_last_30d: unknown
 open_to_work: false
-outreach_status: pending
+outreach_status: invited
 found_date: 2026-09-14
-notes: "[profile read 2026-09-14] details/experience: Assistant Director, Water Recovery and Pure Water Branch, City of San Diego PUD Oct 2023-present; Assistant Deputy Director Water System Operations Feb 2021-present; lab supervisor Sweetwater Authority 2020-21; senior chemist City of San Diego 2011-20 managing Water Quality Chemistry Services. English. Passes. SB 1422 selection not verified."
+notes: "[profile read 2026-09-14] details/experience: Assistant Director, Water Recovery and Pure Water Branch, City of San Diego PUD Oct 2023-present; Assistant Deputy Director Water System Operations Feb 2021-present; lab supervisor Sweetwater Authority 2020-21; senior chemist City of San Diego 2011-20 managing Water Quality Chemistry Services. English. Passes. SB 1422 selection not verified. [invited 2026-09-14] bare invite via custom-invite modal, modal name confirmed Doug Campbell, sent by Claude at founder's instruction; Pending confirmed."
+
 
 ## Guillem Gilabert-Oriol
 
@@ -3132,9 +3137,10 @@ degree: 3rd+
 mutuals_count:
 active_last_30d: unknown
 open_to_work: false
-outreach_status: pending
+outreach_status: invited
 found_date: 2026-09-14
-notes: "[profile read 2026-09-14] details/experience: Technical Support Engineer Toray Membrane Europe AG Feb 2009-present (UF and MBR support EMEA, sales support, product management); process engineer GE Water & Process Technologies 2005-09 (field service, commissioning, UF/MBR design). English. Passes."
+notes: "[profile read 2026-09-14] details/experience: Technical Support Engineer Toray Membrane Europe AG Feb 2009-present (UF and MBR support EMEA, sales support, product management); process engineer GE Water & Process Technologies 2005-09 (field service, commissioning, UF/MBR design). English. Passes. [invited 2026-09-14] bare invite via custom-invite modal, modal name confirmed Péter Groszmann, sent by Claude at founder's instruction; Pending confirmed."
+
 
 ## Raúl Santos
 
@@ -3162,9 +3168,10 @@ degree: 3rd+
 mutuals_count:
 active_last_30d: unknown
 open_to_work: false
-outreach_status: pending
+outreach_status: invited
 found_date: 2026-09-14
-notes: "[profile read 2026-09-14] details/experience: Senior Process Engineer LG Chem / LG Water Solutions May 2016-present (Madrid); process and project engineer Koch Membrane Systems 2001-15 (RO/UF/NF/MF pre- and post-sales, system calculation with proprietary software). English. Passes; title is process engineer, not in the title list, kept because the role is membrane projection and post-sales support."
+notes: "[profile read 2026-09-14] details/experience: Senior Process Engineer LG Chem / LG Water Solutions May 2016-present (Madrid); process and project engineer Koch Membrane Systems 2001-15 (RO/UF/NF/MF pre- and post-sales, system calculation with proprietary software). English. Passes; title is process engineer, not in the title list, kept because the role is membrane projection and post-sales support. [invited 2026-09-14] bare invite via custom-invite modal, modal name confirmed Raúl Santos, sent by Claude at founder's instruction; Pending confirmed."
+
 
 ## Evangeline Lau Wei Yong
 
@@ -3222,9 +3229,10 @@ degree: 3rd+
 mutuals_count:
 active_last_30d: unknown
 open_to_work: false
-outreach_status: pending
+outreach_status: invited
 found_date: 2026-09-14
-notes: "[profile read 2026-09-14] details/experience: General Manager Las Virgenes MWD Jan 2013-present (chief executive, reports to 5-member elected board); past president WateReuse California 2022-present; Executive Director of Operations Irvine Ranch Water District 2010-13; LA County DPW before. English. Passes. LVMWD is on the Board's preliminary Phase 1 list (press coverage of SB 1422 selection)."
+notes: "[profile read 2026-09-14] details/experience: General Manager Las Virgenes MWD Jan 2013-present (chief executive, reports to 5-member elected board); past president WateReuse California 2022-present; Executive Director of Operations Irvine Ranch Water District 2010-13; LA County DPW before. English. Passes. LVMWD is on the Board's preliminary Phase 1 list (press coverage of SB 1422 selection). [invited 2026-09-14] bare invite via custom-invite modal, modal name confirmed David W. Pedersen, sent by Claude at founder's instruction; Pending confirmed."
+
 
 ## Yu Melanie Madsen
 
@@ -3252,9 +3260,10 @@ degree: 3rd+
 mutuals_count:
 active_last_30d: unknown
 open_to_work: false
-outreach_status: pending
+outreach_status: invited
 found_date: 2026-09-14
-notes: "[profile read 2026-09-14] details/experience: Water Quality Superintendent City of Sacramento Aug 2026-present; Quality Manager 2024-26; WQ Chemist 2018-24; TestAmerica lab supervisor/department manager 2014-18. English. Passes; 8 yrs at the utility though new in current title. SB 1422 selection not verified."
+notes: "[profile read 2026-09-14] details/experience: Water Quality Superintendent City of Sacramento Aug 2026-present; Quality Manager 2024-26; WQ Chemist 2018-24; TestAmerica lab supervisor/department manager 2014-18. English. Passes; 8 yrs at the utility though new in current title. SB 1422 selection not verified. [invited 2026-09-14] bare invite via custom-invite modal, modal name confirmed Yu Melanie Madsen, sent by Claude at founder's instruction; Pending confirmed."
+
 
 ## Kevin Caldwell
 
@@ -3282,9 +3291,10 @@ degree: 3rd+
 mutuals_count:
 active_last_30d: unknown
 open_to_work: false
-outreach_status: pending
+outreach_status: invited
 found_date: 2026-09-14
-notes: "[profile read 2026-09-14] details/experience: Laboratory Services Officer / Quality Manager, Long Beach Utilities Sep 2024-present: TNI 2016 compliance, third-party audits, internal method audits, SOPs. English. Passes. SB 1422 selection not verified."
+notes: "[profile read 2026-09-14] details/experience: Laboratory Services Officer / Quality Manager, Long Beach Utilities Sep 2024-present: TNI 2016 compliance, third-party audits, internal method audits, SOPs. English. Passes. SB 1422 selection not verified. [invited 2026-09-14] bare invite via custom-invite modal, modal name confirmed Kevin Caldwell, sent by Claude at founder's instruction; Pending confirmed."
+
 
 ## Laura Hidas
 

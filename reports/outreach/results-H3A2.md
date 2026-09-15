@@ -17,10 +17,6 @@ _Channels are counted separately._
 
 | id | name | status | call stage |
 |---|---|---|---|
-| C100 | Doug Campbell | pending | — |
-| C106 | David W. Pedersen | pending | — |
-| C107 | Yu Melanie Madsen | pending | — |
-| C108 | Kevin Caldwell | pending | — |
 | C115 | Stephanie Vogel | pending | — |
 | C116 | Joe Mouawad | pending | — |
 | C117 | Angela O'Brien | pending | — |
@@ -31,8 +27,10 @@ _Channels are counted separately._
 | C134 | Jim Barrett | pending | — |
 | C135 | Craig Miller | pending | — |
 | C140 | Megan Tran | pending | — |
-| C98 | Luisa Sangines-Uriarte | pending | — |
-| C99 | Surjit Saini | pending | — |
+| C100 | Doug Campbell | invited | — |
+| C106 | David W. Pedersen | invited | — |
+| C107 | Yu Melanie Madsen | invited | — |
+| C108 | Kevin Caldwell | invited | — |
 | C78 | Theresa Slifko | invited | — |
 | C79 | Monica Tirtadidjaja | invited | — |
 | C80 | Joyce Lehman | invited | — |
@@ -41,6 +39,8 @@ _Channels are counted separately._
 | C83 | Kenneth Lee | invited | — |
 | C84 | Dennis Herrera | invited | — |
 | C85 | Kaushal Parbhoo | invited | — |
+| C98 | Luisa Sangines-Uriarte | invited | — |
+| C99 | Surjit Saini | invited | — |
 | C86 | Anselmo Collins | accepted | — |
 | C109 | Laura Hidas | off_scope | — |
 | C118 | Lucy Croy | off_scope | — |
