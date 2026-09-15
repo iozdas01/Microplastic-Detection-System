@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-09-15T02:49:55.743Z",
+  "updated_at": "2026-09-15T18:50:56.605Z",
   "tasks": [
     {
       "id": "T-MTV0XT85-EZLO",
@@ -121,9 +121,29 @@
       "owner": "izgin",
       "created_at": "2026-09-15T02:49:55.743Z",
       "updated_at": "2026-09-15T02:49:55.743Z"
+    },
+    {
+      "id": "T-MU3123TQ-50O8",
+      "title": "Invite Anant Ahuja, Lizzie Sumnall and Delia Ibanez once the LinkedIn weekly invite limit resets",
+      "detail": "Limit hit 2026-09-15. Cards are in contacts.md as pending with profile reads. linkedin.com/in/anant-ahuja43, linkedin.com/in/lizzie-sumnall-7257ab4a, linkedin.com/in/delia-ibanez-950b136",
+      "priority": "high",
+      "status": "backlog",
+      "owner": "izgin",
+      "created_at": "2026-09-15T18:50:56.605Z",
+      "updated_at": "2026-09-15T18:50:56.605Z"
     }
   ],
   "activity": [
+    {
+      "id": "1789498256606-bgpzzu",
+      "at": "2026-09-15T18:50:56.605Z",
+      "type": "created",
+      "task_id": "T-MU3123TQ-50O8",
+      "title": "Invite Anant Ahuja, Lizzie Sumnall and Delia Ibanez once the LinkedIn weekly invite limit resets",
+      "from": null,
+      "to": "backlog",
+      "owner": "izgin"
+    },
     {
       "id": "1789440595744-yxnre6",
       "at": "2026-09-15T02:49:55.743Z",
