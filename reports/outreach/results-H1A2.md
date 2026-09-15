@@ -108,7 +108,6 @@ _Channels are counted separately._
 | C52 | Giacomo Speroni | accepted | — |
 | C53 | Mauro Franz | accepted | — |
 | C55 | Gulfam S. | accepted | — |
-| C57 | Nuno Macieira | accepted | — |
 | C59 | Faizan Pasha | accepted | — |
 | C6 | Halil Kutluğ Kabahasanoğlu | accepted | — |
 | C7 | Murat Terlemez | accepted | — |
@@ -125,6 +124,7 @@ _Channels are counted separately._
 | C27 | Nastassia Ramazankhani | off_scope | — |
 | C34 | Süleyman Argün | off_scope | — |
 | C39 | Göksel Arcan | off_scope | — |
+| C57 | Nuno Macieira | off_scope | — |
 | C61 | Yasin Yücedağ | off_scope | — |
 | C8 | Burç Çetin Tezgel | off_scope | — |
 | C9 | Emre Uyanık | off_scope | — |

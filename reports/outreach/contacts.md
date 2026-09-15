@@ -4,7 +4,7 @@ idea: industrial-process-data-infrastructure
 last_updated: 2026-09-14
 totals:
   targeted: 191
-  invited: 139
+  invited: 140
   accepted: 26
   scheduled: 0
   done: 5
@@ -5853,9 +5853,10 @@ degree: 3rd+
 mutuals_count:
 active_last_30d: unknown
 open_to_work: false
-outreach_status: pending
+outreach_status: invited
 found_date: 2026-09-14
-notes: "[profile read 2026-09-15] details/experience: Lead Scientist PolyGone Oct 2024-present (North Brunswick NJ); graduate researcher Princeton 2018-24. English. Passes. Same competitor caution as the PolyGone founders."
+notes: "[profile read 2026-09-15] details/experience: Lead Scientist PolyGone Oct 2024-present (North Brunswick NJ); graduate researcher Princeton 2018-24. English. Passes. Same competitor caution as the PolyGone founders. [invited 2026-09-14] bare invite via custom-invite modal, modal name confirmed Yueyu Yao, sent by Claude at founder's instruction."
+
 
 ## Anshu Malika G.
 

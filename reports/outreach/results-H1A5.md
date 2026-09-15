@@ -8,7 +8,7 @@ _Generated 2026-09-15. Numbers are the funnel over contacts tagged H1A5._
 
 | channel | targeted | contacted | replied | qualified replied | reply rate |
 |---|---|---|---|---|---|
-| LinkedIn | 2 | 2 | 2 | 2 | 100.0% |
+| LinkedIn | 18 | 2 | 2 | 2 | 100.0% |
 | phone | 0 | 0 | 0 | 0 | — |
 
 _Channels are counted separately._
@@ -17,8 +17,24 @@ _Channels are counted separately._
 
 | id | name | status | call stage |
 |---|---|---|---|
+| C196 | John Krieg | pending | — |
+| C181 | Adam Root | invited | — |
+| C182 | Mojca Zupan | invited | — |
+| C183 | Andrej Kržan | invited | — |
+| C184 | Max Pennington | invited | — |
+| C185 | David Dillman | invited | — |
+| C186 | Neil Austin | invited | — |
+| C187 | Thomas Cobb | invited | — |
+| C188 | Sertug D. | invited | — |
+| C189 | Nathaniel Banks | invited | — |
+| C190 | Yidian Liu | invited | — |
+| C191 | Yueyu Yao | invited | — |
+| C192 | Anshu Malika G. | invited | — |
+| C193 | Mohamed Taha | invited | — |
+| C194 | Achala Herath | invited | — |
 | C176 | Paul (surname not recorded) | done | completed |
 | C177 | Mark (surname not recorded) | done | completed |
 | C178 | Martin (surname not recorded) | done | completed |
 | C179 | Sharif (surname not recorded) | done | completed |
 | C180 | Varija Subasingha | done | completed |
+| C195 | Katrin Schuhen | off_scope | — |
