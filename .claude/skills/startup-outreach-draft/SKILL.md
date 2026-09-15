@@ -54,6 +54,15 @@ assumption the message is trying to test, and guessing produces confident nonsen
 If `contacts.md` is missing, create it with the frontmatter from `schemas/contact.md`.
 That is a first run, not an error.
 
+## Hard rule before anything else: the profile must be in English
+
+Read the live headline and role text. If they are not in English and the Languages section
+does not list English, do NOT draft: set `outreach_status: off_scope` with the language in
+`notes:` and move on. No founder release, no "they accepted anyway", no exceptions
+(`schemas/copy-rules.md` LR-B31a; founder rule, restated after drafts went out to
+Portuguese- and Italian-only profiles). The co-founder joins every thread and the contact
+must be able to read the message.
+
 ## Identify the idea and assumption
 
 Read `graph.md`

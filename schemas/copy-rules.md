@@ -320,7 +320,10 @@ already connected; it does not soften this rule for anyone not yet invited. The 
 before the invite: headline and role descriptions in English, or an English entry in the
 Languages section, or the contact passes. Otherwise the contact is `off_scope` with the
 language named in `notes:`. An accepted non-English profile already in the ledger gets no
-Msg 1: set `outreach_status: held`, cite this rule, and pull any draft from the archive.
+Msg 1: set `outreach_status: off_scope`, cite this rule, and pull any draft from the archive.
+This applies to DRAFTING too, and a founder release does not override it (founder, 2026-09-14,
+after drafts were written for released Turkish-, Italian- and Portuguese-only profiles and
+then cut).
 
 **LR-B24 — No cliché or stock cold-outreach phrases.** Reject any draft containing a
 blacklisted stock phrase before it reaches the founder, case-insensitive, the same mechanism

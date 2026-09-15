@@ -5,7 +5,7 @@ last_updated: 2026-09-14
 totals:
   targeted: 191
   invited: 140
-  accepted: 26
+  accepted: 11
   scheduled: 0
   done: 5
   no_reply: 0
@@ -72,9 +72,9 @@ degree: 2nd
 mutuals_count: 
 active_last_30d: unknown
 open_to_work: false
-outreach_status: accepted
+outreach_status: off_scope
 found_date: 2026-09-13
-notes: "[profile read 2026-09-13] details/experience: Fabrika Müdürü Mahmutoğlu Tekstil Feb 2025-present; Fabrika Müdürü Pantone Boya Tekstil (Çorlu dyehouse) Jul 2024-Jan 2025; project manager Örkum Tekstil 2023-24; İşletme Müdürü Akdem Tekstil, Bursa, 2003-2023 (20 yrs). Passes. [invited 2026-09-13] bare invite, modal name confirmed Ali Kemal KUL, sent by Claude at founder's instruction. [language 2026-09-14] Profile text is Turkish; invite already out. Per LR-B31a: if they accept, no Msg 1 unless the founder releases them by name. [accepted 2026-09-14] 1st degree now. [held 2026-09-14] Budget holder, but profile not in English (LR-B31a): no Msg 1 unless the founder releases by name. [released 2026-09-14] Founder released this non-English-profile budget holder by name (LR-B31a exception). [msg1 drafted 2026-09-14] LR-B33 shape, English, from a fresh details/experience snapshot."
+notes: "[profile read 2026-09-13] details/experience: Fabrika Müdürü Mahmutoğlu Tekstil Feb 2025-present; Fabrika Müdürü Pantone Boya Tekstil (Çorlu dyehouse) Jul 2024-Jan 2025; project manager Örkum Tekstil 2023-24; İşletme Müdürü Akdem Tekstil, Bursa, 2003-2023 (20 yrs). Passes. [invited 2026-09-13] bare invite, modal name confirmed Ali Kemal KUL, sent by Claude at founder's instruction. [language 2026-09-14] Profile text is Turkish; invite already out. Per LR-B31a: if they accept, no Msg 1 unless the founder releases them by name. [accepted 2026-09-14] 1st degree now. [held 2026-09-14] Budget holder, but profile not in English (LR-B31a): no Msg 1 unless the founder releases by name. [released 2026-09-14] Founder released this non-English-profile budget holder by name (LR-B31a exception). [msg1 drafted 2026-09-14] LR-B33 shape, English, from a fresh details/experience snapshot. [audit off_scope 2026-09-14] Founder cut: profile text is Turkish, no English; LR-B31a applies to drafting as well as inviting from today. Draft withdrawn; do not message."
 
 ## Veysel Özgür
 
@@ -102,9 +102,9 @@ degree: 2nd
 mutuals_count: 
 active_last_30d: unknown
 open_to_work: false
-outreach_status: accepted
+outreach_status: off_scope
 found_date: 2026-09-13
-notes: "[profile read 2026-09-13] details/experience: İşletme Müdürü Denbassan Baskı Boya Sep 2017-present (9 yrs); İşletme Şefi Bez Tekstil 2014-17; textile engineer Anteks 2010-14. Passes. [invited 2026-09-13] bare invite, modal name confirmed Veysel Özgür, sent by Claude at founder's instruction. [language 2026-09-14] Profile text is Turkish; invite already out. Per LR-B31a: if they accept, no Msg 1 unless the founder releases them by name. [accepted 2026-09-14] 1st degree now. [held 2026-09-14] Budget holder, but profile not in English (LR-B31a): no Msg 1 unless the founder releases by name. [released 2026-09-14] Founder released this non-English-profile budget holder by name (LR-B31a exception). [msg1 drafted 2026-09-14] LR-B33 shape, English, from a fresh details/experience snapshot."
+notes: "[profile read 2026-09-13] details/experience: İşletme Müdürü Denbassan Baskı Boya Sep 2017-present (9 yrs); İşletme Şefi Bez Tekstil 2014-17; textile engineer Anteks 2010-14. Passes. [invited 2026-09-13] bare invite, modal name confirmed Veysel Özgür, sent by Claude at founder's instruction. [language 2026-09-14] Profile text is Turkish; invite already out. Per LR-B31a: if they accept, no Msg 1 unless the founder releases them by name. [accepted 2026-09-14] 1st degree now. [held 2026-09-14] Budget holder, but profile not in English (LR-B31a): no Msg 1 unless the founder releases by name. [released 2026-09-14] Founder released this non-English-profile budget holder by name (LR-B31a exception). [msg1 drafted 2026-09-14] LR-B33 shape, English, from a fresh details/experience snapshot. [audit off_scope 2026-09-14] Founder cut: profile text is Turkish, no English; LR-B31a applies to drafting as well as inviting from today. Draft withdrawn; do not message."
 
 ## Rabia Akkurt
 
@@ -132,9 +132,9 @@ degree: 2nd
 mutuals_count: 
 active_last_30d: unknown
 open_to_work: false
-outreach_status: accepted
+outreach_status: off_scope
 found_date: 2026-09-13
-notes: "[profile read 2026-09-13] details/experience: Boyahane Şefi HMK Tekstil Sep 2022-present (4 yrs); production lead Sinateks/Boykim 2021-23; chemical engineer. Passes. [invited 2026-09-13] bare invite via custom-invite modal, name confirmed Rabia AKKURT, sent by Claude at founder's instruction. [language 2026-09-14] Profile text is Turkish; invite already out. Per LR-B31a: if they accept, no Msg 1 unless the founder releases them by name. [held 2026-09-14] Title outside the budget-holder ICP the founders set for H1A2/H1A3/H1A6 on 2026-09-14 (cannot sign for spend). Not interviewed unless the founder releases them by name; no Msg 1. [accepted 2026-09-14] 1st degree now; stays held (practitioner). [released 2026-09-14] Founder instruction: message everyone who accepts, regardless of title or profile language. Practitioner answers count for the mechanism half of H1A2 only (LR-B12), not for H1A3/H1A6. [msg1 drafted 2026-09-14] LR-B33 shape, English, after founder release; snapshot 2026-09-14."
+notes: "[profile read 2026-09-13] details/experience: Boyahane Şefi HMK Tekstil Sep 2022-present (4 yrs); production lead Sinateks/Boykim 2021-23; chemical engineer. Passes. [invited 2026-09-13] bare invite via custom-invite modal, name confirmed Rabia AKKURT, sent by Claude at founder's instruction. [language 2026-09-14] Profile text is Turkish; invite already out. Per LR-B31a: if they accept, no Msg 1 unless the founder releases them by name. [held 2026-09-14] Title outside the budget-holder ICP the founders set for H1A2/H1A3/H1A6 on 2026-09-14 (cannot sign for spend). Not interviewed unless the founder releases them by name; no Msg 1. [accepted 2026-09-14] 1st degree now; stays held (practitioner). [released 2026-09-14] Founder instruction: message everyone who accepts, regardless of title or profile language. Practitioner answers count for the mechanism half of H1A2 only (LR-B12), not for H1A3/H1A6. [msg1 drafted 2026-09-14] LR-B33 shape, English, after founder release; snapshot 2026-09-14. [audit off_scope 2026-09-14] Founder cut: profile text is Turkish, no English; LR-B31a applies to drafting as well as inviting from today. Draft withdrawn; do not message."
 
 ## Mustafa Salih
 
@@ -162,9 +162,9 @@ degree: 2nd
 mutuals_count: 1
 active_last_30d: unknown
 open_to_work: false
-outreach_status: accepted
+outreach_status: off_scope
 found_date: 2026-09-13
-notes: "[profile read 2026-09-13] details/experience: Üretim Müdürü Yalçın Boya Tekstil Aug 2015-present (11 yrs); earlier planning/ERP roles in electronics. Company name says dyeing textile; confirm the plant does its own wet processing on the first call. Passes. [invited 2026-09-13] bare invite via custom-invite modal, name confirmed Mustafa SALİH, sent by Claude at founder's instruction. [accepted 2026-09-14] connection accepted (seen in Connections list, recently added). [msg1 drafted 2026-09-14] Msg 1 permission ask drafted from a fresh details/experience snapshot; inbox searched, no prior thread. Copy in copy/H1A2-linkedin.md. [language 2026-09-14] Profile text Turkish only, no languages listed; English reply ability unknown. Written to in English per LR-B31. [held 2026-09-14] Profile text is Turkish only; per LR-B31a no Msg 1 goes out and the 2026-09-14 draft is withdrawn from the archive. Founder may release by name. [released 2026-09-14] Founder instruction: message everyone who accepts, regardless of title or profile language. Practitioner answers count for the mechanism half of H1A2 only (LR-B12), not for H1A3/H1A6. [msg1 drafted 2026-09-14] LR-B33 shape, English, after founder release; snapshot 2026-09-14."
+notes: "[profile read 2026-09-13] details/experience: Üretim Müdürü Yalçın Boya Tekstil Aug 2015-present (11 yrs); earlier planning/ERP roles in electronics. Company name says dyeing textile; confirm the plant does its own wet processing on the first call. Passes. [invited 2026-09-13] bare invite via custom-invite modal, name confirmed Mustafa SALİH, sent by Claude at founder's instruction. [accepted 2026-09-14] connection accepted (seen in Connections list, recently added). [msg1 drafted 2026-09-14] Msg 1 permission ask drafted from a fresh details/experience snapshot; inbox searched, no prior thread. Copy in copy/H1A2-linkedin.md. [language 2026-09-14] Profile text Turkish only, no languages listed; English reply ability unknown. Written to in English per LR-B31. [held 2026-09-14] Profile text is Turkish only; per LR-B31a no Msg 1 goes out and the 2026-09-14 draft is withdrawn from the archive. Founder may release by name. [released 2026-09-14] Founder instruction: message everyone who accepts, regardless of title or profile language. Practitioner answers count for the mechanism half of H1A2 only (LR-B12), not for H1A3/H1A6. [msg1 drafted 2026-09-14] LR-B33 shape, English, after founder release; snapshot 2026-09-14. [audit off_scope 2026-09-14] Founder cut: profile text is Turkish, no English; LR-B31a applies to drafting as well as inviting from today. Draft withdrawn; do not message."
 
 ## Halil Kutluğ Kabahasanoğlu
 
@@ -462,9 +462,9 @@ degree: 2nd
 mutuals_count: 
 active_last_30d: unknown
 open_to_work: false
-outreach_status: accepted
+outreach_status: off_scope
 found_date: 2026-09-13
-notes: "[profile read 2026-09-13] details/experience: Yıkama üretim müdürü Baykan Denim Dec 2021-present; deputy washing manager 2016-22; production planning 2014-17; 12 yrs at Baykan. Passes. [invited 2026-09-13] bare invite via custom-invite modal, name confirmed Yasin TAŞTEKİN, sent by Claude at founder's instruction. [language 2026-09-14] Profile text is Turkish; invite already out. Per LR-B31a: if they accept, no Msg 1 unless the founder releases them by name. [accepted 2026-09-14] 1st degree now. [held 2026-09-14] Budget holder, but profile not in English (LR-B31a): no Msg 1 unless the founder releases by name. [released 2026-09-14] Founder released this non-English-profile budget holder by name (LR-B31a exception). [msg1 drafted 2026-09-14] LR-B33 shape, English, from a fresh details/experience snapshot."
+notes: "[profile read 2026-09-13] details/experience: Yıkama üretim müdürü Baykan Denim Dec 2021-present; deputy washing manager 2016-22; production planning 2014-17; 12 yrs at Baykan. Passes. [invited 2026-09-13] bare invite via custom-invite modal, name confirmed Yasin TAŞTEKİN, sent by Claude at founder's instruction. [language 2026-09-14] Profile text is Turkish; invite already out. Per LR-B31a: if they accept, no Msg 1 unless the founder releases them by name. [accepted 2026-09-14] 1st degree now. [held 2026-09-14] Budget holder, but profile not in English (LR-B31a): no Msg 1 unless the founder releases by name. [released 2026-09-14] Founder released this non-English-profile budget holder by name (LR-B31a exception). [msg1 drafted 2026-09-14] LR-B33 shape, English, from a fresh details/experience snapshot. [audit off_scope 2026-09-14] Founder cut: profile text is Turkish, no English; LR-B31a applies to drafting as well as inviting from today. Draft withdrawn; do not message."
 
 ## Mehmet Adıyaman
 
@@ -522,9 +522,9 @@ degree: 2nd
 mutuals_count: 
 active_last_30d: unknown
 open_to_work: false
-outreach_status: accepted
+outreach_status: off_scope
 found_date: 2026-09-13
-notes: "[profile read 2026-09-13] details/experience: senior product-development unit manager Denimvillage/Suglobal Mar 2024-present; R&D Manager Vişne Tekstil 2020-24. Surname not shown on LinkedIn. Passes. [invited 2026-09-13] bare invite via custom-invite modal, name confirmed Ersen Ş., sent by Claude at founder's instruction. [language 2026-09-14] Profile text is Turkish; invite already out. Per LR-B31a: if they accept, no Msg 1 unless the founder releases them by name. [held 2026-09-14] Title outside the budget-holder ICP the founders set for H1A2/H1A3/H1A6 on 2026-09-14 (cannot sign for spend). Not interviewed unless the founder releases them by name; no Msg 1. [accepted 2026-09-14] 1st degree now; stays held (practitioner). [released 2026-09-14] Founder instruction: message everyone who accepts, regardless of title or profile language. Practitioner answers count for the mechanism half of H1A2 only (LR-B12), not for H1A3/H1A6. [msg1 drafted 2026-09-14] LR-B33 shape, English, after founder release; snapshot 2026-09-14."
+notes: "[profile read 2026-09-13] details/experience: senior product-development unit manager Denimvillage/Suglobal Mar 2024-present; R&D Manager Vişne Tekstil 2020-24. Surname not shown on LinkedIn. Passes. [invited 2026-09-13] bare invite via custom-invite modal, name confirmed Ersen Ş., sent by Claude at founder's instruction. [language 2026-09-14] Profile text is Turkish; invite already out. Per LR-B31a: if they accept, no Msg 1 unless the founder releases them by name. [held 2026-09-14] Title outside the budget-holder ICP the founders set for H1A2/H1A3/H1A6 on 2026-09-14 (cannot sign for spend). Not interviewed unless the founder releases them by name; no Msg 1. [accepted 2026-09-14] 1st degree now; stays held (practitioner). [released 2026-09-14] Founder instruction: message everyone who accepts, regardless of title or profile language. Practitioner answers count for the mechanism half of H1A2 only (LR-B12), not for H1A3/H1A6. [msg1 drafted 2026-09-14] LR-B33 shape, English, after founder release; snapshot 2026-09-14. [audit off_scope 2026-09-14] Founder cut: profile text is Turkish, no English; LR-B31a applies to drafting as well as inviting from today. Draft withdrawn; do not message."
 
 ## Ahmet Kaleli
 
@@ -582,9 +582,9 @@ degree: 2nd
 mutuals_count: 
 active_last_30d: unknown
 open_to_work: false
-outreach_status: accepted
+outreach_status: off_scope
 found_date: 2026-09-13
-notes: "[profile read 2026-09-13] details/experience: Realteks Denim since Mar 2019: production director Jul 2021-present, dye-finishing plant manager 2019-present, production group manager 2019-present; Kimtex 2010-19 (deputy dyehouse manager, plant chief); Rayon Tekstil dyehouse 2008-10. Passes. [invited 2026-09-13] bare invite via custom-invite modal, name confirmed Yunus ÖZ, sent by Claude at founder's instruction. [language 2026-09-14] Profile text is Turkish; invite already out. Per LR-B31a: if they accept, no Msg 1 unless the founder releases them by name. [accepted 2026-09-14] 1st degree now. [held 2026-09-14] Budget holder, but profile not in English (LR-B31a): no Msg 1 unless the founder releases by name. [released 2026-09-14] Founder released this non-English-profile budget holder by name (LR-B31a exception). [msg1 drafted 2026-09-14] LR-B33 shape, English, from a fresh details/experience snapshot."
+notes: "[profile read 2026-09-13] details/experience: Realteks Denim since Mar 2019: production director Jul 2021-present, dye-finishing plant manager 2019-present, production group manager 2019-present; Kimtex 2010-19 (deputy dyehouse manager, plant chief); Rayon Tekstil dyehouse 2008-10. Passes. [invited 2026-09-13] bare invite via custom-invite modal, name confirmed Yunus ÖZ, sent by Claude at founder's instruction. [language 2026-09-14] Profile text is Turkish; invite already out. Per LR-B31a: if they accept, no Msg 1 unless the founder releases them by name. [accepted 2026-09-14] 1st degree now. [held 2026-09-14] Budget holder, but profile not in English (LR-B31a): no Msg 1 unless the founder releases by name. [released 2026-09-14] Founder released this non-English-profile budget holder by name (LR-B31a exception). [msg1 drafted 2026-09-14] LR-B33 shape, English, from a fresh details/experience snapshot. [audit off_scope 2026-09-14] Founder cut: profile text is Turkish, no English; LR-B31a applies to drafting as well as inviting from today. Draft withdrawn; do not message."
 
 ## Hüseyin Çınar
 
@@ -702,9 +702,9 @@ degree: 2nd
 mutuals_count: 
 active_last_30d: unknown
 open_to_work: false
-outreach_status: accepted
+outreach_status: off_scope
 found_date: 2026-09-13
-notes: "[profile read 2026-09-13] details/experience: Kumaş boyama Apre Şefi, Teksel Tekstil A.Ş. (single entry, no dates shown). Thin profile; the vanity slug itself carries the title. Passes on function and company; tenure unknown. [invited 2026-09-13] bare invite via custom-invite modal, name confirmed Rafet Çelebi, sent by Claude at founder's instruction. [language 2026-09-14] Profile text is Turkish; invite already out. Per LR-B31a: if they accept, no Msg 1 unless the founder releases them by name. [held 2026-09-14] Title outside the budget-holder ICP the founders set for H1A2/H1A3/H1A6 on 2026-09-14 (cannot sign for spend). Not interviewed unless the founder releases them by name; no Msg 1. [accepted 2026-09-14] 1st degree now; stays held (practitioner). [released 2026-09-14] Founder instruction: message everyone who accepts, regardless of title or profile language. Practitioner answers count for the mechanism half of H1A2 only (LR-B12), not for H1A3/H1A6. [msg1 drafted 2026-09-14] LR-B33 shape, English, after founder release; snapshot 2026-09-14."
+notes: "[profile read 2026-09-13] details/experience: Kumaş boyama Apre Şefi, Teksel Tekstil A.Ş. (single entry, no dates shown). Thin profile; the vanity slug itself carries the title. Passes on function and company; tenure unknown. [invited 2026-09-13] bare invite via custom-invite modal, name confirmed Rafet Çelebi, sent by Claude at founder's instruction. [language 2026-09-14] Profile text is Turkish; invite already out. Per LR-B31a: if they accept, no Msg 1 unless the founder releases them by name. [held 2026-09-14] Title outside the budget-holder ICP the founders set for H1A2/H1A3/H1A6 on 2026-09-14 (cannot sign for spend). Not interviewed unless the founder releases them by name; no Msg 1. [accepted 2026-09-14] 1st degree now; stays held (practitioner). [released 2026-09-14] Founder instruction: message everyone who accepts, regardless of title or profile language. Practitioner answers count for the mechanism half of H1A2 only (LR-B12), not for H1A3/H1A6. [msg1 drafted 2026-09-14] LR-B33 shape, English, after founder release; snapshot 2026-09-14. [audit off_scope 2026-09-14] Founder cut: profile text is Turkish, no English; LR-B31a applies to drafting as well as inviting from today. Draft withdrawn; do not message."
 
 ## B. Hande Tezer
 
@@ -973,9 +973,9 @@ degree: 2nd
 mutuals_count: 
 active_last_30d: unknown
 open_to_work: false
-outreach_status: accepted
+outreach_status: off_scope
 found_date: 2026-09-13
-notes: "[profile read 2026-09-13] details/experience: Texco Boya Apre since Jan 2024 as chemical engineer and sustainability (2 yrs 9 mos), internship there 2022; headline names chemical management and social compliance. Passes. [invited 2026-09-13] bare invite via custom-invite modal, name confirmed İrem Terzi, sent by Claude at founder's instruction. [language 2026-09-14] Profile text is Turkish; invite already out. Per LR-B31a: if they accept, no Msg 1 unless the founder releases them by name. [held 2026-09-14] Title outside the budget-holder ICP the founders set for H1A2/H1A3/H1A6 on 2026-09-14 (cannot sign for spend). Not interviewed unless the founder releases them by name; no Msg 1. [released 2026-09-14] Founder instruction: message everyone who accepts, regardless of title or profile language. Practitioner answers count for the mechanism half of H1A2 only (LR-B12), not for H1A3/H1A6. [accepted 2026-09-14] 1st degree, Message button live. [msg1 drafted 2026-09-14] LR-B33 shape, English, fresh details/experience snapshot; inbox searched by surname, no thread."
+notes: "[profile read 2026-09-13] details/experience: Texco Boya Apre since Jan 2024 as chemical engineer and sustainability (2 yrs 9 mos), internship there 2022; headline names chemical management and social compliance. Passes. [invited 2026-09-13] bare invite via custom-invite modal, name confirmed İrem Terzi, sent by Claude at founder's instruction. [language 2026-09-14] Profile text is Turkish; invite already out. Per LR-B31a: if they accept, no Msg 1 unless the founder releases them by name. [held 2026-09-14] Title outside the budget-holder ICP the founders set for H1A2/H1A3/H1A6 on 2026-09-14 (cannot sign for spend). Not interviewed unless the founder releases them by name; no Msg 1. [released 2026-09-14] Founder instruction: message everyone who accepts, regardless of title or profile language. Practitioner answers count for the mechanism half of H1A2 only (LR-B12), not for H1A3/H1A6. [accepted 2026-09-14] 1st degree, Message button live. [msg1 drafted 2026-09-14] LR-B33 shape, English, fresh details/experience snapshot; inbox searched by surname, no thread. [audit off_scope 2026-09-14] Founder cut: profile text is Turkish, no English; LR-B31a applies to drafting as well as inviting from today. Draft withdrawn; do not message."
 
 ## Sercan Yaz
 
@@ -1063,9 +1063,9 @@ degree: 2nd
 mutuals_count: 
 active_last_30d: unknown
 open_to_work: false
-outreach_status: accepted
+outreach_status: off_scope
 found_date: 2026-09-13
-notes: "[profile read 2026-09-13] details/experience: Makine Enerji Müdürü at EG (Egypt) Jul 2026-present; DNM Denim 2011-26, mechanical and utilities manager 2019-26, own words: responsible for maintenance of the wastewater treatment plant, boiler house, gas station and rope dyeing/finishing machines; technician at Bossa 2004-10. Passes. [invited 2026-09-13] bare invite via custom-invite modal, name confirmed Hüseyin özdilek Körmen, sent by Claude at founder's instruction. [language 2026-09-14] Profile text is Turkish; invite already out. Per LR-B31a: if they accept, no Msg 1 unless the founder releases them by name. [held 2026-09-14] Title outside the budget-holder ICP the founders set for H1A2/H1A3/H1A6 on 2026-09-14 (cannot sign for spend). Not interviewed unless the founder releases them by name; no Msg 1. [released 2026-09-14] Founder instruction: message everyone who accepts, regardless of title or profile language. Practitioner answers count for the mechanism half of H1A2 only (LR-B12), not for H1A3/H1A6. [accepted 2026-09-14] 1st degree, Message button live. [msg1 drafted 2026-09-14] LR-B33 shape, English, fresh details/experience snapshot; inbox searched by surname, no thread."
+notes: "[profile read 2026-09-13] details/experience: Makine Enerji Müdürü at EG (Egypt) Jul 2026-present; DNM Denim 2011-26, mechanical and utilities manager 2019-26, own words: responsible for maintenance of the wastewater treatment plant, boiler house, gas station and rope dyeing/finishing machines; technician at Bossa 2004-10. Passes. [invited 2026-09-13] bare invite via custom-invite modal, name confirmed Hüseyin özdilek Körmen, sent by Claude at founder's instruction. [language 2026-09-14] Profile text is Turkish; invite already out. Per LR-B31a: if they accept, no Msg 1 unless the founder releases them by name. [held 2026-09-14] Title outside the budget-holder ICP the founders set for H1A2/H1A3/H1A6 on 2026-09-14 (cannot sign for spend). Not interviewed unless the founder releases them by name; no Msg 1. [released 2026-09-14] Founder instruction: message everyone who accepts, regardless of title or profile language. Practitioner answers count for the mechanism half of H1A2 only (LR-B12), not for H1A3/H1A6. [accepted 2026-09-14] 1st degree, Message button live. [msg1 drafted 2026-09-14] LR-B33 shape, English, fresh details/experience snapshot; inbox searched by surname, no thread. [audit off_scope 2026-09-14] Founder cut: profile text is Turkish, no English; LR-B31a applies to drafting as well as inviting from today. Draft withdrawn; do not message."
 
 ## Murat İ.
 
@@ -1123,9 +1123,9 @@ degree: 2nd
 mutuals_count: 
 active_last_30d: unknown
 open_to_work: false
-outreach_status: accepted
+outreach_status: off_scope
 found_date: 2026-09-13
-notes: "[profile read 2026-09-13] details/experience: Işıksoy Tekstil since Sep 2009: QC supervisor Nov 2019-present, R&D centre manager 2017-19, QC chief 2009-17; dyehouse & QC chief Sönmez Filament 2005-08. Passes. [invited 2026-09-13] bare invite via custom-invite modal, name confirmed Erdal GÜLCAN, sent by Claude at founder's instruction. [accepted 2026-09-14] connection accepted (seen in Connections list, recently added). [msg1 drafted 2026-09-14] Msg 1 permission ask drafted from a fresh details/experience snapshot; inbox searched, no prior thread. Copy in copy/H1A2-linkedin.md. [language 2026-09-14] Profile text Turkish only, no languages listed; English reply ability unknown. Written to in English per LR-B31. [held 2026-09-14] Profile text is Turkish only; per LR-B31a no Msg 1 goes out and the 2026-09-14 draft is withdrawn from the archive. Founder may release by name. [released 2026-09-14] Founder instruction: message everyone who accepts, regardless of title or profile language. Practitioner answers count for the mechanism half of H1A2 only (LR-B12), not for H1A3/H1A6. [msg1 drafted 2026-09-14] LR-B33 shape, English, after founder release; snapshot 2026-09-14."
+notes: "[profile read 2026-09-13] details/experience: Işıksoy Tekstil since Sep 2009: QC supervisor Nov 2019-present, R&D centre manager 2017-19, QC chief 2009-17; dyehouse & QC chief Sönmez Filament 2005-08. Passes. [invited 2026-09-13] bare invite via custom-invite modal, name confirmed Erdal GÜLCAN, sent by Claude at founder's instruction. [accepted 2026-09-14] connection accepted (seen in Connections list, recently added). [msg1 drafted 2026-09-14] Msg 1 permission ask drafted from a fresh details/experience snapshot; inbox searched, no prior thread. Copy in copy/H1A2-linkedin.md. [language 2026-09-14] Profile text Turkish only, no languages listed; English reply ability unknown. Written to in English per LR-B31. [held 2026-09-14] Profile text is Turkish only; per LR-B31a no Msg 1 goes out and the 2026-09-14 draft is withdrawn from the archive. Founder may release by name. [released 2026-09-14] Founder instruction: message everyone who accepts, regardless of title or profile language. Practitioner answers count for the mechanism half of H1A2 only (LR-B12), not for H1A3/H1A6. [msg1 drafted 2026-09-14] LR-B33 shape, English, after founder release; snapshot 2026-09-14. [audit off_scope 2026-09-14] Founder cut: profile text is Turkish, no English; LR-B31a applies to drafting as well as inviting from today. Draft withdrawn; do not message."
 
 ## Murat Gülay
 
@@ -1153,9 +1153,9 @@ degree: 2nd
 mutuals_count: 
 active_last_30d: unknown
 open_to_work: false
-outreach_status: accepted
+outreach_status: off_scope
 found_date: 2026-09-13
-notes: "[profile read 2026-09-13] details/experience: Üretim ve Kalite Müdürü RB Karesi Tekstil Jul 2017-present (9 yrs); own words: audits knitting, weaving, dyeing and printing processes, 200-person production and quality team. Passes. [invited 2026-09-13] bare invite via custom-invite modal, name confirmed Murat Gülay, sent by Claude at founder's instruction. [accepted 2026-09-14] connection accepted (seen in Connections list, recently added). [msg1 drafted 2026-09-14] Msg 1 permission ask drafted from a fresh details/experience snapshot; inbox searched, no prior thread. Copy in copy/H1A2-linkedin.md. [language 2026-09-14] Profile text Turkish only, no languages listed; English reply ability unknown. Written to in English per LR-B31. [held 2026-09-14] Profile text is Turkish only; per LR-B31a no Msg 1 goes out and the 2026-09-14 draft is withdrawn from the archive. Founder may release by name. [released 2026-09-14] Founder instruction: message everyone who accepts, regardless of title or profile language. Practitioner answers count for the mechanism half of H1A2 only (LR-B12), not for H1A3/H1A6. [msg1 drafted 2026-09-14] LR-B33 shape, English, after founder release; snapshot 2026-09-14."
+notes: "[profile read 2026-09-13] details/experience: Üretim ve Kalite Müdürü RB Karesi Tekstil Jul 2017-present (9 yrs); own words: audits knitting, weaving, dyeing and printing processes, 200-person production and quality team. Passes. [invited 2026-09-13] bare invite via custom-invite modal, name confirmed Murat Gülay, sent by Claude at founder's instruction. [accepted 2026-09-14] connection accepted (seen in Connections list, recently added). [msg1 drafted 2026-09-14] Msg 1 permission ask drafted from a fresh details/experience snapshot; inbox searched, no prior thread. Copy in copy/H1A2-linkedin.md. [language 2026-09-14] Profile text Turkish only, no languages listed; English reply ability unknown. Written to in English per LR-B31. [held 2026-09-14] Profile text is Turkish only; per LR-B31a no Msg 1 goes out and the 2026-09-14 draft is withdrawn from the archive. Founder may release by name. [released 2026-09-14] Founder instruction: message everyone who accepts, regardless of title or profile language. Practitioner answers count for the mechanism half of H1A2 only (LR-B12), not for H1A3/H1A6. [msg1 drafted 2026-09-14] LR-B33 shape, English, after founder release; snapshot 2026-09-14. [audit off_scope 2026-09-14] Founder cut: profile text is Turkish, no English; LR-B31a applies to drafting as well as inviting from today. Draft withdrawn; do not message."
 
 ## Göksel Arcan
 
@@ -1364,9 +1364,9 @@ degree: 3rd+
 mutuals_count: 
 active_last_30d: unknown
 open_to_work: false
-outreach_status: accepted
+outreach_status: off_scope
 found_date: 2026-09-13
-notes: "[profile read 2026-09-13] details/experience: Tintoria Finissaggio Iride since Feb 2023, wet finishing department head Nov 2025-present, finishing operative before; Successori Reda finishing 2021-23. Passes. 3rd degree: no 2nd-degree Italian dye-house contacts exist. [invited 2026-09-13] bare invite via custom-invite modal, name confirmed Nicholas Filippone, sent by Claude at founder's instruction. [language 2026-09-14] Profile text is Italian; invite already out. Per LR-B31a: if they accept, no Msg 1 unless the founder releases them by name. [held 2026-09-14] Title outside the budget-holder ICP the founders set for H1A2/H1A3/H1A6 on 2026-09-14 (cannot sign for spend). Not interviewed unless the founder releases them by name; no Msg 1. [released 2026-09-14] Founder instruction: message everyone who accepts, regardless of title or profile language. Practitioner answers count for the mechanism half of H1A2 only (LR-B12), not for H1A3/H1A6. [accepted 2026-09-14] 1st degree, Message button live. [msg1 drafted 2026-09-14] LR-B33 shape, English, fresh details/experience snapshot; inbox searched by surname, no thread."
+notes: "[profile read 2026-09-13] details/experience: Tintoria Finissaggio Iride since Feb 2023, wet finishing department head Nov 2025-present, finishing operative before; Successori Reda finishing 2021-23. Passes. 3rd degree: no 2nd-degree Italian dye-house contacts exist. [invited 2026-09-13] bare invite via custom-invite modal, name confirmed Nicholas Filippone, sent by Claude at founder's instruction. [language 2026-09-14] Profile text is Italian; invite already out. Per LR-B31a: if they accept, no Msg 1 unless the founder releases them by name. [held 2026-09-14] Title outside the budget-holder ICP the founders set for H1A2/H1A3/H1A6 on 2026-09-14 (cannot sign for spend). Not interviewed unless the founder releases them by name; no Msg 1. [released 2026-09-14] Founder instruction: message everyone who accepts, regardless of title or profile language. Practitioner answers count for the mechanism half of H1A2 only (LR-B12), not for H1A3/H1A6. [accepted 2026-09-14] 1st degree, Message button live. [msg1 drafted 2026-09-14] LR-B33 shape, English, fresh details/experience snapshot; inbox searched by surname, no thread. [audit off_scope 2026-09-14] Founder cut: profile text is Italian, no English; LR-B31a applies to drafting as well as inviting from today. Draft withdrawn; do not message."
 
 ## Andrea Martinetti
 
@@ -1574,9 +1574,9 @@ degree: 3rd+
 mutuals_count: 
 active_last_30d: unknown
 open_to_work: false
-outreach_status: accepted
+outreach_status: off_scope
 found_date: 2026-09-13
-notes: "[profile read 2026-09-13] details/experience: Responsabile Reparto Finissaggio Albini Group Apr 2026-present; Eurojersey 2007-26: finishing head 2024-26, traditional print head 2019-24, rotary print operator 2010-19, colour kitchen 2007-10. Passes. 3rd degree. [invited 2026-09-13] bare invite via custom-invite modal, name confirmed Giacomo Speroni, sent by Claude at founder's instruction. [language 2026-09-14] Profile text is Italian; invite already out. Per LR-B31a: if they accept, no Msg 1 unless the founder releases them by name. [held 2026-09-14] Title outside the budget-holder ICP the founders set for H1A2/H1A3/H1A6 on 2026-09-14 (cannot sign for spend). Not interviewed unless the founder releases them by name; no Msg 1. [released 2026-09-14] Founder instruction: message everyone who accepts, regardless of title or profile language. Practitioner answers count for the mechanism half of H1A2 only (LR-B12), not for H1A3/H1A6. [accepted 2026-09-14] 1st degree, Message button live. [msg1 drafted 2026-09-14] LR-B33 shape, English, fresh details/experience snapshot; inbox searched by surname, no thread."
+notes: "[profile read 2026-09-13] details/experience: Responsabile Reparto Finissaggio Albini Group Apr 2026-present; Eurojersey 2007-26: finishing head 2024-26, traditional print head 2019-24, rotary print operator 2010-19, colour kitchen 2007-10. Passes. 3rd degree. [invited 2026-09-13] bare invite via custom-invite modal, name confirmed Giacomo Speroni, sent by Claude at founder's instruction. [language 2026-09-14] Profile text is Italian; invite already out. Per LR-B31a: if they accept, no Msg 1 unless the founder releases them by name. [held 2026-09-14] Title outside the budget-holder ICP the founders set for H1A2/H1A3/H1A6 on 2026-09-14 (cannot sign for spend). Not interviewed unless the founder releases them by name; no Msg 1. [released 2026-09-14] Founder instruction: message everyone who accepts, regardless of title or profile language. Practitioner answers count for the mechanism half of H1A2 only (LR-B12), not for H1A3/H1A6. [accepted 2026-09-14] 1st degree, Message button live. [msg1 drafted 2026-09-14] LR-B33 shape, English, fresh details/experience snapshot; inbox searched by surname, no thread. [audit off_scope 2026-09-14] Founder cut: profile text is Italian, no English; LR-B31a applies to drafting as well as inviting from today. Draft withdrawn; do not message."
 
 ## Mauro Franz
 
@@ -1604,9 +1604,9 @@ degree: 3rd+
 mutuals_count: 
 active_last_30d: unknown
 open_to_work: false
-outreach_status: accepted
+outreach_status: off_scope
 found_date: 2026-09-13
-notes: "[profile read 2026-09-13] details/experience: responsabile tintoria e finissaggio Remmert May 2026-present; tecnico tintoria Tinotex 2024-26; supervisore tintoria F.I.R. Fulda 2001-24 (23 yrs). Passes on function and history; new employer one month old. 3rd degree. [invited 2026-09-13] bare invite via custom-invite modal, name confirmed Mauro Franz, sent by Claude at founder's instruction. [language 2026-09-14] Profile text is Italian; invite already out. Per LR-B31a: if they accept, no Msg 1 unless the founder releases them by name. [held 2026-09-14] Title outside the budget-holder ICP the founders set for H1A2/H1A3/H1A6 on 2026-09-14 (cannot sign for spend). Not interviewed unless the founder releases them by name; no Msg 1. [released 2026-09-14] Founder instruction: message everyone who accepts, regardless of title or profile language. Practitioner answers count for the mechanism half of H1A2 only (LR-B12), not for H1A3/H1A6. [accepted 2026-09-14] 1st degree, Message button live. [msg1 drafted 2026-09-14] LR-B33 shape, English, fresh details/experience snapshot; inbox searched by surname, no thread."
+notes: "[profile read 2026-09-13] details/experience: responsabile tintoria e finissaggio Remmert May 2026-present; tecnico tintoria Tinotex 2024-26; supervisore tintoria F.I.R. Fulda 2001-24 (23 yrs). Passes on function and history; new employer one month old. 3rd degree. [invited 2026-09-13] bare invite via custom-invite modal, name confirmed Mauro Franz, sent by Claude at founder's instruction. [language 2026-09-14] Profile text is Italian; invite already out. Per LR-B31a: if they accept, no Msg 1 unless the founder releases them by name. [held 2026-09-14] Title outside the budget-holder ICP the founders set for H1A2/H1A3/H1A6 on 2026-09-14 (cannot sign for spend). Not interviewed unless the founder releases them by name; no Msg 1. [released 2026-09-14] Founder instruction: message everyone who accepts, regardless of title or profile language. Practitioner answers count for the mechanism half of H1A2 only (LR-B12), not for H1A3/H1A6. [accepted 2026-09-14] 1st degree, Message button live. [msg1 drafted 2026-09-14] LR-B33 shape, English, fresh details/experience snapshot; inbox searched by surname, no thread. [audit off_scope 2026-09-14] Founder cut: profile text is Italian, no English; LR-B31a applies to drafting as well as inviting from today. Draft withdrawn; do not message."
 
 ## Moshiur Rahman
 

@@ -229,7 +229,7 @@ Rule check: 334 chars, violations none. Inbox (LR-B25): surname search on Izgin'
 
 Rule check: 346 chars, violations none. Inbox (LR-B25): surname search on Izgin's account, no thread. Status at draft time: accepted 2026-09-14.
 
-## C2 — Ali Kemal Kul
+## C2 — [REMOVED 2026-09-14 — founder cut, profile not in English] Ali Kemal Kul
 
 ### Msg 1 — DRAFTED 2026-09-14 (LR-B33; founder-released non-English profile)
 
@@ -247,7 +247,7 @@ Rule check: 346 chars, violations none. Inbox (LR-B25): surname search on Izgin'
 
 Rule check: 341 chars, violations none. Status at draft time: accepted 2026-09-14.
 
-## C3 — Veysel Özgür
+## C3 — [REMOVED 2026-09-14 — founder cut, profile not in English] Veysel Özgür
 
 ### Msg 1 — DRAFTED 2026-09-14 (LR-B33; founder-released non-English profile)
 
@@ -263,7 +263,7 @@ Rule check: 341 chars, violations none. Status at draft time: accepted 2026-09-1
 
 Rule check: 302 chars, violations none. Status at draft time: accepted 2026-09-14.
 
-## C19 — Yunus Öz
+## C19 — [REMOVED 2026-09-14 — founder cut, profile not in English] Yunus Öz
 
 ### Msg 1 — DRAFTED 2026-09-14 (LR-B33; founder-released non-English profile)
 
@@ -296,7 +296,7 @@ Rule check: 298 chars, violations none. Status at draft time: accepted 2026-09-1
 
 Rule check: 287 chars, violations none. Status at draft time: accepted 2026-09-14.
 
-## C15 — Yasin Taştekin
+## C15 — [REMOVED 2026-09-14 — founder cut, profile not in English] Yasin Taştekin
 
 ### Msg 1 — DRAFTED 2026-09-14 (LR-B33; founder-released non-English profile)
 
@@ -347,7 +347,7 @@ Rule check: 356 chars, violations none. Status at draft time: accepted (released
 
 Rule check: 337 chars, violations none. Status at draft time: accepted (released 2026-09-14).
 
-## C38 — Murat Gülay
+## C38 — [REMOVED 2026-09-14 — founder cut, profile not in English] Murat Gülay
 
 ### Msg 1 — DRAFTED 2026-09-14 (LR-B33; founder released)
 
@@ -364,7 +364,7 @@ Rule check: 337 chars, violations none. Status at draft time: accepted (released
 
 Rule check: 323 chars, violations none. Status at draft time: accepted (released 2026-09-14).
 
-## C5 — Mustafa Salih
+## C5 — [REMOVED 2026-09-14 — founder cut, profile not in English] Mustafa Salih
 
 ### Msg 1 — DRAFTED 2026-09-14 (LR-B33; founder released)
 
@@ -380,7 +380,7 @@ Rule check: 323 chars, violations none. Status at draft time: accepted (released
 
 Rule check: 292 chars, violations none. Status at draft time: accepted (released 2026-09-14).
 
-## C37 — Erdal Gülcan
+## C37 — [REMOVED 2026-09-14 — founder cut, profile not in English] Erdal Gülcan
 
 ### Msg 1 — DRAFTED 2026-09-14 (LR-B33; founder released)
 
@@ -431,7 +431,7 @@ Rule check: 319 chars, violations none. Status at draft time: accepted (released
 
 Rule check: 286 chars, violations none. Status at draft time: accepted (released 2026-09-14).
 
-## C4 — Rabia Akkurt
+## C4 — [REMOVED 2026-09-14 — founder cut, profile not in English] Rabia Akkurt
 
 ### Msg 1 — DRAFTED 2026-09-14 (LR-B33; founder released)
 
@@ -447,7 +447,7 @@ Rule check: 286 chars, violations none. Status at draft time: accepted (released
 
 Rule check: 277 chars, violations none. Status at draft time: accepted (released 2026-09-14).
 
-## C17 — Ersen Ş.
+## C17 — [REMOVED 2026-09-14 — founder cut, profile not in English] Ersen Ş.
 
 ### Msg 1 — DRAFTED 2026-09-14 (LR-B33; founder released)
 
@@ -464,7 +464,7 @@ Rule check: 277 chars, violations none. Status at draft time: accepted (released
 
 Rule check: 322 chars, violations none. Status at draft time: accepted (released 2026-09-14).
 
-## C23 — Rafet Çelebi
+## C23 — [REMOVED 2026-09-14 — founder cut, profile not in English] Rafet Çelebi
 
 ### Msg 1 — DRAFTED 2026-09-14 (LR-B33; founder released)
 
@@ -480,7 +480,7 @@ Rule check: 322 chars, violations none. Status at draft time: accepted (released
 
 Rule check: 280 chars, violations none. Status at draft time: accepted (released 2026-09-14).
 
-## C32 — İrem Terzi
+## C32 — [REMOVED 2026-09-14 — founder cut, profile not in English] İrem Terzi
 
 ### Msg 1 — DRAFTED 2026-09-14 (LR-B33)
 
@@ -496,7 +496,7 @@ Rule check: 280 chars, violations none. Status at draft time: accepted (released
 
 Rule check: 301 chars, violations none. Inbox (LR-B25): surname search on Izgin's account, no thread. Status at draft time: accepted 2026-09-14.
 
-## C35 — Hüseyin Özdilek Körmen
+## C35 — [REMOVED 2026-09-14 — founder cut, profile not in English] Hüseyin Özdilek Körmen
 
 ### Msg 1 — DRAFTED 2026-09-14 (LR-B33)
 
@@ -513,7 +513,7 @@ Rule check: 301 chars, violations none. Inbox (LR-B25): surname search on Izgin'
 
 Rule check: 369 chars, violations none. Inbox (LR-B25): surname search on Izgin's account, no thread. Status at draft time: accepted 2026-09-14.
 
-## C45 — Nicholas Filippone
+## C45 — [REMOVED 2026-09-14 — founder cut, profile not in English] Nicholas Filippone
 
 ### Msg 1 — DRAFTED 2026-09-14 (LR-B33)
 
@@ -529,7 +529,7 @@ Rule check: 369 chars, violations none. Inbox (LR-B25): surname search on Izgin'
 
 Rule check: 306 chars, violations none. Inbox (LR-B25): surname search on Izgin's account, no thread. Status at draft time: accepted 2026-09-14.
 
-## C52 — Giacomo Speroni
+## C52 — [REMOVED 2026-09-14 — founder cut, profile not in English] Giacomo Speroni
 
 ### Msg 1 — DRAFTED 2026-09-14 (LR-B33)
 
@@ -546,7 +546,7 @@ Rule check: 306 chars, violations none. Inbox (LR-B25): surname search on Izgin'
 
 Rule check: 339 chars, violations none. Inbox (LR-B25): surname search on Izgin's account, no thread. Status at draft time: accepted 2026-09-14.
 
-## C53 — Mauro Franz
+## C53 — [REMOVED 2026-09-14 — founder cut, profile not in English] Mauro Franz
 
 ### Msg 1 — DRAFTED 2026-09-14 (LR-B33)
 
