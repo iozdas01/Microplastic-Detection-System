@@ -8,7 +8,7 @@ _Generated 2026-09-15. Numbers are the funnel over contacts tagged H1A6._
 
 | channel | targeted | contacted | replied | qualified replied | reply rate |
 |---|---|---|---|---|---|
-| LinkedIn | 94 | 1 | 1 | 1 | 100.0% |
+| LinkedIn | 95 | 1 | 1 | 1 | 100.0% |
 | phone | 0 | 0 | 0 | 0 | — |
 
 _Channels are counted separately._
@@ -25,6 +25,7 @@ _Channels are counted separately._
 | C266 | Jaime Gregorio | pending | — |
 | C269 | Tim Crabtree | pending | — |
 | C271 | John Hughes | pending | — |
+| C272 | Anant Ahuja | pending | — |
 | C144 | H. Abdullah Mahmood | invited | — |
 | C145 | Ashwani Sharma | invited | — |
 | C146 | Ihtsham Rasheed | invited | — |

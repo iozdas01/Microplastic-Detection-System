@@ -3,7 +3,7 @@ purpose: The contact ledger — one card per person targeted, invited or intervi
 idea: industrial-process-data-infrastructure
 last_updated: 2026-09-14
 totals:
-  targeted: 266
+  targeted: 269
   invited: 208
   accepted: 44
   scheduled: 0
@@ -8314,3 +8314,93 @@ open_to_work: false
 outreach_status: pending
 found_date: 2026-09-14
 notes: "[profile read 2026-09-15] details/experience: Sr Manager Corporate Labs Jul 2014-present (employer field reads only 'Sr Manager'); Sr Manager Mohawk Industries Jul 2014 (1 mo, Lyerly GA). English. HELD from invite: current employer not established on the profile (live-profile gate check 1)."
+
+## Anant Ahuja
+
+id: C272
+name: "Anant Ahuja"
+linkedin_url: https://www.linkedin.com/in/anant-ahuja43/
+linkedin_account: Izgin
+company: "Shahi Exports Pvt Ltd (India's largest apparel manufacturer)"
+role: "Head of ESG and Sustainability; CEO and Co-Founder, Good Business Lab"
+signal_type: profile_fit
+signal_multiplier: 1.0
+signal_source_url: "founder-supplied URL 2026-09-15"
+signal_excerpt: ""
+contact_role: buyer
+role_pts: 3
+tier: textile_mill
+size_band:
+assumptions_tested: [H1A2, H1A3, H1A6]
+validation_rationale: >
+  Heads ESG and sustainability at Shahi after thirteen years at the company; the person brand sustainability requests, including any microfibre or wastewater figure, land on at India's largest apparel maker.
+response_likelihood: 5
+likelihood_factors: "3rd degree (0) · head of ESG at a top supplier (+1) · same company as Rohit K. (C28), who reports into this function (+1)"
+channel: linkedin
+degree: 3rd+
+mutuals_count:
+active_last_30d: unknown
+open_to_work: false
+outreach_status: pending
+found_date: 2026-09-14
+notes: "[profile read 2026-09-15] details/experience: Head of ESG and Sustainability Shahi Exports Jan 2024-present; Head Organizational Development Shahi 2013-Jan 2024 (13 yrs 9 mos at Shahi); CEO and Co-Founder Good Business Lab 2017-present. English. Passes. [queued 2026-09-15] Founder-supplied; LinkedIn weekly invite limit reached, invite when it resets (board task logged). Rohit K. (C28) at Shahi already accepted."
+
+## Lizzie Sumnall
+
+id: C273
+name: "Lizzie Sumnall"
+linkedin_url: https://www.linkedin.com/in/lizzie-sumnall-7257ab4a/
+linkedin_account: Izgin
+company: "Burberry (brand; London)"
+role: "Senior Sustainability Manager"
+signal_type: profile_fit
+signal_multiplier: 1.0
+signal_source_url: "founder-supplied URL 2026-09-15"
+signal_excerpt: ""
+contact_role: buyer
+role_pts: 3
+tier: brand
+size_band:
+assumptions_tested: [H1A2, H1A3]
+validation_rationale: >
+  Senior sustainability manager at Burberry after six years as a Burberry product developer and technologist across jersey, athleisure and denim; knows both what the brand asks its mills for and how fabrics are made.
+response_likelihood: 4
+likelihood_factors: "3rd degree (0) · sustainability manager with product background (+1)"
+channel: linkedin
+degree: 3rd+
+mutuals_count:
+active_last_30d: unknown
+open_to_work: false
+outreach_status: pending
+found_date: 2026-09-14
+notes: "[profile read 2026-09-15] details/experience: Senior Sustainability Manager Burberry Oct 2023-present (London); Lead Product Developer Asantii 2021-23; Burberry 6 yrs 1 mo as product technologist and developer (jersey, athleisure, denim, outerwear). English. Passes (tier brand). [queued 2026-09-15] Founder-supplied; LinkedIn weekly invite limit reached, invite when it resets (board task logged)."
+
+## Delia Ibanez
+
+id: C274
+name: "Delia Ibanez"
+linkedin_url: https://www.linkedin.com/in/delia-ibanez-950b136/
+linkedin_account: Izgin
+company: "Desigual (brand; Barcelona)"
+role: "Head of Sustainability, CSR, Sourcing and Product Compliance"
+signal_type: profile_fit
+signal_multiplier: 1.0
+signal_source_url: "founder-supplied URL 2026-09-15"
+signal_excerpt: ""
+contact_role: buyer
+role_pts: 3
+tier: brand
+size_band:
+assumptions_tested: [H1A2, H1A3]
+validation_rationale: >
+  Heads sustainability, sourcing and product compliance at Desigual; owns what the brand requires from its suppliers on chemicals and environmental performance.
+response_likelihood: 4
+likelihood_factors: "3rd degree (0) · head of sustainability and product compliance (+1)"
+channel: linkedin
+degree: 3rd+
+mutuals_count:
+active_last_30d: unknown
+open_to_work: false
+outreach_status: pending
+found_date: 2026-09-14
+notes: "[profile read 2026-09-15] details/experience: Head of Sustainability, CSR, Sourcing and Product Compliance Desigual Jan 2025-present; Head of Sustainability and CSR Desigual Apr 2023-present (Barcelona); freelance sustainability consultant 2022-24. Titles and role text in English, some skills in Spanish; passes LR-B31a. Passes (tier brand). [queued 2026-09-15] Founder-supplied; LinkedIn weekly invite limit reached, invite when it resets (board task logged)."
