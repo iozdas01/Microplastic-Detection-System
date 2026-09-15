@@ -4,11 +4,11 @@
 -->
 # Outreach results — H5A2 · industrial-process-data-infrastructure
 
-_Generated 2026-09-14. Numbers are the funnel over contacts tagged H5A2._
+_Generated 2026-09-15. Numbers are the funnel over contacts tagged H5A2._
 
 | channel | targeted | contacted | replied | qualified replied | reply rate |
 |---|---|---|---|---|---|
-| LinkedIn | 15 | 0 | 0 | 0 | — |
+| LinkedIn | 36 | 0 | 0 | 0 | — |
 | phone | 0 | 0 | 0 | 0 | — |
 
 _Channels are counted separately._
@@ -17,18 +17,39 @@ _Channels are counted separately._
 
 | id | name | status | call stage |
 |---|---|---|---|
-| C101 | Guillem Gilabert-Oriol | pending | — |
-| C102 | Ezzat Sabry | pending | — |
 | C103 | Péter Groszmann | pending | — |
 | C104 | Raúl Santos | pending | — |
-| C88 | Javier Suárez | pending | — |
-| C89 | Sonia Vila Cremer | pending | — |
-| C90 | Denise Haukkala | pending | — |
-| C91 | Alfina Fadillah | pending | — |
-| C93 | Maria Neculau | pending | — |
-| C94 | Avinash Bhusanurmath | pending | — |
-| C95 | Keith Andes | pending | — |
+| C110 | Peter Metcalfe | pending | — |
+| C111 | Edna Banerjee | pending | — |
+| C112 | Mithilesh Tripathi | pending | — |
+| C113 | Dominik Schreier | pending | — |
+| C119 | Nagahisa Sato | pending | — |
+| C120 | Mohamed Zaki | pending | — |
+| C121 | Michael Baez | pending | — |
+| C122 | Damon Shreeves | pending | — |
+| C128 | Karthi Pitchaikani | pending | — |
+| C129 | Saad Fadel | pending | — |
+| C130 | Ahmad Radwan | pending | — |
+| C131 | Atsuo Kumano | pending | — |
+| C136 | Don Walter | pending | — |
+| C137 | Christoph Thiemig | pending | — |
+| C141 | Raul Cirerol | pending | — |
+| C142 | Manikandan V | pending | — |
 | C96 | Roman Boda | pending | — |
-| C97 | Tamotsu Kitade | pending | — |
+| C101 | Guillem Gilabert-Oriol | invited | — |
+| C102 | Ezzat Sabry | invited | — |
+| C88 | Javier Suárez | invited | — |
+| C89 | Sonia Vila Cremer | invited | — |
+| C90 | Denise Haukkala | invited | — |
+| C91 | Alfina Fadillah | invited | — |
+| C93 | Maria Neculau | invited | — |
+| C94 | Avinash Bhusanurmath | invited | — |
+| C95 | Keith Andes | invited | — |
+| C97 | Tamotsu Kitade | invited | — |
 | C105 | Evangeline Lau Wei Yong | off_scope | — |
+| C114 | Marcelo Bueno Prado | off_scope | — |
+| C123 | Bailey Schantz | off_scope | — |
+| C132 | Ryoichi Takada | off_scope | — |
+| C138 | Charan Rajan | off_scope | — |
+| C139 | Joshua Mertz | off_scope | — |
 | C92 | Brandon Kern | off_scope | — |

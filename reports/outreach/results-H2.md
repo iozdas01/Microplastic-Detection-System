@@ -4,7 +4,7 @@
 -->
 # Outreach results — H2 · industrial-process-data-infrastructure
 
-_Generated 2026-09-14. Numbers are the funnel over contacts tagged H2._
+_Generated 2026-09-15. Numbers are the funnel over contacts tagged H2._
 
 | channel | targeted | contacted | replied | qualified replied | reply rate |
 |---|---|---|---|---|---|

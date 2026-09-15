@@ -4,7 +4,7 @@
 -->
 ---
 idea: industrial-process-data-infrastructure
-generated: 2026-09-14T23:56Z
+generated: 2026-09-15T00:22Z
 active_hunch: H1, H3, H5
 active_assumption: H1A2
 sources:
@@ -13,7 +13,7 @@ sources:
   graph: 2e388c457f54
   evidence: 61ff8f30c6d6
   offerings: absent
-  contacts: fca789f65520
+  contacts: 2d7207580be3
 ---
 
 # industrial-process-data-infrastructure — session brief
@@ -67,7 +67,7 @@ For **H1A2**: 2 entries.
 
 ## Outreach
 
-**105 targeted** · 0 contacted · 0 replied · 0 call-progressed · 0 scheduled
+**142 targeted** · 0 contacted · 0 replied · 0 call-progressed · 0 scheduled
 
 Reply rate None% of contacted · reply→call None%
 
@@ -89,7 +89,7 @@ _Generated from the folder. Check here before creating a new artifact — if a f
 | `reports/outreach/contacts.md` | The contact ledger — one card per person targeted, invited or interviewed for this idea, with the live-profile read that qualified them and the state… |
 | `reports/outreach/process-map.md` | The process map — one entry per stage of textile manufacturing from raw fibre to finished T-shirt, whether the stage touches water, how much fibre it… |
 | `reports/outreach/research-map.md` | The research map — one row per paper or group on contaminant detection in water, classified by what its method actually did, so the crowded and empty… |
-| `reports/outreach/results-*.md` | 4 generated files — rebuild them, never edit |
+| `reports/outreach/results-*.md` | 6 generated files — rebuild them, never edit |
 | `reports/outreach/target-list-audit-*.md` | 2 dated snapshots — latest 2026-09-14 · Target list audit — 2026-09-14 |
 | `reports/outreach/technology-map.md` | The technology map — one entry per way of detecting microplastics or microfibres in water (what it physically measures, how small it goes, how far fr… |
 | `reports/outreach/copy/H1A2-linkedin.md` | The LinkedIn copy archive for H1A2 — every message drafted or sent to a contact for this assumption, with the live-snapshot line behind each claim an… |

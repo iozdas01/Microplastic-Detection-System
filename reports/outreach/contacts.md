@@ -3,9 +3,9 @@ purpose: The contact ledger — one card per person targeted, invited or intervi
 idea: industrial-process-data-infrastructure
 last_updated: 2026-09-14
 totals:
-  targeted: 105
-  invited: 70
-  accepted: 21
+  targeted: 142
+  invited: 85
+  accepted: 22
   scheduled: 0
   done: 0
   no_reply: 0
@@ -2486,9 +2486,10 @@ degree: 3rd+
 mutuals_count:
 active_last_30d: unknown
 open_to_work: false
-outreach_status: pending
+outreach_status: invited
 found_date: 2026-09-14
-notes: "[profile read 2026-09-14] details/experience: General Manager MWD Jan 2026-present; GM Inland Empire Utilities Agency 2019-25; AGM West Basin MWD 2010-19; OCWD 2004-10 incl. GWR System Manager; president WateReuse California board; US Water Alliance board. English. Passes."
+notes: "[profile read 2026-09-14] details/experience: General Manager MWD Jan 2026-present; GM Inland Empire Utilities Agency 2019-25; AGM West Basin MWD 2010-19; OCWD 2004-10 incl. GWR System Manager; president WateReuse California board; US Water Alliance board. English. Passes. [invited 2026-09-14] bare invite via custom-invite modal, modal name confirmed Shivaji Deshmukh, sent by Claude at founder's instruction; Pending confirmed."
+
 
 ## Kenneth Lee
 
@@ -2516,9 +2517,10 @@ degree: 3rd+
 mutuals_count:
 active_last_30d: unknown
 open_to_work: false
-outreach_status: pending
+outreach_status: invited
 found_date: 2026-09-14
-notes: "[profile read 2026-09-14] details/experience: Laboratory Director SFPUC Sep 2018-present; Laboratory Services Manager 2008-18; lab director TestAmerica 2005-08; president/lab director Oceanic Analytical 1996-2005. English. Passes."
+notes: "[profile read 2026-09-14] details/experience: Laboratory Director SFPUC Sep 2018-present; Laboratory Services Manager 2008-18; lab director TestAmerica 2005-08; president/lab director Oceanic Analytical 1996-2005. English. Passes. [invited 2026-09-14] bare invite via custom-invite modal, modal name confirmed Kenneth Lee, sent by Claude at founder's instruction; Pending confirmed."
+
 
 ## Dennis Herrera
 
@@ -2546,9 +2548,10 @@ degree: 3rd+
 mutuals_count:
 active_last_30d: unknown
 open_to_work: false
-outreach_status: pending
+outreach_status: invited
 found_date: 2026-09-14
-notes: "[profile read 2026-09-14] details/experience: CEO and GM SFPUC Nov 2021-present, 2,700 staff, $3.5B budget; San Francisco City Attorney ~20 yrs before. English. Passes."
+notes: "[profile read 2026-09-14] details/experience: CEO and GM SFPUC Nov 2021-present, 2,700 staff, $3.5B budget; San Francisco City Attorney ~20 yrs before. English. Passes. [invited 2026-09-14] bare invite via custom-invite modal, modal name confirmed Dennis Herrera, sent by Claude at founder's instruction; Pending confirmed."
+
 
 ## Kaushal Parbhoo
 
@@ -2576,9 +2579,10 @@ degree: 3rd+
 mutuals_count:
 active_last_30d: unknown
 open_to_work: false
-outreach_status: pending
+outreach_status: invited
 found_date: 2026-09-14
-notes: "[profile read 2026-09-14] details/experience: Assistant Director of Water Quality, LADWP Oct 2025-present (1 yr); no earlier roles listed. English. Passes on function; thin history noted, he may not have handled Phase 1."
+notes: "[profile read 2026-09-14] details/experience: Assistant Director of Water Quality, LADWP Oct 2025-present (1 yr); no earlier roles listed. English. Passes on function; thin history noted, he may not have handled Phase 1. [invited 2026-09-14] bare invite via custom-invite modal, modal name confirmed Kaushal Parbhoo, sent by Claude at founder's instruction; Pending confirmed."
+
 
 ## Anselmo Collins
 
@@ -2606,9 +2610,10 @@ degree: 3rd+
 mutuals_count:
 active_last_30d: unknown
 open_to_work: false
-outreach_status: pending
+outreach_status: accepted
 found_date: 2026-09-14
-notes: "[profile read 2026-09-14] details/experience: COO and Sr AGM Water System LADWP Aug 2021-present; Deputy Sr AGM and Director of Water Operations 2017-21 (treatment, LA Aqueduct); 33 yrs at LADWP. English. Passes."
+notes: "[profile read 2026-09-14] details/experience: COO and Sr AGM Water System LADWP Aug 2021-present; Deputy Sr AGM and Director of Water Operations 2017-21 (treatment, LA Aqueduct); 33 yrs at LADWP. English. Passes. [invited 2026-09-14] bare invite via custom-invite modal, modal name confirmed Anselmo Collins, sent by Claude at founder's instruction; Pending confirmed. [accepted 2026-09-14] shows 1st degree in LinkedIn search the same day."
+
 
 ## Tom Maichaimongkol
 
@@ -2666,9 +2671,10 @@ degree: 3rd+
 mutuals_count:
 active_last_30d: unknown
 open_to_work: false
-outreach_status: pending
+outreach_status: invited
 found_date: 2026-09-14
-notes: "[profile read 2026-09-14] details/experience: Global TS&D Network Leader DuPont Water Solutions Dec 2024-present (Madrid); TS&D leader South Asia/Japan/Korea 2021-24; TS Manager DuPont Singapore 2019-21; Dow ultrafiltration technical specialist EMEA 2011-18. English. Passes."
+notes: "[profile read 2026-09-14] details/experience: Global TS&D Network Leader DuPont Water Solutions Dec 2024-present (Madrid); TS&D leader South Asia/Japan/Korea 2021-24; TS Manager DuPont Singapore 2019-21; Dow ultrafiltration technical specialist EMEA 2011-18. English. Passes. [invited 2026-09-14] bare invite via custom-invite modal, modal name confirmed Javier Suárez, sent by Claude at founder's instruction; Pending confirmed."
+
 
 ## Sonia Vila Cremer
 
@@ -2696,9 +2702,10 @@ degree: 3rd+
 mutuals_count:
 active_last_30d: unknown
 open_to_work: false
-outreach_status: pending
+outreach_status: invited
 found_date: 2026-09-14
-notes: "[profile read 2026-09-14] details/experience: EMEA TS&D Leader DuPont Water Solutions Oct 2023-present (Tarragona); joined 2012 as application development engineer; roles in application development, R&D and TS&D on FilmTec RO/NF and IntegraTec UF. English. Passes."
+notes: "[profile read 2026-09-14] details/experience: EMEA TS&D Leader DuPont Water Solutions Oct 2023-present (Tarragona); joined 2012 as application development engineer; roles in application development, R&D and TS&D on FilmTec RO/NF and IntegraTec UF. English. Passes. [invited 2026-09-14] bare invite via custom-invite modal, modal name confirmed Sonia Vila Cremer, sent by Claude at founder's instruction; Pending confirmed."
+
 
 ## Denise Haukkala
 
@@ -2726,9 +2733,10 @@ degree: 3rd+
 mutuals_count:
 active_last_30d: unknown
 open_to_work: false
-outreach_status: pending
+outreach_status: invited
 found_date: 2026-09-14
-notes: "[profile read 2026-09-14] details/experience: Technical Service and Development, DuPont Water Solutions Apr 2019-present; Dow Water & Process Solutions technical service 2007-19; covers FilmTec and specialty membranes: design, application development, process troubleshooting, training. English. Passes."
+notes: "[profile read 2026-09-14] details/experience: Technical Service and Development, DuPont Water Solutions Apr 2019-present; Dow Water & Process Solutions technical service 2007-19; covers FilmTec and specialty membranes: design, application development, process troubleshooting, training. English. Passes. [invited 2026-09-14] bare invite via custom-invite modal, modal name confirmed Denise Haukkala, sent by Claude at founder's instruction; Pending confirmed."
+
 
 ## Alfina Fadillah
 
@@ -2756,9 +2764,10 @@ degree: 3rd+
 mutuals_count:
 active_last_30d: unknown
 open_to_work: false
-outreach_status: pending
+outreach_status: invited
 found_date: 2026-09-14
-notes: "[profile read 2026-09-14] details/experience: Technical Service & Field Engineer DuPont Water Solutions Nov 2024-present (Jakarta); training, troubleshooting, commissioning and design support for UF, RO and ion exchange. English. Passes; tenure ~2 yrs."
+notes: "[profile read 2026-09-14] details/experience: Technical Service & Field Engineer DuPont Water Solutions Nov 2024-present (Jakarta); training, troubleshooting, commissioning and design support for UF, RO and ion exchange. English. Passes; tenure ~2 yrs. [invited 2026-09-14] bare invite via custom-invite modal, modal name confirmed Alfina Fadillah, sent by Claude at founder's instruction; Pending confirmed."
+
 
 ## Brandon Kern
 
@@ -2816,9 +2825,10 @@ degree: 3rd+
 mutuals_count:
 active_last_30d: unknown
 open_to_work: false
-outreach_status: pending
+outreach_status: invited
 found_date: 2026-09-14
-notes: "[profile read 2026-09-14] details/experience: Senior Technical Support Manager Hydranautics Jan 2018-present; RO Technical Manager Europe/NA Hydranautics Mar 1999-present (Barcelona). English. Passes."
+notes: "[profile read 2026-09-14] details/experience: Senior Technical Support Manager Hydranautics Jan 2018-present; RO Technical Manager Europe/NA Hydranautics Mar 1999-present (Barcelona). English. Passes. [invited 2026-09-14] bare invite via custom-invite modal, modal name confirmed Maria Neculau, sent by Claude at founder's instruction; Pending confirmed."
+
 
 ## Avinash Bhusanurmath
 
@@ -2846,9 +2856,10 @@ degree: 3rd+
 mutuals_count:
 active_last_30d: unknown
 open_to_work: false
-outreach_status: pending
+outreach_status: invited
 found_date: 2026-09-14
-notes: "[profile read 2026-09-14] details/experience: Technical Manager Hydranautics Oct 2025-present (Mumbai); Technical Services Lead Products Veolia Water Tech 2022-25; Technical Services Lead SUEZ WTS 2021-22; Thermax technical services to 2021. English. Passes."
+notes: "[profile read 2026-09-14] details/experience: Technical Manager Hydranautics Oct 2025-present (Mumbai); Technical Services Lead Products Veolia Water Tech 2022-25; Technical Services Lead SUEZ WTS 2021-22; Thermax technical services to 2021. English. Passes. [invited 2026-09-14] bare invite via custom-invite modal, modal name confirmed Avinash Bhusanurmath, sent by Claude at founder's instruction; Pending confirmed."
+
 
 ## Keith Andes
 
@@ -2876,9 +2887,10 @@ degree: 3rd+
 mutuals_count:
 active_last_30d: unknown
 open_to_work: false
-outreach_status: pending
+outreach_status: invited
 found_date: 2026-09-14
-notes: "[profile read 2026-09-14] details/experience: Sr Pacific Rim Technical Manager Hydranautics Jan 1984-present (Perth). English. Passes."
+notes: "[profile read 2026-09-14] details/experience: Sr Pacific Rim Technical Manager Hydranautics Jan 1984-present (Perth). English. Passes. [invited 2026-09-14] bare invite via custom-invite modal, modal name confirmed Keith Andes, sent by Claude at founder's instruction; Pending confirmed."
+
 
 ## Roman Boda
 
@@ -2908,7 +2920,8 @@ active_last_30d: unknown
 open_to_work: false
 outreach_status: pending
 found_date: 2026-09-14
-notes: "[profile read 2026-09-14] details/experience: Plant Services Engineering Manager Hydranautics Jan 2007-present (Glasgow, Dubai): RO/NF/UF/MBR projections, membrane selection, pre-treatment design support, warranties, commissioning, chemical cleanings, troubleshooting, membrane performance review; senior process engineer Weir Westgarth 2002-07 (SWRO desalination). English. Passes."
+notes: "[profile read 2026-09-14] details/experience: Plant Services Engineering Manager Hydranautics Jan 2007-present (Glasgow, Dubai): RO/NF/UF/MBR projections, membrane selection, pre-treatment design support, warranties, commissioning, chemical cleanings, troubleshooting, membrane performance review; senior process engineer Weir Westgarth 2002-07 (SWRO desalination). English. Passes. [invite blocked 2026-09-14] custom-invite modal asks for his email address to connect (LinkedIn verification); no bare invite possible and no email held, so nothing sent. Reach via a mutual or email only."
+
 
 ## Tamotsu Kitade
 
@@ -2936,9 +2949,10 @@ degree: 3rd+
 mutuals_count:
 active_last_30d: unknown
 open_to_work: false
-outreach_status: pending
+outreach_status: invited
 found_date: 2026-09-14
-notes: "[profile read 2026-09-14] details/experience: General Manager R&D, Toray Membrane USA Apr 2017-present (location Matsuyama, Ehime). Profile text in English. Passes."
+notes: "[profile read 2026-09-14] details/experience: General Manager R&D, Toray Membrane USA Apr 2017-present (location Matsuyama, Ehime). Profile text in English. Passes. [invited 2026-09-14] bare invite via custom-invite modal, modal name confirmed Tamotsu Kitade, sent by Claude at founder's instruction; Pending confirmed."
+
 
 ## Luisa Sangines-Uriarte
 
@@ -3056,9 +3070,10 @@ degree: 3rd+
 mutuals_count:
 active_last_30d: unknown
 open_to_work: false
-outreach_status: pending
+outreach_status: invited
 found_date: 2026-09-14
-notes: "[profile read 2026-09-14] details/experience: R&D Leader on Water Treatment, DuPont Apr 2019-present (Tarragona): leads the application development engineers' team since 2023; R&D technical leader for municipal drinking water and desalination since 2019; European Desalination Society board member Feb 2026-present. English. Passes."
+notes: "[profile read 2026-09-14] details/experience: R&D Leader on Water Treatment, DuPont Apr 2019-present (Tarragona): leads the application development engineers' team since 2023; R&D technical leader for municipal drinking water and desalination since 2019; European Desalination Society board member Feb 2026-present. English. Passes. [invited 2026-09-14] bare invite via custom-invite modal, modal name confirmed Guillem Gilabert-Oriol, sent by Claude at founder's instruction; Pending confirmed."
+
 
 ## Ezzat Sabry
 
@@ -3086,9 +3101,10 @@ degree: 3rd+
 mutuals_count:
 active_last_30d: unknown
 open_to_work: false
-outreach_status: pending
+outreach_status: invited
 found_date: 2026-09-14
-notes: "[profile read 2026-09-14] details/experience: Technical Service Engineer Toray Membrane Middle East Aug 2023-present (Cairo); O&M manager TAQA Water 2022-23; O&M manager Ridgewood for Water Desalination 2010-21. English. Passes."
+notes: "[profile read 2026-09-14] details/experience: Technical Service Engineer Toray Membrane Middle East Aug 2023-present (Cairo); O&M manager TAQA Water 2022-23; O&M manager Ridgewood for Water Desalination 2010-21. English. Passes. [invited 2026-09-14] bare invite via custom-invite modal, modal name confirmed Ezzat Sabry, sent by Claude at founder's instruction; Pending confirmed."
+
 
 ## Péter Groszmann
 
@@ -3179,3 +3195,1113 @@ open_to_work: false
 outreach_status: off_scope
 found_date: 2026-09-14
 notes: "[audit off_scope 2026-09-14] Profile visit: Field Service Engineer Veolia Water Tech Dec 2023-present (Malaysia), operating mobile UF/RO/IX units at semiconductor and petroleum sites. Operator of rental equipment, fails icp_out_of_scope 'plant operators (H2/H3, not H5)'. Not invited."
+
+## David W. Pedersen
+
+id: C106
+name: "David W. Pedersen"
+linkedin_url: https://www.linkedin.com/in/david-w-pedersen-aa100131/
+linkedin_account: Izgin
+company: "Las Virgenes Municipal Water District"
+role: "General Manager"
+signal_type: profile_fit
+signal_multiplier: 1.0
+signal_source_url: "https://www.linkedin.com/search/results/people/?keywords=water%20quality%20Las%20Virgenes%20Municipal%20Water%20District"
+signal_excerpt: ""
+contact_role: buyer
+role_pts: 3
+tier: water_utility
+size_band:
+assumptions_tested: [H3A2]
+validation_rationale: >
+  Chief executive of Las Virgenes MWD, one of the small systems the State Water Board named on its preliminary Phase 1 list; at a small agency the GM sees the monitoring cost directly and signs for it.
+response_likelihood: 4
+likelihood_factors: "3rd+ degree (0) · named Phase 1 system (+1)"
+channel: linkedin
+degree: 3rd+
+mutuals_count:
+active_last_30d: unknown
+open_to_work: false
+outreach_status: pending
+found_date: 2026-09-14
+notes: "[profile read 2026-09-14] details/experience: General Manager Las Virgenes MWD Jan 2013-present (chief executive, reports to 5-member elected board); past president WateReuse California 2022-present; Executive Director of Operations Irvine Ranch Water District 2010-13; LA County DPW before. English. Passes. LVMWD is on the Board's preliminary Phase 1 list (press coverage of SB 1422 selection)."
+
+## Yu Melanie Madsen
+
+id: C107
+name: "Yu Melanie Madsen"
+linkedin_url: https://www.linkedin.com/in/yu-melanie-madsen-53b8241b/
+linkedin_account: Izgin
+company: "City of Sacramento Department of Utilities"
+role: "Water Quality Superintendent"
+signal_type: profile_fit
+signal_multiplier: 1.0
+signal_source_url: "https://www.linkedin.com/search/results/people/?keywords=water%20quality%20Sacramento%20drinking%20water%20superintendent"
+signal_excerpt: ""
+contact_role: practitioner
+role_pts: 2
+tier: water_utility
+size_band:
+assumptions_tested: [H3A2]
+validation_rationale: >
+  Water quality superintendent at the City of Sacramento after two years as its quality manager and five as its water quality chemist; owns the drinking-water compliance results for a large river-supplied system.
+response_likelihood: 4
+likelihood_factors: "3rd+ degree (0) · owns WQ results (+1)"
+channel: linkedin
+degree: 3rd+
+mutuals_count:
+active_last_30d: unknown
+open_to_work: false
+outreach_status: pending
+found_date: 2026-09-14
+notes: "[profile read 2026-09-14] details/experience: Water Quality Superintendent City of Sacramento Aug 2026-present; Quality Manager 2024-26; WQ Chemist 2018-24; TestAmerica lab supervisor/department manager 2014-18. English. Passes; 8 yrs at the utility though new in current title. SB 1422 selection not verified."
+
+## Kevin Caldwell
+
+id: C108
+name: "Kevin Caldwell"
+linkedin_url: https://www.linkedin.com/in/kevin-caldwell-98186724/
+linkedin_account: Izgin
+company: "Long Beach Utilities"
+role: "Laboratory Services Officer / Quality Manager (Water Quality Laboratory)"
+signal_type: profile_fit
+signal_multiplier: 1.0
+signal_source_url: "https://www.linkedin.com/search/results/people/?keywords=water%20quality%20manager%20Long%20Beach%20Utilities"
+signal_excerpt: ""
+contact_role: practitioner
+role_pts: 2
+tier: water_utility
+size_band:
+assumptions_tested: [H3A2]
+validation_rationale: >
+  Runs quality management and accreditation at Long Beach Utilities' water quality lab; any SB 1422 sample handling or outside-lab result passes through his QA system.
+response_likelihood: 4
+likelihood_factors: "3rd+ degree (0) · lab QA owner (+1)"
+channel: linkedin
+degree: 3rd+
+mutuals_count:
+active_last_30d: unknown
+open_to_work: false
+outreach_status: pending
+found_date: 2026-09-14
+notes: "[profile read 2026-09-14] details/experience: Laboratory Services Officer / Quality Manager, Long Beach Utilities Sep 2024-present: TNI 2016 compliance, third-party audits, internal method audits, SOPs. English. Passes. SB 1422 selection not verified."
+
+## Laura Hidas
+
+id: C109
+name: "Laura Hidas"
+linkedin_url: https://www.linkedin.com/in/laura-hidas/
+linkedin_account: Izgin
+company: "Alameda County Water District"
+role: "Director of Water Resources"
+signal_type: profile_fit
+signal_multiplier: 1.0
+signal_source_url: "https://www.linkedin.com/search/results/people/?keywords=water%20quality%20Alameda%20County%20Water%20District"
+signal_excerpt: ""
+contact_role: buyer
+role_pts: 3
+tier: water_utility
+size_band:
+assumptions_tested: [H3A2]
+validation_rationale: >
+  Directs water supply planning and groundwater at ACWD; does not own water quality results.
+response_likelihood: 3
+likelihood_factors: "3rd+ degree (0)"
+channel: linkedin
+degree: 3rd+
+mutuals_count:
+active_last_30d: unknown
+open_to_work: false
+outreach_status: off_scope
+found_date: 2026-09-14
+notes: "[audit off_scope 2026-09-14] Profile visit: Director of Water Resources ACWD Dec 2018-present: long-range supply planning, water use efficiency, supply contracts, groundwater protection, watershed. Function does not own the monitoring result; fails the live-profile gate on function for H3A2. Not invited."
+
+## Peter Metcalfe
+
+id: C110
+name: "Peter Metcalfe"
+linkedin_url: https://www.linkedin.com/in/peter-metcalfe-4649ba155/
+linkedin_account: Izgin
+company: "Toray Membrane USA, Inc."
+role: "Director, Applications Engineering & Technical Services"
+signal_type: profile_fit
+signal_multiplier: 1.0
+signal_source_url: "https://www.linkedin.com/search/results/people/?keywords=Toray%20Membrane%20America%20technical"
+signal_excerpt: ""
+contact_role: buyer
+role_pts: 3
+tier: membrane_manufacturer
+size_band:
+assumptions_tested: [H5A2]
+validation_rationale: >
+  Directs applications engineering and technical services at Toray Membrane USA after 24 years in the group; owns the function that projects membrane life and answers when it falls short.
+response_likelihood: 4
+likelihood_factors: "3rd+ degree (0) · owns exact function (+1)"
+channel: linkedin
+degree: 3rd+
+mutuals_count:
+active_last_30d: unknown
+open_to_work: false
+outreach_status: pending
+found_date: 2026-09-14
+notes: "[profile read 2026-09-14] details/experience: Director Applications Engineering & Technical Services, Toray Membrane USA May 2022-present (Poway CA); manager of the same 2018-22; manager applications engineering 2006-18; Toray Membrane America 2002-06. English. Passes."
+
+## Edna Banerjee
+
+id: C111
+name: "Edna Banerjee"
+linkedin_url: https://www.linkedin.com/in/edna-banerjee-a6a9a829/
+linkedin_account: Izgin
+company: "CERAFILTEC"
+role: "Global MBR Technology Manager"
+signal_type: profile_fit
+signal_multiplier: 1.0
+signal_source_url: "https://www.linkedin.com/search/results/people/?keywords=MANN%2BHUMMEL%20water%20membrane%20MICRODYN%20application"
+signal_excerpt: ""
+contact_role: practitioner
+role_pts: 2
+tier: membrane_manufacturer
+size_band:
+assumptions_tested: [H5A2]
+validation_rationale: >
+  Global MBR technology manager at ceramic-membrane maker CERAFILTEC after five years of after-sales technical support at MICRODYN-NADIR; has seen membrane-life disputes at two makers.
+response_likelihood: 4
+likelihood_factors: "3rd+ degree (0) · two makers, after-sales TS (+1)"
+channel: linkedin
+degree: 3rd+
+mutuals_count:
+active_last_30d: unknown
+open_to_work: false
+outreach_status: pending
+found_date: 2026-09-14
+notes: "[profile read 2026-09-14] details/experience: Global MBR Technology Manager CERAFILTEC Feb 2024-present, project manager since 2022 (Saarbrücken); Technical Service Project Manager MANN+HUMMEL Water & Fluid Solutions (MICRODYN-NADIR) 2017-22: MBR/UF process design, after-sales technical customer support. English. Passes."
+
+## Mithilesh Tripathi
+
+id: C112
+name: "Mithilesh Tripathi"
+linkedin_url: https://www.linkedin.com/in/mithilesh-tripathi-3946a262/
+linkedin_account: Izgin
+company: "MANN+HUMMEL Water & Fluid Solutions"
+role: "Membrane selection and technical solutions, India"
+signal_type: profile_fit
+signal_multiplier: 1.0
+signal_source_url: "https://www.linkedin.com/search/results/people/?keywords=MANN%2BHUMMEL%20water%20membrane%20MICRODYN%20application"
+signal_excerpt: ""
+contact_role: practitioner
+role_pts: 2
+tier: membrane_manufacturer
+size_band:
+assumptions_tested: [H5A2]
+validation_rationale: >
+  Selects membranes and supports customers for MANN+HUMMEL in India; the technical contact when a customer's membranes underperform.
+response_likelihood: 4
+likelihood_factors: "3rd+ degree (0) · customer-facing technical (+1)"
+channel: linkedin
+degree: 3rd+
+mutuals_count:
+active_last_30d: unknown
+open_to_work: false
+outreach_status: pending
+found_date: 2026-09-14
+notes: "[profile read 2026-09-14] details/experience: Membrane selection and technical solutions India, MANN+HUMMEL Feb 2023-present (Lucknow): membrane range selection and guidance for MF/UF liquid treatment customers. English. Passes."
+
+## Dominik Schreier
+
+id: C113
+name: "Dominik Schreier"
+linkedin_url: https://www.linkedin.com/in/schreierdominik/
+linkedin_account: Izgin
+company: "MANN+HUMMEL Water & Fluid Solutions"
+role: "Director Global Engineering"
+signal_type: profile_fit
+signal_multiplier: 1.0
+signal_source_url: "https://www.linkedin.com/search/results/people/?keywords=MANN%2BHUMMEL%20water%20membrane%20MICRODYN%20application"
+signal_excerpt: ""
+contact_role: buyer
+role_pts: 3
+tier: membrane_manufacturer
+size_band:
+assumptions_tested: [H5A2]
+validation_rationale: >
+  Directs global engineering for MANN+HUMMEL's membrane business after running MBR engineering; owns the design side that membrane-life projections come from.
+response_likelihood: 3
+likelihood_factors: "3rd+ degree (0) · director (0)"
+channel: linkedin
+degree: 3rd+
+mutuals_count:
+active_last_30d: unknown
+open_to_work: false
+outreach_status: pending
+found_date: 2026-09-14
+notes: "[profile read 2026-09-14] details/experience: Director Global Engineering MANN+HUMMEL Jun 2024-present (Wiesbaden); Senior Manager Engineering EMEA 2023-24; Manager Engineering Europe 2021-23; Engineering Manager MBR 2018-21; 11 yrs at the company. English headline. Passes."
+
+## Marcelo Bueno Prado
+
+id: C114
+name: "Marcelo Bueno Prado"
+linkedin_url: https://www.linkedin.com/in/marcelo-bueno-prado-11a1b517/
+linkedin_account: Izgin
+company: "Toray Membrane USA, Inc."
+role: "South America Regional Manager, Membrane Technology"
+signal_type: profile_fit
+signal_multiplier: 1.0
+signal_source_url: "https://www.linkedin.com/search/results/people/?keywords=Toray%20Membrane%20America%20technical"
+signal_excerpt: ""
+contact_role: buyer
+role_pts: 3
+tier: membrane_manufacturer
+size_band:
+assumptions_tested: [H5A2]
+validation_rationale: >
+  Toray regional sales manager for the Southern Cone; sales role with no technical-service duty.
+response_likelihood: 3
+likelihood_factors: "3rd+ degree (0)"
+channel: linkedin
+degree: 3rd+
+mutuals_count:
+active_last_30d: unknown
+open_to_work: false
+outreach_status: off_scope
+found_date: 2026-09-14
+notes: "[audit off_scope 2026-09-14] Profile visit: South America Regional Manager, Toray Membrane USA Feb 2012-present: Southern Cone sales, key accounts, distributors; ALADYR board. Fails icp_out_of_scope 'sales roles with no technical-service duty' for H5A2. Not invited."
+
+## Stephanie Vogel
+
+id: C115
+name: "Stephanie Vogel"
+linkedin_url: https://www.linkedin.com/in/stephanie-vogel-8abb2364/
+linkedin_account: Izgin
+company: "San Jose Water"
+role: "Water Quality Supervisor"
+signal_type: profile_fit
+signal_multiplier: 1.0
+signal_source_url: "https://www.linkedin.com/search/results/people/?keywords=water%20quality%20San%20Jose%20Water"
+signal_excerpt: ""
+contact_role: practitioner
+role_pts: 2
+tier: water_utility
+size_band:
+assumptions_tested: [H3A2]
+validation_rationale: >
+  Water quality supervisor at San Jose Water, which serves about a million people, after a compliance-officer role at Passaic Valley; handles sampling and compliance results day to day.
+response_likelihood: 4
+likelihood_factors: "3rd+ degree (0) · compliance background (+1)"
+channel: linkedin
+degree: 3rd+
+mutuals_count:
+active_last_30d: unknown
+open_to_work: false
+outreach_status: pending
+found_date: 2026-09-14
+notes: "[profile read 2026-09-14] details/experience: Water Quality Supervisor San Jose Water Jan 2025-present; Water Quality Scientist 2023-25; Water Quality Compliance Officer Passaic Valley Water Commission 2022-23; lab roles there 2014-22. English. Passes. SB 1422 selection not verified."
+
+## Joe Mouawad
+
+id: C116
+name: "Joe Mouawad"
+linkedin_url: https://www.linkedin.com/in/joe-mouawad-693a2712/
+linkedin_account: Izgin
+company: "Eastern Municipal Water District"
+role: "General Manager"
+signal_type: profile_fit
+signal_multiplier: 1.0
+signal_source_url: "https://www.linkedin.com/search/results/people/?keywords=water%20quality%20Eastern%20Municipal%20Water%20District"
+signal_excerpt: ""
+contact_role: buyer
+role_pts: 3
+tier: water_utility
+size_band:
+assumptions_tested: [H3A2]
+validation_rationale: >
+  General manager of Eastern MWD, a large Inland Empire retail and wholesale water agency; signs for any monitoring spend.
+response_likelihood: 3
+likelihood_factors: "3rd+ degree (0) · agency GM (0)"
+channel: linkedin
+degree: 3rd+
+mutuals_count:
+active_last_30d: unknown
+open_to_work: false
+outreach_status: pending
+found_date: 2026-09-14
+notes: "[profile read 2026-09-14] details/experience: General Manager EMWD May 2021-present; AGM Planning, Engineering & Construction 2016-21; Senior Director of Engineering 2006-16; 20 yrs at EMWD. English. Passes. SB 1422 selection not verified."
+
+## Angela O'Brien
+
+id: C117
+name: "Angela O'Brien"
+linkedin_url: https://www.linkedin.com/in/angela-h-obrien/
+linkedin_account: Izgin
+company: "Zone 7 Water Agency"
+role: "Water Quality Manager"
+signal_type: profile_fit
+signal_multiplier: 1.0
+signal_source_url: "https://www.linkedin.com/search/results/people/?keywords=water%20quality%20Zone%207%20Water%20Agency"
+signal_excerpt: ""
+contact_role: practitioner
+role_pts: 2
+tier: water_utility
+size_band:
+assumptions_tested: [H3A2]
+validation_rationale: >
+  Water quality manager at Zone 7, the Tri-Valley wholesaler that treats State Water Project supply, after 24 years as its water quality engineer and an early stint at the state's Division of Drinking Water; knows the regulator and the result.
+response_likelihood: 5
+likelihood_factors: "3rd+ degree (0) · 25 yrs WQ at one agency (+1) · ex DDW (+1)"
+channel: linkedin
+degree: 3rd+
+mutuals_count:
+active_last_30d: unknown
+open_to_work: false
+outreach_status: pending
+found_date: 2026-09-14
+notes: "[profile read 2026-09-14] details/experience: Water Quality Manager Zone 7 Water Agency Feb 2025-present (acting 2023-25); Water Quality Engineer 2001-25; environmental engineer Alameda County Water District 1998-2001; sanitary engineer California Division of Drinking Water 1996-98. English. Passes. SB 1422 selection not verified."
+
+## Lucy Croy
+
+id: C118
+name: "Lucy Croy"
+linkedin_url: https://www.linkedin.com/in/lucy-croy-p-e-6707a955/
+linkedin_account: Izgin
+company: "Marin Municipal Water District"
+role: "Water Resources Manager (Water Quality Manager 2020-25)"
+signal_type: profile_fit
+signal_multiplier: 1.0
+signal_source_url: "https://www.linkedin.com/search/results/people/?keywords=water%20quality%20Marin%20Water"
+signal_excerpt: ""
+contact_role: practitioner
+role_pts: 2
+tier: water_utility
+size_band:
+assumptions_tested: [H3A2]
+validation_rationale: >
+  Was Marin Water's water quality manager through the Phase 1 window but moved to water resources in September 2025.
+response_likelihood: 4
+likelihood_factors: "3rd+ degree (0)"
+channel: linkedin
+degree: 3rd+
+mutuals_count:
+active_last_30d: unknown
+open_to_work: false
+outreach_status: off_scope
+found_date: 2026-09-14
+notes: "[audit off_scope 2026-09-14] Profile visit: Water Resources Manager Marin MWD Sep 2025-present; Water Quality Manager 2020-25; engineering roles since 2015. Current function no longer owns water quality results; fails the live-profile gate on current function for H3A2. Not invited. Useful witness to 2023-25 if the founder wants."
+
+## Nagahisa Sato
+
+id: C119
+name: "Nagahisa Sato"
+linkedin_url: https://www.linkedin.com/in/nagahisa-sato-ph-d-58095085/
+linkedin_account: Izgin
+company: "Hydranautics (A Nitto Group Company)"
+role: "Group Manager, Product Development; Process Engineering Manager"
+signal_type: profile_fit
+signal_multiplier: 1.0
+signal_source_url: "https://www.linkedin.com/search/results/people/?currentCompany=%5B%2249072%22%5D&keywords=application"
+signal_excerpt: ""
+contact_role: buyer
+role_pts: 3
+tier: membrane_manufacturer
+size_band:
+assumptions_tested: [H5A2]
+validation_rationale: >
+  Leads product development at Hydranautics in the US; the R&D owner who would decide whether field foulant data changes how membranes are designed or warranted.
+response_likelihood: 3
+likelihood_factors: "3rd+ degree (0) · R&D manager (0)"
+channel: linkedin
+degree: 3rd+
+mutuals_count:
+active_last_30d: unknown
+open_to_work: false
+outreach_status: pending
+found_date: 2026-09-14
+notes: "[profile read 2026-09-14] details/experience: Group Manager Product Development Hydranautics May 2025-present; Process Engineering Manager 2023-present; Nitto Denko since 2019; Sumitomo Electric 2015-19; Samsung R&D Japan 2012-15. English headline. Passes."
+
+## Mohamed Zaki
+
+id: C120
+name: "Mohamed Zaki"
+linkedin_url: https://www.linkedin.com/in/mohamed-zaki-m-sc-46a86916/
+linkedin_account: Izgin
+company: "LG Chem / LG Water Solutions (NanoH2O)"
+role: "Technical Services General Manager, Middle East & Egypt"
+signal_type: profile_fit
+signal_multiplier: 1.0
+signal_source_url: "https://www.linkedin.com/search/results/people/?keywords=LG%20Water%20Solutions%20technical%20service%20engineer"
+signal_excerpt: ""
+contact_role: buyer
+role_pts: 3
+tier: membrane_manufacturer
+size_band:
+assumptions_tested: [H5A2]
+validation_rationale: >
+  Runs LG NanoH2O technical services for the Middle East and Egypt, the region's desalination base, after nine years as its technical service engineer; owns early-fouling cases and their cost.
+response_likelihood: 4
+likelihood_factors: "3rd+ degree (0) · runs regional TS (+1)"
+channel: linkedin
+degree: 3rd+
+mutuals_count:
+active_last_30d: unknown
+open_to_work: false
+outreach_status: pending
+found_date: 2026-09-14
+notes: "[profile read 2026-09-14] details/experience: Technical Services General Manager Middle East & Egypt, NanoH2O (LG) Mar 2024-present; Technical Service Engineer 2017-present; projects engineer Veolia Water 2011-17. English. Passes."
+
+## Michael Baez
+
+id: C121
+name: "Michael Baez"
+linkedin_url: https://www.linkedin.com/in/michael-baez-73a7601a3/
+linkedin_account: Izgin
+company: "LG Chem / LG Water Solutions (NanoH2O)"
+role: "Technical Service Engineer"
+signal_type: profile_fit
+signal_multiplier: 1.0
+signal_source_url: "https://www.linkedin.com/search/results/people/?keywords=LG%20Water%20Solutions%20technical%20service%20engineer"
+signal_excerpt: ""
+contact_role: practitioner
+role_pts: 2
+tier: membrane_manufacturer
+size_band:
+assumptions_tested: [H5A2]
+validation_rationale: >
+  Technical service engineer for LG NanoH2O membranes in the US; handles customer performance complaints first-hand.
+response_likelihood: 5
+likelihood_factors: "3rd+ degree (0) · earlier career (+1) · US-based (+1)"
+channel: linkedin
+degree: 3rd+
+mutuals_count:
+active_last_30d: unknown
+open_to_work: false
+outreach_status: pending
+found_date: 2026-09-14
+notes: "[profile read 2026-09-14] details/experience: Technical Service Engineer NanoH2O Jan 2024-present (Tampa); QA laboratory technician Refresco 2022-24. English. Passes."
+
+## Damon Shreeves
+
+id: C122
+name: "Damon Shreeves"
+linkedin_url: https://www.linkedin.com/in/damon-shreeves-01938346/
+linkedin_account: Izgin
+company: "Veolia Water Technologies & Solutions"
+role: "ZeeWeed Products Specialist; Domain Specialist UF/MBR"
+signal_type: profile_fit
+signal_multiplier: 1.0
+signal_source_url: "https://www.linkedin.com/search/results/people/?keywords=Koch%20Membrane%20Systems%20technical%20service%20engineer"
+signal_excerpt: ""
+contact_role: practitioner
+role_pts: 2
+tier: membrane_manufacturer
+size_band:
+assumptions_tested: [H5A2]
+validation_rationale: >
+  Veolia's UF/MBR domain specialist for its own ZeeWeed membranes since 2019 (SUEZ before the merger); the maker-side expert on why UF membranes foul early in the field.
+response_likelihood: 4
+likelihood_factors: "3rd+ degree (0) · product specialist on own membranes (+1)"
+channel: linkedin
+degree: 3rd+
+mutuals_count:
+active_last_30d: unknown
+open_to_work: false
+outreach_status: pending
+found_date: 2026-09-14
+notes: "[profile read 2026-09-14] details/experience: ZeeWeed Products Specialist Veolia Water Tech Jul 2025-present; Domain Specialist UF/MBR Veolia WTS Sep 2022-present; ZeeWeed Products Specialist SUEZ WTS 2019-22 (Andover UK). English. Passes."
+
+## Bailey Schantz
+
+id: C123
+name: "Bailey Schantz"
+linkedin_url: https://www.linkedin.com/in/bailey-schantz-0aa101236/
+linkedin_account: Izgin
+company: "Toray Membrane USA, Inc."
+role: "Process Engineer (RO element manufacturing)"
+signal_type: profile_fit
+signal_multiplier: 1.0
+signal_source_url: "https://www.linkedin.com/search/results/people/?currentCompany=%5B%22368383%22%5D&keywords=applications"
+signal_excerpt: ""
+contact_role: practitioner
+role_pts: 2
+tier: membrane_manufacturer
+size_band:
+assumptions_tested: [H5A2]
+validation_rationale: >
+  Improves RO element manufacturing processes at Toray; does not handle field performance.
+response_likelihood: 4
+likelihood_factors: "3rd+ degree (0)"
+channel: linkedin
+degree: 3rd+
+mutuals_count:
+active_last_30d: unknown
+open_to_work: false
+outreach_status: off_scope
+found_date: 2026-09-14
+notes: "[audit off_scope 2026-09-14] Profile visit: Process Engineer Toray Membrane USA Jun 2024-present, improving manufacturing methods for RO element production; 2 yrs, still learning RO design. Function is manufacturing, not field performance or technical service; fails the live-profile gate on function for H5A2. Not invited."
+
+## Hélène Baribeau
+
+id: C124
+name: "Hélène Baribeau"
+linkedin_url: https://www.linkedin.com/in/helene-baribeau-055b50/
+linkedin_account: Izgin
+company: "California State Water Resources Control Board (Division of Drinking Water)"
+role: "Senior Specialist"
+signal_type: profile_fit
+signal_multiplier: 1.0
+signal_source_url: "https://www.linkedin.com/search/results/people/?keywords=Helene%20Baribeau"
+signal_excerpt: ""
+contact_role: expert
+role_pts: 2
+tier: regulator
+size_band:
+assumptions_tested: [H3A2]
+validation_rationale: >
+  Presented the SB 1422 legislative requirements and monitoring timeline for the Division of Drinking Water at the February 2025 microplastics workshop; knows which systems got orders, what Phase 1 cost them and what Phase 2 will ask.
+response_likelihood: 4
+likelihood_factors: "3rd degree (0) · programme lead, public-facing (+1)"
+channel: linkedin
+degree: 3rd+
+mutuals_count:
+active_last_30d: unknown
+open_to_work: false
+outreach_status: pending
+found_date: 2026-09-14
+notes: "[profile read 2026-09-14] details/experience: Senior Specialist, California State Water Resources Control Board Feb 2024-present (San Diego); District Engineer Mojave District 2023-24; Water Resource Control Engineer Imperial District 2023; AQUAlity Engineering before. English. Passes as regulator-side expert. Identity match: the Feb 2025 DDW workshop deck (E1/E2) names Hélène Baribeau, PhD, PE, SWRCB-DDW with a 619 (San Diego) number; profile location San Diego."
+
+## Ryan Bye
+
+id: C125
+name: "Ryan Bye"
+linkedin_url: https://www.linkedin.com/in/ryan-bye-66907226/
+linkedin_account: Izgin
+company: "Santa Clarita Valley Water Agency (SCV Water)"
+role: "Water Quality Regulatory & Compliance Manager"
+signal_type: profile_fit
+signal_multiplier: 1.0
+signal_source_url: "https://www.linkedin.com/search/results/people/?keywords=water%20quality%20SCV%20Water%20Santa%20Clarita"
+signal_excerpt: ""
+contact_role: practitioner
+role_pts: 2
+tier: water_utility
+size_band:
+assumptions_tested: [H3A2]
+validation_rationale: >
+  Manages all water quality and regulatory compliance functions at SCV Water, including submittals to the State Water Board; the person a monitoring order lands on.
+response_likelihood: 4
+likelihood_factors: "3rd+ degree (0) · owns compliance submittals (+1)"
+channel: linkedin
+degree: 3rd+
+mutuals_count:
+active_last_30d: unknown
+open_to_work: false
+outreach_status: pending
+found_date: 2026-09-14
+notes: "[profile read 2026-09-14] details/experience: Water Quality Regulatory & Compliance Manager SCV Water Aug 2026-present (manages WQ and regulatory compliance across distribution, groundwater treatment, disinfection, potable/recycled; reporting and submittals to the SWRCB); 8 yrs 9 mos at SCV Water. English. Passes. SB 1422 selection not verified."
+
+## Clement Do
+
+id: C126
+name: "Clement Do"
+linkedin_url: https://www.linkedin.com/in/clement-do-04806870/
+linkedin_account: Izgin
+company: "Santa Clarita Valley Water Agency (SCV Water)"
+role: "Water Quality Laboratory Supervisor"
+signal_type: profile_fit
+signal_multiplier: 1.0
+signal_source_url: "https://www.linkedin.com/search/results/people/?keywords=water%20quality%20SCV%20Water%20Santa%20Clarita"
+signal_excerpt: ""
+contact_role: practitioner
+role_pts: 2
+tier: water_utility
+size_band:
+assumptions_tested: [H3A2]
+validation_rationale: >
+  Supervises SCV Water's water quality lab after seven years as a water chemist and WQ supervisor at the City of Santa Monica; handles sample logistics and outside-lab results.
+response_likelihood: 4
+likelihood_factors: "3rd+ degree (0) · lab supervisor (+1)"
+channel: linkedin
+degree: 3rd+
+mutuals_count:
+active_last_30d: unknown
+open_to_work: false
+outreach_status: pending
+found_date: 2026-09-14
+notes: "[profile read 2026-09-14] details/experience: Water Quality Laboratory Supervisor SCV Water Oct 2025-present; City of Santa Monica WQ supervisor 2025, lead water chemist 2022-25, water chemist 2019-22; Palmdale Water District lab analyst 2016-19. English. Passes."
+
+## Isabel Ramos
+
+id: C127
+name: "Isabel Ramos"
+linkedin_url: https://www.linkedin.com/in/isabel-ramos-2b4199228/
+linkedin_account: Izgin
+company: "California Water Service"
+role: "Water Quality Program Manager"
+signal_type: profile_fit
+signal_multiplier: 1.0
+signal_source_url: "https://www.linkedin.com/search/results/people/?keywords=water%20quality%20manager%20California%20Water%20Service"
+signal_excerpt: ""
+contact_role: practitioner
+role_pts: 2
+tier: water_utility
+size_band:
+assumptions_tested: [H3A2]
+validation_rationale: >
+  Two months into a water quality programme manager role at Cal Water after consulting; no utility history to draw on.
+response_likelihood: 3
+likelihood_factors: "3rd+ degree (0)"
+channel: linkedin
+degree: 3rd+
+mutuals_count:
+active_last_30d: unknown
+open_to_work: false
+outreach_status: off_scope
+found_date: 2026-09-14
+notes: "[audit off_scope 2026-09-14] Profile visit: Water Quality Program Manager Cal Water Aug 2026-present (2 months); environmental scientist UES 2023-26. Fails the live-profile gate on tenure (weeks into role, no utility incidents of her own). Not invited."
+
+## Karthi Pitchaikani
+
+id: C128
+name: "Karthi Pitchaikani"
+linkedin_url: https://www.linkedin.com/in/karthipitchaikani/
+linkedin_account: Izgin
+company: "Pentair X-Flow"
+role: "Global Technical Support Manager, Water & Wastewater (X-Flow)"
+signal_type: profile_fit
+signal_multiplier: 1.0
+signal_source_url: "https://www.linkedin.com/search/results/people/?keywords=Pentair%20X-Flow%20membrane%20technical%20support"
+signal_excerpt: ""
+contact_role: buyer
+role_pts: 3
+tier: membrane_manufacturer
+size_band:
+assumptions_tested: [H5A2]
+validation_rationale: >
+  Runs global technical support for Pentair X-Flow's UF membranes after a decade in its sales-support engineering; owns the maker-side answer when membranes underperform in the field.
+response_likelihood: 4
+likelihood_factors: "3rd+ degree (0) · owns global TS (+1)"
+channel: linkedin
+degree: 3rd+
+mutuals_count:
+active_last_30d: unknown
+open_to_work: false
+outreach_status: pending
+found_date: 2026-09-14
+notes: "[profile read 2026-09-14] details/experience: Global Technical Support Manager Water & Wastewater (X-Flow), Pentair Apr 2025-present (Enschede); Manager Sales Support 2022-25; Sales Support Engineer 2013-22; 13 yrs at Pentair. English. Passes."
+
+## Saad Fadel
+
+id: C129
+name: "Saad Fadel"
+linkedin_url: https://www.linkedin.com/in/saad-fadel-6649ab75/
+linkedin_account: Izgin
+company: "TOYOBO MC Middle East Industries (TMEI)"
+role: "Quality Assurance & Technical Service Manager"
+signal_type: profile_fit
+signal_multiplier: 1.0
+signal_source_url: "https://www.linkedin.com/search/results/people/?keywords=Toyobo%20hollow%20fiber%20reverse%20osmosis%20desalination"
+signal_excerpt: ""
+contact_role: practitioner
+role_pts: 2
+tier: membrane_manufacturer
+size_band:
+assumptions_tested: [H5A2]
+validation_rationale: >
+  Provides technical service to RO desalination plants using TOYOBO's hollow-fibre membranes in Saudi Arabia, and runs QA on the product; sees both the manufacturing and the field side of early fouling.
+response_likelihood: 4
+likelihood_factors: "3rd+ degree (0) · desal TS and QA (+1)"
+channel: linkedin
+degree: 3rd+
+mutuals_count:
+active_last_30d: unknown
+open_to_work: false
+outreach_status: pending
+found_date: 2026-09-14
+notes: "[profile read 2026-09-14] details/experience: Quality Assurance & Technical Service Manager TOYOBO MC Middle East Industries Apr 2019-present (Saudi Arabia): product QA, ISO 9001 audits, technical services and support for RO desalination plants. English. Passes."
+
+## Ahmad Radwan
+
+id: C130
+name: "Ahmad Radwan"
+linkedin_url: https://www.linkedin.com/in/ahmad-radwan-270a5966/
+linkedin_account: Izgin
+company: "TOYOBO MC Corporation"
+role: "Technical Business Development General Manager"
+signal_type: profile_fit
+signal_multiplier: 1.0
+signal_source_url: "https://www.linkedin.com/search/results/people/?keywords=Toyobo%20hollow%20fiber%20reverse%20osmosis%20desalination"
+signal_excerpt: ""
+contact_role: buyer
+role_pts: 3
+tier: membrane_manufacturer
+size_band:
+assumptions_tested: [H5A2]
+validation_rationale: >
+  Runs technical business development for TOYOBO's CTA hollow-fibre RO membranes across the Gulf, including vendor qualification in eight countries; knows what plants demand as proof of membrane life before they buy.
+response_likelihood: 6
+likelihood_factors: "2nd degree (+2) · technical BD in desalination (+1)"
+channel: linkedin
+degree: 2nd
+mutuals_count:
+active_last_30d: unknown
+open_to_work: false
+outreach_status: pending
+found_date: 2026-09-14
+notes: "[profile read 2026-09-14] details/experience: Technical Business Development General Manager TOYOBO MC Corporation Aug 2023-present (Riyadh): regional go-to-market across KSA, UAE, Oman, Kuwait; distributor training and joint customer calls; vendor qualification of CTA hollow-fibre membranes in 8 countries. English. Passes (title in list: BD manager desalination)."
+
+## Atsuo Kumano
+
+id: C131
+name: "Atsuo Kumano"
+linkedin_url: https://www.linkedin.com/in/atsuo-kumano%E3%80%80%E7%86%8A%E9%87%8E-%E6%B7%B3%E5%A4%AB-aa6511232/
+linkedin_account: Izgin
+company: "TOYOBO MC Corporation"
+role: "Senior Technical Advisor (former General Manager, Membrane R&D Center)"
+signal_type: profile_fit
+signal_multiplier: 1.0
+signal_source_url: "https://www.linkedin.com/search/results/people/?keywords=Toyobo%20hollow%20fiber%20reverse%20osmosis%20desalination"
+signal_excerpt: ""
+contact_role: expert
+role_pts: 2
+tier: membrane_manufacturer
+size_band:
+assumptions_tested: [H5A2]
+validation_rationale: >
+  Former general manager of TOYOBO's membrane R&D centre, now its senior technical adviser on water-treatment membranes; decades of maker-side knowledge of how membrane life is projected and defended.
+response_likelihood: 3
+likelihood_factors: "3rd+ degree (0) · senior, partly Japanese-language profile (0)"
+channel: linkedin
+degree: 3rd+
+mutuals_count:
+active_last_30d: unknown
+open_to_work: false
+outreach_status: pending
+found_date: 2026-09-14
+notes: "[profile read 2026-09-14] details/experience: Senior Technical Advisor Toyobo MC Corporation Jul 2024-present (Osaka); Senior Technical Adviser Toyobo Co. 2020-24; earlier General Manager of the Membrane R&D Center. Profile carries English entries alongside Japanese; passes the LR-B31a English check on the English role titles."
+
+## Ryoichi Takada
+
+id: C132
+name: "Ryoichi Takada"
+linkedin_url: https://www.linkedin.com/in/ryoichi-takada-ph-d-2b560328a/
+linkedin_account: Izgin
+company: "OOYOO Ltd."
+role: "Head of Engineering"
+signal_type: profile_fit
+signal_multiplier: 1.0
+signal_source_url: "https://www.linkedin.com/search/results/people/?keywords=Asahi%20Kasei%20Microza%20membrane%20technical"
+signal_excerpt: ""
+contact_role: expert
+role_pts: 2
+tier: membrane_manufacturer
+size_band:
+assumptions_tested: [H5A2]
+validation_rationale: >
+  Heads engineering at a Kyoto startup building gas-separation membranes for CO2 capture; not a water membrane maker.
+response_likelihood: 3
+likelihood_factors: "3rd+ degree (0)"
+channel: linkedin
+degree: 3rd+
+mutuals_count:
+active_last_30d: unknown
+open_to_work: false
+outreach_status: off_scope
+found_date: 2026-09-14
+notes: "[audit off_scope 2026-09-14] Profile visit: Head of Engineering OOYOO Ltd May 2025-present, membranes for air and gas purification and CO2 capture. Not an RO/UF water-membrane maker and a peer startup; fails icp_valid_tiers for H5A2. Not invited."
+
+## Scott G.
+
+id: C133
+name: "Scott G."
+linkedin_url: https://www.linkedin.com/in/scott-g-92882111a/
+linkedin_account: Izgin
+company: "Irvine Ranch Water District"
+role: "Water Quality Manager"
+signal_type: profile_fit
+signal_multiplier: 1.0
+signal_source_url: "https://www.linkedin.com/search/results/people/?keywords=water%20quality%20manager%20Irvine%20Ranch"
+signal_excerpt: ""
+contact_role: practitioner
+role_pts: 2
+tier: water_utility
+size_band:
+assumptions_tested: [H3A2]
+validation_rationale: >
+  Runs IRWD's water quality department: lab analyses, QA/QC, regulatory requirements and reporting, and staff; the owner of any monitoring order's result at a large Orange County system.
+response_likelihood: 4
+likelihood_factors: "3rd+ degree (0) · owns WQ department (+1)"
+channel: linkedin
+degree: 3rd+
+mutuals_count:
+active_last_30d: unknown
+open_to_work: false
+outreach_status: pending
+found_date: 2026-09-14
+notes: "[profile read 2026-09-14] details/experience: Water Quality Manager IRWD Mar 2023-present (lab analyses, QA/QC, regulatory requirements and reporting, water quality projects, staff); 4 yrs at IRWD. English. Passes. SB 1422 selection not verified."
+
+## Jim Barrett
+
+id: C134
+name: "Jim Barrett"
+linkedin_url: https://www.linkedin.com/in/jim-barrett-377587b/
+linkedin_account: Izgin
+company: "Coachella Valley Water District"
+role: "General Manager"
+signal_type: profile_fit
+signal_multiplier: 1.0
+signal_source_url: "https://www.linkedin.com/search/results/people/?keywords=water%20quality%20Coachella%20Valley%20Water%20District"
+signal_excerpt: ""
+contact_role: buyer
+role_pts: 3
+tier: water_utility
+size_band:
+assumptions_tested: [H3A2]
+validation_rationale: >
+  General manager of Coachella Valley Water District since 2013 and a former MWD and San Diego County Water Authority board member; signs for spend and knows how the large wholesalers treat new obligations.
+response_likelihood: 3
+likelihood_factors: "3rd+ degree (0) · agency GM (0)"
+channel: linkedin
+degree: 3rd+
+mutuals_count:
+active_last_30d: unknown
+open_to_work: false
+outreach_status: pending
+found_date: 2026-09-14
+notes: "[profile read 2026-09-14] details/experience: General Manager CVWD Mar 2013-present; AGM 2010-13; board member MWD and SDCWA 2006-10; SAME fellow. English. Passes. SB 1422 selection not verified."
+
+## Craig Miller
+
+id: C135
+name: "Craig Miller"
+linkedin_url: https://www.linkedin.com/in/craig-miller-04561614/
+linkedin_account: Izgin
+company: "Western Municipal Water District"
+role: "General Manager"
+signal_type: profile_fit
+signal_multiplier: 1.0
+signal_source_url: "https://www.linkedin.com/search/results/people/?keywords=water%20quality%20Western%20Municipal%20Water%20District"
+signal_excerpt: ""
+contact_role: buyer
+role_pts: 3
+tier: water_utility
+size_band:
+assumptions_tested: [H3A2]
+validation_rationale: >
+  General manager of Western MWD in Riverside after running Orange County Water District as executive director for nineteen years; signs for spend and knows potable reuse and groundwater quality regulation.
+response_likelihood: 3
+likelihood_factors: "3rd+ degree (0) · agency GM (0)"
+channel: linkedin
+degree: 3rd+
+mutuals_count:
+active_last_30d: unknown
+open_to_work: false
+outreach_status: pending
+found_date: 2026-09-14
+notes: "[profile read 2026-09-14] details/experience: General Manager Western MWD Dec 2017-present (deputy GM since 2013); AGM Inland Empire Utilities Agency 2011-13; Executive Director Orange County Water District 1992-2011. English. Passes. SB 1422 selection not verified."
+
+## Don Walter
+
+id: C136
+name: "Don Walter"
+linkedin_url: https://www.linkedin.com/in/donawalter/
+linkedin_account: Izgin
+company: "Veolia Water Technologies & Solutions"
+role: "North American Product Manager, Membrane Systems; Product & Engineering Director"
+signal_type: profile_fit
+signal_multiplier: 1.0
+signal_source_url: "https://www.linkedin.com/search/results/people/?keywords=Veolia%20reverse%20osmosis%20membrane%20product%20manager"
+signal_excerpt: ""
+contact_role: buyer
+role_pts: 3
+tier: membrane_manufacturer
+size_band:
+assumptions_tested: [H5A2]
+validation_rationale: >
+  Owns Veolia's North American membrane-systems product line after running global engineered-systems product lines at SUEZ and Veolia; decides what monitoring ships with a membrane system and what life it is sold on.
+response_likelihood: 4
+likelihood_factors: "3rd+ degree (0) · product owner (+1)"
+channel: linkedin
+degree: 3rd+
+mutuals_count:
+active_last_30d: unknown
+open_to_work: false
+outreach_status: pending
+found_date: 2026-09-14
+notes: "[profile read 2026-09-14] details/experience: North American Product Manager - Membrane Systems, Veolia Water Tech Jan 2026-present; Product & Engineering Director Jul 2024-present; Global Product Line Director Engineered Systems and Components, Veolia WTS 2022-24; SUEZ WTS 5 yrs before (Minneapolis). English. Passes."
+
+## Christoph Thiemig
+
+id: C137
+name: "Christoph Thiemig"
+linkedin_url: https://www.linkedin.com/in/christoph-thiemig-03063830/
+linkedin_account: Izgin
+company: "Veolia Water Technologies & Solutions"
+role: "Global ZeeWeed Wastewater Applications Lead"
+signal_type: profile_fit
+signal_multiplier: 1.0
+signal_source_url: "https://www.linkedin.com/search/results/people/?keywords=Veolia%20ZeeWeed%20technical%20support%20engineer"
+signal_excerpt: ""
+contact_role: practitioner
+role_pts: 2
+tier: membrane_manufacturer
+size_band:
+assumptions_tested: [H5A2]
+validation_rationale: >
+  Global applications lead for Veolia's ZeeWeed 500 MBR membranes since 2019; the process-side expert on why MBR membranes foul faster than projected.
+response_likelihood: 4
+likelihood_factors: "3rd+ degree (0) · global applications lead (+1)"
+channel: linkedin
+degree: 3rd+
+mutuals_count:
+active_last_30d: unknown
+open_to_work: false
+outreach_status: pending
+found_date: 2026-09-14
+notes: "[profile read 2026-09-14] details/experience: Global ZeeWeed Wastewater Applications Lead, Veolia WTS Sep 2022-present (Aachen, remote): process-related product management and BD for ZeeWeed 500 MBR; same role at SUEZ WTS from Apr 2019. English. Passes."
+
+## Charan Rajan
+
+id: C138
+name: "Charan Rajan"
+linkedin_url: https://www.linkedin.com/in/charan-rajan-22a79a20/
+linkedin_account: Izgin
+company: "Veolia North America"
+role: "Technical Development Manager"
+signal_type: profile_fit
+signal_multiplier: 1.0
+signal_source_url: "https://www.linkedin.com/search/results/people/?keywords=Veolia%20reverse%20osmosis%20membrane%20product%20manager"
+signal_excerpt: ""
+contact_role: practitioner
+role_pts: 2
+tier: membrane_manufacturer
+size_band:
+assumptions_tested: [H5A2]
+validation_rationale: >
+  Value and financial analysis role in Veolia North America's operations business, not the membrane maker.
+response_likelihood: 3
+likelihood_factors: "3rd+ degree (0)"
+channel: linkedin
+degree: 3rd+
+mutuals_count:
+active_last_30d: unknown
+open_to_work: false
+outreach_status: off_scope
+found_date: 2026-09-14
+notes: "[audit off_scope 2026-09-14] Profile visit: Technical Development Manager Veolia North America Apr 2022-present (Houston): financial decision-making tools and value analysis for business strategy. Not membrane technical service, product or R&D; fails the live-profile gate on function for H5A2. Not invited."
+
+## Joshua Mertz
+
+id: C139
+name: "Joshua Mertz"
+linkedin_url: https://www.linkedin.com/in/joshua-mertz-b3884b14/
+linkedin_account: Izgin
+company: "LaMotte Company"
+role: "Director of Research & Development"
+signal_type: profile_fit
+signal_multiplier: 1.0
+signal_source_url: "https://www.linkedin.com/search/results/people/?keywords=Veolia%20reverse%20osmosis%20membrane%20product%20manager"
+signal_excerpt: ""
+contact_role: expert
+role_pts: 2
+tier: membrane_manufacturer
+size_band:
+assumptions_tested: [H5A2]
+validation_rationale: >
+  R&D director at LaMotte, a maker of water-testing kits and instruments; an instrument vendor, not a membrane maker.
+response_likelihood: 3
+likelihood_factors: "3rd+ degree (0)"
+channel: linkedin
+degree: 3rd+
+mutuals_count:
+active_last_30d: unknown
+open_to_work: false
+outreach_status: off_scope
+found_date: 2026-09-14
+notes: "[audit off_scope 2026-09-14] Profile visit: Director of R&D LaMotte Company Jan 2025-present; R&D director adsorbents Graver Technologies 2017-25; Veolia Nuclear Solutions product line manager 2014-17. LaMotte sells water-testing instruments: fails icp_out_of_scope 'instrument or sensor vendors' for H5A2. Not invited. Worth a competitor note in companies.md."
+
+## Megan Tran
+
+id: C140
+name: "Megan Tran"
+linkedin_url: https://www.linkedin.com/in/megan-tran-598b273/
+linkedin_account: Izgin
+company: "San Francisco Public Utilities Commission (San Francisco Water Department)"
+role: "Laboratory Services Manager"
+signal_type: profile_fit
+signal_multiplier: 1.0
+signal_source_url: "https://www.linkedin.com/search/results/people/?currentCompany=%5B%22165933%22%5D&keywords=laboratory%20manager"
+signal_excerpt: ""
+contact_role: practitioner
+role_pts: 2
+tier: water_utility
+size_band:
+assumptions_tested: [H3A2]
+validation_rationale: >
+  Laboratory services manager for the San Francisco Water Department, on the Board's Phase 1 list, after eight years as SFPUC supervising chemist; manages the lab side of any monitoring order.
+response_likelihood: 4
+likelihood_factors: "3rd+ degree (0) · lab services owner (+1)"
+channel: linkedin
+degree: 3rd+
+mutuals_count:
+active_last_30d: unknown
+open_to_work: false
+outreach_status: pending
+found_date: 2026-09-14
+notes: "[profile read 2026-09-14] details/experience: Laboratory Services Manager San Francisco Water Department Jan 2018-present (Millbrae); Supervising Chemist SFPUC Feb 2010-present; Operations Manager TestAmerica 1995-2009. English. Passes."
+
+## Raul Cirerol
+
+id: C141
+name: "Raul Cirerol"
+linkedin_url: https://www.linkedin.com/in/raul-cirerol-07855514/
+linkedin_account: Izgin
+company: "Toray Membrane USA, Inc."
+role: "Technical Support Engineer"
+signal_type: profile_fit
+signal_multiplier: 1.0
+signal_source_url: "https://www.linkedin.com/search/results/people/?currentCompany=%5B%22368383%22%5D&keywords=technical"
+signal_excerpt: ""
+contact_role: practitioner
+role_pts: 2
+tier: membrane_manufacturer
+size_band:
+assumptions_tested: [H5A2]
+validation_rationale: >
+  Fourteen years of technical service at Toray USA: pilot systems, start-up and commissioning of RO/NF/MF/UF/MBR membranes; has watched projected and actual membrane life diverge on customer sites.
+response_likelihood: 4
+likelihood_factors: "3rd+ degree (0) · long field TS tenure (+1)"
+channel: linkedin
+degree: 3rd+
+mutuals_count:
+active_last_30d: unknown
+open_to_work: false
+outreach_status: pending
+found_date: 2026-09-14
+notes: "[profile read 2026-09-14] details/experience: Technical Support Engineer Toray Membrane USA Jul 2012-present (Poway): technical service, pilot systems, start-up and commissioning of RO/NF/MF/UF/MBR systems, customer training; process engineer Koch Industries from 1990. English. Passes."
+
+## Manikandan V
+
+id: C142
+name: "Manikandan V"
+linkedin_url: https://www.linkedin.com/in/manikandan-v-2300382b/
+linkedin_account: Izgin
+company: "Hydranautics (A Nitto Group Company)"
+role: "Group Leader, Regional Technical Support"
+signal_type: profile_fit
+signal_multiplier: 1.0
+signal_source_url: "https://www.linkedin.com/search/results/people/?currentCompany=%5B%2249072%22%5D&keywords=technical"
+signal_excerpt: ""
+contact_role: practitioner
+role_pts: 2
+tier: membrane_manufacturer
+size_band:
+assumptions_tested: [H5A2]
+validation_rationale: >
+  Leads Hydranautics' regional technical support in India with 23 years in membrane system design, pre- and post-sales support and pilot studies; the escalation point for early fouling in the region.
+response_likelihood: 4
+likelihood_factors: "3rd+ degree (0) · regional TS lead (+1)"
+channel: linkedin
+degree: 3rd+
+mutuals_count:
+active_last_30d: unknown
+open_to_work: false
+outreach_status: pending
+found_date: 2026-09-14
+notes: "[profile read 2026-09-14] details/experience: Group Leader Regional Technical Support Hydranautics May 2018-present (Chennai); 23+ yrs in water: membrane system design, pre/post-sales support, pilot studies, team management. English. Passes. Sixth Hydranautics card: added in place of Roman Boda, whose invite is blocked behind an email check."

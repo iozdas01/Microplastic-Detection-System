@@ -4,11 +4,11 @@
 -->
 # Outreach results — H3A2 · industrial-process-data-infrastructure
 
-_Generated 2026-09-14. Numbers are the funnel over contacts tagged H3A2._
+_Generated 2026-09-15. Numbers are the funnel over contacts tagged H3A2._
 
 | channel | targeted | contacted | replied | qualified replied | reply rate |
 |---|---|---|---|---|---|
-| LinkedIn | 13 | 0 | 0 | 0 | — |
+| LinkedIn | 29 | 0 | 0 | 0 | — |
 | phone | 0 | 0 | 0 | 0 | — |
 
 _Channels are counted separately._
@@ -18,15 +18,31 @@ _Channels are counted separately._
 | id | name | status | call stage |
 |---|---|---|---|
 | C100 | Doug Campbell | pending | — |
-| C82 | Shivaji Deshmukh | pending | — |
-| C83 | Kenneth Lee | pending | — |
-| C84 | Dennis Herrera | pending | — |
-| C85 | Kaushal Parbhoo | pending | — |
-| C86 | Anselmo Collins | pending | — |
+| C106 | David W. Pedersen | pending | — |
+| C107 | Yu Melanie Madsen | pending | — |
+| C108 | Kevin Caldwell | pending | — |
+| C115 | Stephanie Vogel | pending | — |
+| C116 | Joe Mouawad | pending | — |
+| C117 | Angela O'Brien | pending | — |
+| C124 | Hélène Baribeau | pending | — |
+| C125 | Ryan Bye | pending | — |
+| C126 | Clement Do | pending | — |
+| C133 | Scott G. | pending | — |
+| C134 | Jim Barrett | pending | — |
+| C135 | Craig Miller | pending | — |
+| C140 | Megan Tran | pending | — |
 | C98 | Luisa Sangines-Uriarte | pending | — |
 | C99 | Surjit Saini | pending | — |
 | C78 | Theresa Slifko | invited | — |
 | C79 | Monica Tirtadidjaja | invited | — |
 | C80 | Joyce Lehman | invited | — |
 | C81 | John Bednarski | invited | — |
+| C82 | Shivaji Deshmukh | invited | — |
+| C83 | Kenneth Lee | invited | — |
+| C84 | Dennis Herrera | invited | — |
+| C85 | Kaushal Parbhoo | invited | — |
+| C86 | Anselmo Collins | accepted | — |
+| C109 | Laura Hidas | off_scope | — |
+| C118 | Lucy Croy | off_scope | — |
+| C127 | Isabel Ramos | off_scope | — |
 | C87 | Tom Maichaimongkol | off_scope | — |
