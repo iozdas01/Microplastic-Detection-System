@@ -160,6 +160,30 @@ Rule check: 407 chars, violations none. Inbox (LR-B25): first-name/company searc
 
 Rule check: 323 chars, violations none. Inbox (LR-B25): first-name/company search on Izgin's account, no thread. Status at draft time: accepted 2026-09-14.
 
+
+### Msg 2 — DRAFTED 2026-09-15 (frequency stage, awaiting founder approval)
+
+His reply (2026-09-14 23:19, group thread with Izgin and Sandra): "Yes, I'd be happy to share my experience and insights from textile wet processing, particularly in garment washing, dyeing, R&D, and sustainability-related practices. ... Please feel free to send me your questions."
+
+**Primary (351 chars, English, close: open invitation left unspent per LR-M8):**
+
+> Gulfam hi! Thank you, that's very kind.
+>
+> Two questions from the washing side:
+> 1. The last time a brand or auditor asked Lucky for a figure on your wash water, microfibres or anything else, who asked and what did you send them?
+> 2. Which wash-water tests do you run today, and which one has given you the most trouble lately?
+>
+> Short answers are perfect.
+
+| Question | Captures | Assumption |
+|---|---|---|
+| Last time a brand or auditor asked for a wash-water figure | Whether anyone asks the mill for a number, who, and how the mill answers today (lab, spec sheet, nothing) | H1A2 |
+| Which tests today, which gave the most trouble | The wet-process measurements already bought, and which one hurts (LR-M7 pain) | H1A2, founder's wider wet-process question |
+
+Held for Msg 3 and the call (LR-B11, no money question in Msg 2): what the last outside lab test cost and who paid it (H1A3); what a failed wash-water test or rejected lot cost the mill; whether he would put money into a pilot (H1A6, call only).
+
+Rule check: 351 chars, violations none. No product reveal beyond Msg 1, no call ask, no money question.
+
 ## C37 — [SUPERSEDED 2026-09-14] Erdal Gülcan (earlier draft)
 
 ### Msg 1 — DRAFTED 2026-09-14

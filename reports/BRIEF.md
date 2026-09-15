@@ -4,7 +4,7 @@
 -->
 ---
 idea: industrial-process-data-infrastructure
-generated: 2026-09-15T05:41Z
+generated: 2026-09-15T17:30Z
 active_hunch: H1, H3, H5
 active_assumption: H1A2
 sources:
@@ -13,7 +13,7 @@ sources:
   graph: dc26afa254e8
   evidence: 2b7513b3f76d
   offerings: absent
-  contacts: 32f38eb35f3c
+  contacts: 8509b3e5e921
 ---
 
 # industrial-process-data-infrastructure — session brief
@@ -67,11 +67,11 @@ For **H1A2**: 3 entries.
 
 ## Outreach
 
-**268 targeted** · 4 contacted · 4 replied · 2 call-progressed · 2 scheduled
+**268 targeted** · 5 contacted · 5 replied · 2 call-progressed · 2 scheduled
 
-Reply rate 100.0% of contacted · reply→call 50.0%
+Reply rate 100.0% of contacted · reply→call 40.0%
 
-By assumption: H1A2 2/2 replied · H1A3 0/0 replied · H1A5 2/2 replied · H1A6 0/0 replied · H1A9 1/1 replied · H2 0/0 replied · H3A2 0/0 replied · H5A2 0/0 replied
+By assumption: H1A2 3/3 replied · H1A3 1/1 replied · H1A5 2/2 replied · H1A6 1/1 replied · H1A9 1/1 replied · H2 0/0 replied · H3A2 0/0 replied · H5A2 0/0 replied
 
 ## What already exists for this idea
 

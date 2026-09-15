@@ -8,7 +8,7 @@ _Generated 2026-09-15. Numbers are the funnel over contacts tagged H1A2._
 
 | channel | targeted | contacted | replied | qualified replied | reply rate |
 |---|---|---|---|---|---|
-| LinkedIn | 158 | 2 | 2 | 2 | 100.0% |
+| LinkedIn | 158 | 3 | 3 | 3 | 100.0% |
 | phone | 0 | 0 | 0 | 0 | — |
 
 _Channels are counted separately._
@@ -127,9 +127,9 @@ _Channels are counted separately._
 | C40 | Erdogan Sekerci | accepted | — |
 | C44 | Ronit Basu | accepted | — |
 | C48 | Ayesha Navaid Anwar | accepted | — |
-| C55 | Gulfam S. | accepted | — |
 | C6 | Halil Kutluğ Kabahasanoğlu | accepted | — |
 | C7 | Murat Terlemez | accepted | — |
+| C55 | Gulfam S. | replied | — |
 | C58 | Paulo Lopes | replied | — |
 | C59 | Faizan Pasha | replied | — |
 | C178 | Martin (surname not recorded) | done | completed |
