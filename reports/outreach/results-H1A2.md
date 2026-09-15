@@ -8,7 +8,7 @@ _Generated 2026-09-15. Numbers are the funnel over contacts tagged H1A2._
 
 | channel | targeted | contacted | replied | qualified replied | reply rate |
 |---|---|---|---|---|---|
-| LinkedIn | 136 | 2 | 2 | 2 | 100.0% |
+| LinkedIn | 158 | 2 | 2 | 2 | 100.0% |
 | phone | 0 | 0 | 0 | 0 | — |
 
 _Channels are counted separately._
@@ -22,13 +22,12 @@ _Channels are counted separately._
 | C215 | Johanna J. | pending | — |
 | C224 | Gary Lane | pending | — |
 | C225 | Corey Bishop | pending | — |
-| C231 | Christian Rojo | pending | — |
-| C232 | Kassie Cartee | pending | — |
 | C233 | Bilal Ahmed | pending | — |
-| C235 | Sivantha Samarasinghe | pending | — |
-| C236 | Ligia Elena Taveras Hiciano | pending | — |
 | C237 | Anup Gupta | pending | — |
 | C25 | Shridhar H T | pending | — |
+| C266 | Jaime Gregorio | pending | — |
+| C269 | Tim Crabtree | pending | — |
+| C271 | John Hughes | pending | — |
 | C11 | Öner Gündüz | invited | — |
 | C143 | Nabeel Aman | invited | — |
 | C144 | H. Abdullah Mahmood | invited | — |
@@ -71,9 +70,29 @@ _Channels are counted separately._
 | C228 | Roz Adams | invited | — |
 | C229 | Jonathan Brook | invited | — |
 | C230 | Esref Tuncer | invited | — |
+| C231 | Christian Rojo | invited | — |
+| C232 | Kassie Cartee | invited | — |
+| C235 | Sivantha Samarasinghe | invited | — |
+| C236 | Ligia Elena Taveras Hiciano | invited | — |
 | C238 | Guy Morgan | invited | — |
 | C239 | Magnus D. | invited | — |
 | C24 | B. Hande Tezer | invited | — |
+| C250 | Irina Morosanu | invited | — |
+| C251 | Lee Arrandale | invited | — |
+| C252 | Joe Fogle | invited | — |
+| C255 | Marc Killbourn | invited | — |
+| C256 | Sophie Rycroft | invited | — |
+| C257 | Jacqueline Nixon | invited | — |
+| C258 | Darren Ainsworth | invited | — |
+| C259 | Ann-Marie C. | invited | — |
+| C260 | Duncan Crewe | invited | — |
+| C261 | António Faria | invited | — |
+| C262 | Conceição Tedim | invited | — |
+| C264 | James Williams | invited | — |
+| C265 | Dean Hedden | invited | — |
+| C267 | Chris Yarbrough | invited | — |
+| C268 | Wayne Gerber | invited | — |
+| C270 | Randy Myers | invited | — |
 | C28 | Rohit K. | invited | — |
 | C29 | Calvin Huelsman | invited | — |
 | C31 | Okan Çakıcı | invited | — |
@@ -131,7 +150,10 @@ _Channels are counted separately._
 | C223 | Pedro Magalhães | off_scope | — |
 | C23 | Rafet Çelebi | off_scope | — |
 | C234 | Harshad Patel | off_scope | — |
+| C253 | Chris Hawks | off_scope | — |
+| C254 | Jai Sharma | off_scope | — |
 | C26 | Büşra Suiçmez | off_scope | — |
+| C263 | Hendrik B. | off_scope | — |
 | C27 | Nastassia Ramazankhani | off_scope | — |
 | C3 | Veysel Özgür | off_scope | — |
 | C32 | İrem Terzi | off_scope | — |

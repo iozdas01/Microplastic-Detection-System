@@ -8,7 +8,7 @@ _Generated 2026-09-15. Numbers are the funnel over contacts tagged H1A5._
 
 | channel | targeted | contacted | replied | qualified replied | reply rate |
 |---|---|---|---|---|---|
-| LinkedIn | 33 | 2 | 2 | 2 | 100.0% |
+| LinkedIn | 39 | 2 | 2 | 2 | 100.0% |
 | phone | 0 | 0 | 0 | 0 | — |
 
 _Channels are counted separately._
@@ -18,6 +18,8 @@ _Channels are counted separately._
 | id | name | status | call stage |
 |---|---|---|---|
 | C196 | John Krieg | pending | — |
+| C240 | Michael Smith | pending | — |
+| C243 | Balasubramanian V.V. | pending | — |
 | C181 | Adam Root | invited | — |
 | C182 | Mojca Zupan | invited | — |
 | C183 | Andrej Kržan | invited | — |
@@ -53,3 +55,7 @@ _Channels are counted separately._
 | C204 | Bob Brooks | off_scope | — |
 | C211 | Andy Johnston | off_scope | — |
 | C222 | Nicolas Carlési | off_scope | — |
+| C244 | Vivekanand G. | off_scope | — |
+| C245 | Mehrdad Hesampour | off_scope | — |
+| C246 | Zhiyong Xia | off_scope | — |
+| C247 | Anthony Wachinski | off_scope | — |

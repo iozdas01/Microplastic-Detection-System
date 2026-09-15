@@ -4,7 +4,7 @@ idea: industrial-process-data-infrastructure
 last_updated: 2026-09-14
 totals:
   targeted: 266
-  invited: 207
+  invited: 208
   accepted: 14
   scheduled: 0
   done: 5
@@ -8278,9 +8278,10 @@ degree: 3rd+
 mutuals_count:
 active_last_30d: unknown
 open_to_work: false
-outreach_status: pending
+outreach_status: invited
 found_date: 2026-09-14
-notes: "[profile read 2026-09-15] details/experience: Vice President of Manufacturing Mohawk Sep 2020-present (Dalton GA); Director of Operations Apache Mills 2019-20; Plant Manager IVC US 2015-18; Shaw Industries 11 yrs 9 mos incl. Director of Manufacturing. English. Passes."
+notes: "[profile read 2026-09-15] details/experience: Vice President of Manufacturing Mohawk Sep 2020-present (Dalton GA); Director of Operations Apache Mills 2019-20; Plant Manager IVC US 2015-18; Shaw Industries 11 yrs 9 mos incl. Director of Manufacturing. English. Passes. [invited 2026-09-14] bare invite via custom-invite modal, modal name confirmed Randy Myers, sent by Claude at founder's instruction."
+
 
 ## John Hughes
 

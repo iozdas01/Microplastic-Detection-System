@@ -8,7 +8,7 @@ _Generated 2026-09-15. Numbers are the funnel over contacts tagged H5A2._
 
 | channel | targeted | contacted | replied | qualified replied | reply rate |
 |---|---|---|---|---|---|
-| LinkedIn | 37 | 0 | 0 | 0 | — |
+| LinkedIn | 41 | 0 | 0 | 0 | — |
 | phone | 0 | 0 | 0 | 0 | — |
 
 _Channels are counted separately._
@@ -39,6 +39,8 @@ _Channels are counted separately._
 | C141 | Raul Cirerol | invited | — |
 | C142 | Manikandan V | invited | — |
 | C209 | Joris de Grooth | invited | — |
+| C241 | Mahdi Fathizadeh | invited | — |
+| C242 | Vishal Bansal | invited | — |
 | C88 | Javier Suárez | invited | — |
 | C89 | Sonia Vila Cremer | invited | — |
 | C90 | Denise Haukkala | invited | — |
@@ -53,4 +55,6 @@ _Channels are counted separately._
 | C132 | Ryoichi Takada | off_scope | — |
 | C138 | Charan Rajan | off_scope | — |
 | C139 | Joshua Mertz | off_scope | — |
+| C248 | Priyesh Wagh | off_scope | — |
+| C249 | Nidal Samad | off_scope | — |
 | C92 | Brandon Kern | off_scope | — |

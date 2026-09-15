@@ -13,7 +13,7 @@ sources:
   graph: dc26afa254e8
   evidence: 2b7513b3f76d
   offerings: absent
-  contacts: 705aaca83707
+  contacts: 32f38eb35f3c
 ---
 
 # industrial-process-data-infrastructure — session brief
