@@ -43,7 +43,7 @@ entries:
     next_question_raised: "Has any mill actually run the recommended DIA release profile, and did a brand ever ask to see it?"
   - id: E4
     date: 2026-09-14
-    source: "Inditex, 'Green to Wear 3.2 July 2026 — Sustainability Standard for wet process facilities (Pre-treatment, Dyeing, Printing, Finishing, Washing, Tanneries and Synthetic leather)', PDF created 2026-06-19, B-ranking non-compliance list. https://www.inditex.com/itxcomweb/api/media/9af42004-8584-4681-917f-eca403026167/GTW%202.1%20English%202023.pdf (URL serves the 3.2 text; read 2026-09-14)"
+    source: "Inditex, 'Green to Wear 3.2 July 2026 — Sustainability Standard for wet process facilities (Pre-treatment, Dyeing, Printing, Finishing, Washing, Tanneries and Synthetic leather)', PDF created 2026-06-19, B-ranking non-compliance list. https://www.inditex.com/itxcomweb/api/media/9af42004-8584-4681-917f-eca403026167/GTW%202.1%20English%202023.pdf (URL serves the 3.2 text; read 2026-09-14; the address returns 403 to scripts and download tools but opens in a browser; local copy input-context/inditex-green-to-wear-3.2-july-2026.pdf, clause on p.5 wet process and p.11 dry process, B ranking, WASTE)"
     source_type: industry_standard
     claim: "A wet-processing mill is rated 'B' rather than best-in-class 'A' if 'Fibers and microfibers are released into the environment without any internal control.' The same standard requires wastewater to be 'tested according to ZDHC Wastewater Guidelines twice a year', results disclosed on the ZDHC Gateway, and direct discharge to meet the ZDHC Progressive level."
     assumption_linked: H1A2

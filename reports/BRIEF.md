@@ -4,14 +4,14 @@
 -->
 ---
 idea: industrial-process-data-infrastructure
-generated: 2026-09-15T19:01Z
+generated: 2026-09-15T19:06Z
 active_hunch: H1
 active_assumption: H1A2
 sources:
   belief: 6093ca2c2aa3
   lineage: 106efa1c4c1f
   graph: dc26afa254e8
-  evidence: 2b7513b3f76d
+  evidence: 49a787db3470
   offerings: absent
   contacts: baa9fe8930de
 ---
@@ -70,7 +70,7 @@ _Generated from the folder. Check here before creating a new artifact — if a f
 | Artifact | What it holds |
 |---|---|
 | `input-context/belief.md` | The founder-owned durable belief this idea rests on, plus its boundaries and SISP check. |
-| `input-context/` | 1 more staged input file |
+| `input-context/` | 2 more staged input files |
 | `reports/control-room.html` | generated — rebuild it, never edit it |
 | `reports/01-ideation/hunch-lineage.md` | The hunch lineage — every hunch ever held under the belief, its status, and which one is active. |
 | `reports/02-assumptions/graph.md` | The assumption DAG for this idea — what must be true, ranked, each with the cheapest test that would settle it. Holds the active hunch's nodes plus a… |
