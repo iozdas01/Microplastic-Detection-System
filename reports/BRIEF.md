@@ -4,7 +4,7 @@
 -->
 ---
 idea: industrial-process-data-infrastructure
-generated: 2026-09-15T02:57Z
+generated: 2026-09-15T04:13Z
 active_hunch: H1, H3, H5
 active_assumption: H1A2
 sources:
@@ -13,7 +13,7 @@ sources:
   graph: dc26afa254e8
   evidence: 2b7513b3f76d
   offerings: absent
-  contacts: 43f0810338f3
+  contacts: c584a21c144a
 ---
 
 # industrial-process-data-infrastructure — session brief
@@ -92,7 +92,7 @@ _Generated from the folder. Check here before creating a new artifact — if a f
 | `reports/outreach/contacts.md` | The contact ledger — one card per person targeted, invited or interviewed for this idea, with the live-profile read that qualified them and the state… |
 | `reports/outreach/process-map.md` | The process map — one entry per stage of textile manufacturing from raw fibre to finished T-shirt, whether the stage touches water, how much fibre it… |
 | `reports/outreach/research-map.md` | The research map — one row per paper or group on contaminant detection in water, classified by what its method actually did, so the crowded and empty… |
-| `reports/outreach/results-*.md` | 6 generated files — rebuild them, never edit |
+| `reports/outreach/results-*.md` | 10 generated files — rebuild them, never edit |
 | `reports/outreach/target-list-audit-*.md` | 2 dated snapshots — latest 2026-09-14 · Target list audit — 2026-09-14 |
 | `reports/outreach/technology-map.md` | The technology map — one entry per way of detecting microplastics or microfibres in water (what it physically measures, how small it goes, how far fr… |
 | `reports/outreach/copy/H1A2-linkedin.md` | The LinkedIn copy archive for H1A2 — every message drafted or sent to a contact for this assumption, with the live-snapshot line behind each claim an… |
@@ -101,6 +101,20 @@ _Generated from the folder. Check here before creating a new artifact — if a f
 | `reports/outreach/copy/pitch.md` | The pitch for this idea — every audience variant as a claim-traced deck or script, the one-slide block, and the version log of how the story changed… |
 | `reports/pages/pages.yaml` | What each page in this folder is, and whether it still holds. |
 | `reports/pages/startup-map.html` | generated — rebuild it, never edit it |
+| `reports/pitch-deck/.build/build.mjs` | — |
+| `reports/pitch-deck/.build/candidate.pptx` | — |
+| `reports/pitch-deck/.build/candidate.pptx.inspect.ndjson` | — |
+| `reports/pitch-deck/.build/presentation.json` | — |
+| `reports/pitch-deck/.build/slide-1.png` | — |
+| `reports/pitch-deck/.build/slide-2.png` | — |
+| `reports/pitch-deck/.build/slide-3.png` | — |
+| `reports/pitch-deck/.build/slide-4.png` | — |
+| `reports/pitch-deck/.build/slide-5.png` | — |
+| `reports/pitch-deck/.build/slide-6.png` | — |
+| `reports/pitch-deck/.build/slide-7.png` | — |
+| `reports/pitch-deck/.build/validation.json` | — |
+| `reports/pitch-deck/assets/fibre-artwork.png` | — |
+| `reports/pitch-deck/output/Lattice-investor-draft.pptx` | — |
 
 ## Load next, by task
 

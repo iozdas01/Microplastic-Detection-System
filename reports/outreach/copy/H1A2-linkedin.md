@@ -479,3 +479,86 @@ Rule check: 322 chars, violations none. Status at draft time: accepted (released
 | "run fabric dyeing and finishing at Teksel Tekstil" | Experience → 'Kumas boyama Apre Şefi / Teksel Tekstil A.Ş.' |
 
 Rule check: 280 chars, violations none. Status at draft time: accepted (released 2026-09-14).
+
+## C32 — İrem Terzi
+
+### Msg 1 — DRAFTED 2026-09-14 (LR-B33)
+
+**Primary (301 chars, English, close_variant soft_ask, copy_variant build_short, segment: wet-processing mill):**
+
+> İrem hi! Thanks for connecting.
+>
+> My co-founder and I are building a microplastic detection system for textile wet processing. You hold sustainability and chemical management at Texco Boya Apre in Bursa, we would love to learn from your experience. Would you be open to some questions for our research?
+
+| Claim in message | Live-snapshot source ({today}, details/experience) |
+|---|---|
+| "hold sustainability and chemical management at Texco Boya Apre in Bursa" | Experience → 'Sürdürülebilirlik / TEXCO BOYA APRE / Jan 2024 - Present'; headline 'Sürdürülebilirlik, Kimyasal Yönetim ve Sosyal Uygunluk Sorumlusu' |
+
+Rule check: 301 chars, violations none. Inbox (LR-B25): surname search on Izgin's account, no thread. Status at draft time: accepted 2026-09-14.
+
+## C35 — Hüseyin Özdilek Körmen
+
+### Msg 1 — DRAFTED 2026-09-14 (LR-B33)
+
+**Primary (369 chars, English, close_variant soft_ask, copy_variant build_short, segment: wet-processing mill):**
+
+> Hüseyin hi! Thanks for connecting.
+>
+> My co-founder and I are building a microplastic detection system for textile wet processing. You run mechanical and energy at EG after fifteen years looking after the effluent plant, boiler house and rope dyeing machines at DNM Denim, we would love to learn from your experience. Would you be open to some questions for our research?
+
+| Claim in message | Live-snapshot source ({today}, details/experience) |
+|---|---|
+| "run mechanical and energy at EG" | Experience → 'MAKİNE ENERJİ MÜDÜRÜ / EG / Jul 2026 - Present / Egypt' |
+| "fifteen years ... effluent plant, boiler house and rope dyeing machines at DNM Denim" | Experience → 'DNMDENIM / 15 yrs 2 mos' and own words 'Atik su Arıtma tesısı Kazan daıresı ve dogal gaz ıstasyonu halat boya terbiye makinalari' |
+
+Rule check: 369 chars, violations none. Inbox (LR-B25): surname search on Izgin's account, no thread. Status at draft time: accepted 2026-09-14.
+
+## C45 — Nicholas Filippone
+
+### Msg 1 — DRAFTED 2026-09-14 (LR-B33)
+
+**Primary (306 chars, English, close_variant soft_ask, copy_variant build_short, segment: wet-processing mill):**
+
+> Nicholas hi! Thanks for connecting.
+>
+> My co-founder and I are building a microplastic detection system for textile wet processing. You run the wet finishing department at Tintoria Finissaggio Iride in Biella, we would love to learn from your experience. Would you be open to some questions for our research?
+
+| Claim in message | Live-snapshot source ({today}, details/experience) |
+|---|---|
+| "run the wet finishing department at Tintoria Finissaggio Iride in Biella" | Experience → 'Responsabile Reparto Finissaggio / Nov 2025 - Present / Biella' and 'Responsabile del Reparto Finissaggio bagnato' |
+
+Rule check: 306 chars, violations none. Inbox (LR-B25): surname search on Izgin's account, no thread. Status at draft time: accepted 2026-09-14.
+
+## C52 — Giacomo Speroni
+
+### Msg 1 — DRAFTED 2026-09-14 (LR-B33)
+
+**Primary (339 chars, English, close_variant soft_ask, copy_variant build_short, segment: wet-processing mill):**
+
+> Giacomo hi! Thanks for connecting.
+>
+> My co-founder and I are building a microplastic detection system for textile wet processing. You head the finishing department at Albini Group after eighteen years in finishing and printing at Eurojersey, we would love to learn from your experience. Would you be open to some questions for our research?
+
+| Claim in message | Live-snapshot source ({today}, details/experience) |
+|---|---|
+| "head the finishing department at Albini Group" | Experience → 'Responsabile Reparto Finissaggio / Albini Group / Apr 2026 - Present' |
+| "eighteen years in finishing and printing at Eurojersey" | Experience → 'EUROJERSEY S.p.A. / 18 yrs 7 mos' incl. 'Responsabile Finissaggio' and 'Responsabile Stampa Tradizionale' |
+
+Rule check: 339 chars, violations none. Inbox (LR-B25): surname search on Izgin's account, no thread. Status at draft time: accepted 2026-09-14.
+
+## C53 — Mauro Franz
+
+### Msg 1 — DRAFTED 2026-09-14 (LR-B33)
+
+**Primary (323 chars, English, close_variant soft_ask, copy_variant build_short, segment: wet-processing mill):**
+
+> Mauro hi! Thanks for connecting.
+>
+> My co-founder and I are building a microplastic detection system for textile wet processing. You run dyeing and finishing at Remmert after twenty years on the dyehouse floor at F.I.R. Fulda, we would love to learn from your experience. Would you be open to some questions for our research?
+
+| Claim in message | Live-snapshot source ({today}, details/experience) |
+|---|---|
+| "run dyeing and finishing at Remmert" | Experience → 'responsabile tintoria e finissaggio / Remmert S.r.l. / May 2026' |
+| "twenty years on the dyehouse floor at F.I.R. Fulda" | Experience → 'supervisore tintoria / F. I. R. Fulda / Sep 2001 - Jul 2024' (snapshot 2026-09-13) |
+
+Rule check: 323 chars, violations none. Inbox (LR-B25): surname search on Izgin's account, no thread. Status at draft time: accepted 2026-09-14.
