@@ -42,9 +42,9 @@ degree: 2nd
 mutuals_count: 1
 active_last_30d: unknown
 open_to_work: false
-outreach_status: invited
+outreach_status: off_scope
 found_date: 2026-09-13
-notes: "[profile read 2026-09-13] details/experience: dyehouse planning & operations engineer at DEVSEL Dar Dokuma, Kırklareli, Aug 2024-present; before that production manager Biyoteknik 2023-24, lab specialist Aster Textile 2019-22, Intertek customer care 2013-19. Wet-processing manufacturer, function touches the dyehouse, tenure 2 yrs: passes. [invited 2026-09-13] bare invite via custom-invite modal, name confirmed CANER GÖKÇEK, sent by Claude at founder's instruction (batch of 50 requested in chat). [language 2026-09-14] Profile text is Turkish; invite already out. Per LR-B31a: if they accept, no Msg 1 unless the founder releases them by name. [held 2026-09-14] Title outside the budget-holder ICP the founders set for H1A2/H1A3/H1A6 on 2026-09-14 (cannot sign for spend). Not interviewed unless the founder releases them by name; no Msg 1. [released 2026-09-14] Founder instruction: message everyone who accepts, regardless of title or profile language. Practitioner answers count for the mechanism half of H1A2 only (LR-B12), not for H1A3/H1A6."
+notes: "[profile read 2026-09-13] details/experience: dyehouse planning & operations engineer at DEVSEL Dar Dokuma, Kırklareli, Aug 2024-present; before that production manager Biyoteknik 2023-24, lab specialist Aster Textile 2019-22, Intertek customer care 2013-19. Wet-processing manufacturer, function touches the dyehouse, tenure 2 yrs: passes. [invited 2026-09-13] bare invite via custom-invite modal, name confirmed CANER GÖKÇEK, sent by Claude at founder's instruction (batch of 50 requested in chat). [language 2026-09-14] Profile text is Turkish; invite already out. Per LR-B31a: if they accept, no Msg 1 unless the founder releases them by name. [held 2026-09-14] Title outside the budget-holder ICP the founders set for H1A2/H1A3/H1A6 on 2026-09-14 (cannot sign for spend). Not interviewed unless the founder releases them by name; no Msg 1. [released 2026-09-14] Founder instruction: message everyone who accepts, regardless of title or profile language. Practitioner answers count for the mechanism half of H1A2 only (LR-B12), not for H1A3/H1A6. [audit off_scope 2026-09-14] Invite already out, but profile text is Turkish with no English (LR-B31a hard rule). If they accept, no draft, no message."
 
 ## Ali Kemal Kul
 
@@ -432,9 +432,9 @@ degree: 2nd
 mutuals_count: 
 active_last_30d: unknown
 open_to_work: false
-outreach_status: invited
+outreach_status: off_scope
 found_date: 2026-09-13
-notes: "[profile read 2026-09-13] details/experience: üretim ve işletme müdürü, Akınal Yünlü, Feb 1998-present. Single-entry profile; confirm the plant dyes and finishes in-house on the first call. Passes. [invited 2026-09-13] bare invite via custom-invite modal, name confirmed yalçın çelik, sent by Claude at founder's instruction. [language 2026-09-14] Profile text is Turkish; invite already out. Per LR-B31a: if they accept, no Msg 1 unless the founder releases them by name."
+notes: "[profile read 2026-09-13] details/experience: üretim ve işletme müdürü, Akınal Yünlü, Feb 1998-present. Single-entry profile; confirm the plant dyes and finishes in-house on the first call. Passes. [invited 2026-09-13] bare invite via custom-invite modal, name confirmed yalçın çelik, sent by Claude at founder's instruction. [language 2026-09-14] Profile text is Turkish; invite already out. Per LR-B31a: if they accept, no Msg 1 unless the founder releases them by name. [audit off_scope 2026-09-14] Invite already out, but profile text is Turkish with no English (LR-B31a hard rule). If they accept, no draft, no message."
 
 ## Yasin Taştekin
 
@@ -1093,9 +1093,9 @@ degree: 2nd
 mutuals_count: 
 active_last_30d: unknown
 open_to_work: false
-outreach_status: invited
+outreach_status: off_scope
 found_date: 2026-09-13
-notes: "[profile read 2026-09-13] details/experience: Fabrika Müdürü Prestij Mensucat Jul 2025-present; purchasing manager Türkün Holding 2018-25; purchasing and admin manager Prestige Mensucat 2013-18. Whether the plant dyes in-house is not shown; Bursa mensucat mills typically do. Passes with that caveat. [invited 2026-09-13] bare invite via custom-invite modal, name confirmed Murat İ., sent by Claude at founder's instruction. [language 2026-09-14] Profile text is Turkish; invite already out. Per LR-B31a: if they accept, no Msg 1 unless the founder releases them by name."
+notes: "[profile read 2026-09-13] details/experience: Fabrika Müdürü Prestij Mensucat Jul 2025-present; purchasing manager Türkün Holding 2018-25; purchasing and admin manager Prestige Mensucat 2013-18. Whether the plant dyes in-house is not shown; Bursa mensucat mills typically do. Passes with that caveat. [invited 2026-09-13] bare invite via custom-invite modal, name confirmed Murat İ., sent by Claude at founder's instruction. [language 2026-09-14] Profile text is Turkish; invite already out. Per LR-B31a: if they accept, no Msg 1 unless the founder releases them by name. [audit off_scope 2026-09-14] Invite already out, but profile text is Turkish with no English (LR-B31a hard rule). If they accept, no draft, no message."
 
 ## Erdal Gülcan
 
@@ -1394,9 +1394,9 @@ degree: 3rd+
 mutuals_count: 
 active_last_30d: unknown
 open_to_work: false
-outreach_status: invited
+outreach_status: off_scope
 found_date: 2026-09-13
-notes: "[profile read 2026-09-13] details/experience: Responsabile Tintoria Filati Buratti Oct 2022-present; technical head Newform 2021-22; Responsabile Tintoria Lanificio F.lli Cerruti 2008-21; Responsabile Tintoria Michele Solbiati 2004-08. Headline adds chemical manager. Passes. 3rd degree. [invited 2026-09-13] bare invite via custom-invite modal, name confirmed Andrea Martinetti, sent by Claude at founder's instruction. [language 2026-09-14] Profile text is Italian; invite already out. Per LR-B31a: if they accept, no Msg 1 unless the founder releases them by name."
+notes: "[profile read 2026-09-13] details/experience: Responsabile Tintoria Filati Buratti Oct 2022-present; technical head Newform 2021-22; Responsabile Tintoria Lanificio F.lli Cerruti 2008-21; Responsabile Tintoria Michele Solbiati 2004-08. Headline adds chemical manager. Passes. 3rd degree. [invited 2026-09-13] bare invite via custom-invite modal, name confirmed Andrea Martinetti, sent by Claude at founder's instruction. [language 2026-09-14] Profile text is Italian; invite already out. Per LR-B31a: if they accept, no Msg 1 unless the founder releases them by name. [audit off_scope 2026-09-14] Invite already out, but profile text is Italian with no English (LR-B31a hard rule). If they accept, no draft, no message."
 
 ## Margarida Marques
 
@@ -1424,9 +1424,9 @@ degree: 3rd+
 mutuals_count: 
 active_last_30d: unknown
 open_to_work: false
-outreach_status: invited
+outreach_status: off_scope
 found_date: 2026-09-13
-notes: "[profile read 2026-09-13] details/experience: QC laboratory head Barceltinge Tinturaria Jan 2021-present; quality management Quinta & Santos 2012-21; QC lab technician Malhas Eical 1998-2012. Passes. 3rd degree: no 2nd-degree Portuguese dye-house contacts exist. [invited 2026-09-13] bare invite via custom-invite modal, name confirmed Margarida Marques, sent by Claude at founder's instruction. [language 2026-09-14] Profile text is Portuguese; invite already out. Per LR-B31a: if they accept, no Msg 1 unless the founder releases them by name. [held 2026-09-14] Title outside the budget-holder ICP the founders set for H1A2/H1A3/H1A6 on 2026-09-14 (cannot sign for spend). Not interviewed unless the founder releases them by name; no Msg 1. [released 2026-09-14] Founder instruction: message everyone who accepts, regardless of title or profile language. Practitioner answers count for the mechanism half of H1A2 only (LR-B12), not for H1A3/H1A6."
+notes: "[profile read 2026-09-13] details/experience: QC laboratory head Barceltinge Tinturaria Jan 2021-present; quality management Quinta & Santos 2012-21; QC lab technician Malhas Eical 1998-2012. Passes. 3rd degree: no 2nd-degree Portuguese dye-house contacts exist. [invited 2026-09-13] bare invite via custom-invite modal, name confirmed Margarida Marques, sent by Claude at founder's instruction. [language 2026-09-14] Profile text is Portuguese; invite already out. Per LR-B31a: if they accept, no Msg 1 unless the founder releases them by name. [held 2026-09-14] Title outside the budget-holder ICP the founders set for H1A2/H1A3/H1A6 on 2026-09-14 (cannot sign for spend). Not interviewed unless the founder releases them by name; no Msg 1. [released 2026-09-14] Founder instruction: message everyone who accepts, regardless of title or profile language. Practitioner answers count for the mechanism half of H1A2 only (LR-B12), not for H1A3/H1A6. [audit off_scope 2026-09-14] Invite already out, but profile text is Portuguese with no English (LR-B31a hard rule). If they accept, no draft, no message."
 
 ## Ayesha Navaid Anwar
 
@@ -1484,9 +1484,9 @@ degree: 3rd+
 mutuals_count: 
 active_last_30d: unknown
 open_to_work: false
-outreach_status: invited
+outreach_status: off_scope
 found_date: 2026-09-13
-notes: "[profile read 2026-09-13] details/experience: Responsável estamparia ATB Apr 2026-present; Responsável de Acabamentos Petratex Confecções Feb 2018-Mar 2026. Passes. 3rd degree. [invited 2026-09-13] bare invite via custom-invite modal, name confirmed Luciano Bragança, sent by Claude at founder's instruction. [language 2026-09-14] Profile text is Portuguese; invite already out. Per LR-B31a: if they accept, no Msg 1 unless the founder releases them by name. [held 2026-09-14] Title outside the budget-holder ICP the founders set for H1A2/H1A3/H1A6 on 2026-09-14 (cannot sign for spend). Not interviewed unless the founder releases them by name; no Msg 1. [released 2026-09-14] Founder instruction: message everyone who accepts, regardless of title or profile language. Practitioner answers count for the mechanism half of H1A2 only (LR-B12), not for H1A3/H1A6."
+notes: "[profile read 2026-09-13] details/experience: Responsável estamparia ATB Apr 2026-present; Responsável de Acabamentos Petratex Confecções Feb 2018-Mar 2026. Passes. 3rd degree. [invited 2026-09-13] bare invite via custom-invite modal, name confirmed Luciano Bragança, sent by Claude at founder's instruction. [language 2026-09-14] Profile text is Portuguese; invite already out. Per LR-B31a: if they accept, no Msg 1 unless the founder releases them by name. [held 2026-09-14] Title outside the budget-holder ICP the founders set for H1A2/H1A3/H1A6 on 2026-09-14 (cannot sign for spend). Not interviewed unless the founder releases them by name; no Msg 1. [released 2026-09-14] Founder instruction: message everyone who accepts, regardless of title or profile language. Practitioner answers count for the mechanism half of H1A2 only (LR-B12), not for H1A3/H1A6. [audit off_scope 2026-09-14] Invite already out, but profile text is Portuguese with no English (LR-B31a hard rule). If they accept, no draft, no message."
 
 ## Paola Polinelli
 
@@ -1514,9 +1514,9 @@ degree: 3rd+
 mutuals_count: 
 active_last_30d: unknown
 open_to_work: false
-outreach_status: invited
+outreach_status: off_scope
 found_date: 2026-09-13
-notes: "[profile read 2026-09-13] details/experience: Responsabile laboratorio tessile, employer given only as 'tintoria e finissaggio', Feb 1986-present. Line of business established, company name not; passes on function, low reply odds. 3rd degree. [invited 2026-09-13] bare invite via custom-invite modal, name confirmed Paola Polinelli, sent by Claude at founder's instruction. [language 2026-09-14] Profile text is Italian; invite already out. Per LR-B31a: if they accept, no Msg 1 unless the founder releases them by name. [held 2026-09-14] Title outside the budget-holder ICP the founders set for H1A2/H1A3/H1A6 on 2026-09-14 (cannot sign for spend). Not interviewed unless the founder releases them by name; no Msg 1. [released 2026-09-14] Founder instruction: message everyone who accepts, regardless of title or profile language. Practitioner answers count for the mechanism half of H1A2 only (LR-B12), not for H1A3/H1A6."
+notes: "[profile read 2026-09-13] details/experience: Responsabile laboratorio tessile, employer given only as 'tintoria e finissaggio', Feb 1986-present. Line of business established, company name not; passes on function, low reply odds. 3rd degree. [invited 2026-09-13] bare invite via custom-invite modal, name confirmed Paola Polinelli, sent by Claude at founder's instruction. [language 2026-09-14] Profile text is Italian; invite already out. Per LR-B31a: if they accept, no Msg 1 unless the founder releases them by name. [held 2026-09-14] Title outside the budget-holder ICP the founders set for H1A2/H1A3/H1A6 on 2026-09-14 (cannot sign for spend). Not interviewed unless the founder releases them by name; no Msg 1. [released 2026-09-14] Founder instruction: message everyone who accepts, regardless of title or profile language. Practitioner answers count for the mechanism half of H1A2 only (LR-B12), not for H1A3/H1A6. [audit off_scope 2026-09-14] Invite already out, but profile text is Italian with no English (LR-B31a hard rule). If they accept, no draft, no message."
 
 ## Emanuele Arrigoni
 
@@ -1544,9 +1544,9 @@ degree: 3rd+
 mutuals_count: 
 active_last_30d: unknown
 open_to_work: false
-outreach_status: invited
+outreach_status: off_scope
 found_date: 2026-09-13
-notes: "[profile read 2026-09-13] details/experience: Responsabile di finissaggio tessile Colombo Industrie Tessili Feb 2025-present; Novaresin 2024; Tintoria Pecco & Malinverno 2023-24 (capo rameuse). Passes. 3rd degree. [invited 2026-09-13] bare invite via custom-invite modal, name confirmed Emanuele Arrigoni, sent by Claude at founder's instruction. [language 2026-09-14] Profile text is Italian; invite already out. Per LR-B31a: if they accept, no Msg 1 unless the founder releases them by name. [held 2026-09-14] Title outside the budget-holder ICP the founders set for H1A2/H1A3/H1A6 on 2026-09-14 (cannot sign for spend). Not interviewed unless the founder releases them by name; no Msg 1. [released 2026-09-14] Founder instruction: message everyone who accepts, regardless of title or profile language. Practitioner answers count for the mechanism half of H1A2 only (LR-B12), not for H1A3/H1A6."
+notes: "[profile read 2026-09-13] details/experience: Responsabile di finissaggio tessile Colombo Industrie Tessili Feb 2025-present; Novaresin 2024; Tintoria Pecco & Malinverno 2023-24 (capo rameuse). Passes. 3rd degree. [invited 2026-09-13] bare invite via custom-invite modal, name confirmed Emanuele Arrigoni, sent by Claude at founder's instruction. [language 2026-09-14] Profile text is Italian; invite already out. Per LR-B31a: if they accept, no Msg 1 unless the founder releases them by name. [held 2026-09-14] Title outside the budget-holder ICP the founders set for H1A2/H1A3/H1A6 on 2026-09-14 (cannot sign for spend). Not interviewed unless the founder releases them by name; no Msg 1. [released 2026-09-14] Founder instruction: message everyone who accepts, regardless of title or profile language. Practitioner answers count for the mechanism half of H1A2 only (LR-B12), not for H1A3/H1A6. [audit off_scope 2026-09-14] Invite already out, but profile text is Italian with no English (LR-B31a hard rule). If they accept, no draft, no message."
 
 ## Giacomo Speroni
 

@@ -119,6 +119,19 @@ def audit():
     tier_soft_fails = []
     rationale_soft_fails = []
 
+    # LR-B31a hard rule (founder, 2026-09-14): a profile not written in English is never
+    # invited, never drafted for, and must sit at off_scope. Any live contact whose notes
+    # record a non-English profile is a hard fail, whatever its ICP fit.
+    NON_ENGLISH = re.compile(
+        r"Profile text is (Turkish|Italian|Portuguese)|profile not in English|"
+        r"does not read English|no English", re.IGNORECASE)
+    for c in contacts:
+        if NON_ENGLISH.search(c.get("notes") or ""):
+            hard_fails.append({
+                "contact": c, "aid": (c["assumptions_tested"] or ["-"])[0],
+                "reason": "non-English profile still live (LR-B31a): set off_scope, no draft",
+            })
+
     for c in contacts:
         for aid in c["assumptions_tested"]:
             icp = icps.get(aid, {})
