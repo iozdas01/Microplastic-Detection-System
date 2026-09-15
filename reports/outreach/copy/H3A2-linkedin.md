@@ -5,6 +5,8 @@ assumption: H3A2
 linkedin_account: Izgin
 ---
 
+_H3 removed 2026-09-15 at the founder's direction. This file is kept only as the record of what Anselmo Collins (C86) was sent._
+
 # H3A2 — LinkedIn copy
 
 Rules applied on every draft: LR-B1, B3, B5, B6, B11, B13, B14, B16, B18, B24, B25, B27, B28,

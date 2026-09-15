@@ -3,9 +3,9 @@ purpose: The contact ledger — one card per person targeted, invited or intervi
 idea: industrial-process-data-infrastructure
 last_updated: 2026-09-15
 totals:
-  targeted: 270
-  invited: 208
-  accepted: 46
+  targeted: 200
+  invited: 153
+  accepted: 32
   scheduled: 0
   done: 5
   no_reply: 0
@@ -15,6 +15,8 @@ totals:
 
 Started 2026-09-13 for H1A2. No LinkedIn export is staged in this clone, so the first batch
 comes from live 2nd-degree search on the founder's own account.
+
+_Removed 2026-09-15: 70 cards tied only to H2-H5 with no message exchanged (C77, C78, C79, C80, C81, C82, C83, C84, C85, C87, C88, C89, C90, C91, C92, C93, C94, C95, C96, C97, C98, C99, C100, C101, C102, C103, C104, C105, C106, C107, C108, C109, C110, C111, C112, C113, C114, C115, C116, C117, C118, C119, C120, C121, C122, C123, C124, C125, C126, C127, C128, C129, C130, C131, C132, C133, C134, C135, C136, C137, C138, C139, C140, C141, C142, C209, C241, C242, C248, C249), at the founder's direction. Their ids stay burned; git history holds the cards._
 
 ## Caner Gökçek
 
@@ -886,7 +888,6 @@ outreach_status: accepted
 found_date: 2026-09-13
 notes: "[profile read 2026-09-13] details/experience: Elevate Textiles since May 2024, Sustainability Manager Jun 2025-present; role text: energy, water, waste reduction strategy, ESG reporting frameworks, GRS/RCS/C2C certifications. Passes. [invited 2026-09-13] bare invite via custom-invite modal, name confirmed Calvin Huelsman, sent by Claude at founder's instruction. [held 2026-09-14] Title outside the budget-holder ICP the founders set for H1A2/H1A3/H1A6 on 2026-09-14 (cannot sign for spend). Not interviewed unless the founder releases them by name; no Msg 1. [released 2026-09-14] Founder instruction: message everyone who accepts, regardless of title or profile language. Practitioner answers count for the mechanism half of H1A2 only (LR-B12), not for H1A3/H1A6. [msg1 sent 2026-09-14] seen in the inbox at 1:21 PM, group thread with the co-founder, sent by the founder by hand. [status fix 2026-09-15] Msg 1 already sent in a thread on 2026-09-14, so the connection was accepted; status corrected from invited. No reply as of the 2026-09-15 check."
 
-
 ## Önder Ertürk
 
 id: C30
@@ -1307,7 +1308,6 @@ outreach_status: accepted
 found_date: 2026-09-13
 notes: "[profile read 2026-09-13] details/experience: Supply Chain Environmental Impact Field Manager, Patagonia, Feb 2025-present, Taipei; role text: executes the Supply Chain Environmental Impact Compliance Program at Asia supplier facilities, schedules and conducts environmental audits, manages CAPs. Passes (tier brand). 3rd degree: 2nd-degree pool for brand environmental roles was exhausted this session. [invited 2026-09-13] bare invite via custom-invite modal, name confirmed Chris Chen, sent by Claude at founder's instruction. [msg1 sent 2026-09-14] seen in the inbox at 12:57, 1:1 thread, sent by the founder by hand. [status fix 2026-09-15] Msg 1 already sent in a thread on 2026-09-14, so the connection was accepted; status corrected from invited. No reply as of the 2026-09-15 check."
 
-
 ## Ronit Basu
 
 id: C44
@@ -1668,7 +1668,6 @@ outreach_status: replied
 found_date: 2026-09-13
 notes: "[profile read 2026-09-13] details/experience: Washing GM and GM R&D Lucky Textile Mills Mar 2018-present; GM Siddiqsons Group 2014-18; GM Jamuna Group Dhaka 2012-14; laundry manager Soorty before. Passes. 3rd degree. [invited 2026-09-13] bare invite via custom-invite modal, name confirmed Gulfam S., sent by Claude at founder's instruction. [accepted 2026-09-14] connection accepted (seen in Connections list, recently added). [msg1 drafted 2026-09-14] Msg 1 permission ask drafted from a fresh details/experience snapshot; inbox searched, no prior thread. Copy in copy/H1A2-linkedin.md. [msg1 redrafted 2026-09-14] A/B arm build_disclosure per LR-B32; opener 'Thanks for connecting', co-founder named per LR-B27 amendment. [msg1 redrafted 2026-09-14] Settled LR-B33 shape (build sentence, grounded clause, learn line, permission ask); A/B retired. [msg1 sent 2026-09-14] LR-B33 shape, sent by the founder by hand (group thread with Sandra, 12:28); seen in the inbox search. [reply 2026-09-14] In the group thread with Izgin and Sandra (23:19): 'Yes, I'd be happy to share my experience and insights from textile wet processing, particularly in garment washing, dyeing, R&D, and sustainability-related practices. Microplastic detection is an interesting and important area for the textile industry, and I would be glad to support your research. Please feel free to send me your questions.' Open invitation, no data point yet. [msg2 drafted 2026-09-15] frequency stage: last time a brand or auditor asked for a wash-water figure, and which wash-water test gives the most trouble. Copy in copy/H1A2-linkedin.md. Awaiting founder approval. [msg2 redrafted 2026-09-15] Founder widened the scope to every wet-process reading: which chemical, water or shade readings are still manual or lab-sent, which caused the last rewash or failed lot, and what inline meters or auto-dosing were tried. Copy in copy/H1A2-linkedin.md. Awaiting founder approval. [msg2 redrafted v3 2026-09-15] Founder preface added (how contaminant and particle data could optimise the whole wet process) plus two questions: which readings are still manual or lab-sent, and which caused the last rewash or failed lot. Graveyard question moved to Msg 3. Awaiting founder approval. [msg2 sent 2026-09-15] 11:03, group thread, sent by the founder by hand; opener edited to 'Thanks for your time!' then the two washing-side questions (v3). Awaiting reply."
 
-
 ## Engr. Abdul Aziz
 
 id: C56
@@ -1759,7 +1758,6 @@ outreach_status: replied
 found_date: 2026-09-13
 notes: "[profile read 2026-09-13] details/experience: Responsável de Tinturaria Playvest/Nextil Sports Jan 2026-present; Responsável de Tinturaria Barbotex 2025 (order management, QC, troubleshooting); career break late 2024; industrial sewing before. Passes. 3rd degree. [invited 2026-09-13] bare invite via custom-invite modal, name confirmed Paulo Lopes, sent by Claude at founder's instruction. [language 2026-09-14] Profile text is Portuguese; invite already out. Per LR-B31a: if they accept, no Msg 1 unless the founder releases them by name. [held 2026-09-14] Title outside the budget-holder ICP the founders set for H1A2/H1A3/H1A6 on 2026-09-14 (cannot sign for spend). Not interviewed unless the founder releases them by name; no Msg 1. [released 2026-09-14] Founder instruction: message everyone who accepts, regardless of title or profile language. Practitioner answers count for the mechanism half of H1A2 only (LR-B12), not for H1A3/H1A6. [msg1 sent 2026-09-14] group thread with the co-founder, sent by the founder by hand. [replied 2026-09-14] 1:28 PM, a greeting only so far; route to startup-outreach-reply."
 
-
 ## Faizan Pasha
 
 id: C59
@@ -1789,7 +1787,6 @@ open_to_work: false
 outreach_status: replied
 found_date: 2026-09-13
 notes: "[profile read 2026-09-13] details/experience: Manager Denim Washing & Shade Grading, Artistic Milliners, Jan 2025-present; Deputy Manager Laundry Soorty Enterprises 2024-25 (enzyme, stone, acid, bleach, ozone washes). Passes. 3rd degree. [invited 2026-09-13] bare invite via custom-invite modal, name confirmed Faizan Pasha, sent by Claude at founder's instruction. [accepted 2026-09-14] connection accepted (seen in Connections list, recently added). [msg1 drafted 2026-09-14] Msg 1 permission ask drafted from a fresh details/experience snapshot; inbox searched, no prior thread. Copy in copy/H1A2-linkedin.md. [held 2026-09-14] Title outside the budget-holder ICP the founders set for H1A2/H1A3/H1A6 on 2026-09-14 (cannot sign for spend). Not interviewed unless the founder releases them by name; no Msg 1. [released 2026-09-14] Founder instruction: message everyone who accepts, regardless of title or profile language. Practitioner answers count for the mechanism half of H1A2 only (LR-B12), not for H1A3/H1A6. [msg1 drafted 2026-09-14] LR-B33 shape, English, after founder release; snapshot 2026-09-14. [msg1 sent 2026-09-14] LR-B33 shape, sent by the founder by hand (group thread with Sandra). [reply 2026-09-14] 13:28 \"Hi Izgin\" (greeting only so far); route to startup-outreach-reply. [reply 2026-09-15] Thread shows his reply: 'Sure' and 'Hi Izgin'. [profile read 2026-09-15] details/experience: Manager Denim Washing & Shade Grading Artistic Milliners Jan 2025-present; Deputy Manager Laundry Soorty Aug 2024-Feb 2025 (wash results against client specs, shrinkage and colour checks, water, chemical and energy reduction). [msg2 drafted 2026-09-15] frequency stage: what is usually behind a failed shade lot, and how the last one was caught and fixed. Copy in copy/H1A2-linkedin.md. Awaiting founder approval. [msg2 sent 2026-09-15] 11:06, group thread, sent by the founder by hand as drafted (failed shade lot questions). Awaiting reply."
-
 
 ## Aman Ullah
 
@@ -2301,294 +2298,6 @@ outreach_status: invited
 found_date: 2026-09-14
 notes: "[profile read 2026-09-14] details/experience: Managing Director Barrie Knitwear Jul 2025-present, Hawick; European Business Director INVISTA 2022-25; Coats 1996-2022 incl. Manufacturing Director Business Operations 2021-22. English profile. Passes. [invited 2026-09-14] bare invite via custom-invite modal, name confirmed Jonathan Whitehead, sent by Claude at founder's instruction."
 
-## Claus Mertes
-
-id: C77
-name: "Claus Mertes"
-linkedin_url: https://www.linkedin.com/in/claus-mertes/
-linkedin_account: Izgin
-company: "DME (Deutsche MeerwasserEntsalzung) GmbH / Desalination Institute DME"
-role: "Managing Director; founder of DESALFACTS and the Desalination Academy"
-signal_type: profile_fit
-signal_multiplier: 1.0
-signal_source_url: "https://www.linkedin.com/in/claus-mertes/"
-signal_excerpt: "Founded and built DESALFACTS, an independent knowledge platform for desalination and water technologies."
-contact_role: expert
-role_pts: 2
-tier: other
-size_band:
-assumptions_tested: [H2]
-validation_rationale: >
-  Desalination-sector expert with direct industrial-scale RO membrane test experience and a
-  long-running technology knowledge platform. Can identify recurring operator patterns and
-  route introductions, but cannot validate a plant operator's own CIP budget or buying decision.
-response_likelihood: 5
-likelihood_factors: "active desalination publisher (+2) · senior institute leader (+1) · no verified connection degree or mutual path (-1)"
-channel: linkedin
-degree: unknown
-mutuals_count:
-active_last_30d: true
-open_to_work: false
-close_variant: soft_ask
-copy_variant: research_only
-relationship_type: expert
-outreach_status: pending
-message_stage:
-call_stage: none
-found_date: 2026-09-14
-invited_date:
-accepted_date:
-scheduled_date:
-interview_date:
-interviews: []
-evidence_score:
-outcome_modifier:
-notes: "[public profile read 2026-09-14] LinkedIn's public index shows current desalination activity plus DESALFACTS (2014-present), CDT classification work (2012-present), and the Desalination Academy (2003-present). DME's official legal notice names Claus R. Mertes as Managing Director. WaterWorld records DME's industrial-scale 2014 RO membrane test under continuous plant conditions in Egypt. Public profile contains English project descriptions, but the logged-in live profile, connection degree and inbox could not be checked because no browser session was available. [H2 staging 2026-09-14] H2 is superseded-but-revivable and has no formal assumption node or declared ICP in graph.md; this expert lead is staged at hunch level and must not count as operator evidence. Bare invite first. Post-acceptance Msg 1 is archived in copy/H2-linkedin.md."
-
-## Theresa Slifko
-
-id: C78
-name: "Theresa Slifko"
-linkedin_url: https://www.linkedin.com/in/theresa-slifko-75883916/
-linkedin_account: Izgin
-company: "Metropolitan Water District of Southern California"
-role: "Water Quality Manager, Chemistry Unit (Water Quality Laboratory, La Verne)"
-signal_type: profile_fit
-signal_multiplier: 1.0
-signal_source_url: "https://www.linkedin.com/search/results/people/?currentCompany=%5B%2218098%22%5D&keywords=water%20quality"
-signal_excerpt: ""
-contact_role: practitioner
-role_pts: 2
-tier: water_utility
-size_band:
-assumptions_tested: [H3A2]
-validation_rationale: >
-  Runs the chemistry unit of MWD's water quality laboratory, where the SB 1422 source-water monitoring results land; can say what the Phase 1 microplastics result cost MWD and what was done with it.
-response_likelihood: 4
-likelihood_factors: "3rd+ degree (0) · long tenure, lab owner of the result (+1)"
-channel: linkedin
-degree: 3rd+
-mutuals_count:
-active_last_30d: unknown
-open_to_work: false
-outreach_status: invited
-found_date: 2026-09-14
-notes: "[profile read 2026-09-14] details/experience: Water Quality Manager, Chemistry Unit, MWD Nov 2012-present (13 yrs, La Verne lab); environmental scientist LA County Sanitation Districts 2007-12; staff scientist Orange County Utilities FL 2000-07; Journal AWWA editorial board 2012-18. English. Passes. [invited 2026-09-14] bare invite via custom-invite modal, modal name confirmed Theresa Slifko, sent by Claude at founder's instruction; Pending confirmed on profile."
-
-## Monica Tirtadidjaja
-
-id: C79
-name: "Monica Tirtadidjaja"
-linkedin_url: https://www.linkedin.com/in/monica-tirtadidjaja-65577a5/
-linkedin_account: Izgin
-company: "Metropolitan Water District of Southern California"
-role: "Water Quality Engineering Team Manager"
-signal_type: profile_fit
-signal_multiplier: 1.0
-signal_source_url: "https://www.linkedin.com/search/results/people/?currentCompany=%5B%2218098%22%5D&keywords=water%20quality"
-signal_excerpt: ""
-contact_role: practitioner
-role_pts: 2
-tier: water_utility
-size_band:
-assumptions_tested: [H3A2]
-validation_rationale: >
-  Leads MWD's water quality engineering team, the group that turns a monitoring result into a treatment question; can say whether the microplastics number ever reached a treatment decision.
-response_likelihood: 4
-likelihood_factors: "3rd+ degree (0) · 14 yrs in role (+1)"
-channel: linkedin
-degree: 3rd+
-mutuals_count:
-active_last_30d: unknown
-open_to_work: false
-outreach_status: invited
-found_date: 2026-09-14
-notes: "[profile read 2026-09-14] details/experience: Water Quality Engineering Team Manager, MWD Jul 2012-present (14 yrs); supervising O&M specialist SUEZ 2009-12; process engineer WorleyParsons 2008-09 and United Water 2005-08. English. Passes. [invited 2026-09-14] bare invite via custom-invite modal, modal name confirmed Monica Tirtadidjaja, sent by Claude at founder's instruction; Pending confirmed on profile."
-
-## Joyce Lehman
-
-id: C80
-name: "Joyce Lehman"
-linkedin_url: https://www.linkedin.com/in/joyce-lehman-920670250/
-linkedin_account: Izgin
-company: "Metropolitan Water District of Southern California"
-role: "Water Quality Laboratory Services Unit Manager"
-signal_type: profile_fit
-signal_multiplier: 1.0
-signal_source_url: "https://www.linkedin.com/search/results/people/?currentCompany=%5B%2218098%22%5D&keywords=water%20quality"
-signal_excerpt: ""
-contact_role: practitioner
-role_pts: 2
-tier: water_utility
-size_band:
-assumptions_tested: [H3A2]
-validation_rationale: >
-  Manages MWD's water quality laboratory services unit, which handles sampling logistics and outside-lab results; can say what the SB 1422 sampling cost in staff time and money.
-response_likelihood: 4
-likelihood_factors: "3rd+ degree (0) · owns lab services (+1)"
-channel: linkedin
-degree: 3rd+
-mutuals_count:
-active_last_30d: unknown
-open_to_work: false
-outreach_status: invited
-found_date: 2026-09-14
-notes: "[profile read 2026-09-14] details/experience: Water Quality Laboratory Services Unit Manager, MWD Dec 2025-present (interim from Mar 2025); Water Reuse & Process Development Team Manager 2021-25; engineer roles since 2012; 15 yrs at MWD. English. Passes. [invited 2026-09-14] bare invite via custom-invite modal, modal name confirmed Joyce Lehman, sent by Claude at founder's instruction; Pending confirmed on profile."
-
-## John Bednarski
-
-id: C81
-name: "John Bednarski"
-linkedin_url: https://www.linkedin.com/in/john-bednarski-92312ab1/
-linkedin_account: Izgin
-company: "Metropolitan Water District of Southern California"
-role: "Assistant General Manager, Water Resources and Technical Services"
-signal_type: profile_fit
-signal_multiplier: 1.0
-signal_source_url: "https://www.linkedin.com/company/mwd/people/?keywords=water%20quality"
-signal_excerpt: ""
-contact_role: buyer
-role_pts: 3
-tier: water_utility
-size_band:
-assumptions_tested: [H3A2]
-validation_rationale: >
-  AGM over water resources and technical services at MWD, the budget line any new monitoring spend would sit on; can say whether SB 1422 created a cost anyone at executive level noticed.
-response_likelihood: 3
-likelihood_factors: "3rd+ degree (0) · executive, low reply rate (0)"
-channel: linkedin
-degree: 3rd+
-mutuals_count:
-active_last_30d: unknown
-open_to_work: false
-outreach_status: invited
-found_date: 2026-09-14
-notes: "[profile read 2026-09-14] details/experience: AGM Water Resources and Technical Services, MWD Jun 2024-present; Chief Engineer 2018-24; engineering roles since 1991 (35 yrs at MWD); LADWP associate engineer 1981-91. English. Passes. [invited 2026-09-14] bare invite via custom-invite modal, modal name confirmed John Bednarski, sent by Claude at founder's instruction; Pending confirmed on profile."
-
-## Shivaji Deshmukh
-
-id: C82
-name: "Shivaji Deshmukh"
-linkedin_url: https://www.linkedin.com/in/shivaji-deshmukh-2431051/
-linkedin_account: Izgin
-company: "Metropolitan Water District of Southern California"
-role: "General Manager"
-signal_type: profile_fit
-signal_multiplier: 1.0
-signal_source_url: "https://www.linkedin.com/company/mwd/people/?keywords=water%20quality"
-signal_excerpt: ""
-contact_role: buyer
-role_pts: 3
-tier: water_utility
-size_band:
-assumptions_tested: [H3A2]
-validation_rationale: >
-  General manager of MWD since January 2026 and president of WateReuse California; signs for spend and has run potable reuse (OCWD GWR), so can speak to both the monitoring obligation and whether it matters at board level.
-response_likelihood: 3
-likelihood_factors: "3rd+ degree (0) · CEO-level, low reply rate (0)"
-channel: linkedin
-degree: 3rd+
-mutuals_count:
-active_last_30d: unknown
-open_to_work: false
-outreach_status: invited
-found_date: 2026-09-14
-notes: "[profile read 2026-09-14] details/experience: General Manager MWD Jan 2026-present; GM Inland Empire Utilities Agency 2019-25; AGM West Basin MWD 2010-19; OCWD 2004-10 incl. GWR System Manager; president WateReuse California board; US Water Alliance board. English. Passes. [invited 2026-09-14] bare invite via custom-invite modal, modal name confirmed Shivaji Deshmukh, sent by Claude at founder's instruction; Pending confirmed."
-
-
-## Kenneth Lee
-
-id: C83
-name: "Kenneth Lee"
-linkedin_url: https://www.linkedin.com/in/kenneth-lee-abab263/
-linkedin_account: Izgin
-company: "San Francisco Public Utilities Commission"
-role: "Laboratory Director"
-signal_type: profile_fit
-signal_multiplier: 1.0
-signal_source_url: "https://www.linkedin.com/company/sfpuc/people/?keywords=water%20quality"
-signal_excerpt: ""
-contact_role: buyer
-role_pts: 3
-tier: water_utility
-size_band:
-assumptions_tested: [H3A2]
-validation_rationale: >
-  Laboratory director at SFPUC, whose regional system is on the Board's Phase 1 list; owns the lab budget and the SB 1422 result, and can say what the microplastics monitoring cost beyond the lab fee.
-response_likelihood: 4
-likelihood_factors: "3rd+ degree (0) · owns the result and the lab budget (+1)"
-channel: linkedin
-degree: 3rd+
-mutuals_count:
-active_last_30d: unknown
-open_to_work: false
-outreach_status: invited
-found_date: 2026-09-14
-notes: "[profile read 2026-09-14] details/experience: Laboratory Director SFPUC Sep 2018-present; Laboratory Services Manager 2008-18; lab director TestAmerica 2005-08; president/lab director Oceanic Analytical 1996-2005. English. Passes. [invited 2026-09-14] bare invite via custom-invite modal, modal name confirmed Kenneth Lee, sent by Claude at founder's instruction; Pending confirmed."
-
-
-## Dennis Herrera
-
-id: C84
-name: "Dennis Herrera"
-linkedin_url: https://www.linkedin.com/in/dennis-jose-herrera-3412b144/
-linkedin_account: Izgin
-company: "San Francisco Public Utilities Commission"
-role: "Chief Executive Officer and General Manager"
-signal_type: profile_fit
-signal_multiplier: 1.0
-signal_source_url: "https://www.linkedin.com/company/sfpuc/people/?keywords=water%20quality"
-signal_excerpt: ""
-contact_role: buyer
-role_pts: 3
-tier: water_utility
-size_band:
-assumptions_tested: [H3A2]
-validation_rationale: >
-  CEO and GM of SFPUC with P&L over a $3.5B budget; the person a public microplastics disclosure would reach. Low reply odds, included because he signs.
-response_likelihood: 2
-likelihood_factors: "3rd+ degree (0) · agency CEO, very low reply rate (-1)"
-channel: linkedin
-degree: 3rd+
-mutuals_count:
-active_last_30d: unknown
-open_to_work: false
-outreach_status: invited
-found_date: 2026-09-14
-notes: "[profile read 2026-09-14] details/experience: CEO and GM SFPUC Nov 2021-present, 2,700 staff, $3.5B budget; San Francisco City Attorney ~20 yrs before. English. Passes. [invited 2026-09-14] bare invite via custom-invite modal, modal name confirmed Dennis Herrera, sent by Claude at founder's instruction; Pending confirmed."
-
-
-## Kaushal Parbhoo
-
-id: C85
-name: "Kaushal Parbhoo"
-linkedin_url: https://www.linkedin.com/in/kaushal-parbhoo-7b0b432b6/
-linkedin_account: Izgin
-company: "Los Angeles Department of Water and Power"
-role: "Assistant Director of Water Quality"
-signal_type: profile_fit
-signal_multiplier: 1.0
-signal_source_url: "https://www.linkedin.com/search/results/people/?currentCompany=%5B%2229388%22%5D&keywords=water%20quality"
-signal_excerpt: ""
-contact_role: buyer
-role_pts: 3
-tier: water_utility
-size_band:
-assumptions_tested: [H3A2]
-validation_rationale: >
-  Assistant director of water quality at LADWP, which is on the Board's Phase 1 list; owns the monitoring result for the city's supply.
-response_likelihood: 3
-likelihood_factors: "3rd+ degree (0) · thin profile (0)"
-channel: linkedin
-degree: 3rd+
-mutuals_count:
-active_last_30d: unknown
-open_to_work: false
-outreach_status: invited
-found_date: 2026-09-14
-notes: "[profile read 2026-09-14] details/experience: Assistant Director of Water Quality, LADWP Oct 2025-present (1 yr); no earlier roles listed. English. Passes on function; thin history noted, he may not have handled Phase 1. [invited 2026-09-14] bare invite via custom-invite modal, modal name confirmed Kaushal Parbhoo, sent by Claude at founder's instruction; Pending confirmed."
-
-
 ## Anselmo Collins
 
 id: C86
@@ -2619,1732 +2328,7 @@ active_last_30d: unknown
 open_to_work: false
 outreach_status: accepted
 found_date: 2026-09-14
-notes: "[profile read 2026-09-14] details/experience: COO and Sr AGM Water System LADWP Aug 2021-present; Deputy Sr AGM and Director of Water Operations 2017-21 (treatment, LA Aqueduct); 33 yrs at LADWP. English. Passes. [invited 2026-09-14] bare invite via custom-invite modal, modal name confirmed Anselmo Collins, sent by Claude at founder's instruction; Pending confirmed. [accepted 2026-09-14] shows 1st degree in LinkedIn search the same day. [msg1 drafted 2026-09-14] LR-B33 shape with the drinking-water build sentence (LR-B28); inbox searched by first name and surname, no thread. Copy in copy/H3A2-linkedin.md. Awaiting founder send. [msg1 sent 2026-09-14] Sent by the founder by hand (founder confirmation in chat); H3A2 Msg 1 from copy/H3A2-linkedin.md."
-
-
-## Tom Maichaimongkol
-
-id: C87
-name: "Tom Maichaimongkol"
-linkedin_url: https://www.linkedin.com/in/tom-maichaimongkol-4030054/
-linkedin_account: Izgin
-company: "Los Angeles Department of Water and Power"
-role: "Environmental Specialist, Wastewater Quality and Compliance"
-signal_type: profile_fit
-signal_multiplier: 1.0
-signal_source_url: "https://www.linkedin.com/search/results/people/?currentCompany=%5B%2229388%22%5D&keywords=water%20quality"
-signal_excerpt: ""
-contact_role: practitioner
-role_pts: 2
-tier: water_utility
-size_band:
-assumptions_tested: [H3A2]
-validation_rationale: >
-  Supervised LADWP's water quality source-sampling group 2023-26, the Phase 1 source-water sampling window, but now works in wastewater.
-response_likelihood: 4
-likelihood_factors: "3rd+ degree (0)"
-channel: linkedin
-degree: 3rd+
-mutuals_count:
-active_last_30d: unknown
-open_to_work: false
-outreach_status: off_scope
-found_date: 2026-09-14
-notes: "[audit off_scope 2026-09-14] Profile visit: Environmental Specialist, Wastewater Quality and Compliance group, LADWP Mar 2026-present; before that Supervisor, Water Quality Source Sampling Group 2023-26 and Distribution Sampling 2022-23. Current function is wastewater, fails the live-profile gate on current function for H3A2 (icp_out_of_scope: wastewater, H4 not H3). Not invited. Worth revisiting as a witness to Phase 1 source sampling if the founder wants."
-
-## Javier Suárez
-
-id: C88
-name: "Javier Suárez"
-linkedin_url: https://www.linkedin.com/in/javiersuarezmartin/
-linkedin_account: Izgin
-company: "DuPont Water Solutions"
-role: "Global Technical Service & Development Network Leader"
-signal_type: profile_fit
-signal_multiplier: 1.0
-signal_source_url: "https://www.linkedin.com/search/results/people/?currentCompany=%5B%225253342%22%5D&keywords=technical%20service"
-signal_excerpt: ""
-contact_role: buyer
-role_pts: 3
-tier: membrane_manufacturer
-size_band:
-assumptions_tested: [H5A2]
-validation_rationale: >
-  Leads DuPont Water Solutions' global technical service and development network, the function that answers when FilmTec or IntegraTec membranes foul early; can say how the cause is found and what it costs DuPont.
-response_likelihood: 4
-likelihood_factors: "3rd+ degree (0) · runs the exact function (+1)"
-channel: linkedin
-degree: 3rd+
-mutuals_count:
-active_last_30d: unknown
-open_to_work: false
-outreach_status: invited
-found_date: 2026-09-14
-notes: "[profile read 2026-09-14] details/experience: Global TS&D Network Leader DuPont Water Solutions Dec 2024-present (Madrid); TS&D leader South Asia/Japan/Korea 2021-24; TS Manager DuPont Singapore 2019-21; Dow ultrafiltration technical specialist EMEA 2011-18. English. Passes. [invited 2026-09-14] bare invite via custom-invite modal, modal name confirmed Javier Suárez, sent by Claude at founder's instruction; Pending confirmed."
-
-
-## Sonia Vila Cremer
-
-id: C89
-name: "Sonia Vila Cremer"
-linkedin_url: https://www.linkedin.com/in/sonia-vila-cremer-37536277/
-linkedin_account: Izgin
-company: "DuPont Water Solutions"
-role: "EMEA Technical Service and Development Leader"
-signal_type: profile_fit
-signal_multiplier: 1.0
-signal_source_url: "https://www.linkedin.com/search/results/people/?currentCompany=%5B%225253342%22%5D&keywords=technical%20service"
-signal_excerpt: ""
-contact_role: buyer
-role_pts: 3
-tier: membrane_manufacturer
-size_band:
-assumptions_tested: [H5A2]
-validation_rationale: >
-  Leads DuPont's EMEA technical service and development team for FilmTec RO/NF and IntegraTec UF, supporting product selection and design; sees every early-fouling case in the region.
-response_likelihood: 4
-likelihood_factors: "3rd+ degree (0) · leads regional TS&D (+1)"
-channel: linkedin
-degree: 3rd+
-mutuals_count:
-active_last_30d: unknown
-open_to_work: false
-outreach_status: invited
-found_date: 2026-09-14
-notes: "[profile read 2026-09-14] details/experience: EMEA TS&D Leader DuPont Water Solutions Oct 2023-present (Tarragona); joined 2012 as application development engineer; roles in application development, R&D and TS&D on FilmTec RO/NF and IntegraTec UF. English. Passes. [invited 2026-09-14] bare invite via custom-invite modal, modal name confirmed Sonia Vila Cremer, sent by Claude at founder's instruction; Pending confirmed."
-
-
-## Denise Haukkala
-
-id: C90
-name: "Denise Haukkala"
-linkedin_url: https://www.linkedin.com/in/denise-haukkala-27882470/
-linkedin_account: Izgin
-company: "DuPont Water Solutions"
-role: "Technical Service and Development (FilmTec and specialty membranes)"
-signal_type: profile_fit
-signal_multiplier: 1.0
-signal_source_url: "https://www.linkedin.com/search/results/people/?currentCompany=%5B%225253342%22%5D&keywords=technical%20service"
-signal_excerpt: ""
-contact_role: practitioner
-role_pts: 2
-tier: membrane_manufacturer
-size_band:
-assumptions_tested: [H5A2]
-validation_rationale: >
-  Seventeen years of process troubleshooting on FilmTec RO/NF for utility, industrial and wastewater customers; has lived the early-fouling call from the maker's side many times.
-response_likelihood: 5
-likelihood_factors: "3rd+ degree (0) · hands-on troubleshooting (+1) · long tenure (+1)"
-channel: linkedin
-degree: 3rd+
-mutuals_count:
-active_last_30d: unknown
-open_to_work: false
-outreach_status: invited
-found_date: 2026-09-14
-notes: "[profile read 2026-09-14] details/experience: Technical Service and Development, DuPont Water Solutions Apr 2019-present; Dow Water & Process Solutions technical service 2007-19; covers FilmTec and specialty membranes: design, application development, process troubleshooting, training. English. Passes. [invited 2026-09-14] bare invite via custom-invite modal, modal name confirmed Denise Haukkala, sent by Claude at founder's instruction; Pending confirmed."
-
-
-## Alfina Fadillah
-
-id: C91
-name: "Alfina Fadillah"
-linkedin_url: https://www.linkedin.com/in/alfinafadillah/
-linkedin_account: Izgin
-company: "DuPont Water Solutions"
-role: "Technical Service & Field Engineer"
-signal_type: profile_fit
-signal_multiplier: 1.0
-signal_source_url: "https://www.linkedin.com/search/results/people/?currentCompany=%5B%225253342%22%5D&keywords=technical%20service"
-signal_excerpt: ""
-contact_role: practitioner
-role_pts: 2
-tier: membrane_manufacturer
-size_band:
-assumptions_tested: [H5A2]
-validation_rationale: >
-  Field engineer who commissions and troubleshoots DuPont UF/RO systems on site in Indonesia; can describe what the maker learns, and fails to learn, when a customer's membranes foul.
-response_likelihood: 5
-likelihood_factors: "3rd+ degree (0) · field role, earlier career (+1)"
-channel: linkedin
-degree: 3rd+
-mutuals_count:
-active_last_30d: unknown
-open_to_work: false
-outreach_status: invited
-found_date: 2026-09-14
-notes: "[profile read 2026-09-14] details/experience: Technical Service & Field Engineer DuPont Water Solutions Nov 2024-present (Jakarta); training, troubleshooting, commissioning and design support for UF, RO and ion exchange. English. Passes; tenure ~2 yrs. [invited 2026-09-14] bare invite via custom-invite modal, modal name confirmed Alfina Fadillah, sent by Claude at founder's instruction; Pending confirmed."
-
-
-## Brandon Kern
-
-id: C92
-name: "Brandon Kern"
-linkedin_url: https://www.linkedin.com/in/brandon-kern-49611713/
-linkedin_account: Izgin
-company: "DuPont Water Solutions"
-role: "Technical Manager, TS&D (ion exchange and adsorption)"
-signal_type: profile_fit
-signal_multiplier: 1.0
-signal_source_url: "https://www.linkedin.com/search/results/people/?currentCompany=%5B%225253342%22%5D&keywords=technical%20service"
-signal_excerpt: ""
-contact_role: practitioner
-role_pts: 2
-tier: membrane_manufacturer
-size_band:
-assumptions_tested: [H5A2]
-validation_rationale: >
-  Technical manager at DuPont Water Solutions, but for ion exchange and adsorption media, not membranes.
-response_likelihood: 3
-likelihood_factors: "3rd+ degree (0)"
-channel: linkedin
-degree: 3rd+
-mutuals_count:
-active_last_30d: unknown
-open_to_work: false
-outreach_status: off_scope
-found_date: 2026-09-14
-notes: "[audit off_scope 2026-09-14] Profile visit: Technical Manager TS&D DuPont Water Solutions Mar 2019-present, subject-matter expert for drinking water and trace-contaminant removal by ion exchange and adsorption (CECs). Function does not touch membrane fouling or membrane life; fails the live-profile gate on function for H5A2. Not invited."
-
-## Maria Neculau
-
-id: C93
-name: "Maria Neculau"
-linkedin_url: https://www.linkedin.com/in/maria-neculau-30346847/
-linkedin_account: Izgin
-company: "Hydranautics (A Nitto Group Company)"
-role: "Senior Technical Support Manager; RO Technical Manager Europe / North America"
-signal_type: profile_fit
-signal_multiplier: 1.0
-signal_source_url: "https://www.linkedin.com/search/results/people/?currentCompany=%5B%2249072%22%5D&keywords=technical"
-signal_excerpt: ""
-contact_role: buyer
-role_pts: 3
-tier: membrane_manufacturer
-size_band:
-assumptions_tested: [H5A2]
-validation_rationale: >
-  Hydranautics' RO technical manager for Europe and North America for 27 years; the escalation point when a customer's membranes underperform, so she knows how fouling cause and warranty get settled.
-response_likelihood: 4
-likelihood_factors: "3rd+ degree (0) · 27 yrs in the exact role (+1)"
-channel: linkedin
-degree: 3rd+
-mutuals_count:
-active_last_30d: unknown
-open_to_work: false
-outreach_status: invited
-found_date: 2026-09-14
-notes: "[profile read 2026-09-14] details/experience: Senior Technical Support Manager Hydranautics Jan 2018-present; RO Technical Manager Europe/NA Hydranautics Mar 1999-present (Barcelona). English. Passes. [invited 2026-09-14] bare invite via custom-invite modal, modal name confirmed Maria Neculau, sent by Claude at founder's instruction; Pending confirmed."
-
-
-## Avinash Bhusanurmath
-
-id: C94
-name: "Avinash Bhusanurmath"
-linkedin_url: https://www.linkedin.com/in/avinash-bhusanurmath-57521087/
-linkedin_account: Izgin
-company: "Hydranautics (A Nitto Group Company)"
-role: "Technical Manager, membrane separations"
-signal_type: profile_fit
-signal_multiplier: 1.0
-signal_source_url: "https://www.linkedin.com/search/results/people/?currentCompany=%5B%2249072%22%5D&keywords=technical"
-signal_excerpt: ""
-contact_role: practitioner
-role_pts: 2
-tier: membrane_manufacturer
-size_band:
-assumptions_tested: [H5A2]
-validation_rationale: >
-  Technical manager at Hydranautics after technical-services leads at Veolia and SUEZ supporting membrane design and applications; has seen early fouling from three makers' sides.
-response_likelihood: 4
-likelihood_factors: "3rd+ degree (0) · multi-maker background (+1)"
-channel: linkedin
-degree: 3rd+
-mutuals_count:
-active_last_30d: unknown
-open_to_work: false
-outreach_status: invited
-found_date: 2026-09-14
-notes: "[profile read 2026-09-14] details/experience: Technical Manager Hydranautics Oct 2025-present (Mumbai); Technical Services Lead Products Veolia Water Tech 2022-25; Technical Services Lead SUEZ WTS 2021-22; Thermax technical services to 2021. English. Passes. [invited 2026-09-14] bare invite via custom-invite modal, modal name confirmed Avinash Bhusanurmath, sent by Claude at founder's instruction; Pending confirmed."
-
-
-## Keith Andes
-
-id: C95
-name: "Keith Andes"
-linkedin_url: https://www.linkedin.com/in/keith-andes-57388416/
-linkedin_account: Izgin
-company: "Hydranautics (A Nitto Group Company)"
-role: "Senior Pacific Rim Technical Manager"
-signal_type: profile_fit
-signal_multiplier: 1.0
-signal_source_url: "https://www.linkedin.com/search/results/people/?currentCompany=%5B%2249072%22%5D&keywords=technical"
-signal_excerpt: ""
-contact_role: practitioner
-role_pts: 2
-tier: membrane_manufacturer
-size_band:
-assumptions_tested: [H5A2]
-validation_rationale: >
-  Hydranautics' senior technical manager for the Pacific Rim since 1984, including Australian desalination plants; long memory of how fouling disputes are settled.
-response_likelihood: 4
-likelihood_factors: "3rd+ degree (0) · 42 yrs in role (+1)"
-channel: linkedin
-degree: 3rd+
-mutuals_count:
-active_last_30d: unknown
-open_to_work: false
-outreach_status: invited
-found_date: 2026-09-14
-notes: "[profile read 2026-09-14] details/experience: Sr Pacific Rim Technical Manager Hydranautics Jan 1984-present (Perth). English. Passes. [invited 2026-09-14] bare invite via custom-invite modal, modal name confirmed Keith Andes, sent by Claude at founder's instruction; Pending confirmed."
-
-
-## Roman Boda
-
-id: C96
-name: "Roman Boda"
-linkedin_url: https://www.linkedin.com/in/roman-boda-87699320/
-linkedin_account: Izgin
-company: "Hydranautics (A Nitto Group Company)"
-role: "Plant Services Engineering Manager"
-signal_type: profile_fit
-signal_multiplier: 1.0
-signal_source_url: "https://www.linkedin.com/search/results/people/?currentCompany=%5B%2249072%22%5D&keywords=technical"
-signal_excerpt: ""
-contact_role: practitioner
-role_pts: 2
-tier: membrane_manufacturer
-size_band:
-assumptions_tested: [H5A2]
-validation_rationale: >
-  His own role text lists warranties, chemical cleanings, troubleshooting and review of membrane performance for Hydranautics customers; the closest match in the market to the H5A2 question.
-response_likelihood: 5
-likelihood_factors: "3rd+ degree (0) · role text names warranties and CIP (+2)"
-channel: linkedin
-degree: 3rd+
-mutuals_count:
-active_last_30d: unknown
-open_to_work: false
-outreach_status: pending
-found_date: 2026-09-14
-notes: "[profile read 2026-09-14] details/experience: Plant Services Engineering Manager Hydranautics Jan 2007-present (Glasgow, Dubai): RO/NF/UF/MBR projections, membrane selection, pre-treatment design support, warranties, commissioning, chemical cleanings, troubleshooting, membrane performance review; senior process engineer Weir Westgarth 2002-07 (SWRO desalination). English. Passes. [invite blocked 2026-09-14] custom-invite modal asks for his email address to connect (LinkedIn verification); no bare invite possible and no email held, so nothing sent. Reach via a mutual or email only."
-
-
-## Tamotsu Kitade
-
-id: C97
-name: "Tamotsu Kitade"
-linkedin_url: https://www.linkedin.com/in/tamotsu-kitade-917a44188/
-linkedin_account: Izgin
-company: "Toray Membrane USA, Inc."
-role: "General Manager, R&D"
-signal_type: profile_fit
-signal_multiplier: 1.0
-signal_source_url: "https://www.linkedin.com/search/results/people/?currentCompany=%5B%22368383%22%5D"
-signal_excerpt: ""
-contact_role: buyer
-role_pts: 3
-tier: membrane_manufacturer
-size_band:
-assumptions_tested: [H5A2]
-validation_rationale: >
-  Heads R&D at Toray Membrane USA, the group that would fund or reject a membrane-life feedback loop as an R&D tool.
-response_likelihood: 3
-likelihood_factors: "3rd+ degree (0) · senior R&D (0)"
-channel: linkedin
-degree: 3rd+
-mutuals_count:
-active_last_30d: unknown
-open_to_work: false
-outreach_status: invited
-found_date: 2026-09-14
-notes: "[profile read 2026-09-14] details/experience: General Manager R&D, Toray Membrane USA Apr 2017-present (location Matsuyama, Ehime). Profile text in English. Passes. [invited 2026-09-14] bare invite via custom-invite modal, modal name confirmed Tamotsu Kitade, sent by Claude at founder's instruction; Pending confirmed."
-
-
-## Luisa Sangines-Uriarte
-
-id: C98
-name: "Luisa Sangines-Uriarte"
-linkedin_url: https://www.linkedin.com/in/luisa-sangines-uriarte-6a367526/
-linkedin_account: Izgin
-company: "Valley Water (Santa Clara Valley Water District)"
-role: "Water Quality Manager"
-signal_type: profile_fit
-signal_multiplier: 1.0
-signal_source_url: "https://www.linkedin.com/search/results/people/?keywords=water%20quality%20Valley%20Water%20Santa%20Clara"
-signal_excerpt: ""
-contact_role: practitioner
-role_pts: 2
-tier: water_utility
-size_band:
-assumptions_tested: [H3A2]
-validation_rationale: >
-  Water quality manager at Valley Water, which treats and wholesales drinking water to 2 million people in Santa Clara County; owns regulatory compliance results for the treatment plants.
-response_likelihood: 4
-likelihood_factors: "3rd+ degree (0) · owns WQ compliance (+1)"
-channel: linkedin
-degree: 3rd+
-mutuals_count:
-active_last_30d: unknown
-open_to_work: false
-outreach_status: invited
-found_date: 2026-09-14
-notes: "[profile read 2026-09-14] details/experience: Water Quality Manager Valley Water Sep 2024-present; senior engineer 2016-24; Water Quality Unit treatment-plant process support and regulatory compliance 2013-14; environmental engineer Alameda County Water District 2002-10. English. Passes. SB 1422 Phase 1 selection of Valley Water not verified; qualifies on size and surface-water supply. [invited 2026-09-14] bare invite via custom-invite modal, modal name confirmed Luisa Sangines-Uriarte, sent by Claude at founder's instruction; Pending confirmed."
-
-
-## Surjit Saini
-
-id: C99
-name: "Surjit Saini"
-linkedin_url: https://www.linkedin.com/in/surjit-saini-pmp-502140a1/
-linkedin_account: Izgin
-company: "Valley Water (Santa Clara Valley Water District)"
-role: "Laboratory Manager"
-signal_type: profile_fit
-signal_multiplier: 1.0
-signal_source_url: "https://www.linkedin.com/search/results/people/?keywords=water%20quality%20Valley%20Water%20Santa%20Clara"
-signal_excerpt: ""
-contact_role: practitioner
-role_pts: 2
-tier: water_utility
-size_band:
-assumptions_tested: [H3A2]
-validation_rationale: >
-  Runs Valley Water's laboratory, where any microplastics sample would be collected, shipped or analysed; can say what the monitoring cost in lab time.
-response_likelihood: 4
-likelihood_factors: "3rd+ degree (0) · lab owner (+1)"
-channel: linkedin
-degree: 3rd+
-mutuals_count:
-active_last_30d: unknown
-open_to_work: false
-outreach_status: invited
-found_date: 2026-09-14
-notes: "[profile read 2026-09-14] details/experience: Laboratory Manager Santa Clara Valley Water District Mar 2019-present; Quality Assurance Officer 2014-19. English. Passes. SB 1422 selection not verified. [invited 2026-09-14] bare invite via custom-invite modal, modal name confirmed Surjit Saini, sent by Claude at founder's instruction; Pending confirmed."
-
-
-## Doug Campbell
-
-id: C100
-name: "Doug Campbell"
-linkedin_url: https://www.linkedin.com/in/doug-campbell-055bb468/
-linkedin_account: Izgin
-company: "City of San Diego Public Utilities Department"
-role: "Assistant Director, Water Recovery and Pure Water Branch; Assistant Deputy Director, Water System Operations"
-signal_type: profile_fit
-signal_multiplier: 1.0
-signal_source_url: "https://www.linkedin.com/search/results/people/?keywords=water%20quality%20City%20of%20San%20Diego%20Public%20Utilities"
-signal_excerpt: ""
-contact_role: buyer
-role_pts: 3
-tier: water_utility
-size_band:
-assumptions_tested: [H3A2]
-validation_rationale: >
-  Assistant director over water system operations and the Pure Water potable-reuse branch at the City of San Diego, after nine years managing its water quality chemistry services; knows both the lab side and the budget side of a monitoring obligation.
-response_likelihood: 4
-likelihood_factors: "3rd+ degree (0) · ex water quality chemistry manager (+1)"
-channel: linkedin
-degree: 3rd+
-mutuals_count:
-active_last_30d: unknown
-open_to_work: false
-outreach_status: invited
-found_date: 2026-09-14
-notes: "[profile read 2026-09-14] details/experience: Assistant Director, Water Recovery and Pure Water Branch, City of San Diego PUD Oct 2023-present; Assistant Deputy Director Water System Operations Feb 2021-present; lab supervisor Sweetwater Authority 2020-21; senior chemist City of San Diego 2011-20 managing Water Quality Chemistry Services. English. Passes. SB 1422 selection not verified. [invited 2026-09-14] bare invite via custom-invite modal, modal name confirmed Doug Campbell, sent by Claude at founder's instruction; Pending confirmed."
-
-
-## Guillem Gilabert-Oriol
-
-id: C101
-name: "Guillem Gilabert-Oriol"
-linkedin_url: https://www.linkedin.com/in/guillemgilabert/
-linkedin_account: Izgin
-company: "DuPont Water Solutions"
-role: "R&D Leader, Water Treatment (leads application development engineers, Global Water Technology Center)"
-signal_type: profile_fit
-signal_multiplier: 1.0
-signal_source_url: "https://www.linkedin.com/search/results/people/?keywords=DuPont%20FilmTec%20application%20development"
-signal_excerpt: ""
-contact_role: buyer
-role_pts: 3
-tier: membrane_manufacturer
-size_band:
-assumptions_tested: [H5A2]
-validation_rationale: >
-  Leads DuPont's application development engineers at its Global Water Technology Center and is the R&D technical leader for municipal drinking water and desalination; the R&D owner of any membrane-life feedback loop at DuPont.
-response_likelihood: 4
-likelihood_factors: "3rd+ degree (0) · R&D owner, EDS board (+1)"
-channel: linkedin
-degree: 3rd+
-mutuals_count:
-active_last_30d: unknown
-open_to_work: false
-outreach_status: accepted
-found_date: 2026-09-14
-notes: "[profile read 2026-09-14] details/experience: R&D Leader on Water Treatment, DuPont Apr 2019-present (Tarragona): leads the application development engineers' team since 2023; R&D technical leader for municipal drinking water and desalination since 2019; European Desalination Society board member Feb 2026-present. English. Passes. [invited 2026-09-14] bare invite via custom-invite modal, modal name confirmed Guillem Gilabert-Oriol, sent by Claude at founder's instruction; Pending confirmed. [accepted 2026-09-15] seen in the Connections list 2026-09-15 (connected 2026-09-15). No Msg 1: H3 and H5 superseded 2026-09-15 (founder: stay within fashion)."
-
-
-## Ezzat Sabry
-
-id: C102
-name: "Ezzat Sabry"
-linkedin_url: https://www.linkedin.com/in/ezzat-sabry-880333168/
-linkedin_account: Izgin
-company: "Toray Membrane Middle East (TMME)"
-role: "Technical Service Engineer"
-signal_type: profile_fit
-signal_multiplier: 1.0
-signal_source_url: "https://www.linkedin.com/search/results/people/?keywords=Toray%20membrane%20technical%20service"
-signal_excerpt: ""
-contact_role: practitioner
-role_pts: 2
-tier: membrane_manufacturer
-size_band:
-assumptions_tested: [H5A2]
-validation_rationale: >
-  Toray technical service engineer for Middle East desalination customers after eleven years running a desalination plant's O&M; has seen early fouling from both the plant and the maker side.
-response_likelihood: 5
-likelihood_factors: "3rd+ degree (0) · plant-side and maker-side (+1) · earlier career (+1)"
-channel: linkedin
-degree: 3rd+
-mutuals_count:
-active_last_30d: unknown
-open_to_work: false
-outreach_status: accepted
-found_date: 2026-09-14
-notes: "[profile read 2026-09-14] details/experience: Technical Service Engineer Toray Membrane Middle East Aug 2023-present (Cairo); O&M manager TAQA Water 2022-23; O&M manager Ridgewood for Water Desalination 2010-21. English. Passes. [invited 2026-09-14] bare invite via custom-invite modal, modal name confirmed Ezzat Sabry, sent by Claude at founder's instruction; Pending confirmed. [accepted 2026-09-15] seen in the Connections list 2026-09-15 (connected 2026-09-15). No Msg 1: H3 and H5 superseded 2026-09-15 (founder: stay within fashion)."
-
-
-## Péter Groszmann
-
-id: C103
-name: "Péter Groszmann"
-linkedin_url: https://www.linkedin.com/in/p%C3%A9ter-groszmann-33199964/
-linkedin_account: Izgin
-company: "Toray Membrane Europe AG"
-role: "Technical Support Engineer, UF and MBR systems EMEA"
-signal_type: profile_fit
-signal_multiplier: 1.0
-signal_source_url: "https://www.linkedin.com/search/results/people/?keywords=Toray%20membrane%20technical%20service"
-signal_excerpt: ""
-contact_role: practitioner
-role_pts: 2
-tier: membrane_manufacturer
-size_band:
-assumptions_tested: [H5A2]
-validation_rationale: >
-  Seventeen years of technical support for Toray UF and MBR systems across EMEA, after field service at GE; the person a European customer calls when UF membranes foul early.
-response_likelihood: 4
-likelihood_factors: "3rd+ degree (0) · long tenure in exact role (+1)"
-channel: linkedin
-degree: 3rd+
-mutuals_count:
-active_last_30d: unknown
-open_to_work: false
-outreach_status: invited
-found_date: 2026-09-14
-notes: "[profile read 2026-09-14] details/experience: Technical Support Engineer Toray Membrane Europe AG Feb 2009-present (UF and MBR support EMEA, sales support, product management); process engineer GE Water & Process Technologies 2005-09 (field service, commissioning, UF/MBR design). English. Passes. [invited 2026-09-14] bare invite via custom-invite modal, modal name confirmed Péter Groszmann, sent by Claude at founder's instruction; Pending confirmed."
-
-
-## Raúl Santos
-
-id: C104
-name: "Raúl Santos"
-linkedin_url: https://www.linkedin.com/in/santosjraul/
-linkedin_account: Izgin
-company: "LG Chem / LG Water Solutions"
-role: "Senior Process Engineer"
-signal_type: profile_fit
-signal_multiplier: 1.0
-signal_source_url: "https://www.linkedin.com/search/results/people/?keywords=LG%20Chem%20water%20solutions%20RO%20technical"
-signal_excerpt: ""
-contact_role: practitioner
-role_pts: 2
-tier: membrane_manufacturer
-size_band:
-assumptions_tested: [H5A2]
-validation_rationale: >
-  Senior process engineer at LG Water Solutions after fourteen years at Koch Membrane Systems doing pre- and post-sales RO/UF design; projects membrane performance for customers and sees where projection and field diverge.
-response_likelihood: 4
-likelihood_factors: "3rd+ degree (0) · two makers (+1)"
-channel: linkedin
-degree: 3rd+
-mutuals_count:
-active_last_30d: unknown
-open_to_work: false
-outreach_status: invited
-found_date: 2026-09-14
-notes: "[profile read 2026-09-14] details/experience: Senior Process Engineer LG Chem / LG Water Solutions May 2016-present (Madrid); process and project engineer Koch Membrane Systems 2001-15 (RO/UF/NF/MF pre- and post-sales, system calculation with proprietary software). English. Passes; title is process engineer, not in the title list, kept because the role is membrane projection and post-sales support. [invited 2026-09-14] bare invite via custom-invite modal, modal name confirmed Raúl Santos, sent by Claude at founder's instruction; Pending confirmed."
-
-
-## Evangeline Lau Wei Yong
-
-id: C105
-name: "Evangeline Lau Wei Yong"
-linkedin_url: https://www.linkedin.com/in/evangeline-lwy/
-linkedin_account: Izgin
-company: "Veolia Water Technologies"
-role: "Field Service Engineer (mobile water treatment)"
-signal_type: profile_fit
-signal_multiplier: 1.0
-signal_source_url: "https://www.linkedin.com/search/results/people/?keywords=Veolia%20membranes%20technical%20service%20RO"
-signal_excerpt: ""
-contact_role: practitioner
-role_pts: 2
-tier: membrane_manufacturer
-size_band:
-assumptions_tested: [H5A2]
-validation_rationale: >
-  Runs Veolia mobile treatment units on customer sites; an operator of rental equipment, not the maker's membrane technical service.
-response_likelihood: 4
-likelihood_factors: "3rd+ degree (0)"
-channel: linkedin
-degree: 3rd+
-mutuals_count:
-active_last_30d: unknown
-open_to_work: false
-outreach_status: off_scope
-found_date: 2026-09-14
-notes: "[audit off_scope 2026-09-14] Profile visit: Field Service Engineer Veolia Water Tech Dec 2023-present (Malaysia), operating mobile UF/RO/IX units at semiconductor and petroleum sites. Operator of rental equipment, fails icp_out_of_scope 'plant operators (H2/H3, not H5)'. Not invited."
-
-## David W. Pedersen
-
-id: C106
-name: "David W. Pedersen"
-linkedin_url: https://www.linkedin.com/in/david-w-pedersen-aa100131/
-linkedin_account: Izgin
-company: "Las Virgenes Municipal Water District"
-role: "General Manager"
-signal_type: profile_fit
-signal_multiplier: 1.0
-signal_source_url: "https://www.linkedin.com/search/results/people/?keywords=water%20quality%20Las%20Virgenes%20Municipal%20Water%20District"
-signal_excerpt: ""
-contact_role: buyer
-role_pts: 3
-tier: water_utility
-size_band:
-assumptions_tested: [H3A2]
-validation_rationale: >
-  Chief executive of Las Virgenes MWD, one of the small systems the State Water Board named on its preliminary Phase 1 list; at a small agency the GM sees the monitoring cost directly and signs for it.
-response_likelihood: 4
-likelihood_factors: "3rd+ degree (0) · named Phase 1 system (+1)"
-channel: linkedin
-degree: 3rd+
-mutuals_count:
-active_last_30d: unknown
-open_to_work: false
-outreach_status: accepted
-found_date: 2026-09-14
-notes: "[profile read 2026-09-14] details/experience: General Manager Las Virgenes MWD Jan 2013-present (chief executive, reports to 5-member elected board); past president WateReuse California 2022-present; Executive Director of Operations Irvine Ranch Water District 2010-13; LA County DPW before. English. Passes. LVMWD is on the Board's preliminary Phase 1 list (press coverage of SB 1422 selection). [invited 2026-09-14] bare invite via custom-invite modal, modal name confirmed David W. Pedersen, sent by Claude at founder's instruction; Pending confirmed. [accepted 2026-09-14] seen in the Connections list 2026-09-15 (connected 2026-09-14). No Msg 1: H3 and H5 superseded 2026-09-15 (founder: stay within fashion)."
-
-
-## Yu Melanie Madsen
-
-id: C107
-name: "Yu Melanie Madsen"
-linkedin_url: https://www.linkedin.com/in/yu-melanie-madsen-53b8241b/
-linkedin_account: Izgin
-company: "City of Sacramento Department of Utilities"
-role: "Water Quality Superintendent"
-signal_type: profile_fit
-signal_multiplier: 1.0
-signal_source_url: "https://www.linkedin.com/search/results/people/?keywords=water%20quality%20Sacramento%20drinking%20water%20superintendent"
-signal_excerpt: ""
-contact_role: practitioner
-role_pts: 2
-tier: water_utility
-size_band:
-assumptions_tested: [H3A2]
-validation_rationale: >
-  Water quality superintendent at the City of Sacramento after two years as its quality manager and five as its water quality chemist; owns the drinking-water compliance results for a large river-supplied system.
-response_likelihood: 4
-likelihood_factors: "3rd+ degree (0) · owns WQ results (+1)"
-channel: linkedin
-degree: 3rd+
-mutuals_count:
-active_last_30d: unknown
-open_to_work: false
-outreach_status: accepted
-found_date: 2026-09-14
-notes: "[profile read 2026-09-14] details/experience: Water Quality Superintendent City of Sacramento Aug 2026-present; Quality Manager 2024-26; WQ Chemist 2018-24; TestAmerica lab supervisor/department manager 2014-18. English. Passes; 8 yrs at the utility though new in current title. SB 1422 selection not verified. [invited 2026-09-14] bare invite via custom-invite modal, modal name confirmed Yu Melanie Madsen, sent by Claude at founder's instruction; Pending confirmed. [accepted 2026-09-14] seen in the Connections list 2026-09-15 (connected 2026-09-14). No Msg 1: H3 and H5 superseded 2026-09-15 (founder: stay within fashion)."
-
-
-## Kevin Caldwell
-
-id: C108
-name: "Kevin Caldwell"
-linkedin_url: https://www.linkedin.com/in/kevin-caldwell-98186724/
-linkedin_account: Izgin
-company: "Long Beach Utilities"
-role: "Laboratory Services Officer / Quality Manager (Water Quality Laboratory)"
-signal_type: profile_fit
-signal_multiplier: 1.0
-signal_source_url: "https://www.linkedin.com/search/results/people/?keywords=water%20quality%20manager%20Long%20Beach%20Utilities"
-signal_excerpt: ""
-contact_role: practitioner
-role_pts: 2
-tier: water_utility
-size_band:
-assumptions_tested: [H3A2]
-validation_rationale: >
-  Runs quality management and accreditation at Long Beach Utilities' water quality lab; any SB 1422 sample handling or outside-lab result passes through his QA system.
-response_likelihood: 4
-likelihood_factors: "3rd+ degree (0) · lab QA owner (+1)"
-channel: linkedin
-degree: 3rd+
-mutuals_count:
-active_last_30d: unknown
-open_to_work: false
-outreach_status: invited
-found_date: 2026-09-14
-notes: "[profile read 2026-09-14] details/experience: Laboratory Services Officer / Quality Manager, Long Beach Utilities Sep 2024-present: TNI 2016 compliance, third-party audits, internal method audits, SOPs. English. Passes. SB 1422 selection not verified. [invited 2026-09-14] bare invite via custom-invite modal, modal name confirmed Kevin Caldwell, sent by Claude at founder's instruction; Pending confirmed."
-
-
-## Laura Hidas
-
-id: C109
-name: "Laura Hidas"
-linkedin_url: https://www.linkedin.com/in/laura-hidas/
-linkedin_account: Izgin
-company: "Alameda County Water District"
-role: "Director of Water Resources"
-signal_type: profile_fit
-signal_multiplier: 1.0
-signal_source_url: "https://www.linkedin.com/search/results/people/?keywords=water%20quality%20Alameda%20County%20Water%20District"
-signal_excerpt: ""
-contact_role: buyer
-role_pts: 3
-tier: water_utility
-size_band:
-assumptions_tested: [H3A2]
-validation_rationale: >
-  Directs water supply planning and groundwater at ACWD; does not own water quality results.
-response_likelihood: 3
-likelihood_factors: "3rd+ degree (0)"
-channel: linkedin
-degree: 3rd+
-mutuals_count:
-active_last_30d: unknown
-open_to_work: false
-outreach_status: off_scope
-found_date: 2026-09-14
-notes: "[audit off_scope 2026-09-14] Profile visit: Director of Water Resources ACWD Dec 2018-present: long-range supply planning, water use efficiency, supply contracts, groundwater protection, watershed. Function does not own the monitoring result; fails the live-profile gate on function for H3A2. Not invited."
-
-## Peter Metcalfe
-
-id: C110
-name: "Peter Metcalfe"
-linkedin_url: https://www.linkedin.com/in/peter-metcalfe-4649ba155/
-linkedin_account: Izgin
-company: "Toray Membrane USA, Inc."
-role: "Director, Applications Engineering & Technical Services"
-signal_type: profile_fit
-signal_multiplier: 1.0
-signal_source_url: "https://www.linkedin.com/search/results/people/?keywords=Toray%20Membrane%20America%20technical"
-signal_excerpt: ""
-contact_role: buyer
-role_pts: 3
-tier: membrane_manufacturer
-size_band:
-assumptions_tested: [H5A2]
-validation_rationale: >
-  Directs applications engineering and technical services at Toray Membrane USA after 24 years in the group; owns the function that projects membrane life and answers when it falls short.
-response_likelihood: 4
-likelihood_factors: "3rd+ degree (0) · owns exact function (+1)"
-channel: linkedin
-degree: 3rd+
-mutuals_count:
-active_last_30d: unknown
-open_to_work: false
-outreach_status: invited
-found_date: 2026-09-14
-notes: "[profile read 2026-09-14] details/experience: Director Applications Engineering & Technical Services, Toray Membrane USA May 2022-present (Poway CA); manager of the same 2018-22; manager applications engineering 2006-18; Toray Membrane America 2002-06. English. Passes. [invited 2026-09-14] bare invite via custom-invite modal, modal name confirmed Peter Metcalfe, sent by Claude at founder's instruction; Pending confirmed."
-
-
-## Edna Banerjee
-
-id: C111
-name: "Edna Banerjee"
-linkedin_url: https://www.linkedin.com/in/edna-banerjee-a6a9a829/
-linkedin_account: Izgin
-company: "CERAFILTEC"
-role: "Global MBR Technology Manager"
-signal_type: profile_fit
-signal_multiplier: 1.0
-signal_source_url: "https://www.linkedin.com/search/results/people/?keywords=MANN%2BHUMMEL%20water%20membrane%20MICRODYN%20application"
-signal_excerpt: ""
-contact_role: practitioner
-role_pts: 2
-tier: membrane_manufacturer
-size_band:
-assumptions_tested: [H5A2]
-validation_rationale: >
-  Global MBR technology manager at ceramic-membrane maker CERAFILTEC after five years of after-sales technical support at MICRODYN-NADIR; has seen membrane-life disputes at two makers.
-response_likelihood: 4
-likelihood_factors: "3rd+ degree (0) · two makers, after-sales TS (+1)"
-channel: linkedin
-degree: 3rd+
-mutuals_count:
-active_last_30d: unknown
-open_to_work: false
-outreach_status: invited
-found_date: 2026-09-14
-notes: "[profile read 2026-09-14] details/experience: Global MBR Technology Manager CERAFILTEC Feb 2024-present, project manager since 2022 (Saarbrücken); Technical Service Project Manager MANN+HUMMEL Water & Fluid Solutions (MICRODYN-NADIR) 2017-22: MBR/UF process design, after-sales technical customer support. English. Passes. [invited 2026-09-14] bare invite via custom-invite modal, modal name confirmed Edna Banerjee, sent by Claude at founder's instruction; Pending confirmed."
-
-
-## Mithilesh Tripathi
-
-id: C112
-name: "Mithilesh Tripathi"
-linkedin_url: https://www.linkedin.com/in/mithilesh-tripathi-3946a262/
-linkedin_account: Izgin
-company: "MANN+HUMMEL Water & Fluid Solutions"
-role: "Membrane selection and technical solutions, India"
-signal_type: profile_fit
-signal_multiplier: 1.0
-signal_source_url: "https://www.linkedin.com/search/results/people/?keywords=MANN%2BHUMMEL%20water%20membrane%20MICRODYN%20application"
-signal_excerpt: ""
-contact_role: practitioner
-role_pts: 2
-tier: membrane_manufacturer
-size_band:
-assumptions_tested: [H5A2]
-validation_rationale: >
-  Selects membranes and supports customers for MANN+HUMMEL in India; the technical contact when a customer's membranes underperform.
-response_likelihood: 4
-likelihood_factors: "3rd+ degree (0) · customer-facing technical (+1)"
-channel: linkedin
-degree: 3rd+
-mutuals_count:
-active_last_30d: unknown
-open_to_work: false
-outreach_status: invited
-found_date: 2026-09-14
-notes: "[profile read 2026-09-14] details/experience: Membrane selection and technical solutions India, MANN+HUMMEL Feb 2023-present (Lucknow): membrane range selection and guidance for MF/UF liquid treatment customers. English. Passes. [invited 2026-09-14] bare invite via custom-invite modal, modal name confirmed Mithilesh Tripathi, sent by Claude at founder's instruction; Pending confirmed."
-
-
-## Dominik Schreier
-
-id: C113
-name: "Dominik Schreier"
-linkedin_url: https://www.linkedin.com/in/schreierdominik/
-linkedin_account: Izgin
-company: "MANN+HUMMEL Water & Fluid Solutions"
-role: "Director Global Engineering"
-signal_type: profile_fit
-signal_multiplier: 1.0
-signal_source_url: "https://www.linkedin.com/search/results/people/?keywords=MANN%2BHUMMEL%20water%20membrane%20MICRODYN%20application"
-signal_excerpt: ""
-contact_role: buyer
-role_pts: 3
-tier: membrane_manufacturer
-size_band:
-assumptions_tested: [H5A2]
-validation_rationale: >
-  Directs global engineering for MANN+HUMMEL's membrane business after running MBR engineering; owns the design side that membrane-life projections come from.
-response_likelihood: 3
-likelihood_factors: "3rd+ degree (0) · director (0)"
-channel: linkedin
-degree: 3rd+
-mutuals_count:
-active_last_30d: unknown
-open_to_work: false
-outreach_status: accepted
-found_date: 2026-09-14
-notes: "[profile read 2026-09-14] details/experience: Director Global Engineering MANN+HUMMEL Jun 2024-present (Wiesbaden); Senior Manager Engineering EMEA 2023-24; Manager Engineering Europe 2021-23; Engineering Manager MBR 2018-21; 11 yrs at the company. English headline. Passes. [invited 2026-09-14] bare invite via custom-invite modal, modal name confirmed Dominik Schreier, sent by Claude at founder's instruction; Pending confirmed. [accepted 2026-09-14] seen in the Connections list 2026-09-15 (connected 2026-09-14). No Msg 1: H3 and H5 superseded 2026-09-15 (founder: stay within fashion)."
-
-
-## Marcelo Bueno Prado
-
-id: C114
-name: "Marcelo Bueno Prado"
-linkedin_url: https://www.linkedin.com/in/marcelo-bueno-prado-11a1b517/
-linkedin_account: Izgin
-company: "Toray Membrane USA, Inc."
-role: "South America Regional Manager, Membrane Technology"
-signal_type: profile_fit
-signal_multiplier: 1.0
-signal_source_url: "https://www.linkedin.com/search/results/people/?keywords=Toray%20Membrane%20America%20technical"
-signal_excerpt: ""
-contact_role: buyer
-role_pts: 3
-tier: membrane_manufacturer
-size_band:
-assumptions_tested: [H5A2]
-validation_rationale: >
-  Toray regional sales manager for the Southern Cone; sales role with no technical-service duty.
-response_likelihood: 3
-likelihood_factors: "3rd+ degree (0)"
-channel: linkedin
-degree: 3rd+
-mutuals_count:
-active_last_30d: unknown
-open_to_work: false
-outreach_status: off_scope
-found_date: 2026-09-14
-notes: "[audit off_scope 2026-09-14] Profile visit: South America Regional Manager, Toray Membrane USA Feb 2012-present: Southern Cone sales, key accounts, distributors; ALADYR board. Fails icp_out_of_scope 'sales roles with no technical-service duty' for H5A2. Not invited."
-
-## Stephanie Vogel
-
-id: C115
-name: "Stephanie Vogel"
-linkedin_url: https://www.linkedin.com/in/stephanie-vogel-8abb2364/
-linkedin_account: Izgin
-company: "San Jose Water"
-role: "Water Quality Supervisor"
-signal_type: profile_fit
-signal_multiplier: 1.0
-signal_source_url: "https://www.linkedin.com/search/results/people/?keywords=water%20quality%20San%20Jose%20Water"
-signal_excerpt: ""
-contact_role: practitioner
-role_pts: 2
-tier: water_utility
-size_band:
-assumptions_tested: [H3A2]
-validation_rationale: >
-  Water quality supervisor at San Jose Water, which serves about a million people, after a compliance-officer role at Passaic Valley; handles sampling and compliance results day to day.
-response_likelihood: 4
-likelihood_factors: "3rd+ degree (0) · compliance background (+1)"
-channel: linkedin
-degree: 3rd+
-mutuals_count:
-active_last_30d: unknown
-open_to_work: false
-outreach_status: invited
-found_date: 2026-09-14
-notes: "[profile read 2026-09-14] details/experience: Water Quality Supervisor San Jose Water Jan 2025-present; Water Quality Scientist 2023-25; Water Quality Compliance Officer Passaic Valley Water Commission 2022-23; lab roles there 2014-22. English. Passes. SB 1422 selection not verified. [invited 2026-09-14] bare invite via custom-invite modal, modal name confirmed Stephanie Vogel, sent by Claude at founder's instruction; Pending confirmed."
-
-
-## Joe Mouawad
-
-id: C116
-name: "Joe Mouawad"
-linkedin_url: https://www.linkedin.com/in/joe-mouawad-693a2712/
-linkedin_account: Izgin
-company: "Eastern Municipal Water District"
-role: "General Manager"
-signal_type: profile_fit
-signal_multiplier: 1.0
-signal_source_url: "https://www.linkedin.com/search/results/people/?keywords=water%20quality%20Eastern%20Municipal%20Water%20District"
-signal_excerpt: ""
-contact_role: buyer
-role_pts: 3
-tier: water_utility
-size_band:
-assumptions_tested: [H3A2]
-validation_rationale: >
-  General manager of Eastern MWD, a large Inland Empire retail and wholesale water agency; signs for any monitoring spend.
-response_likelihood: 3
-likelihood_factors: "3rd+ degree (0) · agency GM (0)"
-channel: linkedin
-degree: 3rd+
-mutuals_count:
-active_last_30d: unknown
-open_to_work: false
-outreach_status: invited
-found_date: 2026-09-14
-notes: "[profile read 2026-09-14] details/experience: General Manager EMWD May 2021-present; AGM Planning, Engineering & Construction 2016-21; Senior Director of Engineering 2006-16; 20 yrs at EMWD. English. Passes. SB 1422 selection not verified. [invited 2026-09-14] bare invite via custom-invite modal, modal name confirmed Joe Mouawad, sent by Claude at founder's instruction; Pending confirmed."
-
-
-## Angela O'Brien
-
-id: C117
-name: "Angela O'Brien"
-linkedin_url: https://www.linkedin.com/in/angela-h-obrien/
-linkedin_account: Izgin
-company: "Zone 7 Water Agency"
-role: "Water Quality Manager"
-signal_type: profile_fit
-signal_multiplier: 1.0
-signal_source_url: "https://www.linkedin.com/search/results/people/?keywords=water%20quality%20Zone%207%20Water%20Agency"
-signal_excerpt: ""
-contact_role: practitioner
-role_pts: 2
-tier: water_utility
-size_band:
-assumptions_tested: [H3A2]
-validation_rationale: >
-  Water quality manager at Zone 7, the Tri-Valley wholesaler that treats State Water Project supply, after 24 years as its water quality engineer and an early stint at the state's Division of Drinking Water; knows the regulator and the result.
-response_likelihood: 5
-likelihood_factors: "3rd+ degree (0) · 25 yrs WQ at one agency (+1) · ex DDW (+1)"
-channel: linkedin
-degree: 3rd+
-mutuals_count:
-active_last_30d: unknown
-open_to_work: false
-outreach_status: invited
-found_date: 2026-09-14
-notes: "[profile read 2026-09-14] details/experience: Water Quality Manager Zone 7 Water Agency Feb 2025-present (acting 2023-25); Water Quality Engineer 2001-25; environmental engineer Alameda County Water District 1998-2001; sanitary engineer California Division of Drinking Water 1996-98. English. Passes. SB 1422 selection not verified. [invited 2026-09-14] bare invite via custom-invite modal, modal name confirmed Angela O'Brien, sent by Claude at founder's instruction; Pending confirmed."
-
-
-## Lucy Croy
-
-id: C118
-name: "Lucy Croy"
-linkedin_url: https://www.linkedin.com/in/lucy-croy-p-e-6707a955/
-linkedin_account: Izgin
-company: "Marin Municipal Water District"
-role: "Water Resources Manager (Water Quality Manager 2020-25)"
-signal_type: profile_fit
-signal_multiplier: 1.0
-signal_source_url: "https://www.linkedin.com/search/results/people/?keywords=water%20quality%20Marin%20Water"
-signal_excerpt: ""
-contact_role: practitioner
-role_pts: 2
-tier: water_utility
-size_band:
-assumptions_tested: [H3A2]
-validation_rationale: >
-  Was Marin Water's water quality manager through the Phase 1 window but moved to water resources in September 2025.
-response_likelihood: 4
-likelihood_factors: "3rd+ degree (0)"
-channel: linkedin
-degree: 3rd+
-mutuals_count:
-active_last_30d: unknown
-open_to_work: false
-outreach_status: off_scope
-found_date: 2026-09-14
-notes: "[audit off_scope 2026-09-14] Profile visit: Water Resources Manager Marin MWD Sep 2025-present; Water Quality Manager 2020-25; engineering roles since 2015. Current function no longer owns water quality results; fails the live-profile gate on current function for H3A2. Not invited. Useful witness to 2023-25 if the founder wants."
-
-## Nagahisa Sato
-
-id: C119
-name: "Nagahisa Sato"
-linkedin_url: https://www.linkedin.com/in/nagahisa-sato-ph-d-58095085/
-linkedin_account: Izgin
-company: "Hydranautics (A Nitto Group Company)"
-role: "Group Manager, Product Development; Process Engineering Manager"
-signal_type: profile_fit
-signal_multiplier: 1.0
-signal_source_url: "https://www.linkedin.com/search/results/people/?currentCompany=%5B%2249072%22%5D&keywords=application"
-signal_excerpt: ""
-contact_role: buyer
-role_pts: 3
-tier: membrane_manufacturer
-size_band:
-assumptions_tested: [H5A2]
-validation_rationale: >
-  Leads product development at Hydranautics in the US; the R&D owner who would decide whether field foulant data changes how membranes are designed or warranted.
-response_likelihood: 3
-likelihood_factors: "3rd+ degree (0) · R&D manager (0)"
-channel: linkedin
-degree: 3rd+
-mutuals_count:
-active_last_30d: unknown
-open_to_work: false
-outreach_status: invited
-found_date: 2026-09-14
-notes: "[profile read 2026-09-14] details/experience: Group Manager Product Development Hydranautics May 2025-present; Process Engineering Manager 2023-present; Nitto Denko since 2019; Sumitomo Electric 2015-19; Samsung R&D Japan 2012-15. English headline. Passes. [invited 2026-09-14] bare invite via custom-invite modal, modal name confirmed Nagahisa Sato, sent by Claude at founder's instruction; Pending confirmed."
-
-
-## Mohamed Zaki
-
-id: C120
-name: "Mohamed Zaki"
-linkedin_url: https://www.linkedin.com/in/mohamed-zaki-m-sc-46a86916/
-linkedin_account: Izgin
-company: "LG Chem / LG Water Solutions (NanoH2O)"
-role: "Technical Services General Manager, Middle East & Egypt"
-signal_type: profile_fit
-signal_multiplier: 1.0
-signal_source_url: "https://www.linkedin.com/search/results/people/?keywords=LG%20Water%20Solutions%20technical%20service%20engineer"
-signal_excerpt: ""
-contact_role: buyer
-role_pts: 3
-tier: membrane_manufacturer
-size_band:
-assumptions_tested: [H5A2]
-validation_rationale: >
-  Runs LG NanoH2O technical services for the Middle East and Egypt, the region's desalination base, after nine years as its technical service engineer; owns early-fouling cases and their cost.
-response_likelihood: 4
-likelihood_factors: "3rd+ degree (0) · runs regional TS (+1)"
-channel: linkedin
-degree: 3rd+
-mutuals_count:
-active_last_30d: unknown
-open_to_work: false
-outreach_status: accepted
-found_date: 2026-09-14
-notes: "[profile read 2026-09-14] details/experience: Technical Services General Manager Middle East & Egypt, NanoH2O (LG) Mar 2024-present; Technical Service Engineer 2017-present; projects engineer Veolia Water 2011-17. English. Passes. [invited 2026-09-14] bare invite via custom-invite modal, modal name confirmed Mohamed Zaki, sent by Claude at founder's instruction; Pending confirmed. [accepted 2026-09-15] seen in the Connections list 2026-09-15 (connected 2026-09-15). No Msg 1: H3 and H5 superseded 2026-09-15 (founder: stay within fashion)."
-
-
-## Michael Baez
-
-id: C121
-name: "Michael Baez"
-linkedin_url: https://www.linkedin.com/in/michael-baez-73a7601a3/
-linkedin_account: Izgin
-company: "LG Chem / LG Water Solutions (NanoH2O)"
-role: "Technical Service Engineer"
-signal_type: profile_fit
-signal_multiplier: 1.0
-signal_source_url: "https://www.linkedin.com/search/results/people/?keywords=LG%20Water%20Solutions%20technical%20service%20engineer"
-signal_excerpt: ""
-contact_role: practitioner
-role_pts: 2
-tier: membrane_manufacturer
-size_band:
-assumptions_tested: [H5A2]
-validation_rationale: >
-  Technical service engineer for LG NanoH2O membranes in the US; handles customer performance complaints first-hand.
-response_likelihood: 5
-likelihood_factors: "3rd+ degree (0) · earlier career (+1) · US-based (+1)"
-channel: linkedin
-degree: 3rd+
-mutuals_count:
-active_last_30d: unknown
-open_to_work: false
-outreach_status: invited
-found_date: 2026-09-14
-notes: "[profile read 2026-09-14] details/experience: Technical Service Engineer NanoH2O Jan 2024-present (Tampa); QA laboratory technician Refresco 2022-24. English. Passes. [invited 2026-09-14] bare invite via custom-invite modal, modal name confirmed Michael Baez, sent by Claude at founder's instruction; Pending confirmed."
-
-
-## Damon Shreeves
-
-id: C122
-name: "Damon Shreeves"
-linkedin_url: https://www.linkedin.com/in/damon-shreeves-01938346/
-linkedin_account: Izgin
-company: "Veolia Water Technologies & Solutions"
-role: "ZeeWeed Products Specialist; Domain Specialist UF/MBR"
-signal_type: profile_fit
-signal_multiplier: 1.0
-signal_source_url: "https://www.linkedin.com/search/results/people/?keywords=Koch%20Membrane%20Systems%20technical%20service%20engineer"
-signal_excerpt: ""
-contact_role: practitioner
-role_pts: 2
-tier: membrane_manufacturer
-size_band:
-assumptions_tested: [H5A2]
-validation_rationale: >
-  Veolia's UF/MBR domain specialist for its own ZeeWeed membranes since 2019 (SUEZ before the merger); the maker-side expert on why UF membranes foul early in the field.
-response_likelihood: 4
-likelihood_factors: "3rd+ degree (0) · product specialist on own membranes (+1)"
-channel: linkedin
-degree: 3rd+
-mutuals_count:
-active_last_30d: unknown
-open_to_work: false
-outreach_status: accepted
-found_date: 2026-09-14
-notes: "[profile read 2026-09-14] details/experience: ZeeWeed Products Specialist Veolia Water Tech Jul 2025-present; Domain Specialist UF/MBR Veolia WTS Sep 2022-present; ZeeWeed Products Specialist SUEZ WTS 2019-22 (Andover UK). English. Passes. [invited 2026-09-14] bare invite via custom-invite modal, modal name confirmed Damon Shreeves, sent by Claude at founder's instruction; Pending confirmed. [accepted 2026-09-15] seen in the Connections list 2026-09-15 (connected 2026-09-15). No Msg 1: H3 and H5 superseded 2026-09-15 (founder: stay within fashion)."
-
-
-## Bailey Schantz
-
-id: C123
-name: "Bailey Schantz"
-linkedin_url: https://www.linkedin.com/in/bailey-schantz-0aa101236/
-linkedin_account: Izgin
-company: "Toray Membrane USA, Inc."
-role: "Process Engineer (RO element manufacturing)"
-signal_type: profile_fit
-signal_multiplier: 1.0
-signal_source_url: "https://www.linkedin.com/search/results/people/?currentCompany=%5B%22368383%22%5D&keywords=applications"
-signal_excerpt: ""
-contact_role: practitioner
-role_pts: 2
-tier: membrane_manufacturer
-size_band:
-assumptions_tested: [H5A2]
-validation_rationale: >
-  Improves RO element manufacturing processes at Toray; does not handle field performance.
-response_likelihood: 4
-likelihood_factors: "3rd+ degree (0)"
-channel: linkedin
-degree: 3rd+
-mutuals_count:
-active_last_30d: unknown
-open_to_work: false
-outreach_status: off_scope
-found_date: 2026-09-14
-notes: "[audit off_scope 2026-09-14] Profile visit: Process Engineer Toray Membrane USA Jun 2024-present, improving manufacturing methods for RO element production; 2 yrs, still learning RO design. Function is manufacturing, not field performance or technical service; fails the live-profile gate on function for H5A2. Not invited."
-
-## Hélène Baribeau
-
-id: C124
-name: "Hélène Baribeau"
-linkedin_url: https://www.linkedin.com/in/helene-baribeau-055b50/
-linkedin_account: Izgin
-company: "California State Water Resources Control Board (Division of Drinking Water)"
-role: "Senior Specialist"
-signal_type: profile_fit
-signal_multiplier: 1.0
-signal_source_url: "https://www.linkedin.com/search/results/people/?keywords=Helene%20Baribeau"
-signal_excerpt: ""
-contact_role: expert
-role_pts: 2
-tier: regulator
-size_band:
-assumptions_tested: [H3A2]
-validation_rationale: >
-  Presented the SB 1422 legislative requirements and monitoring timeline for the Division of Drinking Water at the February 2025 microplastics workshop; knows which systems got orders, what Phase 1 cost them and what Phase 2 will ask.
-response_likelihood: 4
-likelihood_factors: "3rd degree (0) · programme lead, public-facing (+1)"
-channel: linkedin
-degree: 3rd+
-mutuals_count:
-active_last_30d: unknown
-open_to_work: false
-outreach_status: invited
-found_date: 2026-09-14
-notes: "[profile read 2026-09-14] details/experience: Senior Specialist, California State Water Resources Control Board Feb 2024-present (San Diego); District Engineer Mojave District 2023-24; Water Resource Control Engineer Imperial District 2023; AQUAlity Engineering before. English. Passes as regulator-side expert. Identity match: the Feb 2025 DDW workshop deck (E1/E2) names Hélène Baribeau, PhD, PE, SWRCB-DDW with a 619 (San Diego) number; profile location San Diego. [invited 2026-09-14] bare invite via custom-invite modal, modal name confirmed Hélène Baribeau, sent by Claude at founder's instruction; Pending confirmed."
-
-
-## Ryan Bye
-
-id: C125
-name: "Ryan Bye"
-linkedin_url: https://www.linkedin.com/in/ryan-bye-66907226/
-linkedin_account: Izgin
-company: "Santa Clarita Valley Water Agency (SCV Water)"
-role: "Water Quality Regulatory & Compliance Manager"
-signal_type: profile_fit
-signal_multiplier: 1.0
-signal_source_url: "https://www.linkedin.com/search/results/people/?keywords=water%20quality%20SCV%20Water%20Santa%20Clarita"
-signal_excerpt: ""
-contact_role: practitioner
-role_pts: 2
-tier: water_utility
-size_band:
-assumptions_tested: [H3A2]
-validation_rationale: >
-  Manages all water quality and regulatory compliance functions at SCV Water, including submittals to the State Water Board; the person a monitoring order lands on.
-response_likelihood: 4
-likelihood_factors: "3rd+ degree (0) · owns compliance submittals (+1)"
-channel: linkedin
-degree: 3rd+
-mutuals_count:
-active_last_30d: unknown
-open_to_work: false
-outreach_status: accepted
-found_date: 2026-09-14
-notes: "[profile read 2026-09-14] details/experience: Water Quality Regulatory & Compliance Manager SCV Water Aug 2026-present (manages WQ and regulatory compliance across distribution, groundwater treatment, disinfection, potable/recycled; reporting and submittals to the SWRCB); 8 yrs 9 mos at SCV Water. English. Passes. SB 1422 selection not verified. [invited 2026-09-14] bare invite via custom-invite modal, modal name confirmed Ryan Bye, sent by Claude at founder's instruction; Pending confirmed. [accepted 2026-09-15] seen in the Connections list 2026-09-15 (connected 2026-09-15). No Msg 1: H3 and H5 superseded 2026-09-15 (founder: stay within fashion)."
-
-
-## Clement Do
-
-id: C126
-name: "Clement Do"
-linkedin_url: https://www.linkedin.com/in/clement-do-04806870/
-linkedin_account: Izgin
-company: "Santa Clarita Valley Water Agency (SCV Water)"
-role: "Water Quality Laboratory Supervisor"
-signal_type: profile_fit
-signal_multiplier: 1.0
-signal_source_url: "https://www.linkedin.com/search/results/people/?keywords=water%20quality%20SCV%20Water%20Santa%20Clarita"
-signal_excerpt: ""
-contact_role: practitioner
-role_pts: 2
-tier: water_utility
-size_band:
-assumptions_tested: [H3A2]
-validation_rationale: >
-  Supervises SCV Water's water quality lab after seven years as a water chemist and WQ supervisor at the City of Santa Monica; handles sample logistics and outside-lab results.
-response_likelihood: 4
-likelihood_factors: "3rd+ degree (0) · lab supervisor (+1)"
-channel: linkedin
-degree: 3rd+
-mutuals_count:
-active_last_30d: unknown
-open_to_work: false
-outreach_status: invited
-found_date: 2026-09-14
-notes: "[profile read 2026-09-14] details/experience: Water Quality Laboratory Supervisor SCV Water Oct 2025-present; City of Santa Monica WQ supervisor 2025, lead water chemist 2022-25, water chemist 2019-22; Palmdale Water District lab analyst 2016-19. English. Passes. [invited 2026-09-14] bare invite via custom-invite modal, modal name confirmed Clement Do, sent by Claude at founder's instruction; Pending confirmed."
-
-
-## Isabel Ramos
-
-id: C127
-name: "Isabel Ramos"
-linkedin_url: https://www.linkedin.com/in/isabel-ramos-2b4199228/
-linkedin_account: Izgin
-company: "California Water Service"
-role: "Water Quality Program Manager"
-signal_type: profile_fit
-signal_multiplier: 1.0
-signal_source_url: "https://www.linkedin.com/search/results/people/?keywords=water%20quality%20manager%20California%20Water%20Service"
-signal_excerpt: ""
-contact_role: practitioner
-role_pts: 2
-tier: water_utility
-size_band:
-assumptions_tested: [H3A2]
-validation_rationale: >
-  Two months into a water quality programme manager role at Cal Water after consulting; no utility history to draw on.
-response_likelihood: 3
-likelihood_factors: "3rd+ degree (0)"
-channel: linkedin
-degree: 3rd+
-mutuals_count:
-active_last_30d: unknown
-open_to_work: false
-outreach_status: off_scope
-found_date: 2026-09-14
-notes: "[audit off_scope 2026-09-14] Profile visit: Water Quality Program Manager Cal Water Aug 2026-present (2 months); environmental scientist UES 2023-26. Fails the live-profile gate on tenure (weeks into role, no utility incidents of her own). Not invited."
-
-## Karthi Pitchaikani
-
-id: C128
-name: "Karthi Pitchaikani"
-linkedin_url: https://www.linkedin.com/in/karthipitchaikani/
-linkedin_account: Izgin
-company: "Pentair X-Flow"
-role: "Global Technical Support Manager, Water & Wastewater (X-Flow)"
-signal_type: profile_fit
-signal_multiplier: 1.0
-signal_source_url: "https://www.linkedin.com/search/results/people/?keywords=Pentair%20X-Flow%20membrane%20technical%20support"
-signal_excerpt: ""
-contact_role: buyer
-role_pts: 3
-tier: membrane_manufacturer
-size_band:
-assumptions_tested: [H5A2]
-validation_rationale: >
-  Runs global technical support for Pentair X-Flow's UF membranes after a decade in its sales-support engineering; owns the maker-side answer when membranes underperform in the field.
-response_likelihood: 4
-likelihood_factors: "3rd+ degree (0) · owns global TS (+1)"
-channel: linkedin
-degree: 3rd+
-mutuals_count:
-active_last_30d: unknown
-open_to_work: false
-outreach_status: accepted
-found_date: 2026-09-14
-notes: "[profile read 2026-09-14] details/experience: Global Technical Support Manager Water & Wastewater (X-Flow), Pentair Apr 2025-present (Enschede); Manager Sales Support 2022-25; Sales Support Engineer 2013-22; 13 yrs at Pentair. English. Passes. [invited 2026-09-14] bare invite via custom-invite modal, modal name confirmed Karthi Pitchaikani, sent by Claude at founder's instruction; Pending confirmed. [accepted 2026-09-14] seen in the Connections list 2026-09-15 (connected 2026-09-14). No Msg 1: H3 and H5 superseded 2026-09-15 (founder: stay within fashion)."
-
-
-## Saad Fadel
-
-id: C129
-name: "Saad Fadel"
-linkedin_url: https://www.linkedin.com/in/saad-fadel-6649ab75/
-linkedin_account: Izgin
-company: "TOYOBO MC Middle East Industries (TMEI)"
-role: "Quality Assurance & Technical Service Manager"
-signal_type: profile_fit
-signal_multiplier: 1.0
-signal_source_url: "https://www.linkedin.com/search/results/people/?keywords=Toyobo%20hollow%20fiber%20reverse%20osmosis%20desalination"
-signal_excerpt: ""
-contact_role: practitioner
-role_pts: 2
-tier: membrane_manufacturer
-size_band:
-assumptions_tested: [H5A2]
-validation_rationale: >
-  Provides technical service to RO desalination plants using TOYOBO's hollow-fibre membranes in Saudi Arabia, and runs QA on the product; sees both the manufacturing and the field side of early fouling.
-response_likelihood: 4
-likelihood_factors: "3rd+ degree (0) · desal TS and QA (+1)"
-channel: linkedin
-degree: 3rd+
-mutuals_count:
-active_last_30d: unknown
-open_to_work: false
-outreach_status: invited
-found_date: 2026-09-14
-notes: "[profile read 2026-09-14] details/experience: Quality Assurance & Technical Service Manager TOYOBO MC Middle East Industries Apr 2019-present (Saudi Arabia): product QA, ISO 9001 audits, technical services and support for RO desalination plants. English. Passes. [invited 2026-09-14] bare invite via custom-invite modal, modal name confirmed Saad Fadel, sent by Claude at founder's instruction; Pending confirmed."
-
-
-## Ahmad Radwan
-
-id: C130
-name: "Ahmad Radwan"
-linkedin_url: https://www.linkedin.com/in/ahmad-radwan-270a5966/
-linkedin_account: Izgin
-company: "TOYOBO MC Corporation"
-role: "Technical Business Development General Manager"
-signal_type: profile_fit
-signal_multiplier: 1.0
-signal_source_url: "https://www.linkedin.com/search/results/people/?keywords=Toyobo%20hollow%20fiber%20reverse%20osmosis%20desalination"
-signal_excerpt: ""
-contact_role: buyer
-role_pts: 3
-tier: membrane_manufacturer
-size_band:
-assumptions_tested: [H5A2]
-validation_rationale: >
-  Runs technical business development for TOYOBO's CTA hollow-fibre RO membranes across the Gulf, including vendor qualification in eight countries; knows what plants demand as proof of membrane life before they buy.
-response_likelihood: 6
-likelihood_factors: "2nd degree (+2) · technical BD in desalination (+1)"
-channel: linkedin
-degree: 2nd
-mutuals_count:
-active_last_30d: unknown
-open_to_work: false
-outreach_status: accepted
-found_date: 2026-09-14
-notes: "[profile read 2026-09-14] details/experience: Technical Business Development General Manager TOYOBO MC Corporation Aug 2023-present (Riyadh): regional go-to-market across KSA, UAE, Oman, Kuwait; distributor training and joint customer calls; vendor qualification of CTA hollow-fibre membranes in 8 countries. English. Passes (title in list: BD manager desalination). [invited 2026-09-14] bare invite via custom-invite modal, modal name confirmed Ahmad Radwan, sent by Claude at founder's instruction; Pending confirmed. [accepted 2026-09-15] seen in the Connections list 2026-09-15 (connected 2026-09-15). No Msg 1: H3 and H5 superseded 2026-09-15 (founder: stay within fashion)."
-
-
-## Atsuo Kumano
-
-id: C131
-name: "Atsuo Kumano"
-linkedin_url: https://www.linkedin.com/in/atsuo-kumano%E3%80%80%E7%86%8A%E9%87%8E-%E6%B7%B3%E5%A4%AB-aa6511232/
-linkedin_account: Izgin
-company: "TOYOBO MC Corporation"
-role: "Senior Technical Advisor (former General Manager, Membrane R&D Center)"
-signal_type: profile_fit
-signal_multiplier: 1.0
-signal_source_url: "https://www.linkedin.com/search/results/people/?keywords=Toyobo%20hollow%20fiber%20reverse%20osmosis%20desalination"
-signal_excerpt: ""
-contact_role: expert
-role_pts: 2
-tier: membrane_manufacturer
-size_band:
-assumptions_tested: [H5A2]
-validation_rationale: >
-  Former general manager of TOYOBO's membrane R&D centre, now its senior technical adviser on water-treatment membranes; decades of maker-side knowledge of how membrane life is projected and defended.
-response_likelihood: 3
-likelihood_factors: "3rd+ degree (0) · senior, partly Japanese-language profile (0)"
-channel: linkedin
-degree: 3rd+
-mutuals_count:
-active_last_30d: unknown
-open_to_work: false
-outreach_status: accepted
-found_date: 2026-09-14
-notes: "[profile read 2026-09-14] details/experience: Senior Technical Advisor Toyobo MC Corporation Jul 2024-present (Osaka); Senior Technical Adviser Toyobo Co. 2020-24; earlier General Manager of the Membrane R&D Center. Profile carries English entries alongside Japanese; passes the LR-B31a English check on the English role titles. [invited 2026-09-14] bare invite via custom-invite modal, modal name confirmed Atsuo Kumano, sent by Claude at founder's instruction; Pending confirmed. [accepted 2026-09-14] seen in the Connections list 2026-09-15 (connected 2026-09-14). No Msg 1: H3 and H5 superseded 2026-09-15 (founder: stay within fashion)."
-
-
-## Ryoichi Takada
-
-id: C132
-name: "Ryoichi Takada"
-linkedin_url: https://www.linkedin.com/in/ryoichi-takada-ph-d-2b560328a/
-linkedin_account: Izgin
-company: "OOYOO Ltd."
-role: "Head of Engineering"
-signal_type: profile_fit
-signal_multiplier: 1.0
-signal_source_url: "https://www.linkedin.com/search/results/people/?keywords=Asahi%20Kasei%20Microza%20membrane%20technical"
-signal_excerpt: ""
-contact_role: expert
-role_pts: 2
-tier: membrane_manufacturer
-size_band:
-assumptions_tested: [H5A2]
-validation_rationale: >
-  Heads engineering at a Kyoto startup building gas-separation membranes for CO2 capture; not a water membrane maker.
-response_likelihood: 3
-likelihood_factors: "3rd+ degree (0)"
-channel: linkedin
-degree: 3rd+
-mutuals_count:
-active_last_30d: unknown
-open_to_work: false
-outreach_status: off_scope
-found_date: 2026-09-14
-notes: "[audit off_scope 2026-09-14] Profile visit: Head of Engineering OOYOO Ltd May 2025-present, membranes for air and gas purification and CO2 capture. Not an RO/UF water-membrane maker and a peer startup; fails icp_valid_tiers for H5A2. Not invited."
-
-## Scott G.
-
-id: C133
-name: "Scott G."
-linkedin_url: https://www.linkedin.com/in/scott-g-92882111a/
-linkedin_account: Izgin
-company: "Irvine Ranch Water District"
-role: "Water Quality Manager"
-signal_type: profile_fit
-signal_multiplier: 1.0
-signal_source_url: "https://www.linkedin.com/search/results/people/?keywords=water%20quality%20manager%20Irvine%20Ranch"
-signal_excerpt: ""
-contact_role: practitioner
-role_pts: 2
-tier: water_utility
-size_band:
-assumptions_tested: [H3A2]
-validation_rationale: >
-  Runs IRWD's water quality department: lab analyses, QA/QC, regulatory requirements and reporting, and staff; the owner of any monitoring order's result at a large Orange County system.
-response_likelihood: 4
-likelihood_factors: "3rd+ degree (0) · owns WQ department (+1)"
-channel: linkedin
-degree: 3rd+
-mutuals_count:
-active_last_30d: unknown
-open_to_work: false
-outreach_status: accepted
-found_date: 2026-09-14
-notes: "[profile read 2026-09-14] details/experience: Water Quality Manager IRWD Mar 2023-present (lab analyses, QA/QC, regulatory requirements and reporting, water quality projects, staff); 4 yrs at IRWD. English. Passes. SB 1422 selection not verified. [invited 2026-09-14] bare invite via custom-invite modal, modal name confirmed Scott G., sent by Claude at founder's instruction; Pending confirmed. [accepted 2026-09-14] seen in the Connections list 2026-09-15 (connected 2026-09-14). No Msg 1: H3 and H5 superseded 2026-09-15 (founder: stay within fashion)."
-
-
-## Jim Barrett
-
-id: C134
-name: "Jim Barrett"
-linkedin_url: https://www.linkedin.com/in/jim-barrett-377587b/
-linkedin_account: Izgin
-company: "Coachella Valley Water District"
-role: "General Manager"
-signal_type: profile_fit
-signal_multiplier: 1.0
-signal_source_url: "https://www.linkedin.com/search/results/people/?keywords=water%20quality%20Coachella%20Valley%20Water%20District"
-signal_excerpt: ""
-contact_role: buyer
-role_pts: 3
-tier: water_utility
-size_band:
-assumptions_tested: [H3A2]
-validation_rationale: >
-  General manager of Coachella Valley Water District since 2013 and a former MWD and San Diego County Water Authority board member; signs for spend and knows how the large wholesalers treat new obligations.
-response_likelihood: 3
-likelihood_factors: "3rd+ degree (0) · agency GM (0)"
-channel: linkedin
-degree: 3rd+
-mutuals_count:
-active_last_30d: unknown
-open_to_work: false
-outreach_status: invited
-found_date: 2026-09-14
-notes: "[profile read 2026-09-14] details/experience: General Manager CVWD Mar 2013-present; AGM 2010-13; board member MWD and SDCWA 2006-10; SAME fellow. English. Passes. SB 1422 selection not verified. [invited 2026-09-14] bare invite via custom-invite modal, modal name confirmed Jim Barrett, sent by Claude at founder's instruction; Pending confirmed."
-
-
-## Craig Miller
-
-id: C135
-name: "Craig Miller"
-linkedin_url: https://www.linkedin.com/in/craig-miller-04561614/
-linkedin_account: Izgin
-company: "Western Municipal Water District"
-role: "General Manager"
-signal_type: profile_fit
-signal_multiplier: 1.0
-signal_source_url: "https://www.linkedin.com/search/results/people/?keywords=water%20quality%20Western%20Municipal%20Water%20District"
-signal_excerpt: ""
-contact_role: buyer
-role_pts: 3
-tier: water_utility
-size_band:
-assumptions_tested: [H3A2]
-validation_rationale: >
-  General manager of Western MWD in Riverside after running Orange County Water District as executive director for nineteen years; signs for spend and knows potable reuse and groundwater quality regulation.
-response_likelihood: 3
-likelihood_factors: "3rd+ degree (0) · agency GM (0)"
-channel: linkedin
-degree: 3rd+
-mutuals_count:
-active_last_30d: unknown
-open_to_work: false
-outreach_status: invited
-found_date: 2026-09-14
-notes: "[profile read 2026-09-14] details/experience: General Manager Western MWD Dec 2017-present (deputy GM since 2013); AGM Inland Empire Utilities Agency 2011-13; Executive Director Orange County Water District 1992-2011. English. Passes. SB 1422 selection not verified. [invited 2026-09-14] bare invite via custom-invite modal, modal name confirmed Craig Miller, sent by Claude at founder's instruction; Pending confirmed."
-
-
-## Don Walter
-
-id: C136
-name: "Don Walter"
-linkedin_url: https://www.linkedin.com/in/donawalter/
-linkedin_account: Izgin
-company: "Veolia Water Technologies & Solutions"
-role: "North American Product Manager, Membrane Systems; Product & Engineering Director"
-signal_type: profile_fit
-signal_multiplier: 1.0
-signal_source_url: "https://www.linkedin.com/search/results/people/?keywords=Veolia%20reverse%20osmosis%20membrane%20product%20manager"
-signal_excerpt: ""
-contact_role: buyer
-role_pts: 3
-tier: membrane_manufacturer
-size_band:
-assumptions_tested: [H5A2]
-validation_rationale: >
-  Owns Veolia's North American membrane-systems product line after running global engineered-systems product lines at SUEZ and Veolia; decides what monitoring ships with a membrane system and what life it is sold on.
-response_likelihood: 4
-likelihood_factors: "3rd+ degree (0) · product owner (+1)"
-channel: linkedin
-degree: 3rd+
-mutuals_count:
-active_last_30d: unknown
-open_to_work: false
-outreach_status: invited
-found_date: 2026-09-14
-notes: "[profile read 2026-09-14] details/experience: North American Product Manager - Membrane Systems, Veolia Water Tech Jan 2026-present; Product & Engineering Director Jul 2024-present; Global Product Line Director Engineered Systems and Components, Veolia WTS 2022-24; SUEZ WTS 5 yrs before (Minneapolis). English. Passes. [invited 2026-09-14] bare invite via custom-invite modal, modal name confirmed Don Walter, sent by Claude at founder's instruction; Pending confirmed."
-
-
-## Christoph Thiemig
-
-id: C137
-name: "Christoph Thiemig"
-linkedin_url: https://www.linkedin.com/in/christoph-thiemig-03063830/
-linkedin_account: Izgin
-company: "Veolia Water Technologies & Solutions"
-role: "Global ZeeWeed Wastewater Applications Lead"
-signal_type: profile_fit
-signal_multiplier: 1.0
-signal_source_url: "https://www.linkedin.com/search/results/people/?keywords=Veolia%20ZeeWeed%20technical%20support%20engineer"
-signal_excerpt: ""
-contact_role: practitioner
-role_pts: 2
-tier: membrane_manufacturer
-size_band:
-assumptions_tested: [H5A2]
-validation_rationale: >
-  Global applications lead for Veolia's ZeeWeed 500 MBR membranes since 2019; the process-side expert on why MBR membranes foul faster than projected.
-response_likelihood: 4
-likelihood_factors: "3rd+ degree (0) · global applications lead (+1)"
-channel: linkedin
-degree: 3rd+
-mutuals_count:
-active_last_30d: unknown
-open_to_work: false
-outreach_status: invited
-found_date: 2026-09-14
-notes: "[profile read 2026-09-14] details/experience: Global ZeeWeed Wastewater Applications Lead, Veolia WTS Sep 2022-present (Aachen, remote): process-related product management and BD for ZeeWeed 500 MBR; same role at SUEZ WTS from Apr 2019. English. Passes. [invited 2026-09-14] bare invite via custom-invite modal, modal name confirmed Christoph Thiemig, sent by Claude at founder's instruction; Pending confirmed."
-
-
-## Charan Rajan
-
-id: C138
-name: "Charan Rajan"
-linkedin_url: https://www.linkedin.com/in/charan-rajan-22a79a20/
-linkedin_account: Izgin
-company: "Veolia North America"
-role: "Technical Development Manager"
-signal_type: profile_fit
-signal_multiplier: 1.0
-signal_source_url: "https://www.linkedin.com/search/results/people/?keywords=Veolia%20reverse%20osmosis%20membrane%20product%20manager"
-signal_excerpt: ""
-contact_role: practitioner
-role_pts: 2
-tier: membrane_manufacturer
-size_band:
-assumptions_tested: [H5A2]
-validation_rationale: >
-  Value and financial analysis role in Veolia North America's operations business, not the membrane maker.
-response_likelihood: 3
-likelihood_factors: "3rd+ degree (0)"
-channel: linkedin
-degree: 3rd+
-mutuals_count:
-active_last_30d: unknown
-open_to_work: false
-outreach_status: off_scope
-found_date: 2026-09-14
-notes: "[audit off_scope 2026-09-14] Profile visit: Technical Development Manager Veolia North America Apr 2022-present (Houston): financial decision-making tools and value analysis for business strategy. Not membrane technical service, product or R&D; fails the live-profile gate on function for H5A2. Not invited."
-
-## Joshua Mertz
-
-id: C139
-name: "Joshua Mertz"
-linkedin_url: https://www.linkedin.com/in/joshua-mertz-b3884b14/
-linkedin_account: Izgin
-company: "LaMotte Company"
-role: "Director of Research & Development"
-signal_type: profile_fit
-signal_multiplier: 1.0
-signal_source_url: "https://www.linkedin.com/search/results/people/?keywords=Veolia%20reverse%20osmosis%20membrane%20product%20manager"
-signal_excerpt: ""
-contact_role: expert
-role_pts: 2
-tier: membrane_manufacturer
-size_band:
-assumptions_tested: [H5A2]
-validation_rationale: >
-  R&D director at LaMotte, a maker of water-testing kits and instruments; an instrument vendor, not a membrane maker.
-response_likelihood: 3
-likelihood_factors: "3rd+ degree (0)"
-channel: linkedin
-degree: 3rd+
-mutuals_count:
-active_last_30d: unknown
-open_to_work: false
-outreach_status: off_scope
-found_date: 2026-09-14
-notes: "[audit off_scope 2026-09-14] Profile visit: Director of R&D LaMotte Company Jan 2025-present; R&D director adsorbents Graver Technologies 2017-25; Veolia Nuclear Solutions product line manager 2014-17. LaMotte sells water-testing instruments: fails icp_out_of_scope 'instrument or sensor vendors' for H5A2. Not invited. Worth a competitor note in companies.md."
-
-## Megan Tran
-
-id: C140
-name: "Megan Tran"
-linkedin_url: https://www.linkedin.com/in/megan-tran-598b273/
-linkedin_account: Izgin
-company: "San Francisco Public Utilities Commission (San Francisco Water Department)"
-role: "Laboratory Services Manager"
-signal_type: profile_fit
-signal_multiplier: 1.0
-signal_source_url: "https://www.linkedin.com/search/results/people/?currentCompany=%5B%22165933%22%5D&keywords=laboratory%20manager"
-signal_excerpt: ""
-contact_role: practitioner
-role_pts: 2
-tier: water_utility
-size_band:
-assumptions_tested: [H3A2]
-validation_rationale: >
-  Laboratory services manager for the San Francisco Water Department, on the Board's Phase 1 list, after eight years as SFPUC supervising chemist; manages the lab side of any monitoring order.
-response_likelihood: 4
-likelihood_factors: "3rd+ degree (0) · lab services owner (+1)"
-channel: linkedin
-degree: 3rd+
-mutuals_count:
-active_last_30d: unknown
-open_to_work: false
-outreach_status: accepted
-found_date: 2026-09-14
-notes: "[profile read 2026-09-14] details/experience: Laboratory Services Manager San Francisco Water Department Jan 2018-present (Millbrae); Supervising Chemist SFPUC Feb 2010-present; Operations Manager TestAmerica 1995-2009. English. Passes. [invited 2026-09-14] bare invite via custom-invite modal, modal name confirmed Megan Tran, sent by Claude at founder's instruction; Pending confirmed. [accepted 2026-09-14] seen in the Connections list 2026-09-15 (connected 2026-09-14). No Msg 1: H3 and H5 superseded 2026-09-15 (founder: stay within fashion)."
-
-
-## Raul Cirerol
-
-id: C141
-name: "Raul Cirerol"
-linkedin_url: https://www.linkedin.com/in/raul-cirerol-07855514/
-linkedin_account: Izgin
-company: "Toray Membrane USA, Inc."
-role: "Technical Support Engineer"
-signal_type: profile_fit
-signal_multiplier: 1.0
-signal_source_url: "https://www.linkedin.com/search/results/people/?currentCompany=%5B%22368383%22%5D&keywords=technical"
-signal_excerpt: ""
-contact_role: practitioner
-role_pts: 2
-tier: membrane_manufacturer
-size_band:
-assumptions_tested: [H5A2]
-validation_rationale: >
-  Fourteen years of technical service at Toray USA: pilot systems, start-up and commissioning of RO/NF/MF/UF/MBR membranes; has watched projected and actual membrane life diverge on customer sites.
-response_likelihood: 4
-likelihood_factors: "3rd+ degree (0) · long field TS tenure (+1)"
-channel: linkedin
-degree: 3rd+
-mutuals_count:
-active_last_30d: unknown
-open_to_work: false
-outreach_status: invited
-found_date: 2026-09-14
-notes: "[profile read 2026-09-14] details/experience: Technical Support Engineer Toray Membrane USA Jul 2012-present (Poway): technical service, pilot systems, start-up and commissioning of RO/NF/MF/UF/MBR systems, customer training; process engineer Koch Industries from 1990. English. Passes. [invited 2026-09-14] bare invite via custom-invite modal, modal name confirmed Raul Cirerol, sent by Claude at founder's instruction; Pending confirmed."
-
-
-## Manikandan V
-
-id: C142
-name: "Manikandan V"
-linkedin_url: https://www.linkedin.com/in/manikandan-v-2300382b/
-linkedin_account: Izgin
-company: "Hydranautics (A Nitto Group Company)"
-role: "Group Leader, Regional Technical Support"
-signal_type: profile_fit
-signal_multiplier: 1.0
-signal_source_url: "https://www.linkedin.com/search/results/people/?currentCompany=%5B%2249072%22%5D&keywords=technical"
-signal_excerpt: ""
-contact_role: practitioner
-role_pts: 2
-tier: membrane_manufacturer
-size_band:
-assumptions_tested: [H5A2]
-validation_rationale: >
-  Leads Hydranautics' regional technical support in India with 23 years in membrane system design, pre- and post-sales support and pilot studies; the escalation point for early fouling in the region.
-response_likelihood: 4
-likelihood_factors: "3rd+ degree (0) · regional TS lead (+1)"
-channel: linkedin
-degree: 3rd+
-mutuals_count:
-active_last_30d: unknown
-open_to_work: false
-outreach_status: accepted
-found_date: 2026-09-14
-notes: "[profile read 2026-09-14] details/experience: Group Leader Regional Technical Support Hydranautics May 2018-present (Chennai); 23+ yrs in water: membrane system design, pre/post-sales support, pilot studies, team management. English. Passes. Sixth Hydranautics card: added in place of Roman Boda, whose invite is blocked behind an email check. [invited 2026-09-14] bare invite via custom-invite modal, modal name confirmed Manikandan V, sent by Claude at founder's instruction; Pending confirmed. [accepted 2026-09-14] seen in the Connections list 2026-09-15 (connected 2026-09-14). No Msg 1: H3 and H5 superseded 2026-09-15 (founder: stay within fashion)."
+notes: "[profile read 2026-09-14] details/experience: COO and Sr AGM Water System LADWP Aug 2021-present; Deputy Sr AGM and Director of Water Operations 2017-21 (treatment, LA Aqueduct); 33 yrs at LADWP. English. Passes. [invited 2026-09-14] bare invite via custom-invite modal, modal name confirmed Anselmo Collins, sent by Claude at founder's instruction; Pending confirmed. [accepted 2026-09-14] shows 1st degree in LinkedIn search the same day. [msg1 drafted 2026-09-14] LR-B33 shape with the drinking-water build sentence (LR-B28); inbox searched by first name and surname, no thread. Copy in copy/H3A2-linkedin.md. Awaiting founder send. [msg1 sent 2026-09-14] Sent by the founder by hand (founder confirmation in chat); H3A2 Msg 1 from copy/H3A2-linkedin.md. [kept 2026-09-15] H3 was removed at the founder's direction; this card stays because a Msg 1 went out. No further outreach planned."
 
 ## Nabeel Aman
 
@@ -4376,7 +2360,6 @@ outreach_status: accepted
 found_date: 2026-09-14
 notes: "[profile read 2026-09-14] details/experience: General Manager Laundry Azgard Nine Apr 2026-present (Lahore); General Manager Washing AGI Denim Mar 2024-present, DGM Washing 2023-24 (Karachi); AGM GWP Azgard Nine 2021-23. English. Passes. [invited 2026-09-14] bare invite via custom-invite modal, modal name confirmed Nabeel Aman, sent by Claude at founder's instruction. [accepted 2026-09-15] seen in the Connections list 2026-09-15 (connected 2026-09-15). [msg1 drafted 2026-09-15] LR-B33 shape from the recorded profile read; inbox list 2026-09-15 shows no thread (LR-B25). Copy in copy/H1A2-linkedin.md. Awaiting founder approval."
 
-
 ## H. Abdullah Mahmood
 
 id: C144
@@ -4406,7 +2389,6 @@ open_to_work: false
 outreach_status: invited
 found_date: 2026-09-14
 notes: "[profile read 2026-09-14] details/experience: General Manager Washing Marfa Textiles Sep 2025-present (Lahore); GM Washing Artistic Milliners 2023-25 (Karachi); DGM Washing US Apparel 2003-23. English. Passes. [invited 2026-09-14] bare invite via custom-invite modal, modal name confirmed H. Abdullah Mahmood, sent by Claude at founder's instruction."
-
 
 ## Ashwani Sharma
 
@@ -4438,7 +2420,6 @@ outreach_status: invited
 found_date: 2026-09-14
 notes: "[profile read 2026-09-14] details/experience: Dyeing Manager / Plant Head MR Dyeing & Finishing Mills Oct 2022-present (Ludhiana): complete dyeing plant, 25 t/day, 46 staff, polyester-lycra and PC blends on soft-flow machines. English. Passes. [invited 2026-09-14] bare invite via custom-invite modal, modal name confirmed Ashwani Sharma, sent by Claude at founder's instruction."
 
-
 ## Ihtsham Rasheed
 
 id: C146
@@ -4468,7 +2449,6 @@ open_to_work: false
 outreach_status: invited
 found_date: 2026-09-14
 notes: "[profile read 2026-09-14] details/experience: Senior Manager Dyeing Nishat Mills Dec 2023-present (Lahore); General Manager Bismillah Textiles 2020-23; Processing Manager Arshad Group 2019-20; Manager Dyeing Kamal Limited 2013-19. English. Passes. [invited 2026-09-14] bare invite via custom-invite modal, modal name confirmed Ihtsham Rasheed, sent by Claude at founder's instruction."
-
 
 ## Mehmet Çetin
 
@@ -4500,7 +2480,6 @@ outreach_status: replied
 found_date: 2026-09-14
 notes: "[profile read 2026-09-14] details/experience: Factory Manager Sarteks Örme Sep 2026-present; Factory Manager of a textile dyeing and finishing facility with 40 t/day HT dyeing capacity (dyeing, finishing, lab, planning, quality, maintenance). Role descriptions in English. Passes; new in current post but a prior factory-manager role carries the history. [invited 2026-09-14] bare invite via custom-invite modal, modal name confirmed Mehmet Çetin, sent by Claude at founder's instruction. [accepted 2026-09-15] seen in the Connections list (recently added, 2026-09-14). [msg1 drafted 2026-09-15] LR-B33 shape, English profile, fresh details/experience snapshot; inbox searched by company or surname, no thread. [msg1 sent 2026-09-15] 11:55, group thread with the co-founder, sent by the founder by hand in Turkish. [reply 2026-09-15] 11:58, in Turkish: 'Merhaba, Rica ederim, Buyrun sorabilirsiniz' (Hello, you are welcome, go ahead and ask). Soft yes, no data point; route to startup-outreach-reply for Msg 2. Thread auto-opened by LinkedIn during the inbox check, so it now shows as read. [msg2 drafted 2026-09-15] Turkish, frequency stage: which water, dye bath or chemical readings are still manual or lab-sent, and what was behind the last correction or re-dye (water, chemicals, lint and fibre build-up, machine). Copy in copy/H1A2-linkedin.md with an English version. Awaiting founder approval."
 
-
 ## Murat Yürür
 
 id: C148
@@ -4530,7 +2509,6 @@ open_to_work: false
 outreach_status: invited
 found_date: 2026-09-14
 notes: "[profile read 2026-09-14] details/experience: Senior General Manager Technical Washing AGI Denim Sep 2026-present (Karachi); General Manager R&D, P&D and Transition Cell Azgard Nine 2023-26; R&D Washing GM Stylers International before. Role titles in English (skills partly Turkish). Passes. [invited 2026-09-14] bare invite via custom-invite modal, modal name confirmed Murat Yürür, sent by Claude at founder's instruction."
-
 
 ## Ahmet Çağrı Dalkır
 
@@ -4562,7 +2540,6 @@ outreach_status: accepted
 found_date: 2026-09-14
 notes: "[profile read 2026-09-14] details/experience: General Manager Atlas Denim Tekstil Sep 2019-present (Adana), Factory Manager 2017-19; Factory Director United Denim 2014-17 (Port Said); DNM Spinning, Weaving and Dyeing (Eroğlu Group) 2011-14. Role titles in English. Passes. [invited 2026-09-14] bare invite via custom-invite modal, modal name confirmed Ahmet Çağrı Dalkır, sent by Claude at founder's instruction. [accepted 2026-09-15] seen in the Connections list 2026-09-15 (connected 2026-09-15). [msg1 drafted 2026-09-15] LR-B33 shape from the recorded profile read; inbox list 2026-09-15 shows no thread (LR-B25). Copy in copy/H1A2-linkedin.md. Awaiting founder approval. [msg1 sent 2026-09-15] 11:54, 1:1 thread, sent by the founder by hand in Turkish (not the English draft)."
 
-
 ## Moniruzzaman
 
 id: C150
@@ -4592,7 +2569,6 @@ open_to_work: false
 outreach_status: invited
 found_date: 2026-09-14
 notes: "[profile read 2026-09-14] details/experience: Assistant General Manager Pacific Knit Division Feb 2025-present (Chattogram): leads full dyeing department operations, planning, RFT, dosing and dispensing automation. English. Passes. [invited 2026-09-14] bare invite via custom-invite modal, modal name confirmed Moniruzzaman, sent by Claude at founder's instruction."
-
 
 ## Kamran Ali
 
@@ -4624,7 +2600,6 @@ outreach_status: invited
 found_date: 2026-09-14
 notes: "[profile read 2026-09-14] details/experience: Deputy General Manager (Washing) Artistic Milliners Jun 2019-present (Karachi); Manager Artistic Denim Mills 2012-19; Pelikan Knitwear, DSI Group, Habib Knit before. English. Passes. [invited 2026-09-14] bare invite via custom-invite modal, modal name confirmed Kamran Ali, sent by Claude at founder's instruction."
 
-
 ## Tariq Nadeem Siddiqui
 
 id: C152
@@ -4654,7 +2629,6 @@ open_to_work: false
 outreach_status: invited
 found_date: 2026-09-14
 notes: "[profile read 2026-09-14] details/experience: General Manager Grace Knitwear Mar 2007-present (Karachi); Director Operations Quality Dyeing & Finishing 2003-05 (built and equipped an open-width knit finishing unit). English. Passes; whether Grace Knitwear dyes in-house not stated, his background is wet processing. [invited 2026-09-14] bare invite via custom-invite modal, modal name confirmed Tariq Nadeem Siddiqui, sent by Claude at founder's instruction."
-
 
 ## Md. Sakhawat Hossain
 
@@ -4686,7 +2660,6 @@ outreach_status: accepted
 found_date: 2026-09-14
 notes: "[profile read 2026-09-14] details/experience: Executive Director Eurotex Knitwear Dec 2023-present: planning, inventory of yarn, fabric, dyes and chemicals, knitting technology, lab-dip and pre-bulk analysis. English. Passes. [invited 2026-09-14] bare invite via custom-invite modal, modal name confirmed Md. Sakhawat Hossain, sent by Claude at founder's instruction. [accepted 2026-09-15] seen in the Connections list (recently added, 2026-09-14). [msg1 drafted 2026-09-15] LR-B33 shape, English profile, fresh details/experience snapshot; inbox searched by company or surname, no thread. [msg1 sent 2026-09-15] 11:43, group thread with the co-founder, sent by the founder by hand."
 
-
 ## Mahasin Zaman
 
 id: C154
@@ -4716,7 +2689,6 @@ open_to_work: false
 outreach_status: invited
 found_date: 2026-09-14
 notes: "[profile read 2026-09-14] details/experience: General Manager Denim washing & dyeing, Jeans Manufacturing Co. Jan 2025-present (Dhaka); General Manager / wash unit head Ananta Group 2023-25. English. Passes. [invited 2026-09-14] bare invite via custom-invite modal, modal name confirmed Mahasin Zaman, sent by Claude at founder's instruction."
-
 
 ## Ali İlker Gün
 
@@ -4778,7 +2750,6 @@ outreach_status: invited
 found_date: 2026-09-14
 notes: "[profile read 2026-09-14] details/experience: Deputy General Manager (Washing) Dekko ISHO Group Apr 2025-present (Gazipur): production rates, planning against shipments, dry and wet process issues, development projects. English. Passes. [invited 2026-09-14] bare invite via custom-invite modal, modal name confirmed Engr. Mamun-ur-Rashid, sent by Claude at founder's instruction."
 
-
 ## Saif Khan
 
 id: C157
@@ -4809,7 +2780,6 @@ outreach_status: accepted
 found_date: 2026-09-14
 notes: "[profile read 2026-09-14] details/experience: General Manager Soorty Enterprises Aug 2020-present, Laundry Manager 2017-20 (Karachi); Artistic Milliners DGM 2015-17 and laundry manager 2013-15; Rajby before. English. Passes. [invited 2026-09-14] bare invite via custom-invite modal, modal name confirmed Saif Khan, sent by Claude at founder's instruction. [accepted 2026-09-15] seen in the Connections list 2026-09-15 (connected 2026-09-15). [msg1 drafted 2026-09-15] LR-B33 shape from the recorded profile read; inbox list 2026-09-15 shows no thread (LR-B25). Copy in copy/H1A2-linkedin.md. Awaiting founder approval. [msg1 sent 2026-09-15] 11:42, group thread with the co-founder, sent by the founder by hand."
 
-
 ## Ikram Bashir
 
 id: C158
@@ -4839,7 +2809,6 @@ open_to_work: false
 outreach_status: invited
 found_date: 2026-09-14
 notes: "[profile read 2026-09-14] details/experience: General Manager Chaman Processing Industries Jul 2018-present (Punjab); General Manager Shah Niaz Dyeing Industries 2006-18. English. Passes. [invited 2026-09-14] bare invite via custom-invite modal, modal name confirmed Ikram Bashir, sent by Claude at founder's instruction."
-
 
 ## Syed Uzair Ahmed Gilani
 
@@ -4931,7 +2900,6 @@ outreach_status: invited
 found_date: 2026-09-14
 notes: "[profile read 2026-09-14] details/experience: General Manager Sapphire Textile Mills (spinning, weaving, yarn dyeing, processing and stitching), listed from 1979 to present (Lahore); General Manager Nooriabad Textile Mills 2016-20. English. Passes; exact function inside Sapphire not stated. [invited 2026-09-14] bare invite via custom-invite modal, modal name confirmed Akhtar Qureshi, sent by Claude at founder's instruction."
 
-
 ## Abdul Rasheed
 
 id: C162
@@ -4962,7 +2930,6 @@ outreach_status: invited
 found_date: 2026-09-14
 notes: "[profile read 2026-09-14] details/experience: Senior Manager Dyeing and Processing, Ebrahim Textile Mills May 2012-present (Landhi). English. Passes. [invited 2026-09-14] bare invite via custom-invite modal, modal name confirmed Abdul Rasheed, sent by Claude at founder's instruction."
 
-
 ## Khursheed Ahmed
 
 id: C163
@@ -4992,7 +2959,6 @@ open_to_work: false
 outreach_status: invited
 found_date: 2026-09-14
 notes: "[profile read 2026-09-14] details/experience: General Manager Processing, Evaluation Textile Nov 2020-present; GM Processing Al Azeem Interlining and Textile 2019-20 (Karachi); Manager Dyeing and Finishing Reliance Textiles before. English. Passes; employer name as listed, not independently checked. [invited 2026-09-14] bare invite via custom-invite modal, modal name confirmed Khursheed Ahmed, sent by Claude at founder's instruction."
-
 
 ## Zainul Abideen
 
@@ -5084,7 +3050,6 @@ outreach_status: invited
 found_date: 2026-09-14
 notes: "[profile read 2026-09-14] details/experience: General Manager Valmont Group Dec 2019-present (Gazipur): production, R&D and quality, factory cost analysis, sustainable process methodology, wash-recipe cost analysis. English. Passes. [invited 2026-09-14] bare invite via custom-invite modal, modal name confirmed Md. Al-amin Howlader, sent by Claude at founder's instruction."
 
-
 ## Mezbahul Islam
 
 id: C167
@@ -5114,7 +3079,6 @@ open_to_work: false
 outreach_status: invited
 found_date: 2026-09-14
 notes: "[profile read 2026-09-14] details/experience: General Manager Euro Washing Ltd Aug 2021-present (Dhaka); Bitopi Group, Tarasima Apparels acting manager 2017-21. English. Passes. [invited 2026-09-14] bare invite via custom-invite modal, modal name confirmed Mezbahul Islam, sent by Claude at founder's instruction."
-
 
 ## Abdul Akher
 
@@ -5146,7 +3110,6 @@ outreach_status: invited
 found_date: 2026-09-14
 notes: "[profile read 2026-09-14] details/experience: General Manager Next Washing Ltd (Hameem Group) Feb 2026-present; Head of Operations Babylon Washing Sep 2024-present: complete washing operations, wet and dry processing, planning, quality. English. Passes. [invited 2026-09-14] bare invite via custom-invite modal, modal name confirmed Abdul Akher, sent by Claude at founder's instruction."
 
-
 ## Sanjib Paul
 
 id: C169
@@ -5176,7 +3139,6 @@ open_to_work: false
 outreach_status: invited
 found_date: 2026-09-14
 notes: "[profile read 2026-09-14] details/experience: General Manager (Washing) Epic Group Sep 2021-present (Savar); Washing Plant Head Dekko ISHO 2019-21; DGM Washing DIRD Group 2015-19. English. Passes. [invited 2026-09-14] bare invite via custom-invite modal, modal name confirmed Sanjib Paul, sent by Claude at founder's instruction."
-
 
 ## Farah Wadie
 
@@ -5208,7 +3170,6 @@ outreach_status: invited
 found_date: 2026-09-14
 notes: "[profile read 2026-09-14] details/experience: General Manager of Dyeing and Finishing and consultant, NEW-TEX Jan 2023-present; dyehouse GM Heliopolis 2021-23, Pharaoh Carpets 2020-21, Sasa Tex before; consultant MardiniTex 2021-23. English. Passes. [invited 2026-09-14] bare invite via custom-invite modal, modal name confirmed Farah Wadie, sent by Claude at founder's instruction."
 
-
 ## Md Mashiur Rahman
 
 id: C171
@@ -5238,7 +3199,6 @@ open_to_work: false
 outreach_status: invited
 found_date: 2026-09-14
 notes: "[profile read 2026-09-14] details/experience: AGM (Washing & Dyeing) Bengal Group of Industries Sep 2018-present (Dhaka); Manager Denim Washing R&D Dekko Group 2016-18; Asst Manager Washing R&D Pacific Jeans 2010-16. English. Passes. [invited 2026-09-14] bare invite via custom-invite modal, modal name confirmed Md Mashiur Rahman, sent by Claude at founder's instruction."
-
 
 ## Mohd. Joynal Abedin
 
@@ -5270,7 +3230,6 @@ outreach_status: invited
 found_date: 2026-09-14
 notes: "[profile read 2026-09-14] details/experience: General Manager Keya Knit Composite Jan 2020-present; GM Marketing & Merchandising The Delta Composite Knitting (Europe buyers incl. Monoprix) 2017-present. English. Passes; his GM remit may be commercial rather than dyehouse. [invited 2026-09-14] bare invite via custom-invite modal, modal name confirmed Mohd. Joynal Abedin, sent by Claude at founder's instruction."
 
-
 ## M. S. Arefin
 
 id: C173
@@ -5301,7 +3260,6 @@ outreach_status: invited
 found_date: 2026-09-14
 notes: "[profile read 2026-09-14] details/experience: General Manager Arien Knit Composite Jul 2021-present (Gazipur); Head of Fabrics Dyeing Mosharaf Group 2019-21. English. Passes. [invited 2026-09-14] bare invite via custom-invite modal, modal name confirmed M. S. Arefin, sent by Claude at founder's instruction."
 
-
 ## Omar Ali
 
 id: C174
@@ -5331,7 +3289,6 @@ open_to_work: false
 outreach_status: invited
 found_date: 2026-09-14
 notes: "[profile read 2026-09-14] details/experience: AGM (Dyeing Finishing) Alliance Knit Composite Jul 2023-present (Ashulia): daily dyeing and finishing production, quality to buyer standard, 100 t stenter and 60 t compactor output. English. Passes. [invited 2026-09-14] bare invite via custom-invite modal, modal name confirmed Omar Ali, sent by Claude at founder's instruction."
-
 
 ## Suresh Kumar G
 
@@ -5600,7 +3557,6 @@ outreach_status: invited
 found_date: 2026-09-14
 notes: "[profile read 2026-09-15] details/experience: Founder and CEO PlanetCare Feb 2017-present. English. Passes. [invited 2026-09-14] bare invite via custom-invite modal, modal name confirmed Mojca Zupan, sent by Claude at founder's instruction."
 
-
 ## Andrej Kržan
 
 id: C183
@@ -5630,7 +3586,6 @@ open_to_work: false
 outreach_status: invited
 found_date: 2026-09-14
 notes: "[profile read 2026-09-15] details/experience: Chief Research Officer PlanetCare Jan 2018-present; Senior Scientific Associate National Institute of Chemistry 1997-present (environmental aspects of plastics, marine litter, microplastics); Associate Professor University of Nova Gorica. English. Passes. [invited 2026-09-14] bare invite via custom-invite modal, modal name confirmed Andrej Kržan, sent by Claude at founder's instruction."
-
 
 ## Max Pennington
 
@@ -5662,7 +3617,6 @@ outreach_status: invited
 found_date: 2026-09-14
 notes: "[profile read 2026-09-15] details/experience: Co-Founder & CEO CLEANR Aug 2021-present (Cleveland); R&D engineer intern Procter & Gamble 2019-21. English. Passes. [invited 2026-09-14] bare invite via custom-invite modal, modal name confirmed Max Pennington, sent by Claude at founder's instruction."
 
-
 ## David Dillman
 
 id: C185
@@ -5692,7 +3646,6 @@ open_to_work: false
 outreach_status: invited
 found_date: 2026-09-14
 notes: "[profile read 2026-09-15] details/experience: Co-Founder & CTO CLEANR Aug 2021-present (Cleveland). English. Passes. [invited 2026-09-14] bare invite via custom-invite modal, modal name confirmed David Dillman, sent by Claude at founder's instruction."
-
 
 ## Neil Austin
 
@@ -5724,7 +3677,6 @@ outreach_status: invited
 found_date: 2026-09-14
 notes: "[profile read 2026-09-15] details/experience: Chief Executive Officer Xeros Aug 2022-present (Sheffield), London Stock Exchange listed green-tech R&D company. English. Passes. [invited 2026-09-14] bare invite via custom-invite modal, modal name confirmed Neil Austin, sent by Claude at founder's instruction."
 
-
 ## Thomas Cobb
 
 id: C187
@@ -5754,7 +3706,6 @@ open_to_work: false
 outreach_status: accepted
 found_date: 2026-09-14
 notes: "[profile read 2026-09-15] details/experience: Technical Director Xeros Feb 2024-present, 9 yrs 9 mos at Xeros: technical leadership across engineering, science, IP, product and application development; inventor on 6 granted core patents. English. Passes. [invited 2026-09-14] bare invite via custom-invite modal, modal name confirmed Thomas Cobb, sent by Claude at founder's instruction. [invite resent 2026-09-15] The custom-invite modal still offered Send without a note despite the earlier invited mark, so the earlier invite had not landed; name-checked and sent. [accepted 2026-09-15] seen in the Connections list 2026-09-15 (connected 2026-09-15). [msg1 drafted 2026-09-15] LR-B33 shape from the recorded profile read; inbox list 2026-09-15 shows no thread (LR-B25). Copy in copy/H1A2-linkedin.md. Awaiting founder approval. [msg1 sent 2026-09-15] 11:41, group thread with the co-founder, sent by the founder by hand."
-
 
 ## Sertug D.
 
@@ -5786,7 +3737,6 @@ outreach_status: accepted
 found_date: 2026-09-14
 notes: "[profile read 2026-09-15] details/experience: International Sales Manager Xeros Apr 2025-present (remote); Marketing and Sales Director TACHYON Textile Machinery 2024-25. English. Passes. [invited 2026-09-14] bare invite via custom-invite modal, modal name confirmed Sertug D., sent by Claude at founder's instruction. [accepted 2026-09-14] seen in the Connections list 2026-09-15 (connected 2026-09-14). [msg1 drafted 2026-09-15] LR-B33 shape from the recorded profile read; inbox list 2026-09-15 shows no thread (LR-B25). Copy in copy/H1A2-linkedin.md. Awaiting founder approval. [msg1 sent 2026-09-15] 11:53, group thread with the co-founder, sent by the founder by hand."
 
-
 ## Nathaniel Banks
 
 id: C189
@@ -5816,7 +3766,6 @@ open_to_work: false
 outreach_status: invited
 found_date: 2026-09-14
 notes: "[profile read 2026-09-15] details/experience: Co-Founder & CEO PolyGone Apr 2021-present (Princeton): 'novel filtration systems for monitoring and removing aquatic microplastics'. English. Passes. Caution: PolyGone sells lab analysis (fluorescence microscopy >1 µm, FTIR, py-GC/MS, from $399/sample, ~2 weeks), so disclose little about the sensor. [invited 2026-09-14] bare invite via custom-invite modal, modal name confirmed Nathaniel Banks, sent by Claude at founder's instruction."
-
 
 ## Yidian Liu
 
@@ -5848,7 +3797,6 @@ outreach_status: invited
 found_date: 2026-09-14
 notes: "[profile read 2026-09-15] details/experience: Co-Founder & COO PolyGone Jun 2021-present (Kearny NJ). English. Passes. Same competitor caution as Nathaniel Banks. [invited 2026-09-14] bare invite via custom-invite modal, modal name confirmed Yidian Liu, sent by Claude at founder's instruction."
 
-
 ## Yueyu Yao
 
 id: C191
@@ -5878,7 +3826,6 @@ open_to_work: false
 outreach_status: invited
 found_date: 2026-09-14
 notes: "[profile read 2026-09-15] details/experience: Lead Scientist PolyGone Oct 2024-present (North Brunswick NJ); graduate researcher Princeton 2018-24. English. Passes. Same competitor caution as the PolyGone founders. [invited 2026-09-14] bare invite via custom-invite modal, modal name confirmed Yueyu Yao, sent by Claude at founder's instruction."
-
 
 ## Anshu Malika G.
 
@@ -5910,7 +3857,6 @@ outreach_status: invited
 found_date: 2026-09-14
 notes: "[profile read 2026-09-15] details/experience: Director Business Development, Material Innovation & Strategic Partnerships, Paradise Textiles Dec 2025-present (New York): business development and strategic customer partnerships with performance apparel and lifestyle brands in North America. English. Passes (H1A5: a mill already answering the microfiber question, via Matter). [invited 2026-09-14] bare invite via custom-invite modal, modal name confirmed Anshu Malika G., sent by Claude at founder's instruction."
 
-
 ## Mohamed Taha
 
 id: C193
@@ -5941,7 +3887,6 @@ outreach_status: invited
 found_date: 2026-09-14
 notes: "[profile read 2026-09-15] details/experience: Director of Technical Operations Paradise Textiles Jun 2021-present (Alexandria, Egypt mill): fabric process manufacturing, sustainable automation; freelance dyeing and finishing expertise. English. Passes. [invited 2026-09-14] bare invite via custom-invite modal, modal name confirmed Mohamed Taha, sent by Claude at founder's instruction."
 
-
 ## Achala Herath
 
 id: C194
@@ -5971,7 +3916,6 @@ open_to_work: false
 outreach_status: accepted
 found_date: 2026-09-14
 notes: "[profile read 2026-09-15] details/experience: Head of Fabric Technical & Development, Paradise Textiles Aug 2026-present (4 yrs 7 mos at the company): regional sourcing, development and technical operations across China, Vietnam, Indonesia, Thailand, Egypt and Turkey. English. Passes. [invited 2026-09-14] bare invite via custom-invite modal, modal name confirmed Achala Herath, sent by Claude at founder's instruction. [accepted 2026-09-15] seen in the Connections list 2026-09-15 (connected 2026-09-15). [msg1 drafted 2026-09-15] LR-B33 shape from the recorded profile read; inbox list 2026-09-15 shows no thread (LR-B25). Copy in copy/H1A2-linkedin.md. Awaiting founder approval."
-
 
 ## Katrin Schuhen
 
@@ -6063,7 +4007,6 @@ outreach_status: invited
 found_date: 2026-09-14
 notes: "[profile read 2026-09-15] details/experience: Director of Product Clearly Filtered May 2025-present (California): product strategy, roadmap and lifecycle across the hardware portfolio; supply-chain diversification. English. Passes (H1A5 filtration_vendor, Western water-filtration push, founder instruction 2026-09-15). [invited 2026-09-14] bare invite via custom-invite modal, modal name confirmed Richard Liang, sent by Claude at founder's instruction."
 
-
 ## Peter Brackmann
 
 id: C198
@@ -6093,7 +4036,6 @@ open_to_work: false
 outreach_status: invited
 found_date: 2026-09-14
 notes: "[profile read 2026-09-15] details/experience: Project Lead MicroBubbles GmbH Jan 2022-present; headline Technical Project Manager, wastewater treatment and flotation; project manager Turner & Townsend 2019-21. Titles in English. Passes. [invited 2026-09-14] bare invite via custom-invite modal, modal name confirmed Peter Brackmann, sent by Claude at founder's instruction."
-
 
 ## Kyle Wilms
 
@@ -6155,7 +4097,6 @@ outreach_status: invited
 found_date: 2026-09-14
 notes: "[profile read 2026-09-15] details/experience: Geschäftsführer / Gründer ECOFARIO Jul 2014-present (Munich): hydrocyclone microplastic filtration plants for municipal and industrial wastewater. Role description in German; headline in English and Languages lists English at full professional proficiency, which passes LR-B31a. Passes. [invited 2026-09-14] bare invite via custom-invite modal, modal name confirmed Sebastian Porkert, sent by Claude at founder's instruction."
 
-
 ## Adrian Scholl
 
 id: C201
@@ -6216,7 +4157,6 @@ outreach_status: invited
 found_date: 2026-09-14
 notes: "[profile read 2026-09-15] details/experience: Director, Engineering & Product Development, Culligan Retail North America May 2026-present; Global Director of Engineering, R&D at Newell Brands (Coleman, Contigo, Rubbermaid) 2017-26; 20 yrs at Newell. English. Passes. [invited 2026-09-14] bare invite via custom-invite modal, modal name confirmed James Bergman, sent by Claude at founder's instruction."
 
-
 ## Chris Freeman
 
 id: C203
@@ -6246,7 +4186,6 @@ open_to_work: false
 outreach_status: invited
 found_date: 2026-09-14
 notes: "[profile read 2026-09-15] details/experience: Vice President Commercial Drinking Water Product Category, Culligan International Jan 2024-present (London, remote), 15 yrs 4 mos at Culligan: global product vision, innovation and strategy. English. Passes. [invited 2026-09-14] bare invite via custom-invite modal, modal name confirmed Chris Freeman, sent by Claude at founder's instruction."
-
 
 ## Bob Brooks
 
@@ -6308,7 +4247,6 @@ outreach_status: invited
 found_date: 2026-09-14
 notes: "[profile read 2026-09-15] details/experience: Engineering Director - Water Treatment Technology, A. O. Smith Oct 2017-present; Engineering Manager A.O. Smith 2016-17; R&D Engineering Manager Pentair Filtration & Process 2003-16. English. Passes. [invited 2026-09-14] bare invite via custom-invite modal, modal name confirmed Rebecca Tallon, sent by Claude at founder's instruction."
 
-
 ## Gusphyl Justin
 
 id: C206
@@ -6338,7 +4276,6 @@ open_to_work: false
 outreach_status: invited
 found_date: 2026-09-14
 notes: "[profile read 2026-09-15] details/experience: Senior Staff Engineer - Water Treatment, A. O. Smith Mar 2022-present (technology roadmapping); Staff Engineer - Sensors 2015-22; 11 yrs at A. O. Smith. English. Passes. [invited 2026-09-14] bare invite via custom-invite modal, modal name confirmed Gusphyl Justin, sent by Claude at founder's instruction."
-
 
 ## William Lipps
 
@@ -6370,7 +4307,6 @@ outreach_status: invited
 found_date: 2026-09-14
 notes: "[profile read 2026-09-15] details/experience: General Manager - Government & Regulatory Business Development, Shimadzu Scientific Instruments Oct 2019-present: evaluates industry and analytical testing trends that may become the basis for new instruments and methods. English. Passes as H1A5 sensor_vendor (competitor tier). Caution: analytical-instrument vendor, disclose little. [invited 2026-09-14] bare invite via custom-invite modal, modal name confirmed William Lipps, sent by Claude at founder's instruction."
 
-
 ## Jean-Luc Madier
 
 id: C208
@@ -6400,38 +4336,6 @@ open_to_work: false
 outreach_status: invited
 found_date: 2026-09-14
 notes: "[profile read 2026-09-15] details/experience: Director of Engineering LifeStraw Feb 2021-present (Lausanne); Head of Research and Development Vestergaard Frandsen 2012-22, responsible for R&D of LifeStraw water filtration products. English. Passes. [invited 2026-09-14] bare invite via custom-invite modal, modal name confirmed Jean-Luc Madier, sent by Claude at founder's instruction."
-
-
-## Joris de Grooth
-
-id: C209
-name: "Joris de Grooth"
-linkedin_url: https://www.linkedin.com/in/jorisdegrooth/
-linkedin_account: Izgin
-company: "NX Filtration (Hengelo, Netherlands)"
-role: "Director of Technology (previously R&D Director)"
-signal_type: profile_fit
-signal_multiplier: 1.0
-signal_source_url: "https://www.linkedin.com/search/results/people/?keywords=Pentair%20residential%20water%20filtration%20R%26D%20director"
-signal_excerpt: ""
-contact_role: buyer
-role_pts: 3
-tier: membrane_manufacturer
-size_band:
-assumptions_tested: [H5A2]
-validation_rationale: >
-  Directs technology at NX Filtration, a Dutch maker of hollow-fibre nanofiltration membranes sold for micropollutant removal, after ten years in its R&D; the R&D owner who would judge whether field foulant data changes membrane design or warranty.
-response_likelihood: 5
-likelihood_factors: "2nd degree (+2) · membrane R&D owner (0)"
-channel: linkedin
-degree: 2nd
-mutuals_count:
-active_last_30d: unknown
-open_to_work: false
-outreach_status: invited
-found_date: 2026-09-14
-notes: "[profile read 2026-09-15] details/experience: Director of Technology NX Filtration Jan 2026-present (Hengelo); R&D Director 2021-26; Research Manager 2016-21 (polymeric membrane innovations). English. Passes (H5A2 membrane_manufacturer). [invited 2026-09-14] bare invite via custom-invite modal, modal name confirmed Joris de Grooth, sent by Claude at founder's instruction."
-
 
 ## Dominik Elsaesser
 
@@ -6643,7 +4547,6 @@ outreach_status: accepted
 found_date: 2026-09-14
 notes: "[profile read 2026-09-15] details/experience: CEO Tintex Textiles 2020-present, Head of Operations 2017-20, Head of Coating & Technical Textiles 2015-17; President of the Board ATP Sep 2025-present, board member 2022-25. English. Passes. [invited 2026-09-14] bare invite via custom-invite modal, modal name confirmed Ricardo Martins da Silva, sent by Claude at founder's instruction. [accepted 2026-09-14] seen in the Connections list 2026-09-15 (connected 2026-09-14). [msg1 drafted 2026-09-15] LR-B33 shape from the recorded profile read; inbox list 2026-09-15 shows no thread (LR-B25). Copy in copy/H1A2-linkedin.md. Awaiting founder approval."
 
-
 ## Randy Henderson
 
 id: C217
@@ -6673,7 +4576,6 @@ open_to_work: false
 outreach_status: invited
 found_date: 2026-09-14
 notes: "[profile read 2026-09-15] details/experience: Denim Plant Manager Mount Vernon Mills Mar 2018-present (Trion GA); Denim Finishing Manager 2007-18; 19 yrs 9 mos at the company. English. Passes. [invited 2026-09-14] bare invite via custom-invite modal, modal name confirmed Randy Henderson, sent by Claude at founder's instruction."
-
 
 ## Tim Shirley
 
@@ -6705,7 +4607,6 @@ outreach_status: invited
 found_date: 2026-09-14
 notes: "[profile read 2026-09-15] details/experience: Plant Manager Mount Vernon Mills Jan 2000-present (McCormick SC); Plant Manager Honea Path Mfg 1987-99. English. Passes; whether the McCormick site itself dyes is not stated. [invited 2026-09-14] bare invite via custom-invite modal, modal name confirmed Tim Shirley, sent by Claude at founder's instruction."
 
-
 ## Allen Tate
 
 id: C219
@@ -6736,7 +4637,6 @@ outreach_status: invited
 found_date: 2026-09-14
 notes: "[profile read 2026-09-15] details/experience: Plant Manager Elevate Textiles Jan 2021-present (Burlington NC); Plant Superintendent 2018-21; Dye House Manager Elastic Fabrics of America 2006-18. English. Passes. [invited 2026-09-14] bare invite via custom-invite modal, modal name confirmed Allen Tate, sent by Claude at founder's instruction."
 
-
 ## Glen Cox
 
 id: C220
@@ -6766,7 +4666,6 @@ open_to_work: false
 outreach_status: invited
 found_date: 2026-09-14
 notes: "[profile read 2026-09-15] details/experience: Dye House Manager Shawmut LLC 2019-present (Burlington NC): production team, continuous improvement, cost and waste reduction, quality. English. Passes. [invited 2026-09-14] bare invite via custom-invite modal, modal name confirmed Glen Cox, sent by Claude at founder's instruction."
-
 
 ## Mário Jorge Silva
 
@@ -7098,7 +4997,6 @@ outreach_status: invited
 found_date: 2026-09-14
 notes: "[profile read 2026-09-15] details/experience: Production Manager Milliken & Company Jun 2018-present (Pendleton SC); headline Dye House Production Manager. English. Passes. [invited 2026-09-14] bare invite via custom-invite modal, modal name confirmed Christian Rojo, sent by Claude at founder's instruction."
 
-
 ## Kassie Cartee
 
 id: C232
@@ -7129,7 +5027,6 @@ outreach_status: invited
 found_date: 2026-09-14
 notes: "[profile read 2026-09-15] details/experience: Plant Manager Milliken Gaffney SC Sep 2022-present; Plant Manager Blacksburg SC 2018-22; Process Improvement Leader Magnolia Plant 2016-18; 15 yrs 5 mos at Milliken. English. Passes; which Gaffney products are dyed on site is not stated. [invited 2026-09-14] bare invite via custom-invite modal, modal name confirmed Kassie Cartee, sent by Claude at founder's instruction."
 
-
 ## Bilal Ahmed
 
 id: C233
@@ -7159,7 +5056,6 @@ open_to_work: false
 outreach_status: pending
 found_date: 2026-09-14
 notes: "[profile read 2026-09-15] details/experience: Head of Dyeing Artistic Denim Mills Nov 2023-present (Karachi); Gul Ahmed Textile Mills senior manager operations 2023 and manager technical 2020-22. English. Passes. [invite skipped 2026-09-15] Invite modal asks for his email address; Claude never enters emails. Stays pending: the founder can send by hand if they have the address."
-
 
 ## Harshad Patel
 
@@ -7221,7 +5117,6 @@ outreach_status: invited
 found_date: 2026-09-14
 notes: "[profile read 2026-09-15] details/experience: General Manager Operations American & Efird Jan 2025-present (Sri Lanka), 14 yrs 5 mos at A&E: end-to-end operations across dye house, lab, winding, EHS. English. Passes. [invited 2026-09-14] bare invite via custom-invite modal, modal name confirmed Sivantha Samarasinghe, sent by Claude at founder's instruction."
 
-
 ## Ligia Elena Taveras Hiciano
 
 id: C236
@@ -7251,7 +5146,6 @@ open_to_work: false
 outreach_status: invited
 found_date: 2026-09-14
 notes: "[profile read 2026-09-15] details/experience: Dye house Manager American & Efird Jan 2019-present; Process Manager Elevate Textiles Jan 2022-present, Quality Engineer 2019-22 (Dominican Republic). Titles in English (skills partly Spanish). Passes. [invited 2026-09-14] bare invite via custom-invite modal, modal name confirmed Ligia Elena Taveras Hiciano, sent by Claude at founder's instruction."
-
 
 ## Anup Gupta
 
@@ -7372,68 +5266,6 @@ open_to_work: false
 outreach_status: pending
 found_date: 2026-09-14
 notes: "[profile read 2026-09-15] details/experience: Head of Product Development XEROS Apr 2026-present; Head of Engineering WAGO UK 2024-26; MTC technology manager 7 yrs. English. HELD from invite: six months at Xeros, no filter history of his own yet (live-profile gate check 4); Cobb is the route in."
-
-## Mahdi Fathizadeh
-
-id: C241
-name: "Mahdi Fathizadeh"
-linkedin_url: https://www.linkedin.com/in/mahdi-fathizadeh-83b0693b/
-linkedin_account: Izgin
-company: "Solecta, Inc. (Oceanside, California)"
-role: "Director of Research and Development"
-signal_type: profile_fit
-signal_multiplier: 1.0
-signal_source_url: "https://www.linkedin.com/search/results/people/?keywords=director%20R%26D%20water%20filtration&geoUrn=%5B%22103644278%22%5D"
-signal_excerpt: ""
-contact_role: buyer
-role_pts: 3
-tier: membrane_manufacturer
-size_band:
-assumptions_tested: [H5A2]
-validation_rationale: >
-  Directs R&D at Solecta, a California maker of RO and nanofiltration membranes, after two years developing its membranes; the R&D owner who would judge whether field foulant data changes membrane design or warranty.
-response_likelihood: 4
-likelihood_factors: "3rd degree (0) · membrane R&D owner (+1)"
-channel: linkedin
-degree: 3rd+
-mutuals_count:
-active_last_30d: unknown
-open_to_work: false
-outreach_status: invited
-found_date: 2026-09-14
-notes: "[profile read 2026-09-15] details/experience: Director of Research Development Solecta Sep 2024-present; Sr Staff and Staff Membrane Development Scientist 2022-24 (Oceanside CA), 4 yrs 2 mos at Solecta; also Director of Research Development Acuriant Jul 2025-present. English. Passes (H5A2 membrane_manufacturer). [invited 2026-09-14] bare invite via custom-invite modal, modal name confirmed Mahdi Fathizadeh, sent by Claude at founder's instruction."
-
-
-## Vishal Bansal
-
-id: C242
-name: "Vishal Bansal"
-linkedin_url: https://www.linkedin.com/in/bansalvishal/
-linkedin_account: Izgin
-company: "Danaher Corporation / Pall (Port Washington, New York)"
-role: "Senior Director R&D, Membranes and Media"
-signal_type: profile_fit
-signal_multiplier: 1.0
-signal_source_url: "https://www.linkedin.com/search/results/people/?keywords=director%20R%26D%20water%20filtration&geoUrn=%5B%22103644278%22%5D"
-signal_excerpt: ""
-contact_role: buyer
-role_pts: 3
-tier: membrane_manufacturer
-size_band:
-assumptions_tested: [H5A2]
-validation_rationale: >
-  Leads global R&D for the membranes and media organisation at Danaher's Port Washington site, Pall's home; owns how filtration membranes are developed and what performance data they are sold on.
-response_likelihood: 4
-likelihood_factors: "3rd degree (0) · global membrane R&D owner (+1)"
-channel: linkedin
-degree: 3rd+
-mutuals_count:
-active_last_30d: unknown
-open_to_work: false
-outreach_status: invited
-found_date: 2026-09-14
-notes: "[profile read 2026-09-15] details/experience: Senior Director R&D Danaher Dec 2024-present (Port Washington NY, on-site), global R&D leadership for Membranes and Media; previously board member Blue Ocean Closures 2021-24 and Glatfelter. English. Passes (H5A2 membrane_manufacturer). [invited 2026-09-14] bare invite via custom-invite modal, modal name confirmed Vishal Bansal, sent by Claude at founder's instruction."
-
 
 ## Balasubramanian V.V.
 
@@ -7585,66 +5417,6 @@ outreach_status: off_scope
 found_date: 2026-09-14
 notes: "[audit off_scope 2026-09-15] Profile visit: self-employed Water Treatment & Regulatory Compliance Expert Feb 2026-present, offering expert-witness work. Consultant, fails icp_valid_tiers for H1A5. Not invited."
 
-## Priyesh Wagh
-
-id: C248
-name: "Priyesh Wagh"
-linkedin_url: https://www.linkedin.com/in/priyesh-wagh/
-linkedin_account: Izgin
-company: "The Lubrizol Corporation"
-role: "Senior Scientist, Corporate Innovation and Decision Science"
-signal_type: profile_fit
-signal_multiplier: 1.0
-signal_source_url: "https://www.linkedin.com/search/results/people/?keywords=membrane%20R%26D%20director%20reverse%20osmosis&geoUrn=%5B%22103644278%22%5D"
-signal_excerpt: ""
-contact_role: expert
-role_pts: 2
-tier: membrane_manufacturer
-size_band:
-assumptions_tested: [H5A2]
-validation_rationale: >
-  Separations expert in a specialty-chemicals company's corporate innovation group; not at a membrane maker.
-response_likelihood: 2
-likelihood_factors: "3rd degree (0)"
-channel: linkedin
-degree: 3rd+
-mutuals_count:
-active_last_30d: unknown
-open_to_work: false
-outreach_status: off_scope
-found_date: 2026-09-14
-notes: "[audit off_scope 2026-09-15] Profile visit: Senior Scientist, Corporate Innovation Lubrizol Oct 2021-present, separations SME on innovation projects. Chemicals company, fails icp_valid_tiers for H5A2. Not invited."
-
-## Nidal Samad
-
-id: C249
-name: "Nidal Samad"
-linkedin_url: https://www.linkedin.com/in/nidal-samad-75681412/
-linkedin_account: Izgin
-company: "(last listed: Saudi Aramco, until 2024)"
-role: "Environmental Consultant (ended 2024)"
-signal_type: profile_fit
-signal_multiplier: 1.0
-signal_source_url: "https://www.linkedin.com/search/results/people/?keywords=membrane%20R%26D%20director%20reverse%20osmosis&geoUrn=%5B%22103644278%22%5D"
-signal_excerpt: ""
-contact_role: expert
-role_pts: 2
-tier: membrane_manufacturer
-size_band:
-assumptions_tested: [H5A2]
-validation_rationale: >
-  Approved water and wastewater treatment designs at Saudi Aramco until 2024; no current role shown.
-response_likelihood: 2
-likelihood_factors: "3rd degree (0)"
-channel: linkedin
-degree: 3rd+
-mutuals_count:
-active_last_30d: unknown
-open_to_work: false
-outreach_status: off_scope
-found_date: 2026-09-14
-notes: "[audit off_scope 2026-09-15] Profile visit: Environmental Consultant Saudi Aramco 2011-Jun 2024 (ended); no current employer. Fails the live-profile gate on current function. Not invited."
-
 ## Irina Morosanu
 
 id: C250
@@ -7674,7 +5446,6 @@ open_to_work: false
 outreach_status: accepted
 found_date: 2026-09-14
 notes: "[profile read 2026-09-15] details/experience: Manager Ístex hf. Mar 2004-present (26 yrs 9 mos at Ístex); head of textile finishing and quality manager (laboratory, dyeing house); Coats restricted-substances and fibre testing work 2004-15. English. Passes. [invited 2026-09-14] bare invite via custom-invite modal, modal name confirmed Irina Morosanu, sent by Claude at founder's instruction. [accepted 2026-09-15] seen in the Connections list 2026-09-15 (connected 2026-09-15). [msg1 drafted 2026-09-15] LR-B33 shape from the recorded profile read; inbox list 2026-09-15 shows no thread (LR-B25). Copy in copy/H1A2-linkedin.md. Awaiting founder approval."
-
 
 ## Lee Arrandale
 
@@ -7706,7 +5477,6 @@ outreach_status: invited
 found_date: 2026-09-14
 notes: "[profile read 2026-09-15] details/experience: Dye House Manager AMANN Group Apr 2017-present; Dye House Manager Blackburn Yarn Dyers 2007-17 (Blackburn); NEBOSH and lean manufacturing. English. Passes. [invited 2026-09-14] bare invite via custom-invite modal, modal name confirmed Lee Arrandale, sent by Claude at founder's instruction."
 
-
 ## Joe Fogle
 
 id: C252
@@ -7736,7 +5506,6 @@ open_to_work: false
 outreach_status: invited
 found_date: 2026-09-14
 notes: "[profile read 2026-09-15] details/experience: Dyeing and Finishing Department Manager Aplix Inc. Apr 2010-present (Fort Mill SC); Springs Global and Springs Industries plant administrative manager 2000-07; earlier plant production manager and corporate environmental coordinator. English. Passes. [invited 2026-09-14] bare invite via custom-invite modal, modal name confirmed Joe Fogle, sent by Claude at founder's instruction."
-
 
 ## Chris Hawks
 
@@ -8008,7 +5777,6 @@ outreach_status: accepted
 found_date: 2026-09-14
 notes: "[profile read 2026-09-15] details/experience: Dyehouse Manager Ronutex Jan 2026-present (knitwear dyeing plant, team of 30); Quality and Environment Manager Ronutex Feb 2025-Dec 2025; 1 yr 8 mos at Ronutex. Role text in English. Passes. [invited 2026-09-14] bare invite via custom-invite modal, modal name confirmed António Faria, sent by Claude at founder's instruction. [accepted 2026-09-15] seen in the Connections list 2026-09-15 (connected 2026-09-15). [msg1 drafted 2026-09-15] LR-B33 shape from the recorded profile read; inbox list 2026-09-15 shows no thread (LR-B25). Copy in copy/H1A2-linkedin.md. Awaiting founder approval."
 
-
 ## Conceição Tedim
 
 id: C262
@@ -8038,7 +5806,6 @@ open_to_work: false
 outreach_status: invited
 found_date: 2026-09-14
 notes: "[profile read 2026-09-15] details/experience: Textile Department Director Focor Mar 2010-present; Textile Department Manager Focor SA 1993-present; Technical manager Maitex Tinturaria e acabamentos 1984-92 (commission dye house); also Technical Consultant (self) Mar 2026-present. English. Passes. [invited 2026-09-14] bare invite via custom-invite modal, modal name confirmed Conceição Tedim, sent by Claude at founder's instruction."
-
 
 ## Hendrik B.
 
@@ -8100,7 +5867,6 @@ outreach_status: invited
 found_date: 2026-09-14
 notes: "[profile read 2026-09-15] details/experience: Dye House and Finishing Manager Lincoln Fabrics Jan 2023-present (on-site); Production Manager Lincoln Fabrics Jan 2023-present. English. Passes. [invited 2026-09-14] bare invite via custom-invite modal, modal name confirmed James Williams, sent by Claude at founder's instruction."
 
-
 ## Dean Hedden
 
 id: C265
@@ -8130,7 +5896,6 @@ open_to_work: false
 outreach_status: invited
 found_date: 2026-09-14
 notes: "[profile read 2026-09-15] details/experience: Plant Manager Colormaster, The Dixie Group Nov 2019-present (Calhoun GA); Mohawk Industries 19 yrs 11 mos: Dyeing Manager Kuster Color 2009-19, Dye House Manager 2005-09, Assistant Technical Dyeing Manager 2000-05. English. Passes; carpet yarn rather than apparel. [invited 2026-09-14] bare invite via custom-invite modal, modal name confirmed Dean Hedden, sent by Claude at founder's instruction."
-
 
 ## Jaime Gregorio
 
@@ -8192,7 +5957,6 @@ outreach_status: invited
 found_date: 2026-09-14
 notes: "[profile read 2026-09-15] details/experience: Director Carpet Technology & Performance R&D Shaw Industries Dec 2012-present (Dalton GA); Director of Technical Development R&D Shaw 2006-12; Corporate R&D Manager Mohawk 2003-06. English. Passes; carpet rather than apparel, R&D budget rather than dyehouse. [invited 2026-09-14] bare invite via custom-invite modal, modal name confirmed Chris Yarbrough, sent by Claude at founder's instruction."
 
-
 ## Wayne Gerber
 
 id: C268
@@ -8222,7 +5986,6 @@ open_to_work: false
 outreach_status: accepted
 found_date: 2026-09-14
 notes: "[profile read 2026-09-15] details/experience: Director of Operational Excellence Shaw Sep 2026-present; Carpet Transformation Productivity Leader Nov 2025-Aug 2026; Plant Manager Jan 2023-Nov 2025 (Dalton GA); 23 yrs 2 mos at Shaw. English. Passes; whether his plant dyed on site is not stated. [invited 2026-09-14] bare invite via custom-invite modal, modal name confirmed Wayne Gerber, sent by Claude at founder's instruction. [accepted 2026-09-15] seen in the Connections list 2026-09-15 (connected 2026-09-15). [msg1 drafted 2026-09-15] LR-B33 shape from the recorded profile read; inbox list 2026-09-15 shows no thread (LR-B25). Copy in copy/H1A2-linkedin.md. Awaiting founder approval. [msg1 sent 2026-09-15] 11:28, 1:1 thread, sent by the founder by hand."
-
 
 ## Tim Crabtree
 
@@ -8283,7 +6046,6 @@ open_to_work: false
 outreach_status: invited
 found_date: 2026-09-14
 notes: "[profile read 2026-09-15] details/experience: Vice President of Manufacturing Mohawk Sep 2020-present (Dalton GA); Director of Operations Apache Mills 2019-20; Plant Manager IVC US 2015-18; Shaw Industries 11 yrs 9 mos incl. Director of Manufacturing. English. Passes. [invited 2026-09-14] bare invite via custom-invite modal, modal name confirmed Randy Myers, sent by Claude at founder's instruction."
-
 
 ## John Hughes
 

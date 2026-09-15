@@ -4,16 +4,16 @@
 -->
 ---
 idea: industrial-process-data-infrastructure
-generated: 2026-09-15T23:02Z
+generated: 2026-09-15T23:03Z
 active_hunch: H1
 active_assumption: H1A2
 sources:
   belief: 6093ca2c2aa3
-  lineage: 106efa1c4c1f
-  graph: dc26afa254e8
-  evidence: 49a787db3470
+  lineage: f8871d4671b3
+  graph: c139b5865282
+  evidence: edfe9531c2bd
   offerings: absent
-  contacts: f8aeea2f6e95
+  contacts: 339ea54d53c9
 ---
 
 # industrial-process-data-infrastructure — session brief
@@ -32,36 +32,34 @@ _Founder-owned. Changes only with explicit confirmation._ → `input-context/bel
 
 In the fashion industry there are no sensors to detect microplastics, so a textile manufacturer cannot see or act on the microfibers their process releases; a real-time sensor with a feedback loop is the first product, and the first sensor feedback loop is the beachhead.
 
-Lineage: H2 superseded · H3 superseded · H4 proposed · H5 superseded
-
-## Assumptions — top 3 of 14 by the declared ranking
+## Assumptions — top 3 of 10 by the declared ranking
 
 | # | ID | claim | status | evidence | next action |
 |---|---|---|---|---|---|
 | 1 | **H1A2** ← | Textile wet-processing mills are already being asked for a microfiber number by a brand, an auditor or a regu… | `weakly_supported` | `4/5 · 3E (1+/0-)` | Ten conversations with people who run wet processing at textile mills. One question first… |
 | 2 | **H1A10** | People running a production line can name a recent case where a measured number sat waiting for a person to i… | `untested` | `none` | Ask five people who run any high-mix production line, before any mention of sensors or so… |
-| 3 | **H5A1** | Something dated in the last three years has made membrane life a question a membrane maker must now answer wi… | `untested` | `none` | One afternoon: read what DuPont Water Solutions, Hydranautics and Toray Membrane USA publ… |
+| 3 | **H1A5** | Nothing good enough exists: mills consider lab sampling and effluent filtration insufficient for the question… | `weakly_supported` | `4/5 · 6E (5+/0-)` | Agent: one pass over instrumentation vendors and TMC signatories for any inline microfibe… |
 
 _← = `active_assumption`. Ranking: leap-of-faith gate → DAG roots first → kill_power → uncertainty → cheapest test (`schemas/assumptions.md`)._
 
 ## Evidence
 
-**16 entries** · 11 supports / 2 contradicts / 3 ambiguous · latest 2026-09-14
+**14 entries** · 9 supports / 2 contradicts / 3 ambiguous · latest 2026-09-14
 
 For **H1A2**: 3 entries.
 
-- `E1` 2026-09-14 → **H3A1** (supports) — The Board's programme timeline shows 'Fall 2023 – Fall 2025: Phase I Monitoring' and 'Fall 2026 – Fall 2028: Phase II Monitoring'; sampling by ASTM D…
-- `E2` 2026-09-14 → **H3A1** (supports) — Monitoring runs through 'monitoring orders'; results are reported to DDW and 'positive detections in CCRs' (the utility's annual Consumer Confidence…
 - `E3` 2026-09-14 → **H1A2** (ambiguous) — The guideline that H&M, Inditex and most brands make mills test against does address fibre fragmentation, but the only requirement is on TSS: 'Monito…
 - `E4` 2026-09-14 → **H1A2** (supports) — A wet-processing mill is rated 'B' rather than best-in-class 'A' if 'Fibers and microfibers are released into the environment without any internal co…
+- `E7` 2026-09-14 → **H1A2** (ambiguous) — H&M controls its suppliers on TSS, not on a microfibre count: '30 mg per liter is the kind of a limit which you cannot cross… we do not necessarily c…
+- `E8` 2026-09-14 → **H1A5** (supports) — H&M's innovation lead knows of no monitoring product: 'we don't have anyone else working on these kind of sensors. We have a lot of companies working…
 
 ## Outreach
 
-**272 targeted** · 7 contacted · 7 replied · 2 call-progressed · 2 scheduled
+**202 targeted** · 7 contacted · 7 replied · 2 call-progressed · 2 scheduled
 
 Reply rate 100.0% of contacted · reply→call 28.6%
 
-By assumption: H1A2 5/5 replied · H1A3 3/3 replied · H1A5 2/2 replied · H1A6 3/3 replied · H1A9 1/1 replied · H2 0/0 replied · H3A2 0/0 replied · H5A2 0/0 replied
+By assumption: H1A2 5/5 replied · H1A3 3/3 replied · H1A5 2/2 replied · H1A6 3/3 replied · H1A9 1/1 replied · H3A2 0/0 replied
 
 ## What already exists for this idea
 
@@ -82,11 +80,10 @@ _Generated from the folder. Check here before creating a new artifact — if a f
 | `reports/outreach/contacts.md` | The contact ledger — one card per person targeted, invited or interviewed for this idea, with the live-profile read that qualified them and the state… |
 | `reports/outreach/process-map.md` | The process map — one entry per stage of textile manufacturing from raw fibre to finished T-shirt, whether the stage touches water, how much fibre it… |
 | `reports/outreach/research-map.md` | The research map — one row per paper or group on contaminant detection in water, classified by what its method actually did, so the crowded and empty… |
-| `reports/outreach/results-*.md` | 10 generated files — rebuild them, never edit |
+| `reports/outreach/results-*.md` | 7 generated files — rebuild them, never edit |
 | `reports/outreach/target-list-audit-*.md` | 2 dated snapshots — latest 2026-09-14 · Target list audit — 2026-09-14 |
 | `reports/outreach/technology-map.md` | The technology map — one entry per way of detecting microplastics or microfibres in water (what it physically measures, how small it goes, how far fr… |
 | `reports/outreach/copy/H1A2-linkedin.md` | The LinkedIn copy archive for H1A2 — every message drafted or sent to a contact for this assumption, with the live-snapshot line behind each claim an… |
-| `reports/outreach/copy/H2-linkedin.md` | The staged LinkedIn copy archive for the superseded-but-revivable H2 reverse-osmosis desalination hunch. |
 | `reports/outreach/copy/H3A2-linkedin.md` | The LinkedIn copy archive for H3A2 — every message drafted or sent to a California water-utility contact for this assumption, with the live-snapshot… |
 | `reports/outreach/copy/pitch.md` | The pitch for this idea — every audience variant as a claim-traced deck or script, the one-slide block, and the version log of how the story changed… |
 | `reports/pages/pages.yaml` | What each page in this folder is, and whether it still holds. |

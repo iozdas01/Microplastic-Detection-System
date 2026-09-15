@@ -247,7 +247,7 @@ cyan outline around the adidas quote.
 - Matter: `E5`, `E6` (call 2026-09-04, NDA; capture at `reports/03-validation/H1A5-2026-09-04/`); company entry CO13.
 - adidas: `E9`, `E10`.
 - H&M: `E7`, `E8`, `E9`.
-- CyFract first-site talks: `lineage` H2 change_reason (CyFract is a site, not a payer).
+- CyFract first-site talks: recorded in the H2 change_reason, removed from the lineage 2026-09-15 (git history; CyFract is a site, not a payer).
 - 142 targeted: `reports/outreach/contacts.md` totals.
 
 **Do not claim**
