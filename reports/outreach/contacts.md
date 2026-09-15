@@ -3,8 +3,8 @@ purpose: The contact ledger — one card per person targeted, invited or intervi
 idea: industrial-process-data-infrastructure
 last_updated: 2026-09-14
 totals:
-  targeted: 234
-  invited: 186
+  targeted: 266
+  invited: 207
   accepted: 14
   scheduled: 0
   done: 5
@@ -554,7 +554,7 @@ active_last_30d: unknown
 open_to_work: false
 outreach_status: accepted
 found_date: 2026-09-13
-notes: "[profile read 2026-09-13] details/experience: Dyeing Manager Biryuza Group May 2025-present (Tashkent); Denim Washing Manager Çalık Alexandria 2020-23; denim wash and dyeing production manager Aknaz washing factory 2012-20. Passes; geography open per founder rule. [invited 2026-09-13] bare invite via custom-invite modal, name confirmed Ahmet Kaleli, sent by Claude at founder's instruction. [accepted 2026-09-14] 1st degree, Message button live. Profile shows 'Open to work'. [msg1 drafted 2026-09-14] LR-B33 shape from a fresh details/experience snapshot; inbox searched by surname, no thread."
+notes: "[profile read 2026-09-13] details/experience: Dyeing Manager Biryuza Group May 2025-present (Tashkent); Denim Washing Manager Çalık Alexandria 2020-23; denim wash and dyeing production manager Aknaz washing factory 2012-20. Passes; geography open per founder rule. [invited 2026-09-13] bare invite via custom-invite modal, name confirmed Ahmet Kaleli, sent by Claude at founder's instruction. [accepted 2026-09-14] 1st degree, Message button live. Profile shows 'Open to work'. [msg1 drafted 2026-09-14] LR-B33 shape from a fresh details/experience snapshot; inbox searched by surname, no thread. [msg1 sent 2026-09-14] Msg 1 sent by Claude in the LinkedIn inbox without the founder's send approval (founder's 'write messages' was a draft instruction); logged so the control room does not offer it for a second send."
 
 ## Yunus Öz
 
@@ -5751,7 +5751,7 @@ active_last_30d: unknown
 open_to_work: false
 outreach_status: invited
 found_date: 2026-09-14
-notes: "[profile read 2026-09-15] details/experience: Technical Director Xeros Feb 2024-present, 9 yrs 9 mos at Xeros: technical leadership across engineering, science, IP, product and application development; inventor on 6 granted core patents. English. Passes. [invited 2026-09-14] bare invite via custom-invite modal, modal name confirmed Thomas Cobb, sent by Claude at founder's instruction."
+notes: "[profile read 2026-09-15] details/experience: Technical Director Xeros Feb 2024-present, 9 yrs 9 mos at Xeros: technical leadership across engineering, science, IP, product and application development; inventor on 6 granted core patents. English. Passes. [invited 2026-09-14] bare invite via custom-invite modal, modal name confirmed Thomas Cobb, sent by Claude at founder's instruction. [invite resent 2026-09-15] The custom-invite modal still offered Send without a note despite the earlier invited mark, so the earlier invite had not landed; name-checked and sent."
 
 
 ## Sertug D.
@@ -7092,9 +7092,10 @@ degree: 3rd+
 mutuals_count:
 active_last_30d: unknown
 open_to_work: false
-outreach_status: pending
+outreach_status: invited
 found_date: 2026-09-14
-notes: "[profile read 2026-09-15] details/experience: Production Manager Milliken & Company Jun 2018-present (Pendleton SC); headline Dye House Production Manager. English. Passes."
+notes: "[profile read 2026-09-15] details/experience: Production Manager Milliken & Company Jun 2018-present (Pendleton SC); headline Dye House Production Manager. English. Passes. [invited 2026-09-14] bare invite via custom-invite modal, modal name confirmed Christian Rojo, sent by Claude at founder's instruction."
+
 
 ## Kassie Cartee
 
@@ -7122,9 +7123,10 @@ degree: 3rd+
 mutuals_count:
 active_last_30d: unknown
 open_to_work: false
-outreach_status: pending
+outreach_status: invited
 found_date: 2026-09-14
-notes: "[profile read 2026-09-15] details/experience: Plant Manager Milliken Gaffney SC Sep 2022-present; Plant Manager Blacksburg SC 2018-22; Process Improvement Leader Magnolia Plant 2016-18; 15 yrs 5 mos at Milliken. English. Passes; which Gaffney products are dyed on site is not stated."
+notes: "[profile read 2026-09-15] details/experience: Plant Manager Milliken Gaffney SC Sep 2022-present; Plant Manager Blacksburg SC 2018-22; Process Improvement Leader Magnolia Plant 2016-18; 15 yrs 5 mos at Milliken. English. Passes; which Gaffney products are dyed on site is not stated. [invited 2026-09-14] bare invite via custom-invite modal, modal name confirmed Kassie Cartee, sent by Claude at founder's instruction."
+
 
 ## Bilal Ahmed
 
@@ -7154,7 +7156,8 @@ active_last_30d: unknown
 open_to_work: false
 outreach_status: pending
 found_date: 2026-09-14
-notes: "[profile read 2026-09-15] details/experience: Head of Dyeing Artistic Denim Mills Nov 2023-present (Karachi); Gul Ahmed Textile Mills senior manager operations 2023 and manager technical 2020-22. English. Passes."
+notes: "[profile read 2026-09-15] details/experience: Head of Dyeing Artistic Denim Mills Nov 2023-present (Karachi); Gul Ahmed Textile Mills senior manager operations 2023 and manager technical 2020-22. English. Passes. [invite skipped 2026-09-15] Invite modal asks for his email address; Claude never enters emails. Stays pending: the founder can send by hand if they have the address."
+
 
 ## Harshad Patel
 
@@ -7212,9 +7215,10 @@ degree: 3rd+
 mutuals_count:
 active_last_30d: unknown
 open_to_work: false
-outreach_status: pending
+outreach_status: invited
 found_date: 2026-09-14
-notes: "[profile read 2026-09-15] details/experience: General Manager Operations American & Efird Jan 2025-present (Sri Lanka), 14 yrs 5 mos at A&E: end-to-end operations across dye house, lab, winding, EHS. English. Passes."
+notes: "[profile read 2026-09-15] details/experience: General Manager Operations American & Efird Jan 2025-present (Sri Lanka), 14 yrs 5 mos at A&E: end-to-end operations across dye house, lab, winding, EHS. English. Passes. [invited 2026-09-14] bare invite via custom-invite modal, modal name confirmed Sivantha Samarasinghe, sent by Claude at founder's instruction."
+
 
 ## Ligia Elena Taveras Hiciano
 
@@ -7242,9 +7246,10 @@ degree: 3rd+
 mutuals_count:
 active_last_30d: unknown
 open_to_work: false
-outreach_status: pending
+outreach_status: invited
 found_date: 2026-09-14
-notes: "[profile read 2026-09-15] details/experience: Dye house Manager American & Efird Jan 2019-present; Process Manager Elevate Textiles Jan 2022-present, Quality Engineer 2019-22 (Dominican Republic). Titles in English (skills partly Spanish). Passes."
+notes: "[profile read 2026-09-15] details/experience: Dye house Manager American & Efird Jan 2019-present; Process Manager Elevate Textiles Jan 2022-present, Quality Engineer 2019-22 (Dominican Republic). Titles in English (skills partly Spanish). Passes. [invited 2026-09-14] bare invite via custom-invite modal, modal name confirmed Ligia Elena Taveras Hiciano, sent by Claude at founder's instruction."
+
 
 ## Anup Gupta
 
@@ -7335,3 +7340,974 @@ open_to_work: false
 outreach_status: invited
 found_date: 2026-09-14
 notes: "[profile read 2026-09-15] details/experience: ABOUT YOU since 2017: Director Sustainability Oct 2025-present, Head of Corporate Sustainability 2022-25; role text: 80% scope 1 and 2 cut, 71% of partners with SBTs, co-founded Fashion Leap for Climate. English profile. Passes (tier brand). [invited 2026-09-14] bare invite via custom-invite modal, name confirmed Magnus D., sent by Claude at founder's instruction (English profile checked first)."
+
+## Michael Smith
+
+id: C240
+name: "Michael Smith"
+linkedin_url: https://www.linkedin.com/in/michael-smith-6a344250/
+linkedin_account: Izgin
+company: "XEROS Technology Group (Sheffield, UK)"
+role: "Head of Product Development"
+signal_type: profile_fit
+signal_multiplier: 1.0
+signal_source_url: "https://www.linkedin.com/company/xeros-technology-group-plc/people/"
+signal_excerpt: ""
+contact_role: practitioner
+role_pts: 2
+tier: filtration_vendor
+size_band:
+assumptions_tested: [H1A5]
+validation_rationale: >
+  Leads the Xeros engineering team; six months in the role after heading engineering at WAGO UK.
+response_likelihood: 3
+likelihood_factors: "3rd degree (0)"
+channel: linkedin
+degree: 3rd+
+mutuals_count:
+active_last_30d: unknown
+open_to_work: false
+outreach_status: pending
+found_date: 2026-09-14
+notes: "[profile read 2026-09-15] details/experience: Head of Product Development XEROS Apr 2026-present; Head of Engineering WAGO UK 2024-26; MTC technology manager 7 yrs. English. HELD from invite: six months at Xeros, no filter history of his own yet (live-profile gate check 4); Cobb is the route in."
+
+## Mahdi Fathizadeh
+
+id: C241
+name: "Mahdi Fathizadeh"
+linkedin_url: https://www.linkedin.com/in/mahdi-fathizadeh-83b0693b/
+linkedin_account: Izgin
+company: "Solecta, Inc. (Oceanside, California)"
+role: "Director of Research and Development"
+signal_type: profile_fit
+signal_multiplier: 1.0
+signal_source_url: "https://www.linkedin.com/search/results/people/?keywords=director%20R%26D%20water%20filtration&geoUrn=%5B%22103644278%22%5D"
+signal_excerpt: ""
+contact_role: buyer
+role_pts: 3
+tier: membrane_manufacturer
+size_band:
+assumptions_tested: [H5A2]
+validation_rationale: >
+  Directs R&D at Solecta, a California maker of RO and nanofiltration membranes, after two years developing its membranes; the R&D owner who would judge whether field foulant data changes membrane design or warranty.
+response_likelihood: 4
+likelihood_factors: "3rd degree (0) · membrane R&D owner (+1)"
+channel: linkedin
+degree: 3rd+
+mutuals_count:
+active_last_30d: unknown
+open_to_work: false
+outreach_status: invited
+found_date: 2026-09-14
+notes: "[profile read 2026-09-15] details/experience: Director of Research Development Solecta Sep 2024-present; Sr Staff and Staff Membrane Development Scientist 2022-24 (Oceanside CA), 4 yrs 2 mos at Solecta; also Director of Research Development Acuriant Jul 2025-present. English. Passes (H5A2 membrane_manufacturer). [invited 2026-09-14] bare invite via custom-invite modal, modal name confirmed Mahdi Fathizadeh, sent by Claude at founder's instruction."
+
+
+## Vishal Bansal
+
+id: C242
+name: "Vishal Bansal"
+linkedin_url: https://www.linkedin.com/in/bansalvishal/
+linkedin_account: Izgin
+company: "Danaher Corporation / Pall (Port Washington, New York)"
+role: "Senior Director R&D, Membranes and Media"
+signal_type: profile_fit
+signal_multiplier: 1.0
+signal_source_url: "https://www.linkedin.com/search/results/people/?keywords=director%20R%26D%20water%20filtration&geoUrn=%5B%22103644278%22%5D"
+signal_excerpt: ""
+contact_role: buyer
+role_pts: 3
+tier: membrane_manufacturer
+size_band:
+assumptions_tested: [H5A2]
+validation_rationale: >
+  Leads global R&D for the membranes and media organisation at Danaher's Port Washington site, Pall's home; owns how filtration membranes are developed and what performance data they are sold on.
+response_likelihood: 4
+likelihood_factors: "3rd degree (0) · global membrane R&D owner (+1)"
+channel: linkedin
+degree: 3rd+
+mutuals_count:
+active_last_30d: unknown
+open_to_work: false
+outreach_status: invited
+found_date: 2026-09-14
+notes: "[profile read 2026-09-15] details/experience: Senior Director R&D Danaher Dec 2024-present (Port Washington NY, on-site), global R&D leadership for Membranes and Media; previously board member Blue Ocean Closures 2021-24 and Glatfelter. English. Passes (H5A2 membrane_manufacturer). [invited 2026-09-14] bare invite via custom-invite modal, modal name confirmed Vishal Bansal, sent by Claude at founder's instruction."
+
+
+## Balasubramanian V.V.
+
+id: C243
+name: "Balasubramanian V.V."
+linkedin_url: https://www.linkedin.com/in/balasubramanian-v-v-686a601aa/
+linkedin_account: Izgin
+company: "Pentair"
+role: "Senior Scientist"
+signal_type: profile_fit
+signal_multiplier: 1.0
+signal_source_url: "https://www.linkedin.com/company/pentair/people/"
+signal_excerpt: ""
+contact_role: practitioner
+role_pts: 2
+tier: filtration_vendor
+size_band:
+assumptions_tested: [H1A5]
+validation_rationale: >
+  Senior scientist at Pentair for five years; which business line (water filtration, pool or other) is not stated.
+response_likelihood: 3
+likelihood_factors: "2nd degree"
+channel: linkedin
+degree: 2nd
+mutuals_count:
+active_last_30d: unknown
+open_to_work: false
+outreach_status: pending
+found_date: 2026-09-14
+notes: "[profile read 2026-09-15] details/experience: Senior Scientist Pentair Nov 2021-present (no role text); Senior Scientist ADNOC 2015-21; Senior Researcher University of Minnesota 2012-15. English. HELD from invite: function not established; need to confirm he works on water filtration (live-profile gate check 3)."
+
+## Vivekanand G.
+
+id: C244
+name: "Vivekanand G."
+linkedin_url: https://www.linkedin.com/in/dr-vivekanand-g-78732b16/
+linkedin_account: Izgin
+company: "AprilAire (Madison, Wisconsin)"
+role: "Sr Principal Engineer, Air Filtration"
+signal_type: profile_fit
+signal_multiplier: 1.0
+signal_source_url: "https://www.linkedin.com/search/results/people/?keywords=director%20R%26D%20water%20filtration&geoUrn=%5B%22103644278%22%5D"
+signal_excerpt: ""
+contact_role: practitioner
+role_pts: 2
+tier: filtration_vendor
+size_band:
+assumptions_tested: [H1A5]
+validation_rationale: >
+  Develops air filtration, not water filtration, and is three months into the role.
+response_likelihood: 2
+likelihood_factors: "2nd degree"
+channel: linkedin
+degree: 2nd
+mutuals_count:
+active_last_30d: unknown
+open_to_work: false
+outreach_status: off_scope
+found_date: 2026-09-14
+notes: "[audit off_scope 2026-09-15] Profile visit: Sr Principal Engineer Air Filtration AprilAire Jul 2026-present (indoor air quality). Air, not water; fails icp_valid_verticals for H1A5. Not invited."
+
+## Mehrdad Hesampour
+
+id: C245
+name: "Mehrdad Hesampour"
+linkedin_url: https://www.linkedin.com/in/mehrdad-hesampour-b0375739/
+linkedin_account: Izgin
+company: "Kemira (Atlanta, Georgia)"
+role: "Manager, Product & Technology Development"
+signal_type: profile_fit
+signal_multiplier: 1.0
+signal_source_url: "https://www.linkedin.com/search/results/people/?keywords=product%20manager%20water%20filtration%20microplastics&geoUrn=%5B%22103644278%22%5D"
+signal_excerpt: ""
+contact_role: practitioner
+role_pts: 2
+tier: filtration_vendor
+size_band:
+assumptions_tested: [H1A5]
+validation_rationale: >
+  Develops products at Kemira, a water-treatment chemicals maker, not a filtration or membrane vendor.
+response_likelihood: 2
+likelihood_factors: "3rd degree (0)"
+channel: linkedin
+degree: 3rd+
+mutuals_count:
+active_last_30d: unknown
+open_to_work: false
+outreach_status: off_scope
+found_date: 2026-09-14
+notes: "[audit off_scope 2026-09-15] Profile visit: Manager Product & Technology Development Kemira Aug 2025-present (Atlanta); Principal Scientist Kemira 2015-25. Chemicals supplier, not a filtration_vendor or membrane_manufacturer; fails icp_valid_tiers. Not invited."
+
+## Zhiyong Xia
+
+id: C246
+name: "Zhiyong Xia"
+linkedin_url: https://www.linkedin.com/in/zhiyong-xia-ph-d-9261b71a/
+linkedin_account: Izgin
+company: "GHD (Bowie, Maryland)"
+role: "Senior Technical Director, PFAS and Emerging Contaminants Lead"
+signal_type: profile_fit
+signal_multiplier: 1.0
+signal_source_url: "https://www.linkedin.com/search/results/people/?keywords=product%20manager%20water%20filtration%20microplastics&geoUrn=%5B%22103644278%22%5D"
+signal_excerpt: ""
+contact_role: expert
+role_pts: 2
+tier: filtration_vendor
+size_band:
+assumptions_tested: [H1A5]
+validation_rationale: >
+  Leads an engineering consultancy's PFAS and emerging-contaminants practice; a consultant selling to the same buyers, not a filtration vendor.
+response_likelihood: 2
+likelihood_factors: "3rd degree (0)"
+channel: linkedin
+degree: 3rd+
+mutuals_count:
+active_last_30d: unknown
+open_to_work: false
+outreach_status: off_scope
+found_date: 2026-09-14
+notes: "[audit off_scope 2026-09-15] Profile visit: Senior Technical Director, PFAS and Emerging Contaminants Lead GHD May 2023-present. Consultancy serving the same buyers; fails icp_out_of_scope (consultant/peer) for H1A5. Not invited."
+
+## Anthony Wachinski
+
+id: C247
+name: "Anthony Wachinski"
+linkedin_url: https://www.linkedin.com/in/anthony-wachinski-45b86425b/
+linkedin_account: Izgin
+company: "Self-employed (Florida)"
+role: "Water Treatment & Regulatory Compliance Expert (expert witness)"
+signal_type: profile_fit
+signal_multiplier: 1.0
+signal_source_url: "https://www.linkedin.com/search/results/people/?keywords=product%20manager%20water%20filtration%20microplastics&geoUrn=%5B%22103644278%22%5D"
+signal_excerpt: ""
+contact_role: expert
+role_pts: 2
+tier: filtration_vendor
+size_band:
+assumptions_tested: [H1A5]
+validation_rationale: >
+  Self-employed expert witness on drinking-water quality for eight months; no filtration vendor role.
+response_likelihood: 2
+likelihood_factors: "2nd degree"
+channel: linkedin
+degree: 2nd
+mutuals_count:
+active_last_30d: unknown
+open_to_work: false
+outreach_status: off_scope
+found_date: 2026-09-14
+notes: "[audit off_scope 2026-09-15] Profile visit: self-employed Water Treatment & Regulatory Compliance Expert Feb 2026-present, offering expert-witness work. Consultant, fails icp_valid_tiers for H1A5. Not invited."
+
+## Priyesh Wagh
+
+id: C248
+name: "Priyesh Wagh"
+linkedin_url: https://www.linkedin.com/in/priyesh-wagh/
+linkedin_account: Izgin
+company: "The Lubrizol Corporation"
+role: "Senior Scientist, Corporate Innovation and Decision Science"
+signal_type: profile_fit
+signal_multiplier: 1.0
+signal_source_url: "https://www.linkedin.com/search/results/people/?keywords=membrane%20R%26D%20director%20reverse%20osmosis&geoUrn=%5B%22103644278%22%5D"
+signal_excerpt: ""
+contact_role: expert
+role_pts: 2
+tier: membrane_manufacturer
+size_band:
+assumptions_tested: [H5A2]
+validation_rationale: >
+  Separations expert in a specialty-chemicals company's corporate innovation group; not at a membrane maker.
+response_likelihood: 2
+likelihood_factors: "3rd degree (0)"
+channel: linkedin
+degree: 3rd+
+mutuals_count:
+active_last_30d: unknown
+open_to_work: false
+outreach_status: off_scope
+found_date: 2026-09-14
+notes: "[audit off_scope 2026-09-15] Profile visit: Senior Scientist, Corporate Innovation Lubrizol Oct 2021-present, separations SME on innovation projects. Chemicals company, fails icp_valid_tiers for H5A2. Not invited."
+
+## Nidal Samad
+
+id: C249
+name: "Nidal Samad"
+linkedin_url: https://www.linkedin.com/in/nidal-samad-75681412/
+linkedin_account: Izgin
+company: "(last listed: Saudi Aramco, until 2024)"
+role: "Environmental Consultant (ended 2024)"
+signal_type: profile_fit
+signal_multiplier: 1.0
+signal_source_url: "https://www.linkedin.com/search/results/people/?keywords=membrane%20R%26D%20director%20reverse%20osmosis&geoUrn=%5B%22103644278%22%5D"
+signal_excerpt: ""
+contact_role: expert
+role_pts: 2
+tier: membrane_manufacturer
+size_band:
+assumptions_tested: [H5A2]
+validation_rationale: >
+  Approved water and wastewater treatment designs at Saudi Aramco until 2024; no current role shown.
+response_likelihood: 2
+likelihood_factors: "3rd degree (0)"
+channel: linkedin
+degree: 3rd+
+mutuals_count:
+active_last_30d: unknown
+open_to_work: false
+outreach_status: off_scope
+found_date: 2026-09-14
+notes: "[audit off_scope 2026-09-15] Profile visit: Environmental Consultant Saudi Aramco 2011-Jun 2024 (ended); no current employer. Fails the live-profile gate on current function. Not invited."
+
+## Irina Morosanu
+
+id: C250
+name: "Irina Morosanu"
+linkedin_url: https://www.linkedin.com/in/irina-morosanu-746b9190/
+linkedin_account: Izgin
+company: "Ístex hf. (Mosfellsbær, Iceland)"
+role: "Manager; Head of textile finishing and quality (laboratory, dye house)"
+signal_type: profile_fit
+signal_multiplier: 1.0
+signal_source_url: "https://www.linkedin.com/search/results/people/?keywords=dye%20house%20manager&geoUrn=%5B%22101165590%22%5D"
+signal_excerpt: ""
+contact_role: buyer
+role_pts: 3
+tier: textile_mill
+size_band:
+assumptions_tested: [H1A2, H1A3, H1A6]
+validation_rationale: >
+  Manages textile finishing, quality, the laboratory and the dye house at Ístex, Iceland's wool processor, for over twenty years; owns the wet process and its testing.
+response_likelihood: 4
+likelihood_factors: "3rd degree (0) · heads finishing and dye house (+1)"
+channel: linkedin
+degree: 3rd+
+mutuals_count:
+active_last_30d: unknown
+open_to_work: false
+outreach_status: invited
+found_date: 2026-09-14
+notes: "[profile read 2026-09-15] details/experience: Manager Ístex hf. Mar 2004-present (26 yrs 9 mos at Ístex); head of textile finishing and quality manager (laboratory, dyeing house); Coats restricted-substances and fibre testing work 2004-15. English. Passes. [invited 2026-09-14] bare invite via custom-invite modal, modal name confirmed Irina Morosanu, sent by Claude at founder's instruction."
+
+
+## Lee Arrandale
+
+id: C251
+name: "Lee Arrandale"
+linkedin_url: https://www.linkedin.com/in/lee-arrandale-95831313b/
+linkedin_account: Izgin
+company: "AMANN Group (Blackburn, UK)"
+role: "Dye House Manager"
+signal_type: profile_fit
+signal_multiplier: 1.0
+signal_source_url: "https://www.linkedin.com/search/results/people/?keywords=dye%20house%20manager&geoUrn=%5B%22101165590%22%5D"
+signal_excerpt: ""
+contact_role: buyer
+role_pts: 3
+tier: textile_mill
+size_band:
+assumptions_tested: [H1A2, H1A3, H1A6]
+validation_rationale: >
+  Runs the dye house for AMANN, the sewing-thread maker, in Lancashire after ten years managing Blackburn Yarn Dyers; owns the dyeing process and its effluent.
+response_likelihood: 4
+likelihood_factors: "3rd degree (0) · dye house manager (+1)"
+channel: linkedin
+degree: 3rd+
+mutuals_count:
+active_last_30d: unknown
+open_to_work: false
+outreach_status: invited
+found_date: 2026-09-14
+notes: "[profile read 2026-09-15] details/experience: Dye House Manager AMANN Group Apr 2017-present; Dye House Manager Blackburn Yarn Dyers 2007-17 (Blackburn); NEBOSH and lean manufacturing. English. Passes. [invited 2026-09-14] bare invite via custom-invite modal, modal name confirmed Lee Arrandale, sent by Claude at founder's instruction."
+
+
+## Joe Fogle
+
+id: C252
+name: "Joe Fogle"
+linkedin_url: https://www.linkedin.com/in/joe-fogle-37360513/
+linkedin_account: Izgin
+company: "Aplix Inc. (Fort Mill, South Carolina)"
+role: "Dyeing and Finishing Department Manager"
+signal_type: profile_fit
+signal_multiplier: 1.0
+signal_source_url: "https://www.linkedin.com/search/results/people/?keywords=dyeing%20finishing%20plant%20manager%20textile&geoUrn=%5B%22103644278%22%5D"
+signal_excerpt: ""
+contact_role: buyer
+role_pts: 3
+tier: textile_mill
+size_band:
+assumptions_tested: [H1A2, H1A3, H1A6]
+validation_rationale: >
+  Has run dyeing and finishing at Aplix, a maker of textile hook-and-loop fasteners, for sixteen years, after serving as a plant production manager and corporate environmental coordinator; owns the dyehouse and knows its discharge side.
+response_likelihood: 4
+likelihood_factors: "3rd degree (0) · dyeing and finishing manager, environmental background (+1)"
+channel: linkedin
+degree: 3rd+
+mutuals_count:
+active_last_30d: unknown
+open_to_work: false
+outreach_status: invited
+found_date: 2026-09-14
+notes: "[profile read 2026-09-15] details/experience: Dyeing and Finishing Department Manager Aplix Inc. Apr 2010-present (Fort Mill SC); Springs Global and Springs Industries plant administrative manager 2000-07; earlier plant production manager and corporate environmental coordinator. English. Passes. [invited 2026-09-14] bare invite via custom-invite modal, modal name confirmed Joe Fogle, sent by Claude at founder's instruction."
+
+
+## Chris Hawks
+
+id: C253
+name: "Chris Hawks"
+linkedin_url: https://www.linkedin.com/in/chris-hawks-ab57395a/
+linkedin_account: Izgin
+company: "Cotton Incorporated"
+role: "Lab technician"
+signal_type: profile_fit
+signal_multiplier: 1.0
+signal_source_url: "https://www.linkedin.com/search/results/people/?keywords=dyeing%20finishing%20plant%20manager%20textile&geoUrn=%5B%22103644278%22%5D"
+signal_excerpt: ""
+contact_role: practitioner
+role_pts: 2
+tier: textile_mill
+size_band:
+assumptions_tested: [H1A2, H1A3, H1A6]
+validation_rationale: >
+  Lab technician at Cotton Incorporated; ran the Hanes dye and finishing plant until 2003.
+response_likelihood: 2
+likelihood_factors: "3rd degree (0)"
+channel: linkedin
+degree: 3rd+
+mutuals_count:
+active_last_30d: unknown
+open_to_work: false
+outreach_status: off_scope
+found_date: 2026-09-14
+notes: "[audit off_scope 2026-09-15] Profile visit: Lab technician Cotton Incorporated Mar 2012-present; plant manager Hanes Dye and Finishing 1997-2003 (ended). Current role is not a budget holder at a mill; fails icp_valid_titles. Not invited."
+
+## Jai Sharma
+
+id: C254
+name: "Jai Sharma"
+linkedin_url: https://www.linkedin.com/in/jai-sharma-37588011/
+linkedin_account: Izgin
+company: "Elevate Textiles (Charlotte, North Carolina)"
+role: "Dye and Finish Textile Technologist, Global"
+signal_type: profile_fit
+signal_multiplier: 1.0
+signal_source_url: "https://www.linkedin.com/search/results/people/?keywords=dyeing%20finishing%20plant%20manager%20textile&geoUrn=%5B%22103644278%22%5D"
+signal_excerpt: ""
+contact_role: practitioner
+role_pts: 2
+tier: textile_mill
+size_band:
+assumptions_tested: [H1A2, H1A3, H1A6]
+validation_rationale: >
+  Global dye and finish technologist at Elevate Textiles; deep process knowledge but not a budget-holder title.
+response_likelihood: 3
+likelihood_factors: "3rd degree (0)"
+channel: linkedin
+degree: 3rd+
+mutuals_count:
+active_last_30d: unknown
+open_to_work: false
+outreach_status: off_scope
+found_date: 2026-09-14
+notes: "[audit off_scope 2026-09-15] Profile visit: Dye and Finish textile technologist Global, Elevate Textiles Mar 2019-present; technical Dyeing Manager Burlington Fabrics 2017-19. English. Fails icp_valid_titles for H1A2 (budget holders only). Not invited; worth releasing by name as a process expert."
+
+## Marc Killbourn
+
+id: C255
+name: "Marc Killbourn"
+linkedin_url: https://www.linkedin.com/in/marc-killbourn-6a3b8022/
+linkedin_account: Izgin
+company: "AllSaints (brand; London)"
+role: "Global Sourcing & Production Director; headline adds ESG"
+signal_type: profile_fit
+signal_multiplier: 1.0
+signal_source_url: ""
+signal_excerpt: ""
+contact_role: buyer
+role_pts: 3
+tier: brand
+size_band:
+assumptions_tested: [H1A2, H1A3]
+validation_rationale: >
+  Directs global sourcing, production and ESG for AllSaints; decides which mills make its product and what they must prove.
+response_likelihood: 5
+likelihood_factors: "3rd degree (+0) · owns sourcing, production and ESG at a brand (+2)"
+channel: linkedin
+degree: 3rd+
+mutuals_count:
+active_last_30d: unknown
+open_to_work: false
+outreach_status: invited
+found_date: 2026-09-14
+notes: "[profile read 2026-09-15] details/experience: Global Sourcing & Production Director, AllSaints, Feb 2017-present; COO Monreal London 2015-16; owner Atacama Clothing. English profile. Passes (tier brand). [invited 2026-09-14] bare invite via custom-invite modal, name confirmed Marc Killbourn, sent by Claude at founder's instruction (English profile checked first)."
+
+## Sophie Rycroft
+
+id: C256
+name: "Sophie Rycroft"
+linkedin_url: https://www.linkedin.com/in/sophie-rycroft-8b788673/
+linkedin_account: Izgin
+company: "Debenhams Group (brand; ex Boohoo Group)"
+role: "Group ESG, Sourcing & Quality Director; ex Group Head of Sourcing & Ethical Trade, Boohoo"
+signal_type: profile_fit
+signal_multiplier: 1.0
+signal_source_url: ""
+signal_excerpt: ""
+contact_role: buyer
+role_pts: 3
+tier: brand
+size_band:
+assumptions_tested: [H1A2, H1A3]
+validation_rationale: >
+  Holds ESG, sourcing and quality for Debenhams Group after eleven years running sourcing and ethical trade at Boohoo; sets supplier requirements for a large fast-fashion supply chain.
+response_likelihood: 5
+likelihood_factors: "3rd degree (+0) · group-level ESG plus sourcing plus quality in one seat (+2)"
+channel: linkedin
+degree: 3rd+
+mutuals_count:
+active_last_30d: unknown
+open_to_work: false
+outreach_status: invited
+found_date: 2026-09-14
+notes: "[profile read 2026-09-15] details/experience: Group ESG, Sourcing & Quality Director, Debenhams Group, Jul 2024-present; Boohoo Group 2013-24 incl. Group Head of Sourcing & Ethical Trade 2023-24. English profile. Passes (tier brand). [invited 2026-09-14] bare invite via custom-invite modal, name confirmed Sophie Rycroft, sent by Claude at founder's instruction (English profile checked first)."
+
+## Jacqueline Nixon
+
+id: C257
+name: "Jacqueline Nixon"
+linkedin_url: https://www.linkedin.com/in/jacqueline-nixon-4a190a2/
+linkedin_account: Izgin
+company: "Gap Inc. (brand; UK); ex C&A Sourcing, Next Sourcing"
+role: "Senior Director, Sourcing Strategy & Operations"
+signal_type: profile_fit
+signal_multiplier: 1.0
+signal_source_url: ""
+signal_excerpt: ""
+contact_role: buyer
+role_pts: 3
+tier: brand
+size_band:
+assumptions_tested: [H1A2, H1A3]
+validation_rationale: >
+  Runs sourcing strategy and operations for Gap after heading operations at C&A Sourcing and Next Sourcing; knows what three global brands ask mills for and who pays for the answer.
+response_likelihood: 4
+likelihood_factors: "3rd degree (+0) · three global brands' sourcing operations (+2) · very senior (-1)"
+channel: linkedin
+degree: 3rd+
+mutuals_count:
+active_last_30d: unknown
+open_to_work: false
+outreach_status: invited
+found_date: 2026-09-14
+notes: "[profile read 2026-09-15] details/experience: Senior Director Sourcing Strategy Operations, Gap Inc., Apr 2018-present; Head of Global Operations and Merchandising, C&A Sourcing 2013-18 (Hong Kong); GM Next Sourcing 2011-12. English profile. Passes (tier brand). [invited 2026-09-14] bare invite via custom-invite modal, name confirmed Jacqueline Nixon, sent by Claude at founder's instruction (English profile checked first)."
+
+## Darren Ainsworth
+
+id: C258
+name: "Darren Ainsworth"
+linkedin_url: https://www.linkedin.com/in/darren-ainsworth-a69b272b/
+linkedin_account: Izgin
+company: "John Lewis & Partners (brand; UK)"
+role: "Head of Quality, Technical, Compliance and Sourcing"
+signal_type: profile_fit
+signal_multiplier: 1.0
+signal_source_url: ""
+signal_excerpt: ""
+contact_role: buyer
+role_pts: 3
+tier: brand
+size_band:
+assumptions_tested: [H1A2, H1A3]
+validation_rationale: >
+  Heads quality, technical, compliance and sourcing for John Lewis own-brand; the single desk where a mill compliance requirement is set and enforced.
+response_likelihood: 5
+likelihood_factors: "3rd degree (+0) · compliance and sourcing in one head role at a major retailer (+2) · 10 months in role (-1)"
+channel: linkedin
+degree: 3rd+
+mutuals_count:
+active_last_30d: unknown
+open_to_work: false
+outreach_status: invited
+found_date: 2026-09-14
+notes: "[profile read 2026-09-15] details/experience: Head of Quality, Technical, Compliance and Sourcing, John Lewis & Partners, Dec 2025-present; CCO Prime Source Enterprises 2024-25 (sourcing model transformation). English profile. Passes (tier brand). [invited 2026-09-14] bare invite via custom-invite modal, name confirmed Darren Ainsworth, sent by Claude at founder's instruction (English profile checked first)."
+
+## Ann-Marie C.
+
+id: C259
+name: "Ann-Marie C."
+linkedin_url: https://www.linkedin.com/in/ann-marie-c-aa91b416/
+linkedin_account: Izgin
+company: "Perry Ellis Europe (Original Penguin, Farah; London)"
+role: "Head of Sourcing, Purchasing & Production, Technical; 14 yrs"
+signal_type: profile_fit
+signal_multiplier: 1.0
+signal_source_url: ""
+signal_excerpt: ""
+contact_role: buyer
+role_pts: 3
+tier: brand
+size_band:
+assumptions_tested: [H1A2, H1A3]
+validation_rationale: >
+  Heads sourcing, purchasing, production and QC for Original Penguin and Farah in Europe; chooses and audits the mills directly.
+response_likelihood: 5
+likelihood_factors: "3rd degree (+0) · hands-on head of sourcing and QC for two menswear brands (+2) · surname hidden (-1)"
+channel: linkedin
+degree: 3rd+
+mutuals_count:
+active_last_30d: unknown
+open_to_work: false
+outreach_status: invited
+found_date: 2026-09-14
+notes: "[profile read 2026-09-15] details/experience: Head of Sourcing, Purchasing & Production, Technical, Perry Ellis Europe, Oct 2012-present; role text names Original Penguin and Farah sourcing and QC teams. Surname hidden. English profile. Passes (tier brand). [invited 2026-09-14] bare invite via custom-invite modal, name confirmed Ann-Marie C., sent by Claude at founder's instruction (English profile checked first)."
+
+## Duncan Crewe
+
+id: C260
+name: "Duncan Crewe"
+linkedin_url: https://www.linkedin.com/in/duncan-crewe-27937531/
+linkedin_account: Izgin
+company: "Sosandar (online womenswear brand; Cheshire)"
+role: "Head of Sourcing; ex Fung Group Europe"
+signal_type: profile_fit
+signal_multiplier: 1.0
+signal_source_url: ""
+signal_excerpt: ""
+contact_role: buyer
+role_pts: 3
+tier: brand
+size_band:
+assumptions_tested: [H1A2, H1A3]
+validation_rationale: >
+  Heads sourcing at Sosandar after selling from the supplier side at Fung Group; sees requirements from both ends.
+response_likelihood: 5
+likelihood_factors: "3rd degree (+0) · head of sourcing at a growing brand, supplier-side background at Fung (+2)"
+channel: linkedin
+degree: 3rd+
+mutuals_count:
+active_last_30d: unknown
+open_to_work: false
+outreach_status: invited
+found_date: 2026-09-14
+notes: "[profile read 2026-09-15] details/experience: Head of Sourcing, Sosandar, May 2019-present; Head of Sales Fung Group Europe 2017-19; Visage account manager before. English profile. Passes (tier brand). [invited 2026-09-14] bare invite via custom-invite modal, name confirmed Duncan Crewe, sent by Claude at founder's instruction (English profile checked first)."
+
+## António Faria
+
+id: C261
+name: "António Faria"
+linkedin_url: https://www.linkedin.com/in/antoniomafaria/
+linkedin_account: Izgin
+company: "RONUTEX - Tinturaria e Acabamentos Têxteis (Vila Nova de Famalicão, Portugal)"
+role: "Dyehouse Manager (previously Quality and Environment Manager)"
+signal_type: profile_fit
+signal_multiplier: 1.0
+signal_source_url: "https://www.linkedin.com/search/results/people/?keywords=dyeing%20finishing%20director%20textile&geoUrn=%5B%22100364837%22%5D"
+signal_excerpt: ""
+contact_role: buyer
+role_pts: 3
+tier: textile_mill
+size_band:
+assumptions_tested: [H1A2, H1A3, H1A6]
+validation_rationale: >
+  Manages the knitwear dyeing plant at Ronutex, a Portuguese commission dye and finishing house, after a year as its quality and environment manager analysing customer specifications; owns both the dyeing and the environmental side.
+response_likelihood: 4
+likelihood_factors: "3rd degree (0) · dyehouse manager, ex environment manager (+1)"
+channel: linkedin
+degree: 3rd+
+mutuals_count:
+active_last_30d: unknown
+open_to_work: false
+outreach_status: invited
+found_date: 2026-09-14
+notes: "[profile read 2026-09-15] details/experience: Dyehouse Manager Ronutex Jan 2026-present (knitwear dyeing plant, team of 30); Quality and Environment Manager Ronutex Feb 2025-Dec 2025; 1 yr 8 mos at Ronutex. Role text in English. Passes. [invited 2026-09-14] bare invite via custom-invite modal, modal name confirmed António Faria, sent by Claude at founder's instruction."
+
+
+## Conceição Tedim
+
+id: C262
+name: "Conceição Tedim"
+linkedin_url: https://www.linkedin.com/in/concei%C3%A7%C3%A3o-tedim-71b57216/
+linkedin_account: Izgin
+company: "Focor SA (Porto, Portugal)"
+role: "Textile Department Director"
+signal_type: profile_fit
+signal_multiplier: 1.0
+signal_source_url: "https://www.linkedin.com/search/results/people/?keywords=dyeing%20finishing%20director%20textile&geoUrn=%5B%22100364837%22%5D"
+signal_excerpt: ""
+contact_role: buyer
+role_pts: 3
+tier: textile_mill
+size_band:
+assumptions_tested: [H1A2, H1A3, H1A6]
+validation_rationale: >
+  Directs the textile department at Focor, a Portuguese coated and finished textiles maker, after thirty years there and ten years as technical manager of a commission dye house; owns finishing spend and knows dyehouse effluent first-hand.
+response_likelihood: 4
+likelihood_factors: "3rd degree (0) · department director, dye house background (+1)"
+channel: linkedin
+degree: 3rd+
+mutuals_count:
+active_last_30d: unknown
+open_to_work: false
+outreach_status: invited
+found_date: 2026-09-14
+notes: "[profile read 2026-09-15] details/experience: Textile Department Director Focor Mar 2010-present; Textile Department Manager Focor SA 1993-present; Technical manager Maitex Tinturaria e acabamentos 1984-92 (commission dye house); also Technical Consultant (self) Mar 2026-present. English. Passes. [invited 2026-09-14] bare invite via custom-invite modal, modal name confirmed Conceição Tedim, sent by Claude at founder's instruction."
+
+
+## Hendrik B.
+
+id: C263
+name: "Hendrik B."
+linkedin_url: https://www.linkedin.com/in/eduardo-hendrik-oliever-branco/
+linkedin_account: Izgin
+company: "(last listed: IHB Textiles, until 2024)"
+role: "CEO (ended Dec 2024)"
+signal_type: profile_fit
+signal_multiplier: 1.0
+signal_source_url: "https://www.linkedin.com/search/results/people/?keywords=dyeing%20finishing%20director%20textile&geoUrn=%5B%22100364837%22%5D"
+signal_excerpt: ""
+contact_role: buyer
+role_pts: 3
+tier: textile_mill
+size_band:
+assumptions_tested: [H1A2, H1A3, H1A6]
+validation_rationale: >
+  Ran IHB Textiles, a cut-and-sew and knitting company, until December 2024; no current role and no wet processing.
+response_likelihood: 2
+likelihood_factors: "3rd degree (0)"
+channel: linkedin
+degree: 3rd+
+mutuals_count:
+active_last_30d: unknown
+open_to_work: false
+outreach_status: off_scope
+found_date: 2026-09-14
+notes: "[audit off_scope 2026-09-15] Profile visit: CEO IHB Textiles May 2015-Dec 2024 (cut and sew, knits); role ended, no current employer, no dyeing or finishing. Fails the live-profile gate on current function and production shape. Not invited."
+
+## James Williams
+
+id: C264
+name: "James Williams"
+linkedin_url: https://www.linkedin.com/in/james-williams-99bb80180/
+linkedin_account: Izgin
+company: "Lincoln Fabrics (Geneva, Alabama)"
+role: "Dye House and Finishing Manager; Production Manager"
+signal_type: profile_fit
+signal_multiplier: 1.0
+signal_source_url: "https://www.linkedin.com/search/results/people/?keywords=dye%20house%20manager&geoUrn=%5B%22103644278%22%5D"
+signal_excerpt: ""
+contact_role: buyer
+role_pts: 3
+tier: textile_mill
+size_band:
+assumptions_tested: [H1A2, H1A3, H1A6]
+validation_rationale: >
+  Manages the dye house and finishing at Lincoln Fabrics, a US knit fabric mill, and its production schedules; owns the wet process where fibres are shed.
+response_likelihood: 4
+likelihood_factors: "3rd degree (0) · dye house and finishing manager (+1)"
+channel: linkedin
+degree: 3rd+
+mutuals_count:
+active_last_30d: unknown
+open_to_work: false
+outreach_status: invited
+found_date: 2026-09-14
+notes: "[profile read 2026-09-15] details/experience: Dye House and Finishing Manager Lincoln Fabrics Jan 2023-present (on-site); Production Manager Lincoln Fabrics Jan 2023-present. English. Passes. [invited 2026-09-14] bare invite via custom-invite modal, modal name confirmed James Williams, sent by Claude at founder's instruction."
+
+
+## Dean Hedden
+
+id: C265
+name: "Dean Hedden"
+linkedin_url: https://www.linkedin.com/in/dean-hedden-64a55939/
+linkedin_account: Izgin
+company: "The Dixie Group, Colormaster plant (Calhoun, Georgia)"
+role: "Plant Manager - Colormaster"
+signal_type: profile_fit
+signal_multiplier: 1.0
+signal_source_url: "https://www.linkedin.com/search/results/people/?keywords=dye%20house%20manager&geoUrn=%5B%22103644278%22%5D"
+signal_excerpt: ""
+contact_role: buyer
+role_pts: 3
+tier: textile_mill
+size_band:
+assumptions_tested: [H1A2, H1A3, H1A6]
+validation_rationale: >
+  Runs Dixie Group's Colormaster yarn-dyeing plant after twenty years managing dyeing for Mohawk; owns a US dye plant's budget and its effluent.
+response_likelihood: 4
+likelihood_factors: "3rd degree (0) · plant manager, 25 yrs in dyeing (+1)"
+channel: linkedin
+degree: 3rd+
+mutuals_count:
+active_last_30d: unknown
+open_to_work: false
+outreach_status: invited
+found_date: 2026-09-14
+notes: "[profile read 2026-09-15] details/experience: Plant Manager Colormaster, The Dixie Group Nov 2019-present (Calhoun GA); Mohawk Industries 19 yrs 11 mos: Dyeing Manager Kuster Color 2009-19, Dye House Manager 2005-09, Assistant Technical Dyeing Manager 2000-05. English. Passes; carpet yarn rather than apparel. [invited 2026-09-14] bare invite via custom-invite modal, modal name confirmed Dean Hedden, sent by Claude at founder's instruction."
+
+
+## Jaime Gregorio
+
+id: C266
+name: "Jaime Gregorio"
+linkedin_url: https://www.linkedin.com/in/jaime-gregorio-153a0230a/
+linkedin_account: Izgin
+company: "Double Vintage Dye House (Los Angeles)"
+role: "Production Manager"
+signal_type: profile_fit
+signal_multiplier: 1.0
+signal_source_url: "https://www.linkedin.com/search/results/people/?keywords=dye%20house%20manager&geoUrn=%5B%22103644278%22%5D"
+signal_excerpt: ""
+contact_role: buyer
+role_pts: 3
+tier: textile_mill
+size_band:
+assumptions_tested: [H1A2, H1A3, H1A6]
+validation_rationale: >
+  Production manager at a Los Angeles garment dye house; profile shows no dates or role text.
+response_likelihood: 3
+likelihood_factors: "3rd degree (0)"
+channel: linkedin
+degree: 3rd+
+mutuals_count:
+active_last_30d: unknown
+open_to_work: false
+outreach_status: pending
+found_date: 2026-09-14
+notes: "[profile read 2026-09-15] details/experience: Production Manager, Double Vintage Dye House (no dates, no description). HELD from invite: tenure not established (live-profile gate check 4)."
+
+## Chris Yarbrough
+
+id: C267
+name: "Chris Yarbrough"
+linkedin_url: https://www.linkedin.com/in/chris-yarbrough-9828bb108/
+linkedin_account: Izgin
+company: "Shaw Industries (Dalton, Georgia)"
+role: "Director Carpet Technology & Performance - R&D"
+signal_type: profile_fit
+signal_multiplier: 1.0
+signal_source_url: "https://www.linkedin.com/search/results/people/?keywords=dyeing%20manager%20carpet%20Dalton&geoUrn=%5B%22103644278%22%5D"
+signal_excerpt: ""
+contact_role: buyer
+role_pts: 3
+tier: textile_mill
+size_band:
+assumptions_tested: [H1A2, H1A3, H1A6]
+validation_rationale: >
+  Directs carpet technology and performance R&D at Shaw, the largest US carpet maker, after running corporate R&D at Mohawk; owns how Shaw's fibre and carpet performance is tested, including shedding.
+response_likelihood: 4
+likelihood_factors: "3rd degree (0) · R&D director, 20+ yrs (+1)"
+channel: linkedin
+degree: 3rd+
+mutuals_count:
+active_last_30d: unknown
+open_to_work: false
+outreach_status: invited
+found_date: 2026-09-14
+notes: "[profile read 2026-09-15] details/experience: Director Carpet Technology & Performance R&D Shaw Industries Dec 2012-present (Dalton GA); Director of Technical Development R&D Shaw 2006-12; Corporate R&D Manager Mohawk 2003-06. English. Passes; carpet rather than apparel, R&D budget rather than dyehouse. [invited 2026-09-14] bare invite via custom-invite modal, modal name confirmed Chris Yarbrough, sent by Claude at founder's instruction."
+
+
+## Wayne Gerber
+
+id: C268
+name: "Wayne Gerber"
+linkedin_url: https://www.linkedin.com/in/wayne-gerber-32769012/
+linkedin_account: Izgin
+company: "Shaw Industries (Dalton, Georgia)"
+role: "Director of Operational Excellence (previously Plant Manager)"
+signal_type: profile_fit
+signal_multiplier: 1.0
+signal_source_url: "https://www.linkedin.com/search/results/people/?keywords=dyeing%20manager%20carpet%20Dalton&geoUrn=%5B%22103644278%22%5D"
+signal_excerpt: ""
+contact_role: buyer
+role_pts: 3
+tier: textile_mill
+size_band:
+assumptions_tested: [H1A2, H1A3, H1A6]
+validation_rationale: >
+  Twenty-three years at Shaw, plant manager in Dalton until 2025 and now director of operational excellence for carpet; knows plant budgets and what a new measurement would have to displace.
+response_likelihood: 4
+likelihood_factors: "3rd degree (0) · ex plant manager, director (+1)"
+channel: linkedin
+degree: 3rd+
+mutuals_count:
+active_last_30d: unknown
+open_to_work: false
+outreach_status: invited
+found_date: 2026-09-14
+notes: "[profile read 2026-09-15] details/experience: Director of Operational Excellence Shaw Sep 2026-present; Carpet Transformation Productivity Leader Nov 2025-Aug 2026; Plant Manager Jan 2023-Nov 2025 (Dalton GA); 23 yrs 2 mos at Shaw. English. Passes; whether his plant dyed on site is not stated. [invited 2026-09-14] bare invite via custom-invite modal, modal name confirmed Wayne Gerber, sent by Claude at founder's instruction."
+
+
+## Tim Crabtree
+
+id: C269
+name: "Tim Crabtree"
+linkedin_url: https://www.linkedin.com/in/tim-crabtree-593aa3286/
+linkedin_account: Izgin
+company: "Shaw Industries"
+role: "Department Manager"
+signal_type: profile_fit
+signal_multiplier: 1.0
+signal_source_url: "https://www.linkedin.com/search/results/people/?keywords=dyeing%20manager%20carpet%20Dalton&geoUrn=%5B%22103644278%22%5D"
+signal_excerpt: ""
+contact_role: practitioner
+role_pts: 2
+tier: textile_mill
+size_band:
+assumptions_tested: [H1A2, H1A3, H1A6]
+validation_rationale: >
+  Department manager at Shaw for two years after a process-engineer stint; which department is not stated.
+response_likelihood: 3
+likelihood_factors: "3rd degree (0)"
+channel: linkedin
+degree: 3rd+
+mutuals_count:
+active_last_30d: unknown
+open_to_work: false
+outreach_status: pending
+found_date: 2026-09-14
+notes: "[profile read 2026-09-15] details/experience: Department Manager Shaw Industries Jun 2024-present; Process Engineer Shaw 2023-24; Team Leader CMF International 2012-23. English. HELD from invite: department not named, so contact with wet processing is not established (live-profile gate check 3)."
+
+## Randy Myers
+
+id: C270
+name: "Randy Myers"
+linkedin_url: https://www.linkedin.com/in/randy-myers-581025101/
+linkedin_account: Izgin
+company: "Mohawk Industries (Dalton, Georgia)"
+role: "Vice President of Manufacturing"
+signal_type: profile_fit
+signal_multiplier: 1.0
+signal_source_url: "https://www.linkedin.com/search/results/people/?keywords=Mohawk%20Industries%20dye%20house%20manager&geoUrn=%5B%22103644278%22%5D"
+signal_excerpt: ""
+contact_role: buyer
+role_pts: 3
+tier: textile_mill
+size_band:
+assumptions_tested: [H1A2, H1A3, H1A6]
+validation_rationale: >
+  Vice president of manufacturing at Mohawk, the largest flooring maker, after running plants for Apache Mills, IVC and Shaw; signs for manufacturing spend across carpet plants that dye and finish.
+response_likelihood: 4
+likelihood_factors: "3rd degree (0) · VP manufacturing (+1)"
+channel: linkedin
+degree: 3rd+
+mutuals_count:
+active_last_30d: unknown
+open_to_work: false
+outreach_status: pending
+found_date: 2026-09-14
+notes: "[profile read 2026-09-15] details/experience: Vice President of Manufacturing Mohawk Sep 2020-present (Dalton GA); Director of Operations Apache Mills 2019-20; Plant Manager IVC US 2015-18; Shaw Industries 11 yrs 9 mos incl. Director of Manufacturing. English. Passes."
+
+## John Hughes
+
+id: C271
+name: "John Hughes"
+linkedin_url: https://www.linkedin.com/in/john-hughes-05a74611a/
+linkedin_account: Izgin
+company: "Mohawk Industries (Cartersville, Georgia; per search card)"
+role: "Sr Manager Corporate Labs"
+signal_type: profile_fit
+signal_multiplier: 1.0
+signal_source_url: "https://www.linkedin.com/search/results/people/?keywords=Mohawk%20Industries%20dye%20house%20manager&geoUrn=%5B%22103644278%22%5D"
+signal_excerpt: ""
+contact_role: practitioner
+role_pts: 2
+tier: textile_mill
+size_band:
+assumptions_tested: [H1A2, H1A3, H1A6]
+validation_rationale: >
+  Senior manager of corporate labs, with laboratory operations and budgeting in the role text; the search card places him at Mohawk but the twelve-year role does not name its employer.
+response_likelihood: 3
+likelihood_factors: "3rd degree (0)"
+channel: linkedin
+degree: 3rd+
+mutuals_count:
+active_last_30d: unknown
+open_to_work: false
+outreach_status: pending
+found_date: 2026-09-14
+notes: "[profile read 2026-09-15] details/experience: Sr Manager Corporate Labs Jul 2014-present (employer field reads only 'Sr Manager'); Sr Manager Mohawk Industries Jul 2014 (1 mo, Lyerly GA). English. HELD from invite: current employer not established on the profile (live-profile gate check 1)."

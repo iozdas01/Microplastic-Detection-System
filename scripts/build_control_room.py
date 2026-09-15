@@ -473,8 +473,9 @@ def _load_copy_by_contact() -> dict[str, dict]:
             cid = m.group(3)
             header = m.group(4).strip()
 
-            # Skip REMOVED placeholder slots
-            if header.upper().startswith("[REMOVED"):
+            # Skip REMOVED placeholder slots and SUPERSEDED earlier drafts —
+            # both are history, not copy the founder could send.
+            if re.match(r"\[(REMOVED|SUPERSEDED)\b", header, re.I):
                 continue
 
             # The block ends at the next heading that is a sibling-or-shallower
