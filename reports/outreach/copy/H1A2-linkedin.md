@@ -562,3 +562,55 @@ Rule check: 339 chars, violations none. Inbox (LR-B25): surname search on Izgin'
 | "twenty years on the dyehouse floor at F.I.R. Fulda" | Experience → 'supervisore tintoria / F. I. R. Fulda / Sep 2001 - Jul 2024' (snapshot 2026-09-13) |
 
 Rule check: 323 chars, violations none. Inbox (LR-B25): surname search on Izgin's account, no thread. Status at draft time: accepted 2026-09-14.
+
+## C16 — Mehmet Adıyaman
+
+### Msg 1 — DRAFTED 2026-09-15 (LR-B33)
+
+**Primary (331 chars, English, close_variant soft_ask, copy_variant build_short, segment: wet-processing mill):**
+
+> Mehmet hi! Thanks for connecting.
+>
+> My co-founder and I are building a microplastic detection system for textile wet processing. You run BTMN Grup's textile washing plants after general manager roles at Yaz Denim, Madenim and Bestan, we would love to learn from your experience. Would you be open to some questions for our research?
+
+| Claim in message | Live-snapshot source ({today}, details/experience) |
+|---|---|
+| "run BTMN Grup's textile washing plants" | Experience → 'Genel Manager / BTMN GRUP TEKSTİL YIKAMA A.Ş / Jan 2026 - Present' |
+| "general manager roles at Yaz Denim, Madenim and Bestan" | Experience → 'General Manager / YAZ DENİM TEKSTİL / 2022-26', 'General Manager / MADENİM / 2020-22', 'General Manager / BESTAN TEKSTİL / 2017-20' (snapshot 2026-09-13) |
+
+Rule check: 331 chars, violations none. Status at draft time: accepted.
+
+## C147 — Mehmet Çetin
+
+### Msg 1 — DRAFTED 2026-09-15 (LR-B33)
+
+**Primary (350 chars, English, close_variant soft_ask, copy_variant build_short, segment: wet-processing mill):**
+
+> Mehmet hi! Thanks for connecting.
+>
+> My co-founder and I are building a microplastic detection system for textile wet processing. You manage a 40 tonnes a day dyeing and finishing plant at Sarteks Örme, from the dyehouse and lab to planning and quality, we would love to learn from your experience. Would you be open to some questions for our research?
+
+| Claim in message | Live-snapshot source ({today}, details/experience) |
+|---|---|
+| "manage a 40 tonnes a day dyeing and finishing plant at Sarteks Örme" | Experience → 'Factory Manager / Sarteks Örme / Sep 2026 - Present' and 'a textile dyeing and finishing facility with an HT dyeing capacity of 40 tons/day' |
+| "from the dyehouse and lab to planning and quality" | Experience → 'Leading dyeing, finishing, laboratory, planning, quality, maintenance, and production operations' |
+
+Rule check: 350 chars, violations none. Status at draft time: accepted.
+
+## C153 — Md. Sakhawat Hossain
+
+### Msg 1 — DRAFTED 2026-09-15 (LR-B33)
+
+**Primary (364 chars, English, close_variant soft_ask, copy_variant build_short, segment: wet-processing mill):**
+
+> Sakhawat hi! Thanks for connecting.
+>
+> My co-founder and I are building a microplastic detection system for textile wet processing. You direct Eurotex Knitwear from booking to delivery, including dyes and chemicals inventory and the follow-up of dyeing and finishing, we would love to learn from your experience. Would you be open to some questions for our research?
+
+| Claim in message | Live-snapshot source ({today}, details/experience) |
+|---|---|
+| "direct Eurotex Knitwear from booking to delivery" | Experience → 'Executive Director / Eurotex Knitwear Ltd. / Dec 2023 - Present' and '1. PLANNING: FROM BOOKING TO DELIVERY.' |
+| "dyes and chemicals inventory" | Experience → '2. INVENTORY CONTROL OF YARN, FABRICS, DYES AND CHEMICALS' |
+| "follow-up of dyeing and finishing" | Experience → '7. FOLLOW UP OF DYEING AND FINISHING.' |
+
+Rule check: 364 chars, violations none. Status at draft time: accepted.

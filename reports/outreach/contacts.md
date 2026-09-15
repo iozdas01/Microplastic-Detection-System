@@ -5,7 +5,7 @@ last_updated: 2026-09-14
 totals:
   targeted: 206
   invited: 171
-  accepted: 11
+  accepted: 14
   scheduled: 0
   done: 5
   no_reply: 0
@@ -492,9 +492,9 @@ degree: 2nd
 mutuals_count: 
 active_last_30d: unknown
 open_to_work: false
-outreach_status: invited
+outreach_status: accepted
 found_date: 2026-09-13
-notes: "[profile read 2026-09-13] details/experience: GM BTMN Grup Tekstil Yıkama Jan 2026-present; GM Yaz Denim Tekstil 2022-26; R&D and operations manager ADK Konfeksiyon 2021-25; GM Madenim 2020-22; GM Bestan Tekstil 2017-20; İşletme Müdürü Akmel Tekstil before. A stray 'career break' entry sits alongside the current GM role. Passes. [invited 2026-09-13] bare invite via custom-invite modal, name confirmed MEHMET ADIYAMAN, sent by Claude at founder's instruction."
+notes: "[profile read 2026-09-13] details/experience: GM BTMN Grup Tekstil Yıkama Jan 2026-present; GM Yaz Denim Tekstil 2022-26; R&D and operations manager ADK Konfeksiyon 2021-25; GM Madenim 2020-22; GM Bestan Tekstil 2017-20; İşletme Müdürü Akmel Tekstil before. A stray 'career break' entry sits alongside the current GM role. Passes. [invited 2026-09-13] bare invite via custom-invite modal, name confirmed MEHMET ADIYAMAN, sent by Claude at founder's instruction. [accepted 2026-09-15] seen in the Connections list (recently added, 2026-09-14). [msg1 drafted 2026-09-15] LR-B33 shape, English profile, fresh details/experience snapshot; inbox searched by company or surname, no thread."
 
 ## Ersen Ş.
 
@@ -4494,9 +4494,9 @@ degree: 2nd
 mutuals_count:
 active_last_30d: unknown
 open_to_work: false
-outreach_status: invited
+outreach_status: accepted
 found_date: 2026-09-14
-notes: "[profile read 2026-09-14] details/experience: Factory Manager Sarteks Örme Sep 2026-present; Factory Manager of a textile dyeing and finishing facility with 40 t/day HT dyeing capacity (dyeing, finishing, lab, planning, quality, maintenance). Role descriptions in English. Passes; new in current post but a prior factory-manager role carries the history. [invited 2026-09-14] bare invite via custom-invite modal, modal name confirmed Mehmet Çetin, sent by Claude at founder's instruction."
+notes: "[profile read 2026-09-14] details/experience: Factory Manager Sarteks Örme Sep 2026-present; Factory Manager of a textile dyeing and finishing facility with 40 t/day HT dyeing capacity (dyeing, finishing, lab, planning, quality, maintenance). Role descriptions in English. Passes; new in current post but a prior factory-manager role carries the history. [invited 2026-09-14] bare invite via custom-invite modal, modal name confirmed Mehmet Çetin, sent by Claude at founder's instruction. [accepted 2026-09-15] seen in the Connections list (recently added, 2026-09-14). [msg1 drafted 2026-09-15] LR-B33 shape, English profile, fresh details/experience snapshot; inbox searched by company or surname, no thread."
 
 
 ## Murat Yürür
@@ -4680,9 +4680,9 @@ degree: 3rd+
 mutuals_count:
 active_last_30d: unknown
 open_to_work: false
-outreach_status: invited
+outreach_status: accepted
 found_date: 2026-09-14
-notes: "[profile read 2026-09-14] details/experience: Executive Director Eurotex Knitwear Dec 2023-present: planning, inventory of yarn, fabric, dyes and chemicals, knitting technology, lab-dip and pre-bulk analysis. English. Passes. [invited 2026-09-14] bare invite via custom-invite modal, modal name confirmed Md. Sakhawat Hossain, sent by Claude at founder's instruction."
+notes: "[profile read 2026-09-14] details/experience: Executive Director Eurotex Knitwear Dec 2023-present: planning, inventory of yarn, fabric, dyes and chemicals, knitting technology, lab-dip and pre-bulk analysis. English. Passes. [invited 2026-09-14] bare invite via custom-invite modal, modal name confirmed Md. Sakhawat Hossain, sent by Claude at founder's instruction. [accepted 2026-09-15] seen in the Connections list (recently added, 2026-09-14). [msg1 drafted 2026-09-15] LR-B33 shape, English profile, fresh details/experience snapshot; inbox searched by company or surname, no thread."
 
 
 ## Mahasin Zaman
