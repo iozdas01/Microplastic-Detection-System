@@ -8,7 +8,7 @@ _Generated 2026-09-15. Numbers are the funnel over contacts tagged H1A2._
 
 | channel | targeted | contacted | replied | qualified replied | reply rate |
 |---|---|---|---|---|---|
-| LinkedIn | 162 | 3 | 3 | 3 | 100.0% |
+| LinkedIn | 162 | 5 | 5 | 5 | 100.0% |
 | phone | 0 | 0 | 0 | 0 | — |
 
 _Channels are counted separately._
@@ -86,12 +86,10 @@ _Channels are counted separately._
 | C265 | Dean Hedden | invited | — |
 | C267 | Chris Yarbrough | invited | — |
 | C270 | Randy Myers | invited | — |
-| C29 | Calvin Huelsman | invited | — |
 | C31 | Okan Çakıcı | invited | — |
 | C33 | Sercan Yaz | invited | — |
 | C41 | Didem Civancik-Uslu | invited | — |
 | C42 | Tuğba Erdem Yakut | invited | — |
-| C43 | Chris Chen | invited | — |
 | C54 | Moshiur Rahman | invited | — |
 | C56 | Engr. Abdul Aziz | invited | — |
 | C60 | Aman Ullah | invited | — |
@@ -111,12 +109,10 @@ _Channels are counted separately._
 | C76 | Jonathan Whitehead | invited | — |
 | C10 | Bekir Boyacı | accepted | — |
 | C143 | Nabeel Aman | accepted | — |
-| C147 | Mehmet Çetin | accepted | — |
 | C149 | Ahmet Çağrı Dalkır | accepted | — |
 | C153 | Md. Sakhawat Hossain | accepted | — |
 | C157 | Saif Khan | accepted | — |
 | C16 | Mehmet Adıyaman | accepted | — |
-| C18 | Ahmet Kaleli | accepted | — |
 | C214 | Nick Farrar | accepted | — |
 | C216 | Ricardo Martins da Silva | accepted | — |
 | C230 | Esref Tuncer | accepted | — |
@@ -125,13 +121,17 @@ _Channels are counted separately._
 | C261 | António Faria | accepted | — |
 | C268 | Wayne Gerber | accepted | — |
 | C28 | Rohit K. | accepted | — |
+| C29 | Calvin Huelsman | accepted | — |
 | C30 | Önder Ertürk | accepted | — |
 | C40 | Erdogan Sekerci | accepted | — |
+| C43 | Chris Chen | accepted | — |
 | C44 | Ronit Basu | accepted | — |
 | C48 | Ayesha Navaid Anwar | accepted | — |
 | C6 | Halil Kutluğ Kabahasanoğlu | accepted | — |
 | C7 | Murat Terlemez | accepted | — |
 | C74 | Muhammad Omer Ahmed | accepted | — |
+| C147 | Mehmet Çetin | replied | — |
+| C18 | Ahmet Kaleli | replied | — |
 | C55 | Gulfam S. | replied | — |
 | C58 | Paulo Lopes | replied | — |
 | C59 | Faizan Pasha | replied | — |

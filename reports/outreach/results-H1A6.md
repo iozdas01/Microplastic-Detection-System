@@ -8,7 +8,7 @@ _Generated 2026-09-15. Numbers are the funnel over contacts tagged H1A6._
 
 | channel | targeted | contacted | replied | qualified replied | reply rate |
 |---|---|---|---|---|---|
-| LinkedIn | 95 | 1 | 1 | 1 | 100.0% |
+| LinkedIn | 95 | 3 | 3 | 3 | 100.0% |
 | phone | 0 | 0 | 0 | 0 | — |
 
 _Channels are counted separately._
@@ -78,12 +78,10 @@ _Channels are counted separately._
 | C75 | Satish Kejriwal | invited | — |
 | C76 | Jonathan Whitehead | invited | — |
 | C143 | Nabeel Aman | accepted | — |
-| C147 | Mehmet Çetin | accepted | — |
 | C149 | Ahmet Çağrı Dalkır | accepted | — |
 | C153 | Md. Sakhawat Hossain | accepted | — |
 | C157 | Saif Khan | accepted | — |
 | C16 | Mehmet Adıyaman | accepted | — |
-| C18 | Ahmet Kaleli | accepted | — |
 | C216 | Ricardo Martins da Silva | accepted | — |
 | C230 | Esref Tuncer | accepted | — |
 | C250 | Irina Morosanu | accepted | — |
@@ -92,6 +90,8 @@ _Channels are counted separately._
 | C6 | Halil Kutluğ Kabahasanoğlu | accepted | — |
 | C7 | Murat Terlemez | accepted | — |
 | C74 | Muhammad Omer Ahmed | accepted | — |
+| C147 | Mehmet Çetin | replied | — |
+| C18 | Ahmet Kaleli | replied | — |
 | C55 | Gulfam S. | replied | — |
 | C14 | Yalçın Çelik | off_scope | — |
 | C15 | Yasin Taştekin | off_scope | — |

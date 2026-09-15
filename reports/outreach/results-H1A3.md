@@ -8,7 +8,7 @@ _Generated 2026-09-15. Numbers are the funnel over contacts tagged H1A3._
 
 | channel | targeted | contacted | replied | qualified replied | reply rate |
 |---|---|---|---|---|---|
-| LinkedIn | 124 | 1 | 1 | 1 | 100.0% |
+| LinkedIn | 124 | 3 | 3 | 3 | 100.0% |
 | phone | 0 | 0 | 0 | 0 | — |
 
 _Channels are counted separately._
@@ -83,7 +83,6 @@ _Channels are counted separately._
 | C270 | Randy Myers | invited | — |
 | C31 | Okan Çakıcı | invited | — |
 | C41 | Didem Civancik-Uslu | invited | — |
-| C43 | Chris Chen | invited | — |
 | C54 | Moshiur Rahman | invited | — |
 | C56 | Engr. Abdul Aziz | invited | — |
 | C62 | Eray Karaduman | invited | — |
@@ -101,12 +100,10 @@ _Channels are counted separately._
 | C75 | Satish Kejriwal | invited | — |
 | C76 | Jonathan Whitehead | invited | — |
 | C143 | Nabeel Aman | accepted | — |
-| C147 | Mehmet Çetin | accepted | — |
 | C149 | Ahmet Çağrı Dalkır | accepted | — |
 | C153 | Md. Sakhawat Hossain | accepted | — |
 | C157 | Saif Khan | accepted | — |
 | C16 | Mehmet Adıyaman | accepted | — |
-| C18 | Ahmet Kaleli | accepted | — |
 | C214 | Nick Farrar | accepted | — |
 | C216 | Ricardo Martins da Silva | accepted | — |
 | C230 | Esref Tuncer | accepted | — |
@@ -115,11 +112,14 @@ _Channels are counted separately._
 | C261 | António Faria | accepted | — |
 | C268 | Wayne Gerber | accepted | — |
 | C40 | Erdogan Sekerci | accepted | — |
+| C43 | Chris Chen | accepted | — |
 | C44 | Ronit Basu | accepted | — |
 | C48 | Ayesha Navaid Anwar | accepted | — |
 | C6 | Halil Kutluğ Kabahasanoğlu | accepted | — |
 | C7 | Murat Terlemez | accepted | — |
 | C74 | Muhammad Omer Ahmed | accepted | — |
+| C147 | Mehmet Çetin | replied | — |
+| C18 | Ahmet Kaleli | replied | — |
 | C55 | Gulfam S. | replied | — |
 | C212 | Marcus Hartmann | held | — |
 | C14 | Yalçın Çelik | off_scope | — |
