@@ -3,8 +3,8 @@ purpose: The contact ledger — one card per person targeted, invited or intervi
 idea: industrial-process-data-infrastructure
 last_updated: 2026-09-14
 totals:
-  targeted: 175
-  invited: 126
+  targeted: 191
+  invited: 139
   accepted: 27
   scheduled: 0
   done: 5
@@ -2617,7 +2617,7 @@ active_last_30d: unknown
 open_to_work: false
 outreach_status: accepted
 found_date: 2026-09-14
-notes: "[profile read 2026-09-14] details/experience: COO and Sr AGM Water System LADWP Aug 2021-present; Deputy Sr AGM and Director of Water Operations 2017-21 (treatment, LA Aqueduct); 33 yrs at LADWP. English. Passes. [invited 2026-09-14] bare invite via custom-invite modal, modal name confirmed Anselmo Collins, sent by Claude at founder's instruction; Pending confirmed. [accepted 2026-09-14] shows 1st degree in LinkedIn search the same day. [msg1 drafted 2026-09-14] LR-B33 shape with the drinking-water build sentence (LR-B28); inbox searched by first name and surname, no thread. Copy in copy/H3A2-linkedin.md. Awaiting founder send."
+notes: "[profile read 2026-09-14] details/experience: COO and Sr AGM Water System LADWP Aug 2021-present; Deputy Sr AGM and Director of Water Operations 2017-21 (treatment, LA Aqueduct); 33 yrs at LADWP. English. Passes. [invited 2026-09-14] bare invite via custom-invite modal, modal name confirmed Anselmo Collins, sent by Claude at founder's instruction; Pending confirmed. [accepted 2026-09-14] shows 1st degree in LinkedIn search the same day. [msg1 drafted 2026-09-14] LR-B33 shape with the drinking-water build sentence (LR-B28); inbox searched by first name and surname, no thread. Copy in copy/H3A2-linkedin.md. Awaiting founder send. [msg1 sent 2026-09-14] Sent by the founder by hand (founder confirmation in chat); H3A2 Msg 1 from copy/H3A2-linkedin.md."
 
 
 ## Tom Maichaimongkol
@@ -5517,3 +5517,495 @@ interviews: ["03-validation/H1A5-2026-09-14/interviews/varija-subasingha-2026-09
 evidence_score: 2
 outcome_modifier: moderate_confirm
 notes: "[captured 2026-09-14] Score (2 x 1.0) + 0 = 2, founder confirmed moderate_confirm. Call run by Baltic Jungle Lab before this repo; call date not recorded; channel placeholder. adidas is a design partner in conversation, not a paying client. Offered introductions to brand partners and Fashion for Good once a working prototype exists."
+
+## Adam Root
+
+id: C181
+name: "Adam Root"
+linkedin_url: https://www.linkedin.com/in/adam-root/
+linkedin_account: Izgin
+company: "Matter (Matter Industries), Bristol"
+role: "Founder and CEO"
+signal_type: profile_fit
+signal_multiplier: 1.0
+signal_source_url: "https://www.linkedin.com/search/results/people/?keywords=Adam%20Root%20Matter"
+signal_excerpt: ""
+contact_role: buyer
+role_pts: 3
+tier: filtration_vendor
+size_band:
+assumptions_tested: [H1A5]
+validation_rationale: >
+  Founded Matter, whose Regen filter captures microfibres from washing machines, industrial laundries and textile production, with Bosch-Siemens and Paradise Textiles as partners; knows whether capture alone satisfies mills and brands, and has to prove capture to sell.
+response_likelihood: 6
+likelihood_factors: "2nd degree (+2) · founder, partnership-led company (+1)"
+channel: linkedin
+degree: 2nd
+mutuals_count:
+active_last_30d: unknown
+open_to_work: false
+outreach_status: invited
+found_date: 2026-09-14
+notes: "[profile read 2026-09-15] details/experience: Founder Matter Apr 2019-present (Bristol): partnership model, in-house R&D on microplastic capture; ex Dyson engineer per press. English. Passes (H1A5 filtration_vendor tier, founder decision 2026-09-15). [invited 2026-09-15] bare invite via custom-invite modal, modal name confirmed Adam Root, sent by Claude at founder's instruction."
+
+## Mojca Zupan
+
+id: C182
+name: "Mojca Zupan"
+linkedin_url: https://www.linkedin.com/in/mojca-zupan/
+linkedin_account: Izgin
+company: "PlanetCare (Ljubljana)"
+role: "Founder and CEO"
+signal_type: profile_fit
+signal_multiplier: 1.0
+signal_source_url: "https://www.linkedin.com/company/linkedin.com-planetcare/people/"
+signal_excerpt: ""
+contact_role: buyer
+role_pts: 3
+tier: filtration_vendor
+size_band:
+assumptions_tested: [H1A5]
+validation_rationale: >
+  Founded PlanetCare, the Slovenian maker of washing-machine microfibre filters that France's 2025 filter mandate helps; knows what proof of capture appliance makers and regulators ask for.
+response_likelihood: 6
+likelihood_factors: "2nd degree (+2) · founder (+1)"
+channel: linkedin
+degree: 2nd
+mutuals_count:
+active_last_30d: unknown
+open_to_work: false
+outreach_status: invited
+found_date: 2026-09-14
+notes: "[profile read 2026-09-15] details/experience: Founder and CEO PlanetCare Feb 2017-present. English. Passes. [invited 2026-09-14] bare invite via custom-invite modal, modal name confirmed Mojca Zupan, sent by Claude at founder's instruction."
+
+
+## Andrej Kržan
+
+id: C183
+name: "Andrej Kržan"
+linkedin_url: https://www.linkedin.com/in/andrej-krzan-47448716a/
+linkedin_account: Izgin
+company: "PlanetCare Limited; National Institute of Chemistry (Ljubljana)"
+role: "Chief Research Officer"
+signal_type: profile_fit
+signal_multiplier: 1.0
+signal_source_url: "https://www.linkedin.com/company/linkedin.com-planetcare/people/"
+signal_excerpt: ""
+contact_role: expert
+role_pts: 2
+tier: filtration_vendor
+size_band:
+assumptions_tested: [H1A5]
+validation_rationale: >
+  PlanetCare's chief research officer and a senior scientist on microplastics and marine litter at Slovenia's National Institute of Chemistry; knows how capture is measured and where the measurement falls short.
+response_likelihood: 4
+likelihood_factors: "3rd degree (0) · research lead on microplastics (+1)"
+channel: linkedin
+degree: 3rd+
+mutuals_count:
+active_last_30d: unknown
+open_to_work: false
+outreach_status: invited
+found_date: 2026-09-14
+notes: "[profile read 2026-09-15] details/experience: Chief Research Officer PlanetCare Jan 2018-present; Senior Scientific Associate National Institute of Chemistry 1997-present (environmental aspects of plastics, marine litter, microplastics); Associate Professor University of Nova Gorica. English. Passes. [invited 2026-09-14] bare invite via custom-invite modal, modal name confirmed Andrej Kržan, sent by Claude at founder's instruction."
+
+
+## Max Pennington
+
+id: C184
+name: "Max Pennington"
+linkedin_url: https://www.linkedin.com/in/max-t-pennington/
+linkedin_account: Izgin
+company: "CLEANR (Cleveland)"
+role: "Co-Founder and CEO"
+signal_type: profile_fit
+signal_multiplier: 1.0
+signal_source_url: "https://www.linkedin.com/search/results/people/?keywords=Max%20Pennington%20CLEANR"
+signal_excerpt: ""
+contact_role: buyer
+role_pts: 3
+tier: filtration_vendor
+size_band:
+assumptions_tested: [H1A5]
+validation_rationale: >
+  Co-founded CLEANR, whose VORTX washing-machine filter won AFS product of the year 2024 and raised about $7M; has to prove capture rates to appliance makers and knows who is asking.
+response_likelihood: 6
+likelihood_factors: "2nd degree (+2) · founder (+1)"
+channel: linkedin
+degree: 2nd
+mutuals_count:
+active_last_30d: unknown
+open_to_work: false
+outreach_status: invited
+found_date: 2026-09-14
+notes: "[profile read 2026-09-15] details/experience: Co-Founder & CEO CLEANR Aug 2021-present (Cleveland); R&D engineer intern Procter & Gamble 2019-21. English. Passes. [invited 2026-09-14] bare invite via custom-invite modal, modal name confirmed Max Pennington, sent by Claude at founder's instruction."
+
+
+## David Dillman
+
+id: C185
+name: "David Dillman"
+linkedin_url: https://www.linkedin.com/in/david-dillman-9475551a3/
+linkedin_account: Izgin
+company: "CLEANR (Cleveland)"
+role: "Co-Founder and CTO"
+signal_type: profile_fit
+signal_multiplier: 1.0
+signal_source_url: "https://www.linkedin.com/search/results/people/?keywords=David%20Dillman%20CLEANR"
+signal_excerpt: ""
+contact_role: expert
+role_pts: 2
+tier: filtration_vendor
+size_band:
+assumptions_tested: [H1A5]
+validation_rationale: >
+  CTO of CLEANR; owns how the VORTX filter's capture is tested and verified.
+response_likelihood: 4
+likelihood_factors: "3rd degree (0) · owns capture testing (+1)"
+channel: linkedin
+degree: 3rd+
+mutuals_count:
+active_last_30d: unknown
+open_to_work: false
+outreach_status: invited
+found_date: 2026-09-14
+notes: "[profile read 2026-09-15] details/experience: Co-Founder & CTO CLEANR Aug 2021-present (Cleveland). English. Passes. [invited 2026-09-14] bare invite via custom-invite modal, modal name confirmed David Dillman, sent by Claude at founder's instruction."
+
+
+## Neil Austin
+
+id: C186
+name: "Neil Austin"
+linkedin_url: https://www.linkedin.com/in/neil-austinuk/
+linkedin_account: Izgin
+company: "Xeros Technology Group plc (Sheffield)"
+role: "Chief Executive Officer"
+signal_type: profile_fit
+signal_multiplier: 1.0
+signal_source_url: "https://www.linkedin.com/company/xeros-technology-group-plc/people/"
+signal_excerpt: ""
+contact_role: buyer
+role_pts: 3
+tier: filtration_vendor
+size_band:
+assumptions_tested: [H1A5]
+validation_rationale: >
+  CEO of Xeros, the LSE-listed maker of the XFiltra washing-machine microfibre filter; licenses filters to appliance makers and knows what capture evidence they demand.
+response_likelihood: 3
+likelihood_factors: "3rd degree (0) · listed-company CEO (0)"
+channel: linkedin
+degree: 3rd+
+mutuals_count:
+active_last_30d: unknown
+open_to_work: false
+outreach_status: invited
+found_date: 2026-09-14
+notes: "[profile read 2026-09-15] details/experience: Chief Executive Officer Xeros Aug 2022-present (Sheffield), London Stock Exchange listed green-tech R&D company. English. Passes. [invited 2026-09-14] bare invite via custom-invite modal, modal name confirmed Neil Austin, sent by Claude at founder's instruction."
+
+
+## Thomas Cobb
+
+id: C187
+name: "Thomas Cobb"
+linkedin_url: https://www.linkedin.com/in/thomasandrewcobb/
+linkedin_account: Izgin
+company: "Xeros Technology Group plc (Sheffield)"
+role: "Technical Director"
+signal_type: profile_fit
+signal_multiplier: 1.0
+signal_source_url: "https://www.linkedin.com/company/xeros-technology-group-plc/people/"
+signal_excerpt: ""
+contact_role: expert
+role_pts: 2
+tier: filtration_vendor
+size_band:
+assumptions_tested: [H1A5]
+validation_rationale: >
+  Xeros technical director for engineering, science and application development, inventor on its core patents; knows how filter capture is measured and validated.
+response_likelihood: 4
+likelihood_factors: "3rd degree (0) · owns technical validation (+1)"
+channel: linkedin
+degree: 3rd+
+mutuals_count:
+active_last_30d: unknown
+open_to_work: false
+outreach_status: invited
+found_date: 2026-09-14
+notes: "[profile read 2026-09-15] details/experience: Technical Director Xeros Feb 2024-present, 9 yrs 9 mos at Xeros: technical leadership across engineering, science, IP, product and application development; inventor on 6 granted core patents. English. Passes. [invited 2026-09-14] bare invite via custom-invite modal, modal name confirmed Thomas Cobb, sent by Claude at founder's instruction."
+
+
+## Sertug D.
+
+id: C188
+name: "Sertug D."
+linkedin_url: https://www.linkedin.com/in/sderingol/
+linkedin_account: Izgin
+company: "Xeros Technology Group plc"
+role: "International Sales Manager"
+signal_type: profile_fit
+signal_multiplier: 1.0
+signal_source_url: "https://www.linkedin.com/company/xeros-technology-group-plc/people/"
+signal_excerpt: ""
+contact_role: practitioner
+role_pts: 2
+tier: filtration_vendor
+size_band:
+assumptions_tested: [H1A5]
+validation_rationale: >
+  Sells Xeros filtration internationally after running marketing and sales at a textile-machinery maker; hears from customers what proof of capture they want.
+response_likelihood: 5
+likelihood_factors: "2nd degree (+2) · textile-machinery background (0)"
+channel: linkedin
+degree: 2nd
+mutuals_count:
+active_last_30d: unknown
+open_to_work: false
+outreach_status: invited
+found_date: 2026-09-14
+notes: "[profile read 2026-09-15] details/experience: International Sales Manager Xeros Apr 2025-present (remote); Marketing and Sales Director TACHYON Textile Machinery 2024-25. English. Passes. [invited 2026-09-14] bare invite via custom-invite modal, modal name confirmed Sertug D., sent by Claude at founder's instruction."
+
+
+## Nathaniel Banks
+
+id: C189
+name: "Nathaniel Banks"
+linkedin_url: https://www.linkedin.com/in/nathaniel-banks-954240141/
+linkedin_account: Izgin
+company: "PolyGone Systems (Kearny, New Jersey)"
+role: "Co-Founder and CEO"
+signal_type: profile_fit
+signal_multiplier: 1.0
+signal_source_url: "https://www.linkedin.com/company/project-plastic/people/"
+signal_excerpt: ""
+contact_role: buyer
+role_pts: 3
+tier: filtration_vendor
+size_band:
+assumptions_tested: [H1A5]
+validation_rationale: >
+  Co-founded PolyGone, a Princeton spinout selling microplastic removal systems for wastewater and factories plus a mail-in lab analysis service; partly a competitor on measurement, so a source on what utilities and factories pay for.
+response_likelihood: 3
+likelihood_factors: "3rd degree (0) · partial competitor (0)"
+channel: linkedin
+degree: 3rd+
+mutuals_count:
+active_last_30d: unknown
+open_to_work: false
+outreach_status: invited
+found_date: 2026-09-14
+notes: "[profile read 2026-09-15] details/experience: Co-Founder & CEO PolyGone Apr 2021-present (Princeton): 'novel filtration systems for monitoring and removing aquatic microplastics'. English. Passes. Caution: PolyGone sells lab analysis (fluorescence microscopy >1 µm, FTIR, py-GC/MS, from $399/sample, ~2 weeks), so disclose little about the sensor. [invited 2026-09-14] bare invite via custom-invite modal, modal name confirmed Nathaniel Banks, sent by Claude at founder's instruction."
+
+
+## Yidian Liu
+
+id: C190
+name: "Yidian Liu"
+linkedin_url: https://www.linkedin.com/in/yidian-liu-1b8b159b/
+linkedin_account: Izgin
+company: "PolyGone Systems (Kearny, New Jersey)"
+role: "Co-Founder and COO"
+signal_type: profile_fit
+signal_multiplier: 1.0
+signal_source_url: "https://www.linkedin.com/company/project-plastic/people/"
+signal_excerpt: ""
+contact_role: buyer
+role_pts: 3
+tier: filtration_vendor
+size_band:
+assumptions_tested: [H1A5]
+validation_rationale: >
+  Co-founder and COO of PolyGone, running its wastewater pilot and lab operations; knows which factories and utilities ask for microplastic numbers.
+response_likelihood: 5
+likelihood_factors: "2nd degree (+2) · runs operations (0)"
+channel: linkedin
+degree: 2nd
+mutuals_count:
+active_last_30d: unknown
+open_to_work: false
+outreach_status: invited
+found_date: 2026-09-14
+notes: "[profile read 2026-09-15] details/experience: Co-Founder & COO PolyGone Jun 2021-present (Kearny NJ). English. Passes. Same competitor caution as Nathaniel Banks. [invited 2026-09-14] bare invite via custom-invite modal, modal name confirmed Yidian Liu, sent by Claude at founder's instruction."
+
+
+## Yueyu Yao
+
+id: C191
+name: "Yueyu Yao"
+linkedin_url: https://www.linkedin.com/in/yueyuyao/
+linkedin_account: Izgin
+company: "PolyGone Systems (New Jersey)"
+role: "Lead Scientist"
+signal_type: profile_fit
+signal_multiplier: 1.0
+signal_source_url: "https://www.linkedin.com/company/project-plastic/people/"
+signal_excerpt: ""
+contact_role: expert
+role_pts: 2
+tier: filtration_vendor
+size_band:
+assumptions_tested: [H1A5]
+validation_rationale: >
+  Lead scientist at PolyGone, whose lab runs fluorescence microscopy, FTIR and py-GC/MS on microplastic samples; knows exactly what lab measurement costs and misses compared with a live reading.
+response_likelihood: 4
+likelihood_factors: "3rd degree (0) · runs the lab science (+1)"
+channel: linkedin
+degree: 3rd+
+mutuals_count:
+active_last_30d: unknown
+open_to_work: false
+outreach_status: pending
+found_date: 2026-09-14
+notes: "[profile read 2026-09-15] details/experience: Lead Scientist PolyGone Oct 2024-present (North Brunswick NJ); graduate researcher Princeton 2018-24. English. Passes. Same competitor caution as the PolyGone founders."
+
+## Anshu Malika G.
+
+id: C192
+name: "Anshu Malika G."
+linkedin_url: https://www.linkedin.com/in/anshu-malika-g-27434165/
+linkedin_account: Izgin
+company: "Paradise Textiles (New York office)"
+role: "Director, Business Development, Material Innovation and Strategic Partnerships"
+signal_type: profile_fit
+signal_multiplier: 1.0
+signal_source_url: "https://www.linkedin.com/company/paradisetextiles/people/"
+signal_excerpt: ""
+contact_role: buyer
+role_pts: 3
+tier: textile_mill
+size_band:
+assumptions_tested: [H1A5]
+validation_rationale: >
+  Leads business development and material innovation with performance and lifestyle brands at Paradise Textiles, the mill Matter names as its textile-production partner; knows why brands asked for microfibre capture and whether filtration answered them.
+response_likelihood: 5
+likelihood_factors: "2nd degree (+2) · brand-facing at a mill already filtering (0)"
+channel: linkedin
+degree: 2nd
+mutuals_count:
+active_last_30d: unknown
+open_to_work: false
+outreach_status: invited
+found_date: 2026-09-14
+notes: "[profile read 2026-09-15] details/experience: Director Business Development, Material Innovation & Strategic Partnerships, Paradise Textiles Dec 2025-present (New York): business development and strategic customer partnerships with performance apparel and lifestyle brands in North America. English. Passes (H1A5: a mill already answering the microfiber question, via Matter). [invited 2026-09-14] bare invite via custom-invite modal, modal name confirmed Anshu Malika G., sent by Claude at founder's instruction."
+
+
+## Mohamed Taha
+
+id: C193
+name: "Mohamed Taha"
+linkedin_url: https://www.linkedin.com/in/mohamed-taha-822730202/
+linkedin_account: Izgin
+company: "Paradise Textiles, Egypt mill (Alexandria)"
+role: "Director of Technical Operations"
+signal_type: profile_fit
+signal_multiplier: 1.0
+signal_source_url: "https://www.linkedin.com/company/paradisetextiles/people/"
+signal_excerpt: ""
+contact_role: buyer
+role_pts: 3
+tier: textile_mill
+size_band:
+assumptions_tested: [H1A5]
+validation_rationale: >
+  Runs technical operations at Paradise Textiles' Egypt mill, the site most likely to host Matter's capture equipment; the person who knows whether filtration alone answers the mill's microfibre question.
+response_likelihood: 4
+likelihood_factors: "3rd degree (0) · runs the filtering mill (+1)"
+channel: linkedin
+degree: 3rd+
+mutuals_count:
+active_last_30d: unknown
+open_to_work: false
+outreach_status: invited
+found_date: 2026-09-14
+notes: "[profile read 2026-09-15] details/experience: Director of Technical Operations Paradise Textiles Jun 2021-present (Alexandria, Egypt mill): fabric process manufacturing, sustainable automation; freelance dyeing and finishing expertise. English. Passes. [invited 2026-09-14] bare invite via custom-invite modal, modal name confirmed Mohamed Taha, sent by Claude at founder's instruction."
+
+
+## Achala Herath
+
+id: C194
+name: "Achala Herath"
+linkedin_url: https://www.linkedin.com/in/achala-herath/
+linkedin_account: Izgin
+company: "Paradise Textiles"
+role: "Head of Fabric Technical and Development"
+signal_type: profile_fit
+signal_multiplier: 1.0
+signal_source_url: "https://www.linkedin.com/company/paradisetextiles/people/"
+signal_excerpt: ""
+contact_role: buyer
+role_pts: 3
+tier: textile_mill
+size_band:
+assumptions_tested: [H1A5]
+validation_rationale: >
+  Leads fabric technical and development across Paradise Textiles' mills in China, Vietnam, Indonesia, Thailand, Egypt and Turkey; sees how microfibre capture fits into production at several sites.
+response_likelihood: 4
+likelihood_factors: "3rd degree (0) · multi-site technical head (+1)"
+channel: linkedin
+degree: 3rd+
+mutuals_count:
+active_last_30d: unknown
+open_to_work: false
+outreach_status: invited
+found_date: 2026-09-14
+notes: "[profile read 2026-09-15] details/experience: Head of Fabric Technical & Development, Paradise Textiles Aug 2026-present (4 yrs 7 mos at the company): regional sourcing, development and technical operations across China, Vietnam, Indonesia, Thailand, Egypt and Turkey. English. Passes. [invited 2026-09-14] bare invite via custom-invite modal, modal name confirmed Achala Herath, sent by Claude at founder's instruction."
+
+
+## Katrin Schuhen
+
+id: C195
+name: "Katrin Schuhen"
+linkedin_url: https://www.linkedin.com/in/dr-katrin-schuhen-ba27bb121/
+linkedin_account: Izgin
+company: "Wasser 3.0 gGmbH (Karlsruhe)"
+role: "Founder and Managing Director"
+signal_type: profile_fit
+signal_multiplier: 1.0
+signal_source_url: "https://www.linkedin.com/company/wasser-3-0-ggmbh/people/"
+signal_excerpt: ""
+contact_role: buyer
+role_pts: 3
+tier: filtration_vendor
+size_band:
+assumptions_tested: [H1A5]
+validation_rationale: >
+  Founded Wasser 3.0, a non-profit working on microplastic detection and removal from wastewater; strong fit, but her profile is written in German.
+response_likelihood: 3
+likelihood_factors: "3rd degree (0)"
+channel: linkedin
+degree: 3rd+
+mutuals_count:
+active_last_30d: unknown
+open_to_work: false
+outreach_status: off_scope
+found_date: 2026-09-14
+notes: "[audit off_scope 2026-09-15] Profile visit: Gründerin & Geschäftsführerin Wasser 3.0 gGmbH May 2020-present (Karlsruhe); author of two books on microplastics. Headline and role descriptions in German only: fails LR-B31a (profile not in English). Not invited unless the founder releases her by name."
+
+## John Krieg
+
+id: C196
+name: "John Krieg"
+linkedin_url: https://www.linkedin.com/in/john-krieg-54bb0612/
+linkedin_account: Izgin
+company: "Environmental Enhancements (Dartmouth, Nova Scotia)"
+role: "Owner"
+signal_type: profile_fit
+signal_multiplier: 1.0
+signal_source_url: "https://www.linkedin.com/company/environmental-enhancements/people/"
+signal_excerpt: ""
+contact_role: buyer
+role_pts: 3
+tier: filtration_vendor
+size_band:
+assumptions_tested: [H1A5]
+validation_rationale: >
+  Owns Environmental Enhancements, the maker of the LUV-R laundry microfibre filter; profile shows no dates, so tenure cannot be confirmed.
+response_likelihood: 3
+likelihood_factors: "3rd degree (0) · thin profile (0)"
+channel: linkedin
+degree: 3rd+
+mutuals_count:
+active_last_30d: unknown
+open_to_work: false
+outreach_status: pending
+found_date: 2026-09-14
+notes: "[profile read 2026-09-15] details/experience: Owner, Environmental Enhancements (no dates listed). English. HELD from invite: tenure not established on the profile (live-profile gate check 4); invite once a date or company source confirms he still runs it."
