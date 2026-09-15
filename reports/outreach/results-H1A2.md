@@ -8,7 +8,7 @@ _Generated 2026-09-15. Numbers are the funnel over contacts tagged H1A2._
 
 | channel | targeted | contacted | replied | qualified replied | reply rate |
 |---|---|---|---|---|---|
-| LinkedIn | 161 | 3 | 3 | 3 | 100.0% |
+| LinkedIn | 162 | 3 | 3 | 3 | 100.0% |
 | phone | 0 | 0 | 0 | 0 | — |
 
 _Channels are counted separately._
@@ -31,6 +31,7 @@ _Channels are counted separately._
 | C272 | Anant Ahuja | pending | — |
 | C273 | Lizzie Sumnall | pending | — |
 | C274 | Delia Ibanez | pending | — |
+| C275 | Pascal Brun | pending | — |
 | C11 | Öner Gündüz | invited | — |
 | C144 | H. Abdullah Mahmood | invited | — |
 | C145 | Ashwani Sharma | invited | — |

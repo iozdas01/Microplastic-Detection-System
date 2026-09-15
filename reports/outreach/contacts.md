@@ -3,7 +3,7 @@ purpose: The contact ledger — one card per person targeted, invited or intervi
 idea: industrial-process-data-infrastructure
 last_updated: 2026-09-14
 totals:
-  targeted: 269
+  targeted: 270
   invited: 208
   accepted: 44
   scheduled: 0
@@ -8404,3 +8404,33 @@ open_to_work: false
 outreach_status: pending
 found_date: 2026-09-14
 notes: "[profile read 2026-09-15] details/experience: Head of Sustainability, CSR, Sourcing and Product Compliance Desigual Jan 2025-present; Head of Sustainability and CSR Desigual Apr 2023-present (Barcelona); freelance sustainability consultant 2022-24. Titles and role text in English, some skills in Spanish; passes LR-B31a. Passes (tier brand). [queued 2026-09-15] Founder-supplied; LinkedIn weekly invite limit reached, invite when it resets (board task logged)."
+
+## Pascal Brun
+
+id: C275
+name: "Pascal Brun"
+linkedin_url: https://www.linkedin.com/in/pascal-brun-35718866/
+linkedin_account: Izgin
+company: "Zalando (brand and platform; Berlin); ex H&M"
+role: "VP Sustainability and D&I"
+signal_type: profile_fit
+signal_multiplier: 1.0
+signal_source_url: "founder-supplied URL 2026-09-15"
+signal_excerpt: ""
+contact_role: buyer
+role_pts: 3
+tier: brand
+size_band:
+assumptions_tested: [H1A2, H1A3]
+validation_rationale: >
+  Runs sustainability at Zalando after four years as H&M's head of sustainability and four more heading production sustainability from Hong Kong; knows what brands ask mills to measure and who pays for it.
+response_likelihood: 5
+likelihood_factors: "3rd degree (0) · VP sustainability, ex H&M production sustainability head (+2)"
+channel: linkedin
+degree: 3rd+
+mutuals_count:
+active_last_30d: unknown
+open_to_work: false
+outreach_status: pending
+found_date: 2026-09-14
+notes: "[profile read 2026-09-15] details/experience: VP Sustainability and D&I Zalando Sep 2023-present (Berlin); H&M 11 yrs 2 mos: Head of Sustainability 2019-23 (Stockholm), Head of Sustainability - Production 2016-19 (Hong Kong), Global Supply Chain Manager 2012-15; H&M Bangladesh country, supply chain and product manager 2007-12; Camaieu material and development manager 2001-07. English. Passes (tier brand). [queued 2026-09-15] Founder-supplied; LinkedIn weekly invite limit reached, invite when it resets (board task logged)."
