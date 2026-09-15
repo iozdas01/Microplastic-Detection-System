@@ -693,6 +693,39 @@ Rule check: 331 chars, violations none. Status at draft time: accepted.
 
 Rule check: 350 chars, violations none. Status at draft time: accepted.
 
+### Msg 2 — DRAFTED 2026-09-15 (Turkish, frequency stage, awaiting founder approval)
+
+His reply (2026-09-15 11:58, group thread, Turkish): "Merhaba, Rica ederim, Buyrun sorabilirsiniz" (hello, you are welcome, go ahead and ask). The founder wrote Msg 1 in Turkish, so Msg 2 stays in Turkish; the English version below is for the co-founder.
+
+**Primary (477 chars, Turkish, same founder preface as Gulfam's Msg 2 v3):**
+
+> Mehmet Bey, çok teşekkürler!
+>
+> Sudaki farklı kirleticilere ve partiküllere ait verilerin tüm yaş işlem sürecini nasıl optimize edebileceğini anlamaya çalışıyoruz. Boyahane tarafıyla ilgili iki sorumuz var:
+> 1. Su, boya banyosu veya kimyasallarla ilgili hangi ölçümleri hâlâ elle ya da laboratuvarda yapıyorsunuz?
+> 2. En son bir parti tamire ya da yeniden boyamaya girdiğinde sebebi neydi: su, kimyasal, hav ve lif birikimi mi, yoksa makine mi?
+>
+> Kısa cevaplar da çok yardımcı olur.
+
+**English version (for the co-founder, not sent):**
+
+> Mehmet Bey, thank you very much!
+>
+> We are trying to understand how data on the different contaminants and particles in the water could help optimise the whole wet process. Two questions from the dye house side:
+> 1. Which measurements on the water, the dye bath or the chemicals do you still do by hand or in the lab?
+> 2. The last time a lot went into correction or re-dyeing, what was behind it: water, chemicals, lint and fibre build-up, or the machine?
+>
+> Short answers help a lot too.
+
+| Question | Captures | Tests |
+|---|---|---|
+| Which water, dye bath or chemical readings are still manual or lab-sent | His map of the measurements that are not inline | Where sensors could sit |
+| What was behind the last correction or re-dye | Which component already cost the dye house rework; 'hav ve lif birikimi' (lint and fibre build-up) is the microfibre link | Which component hurts most, and whether fibre is one of them |
+
+Held for Msg 3: how often the lint filters on the dye machines are cleaned and whether lint has ever stopped a machine (microfibre frequency); what the last correction cost in time, water and chemicals; what inline meters or auto-dosing were tried. No money question (LR-B11).
+
+Rule check: 477 chars, no em dash, no call ask, no money question.
+
 ## C153 — Md. Sakhawat Hossain
 
 ### Msg 1 — DRAFTED 2026-09-15 (LR-B33)
