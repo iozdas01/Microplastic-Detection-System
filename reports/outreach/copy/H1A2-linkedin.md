@@ -186,7 +186,9 @@ Held for Msg 3 and the call (LR-B11, no money question in Msg 2): what the last 
 
 Rule check: 351 chars, violations none. No product reveal beyond Msg 1, no call ask, no money question.
 
-### Msg 2 — REDRAFTED 2026-09-15 (frequency stage, whole wet process, awaiting founder approval)
+#### Superseded 2026-09-15 by v3 below
+
+Msg 2 v2, REDRAFTED 2026-09-15 (frequency stage, whole wet process, awaiting founder approval)
 
 Founder steer 2026-09-15: ask about pain across every component measured in wet processing (chemicals, water, shade), not microfibres alone, because the longer-range idea is sensors across the process feeding one optimisation layer. The optimisation layer is not mentioned (no product reveal).
 
@@ -210,6 +212,24 @@ Founder steer 2026-09-15: ask about pain across every component measured in wet 
 Held for Msg 3 and the call (LR-B11): what the last rewash or failed lot cost and who absorbed it; what the last outside lab or wastewater test cost and who paid (H1A3); the last time a brand or auditor asked for a microfibre or wastewater figure (H1A2); whether he would fund a pilot (H1A6, call only).
 
 Rule check: 394 chars, violations none. No product reveal beyond Msg 1, no call ask, no money question.
+
+### Msg 2 — REDRAFTED 2026-09-15 v3 (founder preface + two questions, awaiting founder approval)
+
+Founder steer 2026-09-15: open with the research frame (how contaminant and particle data could optimise the whole wet process), then ask two questions. The frame is the founder's own wording; the questions stay past-behaviour so the answer is his experience, not a verdict on the frame.
+
+**Primary (416 chars, English, close: open invitation left unspent per LR-M8):**
+
+> Gulfam hi! Thank you, that's very kind.
+>
+> We are trying to understand how data on the different contaminants and particles in the water could help optimise the whole wet process. Two questions from the washing side:
+> 1. Which readings on chemicals, water or particles do you still check by hand or send to a lab?
+> 2. Which of those caused your last rewash or failed lot, and what went wrong?
+>
+> Short answers are perfect.
+
+Moved to Msg 3: what inline meters or auto-dosing they tried and what stuck (LR-M3 graveyard). Held for Msg 3 and the call (LR-B11): what the last rewash or failed lot cost and who absorbed it; what the last lab or wastewater test cost and who paid (H1A3); the last time a brand or auditor asked for a microfibre or wastewater figure (H1A2); whether he would fund a pilot (H1A6, call only).
+
+Rule check: 416 chars, violations none. No call ask, no money question.
 
 ## C37 — [SUPERSEDED 2026-09-14] Erdal Gülcan (earlier draft)
 
