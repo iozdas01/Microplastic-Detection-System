@@ -5,7 +5,7 @@ last_updated: 2026-09-14
 totals:
   targeted: 191
   invited: 139
-  accepted: 27
+  accepted: 26
   scheduled: 0
   done: 5
   no_reply: 0
@@ -1724,9 +1724,9 @@ degree: 3rd+
 mutuals_count: 
 active_last_30d: unknown
 open_to_work: false
-outreach_status: accepted
+outreach_status: off_scope
 found_date: 2026-09-13
-notes: "[profile read 2026-09-13] details/experience: Técnico Tinturaria / dye specialist at Lavfafe (Lavandaria Tinturaria) Jun 2023-present; Pizarro S.A. 2001-23, head of samples development section. Passes. 3rd degree. [invited 2026-09-13] bare invite via custom-invite modal, name confirmed Nuno Macieira, sent by Claude at founder's instruction. [accepted 2026-09-14] connection accepted (seen in Connections list, recently added). [msg1 drafted 2026-09-14] Msg 1 permission ask drafted from a fresh details/experience snapshot; inbox searched, no prior thread. Copy in copy/H1A2-linkedin.md. [held 2026-09-14] Profile text is Portuguese only; per LR-B31a no Msg 1 goes out and the 2026-09-14 draft is withdrawn from the archive. Founder may release by name. [released 2026-09-14] Founder instruction: message everyone who accepts, regardless of title or profile language. Practitioner answers count for the mechanism half of H1A2 only (LR-B12), not for H1A3/H1A6. [msg1 drafted 2026-09-14] LR-B33 shape, English, after founder release; snapshot 2026-09-14."
+notes: "[profile read 2026-09-13] details/experience: Técnico Tinturaria / dye specialist at Lavfafe (Lavandaria Tinturaria) Jun 2023-present; Pizarro S.A. 2001-23, head of samples development section. Passes. 3rd degree. [invited 2026-09-13] bare invite via custom-invite modal, name confirmed Nuno Macieira, sent by Claude at founder's instruction. [accepted 2026-09-14] connection accepted (seen in Connections list, recently added). [msg1 drafted 2026-09-14] Msg 1 permission ask drafted from a fresh details/experience snapshot; inbox searched, no prior thread. Copy in copy/H1A2-linkedin.md. [held 2026-09-14] Profile text is Portuguese only; per LR-B31a no Msg 1 goes out and the 2026-09-14 draft is withdrawn from the archive. Founder may release by name. [released 2026-09-14] Founder instruction: message everyone who accepts, regardless of title or profile language. Practitioner answers count for the mechanism half of H1A2 only (LR-B12), not for H1A3/H1A6. [msg1 drafted 2026-09-14] LR-B33 shape, English, after founder release; snapshot 2026-09-14. [audit off_scope 2026-09-14] Founder cut him: Portuguese-only profile, does not read English (LR-B31a). Draft withdrawn; do not message."
 
 ## Paulo Lopes
 

@@ -398,7 +398,7 @@ Rule check: 292 chars, violations none. Status at draft time: accepted (released
 
 Rule check: 368 chars, violations none. Status at draft time: accepted (released 2026-09-14).
 
-## C57 — Nuno Macieira
+## C57 — [REMOVED 2026-09-14 — founder cut, profile not in English] Nuno Macieira
 
 ### Msg 1 — DRAFTED 2026-09-14 (LR-B33; founder released)
 
