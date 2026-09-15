@@ -710,3 +710,259 @@ Rule check: 350 chars, violations none. Status at draft time: accepted.
 | "follow-up of dyeing and finishing" | Experience → '7. FOLLOW UP OF DYEING AND FINISHING.' |
 
 Rule check: 364 chars, violations none. Status at draft time: accepted.
+
+## C28 — Rohit K.
+
+### Msg 1 — DRAFTED 2026-09-15 (LR-B33, accepted 2026-09-15)
+
+**Primary (302 chars, English):**
+
+> Rohit hi! Thanks for connecting.
+>
+> My co-founder and I are building a microplastic detection system for textile wet processing. You answer the Higg, ZDHC and brand sustainability questionnaires for Shahi, we would love to learn from your experience. Would you be open to some questions for our research?
+
+| Claim in message | Profile read on the card |
+|---|---|
+| "You answer the Higg, ZDHC and brand sustainability questionnaires for Shahi" | role text: fills Higg Index and third-party questionnaires, ZDHC, SAC, STWI programmes |
+
+Rule check: 302 chars, violations none. Inbox (LR-B25): conversation list 2026-09-15 shows no thread.
+
+## C74 — Muhammad Omer Ahmed
+
+### Msg 1 — DRAFTED 2026-09-15 (LR-B33, accepted 2026-09-15)
+
+**Primary (300 chars, English):**
+
+> Muhammad hi! Thanks for connecting.
+>
+> My co-founder and I are building a microplastic detection system for textile wet processing. You lead Anwar Textile Mills and its knit garment exports from Karachi, we would love to learn from your experience. Would you be open to some questions for our research?
+
+| Claim in message | Profile read on the card |
+|---|---|
+| "You lead Anwar Textile Mills and its knit garment exports from Karachi" | Managing Director Anwar Textile Mills Jul 2022-present (knit garments exporter) |
+
+Rule check: 300 chars, violations none. Inbox (LR-B25): conversation list 2026-09-15 shows no thread.
+
+## C143 — Nabeel Aman
+
+### Msg 1 — DRAFTED 2026-09-15 (LR-B33, accepted 2026-09-15)
+
+**Primary (287 chars, English):**
+
+> Nabeel hi! Thanks for connecting.
+>
+> My co-founder and I are building a microplastic detection system for textile wet processing. You run washing at AGI Denim and the laundry at Azgard Nine, we would love to learn from your experience. Would you be open to some questions for our research?
+
+| Claim in message | Profile read on the card |
+|---|---|
+| "You run washing at AGI Denim and the laundry at Azgard Nine" | GM Washing AGI Denim Mar 2024-present; GM Laundry Azgard Nine Apr 2026-present |
+
+Rule check: 287 chars, violations none. Inbox (LR-B25): conversation list 2026-09-15 shows no thread.
+
+## C149 — Ahmet Çağrı Dalkır
+
+### Msg 1 — DRAFTED 2026-09-15 (LR-B33, accepted 2026-09-15)
+
+**Primary (323 chars, English):**
+
+> Ahmet hi! Thanks for connecting.
+>
+> My co-founder and I are building a microplastic detection system for textile wet processing. You have run Atlas Denim in Adana since 2019 after directing United Denim's factory in Port Said, we would love to learn from your experience. Would you be open to some questions for our research?
+
+| Claim in message | Profile read on the card |
+|---|---|
+| "You have run Atlas Denim in Adana since 2019 after directing United Denim's factory in Port Said" | General Manager Atlas Denim Sep 2019-present; Factory Director United Denim 2014-17 (Port Said) |
+
+Rule check: 323 chars, violations none. Inbox (LR-B25): conversation list 2026-09-15 shows no thread.
+
+## C157 — Saif Khan
+
+### Msg 1 — DRAFTED 2026-09-15 (LR-B33, accepted 2026-09-15)
+
+**Primary (302 chars, English):**
+
+> Saif hi! Thanks for connecting.
+>
+> My co-founder and I are building a microplastic detection system for textile wet processing. You run the laundry at Soorty after managing laundries at Artistic Milliners, we would love to learn from your experience. Would you be open to some questions for our research?
+
+| Claim in message | Profile read on the card |
+|---|---|
+| "You run the laundry at Soorty after managing laundries at Artistic Milliners" | GM Soorty Aug 2020-present, Laundry Manager 2017-20; Artistic Milliners laundry manager 2013-15, DGM 2015-17 |
+
+Rule check: 302 chars, violations none. Inbox (LR-B25): conversation list 2026-09-15 shows no thread.
+
+## C187 — Thomas Cobb
+
+### Msg 1 — DRAFTED 2026-09-15 (LR-B33, accepted 2026-09-15)
+
+**Primary (307 chars, English):**
+
+> Thomas hi! Thanks for connecting.
+>
+> My co-founder and I are building a microplastic detection system for textile wet processing. You lead engineering, science and product at Xeros after almost ten years there, we would love to learn from your experience. Would you be open to some questions for our research?
+
+| Claim in message | Profile read on the card |
+|---|---|
+| "You lead engineering, science and product at Xeros after almost ten years there" | Technical Director Xeros Feb 2024-present; 9 yrs 9 mos at Xeros; engineering, science, IP, product |
+
+Rule check: 307 chars, violations none. Inbox (LR-B25): conversation list 2026-09-15 shows no thread.
+
+## C188 — Sertug D.
+
+### Msg 1 — DRAFTED 2026-09-15 (LR-B33, accepted 2026-09-14)
+
+**Primary (318 chars, English):**
+
+> Sertug hi! Thanks for connecting.
+>
+> My co-founder and I are building a microplastic detection system for textile wet processing. You sell Xeros technology internationally after leading sales at TACHYON Textile Machinery, we would love to learn from your experience. Would you be open to some questions for our research?
+
+| Claim in message | Profile read on the card |
+|---|---|
+| "You sell Xeros technology internationally after leading sales at TACHYON Textile Machinery" | International Sales Manager Xeros Apr 2025-present; Marketing and Sales Director TACHYON Textile Machinery 2024-25 |
+
+Rule check: 318 chars, violations none. Inbox (LR-B25): conversation list 2026-09-15 shows no thread.
+
+## C194 — Achala Herath
+
+### Msg 1 — DRAFTED 2026-09-15 (LR-B33, accepted 2026-09-15)
+
+**Primary (326 chars, English):**
+
+> Achala hi! Thanks for connecting.
+>
+> My co-founder and I are building a microplastic detection system for textile wet processing. You lead fabric development for Paradise Textiles across mills in China, Vietnam, Egypt and Turkey, we would love to learn from your experience. Would you be open to some questions for our research?
+
+| Claim in message | Profile read on the card |
+|---|---|
+| "You lead fabric development for Paradise Textiles across mills in China, Vietnam, Egypt and Turkey" | Head of Fabric Technical & Development Aug 2026-present: development and technical operations across China, Vietnam, Indonesia, Thailand, Egypt, Turkey |
+
+Rule check: 326 chars, violations none. Inbox (LR-B25): conversation list 2026-09-15 shows no thread.
+
+## C212 — Marcus Hartmann
+
+### Msg 1 — DRAFTED 2026-09-15 (LR-B33, accepted 2026-09-15)
+
+**Primary (357 chars, English):**
+
+> Marcus hi! Thanks for connecting.
+>
+> My co-founder and I are building a microplastic detection system for textile wet processing. You took over sustainability operations at H&M Group this summer after leading public affairs and sustainability for North Europe, we would love to learn from your experience. Would you be open to some questions for our research?
+
+| Claim in message | Profile read on the card |
+|---|---|
+| "You took over sustainability operations at H&M Group this summer after leading public affairs and sustainability for North Europe" | Head of Sustainability Operations H&M Group Jun 2026-present; Head of Public Affairs & Sustainability North Europe 2022-26 |
+
+Rule check: 357 chars, violations none. Inbox (LR-B25): conversation list 2026-09-15 shows no thread.
+
+## C214 — Nick Farrar
+
+### Msg 1 — DRAFTED 2026-09-15 (LR-B33, accepted 2026-09-15)
+
+**Primary (308 chars, English):**
+
+> Nick hi! Thanks for connecting.
+>
+> My co-founder and I are building a microplastic detection system for textile wet processing. Your team at Primark covers water stewardship and sustainable chemicals management, we would love to learn from your experience. Would you be open to some questions for our research?
+
+| Claim in message | Profile read on the card |
+|---|---|
+| "Your team at Primark covers water stewardship and sustainable chemicals management" | role text lists sustainable chemicals management and water stewardship |
+
+Rule check: 308 chars, violations none. Inbox (LR-B25): conversation list 2026-09-15 shows no thread.
+
+## C216 — Ricardo Martins da Silva
+
+### Msg 1 — DRAFTED 2026-09-15 (LR-B33, accepted 2026-09-14)
+
+**Primary (297 chars, English):**
+
+> Ricardo hi! Thanks for connecting.
+>
+> My co-founder and I are building a microplastic detection system for textile wet processing. You run Tintex and chair Portugal's textile and clothing association, we would love to learn from your experience. Would you be open to some questions for our research?
+
+| Claim in message | Profile read on the card |
+|---|---|
+| "You run Tintex and chair Portugal's textile and clothing association" | CEO Tintex 2020-present; President of the Board ATP Sep 2025-present |
+
+Rule check: 297 chars, violations none. Inbox (LR-B25): conversation list 2026-09-15 shows no thread.
+
+## C230 — Esref Tuncer
+
+### Msg 1 — DRAFTED 2026-09-15 (LR-B33, accepted 2026-09-14)
+
+**Primary (297 chars, English):**
+
+> Esref hi! Thanks for connecting.
+>
+> My co-founder and I are building a microplastic detection system for textile wet processing. You run a plant at ISKO in Bursa after more than thirty years in denim, we would love to learn from your experience. Would you be open to some questions for our research?
+
+| Claim in message | Profile read on the card |
+|---|---|
+| "You run a plant at ISKO in Bursa after more than thirty years in denim" | Plant Manager ISKO Mar 2018-present (Bursa); Sanko Holding denim 1994-2018 |
+
+Rule check: 297 chars, violations none. Inbox (LR-B25): conversation list 2026-09-15 shows no thread.
+
+## C250 — Irina Morosanu
+
+### Msg 1 — DRAFTED 2026-09-15 (LR-B33, accepted 2026-09-15)
+
+**Primary (307 chars, English):**
+
+> Irina hi! Thanks for connecting.
+>
+> My co-founder and I are building a microplastic detection system for textile wet processing. You have run finishing, the lab and the dye house at Ístex for over twenty years, we would love to learn from your experience. Would you be open to some questions for our research?
+
+| Claim in message | Profile read on the card |
+|---|---|
+| "You have run finishing, the lab and the dye house at Ístex for over twenty years" | Manager Ístex Mar 2004-present; head of textile finishing and quality manager (laboratory, dyeing house) |
+
+Rule check: 307 chars, violations none. Inbox (LR-B25): conversation list 2026-09-15 shows no thread.
+
+## C256 — Sophie Rycroft
+
+### Msg 1 — DRAFTED 2026-09-15 (LR-B33, accepted 2026-09-15)
+
+**Primary (311 chars, English):**
+
+> Sophie hi! Thanks for connecting.
+>
+> My co-founder and I are building a microplastic detection system for textile wet processing. You lead ESG, sourcing and quality for Debenhams Group after eleven years at Boohoo, we would love to learn from your experience. Would you be open to some questions for our research?
+
+| Claim in message | Profile read on the card |
+|---|---|
+| "You lead ESG, sourcing and quality for Debenhams Group after eleven years at Boohoo" | ESG, Sourcing & Quality Director Debenhams Group Jul 2024-present; Boohoo Group 2013-24 |
+
+Rule check: 311 chars, violations none. Inbox (LR-B25): conversation list 2026-09-15 shows no thread.
+
+## C261 — António Faria
+
+### Msg 1 — DRAFTED 2026-09-15 (LR-B33, accepted 2026-09-15)
+
+**Primary (321 chars, English):**
+
+> António hi! Thanks for connecting.
+>
+> My co-founder and I are building a microplastic detection system for textile wet processing. You run the knitwear dyehouse at Ronutex after a year as its quality and environment manager, we would love to learn from your experience. Would you be open to some questions for our research?
+
+| Claim in message | Profile read on the card |
+|---|---|
+| "You run the knitwear dyehouse at Ronutex after a year as its quality and environment manager" | Dyehouse Manager Ronutex Jan 2026-present (knitwear dyeing plant); Quality and Environment Manager Feb-Dec 2025 |
+
+Rule check: 321 chars, violations none. Inbox (LR-B25): conversation list 2026-09-15 shows no thread.
+
+## C268 — Wayne Gerber
+
+### Msg 1 — DRAFTED 2026-09-15 (LR-B33, accepted 2026-09-15)
+
+**Primary (335 chars, English):**
+
+> Wayne hi! Thanks for connecting.
+>
+> My co-founder and I are building a microplastic detection system for textile wet processing. You ran a Shaw plant in Dalton for three years before leading operational excellence for its carpet business, we would love to learn from your experience. Would you be open to some questions for our research?
+
+| Claim in message | Profile read on the card |
+|---|---|
+| "You ran a Shaw plant in Dalton for three years before leading operational excellence for its carpet business" | Plant Manager Shaw 2023-25 (Dalton); Carpet Transformation Productivity Leader 2025-26; Director of Operational Excellence Sep 2026-present |
+
+Rule check: 335 chars, violations none. Inbox (LR-B25): conversation list 2026-09-15 shows no thread.

@@ -4,16 +4,16 @@
 -->
 ---
 idea: industrial-process-data-infrastructure
-generated: 2026-09-15T18:05Z
-active_hunch: H1, H3, H5
+generated: 2026-09-15T18:18Z
+active_hunch: H1
 active_assumption: H1A2
 sources:
   belief: 6093ca2c2aa3
-  lineage: acb22ff76116
+  lineage: 106efa1c4c1f
   graph: dc26afa254e8
   evidence: 2b7513b3f76d
   offerings: absent
-  contacts: 9d4c62053f81
+  contacts: b7c120325131
 ---
 
 # industrial-process-data-infrastructure — session brief
@@ -28,21 +28,11 @@ _Founder-owned. Changes only with explicit confirmation._ → `input-context/bel
 
 ## Hunch
 
-_3 hunches active in parallel — one per entry point into the same transaction. They share a root assumption; evidence on one door does not transfer to the other._
-
 **H1 — active** · `untested`
 
 In the fashion industry there are no sensors to detect microplastics, so a textile manufacturer cannot see or act on the microfibers their process releases; a real-time sensor with a feedback loop is the first product, and the first sensor feedback loop is the beachhead.
 
-**H3 — active** · `untested`
-
-Large California community water systems must report microplastics in source water (Phase 1, 2023-2025) and treated water (Phase 2, from autumn 2026), and the only way to produce the number is a periodic lab analysis, so utilities carry a compliance obligation with no way to see the number move between samples or act…
-
-**H5 — active** · `untested`
-
-Membrane manufacturers lose warranty claims and reputation to fouling they did not cause, and have no inline way to show a plant which foulant reached the membrane, so their R&D groups would pay for inline particle characterisation as a warranty and diagnostic tool.
-
-Lineage: H2 superseded · H4 proposed
+Lineage: H2 superseded · H3 superseded · H4 proposed · H5 superseded
 
 ## Assumptions — top 3 of 14 by the declared ranking
 

@@ -26,14 +26,11 @@ _Channels are counted separately._
 | C184 | Max Pennington | invited | — |
 | C185 | David Dillman | invited | — |
 | C186 | Neil Austin | invited | — |
-| C187 | Thomas Cobb | invited | — |
-| C188 | Sertug D. | invited | — |
 | C189 | Nathaniel Banks | invited | — |
 | C190 | Yidian Liu | invited | — |
 | C191 | Yueyu Yao | invited | — |
 | C192 | Anshu Malika G. | invited | — |
 | C193 | Mohamed Taha | invited | — |
-| C194 | Achala Herath | invited | — |
 | C197 | Richard Liang | invited | — |
 | C198 | Peter Brackmann | invited | — |
 | C200 | Sebastian Porkert | invited | — |
@@ -44,6 +41,9 @@ _Channels are counted separately._
 | C207 | William Lipps | invited | — |
 | C208 | Jean-Luc Madier | invited | — |
 | C210 | Dominik Elsaesser | invited | — |
+| C187 | Thomas Cobb | accepted | — |
+| C188 | Sertug D. | accepted | — |
+| C194 | Achala Herath | accepted | — |
 | C176 | Paul (surname not recorded) | done | completed |
 | C177 | Mark (surname not recorded) | done | completed |
 | C178 | Martin (surname not recorded) | done | completed |

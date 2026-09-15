@@ -1,9 +1,9 @@
 ---
 purpose: The hunch lineage — every hunch ever held under the belief, its status, and which one is active.
 belief_file: input-context/belief.md
-active_hunch: [H1, H3, H5]
+active_hunch: [H1]
 next_hunch_id: H6
-last_updated: 2026-09-14
+last_updated: 2026-09-15
 ---
 
 # Hunch Lineage
@@ -153,7 +153,13 @@ weeks later.
 
 ## H3
 
-status: active
+status: superseded
+superseded: 2026-09-15
+superseded_reason: >-
+  Founder decision 2026-09-15, un-falsified: "we should stay within fashion industry i
+  think thats what we should do the other hunches are crowding everything right now".
+  Outreach to California drinking-water utilities stops; contacts already invited stay in the ledger and the question
+  may be revived.
 validation_status: untested
 activated_on: 2026-09-14
 parent_hunch: null
@@ -268,7 +274,13 @@ their share, so both sides need a number they cannot currently produce inline.
 
 ## H5
 
-status: active
+status: superseded
+superseded: 2026-09-15
+superseded_reason: >-
+  Founder decision 2026-09-15, un-falsified: "we should stay within fashion industry i
+  think thats what we should do the other hunches are crowding everything right now".
+  Outreach to membrane manufacturers stops; contacts already invited stay in the ledger and the question
+  may be revived.
 validation_status: untested
 activated_on: 2026-09-14
 parent_hunch: null

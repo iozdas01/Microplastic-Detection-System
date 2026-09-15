@@ -25,18 +25,15 @@ _Channels are counted separately._
 | C266 | Jaime Gregorio | pending | — |
 | C269 | Tim Crabtree | pending | — |
 | C271 | John Hughes | pending | — |
-| C143 | Nabeel Aman | invited | — |
 | C144 | H. Abdullah Mahmood | invited | — |
 | C145 | Ashwani Sharma | invited | — |
 | C146 | Ihtsham Rasheed | invited | — |
 | C148 | Murat Yürür | invited | — |
-| C149 | Ahmet Çağrı Dalkır | invited | — |
 | C150 | Moniruzzaman | invited | — |
 | C151 | Kamran Ali | invited | — |
 | C152 | Tariq Nadeem Siddiqui | invited | — |
 | C154 | Mahasin Zaman | invited | — |
 | C156 | Engr. Mamun-ur-Rashid | invited | — |
-| C157 | Saif Khan | invited | — |
 | C158 | Ikram Bashir | invited | — |
 | C161 | Akhtar Qureshi | invited | — |
 | C162 | Abdul Rasheed | invited | — |
@@ -50,27 +47,22 @@ _Channels are counted separately._
 | C172 | Mohd. Joynal Abedin | invited | — |
 | C173 | M. S. Arefin | invited | — |
 | C174 | Omar Ali | invited | — |
-| C216 | Ricardo Martins da Silva | invited | — |
 | C217 | Randy Henderson | invited | — |
 | C218 | Tim Shirley | invited | — |
 | C219 | Allen Tate | invited | — |
 | C22 | Erkan Ekici | invited | — |
 | C220 | Glen Cox | invited | — |
 | C229 | Jonathan Brook | invited | — |
-| C230 | Esref Tuncer | invited | — |
 | C231 | Christian Rojo | invited | — |
 | C232 | Kassie Cartee | invited | — |
 | C235 | Sivantha Samarasinghe | invited | — |
 | C236 | Ligia Elena Taveras Hiciano | invited | — |
-| C250 | Irina Morosanu | invited | — |
 | C251 | Lee Arrandale | invited | — |
 | C252 | Joe Fogle | invited | — |
-| C261 | António Faria | invited | — |
 | C262 | Conceição Tedim | invited | — |
 | C264 | James Williams | invited | — |
 | C265 | Dean Hedden | invited | — |
 | C267 | Chris Yarbrough | invited | — |
-| C268 | Wayne Gerber | invited | — |
 | C270 | Randy Myers | invited | — |
 | C54 | Moshiur Rahman | invited | — |
 | C56 | Engr. Abdul Aziz | invited | — |
@@ -82,15 +74,23 @@ _Channels are counted separately._
 | C67 | Uğur Bahadır | invited | — |
 | C72 | Mark Mawson | invited | — |
 | C73 | Mike Collins | invited | — |
-| C74 | Muhammad Omer Ahmed | invited | — |
 | C75 | Satish Kejriwal | invited | — |
 | C76 | Jonathan Whitehead | invited | — |
+| C143 | Nabeel Aman | accepted | — |
 | C147 | Mehmet Çetin | accepted | — |
+| C149 | Ahmet Çağrı Dalkır | accepted | — |
 | C153 | Md. Sakhawat Hossain | accepted | — |
+| C157 | Saif Khan | accepted | — |
 | C16 | Mehmet Adıyaman | accepted | — |
 | C18 | Ahmet Kaleli | accepted | — |
+| C216 | Ricardo Martins da Silva | accepted | — |
+| C230 | Esref Tuncer | accepted | — |
+| C250 | Irina Morosanu | accepted | — |
+| C261 | António Faria | accepted | — |
+| C268 | Wayne Gerber | accepted | — |
 | C6 | Halil Kutluğ Kabahasanoğlu | accepted | — |
 | C7 | Murat Terlemez | accepted | — |
+| C74 | Muhammad Omer Ahmed | accepted | — |
 | C55 | Gulfam S. | replied | — |
 | C14 | Yalçın Çelik | off_scope | — |
 | C15 | Yasin Taştekin | off_scope | — |

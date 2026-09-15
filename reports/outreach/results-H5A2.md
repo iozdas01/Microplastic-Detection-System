@@ -18,26 +18,17 @@ _Channels are counted separately._
 | id | name | status | call stage |
 |---|---|---|---|
 | C96 | Roman Boda | pending | — |
-| C101 | Guillem Gilabert-Oriol | invited | — |
-| C102 | Ezzat Sabry | invited | — |
 | C103 | Péter Groszmann | invited | — |
 | C104 | Raúl Santos | invited | — |
 | C110 | Peter Metcalfe | invited | — |
 | C111 | Edna Banerjee | invited | — |
 | C112 | Mithilesh Tripathi | invited | — |
-| C113 | Dominik Schreier | invited | — |
 | C119 | Nagahisa Sato | invited | — |
-| C120 | Mohamed Zaki | invited | — |
 | C121 | Michael Baez | invited | — |
-| C122 | Damon Shreeves | invited | — |
-| C128 | Karthi Pitchaikani | invited | — |
 | C129 | Saad Fadel | invited | — |
-| C130 | Ahmad Radwan | invited | — |
-| C131 | Atsuo Kumano | invited | — |
 | C136 | Don Walter | invited | — |
 | C137 | Christoph Thiemig | invited | — |
 | C141 | Raul Cirerol | invited | — |
-| C142 | Manikandan V | invited | — |
 | C209 | Joris de Grooth | invited | — |
 | C241 | Mahdi Fathizadeh | invited | — |
 | C242 | Vishal Bansal | invited | — |
@@ -49,6 +40,15 @@ _Channels are counted separately._
 | C94 | Avinash Bhusanurmath | invited | — |
 | C95 | Keith Andes | invited | — |
 | C97 | Tamotsu Kitade | invited | — |
+| C101 | Guillem Gilabert-Oriol | accepted | — |
+| C102 | Ezzat Sabry | accepted | — |
+| C113 | Dominik Schreier | accepted | — |
+| C120 | Mohamed Zaki | accepted | — |
+| C122 | Damon Shreeves | accepted | — |
+| C128 | Karthi Pitchaikani | accepted | — |
+| C130 | Ahmad Radwan | accepted | — |
+| C131 | Atsuo Kumano | accepted | — |
+| C142 | Manikandan V | accepted | — |
 | C105 | Evangeline Lau Wei Yong | off_scope | — |
 | C114 | Marcelo Bueno Prado | off_scope | — |
 | C123 | Bailey Schantz | off_scope | — |

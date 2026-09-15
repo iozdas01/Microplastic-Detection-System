@@ -29,18 +29,15 @@ _Channels are counted separately._
 | C269 | Tim Crabtree | pending | — |
 | C271 | John Hughes | pending | — |
 | C11 | Öner Gündüz | invited | — |
-| C143 | Nabeel Aman | invited | — |
 | C144 | H. Abdullah Mahmood | invited | — |
 | C145 | Ashwani Sharma | invited | — |
 | C146 | Ihtsham Rasheed | invited | — |
 | C148 | Murat Yürür | invited | — |
-| C149 | Ahmet Çağrı Dalkır | invited | — |
 | C150 | Moniruzzaman | invited | — |
 | C151 | Kamran Ali | invited | — |
 | C152 | Tariq Nadeem Siddiqui | invited | — |
 | C154 | Mahasin Zaman | invited | — |
 | C156 | Engr. Mamun-ur-Rashid | invited | — |
-| C157 | Saif Khan | invited | — |
 | C158 | Ikram Bashir | invited | — |
 | C161 | Akhtar Qureshi | invited | — |
 | C162 | Abdul Rasheed | invited | — |
@@ -56,10 +53,7 @@ _Channels are counted separately._
 | C174 | Omar Ali | invited | — |
 | C20 | Hüseyin Çınar | invited | — |
 | C21 | Yasemin Mecit Akdaş | invited | — |
-| C212 | Marcus Hartmann | invited | — |
 | C213 | Katharine Beacham | invited | — |
-| C214 | Nick Farrar | invited | — |
-| C216 | Ricardo Martins da Silva | invited | — |
 | C217 | Randy Henderson | invited | — |
 | C218 | Tim Shirley | invited | — |
 | C219 | Allen Tate | invited | — |
@@ -69,7 +63,6 @@ _Channels are counted separately._
 | C227 | Duncan Crook | invited | — |
 | C228 | Roz Adams | invited | — |
 | C229 | Jonathan Brook | invited | — |
-| C230 | Esref Tuncer | invited | — |
 | C231 | Christian Rojo | invited | — |
 | C232 | Kassie Cartee | invited | — |
 | C235 | Sivantha Samarasinghe | invited | — |
@@ -77,23 +70,18 @@ _Channels are counted separately._
 | C238 | Guy Morgan | invited | — |
 | C239 | Magnus D. | invited | — |
 | C24 | B. Hande Tezer | invited | — |
-| C250 | Irina Morosanu | invited | — |
 | C251 | Lee Arrandale | invited | — |
 | C252 | Joe Fogle | invited | — |
 | C255 | Marc Killbourn | invited | — |
-| C256 | Sophie Rycroft | invited | — |
 | C257 | Jacqueline Nixon | invited | — |
 | C258 | Darren Ainsworth | invited | — |
 | C259 | Ann-Marie C. | invited | — |
 | C260 | Duncan Crewe | invited | — |
-| C261 | António Faria | invited | — |
 | C262 | Conceição Tedim | invited | — |
 | C264 | James Williams | invited | — |
 | C265 | Dean Hedden | invited | — |
 | C267 | Chris Yarbrough | invited | — |
-| C268 | Wayne Gerber | invited | — |
 | C270 | Randy Myers | invited | — |
-| C28 | Rohit K. | invited | — |
 | C29 | Calvin Huelsman | invited | — |
 | C31 | Okan Çakıcı | invited | — |
 | C33 | Sercan Yaz | invited | — |
@@ -115,20 +103,32 @@ _Channels are counted separately._
 | C71 | Katie Coates | invited | — |
 | C72 | Mark Mawson | invited | — |
 | C73 | Mike Collins | invited | — |
-| C74 | Muhammad Omer Ahmed | invited | — |
 | C75 | Satish Kejriwal | invited | — |
 | C76 | Jonathan Whitehead | invited | — |
 | C10 | Bekir Boyacı | accepted | — |
+| C143 | Nabeel Aman | accepted | — |
 | C147 | Mehmet Çetin | accepted | — |
+| C149 | Ahmet Çağrı Dalkır | accepted | — |
 | C153 | Md. Sakhawat Hossain | accepted | — |
+| C157 | Saif Khan | accepted | — |
 | C16 | Mehmet Adıyaman | accepted | — |
 | C18 | Ahmet Kaleli | accepted | — |
+| C212 | Marcus Hartmann | accepted | — |
+| C214 | Nick Farrar | accepted | — |
+| C216 | Ricardo Martins da Silva | accepted | — |
+| C230 | Esref Tuncer | accepted | — |
+| C250 | Irina Morosanu | accepted | — |
+| C256 | Sophie Rycroft | accepted | — |
+| C261 | António Faria | accepted | — |
+| C268 | Wayne Gerber | accepted | — |
+| C28 | Rohit K. | accepted | — |
 | C30 | Önder Ertürk | accepted | — |
 | C40 | Erdogan Sekerci | accepted | — |
 | C44 | Ronit Basu | accepted | — |
 | C48 | Ayesha Navaid Anwar | accepted | — |
 | C6 | Halil Kutluğ Kabahasanoğlu | accepted | — |
 | C7 | Murat Terlemez | accepted | — |
+| C74 | Muhammad Omer Ahmed | accepted | — |
 | C55 | Gulfam S. | replied | — |
 | C58 | Paulo Lopes | replied | — |
 | C59 | Faizan Pasha | replied | — |

@@ -18,19 +18,14 @@ _Channels are counted separately._
 | id | name | status | call stage |
 |---|---|---|---|
 | C100 | Doug Campbell | invited | — |
-| C106 | David W. Pedersen | invited | — |
-| C107 | Yu Melanie Madsen | invited | — |
 | C108 | Kevin Caldwell | invited | — |
 | C115 | Stephanie Vogel | invited | — |
 | C116 | Joe Mouawad | invited | — |
 | C117 | Angela O'Brien | invited | — |
 | C124 | Hélène Baribeau | invited | — |
-| C125 | Ryan Bye | invited | — |
 | C126 | Clement Do | invited | — |
-| C133 | Scott G. | invited | — |
 | C134 | Jim Barrett | invited | — |
 | C135 | Craig Miller | invited | — |
-| C140 | Megan Tran | invited | — |
 | C78 | Theresa Slifko | invited | — |
 | C79 | Monica Tirtadidjaja | invited | — |
 | C80 | Joyce Lehman | invited | — |
@@ -41,6 +36,11 @@ _Channels are counted separately._
 | C85 | Kaushal Parbhoo | invited | — |
 | C98 | Luisa Sangines-Uriarte | invited | — |
 | C99 | Surjit Saini | invited | — |
+| C106 | David W. Pedersen | accepted | — |
+| C107 | Yu Melanie Madsen | accepted | — |
+| C125 | Ryan Bye | accepted | — |
+| C133 | Scott G. | accepted | — |
+| C140 | Megan Tran | accepted | — |
 | C86 | Anselmo Collins | accepted | — |
 | C109 | Laura Hidas | off_scope | — |
 | C118 | Lucy Croy | off_scope | — |

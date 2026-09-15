@@ -5,7 +5,7 @@ last_updated: 2026-09-14
 totals:
   targeted: 266
   invited: 208
-  accepted: 14
+  accepted: 44
   scheduled: 0
   done: 5
   no_reply: 0
@@ -852,9 +852,9 @@ degree: 2nd
 mutuals_count: 
 active_last_30d: unknown
 open_to_work: false
-outreach_status: invited
+outreach_status: accepted
 found_date: 2026-09-13
-notes: "[profile read 2026-09-13] details/experience: Environmental Sustainability Manager Shahi Exports Sep 2019-present (7 yrs; 12 yrs at company); role text: addresses sustainability queries, fills Higg Index and third-party questionnaires, ZDHC, SAC, STWI programmes. Passes; surname hidden on profile. [invited 2026-09-13] bare invite via custom-invite modal, name confirmed Rohit K., sent by Claude at founder's instruction. [held 2026-09-14] Title outside the budget-holder ICP the founders set for H1A2/H1A3/H1A6 on 2026-09-14 (cannot sign for spend). Not interviewed unless the founder releases them by name; no Msg 1. [released 2026-09-14] Founder instruction: message everyone who accepts, regardless of title or profile language. Practitioner answers count for the mechanism half of H1A2 only (LR-B12), not for H1A3/H1A6."
+notes: "[profile read 2026-09-13] details/experience: Environmental Sustainability Manager Shahi Exports Sep 2019-present (7 yrs; 12 yrs at company); role text: addresses sustainability queries, fills Higg Index and third-party questionnaires, ZDHC, SAC, STWI programmes. Passes; surname hidden on profile. [invited 2026-09-13] bare invite via custom-invite modal, name confirmed Rohit K., sent by Claude at founder's instruction. [held 2026-09-14] Title outside the budget-holder ICP the founders set for H1A2/H1A3/H1A6 on 2026-09-14 (cannot sign for spend). Not interviewed unless the founder releases them by name; no Msg 1. [released 2026-09-14] Founder instruction: message everyone who accepts, regardless of title or profile language. Practitioner answers count for the mechanism half of H1A2 only (LR-B12), not for H1A3/H1A6. [accepted 2026-09-15] seen in the Connections list 2026-09-15 (connected 2026-09-15). [msg1 drafted 2026-09-15] LR-B33 shape from the recorded profile read; inbox list 2026-09-15 shows no thread (LR-B25). Copy in copy/H1A2-linkedin.md. Awaiting founder approval."
 
 ## Calvin Huelsman
 
@@ -2237,9 +2237,9 @@ degree: 3rd+
 mutuals_count: 
 active_last_30d: unknown
 open_to_work: false
-outreach_status: invited
+outreach_status: accepted
 found_date: 2026-09-14
-notes: "[profile read 2026-09-14] details/experience: Managing Director Anwar Textile Mills Jul 2022-present; business partner Anchor Casual Clothing 2014-present; DM Industries 2014-22. English profile. Passes on title; confirm in-house dyeing on the first reply. [invited 2026-09-14] bare invite via custom-invite modal, name confirmed Muhammad Omer Ahmed, sent by Claude at founder's instruction."
+notes: "[profile read 2026-09-14] details/experience: Managing Director Anwar Textile Mills Jul 2022-present; business partner Anchor Casual Clothing 2014-present; DM Industries 2014-22. English profile. Passes on title; confirm in-house dyeing on the first reply. [invited 2026-09-14] bare invite via custom-invite modal, name confirmed Muhammad Omer Ahmed, sent by Claude at founder's instruction. [accepted 2026-09-15] seen in the Connections list 2026-09-15 (connected 2026-09-15). [msg1 drafted 2026-09-15] LR-B33 shape from the recorded profile read; inbox list 2026-09-15 shows no thread (LR-B25). Copy in copy/H1A2-linkedin.md. Awaiting founder approval."
 
 ## Satish Kejriwal
 
@@ -3080,9 +3080,9 @@ degree: 3rd+
 mutuals_count:
 active_last_30d: unknown
 open_to_work: false
-outreach_status: invited
+outreach_status: accepted
 found_date: 2026-09-14
-notes: "[profile read 2026-09-14] details/experience: R&D Leader on Water Treatment, DuPont Apr 2019-present (Tarragona): leads the application development engineers' team since 2023; R&D technical leader for municipal drinking water and desalination since 2019; European Desalination Society board member Feb 2026-present. English. Passes. [invited 2026-09-14] bare invite via custom-invite modal, modal name confirmed Guillem Gilabert-Oriol, sent by Claude at founder's instruction; Pending confirmed."
+notes: "[profile read 2026-09-14] details/experience: R&D Leader on Water Treatment, DuPont Apr 2019-present (Tarragona): leads the application development engineers' team since 2023; R&D technical leader for municipal drinking water and desalination since 2019; European Desalination Society board member Feb 2026-present. English. Passes. [invited 2026-09-14] bare invite via custom-invite modal, modal name confirmed Guillem Gilabert-Oriol, sent by Claude at founder's instruction; Pending confirmed. [accepted 2026-09-15] seen in the Connections list 2026-09-15 (connected 2026-09-15). No Msg 1: H3 and H5 superseded 2026-09-15 (founder: stay within fashion)."
 
 
 ## Ezzat Sabry
@@ -3111,9 +3111,9 @@ degree: 3rd+
 mutuals_count:
 active_last_30d: unknown
 open_to_work: false
-outreach_status: invited
+outreach_status: accepted
 found_date: 2026-09-14
-notes: "[profile read 2026-09-14] details/experience: Technical Service Engineer Toray Membrane Middle East Aug 2023-present (Cairo); O&M manager TAQA Water 2022-23; O&M manager Ridgewood for Water Desalination 2010-21. English. Passes. [invited 2026-09-14] bare invite via custom-invite modal, modal name confirmed Ezzat Sabry, sent by Claude at founder's instruction; Pending confirmed."
+notes: "[profile read 2026-09-14] details/experience: Technical Service Engineer Toray Membrane Middle East Aug 2023-present (Cairo); O&M manager TAQA Water 2022-23; O&M manager Ridgewood for Water Desalination 2010-21. English. Passes. [invited 2026-09-14] bare invite via custom-invite modal, modal name confirmed Ezzat Sabry, sent by Claude at founder's instruction; Pending confirmed. [accepted 2026-09-15] seen in the Connections list 2026-09-15 (connected 2026-09-15). No Msg 1: H3 and H5 superseded 2026-09-15 (founder: stay within fashion)."
 
 
 ## Péter Groszmann
@@ -3234,9 +3234,9 @@ degree: 3rd+
 mutuals_count:
 active_last_30d: unknown
 open_to_work: false
-outreach_status: invited
+outreach_status: accepted
 found_date: 2026-09-14
-notes: "[profile read 2026-09-14] details/experience: General Manager Las Virgenes MWD Jan 2013-present (chief executive, reports to 5-member elected board); past president WateReuse California 2022-present; Executive Director of Operations Irvine Ranch Water District 2010-13; LA County DPW before. English. Passes. LVMWD is on the Board's preliminary Phase 1 list (press coverage of SB 1422 selection). [invited 2026-09-14] bare invite via custom-invite modal, modal name confirmed David W. Pedersen, sent by Claude at founder's instruction; Pending confirmed."
+notes: "[profile read 2026-09-14] details/experience: General Manager Las Virgenes MWD Jan 2013-present (chief executive, reports to 5-member elected board); past president WateReuse California 2022-present; Executive Director of Operations Irvine Ranch Water District 2010-13; LA County DPW before. English. Passes. LVMWD is on the Board's preliminary Phase 1 list (press coverage of SB 1422 selection). [invited 2026-09-14] bare invite via custom-invite modal, modal name confirmed David W. Pedersen, sent by Claude at founder's instruction; Pending confirmed. [accepted 2026-09-14] seen in the Connections list 2026-09-15 (connected 2026-09-14). No Msg 1: H3 and H5 superseded 2026-09-15 (founder: stay within fashion)."
 
 
 ## Yu Melanie Madsen
@@ -3265,9 +3265,9 @@ degree: 3rd+
 mutuals_count:
 active_last_30d: unknown
 open_to_work: false
-outreach_status: invited
+outreach_status: accepted
 found_date: 2026-09-14
-notes: "[profile read 2026-09-14] details/experience: Water Quality Superintendent City of Sacramento Aug 2026-present; Quality Manager 2024-26; WQ Chemist 2018-24; TestAmerica lab supervisor/department manager 2014-18. English. Passes; 8 yrs at the utility though new in current title. SB 1422 selection not verified. [invited 2026-09-14] bare invite via custom-invite modal, modal name confirmed Yu Melanie Madsen, sent by Claude at founder's instruction; Pending confirmed."
+notes: "[profile read 2026-09-14] details/experience: Water Quality Superintendent City of Sacramento Aug 2026-present; Quality Manager 2024-26; WQ Chemist 2018-24; TestAmerica lab supervisor/department manager 2014-18. English. Passes; 8 yrs at the utility though new in current title. SB 1422 selection not verified. [invited 2026-09-14] bare invite via custom-invite modal, modal name confirmed Yu Melanie Madsen, sent by Claude at founder's instruction; Pending confirmed. [accepted 2026-09-14] seen in the Connections list 2026-09-15 (connected 2026-09-14). No Msg 1: H3 and H5 superseded 2026-09-15 (founder: stay within fashion)."
 
 
 ## Kevin Caldwell
@@ -3450,9 +3450,9 @@ degree: 3rd+
 mutuals_count:
 active_last_30d: unknown
 open_to_work: false
-outreach_status: invited
+outreach_status: accepted
 found_date: 2026-09-14
-notes: "[profile read 2026-09-14] details/experience: Director Global Engineering MANN+HUMMEL Jun 2024-present (Wiesbaden); Senior Manager Engineering EMEA 2023-24; Manager Engineering Europe 2021-23; Engineering Manager MBR 2018-21; 11 yrs at the company. English headline. Passes. [invited 2026-09-14] bare invite via custom-invite modal, modal name confirmed Dominik Schreier, sent by Claude at founder's instruction; Pending confirmed."
+notes: "[profile read 2026-09-14] details/experience: Director Global Engineering MANN+HUMMEL Jun 2024-present (Wiesbaden); Senior Manager Engineering EMEA 2023-24; Manager Engineering Europe 2021-23; Engineering Manager MBR 2018-21; 11 yrs at the company. English headline. Passes. [invited 2026-09-14] bare invite via custom-invite modal, modal name confirmed Dominik Schreier, sent by Claude at founder's instruction; Pending confirmed. [accepted 2026-09-14] seen in the Connections list 2026-09-15 (connected 2026-09-14). No Msg 1: H3 and H5 superseded 2026-09-15 (founder: stay within fashion)."
 
 
 ## Marcelo Bueno Prado
@@ -3665,9 +3665,9 @@ degree: 3rd+
 mutuals_count:
 active_last_30d: unknown
 open_to_work: false
-outreach_status: invited
+outreach_status: accepted
 found_date: 2026-09-14
-notes: "[profile read 2026-09-14] details/experience: Technical Services General Manager Middle East & Egypt, NanoH2O (LG) Mar 2024-present; Technical Service Engineer 2017-present; projects engineer Veolia Water 2011-17. English. Passes. [invited 2026-09-14] bare invite via custom-invite modal, modal name confirmed Mohamed Zaki, sent by Claude at founder's instruction; Pending confirmed."
+notes: "[profile read 2026-09-14] details/experience: Technical Services General Manager Middle East & Egypt, NanoH2O (LG) Mar 2024-present; Technical Service Engineer 2017-present; projects engineer Veolia Water 2011-17. English. Passes. [invited 2026-09-14] bare invite via custom-invite modal, modal name confirmed Mohamed Zaki, sent by Claude at founder's instruction; Pending confirmed. [accepted 2026-09-15] seen in the Connections list 2026-09-15 (connected 2026-09-15). No Msg 1: H3 and H5 superseded 2026-09-15 (founder: stay within fashion)."
 
 
 ## Michael Baez
@@ -3727,9 +3727,9 @@ degree: 3rd+
 mutuals_count:
 active_last_30d: unknown
 open_to_work: false
-outreach_status: invited
+outreach_status: accepted
 found_date: 2026-09-14
-notes: "[profile read 2026-09-14] details/experience: ZeeWeed Products Specialist Veolia Water Tech Jul 2025-present; Domain Specialist UF/MBR Veolia WTS Sep 2022-present; ZeeWeed Products Specialist SUEZ WTS 2019-22 (Andover UK). English. Passes. [invited 2026-09-14] bare invite via custom-invite modal, modal name confirmed Damon Shreeves, sent by Claude at founder's instruction; Pending confirmed."
+notes: "[profile read 2026-09-14] details/experience: ZeeWeed Products Specialist Veolia Water Tech Jul 2025-present; Domain Specialist UF/MBR Veolia WTS Sep 2022-present; ZeeWeed Products Specialist SUEZ WTS 2019-22 (Andover UK). English. Passes. [invited 2026-09-14] bare invite via custom-invite modal, modal name confirmed Damon Shreeves, sent by Claude at founder's instruction; Pending confirmed. [accepted 2026-09-15] seen in the Connections list 2026-09-15 (connected 2026-09-15). No Msg 1: H3 and H5 superseded 2026-09-15 (founder: stay within fashion)."
 
 
 ## Bailey Schantz
@@ -3819,9 +3819,9 @@ degree: 3rd+
 mutuals_count:
 active_last_30d: unknown
 open_to_work: false
-outreach_status: invited
+outreach_status: accepted
 found_date: 2026-09-14
-notes: "[profile read 2026-09-14] details/experience: Water Quality Regulatory & Compliance Manager SCV Water Aug 2026-present (manages WQ and regulatory compliance across distribution, groundwater treatment, disinfection, potable/recycled; reporting and submittals to the SWRCB); 8 yrs 9 mos at SCV Water. English. Passes. SB 1422 selection not verified. [invited 2026-09-14] bare invite via custom-invite modal, modal name confirmed Ryan Bye, sent by Claude at founder's instruction; Pending confirmed."
+notes: "[profile read 2026-09-14] details/experience: Water Quality Regulatory & Compliance Manager SCV Water Aug 2026-present (manages WQ and regulatory compliance across distribution, groundwater treatment, disinfection, potable/recycled; reporting and submittals to the SWRCB); 8 yrs 9 mos at SCV Water. English. Passes. SB 1422 selection not verified. [invited 2026-09-14] bare invite via custom-invite modal, modal name confirmed Ryan Bye, sent by Claude at founder's instruction; Pending confirmed. [accepted 2026-09-15] seen in the Connections list 2026-09-15 (connected 2026-09-15). No Msg 1: H3 and H5 superseded 2026-09-15 (founder: stay within fashion)."
 
 
 ## Clement Do
@@ -3911,9 +3911,9 @@ degree: 3rd+
 mutuals_count:
 active_last_30d: unknown
 open_to_work: false
-outreach_status: invited
+outreach_status: accepted
 found_date: 2026-09-14
-notes: "[profile read 2026-09-14] details/experience: Global Technical Support Manager Water & Wastewater (X-Flow), Pentair Apr 2025-present (Enschede); Manager Sales Support 2022-25; Sales Support Engineer 2013-22; 13 yrs at Pentair. English. Passes. [invited 2026-09-14] bare invite via custom-invite modal, modal name confirmed Karthi Pitchaikani, sent by Claude at founder's instruction; Pending confirmed."
+notes: "[profile read 2026-09-14] details/experience: Global Technical Support Manager Water & Wastewater (X-Flow), Pentair Apr 2025-present (Enschede); Manager Sales Support 2022-25; Sales Support Engineer 2013-22; 13 yrs at Pentair. English. Passes. [invited 2026-09-14] bare invite via custom-invite modal, modal name confirmed Karthi Pitchaikani, sent by Claude at founder's instruction; Pending confirmed. [accepted 2026-09-14] seen in the Connections list 2026-09-15 (connected 2026-09-14). No Msg 1: H3 and H5 superseded 2026-09-15 (founder: stay within fashion)."
 
 
 ## Saad Fadel
@@ -3973,9 +3973,9 @@ degree: 2nd
 mutuals_count:
 active_last_30d: unknown
 open_to_work: false
-outreach_status: invited
+outreach_status: accepted
 found_date: 2026-09-14
-notes: "[profile read 2026-09-14] details/experience: Technical Business Development General Manager TOYOBO MC Corporation Aug 2023-present (Riyadh): regional go-to-market across KSA, UAE, Oman, Kuwait; distributor training and joint customer calls; vendor qualification of CTA hollow-fibre membranes in 8 countries. English. Passes (title in list: BD manager desalination). [invited 2026-09-14] bare invite via custom-invite modal, modal name confirmed Ahmad Radwan, sent by Claude at founder's instruction; Pending confirmed."
+notes: "[profile read 2026-09-14] details/experience: Technical Business Development General Manager TOYOBO MC Corporation Aug 2023-present (Riyadh): regional go-to-market across KSA, UAE, Oman, Kuwait; distributor training and joint customer calls; vendor qualification of CTA hollow-fibre membranes in 8 countries. English. Passes (title in list: BD manager desalination). [invited 2026-09-14] bare invite via custom-invite modal, modal name confirmed Ahmad Radwan, sent by Claude at founder's instruction; Pending confirmed. [accepted 2026-09-15] seen in the Connections list 2026-09-15 (connected 2026-09-15). No Msg 1: H3 and H5 superseded 2026-09-15 (founder: stay within fashion)."
 
 
 ## Atsuo Kumano
@@ -4004,9 +4004,9 @@ degree: 3rd+
 mutuals_count:
 active_last_30d: unknown
 open_to_work: false
-outreach_status: invited
+outreach_status: accepted
 found_date: 2026-09-14
-notes: "[profile read 2026-09-14] details/experience: Senior Technical Advisor Toyobo MC Corporation Jul 2024-present (Osaka); Senior Technical Adviser Toyobo Co. 2020-24; earlier General Manager of the Membrane R&D Center. Profile carries English entries alongside Japanese; passes the LR-B31a English check on the English role titles. [invited 2026-09-14] bare invite via custom-invite modal, modal name confirmed Atsuo Kumano, sent by Claude at founder's instruction; Pending confirmed."
+notes: "[profile read 2026-09-14] details/experience: Senior Technical Advisor Toyobo MC Corporation Jul 2024-present (Osaka); Senior Technical Adviser Toyobo Co. 2020-24; earlier General Manager of the Membrane R&D Center. Profile carries English entries alongside Japanese; passes the LR-B31a English check on the English role titles. [invited 2026-09-14] bare invite via custom-invite modal, modal name confirmed Atsuo Kumano, sent by Claude at founder's instruction; Pending confirmed. [accepted 2026-09-14] seen in the Connections list 2026-09-15 (connected 2026-09-14). No Msg 1: H3 and H5 superseded 2026-09-15 (founder: stay within fashion)."
 
 
 ## Ryoichi Takada
@@ -4065,9 +4065,9 @@ degree: 3rd+
 mutuals_count:
 active_last_30d: unknown
 open_to_work: false
-outreach_status: invited
+outreach_status: accepted
 found_date: 2026-09-14
-notes: "[profile read 2026-09-14] details/experience: Water Quality Manager IRWD Mar 2023-present (lab analyses, QA/QC, regulatory requirements and reporting, water quality projects, staff); 4 yrs at IRWD. English. Passes. SB 1422 selection not verified. [invited 2026-09-14] bare invite via custom-invite modal, modal name confirmed Scott G., sent by Claude at founder's instruction; Pending confirmed."
+notes: "[profile read 2026-09-14] details/experience: Water Quality Manager IRWD Mar 2023-present (lab analyses, QA/QC, regulatory requirements and reporting, water quality projects, staff); 4 yrs at IRWD. English. Passes. SB 1422 selection not verified. [invited 2026-09-14] bare invite via custom-invite modal, modal name confirmed Scott G., sent by Claude at founder's instruction; Pending confirmed. [accepted 2026-09-14] seen in the Connections list 2026-09-15 (connected 2026-09-14). No Msg 1: H3 and H5 superseded 2026-09-15 (founder: stay within fashion)."
 
 
 ## Jim Barrett
@@ -4280,9 +4280,9 @@ degree: 3rd+
 mutuals_count:
 active_last_30d: unknown
 open_to_work: false
-outreach_status: invited
+outreach_status: accepted
 found_date: 2026-09-14
-notes: "[profile read 2026-09-14] details/experience: Laboratory Services Manager San Francisco Water Department Jan 2018-present (Millbrae); Supervising Chemist SFPUC Feb 2010-present; Operations Manager TestAmerica 1995-2009. English. Passes. [invited 2026-09-14] bare invite via custom-invite modal, modal name confirmed Megan Tran, sent by Claude at founder's instruction; Pending confirmed."
+notes: "[profile read 2026-09-14] details/experience: Laboratory Services Manager San Francisco Water Department Jan 2018-present (Millbrae); Supervising Chemist SFPUC Feb 2010-present; Operations Manager TestAmerica 1995-2009. English. Passes. [invited 2026-09-14] bare invite via custom-invite modal, modal name confirmed Megan Tran, sent by Claude at founder's instruction; Pending confirmed. [accepted 2026-09-14] seen in the Connections list 2026-09-15 (connected 2026-09-14). No Msg 1: H3 and H5 superseded 2026-09-15 (founder: stay within fashion)."
 
 
 ## Raul Cirerol
@@ -4342,9 +4342,9 @@ degree: 3rd+
 mutuals_count:
 active_last_30d: unknown
 open_to_work: false
-outreach_status: invited
+outreach_status: accepted
 found_date: 2026-09-14
-notes: "[profile read 2026-09-14] details/experience: Group Leader Regional Technical Support Hydranautics May 2018-present (Chennai); 23+ yrs in water: membrane system design, pre/post-sales support, pilot studies, team management. English. Passes. Sixth Hydranautics card: added in place of Roman Boda, whose invite is blocked behind an email check. [invited 2026-09-14] bare invite via custom-invite modal, modal name confirmed Manikandan V, sent by Claude at founder's instruction; Pending confirmed."
+notes: "[profile read 2026-09-14] details/experience: Group Leader Regional Technical Support Hydranautics May 2018-present (Chennai); 23+ yrs in water: membrane system design, pre/post-sales support, pilot studies, team management. English. Passes. Sixth Hydranautics card: added in place of Roman Boda, whose invite is blocked behind an email check. [invited 2026-09-14] bare invite via custom-invite modal, modal name confirmed Manikandan V, sent by Claude at founder's instruction; Pending confirmed. [accepted 2026-09-14] seen in the Connections list 2026-09-15 (connected 2026-09-14). No Msg 1: H3 and H5 superseded 2026-09-15 (founder: stay within fashion)."
 
 ## Nabeel Aman
 
@@ -4372,9 +4372,9 @@ degree: 2nd
 mutuals_count:
 active_last_30d: unknown
 open_to_work: false
-outreach_status: invited
+outreach_status: accepted
 found_date: 2026-09-14
-notes: "[profile read 2026-09-14] details/experience: General Manager Laundry Azgard Nine Apr 2026-present (Lahore); General Manager Washing AGI Denim Mar 2024-present, DGM Washing 2023-24 (Karachi); AGM GWP Azgard Nine 2021-23. English. Passes. [invited 2026-09-14] bare invite via custom-invite modal, modal name confirmed Nabeel Aman, sent by Claude at founder's instruction."
+notes: "[profile read 2026-09-14] details/experience: General Manager Laundry Azgard Nine Apr 2026-present (Lahore); General Manager Washing AGI Denim Mar 2024-present, DGM Washing 2023-24 (Karachi); AGM GWP Azgard Nine 2021-23. English. Passes. [invited 2026-09-14] bare invite via custom-invite modal, modal name confirmed Nabeel Aman, sent by Claude at founder's instruction. [accepted 2026-09-15] seen in the Connections list 2026-09-15 (connected 2026-09-15). [msg1 drafted 2026-09-15] LR-B33 shape from the recorded profile read; inbox list 2026-09-15 shows no thread (LR-B25). Copy in copy/H1A2-linkedin.md. Awaiting founder approval."
 
 
 ## H. Abdullah Mahmood
@@ -4558,9 +4558,9 @@ degree: 2nd
 mutuals_count:
 active_last_30d: unknown
 open_to_work: false
-outreach_status: invited
+outreach_status: accepted
 found_date: 2026-09-14
-notes: "[profile read 2026-09-14] details/experience: General Manager Atlas Denim Tekstil Sep 2019-present (Adana), Factory Manager 2017-19; Factory Director United Denim 2014-17 (Port Said); DNM Spinning, Weaving and Dyeing (Eroğlu Group) 2011-14. Role titles in English. Passes. [invited 2026-09-14] bare invite via custom-invite modal, modal name confirmed Ahmet Çağrı Dalkır, sent by Claude at founder's instruction."
+notes: "[profile read 2026-09-14] details/experience: General Manager Atlas Denim Tekstil Sep 2019-present (Adana), Factory Manager 2017-19; Factory Director United Denim 2014-17 (Port Said); DNM Spinning, Weaving and Dyeing (Eroğlu Group) 2011-14. Role titles in English. Passes. [invited 2026-09-14] bare invite via custom-invite modal, modal name confirmed Ahmet Çağrı Dalkır, sent by Claude at founder's instruction. [accepted 2026-09-15] seen in the Connections list 2026-09-15 (connected 2026-09-15). [msg1 drafted 2026-09-15] LR-B33 shape from the recorded profile read; inbox list 2026-09-15 shows no thread (LR-B25). Copy in copy/H1A2-linkedin.md. Awaiting founder approval."
 
 
 ## Moniruzzaman
@@ -4805,9 +4805,9 @@ degree: 3rd+
 mutuals_count:
 active_last_30d: unknown
 open_to_work: false
-outreach_status: invited
+outreach_status: accepted
 found_date: 2026-09-14
-notes: "[profile read 2026-09-14] details/experience: General Manager Soorty Enterprises Aug 2020-present, Laundry Manager 2017-20 (Karachi); Artistic Milliners DGM 2015-17 and laundry manager 2013-15; Rajby before. English. Passes. [invited 2026-09-14] bare invite via custom-invite modal, modal name confirmed Saif Khan, sent by Claude at founder's instruction."
+notes: "[profile read 2026-09-14] details/experience: General Manager Soorty Enterprises Aug 2020-present, Laundry Manager 2017-20 (Karachi); Artistic Milliners DGM 2015-17 and laundry manager 2013-15; Rajby before. English. Passes. [invited 2026-09-14] bare invite via custom-invite modal, modal name confirmed Saif Khan, sent by Claude at founder's instruction. [accepted 2026-09-15] seen in the Connections list 2026-09-15 (connected 2026-09-15). [msg1 drafted 2026-09-15] LR-B33 shape from the recorded profile read; inbox list 2026-09-15 shows no thread (LR-B25). Copy in copy/H1A2-linkedin.md. Awaiting founder approval."
 
 
 ## Ikram Bashir
@@ -5751,9 +5751,9 @@ degree: 3rd+
 mutuals_count:
 active_last_30d: unknown
 open_to_work: false
-outreach_status: invited
+outreach_status: accepted
 found_date: 2026-09-14
-notes: "[profile read 2026-09-15] details/experience: Technical Director Xeros Feb 2024-present, 9 yrs 9 mos at Xeros: technical leadership across engineering, science, IP, product and application development; inventor on 6 granted core patents. English. Passes. [invited 2026-09-14] bare invite via custom-invite modal, modal name confirmed Thomas Cobb, sent by Claude at founder's instruction. [invite resent 2026-09-15] The custom-invite modal still offered Send without a note despite the earlier invited mark, so the earlier invite had not landed; name-checked and sent."
+notes: "[profile read 2026-09-15] details/experience: Technical Director Xeros Feb 2024-present, 9 yrs 9 mos at Xeros: technical leadership across engineering, science, IP, product and application development; inventor on 6 granted core patents. English. Passes. [invited 2026-09-14] bare invite via custom-invite modal, modal name confirmed Thomas Cobb, sent by Claude at founder's instruction. [invite resent 2026-09-15] The custom-invite modal still offered Send without a note despite the earlier invited mark, so the earlier invite had not landed; name-checked and sent. [accepted 2026-09-15] seen in the Connections list 2026-09-15 (connected 2026-09-15). [msg1 drafted 2026-09-15] LR-B33 shape from the recorded profile read; inbox list 2026-09-15 shows no thread (LR-B25). Copy in copy/H1A2-linkedin.md. Awaiting founder approval."
 
 
 ## Sertug D.
@@ -5782,9 +5782,9 @@ degree: 2nd
 mutuals_count:
 active_last_30d: unknown
 open_to_work: false
-outreach_status: invited
+outreach_status: accepted
 found_date: 2026-09-14
-notes: "[profile read 2026-09-15] details/experience: International Sales Manager Xeros Apr 2025-present (remote); Marketing and Sales Director TACHYON Textile Machinery 2024-25. English. Passes. [invited 2026-09-14] bare invite via custom-invite modal, modal name confirmed Sertug D., sent by Claude at founder's instruction."
+notes: "[profile read 2026-09-15] details/experience: International Sales Manager Xeros Apr 2025-present (remote); Marketing and Sales Director TACHYON Textile Machinery 2024-25. English. Passes. [invited 2026-09-14] bare invite via custom-invite modal, modal name confirmed Sertug D., sent by Claude at founder's instruction. [accepted 2026-09-14] seen in the Connections list 2026-09-15 (connected 2026-09-14). [msg1 drafted 2026-09-15] LR-B33 shape from the recorded profile read; inbox list 2026-09-15 shows no thread (LR-B25). Copy in copy/H1A2-linkedin.md. Awaiting founder approval."
 
 
 ## Nathaniel Banks
@@ -5968,9 +5968,9 @@ degree: 3rd+
 mutuals_count:
 active_last_30d: unknown
 open_to_work: false
-outreach_status: invited
+outreach_status: accepted
 found_date: 2026-09-14
-notes: "[profile read 2026-09-15] details/experience: Head of Fabric Technical & Development, Paradise Textiles Aug 2026-present (4 yrs 7 mos at the company): regional sourcing, development and technical operations across China, Vietnam, Indonesia, Thailand, Egypt and Turkey. English. Passes. [invited 2026-09-14] bare invite via custom-invite modal, modal name confirmed Achala Herath, sent by Claude at founder's instruction."
+notes: "[profile read 2026-09-15] details/experience: Head of Fabric Technical & Development, Paradise Textiles Aug 2026-present (4 yrs 7 mos at the company): regional sourcing, development and technical operations across China, Vietnam, Indonesia, Thailand, Egypt and Turkey. English. Passes. [invited 2026-09-14] bare invite via custom-invite modal, modal name confirmed Achala Herath, sent by Claude at founder's instruction. [accepted 2026-09-15] seen in the Connections list 2026-09-15 (connected 2026-09-15). [msg1 drafted 2026-09-15] LR-B33 shape from the recorded profile read; inbox list 2026-09-15 shows no thread (LR-B25). Copy in copy/H1A2-linkedin.md. Awaiting founder approval."
 
 
 ## Katrin Schuhen
@@ -6519,9 +6519,9 @@ degree: 2nd
 mutuals_count:
 active_last_30d: unknown
 open_to_work: false
-outreach_status: invited
+outreach_status: accepted
 found_date: 2026-09-14
-notes: "[profile read 2026-09-15] details/experience: Head of Sustainability Operations, H&M Group, Jun 2026-present; Head of Public Affairs & Sustainability North Europe 2022-26; Mondelez corporate affairs before. English profile. Passes (tier brand). [invited 2026-09-14] bare invite via custom-invite modal, name confirmed Marcus Hartmann, sent by Claude at founder's instruction (English profile checked first)."
+notes: "[profile read 2026-09-15] details/experience: Head of Sustainability Operations, H&M Group, Jun 2026-present; Head of Public Affairs & Sustainability North Europe 2022-26; Mondelez corporate affairs before. English profile. Passes (tier brand). [invited 2026-09-14] bare invite via custom-invite modal, name confirmed Marcus Hartmann, sent by Claude at founder's instruction (English profile checked first). [accepted 2026-09-15] seen in the Connections list 2026-09-15 (connected 2026-09-15). [msg1 drafted 2026-09-15] LR-B33 shape from the recorded profile read; inbox list 2026-09-15 shows no thread (LR-B25). Copy in copy/H1A2-linkedin.md. Awaiting founder approval."
 
 ## Katharine Beacham
 
@@ -6579,9 +6579,9 @@ degree: 2nd
 mutuals_count:
 active_last_30d: unknown
 open_to_work: false
-outreach_status: invited
+outreach_status: accepted
 found_date: 2026-09-14
-notes: "[profile read 2026-09-15] details/experience: Global Head of Environmental Sustainability, Primark, Dec 2020-present; role text lists carbon, biodiversity, circularity, sustainable chemicals management, water stewardship, responsible materials, environmental compliance and reporting (CSRD, CSDDD, EUDR). English profile. Passes (tier brand). [invited 2026-09-14] bare invite via custom-invite modal, name confirmed Nick Farrar, sent by Claude at founder's instruction (English profile checked first)."
+notes: "[profile read 2026-09-15] details/experience: Global Head of Environmental Sustainability, Primark, Dec 2020-present; role text lists carbon, biodiversity, circularity, sustainable chemicals management, water stewardship, responsible materials, environmental compliance and reporting (CSRD, CSDDD, EUDR). English profile. Passes (tier brand). [invited 2026-09-14] bare invite via custom-invite modal, name confirmed Nick Farrar, sent by Claude at founder's instruction (English profile checked first). [accepted 2026-09-15] seen in the Connections list 2026-09-15 (connected 2026-09-15). [msg1 drafted 2026-09-15] LR-B33 shape from the recorded profile read; inbox list 2026-09-15 shows no thread (LR-B25). Copy in copy/H1A2-linkedin.md. Awaiting founder approval."
 
 ## Johanna J.
 
@@ -6639,9 +6639,9 @@ degree: 2nd
 mutuals_count:
 active_last_30d: unknown
 open_to_work: false
-outreach_status: invited
+outreach_status: accepted
 found_date: 2026-09-14
-notes: "[profile read 2026-09-15] details/experience: CEO Tintex Textiles 2020-present, Head of Operations 2017-20, Head of Coating & Technical Textiles 2015-17; President of the Board ATP Sep 2025-present, board member 2022-25. English. Passes. [invited 2026-09-14] bare invite via custom-invite modal, modal name confirmed Ricardo Martins da Silva, sent by Claude at founder's instruction."
+notes: "[profile read 2026-09-15] details/experience: CEO Tintex Textiles 2020-present, Head of Operations 2017-20, Head of Coating & Technical Textiles 2015-17; President of the Board ATP Sep 2025-present, board member 2022-25. English. Passes. [invited 2026-09-14] bare invite via custom-invite modal, modal name confirmed Ricardo Martins da Silva, sent by Claude at founder's instruction. [accepted 2026-09-14] seen in the Connections list 2026-09-15 (connected 2026-09-14). [msg1 drafted 2026-09-15] LR-B33 shape from the recorded profile read; inbox list 2026-09-15 shows no thread (LR-B25). Copy in copy/H1A2-linkedin.md. Awaiting founder approval."
 
 
 ## Randy Henderson
@@ -7064,9 +7064,9 @@ degree: 3rd+
 mutuals_count:
 active_last_30d: unknown
 open_to_work: false
-outreach_status: invited
+outreach_status: accepted
 found_date: 2026-09-14
-notes: "[profile read 2026-09-15] details/experience: Plant Manager, ISKO, Mar 2018-present, Bursa; Müdür, Denim, Sanko Holding 1994-2018. Headline and current role in English. Passes. [invited 2026-09-14] bare invite via custom-invite modal, name confirmed Esref TUNCER, sent by Claude at founder's instruction (English profile checked first)."
+notes: "[profile read 2026-09-15] details/experience: Plant Manager, ISKO, Mar 2018-present, Bursa; Müdür, Denim, Sanko Holding 1994-2018. Headline and current role in English. Passes. [invited 2026-09-14] bare invite via custom-invite modal, name confirmed Esref TUNCER, sent by Claude at founder's instruction (English profile checked first). [accepted 2026-09-14] seen in the Connections list 2026-09-15 (connected 2026-09-14). [msg1 drafted 2026-09-15] LR-B33 shape from the recorded profile read; inbox list 2026-09-15 shows no thread (LR-B25). Copy in copy/H1A2-linkedin.md. Awaiting founder approval."
 
 ## Christian Rojo
 
@@ -7671,9 +7671,9 @@ degree: 3rd+
 mutuals_count:
 active_last_30d: unknown
 open_to_work: false
-outreach_status: invited
+outreach_status: accepted
 found_date: 2026-09-14
-notes: "[profile read 2026-09-15] details/experience: Manager Ístex hf. Mar 2004-present (26 yrs 9 mos at Ístex); head of textile finishing and quality manager (laboratory, dyeing house); Coats restricted-substances and fibre testing work 2004-15. English. Passes. [invited 2026-09-14] bare invite via custom-invite modal, modal name confirmed Irina Morosanu, sent by Claude at founder's instruction."
+notes: "[profile read 2026-09-15] details/experience: Manager Ístex hf. Mar 2004-present (26 yrs 9 mos at Ístex); head of textile finishing and quality manager (laboratory, dyeing house); Coats restricted-substances and fibre testing work 2004-15. English. Passes. [invited 2026-09-14] bare invite via custom-invite modal, modal name confirmed Irina Morosanu, sent by Claude at founder's instruction. [accepted 2026-09-15] seen in the Connections list 2026-09-15 (connected 2026-09-15). [msg1 drafted 2026-09-15] LR-B33 shape from the recorded profile read; inbox list 2026-09-15 shows no thread (LR-B25). Copy in copy/H1A2-linkedin.md. Awaiting founder approval."
 
 
 ## Lee Arrandale
@@ -7854,9 +7854,9 @@ degree: 3rd+
 mutuals_count:
 active_last_30d: unknown
 open_to_work: false
-outreach_status: invited
+outreach_status: accepted
 found_date: 2026-09-14
-notes: "[profile read 2026-09-15] details/experience: Group ESG, Sourcing & Quality Director, Debenhams Group, Jul 2024-present; Boohoo Group 2013-24 incl. Group Head of Sourcing & Ethical Trade 2023-24. English profile. Passes (tier brand). [invited 2026-09-14] bare invite via custom-invite modal, name confirmed Sophie Rycroft, sent by Claude at founder's instruction (English profile checked first)."
+notes: "[profile read 2026-09-15] details/experience: Group ESG, Sourcing & Quality Director, Debenhams Group, Jul 2024-present; Boohoo Group 2013-24 incl. Group Head of Sourcing & Ethical Trade 2023-24. English profile. Passes (tier brand). [invited 2026-09-14] bare invite via custom-invite modal, name confirmed Sophie Rycroft, sent by Claude at founder's instruction (English profile checked first). [accepted 2026-09-15] seen in the Connections list 2026-09-15 (connected 2026-09-15). [msg1 drafted 2026-09-15] LR-B33 shape from the recorded profile read; inbox list 2026-09-15 shows no thread (LR-B25). Copy in copy/H1A2-linkedin.md. Awaiting founder approval."
 
 ## Jacqueline Nixon
 
@@ -8004,9 +8004,9 @@ degree: 3rd+
 mutuals_count:
 active_last_30d: unknown
 open_to_work: false
-outreach_status: invited
+outreach_status: accepted
 found_date: 2026-09-14
-notes: "[profile read 2026-09-15] details/experience: Dyehouse Manager Ronutex Jan 2026-present (knitwear dyeing plant, team of 30); Quality and Environment Manager Ronutex Feb 2025-Dec 2025; 1 yr 8 mos at Ronutex. Role text in English. Passes. [invited 2026-09-14] bare invite via custom-invite modal, modal name confirmed António Faria, sent by Claude at founder's instruction."
+notes: "[profile read 2026-09-15] details/experience: Dyehouse Manager Ronutex Jan 2026-present (knitwear dyeing plant, team of 30); Quality and Environment Manager Ronutex Feb 2025-Dec 2025; 1 yr 8 mos at Ronutex. Role text in English. Passes. [invited 2026-09-14] bare invite via custom-invite modal, modal name confirmed António Faria, sent by Claude at founder's instruction. [accepted 2026-09-15] seen in the Connections list 2026-09-15 (connected 2026-09-15). [msg1 drafted 2026-09-15] LR-B33 shape from the recorded profile read; inbox list 2026-09-15 shows no thread (LR-B25). Copy in copy/H1A2-linkedin.md. Awaiting founder approval."
 
 
 ## Conceição Tedim
@@ -8219,9 +8219,9 @@ degree: 3rd+
 mutuals_count:
 active_last_30d: unknown
 open_to_work: false
-outreach_status: invited
+outreach_status: accepted
 found_date: 2026-09-14
-notes: "[profile read 2026-09-15] details/experience: Director of Operational Excellence Shaw Sep 2026-present; Carpet Transformation Productivity Leader Nov 2025-Aug 2026; Plant Manager Jan 2023-Nov 2025 (Dalton GA); 23 yrs 2 mos at Shaw. English. Passes; whether his plant dyed on site is not stated. [invited 2026-09-14] bare invite via custom-invite modal, modal name confirmed Wayne Gerber, sent by Claude at founder's instruction."
+notes: "[profile read 2026-09-15] details/experience: Director of Operational Excellence Shaw Sep 2026-present; Carpet Transformation Productivity Leader Nov 2025-Aug 2026; Plant Manager Jan 2023-Nov 2025 (Dalton GA); 23 yrs 2 mos at Shaw. English. Passes; whether his plant dyed on site is not stated. [invited 2026-09-14] bare invite via custom-invite modal, modal name confirmed Wayne Gerber, sent by Claude at founder's instruction. [accepted 2026-09-15] seen in the Connections list 2026-09-15 (connected 2026-09-15). [msg1 drafted 2026-09-15] LR-B33 shape from the recorded profile read; inbox list 2026-09-15 shows no thread (LR-B25). Copy in copy/H1A2-linkedin.md. Awaiting founder approval."
 
 
 ## Tim Crabtree
