@@ -401,6 +401,31 @@ Rule check: 302 chars, violations none. Status at draft time: accepted 2026-09-1
 
 Rule check: 356 chars, violations none. Status at draft time: accepted (released 2026-09-14).
 
+### Msg 2 — DRAFTED 2026-09-15 (frequency stage, awaiting founder approval)
+
+His reply (seen 2026-09-15 in his thread): "Sure" and "Hi Izgin". Open yes, no data point.
+
+Live snapshot 2026-09-15 (details/experience): Manager Denim Washing & Shade Grading, Artistic Milliners, Jan 2025-present; Deputy Manager Laundry, Soorty, Aug 2024-Feb 2025: enzyme, stone, acid, bleach and ozone washes, wash results against client specifications, quality checks for shrinkage and colour fading, cutting water, chemical and energy use. Segment competence: floor-level wash recipes and shade results; not budgets, not brand requests (those go to budget holders such as Gulfam).
+
+**Primary (429 chars, English, same founder preface as Gulfam's Msg 2 v3):**
+
+> Faizan hi! Thank you.
+>
+> We are trying to understand how data on the different contaminants and particles in the water could help optimise the whole wet process. Two questions from the washing side:
+> 1. When a lot fails shade grading, what is usually behind it: the chemicals, the water, the machine load, or something else?
+> 2. The last time that happened, how was it caught, and what did it take to fix?
+>
+> Short answers are perfect.
+
+| Question | Captures | Tests |
+|---|---|---|
+| What is usually behind a failed shade lot | Which wet-process component drives rework, in his words | Which component a sensor would have to see |
+| How the last one was caught and fixed | Whether the gap is caught by measurement or by eye after the fact, and the rework it took | Where in the process the reading comes too late |
+
+Held for Msg 3: how often a lot fails shade grading in a normal month (frequency); which readings on the wash liquor he takes by hand; what inline meters or auto-dosing were tried. No money question (LR-B11); he is not a budget holder.
+
+Rule check: 429 chars, violations none. No call ask, no money question.
+
 ## C30 — Önder Ertürk
 
 ### Msg 1 — DRAFTED 2026-09-14 (LR-B33; founder released)
