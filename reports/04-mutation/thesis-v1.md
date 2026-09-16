@@ -55,18 +55,18 @@ signed. A brand-funded fleet purchase is not how this industry has ever bought.
 
 ---
 
-## 2. Channel one — filtration companies
+## 2. Channel one — filtration and separation companies (not sized)
 
 The only segment that has asked us to sell them this. Matter opened its call with it.
 
 | Figure | Value | Grade |
 |---|---|---|
-| Companies building microfibre filtration worldwide | 20–40 | [A] q26 |
+| Companies building microfibre filtration or industrial separation | not counted; 8 known by name | [A] q26 |
 | Instrument price | $25,000 | [A] q23 |
 | Units per company | 1–3 | [A] q22 |
 | Reachable in 12–18 months | 3–8 customers | [A] |
-| **Revenue now** | **$75k–250k** | [A] |
-| Ceiling if every company buys 2 units | $1.0M–2.0M one-off | [A] |
+| **Revenue now** | not sized — no published count of these companies exists | — |
+| Two categories, different value: sector specialists (Matter) carry access to textile mills and brands; horizontal separation vendors (CyFract) carry entry to other industries' water | — | [S] |
 
 Small and immediate. Its real value is not the revenue: it is a customer who already
 benchmarks, a hard water sample, and access to the mills they are installing in. The risk is
@@ -86,10 +86,10 @@ Brands do not buy the box. They buy the programme, and they mandate the box.
 | Cascale corporate full members | 195 | [S] |
 | Microfibre consortium organisations (brand/supplier split unpublished) | 100+ | [S] |
 | Brands with a *funded* microfibre programme | 20–50 | [A] |
-| Programme price per brand per year | $50k–150k | [A] q18 |
-| **Channel revenue at maturity** | **$1.0M–7.5M/yr** | [A] |
+| Price per brand per year | $50k (band $25k–100k) | [A] q18 |
+| **Channel revenue at the top of the brand range** | **$2.5M/yr** (50 × $50k) | [A] |
 
-The $50k–150k is built, not sourced. Its two anchors: a brand running this work in house
+The $50k is built, not sourced. Its two anchors: a brand running this work in house
 pays roughly €60k–100k a year of loaded specialist cost (adidas has a full-time microfibre
 lead who runs the FTIR herself, about one day per sample) [S], and European sustainability
 reporting costs a company about €106,000 a year with another €24k–42k answering ESG
@@ -223,3 +223,8 @@ measurement, which is a different physical principle.
 **Still untested, same three questions:** tanneries, garment laundries, man-made cellulosic
 fibre plants, plastics recycling. Is anyone required or paid to know; is what we detect what
 they care about; does the water break the optics.
+
+
+---
+
+_Structure superseded 2026-09-15 by `reports/pages/market-ladder.html`, which is the current shape: product stages on the left, the market each opens on the right, with mills reachable only once the sensor carries more than one measurement. This file keeps the sourced figures and the reasoning behind each; the ladder holds the arithmetic._
