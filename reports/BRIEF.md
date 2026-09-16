@@ -4,7 +4,7 @@
 -->
 ---
 idea: industrial-process-data-infrastructure
-generated: 2026-09-16T03:53Z
+generated: 2026-09-16T04:12Z
 active_hunch: H1
 active_assumption: H1A2
 sources:
@@ -76,6 +76,7 @@ _Generated from the folder. Check here before creating a new artifact — if a f
 | `reports/03-validation/H1A2-2026-09-14/interviews/hm-group-2026-09-14-notes.md` | Interview: H&M Group (Martin, Sharif) · H1A2 · call date not recorded |
 | `reports/03-validation/H1A5-2026-09-04/interviews/matter-2026-09-04-notes.md` | Interview: Matter (Paul, Mark) · H1A5 · 2026-09-04 |
 | `reports/03-validation/H1A5-2026-09-14/interviews/varija-subasingha-2026-09-14-notes.md` | Interview: Varija Subasingha (adidas) · H1A5 · call date not recorded |
+| `reports/04-mutation/thesis-v1.md` | The market model for the inline polymer identification system — three channels, the staged product behind them, and every number the revenue rests on… |
 | `reports/outreach/companies.md` | The company registry — one entry per organisation on the demand or supply side of contaminant detection in industrial water, what it actually does, a… |
 | `reports/outreach/contacts.md` | The contact ledger — one card per person targeted, invited or interviewed for this idea, with the live-profile read that qualified them and the state… |
 | `reports/outreach/process-map.md` | The wet-process map — one entry per textile wet-processing step and effluent-treatment stage, what enters it (water, chemicals), what leaves it (the… |
