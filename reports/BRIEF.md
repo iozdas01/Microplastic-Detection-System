@@ -4,7 +4,7 @@
 -->
 ---
 idea: industrial-process-data-infrastructure
-generated: 2026-09-16T04:12Z
+generated: 2026-09-16T04:51Z
 active_hunch: H1
 active_assumption: H1A2
 sources:
@@ -88,6 +88,7 @@ _Generated from the folder. Check here before creating a new artifact — if a f
 | `reports/outreach/copy/H3A2-linkedin.md` | The LinkedIn copy archive for H3A2 — every message drafted or sent to a California water-utility contact for this assumption, with the live-snapshot… |
 | `reports/outreach/copy/pitch.md` | The pitch for this idea — every audience variant as a claim-traced deck or script, the one-slide block, and the version log of how the story changed… |
 | `reports/pages/discovery-questions.html` | generated — rebuild it, never edit it |
+| `reports/pages/market-ladder.html` | generated — rebuild it, never edit it |
 | `reports/pages/pages.yaml` | What each page in this folder is, and whether it still holds. |
 | `reports/pages/startup-map.html` | generated — rebuild it, never edit it |
 | `reports/pitch-deck/.build/build.mjs` | — |

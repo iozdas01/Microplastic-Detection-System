@@ -1,0 +1,302 @@
+<title>Microfibre Market Ladder</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap">
+<style>
+  :root {
+    --ground: #f6f6f8;
+    --panel: #ffffff;
+    --panel-2: #fbfbfd;
+    --ink: #16161b;
+    --ink-soft: #52525d;
+    --ink-faint: #83838f;
+    --rule: #e3e3e9;
+    --spine: #cfcfda;
+    --tech: #4338ca;
+    --market: #0e7490;
+    --now: #be123c;
+    --now-bg: #fff1f4;
+    --assume: #b45309;
+    --assume-bg: #fef6e7;
+    --shadow: 0 1px 2px rgba(20,20,40,.07);
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --ground: #121216; --panel: #1b1b22; --panel-2: #20202a;
+      --ink: #eeeef3; --ink-soft: #b2b2bf; --ink-faint: #82828f;
+      --rule: #2d2d38; --spine: #3a3a49;
+      --tech: #a5b4fc; --market: #67e8f9; --now: #fb7185; --now-bg: #37151f;
+      --assume: #fcd34d; --assume-bg: #362a0e;
+      --shadow: 0 1px 2px rgba(0,0,0,.45);
+    }
+  }
+  :root[data-theme="dark"] {
+    --ground: #121216; --panel: #1b1b22; --panel-2: #20202a;
+    --ink: #eeeef3; --ink-soft: #b2b2bf; --ink-faint: #82828f;
+    --rule: #2d2d38; --spine: #3a3a49;
+    --tech: #a5b4fc; --market: #67e8f9; --now: #fb7185; --now-bg: #37151f;
+    --assume: #fcd34d; --assume-bg: #362a0e;
+    --shadow: 0 1px 2px rgba(0,0,0,.45);
+  }
+
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; background: var(--ground); color: var(--ink);
+    font-family: "IBM Plex Sans", system-ui, -apple-system, Segoe UI, sans-serif;
+    font-size: 15px; line-height: 1.5;
+    padding-inline: 20px; padding-block: 40px 70px;
+  }
+  .wrap { max-width: 1060px; margin: 0 auto; }
+
+  header { border-bottom: 2px solid var(--ink); padding-bottom: 20px; }
+  .eyebrow { font-family: "IBM Plex Mono", ui-monospace, monospace; font-size: 11px;
+    letter-spacing: .15em; text-transform: uppercase; color: var(--ink-faint); margin: 0 0 10px; }
+  h1 { font-size: 32px; line-height: 1.12; margin: 0 0 12px; font-weight: 700;
+    letter-spacing: -.022em; text-wrap: balance; }
+  .standfirst { margin: 0; color: var(--ink-soft); max-width: 66ch; }
+
+  .legend { display: flex; flex-wrap: wrap; gap: 8px; margin: 18px 0 0; }
+  .key { font-family: "IBM Plex Mono", ui-monospace, monospace; font-size: 11px;
+    letter-spacing: .05em; padding: 3px 8px; border: 1px solid var(--rule); border-radius: 2px;
+    color: var(--ink-faint); }
+  .key b { font-weight: 600; }
+  .key.s { color: var(--market); border-color: currentColor; }
+  .key.a { color: var(--assume); border-color: currentColor; }
+
+  .colheads { display: grid; grid-template-columns: 1fr 96px 1fr; gap: 0; margin: 32px 0 6px; }
+  .colheads span { font-family: "IBM Plex Mono", ui-monospace, monospace; font-size: 11px;
+    letter-spacing: .12em; text-transform: uppercase; color: var(--ink-faint); }
+  .colheads .r { text-align: right; }
+
+  .ladder { display: flex; flex-direction: column; gap: 14px; }
+  .rung { display: grid; grid-template-columns: 1fr 96px 1fr; align-items: stretch; }
+
+  .side { background: var(--panel); border: 1px solid var(--rule); border-radius: 3px;
+    padding: 16px 18px; box-shadow: var(--shadow); }
+  .side.tech { border-left: 3px solid var(--tech); }
+  .side.market { border-right: 3px solid var(--market); background: var(--panel-2); }
+  .rung.here .side { border-color: var(--now); }
+  .rung.here .side.tech { border-left-color: var(--now); }
+  .rung.here .side.market { border-right-color: var(--now); }
+
+  .spine { position: relative; display: flex; align-items: center; justify-content: center; }
+  .spine::before { content: ""; position: absolute; top: -14px; bottom: -14px; width: 2px;
+    background: var(--spine); }
+  .node { position: relative; width: 44px; height: 44px; border-radius: 50%;
+    background: var(--ground); border: 2px solid var(--spine); display: grid; place-items: center;
+    font-family: "IBM Plex Mono", ui-monospace, monospace; font-size: 13px; font-weight: 600;
+    color: var(--ink-soft); }
+  .rung.here .node { border-color: var(--now); color: var(--now); background: var(--now-bg); }
+
+  h3 { margin: 0 0 4px; font-size: 17px; font-weight: 600; letter-spacing: -.01em; }
+  .stage-tag { font-family: "IBM Plex Mono", ui-monospace, monospace; font-size: 10.5px;
+    letter-spacing: .1em; text-transform: uppercase; color: var(--ink-faint); display: block; margin-bottom: 6px; }
+  .side p { margin: 0 0 8px; color: var(--ink-soft); font-size: 14px; }
+  .side p:last-child { margin-bottom: 0; }
+  .side.market .figure { font-size: 22px; font-weight: 700; color: var(--ink); letter-spacing: -.02em;
+    font-variant-numeric: tabular-nums; margin: 0 0 2px; }
+  .side.market .figure small { font-size: 13px; font-weight: 500; color: var(--ink-faint); letter-spacing: 0; }
+  .who { font-family: "IBM Plex Mono", ui-monospace, monospace; font-size: 11px;
+    letter-spacing: .06em; text-transform: uppercase; color: var(--market); margin: 0 0 8px; }
+  .calc { font-family: "IBM Plex Mono", ui-monospace, monospace; font-size: 12px;
+    color: var(--ink-faint); margin: 8px 0 0; }
+  .nowflag { display: inline-block; font-family: "IBM Plex Mono", ui-monospace, monospace;
+    font-size: 10.5px; letter-spacing: .1em; text-transform: uppercase; color: var(--now);
+    background: var(--now-bg); border: 1px solid currentColor; border-radius: 2px;
+    padding: 1px 7px; margin-bottom: 8px; }
+  .locked { color: var(--ink-faint); font-style: italic; }
+
+  section.block { margin-top: 44px; }
+  h2 { font-size: 20px; margin: 0 0 6px; font-weight: 600; letter-spacing: -.012em; }
+  .sub { margin: 0 0 16px; color: var(--ink-soft); max-width: 66ch; font-size: 14px; }
+  .scroller { overflow-x: auto; }
+  table { border-collapse: collapse; width: 100%; font-size: 14px; min-width: 520px; }
+  th, td { text-align: left; padding: 9px 12px; border-bottom: 1px solid var(--rule); vertical-align: top; }
+  th { font-family: "IBM Plex Mono", ui-monospace, monospace; font-size: 11px; letter-spacing: .08em;
+    text-transform: uppercase; color: var(--ink-faint); font-weight: 500; }
+  td.n { font-variant-numeric: tabular-nums; white-space: nowrap; font-weight: 600; }
+  td.src { font-size: 13px; color: var(--ink-soft); }
+  .pill { font-family: "IBM Plex Mono", ui-monospace, monospace; font-size: 10.5px;
+    letter-spacing: .06em; padding: 2px 7px; border-radius: 2px; border: 1px solid currentColor; }
+  .pill.a { color: var(--assume); background: var(--assume-bg); }
+  .pill.s { color: var(--market); }
+
+  footer { margin-top: 48px; padding-top: 16px; border-top: 1px solid var(--rule);
+    color: var(--ink-faint); font-size: 13px; }
+
+  @media (max-width: 760px) {
+    .colheads { display: none; }
+    .rung { grid-template-columns: 1fr; gap: 0; }
+    .spine { height: 34px; }
+    .spine::before { top: 0; bottom: 0; }
+    .node { width: 34px; height: 34px; font-size: 12px; }
+    .side.market { border-right: 1px solid var(--rule); border-left: 3px solid var(--market); }
+    .rung.here .side.market { border-left-color: var(--now); }
+    h1 { font-size: 26px; }
+  }
+</style>
+
+<div class="wrap">
+<header>
+  <p class="eyebrow">Product stages · markets they open</p>
+  <h1>Microfibre Market Ladder</h1>
+  <p class="standfirst">The left column is what the sensor can do. The right column is who can be sold to once it can do that, and for how much. Each rung opens only when the rung below it is built, so the market does not grow by selling harder — it grows when the measurement changes.</p>
+  <div class="legend">
+    <span class="key s"><b>sourced</b> · official statistics, association reports, peer-reviewed</span>
+    <span class="key a"><b>assumed</b> · listed in full at the bottom</span>
+    <span class="key">ranges take the high end, as instructed</span>
+  </div>
+</header>
+
+<div class="colheads"><span>The technology</span><span></span><span class="r">The market it opens</span></div>
+
+<div class="ladder">
+
+  <div class="rung here">
+    <div class="side tech">
+      <span class="nowflag">you are here</span>
+      <span class="stage-tag">V1</span>
+      <h3>Inline polymer identification</h3>
+      <p>Particle type and particle count, in the pipe, in minutes. One measurement point per site.</p>
+      <p>Replaces work that is done today by sending a sample to a lab for three to four weeks, or by a specialist running FTIR microscopy for a full day per sample.</p>
+    </div>
+    <div class="spine"><div class="node">V1</div></div>
+    <div class="side market">
+      <p class="who">Fashion brands with a microfibre programme</p>
+      <p class="figure">$5.0M<small> / year</small></p>
+      <p>50 brands paying $100,000 a year for continuous, site-level polymer identification across their wet-processing suppliers.</p>
+      <p>They pay because the industry's own test method is gravimetric and first-wash only: it weighs fibre and identifies nothing. No existing product gives them type at site level.</p>
+      <p class="calc">50 brands × $100k</p>
+    </div>
+  </div>
+
+  <div class="rung here">
+    <div class="side tech">
+      <span class="stage-tag">V1 · same hardware</span>
+      <h3>Benchmarking rig for filtration builders</h3>
+      <p>The same instrument, used to prove what a filter captures and what slips through, by polymer rather than by mass.</p>
+    </div>
+    <div class="spine"><div class="node">2ᵃ</div></div>
+    <div class="side market">
+      <p class="who">Filtration companies · Matter, Cyfract, peers</p>
+      <p class="figure">$2.0M<small> one-off</small></p>
+      <p>40 companies buying two units each at $25,000. Provisional: this segment has no published count and is the next thing to size properly.</p>
+      <p>They are the only buyers who have asked for this measurement unprompted, and they carry the sensor into the mills they install in.</p>
+      <p class="calc">40 companies × 2 units × $25k</p>
+    </div>
+  </div>
+
+  <div class="rung">
+    <div class="side tech">
+      <span class="stage-tag">V2</span>
+      <h3>Attribution</h3>
+      <p>Several points per site, so a polymer maps to a step, a machine or a fabric rather than to the factory as a whole.</p>
+      <p class="locked">Risk: if streams merge before the drain, attribution needs machine-level sampling and the hardware count per site multiplies.</p>
+    </div>
+    <div class="spine"><div class="node">V2</div></div>
+    <div class="side market">
+      <p class="who">The same brands, far wider coverage</p>
+      <p class="figure">$14.0M<small> / year</small></p>
+      <p>Coverage inside an account goes from a sample of sites to the whole supplier base. Large brands publish 104 to 269 wet-process suppliers each.</p>
+      <p class="calc">50 brands × 140 sites × $2k per site</p>
+    </div>
+  </div>
+
+  <div class="rung">
+    <div class="side tech">
+      <span class="stage-tag">V3</span>
+      <h3>Multi-analyte on the same optical path</h3>
+      <p>Residual peroxide, unfixed dye, salt and turbidity alongside fibre. These are things a mill already checks by hand with strips, titrations and grab samples.</p>
+    </div>
+    <div class="spine"><div class="node">V3</div></div>
+    <div class="side market">
+      <p class="who">Mills become buyers in their own right</p>
+      <p class="figure">$120M<small> hardware</small></p>
+      <p>The mill stops buying a compliance instrument and starts buying process instrumentation out of an existing quality budget. Plus $48M a year in service.</p>
+      <p class="calc">16,000 sites × 3 units × $2.5k</p>
+    </div>
+  </div>
+
+  <div class="rung">
+    <div class="side tech">
+      <span class="stage-tag">V4</span>
+      <h3>Closed loop on one decision</h3>
+      <p>Rinse endpoint first: stop rinsing when the water is actually clean, rather than by eye. Hot water and fuel come straight off the bill.</p>
+    </div>
+    <div class="spine"><div class="node">V4</div></div>
+    <div class="side market">
+      <p class="who">Mills, paying out of what they save</p>
+      <p class="figure">$1.17B<small> / year</small></p>
+      <p>Efficiency programmes deliver $230,000 to $730,000 a year per mill for $110,000 to $300,000 of capital, at three to ten month paybacks. Taking a tenth of the top of that range across every documented site is the ceiling, not a forecast.</p>
+      <p class="calc">16,000 sites × 10% × $730k</p>
+    </div>
+  </div>
+
+  <div class="rung">
+    <div class="side tech">
+      <span class="stage-tag">V5</span>
+      <h3>The data network</h3>
+      <p>Verified, continuous, site-level polymer data across thousands of mills. Nothing new in the box; the value is the accumulated record.</p>
+    </div>
+    <div class="spine"><div class="node">V5</div></div>
+    <div class="side market">
+      <p class="who">Brands, and regulators when rules land</p>
+      <p class="figure">$30M<small> / year</small></p>
+      <p>About 300 brand-side organisations paying for supplier data they currently take on trust. The smallest layer on this ladder, not the largest.</p>
+      <p class="calc">300 organisations × $100k</p>
+    </div>
+  </div>
+
+</div>
+
+<section class="block">
+  <h2>Every assumption on this page</h2>
+  <p class="sub">The populations are sourced; almost every price is not. Each row here is a number someone chose, with the question that would replace it.</p>
+  <div class="scroller">
+  <table>
+    <thead><tr><th>Assumption</th><th>Value used</th><th>Basis, and what would settle it</th></tr></thead>
+    <tbody>
+      <tr><td>Brands with a funded microfibre programme</td><td class="n">50</td><td class="src">High end of a 20–50 range. The microfibre consortium has 100+ member organisations but does not publish the brand share. Settled by counting named programmes.</td></tr>
+      <tr><td>Price per brand per year</td><td class="n">$100,000</td><td class="src">Built from what a brand spends doing it by hand: a specialist at roughly €60–100k loaded, one sample a day. Question 18 replaces it.</td></tr>
+      <tr><td>Wet-process sites covered per brand at V2</td><td class="n">140</td><td class="src">Average of published counts: adidas 138, Inditex 269, Fast Retailing 108, C&amp;A 104, Levi's 80+. Assumes a brand eventually covers all of them.</td></tr>
+      <tr><td>Price per site per year at scale</td><td class="n">$2,000</td><td class="src">Volume price, set just above what a facility pays for its existing platform subscription ($899). Untested.</td></tr>
+      <tr><td>Sensors per site</td><td class="n">3</td><td class="src">One per major wet-process area. Machine-level attribution would push it much higher.</td></tr>
+      <tr><td>Hardware cost to the mill</td><td class="n">$2,500 per unit</td><td class="src">The founder's target build cost. If identification cannot be done at this price the model inverts: fewer sites, higher price, lab-replacement positioning.</td></tr>
+      <tr><td>Instrument price to filtration companies</td><td class="n">$25,000</td><td class="src">Priced as a lab-grade benchmarking tool rather than a fleet sensor. Question 23.</td></tr>
+      <tr><td>Number of filtration companies</td><td class="n">40</td><td class="src">No published count exists anywhere. Provisional until this segment is sized.</td></tr>
+      <tr><td>Share of mill savings capturable</td><td class="n">10%</td><td class="src">Top of a 5–10% range. Competes with efficiency projects paying back in 3–10 months.</td></tr>
+      <tr><td>Brand-side organisations at V5</td><td class="n">300</td><td class="src">Roughly the membership of the major industry bodies. Overlaps heavily with the 50 above.</td></tr>
+      <tr><td>Every mill is reachable</td><td class="n">16,000 sites</td><td class="src">The documented global floor. No allowance for competition, adoption rate or the sites that will never buy anything.</td></tr>
+    </tbody>
+  </table>
+  </div>
+</section>
+
+<section class="block">
+  <h2>What is sourced</h2>
+  <p class="sub">These are the figures the ladder stands on. Full citations are in the thesis and the evidence ledger.</p>
+  <div class="scroller">
+  <table>
+    <thead><tr><th>Figure</th><th>Value</th><th>Grade</th></tr></thead>
+    <tbody>
+      <tr><td>Wet-processing sites worldwide, documented floor</td><td class="n">~16,000</td><td><span class="pill s">sourced</span></td></tr>
+      <tr><td>Sites under a brand mandate today</td><td class="n">2,400–3,700</td><td><span class="pill s">sourced</span></td></tr>
+      <tr><td>Mills publishing wastewater reports to ZDHC</td><td class="n">~2,450</td><td><span class="pill s">sourced</span></td></tr>
+      <tr><td>Wet-process suppliers per large brand</td><td class="n">104–269</td><td><span class="pill s">sourced</span></td></tr>
+      <tr><td>Fabrics tested by the industry method, cumulative</td><td class="n">1,500+</td><td><span class="pill s">sourced</span></td></tr>
+      <tr><td>That method's polymer identification</td><td class="n">none</td><td><span class="pill s">sourced</span></td></tr>
+      <tr><td>Lab microplastics identification</td><td class="n">€190–390, 3–4 weeks</td><td><span class="pill s">sourced</span></td></tr>
+      <tr><td>Brand specialist throughput on FTIR</td><td class="n">1 sample/day</td><td><span class="pill s">sourced</span></td></tr>
+      <tr><td>Mill spend on all environmental schemes</td><td class="n">$2,000–5,000/yr</td><td><span class="pill s">sourced</span></td></tr>
+      <tr><td>Efficiency savings available per mill</td><td class="n">$230k–730k/yr</td><td><span class="pill s">sourced</span></td></tr>
+      <tr><td>Share of programme capital funded by suppliers</td><td class="n">77%</td><td><span class="pill s">sourced</span></td></tr>
+      <tr><td>Production re-shaded / re-dyed</td><td class="n">~20% / ~10%</td><td><span class="pill s">sourced, 2005</span></td></tr>
+    </tbody>
+  </table>
+  </div>
+</section>
+
+<footer>
+  Written 2026-09-15. V1 is built and being sold; everything below it is unbuilt, and no dates are attached on purpose — each rung opens when the measurement does, not on a calendar. Paper mills were tested against this ladder and ruled out. The open questions behind every assumed figure are on the discovery questions page.
+</footer>
+</div>
