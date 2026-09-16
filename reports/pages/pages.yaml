@@ -24,3 +24,11 @@ pages:
       liability for. Carried over as a static reference snapshot from the previous idea
       (2026-09-09); its source ledger and generator are not in this repo, so it does not
       rebuild. Read it as a map of who sells into custom manufacturing, not as evidence here.
+  - file: discovery-questions.html
+    status: current
+    group: outreach
+    note: >-
+      Every open question the market model still rests on an assumption for, written to be
+      asked on a call: 12 for mills, 8 for brands, 6 for the filtration companies, plus desk
+      research and the price points to test. Each carries the assumption it moves. Answers go
+      to evidence.md, not here. Written 2026-09-15 from the sizing session.

@@ -1,0 +1,310 @@
+<title>Microfibre Sizing Questions</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap">
+<style>
+  :root {
+    --ground: #f7f7f9;
+    --panel: #ffffff;
+    --ink: #17171c;
+    --ink-soft: #55555f;
+    --ink-faint: #85858f;
+    --rule: #e2e2e8;
+    --accent: #4338ca;
+    --fibre: #e11d48;
+    --colour: #9333ea;
+    --salt: #0284c7;
+    --redox: #c2410c;
+    --open: #b45309;
+    --open-bg: #fef3c7;
+    --shadow: 0 1px 2px rgba(20, 20, 40, .06);
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --ground: #131318;
+      --panel: #1c1c23;
+      --ink: #eeeef4;
+      --ink-soft: #b0b0bd;
+      --ink-faint: #7e7e8c;
+      --rule: #2e2e39;
+      --accent: #a5b4fc;
+      --fibre: #fb7185;
+      --colour: #c084fc;
+      --salt: #38bdf8;
+      --redox: #fb923c;
+      --open: #fcd34d;
+      --open-bg: #3b2f10;
+      --shadow: 0 1px 2px rgba(0, 0, 0, .4);
+    }
+  }
+  :root[data-theme="dark"] {
+    --ground: #131318;
+    --panel: #1c1c23;
+    --ink: #eeeef4;
+    --ink-soft: #b0b0bd;
+    --ink-faint: #7e7e8c;
+    --rule: #2e2e39;
+    --accent: #a5b4fc;
+    --fibre: #fb7185;
+    --colour: #c084fc;
+    --salt: #38bdf8;
+    --redox: #fb923c;
+    --open: #fcd34d;
+    --open-bg: #3b2f10;
+    --shadow: 0 1px 2px rgba(0, 0, 0, .4);
+  }
+
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--ground);
+    color: var(--ink);
+    font-family: "IBM Plex Sans", system-ui, -apple-system, Segoe UI, sans-serif;
+    font-size: 15px;
+    line-height: 1.55;
+    padding-inline: 20px;
+    padding-block: 40px 72px;
+  }
+  .wrap { max-width: 920px; margin: 0 auto; }
+
+  header { border-bottom: 2px solid var(--ink); padding-bottom: 18px; margin-bottom: 8px; }
+  .eyebrow {
+    font-family: "IBM Plex Mono", ui-monospace, monospace;
+    font-size: 11px; letter-spacing: .14em; text-transform: uppercase;
+    color: var(--ink-faint); margin: 0 0 10px;
+  }
+  h1 { font-size: 30px; line-height: 1.15; margin: 0 0 10px; font-weight: 700; text-wrap: balance; letter-spacing: -.02em; }
+  .standfirst { margin: 0; color: var(--ink-soft); max-width: 62ch; }
+
+  .frame {
+    margin: 26px 0 30px; padding: 16px 18px;
+    border-left: 3px solid var(--accent); background: var(--panel);
+    box-shadow: var(--shadow);
+  }
+  .frame p { margin: 0 0 8px; }
+  .frame p:last-child { margin-bottom: 0; }
+  .frame strong { font-weight: 600; }
+
+  h2 {
+    font-size: 19px; margin: 34px 0 4px; font-weight: 600; letter-spacing: -.01em;
+    display: flex; align-items: baseline; gap: 10px; flex-wrap: wrap;
+  }
+  h2 .who {
+    font-family: "IBM Plex Mono", ui-monospace, monospace;
+    font-size: 11px; letter-spacing: .1em; text-transform: uppercase;
+    color: var(--ink-faint); font-weight: 500;
+  }
+  .section-note { margin: 0 0 14px; color: var(--ink-soft); max-width: 62ch; font-size: 14px; }
+
+  ol.qs { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 10px; }
+  ol.qs > li {
+    background: var(--panel); border: 1px solid var(--rule); border-radius: 3px;
+    padding: 13px 15px; display: grid; grid-template-columns: 26px 1fr; gap: 4px 12px;
+    box-shadow: var(--shadow);
+  }
+  .num {
+    font-family: "IBM Plex Mono", ui-monospace, monospace; font-size: 12px;
+    color: var(--ink-faint); padding-top: 2px; font-variant-numeric: tabular-nums;
+  }
+  .q { font-weight: 600; margin: 0; }
+  .why { grid-column: 2; margin: 2px 0 0; color: var(--ink-soft); font-size: 14px; }
+  .tags { grid-column: 2; display: flex; flex-wrap: wrap; gap: 6px; margin-top: 8px; }
+  .tag {
+    font-family: "IBM Plex Mono", ui-monospace, monospace; font-size: 10.5px;
+    letter-spacing: .06em; text-transform: uppercase; padding: 2px 7px;
+    border: 1px solid var(--rule); border-radius: 2px; color: var(--ink-faint);
+  }
+  .tag.node { color: var(--accent); border-color: currentColor; }
+  .tag.asked { color: var(--salt); border-color: currentColor; }
+  .tag.money { color: var(--fibre); border-color: currentColor; }
+  .tag.desk { color: var(--colour); border-color: currentColor; }
+
+  .known { margin: 30px 0 0; }
+  table { border-collapse: collapse; width: 100%; font-size: 14px; }
+  .scroller { overflow-x: auto; }
+  th, td { text-align: left; padding: 8px 10px; border-bottom: 1px solid var(--rule); vertical-align: top; }
+  th { font-family: "IBM Plex Mono", ui-monospace, monospace; font-size: 11px; letter-spacing: .08em; text-transform: uppercase; color: var(--ink-faint); font-weight: 500; }
+  td.n { font-variant-numeric: tabular-nums; white-space: nowrap; }
+  .grade { font-family: "IBM Plex Mono", ui-monospace, monospace; font-size: 11px; }
+  .soft { color: var(--open); background: var(--open-bg); padding: 1px 6px; border-radius: 2px; }
+
+  footer { margin-top: 44px; padding-top: 16px; border-top: 1px solid var(--rule); color: var(--ink-faint); font-size: 13px; }
+  @media (max-width: 520px) {
+    h1 { font-size: 25px; }
+    ol.qs > li { grid-template-columns: 1fr; }
+    .num { padding-top: 0; }
+    .why, .tags { grid-column: 1; }
+  }
+</style>
+
+<div class="wrap">
+<header>
+  <p class="eyebrow">Outreach · pricing · market sizing</p>
+  <h1>Microfibre Sizing Questions</h1>
+  <p class="standfirst">Everything the market model still rests on an assumption for, written as a question someone can actually answer on a call. Each one names the node it moves and why the number matters.</p>
+</header>
+
+<div class="frame">
+  <p><strong>Why this page exists.</strong> The sizing has three numbers in it that no public source holds: what anyone pays for polymer identification today, how many wet-processing sites sit inside a brand programme, and what decision the answer changes. Until those are answered, every market figure below them is arithmetic on a guess.</p>
+  <p><strong>How to use it.</strong> Questions 1 to 12 go to mills, 13 to 20 to brands, 21 to 26 to the filtration companies. The last two sections are desk work and pricing experiments, and need no one's permission.</p>
+</div>
+
+<h2>Mills <span class="who">Gulfam · Mehmet · Faizan · Ahmet · Nabeel · Saif</span></h2>
+<p class="section-note">These people run the wet process. They can testify to what is measured, what goes wrong and what it costs. They cannot speak for brand requirements, and only the general managers can speak for budget.</p>
+<ol class="qs">
+  <li><span class="num">01</span><p class="q">Which readings on the water, dye bath or chemicals do you still take by hand or send to a lab?</p>
+    <p class="why">Gives the list of measurements not yet inline, in their words. Every sensor rung above stands on this list.</p>
+    <div class="tags"><span class="tag asked">asked</span><span class="tag node">H1A2</span></div></li>
+  <li><span class="num">02</span><p class="q">The last time a lot went to correction or re-dye, what was behind it: water, chemicals, lint and fibre build-up, or the machine?</p>
+    <p class="why">Tests whether fibre is anywhere near the cost of rework, which is the load-bearing assumption of the whole optimisation layer.</p>
+    <div class="tags"><span class="tag asked">asked</span><span class="tag node">H1A2</span></div></li>
+  <li><span class="num">03</span><p class="q">How often are the machine lint filters cleaned, and has lint ever stopped a machine or slowed a heat exchanger?</p>
+    <p class="why">The most direct link from what the sensor sees to money. Fouling is measurable in a week, unlike shade.</p>
+    <div class="tags"><span class="tag node">H1A2</span></div></li>
+  <li><span class="num">04</span><p class="q">How do you check for residual peroxide before dyeing, and how often does a bath go in with peroxide still there?</p>
+    <p class="why">If this is strips and a grab sample, it is the second analyte on the same probe and it sits in an existing quality budget.</p>
+    <div class="tags"><span class="tag node">H1A2</span></div></li>
+  <li><span class="num">05</span><p class="q">How do you decide a rinse is finished?</p>
+    <p class="why">If the answer is by eye, the first closed-loop product is a rinse endpoint, and it pays back in hot water.</p>
+    <div class="tags"><span class="tag node">H1A2</span></div></li>
+  <li><span class="num">06</span><p class="q">What does one re-dye actually cost you, in water, steam and machine hours?</p>
+    <p class="why">The only published model is from 2005 and says one re-dye equals 100% of the per-kg production cost. Needs a live number.</p>
+    <div class="tags"><span class="tag money">pricing</span><span class="tag node">H1A6</span></div></li>
+  <li><span class="num">07</span><p class="q">What is your right-first-time rate this year, and what was it two years ago?</p>
+    <p class="why">The benchmark case went 80% to 95.5% for $216k. Tells us the size of the prize and whether they already track it.</p>
+    <div class="tags"><span class="tag money">pricing</span><span class="tag node">H1A6</span></div></li>
+  <li><span class="num">08</span><p class="q">What do you pay per wastewater sample for the ZDHC testing, and who invoices you?</p>
+    <p class="why">The single most wanted number in the model. No approved lab publishes it, so it can only come from a mill or a quote.</p>
+    <div class="tags"><span class="tag money">pricing</span><span class="tag desk">unpublished</span></div></li>
+  <li><span class="num">09</span><p class="q">Who signs for a twenty thousand dollar instrument, and out of which budget?</p>
+    <p class="why">Decides whether the buyer is the plant manager, the sustainability lead or head office, and therefore who the pitch is written for.</p>
+    <div class="tags"><span class="tag node">H1A3</span></div></li>
+  <li><span class="num">10</span><p class="q">Has a brand or auditor ever asked you for a fibre or shedding number? What did you send back?</p>
+    <p class="why">Directly tests the root assumption. H&amp;M has said their ask is suspended solids, not fibre, so every contrary case matters.</p>
+    <div class="tags"><span class="tag asked">asked</span><span class="tag node">H1A2</span></div></li>
+  <li><span class="num">11</span><p class="q">Do you pay for the Higg or Worldly subscription yourself, or does the brand cover it?</p>
+    <p class="why">Establishes who funds supplier-side data today, which is the template for who funds the sensor.</p>
+    <div class="tags"><span class="tag money">pricing</span><span class="tag node">H1A3</span></div></li>
+  <li><span class="num">12</span><p class="q">What happens if a wastewater test comes back out of limits?</p>
+    <p class="why">Separates a compliance cost from a real consequence. Fines in Bangladesh run at about a seventh of the cost of running the treatment plant.</p>
+    <div class="tags"><span class="tag node">H1A2</span></div></li>
+</ol>
+
+<h2>Brands <span class="who">adidas · Primark · Debenhams · Zalando · Levi's · Marc O'Polo</span></h2>
+<p class="section-note">The channel Sandra wants: the brand buys at a premium and pushes it to its mills. These questions size that channel and find its budget owner.</p>
+<ol class="qs">
+  <li><span class="num">13</span><p class="q">How many wet-processing suppliers do you have, and how many do you actually audit or visit?</p>
+    <p class="why">The multiplier in the whole channel model. Published supplier lists give tier one; the dyeing and finishing count is the one that matters.</p>
+    <div class="tags"><span class="tag money">pricing</span></div></li>
+  <li><span class="num">14</span><p class="q">What do you spend per supplier per year today on environmental data and verification?</p>
+    <p class="why">The comparison a premium price gets judged against. Known public fees add to roughly $1,500 to $2,000 a site.</p>
+    <div class="tags"><span class="tag money">pricing</span></div></li>
+  <li><span class="num">15</span><p class="q">Which budget would pay for instrumenting a supplier, and who signs it off?</p>
+    <p class="why">Sustainability, sourcing and compliance have different budgets and different appetites. Decides who we pitch.</p>
+    <div class="tags"><span class="tag node">H1A3</span></div></li>
+  <li><span class="num">16</span><p class="q">Have you funded equipment inside a supplier's plant before? Who paid, and how was it structured?</p>
+    <p class="why">Efficiency programmes have done exactly this. The funding structure they used is the one we should copy.</p>
+    <div class="tags"><span class="tag money">pricing</span></div></li>
+  <li><span class="num">17</span><p class="q">If you knew polymer type by site and by batch, what would you do differently tomorrow?</p>
+    <p class="why">The value question. If nothing changes, this is a report and it prices like a lab test.</p>
+    <div class="tags"><span class="tag node">H1A5</span></div></li>
+  <li><span class="num">18</span><p class="q">How many fibre fragmentation tests do you run a year, what do they cost you, and what changed because of one?</p>
+    <p class="why">adidas runs these in house at roughly a specialist day per sample. That day rate is the real price ceiling.</p>
+    <div class="tags"><span class="tag money">pricing</span><span class="tag node">H1A5</span></div></li>
+  <li><span class="num">19</span><p class="q">What would make you require a measurement from suppliers before any regulation exists?</p>
+    <p class="why">H&amp;M said they will not specify one before regulation. Finding the brands that would is the whole channel.</p>
+    <div class="tags"><span class="tag node">H1A2</span></div></li>
+  <li><span class="num">20</span><p class="q">Which pushes harder right now: sustainability reporting rules, claims you want to make, or product design decisions?</p>
+    <p class="why">Names the pain the premium story attaches to. European reporting alone costs a company about €106,000 a year.</p>
+    <div class="tags"><span class="tag money">pricing</span></div></li>
+</ol>
+
+<h2>Filtration companies <span class="who">Matter · Cyfract · peers</span></h2>
+<p class="section-note">They have no compliance need either, but they do have a proof problem, and they asked us for the measurement first. Small count, high intent.</p>
+<ol class="qs">
+  <li><span class="num">21</span><p class="q">How do you prove filter performance to a customer today, and what does one proof cost you?</p>
+    <p class="why">Matter opened with this ask. Their current cost is the first real price signal we have.</p>
+    <div class="tags"><span class="tag money">pricing</span><span class="tag node">H1A5</span></div></li>
+  <li><span class="num">22</span><p class="q">How many benchmarking analyses do you run in a year, and is that growing with installs?</p>
+    <p class="why">Decides whether they buy one instrument or one per deployment, which is a ten times difference in this segment.</p>
+    <div class="tags"><span class="tag money">pricing</span></div></li>
+  <li><span class="num">23</span><p class="q">Would you rather pay per analysis, or own the unit and run it yourself?</p>
+    <p class="why">Tests the two revenue models directly against a buyer who already wants the thing.</p>
+    <div class="tags"><span class="tag money">pricing</span></div></li>
+  <li><span class="num">24</span><p class="q">Would you build it into your own product as a component, or keep it as a separate instrument?</p>
+    <p class="why">An embedded route changes everything: fewer customers, larger volumes, and our name disappears.</p>
+    <div class="tags"><span class="tag node">H1A5</span></div></li>
+  <li><span class="num">25</span><p class="q">Which of your customers ask what polymer was captured, rather than how much?</p>
+    <p class="why">Type versus mass is our entire differentiation. This is where it gets confirmed or denied.</p>
+    <div class="tags"><span class="tag node">H1A5</span></div></li>
+  <li><span class="num">26</span><p class="q">How many companies are doing what you do, and who do you lose deals to?</p>
+    <p class="why">Sizes this segment from inside. There is no published count of microfibre filtration companies.</p>
+    <div class="tags"><span class="tag desk">unpublished</span></div></li>
+</ol>
+
+<h2>Desk research <span class="who">no one's permission needed</span></h2>
+<p class="section-note">Answerable without a call. Each one currently sits in the model as an assumption.</p>
+<ol class="qs">
+  <li><span class="num">27</span><p class="q">Wet-processing site counts for India nationally, Türkiye and Indonesia.</p>
+    <p class="why">The documented global floor of about 16,000 sites omits all three, which is why the range is 25,000 to 45,000.</p>
+    <div class="tags"><span class="tag desk">desk</span></div></li>
+  <li><span class="num">28</span><p class="q">A real quote for a ZDHC wastewater test, from an approved laboratory.</p>
+    <p class="why">Pairs with question 8. Two samples a year is fixed and public; the price is not published anywhere.</p>
+    <div class="tags"><span class="tag desk">desk</span><span class="tag money">pricing</span></div></li>
+  <li><span class="num">29</span><p class="q">Tier-two supplier counts per brand, from published supplier lists.</p>
+    <p class="why">Multiplied by the number of brands, this is the brand-channel market size.</p>
+    <div class="tags"><span class="tag desk">desk</span></div></li>
+  <li><span class="num">30</span><p class="q">List prices for comparable inline instruments in adjacent industries.</p>
+    <p class="why">A ceiling check on our own price. Inline optical particle counting is already sold into pulp mills.</p>
+    <div class="tags"><span class="tag desk">desk</span><span class="tag money">pricing</span></div></li>
+  <li><span class="num">31</span><p class="q">Tanneries, garment laundries and man-made cellulosic fibre plants: is anyone required or paid to know what is in their water?</p>
+    <p class="why">The same three tests paper failed. Run them before any vertical goes on the map.</p>
+    <div class="tags"><span class="tag desk">desk</span></div></li>
+</ol>
+
+<h2>Pricing experiments <span class="who">to run on live calls</span></h2>
+<p class="section-note">Not questions to ask, but prices to say out loud and watch the reaction to. Each has a different market size behind it.</p>
+<ol class="qs">
+  <li><span class="num">32</span><p class="q">Brand pays per site per year, hardware included, at $3,000 to $10,000.</p>
+    <p class="why">Two to five times what a brand already pays per supplier for static data. For fifty suppliers that is $150,000 to $500,000 a year.</p>
+    <div class="tags"><span class="tag money">pricing</span></div></li>
+  <li><span class="num">33</span><p class="q">Per analysis, priced against a lab at €190 to €390 a sample with a three to four week wait.</p>
+    <p class="why">Dead at two samples a year. Only works if the question becomes per batch or per order.</p>
+    <div class="tags"><span class="tag money">pricing</span></div></li>
+  <li><span class="num">34</span><p class="q">Instrument sale to the mill at $15,000 to $50,000.</p>
+    <p class="why">The upper end is defensible only against lab identification, which costs a specialist a day per sample on a six-figure microscope.</p>
+    <div class="tags"><span class="tag money">pricing</span></div></li>
+  <li><span class="num">35</span><p class="q">A share of what the mill saves, on rinse water or on right-first-time.</p>
+    <p class="why">Efficiency projects at these mills pay back in three to ten months. Anything we sell competes with that hurdle rate.</p>
+    <div class="tags"><span class="tag money">pricing</span></div></li>
+</ol>
+
+<div class="known">
+  <h2>What is already answered <span class="who">don't re-ask</span></h2>
+  <p class="section-note">Sourced during the 2026-09-15 sizing work. Grades: hard means official statistics, association reports or peer-reviewed; soft means trade press or a single unverified claim.</p>
+  <div class="scroller">
+  <table>
+    <thead><tr><th>Figure</th><th>Number</th><th>Grade</th></tr></thead>
+    <tbody>
+      <tr><td>Mills publishing wastewater tests to ZDHC</td><td class="n">~2,450</td><td class="grade">hard</td></tr>
+      <tr><td>Suppliers registered on the ZDHC Gateway</td><td class="n">12,972</td><td class="grade">hard</td></tr>
+      <tr><td>Facilities doing a Higg FEM assessment</td><td class="n">18,000</td><td class="grade">hard</td></tr>
+      <tr><td>Documented wet-processing sites worldwide</td><td class="n">~16,000 floor</td><td class="grade">hard, incomplete</td></tr>
+      <tr><td>Global wet-processing sites, our estimate</td><td class="n">25,000–45,000</td><td class="grade"><span class="soft">judgement</span></td></tr>
+      <tr><td>Mill spend on all environmental platforms and schemes</td><td class="n">$2,000–5,000/yr</td><td class="grade">hard</td></tr>
+      <tr><td>Production re-shaded / re-dyed</td><td class="n">~20% / ~10%</td><td class="grade">hard, 2005</td></tr>
+      <tr><td>Cost of poor right-first-time, 1,000 t/yr mill</td><td class="n">~$91,000/yr</td><td class="grade">hard, 2005</td></tr>
+      <tr><td>Efficiency savings available per mill</td><td class="n">$230,000–730,000/yr</td><td class="grade">hard</td></tr>
+      <tr><td>Effluent plant running cost, Bangladesh mean</td><td class="n">~$174,000/yr</td><td class="grade">hard</td></tr>
+      <tr><td>Microplastics analysis market, 2025 → 2030</td><td class="n">$267M → $383M</td><td class="grade">vendor report</td></tr>
+      <tr><td>Water quality monitoring market, 2025 → 2030</td><td class="n">~$6B → $8.5B</td><td class="grade">vendor report</td></tr>
+      <tr><td>Paper mills as a second market</td><td class="n">ruled out</td><td class="grade">hard</td></tr>
+    </tbody>
+  </table>
+  </div>
+</div>
+
+<footer>
+  Written 2026-09-15 from the market-sizing session. Questions 1, 2 and 10 are already in live message threads. Add to this page rather than starting a second list; the answers belong in the evidence ledger, not here.
+</footer>
+</div>
