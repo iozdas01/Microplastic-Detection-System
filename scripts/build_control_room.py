@@ -4642,6 +4642,40 @@ var colGap=(W-2*PAD-BW)/(NCOL-1);
 var pinned=null;
 function cx(c){return PAD+c*colGap;}
 function colour(id){var c=D.cont[id];return c&&c.colour?c.colour:'#94a3b8';}
+var FTC={cellulosic:'fibre_cell',synthetic:'fibre_syn'};
+function ftypes(id){
+  var n=nodeById(id);if(!n||!n.ftypes)return null;
+  var r=rSel.value,out=[];
+  if(r){if(n.ftypes[r]!=null)out=[].concat(n.ftypes[r]);}
+  else{for(var k in n.ftypes)out=out.concat([].concat(n.ftypes[k]));}
+  var seen={},res=[];out.forEach(function(t){if(!seen[t]){seen[t]=1;res.push(t);}});
+  return res.length?res:null;
+}
+function ribColour(l){
+  if(l.dom!=='fibre')return colour(l.dom);
+  var t=ftypes(l.s);
+  return (t&&t.length===1)?colour(FTC[t[0]]):colour('fibre');
+}
+function traced(l,hl){
+  if(!hl)return true;
+  if(hl==='fibre_cell'||hl==='fibre_syn'){
+    if(l.carries.indexOf('fibre')<0&&l.dom!=='fibre')return false;
+    var t=ftypes(l.s);
+    if(!t)return true;
+    return t.indexOf(hl==='fibre_cell'?'cellulosic':'synthetic')>=0;
+  }
+  return l.carries.indexOf(hl)>=0||l.dom===hl;
+}
+function expand(l){
+  var out=[];
+  l.carries.forEach(function(c){
+    if(c!=='fibre'){out.push(c);return;}
+    var t=ftypes(l.s);
+    if(t)t.forEach(function(x){out.push(FTC[x]);});else out.push('fibre');
+  });
+  var seen={},res=[];out.forEach(function(c){if(!seen[c]){seen[c]=1;res.push(c);}});
+  return res;
+}
 function clab(id){var c=D.cont[id];return c&&c.label?c.label:id;}
 function el(n,a){var e=document.createElementNS(NS,n);for(var k in a){if(a[k]!=null)e.setAttribute(k,a[k]);}return e;}
 function esc(t){var d=document.createElement('div');d.textContent=t==null?'':String(t);return d.innerHTML;}
@@ -4732,16 +4766,16 @@ function draw(){
   var gl=el('g',{});svg.appendChild(gl);
   E.fwd.forEach(function(l){
     var a=E.so[l.id],b=E.to[l.id];if(!a||!b)return;
-    var on=!hl||l.carries.indexOf(hl)>=0||l.dom===hl;
+    var on=traced(l,hl);
     var pth=el('path',{d:ribbon(pos[l.s].x+BW,a.a,a.b,pos[l.t].x,b.a,b.b),
-      fill:colour(l.dom),'class':'pmf-rib'+(on?'':' is-off')});
+      fill:ribColour(l),'class':'pmf-rib'+(on?'':' is-off')});
     pth.setAttribute('data-l',l.id);
     gl.appendChild(pth);
   });
   g.links.filter(function(l){return l.back&&pos[l.s]&&pos[l.t];}).forEach(function(l,bi){
     var s=pos[l.s],t=pos[l.t],y=H-BOT+14+bi*16;
     var d='M'+(s.x+BW/2)+','+(s.y+s.h)+'L'+(s.x+BW/2)+','+y+'L'+(t.x+BW/2)+','+y+'L'+(t.x+BW/2)+','+(t.y+t.h);
-    var pth=el('path',{d:d,'class':'pmf-back',stroke:colour(l.dom),'stroke-width':Math.max(1.2,Math.min(5,g.lv[l.id]*0.7))});
+    var pth=el('path',{d:d,'class':'pmf-back',stroke:ribColour(l),'stroke-width':Math.max(1.2,Math.min(5,g.lv[l.id]*0.7))});
     pth.setAttribute('data-l',l.id);gl.appendChild(pth);
     var bl=el('text',{x:s.x+(t.x-s.x)*(0.3+0.34*bi),y:y-4,'class':'pmf-backlab','text-anchor':'middle'});
     bl.textContent=l.name+' \u2191 '+num(g.lv[l.id])+' L/kg';gl.appendChild(bl);
@@ -4770,10 +4804,12 @@ function draw(){
     if(l.s==='src-fresh'){water+=g.lv[l.id];return;}
     if(colmap[l.s]!==1)return;
     drain+=g.lv[l.id];
-    if(l.carries.indexOf('fibre')>=0)fib+=g.lv[l.id];
+    if(traced(l,(hl==='fibre_cell'||hl==='fibre_syn')?hl:'fibre')&&
+       (l.carries.indexOf('fibre')>=0||l.dom==='fibre'))fib+=g.lv[l.id];
   });
   tot.innerHTML='<b>'+num(water)+'</b> L/kg in \u00b7 <b>'+num(drain)+
-    '</b> L/kg drains from the process \u00b7 <b>'+num(fib)+'</b> L/kg of that carries fibre';
+    '</b> L/kg drains from the process \u00b7 <b>'+num(fib)+'</b> L/kg of that carries '+
+    ((hl==='fibre_cell'||hl==='fibre_syn')?clab(hl).toLowerCase().split(' (')[0]:'fibre');
   wire(g,pos);
   if(pinned)show(pinned.k,pinned.v,g);
 }
@@ -4803,14 +4839,18 @@ function show(kind,id,g){
       (l.back?' &middot; returns upstream':'')+'</p>'+
       '<div class="pmf-kv"><span><b>'+num(g.lv[id])+' L/kg</b> of fabric</span>'+
       (l.when?'<span>'+esc(l.when)+'</span>':'')+'</div>'+
-      chips(l.carries)+(l.note?'<p>'+esc(l.note)+'</p>':'');
+      chips(expand(l))+(l.note?'<p>'+esc(l.note)+'</p>':'');
   }else{
     var n=nodeById(id);if(!n)return;
     var lay=n.layer&&n.layer!=='none'?D.layers[n.layer]:null;
     panel.innerHTML='<h4>'+esc(n.label)+'</h4>'+
       '<p class="pmf-path">'+esc(n.phase||D.cols[n.col]||'')+' &middot; '+num(g.val[id])+' L/kg through it</p>'+
       (n.note?'<p>'+esc(n.note)+'</p>':'')+
+      (function(){var t=ftypes(n.id);if(!t)return '';
+        return chips(t.map(function(x){return FTC[x];}))+
+          (n.fnote?'<p>'+esc(n.fnote)+'</p>':'');})()+
       (n.measure?'<div class="pmf-kv"><span><b>Measure here:</b> '+esc(n.measure)+'</span></div>':'')+
+      (n.also?'<div class="pmf-kv"><span><b>The same point could also read:</b> '+esc(n.also)+'</span></div>':'')+
       (lay?'<div class="pmf-kv"><span><b>'+esc(lay.label)+'</b> '+esc(lay.note)+'</span></div>':'')+
       femList(n.fem);
   }
@@ -4894,7 +4934,10 @@ def _pm_flow_html(fm: dict, rows: list[dict]) -> str:
                       "kind": "stage", "note": str(e.get("what_happens") or ""),
                       "phase": str(e.get("_phase") or ""), "layer": str(e.get("sensor_layer") or "none"),
                       "fem": _sl(e.get("fem")), "measure": str(e.get("measurement_point") or ""),
-                      "routes": stage_routes})
+                      "routes": stage_routes,
+                      "ftypes": (e.get("fibre_types") if isinstance(e.get("fibre_types"), dict) else None),
+                      "fnote": str(e.get("fibre_note") or ""),
+                      "also": str(e.get("also_measurable") or "")})
         vol = 0.0
         for st in streams:
             if not isinstance(st, dict):
@@ -4944,12 +4987,14 @@ def _pm_flow_html(fm: dict, rows: list[dict]) -> str:
 
     ropts = "".join(f'<option value="{escape(k)}">{escape(str(v.get("label") or k))}</option>'
                     for k, v in routes.items() if isinstance(v, dict))
+    def _shown(v):
+        return isinstance(v, dict) and v.get("legend") is not False
     copts = "".join(f'<option value="{escape(k)}">{escape(str(v.get("label") or k))}</option>'
-                    for k, v in cont.items() if isinstance(v, dict) and k != "mixed")
+                    for k, v in cont.items() if _shown(v))
     legend = "".join(
         f'<button type="button" data-c="{escape(k)}"><i style="background:{escape(str(v.get("colour") or "#94a3b8"))}"></i>'
         f'{escape(str(v.get("label") or k))}</button>'
-        for k, v in cont.items() if isinstance(v, dict))
+        for k, v in cont.items() if _shown(v))
 
     return (
         '<div class="pmf">'
@@ -5026,20 +5071,20 @@ def render_process_tab(fm: dict, entries: list[dict]) -> str:
     measured = [e for e in rows if str(e.get("fibre_measured_today") or "").lower() in ("true", "yes")]
     claim = (
         "<b>What the map currently says</b><p>"
-        f"<em>{len(rows)}</em> stages from raw material to finished product; <em>{len(wet)}</em> of "
+        f"<em>{len(rows)}</em> wet-processing and treatment steps, in four blocks; <em>{len(wet)}</em> of "
         f"them touch water. Fibre release is <em>high</em> at "
         + (", ".join(f"<em>{esc(e['name'])}</em>" for e in high) if high else "<em>no stage yet graded</em>")
         + f". <em>{len(measured)}</em> stage{'s' if len(measured) != 1 else ''} measure{'s' if len(measured) == 1 else ''} anything "
           "fibre-related today"
-        + (f"; the wet stages with a declared figure add up to about <em>{water_total:,.0f}</em> L of water "
-           "per kg of fabric." if water_total else ".")
+        + (f"; every route at once adds up to about <em>{water_total:,.0f}</em> L of water per kg of "
+           "fabric, and no single mill runs them all." if water_total else ".")
         + "</p>")
     kpis = "".join(f"<span><strong>{v}</strong>{esc(str(k))}</span>" for k, v in [
-        ("stages", len(rows)),
-        ("wet stages", len(wet)),
+        ("steps mapped", len(rows)),
+        ("wet steps", len(wet)),
         ("high fibre release", len(high)),
-        ("L water per kg, declared stages", f"{water_total:,.0f}" if water_total else "n/a"),
-        ("stages measuring fibres today", len(measured)),
+        ("L water per kg, all routes at once", f"{water_total:,.0f}" if water_total else "n/a"),
+        ("steps measuring fibres today", len(measured)),
     ])
 
     # ── the flow: phase bands, lanes inside, chips in order ──────────────────
@@ -5106,17 +5151,32 @@ def render_process_tab(fm: dict, entries: list[dict]) -> str:
     water_svg = _process_water_svg(rows, fm)
 
     # ── the table ────────────────────────────────────────────────────────────
+    def _ftype(e):
+        ft = e.get("fibre_types")
+        if not isinstance(ft, dict) or not ft:
+            return ""
+        seen = []
+        for v in ft.values():
+            for t in (v if isinstance(v, list) else [v]):
+                if t not in seen:
+                    seen.append(str(t))
+        if len(seen) == 1:
+            return seen[0]
+        return "both, by route"
+
     trs = "".join(
-        f'<tr><td><a href="#" data-pm="{esc(e["id"])}">{esc(str(int(e["_order"]) if e["_order"] == int(e["_order"]) else e["_order"]))}. {esc(e["name"])}</a></td>'
-        f'<td>{esc(e["_phase"])}</td><td>{esc(e["_wet"])}</td>'
+        f'<tr><td>{esc(str(int(e["_order"]) if e["_order"] == int(e["_order"]) else e["_order"]))}. {esc(e["name"])}</td>'
+        f'<td>{esc(e["_phase"])}</td>'
         f'<td>{esc(str(e.get("water_l_per_kg") or ""))}</td>'
         f'<td><span class="smap-liab band-{e["_band"]}">{esc(e["_release"])}</span></td>'
-        f'<td>{esc(str(e.get("inputs") or ""))}</td>'
+        f'<td>{esc(_ftype(e))}</td>'
         f'<td>{esc(str(e.get("wastewater") or ""))}</td>'
-        f'<td>{esc(str(e.get("measurement_point") or e.get("drain") or ""))}</td></tr>' for e in rows)
-    table = ('<div class="tmap-table pmap-table"><table><thead><tr><th>Stage</th><th>Phase</th>'
-             '<th>Wet / dry</th><th>Water L/kg</th><th>Fibre release</th><th>Water and chemicals in</th>'
-             f'<th>Wastewater out</th><th>Measurement point</th></tr></thead><tbody>{trs}</tbody></table></div>')
+        f'<td>{esc(str(e.get("measurement_point") or e.get("drain") or ""))}</td>'
+        f'<td>{esc(str(e.get("also_measurable") or ""))}</td></tr>' for e in rows)
+    table = ('<div class="tmap-table pmap-table"><table><thead><tr><th>Stage</th><th>Block</th>'
+             '<th>Water L/kg</th><th>Fibre release</th><th>Fibre type</th>'
+             f'<th>Wastewater out</th><th>Measurement point</th>'
+             f'<th>Same point could also read</th></tr></thead><tbody>{trs}</tbody></table></div>')
 
     # ── cards by phase ───────────────────────────────────────────────────────
     cards = ""
@@ -5163,9 +5223,9 @@ def render_process_tab(fm: dict, entries: list[dict]) -> str:
         '<div class="cmap-head"><div>'
         '<div class="co-eyebrow">Process scene</div>'
         f'<h2 id="pmap-title">{esc(title)}</h2>'
-        '<p>Every stage from raw material to finished product, in order. The left edge of each '
-        'chip is how much fibre the stage sheds into water; a drop marks a stage that touches '
-        'water at all. Click a chip. Every value reads a declared field in '
+        '<p>Wet processing in four blocks: preparation, coloration, finishing, and the treatment '
+        'plant everything drains to. Each step declares what enters it, what leaves it and where a '
+        'measurement would sit. Every value reads a declared field in '
         '<code>process-map.md</code>.</p>'
         '</div></div>'
         f'<div class="smap-claim">{claim}</div>'
@@ -5177,16 +5237,11 @@ def render_process_tab(fm: dict, entries: list[dict]) -> str:
         'ribbon, click a node. The amber ring marks a candidate sensor point; the Higg FEM box shows which '
         'questions a measurement there could evidence.</p></div>'
         f'{flowmap}'
-        '<div class="cmap-matrix-head smap-spaced"><h3>The four blocks, in order</h3>'
-        '<p>Every step files under one of them. Click a chip to inspect it.</p></div>'
-        f'{flow}{legend}'
-        f'{inspector}'
         '<div class="cmap-matrix-head smap-spaced"><h3>Stage by stage</h3>'
-        '<p>Water, fibre release, why, and what the mill measures there today.</p></div>'
+        '<p>The same sixteen steps as a reference table: how much water, what fibre comes off and '
+        'of which kind, what the drain carries, where a measurement would sit, and what else that '
+        'one point could read.</p></div>'
         f'{table}'
-        '<div class="cmap-matrix-head smap-spaced"><h3>Every stage, by phase</h3>'
-        '<p>What happens, the machines, the chemicals, and where the water goes.</p></div>'
-        f'{cards}'
         '</section>')
 
 

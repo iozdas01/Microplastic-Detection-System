@@ -21,9 +21,16 @@ map_value_labels:
   fibre_release: {none: "none", low: "low", medium: "medium", high: "high"}
   fibre_created: {none: "none", low: "low", medium: "medium", high: "high"}
 map_contaminants:
-  fibre:
-    label: Fibre and lint
+  fibre_syn:
+    label: Synthetic fibre (polyester, polyamide, elastane)
     colour: '#e11d48'
+  fibre_cell:
+    label: Cellulosic fibre (cotton, viscose)
+    colour: '#f472b6'
+  fibre:
+    label: Fibre, type depends on the route
+    colour: '#be185d'
+    legend: false
   colour:
     label: Colour and unfixed dye
     colour: '#9333ea'
@@ -51,6 +58,7 @@ map_contaminants:
   mixed:
     label: Mixed effluent
     colour: '#94a3b8'
+    legend: false
 map_routes:
   cotton_knit:
     label: Cotton knit dyehouse
@@ -321,6 +329,11 @@ streams:
   - surfactant
   when: After the liquor drop
   note: Carries dissolved size plus the first loose fibre off the woven surface.
+fibre_types:
+  cotton_woven: cellulosic
+  polyester: synthetic
+also_measurable: Flow, temperature, turbidity. Dosing enzyme against size actually removed would save
+  a rinse.
 first_added: 2026-09-15
 
 ## Scouring
@@ -387,6 +400,12 @@ streams:
   - surfactant
   when: Two or three rinses after the drop
   note: Where the fly carried in from spinning and knitting finally washes out.
+fibre_types:
+  cotton_knit: cellulosic
+  cotton_woven: cellulosic
+  polyester: synthetic
+also_measurable: Flow, temperature, pH, conductivity. Caustic dosing and a rinse end point; every rinse
+  skipped is about 7 L/kg and the heat in it.
 first_added: 2026-09-15
 
 ## Bleaching
@@ -447,6 +466,10 @@ streams:
   - alkali
   when: After the drop and the peroxide kill
   note: ''
+fibre_types:
+  cotton_knit: cellulosic
+  cotton_woven: cellulosic
+also_measurable: Flow, temperature, redox. Peroxide dose and the kill end point.
 first_added: 2026-09-15
 
 ## Mercerizing
@@ -505,6 +528,8 @@ streams:
   - salt
   when: Continuous
   note: High pH and sodium; neutralised before it reaches equalisation.
+also_measurable: Caustic concentration and flow. Recovery efficiency, which is the whole economics of
+  mercerizing.
 first_added: 2026-09-15
 
 ## Dyeing
@@ -570,6 +595,13 @@ streams:
   when: End of the dyeing cycle, one dump per batch
   note: 'The most contaminated single stream in the mill and the hardest to measure: 60-130 C, salt to
     80 g/L, full shade depth, foam.'
+fibre_types:
+  cotton_knit: cellulosic
+  cotton_woven: cellulosic
+  polyester: synthetic
+  denim_laundry: cellulosic
+also_measurable: 'Flow, temperature, conductivity, colour. Bath exhaustion read live is the largest single
+  lever in the mill: fewer re-dyes, shorter cycles, less steam.'
 first_added: 2026-09-15
 
 ## Soaping, washing and rinsing
@@ -649,6 +681,17 @@ streams:
   - colour
   when: Two to four rinses to the end point
   note: Most of the mill's water volume. Dilute, so a concentration reading here needs flow to mean anything.
+fibre_types:
+  cotton_knit: cellulosic
+  cotton_woven: cellulosic
+  polyester: synthetic
+  printing:
+  - cellulosic
+  - synthetic
+fibre_note: On a blend the rinse carries both at once. Which of the two is leaving, and in what proportion,
+  is the number a brand cannot get today.
+also_measurable: Flow, temperature, conductivity, colour, fibre. Rinse end point detection is the biggest
+  water and energy saving available, because rinses are most of the volume.
 first_added: 2026-09-15
 
 ## Printing
@@ -710,6 +753,11 @@ streams:
   - colour
   when: Between designs, an event not a flow
   note: Pigment and binder particles here read like fibres to any shape-blind method.
+fibre_types:
+  printing:
+  - cellulosic
+  - synthetic
+also_measurable: Flow, colour, solids. Wash-off end point and screen-wash events.
 first_added: 2026-09-15
 
 ## Reduction clearing
@@ -770,12 +818,16 @@ streams:
   - colour
   when: After the clearing bath
   note: Polyester softened by the 130 C cycle sheds into this rinse.
+fibre_types:
+  polyester: synthetic
+fibre_note: Polyester only, so everything shed here is plastic.
+also_measurable: Flow, temperature, redox. Clearing end point instead of a fixed time.
 first_added: 2026-09-15
 
 ## Garment laundry and denim wash
 
 id: P9
-order: 10
+order: 11
 phase: finishing
 lane: laundry
 short: Garment / denim wash
@@ -868,12 +920,20 @@ streams:
   - surfactant
   when: Last bath
   note: ''
+fibre_types:
+  denim_laundry:
+  - cellulosic
+  - synthetic
+fibre_note: Denim is cotton, so the shed fibre is cellulosic, except where the stretch yarn adds elastane.
+  A blend sheds both and no current method separates them.
+also_measurable: Flow, temperature, turbidity, fibre. Cycle end point per recipe, and stone and enzyme
+  dose against the fade actually achieved.
 first_added: 2026-09-15
 
 ## Finishing
 
 id: P10
-order: 9
+order: 10
 phase: finishing
 lane: all
 short: Finishing
@@ -934,12 +994,20 @@ streams:
   - surfactant
   when: Cleaning the padder and stenter
   note: Silicone films make this a poor place to put an optical instrument.
+fibre_types:
+  cotton_knit: cellulosic
+  cotton_woven: cellulosic
+  polyester: synthetic
+  printing:
+  - cellulosic
+  - synthetic
+also_measurable: Flow and add-on. Trough dumps at recipe change are pure loss.
 first_added: 2026-09-15
 
 ## Equipment cleaning
 
 id: P11
-order: 8.5
+order: 9
 phase: coloration
 lane: all
 short: Equipment cleaning
@@ -997,6 +1065,15 @@ streams:
   when: Every one to several batches, by mill practice
   note: The batch's captured fibre going to drain in one slug. How often this happens is an interview
     question, not a published figure.
+fibre_types:
+  cotton_knit: cellulosic
+  cotton_woven: cellulosic
+  polyester: synthetic
+  printing: &id001
+  - cellulosic
+  - synthetic
+  denim_laundry: *id001
+also_measurable: Event detection. How often lint filters are really cleaned, which nobody logs.
 first_added: 2026-09-15
 
 ## ETP: equalisation
@@ -1049,6 +1126,8 @@ streams:
   - solids
   when: Continuous
   note: Everything the mill released, mixed and smoothed. The compliance influent, and source-blind.
+also_measurable: Flow, pH, temperature, TSS. Load balancing and a shock warning to the plant before it
+  arrives.
 first_added: 2026-09-15
 
 ## ETP: coagulation, flocculation and clarification
@@ -1108,6 +1187,8 @@ streams:
   - colour
   when: Continuous or batched
   note: Where the fibre actually goes. Measure only the discharge and this transfer is invisible.
+also_measurable: TSS in and out, coagulant dose, sludge mass. Dosing against real load rather than a fixed
+  rate.
 first_added: 2026-09-15
 
 ## ETP: biological treatment
@@ -1164,6 +1245,8 @@ streams:
   - fibre
   when: Continuous
   note: Synthetic fibre is not degraded here; it partitions into the sludge or passes through.
+also_measurable: Dissolved oxygen, mixed liquor solids, load. Aeration is the treatment plant's largest
+  power consumer.
 first_added: 2026-09-15
 
 ## ETP: tertiary treatment and discharge
@@ -1235,6 +1318,7 @@ streams:
   - fibre
   when: Every filter run, an event
   note: Returns captured solids to the head of the plant. A loop, not an output.
+also_measurable: Flow, TSS, differential pressure. Backwash on condition rather than on a timer.
 first_added: 2026-09-15
 
 ## ZLD and reuse loop
@@ -1293,6 +1377,8 @@ streams:
   - colour
   when: Continuous
   note: To the evaporator and crystalliser where ZLD is run.
+also_measurable: Flow, conductivity, differential pressure. Fibre in the feed is what shortens membrane
+  life.
 first_added: 2026-09-15
 
 ## How water actually flows
@@ -1344,6 +1430,39 @@ Dated 2026-09-15. A data-model placement strategy, not a claim that one instrume
 3. Source layer: one high-impact process, such as a garment laundry washer, a dye-bath and first-rinse drain, or a printing washdown stream.
 
 That is the minimum structure that answers the three useful questions: what is leaving the site, is the ETP removing it, and which operation is driving it.
+
+## How many sensors, and where
+
+Dated 2026-09-15. Counts are the minimum that answers all three questions (what leaves, is the
+plant removing it, which operation drives it), not a recommendation to sell that many.
+
+| Route | Minimum units | Where they sit |
+|---|---|---|
+| Cotton knit dyehouse | 3 | One dye machine's first rinse, the equalisation outlet, the final discharge |
+| Cotton woven mill | 3 | Same three, with the pretreatment header preferred over a single machine if desizing dominates |
+| Polyester or synthetic mill | 4 | Dye-machine first rinse, the reduction-clearing rinse where the plastic fibre peaks, equalisation outlet, final discharge |
+| Printing house | 3 | Wash-off line, equalisation outlet, final discharge |
+| Denim or garment laundry | 4 | One washer drain, the laundry header, equalisation outlet, final discharge |
+
+A fourth or fifth unit across the clarifier turns "we discharge X" into "the plant removes Y",
+which is the claim a filtration vendor and an auditor both want and neither can make today.
+
+**How the count grows with the product, not with the pitch.**
+
+1. **Three units, compliance.** A dated, flow-normalised record at the outfall and the influent.
+   Evidences the FEM wastewater questions and answers the Inditex fibre-control clause with a
+   number rather than a procedure.
+2. **One unit per high-impact machine, attribution.** Now a reading belongs to a batch, a recipe
+   and a fabric. This is where a twenty-machine dyehouse becomes twenty source units, and where
+   the fabric-level shedding figure that brands ask a lab for starts to come off the line instead.
+3. **Joined to machine data, control.** The `also_measurable` field on each stage is the list:
+   flow, temperature, conductivity, colour, pressure. Rinse end-point detection is the largest
+   single water and energy saving in a dyehouse because rinsing is most of the volume and most of
+   the heat. Bath exhaustion read live cuts re-dyes. Backwash on condition rather than on a timer
+   cuts both water and pumping.
+4. **Joined across sites, the platform.** Dye-machine controllers already speak OPC UA and MQTT
+   through the mill's own MES, so the missing piece is not a protocol, it is that no effluent
+   instrument publishes into it. A brand-side view is the same records rolled up by facility.
 
 ## Data model before sensors
 
