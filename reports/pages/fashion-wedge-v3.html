@@ -1,0 +1,174 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Fashion Wedge: Measurement to Process Control</title>
+<style>
+  :root {
+    color-scheme: light dark;
+    --ground:#f2f0ea; --panel:#faf9f5; --ink:#17201d; --muted:#5d6763;
+    --quiet:#7b8581; --rule:#cfd4cf; --accent:#087f6d; --accent-soft:#d9eee8;
+    --warn:#9a5b12; --warn-soft:#f4e5cf; --stop:#a13b39; --stop-soft:#f5dcda;
+    --shadow:0 12px 30px rgba(30,43,38,.07);
+  }
+  @media (prefers-color-scheme:dark) {
+    :root { --ground:#111713; --panel:#19211d; --ink:#edf2ee; --muted:#b4beb8;
+      --quiet:#8c9891; --rule:#354139; --accent:#67ccb8; --accent-soft:#203f37;
+      --warn:#e4af69; --warn-soft:#49351f; --stop:#ef918c; --stop-soft:#4a2928;
+      --shadow:0 12px 30px rgba(0,0,0,.2); }
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{margin:0;background:var(--ground);color:var(--ink);font-family:Arial,"Helvetica Neue",sans-serif;font-size:15px;line-height:1.48}
+  .shell{max-width:1220px;margin:auto;padding:28px 22px 72px}
+  .mono,.metric strong,.tag,.time,.status,.gate-no{font-family:"SFMono-Regular",Consolas,"Liberation Mono",monospace}
+  header{display:grid;grid-template-columns:minmax(0,1.7fr) minmax(280px,.8fr);gap:38px;border-top:7px solid var(--ink);padding:34px 0 30px;border-bottom:1px solid var(--rule)}
+  .eyebrow{margin:0 0 15px;color:var(--accent);font-weight:700;letter-spacing:.08em;text-transform:uppercase;font-size:12px}
+  h1{font-size:clamp(38px,6vw,76px);line-height:.97;letter-spacing:-.055em;margin:0;max-width:900px}
+  .lead{font-size:18px;max-width:70ch;margin:22px 0 0;color:var(--muted)}
+  .brief{align-self:end;padding:18px 0 2px;border-top:1px solid var(--ink)}
+  .brief p{margin:0 0 12px;color:var(--muted)}
+  .legend{display:flex;flex-wrap:wrap;gap:7px;margin-top:18px}
+  .tag{font-size:11px;border:1px solid var(--rule);padding:4px 7px;border-radius:2px;color:var(--muted)}
+  .tag.s{color:var(--accent);border-color:var(--accent)} .tag.f{color:var(--warn);border-color:var(--warn)} .tag.v{color:var(--stop);border-color:var(--stop)}
+  section{padding:42px 0;border-bottom:1px solid var(--rule)}
+  .section-head{display:grid;grid-template-columns:minmax(250px,.72fr) minmax(0,1.28fr);gap:30px;align-items:start;margin-bottom:24px}
+  h2{font-size:27px;line-height:1.05;letter-spacing:-.035em;margin:0}
+  .section-head p{margin:0;color:var(--muted);max-width:72ch}
+  .metrics{display:grid;grid-template-columns:repeat(4,1fr);background:var(--panel);border:1px solid var(--rule);box-shadow:var(--shadow)}
+  .metric{padding:22px 18px;border-right:1px solid var(--rule)} .metric:last-child{border-right:0}
+  .metric strong{display:block;font-size:30px;line-height:1;color:var(--accent);font-variant-numeric:tabular-nums}
+  .metric.ceiling strong{color:var(--warn)}
+  .metric span{display:block;margin-top:9px;color:var(--muted);font-size:13px}
+  .callout{display:grid;grid-template-columns:auto 1fr;gap:15px;margin-top:14px;padding:16px 18px;background:var(--warn-soft);border-left:4px solid var(--warn);color:var(--ink)}
+  .callout b{font-family:"SFMono-Regular",Consolas,monospace;color:var(--warn)} .callout p{margin:0}
+  .trunk{padding:21px;background:var(--ink);color:var(--ground);display:grid;grid-template-columns:auto 1fr auto;gap:18px;align-items:center}
+  .trunk .time{font-size:12px;color:var(--accent-soft)} .trunk h3{font-size:21px;margin:0 0 3px}.trunk p{margin:0;opacity:.75}
+  .trunk .money{text-align:right;font-weight:700}
+  .lanes{display:grid;grid-template-columns:1.55fr .9fr;gap:18px;margin-top:18px}
+  .lane{background:var(--panel);border:1px solid var(--rule);padding:23px;box-shadow:var(--shadow)}
+  .lane.primary{border-top:5px solid var(--accent)} .lane.secondary{border-top:5px solid var(--quiet)}
+  .lane-head{display:flex;justify-content:space-between;gap:12px;align-items:start;padding-bottom:16px;border-bottom:1px solid var(--rule)}
+  .lane h3{font-size:22px;margin:0;letter-spacing:-.025em}.lane-head p{margin:5px 0 0;color:var(--muted)}
+  .status{font-size:11px;color:var(--accent);text-align:right}.secondary .status{color:var(--quiet)}
+  .flow{display:grid;grid-template-columns:repeat(4,1fr);margin-top:18px}
+  .step{padding:0 15px;border-left:1px solid var(--rule);min-height:150px}.step:first-child{border-left:0;padding-left:0}.step:last-child{padding-right:0}
+  .step b{display:block;font-size:15px;margin-bottom:7px}.step p{margin:0;color:var(--muted);font-size:13px}.step .time{display:block;color:var(--accent);font-size:10px;margin-bottom:8px;text-transform:uppercase;letter-spacing:.05em}
+  .secondary .flow{grid-template-columns:1fr}.secondary .step{border-left:0;border-bottom:1px solid var(--rule);padding:14px 0;min-height:0}.secondary .step:last-child{border-bottom:0}
+  .partners{display:grid;grid-template-columns:1.3fr .7fr;gap:18px}
+  .partner{background:var(--panel);border:1px solid var(--rule);padding:23px}.partner h3{font-size:22px;margin:0 0 4px}.partner>p{color:var(--muted);margin:0 0 16px}
+  .terms{display:grid;grid-template-columns:1fr 1fr;gap:0 22px}.terms p{margin:0;padding:10px 0;border-bottom:1px solid var(--rule);font-size:13px}.terms b{display:block;color:var(--ink)}
+  .secondary .terms{grid-template-columns:1fr}
+  .buyers{display:grid;grid-template-columns:1fr 1fr;gap:18px}.buyer{padding:23px;background:var(--panel);border:1px solid var(--rule)}
+  .buyer h3{margin:0 0 12px;font-size:22px}.buyer dl{margin:0}.buyer dt{font-weight:700;margin-top:14px}.buyer dd{margin:3px 0 0;color:var(--muted)}
+  .gates{display:grid;grid-template-columns:repeat(2,1fr);gap:14px}
+  .gate{background:var(--panel);border:1px solid var(--rule);display:grid;grid-template-columns:54px 1fr;min-height:152px}
+  .gate-no{display:grid;place-items:start center;padding-top:20px;background:var(--accent-soft);color:var(--accent);font-weight:700}
+  .gate-body{padding:19px}.gate h3{margin:0 0 7px;font-size:17px}.gate p{margin:0;color:var(--muted);font-size:13px}.gate strong{display:block;margin-top:12px;color:var(--stop);font-size:12px;text-transform:uppercase;letter-spacing:.035em}
+  .model{overflow:auto;background:var(--panel);border:1px solid var(--rule)}
+  table{width:100%;border-collapse:collapse;min-width:760px}th,td{text-align:left;vertical-align:top;padding:14px 16px;border-bottom:1px solid var(--rule)}th{font-size:11px;text-transform:uppercase;letter-spacing:.06em;color:var(--quiet)}td{font-size:13px;color:var(--muted)}td:first-child{font-weight:700;color:var(--ink)}tr:last-child td{border-bottom:0}
+  .tomorrow{display:grid;grid-template-columns:.65fr 1.35fr;gap:28px;background:var(--accent);color:#f4fbf8;padding:30px}.tomorrow h2{font-size:32px}.tomorrow p{margin:0;font-size:18px;line-height:1.55}.tomorrow small{display:block;margin-top:18px;opacity:.78;font-size:12px}
+  footer{padding-top:22px;color:var(--quiet);font-size:12px;display:flex;justify-content:space-between;gap:20px}
+  @media(max-width:850px){header,.section-head,.lanes,.partners,.buyers,.tomorrow{grid-template-columns:1fr}.metrics{grid-template-columns:1fr 1fr}.metric:nth-child(2){border-right:0}.metric:nth-child(-n+2){border-bottom:1px solid var(--rule)}.flow{grid-template-columns:1fr 1fr}.step:nth-child(3){border-left:0;padding-left:0;margin-top:18px}.step:nth-child(4){margin-top:18px}.gates{grid-template-columns:1fr}}
+  @media(max-width:560px){.shell{padding:16px 14px 50px}header{padding-top:24px}.metrics{grid-template-columns:1fr}.metric{border-right:0;border-bottom:1px solid var(--rule)!important}.metric:last-child{border-bottom:0!important}.trunk{grid-template-columns:1fr}.trunk .money{text-align:left}.flow,.terms{grid-template-columns:1fr}.step,.step:nth-child(3),.step:nth-child(4){border-left:0;border-bottom:1px solid var(--rule);padding:13px 0;margin:0;min-height:0}.step:last-child{border-bottom:0}.gates{grid-template-columns:1fr}.gate{grid-template-columns:42px 1fr}footer{display:block}}
+</style>
+</head>
+<body>
+<main class="shell">
+  <header>
+    <div>
+      <p class="eyebrow">Fashion first. Measurement first.</p>
+      <h1>From polymer ID to process control</h1>
+      <p class="lead">Build the inline measurement core in three months, use it to unlock brand revenue, then expand into dye, chemical, water and energy optimization inside textile mills.</p>
+      <div class="legend"><span class="tag s">[S] sourced</span><span class="tag f">[F] founder ceiling</span><span class="tag">[A] assumption</span><span class="tag v">[V] validation gate</span></div>
+    </div>
+    <aside class="brief">
+      <p><strong>Matter and CyFract are design partners.</strong> They are not clients and no revenue is assigned to them.</p>
+      <p>Matter is the fashion route. CyFract is a parallel, later route into other industries.</p>
+      <p class="mono">Locked 2026-09-15</p>
+    </aside>
+  </header>
+
+  <section>
+    <div class="section-head"><h2>The value pool is real. Our share is unproved.</h2><p>Clean by Design results show headroom in wet-processing facilities. They came from broad efficiency programmes, not from this product. The percentages use different denominators.</p></div>
+    <div class="metrics">
+      <div class="metric"><strong>12.6%</strong><span>average energy-efficiency savings across 67 facilities [S]</span></div>
+      <div class="metric"><strong>11.5%</strong><span>average water savings across the same group [S]</span></div>
+      <div class="metric"><strong>10.8%</strong><span>average GHG reduction across the same group [S]</span></div>
+      <div class="metric ceiling"><strong>$20B</strong><span>fashion-manufacturing wedge [F], awaiting bottom-up proof</span></div>
+    </div>
+    <div class="callout"><b>35%</b><p>This is founder shorthand from adding 12.6 + 11.5 + 10.8. It is not a valid combined savings rate. Use 10-35% only as a scenario range until energy, water, dye, chemicals, treatment and rework are modeled separately.</p></div>
+  </section>
+
+  <section>
+    <div class="section-head"><h2>One core, two parallel routes</h2><p>Fashion is the near-term revenue path. The horizontal industry path can mature in parallel and must not delay the fashion build.</p></div>
+    <div class="trunk"><span class="time">0-3 months [A]</span><div><h3>Prototype plus inline polymer identification</h3><p>Count, concentration, cotton/polyester/unknown probabilities, calibration, confidence and traceability on real wastewater.</p></div><div class="money">Target: first paid brand path</div></div>
+    <div class="lanes">
+      <article class="lane primary">
+        <div class="lane-head"><div><h3>Fashion route</h3><p>Brands and Matter lead into textile mills.</p></div><span class="status">FOCUS NOW</span></div>
+        <div class="flow">
+          <div class="step"><span class="time">Revenue entry</span><b>Funded brand programmes</b><p>Test 20-50 named programmes and $25k, $50k and $100k annual offers.</p></div>
+          <div class="step"><span class="time">Design deployment</span><b>Matter filter loop</b><p>Cost-covered R&amp;D with paired sensors, operating data and mill access.</p></div>
+          <div class="step"><span class="time">Mill expansion</span><b>Attribute wet-process loss</b><p>Join sensor data to batch, recipe, machine, chemical, energy and water use.</p></div>
+          <div class="step"><span class="time">Full product</span><b>Verify optimization</b><p>Close one paid loop, then add dye, chemical, water and energy decisions.</p></div>
+        </div>
+      </article>
+      <article class="lane secondary">
+        <div class="lane-head"><div><h3>Horizontal route</h3><p>CyFract plus alternatives.</p></div><span class="status">ABOUT 1 YEAR [A]</span></div>
+        <div class="flow">
+          <div class="step"><b>Wait for deployment maturity</b><p>Replace the one-year estimate with funding, site, date, data owner and buyer milestones.</p></div>
+          <div class="step"><b>Recruit 3-5 alternatives</b><p>Remove single-partner dependency before allocating core product capacity.</p></div>
+          <div class="step"><b>Validate each industry</b><p>Wastewater, desalination, mining, oil and gas and agriculture remain unsized.</p></div>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <section>
+    <div class="section-head"><h2>Design-partner economics</h2><p>The partnership only works if cost coverage buys a reusable product, data rights and distribution access. Neither partner is counted as a customer.</p></div>
+    <div class="partners">
+      <article class="partner"><h3>Matter</h3><p>Near-term textile design partner. No margin assumed.</p><div class="terms"><p><b>Matter covers</b>Hardware, installation, testing and agreed R&amp;D costs.</p><p><b>Lattice receives</b>Data rights, a trained product and named brand or mill introductions.</p><p><b>Required access</b>Inlet/outlet, flow, pressure, filter state, cleaning and intervention records.</p><p><b>Contract gate</b>Site consent, costs, rights, success criteria and commercial access in writing.</p></div></article>
+      <article class="partner secondary"><h3>CyFract</h3><p>Later horizontal design partner. No current revenue assigned.</p><div class="terms"><p><b>Maturity gate</b>Funded project, named site, installation date and data owner.</p><p><b>Dependency gate</b>At least two credible partner routes to industrial deployments.</p><p><b>Market gate</b>Each water matrix, measured property, buyer and budget validated separately.</p></div></article>
+    </div>
+  </section>
+
+  <section>
+    <div class="section-head"><h2>Brands and mills buy different outcomes</h2><p>The brand has the programme budget and supplier leverage. The mill owns the operating bill and the direct return from optimization.</p></div>
+    <div class="buyers">
+      <article class="buyer"><h3>Brand buys the portfolio</h3><dl><dt>Product</dt><dd>Verified baselines and reductions, supplier comparison, intervention priorities and auditable exports.</dd><dt>Working price</dt><dd>$50k a year, tested against $25k and $100k. At 20-50 programmes, the sensitivity is $1.0M-$2.5M ARR [A].</dd><dt>Proof required</dt><dd>A live budget owner, procurement path and paid commitment after seeing the prototype.</dd></dl></article>
+      <article class="buyer"><h3>Mill buys the operating return</h3><dl><dt>Product</dt><dd>Sensors, integrations, attribution, recommendations and verified savings.</dd><dt>Budget logic</dt><dd>Production, utilities, dyehouse, quality, ETP and capital improvement.</dd><dt>Proof required</dt><dd>One controlled intervention lowers a cost line while quality and throughput hold.</dd></dl></article>
+    </div>
+  </section>
+
+  <section>
+    <div class="section-head"><h2>Six gates make the plan convincing</h2><p>Each gate is a reason to gather specific evidence. Passing a later gate never excuses skipping an earlier one.</p></div>
+    <div class="gates">
+      <article class="gate"><div class="gate-no">01</div><div class="gate-body"><h3>Measurement works in real water</h3><p>Blind held-out polymers, calibrated concentration, inline flow, bubbles, fouling and explicit unknown rejection.</p><strong>Do not sell until thresholds are agreed and met.</strong></div></article>
+      <article class="gate"><div class="gate-no">02</div><div class="gate-body"><h3>The three-month path is resourced</h3><p>Week-by-week dependencies for labelled data, parts, reference tests, pilot water and site access.</p><strong>Do not treat a target date as evidence.</strong></div></article>
+      <article class="gate"><div class="gate-no">03</div><div class="gate-body"><h3>A brand will pay</h3><p>Named programme census, real budget owners, prototype reviews and price tests at three levels.</p><strong>Do not call 20-50 brands a market before this.</strong></div></article>
+      <article class="gate"><div class="gate-no">04</div><div class="gate-body"><h3>Matter terms create an asset</h3><p>Cost reimbursement, site consent, synchronized data, model rights and named commercial access.</p><strong>Do not fund bespoke partner hardware without terms.</strong></div></article>
+      <article class="gate"><div class="gate-no">05</div><div class="gate-body"><h3>One mill loop saves money</h3><p>Choose rinse, dye, treatment, aeration or backwash. Run a controlled intervention and hold quality.</p><strong>Do not promise broad resource savings before this.</strong></div></article>
+      <article class="gate"><div class="gate-no">06</div><div class="gate-body"><h3>The $20B ceiling survives bottom-up math</h3><p>Deduplicated sites, spend by line, influenceable share, adoption, price, competition and gross margin.</p><strong>Do not present the ceiling as TAM before this.</strong></div></article>
+    </div>
+  </section>
+
+  <section>
+    <div class="section-head"><h2>How the $20B number gets proved</h2><p>Start at the mill ledger and move upward. This prevents resource percentages, savings and company revenue from collapsing into one number.</p></div>
+    <div class="model"><table><thead><tr><th>Layer</th><th>Calculation</th><th>Evidence needed</th><th>What it is not</th></tr></thead><tbody>
+      <tr><td>Customer spend</td><td>Reachable sites x annual energy, water, dye, chemical, treatment, rework and waste spend</td><td>Representative ledgers by country, size and process</td><td>Company revenue</td></tr>
+      <tr><td>Influenceable spend</td><td>Customer spend x share controlled by observable decisions</td><td>Process map and controllable variables for each loop</td><td>Total factory spend</td></tr>
+      <tr><td>Verified savings</td><td>Influenceable spend x measured change from controlled interventions</td><td>Before-and-after trials with quality and throughput controls</td><td>12.6 + 11.5 + 10.8</td></tr>
+      <tr><td>Company revenue</td><td>Eligible sites x adoption x hardware and recurring price</td><td>Price tests, sales cycle, implementation capacity, competition and margin</td><td>The whole customer savings pool</td></tr>
+    </tbody></table></div>
+  </section>
+
+  <section class="tomorrow">
+    <h2>What we can say tomorrow</h2>
+    <div><p>Lattice is building inline polymer identification as the entry product for funded fashion microfibre programmes. Matter and CyFract are design partners, not clients. Matter is the immediate textile route; CyFract is a later parallel route into other industries. After the first paid brand deployment, the product expands into a multi-sensor system that attributes and verifies wet-process savings one decision at a time.</p><small>The $20B fashion wedge is the founder's ceiling under validation. The 12.6% energy, 11.5% water and 10.8% GHG figures are sourced programme results and are not added together as a product saving.</small></div>
+  </section>
+
+  <footer><span>Strategy source: reports/04-mutation/thesis-v3.md</span><span>Prepared for founder review with Sandra</span></footer>
+</main>
+</body>
+</html>

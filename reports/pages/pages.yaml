@@ -33,10 +33,19 @@ pages:
       research and the price points to test. Each carries the assumption it moves. Answers go
       to evidence.md, not here. Written 2026-09-15 from the sizing session.
   - file: market-ladder.html
-    status: current
+    status: superseded
     group: outreach
     note: >-
       Product stages on the left, the market each one opens on the right, with V1 marked as
       where the technology is now. Ranges take the high end and every assumed figure is listed
       with the question that would replace it. Numbers match thesis-v1.md; rebuild that first
-      if they diverge. Written 2026-09-15.
+      if they diverge. Written 2026-09-15. Superseded by fashion-wedge-v3.html after the
+      founder locked the fashion-first sequence and design-partner economics.
+  - file: fashion-wedge-v3.html
+    status: current
+    group: strategy
+    note: >-
+      The locked fashion-first strategy: a three-month inline polymer-identification target,
+      Matter and CyFract as parallel design partners, the brand-to-mill revenue sequence, the
+      founder's $20B ceiling and the six validation gates needed to support it. Written
+      2026-09-15 from thesis-v3.md for review with Sandra.

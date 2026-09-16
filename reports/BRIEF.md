@@ -4,7 +4,7 @@
 -->
 ---
 idea: industrial-process-data-infrastructure
-generated: 2026-09-16T05:13Z
+generated: 2026-09-16T07:54Z
 active_hunch: H1
 active_assumption: H1A2
 sources:
@@ -77,6 +77,8 @@ _Generated from the folder. Check here before creating a new artifact — if a f
 | `reports/03-validation/H1A5-2026-09-04/interviews/matter-2026-09-04-notes.md` | Interview: Matter (Paul, Mark) · H1A5 · 2026-09-04 |
 | `reports/03-validation/H1A5-2026-09-14/interviews/varija-subasingha-2026-09-14-notes.md` | Interview: Varija Subasingha (adidas) · H1A5 · call date not recorded |
 | `reports/04-mutation/thesis-v1.md` | The market model for the inline polymer identification system — three channels, the staged product behind them, and every number the revenue rests on… |
+| `reports/04-mutation/thesis-v2.md` | The V2 product thesis — how the trained V1 measurement model expands through parallel textile and horizontal-industry routes into multi-sensor attrib… |
+| `reports/04-mutation/thesis-v3.md` | The locked fashion-first strategy, design-partner economics, three-month product target, founder market ceiling and the validation gates required bef… |
 | `reports/outreach/companies.md` | The company registry — one entry per organisation on the demand or supply side of contaminant detection in industrial water, what it actually does, a… |
 | `reports/outreach/contacts.md` | The contact ledger — one card per person targeted, invited or interviewed for this idea, with the live-profile read that qualified them and the state… |
 | `reports/outreach/process-map.md` | The wet-process map — one entry per textile wet-processing step and effluent-treatment stage, what enters it (water, chemicals), what leaves it (the… |
@@ -88,6 +90,7 @@ _Generated from the folder. Check here before creating a new artifact — if a f
 | `reports/outreach/copy/H3A2-linkedin.md` | The LinkedIn copy archive for H3A2 — every message drafted or sent to a California water-utility contact for this assumption, with the live-snapshot… |
 | `reports/outreach/copy/pitch.md` | The pitch for this idea — every audience variant as a claim-traced deck or script, the one-slide block, and the version log of how the story changed… |
 | `reports/pages/discovery-questions.html` | generated — rebuild it, never edit it |
+| `reports/pages/fashion-wedge-v3.html` | generated — rebuild it, never edit it |
 | `reports/pages/market-ladder.html` | generated — rebuild it, never edit it |
 | `reports/pages/pages.yaml` | What each page in this folder is, and whether it still holds. |
 | `reports/pages/startup-map.html` | generated — rebuild it, never edit it |
