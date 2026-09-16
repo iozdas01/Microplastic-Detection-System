@@ -1,777 +1,700 @@
 ---
-purpose: The process map — one entry per stage of textile manufacturing from raw fibre to finished T-shirt, whether the stage touches water, how much fibre it sheds into that water, what the mill measures there today, and where the water goes.
+purpose: The wet-process map — one entry per textile wet-processing step and effluent-treatment stage, what enters it (water, chemicals), what leaves it (the wastewater stream), which production data can be joined to it, and where a measurement would have to sit to attribute a contaminant to its source; plus the routes by mill type, how water actually flows, the placement logic, the data model and what the record can evidence for Higg FEM.
 idea: Microplastic Detection System
-title: "Textiles: raw fibre in, T-shirt out"
-schema_version: 1
-last_updated: 2026-09-11
-# ─── Vocabulary (proposed 2026-09-11, awaiting founder confirmation) ─────────────
-# `order` is the position in the real process sequence; two lanes (cotton, polyester) run in
-# parallel until knitting, `shared` is everything after, `effluent` is the treatment train
-# every wet stage drains to. `fibre_release` grades what a stage sheds INTO WATER, from
-# published measurements where they exist; a dry stage that creates loose fibre washed out
-# later is graded low here and says so in release_mechanism.
+title: "Wet processing: process, water, wastewater, measurement point"
+schema_version: 2
+last_updated: 2026-09-15
+# ─── Vocabulary (founder's structure, 2026-09-15) ────────────────────────────
+# `phase` follows the founder's four blocks of wet processing plus washing and cleaning
+# broken out because they carry the fibre; `lane` says which routes the step sits on
+# (`all` = every mill type). `fibre_release` keeps the published grading of what a step sheds
+# into water; it colours the chips and is the only field carried from the 2026-09-11 map.
 map_vocabularies:
-  phase: [fibre, yarn, fabric, pretreatment, dyeing, finishing, garment, effluent]
-  lane: [cotton, polyester, shared, effluent]
+  phase: [pretreatment, coloration, washing, finishing, cleaning, effluent]
+  lane: [all, cotton, synthetic, laundry, effluent]
   wet_or_dry: [dry, wet, rinse_only]
   fibre_release: [none, low, medium, high]
   fibre_created: [none, low, medium, high]
 map_value_labels:
-  phase: {fibre: "Fibre", yarn: "Yarn", fabric: "Fabric", pretreatment: "Pretreatment", dyeing: "Dyeing", finishing: "Finishing", garment: "Garment", effluent: "Effluent treatment"}
-  lane: {cotton: "cotton", polyester: "polyester", shared: "shared", effluent: "effluent"}
+  phase: {pretreatment: "Preparation / pretreatment", coloration: "Coloration", washing: "Washing and rinsing", finishing: "Finishing", cleaning: "Equipment cleaning", effluent: "Wastewater treatment (ETP)"}
+  lane: {all: "all routes", cotton: "cotton routes", synthetic: "synthetic routes", laundry: "garment laundry / denim", effluent: "effluent"}
   wet_or_dry: {dry: "dry", wet: "wet", rinse_only: "rinse only"}
   fibre_release: {none: "none", low: "low", medium: "medium", high: "high"}
   fibre_created: {none: "none", low: "low", medium: "medium", high: "high"}
 map_phase_notes:
-  fibre: "Where the raw material comes from. Cotton is ginned from the boll; polyester is polymerised from PTA and MEG (or recycled PET) and melt-spun into filament or cut into staple."
-  yarn: "Loose fibre becomes yarn. Dry, mechanical, and the source of most of the fly and loose fibre that later washes out."
-  fabric: "Yarn becomes fabric. T-shirts are circular-knit jersey; knitting oil goes on here and has to come off in scouring."
-  pretreatment: "The first wet contact. Oils, waxes and sizing come off, the fabric is bleached, and cotton may be mercerised; polyester is heat-set dry."
-  dyeing: "Colour goes in. Jet or soft-flow machines tumble the fabric in hot liquor for hours, then rinse and soap it; the largest share of wet-process fibre release measured."
-  finishing: "Hand, softness and shape. Padding of softeners and resins, stenter drying, compacting; brushing, sueding and enzyme washes deliberately remove or raise fibre."
-  garment: "Cut, sew, print, wash, pack. Mostly dry; printing and garment washing are the wet exceptions."
-  effluent: "Where every wet stage's water ends up before it leaves the site."
+  pretreatment: "Make the greige textile clean and chemically ready: desizing, scouring, bleaching, mercerizing."
+  coloration: "Dyeing or printing, plus the polyester reduction clear that follows disperse dyeing."
+  washing: "Soaping, washing and rinsing after dyeing or printing, and the garment laundry that makes the look. This is where loosened lint and fibre leave the textile."
+  finishing: "Modify feel, appearance, stability, performance or functionality."
+  cleaning: "Cleaning machines, tanks, lines, screens and filters between batches: short, concentrated shock loads."
+  effluent: "Collect and clean the combined effluent before discharge, reuse or zero liquid discharge."
 ---
 
-# Process map — textiles, raw fibre to T-shirt
+# Wet-process map
 
-Written 2026-09-11 from one desk batch. Water figures marked BAT are yearly-average indicative
-levels from the EU Textiles BAT Conclusions (Decision 2022/2508, Table 1.1; m³/t equals L/kg);
-figures marked Shibly are metered batches in a Bangladesh knit dye house on 1:7 liquor-ratio
-machines (each fill about 4 L/kg, first fill about 7, a 10-minute overflow rinse about 19). The
-`water_l_per_kg` number on each stage is one representative figure for the diagram; the range
-and its source sit in `water_note`. Stages graded from one or two papers say so in
-`release_evidence`. Two claims from earlier notes did not survive checking and are recorded as
-such: the "1.39 million fibres/L screen-printing" figure has no locatable source, and the
-"cutting, tumbling, sueding 5-30×" numbers belong to two different Cai papers (2020 and 2021).
+Rewritten 2026-09-15 to the founder's structure; the 2026-09-11 fibre-to-T-shirt lineage
+(ginning, spinning, knitting, garment assembly) is retired because dry stages do not drain.
+Each stage links the step to its water and chemical inputs, the wastewater it creates, the
+production data that can be joined to it, and a candidate measurement point. It is a data-model
+placement map, not a sensor specification. Water figures marked BAT are yearly-average
+indicative levels from the EU Textiles BAT Conclusions (Decision 2022/2508, Table 1.1; m³/t
+equals L/kg); fibre-release grades cite the paper they come from.
 
-## Ginning
+Textile wet processing divides into preparation, coloration, finishing and wastewater treatment.
+The route differs by material:
+
+- **Woven or knitted fabric mill:** yarn or fabric → pretreatment → dyeing or printing → washing → finishing → ETP.
+- **Denim mill:** cotton yarn → indigo dyeing → weaving → washing and finishing → ETP.
+- **Garment laundry:** completed garments → desizing, bleaching, enzyme, stone washing, distressing, rinsing, softening → ETP.
+- **Yarn-dyeing facility:** yarn → scouring or prewash → dyeing → rinsing and soaping → drying → ETP.
+- **Synthetic fabric mill:** polyester or nylon fabric → scouring → heat setting, dyeing → reduction clearing and rinsing → finishing → ETP.
+
+Conventional wet processing uses substantial water, dyestuffs, salts and auxiliaries across
+preparation, coloration, washing and finishing, so wastewater carries mixtures of dyes, salts,
+surfactants, organics, suspended solids and process-specific residues.
+
+## Desizing
 
 id: P1
 order: 1
-phase: fibre
-lane: cotton
-short: Ginning
-what_happens: >
-  Seed cotton goes in; saw or roller gins strip the lint from the seed and lint cleaners remove
-  trash. Out come lint bales of about 225 kg plus seed and motes.
-machines: [saw gins, lint cleaners]
-vendors:
-  - {name: Lummus, url: ""}
-  - {name: Continental Eagle, url: ""}
-wet_or_dry: dry
-water_l_per_kg: 0
-chemicals: [none (moisture conditioning only)]
-fibre_release: none
-fibre_created: low
-release_mechanism: Dry; creates cotton dust and short fibre, all to air and solid waste, not water.
-release_evidence: none found
-measured_today: bale moisture, trash, HVI fibre length, strength and micronaire
-fibre_measured_today: false
-drain: none
-sensor_note: Nothing to see; no water.
-sources: []
-first_added: 2026-09-11
-
-## Cotton spinning
-
-id: P2
-order: 2
-phase: yarn
-lane: cotton
-short: Spinning
-what_happens: >
-  Bales are opened, cleaned, carded into a sliver, doubled, drafted and twisted into yarn on ring,
-  rotor or air-jet frames, then wound to cones. Blends with polyester staple are made at the
-  blowroom or draw frame.
-machines: [blowroom, card, draw frame, comber, roving frame, ring / rotor / air-jet spinning frame, winder]
-vendors:
-  - {name: Trützschler, url: https://www.truetzschler.com/en/spinning/products/card/}
-  - {name: Rieter, url: https://www.rieter.com/products/systems/ring-spinning-machines}
-wet_or_dry: dry
-water_l_per_kg: 0
-water_note: humidification air only
-chemicals: [none on cotton, spin finish already on polyester staple]
-fibre_release: low
-fibre_created: high
-release_mechanism: >
-  Heavy fly and short-fibre generation, captured by filters and air; the loose fibre that stays
-  in the yarn washes out at first wet contact. Rotor yarn carries about twenty times the
-  extractable fragments of ring yarn.
-release_evidence: "Cai 2020 (J Cleaner Prod): rotor yarn 4,310 fragments per gram vs 160-230 for other yarns; filament 15 per gram."
-measured_today: yarn count, evenness (Uster), hairiness, imperfections, strength
-fibre_measured_today: false
-drain: none
-sensor_note: No water, but yarn type (rotor vs ring, hairiness) is a strong upstream predictor of what a downstream sensor will see.
-sources:
-  - https://doi.org/10.1016/j.jclepro.2020.121970
-first_added: 2026-09-11
-
-## Polyester melt spinning and texturing
-
-id: P3
-order: 3
-phase: fibre
-lane: polyester
-short: PET melt spinning
-what_happens: >
-  Dried PET chips (virgin, or recycled pellets from bottle flake) are melted, extruded through
-  spinnerets, quenched, spin-finished and wound as filament, then draw-textured, or cut to staple
-  for blending with cotton. Recycled PET is about 12% of polyester and nearly all of it is
-  bottle-derived.
-machines: [POY / FDY filament lines, draw-texturing machines, staple lines]
-vendors:
-  - {name: Oerlikon Barmag, url: https://www.barmag.com/en/}
-wet_or_dry: dry
-water_l_per_kg: 
-water_note: unknown at the fibre plant; outside the textile BAT scope
-chemicals: [spin finish (oils, antistats), TiO2 delustrant, oligomers]
-fibre_release: none
-fibre_created: none
-release_mechanism: Continuous filament sheds almost nothing; staple cutting creates ends but dry. Filament carries 15 extractable fragments per gram, the lowest of 18 products tested.
-release_evidence: "Cai 2020: filament 15 fragments per gram."
-measured_today: denier, tenacity, elongation, dye uptake, oligomer, intrinsic viscosity
-fibre_measured_today: false
-drain: none in the textile mill; the fibre plant has its own
-sensor_note: Not a sensor site; spin finish and oligomer are washed off later in scouring and heat-setting.
-sources:
-  - https://www.textileexchange.org/knowledge-center/reports/materials-market-report-2025/
-  - https://doi.org/10.1016/j.jclepro.2020.121970
-first_added: 2026-09-11
-
-## Circular knitting
-
-id: P4
-order: 4
-phase: fabric
-lane: shared
-short: Knitting
-what_happens: >
-  Cones of cotton, polyester or blended yarn feed a circular machine that loops them into
-  tubular greige fabric (single jersey, rib, interlock). Needles and sinkers run in knitting
-  oil, and lint is blown off continuously.
-machines: [circular knitting machines]
-vendors:
-  - {name: Mayer & Cie, url: https://www.mayercie.com/en/products/circular-knitting-machines}
-  - {name: Terrot, url: ""}
-  - {name: Pai Lung, url: ""}
-wet_or_dry: dry
-water_l_per_kg: 0
-chemicals: [knitting oil (water-emulsifiable), wax on yarn]
-fibre_release: low
-fibre_created: high
-release_mechanism: Needle abrasion frees fibre and creates fly; it is trapped in the oily fabric and released at the first wet bath.
-release_evidence: "Badruddin 2026: dry-processing average about 700 fibres per gram across dry stages; Wang 2023 flags knit structure as a lever."
-measured_today: GSM, courses and wales, faults, oil %, width
-fibre_measured_today: false
-drain: none
-sensor_note: Dry; the oil and lint carried in greige fabric define the load the first wet drain will show.
-sources:
-  - https://doi.org/10.1093/etojnl/vgag200
-  - https://doi.org/10.1021/acs.est.3c06210
-first_added: 2026-09-11
-
-## Pre-heat-setting (polyester and blends)
-
-id: P5
-order: 5
 phase: pretreatment
-lane: polyester
-short: Heat-setting
+lane: all
+short: Desizing
 what_happens: >
-  Greige polyester knit runs open-width through a stenter at 180-200 °C for 30-60 s to fix
-  stitch geometry and stop shrinkage and crease marks in the jet. Spin finish and oligomer
-  volatilise to the exhaust. Optional; can also be done after dyeing.
-machines: [stenter]
-vendors:
-  - {name: Brückner, url: https://www.brueckner-textile.com/en/products/stenters.html}
-  - {name: Monforts, url: https://www.monforts.de/en/products/stenters/}
-wet_or_dry: dry
-water_l_per_kg: 0
-chemicals: [none; exhaust air carries oil aerosol]
-fibre_release: none
-fibre_created: none
-release_mechanism: Thermal only; no abrasion.
-release_evidence: none found
-measured_today: width, shrinkage, oven temperature, dwell
+  Removes the sizing applied to warp yarn before weaving, usually from the fabric before
+  dyeing. Enzymatic or oxidative on continuous ranges or in the same batch machine as scouring.
+machines: [desizing range, jigger, batch scour-desize in the dyeing machine]
+vendors: []
+wet_or_dry: wet
+water_l_per_kg: 12
+water_note: "BAT: pretreatment of woven fabric 10-40 L/kg for the whole desize-scour-bleach sequence."
+inputs: "Water; enzymes or oxidants; wetting agents; detergents."
+chemicals: [amylase or oxidant, wetting agent, detergent]
+wastewater: "Starch, PVA or CMC sizes, waxes, suspended solids, high organic load (a large share of the pretreatment COD)."
+data_link: "Fabric construction, sizing type, batch, recipe, machine."
+measurement_point: "Desize-machine drain; combined pretreatment drain."
+fibre_release: low
+fibre_created: low
+release_mechanism: >
+  Warm water and enzyme loosen size and short fibre ends from the yarn surface; mechanical
+  action is mild compared with dyeing.
+release_evidence: "No stage-level fibre count published; graded low by analogy with scouring (Wang 2023 attributes 95% of wet-process release to dyeing)."
+measured_today: pH, temperature, sometimes iodine test for residual starch
 fibre_measured_today: false
-drain: none (exhaust scrubber water if fitted)
-sensor_note: Not a sensor site.
+drain: pretreatment header
+sensor_note: "Hot, alkaline or enzymatic, high starch load; the pretreatment header is the practical point."
 sources:
-  - https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32022D2508
-first_added: 2026-09-11
+  - https://doi.org/10.1021/acs.est.3c06210
+first_added: 2026-09-15
 
 ## Scouring
 
-id: P6
-order: 6
+id: P2
+order: 2
 phase: pretreatment
-lane: shared
+lane: all
 short: Scouring
 what_happens: >
-  The knit tube is loaded into a jet or soft-flow machine and boiled at about 98 °C for about
-  50 minutes in caustic, wetting agent and sequestrant; for knits scouring and bleaching are
-  usually one combined bath. Out come knitting oil, waxes, pectin, dirt, and the loose fibre
-  from spinning and knitting.
-machines: [jet / soft-flow / airflow dyeing machine, spun-oil washer for polyester]
-vendors:
-  - {name: Thies, url: https://www.thiestextilmaschinen.com/product-portfolio/fabric-dyeing/}
-  - {name: Fong's (THEN Smartflow), url: https://www.fongs.eu/solutions/cellulosic-fibres-knitwear/tsf-1/}
-  - {name: Goller Sintensa, url: https://www.fongs.eu/solutions/synthetic-fibres-knitwear-pes-pa-etc/goller-sintensa-spun-oil-washing-example/}
-wet_or_dry: wet
-water_l_per_kg: 10
-water_note: "BAT: scouring batch 5-15; combined scour-bleach-desize 9-20; washing of synthetics 5-20. Shibly: first fill about 7 L/kg plus hot wash about 4. Older literature 10-80 L/kg."
-chemicals: [NaOH, non-ionic or anionic surfactant, sequestrant, H2O2 and stabiliser if combined]
-fibre_release: high
-fibre_created: low
-release_mechanism: >
-  First wet contact. Hot alkali and 60-100 minutes of rope circulation through the nozzle wash
-  out every loose fibre created in spinning, knitting and cutting.
-release_evidence: "No scouring-only number found. Badruddin 2026: wet stages average about 1,300 fibres per gram vs about 700 for dry."
-measured_today: absorbency (drop test), residual oil, pH, whiteness after bleach
-fibre_measured_today: false
-drain: machine drain, sometimes via hot-water recovery, to the equalisation tank
-sensor_note: >
-  Highest expected fibre load of any drain, but the worst matrix: about 95 °C, pH 12-13,
-  emulsified oil and foam. A sensor here must survive caustic and grease.
-sources:
-  - https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32022D2508
-  - https://doi.org/10.15406/jteft.2020.06.00232
-  - https://doi.org/10.1093/etojnl/vgag200
-first_added: 2026-09-11
-
-## Peroxide bleaching and peroxide kill
-
-id: P7
-order: 7
-phase: pretreatment
-lane: cotton
-short: Bleaching
-what_happens: >
-  Alkaline hydrogen peroxide at about 98 °C whitens cotton (needed for whites and pale shades;
-  polyester is not bleached). The bath is dropped, rinsed hot, then a peroxide-killer bath
-  (catalase enzyme or a reducing agent at 55-65 °C) removes residual peroxide before reactive
-  dyeing.
-machines: [the same jet / soft-flow machine as scouring]
+  Cleans natural oils, waxes, pectin, dirt, seed fragments and spinning or knitting oils so the
+  textile wets evenly. Hot caustic for cotton; milder detergent scour for polyester and nylon.
+machines: [jet or soft-flow machine, continuous scouring range, jigger]
 vendors: []
 wet_or_dry: wet
-water_l_per_kg: 15
-water_note: "BAT: bleaching batch 10-32, continuous 3-8. Shibly: kill bath about 4 L/kg plus hot wash about 4."
-chemicals: [H2O2, NaOH, stabiliser (silicate or organic), catalase or sodium bisulphite, optical brightener for whites]
+water_l_per_kg: 12
+water_note: "BAT: pretreatment of knitted fabric 10-40 L/kg; Shibly metered scouring at about 7 L/kg first fill plus rinses."
+inputs: "Hot water, sodium hydroxide, surfactants, detergents, chelants."
+chemicals: [NaOH, surfactant, detergent, chelant]
+wastewater: "High pH, fats and oils, pectin, waxes, surfactants, suspended solids, high COD."
+data_link: "Fibre type, greige source, batch, caustic recipe, wash time and temperature."
+measurement_point: "Scourer outlet; pretreatment header."
 fibre_release: medium
 fibre_created: low
-release_mechanism: Continued rope circulation and nozzle shear on already-clean fabric; the oxidative bath weakens surface fibre ends.
-release_evidence: none stage-specific found
-measured_today: whiteness (CIE), residual peroxide (test strip), pH
+release_mechanism: >
+  Hot alkali swells cotton and strips the knitting oil that held loose fibre to the fabric, so
+  fly from spinning and knitting washes out here.
+release_evidence: "Badruddin 2026 and Wang 2023 count pretreatment well below dyeing; loose fibre carried in from dry stages is the main source."
+measured_today: pH, temperature, sometimes wetting test
 fibre_measured_today: false
-drain: machine drain to equalisation
-sensor_note: Still about 90 °C and alkaline; residual peroxide attacks optics and electrodes unless the sensor sits after the kill bath.
+drain: pretreatment header
+sensor_note: "95 °C, pH 13, oil and wax: the hardest pretreatment sample. Measure the header, not the drop."
 sources:
-  - https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32022D2508
-  - https://doi.org/10.15406/jteft.2020.06.00232
-first_added: 2026-09-11
+  - https://doi.org/10.1021/acs.est.3c06210
+  - https://doi.org/10.1093/etojnl/vgag200
+first_added: 2026-09-15
 
-## Mercerising (optional)
+## Bleaching
 
-id: P8
-order: 8
+id: P3
+order: 3
 phase: pretreatment
-lane: cotton
-short: Mercerising
+lane: all
+short: Bleaching
 what_happens: >
-  Fabric runs open-width or tubular under tension through 20-25% caustic soda for 30-60 s, then
-  is washed counter-current to strip the caustic; lustre, strength and dye yield rise. Most
-  T-shirt mills skip it.
-machines: [tubular or open-width merceriser, caustic recovery evaporator]
-vendors:
-  - {name: Dornier, url: ""}
-  - {name: Lafer (liquid-ammonia alternative), url: https://www.laferspa.com/en/liquid-ammonia-mercerizing}
+  Removes natural colour and raises whiteness before dyeing pale shades or selling white.
+  Hydrogen peroxide in alkali, then a peroxide kill and rinse.
+machines: [batch machine, continuous bleaching range]
+vendors: []
 wet_or_dry: wet
-water_l_per_kg: 8
-water_note: "BAT: 2-13"
-chemicals: [NaOH 250-300 g/L, wetting agent, acid for neutralisation]
+water_l_per_kg: 10
+water_note: "Within the BAT pretreatment range; the peroxide kill and rinses are most of it."
+inputs: "Water, hydrogen peroxide, sodium hydroxide, stabilisers, chelants."
+chemicals: [H2O2, NaOH, stabiliser, chelant, peroxide killer]
+wastewater: "Residual peroxide, alkaline wastewater, suspended solids, organic matter."
+data_link: "Fabric or yarn type, whiteness target, peroxide dosage, bath temperature."
+measurement_point: "Bleach rinse drain; pretreatment header."
 fibre_release: low
-fibre_created: none
-release_mechanism: Little mechanical action; the wash-off water passes screens or microfiltration before caustic evaporation, which itself removes fibre.
-release_evidence: none found
-measured_today: barium activity number, residual alkali, caustic concentration
+fibre_created: low
+release_mechanism: "Oxidative damage weakens cotton slightly; release is small next to dyeing."
+release_evidence: "No stage-level count; graded low with pretreatment overall."
+measured_today: residual peroxide (test strip), pH, whiteness
 fibre_measured_today: false
-drain: wash water to caustic recovery (75-95% recovered), residual to equalisation
-sensor_note: Concentrated caustic; not a sensor site.
-sources:
-  - https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32022D2508
-first_added: 2026-09-11
+drain: pretreatment header
+sensor_note: "Oxidising, alkaline; the rinse drain is measurable, the bath drop is not."
+sources: []
+first_added: 2026-09-15
 
-## Enzyme bio-polishing
+## Mercerizing
 
-id: P9
-order: 9
+id: P4
+order: 4
 phase: pretreatment
 lane: cotton
-short: Bio-polishing
+short: Mercerizing
 what_happens: >
-  A cellulase bath at about 55 °C for about 60 minutes hydrolyses protruding cotton fibre ends;
-  the jet's nozzle shear knocks the weakened fuzz off, giving a clean, pill-resistant face.
-  Increasingly combined with the peroxide-kill bath.
-machines: [the same dyeing machine]
+  Treats cotton under tension with strong caustic soda to change lustre, strength and dye
+  uptake. Optional; mostly wovens and premium knits. Caustic is usually recovered.
+machines: [chain or chainless mercerizer, caustic recovery evaporator]
 vendors: []
 wet_or_dry: wet
 water_l_per_kg: 8
-water_note: "Shibly: enzyme bath about 4 L/kg plus normal wash about 4."
-chemicals: [acid cellulase, acetic acid or buffer to pH 4.5-5.5, non-ionic wetter]
-fibre_release: high
-fibre_created: high
-release_mechanism: This stage exists to remove surface fibre into the water, by enzymatic cutting plus abrasion. No published count found; graded high from what the step is for.
-release_evidence: unknown; no stage-specific study located
-measured_today: weight loss (1-3%), pilling grade, strength loss, pH, temperature
+water_note: "Rinse water only; the caustic itself is recycled through recovery."
+inputs: "Concentrated NaOH, water, wetting agents; often caustic recovery."
+chemicals: [NaOH 20-30%, wetting agent, acetic acid for neutralising]
+wastewater: "Very high pH and sodium or alkalinity in the rinse water; weak caustic if recovery is absent."
+data_link: "Cotton lot, NaOH concentration, recovery rate, line speed."
+measurement_point: "Mercerizer rinse or caustic-recovery stream; keep as a separated drain."
+fibre_release: low
+fibre_created: none
+release_mechanism: "Fabric is held under tension; little mechanical action."
+release_evidence: "No stage-level count."
+measured_today: caustic concentration (Baumé), line speed
 fibre_measured_today: false
-drain: machine drain to equalisation
-sensor_note: >
-  Cotton fibre (not plastic), mildly acidic, 55 °C: chemically the gentlest wet drain and
-  probably the fibre-richest per litre on a cotton line. A good calibration point, and the
-  control that shows what a sensor does with non-plastic fibre.
-sources:
-  - https://doi.org/10.15406/jteft.2020.06.00232
-first_added: 2026-09-11
+drain: separated caustic drain, then equalisation
+sensor_note: "Concentrated caustic; avoid."
+sources: []
+first_added: 2026-09-15
 
-## Exhaust dyeing
+## Dyeing
 
-id: P10
-order: 10
-phase: dyeing
-lane: shared
+id: P5
+order: 5
+phase: coloration
+lane: all
 short: Dyeing
 what_happens: >
-  Fabric ropes circulate through a nozzle for 1-4 hours while dye and auxiliaries are dosed.
-  Cotton takes reactive dyes at 60 °C with 40-80 g/L salt then soda ash, and classical reactive
-  dyes fix only 60-70%, so 30-40% goes to drain. Polyester takes disperse dyes at 130 °C under
-  pressure, then a reduction clear. Blends run two baths or one bath in two steps. Some cotton
-  knits are pad-batch dyed instead.
-machines: [jet / soft-flow / airflow dyeing machine]
+  Applies colour to yarn, fabric or garments in batch (jet, soft-flow, airflow, package, jigger)
+  or continuous (pad-batch, pad-steam, indigo rope or slasher) machines. Cotton takes reactive
+  dyes with 40-80 g/L salt and alkali; polyester takes disperse dyes at 130 °C; denim warp takes
+  indigo in repeated dips.
+machines: [jet / soft-flow / airflow dyeing machine, package dyeing machine, jigger, pad-batch range, indigo rope or slasher range]
 vendors:
   - {name: Thies (iMaster H2O, Luft-roto), url: https://www.thiestextilmaschinen.com/product-portfolio/fabric-dyeing/luft-roto-plus-sii-family/}
   - {name: Fong's (THEN Smartflow, Supratec LTM), url: https://www.fongs.eu/solutions/synthetic-fibres-knitwear-pes-pa-etc/ltm/}
-  - {name: "Tong Geng, Dilmenler (common in Bangladesh)", url: ""}
+  - {name: "Sedo Treepoint (SedoMaster, machine controllers)", url: https://www.sedo-treepoint.com/products/software/mes-systems/sedomaster/}
 wet_or_dry: wet
 water_l_per_kg: 8
-water_note: "BAT: batch dyeing of fabric 10-150 for the whole cycle. Shibly: the dye bath alone is about 4 L/kg per fill at 1:7; the whole scour-to-unload cycle is 60 L/kg for a light shade and 81 for a deep one, most of it rinses (see the next stage)."
-chemicals: [reactive or disperse dyes, NaCl or Na2SO4, Na2CO3, levelling or dispersing agents, acetic acid, hydrosulphite]
+water_note: "BAT: batch dyeing of fabric 10-150 L/kg for the whole cycle. Shibly: the dye bath alone is about 4 L/kg per fill at 1:7; scour-to-unload 60 L/kg for a light shade, 81 for a deep one, most of it rinses."
+inputs: "Water and steam; dyes; sodium chloride or sodium sulfate; alkali or acids; dispersants; levelling agents; detergents; carriers or reducing agents depending on fibre and dye."
+chemicals: [reactive or disperse or indigo dyes, NaCl or Na2SO4, Na2CO3 or acetic acid, dispersant, levelling agent, hydrosulphite for indigo]
+wastewater: "Colour, unfixed dye, salts, surfactants, pH swings, high TDS, COD; potentially metals or dye-specific residues."
+data_link: "Batch ID, substrate composition, dye class, shade, recipe, liquor ratio, temperature profile, fixation and rinse stages."
+measurement_point: "Dye-bath dump and first-rinse drain; dye-house header."
 fibre_release: high
 fibre_created: medium
 release_mechanism: >
-  The longest mechanical exposure of the whole route: hours of nozzle shear and rope-to-rope
-  rubbing at high temperature, while alkali and heat swell cotton and soften polyester.
-release_evidence: "Wang 2023: dyeing is 95% of wet-process release; release falls with white shades, lower temperature and shorter time. Badruddin 2026: dyeing about 800 fibres per gram, the largest stage. Zhou 2020: up to 54,100 fibres/L in printing-and-dyeing wastewater. Zhu 2025: three printing-and-dyeing lines were the plant's source."
+  The longest mechanical exposure of the route: hours of nozzle shear and rope-to-rope rubbing
+  at high temperature while alkali and heat swell cotton and soften polyester.
+release_evidence: "Wang 2023: dyeing is 95% of wet-process release; release falls with white shades, lower temperature and shorter time. Badruddin 2026: about 800 fibres per gram, the largest stage. Zhou 2020: up to 54,100 fibres/L in printing-and-dyeing effluent."
 measured_today: shade (spectrophotometer, delta E), pH, conductivity or salt, temperature profile, bath exhaustion; nothing fibre-related
 fibre_measured_today: false
-drain: machine drain to equalisation, hot drops sometimes through a heat exchanger
-sensor_note: >
-  Fibre-rich but dye-coloured, 60-130 °C, salt to 80 g/L, foam. The dye-bath drop is the
-  hardest sample of all; the rinse drops that follow are easier and still fibre-rich.
+drain: machine drain to dye-house header and equalisation, hot drops sometimes through a heat exchanger
+sensor_note: "Fibre-rich but coloured, 60-130 °C, salt to 80 g/L, foam. The dye-bath drop is the hardest sample; the first rinse that follows is easier and still fibre-rich."
 sources:
   - https://doi.org/10.1021/acs.est.3c06210
   - https://doi.org/10.1093/etojnl/vgag200
   - https://doi.org/10.1016/j.scitotenv.2020.140329
-  - https://doi.org/10.3390/w17040574
-  - https://doi.org/10.15406/jteft.2020.06.00232
-first_added: 2026-09-11
+first_added: 2026-09-15
 
-## Post-dye rinsing and soaping
+## Soaping, washing and rinsing
 
-id: P11
-order: 11
-phase: dyeing
-lane: shared
-short: Rinsing & soaping
+id: P6
+order: 6
+phase: washing
+lane: all
+short: Washing / rinsing
 what_happens: >
-  Five to ten sequential fill-and-drop baths: cold rinse, acid neutralise, 90 °C soaping to
-  strip unfixed dye, hot and cold washes, until the water runs clear (plus a reduction clear
-  for polyester). This is where most of the cycle's water goes.
-machines: [the same dyeing machine]
+  Removes unfixed dye, printing paste, loose fibres, chemicals and residues after dyeing or
+  printing. Several rinses and a hot soap in the batch machine, or an open-width washing range.
+machines: [batch machine rinse cycles, open-width washing range, rope washer]
 vendors: []
-wet_or_dry: rinse_only
-water_l_per_kg: 50
-water_note: "Shibly: 5-10 baths at about 4 L/kg each plus overflow rinses at about 19 L/kg each; 6 of 9 baths (light shade) and 8 of 10 (deep) are rinses. 50 is the balance of the 60-81 L/kg cycle after the dye bath."
-chemicals: [acetic acid, soaping agent, NaOH and hydrosulphite for polyester, residual dye and salt]
-fibre_release: medium
-fibre_created: low
-release_mechanism: Fibre freed during dyeing keeps washing out; hot soaping adds further shear time.
-release_evidence: none stage-specific; the Badruddin 2026 wet average applies
-measured_today: wash-fastness, pH of the final bath, colour of the drop water by eye
-fibre_measured_today: false
-drain: machine drain to equalisation; counter-current or last-rinse reuse in better mills
-sensor_note: >
-  Later rinses are cool, near-neutral, lightly coloured, low foam: the cleanest matrix that
-  still carries the dye-stage fibre, one drain per machine, batch-discharged, so a count per
-  drop maps to a batch and a recipe. Prime candidate.
-sources:
-  - https://doi.org/10.15406/jteft.2020.06.00232
-  - https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32022D2508
-first_added: 2026-09-11
-
-## Dewatering and softener padding
-
-id: P12
-order: 12
-phase: finishing
-lane: shared
-short: Softener padding
-what_happens: >
-  The wet rope is opened, slit (or kept tubular), squeezed to 60-80% pick-up and padded with
-  softener or resin from a trough; alternatively softener is exhausted in the last dye-machine
-  bath. Out comes damp, chemically loaded fabric ready for the dryer.
-machines: [squeezer or balloon padder, slitter, padding trough]
-vendors:
-  - {name: Santex Rimar (Sperotto Rimar Compas), url: https://www.santexrimar.com/brands/sperotto-rimar/machinery/compas/}
-  - {name: Monforts padders, url: https://www.monforts.de/en/products/dyeing-ranges/}
 wet_or_dry: wet
-water_l_per_kg: 1
-water_note: unknown; trough make-up only, of the order of 1 L/kg
-chemicals: [cationic or silicone softeners, wetting agent, acetic acid, resin and catalyst on some]
-fibre_release: medium
+water_l_per_kg: 40
+water_note: "The largest water consumer: Shibly metered a 10-minute overflow rinse at about 19 L/kg and several rinses per batch; most of the 60-81 L/kg cycle is rinsing."
+inputs: "Water, detergents, soaping agents, surfactants, sometimes reducing or oxidising agents."
+chemicals: [soaping agent, detergent, acetic acid, sometimes oxidant]
+wastewater: "Coloured wastewater, surfactants, salts, loosened lint and fibres, variable COD and TSS."
+data_link: "Batch ID, wash recipe, number of rinses, water volume, line or machine."
+measurement_point: "First rinse separately; wash header. High-priority source stream."
+fibre_release: high
 fibre_created: low
-release_mechanism: Squeeze rolls and nip pressure strip loose fibre into the trough and the squeezed-out liquor.
-release_evidence: "Akyildiz 2024: the drain at the exit of a softening machine carried 0.058-0.251 g/L of microfibre (acrylic and cotton), the only machine-exit measurement found."
-measured_today: pick-up %, trough pH and concentration, hand-feel
-fibre_measured_today: false
-drain: squeeze liquor and trough dumps to equalisation
-sensor_note: Low volume, high fibre mass per litre, near-neutral, about 40 °C; silicone emulsion may film optics.
-sources:
-  - https://doi.org/10.2339/politeknik.1310805
-first_added: 2026-09-11
-
-## Stenter drying and final heat-setting
-
-id: P13
-order: 13
-phase: finishing
-lane: shared
-short: Stenter drying
-what_happens: >
-  Fabric is pinned or clipped and dried at 120-160 °C (or heat-set at 180-200 °C for polyester);
-  width and GSM are set and the softener cures. Relaxation dryers tumble tubular cotton knits
-  loosely to pre-shrink them.
-machines: [stenter, relaxation dryer]
-vendors:
-  - {name: Brückner, url: https://www.brueckner-textile.com/en/products/relaxation-dryers.html}
-  - {name: Monforts, url: https://www.monforts.de/en/products/relaxation-dryers/}
-  - {name: Santex Rimar (Santashrink), url: https://www.santexrimar.com/}
-wet_or_dry: dry
-water_l_per_kg: 0
-chemicals: [none new; softener and resin cure, exhaust fumes]
-fibre_release: none
-fibre_created: low
-release_mechanism: Fly to exhaust filters only.
-release_evidence: none found
-measured_today: width, GSM, residual moisture, shrinkage, exhaust temperature
-fibre_measured_today: false
-drain: none (exhaust scrubber if fitted)
-sensor_note: Not a sensor site.
-sources: []
-first_added: 2026-09-11
-
-## Compacting
-
-id: P14
-order: 14
-phase: finishing
-lane: shared
-short: Compacting
-what_happens: >
-  Steamed fabric is over-fed into a felt or shoe compactor that mechanically shrinks it
-  lengthwise to the residual-shrinkage spec (5% or less) and calenders it flat. Out comes
-  finished roll fabric.
-machines: [tubular or open-width felt compactor]
-vendors:
-  - {name: Lafer, url: https://www.laferspa.com/en/tubular-knit-fabric-felt-compacting}
-  - {name: Santex Rimar, url: https://www.santexrimar.com/}
-  - {name: Tubetex, url: ""}
-wet_or_dry: dry
-water_l_per_kg: 0
-water_note: steam condensate only
-chemicals: [none]
-fibre_release: none
-fibre_created: low
-release_mechanism: Felt friction creates lint to the machine housing and later to garment wash if any; not to water here.
-release_evidence: none found
-measured_today: residual shrinkage, GSM, width, skew
-fibre_measured_today: false
-drain: condensate
-sensor_note: Not a sensor site.
-sources: []
-first_added: 2026-09-11
-
-## Raising, brushing and sueding (not all T-shirts)
-
-id: P15
-order: 15
-phase: finishing
-lane: shared
-short: Raising / sueding
-what_happens: >
-  Wire rollers or abrasive sleeves tear fibre ends out of the fabric face to make a nap (fleece,
-  peach-skin); shearing then trims it. Almost all this fibre goes to dust extraction, but the
-  fabric carries a fibril-rich surface into every later wash.
-machines: [sueding machine, raising machine, shearing machine]
-vendors:
-  - {name: Lafer, url: https://www.laferspa.com/en/sueding-machines-knitted-woven-fabrics}
-wet_or_dry: dry
-water_l_per_kg: 0
-chemicals: [none]
-fibre_release: low
-fibre_created: high
 release_mechanism: >
-  Deliberate abrasion. Processed-surface fabrics carry five times the extractable fragments;
-  abrasion multiplies fragments 5-30 times and fibrils (2-5 µm wide, 30-150 µm long) more than
-  200 times. The dominant creator of fibre released downstream.
-release_evidence: "Cai 2020 (J Cleaner Prod) and Cai 2021 (Environ Sci Technol)."
-measured_today: pile height, hand, weight loss, pilling grade
+  Everything the dyeing cycle loosened leaves with the rinses: the first rinse after the dye
+  bath carries the peak fibre load at a temperature and colour a sensor can tolerate.
+release_evidence: "Wang 2023 samples rinse and soap drops as the fibre-rich fraction of the dyeing cycle."
+measured_today: water volume where metered, sometimes conductivity for rinse end-point
 fibre_measured_today: false
-drain: none (dust collectors)
-sensor_note: Dry; but if a mill sueds before garment wash, that wash drain is the place to look.
+drain: wash header to equalisation
+sensor_note: "The single best source point: 40-70 °C, lower colour and salt than the bath, high fibre count, repeatable per batch."
 sources:
-  - https://doi.org/10.1016/j.jclepro.2020.121970
-  - https://doi.org/10.1021/acs.est.1c00650
-first_added: 2026-09-11
-
-## Cutting and sewing
-
-id: P16
-order: 16
-phase: garment
-lane: shared
-short: Cut & sew
-what_happens: >
-  Fabric is spread in plies and cut by straight-knife, band-knife or automatic cutter; panels
-  are overlocked and cover-stitched into T-shirts; loose threads are trimmed.
-machines: [automatic cutter, straight-knife cutter, overlock and cover-stitch machines]
-vendors:
-  - {name: "Gerber / Lectra (cutters)", url: ""}
-  - {name: "Juki, Brother, Pegasus (sewing)", url: ""}
-wet_or_dry: dry
-water_l_per_kg: 0
-chemicals: [none; sewing thread lubricant]
-fibre_release: low
-fibre_created: high
-release_mechanism: >
-  Cut edges and needle penetration. Scissor- or knife-cut edges carry 3-31 times the fragments
-  of laser-cut edges; a cutting floor sheds 2.9 million fibres per m² per day to the air, and
-  one garment can carry a million fibres, about fifty times a laundry cycle.
-release_evidence: "Cai 2020; Raja Balasaraswathi and Rathinamoorthy 2025 (Emerging Contaminants)."
-measured_today: measurement to spec, seam strength, defects; nothing fibre-related
-fibre_measured_today: false
-drain: none
-sensor_note: Dry; the release shows up in garment wash or the consumer's first wash.
-sources:
-  - https://doi.org/10.1016/j.jclepro.2020.121970
-  - https://doi.org/10.1016/j.emcon.2025.100559
-first_added: 2026-09-11
+  - https://doi.org/10.1021/acs.est.3c06210
+first_added: 2026-09-15
 
 ## Printing
 
-id: P17
-order: 17
-phase: garment
-lane: shared
+id: P7
+order: 7
+phase: coloration
+lane: all
 short: Printing
 what_happens: >
-  Pigment paste is screened onto fabric or garment and cured dry; reactive or disperse prints
-  need steaming and a wash-off line to remove thickener and unfixed dye. Direct-to-garment
-  printers lay pre-treatment and water-based ink on finished T-shirts and cure with heat;
-  screens and squeegees are washed between jobs.
-machines: [rotary or flat screen press, carousel garment press, DTG printer, print wash-off range]
-vendors:
-  - {name: "MHM, M&R (carousels)", url: ""}
-  - {name: Kornit (DTG), url: https://www.kornit.com/printer/kornit-atlas-max-plus/}
-  - {name: Goller Print Wash, url: https://www.fongs.eu/solutions/cellulosic-fibres-knitwear/goller-print-wash/}
+  Applies colour or pattern through screen, rotary, pigment, reactive, disperse or digital
+  systems, then fixes and washes off. Screen and blanket washing is a continuous side stream.
+machines: [rotary screen printer, flat-bed screen printer, digital printer, steamer, print washer]
+vendors: []
 wet_or_dry: wet
-water_l_per_kg: 10
-water_note: "unknown for garments; a print wash-off range is comparable to continuous washing (BAT 5-20 L/kg for synthetics); pigment and DTG printing are dry apart from screen washing"
-chemicals: [pigment binder, urea, alginate or synthetic thickener, reactive or disperse dyes, cationic DTG pre-treatment, screen-wash solvents]
+water_l_per_kg: 25
+water_note: "BAT: printing 5-40 L/kg including wash-off; digital pigment printing far lower."
+inputs: "Printing paste; dyes or pigments; urea; thickeners; binders; solvents; screen-wash water."
+chemicals: [pigment or reactive or disperse dye, urea, alginate or synthetic thickener, acrylic binder, solvent]
+wastewater: "Colour, pigment and binder particles, urea, solvents, surfactants, thickener residues, high COD."
+data_link: "Print design or run, ink or paste recipe, fabric type, screen-cleaning event."
+measurement_point: "Print-wash or screen-cleaning drain; printing header."
 fibre_release: medium
 fibre_created: low
-release_mechanism: Wash-off ranges scrub the printed face; screen washing rinses fibre off screens and pallets.
-release_evidence: "The '1.39 million fibres/L' screen-printing figure could not be sourced and is unverified. Zhou 2020 and Zhu 2025 bundle printing with dyeing lines."
-measured_today: print registration, colour, wash-fastness, cure temperature
+release_mechanism: "Wash-off after steaming loosens fibre raised by the print blanket and squeegee; binder particles confound counts."
+release_evidence: "Zhou 2020 sampled a printing-and-dyeing park at up to 54,100 fibres/L; the claimed 1.39 million fibres/L screen-printing figure has no locatable source."
+measured_today: paste viscosity, colour match, wash-off water volume where metered
 fibre_measured_today: false
-drain: wash-off range and screen-wash sink to equalisation
-sensor_note: Screen-wash sinks are intermittent, low-flow and thickener-laden; a print wash-off range is continuous and cool, so feasible.
+drain: printing header to equalisation
+sensor_note: "Pigment and binder particles look like fibres to a mass or turbidity method; needs shape or polymer discrimination."
 sources:
   - https://doi.org/10.1016/j.scitotenv.2020.140329
-  - https://doi.org/10.3390/w17040574
-first_added: 2026-09-11
+first_added: 2026-09-15
 
-## Garment wash and garment dye (where used)
+## Reduction clearing
 
-id: P18
-order: 18
-phase: garment
-lane: shared
-short: Garment wash
+id: P8
+order: 8
+phase: coloration
+lane: synthetic
+short: Reduction clearing
 what_happens: >
-  Finished T-shirts tumble in a front-loading drum washer with enzyme, silicone softener or
-  dye for 30-60 minutes at 40-60 °C, then are hydro-extracted and tumble-dried. Used for
-  vintage looks, garment-dyed colours and softness.
-machines: [industrial drum washer, hydro-extractor, tumble dryer]
-vendors:
-  - {name: Tonello, url: https://tonello.com/en/products/}
-  - {name: Jeanologia (laser, ozone), url: ""}
+  Polyester post-dye treatment that strips unfixed disperse dye from the fibre surface with
+  hydrosulphite and caustic, then rinses; needed for deep shades and fastness.
+machines: [same batch dyeing machine]
+vendors: []
 wet_or_dry: wet
-water_l_per_kg: 
-water_note: unknown from primary sources; garment washers typically run 1:5-1:10 per bath over several baths
-chemicals: [cellulase, silicone softener, reactive or pigment dyes, salt, soda ash, acetic acid]
-fibre_release: high
-fibre_created: medium
-release_mechanism: >
-  Drum tumbling of cut, sewn and possibly sueded garments; every edge and seam abrades. This is
-  functionally the garment's first laundry, at 25-50 times the release of a consumer wash.
-release_evidence: "Wang 2023; Raja Balasaraswathi and Rathinamoorthy 2025."
-measured_today: shade, hand-feel, shrinkage, pH; lint filters emptied by hand
+water_l_per_kg: 10
+water_note: "One bath plus rinses inside the dyeing cycle."
+inputs: "Water, sodium hydrosulphite, sodium hydroxide, detergents."
+chemicals: [Na2S2O4, NaOH, detergent]
+wastewater: "High pH, sulphur-containing reducing residues, disperse dye, surfactants, colour and COD."
+data_link: "Polyester batch, dye class, clearing recipe, duration and temperature."
+measurement_point: "Reduction-clearing drain; dye-house header."
+fibre_release: medium
+fibre_created: low
+release_mechanism: "Hot alkaline bath at 70-80 °C with continued rope circulation after the 130 °C dyeing has softened the polyester."
+release_evidence: "No stage-level count; polyester dyeing cycles as a whole are the highest synthetic release (Wang 2023)."
+measured_today: pH, temperature, sometimes redox
 fibre_measured_today: false
-drain: washer drain to equalisation, often a separate small treatment plant in garment factories
-sensor_note: Moderate temperature, coloured only in dye cycles, silicone can film optics; one drain per machine, batch discharge, easy to instrument.
+drain: dye-house header
+sensor_note: "Reducing, alkaline, sulphur odour; the rinse after the clear is the sample."
 sources:
   - https://doi.org/10.1021/acs.est.3c06210
-  - https://doi.org/10.1016/j.emcon.2025.100559
-first_added: 2026-09-11
+first_added: 2026-09-15
 
-## Pressing, inspection and packing
+## Garment laundry and denim wash
 
-id: P19
-order: 19
-phase: garment
-lane: shared
-short: Press & pack
-what_happens: Garments are steam-pressed, inspected, folded, bagged and cartoned.
-machines: [steam press, tunnel finisher]
-vendors: []
-wet_or_dry: dry
-water_l_per_kg: 0
-chemicals: [none]
-fibre_release: none
-fibre_created: none
-release_mechanism: none
-release_evidence: n/a
-measured_today: AQL inspection
+id: P9
+order: 9
+phase: washing
+lane: laundry
+short: Garment / denim wash
+what_happens: >
+  Creates look, softness, fading, distressing, cleanliness or finish after garment assembly:
+  desizing, enzyme and stone washing, bleaching, tinting, softening, sometimes permanganate
+  spray or laser and ozone as dry alternatives.
+machines: [front-loading garment washer, tumble dryer, laser, ozone cabinet]
+vendors:
+  - {name: Jeanologia (laser, G2 ozone, e-Flow), url: https://www.jeanologia.com/}
+  - {name: Tonello, url: https://www.tonello.com/}
+wet_or_dry: wet
+water_l_per_kg: 30
+water_note: "BAT: garment washing 20-80 L/kg; laser and ozone routes cut it sharply."
+inputs: "Water; enzymes; detergents; bleach or oxidants; pumice stones; softeners; resins; sometimes permanganate."
+chemicals: [cellulase, detergent, NaOCl or H2O2, KMnO4, softener, resin]
+wastewater: "Lint and fibres, indigo or dye colour, pumice fines, enzymes, surfactants, oxidants, high TSS and COD."
+data_link: "Garment style, fabric blend, wash recipe, machine, cycle phase, stones and load, order."
+measurement_point: "Individual washer drain, laundry header, and ETP influent."
+fibre_release: high
+fibre_created: high
+release_mechanism: >
+  Cellulase and pumice deliberately abrade the fabric surface to fade it; the lint is the
+  product's look leaving as effluent. Cut edges and seams shed more than fabric.
+release_evidence: "Wang 2023 and the TMC/ZDHC Phase 2 design both name denim and laundry as priority fibre sources."
+measured_today: load weight, cycle programme, sometimes TSS at the laundry ETP
 fibre_measured_today: false
-drain: none
-sensor_note: Not a sensor site.
+drain: washer drain to laundry header, then equalisation
+sensor_note: "Highest and most variable fibre load, moderate temperature, indigo colour and pumice fines; the washer drain gives batch attribution, the header gives the daily picture."
+sources:
+  - https://doi.org/10.1021/acs.est.3c06210
+  - https://www.textileworld.com/textile-world/fiber-world/2026/04/the-microfibre-consortium-and-zdhc-advance-joint-research-to-strengthen-wastewater-monitoring-of-fibre-fragmentation/
+first_added: 2026-09-15
+
+## Finishing
+
+id: P10
+order: 10
+phase: finishing
+lane: all
+short: Finishing
+what_happens: >
+  Alters hand feel, shrinkage, crease resistance, water repellency, antimicrobial behaviour,
+  coating or softness. Chemicals are padded or exhausted, then the fabric is dried and cured on
+  a stenter; mechanical finishes (raising, sueding, compacting) are dry.
+machines: [padder, stenter, compactor, coating line, raising or sueding machine]
+vendors:
+  - {name: Monforts, url: https://www.monforts.de/}
+  - {name: Brückner, url: https://www.brueckner-textile.com/}
+wet_or_dry: wet
+water_l_per_kg: 3
+water_note: "Padding uses little water; the load is trough dumps and washdown, not volume."
+inputs: "Water; softeners; resins; binders; waxes; silicones; crosslinkers; functional finishes; solvents depending on process."
+chemicals: [silicone or cationic softener, DMDHEU resin, acrylic binder, wax, fluorine-free repellent, crosslinker]
+wastewater: "Finishing chemical residues, suspended solids, surfactants, resin, wax and silicone residues, potentially VOC-related materials."
+data_link: "Finish recipe, application method, add-on target, fabric composition, stenter or coating line."
+measurement_point: "Finishing washdown or cleanup drain; finishing header."
+fibre_release: low
+fibre_created: high
+release_mechanism: >
+  Raising, sueding and compacting create loose fibre mechanically but dry; it leaves as fly and
+  lint waste, or washes out in a later garment wash. The wet pad itself sheds little.
+release_evidence: "Cai 2020/2021: mechanical finishes raise later release 5-30x; the wet finishing stage itself is not a measured source."
+measured_today: pick-up percentage, stenter temperature, add-on
+fibre_measured_today: false
+drain: finishing header to equalisation
+sensor_note: "Silicone films and tiny volumes; a poor sensor point. Track the lint waste from raising and sueding as solid waste instead."
+sources:
+  - https://doi.org/10.3390/w17040574
+first_added: 2026-09-15
+
+## Equipment cleaning
+
+id: P11
+order: 11
+phase: cleaning
+lane: all
+short: Equipment cleaning
+what_happens: >
+  Cleans dye machines, tanks, lines, screens, filters and chemical containers between batches
+  and shades; also the lint-filter cleaning on dyeing machines.
+machines: [machine CIP cycle, screen washer, lint filter]
+vendors: []
+wet_or_dry: wet
+water_l_per_kg: 2
+water_note: "Small volume, high concentration; not normalised per kg of product."
+inputs: "Water; caustic or acid cleaners; detergents; solvents; oxidants or reductants."
+chemicals: [NaOH, acid cleaner, detergent, solvent, oxidant or hydrosulphite]
+wastewater: "Short, concentrated chemical shock loads; colour, pH swings, surfactants, residues; the lint-filter flush is a concentrated fibre slug."
+data_link: "CIP or cleaning event, machine ID, prior recipe or batch, cleaning chemical, volume."
+measurement_point: "CIP drain; keep as a distinct tagged stream."
+fibre_release: medium
+fibre_created: none
+release_mechanism: "Lint filters on dyeing machines collect the batch's fibre; flushing them sends it to drain in one slug."
+release_evidence: "No published count; mill practice (lint filter cleaning frequency) is an interview question."
+measured_today: nothing; cleaning is logged by the operator if at all
+fibre_measured_today: false
+drain: machine drain to header
+sensor_note: "Events, not a steady stream; tag them so they do not pollute the batch attribution of the machine's next cycle."
 sources: []
-first_added: 2026-09-11
+first_added: 2026-09-15
 
-## Effluent: screening, equalisation, coagulation and primary settling
+## ETP: equalisation
 
-id: P20
-order: 20
+id: P12
+order: 12
 phase: effluent
 lane: effluent
 short: Equalisation
 what_happens: >
-  All machine drains combine in a bar-screened sump and an equalisation tank with hours of
-  retention that averages temperature, pH and colour; alum, ferric or polymer is dosed and
-  flocs settle or are floated off.
-machines: [bar screen, equalisation tank, dissolved-air flotation, lamella clarifier]
+  Screens and mixes the varying wastewater streams in a balancing tank to smooth flow, pH,
+  temperature and load before treatment.
+machines: [bar screen, equalisation tank, pH correction dosing]
 vendors: []
 wet_or_dry: wet
-water_l_per_kg: 
-water_note: "whole-mill totals: EU BAT indicative sum for a knit dye house about 20-60 L/kg at best practice; Bangladesh metered 60-81 L/kg on the dye machine alone (Shibly); older winch mills 100-450 L/kg"
-chemicals: [alum or FeCl3, polyelectrolyte, lime or acid for pH]
+water_l_per_kg:
+water_note: "Whole-site flow; the TMC/ZDHC Phase 2 study samples here."
+inputs: "Combined wastewater; sometimes pH correction."
+chemicals: [acid or alkali for pH]
+wastewater: "Mixed, time-smoothed influent."
+data_link: "Facility-wide inputs, timestamp, incoming flow and process events."
+measurement_point: "ETP influent and equalisation tank inlet or outlet."
 fibre_release: none
 fibre_created: none
-release_mechanism: "A removal stage: primary settling captures 38.8% of particles (Prantor 2026); coagulation and sedimentation was the single most effective stage for PET (Zhu 2025)."
-release_evidence: "Prantor 2026; Zhu 2025."
-measured_today: flow, pH, temperature, TSS, COD, colour; online pH and flow are common, TSS by grab or online turbidity; TMC/ZDHC found TSS correlates with microfibre concentration
+release_mechanism: "Carries what the process stages released; mixing loses batch attribution."
+release_evidence: "Zhou 2020 measured influent at a centralised park WWTP; TMC/ZDHC Phase 2 samples balancing tanks."
+measured_today: flow, pH, temperature, sometimes COD and TSS by lab
 fibre_measured_today: false
-drain: to the biological stage
-sensor_note: >
-  The equalisation outlet is the most stable matrix in the mill (35-40 °C, pH 7-9, blended
-  colour) and the only point that integrates all stages, but concentrations are diluted 5-50
-  times against a machine drain (54,100 fibres/L raw vs 334-1,730 at plant inlets). A
-  compliance sensor, not a process sensor.
+drain: to primary treatment
+sensor_note: "Cool, mixed, moderate colour; the easiest fibre-rich sample and the compliance influent, but source-blind."
 sources:
-  - https://www.microfibreconsortium.com/manufacturing
   - https://doi.org/10.1016/j.scitotenv.2020.140329
-  - https://doi.org/10.2166/wst.2018.476
-  - https://doi.org/10.1016/j.jes.2026.03.002
-  - https://doi.org/10.3390/w17040574
-first_added: 2026-09-11
+  - https://www.textileworld.com/textile-world/fiber-world/2026/04/the-microfibre-consortium-and-zdhc-advance-joint-research-to-strengthen-wastewater-monitoring-of-fibre-fragmentation/
+first_added: 2026-09-15
 
-## Effluent: biological treatment and secondary clarifier
+## ETP: coagulation, flocculation and clarification
 
-id: P21
-order: 21
+id: P13
+order: 13
+phase: effluent
+lane: effluent
+short: Clarifier
+what_happens: >
+  Aggregates and settles suspended matter, colour, dyes and particles with coagulant and
+  flocculant; primary clarifier or dissolved-air flotation.
+machines: [coagulation tank, flocculation tank, primary clarifier or DAF]
+vendors: []
+wet_or_dry: wet
+water_l_per_kg:
+water_note: ""
+inputs: "Coagulants, flocculants, pH chemicals."
+chemicals: [ferric chloride or alum or PAC, polyelectrolyte, lime or acid]
+wastewater: "Clarified water plus particle- and chemical-rich sludge."
+data_link: "Chemical dose, turbidity or TSS change, sludge produced."
+measurement_point: "Before and after the clarifier; sludge stream."
+fibre_release: none
+fibre_created: none
+release_mechanism: "Removes fibre into sludge; the transfer is invisible if only the discharge is measured."
+release_evidence: "TMC/ZDHC 2024 and Phase 2 treat TSS removal here as the fibre removal step."
+measured_today: turbidity, TSS by lab, coagulant dose, sludge volume
+fibre_measured_today: false
+drain: to biological treatment; sludge to dewatering
+sensor_note: "Before-and-after pair gives the removal efficiency; the sludge line is where the fibre goes."
+sources: []
+first_added: 2026-09-15
+
+## ETP: biological treatment
+
+id: P14
+order: 14
 phase: effluent
 lane: effluent
 short: Biological
 what_happens: >
-  Bacteria consume dissolved organics and partly decolourise; fibres are enmeshed in
-  biological floc and settle with the sludge.
-machines: [anaerobic or hydrolysis tank, activated-sludge basin or MBBR, secondary clarifier]
+  Activated sludge or MBBR uses microbes to reduce biodegradable organic load; secondary
+  clarifier returns sludge.
+machines: [aeration basin, MBBR, secondary clarifier, blowers]
 vendors: []
 wet_or_dry: wet
-water_l_per_kg: 
-chemicals: [nutrients (urea, DAP), antifoam]
+water_l_per_kg:
+water_note: ""
+inputs: "Aeration; sometimes nutrients and pH adjustment."
+chemicals: [urea or DAP nutrients, antifoam]
+wastewater: "Biological solids, residual COD and BOD, possible sludge."
+data_link: "Dissolved oxygen, aeration, pH, loading, residence time."
+measurement_point: "Aeration basin influent and effluent."
 fibre_release: none
 fibre_created: none
-release_mechanism: "A removal stage: secondary treatment adds a further 36.8% removal, 71.8% cumulative (Prantor 2026); aerobic tank, sand filter and BAF showed low removal in Zhu 2025."
-release_evidence: "Prantor 2026; Zhu 2025."
-measured_today: MLSS, dissolved oxygen, SVI, COD and BOD in and out
+release_mechanism: "Synthetic fibre is not degraded; it partitions into biological sludge or passes through."
+release_evidence: "No mill-scale fibre balance across biological treatment published."
+measured_today: DO, MLSS, pH, COD and BOD by lab
 fibre_measured_today: false
-drain: to tertiary or discharge; sludge to thickening
-sensor_note: The clarifier outlet is clean and stable but fibre counts are already 70-90% down; good for compliance, poor for process feedback.
-sources:
-  - https://doi.org/10.1016/j.jes.2026.03.002
-  - https://doi.org/10.3390/w17040574
-first_added: 2026-09-11
+drain: to tertiary treatment
+sensor_note: "Low colour, cool; a clean sample but fibre count is low after clarification."
+sources: []
+first_added: 2026-09-15
 
-## Effluent: tertiary polishing, discharge and sludge
+## ETP: tertiary treatment and discharge
 
-id: P22
-order: 22
+id: P15
+order: 15
 phase: effluent
 lane: effluent
-short: Tertiary
+short: Tertiary / discharge
 what_happens: >
-  Filters and membranes polish suspended solids and colour; zero-liquid-discharge mills push
-  RO reject to evaporators. Captured fibres concentrate in dewatered sludge, which goes to
-  landfill, incineration or brick-making.
-machines: [sand or disc filter, ozone or Fenton for colour, UF / RO skid for reuse, filter press]
+  Polishing via sand filters, activated carbon, ultrafiltration or RO, then final discharge to
+  sewer or surface water, or to the reuse loop.
+machines: [sand filter, activated carbon filter, ultrafiltration, disc filter]
 vendors: []
 wet_or_dry: wet
-water_l_per_kg: 
-chemicals: [ozone, H2O2 and iron, antiscalant, polymer for dewatering]
+water_l_per_kg:
+water_note: ""
+inputs: "Backwash water; sometimes additional treatment chemicals."
+chemicals: [chlorine or ozone for colour, antiscalant]
+wastewater: "Filter backwash, concentrate or reject stream, final effluent."
+data_link: "Filter pressure and run time, backwash event, membrane condition."
+measurement_point: "Before and after the filter; final treated discharge; reject stream."
 fibre_release: none
 fibre_created: none
-release_mechanism: "A removal stage: tertiary raises removal to 95.6%, under 28 particles/L (Prantor 2026); 95.1% overall at Xu 2018; over 85% at Zhou 2020 but effluent still 537.5 fibres/L, enriched in small and coloured fibres; 99% by number but only 67.7% by mass at Zhu 2025."
-release_evidence: "Prantor 2026; Xu 2018; Zhou 2020; Zhu 2025."
-measured_today: TSS, COD, BOD, colour (ADMI or 436/525/620 nm), pH, temperature, flow, plus permit metals and AOX; no fibre parameter anywhere
+release_mechanism: "Backwash returns captured fibre to the head of the plant or to sludge."
+release_evidence: "ZDHC Wastewater Guidelines V2.2 Part C sets the TSS levels the discharge must meet."
+measured_today: flow, pH, TSS, COD, colour by lab twice a year for ZDHC; online flow and pH where permitted
 fibre_measured_today: false
-drain: receiving water or reuse; sludge off-site
-sensor_note: Final effluent is the regulatory point and where a TSS-correlated fibre reading would first be demanded; concentrations are lowest here.
+drain: outfall, sewer, or reuse loop
+sensor_note: "The compliance point: strongest link to discharge evidence, weakest to source."
 sources:
-  - https://doi.org/10.2166/wst.2018.476
-  - https://doi.org/10.1016/j.scitotenv.2020.140329
-  - https://doi.org/10.1016/j.jes.2026.03.002
-  - https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32022D2508
-first_added: 2026-09-11
+  - https://downloads.roadmaptozero.com/output/ZDHC-Wastewater-Guidelines
+first_added: 2026-09-15
 
-## Mill types, and who owns which stages
+## ZLD and reuse loop
 
-Dated 2026-09-11. Not a stage (no `id:`), so the generators skip it.
+id: P16
+order: 16
+phase: effluent
+lane: effluent
+short: ZLD / reuse
+what_happens: >
+  Recovers water through RO for reuse in the process; the concentrate goes to an evaporator and
+  crystalliser (zero liquid discharge) or is disposed of separately. Mandated in parts of India
+  and increasingly asked for by brands.
+machines: [RO train, multiple-effect evaporator, crystalliser]
+vendors: []
+wet_or_dry: wet
+water_l_per_kg:
+water_note: "Recovery of 70-95% of treated effluent where run."
+inputs: "Reverse osmosis, evaporator and crystalliser inputs."
+chemicals: [antiscalant, cleaning acid and alkali for membranes]
+wastewater: "RO reject, evaporator concentrate, salts and sludge; reclaimed water."
+data_link: "Recovery percentage, reuse volume, reject handling."
+measurement_point: "RO feed, permeate and reject; reuse-water loop."
+fibre_release: none
+fibre_created: none
+release_mechanism: "Fibre reaching the RO feed fouls the membrane; the reuse loop can carry it back to the process."
+release_evidence: "No published fibre balance; membrane fouling by fibre is the H5 hunch's question."
+measured_today: conductivity, flow, differential pressure, recovery
+fibre_measured_today: false
+drain: permeate to process; reject to evaporator
+sensor_note: "Clean water with low fibre count; the RO feed is where fibre would matter for membrane life."
+sources: []
+first_added: 2026-09-15
 
-- **Vertically integrated composite (spinning to garment):** owns every stage 1-22 and one
-  effluent plant receives all wet drains, so the sensor buyer and the polluter are the same
-  company. Fakir Group, Narayanganj (FKL Spinning, Fakir Knitwears); Yeşim, Bursa (knitting
-  115 t/day, dyeing 125 t/day, 400,000 garments/day, five sites).
-- **Knit-and-dye fabric mill (stages 4-15):** buys yarn, sells finished fabric to garment
-  factories. Tintex, Vila Nova de Cerveira, treating all wastewater on site.
-- **Commission dye house (stages 6-13):** dyes customer-owned greige for a fee; common in
-  Bursa, Denizli, Vale do Ave and Shaoxing/Keqiao, where the industrial park often runs a
-  centralised WWTP (the one Zhou 2020 sampled). Separates the polluter from the treatment owner.
-- **Garment factory only (stages 16-19):** has water only if it runs a garment-wash unit.
+## How water actually flows
 
-Where the evidence says a sensor should sit, in order: the dyeing-machine rinse drops (stage
-11), not the dye-bath drop; the bio-polishing drop on cotton lines (stage 9); the equalisation
-outlet (stage 20) as a compliance point; garment-wash drains (stage 18) where the mill has
-them. Avoid the scouring drop (95 °C, pH 13, oil), the dye-bath drop (130 °C, colour, salt),
-mercerising (concentrated caustic) and the softener trough (silicone films, tiny volume).
+Dated 2026-09-15. Not a stage (no `id:`), so the generators skip it.
+
+The water path is rarely one clean pipe per machine, which is why the map is the first asset:
+
+```
+freshwater or recycled water
+  → wet machine bath
+  → batch drain plus rinse drains
+  → local trench or header
+  → dye-house, pretreatment, printing or laundry header
+  → equalisation tank
+  → ETP
+  → final discharge | reuse water | RO reject or ZLD concentrate
+```
+
+Five things make the mapping matter:
+
+- A machine drain is a short, concentrated batch dump. It gives attribution but is not representative of daily discharge.
+- A department header mixes several machines. It is more representative and loses some batch-level attribution.
+- The ETP influent gives the total factory incoming load.
+- The final discharge gives what leaves the factory after treatment.
+- Sludge and filter backwash hold what was removed from the water. Measuring only the discharge misses a transfer from water to sludge.
+
+Higg FEM verification checks whether a facility tracks wastewater volume, monitors BOD5, holds
+discharge compliance documents, and monitors whether its treatment plant runs to design
+parameters: volume, flow rate, and influent and effluent quality.
+
+## Sensor-placement logic
+
+Dated 2026-09-15. A data-model placement strategy, not a claim that one instrument works at every point.
+
+| Measurement location | What it lets you know | Attribution value | Higg FEM / operating value |
+|---|---|---|---|
+| Individual high-impact machine drain | What a particular dye, wash, printing or finishing cycle releases | Very high | Links environmental intensity to batch, recipe, material, operator and machine |
+| Department header | Combined load from dye house, laundry, printing or finishing | Medium | Identifies which department needs intervention |
+| ETP influent / equalisation inlet | Total untreated factory wastewater load | Low for source, high for facility total | Treatment loading, flow and treatment-performance monitoring |
+| Before / after a clarifier, filter or membrane | Whether a treatment stage removes a contaminant, or fails or bypasses | Medium | ETP design-parameter monitoring and corrective action |
+| Final treated effluent / outfall | What is actually discharged or sent for reuse | Low for source, highest for outcome | Strongest link to discharge evidence and the compliance workflow |
+| Filter backwash / sludge line | Where captured solids and contaminants go after removal | Medium | Waste and sludge accounting; avoids "removal" claims that ignore transfer |
+
+**Deployment sequence.** Three measurement layers, so no single point has to be chosen forever:
+
+1. Outcome layer: final treated effluent plus flow.
+2. Treatment layer: ETP influent and, where relevant, before and after tertiary filtration.
+3. Source layer: one high-impact process, such as a garment laundry washer, a dye-bath and first-rinse drain, or a printing washdown stream.
+
+That is the minimum structure that answers the three useful questions: what is leaving the site, is the ETP removing it, and which operation is driving it.
+
+## Data model before sensors
+
+Dated 2026-09-15. The data contract comes before the hardware specification. Every observation links five objects.
+
+| Data object | Example fields |
+|---|---|
+| Facility | Facility ID, location, Higg or Worldly facility identifier, discharge type, ETP configuration, permit limits |
+| Process and machine | Department, process family, machine ID, machine type, capacity, drain or header ID, operating state |
+| Production batch | Batch or order ID, material and fibre composition, weight, fabric construction, supplier or material lot, start and end time |
+| Chemical recipe | Chemical product ID, SDS and MRSL status, chemical family, dosage, bath volume, temperature and pH profile, supplier |
+| Water-quality observation | Timestamp, location ID, wastewater flow, concentration or index, sample or measurement method, calibration and QC state, event ID |
+| Treatment operation | ETP stage, chemical dose, filter status, pump and aerator state, sludge amount, bypass or maintenance status |
+| Evidence and reporting record | Monitoring log, lab report, permit result, corrective action, reviewer and approver, reporting year, Higg FEM evidence link |
+
+The optimisation layer exists only when those objects are joined in time. Worked example: on
+12 March, machine D-07 ran a 500 kg polyester-elastane batch on a disperse-dye recipe. The
+first-rinse drain showed an abnormal particulate and fibre index. Forty minutes later the
+dye-house header rose, then the ETP influent load. The tertiary filter differential pressure
+rose too. Final discharge stayed inside the facility's normal range, but sludge mass increased.
+The system flags the batch and recipe and recommends checking rinse volume, filter maintenance
+and dosing conditions. That is an industrial intelligence product, not a sensor dashboard.
+
+## What maps to Higg FEM
+
+Dated 2026-09-15. The system does not submit the whole Higg FEM 4.0. It supports selected evidence and metric workflows:
+
+| Higg FEM area | What the record can contribute |
+|---|---|
+| Water | Meter data by source and process; consumption by process; recycling and reuse volume; intensity denominators from production volume |
+| Wastewater | Volume discharged; discharge flow; wastewater-source map; treatment-process records; ETP influent and effluent monitoring; data-quality and calibration logs; exception and bypass records |
+| Chemical management | Chemical inventory and recipe metadata; MRSL documentation links; consumption by process; release-event traceability, not full hazardous-chemical analytical compliance |
+| Energy and GHG | Later: machine and process energy and steam tied to batches, water heating, ETP aeration, pumping and treatment intensity |
+| Waste and sludge | Sludge and filter waste quantities, disposal route, removal-event evidence |
+| Environmental management | Targets, baseline, corrective actions, operating procedures, trend reports, auditable evidence records |
+
+Higg FEM's water and wastewater requirements include water-source tracking, wastewater-volume
+tracking, treatment information, BOD5 monitoring, discharge documentation, and verification of
+ETP performance against design parameters (volume, flow rate, input and output quality).
+
+## Where to begin
+
+Dated 2026-09-15. The next deliverable is a wet-process and wastewater data map for one
+facility, not a product spec and not a generic Higg summary. Choose one facility category first,
+ideally a synthetic-blend dyeing and finishing mill or a denim or garment laundry with an onsite
+ETP, and build in a spreadsheet or diagram:
+
+1. List every wet machine and its process step.
+2. For each, capture its drain or header and whether it is separate or mixed.
+3. List inputs: water, steam, dyes, salts, acids and alkalis, surfactants, softeners, resins, cleaning chemicals.
+4. List outputs: bath dump, first rinse, later rinses, washdown, filter backwash, sludge.
+5. Trace every output pipe to a department header, equalisation tank, ETP stage, reuse loop, outfall or sludge route.
+6. Add the existing sensors, lab samples, manual logs and meters at each point.
+7. Add the production, batch and recipe data source that can be joined to each machine and timestamp.
+8. Mark three candidate observation points: one source stream, ETP influent, final effluent.
+
+Only after that map exists can the product requirement be written in one sentence, for example:
+"For polyester dyeing mills, provide a time-resolved, flow-normalised contaminant and
+fibre-release record from dye-bath and rinse events through the ETP, linked to batch, recipe and
+treatment operations, with auditable exports that support FEM wastewater evidence." That is the
+bridge from the core IP to factory optimisation to the Higg FEM record.

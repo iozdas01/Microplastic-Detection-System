@@ -4711,12 +4711,12 @@ def render_process_tab(fm: dict, entries: list[dict]) -> str:
         f'<td>{esc(e["_phase"])}</td><td>{esc(e["_wet"])}</td>'
         f'<td>{esc(str(e.get("water_l_per_kg") or ""))}</td>'
         f'<td><span class="smap-liab band-{e["_band"]}">{esc(e["_release"])}</span></td>'
-        f'<td>{esc(str(e.get("release_mechanism") or ""))}</td>'
-        f'<td>{esc(str(e.get("measured_today") or ""))}</td>'
-        f'<td>{esc(str(e.get("drain") or ""))}</td></tr>' for e in rows)
+        f'<td>{esc(str(e.get("inputs") or ""))}</td>'
+        f'<td>{esc(str(e.get("wastewater") or ""))}</td>'
+        f'<td>{esc(str(e.get("measurement_point") or e.get("drain") or ""))}</td></tr>' for e in rows)
     table = ('<div class="tmap-table pmap-table"><table><thead><tr><th>Stage</th><th>Phase</th>'
-             '<th>Wet / dry</th><th>Water L/kg</th><th>Fibre release</th><th>Why</th>'
-             f'<th>Measured today</th><th>Water goes to</th></tr></thead><tbody>{trs}</tbody></table></div>')
+             '<th>Wet / dry</th><th>Water L/kg</th><th>Fibre release</th><th>Water and chemicals in</th>'
+             f'<th>Wastewater out</th><th>Measurement point</th></tr></thead><tbody>{trs}</tbody></table></div>')
 
     # ── cards by phase ───────────────────────────────────────────────────────
     cards = ""
@@ -4738,7 +4738,9 @@ def render_process_tab(fm: dict, entries: list[dict]) -> str:
             mach_html = ('<p class="smap-sub">Machines</p><ul class="pmap-chem">'
                          + "".join(f"<li>{esc(c)}</li>" for c in mach) + "</ul>") if mach else ""
             why = ""
-            for lab, key in (("Water figures", "water_note"), ("Why fibres come off here", "release_mechanism"), ("Evidence", "release_evidence"),
+            for lab, key in (("Water and chemicals in", "inputs"), ("Wastewater out", "wastewater"),
+                             ("Data to join", "data_link"), ("Measurement point", "measurement_point"),
+                             ("Water figures", "water_note"), ("Why fibres come off here", "release_mechanism"), ("Evidence", "release_evidence"),
                              ("Measured today", "measured_today"), ("A sensor here", "sensor_note")):
                 if e.get(key):
                     why += f'<p class="smap-why"><b>{lab}</b>{esc(str(e[key]))}</p>'

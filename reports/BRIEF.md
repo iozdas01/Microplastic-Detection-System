@@ -4,7 +4,7 @@
 -->
 ---
 idea: industrial-process-data-infrastructure
-generated: 2026-09-15T23:03Z
+generated: 2026-09-16T00:08Z
 active_hunch: H1
 active_assumption: H1A2
 sources:
@@ -78,10 +78,10 @@ _Generated from the folder. Check here before creating a new artifact — if a f
 | `reports/03-validation/H1A5-2026-09-14/interviews/varija-subasingha-2026-09-14-notes.md` | Interview: Varija Subasingha (adidas) · H1A5 · call date not recorded |
 | `reports/outreach/companies.md` | The company registry — one entry per organisation on the demand or supply side of contaminant detection in industrial water, what it actually does, a… |
 | `reports/outreach/contacts.md` | The contact ledger — one card per person targeted, invited or interviewed for this idea, with the live-profile read that qualified them and the state… |
-| `reports/outreach/process-map.md` | The process map — one entry per stage of textile manufacturing from raw fibre to finished T-shirt, whether the stage touches water, how much fibre it… |
+| `reports/outreach/process-map.md` | The wet-process map — one entry per textile wet-processing step and effluent-treatment stage, what enters it (water, chemicals), what leaves it (the… |
 | `reports/outreach/research-map.md` | The research map — one row per paper or group on contaminant detection in water, classified by what its method actually did, so the crowded and empty… |
-| `reports/outreach/results-*.md` | 7 generated files — rebuild them, never edit |
-| `reports/outreach/target-list-audit-*.md` | 2 dated snapshots — latest 2026-09-14 · Target list audit — 2026-09-14 |
+| `reports/outreach/results-*.md` | 8 generated files — rebuild them, never edit |
+| `reports/outreach/target-list-audit-*.md` | 3 dated snapshots — latest 2026-09-15 · Target list audit — 2026-09-15 |
 | `reports/outreach/technology-map.md` | The technology map — one entry per way of detecting microplastics or microfibres in water (what it physically measures, how small it goes, how far fr… |
 | `reports/outreach/copy/H1A2-linkedin.md` | The LinkedIn copy archive for H1A2 — every message drafted or sent to a contact for this assumption, with the live-snapshot line behind each claim an… |
 | `reports/outreach/copy/H3A2-linkedin.md` | The LinkedIn copy archive for H3A2 — every message drafted or sent to a California water-utility contact for this assumption, with the live-snapshot… |
