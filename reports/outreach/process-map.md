@@ -5,29 +5,223 @@ title: "Wet processing: process, water, wastewater, measurement point"
 schema_version: 2
 last_updated: 2026-09-15
 # ─── Vocabulary (founder's structure, 2026-09-15) ────────────────────────────
-# `phase` follows the founder's four blocks of wet processing plus washing and cleaning
-# broken out because they carry the fibre; `lane` says which routes the step sits on
-# (`all` = every mill type). `fibre_release` keeps the published grading of what a step sheds
+# `phase` is exactly the founder's four blocks of wet processing; every step files under one.
+# `lane` says which routes the step sits on (`all` = every mill type). `fibre_release` keeps the published grading of what a step sheds
 # into water; it colours the chips and is the only field carried from the 2026-09-11 map.
 map_vocabularies:
-  phase: [pretreatment, coloration, washing, finishing, cleaning, effluent]
+  phase: [pretreatment, coloration, finishing, effluent]
   lane: [all, cotton, synthetic, laundry, effluent]
   wet_or_dry: [dry, wet, rinse_only]
   fibre_release: [none, low, medium, high]
   fibre_created: [none, low, medium, high]
 map_value_labels:
-  phase: {pretreatment: "Preparation / pretreatment", coloration: "Coloration", washing: "Washing and rinsing", finishing: "Finishing", cleaning: "Equipment cleaning", effluent: "Wastewater treatment (ETP)"}
+  phase: {pretreatment: "1. Preparation / pretreatment", coloration: "2. Coloration", finishing: "3. Finishing", effluent: "4. Wastewater treatment (ETP)"}
   lane: {all: "all routes", cotton: "cotton routes", synthetic: "synthetic routes", laundry: "garment laundry / denim", effluent: "effluent"}
   wet_or_dry: {dry: "dry", wet: "wet", rinse_only: "rinse only"}
   fibre_release: {none: "none", low: "low", medium: "medium", high: "high"}
   fibre_created: {none: "none", low: "low", medium: "medium", high: "high"}
+map_contaminants:
+  fibre:
+    label: Fibre and lint
+    colour: '#e11d48'
+  colour:
+    label: Colour and unfixed dye
+    colour: '#9333ea'
+  salt:
+    label: Salt and dissolved solids
+    colour: '#0ea5e9'
+  organic:
+    label: Sizes, oils, waxes, organics
+    colour: '#b45309'
+  surfactant:
+    label: Surfactants and detergents
+    colour: '#65a30d'
+  polymer:
+    label: Resins, binders, silicones
+    colour: '#0d9488'
+  redox:
+    label: Oxidants and reducing agents
+    colour: '#d97706'
+  alkali:
+    label: 'pH load: caustic and acid'
+    colour: '#7c3aed'
+  solids:
+    label: Settled solids and sludge
+    colour: '#78716c'
+  mixed:
+    label: Mixed effluent
+    colour: '#94a3b8'
+map_routes:
+  cotton_knit:
+    label: Cotton knit dyehouse
+    note: Knits carry no size, so desizing is skipped. Jet or soft-flow machines, batch by batch, rinse-heavy.
+  cotton_woven:
+    label: Cotton woven mill
+    note: Sized warp, so desizing runs. Often open-width and continuous, with less water per kg than knit.
+  polyester:
+    label: Polyester or synthetic mill
+    note: Disperse dyeing at 130 C, then a reduction clear. Heat setting is dry. No mercerizing. This is the route where the
+      shed fibre is plastic.
+  printing:
+    label: Printing house
+    note: Print, steam, wash off. Screen and blanket washing is a side stream of events.
+  denim_laundry:
+    label: Denim mill or garment laundry
+    note: Finished garments, not fabric. Highest and most variable fibre load in the industry.
+map_nodes:
+- id: src-fresh
+  label: Fresh water
+  kind: source
+  col: 0
+  slot: 1
+  note: Mains, borehole or surface abstraction. Metered per source for FEM water tracking.
+- id: src-reuse
+  label: Reclaimed water
+  kind: source
+  col: 0
+  slot: 2
+  note: Returned from the reuse loop. Whatever it still carries re-enters the process.
+- id: hdr-pre
+  label: Pretreatment header
+  kind: header
+  col: 2
+  slot: 1
+  note: Desize, scour, bleach and mercerizer rinses combine here. Alkaline and organic.
+- id: hdr-dye
+  label: Dyehouse header
+  kind: header
+  col: 2
+  slot: 2
+  note: Every dye machine drain. The largest volume and the largest fibre load in a fabric mill.
+- id: hdr-print
+  label: Printing header
+  kind: header
+  col: 2
+  slot: 3
+  note: Wash-off and screen washing.
+- id: hdr-laundry
+  label: Laundry header
+  kind: header
+  col: 2
+  slot: 4
+  note: Every washer drain in a garment laundry.
+- id: hdr-fin
+  label: Finishing header
+  kind: header
+  col: 2
+  slot: 5
+  note: Trough dumps and washdown. Small volume, high concentration.
+- id: caustic-rec
+  label: Caustic recovery
+  kind: output
+  col: 2
+  slot: 6
+  note: 'Not effluent: the weak caustic is evaporated back to strength and returned to the mercerizer.'
+- id: out-discharge
+  label: Final discharge
+  kind: output
+  col: 8
+  slot: 1
+  note: To sewer or surface water. The permit and ZDHC sample point.
+- id: out-reuse
+  label: Water back to process
+  kind: output
+  col: 8
+  slot: 2
+  note: Reclaimed water returning to the mill.
+- id: out-reject
+  label: RO reject / ZLD
+  kind: output
+  col: 8
+  slot: 3
+  note: To the evaporator and crystalliser, or to disposal.
+- id: out-sludge
+  label: Sludge
+  kind: output
+  col: 8
+  slot: 4
+  note: Where the removed fibre and solids actually end up. Weighed and manifested for FEM.
+map_columns:
+  '0': Water in
+  '1': Process
+  '2': Headers
+  '3': Equalisation
+  '4': Clarifier
+  '5': Biological
+  '6': Tertiary
+  '7': Reuse
+  '8': Out
+map_fem:
+  water-5:
+    section: Water
+    level: 1
+    label: Domestic and production water tracked separately
+    needs: Separate tracking records by use category
+  water-13:
+    section: Water
+    level: 2
+    label: Water balance identifying which processes use the most
+    needs: Water balance report, processes ranked by consumption
+  water-15:
+    section: Water
+    level: 2
+    label: Target for increasing reused (grey) water
+    needs: Recycling system evaluation and target calculation
+  water-19:
+    section: Water
+    level: 2
+    label: Reused water improved against baseline
+    needs: Grey water tracking records
+  ww-1:
+    section: Wastewater
+    level: 1
+    label: Volume of wastewater discharged is tracked
+    needs: Metering records or a stated estimation method
+  ww-2:
+    section: Wastewater
+    level: 1
+    label: BOD5 monitoring
+    needs: Sampling reports or onsite monitoring records
+  ww-3:
+    section: Wastewater
+    level: 1
+    label: No stormwater mixing
+    needs: Facility drainage diagram and inspection records
+  ww-5:
+    section: Wastewater
+    level: 1
+    label: Treatment plant operates to its design parameters
+    needs: Design specs, operating procedures, process monitoring records
+  ww-7:
+    section: Wastewater
+    level: 1
+    label: No leaking; flows are known
+    needs: Wastewater flow and piping diagram, volume monitoring records
+  ww-8:
+    section: Wastewater
+    level: 1
+    label: Sludge sources and solids content
+    needs: Sludge inventory and analysis
+  ww-9:
+    section: Wastewater
+    level: 1
+    label: Sludge quantity reported
+    needs: Tracking records, manifests, weighing records
+map_sensor_layers:
+  source:
+    label: Source layer
+    note: 'One high-impact process stream. Highest attribution: batch, recipe, material, machine.'
+  treatment:
+    label: Treatment layer
+    note: ETP influent and across a treatment stage. Shows whether the plant is removing what arrives.
+  outcome:
+    label: Outcome layer
+    note: Final treated effluent plus flow. Strongest link to discharge evidence, weakest to source.
 map_phase_notes:
-  pretreatment: "Make the greige textile clean and chemically ready: desizing, scouring, bleaching, mercerizing."
-  coloration: "Dyeing or printing, plus the polyester reduction clear that follows disperse dyeing."
-  washing: "Soaping, washing and rinsing after dyeing or printing, and the garment laundry that makes the look. This is where loosened lint and fibre leave the textile."
-  finishing: "Modify feel, appearance, stability, performance or functionality."
-  cleaning: "Cleaning machines, tanks, lines, screens and filters between batches: short, concentrated shock loads."
-  effluent: "Collect and clean the combined effluent before discharge, reuse or zero liquid discharge."
+  pretreatment: "Make the greige textile clean and chemically ready. Steps: desizing, scouring, bleaching, mercerizing."
+  coloration: "Put colour in and wash the excess out. Steps: dyeing, printing, reduction clearing (polyester), soaping and rinsing, equipment cleaning between shades."
+  finishing: "Modify feel, appearance, stability, performance or functionality. Steps: chemical and mechanical finishing; garment laundry and denim wash for garments."
+  effluent: "Collect and clean the combined effluent before discharge, reuse or ZLD. Steps: equalisation, clarifier, biological, tertiary and discharge, ZLD and reuse."
 ---
 
 # Wet-process map
@@ -40,8 +234,21 @@ placement map, not a sensor specification. Water figures marked BAT are yearly-a
 indicative levels from the EU Textiles BAT Conclusions (Decision 2022/2508, Table 1.1; m³/t
 equals L/kg); fibre-release grades cite the paper they come from.
 
-Textile wet processing divides into preparation, coloration, finishing and wastewater treatment.
-The route differs by material:
+Each stage below declares what enters it, the wastewater streams that leave it (`streams:`,
+one per drain, with litres per kilogram, what it carries and where it goes), which mill routes
+it belongs to (`routes:`), which measurement layer its measurement point would sit in
+(`sensor_layer:`), and which Higg FEM questions a measurement there could evidence (`fem:`).
+The control room draws the flow map from exactly those fields, so the diagram cannot drift from
+this file.
+
+Textile wet processing is four blocks, and every step below files under one of them:
+
+1. **Preparation / pretreatment:** desizing, scouring, bleaching, mercerizing.
+2. **Coloration:** dyeing or printing, the polyester reduction clear, soaping and rinsing, machine cleaning between shades.
+3. **Finishing:** chemical and mechanical finishing; for garments, laundry and denim wash.
+4. **Wastewater treatment (ETP):** equalisation, clarifier, biological, tertiary and discharge, ZLD and reuse.
+
+The route through the blocks differs by material:
 
 - **Woven or knitted fabric mill:** yarn or fabric → pretreatment → dyeing or printing → washing → finishing → ETP.
 - **Denim mill:** cotton yarn → indigo dyeing → weaving → washing and finishing → ETP.
@@ -85,6 +292,35 @@ drain: pretreatment header
 sensor_note: "Hot, alkaline or enzymatic, high starch load; the pretreatment header is the practical point."
 sources:
   - https://doi.org/10.1021/acs.est.3c06210
+routes:
+- cotton_woven
+- polyester
+sensor_layer: source
+fem:
+- water-13
+- ww-7
+streams:
+- id: p1-liquor
+  name: Desize liquor drop
+  l_per_kg: 4
+  to: hdr-pre
+  dominant: organic
+  carries:
+  - organic
+  - surfactant
+  when: One dump per batch, or continuous from the range
+  note: Most of the pretreatment organic load leaves in this one drop.
+- id: p1-rinse
+  name: Rinse
+  l_per_kg: 8
+  to: hdr-pre
+  dominant: organic
+  carries:
+  - organic
+  - fibre
+  - surfactant
+  when: After the liquor drop
+  note: Carries dissolved size plus the first loose fibre off the woven surface.
 first_added: 2026-09-15
 
 ## Scouring
@@ -120,6 +356,37 @@ sensor_note: "95 °C, pH 13, oil and wax: the hardest pretreatment sample. Measu
 sources:
   - https://doi.org/10.1021/acs.est.3c06210
   - https://doi.org/10.1093/etojnl/vgag200
+routes:
+- cotton_knit
+- cotton_woven
+- polyester
+sensor_layer: source
+fem:
+- water-13
+- ww-7
+streams:
+- id: p2-drop
+  name: Scour bath drop
+  l_per_kg: 5
+  to: hdr-pre
+  dominant: alkali
+  carries:
+  - alkali
+  - organic
+  - surfactant
+  when: End of the scour, one dump
+  note: 95 C, pH 13, oils and waxes. The hardest pretreatment sample to instrument.
+- id: p2-rinse
+  name: Scour rinse
+  l_per_kg: 7
+  to: hdr-pre
+  dominant: fibre
+  carries:
+  - fibre
+  - alkali
+  - surfactant
+  when: Two or three rinses after the drop
+  note: Where the fly carried in from spinning and knitting finally washes out.
 first_added: 2026-09-15
 
 ## Bleaching
@@ -151,6 +418,35 @@ fibre_measured_today: false
 drain: pretreatment header
 sensor_note: "Oxidising, alkaline; the rinse drain is measurable, the bath drop is not."
 sources: []
+routes:
+- cotton_knit
+- cotton_woven
+sensor_layer: source
+fem:
+- water-13
+- ww-7
+streams:
+- id: p3-drop
+  name: Bleach bath drop
+  l_per_kg: 3
+  to: hdr-pre
+  dominant: redox
+  carries:
+  - redox
+  - alkali
+  when: End of the bleach
+  note: Residual peroxide; a peroxide kill usually follows before dyeing.
+- id: p3-rinse
+  name: Bleach rinse
+  l_per_kg: 7
+  to: hdr-pre
+  dominant: redox
+  carries:
+  - redox
+  - fibre
+  - alkali
+  when: After the drop and the peroxide kill
+  note: ''
 first_added: 2026-09-15
 
 ## Mercerizing
@@ -182,6 +478,33 @@ fibre_measured_today: false
 drain: separated caustic drain, then equalisation
 sensor_note: "Concentrated caustic; avoid."
 sources: []
+routes:
+- cotton_woven
+- cotton_knit
+sensor_layer: none
+fem:
+- water-13
+- water-15
+streams:
+- id: p4-weak
+  name: Weak caustic to recovery
+  l_per_kg: 3
+  to: caustic-rec
+  dominant: alkali
+  carries:
+  - alkali
+  when: Continuous, from the stabilising boxes
+  note: 'Kept out of the effluent on purpose: the caustic is evaporated back to strength and reused.'
+- id: p4-rinse
+  name: Mercerizer rinse
+  l_per_kg: 5
+  to: hdr-pre
+  dominant: alkali
+  carries:
+  - alkali
+  - salt
+  when: Continuous
+  note: High pH and sodium; neutralised before it reaches equalisation.
 first_added: 2026-09-15
 
 ## Dyeing
@@ -223,13 +546,37 @@ sources:
   - https://doi.org/10.1021/acs.est.3c06210
   - https://doi.org/10.1093/etojnl/vgag200
   - https://doi.org/10.1016/j.scitotenv.2020.140329
+routes:
+- cotton_knit
+- cotton_woven
+- polyester
+- denim_laundry
+sensor_layer: source
+fem:
+- water-13
+- water-5
+- ww-7
+streams:
+- id: p5-bath
+  name: Dye bath drop
+  l_per_kg: 8
+  to: hdr-dye
+  dominant: colour
+  carries:
+  - colour
+  - salt
+  - fibre
+  - surfactant
+  when: End of the dyeing cycle, one dump per batch
+  note: 'The most contaminated single stream in the mill and the hardest to measure: 60-130 C, salt to
+    80 g/L, full shade depth, foam.'
 first_added: 2026-09-15
 
 ## Soaping, washing and rinsing
 
 id: P6
 order: 6
-phase: washing
+phase: coloration
 lane: all
 short: Washing / rinsing
 what_happens: >
@@ -257,6 +604,51 @@ drain: wash header to equalisation
 sensor_note: "The single best source point: 40-70 °C, lower colour and salt than the bath, high fibre count, repeatable per batch."
 sources:
   - https://doi.org/10.1021/acs.est.3c06210
+routes:
+- cotton_knit
+- cotton_woven
+- polyester
+- printing
+sensor_layer: source
+fem:
+- water-13
+- water-5
+- ww-7
+streams:
+- id: p6-first
+  name: First rinse after the dye bath
+  l_per_kg: 12
+  to: hdr-dye
+  dominant: fibre
+  carries:
+  - fibre
+  - colour
+  - salt
+  when: Immediately after the bath drop, once per batch
+  note: 'The best source point in the mill: peak fibre load, 40-70 C, much less colour and salt than the
+    bath, and it repeats identically every batch.'
+- id: p6-soap
+  name: Hot soaping
+  l_per_kg: 8
+  to: hdr-dye
+  dominant: colour
+  carries:
+  - colour
+  - surfactant
+  - fibre
+  when: After the first rinse, 90-95 C
+  note: Strips hydrolysed dye; colour peaks again here.
+- id: p6-later
+  name: Later rinses
+  l_per_kg: 20
+  to: hdr-dye
+  dominant: salt
+  carries:
+  - salt
+  - fibre
+  - colour
+  when: Two to four rinses to the end point
+  note: Most of the mill's water volume. Dilute, so a concentration reading here needs flow to mean anything.
 first_added: 2026-09-15
 
 ## Printing
@@ -289,6 +681,35 @@ drain: printing header to equalisation
 sensor_note: "Pigment and binder particles look like fibres to a mass or turbidity method; needs shape or polymer discrimination."
 sources:
   - https://doi.org/10.1016/j.scitotenv.2020.140329
+routes:
+- printing
+sensor_layer: source
+fem:
+- water-13
+- ww-7
+streams:
+- id: p7-washoff
+  name: Print wash-off
+  l_per_kg: 18
+  to: hdr-print
+  dominant: colour
+  carries:
+  - colour
+  - organic
+  - polymer
+  - fibre
+  when: Continuous, after steaming
+  note: Urea and thickener come off with the unfixed dye.
+- id: p7-screen
+  name: Screen and blanket washing
+  l_per_kg: 7
+  to: hdr-print
+  dominant: polymer
+  carries:
+  - polymer
+  - colour
+  when: Between designs, an event not a flow
+  note: Pigment and binder particles here read like fibres to any shape-blind method.
 first_added: 2026-09-15
 
 ## Reduction clearing
@@ -321,13 +742,41 @@ drain: dye-house header
 sensor_note: "Reducing, alkaline, sulphur odour; the rinse after the clear is the sample."
 sources:
   - https://doi.org/10.1021/acs.est.3c06210
+routes:
+- polyester
+sensor_layer: source
+fem:
+- water-13
+- ww-7
+streams:
+- id: p8-bath
+  name: Clearing bath drop
+  l_per_kg: 4
+  to: hdr-dye
+  dominant: redox
+  carries:
+  - redox
+  - colour
+  - alkali
+  when: After disperse dyeing, deep shades
+  note: Hydrosulphite and caustic at 70-80 C.
+- id: p8-rinse
+  name: Clearing rinse
+  l_per_kg: 6
+  to: hdr-dye
+  dominant: fibre
+  carries:
+  - fibre
+  - colour
+  when: After the clearing bath
+  note: Polyester softened by the 130 C cycle sheds into this rinse.
 first_added: 2026-09-15
 
 ## Garment laundry and denim wash
 
 id: P9
-order: 9
-phase: washing
+order: 10
+phase: finishing
 lane: laundry
 short: Garment / denim wash
 what_happens: >
@@ -359,12 +808,72 @@ sensor_note: "Highest and most variable fibre load, moderate temperature, indigo
 sources:
   - https://doi.org/10.1021/acs.est.3c06210
   - https://www.textileworld.com/textile-world/fiber-world/2026/04/the-microfibre-consortium-and-zdhc-advance-joint-research-to-strengthen-wastewater-monitoring-of-fibre-fragmentation/
+routes:
+- denim_laundry
+sensor_layer: source
+fem:
+- water-13
+- water-5
+- ww-7
+streams:
+- id: p9-desize
+  name: Desize and enzyme drop
+  l_per_kg: 8
+  to: hdr-laundry
+  dominant: fibre
+  carries:
+  - fibre
+  - organic
+  - colour
+  when: First baths of the wash recipe
+  note: Cellulase is abrading the fabric on purpose; the lint is the look leaving as effluent.
+- id: p9-stone
+  name: Stone wash drop
+  l_per_kg: 7
+  to: hdr-laundry
+  dominant: fibre
+  carries:
+  - fibre
+  - solids
+  - colour
+  when: Stone or combined enzyme-stone cycle
+  note: Pumice fines sit alongside the fibre and confound a gravimetric method.
+- id: p9-bleach
+  name: Bleach or tint drop
+  l_per_kg: 4
+  to: hdr-laundry
+  dominant: redox
+  carries:
+  - redox
+  - colour
+  when: Where the look needs it
+  note: ''
+- id: p9-rinse
+  name: Rinses
+  l_per_kg: 8
+  to: hdr-laundry
+  dominant: fibre
+  carries:
+  - fibre
+  - colour
+  when: Between and after every chemical step
+  note: ''
+- id: p9-soft
+  name: Softener drop
+  l_per_kg: 3
+  to: hdr-laundry
+  dominant: polymer
+  carries:
+  - polymer
+  - surfactant
+  when: Last bath
+  note: ''
 first_added: 2026-09-15
 
 ## Finishing
 
 id: P10
-order: 10
+order: 9
 phase: finishing
 lane: all
 short: Finishing
@@ -396,13 +905,42 @@ drain: finishing header to equalisation
 sensor_note: "Silicone films and tiny volumes; a poor sensor point. Track the lint waste from raising and sueding as solid waste instead."
 sources:
   - https://doi.org/10.3390/w17040574
+routes:
+- cotton_knit
+- cotton_woven
+- polyester
+- printing
+sensor_layer: none
+fem:
+- water-13
+- ww-7
+streams:
+- id: p10-trough
+  name: Pad trough dump
+  l_per_kg: 1
+  to: hdr-fin
+  dominant: polymer
+  carries:
+  - polymer
+  when: Recipe change or shift end
+  note: Small volume, very high concentration of softener, resin and silicone.
+- id: p10-wash
+  name: Washdown and cleanup
+  l_per_kg: 2
+  to: hdr-fin
+  dominant: polymer
+  carries:
+  - polymer
+  - surfactant
+  when: Cleaning the padder and stenter
+  note: Silicone films make this a poor place to put an optical instrument.
 first_added: 2026-09-15
 
 ## Equipment cleaning
 
 id: P11
-order: 11
-phase: cleaning
+order: 8.5
+phase: coloration
 lane: all
 short: Equipment cleaning
 what_happens: >
@@ -427,6 +965,38 @@ fibre_measured_today: false
 drain: machine drain to header
 sensor_note: "Events, not a steady stream; tag them so they do not pollute the batch attribution of the machine's next cycle."
 sources: []
+routes:
+- cotton_knit
+- cotton_woven
+- polyester
+- printing
+- denim_laundry
+sensor_layer: none
+fem:
+- ww-7
+streams:
+- id: p11-cip
+  name: Machine clean between shades
+  l_per_kg: 1.5
+  to: hdr-dye
+  dominant: alkali
+  carries:
+  - alkali
+  - colour
+  - surfactant
+  when: Shade change, an event
+  note: A concentrated shock load that belongs to no batch. Tag it or it corrupts the attribution of the
+    next cycle.
+- id: p11-lint
+  name: Lint filter flush
+  l_per_kg: 0.5
+  to: hdr-dye
+  dominant: fibre
+  carries:
+  - fibre
+  when: Every one to several batches, by mill practice
+  note: The batch's captured fibre going to drain in one slug. How often this happens is an interview
+    question, not a published figure.
 first_added: 2026-09-15
 
 ## ETP: equalisation
@@ -460,6 +1030,25 @@ sensor_note: "Cool, mixed, moderate colour; the easiest fibre-rich sample and th
 sources:
   - https://doi.org/10.1016/j.scitotenv.2020.140329
   - https://www.textileworld.com/textile-world/fiber-world/2026/04/the-microfibre-consortium-and-zdhc-advance-joint-research-to-strengthen-wastewater-monitoring-of-fibre-fragmentation/
+routes: []
+sensor_layer: treatment
+fem:
+- ww-1
+- ww-5
+- ww-7
+- ww-3
+streams:
+- id: p12-out
+  name: Equalised influent
+  to: P13
+  dominant: mixed
+  share: 1.0
+  carries:
+  - mixed
+  - fibre
+  - solids
+  when: Continuous
+  note: Everything the mill released, mixed and smoothed. The compliance influent, and source-blind.
 first_added: 2026-09-15
 
 ## ETP: coagulation, flocculation and clarification
@@ -491,6 +1080,34 @@ fibre_measured_today: false
 drain: to biological treatment; sludge to dewatering
 sensor_note: "Before-and-after pair gives the removal efficiency; the sludge line is where the fibre goes."
 sources: []
+routes: []
+sensor_layer: treatment
+fem:
+- ww-5
+- ww-8
+- ww-9
+streams:
+- id: p13-out
+  name: Clarified water
+  to: P14
+  dominant: mixed
+  share: 0.97
+  carries:
+  - mixed
+  - fibre
+  when: Continuous
+  note: ''
+- id: p13-sludge
+  name: Primary sludge
+  to: out-sludge
+  dominant: solids
+  share: 0.03
+  carries:
+  - solids
+  - fibre
+  - colour
+  when: Continuous or batched
+  note: Where the fibre actually goes. Measure only the discharge and this transfer is invisible.
 first_added: 2026-09-15
 
 ## ETP: biological treatment
@@ -522,6 +1139,31 @@ fibre_measured_today: false
 drain: to tertiary treatment
 sensor_note: "Low colour, cool; a clean sample but fibre count is low after clarification."
 sources: []
+routes: []
+sensor_layer: treatment
+fem:
+- ww-5
+streams:
+- id: p14-out
+  name: Secondary effluent
+  to: P15
+  dominant: mixed
+  share: 0.98
+  carries:
+  - mixed
+  - fibre
+  when: Continuous
+  note: ''
+- id: p14-sludge
+  name: Waste activated sludge
+  to: out-sludge
+  dominant: solids
+  share: 0.02
+  carries:
+  - solids
+  - fibre
+  when: Continuous
+  note: Synthetic fibre is not degraded here; it partitions into the sludge or passes through.
 first_added: 2026-09-15
 
 ## ETP: tertiary treatment and discharge
@@ -554,6 +1196,45 @@ drain: outfall, sewer, or reuse loop
 sensor_note: "The compliance point: strongest link to discharge evidence, weakest to source."
 sources:
   - https://downloads.roadmaptozero.com/output/ZDHC-Wastewater-Guidelines
+routes: []
+sensor_layer: outcome
+fem:
+- ww-1
+- ww-2
+- ww-5
+streams:
+- id: p15-discharge
+  name: Final discharge
+  to: out-discharge
+  dominant: mixed
+  share: 0.55
+  carries:
+  - mixed
+  - fibre
+  when: Continuous
+  note: What actually leaves the site, and the ZDHC and permit sample point. Whether residual
+    fibre is still in it is exactly the number nobody can produce today.
+- id: p15-ro
+  name: Feed to reuse
+  to: P16
+  dominant: mixed
+  share: 0.43
+  carries:
+  - mixed
+  - fibre
+  when: Continuous
+  note: Fibre reaching the RO feed is what shortens membrane life.
+- id: p15-backwash
+  name: Filter backwash
+  to: P12
+  dominant: solids
+  share: 0.02
+  back: true
+  carries:
+  - solids
+  - fibre
+  when: Every filter run, an event
+  note: Returns captured solids to the head of the plant. A loop, not an output.
 first_added: 2026-09-15
 
 ## ZLD and reuse loop
@@ -586,6 +1267,32 @@ fibre_measured_today: false
 drain: permeate to process; reject to evaporator
 sensor_note: "Clean water with low fibre count; the RO feed is where fibre would matter for membrane life."
 sources: []
+routes: []
+sensor_layer: none
+fem:
+- water-15
+- water-19
+streams:
+- id: p16-permeate
+  name: Reclaimed water
+  to: out-reuse
+  dominant: mixed
+  share: 0.75
+  carries:
+  - mixed
+  - fibre
+  when: Continuous
+  note: Goes back into the process; whatever it still carries re-enters the mill.
+- id: p16-reject
+  name: RO reject
+  to: out-reject
+  dominant: salt
+  share: 0.25
+  carries:
+  - salt
+  - colour
+  when: Continuous
+  note: To the evaporator and crystalliser where ZLD is run.
 first_added: 2026-09-15
 
 ## How water actually flows

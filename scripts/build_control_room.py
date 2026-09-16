@@ -715,7 +715,7 @@ def render(
     invite_log_html, invite_log_css = build_invite_log(contacts)
     tier_css_block = (tier_css_block + invite_log_css + EMAIL_CSS + TAB_CSS
                       + PATTERNS_CSS + THESIS_CSS + HUNCH_CSS + COMPANIES_CSS
-                      + PAGES_CSS + TECH_CSS + RESEARCH_CSS + PMW_CSS)
+                      + PAGES_CSS + TECH_CSS + RESEARCH_CSS + PMW_CSS + PMFLOW_CSS)
 
     companies_fm, companies_list = companies or ({}, [])
     companies_tab_html = render_companies_tab(companies_list, companies_fm, contacts)
@@ -4555,6 +4555,62 @@ def _process_water_svg(rows: list[dict], fm: dict) -> str:
             f'{defs}{"".join(out)}</svg></div>{legend}')
 
 
+PMFLOW_CSS = """
+.pmf {margin:12px 0 0;}
+.pmf-bar {display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin:0 0 10px;}
+.pmf-bar label {display:flex;align-items:center;gap:6px;font-size:11px;color:var(--text-dim);}
+.pmf-bar select {font:inherit;font-size:11px;padding:4px 8px;border:1px solid var(--border);
+  border-radius:var(--r-sm);background:var(--surface);color:var(--text);max-width:220px;}
+.pmf-bar .pmf-toggle {display:flex;align-items:center;gap:5px;font-size:11px;color:var(--text-dim);cursor:pointer;}
+.pmf-tot {margin-left:auto;font-size:11px;color:var(--text-dimmer);}
+.pmf-tot b {color:var(--text);font-variant-numeric:tabular-nums;}
+.pmf-wrap {overflow-x:auto;border:1px solid var(--border);border-radius:var(--r-md);background:var(--surface);}
+.pmf-svg {display:block;min-width:940px;width:100%;font-family:inherit;}
+.pmf-colhead {fill:var(--text-dimmer);font-size:8px;font-weight:800;letter-spacing:.08em;text-transform:uppercase;}
+.pmf-rule {stroke:var(--border);stroke-width:1;stroke-dasharray:2 4;opacity:.7;}
+.pmf-rib {opacity:.26;cursor:pointer;transition:opacity .12s;}
+.pmf-rib:hover,.pmf-rib.is-on {opacity:.8;}
+.pmf-rib.is-off {opacity:.05;}
+.pmf-back {fill:none;stroke-dasharray:4 4;opacity:.55;cursor:pointer;}
+.pmf-back:hover {opacity:.95;}
+.pmf-node rect {fill:var(--text-dim);stroke:none;cursor:pointer;}
+.pmf-node.is-stage rect {fill:#475569;}
+.pmf-node.is-header rect {fill:#0f766e;}
+.pmf-node.is-source rect {fill:#0284c7;}
+.pmf-node.is-output rect {fill:#7c3aed;}
+.pmf-node:hover rect,.pmf-node.is-on rect {fill:var(--accent);}
+.pmf-lab {fill:var(--text);font-size:10px;font-weight:650;pointer-events:none;
+  paint-order:stroke fill;stroke:var(--surface);stroke-width:3.2px;stroke-linejoin:round;}
+.pmf-sub {fill:var(--text-dimmer);font-size:8.5px;pointer-events:none;font-variant-numeric:tabular-nums;
+  paint-order:stroke fill;stroke:var(--surface);stroke-width:3px;stroke-linejoin:round;}
+.pmf-ring {fill:none;stroke:#f59e0b;stroke-width:1.6;pointer-events:none;}
+.pmf-fem {fill:#14b8a6;font-size:8px;font-weight:800;pointer-events:none;
+  paint-order:stroke fill;stroke:var(--surface);stroke-width:3px;stroke-linejoin:round;}
+.pmf-backlab {fill:var(--text-dimmer);font-size:8.5px;pointer-events:none;
+  paint-order:stroke fill;stroke:var(--surface);stroke-width:3px;stroke-linejoin:round;}
+.pmf-legend {display:flex;flex-wrap:wrap;gap:4px 12px;margin:8px 0 0;font-size:10.5px;color:var(--text-dim);}
+.pmf-legend button {display:flex;align-items:center;gap:5px;background:none;border:0;padding:1px 2px;
+  font:inherit;font-size:10.5px;color:var(--text-dim);cursor:pointer;border-radius:3px;}
+.pmf-legend button:hover {color:var(--text);}
+.pmf-legend button.is-on {color:var(--text);font-weight:700;}
+.pmf-legend i {width:16px;height:8px;border-radius:2px;display:inline-block;}
+.pmf-panel {margin:10px 0 0;border:1px solid var(--border);border-radius:var(--r-md);
+  background:var(--surface-2);padding:12px 14px;min-height:88px;}
+.pmf-panel h4 {margin:0 0 2px;font-size:13px;}
+.pmf-panel .pmf-path {font-size:10.5px;color:var(--text-dimmer);margin:0 0 7px;}
+.pmf-panel p {margin:0 0 6px;font-size:12px;color:var(--text-dim);line-height:1.5;}
+.pmf-chips {display:flex;flex-wrap:wrap;gap:5px;margin:0 0 7px;}
+.pmf-chips span {font-size:10px;padding:2px 7px;border-radius:999px;color:#fff;font-weight:600;}
+.pmf-kv {display:flex;flex-wrap:wrap;gap:3px 16px;font-size:11px;color:var(--text-dimmer);margin:0 0 6px;}
+.pmf-kv b {color:var(--text);font-weight:650;}
+.pmf-femlist {margin:6px 0 0;padding:0;list-style:none;}
+.pmf-femlist li {font-size:11px;color:var(--text-dim);padding:3px 0 3px 0;border-top:1px solid var(--border);}
+.pmf-femlist li b {color:var(--text);}
+.pmf-femlist li em {color:var(--text-dimmer);font-style:normal;}
+.pmf-hint {font-size:11px;color:var(--text-dimmer);}
+"""
+
+
 PMW_CSS = """
 .pmw-wrap {overflow-x:auto;margin:12px 0 0;border:1px solid var(--border);border-radius:var(--r-md);background:var(--surface);}
 .pmw {display:block;font-family:inherit;}
@@ -4572,6 +4628,348 @@ PMW_CSS = """
 .pmw-node:hover rect,.pmw-node:focus-visible rect,.pmw-node.is-active rect {stroke:var(--accent);stroke-width:1.6;}
 """
 
+
+_PMF_JS = r"""
+(function(){
+var D=window.PMFLOW;if(!D)return;
+var svg=document.getElementById('pmf-svg'),panel=document.getElementById('pmf-panel');
+var rSel=document.getElementById('pmf-route'),cSel=document.getElementById('pmf-cont');
+var femTog=document.getElementById('pmf-fem'),tot=document.getElementById('pmf-tot');
+var legend=document.getElementById('pmf-legend');
+var NS='http://www.w3.org/2000/svg';
+var W=1360,H=616,TOP=34,PAD=26,BW=13,GAP=19,MINH=14,NCOL=9,BOT=46;
+var colGap=(W-2*PAD-BW)/(NCOL-1);
+var pinned=null;
+function cx(c){return PAD+c*colGap;}
+function colour(id){var c=D.cont[id];return c&&c.colour?c.colour:'#94a3b8';}
+function clab(id){var c=D.cont[id];return c&&c.label?c.label:id;}
+function el(n,a){var e=document.createElementNS(NS,n);for(var k in a){if(a[k]!=null)e.setAttribute(k,a[k]);}return e;}
+function esc(t){var d=document.createElement('div');d.textContent=t==null?'':String(t);return d.innerHTML;}
+function num(v){return v>=10?v.toFixed(0):v.toFixed(1);}
+
+function compute(){
+  var route=rSel.value;
+  var links=D.links.filter(function(l){return !route||!l.routes.length||l.routes.indexOf(route)>=0;});
+  var lv={};
+  links.forEach(function(l){if(l.v!=null)lv[l.id]=l.v;});
+  var val={};
+  for(var c=0;c<NCOL;c++){
+    D.nodes.filter(function(n){return n.col===c;}).forEach(function(n){
+      var inb=0,seed=0;
+      links.forEach(function(l){
+        if(l.t===n.id&&!l.back&&lv[l.id]!=null)inb+=lv[l.id];
+        if(l.s===n.id&&!l.back&&lv[l.id]!=null)seed+=lv[l.id];
+      });
+      var base=Math.max(inb,seed);
+      val[n.id]=base;
+      links.forEach(function(l){if(l.s===n.id&&lv[l.id]==null&&l.share!=null)lv[l.id]=base*l.share;});
+    });
+  }
+  links=links.filter(function(l){return lv[l.id]!=null&&lv[l.id]>0.004;});
+  var nodes=D.nodes.filter(function(n){return (val[n.id]||0)>0.004;});
+  return {links:links,lv:lv,val:val,nodes:nodes};
+}
+
+function layout(g){
+  var byCol={};
+  g.nodes.forEach(function(n){(byCol[n.col]=byCol[n.col]||[]).push(n);});
+  var scale=Infinity;
+  Object.keys(byCol).forEach(function(c){
+    var a=byCol[c],t=0;a.forEach(function(n){t+=g.val[n.id];});
+    var avail=(H-TOP-BOT)-(a.length-1)*GAP-a.length*3;
+    if(t>0&&avail>0)scale=Math.min(scale,avail/t);
+  });
+  if(!isFinite(scale)||scale<=0)scale=1;
+  var pos={};
+  Object.keys(byCol).forEach(function(c){
+    var a=byCol[c].slice().sort(function(x,y){return x.slot-y.slot;});
+    var hs=a.map(function(n){return Math.max(MINH,g.val[n.id]*scale);});
+    var t=0;hs.forEach(function(h){t+=h;});t+=(a.length-1)*GAP;
+    var y=TOP+((H-TOP-BOT)-t)/2;
+    a.forEach(function(n,i){pos[n.id]={x:cx(n.col),y:y,h:hs[i],n:n};y+=hs[i]+GAP;});
+  });
+  return pos;
+}
+
+function ends(g,pos){
+  var fwd=g.links.filter(function(l){return !l.back&&pos[l.s]&&pos[l.t];});
+  var byS={},byT={};
+  fwd.forEach(function(l){(byS[l.s]=byS[l.s]||[]).push(l);(byT[l.t]=byT[l.t]||[]).push(l);});
+  var so={},to={};
+  Object.keys(byS).forEach(function(k){
+    var a=byS[k].sort(function(x,y){return pos[x.t].y-pos[y.t].y;}),p=pos[k],t=0;
+    a.forEach(function(l){t+=g.lv[l.id];});
+    var sc=t>0?p.h/t:0,acc=0;
+    a.forEach(function(l){var h=g.lv[l.id]*sc;so[l.id]={a:p.y+acc,b:p.y+acc+h};acc+=h;});
+  });
+  Object.keys(byT).forEach(function(k){
+    var a=byT[k].sort(function(x,y){return pos[x.s].y-pos[y.s].y;}),p=pos[k],t=0;
+    a.forEach(function(l){t+=g.lv[l.id];});
+    var sc=t>0?p.h/t:0,acc=0;
+    a.forEach(function(l){var h=g.lv[l.id]*sc;to[l.id]={a:p.y+acc,b:p.y+acc+h};acc+=h;});
+  });
+  return {so:so,to:to,fwd:fwd};
+}
+
+function ribbon(x0,a0,b0,x1,a1,b1){
+  var m=(x0+x1)/2;
+  return 'M'+x0+','+a0+'C'+m+','+a0+' '+m+','+a1+' '+x1+','+a1+
+         'L'+x1+','+b1+'C'+m+','+b1+' '+m+','+b0+' '+x0+','+b0+'Z';
+}
+
+function draw(){
+  var g=compute(),pos=layout(g),E=ends(g,pos),hl=cSel.value,showFem=femTog.checked;
+  while(svg.firstChild)svg.removeChild(svg.firstChild);
+  svg.setAttribute('viewBox','0 0 '+W+' '+H);
+  svg.setAttribute('height',H);
+  Object.keys(D.cols).forEach(function(c){
+    var x=cx(+c);
+    if(g.nodes.some(function(n){return n.col===+c;})){
+      var t=el('text',{x:x,y:16,'class':'pmf-colhead'});t.textContent=D.cols[c];svg.appendChild(t);
+      svg.appendChild(el('line',{x1:x,y1:22,x2:x,y2:H-BOT+8,'class':'pmf-rule'}));
+    }
+  });
+  var gl=el('g',{});svg.appendChild(gl);
+  E.fwd.forEach(function(l){
+    var a=E.so[l.id],b=E.to[l.id];if(!a||!b)return;
+    var on=!hl||l.carries.indexOf(hl)>=0||l.dom===hl;
+    var pth=el('path',{d:ribbon(pos[l.s].x+BW,a.a,a.b,pos[l.t].x,b.a,b.b),
+      fill:colour(l.dom),'class':'pmf-rib'+(on?'':' is-off')});
+    pth.setAttribute('data-l',l.id);
+    gl.appendChild(pth);
+  });
+  g.links.filter(function(l){return l.back&&pos[l.s]&&pos[l.t];}).forEach(function(l,bi){
+    var s=pos[l.s],t=pos[l.t],y=H-BOT+14+bi*16;
+    var d='M'+(s.x+BW/2)+','+(s.y+s.h)+'L'+(s.x+BW/2)+','+y+'L'+(t.x+BW/2)+','+y+'L'+(t.x+BW/2)+','+(t.y+t.h);
+    var pth=el('path',{d:d,'class':'pmf-back',stroke:colour(l.dom),'stroke-width':Math.max(1.2,Math.min(5,g.lv[l.id]*0.7))});
+    pth.setAttribute('data-l',l.id);gl.appendChild(pth);
+    var bl=el('text',{x:s.x+(t.x-s.x)*(0.3+0.34*bi),y:y-4,'class':'pmf-backlab','text-anchor':'middle'});
+    bl.textContent=l.name+' \u2191 '+num(g.lv[l.id])+' L/kg';gl.appendChild(bl);
+  });
+  g.nodes.forEach(function(n){
+    var p=pos[n.id];if(!p)return;
+    var gn=el('g',{'class':'pmf-node is-'+n.kind,tabindex:0,role:'button'});
+    gn.setAttribute('data-n',n.id);
+    gn.appendChild(el('rect',{x:p.x,y:p.y,width:BW,height:p.h,rx:2.5}));
+    var right=n.col<NCOL-1,lx=right?p.x+BW+7:p.x-7;
+    var ty=p.y+p.h/2;
+    var t1=el('text',{x:lx,y:ty-1,'class':'pmf-lab','text-anchor':right?'start':'end'});
+    t1.textContent=n.label;gn.appendChild(t1);
+    var t2=el('text',{x:lx,y:ty+10,'class':'pmf-sub','text-anchor':right?'start':'end'});
+    t2.textContent=num(g.val[n.id])+' L/kg';gn.appendChild(t2);
+    if(n.layer&&n.layer!=='none')gn.appendChild(el('circle',{cx:p.x+BW/2,cy:p.y-7,r:3.6,'class':'pmf-ring'}));
+    if(showFem&&n.fem&&n.fem.length){
+      var f=el('text',{x:lx,y:ty+20,'class':'pmf-fem','text-anchor':right?'start':'end'});
+      f.textContent='FEM x'+n.fem.length;gn.appendChild(f);
+    }
+    svg.appendChild(gn);
+  });
+  var water=0,drain=0,fib=0,colmap={};
+  g.nodes.forEach(function(n){colmap[n.id]=n.col;});
+  g.links.forEach(function(l){
+    if(l.s==='src-fresh'){water+=g.lv[l.id];return;}
+    if(colmap[l.s]!==1)return;
+    drain+=g.lv[l.id];
+    if(l.carries.indexOf('fibre')>=0)fib+=g.lv[l.id];
+  });
+  tot.innerHTML='<b>'+num(water)+'</b> L/kg in \u00b7 <b>'+num(drain)+
+    '</b> L/kg drains from the process \u00b7 <b>'+num(fib)+'</b> L/kg of that carries fibre';
+  wire(g,pos);
+  if(pinned)show(pinned.k,pinned.v,g);
+}
+
+function linkById(g,id){for(var i=0;i<g.links.length;i++)if(g.links[i].id===id)return g.links[i];return null;}
+function nodeById(id){for(var i=0;i<D.nodes.length;i++)if(D.nodes[i].id===id)return D.nodes[i];return null;}
+function nname(id){var n=nodeById(id);return n?n.label:id;}
+
+function chips(list){
+  if(!list||!list.length)return '';
+  return '<div class="pmf-chips">'+list.map(function(c){
+    return '<span style="background:'+esc(colour(c))+'">'+esc(clab(c))+'</span>';}).join('')+'</div>';
+}
+function femList(ids){
+  if(!ids||!ids.length)return '';
+  return '<ul class="pmf-femlist">'+ids.map(function(i){
+    var f=D.fem[i];if(!f)return '';
+    return '<li><b>'+esc(f.section)+' level '+esc(f.level)+'</b> &middot; '+esc(f.label)+
+      '<br><em>Needs: '+esc(f.needs)+'</em></li>';}).join('')+'</ul>';
+}
+
+function show(kind,id,g){
+  if(kind==='link'){
+    var l=linkById(g,id);if(!l)return;
+    panel.innerHTML='<h4>'+esc(l.name||'Stream')+'</h4>'+
+      '<p class="pmf-path">'+esc(nname(l.s))+' &rarr; '+esc(nname(l.t))+
+      (l.back?' &middot; returns upstream':'')+'</p>'+
+      '<div class="pmf-kv"><span><b>'+num(g.lv[id])+' L/kg</b> of fabric</span>'+
+      (l.when?'<span>'+esc(l.when)+'</span>':'')+'</div>'+
+      chips(l.carries)+(l.note?'<p>'+esc(l.note)+'</p>':'');
+  }else{
+    var n=nodeById(id);if(!n)return;
+    var lay=n.layer&&n.layer!=='none'?D.layers[n.layer]:null;
+    panel.innerHTML='<h4>'+esc(n.label)+'</h4>'+
+      '<p class="pmf-path">'+esc(n.phase||D.cols[n.col]||'')+' &middot; '+num(g.val[id])+' L/kg through it</p>'+
+      (n.note?'<p>'+esc(n.note)+'</p>':'')+
+      (n.measure?'<div class="pmf-kv"><span><b>Measure here:</b> '+esc(n.measure)+'</span></div>':'')+
+      (lay?'<div class="pmf-kv"><span><b>'+esc(lay.label)+'</b> '+esc(lay.note)+'</span></div>':'')+
+      femList(n.fem);
+  }
+}
+
+function wire(g,pos){
+  Array.prototype.forEach.call(svg.querySelectorAll('[data-l]'),function(e){
+    e.addEventListener('mouseenter',function(){if(!pinned)show('link',e.getAttribute('data-l'),g);});
+    e.addEventListener('click',function(){pinned={k:'link',v:e.getAttribute('data-l')};
+      Array.prototype.forEach.call(svg.querySelectorAll('.is-on'),function(x){x.classList.remove('is-on');});
+      e.classList.add('is-on');show('link',e.getAttribute('data-l'),g);});
+  });
+  Array.prototype.forEach.call(svg.querySelectorAll('[data-n]'),function(e){
+    e.addEventListener('mouseenter',function(){if(!pinned)show('node',e.getAttribute('data-n'),g);});
+    var act=function(){pinned={k:'node',v:e.getAttribute('data-n')};
+      Array.prototype.forEach.call(svg.querySelectorAll('.is-on'),function(x){x.classList.remove('is-on');});
+      e.classList.add('is-on');show('node',e.getAttribute('data-n'),g);};
+    e.addEventListener('click',act);
+    e.addEventListener('keydown',function(ev){if(ev.key==='Enter'||ev.key===' '){ev.preventDefault();act();}});
+  });
+  svg.addEventListener('dblclick',function(){pinned=null;
+    Array.prototype.forEach.call(svg.querySelectorAll('.is-on'),function(x){x.classList.remove('is-on');});});
+}
+
+rSel.addEventListener('change',function(){pinned=null;draw();});
+cSel.addEventListener('change',function(){draw();
+  Array.prototype.forEach.call(legend.querySelectorAll('button'),function(b){
+    b.classList.toggle('is-on',b.getAttribute('data-c')===cSel.value);});});
+femTog.addEventListener('change',draw);
+legend.addEventListener('click',function(ev){
+  var b=ev.target.closest('button');if(!b)return;
+  var c=b.getAttribute('data-c');
+  cSel.value=(cSel.value===c?'':c);
+  cSel.dispatchEvent(new Event('change'));
+});
+if(D.routes&&D.routes['cotton_knit'])rSel.value='cotton_knit';
+draw();
+})();
+"""
+
+_PMF_STAGE_COL = {"P12": 3, "P13": 4, "P14": 5, "P15": 6, "P16": 7}
+_PMF_HEADERS = ("hdr-pre", "hdr-dye", "hdr-print", "hdr-laundry", "hdr-fin")
+
+
+def _pm_flow_html(fm: dict, rows: list[dict]) -> str:
+    """The stream-flow map: water in on the left, process steps, department headers,
+    the treatment train, and what leaves the site. Ribbons are wastewater streams,
+    coloured by what they mainly carry and sized by litres per kilogram. Every node,
+    ribbon and FEM link reads a declared field in `process-map.md`."""
+    import json
+
+    cont = fm.get("map_contaminants") or {}
+    routes = fm.get("map_routes") or {}
+    femref = fm.get("map_fem") or {}
+    layers = fm.get("map_sensor_layers") or {}
+    cols = fm.get("map_columns") or {}
+    declared = fm.get("map_nodes") or []
+    if not declared or not any(e.get("streams") for e in rows):
+        return ""
+
+    def _sl(v):
+        return [str(x) for x in v] if isinstance(v, list) else ([str(v)] if v else [])
+
+    nodes, links = [], []
+    for n in declared:
+        if not isinstance(n, dict) or not n.get("id"):
+            continue
+        nodes.append({"id": str(n["id"]), "label": str(n.get("label") or n["id"]),
+                      "col": int(n.get("col") or 0), "slot": float(n.get("slot") or 0),
+                      "kind": str(n.get("kind") or "header"), "note": str(n.get("note") or ""),
+                      "phase": "", "layer": "none", "fem": [], "measure": "", "routes": []})
+
+    for e in rows:
+        streams = e.get("streams") or []
+        if not streams:
+            continue
+        sid = str(e.get("id"))
+        stage_routes = _sl(e.get("routes"))
+        nodes.append({"id": sid, "label": str(e.get("short") or e.get("name") or sid),
+                      "col": _PMF_STAGE_COL.get(sid, 1), "slot": float(e.get("_order") or 0),
+                      "kind": "stage", "note": str(e.get("what_happens") or ""),
+                      "phase": str(e.get("_phase") or ""), "layer": str(e.get("sensor_layer") or "none"),
+                      "fem": _sl(e.get("fem")), "measure": str(e.get("measurement_point") or ""),
+                      "routes": stage_routes})
+        vol = 0.0
+        for st in streams:
+            if not isinstance(st, dict):
+                continue
+            v = st.get("l_per_kg")
+            try:
+                v = float(v) if v not in (None, "") else None
+            except (TypeError, ValueError):
+                v = None
+            if v:
+                vol += v
+            links.append({"id": str(st.get("id") or f"{sid}-{len(links)}"), "s": sid,
+                          "t": str(st.get("to") or ""), "v": v,
+                          "share": (float(st["share"]) if st.get("share") not in (None, "") else None),
+                          "dom": str(st.get("dominant") or "mixed"), "carries": _sl(st.get("carries")),
+                          "name": str(st.get("name") or ""), "when": str(st.get("when") or ""),
+                          "note": str(st.get("note") or ""), "back": bool(st.get("back")),
+                          "routes": stage_routes})
+        if vol and _PMF_STAGE_COL.get(sid, 1) == 1:
+            links.append({"id": "in-" + sid, "s": "src-fresh", "t": sid, "v": round(vol, 2),
+                          "share": None, "dom": "mixed", "carries": [],
+                          "name": "Water and steam in", "when": "",
+                          "note": "Fresh or reclaimed water entering the step. Metered per source is what FEM water tracking asks for.",
+                          "back": False, "routes": stage_routes})
+
+    have = {n["id"] for n in nodes}
+    for h in _PMF_HEADERS:
+        if h in have:
+            # what a header carries is the union of what drains into it, so tracing one
+            # contaminant does not break at the collector
+            carried = ["mixed"] + sorted({c for l in links if l["t"] == h for c in l["carries"]})
+            links.append({"id": "eq-" + h, "s": h, "t": "P12", "v": None, "share": 1.0,
+                          "dom": "mixed", "carries": carried,
+                          "name": "To equalisation", "when": "Continuous",
+                          "note": "The department's combined drain. More representative than a machine drain, and it has lost the batch.",
+                          "back": False, "routes": []})
+    if "out-reuse" in have:
+        links.append({"id": "reuse-return", "s": "out-reuse", "t": "src-fresh", "v": None, "share": 1.0,
+                      "dom": "mixed", "carries": ["mixed"], "name": "Reclaimed water returns",
+                      "when": "Continuous",
+                      "note": "The loop that makes the mill's water balance work, and the path by which anything the ETP missed comes back into the process.",
+                      "back": True, "routes": []})
+
+    payload = json.dumps({"nodes": nodes, "links": links, "cont": cont, "routes": routes,
+                          "fem": femref, "layers": layers, "cols": cols},
+                         ensure_ascii=False, separators=(",", ":"))
+
+    ropts = "".join(f'<option value="{escape(k)}">{escape(str(v.get("label") or k))}</option>'
+                    for k, v in routes.items() if isinstance(v, dict))
+    copts = "".join(f'<option value="{escape(k)}">{escape(str(v.get("label") or k))}</option>'
+                    for k, v in cont.items() if isinstance(v, dict) and k != "mixed")
+    legend = "".join(
+        f'<button type="button" data-c="{escape(k)}"><i style="background:{escape(str(v.get("colour") or "#94a3b8"))}"></i>'
+        f'{escape(str(v.get("label") or k))}</button>'
+        for k, v in cont.items() if isinstance(v, dict))
+
+    return (
+        '<div class="pmf">'
+        '<div class="pmf-bar">'
+        '<label>Route <select id="pmf-route"><option value="">Every route at once</option>'
+        f'{ropts}</select></label>'
+        '<label>Trace <select id="pmf-cont"><option value="">everything</option>'
+        f'{copts}</select></label>'
+        '<label class="pmf-toggle"><input type="checkbox" id="pmf-fem"> Higg FEM evidence</label>'
+        '<span class="pmf-tot" id="pmf-tot"></span>'
+        '</div>'
+        '<div class="pmf-wrap"><svg id="pmf-svg" class="pmf-svg" role="img" '
+        'aria-label="Water and wastewater flow from process steps through treatment to discharge"></svg></div>'
+        f'<div class="pmf-legend" id="pmf-legend">{legend}</div>'
+        '<div class="pmf-panel" id="pmf-panel"><p class="pmf-hint">Hover a ribbon to see what that stream '
+        'carries and where it goes. Click a node for its measurement point and the FEM questions it can '
+        'evidence.</p></div>'
+        f'<script>window.PMFLOW={payload};</script>'
+        f'<script>{_PMF_JS}</script>'
+        '</div>')
 
 def render_process_tab(fm: dict, entries: list[dict]) -> str:
     """The manufacturing process, raw material to finished product, one stage per
@@ -4678,6 +5076,8 @@ def render_process_tab(fm: dict, entries: list[dict]) -> str:
         if v in releases) + '<span><i style="background:#64748b"></i>not graded</span>'
         '<span>&#x1F4A7; wet stage</span></div>')
 
+    flowmap = _pm_flow_html(fm, rows)
+
     # ── inspector payload ────────────────────────────────────────────────────
     def _vendors(e):
         out = []
@@ -4770,13 +5170,15 @@ def render_process_tab(fm: dict, entries: list[dict]) -> str:
         '</div></div>'
         f'<div class="smap-claim">{claim}</div>'
         f'<div class="cmap-kpis">{kpis}</div>'
-        '<div class="cmap-matrix-head smap-spaced"><h3>Where the water goes, and where the fibre comes from</h3>'
-        '<p>Fabric moves left to right. Blue drops are fresh water entering a stage; the line down from a '
-        'stage is its drain, coloured and thickened by how much fibre it carries; every drain meets the '
-        'collector and runs into effluent treatment. A diamond above a stage means fibre is created there.</p></div>'
-        f'{water_svg}'
-        '<div class="cmap-matrix-head smap-spaced"><h3>The stages, by phase</h3>'
-        '<p>Click a chip to inspect it.</p></div>'
+        '<div class="cmap-matrix-head smap-spaced"><h3>Where the water and the chemicals actually go</h3>'
+        '<p>Water enters on the left and leaves on the right. Each ribbon is one wastewater stream, as thick '
+        'as its litres per kilogram of fabric and coloured by what it mainly carries. Pick a route to see only '
+        'that kind of mill. Pick something to trace, such as fibre, to follow it through the plant. Hover a '
+        'ribbon, click a node. The amber ring marks a candidate sensor point; the Higg FEM box shows which '
+        'questions a measurement there could evidence.</p></div>'
+        f'{flowmap}'
+        '<div class="cmap-matrix-head smap-spaced"><h3>The four blocks, in order</h3>'
+        '<p>Every step files under one of them. Click a chip to inspect it.</p></div>'
         f'{flow}{legend}'
         f'{inspector}'
         '<div class="cmap-matrix-head smap-spaced"><h3>Stage by stage</h3>'
