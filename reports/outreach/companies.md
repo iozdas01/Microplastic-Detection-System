@@ -566,3 +566,34 @@ source_url: https://wasserdreinull.de/en/blog/microplastics-analytics-reality-ch
 sources_note: "also read: https://abcr.com/de_en/wasserdreinull-detect"
 first_added: 2026-09-14
 source_date: 2026-09-14
+
+## CyFract
+
+id: CO16
+map: none
+tier_side: supply
+tier: filtration_vendor
+canonical_name: CyFract (cyfract.de)
+country: DE
+founded: 
+stage: pre_seed
+total_raised_usd: 
+funding_source: grant
+headcount: 
+sector: Cyclone separation of suspended particles from industrial water, sold across industries rather than into one
+target: microplastics
+targets_all: [microplastics, tss_turbidity]
+measurement_mode: 
+technology: "Smart Tube: a patented cyclone device whose internal geometry separates suspended particles without filter media or chemicals; the company states it removes particles lighter than water"
+size_floor_um: 
+commercial_offer: 
+sells_to: industrial_end_user
+sells_to_all: [industrial_end_user]
+industries_served: [wastewater treatment, desalination, mining, oil and gas, agriculture]
+water_streams: [process, effluent]
+makes_or_does: >
+  Munich company making the Smart Tube, a cyclone-based separation device for industrial water. No filter media and no chemicals; the company's own site names wastewater treatment, desalination, mining, oil and gas, and agriculture as its markets. Backed by SPRIND, the German federal research ministry, Circular Valley, START2 and the INVEST programme. No capacities, performance figures or named customers are published.
+why_it_matters: >
+  A different category of partner from Matter, and the distinction matters commercially. Matter is a sector specialist whose access is to the textile mills and brands we already target. CyFract sells one physical principle into many industries, so what it carries is entry to water we would otherwise never reach, including the paper pilot it has raised. Relationship (2026-09-15): in conversation; no money on their side, per the founder. Each vertical they take us into must pass the same three tests paper failed: is anyone required or paid to know, is what we detect what they care about, and does the water break the optics.
+source_url: https://cyfract.de/
+sources_note: "company site read 2026-09-15; SPRIND description of the separation principle quoted there. No customer, capacity or pricing data published."
